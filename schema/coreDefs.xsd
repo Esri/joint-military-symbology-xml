@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://disa.mil/JointMilSyML.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://disa.mil/JointMilSyML.xsd"
+    xmlns:jmsml="http://disa.mil/JointMilSyML.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <xs:simpleType name="Legacy">
+    <xs:restriction base="xs:token">
+      <xs:length value="15" fixed="true"/>
+    </xs:restriction>  
+  </xs:simpleType>
+
+  <xs:simpleType name="singleLetterType">
+    <xs:restriction base="xs:token">
+      <xs:length value="1" fixed="true"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="legacyTokenType">
+    <xs:restriction base="xs:token">
+      <xs:length value="6" fixed="true"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="legacyFunctionCodeType">
+    <xs:simpleContent>
+      <xs:extension base="legacyTokenType">
+        <xs:attributeGroup ref="nameAttributeGroup"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="legacyLetterCodeType">
+    <xs:simpleContent>
+      <xs:extension base="singleLetterType">
+        <xs:attributeGroup ref="nameAttributeGroup"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  
+  <xs:simpleType name="singleDigitType">
+    <xs:restriction base="xs:unsignedByte">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="9"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="doubleDigitType" mixed="true">
+    <xs:sequence>
+      <xs:element name="digitOne" type="singleDigitType" minOccurs="1" default="0"/>
+      <xs:element name="digitTwo" type="singleDigitType" minOccurs="1" default="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="functionCode" type="doubleDigitType"/>
+  <xs:element name="legacyFunctionCode" type="legacyFunctionCodeType"/>
+
+  <xs:attributeGroup name="nameAttributeGroup">
+    <xs:attribute name="name" type="xs:token" use="required"/>
+    <xs:attributeGroup ref="metadataAttributeGroup"/>
+  </xs:attributeGroup>
+
+  <xs:attributeGroup name="identifierAttributeGroup">
+    <xs:attribute name="id" type="xs:ID" use="required"/>
+    <xs:attributeGroup ref="metadataAttributeGroup"/>
+  </xs:attributeGroup>
+
+  <xs:attributeGroup name="metadataAttributeGroup">
+    <xs:attribute name="label" type="xs:token" use="optional"/>
+    <xs:attribute name="description" type="xs:string" use="optional"/>
+    <xs:attribute name="remarks" type="xs:string" use="optional"/>
+  </xs:attributeGroup>
+
+  <xs:attributeGroup name="graphicNameAttributeGroup">
+    <xs:attributeGroup ref="nameAttributeGroup"/>
+    <xs:attribute name="graphic" type="xs:anyURI" use="optional"/>
+  </xs:attributeGroup>
+
+  <xs:attributeGroup name="graphicIdentifierAttributeGroup">
+    <xs:attributeGroup ref="identifierAttributeGroup"/>
+    <xs:attribute name="graphic" type="xs:anyURI" use="optional"/>
+  </xs:attributeGroup>
+
+  <xs:attributeGroup name="framedGraphicIdentifierAttributeGroup">
+    <xs:attributeGroup ref="graphicIdentifierAttributeGroup"/>
+    <xs:attribute name="circleGraphic" type="xs:anyURI" use="optional"/>
+    <xs:attribute name="cloverGraphic" type="xs:anyURI" use="optional"/>
+    <xs:attribute name="curveGraphic" type="xs:anyURI" use="optional"/>
+    <xs:attribute name="diamondGraphic" type="xs:anyURI" use="optional"/>
+    <xs:attribute name="rectangleGraphic" type="xs:anyURI" use="optional"/>
+    <xs:attribute name="squareGraphic" type="xs:anyURI" use="optional"/>
+  </xs:attributeGroup>
+
+  <xs:attributeGroup name="framedGraphicNameAttributeGroup">
+    <xs:attributeGroup ref="graphicNameAttributeGroup"/>
+    <xs:attribute name="circleGraphic" type="xs:anyURI" use="optional"/>
+    <xs:attribute name="cloverGraphic" type="xs:anyURI" use="optional"/>
+    <xs:attribute name="curveGraphic" type="xs:anyURI" use="optional"/>
+    <xs:attribute name="diamondGraphic" type="xs:anyURI" use="optional"/>
+    <xs:attribute name="rectangleGraphic" type="xs:anyURI" use="optional"/>
+    <xs:attribute name="squareGraphic" type="xs:anyURI" use="optional"/>
+  </xs:attributeGroup>
+
+  <xs:attributeGroup name="symbolAttributeGroup">
+    <xs:attribute name="entityID" type="xs:IDREF" use="optional"/>
+    <xs:attribute name="entityTypeID" type="xs:IDREF" use="optional"/>
+    <xs:attribute name="entitySubTypeID" type="xs:IDREF" use="optional"/>
+    <xs:attribute name="modifierOneID" type="xs:IDREF" use="optional"/>
+    <xs:attribute name="modifierTwoID" type="xs:IDREF" use="optional"/>
+  </xs:attributeGroup>
+
+  <xs:complexType name="modifiersType">
+    <xs:sequence>
+      <xs:element name="modifier" minOccurs="1" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="modifierCode" type="doubleDigitType"/>
+          </xs:sequence>
+          <xs:attributeGroup ref="graphicIdentifierAttributeGroup"/>
+          <xs:attribute name="category" type="xs:token" use="required"/>
+          <xs:attribute name="limitUseTo" type="xs:IDREFS" use="optional"/>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

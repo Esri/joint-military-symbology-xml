@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://disa.mil/JointMilSyML.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://disa.mil/JointMilSyML.xsd"
+    xmlns:jmsml="http://disa.mil/JointMilSyML.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <xs:include schemaLocation="coreDefs.xsd"/>
+
+  <xs:element name="symbolSet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="symbolSetCode" type="doubleDigitType" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="entities" minOccurs="1" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="entity" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="entityCode" type="doubleDigitType" minOccurs="1" maxOccurs="1"/>
+                    <xs:element name="entityTypes" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="entityType" minOccurs="1" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="entityTypeCode" type="doubleDigitType" minOccurs="1" maxOccurs="1"/>
+                                <xs:element name ="entitySubTypes" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="entitySubType" minOccurs="1" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="entitySubTypeCode" type="doubleDigitType" minOccurs="1" maxOccurs="1"/>
+                                          </xs:sequence>
+                                          <xs:attributeGroup ref="framedGraphicIdentifierAttributeGroup"/>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attributeGroup ref="framedGraphicIdentifierAttributeGroup"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attributeGroup ref="framedGraphicIdentifierAttributeGroup"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="sectorOneModifiers" type ="modifiersType" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="sectorTwoModifiers" type ="modifiersType" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="legacySymbols" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="legacySymbol" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element ref="legacyFunctionCode" minOccurs="1" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                  <xs:attributeGroup ref="identifierAttributeGroup"/>
+                  <xs:attributeGroup ref="symbolAttributeGroup"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attributeGroup ref="nameAttributeGroup"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

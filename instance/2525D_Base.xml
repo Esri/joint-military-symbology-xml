@@ -1,0 +1,545 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<library xmlns="http://disa.mil/JointMilSyML.xsd">
+  <uses>
+    <use name="Standard SIDC" description="This is a standard 20 digit SIDC.  No third set is used." extension="false">
+      <useCode>1</useCode>
+    </use>
+    <use name="Extended SIDC (optional)" description="This is a 20 digit..." extension="true">
+      <useCode>2</useCode>
+    </use>
+    <use name="Extended SIDC (mandatory)" description="This is a..." extension="true">
+      <useCode>3</useCode>
+    </use>
+  </uses>
+  
+  <versions>
+    <version name="Base" description="No changes to APP-6(C)/2525D" extension="false">
+      <versionCode>0</versionCode>
+    </version>
+  </versions>
+
+  <contexts>
+    <context name="Reality">
+      <contextCode>0</contextCode>
+      <contextAmplifiers>
+        <contextAmplifier id="REALITY" description="No reality graphic amplifier exists."/>
+      </contextAmplifiers>
+    </context>
+    <context name="Exercise">
+      <contextCode>1</contextCode>
+      <contextAmplifiers>
+        <contextAmplifier id="EX_CLOVER_AMP" graphic="ecloveramp.png"/>
+        <contextAmplifier id="EX_CURVE_AMP" graphic="ecurveamp.png"/>
+        <contextAmplifier id="EX_RECT_AMP" graphic="erectamp.png"/>
+        <contextAmplifier id="EX_SQUARE_AMP" graphic="esquareamp.png"/>
+        <contextAmplifier id="EX_CIRCLE_AMP" graphic="ecircleamp.png"/>
+        <contextAmplifier id="JOKER_CURVE_AMP" graphic="jcurveamp.png"/>
+        <contextAmplifier id="JOKER_CIRCLE_AMP" graphic="jcircleamp.png"/>
+        <contextAmplifier id="JOKER_RECT_AMP" graphic="jrectamp.png"/>
+        <contextAmplifier id="FAKER_CURVE_AMP" graphic="fcurveamp.png"/>
+        <contextAmplifier id="FAKER_CIRCLE_AMP" graphic="fcircleamp.png"/>
+        <contextAmplifier id="FAKER_RECT_AMP" graphic="frectamp.png"/>
+      </contextAmplifiers>
+    </context>
+    <context name="Simulation">
+      <contextCode>2</contextCode>
+      <contextAmplifiers>
+        <contextAmplifier id="SIM_CLOVER_AMP" graphic="scloveramp.png"/>
+        <contextAmplifier id="SIM_CURVE_AMP" graphic="scurveamp.png"/>
+        <contextAmplifier id="SIM_RECT_AMP" graphic="srectamp.png"/>
+        <contextAmplifier id="SIM_SQUARE_AMP" graphic="ssquareamp.png"/>
+        <contextAmplifier id="SIM_DIAMOND_AMP" graphic="sdiamondamp.png"/>
+        <contextAmplifier id="SIM_CIRCLE_AMP" graphic="scircleamp.png"/>
+      </contextAmplifiers>
+    </context>
+  </contexts>
+
+  <affiliations>
+    <affiliation id="AFFIL_UNKNOWN_PENDING" shape="CLOVER">
+      <standardIdentityContext name="UNKNOWN_PENDING_REALITY" contextAmplifierID="REALITY">
+        <legacyStandardIdentityCode name="2525C">P</legacyStandardIdentityCode>
+      </standardIdentityContext>
+      
+      <standardIdentityContext name="UNKNOWN_PENDING_EXERCISE" contextAmplifierID="EX_CLOVER_AMP">
+        <legacyStandardIdentityCode name="2525C">G</legacyStandardIdentityCode>
+      </standardIdentityContext>
+      
+      <standardIdentityContext name="UNKNOWN_PENDING_SIMULATION" contextAmplifierID="SIM_CLOVER_AMP"/>
+    </affiliation>
+
+    <affiliation id="AFFIL_UNKNOWN_UNKNOWN" shape="CLOVER">
+      <standardIdentityContext name="UNKNOWN_UNKNOWN_REALITY" contextAmplifierID="REALITY">
+        <legacyStandardIdentityCode name="2525C">U</legacyStandardIdentityCode>
+      </standardIdentityContext>
+      
+      <standardIdentityContext name="UNKNOWN_UNKNOWN_EXERCISE" contextAmplifierID="EX_CLOVER_AMP">
+        <legacyStandardIdentityCode name="2525C">W</legacyStandardIdentityCode>
+      </standardIdentityContext>
+      
+      <standardIdentityContext name="UNKNOWN_UNKNOWN_SIMULATION" contextAmplifierID="SIM_CLOVER_AMP"/>
+    </affiliation>
+
+    <affiliation id="AFFIL_UNKNOWN_ASSUMED_FRIEND" shape="CIRCLE">
+      <standardIdentityContext name="UNKNOWN_ASSUMED_FRIEND_REALITY" contextAmplifierID="REALITY">
+        <legacyStandardIdentityCode name="2525C">A</legacyStandardIdentityCode>
+      </standardIdentityContext>
+      
+      <standardIdentityContext name="UNKNOWN_ASSUMED_FRIEND_SIMULATION" contextAmplifierID="SIM_CIRCLE_AMP"/>
+    </affiliation>
+
+    <affiliation id="AFFIL_UNKNOWN_FRIEND" shape="CIRCLE">
+      <standardIdentityContext name="UNKNOWN_FRIEND_REALITY" contextAmplifierID="REALITY">
+        <legacyStandardIdentityCode name="2525C">F</legacyStandardIdentityCode>
+      </standardIdentityContext>
+      
+      <standardIdentityContext name="UNKNOWN_FRIEND_SIMULATION" contextAmplifierID="SIM_CIRCLE_AMP"/>
+    </affiliation>
+
+    <affiliation id="AFFIL_UNKNOWN_NEUTRAL" shape="SQUARE">
+      <standardIdentityContext name="UNKNOWN_NEUTRAL_REALITY" contextAmplifierID="REALITY">
+        <legacyStandardIdentityCode name="2525C">N</legacyStandardIdentityCode>
+      </standardIdentityContext>
+      
+      <standardIdentityContext name="UNKNOWN_NEUTRAL_SIMULATION" contextAmplifierID="SIM_SQUARE_AMP"/>
+    </affiliation>
+
+    <affiliation id="AFFIL_UNKNOWN_SUSPECT" shape="DIAMOND">
+      <standardIdentityContext name="UNKNOWN_SUSPECT_REALITY" contextAmplifierID="REALITY">
+        <legacyStandardIdentityCode name="2525C">S</legacyStandardIdentityCode>
+      </standardIdentityContext>
+      
+      <standardIdentityContext name="UNKNOWN_SUSPECT_SIMULATION" contextAmplifierID="SIM_DIAMOND_AMP"/>
+    </affiliation>
+
+    <affiliation id="AFFIL_UNKNOWN_HOSTILE" shape="DIAMOND">
+      <standardIdentityContext name="UNKNOWN_HOSTILE_REALITY" contextAmplifierID="REALITY">
+        <legacyStandardIdentityCode name="2525C">H</legacyStandardIdentityCode>
+      </standardIdentityContext>
+      
+      <standardIdentityContext name="UNKNOWN_HOSTILE_SIMULATION" contextAmplifierID="SIM_DIAMOND_AMP"/>
+    </affiliation>
+
+    <affiliation id="AFFIL_ABOVE_ASSUMED_FRIEND" shape="CURVE">
+      <standardIdentityContext name="ASSUMED_FRIEND_REALITY" contextAmplifierID="REALITY">
+        <legacyStandardIdentityCode name="2525C">A</legacyStandardIdentityCode>
+      </standardIdentityContext>
+      
+      <standardIdentityContext name="ASSUMED_FRIEND_EXERCISE" contextAmplifierID="EX_CURVE_AMP">
+        <legacyStandardIdentityCode name="2525C">M</legacyStandardIdentityCode>
+      </standardIdentityContext>
+      
+      <standardIdentityContext name="ASSUMED_FRIEND_SIMULATED" contextAmplifierID="SIM_CURVE_AMP"/>
+    </affiliation>
+
+    <affiliation id="AFFIL_ABOVE_FRIEND" shape="CURVE">
+      <standardIdentityContext name="FRIEND_REALITY" contextAmplifierID="REALITY">
+        <legacyStandardIdentityCode name="2525C">F</legacyStandardIdentityCode>
+      </standardIdentityContext>
+      
+      <standardIdentityContext name="FRIEND_EXERCISE" contextAmplifierID="EX_CURVE_AMP">
+        <legacyStandardIdentityCode name="2525C">D</legacyStandardIdentityCode>
+      </standardIdentityContext>
+      
+      <standardIdentityContext name="FRIEND_SIMULATED" contextAmplifierID="SIM_CURVE_AMP"/>
+    </affiliation>
+
+    <affiliation id="AFFIL_NEUTRAL" shape="SQUARE">
+      <standardIdentityContext name="NEUTRAL_REALITY" contextAmplifierID="REALITY">
+        <legacyStandardIdentityCode name="2525C">N</legacyStandardIdentityCode>
+      </standardIdentityContext>
+      
+      <standardIdentityContext name="NEUTRAL_EXERCISE" contextAmplifierID="EX_SQUARE_AMP">
+        <legacyStandardIdentityCode name="2525C">L</legacyStandardIdentityCode>
+      </standardIdentityContext>
+      
+      <standardIdentityContext name="NEUTRAL_SIMULATED" contextAmplifierID="SIM_SQUARE_AMP"/>
+    </affiliation>
+
+    <affiliation id="AFFIL_ABOVE_SUSPECT" shape="CURVE">
+      <standardIdentityContext name="SUSPECT_REALITY" contextAmplifierID="REALITY">
+        <legacyStandardIdentityCode name="2525C">S</legacyStandardIdentityCode>
+      </standardIdentityContext>
+      
+      <standardIdentityContext name="JOKER" contextAmplifierID="EX_CURVE_AMP">
+        <legacyStandardIdentityCode name="2525C">J</legacyStandardIdentityCode>
+      </standardIdentityContext>
+      
+      <standardIdentityContext name="SUSPECT_SIMULATED" contextAmplifierID="SIM_CURVE_AMP"/>
+    </affiliation>
+
+    <affiliation id="AFFIL_ABOVE_HOSTILE" shape="CURVE">
+      <standardIdentityContext name="HOSTILE_REALITY" contextAmplifierID="REALITY">
+        <legacyStandardIdentityCode name="2525C">H</legacyStandardIdentityCode>
+      </standardIdentityContext>
+      
+      <standardIdentityContext name="FAKER" contextAmplifierID="EX_CURVE_AMP">
+        <legacyStandardIdentityCode name="2525C">K</legacyStandardIdentityCode>
+      </standardIdentityContext>
+      
+      <standardIdentityContext name="HOSTILE_SIMULATED" contextAmplifierID="SIM_CURVE_AMP"/>
+    </affiliation>
+  </affiliations>
+
+  <dimensions>
+    <dimension name="UNKNOWN">
+      <legacyDimensionCode name="2525C">Z</legacyDimensionCode>
+      <standardIdentities>
+        <standardIdentity name="UNKNOWN_PENDING" label="Unknown/Pending" graphic="0000(pending).png" affiliationID="AFFIL_UNKNOWN_PENDING">
+          <standardIdentityCode>0</standardIdentityCode>
+        </standardIdentity>
+
+        <standardIdentity name="UNKNOWN_UNKNOWN" label="Unknown/Unknown" graphic="0100(unknown).png" affiliationID="AFFIL_UNKNOWN_UNKNOWN">
+          <standardIdentityCode>1</standardIdentityCode>
+        </standardIdentity>
+
+        <standardIdentity name="UNKNOWN_ASSUMED_FRIEND" label="Unknown/Assumed Friend" graphic="0200(friend).png" affiliationID="AFFIL_UNKNOWN_ASSUMED_FRIEND">
+          <standardIdentityCode>2</standardIdentityCode>
+        </standardIdentity>
+
+        <standardIdentity name="UNKNOWN_FRIEND" label="Unknown/Friend" graphic="0300(friend).png" affiliationID="AFFIL_UNKNOWN_FRIEND">
+          <standardIdentityCode>3</standardIdentityCode>
+        </standardIdentity>
+
+        <standardIdentity name="UNKNOWN_NEUTRAL" label="Unknown/Neutral" graphic="0400(neutral).png" affiliationID="AFFIL_UNKNOWN_NEUTRAL">
+          <standardIdentityCode>4</standardIdentityCode>
+        </standardIdentity>
+
+        <standardIdentity name="UNKNOWN_SUSPECT" label="Unknown/Suspect" graphic="0500(hostile).png" affiliationID="AFFIL_UNKNOWN_SUSPECT">
+          <standardIdentityCode>5</standardIdentityCode>
+        </standardIdentity>
+
+        <standardIdentity name="UNKNOWN_HOSTILE" label="Unknown/Hostile" graphic="0600(hostile).png" affiliationID="AFFIL_UNKNOWN_HOSTILE">
+          <standardIdentityCode>6</standardIdentityCode>
+        </standardIdentity>
+      </standardIdentities>
+      
+      <symbolSets>
+        <symbolSet id="SS_UNKNOWN" label="Unknown">
+          <symbolSetCode>
+            <digitOne>0</digitOne>
+            <digitTwo>0</digitTwo>
+          </symbolSetCode>
+        </symbolSet>
+      </symbolSets>
+    </dimension>
+
+    <dimension name="AIR">
+      <legacyDimensionCode name="2525C">A</legacyDimensionCode>
+      <standardIdentities>
+        <standardIdentity name="AIR_PENDING" label="Air/Pending" graphic="0001(pending).png" affiliationID="AFFIL_UNKNOWN_PENDING">
+          <standardIdentityCode>0</standardIdentityCode>
+        </standardIdentity>
+
+        <standardIdentity name="AIR_UNKNOWN" label="Air/Unknown" graphic="0101(unknown).png" affiliationID="AFFIL_UNKNOWN_UNKNOWN">
+          <standardIdentityCode>1</standardIdentityCode>
+        </standardIdentity>
+
+        <standardIdentity name="AIR_ASSUMED_FRIEND" label="Air/Assumed Friend" graphic="0201(friend).png" affiliationID="AFFIL_ABOVE_ASSUMED_FRIEND">
+          <standardIdentityCode>2</standardIdentityCode>
+        </standardIdentity>
+
+        <standardIdentity name="AIR_FRIEND" label="Air/Friend" graphic="0301(friend).png" affiliationID="AFFIL_ABOVE_FRIEND">
+          <standardIdentityCode>3</standardIdentityCode>
+        </standardIdentity>
+
+        <standardIdentity name="AIR_NEUTRAL" label="Air/Neutral" graphic="0401(neutral).png" affiliationID="AFFIL_NEUTRAL">
+          <standardIdentityCode>4</standardIdentityCode>
+        </standardIdentity>
+
+        <standardIdentity name="AIR_SUSPECT" label="Air/Suspect" graphic="0501(hostile).png" affiliationID="AFFIL_ABOVE_SUSPECT">
+          <standardIdentityCode>5</standardIdentityCode>
+        </standardIdentity>
+
+        <standardIdentity name="AIR_HOSTILE" label="Air/Hostile" graphic="0601(hostile).png" affiliationID="AFFIL_ABOVE_HOSTILE">
+          <standardIdentityCode>6</standardIdentityCode>
+        </standardIdentity>
+      </standardIdentities>
+
+      <symbolSets>
+        <symbolSet id="SS_AIR" label="Air" instance="2525D_Air.xml">
+          <symbolSetCode>
+            <digitOne>0</digitOne>
+            <digitTwo>1</digitTwo>
+          </symbolSetCode>
+        </symbolSet>
+
+        <symbolSet id="SS_AIR_MISSILE" label="Air Missile" instance="2525D_Air_Missile.xml">
+          <symbolSetCode>
+            <digitOne>0</digitOne>
+            <digitTwo>2</digitTwo>
+          </symbolSetCode>
+        </symbolSet>
+      </symbolSets>
+    </dimension>
+  </dimensions>
+
+  <statuses>
+    <status name="PRESENT" label="Present">
+      <statusCode>0</statusCode>
+      <legacyStatusCode name="2525C">P</legacyStatusCode>
+    </status>
+
+    <status name="PLANNED" label="Planned/Anticipated/Suspect">
+      <statusCode>1</statusCode>
+      <legacyStatusCode name="2525C">A</legacyStatusCode>
+    </status>
+
+    <status name="FULLY_CAPABLE" label="Present/Fully Capable">
+      <statusCode>2</statusCode>
+      <legacyStatusCode name="2525C">C</legacyStatusCode>
+    </status>
+
+    <status name="DAMAGED" label="Present/Damaged">
+      <statusCode>3</statusCode>
+      <legacyStatusCode name="2525C">D</legacyStatusCode>
+    </status>
+
+    <status name="DESTROYED" label="Present/Destroyed">
+      <statusCode>4</statusCode>
+      <legacyStatusCode name="2525C">X</legacyStatusCode>
+    </status>
+
+    <status name="FULL" label="Present/Full to Capacity">
+      <statusCode>5</statusCode>
+      <legacyStatusCode name="2525C">F</legacyStatusCode>
+    </status>
+  </statuses>
+
+  <hqTFDummies>
+    <hqTFDummy name="NA" label="Not applicable">
+      <hqTFDummyCode>0</hqTFDummyCode>
+      <legacyHQTFDummyCode name="2525C">-</legacyHQTFDummyCode>
+    </hqTFDummy>
+    
+    <hqTFDummy name="FEINT_DUMMY" label="Feint/Dummy">
+      <hqTFDummyCode>1</hqTFDummyCode>
+      <legacyHQTFDummyCode name="2525C">F</legacyHQTFDummyCode>
+    </hqTFDummy>
+    
+    <hqTFDummy name="HQ" label="Headquarters">
+      <hqTFDummyCode>2</hqTFDummyCode>
+      <legacyHQTFDummyCode name="2525C">A</legacyHQTFDummyCode>
+    </hqTFDummy>
+    
+    <hqTFDummy name="FEINT_DUMMY_HQ" label="Feint/Dummy Headquarters">
+      <hqTFDummyCode>3</hqTFDummyCode>
+      <legacyHQTFDummyCode name="2525C">C</legacyHQTFDummyCode>
+    </hqTFDummy>
+    
+    <hqTFDummy name="TF" label="Task Force">
+      <hqTFDummyCode>4</hqTFDummyCode>
+      <legacyHQTFDummyCode name="2525C">E</legacyHQTFDummyCode>
+    </hqTFDummy>
+    
+    <hqTFDummy name="FEINT_DUMMY_TF" label="Feint/Dummy Task Force">
+      <hqTFDummyCode>5</hqTFDummyCode>
+      <legacyHQTFDummyCode name="2525C">G</legacyHQTFDummyCode>
+    </hqTFDummy>
+    
+    <hqTFDummy name="TF_HQ" label="Task Force Headquarters">
+      <hqTFDummyCode>6</hqTFDummyCode>
+      <legacyHQTFDummyCode name="2525C">B</legacyHQTFDummyCode>
+    </hqTFDummy>
+    
+    <hqTFDummy name="FEINT_DUMMY_TF_HQ" label="Feint/Dummy Task Force Headquarters">
+      <hqTFDummyCode>7</hqTFDummyCode>
+      <legacyHQTFDummyCode name="2525C">D</legacyHQTFDummyCode>
+    </hqTFDummy>
+  </hqTFDummies>
+
+  <amplifierGroups>
+    <amplifierGroup name="NA" label="Not applicable">
+      <amplifierGroupCode>0</amplifierGroupCode>
+      <legacyModifierCode name="2525C" description="Overrides character 11 in old SIDC">-</legacyModifierCode>
+      <amplifiers>
+        <amplifier name="NA" label="Not applicable">
+          <amplifierCode>0</amplifierCode>
+          <legacyModifierCode name="2525C">-</legacyModifierCode>
+        </amplifier>
+      </amplifiers>
+    </amplifierGroup>
+    
+    <amplifierGroup name="ECHELON_BDE_BELOW" label="Echelon at brigade and below">
+      <amplifierGroupCode>1</amplifierGroupCode>
+      
+      <amplifiers>
+        <amplifier name="TEAM_CREW" label="Team/Crew" >
+          <amplifierCode>1</amplifierCode>
+          <legacyModifierCode name="2525C">A</legacyModifierCode>
+        </amplifier>
+
+        <amplifier name="SQUAD" label="Squad">
+          <amplifierCode>2</amplifierCode>
+          <legacyModifierCode name="2525C">B</legacyModifierCode>
+        </amplifier>
+
+        <amplifier name="SEC" label="Section">
+          <amplifierCode>3</amplifierCode>
+          <legacyModifierCode name="2525C">C</legacyModifierCode>
+        </amplifier>
+
+        <amplifier name="PLT_DETACHMENT" label="Platoon/Detachment">
+          <amplifierCode>4</amplifierCode>
+          <legacyModifierCode name="2525C">D</legacyModifierCode>
+        </amplifier>
+
+        <amplifier name="CPY_BTY_TRP" label="Company/Battery/Troop">
+          <amplifierCode>5</amplifierCode>
+          <legacyModifierCode name="2525C">E</legacyModifierCode>
+        </amplifier>
+
+        <amplifier name="BN_SQUADRON" label="Battalion/Squadron">
+          <amplifierCode>6</amplifierCode>
+          <legacyModifierCode name="2525C">F</legacyModifierCode>
+        </amplifier>
+
+        <amplifier name="REGT_GRP" label="Regiment/Group">
+          <amplifierCode>7</amplifierCode>
+          <legacyModifierCode name="2525C">G</legacyModifierCode>
+        </amplifier>
+
+        <amplifier name="BDE" label="Brigade">
+          <amplifierCode>8</amplifierCode>
+          <legacyModifierCode name="2525C">H</legacyModifierCode>
+        </amplifier>
+      </amplifiers>
+      
+      <compatibleSymbolSets>
+        <compatibleSymbolSet symbolSetID="SS_AIR"/>
+      </compatibleSymbolSets>
+    </amplifierGroup>
+
+    <amplifierGroup name="ECHELON_DIV_ABOVE" label="Echelon at division and above">
+      <amplifierGroupCode>2</amplifierGroupCode>
+      
+      <amplifiers>
+        <amplifier name="DIV" label="Division">
+          <amplifierCode>1</amplifierCode>
+          <legacyModifierCode name="2525C">I</legacyModifierCode>
+        </amplifier>
+
+        <amplifier name="CORPS_MEF" label="Corps/MEF">
+          <amplifierCode>2</amplifierCode>
+          <legacyModifierCode name="2525C">J</legacyModifierCode>
+        </amplifier>
+
+        <amplifier name="ARMY" label="Army">
+          <amplifierCode>3</amplifierCode>
+          <legacyModifierCode name="2525C">K</legacyModifierCode>
+        </amplifier>
+
+        <amplifier name="ARMY_GROUP_FRONT" label="Army Group/Front">
+          <amplifierCode>4</amplifierCode>
+          <legacyModifierCode name="2525C">L</legacyModifierCode>
+        </amplifier>
+
+        <amplifier name="REGION_THEATER" label="Region/Theater">
+          <amplifierCode>5</amplifierCode>
+          <legacyModifierCode name="2525C">M</legacyModifierCode>
+        </amplifier>
+
+        <amplifier name="COMMAND" label="Command">
+          <amplifierCode>6</amplifierCode>
+          <legacyModifierCode name="2525C">N</legacyModifierCode>
+        </amplifier>
+      </amplifiers>
+
+      <compatibleSymbolSets>
+        <compatibleSymbolSet symbolSetID="SS_AIR"/>
+      </compatibleSymbolSets>
+    </amplifierGroup>
+
+    <amplifierGroup name="EQUIP_MOBILITY_LAND" label="Equipment mobility on land">
+      <amplifierGroupCode>3</amplifierGroupCode>
+      <legacyModifierCode name="2525C" description="Overrides character 11 in old SIDC">M</legacyModifierCode>
+      
+      <amplifiers>
+        <amplifier name="WHEEL_LIMIT_COUNTRY" label="Wheeled limited cross country">
+          <amplifierCode>1</amplifierCode>
+          <legacyModifierCode name="2525C">O</legacyModifierCode>
+        </amplifier>
+
+        <amplifier name="WHEEL_COUNTRY" label="Wheeled cross country">
+          <amplifierCode>2</amplifierCode>
+          <legacyModifierCode name="2525C">P</legacyModifierCode>
+        </amplifier>
+
+        <amplifier name="TRACKED" label="Tracked">
+          <amplifierCode>3</amplifierCode>
+          <legacyModifierCode name="2525C">Q</legacyModifierCode>
+        </amplifier>
+
+        <amplifier name="WHEEL_TRACK" label="Wheeled and tracked combination">
+          <amplifierCode>4</amplifierCode>
+          <legacyModifierCode name="2525C">R</legacyModifierCode>
+        </amplifier>
+
+        <amplifier name="TOWED" label="Towed">
+          <amplifierCode>5</amplifierCode>
+          <legacyModifierCode name="2525C">S</legacyModifierCode>
+        </amplifier>
+
+        <amplifier name="RAIL" label="Rail">
+          <amplifierCode>6</amplifierCode>
+          <legacyModifierCode name="2525C">T</legacyModifierCode>
+        </amplifier>
+
+        <amplifier name="PACK_ANIMALS" label="Pack animals">
+          <amplifierCode>7</amplifierCode>
+          <legacyModifierCode name="2525C">W</legacyModifierCode>
+        </amplifier>
+      </amplifiers>
+    </amplifierGroup>
+
+    <amplifierGroup name="EQUIP_MOBILITY_SNOW" label="Equipment mobility on snow">
+      <amplifierGroupCode>4</amplifierGroupCode>
+      <legacyModifierCode name="2525C" description="Overrides character 11 in old SIDC">M</legacyModifierCode>
+      
+      <amplifiers>
+        <amplifier name="OVER_SNOW" label="Over snow (prime mover)">
+          <amplifierCode>1</amplifierCode>
+          <legacyModifierCode name="2525C">U</legacyModifierCode>
+        </amplifier>
+
+        <amplifier name="SLED" label="Sled">
+          <amplifierCode>2</amplifierCode>
+          <legacyModifierCode name="2525C">V</legacyModifierCode>
+        </amplifier>
+      </amplifiers>
+    </amplifierGroup>
+
+    <amplifierGroup name="EQUIP_MOBILITY_WATER" label="Equipment mobility on water">
+      <amplifierGroupCode>5</amplifierGroupCode>
+      <legacyModifierCode name="2525C" description="Overrides character 11 in old SIDC">M</legacyModifierCode>
+      
+      <amplifiers>
+        <amplifier name="BARGE" label="Barge">
+          <amplifierCode>1</amplifierCode>
+          <legacyModifierCode name="2525C">X</legacyModifierCode>
+        </amplifier>
+
+        <amplifier name="AMPHIB" label="Amphibious">
+          <amplifierCode>2</amplifierCode>
+          <legacyModifierCode name="2525C">Y</legacyModifierCode>
+        </amplifier>
+      </amplifiers>
+    </amplifierGroup>
+
+    <amplifierGroup name="TOWED_ARRAYS" label="Naval towed array">
+      <amplifierGroupCode>6</amplifierGroupCode>
+      <legacyModifierCode name="2525C" description="Overrides character 11 in old SIDC">N</legacyModifierCode>
+      
+      <amplifiers>
+        <amplifier name="SHORT_TOWED_ARRAY" label="Short towed array">
+          <amplifierCode>1</amplifierCode>
+          <legacyModifierCode name="2525C">S</legacyModifierCode>
+        </amplifier>
+
+        <amplifier name="LONG_TOWED_ARRAY" label="Long towed array">
+          <amplifierCode>2</amplifierCode>
+          <legacyModifierCode name="2525C">L</legacyModifierCode>
+        </amplifier>
+      </amplifiers>
+    </amplifierGroup>
+  </amplifierGroups>
+</library>
