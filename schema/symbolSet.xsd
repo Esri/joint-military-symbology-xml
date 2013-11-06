@@ -5,7 +5,7 @@
     xmlns:jmsml="http://disa.mil/JointMilSyML.xsd"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
 >
-  <xs:include schemaLocation="coreDefs.xsd"/>
+  <xs:include schemaLocation="core.xsd"/>
 
   <xs:element name="symbolSet">
     <xs:complexType>
@@ -61,7 +61,7 @@
               <xs:element name="legacySymbol" minOccurs="1" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element ref="legacyFunctionCode" minOccurs="1" maxOccurs="unbounded"/>
+                    <xs:element name="legacyFunctionCode" type="legacyFunctionCodeType" minOccurs="1" maxOccurs="unbounded"/>
                   </xs:sequence>
                   <xs:attributeGroup ref="identifierAttributeGroup"/>
                   <xs:attributeGroup ref="symbolAttributeGroup"/>

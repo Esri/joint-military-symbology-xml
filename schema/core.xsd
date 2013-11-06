@@ -5,13 +5,7 @@
     xmlns:jmsml="http://disa.mil/JointMilSyML.xsd"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
 >
-  <xs:simpleType name="Legacy">
-    <xs:restriction base="xs:token">
-      <xs:length value="15" fixed="true"/>
-    </xs:restriction>  
-  </xs:simpleType>
-
-  <xs:simpleType name="singleLetterType">
+ <xs:simpleType name="singleLetterType">
     <xs:restriction base="xs:token">
       <xs:length value="1" fixed="true"/>
     </xs:restriction>
@@ -52,9 +46,6 @@
       <xs:element name="digitTwo" type="singleDigitType" minOccurs="1" default="0"/>
     </xs:sequence>
   </xs:complexType>
-
-  <xs:element name="functionCode" type="doubleDigitType"/>
-  <xs:element name="legacyFunctionCode" type="legacyFunctionCodeType"/>
 
   <xs:attributeGroup name="nameAttributeGroup">
     <xs:attribute name="name" type="xs:token" use="required"/>

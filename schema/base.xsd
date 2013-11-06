@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema targetNamespace="http://disa.mil/JointMilSyML.xsd"
+  <xs:schema targetNamespace="http://disa.mil/JointMilSyML.xsd"
     elementFormDefault="qualified"
     xmlns="http://disa.mil/JointMilSyML.xsd"
     xmlns:jmsml="http://disa.mil/JointMilSyML.xsd"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
 >
-  <xs:include schemaLocation="coreDefs.xsd"/>
+  <xs:include schemaLocation="core.xsd"/>
   <xs:include schemaLocation="symbolSet.xsd"/>
 
   <xs:element name="library">
