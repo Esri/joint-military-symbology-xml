@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<library xmlns="http://disa.mil/JointMilSyML.xsd">
+<library xmlns="http://disa.mil/JointMilSyML.xsd" name="2525D">
   <uses>
     <use name="Standard SIDC" description="This is a standard 20 digit SIDC.  No third set is used." extension="false">
       <useCode>1</useCode>
@@ -19,259 +19,260 @@
   </versions>
 
   <contexts>
-    <context name="Reality">
+    <context id="REALITY">
       <contextCode>0</contextCode>
       <contextAmplifiers>
-        <contextAmplifier id="REALITY" description="No reality graphic amplifier exists."/>
+        <contextAmplifier id="REALITY_AMP" description="No reality graphic amplifier exists." shape="NA"/>
       </contextAmplifiers>
     </context>
-    <context name="Exercise">
+    <context id="EXERCISE">
       <contextCode>1</contextCode>
       <contextAmplifiers>
-        <contextAmplifier id="EX_CLOVER_AMP" graphic="ecloveramp.png"/>
-        <contextAmplifier id="EX_CURVE_AMP" graphic="ecurveamp.png"/>
-        <contextAmplifier id="EX_RECT_AMP" graphic="erectamp.png"/>
-        <contextAmplifier id="EX_SQUARE_AMP" graphic="esquareamp.png"/>
-        <contextAmplifier id="EX_CIRCLE_AMP" graphic="ecircleamp.png"/>
-        <contextAmplifier id="JOKER_CURVE_AMP" graphic="jcurveamp.png"/>
-        <contextAmplifier id="JOKER_CIRCLE_AMP" graphic="jcircleamp.png"/>
-        <contextAmplifier id="JOKER_RECT_AMP" graphic="jrectamp.png"/>
-        <contextAmplifier id="FAKER_CURVE_AMP" graphic="fcurveamp.png"/>
-        <contextAmplifier id="FAKER_CIRCLE_AMP" graphic="fcircleamp.png"/>
-        <contextAmplifier id="FAKER_RECT_AMP" graphic="frectamp.png"/>
+        <contextAmplifier id="EX_CLOVER_AMP" graphic="ecloveramp.png" shape="CLOVER"/>
+        <contextAmplifier id="EX_CURVE_AMP" graphic="ecurveamp.png" shape="CURVE"/>
+        <contextAmplifier id="EX_RECT_AMP" graphic="erectamp.png" shape="RECTANGLE"/>
+        <contextAmplifier id="EX_SQUARE_AMP" graphic="esquareamp.png" shape="SQUARE"/>
+        <contextAmplifier id="EX_CIRCLE_AMP" graphic="ecircleamp.png" shape="CIRCLE"/>
+        <contextAmplifier id="JOKER_CURVE_AMP" graphic="jcurveamp.png" shape="CURVE"/>
+        <contextAmplifier id="JOKER_CIRCLE_AMP" graphic="jcircleamp.png" shape="CIRCLE"/>
+        <contextAmplifier id="JOKER_RECT_AMP" graphic="jrectamp.png" shape="RECTANGLE"/>
+        <contextAmplifier id="FAKER_CURVE_AMP" graphic="fcurveamp.png" shape="CURVE"/>
+        <contextAmplifier id="FAKER_CIRCLE_AMP" graphic="fcircleamp.png" shape="CIRCLE"/>
+        <contextAmplifier id="FAKER_RECT_AMP" graphic="frectamp.png" shape="RECTANGLE"/>
       </contextAmplifiers>
     </context>
-    <context name="Simulation">
+    <context id="SIMULATION">
       <contextCode>2</contextCode>
       <contextAmplifiers>
-        <contextAmplifier id="SIM_CLOVER_AMP" graphic="scloveramp.png"/>
-        <contextAmplifier id="SIM_CURVE_AMP" graphic="scurveamp.png"/>
-        <contextAmplifier id="SIM_RECT_AMP" graphic="srectamp.png"/>
-        <contextAmplifier id="SIM_SQUARE_AMP" graphic="ssquareamp.png"/>
-        <contextAmplifier id="SIM_DIAMOND_AMP" graphic="sdiamondamp.png"/>
-        <contextAmplifier id="SIM_CIRCLE_AMP" graphic="scircleamp.png"/>
+        <contextAmplifier id="SIM_CLOVER_AMP" graphic="scloveramp.png" shape="CLOVER"/>
+        <contextAmplifier id="SIM_CURVE_AMP" graphic="scurveamp.png" shape="CURVE"/>
+        <contextAmplifier id="SIM_RECT_AMP" graphic="srectamp.png" shape="RECTANGLE"/>
+        <contextAmplifier id="SIM_SQUARE_AMP" graphic="ssquareamp.png" shape="SQUARE"/>
+        <contextAmplifier id="SIM_DIAMOND_AMP" graphic="sdiamondamp.png" shape="DIAMOND"/>
+        <contextAmplifier id="SIM_CIRCLE_AMP" graphic="scircleamp.png" shape="CIRCLE"/>
       </contextAmplifiers>
     </context>
   </contexts>
 
-  <affiliations>
-    <affiliation id="AFFIL_UNKNOWN_PENDING" shape="CLOVER">
-      <standardIdentityContext name="UNKNOWN_PENDING_REALITY" contextAmplifierID="REALITY">
-        <legacyStandardIdentityCode name="2525C">P</legacyStandardIdentityCode>
-      </standardIdentityContext>
-      
-      <standardIdentityContext name="UNKNOWN_PENDING_EXERCISE" contextAmplifierID="EX_CLOVER_AMP">
-        <legacyStandardIdentityCode name="2525C">G</legacyStandardIdentityCode>
-      </standardIdentityContext>
-      
-      <standardIdentityContext name="UNKNOWN_PENDING_SIMULATION" contextAmplifierID="SIM_CLOVER_AMP"/>
-    </affiliation>
+  <standardIdentities>
+    <standardIdentity id="SI_PENDING" label="Pending">
+      <standardIdentityCode>0</standardIdentityCode>
+    </standardIdentity>
 
-    <affiliation id="AFFIL_UNKNOWN_UNKNOWN" shape="CLOVER">
-      <standardIdentityContext name="UNKNOWN_UNKNOWN_REALITY" contextAmplifierID="REALITY">
-        <legacyStandardIdentityCode name="2525C">U</legacyStandardIdentityCode>
-      </standardIdentityContext>
-      
-      <standardIdentityContext name="UNKNOWN_UNKNOWN_EXERCISE" contextAmplifierID="EX_CLOVER_AMP">
-        <legacyStandardIdentityCode name="2525C">W</legacyStandardIdentityCode>
-      </standardIdentityContext>
-      
-      <standardIdentityContext name="UNKNOWN_UNKNOWN_SIMULATION" contextAmplifierID="SIM_CLOVER_AMP"/>
-    </affiliation>
+    <standardIdentity id="SI_UNKNOWN" label="Unknown">
+      <standardIdentityCode>1</standardIdentityCode>
+    </standardIdentity>
 
-    <affiliation id="AFFIL_UNKNOWN_ASSUMED_FRIEND" shape="CIRCLE">
-      <standardIdentityContext name="UNKNOWN_ASSUMED_FRIEND_REALITY" contextAmplifierID="REALITY">
-        <legacyStandardIdentityCode name="2525C">A</legacyStandardIdentityCode>
-      </standardIdentityContext>
-      
-      <standardIdentityContext name="UNKNOWN_ASSUMED_FRIEND_SIMULATION" contextAmplifierID="SIM_CIRCLE_AMP"/>
-    </affiliation>
+    <standardIdentity id="SI_ASSUMED_FRIEND" label="Assumed Friend">
+      <standardIdentityCode>2</standardIdentityCode>
+    </standardIdentity>
 
-    <affiliation id="AFFIL_UNKNOWN_FRIEND" shape="CIRCLE">
-      <standardIdentityContext name="UNKNOWN_FRIEND_REALITY" contextAmplifierID="REALITY">
-        <legacyStandardIdentityCode name="2525C">F</legacyStandardIdentityCode>
-      </standardIdentityContext>
-      
-      <standardIdentityContext name="UNKNOWN_FRIEND_SIMULATION" contextAmplifierID="SIM_CIRCLE_AMP"/>
-    </affiliation>
+    <standardIdentity id="SI_FRIEND" label="Friend">
+      <standardIdentityCode>3</standardIdentityCode>
+    </standardIdentity>
 
-    <affiliation id="AFFIL_UNKNOWN_NEUTRAL" shape="SQUARE">
-      <standardIdentityContext name="UNKNOWN_NEUTRAL_REALITY" contextAmplifierID="REALITY">
-        <legacyStandardIdentityCode name="2525C">N</legacyStandardIdentityCode>
-      </standardIdentityContext>
-      
-      <standardIdentityContext name="UNKNOWN_NEUTRAL_SIMULATION" contextAmplifierID="SIM_SQUARE_AMP"/>
-    </affiliation>
+    <standardIdentity id="SI_NEUTRAL" label="Neutral">
+      <standardIdentityCode>4</standardIdentityCode>
+    </standardIdentity>
 
-    <affiliation id="AFFIL_UNKNOWN_SUSPECT" shape="DIAMOND">
-      <standardIdentityContext name="UNKNOWN_SUSPECT_REALITY" contextAmplifierID="REALITY">
-        <legacyStandardIdentityCode name="2525C">S</legacyStandardIdentityCode>
-      </standardIdentityContext>
-      
-      <standardIdentityContext name="UNKNOWN_SUSPECT_SIMULATION" contextAmplifierID="SIM_DIAMOND_AMP"/>
-    </affiliation>
+    <standardIdentity id="SI_SUSPECT" label="Suspect">
+      <standardIdentityCode>5</standardIdentityCode>
+    </standardIdentity>
 
-    <affiliation id="AFFIL_UNKNOWN_HOSTILE" shape="DIAMOND">
-      <standardIdentityContext name="UNKNOWN_HOSTILE_REALITY" contextAmplifierID="REALITY">
-        <legacyStandardIdentityCode name="2525C">H</legacyStandardIdentityCode>
-      </standardIdentityContext>
-      
-      <standardIdentityContext name="UNKNOWN_HOSTILE_SIMULATION" contextAmplifierID="SIM_DIAMOND_AMP"/>
-    </affiliation>
+    <standardIdentity id="SI_JOKER" label="Joker">
+      <standardIdentityCode>5</standardIdentityCode>
+    </standardIdentity>
 
-    <affiliation id="AFFIL_ABOVE_ASSUMED_FRIEND" shape="CURVE">
-      <standardIdentityContext name="ASSUMED_FRIEND_REALITY" contextAmplifierID="REALITY">
-        <legacyStandardIdentityCode name="2525C">A</legacyStandardIdentityCode>
-      </standardIdentityContext>
-      
-      <standardIdentityContext name="ASSUMED_FRIEND_EXERCISE" contextAmplifierID="EX_CURVE_AMP">
-        <legacyStandardIdentityCode name="2525C">M</legacyStandardIdentityCode>
-      </standardIdentityContext>
-      
-      <standardIdentityContext name="ASSUMED_FRIEND_SIMULATED" contextAmplifierID="SIM_CURVE_AMP"/>
-    </affiliation>
+    <standardIdentity id="SI_HOSTILE" label="Hostile">
+      <standardIdentityCode>6</standardIdentityCode>
+    </standardIdentity>
 
-    <affiliation id="AFFIL_ABOVE_FRIEND" shape="CURVE">
-      <standardIdentityContext name="FRIEND_REALITY" contextAmplifierID="REALITY">
-        <legacyStandardIdentityCode name="2525C">F</legacyStandardIdentityCode>
-      </standardIdentityContext>
-      
-      <standardIdentityContext name="FRIEND_EXERCISE" contextAmplifierID="EX_CURVE_AMP">
-        <legacyStandardIdentityCode name="2525C">D</legacyStandardIdentityCode>
-      </standardIdentityContext>
-      
-      <standardIdentityContext name="FRIEND_SIMULATED" contextAmplifierID="SIM_CURVE_AMP"/>
-    </affiliation>
-
-    <affiliation id="AFFIL_NEUTRAL" shape="SQUARE">
-      <standardIdentityContext name="NEUTRAL_REALITY" contextAmplifierID="REALITY">
-        <legacyStandardIdentityCode name="2525C">N</legacyStandardIdentityCode>
-      </standardIdentityContext>
-      
-      <standardIdentityContext name="NEUTRAL_EXERCISE" contextAmplifierID="EX_SQUARE_AMP">
-        <legacyStandardIdentityCode name="2525C">L</legacyStandardIdentityCode>
-      </standardIdentityContext>
-      
-      <standardIdentityContext name="NEUTRAL_SIMULATED" contextAmplifierID="SIM_SQUARE_AMP"/>
-    </affiliation>
-
-    <affiliation id="AFFIL_ABOVE_SUSPECT" shape="CURVE">
-      <standardIdentityContext name="SUSPECT_REALITY" contextAmplifierID="REALITY">
-        <legacyStandardIdentityCode name="2525C">S</legacyStandardIdentityCode>
-      </standardIdentityContext>
-      
-      <standardIdentityContext name="JOKER" contextAmplifierID="EX_CURVE_AMP">
-        <legacyStandardIdentityCode name="2525C">J</legacyStandardIdentityCode>
-      </standardIdentityContext>
-      
-      <standardIdentityContext name="SUSPECT_SIMULATED" contextAmplifierID="SIM_CURVE_AMP"/>
-    </affiliation>
-
-    <affiliation id="AFFIL_ABOVE_HOSTILE" shape="CURVE">
-      <standardIdentityContext name="HOSTILE_REALITY" contextAmplifierID="REALITY">
-        <legacyStandardIdentityCode name="2525C">H</legacyStandardIdentityCode>
-      </standardIdentityContext>
-      
-      <standardIdentityContext name="FAKER" contextAmplifierID="EX_CURVE_AMP">
-        <legacyStandardIdentityCode name="2525C">K</legacyStandardIdentityCode>
-      </standardIdentityContext>
-      
-      <standardIdentityContext name="HOSTILE_SIMULATED" contextAmplifierID="SIM_CURVE_AMP"/>
-    </affiliation>
-  </affiliations>
+    <standardIdentity id="SI_FAKER" label="Faker">
+      <standardIdentityCode>6</standardIdentityCode>
+    </standardIdentity>
+  </standardIdentities>
 
   <dimensions>
-    <dimension name="UNKNOWN">
+    <dimension id="UNKNOWN" label="Unknown">
       <legacyDimensionCode name="2525C">Z</legacyDimensionCode>
-      <standardIdentities>
-        <standardIdentity name="UNKNOWN_PENDING" label="Unknown/Pending" graphic="0000(pending).png" affiliationID="AFFIL_UNKNOWN_PENDING">
-          <standardIdentityCode>0</standardIdentityCode>
-        </standardIdentity>
-
-        <standardIdentity name="UNKNOWN_UNKNOWN" label="Unknown/Unknown" graphic="0100(unknown).png" affiliationID="AFFIL_UNKNOWN_UNKNOWN">
-          <standardIdentityCode>1</standardIdentityCode>
-        </standardIdentity>
-
-        <standardIdentity name="UNKNOWN_ASSUMED_FRIEND" label="Unknown/Assumed Friend" graphic="0200(friend).png" affiliationID="AFFIL_UNKNOWN_ASSUMED_FRIEND">
-          <standardIdentityCode>2</standardIdentityCode>
-        </standardIdentity>
-
-        <standardIdentity name="UNKNOWN_FRIEND" label="Unknown/Friend" graphic="0300(friend).png" affiliationID="AFFIL_UNKNOWN_FRIEND">
-          <standardIdentityCode>3</standardIdentityCode>
-        </standardIdentity>
-
-        <standardIdentity name="UNKNOWN_NEUTRAL" label="Unknown/Neutral" graphic="0400(neutral).png" affiliationID="AFFIL_UNKNOWN_NEUTRAL">
-          <standardIdentityCode>4</standardIdentityCode>
-        </standardIdentity>
-
-        <standardIdentity name="UNKNOWN_SUSPECT" label="Unknown/Suspect" graphic="0500(hostile).png" affiliationID="AFFIL_UNKNOWN_SUSPECT">
-          <standardIdentityCode>5</standardIdentityCode>
-        </standardIdentity>
-
-        <standardIdentity name="UNKNOWN_HOSTILE" label="Unknown/Hostile" graphic="0600(hostile).png" affiliationID="AFFIL_UNKNOWN_HOSTILE">
-          <standardIdentityCode>6</standardIdentityCode>
-        </standardIdentity>
-      </standardIdentities>
       
       <symbolSets>
-        <symbolSet id="SS_UNKNOWN" label="Unknown">
+        <symbolSetRef id="SS_UNKNOWN" label="Unknown" instance="2525D_Unknown.xml">
           <symbolSetCode>
             <digitOne>0</digitOne>
             <digitTwo>0</digitTwo>
           </symbolSetCode>
-        </symbolSet>
+        </symbolSetRef>
       </symbolSets>
     </dimension>
 
-    <dimension name="AIR">
+    <dimension id="AIR" label="Air">
       <legacyDimensionCode name="2525C">A</legacyDimensionCode>
-      <standardIdentities>
-        <standardIdentity name="AIR_PENDING" label="Air/Pending" graphic="0001(pending).png" affiliationID="AFFIL_UNKNOWN_PENDING">
-          <standardIdentityCode>0</standardIdentityCode>
-        </standardIdentity>
-
-        <standardIdentity name="AIR_UNKNOWN" label="Air/Unknown" graphic="0101(unknown).png" affiliationID="AFFIL_UNKNOWN_UNKNOWN">
-          <standardIdentityCode>1</standardIdentityCode>
-        </standardIdentity>
-
-        <standardIdentity name="AIR_ASSUMED_FRIEND" label="Air/Assumed Friend" graphic="0201(friend).png" affiliationID="AFFIL_ABOVE_ASSUMED_FRIEND">
-          <standardIdentityCode>2</standardIdentityCode>
-        </standardIdentity>
-
-        <standardIdentity name="AIR_FRIEND" label="Air/Friend" graphic="0301(friend).png" affiliationID="AFFIL_ABOVE_FRIEND">
-          <standardIdentityCode>3</standardIdentityCode>
-        </standardIdentity>
-
-        <standardIdentity name="AIR_NEUTRAL" label="Air/Neutral" graphic="0401(neutral).png" affiliationID="AFFIL_NEUTRAL">
-          <standardIdentityCode>4</standardIdentityCode>
-        </standardIdentity>
-
-        <standardIdentity name="AIR_SUSPECT" label="Air/Suspect" graphic="0501(hostile).png" affiliationID="AFFIL_ABOVE_SUSPECT">
-          <standardIdentityCode>5</standardIdentityCode>
-        </standardIdentity>
-
-        <standardIdentity name="AIR_HOSTILE" label="Air/Hostile" graphic="0601(hostile).png" affiliationID="AFFIL_ABOVE_HOSTILE">
-          <standardIdentityCode>6</standardIdentityCode>
-        </standardIdentity>
-      </standardIdentities>
-
+      
       <symbolSets>
-        <symbolSet id="SS_AIR" label="Air" instance="2525D_Air.xml">
+        <symbolSetRef id="SS_AIR" label="Air" instance="2525D_Air.xml">
           <symbolSetCode>
             <digitOne>0</digitOne>
             <digitTwo>1</digitTwo>
           </symbolSetCode>
-        </symbolSet>
+        </symbolSetRef>
 
-        <symbolSet id="SS_AIR_MISSILE" label="Air Missile" instance="2525D_Air_Missile.xml">
+        <symbolSetRef id="SS_AIR_MISSILE" label="Air Missile" instance="2525D_Air_Missile.xml">
           <symbolSetCode>
             <digitOne>0</digitOne>
             <digitTwo>2</digitTwo>
           </symbolSetCode>
-        </symbolSet>
+        </symbolSetRef>
       </symbolSets>
     </dimension>
   </dimensions>
+  
+  <affiliations>
+    
+    <!-- Unknown Dimension Affiliations -->
+    
+    <affiliation id="REALITY_UNKNOWN_PENDING" contextID="REALITY" dimensionID="UNKNOWN" standardIdentityID="SI_PENDING" shape="CLOVER"> 
+      <legacyStandardIdentityCode name="2525C">P</legacyStandardIdentityCode>
+    </affiliation>
+    
+    <affiliation id="EXERCISE_UNKNOWN_PENDING" contextID="EXERCISE" dimensionID="UNKNOWN" standardIdentityID="SI_PENDING" shape="CLOVER">
+      <legacyStandardIdentityCode name="2525C">G</legacyStandardIdentityCode>
+    </affiliation>
+      
+    <affiliation id="SIMULATED_UNKNOWN_PENDING" contextID="SIMULATION" dimensionID="UNKNOWN" standardIdentityID="SI_PENDING" shape="CLOVER"/>
+
+    <affiliation id="REALITY_UNKNOWN_UNKNOWN" contextID="REALITY" dimensionID="UNKNOWN" standardIdentityID="SI_UNKNOWN" shape="CLOVER">
+      <legacyStandardIdentityCode name="2525C">U</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="EXERCISE_UNKNOWN_UNKNOWN" contextID="EXERCISE" dimensionID="UNKNOWN" standardIdentityID="SI_UNKNOWN" shape="CLOVER">
+      <legacyStandardIdentityCode name="2525C">W</legacyStandardIdentityCode>
+    </affiliation>
+      
+    <affiliation id="SIMULATED_UNKNOWN_UNKNOWN" contextID="SIMULATION" dimensionID="UNKNOWN" standardIdentityID="SI_UNKNOWN" shape="CLOVER"/>
+
+    <affiliation id="REALITY_UNKNOWN_FRIEND" contextID="REALITY" dimensionID="UNKNOWN" standardIdentityID="SI_FRIEND" shape="CIRCLE">
+      <legacyStandardIdentityCode name="2525C">F</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="EXERCISE_UNKNOWN_FRIEND" contextID="EXERCISE" dimensionID="UNKNOWN" standardIdentityID="SI_FRIEND" shape="NA">
+      <legacyStandardIdentityCode name="2525C">D</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="SIMULATED_UNKNOWN_FRIEND" contextID="SIMULATION" dimensionID="UNKNOWN" standardIdentityID="SI_UNKNOWN" shape="CIRCLE"/>
+
+    <affiliation id="REALITY_UNKNOWN_NEUTRAL" contextID="REALITY" dimensionID="UNKNOWN" standardIdentityID="SI_NEUTRAL" shape="SQUARE">
+      <legacyStandardIdentityCode name="2525C">N</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="EXERCISE_UNKNOWN_NEUTRAL" contextID="EXERCISE" dimensionID="UNKNOWN" standardIdentityID="SI_NEUTRAL" shape="NA">
+      <legacyStandardIdentityCode name="2525C">L</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="SIMULATED_UNKNOWN_NEUTRAL" contextID="SIMULATION" dimensionID="UNKNOWN" standardIdentityID="SI_NEUTRAL" shape="SQUARE"/>
+
+    <affiliation id="REALITY_UNKNOWN_HOSTILE" contextID="REALITY" dimensionID="UNKNOWN" standardIdentityID="SI_HOSTILE" shape="DIAMOND">
+      <legacyStandardIdentityCode name="2525C">H</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="EXERCISE_UNKNOWN_HOSTILE" contextID="EXERCISE" dimensionID="UNKNOWN" standardIdentityID="SI_FAKER" shape="NA">
+      <legacyStandardIdentityCode name="2525C">K</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="SIMULATED_UNKNOWN_HOSTILE" contextID="SIMULATION" dimensionID="UNKNOWN" standardIdentityID="SI_HOSTILE" shape="DIAMOND"/>
+
+    <affiliation id="REALITY_UNKNOWN_ASSUMED" contextID="REALITY" dimensionID="UNKNOWN" standardIdentityID="SI_ASSUMED_FRIEND" shape="CIRCLE">
+      <legacyStandardIdentityCode name="2525C">A</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="EXERCISE_UNKNOWN_ASSUMED" contextID="EXERCISE" dimensionID="UNKNOWN" standardIdentityID="SI_ASSUMED_FRIEND" shape="NA">
+      <legacyStandardIdentityCode name="2525C">M</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="SIMULATED_UNKNOWN_ASSUMED" contextID="SIMULATION" dimensionID="UNKNOWN" standardIdentityID="SI_ASSUMED_FRIEND" shape="CIRCLE"/>
+
+    <affiliation id="REALITY_UNKNOWN_SUSPECT" contextID="REALITY" dimensionID="UNKNOWN" standardIdentityID="SI_SUSPECT" shape="DIAMOND">
+      <legacyStandardIdentityCode name="2525C">S</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="EXERCISE_UNKNOWN_SUSPECT" contextID="EXERCISE" dimensionID="UNKNOWN" standardIdentityID="SI_JOKER" shape="NA">
+      <legacyStandardIdentityCode name="2525C">J</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="SIMULATED_UNKNOWN_SUSPECT" contextID="SIMULATION" dimensionID="UNKNOWN" standardIdentityID="SI_SUSPECT" shape="DIAMOND"/>
+
+    <!-- Air Dimension Affiliations -->
+
+    <affiliation id="REALITY_AIR_PENDING" contextID="REALITY" dimensionID="AIR" standardIdentityID="SI_PENDING" shape="CLOVER">
+      <legacyStandardIdentityCode name="2525C">P</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="EXERCISE_AIR_PENDING" contextID="EXERCISE" dimensionID="AIR" standardIdentityID="SI_PENDING" shape="CLOVER">
+      <legacyStandardIdentityCode name="2525C">G</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="SIMULATED_AIR_PENDING" contextID="SIMULATION" dimensionID="AIR" standardIdentityID="SI_PENDING" shape="CLOVER"/>
+
+    <affiliation id="REALITY_AIR_UNKNOWN" contextID="REALITY" dimensionID="AIR" standardIdentityID="SI_UNKNOWN" shape="CLOVER">
+      <legacyStandardIdentityCode name="2525C">U</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="EXERCISE_AIR_UNKNOWN" contextID="EXERCISE" dimensionID="AIR" standardIdentityID="SI_UNKNOWN" shape="CLOVER">
+      <legacyStandardIdentityCode name="2525C">W</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="SIMULATED_AIR_UNKNOWN" contextID="SIMULATION" dimensionID="AIR" standardIdentityID="SI_UNKNOWN" shape="CLOVER"/>
+
+    <affiliation id="REALITY_AIR_FRIEND" contextID="REALITY" dimensionID="AIR" standardIdentityID="SI_FRIEND" shape="CURVE">
+      <legacyStandardIdentityCode name="2525C">F</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="EXERCISE_AIR_FRIEND" contextID="EXERCISE" dimensionID="AIR" standardIdentityID="SI_FRIEND" shape="CURVE">
+      <legacyStandardIdentityCode name="2525C">D</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="SIMULATED_AIR_FRIEND" contextID="SIMULATION" dimensionID="AIR" standardIdentityID="SI_FRIEND" shape="CURVE"/>
+
+    <affiliation id="REALITY_AIR_NEUTRAL" contextID="REALITY" dimensionID="AIR" standardIdentityID="SI_NEUTRAL" shape="CURVE">
+      <legacyStandardIdentityCode name="2525C">N</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="EXERCISE_AIR_NEUTRAL" contextID="EXERCISE" dimensionID="AIR" standardIdentityID="SI_NEUTRAL" shape="CURVE">
+      <legacyStandardIdentityCode name="2525C">L</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="SIMULATED_AIR_NEUTRAL" contextID="SIMULATION" dimensionID="AIR" standardIdentityID="SI_NEUTRAL" shape="CURVE"/>
+
+    <affiliation id="REALITY_AIR_HOSTILE" contextID="REALITY" dimensionID="AIR" standardIdentityID="SI_HOSTILE" shape="CURVE">
+      <legacyStandardIdentityCode name="2525C">H</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="EXERCISE_AIR_HOSTILE" contextID="EXERCISE" dimensionID="AIR" standardIdentityID="SI_FAKER" shape="CURVE">
+      <legacyStandardIdentityCode name="2525C">K</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="SIMULATED_AIR_HOSTILE" contextID="SIMULATION" dimensionID="AIR" standardIdentityID="SI_HOSTILE" shape="CURVE"/>
+
+    <affiliation id="REALITY_AIR_ASSUMED" contextID="REALITY" dimensionID="AIR" standardIdentityID="SI_ASSUMED_FRIEND" shape="CURVE">
+      <legacyStandardIdentityCode name="2525C">A</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="EXERCISE_AIR_ASSUMED" contextID="EXERCISE" dimensionID="AIR" standardIdentityID="SI_ASSUMED_FRIEND" shape="CURVE">
+      <legacyStandardIdentityCode name="2525C">M</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="SIMULATED_AIR_ASSUMED" contextID="SIMULATION" dimensionID="AIR" standardIdentityID="SI_ASSUMED_FRIEND" shape="CURVE"/>
+
+    <affiliation id="REALITY_AIR_SUSPECT" contextID="REALITY" dimensionID="AIR" standardIdentityID="SI_SUSPECT" shape="CURVE">
+      <legacyStandardIdentityCode name="2525C">S</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="EXERCISE_AIR_SUSPECT" contextID="EXERCISE" dimensionID="AIR" standardIdentityID="SI_JOKER" shape="CURVE">
+      <legacyStandardIdentityCode name="2525C">J</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="SIMULATED_AIR_SUSPECT" contextID="SIMULATION" dimensionID="AIR" standardIdentityID="SI_SUSPECT" shape="CURVE"/>
+  </affiliations>
 
   <statuses>
     <status name="PRESENT" label="Present">
@@ -351,6 +352,7 @@
     <amplifierGroup name="NA" label="Not applicable">
       <amplifierGroupCode>0</amplifierGroupCode>
       <legacyModifierCode name="2525C" description="Overrides character 11 in old SIDC">-</legacyModifierCode>
+      
       <amplifiers>
         <amplifier name="NA" label="Not applicable">
           <amplifierCode>0</amplifierCode>
@@ -359,11 +361,12 @@
       </amplifiers>
     </amplifierGroup>
     
-    <amplifierGroup name="ECHELON_BDE_BELOW" label="Echelon at brigade and below">
+    <amplifierGroup name="ECHELON_BDE_BELOW" label="Echelon at brigade and below" compatibleSymbolSets="SS_AIR">
       <amplifierGroupCode>1</amplifierGroupCode>
+      <legacyModifierCode name="2525C" description="Overrides character 11 in old SIDC">-</legacyModifierCode>
       
       <amplifiers>
-        <amplifier name="TEAM_CREW" label="Team/Crew" >
+        <amplifier name="TEAM_CREW" label="Team/Crew">
           <amplifierCode>1</amplifierCode>
           <legacyModifierCode name="2525C">A</legacyModifierCode>
         </amplifier>
@@ -403,14 +406,11 @@
           <legacyModifierCode name="2525C">H</legacyModifierCode>
         </amplifier>
       </amplifiers>
-      
-      <compatibleSymbolSets>
-        <compatibleSymbolSet symbolSetID="SS_AIR"/>
-      </compatibleSymbolSets>
     </amplifierGroup>
 
-    <amplifierGroup name="ECHELON_DIV_ABOVE" label="Echelon at division and above">
+    <amplifierGroup name="ECHELON_DIV_ABOVE" label="Echelon at division and above" compatibleSymbolSets="SS_AIR">
       <amplifierGroupCode>2</amplifierGroupCode>
+      <legacyModifierCode name="2525C" description="Overrides character 11 in old SIDC">-</legacyModifierCode>
       
       <amplifiers>
         <amplifier name="DIV" label="Division">
@@ -443,10 +443,6 @@
           <legacyModifierCode name="2525C">N</legacyModifierCode>
         </amplifier>
       </amplifiers>
-
-      <compatibleSymbolSets>
-        <compatibleSymbolSet symbolSetID="SS_AIR"/>
-      </compatibleSymbolSets>
     </amplifierGroup>
 
     <amplifierGroup name="EQUIP_MOBILITY_LAND" label="Equipment mobility on land">

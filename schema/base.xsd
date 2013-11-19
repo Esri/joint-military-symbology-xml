@@ -20,7 +20,7 @@
               <xs:element name="use" minOccurs="1" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="useCode" type="singleDigitType" minOccurs="1" maxOccurs="unbounded"/>
+                    <xs:element name="useCode" type="singleDigitType" minOccurs="1" maxOccurs="1"/>
                   </xs:sequence>
                   <xs:attributeGroup ref="nameAttributeGroup"/>
                   <xs:attribute name="extension" type="xs:boolean" use="required"/>
@@ -38,7 +38,7 @@
               <xs:element name="version" minOccurs="1" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="versionCode" type="singleDigitType" minOccurs="1" maxOccurs="unbounded"/>
+                    <xs:element name="versionCode" type="singleDigitType" minOccurs="1" maxOccurs="1"/>
                   </xs:sequence>
                   <xs:attributeGroup ref="nameAttributeGroup"/>
                   <xs:attribute name="extension" type="xs:boolean" use="required"/>
@@ -46,7 +46,7 @@
               </xs:element>
             </xs:sequence>
           </xs:complexType>
-        </xs:element>
+        </xs:element>  
         
         <!--Context-->
         
@@ -63,52 +63,33 @@
                           <xs:element name="contextAmplifier" minOccurs="1" maxOccurs="unbounded">
                             <xs:complexType>
                               <xs:attributeGroup ref="graphicIdentifierAttributeGroup"/>
+                              <xs:attribute name="shape" type="shapeType" use="required"/>
                             </xs:complexType>
-                          </xs:element>                         
+                          </xs:element>
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
                   </xs:sequence>
-                  <xs:attributeGroup ref="nameAttributeGroup"/>
+                  <xs:attributeGroup ref="identifierAttributeGroup"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         
-        <!-- Affiliation -->
+        <!-- Standard Identity -->
         
-        <xs:element name="affiliations" minOccurs="1" maxOccurs="1">
+        <xs:element name="standardIdentities" minOccurs="1" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="affiliation" minOccurs="1" maxOccurs="unbounded">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element name="standardIdentityContext" minOccurs="1" maxOccurs="unbounded">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element name="legacyStandardIdentityCode" type="legacyLetterCodeType" minOccurs="0" maxOccurs="unbounded"/>
-                        </xs:sequence>
-                        <xs:attributeGroup ref="nameAttributeGroup"/>
-                        <xs:attribute name="contextAmplifierID" type="xs:IDREF" use="required"/>
-                      </xs:complexType>
-                    </xs:element>
-                  </xs:sequence>
-                  <xs:attributeGroup ref="identifierAttributeGroup"/>
-                  <xs:attribute name="shape" use="required">
-                    <xs:simpleType>
-                      <xs:restriction base="xs:token">
-                        <xs:enumeration value="CIRCLE"/>
-                        <xs:enumeration value="CLOVER"/>
-                        <xs:enumeration value="CURVE"/>
-                        <xs:enumeration value="DIAMOND"/>
-                        <xs:enumeration value="RECTANGLE"/>
-                        <xs:enumeration value="SQUARE"/>
-                      </xs:restriction>
-                    </xs:simpleType>
-                  </xs:attribute>
-                </xs:complexType>
-              </xs:element>
+              <xs:element name="standardIdentity" minOccurs="1" maxOccurs="unbounded">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="standardIdentityCode" type="singleDigitType"/>
+                    </xs:sequence>
+                    <xs:attributeGroup ref="identifierAttributeGroup"/>
+                  </xs:complexType>
+                </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -121,28 +102,11 @@
               <xs:element name="dimension" minOccurs="1" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="legacyDimensionCode" type="legacyLetterCodeType" minOccurs="0" maxOccurs="unbounded"/>
-                    
-                    <xs:element name="standardIdentities" minOccurs="1" maxOccurs="1">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element name="standardIdentity" minOccurs="1" maxOccurs="unbounded">
-                            <xs:complexType>
-                              <xs:sequence>
-                                <xs:element name="standardIdentityCode" type="singleDigitType" minOccurs="1" maxOccurs="1"/>
-                              </xs:sequence>
-                              <xs:attributeGroup ref="graphicNameAttributeGroup"/>
-                              <xs:attribute name="affiliationID" type="xs:IDREF" use="required"/>
-                            </xs:complexType>
-                          </xs:element>
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
-                    
+                    <xs:element name="legacyDimensionCode" type="legacyLetterCodeType" minOccurs="0" maxOccurs="unbounded"/>            
                     <xs:element name="symbolSets" minOccurs="1" maxOccurs="1">
                       <xs:complexType>
                         <xs:sequence>
-                          <xs:element name="symbolSet" minOccurs="1" maxOccurs="unbounded">
+                          <xs:element name="symbolSetRef" minOccurs="1" maxOccurs="unbounded">
                             <xs:complexType>
                               <xs:sequence>
                                 <xs:element name="symbolSetCode" type="doubleDigitType"/>
@@ -155,7 +119,28 @@
                       </xs:complexType>
                     </xs:element>
                   </xs:sequence>
-                  <xs:attributeGroup ref="nameAttributeGroup"/>
+                  <xs:attributeGroup ref="identifierAttributeGroup"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- Affiliation -->
+
+        <xs:element name="affiliations" minOccurs="1" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="affiliation" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="legacyStandardIdentityCode" type="legacyLetterCodeType" minOccurs="0" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                  <xs:attributeGroup ref="identifierAttributeGroup"/>
+                  <xs:attribute name="contextID" type="xs:IDREF" use="required"/>
+                  <xs:attribute name="standardIdentityID" type="xs:IDREF" use="required"/>
+                  <xs:attribute name="dimensionID" type="xs:IDREF" use="required"/>
+                  <xs:attribute name="shape" type ="shapeType" use="required"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
@@ -207,7 +192,7 @@
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="amplifierGroupCode" type="singleDigitType" minOccurs="1" maxOccurs="1"/>
-                    <xs:element name="legacyModifierCode" type="legacyLetterCodeType" minOccurs="0" maxOccurs="1"/>
+                    <xs:element name="legacyModifierCode" type="legacyLetterCodeType" minOccurs="0" maxOccurs="unbounded"/>
                     <xs:element name="amplifiers" minOccurs="1" maxOccurs="1">
                       <xs:complexType>
                         <xs:sequence>
@@ -223,25 +208,16 @@
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
-                    <xs:element name="compatibleSymbolSets" minOccurs="0" maxOccurs="1">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element name="compatibleSymbolSet" minOccurs="1" maxOccurs="unbounded">
-                            <xs:complexType>
-                              <xs:attribute name="symbolSetID" type="xs:IDREF" use="required"/>
-                            </xs:complexType>
-                          </xs:element>
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
                   </xs:sequence>
                   <xs:attributeGroup ref="nameAttributeGroup"/>
+                  <xs:attribute name="compatibleSymbolSets" type="xs:IDREFS" use="optional"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
       </xs:sequence>
+      <xs:attributeGroup ref="nameAttributeGroup"/>
     </xs:complexType>
   </xs:element>
 </xs:schema>

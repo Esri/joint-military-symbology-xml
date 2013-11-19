@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<symbolSet xmlns="http://disa.mil/JointMilSyML.xsd" name="SS_AIR_MISSILE" label="Air Missile">
+<symbolSet xmlns="http://disa.mil/JointMilSyML.xsd" id="SS_AIR_MISSILE" label="Air Missile" dimensionID="AIR">
   <symbolSetCode>
     <digitOne>0</digitOne>
     <digitTwo>2</digitTwo>
   </symbolSetCode>
+  <legacyCodingSchemeCode name="2525C">S</legacyCodingSchemeCode>
   <entities>
     <entity id="MISSILE" label="Missile" graphic="02110000.png">
       <entityCode>

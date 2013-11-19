@@ -11,6 +11,7 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element name="symbolSetCode" type="doubleDigitType" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="legacyCodingSchemeCode" type="legacyLetterCodeType" minOccurs="1" maxOccurs="unbounded"/>
         <xs:element name="entities" minOccurs="1" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
@@ -71,7 +72,8 @@
           </xs:complexType>
         </xs:element>
       </xs:sequence>
-      <xs:attributeGroup ref="nameAttributeGroup"/>
+      <xs:attributeGroup ref="identifierAttributeGroup"/>
+      <xs:attribute name="dimensionID" type="xs:IDREF" use="required"/>
     </xs:complexType>
   </xs:element>
 </xs:schema>

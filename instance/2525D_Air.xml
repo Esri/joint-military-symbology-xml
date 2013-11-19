@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<symbolSet xmlns="http://disa.mil/JointMilSyML.xsd" name="SS_AIR" label="Air">
+<symbolSet xmlns="http://disa.mil/JointMilSyML.xsd" id="SS_AIR" label="Air" dimensionID="AIR">
   <symbolSetCode>
     <digitOne>0</digitOne>
     <digitTwo>1</digitTwo>
   </symbolSetCode>
+  <legacyCodingSchemeCode name="2525C">S</legacyCodingSchemeCode>
   <entities>
     <entity id="MILITARY" label="Military" remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes." graphic="01110000.png">
       <entityCode>

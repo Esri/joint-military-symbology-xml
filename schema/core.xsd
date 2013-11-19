@@ -17,6 +17,18 @@
     </xs:restriction>
   </xs:simpleType>
 
+  <xs:simpleType name="shapeType">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="NA"/>
+      <xs:enumeration value="CIRCLE"/>
+      <xs:enumeration value="CLOVER"/>
+      <xs:enumeration value="CURVE"/>
+      <xs:enumeration value="DIAMOND"/>
+      <xs:enumeration value="RECTANGLE"/>
+      <xs:enumeration value="SQUARE"/>
+    </xs:restriction>
+  </xs:simpleType>
+
   <xs:complexType name="legacyFunctionCodeType">
     <xs:simpleContent>
       <xs:extension base="legacyTokenType">
@@ -34,7 +46,7 @@
   </xs:complexType>
   
   <xs:simpleType name="singleDigitType">
-    <xs:restriction base="xs:unsignedByte">
+    <xs:restriction base="xs:unsignedShort">
       <xs:minInclusive value="0"/>
       <xs:maxInclusive value="9"/>
     </xs:restriction>
@@ -49,32 +61,40 @@
 
   <xs:attributeGroup name="nameAttributeGroup">
     <xs:attribute name="name" type="xs:token" use="required"/>
-    <xs:attributeGroup ref="metadataAttributeGroup"/>
+    <xs:attribute name="label" type="xs:token" use="optional"/>
+    <xs:attribute name="description" type="xs:string" use="optional"/>
+    <xs:attribute name="remarks" type="xs:string" use="optional"/>
   </xs:attributeGroup>
 
   <xs:attributeGroup name="identifierAttributeGroup">
     <xs:attribute name="id" type="xs:ID" use="required"/>
-    <xs:attributeGroup ref="metadataAttributeGroup"/>
-  </xs:attributeGroup>
-
-  <xs:attributeGroup name="metadataAttributeGroup">
     <xs:attribute name="label" type="xs:token" use="optional"/>
     <xs:attribute name="description" type="xs:string" use="optional"/>
     <xs:attribute name="remarks" type="xs:string" use="optional"/>
   </xs:attributeGroup>
 
   <xs:attributeGroup name="graphicNameAttributeGroup">
-    <xs:attributeGroup ref="nameAttributeGroup"/>
+    <xs:attribute name="name" type="xs:token" use="required"/>
+    <xs:attribute name="label" type="xs:token" use="optional"/>
+    <xs:attribute name="description" type="xs:string" use="optional"/>
+    <xs:attribute name="remarks" type="xs:string" use="optional"/>
     <xs:attribute name="graphic" type="xs:anyURI" use="optional"/>
   </xs:attributeGroup>
 
   <xs:attributeGroup name="graphicIdentifierAttributeGroup">
-    <xs:attributeGroup ref="identifierAttributeGroup"/>
+    <xs:attribute name="id" type="xs:ID" use="required"/>
+    <xs:attribute name="label" type="xs:token" use="optional"/>
+    <xs:attribute name="description" type="xs:string" use="optional"/>
+    <xs:attribute name="remarks" type="xs:string" use="optional"/>
     <xs:attribute name="graphic" type="xs:anyURI" use="optional"/>
   </xs:attributeGroup>
 
   <xs:attributeGroup name="framedGraphicIdentifierAttributeGroup">
-    <xs:attributeGroup ref="graphicIdentifierAttributeGroup"/>
+    <xs:attribute name="id" type="xs:ID" use="required"/>
+    <xs:attribute name="label" type="xs:token" use="optional"/>
+    <xs:attribute name="description" type="xs:string" use="optional"/>
+    <xs:attribute name="remarks" type="xs:string" use="optional"/>
+    <xs:attribute name="graphic" type="xs:anyURI" use="optional"/>
     <xs:attribute name="circleGraphic" type="xs:anyURI" use="optional"/>
     <xs:attribute name="cloverGraphic" type="xs:anyURI" use="optional"/>
     <xs:attribute name="curveGraphic" type="xs:anyURI" use="optional"/>
@@ -84,7 +104,11 @@
   </xs:attributeGroup>
 
   <xs:attributeGroup name="framedGraphicNameAttributeGroup">
-    <xs:attributeGroup ref="graphicNameAttributeGroup"/>
+    <xs:attribute name="name" type="xs:token" use="required"/>
+    <xs:attribute name="label" type="xs:token" use="optional"/>
+    <xs:attribute name="description" type="xs:string" use="optional"/>
+    <xs:attribute name="remarks" type="xs:string" use="optional"/>
+    <xs:attribute name="graphic" type="xs:anyURI" use="optional"/>
     <xs:attribute name="circleGraphic" type="xs:anyURI" use="optional"/>
     <xs:attribute name="cloverGraphic" type="xs:anyURI" use="optional"/>
     <xs:attribute name="curveGraphic" type="xs:anyURI" use="optional"/>
@@ -94,11 +118,11 @@
   </xs:attributeGroup>
 
   <xs:attributeGroup name="symbolAttributeGroup">
-    <xs:attribute name="entityID" type="xs:IDREF" use="optional"/>
-    <xs:attribute name="entityTypeID" type="xs:IDREF" use="optional"/>
-    <xs:attribute name="entitySubTypeID" type="xs:IDREF" use="optional"/>
-    <xs:attribute name="modifierOneID" type="xs:IDREF" use="optional"/>
-    <xs:attribute name="modifierTwoID" type="xs:IDREF" use="optional"/>
+    <xs:attribute name="entityID" type="xs:IDREF" default="NA" use="optional"/>
+    <xs:attribute name="entityTypeID" type="xs:IDREF" default="NA" use="optional"/>
+    <xs:attribute name="entitySubTypeID" type="xs:IDREF" default="NA" use="optional"/>
+    <xs:attribute name="modifierOneID" type="xs:IDREF" default="NA" use="optional"/>
+    <xs:attribute name="modifierTwoID" type="xs:IDREF" default="NA" use="optional"/>
   </xs:attributeGroup>
 
   <xs:complexType name="modifiersType">
