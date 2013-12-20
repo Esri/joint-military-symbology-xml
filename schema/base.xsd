@@ -12,36 +12,17 @@
     <xs:complexType>
       <xs:sequence>
         
-        <!--Use-->
-        
-        <xs:element name="uses" minOccurs="1" maxOccurs="1">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="use" minOccurs="1" maxOccurs="unbounded">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element name="useCode" type="singleDigitType" minOccurs="1" maxOccurs="1"/>
-                  </xs:sequence>
-                  <xs:attributeGroup ref="nameAttributeGroup"/>
-                  <xs:attribute name="extension" type="xs:boolean" use="required"/>
-                </xs:complexType>
-              </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        
         <!--Version-->
         
         <xs:element name="versions" minOccurs="1" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="version" minOccurs="1" maxOccurs="unbounded">
+              <xs:element name="version" minOccurs="1" maxOccurs="39">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="versionCode" type="singleDigitType" minOccurs="1" maxOccurs="1"/>
+                    <xs:element name="versionCode" type="doubleDigitType" minOccurs="1" maxOccurs="1"/>
                   </xs:sequence>
                   <xs:attributeGroup ref="nameAttributeGroup"/>
-                  <xs:attribute name="extension" type="xs:boolean" use="required"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
@@ -53,7 +34,7 @@
         <xs:element name="contexts" minOccurs="1" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="context" minOccurs="1" maxOccurs="unbounded">
+              <xs:element name="context" minOccurs="1" maxOccurs="10">
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="contextCode" type="singleDigitType" minOccurs="1" maxOccurs="1"/>
@@ -82,7 +63,7 @@
         <xs:element name="standardIdentities" minOccurs="1" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="standardIdentity" minOccurs="1" maxOccurs="unbounded">
+              <xs:element name="standardIdentity" minOccurs="1" maxOccurs="10">
                   <xs:complexType>
                     <xs:sequence>
                       <xs:element name="standardIdentityCode" type="singleDigitType"/>
@@ -136,7 +117,7 @@
                   <xs:sequence>
                     <xs:element name="legacyStandardIdentityCode" type="legacyLetterCodeType" minOccurs="0" maxOccurs="unbounded"/>
                   </xs:sequence>
-                  <xs:attributeGroup ref="identifierAttributeGroup"/>
+                  <xs:attributeGroup ref="graphicIdentifierAttributeGroup"/>
                   <xs:attribute name="contextID" type="xs:IDREF" use="required"/>
                   <xs:attribute name="standardIdentityID" type="xs:IDREF" use="required"/>
                   <xs:attribute name="dimensionID" type="xs:IDREF" use="required"/>
@@ -152,7 +133,7 @@
         <xs:element name="statuses" minOccurs="1" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="status" minOccurs="1" maxOccurs="unbounded">
+              <xs:element name="status" minOccurs="1" maxOccurs="10">
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="statusCode" type="singleDigitType" minOccurs="1" maxOccurs="1"/>
@@ -170,7 +151,7 @@
         <xs:element name="hqTFDummies" minOccurs="1" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="hqTFDummy" minOccurs="1" maxOccurs="unbounded">
+              <xs:element name="hqTFDummy" minOccurs="1" maxOccurs="10">
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="hqTFDummyCode" type="singleDigitType" minOccurs="1" maxOccurs="1"/>
@@ -188,7 +169,7 @@
         <xs:element name="amplifierGroups" minOccurs="1" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="amplifierGroup" minOccurs="1" maxOccurs="9">
+              <xs:element name="amplifierGroup" minOccurs="1" maxOccurs="10">
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="amplifierGroupCode" type="singleDigitType" minOccurs="1" maxOccurs="1"/>
@@ -196,11 +177,11 @@
                     <xs:element name="amplifiers" minOccurs="1" maxOccurs="1">
                       <xs:complexType>
                         <xs:sequence>
-                          <xs:element name="amplifier" minOccurs="1" maxOccurs="unbounded">
+                          <xs:element name="amplifier" minOccurs="1" maxOccurs="10">
                             <xs:complexType>
                               <xs:sequence>
                                 <xs:element name="amplifierCode" type="singleDigitType" minOccurs="1" maxOccurs="1"/>
-                                <xs:element name="legacyModifierCode" type="legacyLetterCodeType" minOccurs="1" maxOccurs="unbounded"/>
+                                <xs:element name="legacyModifierCode" type="legacyLetterCodeType" minOccurs="0" maxOccurs="unbounded"/>
                               </xs:sequence>
                               <xs:attributeGroup ref="framedGraphicNameAttributeGroup"/>
                             </xs:complexType>

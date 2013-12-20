@@ -1,20 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <library xmlns="http://disa.mil/JointMilSyML.xsd" name="2525D">
-  <uses>
-    <use name="Standard SIDC" description="This is a standard 20 digit SIDC.  No third set is used." extension="false">
-      <useCode>1</useCode>
-    </use>
-    <use name="Extended SIDC (optional)" description="This is a 20 digit..." extension="true">
-      <useCode>2</useCode>
-    </use>
-    <use name="Extended SIDC (mandatory)" description="This is a..." extension="true">
-      <useCode>3</useCode>
-    </use>
-  </uses>
-  
   <versions>
-    <version name="Base" description="No changes to APP-6(C)/2525D" extension="false">
-      <versionCode>0</versionCode>
+    <version name="Base" description="No changes to APP-6(C)/2525D">
+      <versionCode>
+        <digitOne>1</digitOne>
+        <digitTwo>0</digitTwo>
+      </versionCode>
     </version>
   </versions>
 
@@ -22,10 +13,10 @@
     <context id="REALITY">
       <contextCode>0</contextCode>
       <contextAmplifiers>
-        <contextAmplifier id="REALITY_AMP" description="No reality graphic amplifier exists." shape="NA"/>
+        <contextAmplifier id="REALITY_AMP" description="No reality graphic amplifier exists" shape="NA"/>
       </contextAmplifiers>
     </context>
-    <context id="EXERCISE">
+    <context id="EXERCISE" label="Exercise">
       <contextCode>1</contextCode>
       <contextAmplifiers>
         <contextAmplifier id="EX_CLOVER_AMP" graphic="ecloveramp.png" shape="CLOVER"/>
@@ -41,7 +32,7 @@
         <contextAmplifier id="FAKER_RECT_AMP" graphic="frectamp.png" shape="RECTANGLE"/>
       </contextAmplifiers>
     </context>
-    <context id="SIMULATION">
+    <context id="SIMULATION" label="Simulation">
       <contextCode>2</contextCode>
       <contextAmplifiers>
         <contextAmplifier id="SIM_CLOVER_AMP" graphic="scloveramp.png" shape="CLOVER"/>
@@ -50,6 +41,12 @@
         <contextAmplifier id="SIM_SQUARE_AMP" graphic="ssquareamp.png" shape="SQUARE"/>
         <contextAmplifier id="SIM_DIAMOND_AMP" graphic="sdiamondamp.png" shape="DIAMOND"/>
         <contextAmplifier id="SIM_CIRCLE_AMP" graphic="scircleamp.png" shape="CIRCLE"/>
+      </contextAmplifiers>
+    </context>
+    <context id="EXTENSION" label="Extension" description="Details specified by extension">
+      <contextCode>9</contextCode>
+      <contextAmplifiers>
+        <contextAmplifier id="EXTENSION_AMP" description="Graphic amplifier may be specified by extension" shape="NA"/>
       </contextAmplifiers>
     </context>
   </contexts>
@@ -89,6 +86,10 @@
 
     <standardIdentity id="SI_FAKER" label="Faker">
       <standardIdentityCode>6</standardIdentityCode>
+    </standardIdentity>
+
+    <standardIdentity id="SI_EXTENSION" label="Extension" description="Details specified by extension">
+      <standardIdentityCode>9</standardIdentityCode>
     </standardIdentity>
   </standardIdentities>
 
@@ -131,7 +132,7 @@
     
     <!-- Unknown Dimension Affiliations -->
     
-    <affiliation id="REALITY_UNKNOWN_PENDING" contextID="REALITY" dimensionID="UNKNOWN" standardIdentityID="SI_PENDING" shape="CLOVER"> 
+    <affiliation id="REALITY_UNKNOWN_PENDING" contextID="REALITY" dimensionID="UNKNOWN" standardIdentityID="SI_PENDING" shape="CLOVER" graphic="Frames/0000(pending).png"> 
       <legacyStandardIdentityCode name="2525C">P</legacyStandardIdentityCode>
     </affiliation>
     
@@ -141,7 +142,7 @@
       
     <affiliation id="SIMULATED_UNKNOWN_PENDING" contextID="SIMULATION" dimensionID="UNKNOWN" standardIdentityID="SI_PENDING" shape="CLOVER"/>
 
-    <affiliation id="REALITY_UNKNOWN_UNKNOWN" contextID="REALITY" dimensionID="UNKNOWN" standardIdentityID="SI_UNKNOWN" shape="CLOVER">
+    <affiliation id="REALITY_UNKNOWN_UNKNOWN" contextID="REALITY" dimensionID="UNKNOWN" standardIdentityID="SI_UNKNOWN" shape="CLOVER" graphic="Frames/0100(unknown).png">
       <legacyStandardIdentityCode name="2525C">U</legacyStandardIdentityCode>
     </affiliation>
 
@@ -151,7 +152,7 @@
       
     <affiliation id="SIMULATED_UNKNOWN_UNKNOWN" contextID="SIMULATION" dimensionID="UNKNOWN" standardIdentityID="SI_UNKNOWN" shape="CLOVER"/>
 
-    <affiliation id="REALITY_UNKNOWN_FRIEND" contextID="REALITY" dimensionID="UNKNOWN" standardIdentityID="SI_FRIEND" shape="CIRCLE">
+    <affiliation id="REALITY_UNKNOWN_FRIEND" contextID="REALITY" dimensionID="UNKNOWN" standardIdentityID="SI_FRIEND" shape="CIRCLE" graphic="Frames/0300(friend).png">
       <legacyStandardIdentityCode name="2525C">F</legacyStandardIdentityCode>
     </affiliation>
 
@@ -161,7 +162,7 @@
 
     <affiliation id="SIMULATED_UNKNOWN_FRIEND" contextID="SIMULATION" dimensionID="UNKNOWN" standardIdentityID="SI_UNKNOWN" shape="CIRCLE"/>
 
-    <affiliation id="REALITY_UNKNOWN_NEUTRAL" contextID="REALITY" dimensionID="UNKNOWN" standardIdentityID="SI_NEUTRAL" shape="SQUARE">
+    <affiliation id="REALITY_UNKNOWN_NEUTRAL" contextID="REALITY" dimensionID="UNKNOWN" standardIdentityID="SI_NEUTRAL" shape="SQUARE" graphic="Frames/0400(neutral).png">
       <legacyStandardIdentityCode name="2525C">N</legacyStandardIdentityCode>
     </affiliation>
 
@@ -171,7 +172,7 @@
 
     <affiliation id="SIMULATED_UNKNOWN_NEUTRAL" contextID="SIMULATION" dimensionID="UNKNOWN" standardIdentityID="SI_NEUTRAL" shape="SQUARE"/>
 
-    <affiliation id="REALITY_UNKNOWN_HOSTILE" contextID="REALITY" dimensionID="UNKNOWN" standardIdentityID="SI_HOSTILE" shape="DIAMOND">
+    <affiliation id="REALITY_UNKNOWN_HOSTILE" contextID="REALITY" dimensionID="UNKNOWN" standardIdentityID="SI_HOSTILE" shape="DIAMOND" graphic="Frames/0600(hostile).png">
       <legacyStandardIdentityCode name="2525C">H</legacyStandardIdentityCode>
     </affiliation>
 
@@ -181,7 +182,7 @@
 
     <affiliation id="SIMULATED_UNKNOWN_HOSTILE" contextID="SIMULATION" dimensionID="UNKNOWN" standardIdentityID="SI_HOSTILE" shape="DIAMOND"/>
 
-    <affiliation id="REALITY_UNKNOWN_ASSUMED" contextID="REALITY" dimensionID="UNKNOWN" standardIdentityID="SI_ASSUMED_FRIEND" shape="CIRCLE">
+    <affiliation id="REALITY_UNKNOWN_ASSUMED" contextID="REALITY" dimensionID="UNKNOWN" standardIdentityID="SI_ASSUMED_FRIEND" shape="CIRCLE" graphic="Frames/0200(friend).png">
       <legacyStandardIdentityCode name="2525C">A</legacyStandardIdentityCode>
     </affiliation>
 
@@ -191,7 +192,7 @@
 
     <affiliation id="SIMULATED_UNKNOWN_ASSUMED" contextID="SIMULATION" dimensionID="UNKNOWN" standardIdentityID="SI_ASSUMED_FRIEND" shape="CIRCLE"/>
 
-    <affiliation id="REALITY_UNKNOWN_SUSPECT" contextID="REALITY" dimensionID="UNKNOWN" standardIdentityID="SI_SUSPECT" shape="DIAMOND">
+    <affiliation id="REALITY_UNKNOWN_SUSPECT" contextID="REALITY" dimensionID="UNKNOWN" standardIdentityID="SI_SUSPECT" shape="DIAMOND" graphic="Frames/0500(hostile).png">
       <legacyStandardIdentityCode name="2525C">S</legacyStandardIdentityCode>
     </affiliation>
 
@@ -203,7 +204,7 @@
 
     <!-- Air Dimension Affiliations -->
 
-    <affiliation id="REALITY_AIR_PENDING" contextID="REALITY" dimensionID="AIR" standardIdentityID="SI_PENDING" shape="CLOVER">
+    <affiliation id="REALITY_AIR_PENDING" contextID="REALITY" dimensionID="AIR" standardIdentityID="SI_PENDING" shape="CLOVER" graphic="Frames/0001(pending).png">
       <legacyStandardIdentityCode name="2525C">P</legacyStandardIdentityCode>
     </affiliation>
 
@@ -213,7 +214,7 @@
 
     <affiliation id="SIMULATED_AIR_PENDING" contextID="SIMULATION" dimensionID="AIR" standardIdentityID="SI_PENDING" shape="CLOVER"/>
 
-    <affiliation id="REALITY_AIR_UNKNOWN" contextID="REALITY" dimensionID="AIR" standardIdentityID="SI_UNKNOWN" shape="CLOVER">
+    <affiliation id="REALITY_AIR_UNKNOWN" contextID="REALITY" dimensionID="AIR" standardIdentityID="SI_UNKNOWN" shape="CLOVER" graphic="Frames/0101(unknown).png">
       <legacyStandardIdentityCode name="2525C">U</legacyStandardIdentityCode>
     </affiliation>
 
@@ -223,7 +224,7 @@
 
     <affiliation id="SIMULATED_AIR_UNKNOWN" contextID="SIMULATION" dimensionID="AIR" standardIdentityID="SI_UNKNOWN" shape="CLOVER"/>
 
-    <affiliation id="REALITY_AIR_FRIEND" contextID="REALITY" dimensionID="AIR" standardIdentityID="SI_FRIEND" shape="CURVE">
+    <affiliation id="REALITY_AIR_FRIEND" contextID="REALITY" dimensionID="AIR" standardIdentityID="SI_FRIEND" shape="CURVE" graphic="Frames/0301(friend).png">
       <legacyStandardIdentityCode name="2525C">F</legacyStandardIdentityCode>
     </affiliation>
 
@@ -233,7 +234,7 @@
 
     <affiliation id="SIMULATED_AIR_FRIEND" contextID="SIMULATION" dimensionID="AIR" standardIdentityID="SI_FRIEND" shape="CURVE"/>
 
-    <affiliation id="REALITY_AIR_NEUTRAL" contextID="REALITY" dimensionID="AIR" standardIdentityID="SI_NEUTRAL" shape="CURVE">
+    <affiliation id="REALITY_AIR_NEUTRAL" contextID="REALITY" dimensionID="AIR" standardIdentityID="SI_NEUTRAL" shape="CURVE" graphic="Frames/0401(neutral).png">
       <legacyStandardIdentityCode name="2525C">N</legacyStandardIdentityCode>
     </affiliation>
 
@@ -243,7 +244,7 @@
 
     <affiliation id="SIMULATED_AIR_NEUTRAL" contextID="SIMULATION" dimensionID="AIR" standardIdentityID="SI_NEUTRAL" shape="CURVE"/>
 
-    <affiliation id="REALITY_AIR_HOSTILE" contextID="REALITY" dimensionID="AIR" standardIdentityID="SI_HOSTILE" shape="CURVE">
+    <affiliation id="REALITY_AIR_HOSTILE" contextID="REALITY" dimensionID="AIR" standardIdentityID="SI_HOSTILE" shape="CURVE" graphic="Frames/0601(hostile).png">
       <legacyStandardIdentityCode name="2525C">H</legacyStandardIdentityCode>
     </affiliation>
 
@@ -253,7 +254,7 @@
 
     <affiliation id="SIMULATED_AIR_HOSTILE" contextID="SIMULATION" dimensionID="AIR" standardIdentityID="SI_HOSTILE" shape="CURVE"/>
 
-    <affiliation id="REALITY_AIR_ASSUMED" contextID="REALITY" dimensionID="AIR" standardIdentityID="SI_ASSUMED_FRIEND" shape="CURVE">
+    <affiliation id="REALITY_AIR_ASSUMED" contextID="REALITY" dimensionID="AIR" standardIdentityID="SI_ASSUMED_FRIEND" shape="CURVE" graphic="Frames/0201(friend).png">
       <legacyStandardIdentityCode name="2525C">A</legacyStandardIdentityCode>
     </affiliation>
 
@@ -263,7 +264,7 @@
 
     <affiliation id="SIMULATED_AIR_ASSUMED" contextID="SIMULATION" dimensionID="AIR" standardIdentityID="SI_ASSUMED_FRIEND" shape="CURVE"/>
 
-    <affiliation id="REALITY_AIR_SUSPECT" contextID="REALITY" dimensionID="AIR" standardIdentityID="SI_SUSPECT" shape="CURVE">
+    <affiliation id="REALITY_AIR_SUSPECT" contextID="REALITY" dimensionID="AIR" standardIdentityID="SI_SUSPECT" shape="CURVE" graphic="Frames/0501(hostile).png">
       <legacyStandardIdentityCode name="2525C">S</legacyStandardIdentityCode>
     </affiliation>
 
@@ -303,6 +304,10 @@
     <status name="FULL" label="Present/Full to Capacity">
       <statusCode>5</statusCode>
       <legacyStatusCode name="2525C">F</legacyStatusCode>
+    </status>
+
+    <status name="EXTENSION" label="Extension" description="Details specified by extension">
+      <statusCode>9</statusCode>
     </status>
   </statuses>
 
@@ -345,6 +350,10 @@
     <hqTFDummy name="FEINT_DUMMY_TF_HQ" label="Feint/Dummy Task Force Headquarters">
       <hqTFDummyCode>7</hqTFDummyCode>
       <legacyHQTFDummyCode name="2525C">D</legacyHQTFDummyCode>
+    </hqTFDummy>
+
+    <hqTFDummy name="EXTENSION" label="Extension" description="Details specified by extension">
+      <hqTFDummyCode>9</hqTFDummyCode>
     </hqTFDummy>
   </hqTFDummies>
 
@@ -405,6 +414,10 @@
           <amplifierCode>8</amplifierCode>
           <legacyModifierCode name="2525C">H</legacyModifierCode>
         </amplifier>
+
+        <amplifier name="EXTENSION" label="Extension" description="Details specified by extension">
+          <amplifierCode>9</amplifierCode>
+        </amplifier>
       </amplifiers>
     </amplifierGroup>
 
@@ -441,6 +454,10 @@
         <amplifier name="COMMAND" label="Command">
           <amplifierCode>6</amplifierCode>
           <legacyModifierCode name="2525C">N</legacyModifierCode>
+        </amplifier>
+
+        <amplifier name="EXTENSION" label="Extension" description="Details specified by extension">
+          <amplifierCode>9</amplifierCode>
         </amplifier>
       </amplifiers>
     </amplifierGroup>
@@ -484,6 +501,10 @@
           <amplifierCode>7</amplifierCode>
           <legacyModifierCode name="2525C">W</legacyModifierCode>
         </amplifier>
+
+        <amplifier name="EXTENSION" label="Extension" description="Details specified by extension">
+          <amplifierCode>9</amplifierCode>
+        </amplifier>
       </amplifiers>
     </amplifierGroup>
 
@@ -500,6 +521,10 @@
         <amplifier name="SLED" label="Sled">
           <amplifierCode>2</amplifierCode>
           <legacyModifierCode name="2525C">V</legacyModifierCode>
+        </amplifier>
+
+        <amplifier name="EXTENSION" label="Extension" description="Details specified by extension">
+          <amplifierCode>9</amplifierCode>
         </amplifier>
       </amplifiers>
     </amplifierGroup>
@@ -518,6 +543,10 @@
           <amplifierCode>2</amplifierCode>
           <legacyModifierCode name="2525C">Y</legacyModifierCode>
         </amplifier>
+
+        <amplifier name="EXTENSION" label="Extension" description="Details specified by extension">
+          <amplifierCode>9</amplifierCode>
+        </amplifier>
       </amplifiers>
     </amplifierGroup>
 
@@ -534,6 +563,19 @@
         <amplifier name="LONG_TOWED_ARRAY" label="Long towed array">
           <amplifierCode>2</amplifierCode>
           <legacyModifierCode name="2525C">L</legacyModifierCode>
+        </amplifier>
+
+        <amplifier name="EXTENSION" label="Extension" description="Details specified by extension">
+          <amplifierCode>9</amplifierCode>
+        </amplifier>
+      </amplifiers>
+    </amplifierGroup>
+
+    <amplifierGroup name="EXTENSION" label="Extension" description="Details specified by extension">
+      <amplifierGroupCode>9</amplifierGroupCode>
+      <amplifiers>
+        <amplifier name="EXTENSION" label="Extension" description="Details specified by extension">
+          <amplifierCode>9</amplifierCode>
         </amplifier>
       </amplifiers>
     </amplifierGroup>
