@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://esri.com/jmsmlConfig.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://esri.com/jmsmlConfig.xsd"
+    xmlns:mstns="http://esri.com/jmsmlConfig.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <xs:element name="jmsmlConfig">
+    <xs:complexType>
+      <xs:attribute name="libraryPath" type="xs:anyURI" use="required"/>
+      <xs:attribute name="libraryName" type="xs:token" use="required"/>
+      <xs:attribute name="graphicPath" type="xs:anyURI" use="required"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
