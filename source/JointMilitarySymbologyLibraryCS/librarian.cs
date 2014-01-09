@@ -1,4 +1,17 @@
-﻿using System;
+﻿/* Copyright 2014 Esri
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -527,11 +540,14 @@ namespace JointMilitarySymbologyLibrary
 
             if (context != null)
             {
-                foreach (libraryContextContextAmplifier lObj in context.contextAmplifiers)
+                if (context.contextAmplifiers != null)
                 {
-                    if(lObj.shape == shape)
+                    foreach (libraryContextContextAmplifier lObj in context.contextAmplifiers)
                     {
-                        return lObj;
+                        if (lObj.shape == shape)
+                        {
+                            return lObj;
+                        }
                     }
                 }
             }
@@ -545,12 +561,15 @@ namespace JointMilitarySymbologyLibrary
 
             if (symbolSet != null)
             {
-                foreach (symbolSetEntity lObj in symbolSet.entities)
+                if (symbolSet.entities != null)
                 {
-                    if (lObj.entityCode.digitOne == entityCodeOne &&
-                        lObj.entityCode.digitTwo == entityCodeTwo)
+                    foreach (symbolSetEntity lObj in symbolSet.entities)
                     {
-                        return lObj;
+                        if (lObj.entityCode.digitOne == entityCodeOne &&
+                            lObj.entityCode.digitTwo == entityCodeTwo)
+                        {
+                            return lObj;
+                        }
                     }
                 }
             }
@@ -564,11 +583,14 @@ namespace JointMilitarySymbologyLibrary
 
             if (symbolSet != null)
             {
-                foreach (symbolSetEntity lObj in symbolSet.entities)
+                if (symbolSet.entities != null)
                 {
-                    if (lObj.id == entityID)
+                    foreach (symbolSetEntity lObj in symbolSet.entities)
                     {
-                        return lObj;
+                        if (lObj.id == entityID)
+                        {
+                            return lObj;
+                        }
                     }
                 }
             }
@@ -582,12 +604,15 @@ namespace JointMilitarySymbologyLibrary
 
             if (entity != null)
             {
-                foreach (symbolSetEntityEntityType lObj in entity.entityTypes)
+                if (entity.entityTypes != null)
                 {
-                    if (lObj.entityTypeCode.digitOne == entityTypeCodeOne &&
-                        lObj.entityTypeCode.digitTwo == entityTypeCodeTwo)
+                    foreach (symbolSetEntityEntityType lObj in entity.entityTypes)
                     {
-                        return lObj;
+                        if (lObj.entityTypeCode.digitOne == entityTypeCodeOne &&
+                            lObj.entityTypeCode.digitTwo == entityTypeCodeTwo)
+                        {
+                            return lObj;
+                        }
                     }
                 }
             }
@@ -601,11 +626,14 @@ namespace JointMilitarySymbologyLibrary
 
             if (entity != null)
             {
-                foreach (symbolSetEntityEntityType lObj in entity.entityTypes)
+                if (entity.entityTypes != null)
                 {
-                    if (lObj.id == entityTypeID)
+                    foreach (symbolSetEntityEntityType lObj in entity.entityTypes)
                     {
-                        return lObj;
+                        if (lObj.id == entityTypeID)
+                        {
+                            return lObj;
+                        }
                     }
                 }
             }
@@ -619,12 +647,15 @@ namespace JointMilitarySymbologyLibrary
 
             if (entityType != null)
             {
-                foreach (symbolSetEntityEntityTypeEntitySubType lObj in entityType.entitySubTypes)
+                if (entityType.entitySubTypes != null)
                 {
-                    if (lObj.entitySubTypeCode.digitOne == entitySubTypeCodeOne &&
-                        lObj.entitySubTypeCode.digitTwo == entitySubTypeCodeTwo)
+                    foreach (symbolSetEntityEntityTypeEntitySubType lObj in entityType.entitySubTypes)
                     {
-                        return lObj;
+                        if (lObj.entitySubTypeCode.digitOne == entitySubTypeCodeOne &&
+                            lObj.entitySubTypeCode.digitTwo == entitySubTypeCodeTwo)
+                        {
+                            return lObj;
+                        }
                     }
                 }
             }
@@ -638,11 +669,14 @@ namespace JointMilitarySymbologyLibrary
 
             if (entityType != null)
             {
-                foreach (symbolSetEntityEntityTypeEntitySubType lObj in entityType.entitySubTypes)
+                if (entityType.entitySubTypes != null)
                 {
-                    if (lObj.id == entitySubTypeID)
+                    foreach (symbolSetEntityEntityTypeEntitySubType lObj in entityType.entitySubTypes)
                     {
-                        return lObj;
+                        if (lObj.id == entitySubTypeID)
+                        {
+                            return lObj;
+                        }
                     }
                 }
             }

@@ -14,7 +14,7 @@
     </entity>
   </entities>
 
-  <sectorOneModifiers>
+  <sectorOneModifiers>    
     <modifier id="AIR_MOD" label="Air" category="Launch Origin">
       <modifierCode>
         <digitOne>0</digitOne>
@@ -72,7 +72,7 @@
     </modifier>
   </sectorOneModifiers>
 
-  <sectorTwoModifiers>
+  <sectorTwoModifiers>  
     <modifier id="AIR_DEST_MOD" label="Air" category="Missile Destination">
       <modifierCode>
         <digitOne>0</digitOne>

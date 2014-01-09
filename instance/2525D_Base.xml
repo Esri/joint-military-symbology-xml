@@ -126,6 +126,26 @@
         </symbolSetRef>
       </symbolSets>
     </dimension>
+
+    <dimension id="SPACE" label="Space">
+      <legacyDimensionCode name="2525C">P</legacyDimensionCode>
+
+      <symbolSets>
+        <symbolSetRef id="SS_SPACE" label="Space" instance="2525D_Space.xml">
+          <symbolSetCode>
+            <digitOne>0</digitOne>
+            <digitTwo>5</digitTwo>
+          </symbolSetCode>
+        </symbolSetRef>
+
+        <symbolSetRef id="SS_SPACE_MISSILE" label="Space Missile" instance="2525D_Space_Missile.xml">
+          <symbolSetCode>
+            <digitOne>0</digitOne>
+            <digitTwo>6</digitTwo>
+          </symbolSetCode>
+        </symbolSetRef>
+      </symbolSets>
+    </dimension>
   </dimensions>
   
   <affiliations>
@@ -224,7 +244,7 @@
 
     <affiliation id="SIMULATED_AIR_UNKNOWN" contextID="SIMULATION" dimensionID="AIR" standardIdentityID="SI_UNKNOWN" shape="CLOVER"/>
 
-    <affiliation id="REALITY_AIR_FRIEND" contextID="REALITY" dimensionID="AIR" standardIdentityID="SI_FRIEND" shape="CURVE" graphic="Frames/c0301(friend).png">
+    <affiliation id="REALITY_AIR_FRIEND" contextID="REALITY" dimensionID="AIR" standardIdentityID="SI_FRIEND" shape="CURVE" graphic="Frames/0201(friend).png">
       <legacyStandardIdentityCode name="2525C">F</legacyStandardIdentityCode>
     </affiliation>
 
@@ -273,6 +293,78 @@
     </affiliation>
 
     <affiliation id="SIMULATED_AIR_SUSPECT" contextID="SIMULATION" dimensionID="AIR" standardIdentityID="SI_SUSPECT" shape="CURVE"/>
+
+    <!-- Space Dimension Affiliations -->
+    
+    <affiliation id="REALITY_SPACE_PENDING" contextID="REALITY" dimensionID="SPACE" standardIdentityID="SI_PENDING" shape="CLOVER" graphic="Frames/0005(pending).png">
+      <legacyStandardIdentityCode name="2525C">P</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="EXERCISE_SPACE_PENDING" contextID="EXERCISE" dimensionID="SPACE" standardIdentityID="SI_PENDING" shape="CLOVER">
+      <legacyStandardIdentityCode name="2525C">G</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="SIMULATED_SPACE_PENDING" contextID="SIMULATION" dimensionID="SPACE" standardIdentityID="SI_PENDING" shape="CLOVER"/>
+
+    <affiliation id="REALITY_SPACE_UNKNOWN" contextID="REALITY" dimensionID="SPACE" standardIdentityID="SI_UNKNOWN" shape="CLOVER" graphic="Frames/0105(unknown).png">
+      <legacyStandardIdentityCode name="2525C">U</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="EXERCISE_SPACE_UNKNOWN" contextID="EXERCISE" dimensionID="SPACE" standardIdentityID="SI_UNKNOWN" shape="CLOVER">
+      <legacyStandardIdentityCode name="2525C">W</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="SIMULATED_SPACE_UNKNOWN" contextID="SIMULATION" dimensionID="SPACE" standardIdentityID="SI_UNKNOWN" shape="CLOVER"/>
+
+    <affiliation id="REALITY_SPACE_FRIEND" contextID="REALITY" dimensionID="SPACE" standardIdentityID="SI_FRIEND" shape="CURVE" graphic="Frames/0205(friend).png">
+      <legacyStandardIdentityCode name="2525C">F</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="EXERCISE_SPACE_FRIEND" contextID="EXERCISE" dimensionID="SPACE" standardIdentityID="SI_FRIEND" shape="CURVE">
+      <legacyStandardIdentityCode name="2525C">D</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="SIMULATED_SPACE_FRIEND" contextID="SIMULATION" dimensionID="SPACE" standardIdentityID="SI_FRIEND" shape="CURVE"/>
+
+    <affiliation id="REALITY_SPACE_NEUTRAL" contextID="REALITY" dimensionID="SPACE" standardIdentityID="SI_NEUTRAL" shape="CURVE" graphic="Frames/0401(neutral).png">
+      <legacyStandardIdentityCode name="2525C">N</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="EXERCISE_SPACE_NEUTRAL" contextID="EXERCISE" dimensionID="SPACE" standardIdentityID="SI_NEUTRAL" shape="CURVE">
+      <legacyStandardIdentityCode name="2525C">L</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="SIMULATED_SPACE_NEUTRAL" contextID="SIMULATION" dimensionID="SPACE" standardIdentityID="SI_NEUTRAL" shape="CURVE"/>
+
+    <affiliation id="REALITY_SPACE_HOSTILE" contextID="REALITY" dimensionID="SPACE" standardIdentityID="SI_HOSTILE" shape="CURVE" graphic="Frames/0601(hostile).png">
+      <legacyStandardIdentityCode name="2525C">H</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="EXERCISE_SPACE_HOSTILE" contextID="EXERCISE" dimensionID="SPACE" standardIdentityID="SI_FAKER" shape="CURVE">
+      <legacyStandardIdentityCode name="2525C">K</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="SIMULATED_SPACE_HOSTILE" contextID="SIMULATION" dimensionID="SPACE" standardIdentityID="SI_HOSTILE" shape="CURVE"/>
+
+    <affiliation id="REALITY_SPACE_ASSUMED" contextID="REALITY" dimensionID="SPACE" standardIdentityID="SI_ASSUMED_FRIEND" shape="CURVE" graphic="Frames/0201(friend).png">
+      <legacyStandardIdentityCode name="2525C">A</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="EXERCISE_SPACE_ASSUMED" contextID="EXERCISE" dimensionID="SPACE" standardIdentityID="SI_ASSUMED_FRIEND" shape="CURVE">
+      <legacyStandardIdentityCode name="2525C">M</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="SIMULATED_SPACE_ASSUMED" contextID="SIMULATION" dimensionID="SPACE" standardIdentityID="SI_ASSUMED_FRIEND" shape="CURVE"/>
+
+    <affiliation id="REALITY_SPACE_SUSPECT" contextID="REALITY" dimensionID="SPACE" standardIdentityID="SI_SUSPECT" shape="CURVE" graphic="Frames/0501(hostile).png">
+      <legacyStandardIdentityCode name="2525C">S</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="EXERCISE_SPACE_SUSPECT" contextID="EXERCISE" dimensionID="SPACE" standardIdentityID="SI_JOKER" shape="CURVE">
+      <legacyStandardIdentityCode name="2525C">J</legacyStandardIdentityCode>
+    </affiliation>
+
+    <affiliation id="SIMULATED_SPACE_SUSPECT" contextID="SIMULATION" dimensionID="SPACE" standardIdentityID="SI_SUSPECT" shape="CURVE"/>
   </affiliations>
 
   <statuses>

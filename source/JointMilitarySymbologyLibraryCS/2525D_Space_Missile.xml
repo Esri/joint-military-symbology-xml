@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<symbolSet xmlns="http://disa.mil/JointMilSyML.xsd" id="SS_SPACE_MISSILE" label="Space Missile" dimensionID="SPACE">
+  <symbolSetCode>
+    <digitOne>0</digitOne>
+    <digitTwo>6</digitTwo>
+  </symbolSetCode>
+  <legacyCodingSchemeCode name="2525C">S</legacyCodingSchemeCode>
+  <entities>
+    <entity id="MISSILE" label="Missile">
+      <entityCode>
+        <digitOne>1</digitOne>
+        <digitTwo>1</digitTwo>
+      </entityCode>
+    </entity>
+  </entities>
+
+  <sectorOneModifiers>
+    <modifier id="BALLISTIC_MOD" label="Ballistic" category="Missile Class">
+      <modifierCode>
+        <digitOne>0</digitOne>
+        <digitTwo>1</digitTwo>
+      </modifierCode>
+    </modifier>
+
+    <modifier id="SPACE_MOD" label="Space" category="Launch Origin">
+      <modifierCode>
+        <digitOne>0</digitOne>
+        <digitTwo>2</digitTwo>
+      </modifierCode>
+    </modifier>
+
+    <modifier id="INTERCEPTOR_MOD" label="Interceptor" category="Missile Class">
+      <modifierCode>
+        <digitOne>0</digitOne>
+        <digitTwo>3</digitTwo>
+      </modifierCode>
+    </modifier>
+  </sectorOneModifiers>
+
+  <sectorTwoModifiers>
+    <modifier id="SHORT_MOD" label="Short" category="Missile Range">
+      <modifierCode>
+        <digitOne>0</digitOne>
+        <digitTwo>1</digitTwo>
+      </modifierCode>
+    </modifier>
+
+    <modifier id="MEDIUM_MOD" label="Medium" category="Missile Range">
+      <modifierCode>
+        <digitOne>0</digitOne>
+        <digitTwo>2</digitTwo>
+      </modifierCode>
+    </modifier>
+
+    <modifier id="INTERMEDIATE_MOD" label="Intermediate" category="Missile Range">
+      <modifierCode>
+        <digitOne>0</digitOne>
+        <digitTwo>3</digitTwo>
+      </modifierCode>
+    </modifier>
+
+    <modifier id="LONG_MOD" label="Long" category="Missile Range">
+      <modifierCode>
+        <digitOne>0</digitOne>
+        <digitTwo>4</digitTwo>
+      </modifierCode>
+    </modifier>
+
+    <modifier id="INTERCONTINENTAL_MOD" label="Intercontinental" category="Missile Range">
+      <modifierCode>
+        <digitOne>0</digitOne>
+        <digitTwo>5</digitTwo>
+      </modifierCode>
+    </modifier>
+
+    <modifier id="ARROW_MOD" label="Arrow" category="Missile Type - BMD">
+      <modifierCode>
+        <digitOne>0</digitOne>
+        <digitTwo>6</digitTwo>
+      </modifierCode>
+    </modifier>
+
+    <modifier id="GBI_MOD" label="Ground-Based Interceptor (GBI)" category="Missile Type - BMD">
+      <modifierCode>
+        <digitOne>0</digitOne>
+        <digitTwo>7</digitTwo>
+      </modifierCode>
+    </modifier>
+
+    <modifier id="PATRIOT_MOD" label="Patriot" category="Missile Type - BMD">
+      <modifierCode>
+        <digitOne>0</digitOne>
+        <digitTwo>8</digitTwo>
+      </modifierCode>
+    </modifier>
+
+    <modifier id="SMT_MOD" label="Standard Missile Terminal Phase (SM-T)" category="Missile Type - BMD">
+      <modifierCode>
+        <digitOne>0</digitOne>
+        <digitTwo>9</digitTwo>
+      </modifierCode>
+    </modifier>
+
+    <modifier id="SM3_MOD" label="Standard Missile - 3 (SM-3)" category="Missile Type - BMD">
+      <modifierCode>
+        <digitOne>1</digitOne>
+        <digitTwo>0</digitTwo>
+      </modifierCode>
+    </modifier>
+
+    <modifier id="THAAD_MOD" label="Terminal High Altitude Area Defense (THAAD)" category="Missile Type - BMD">
+      <modifierCode>
+        <digitOne>1</digitOne>
+        <digitTwo>1</digitTwo>
+      </modifierCode>
+    </modifier>
+
+    <modifier id="SPACE_2_MOD" label="Space" category="Launch Origin">
+      <modifierCode>
+        <digitOne>1</digitOne>
+        <digitTwo>2</digitTwo>
+      </modifierCode>
+    </modifier>
+  </sectorTwoModifiers>
+</symbolSet>
