@@ -1,246 +1,246 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<symbolSet xmlns="http://disa.mil/JointMilSyML.xsd" id="SS_AIR_MISSILE" label="Air Missile" dimensionID="AIR">
-  <symbolSetCode>
-    <digitOne>0</digitOne>
-    <digitTwo>2</digitTwo>
-  </symbolSetCode>
-  <legacyCodingSchemeCode name="2525C">S</legacyCodingSchemeCode>
-  <entities>
-    <entity id="MISSILE" label="Missile" graphic="02110000.png">
-      <entityCode>
-        <digitOne>1</digitOne>
-        <digitTwo>1</digitTwo>
-      </entityCode>
-    </entity>
-  </entities>
+<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="SS_AIR_MISSILE" Label="Air Missile" DimensionID="AIR">
+  <SymbolSetCode>
+    <DigitOne>0</DigitOne>
+    <DigitTwo>2</DigitTwo>
+  </SymbolSetCode>
+  <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
+  <Entities>
+    <Entity ID="MISSILE" Label="Missile" Graphic="02110000.png">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </EntityCode>
+    </Entity>
+  </Entities>
 
-  <sectorOneModifiers>    
-    <modifier id="AIR_MOD" label="Air" category="Launch Origin">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>1</digitTwo>
-      </modifierCode>
-    </modifier>
+  <SectorOneModifiers>    
+    <Modifier ID="AIR_MOD" Label="Air" Category="Launch Origin">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="SURFACE_MOD" label="Surface" category="Launch Origin">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>2</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="SURFACE_MOD" Label="Surface" Category="Launch Origin">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="SUB_MOD" label="Subsurface" category="Launch Origin">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>3</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="SUB_MOD" Label="Subsurface" Category="Launch Origin">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="SPACE_MOD" label="Space" category="Launch Origin">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>4</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="SPACE_MOD" Label="Space" Category="Launch Origin">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="AB_MOD" label="Anti-Ballistic" category="Missile Class">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>5</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="AB_MOD" Label="Anti-Ballistic" Category="Missile Class">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="BALLISTIC_MOD" label="Ballistic" category="Missile Class">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>6</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="BALLISTIC_MOD" Label="Ballistic" Category="Missile Class">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="CRUISE_MOD" label="Cruise" category="Missile Class">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>7</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="CRUISE_MOD" Label="Cruise" Category="Missile Class">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="INTERCEPTOR_MOD" label="Interceptor" category="Missile Class">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>8</digitTwo>
-      </modifierCode>
-    </modifier>
-  </sectorOneModifiers>
+    <Modifier ID="INTERCEPTOR_MOD" Label="Interceptor" Category="Missile Class">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+  </SectorOneModifiers>
 
-  <sectorTwoModifiers>  
-    <modifier id="AIR_DEST_MOD" label="Air" category="Missile Destination">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>1</digitTwo>
-      </modifierCode>
-    </modifier>
+  <SectorTwoModifiers>  
+    <Modifier ID="AIR_DEST_MOD" Label="Air" Category="Missile Destination">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="SURFACE_DEST_MOD" label="Surface" category="Missile Destination">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>2</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="SURFACE_DEST_MOD" Label="Surface" Category="Missile Destination">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="SUB_DEST_MOD" label="Subsurface" category="Missile Destination">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>3</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="SUB_DEST_MOD" Label="Subsurface" Category="Missile Destination">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="SPACE_DEST_MOD" label="Space" category="Missile Destination">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>4</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="SPACE_DEST_MOD" Label="Space" Category="Missile Destination">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="LAUNCHED_MOD" label="Launched" category="Missile Status">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>5</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="LAUNCHED_MOD" Label="Launched" Category="Missile Status">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="MISSILE_MOD" label="Missile" category="Missile Status" remarks="APP-6">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>6</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="MISSILE_MOD" Label="Missile" Category="Missile Status" Remarks="APP-6">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="PATRIOT_MOD" label="Patriot" category="Missile Type-BMD" limitUseTo="INTERCEPTOR_MOD" remarks="APP-6">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>7</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="PATRIOT_MOD" Label="Patriot" Category="Missile Type-BMD" LimitUseTo="INTERCEPTOR_MOD" Remarks="APP-6">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="SM2_MOD" label="Standard Missile - 2 (SM-2)" category="Missile Type-AAW" limitUseTo="INTERCEPTOR_MOD">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>8</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="SM2_MOD" Label="Standard Missile - 2 (SM-2)" Category="Missile Type-AAW" LimitUseTo="INTERCEPTOR_MOD">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="SM6_MOD" label="Standard Missile - 6 (SM-6)" category="Missile Type-AAW" limitUseTo="INTERCEPTOR_MOD">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>9</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="SM6_MOD" Label="Standard Missile - 6 (SM-6)" Category="Missile Type-AAW" LimitUseTo="INTERCEPTOR_MOD">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="ESSM_MOD" label="Evolved Sea Sparrow Missile (ESSM)" category="Missile Type-AAW" limitUseTo="INTERCEPTOR_MOD">
-      <modifierCode>
-        <digitOne>1</digitOne>
-        <digitTwo>0</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="ESSM_MOD" Label="Evolved Sea Sparrow Missile (ESSM)" Category="Missile Type-AAW" LimitUseTo="INTERCEPTOR_MOD">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="RAM_MOD" label="Rolling Airframe Missile (RAM)" category="Missile Type-AAW" limitUseTo="INTERCEPTOR_MOD">
-      <modifierCode>
-        <digitOne>1</digitOne>
-        <digitTwo>1</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="RAM_MOD" Label="Rolling Airframe Missile (RAM)" Category="Missile Type-AAW" LimitUseTo="INTERCEPTOR_MOD">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="SHORT_MOD" label="Short Range" category="Missile Range" remarks="1000km or less.">
-      <modifierCode>
-        <digitOne>1</digitOne>
-        <digitTwo>2</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="SHORT_MOD" Label="Short Range" Category="Missile Range" Remarks="1000km or less.">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="MED_MOD" label="Medium Range" category="Missile Range" remarks="1000km to 3500km. Typically used in reference to surface-to-air missiles.">
-      <modifierCode>
-        <digitOne>1</digitOne>
-        <digitTwo>3</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="MED_MOD" Label="Medium Range" Category="Missile Range" Remarks="1000km to 3500km. Typically used in reference to surface-to-air missiles.">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="INTERBAL_MOD" label="Intermediate Range" category="Missile Range" remarks="1000km to 3500km. Typically used in reference to ballistic missiles.">
-      <modifierCode>
-        <digitOne>1</digitOne>
-        <digitTwo>4</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="INTERBAL_MOD" Label="Intermediate Range" Category="Missile Range" Remarks="1000km to 3500km. Typically used in reference to ballistic missiles.">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="LONG_MOD" label="Long Range" category="Missile Range" remarks="3500km to 5500km.">
-      <modifierCode>
-        <digitOne>1</digitOne>
-        <digitTwo>5</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="LONG_MOD" Label="Long Range" Category="Missile Range" Remarks="3500km to 5500km.">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="INTERCONT_MOD" label="Intercontinental" category="Missile Range" remarks="5500km or greater.">
-      <modifierCode>
-        <digitOne>1</digitOne>
-        <digitTwo>6</digitTwo>
-      </modifierCode>
-    </modifier>
-  </sectorTwoModifiers>
+    <Modifier ID="INTERCONT_MOD" Label="Intercontinental" Category="Missile Range" Remarks="5500km or greater.">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+  </SectorTwoModifiers>
 
-  <legacySymbols>
-    <legacySymbol id="WEAPON_SYM" label="Weapon" entityID="MISSILE">
-      <legacyFunctionCode name="2525C">W-----</legacyFunctionCode>
-    </legacySymbol>
+  <LegacySymbols>
+    <LegacySymbol ID="WEAPON_SYM" Label="Weapon" EntityID="MISSILE">
+      <LegacyFunctionCode Name="2525C">W-----</LegacyFunctionCode>
+    </LegacySymbol>
     
-    <legacySymbol id="MISSILE_SYM" label="Missile in Flight" entityID="MISSILE">
-      <legacyFunctionCode name="2525C">WM----</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="MISSILE_SYM" Label="Missile in Flight" EntityID="MISSILE">
+      <LegacyFunctionCode Name="2525C">WM----</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="SURFACE_LAUNCHED_SYM" label="Surface Launched Missile in Flight" entityID="MISSILE" modifierOneID="SURFACE_MOD" modifierTwoID="LAUNCHED_MOD">
-      <legacyFunctionCode name="2525C">WMS---</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="SURFACE_LAUNCHED_SYM" Label="Surface Launched Missile in Flight" EntityID="MISSILE" ModifierOneID="SURFACE_MOD" ModifierTwoID="LAUNCHED_MOD">
+      <LegacyFunctionCode Name="2525C">WMS---</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="SURFACE_SURFACE_SYM" label="Surface-to-Surface Missile (SSM)" entityID="MISSILE" modifierOneID="SURFACE_MOD" modifierTwoID="SURFACE_DEST_MOD">
-      <legacyFunctionCode name="2525C">WMSS--</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="SURFACE_SURFACE_SYM" Label="Surface-to-Surface Missile (SSM)" EntityID="MISSILE" ModifierOneID="SURFACE_MOD" ModifierTwoID="SURFACE_DEST_MOD">
+      <LegacyFunctionCode Name="2525C">WMSS--</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="SURFACE_AIR_SYM" label="Surface-to-Air Missile (SAM)" entityID="MISSILE" modifierOneID="SURFACE_MOD" modifierTwoID="AIR_DEST_MOD">
-      <legacyFunctionCode name="2525C">WMSA--</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="SURFACE_AIR_SYM" Label="Surface-to-Air Missile (SAM)" EntityID="MISSILE" ModifierOneID="SURFACE_MOD" ModifierTwoID="AIR_DEST_MOD">
+      <LegacyFunctionCode Name="2525C">WMSA--</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="SURFACE_SUB_SYM" label="Surface-to-Subsurface Missile (SAM)" entityID="MISSILE" modifierOneID="SURFACE_MOD" modifierTwoID="SUB_DEST_MOD">
-      <legacyFunctionCode name="2525C">WMSU--</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="SURFACE_SUB_SYM" Label="Surface-to-Subsurface Missile (SAM)" EntityID="MISSILE" ModifierOneID="SURFACE_MOD" ModifierTwoID="SUB_DEST_MOD">
+      <LegacyFunctionCode Name="2525C">WMSU--</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="AB_SYM" label="Antiballistic Missile (ABM)" entityID="MISSILE" modifierOneID="AB_MOD">
-      <legacyFunctionCode name="2525C">WMSB--</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="AB_SYM" Label="Antiballistic Missile (ABM)" EntityID="MISSILE" ModifierOneID="AB_MOD">
+      <LegacyFunctionCode Name="2525C">WMSB--</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="AIR_LAUNCHED_SYM" label="Air Launched Missile in Flight" entityID="MISSILE" modifierOneID="AIR_MOD" modifierTwoID="LAUNCHED_MOD">
-      <legacyFunctionCode name="2525C">WMA---</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="AIR_LAUNCHED_SYM" Label="Air Launched Missile in Flight" EntityID="MISSILE" ModifierOneID="AIR_MOD" ModifierTwoID="LAUNCHED_MOD">
+      <LegacyFunctionCode Name="2525C">WMA---</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="AIR_SURFACE_SYM" label="Air-to-Surface Missile (ASM)" entityID="MISSILE" modifierOneID="AIR_MOD" modifierTwoID="SURFACE_DEST_MOD">
-      <legacyFunctionCode name="2525C">WMAS--</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="AIR_SURFACE_SYM" Label="Air-to-Surface Missile (ASM)" EntityID="MISSILE" ModifierOneID="AIR_MOD" ModifierTwoID="SURFACE_DEST_MOD">
+      <LegacyFunctionCode Name="2525C">WMAS--</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="AIR_AIR_SYM" label="Air-to-Air Missile (AAM)" entityID="MISSILE" modifierOneID="AIR_MOD" modifierTwoID="AIR_DEST_MOD">
-      <legacyFunctionCode name="2525C">WMAA--</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="AIR_AIR_SYM" Label="Air-to-Air Missile (AAM)" EntityID="MISSILE" ModifierOneID="AIR_MOD" ModifierTwoID="AIR_DEST_MOD">
+      <LegacyFunctionCode Name="2525C">WMAA--</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="AIR_SPACE_SYM" label="Air-to-Space Missile" entityID="MISSILE" modifierOneID="AIR_MOD" modifierTwoID="SPACE_DEST_MOD">
-      <legacyFunctionCode name="2525C">WMAP--</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="AIR_SPACE_SYM" Label="Air-to-Space Missile" EntityID="MISSILE" ModifierOneID="AIR_MOD" ModifierTwoID="SPACE_DEST_MOD">
+      <LegacyFunctionCode Name="2525C">WMAP--</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="SUB_SURFACE_SYM" label="Subsurface-to-Surface Missile (S/SSM)" entityID="MISSILE" modifierOneID="SUB_MOD" modifierTwoID="SURFACE_DEST_MOD">
-      <legacyFunctionCode name="2525C">WMU---</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="SUB_SURFACE_SYM" Label="Subsurface-to-Surface Missile (S/SSM)" EntityID="MISSILE" ModifierOneID="SUB_MOD" ModifierTwoID="SURFACE_DEST_MOD">
+      <LegacyFunctionCode Name="2525C">WMU---</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="CRUISE_SYM" label="Cruise Missile" entityID="MISSILE" modifierOneID="CRUISE_MOD">
-      <legacyFunctionCode name="2525C">WMCM--</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="CRUISE_SYM" Label="Cruise Missile" EntityID="MISSILE" ModifierOneID="CRUISE_MOD">
+      <LegacyFunctionCode Name="2525C">WMCM--</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="BALLISTIC_SYM" label="Ballistic Missile" entityID="MISSILE" modifierOneID="BALLISTIC_MOD">
-      <legacyFunctionCode name="2525C">WMB---</legacyFunctionCode>
-    </legacySymbol>
-  </legacySymbols>
-</symbolSet>
+    <LegacySymbol ID="BALLISTIC_SYM" Label="Ballistic Missile" EntityID="MISSILE" ModifierOneID="BALLISTIC_MOD">
+      <LegacyFunctionCode Name="2525C">WMB---</LegacyFunctionCode>
+    </LegacySymbol>
+  </LegacySymbols>
+</SymbolSet>

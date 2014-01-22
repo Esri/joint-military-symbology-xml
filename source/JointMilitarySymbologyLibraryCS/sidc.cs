@@ -18,18 +18,18 @@ using System.Text;
 
 namespace JointMilitarySymbologyLibrary
 {
-    public class sidc
+    public class SIDC
     {
         private UInt32 _first10;
         private UInt32 _second10;
 
-        public sidc(UInt32 partA = 1000000000, UInt32 partB = 1000000000)
+        public SIDC(UInt32 partA = 1000000000, UInt32 partB = 1000000000)
         {
             this._first10 = partA;
             this._second10 = partB;
         }
 
-        public UInt32 partAUInt
+        public UInt32 PartAUInt
         {
             get
             {
@@ -42,7 +42,7 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        public UInt32 partBUInt
+        public UInt32 PartBUInt
         {
             get
             {
@@ -55,7 +55,7 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        public string partAString
+        public string PartAString
         {
             get
             {
@@ -68,7 +68,7 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        public string partBString
+        public string PartBString
         {
             get
             {

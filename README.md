@@ -45,8 +45,6 @@ In providing this schema, files of instance data, and sample C# code to navigate
 * A text editor of your choice for viewing and/or editing the XML files found under the instance or schema folders.
 * To build the .NET Solution source in source\JointMilitarySymbologyLibraryCS you will also need:
     * Visual Studio 2010 or later.
-    * ArcObjects .NET Engine or Desktop Development Kit.
-    * ArcGIS Runtime SDK for WPF.
     * If you do not require the C# library, you may skip this requirement.
 
 ## Instructions

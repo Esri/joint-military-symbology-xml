@@ -1,339 +1,339 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<symbolSet xmlns="http://disa.mil/JointMilSyML.xsd" id="SS_SPACE" label="Space" dimensionID="SPACE">
-  <symbolSetCode>
-    <digitOne>0</digitOne>
-    <digitTwo>5</digitTwo>
-  </symbolSetCode>
-  <legacyCodingSchemeCode name="2525C">S</legacyCodingSchemeCode>
-  <entities>
-    <entity id="MILITARY" label="Military" remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes.">
-      <entityCode>
-        <digitOne>1</digitOne>
-        <digitTwo>1</digitTwo>
-      </entityCode>
+<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="SS_SPACE" Label="Space" DimensionID="SPACE">
+  <SymbolSetCode>
+    <DigitOne>0</DigitOne>
+    <DigitTwo>5</DigitTwo>
+  </SymbolSetCode>
+  <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
+  <Entities>
+    <Entity ID="MILITARY" Label="Military" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes.">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </EntityCode>
 
-      <entityTypes>
-        <entityType id="SPACE_VEHICLE" label="Space Vehicle">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>1</digitTwo>
-          </entityTypeCode>
-        </entityType>
+      <EntityTypes>
+        <EntityType ID="SPACE_VEHICLE" Label="Space Vehicle">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="RE_ENTRY_VEHICLE" label="Re-Entry Vehicle">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>2</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="RE_ENTRY_VEHICLE" Label="Re-Entry Vehicle">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="PLANET_LANDER" label="Planet Lander">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>3</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="PLANET_LANDER" Label="Planet Lander">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="ORBITER_SHUTTLE" label="Orbiter Shuttle">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>4</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="ORBITER_SHUTTLE" Label="Orbiter Shuttle">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>4</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="CAPSULE" label="Capsule">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>5</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="CAPSULE" Label="Capsule">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>5</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="GENERAL_SATELLITE" label="General Satellite">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>6</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="GENERAL_SATELLITE" Label="General Satellite">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>6</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="SATELLITE" label="Satellite">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>7</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="SATELLITE" Label="Satellite">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>7</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="ANTISATELLITE_WEAPON" label="Antisatellite Weapon">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>8</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="ANTISATELLITE_WEAPON" Label="Antisatellite Weapon">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>8</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="ASTRONOMICAL_SATELLITE" label="Astronomical Satellite">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>9</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="ASTRONOMICAL_SATELLITE" Label="Astronomical Satellite">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>9</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="BIOSATELLITE" label="Biosatellite">
-          <entityTypeCode>
-            <digitOne>1</digitOne>
-            <digitTwo>0</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="BIOSATELLITE" Label="Biosatellite">
+          <EntityTypeCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>0</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="COMMUNICATIONS_SATELLITE" label="Communications Satellite">
-          <entityTypeCode>
-            <digitOne>1</digitOne>
-            <digitTwo>1</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="COMMUNICATIONS_SATELLITE" Label="Communications Satellite">
+          <EntityTypeCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="EARTH_OBSERVATION_SATELLITE" label="Earth Observation Satellite">
-          <entityTypeCode>
-            <digitOne>1</digitOne>
-            <digitTwo>2</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="EARTH_OBSERVATION_SATELLITE" Label="Earth Observation Satellite">
+          <EntityTypeCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="MINIATURIZED_SATELLITE" label="Miniaturized Satellite">
-          <entityTypeCode>
-            <digitOne>1</digitOne>
-            <digitTwo>3</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="MINIATURIZED_SATELLITE" Label="Miniaturized Satellite">
+          <EntityTypeCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="NAVIGATIONAL_SATELLITE" label="Navigational Satellite">
-          <entityTypeCode>
-            <digitOne>1</digitOne>
-            <digitTwo>4</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="NAVIGATIONAL_SATELLITE" Label="Navigational Satellite">
+          <EntityTypeCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>4</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="RECONNAISSANCE_SATELLITE" label="Reconnaissance Satellite">
-          <entityTypeCode>
-            <digitOne>1</digitOne>
-            <digitTwo>5</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="RECONNAISSANCE_SATELLITE" Label="Reconnaissance Satellite">
+          <EntityTypeCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>5</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="SPACE_STATION" label="Space Station">
-          <entityTypeCode>
-            <digitOne>1</digitOne>
-            <digitTwo>6</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="SPACE_STATION" Label="Space Station">
+          <EntityTypeCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>6</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="TETHERED_SATELLITE" label="Tethered Satellite">
-          <entityTypeCode>
-            <digitOne>1</digitOne>
-            <digitTwo>7</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="TETHERED_SATELLITE" Label="Tethered Satellite">
+          <EntityTypeCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>7</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="WEATHER_SATELLITE" label="Weather Satellite">
-          <entityTypeCode>
-            <digitOne>1</digitOne>
-            <digitTwo>8</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="WEATHER_SATELLITE" Label="Weather Satellite">
+          <EntityTypeCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>8</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="SPACE_LAUNCHED_VEHICLE" label="Space Launched Vehicle (SLV)">
-          <entityTypeCode>
-            <digitOne>1</digitOne>
-            <digitTwo>9</digitTwo>
-          </entityTypeCode>
-        </entityType>
-      </entityTypes>
-    </entity>
+        <EntityType ID="SPACE_LAUNCHED_VEHICLE" Label="Space Launched Vehicle (SLV)">
+          <EntityTypeCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>9</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+      </EntityTypes>
+    </Entity>
     
-    <entity id ="CIVILIAN" label="Civilian" remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes.">
-      <entityCode>
-        <digitOne>1</digitOne>
-        <digitTwo>2</digitTwo>
-      </entityCode>
+    <Entity ID ="CIVILIAN" Label="Civilian" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes.">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </EntityCode>
 
-      <entityTypes>
-        <entityType id="CIV_ORBITER_SHUTTLE" label="Orbiter Shuttle">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>1</digitTwo>
-          </entityTypeCode>
-        </entityType>
+      <EntityTypes>
+        <EntityType ID="CIV_ORBITER_SHUTTLE" Label="Orbiter Shuttle">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="CIV_CAPSULE" label="Capsule">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>2</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="CIV_CAPSULE" Label="Capsule">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="CIV_SATELLITE" label="Satellite">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>3</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="CIV_SATELLITE" Label="Satellite">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="CIV_ASTRONOMICAL_SATELLITE" label="Astronomical Satellite">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>4</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="CIV_ASTRONOMICAL_SATELLITE" Label="Astronomical Satellite">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>4</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="CIV_BIOSATELLITE" label="Biosatellite">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>5</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="CIV_BIOSATELLITE" Label="Biosatellite">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>5</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="CIV_COMMUNICATIONS_SATELLITE" label="Communications Satellite">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>6</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="CIV_COMMUNICATIONS_SATELLITE" Label="Communications Satellite">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>6</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="CIV_EARTH_OBSERVATION_SATELLITE" label="Earth Observation Satellite">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>7</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="CIV_EARTH_OBSERVATION_SATELLITE" Label="Earth Observation Satellite">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>7</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="CIV_MINIATURIZED_SATELLITE" label="Miniaturized Satellite">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>8</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="CIV_MINIATURIZED_SATELLITE" Label="Miniaturized Satellite">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>8</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="CIV_NAVIGATIONAL_SATELLITE" label="Navigational Satellite">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>9</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="CIV_NAVIGATIONAL_SATELLITE" Label="Navigational Satellite">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>9</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="CIV_SPACE_STATION" label="Space Station">
-          <entityTypeCode>
-            <digitOne>1</digitOne>
-            <digitTwo>0</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="CIV_SPACE_STATION" Label="Space Station">
+          <EntityTypeCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>0</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="CIV_TETHERED_SATELLITE" label="Tethered Satellite">
-          <entityTypeCode>
-            <digitOne>1</digitOne>
-            <digitTwo>1</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="CIV_TETHERED_SATELLITE" Label="Tethered Satellite">
+          <EntityTypeCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="CIV_WEATHER_SATELLITE" label="Weather Satellite">
-          <entityTypeCode>
-            <digitOne>1</digitOne>
-            <digitTwo>2</digitTwo>
-          </entityTypeCode>
-        </entityType>
-      </entityTypes>
-    </entity>
+        <EntityType ID="CIV_WEATHER_SATELLITE" Label="Weather Satellite">
+          <EntityTypeCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+      </EntityTypes>
+    </Entity>
 
-    <entity id ="MANUAL_TRACK" label="Manual Track">
-      <entityCode>
-        <digitOne>1</digitOne>
-        <digitTwo>3</digitTwo>
-      </entityCode>
-    </entity>
-  </entities>
+    <Entity ID ="MANUAL_TRACK" Label="Manual Track">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </EntityCode>
+    </Entity>
+  </Entities>
 
-  <sectorOneModifiers>
-    <modifier id="LEO_MOD" label="Low Earth Orbit (LEO)" category="Orbit">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>1</digitTwo>
-      </modifierCode>
-    </modifier>
+  <SectorOneModifiers>
+    <Modifier ID="LEO_MOD" Label="Low Earth Orbit (LEO)" Category="Orbit">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="MEO_MOD" label="Medium Earth Orbit (MEO)" category="Orbit">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>2</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="MEO_MOD" Label="Medium Earth Orbit (MEO)" Category="Orbit">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="HEO_MOD" label="High Earth Orbit (MEO)" category="Orbit">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>3</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="HEO_MOD" Label="High Earth Orbit (MEO)" Category="Orbit">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="GSO_MOD" label="Geosynchronous Orbit (GSO)" category="Orbit">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>4</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="GSO_MOD" Label="Geosynchronous Orbit (GSO)" Category="Orbit">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="GO_MOD" label="Geostationary Orbit (GO)" category="Orbit">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>5</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="GO_MOD" Label="Geostationary Orbit (GO)" Category="Orbit">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="MO_MOD" label="Molniya Orbit (MO)" category="Orbit">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>6</digitTwo>
-      </modifierCode>
-    </modifier>
-  </sectorOneModifiers>
+    <Modifier ID="MO_MOD" Label="Molniya Orbit (MO)" Category="Orbit">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+  </SectorOneModifiers>
 
-  <sectorTwoModifiers>
-    <modifier id="OPTICAL_MOD" label="Optical" category="Sensor">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>1</digitTwo>
-      </modifierCode>
-    </modifier>
+  <SectorTwoModifiers>
+    <Modifier ID="OPTICAL_MOD" Label="Optical" Category="Sensor">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="INFRARED_MOD" label="Infrared" category="Sensor">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>2</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="INFRARED_MOD" Label="Infrared" Category="Sensor">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="RADAR_MOD" label="Radar" category="Sensor">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>3</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="RADAR_MOD" Label="Radar" Category="Sensor">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="SIGINT_MOD" label="Signal Intelligence (SIGINT)" category="Sensor">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>4</digitTwo>
-      </modifierCode>
-    </modifier>
-  </sectorTwoModifiers>
+    <Modifier ID="SIGINT_MOD" Label="Signal Intelligence (SIGINT)" Category="Sensor">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+  </SectorTwoModifiers>
 
-  <legacySymbols>
-    <legacySymbol id="SATELLITE_SYM" label="Satellite" entityID="MILITARY" entityTypeID="SATELLITE">
-      <legacyFunctionCode name="2525C">S-----</legacyFunctionCode>
-    </legacySymbol>
+  <LegacySymbols>
+    <LegacySymbol ID="SATELLITE_SYM" Label="Satellite" EntityID="MILITARY" EntityTypeID="SATELLITE">
+      <LegacyFunctionCode Name="2525C">S-----</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="SPACE_STATION_SYM" label="Space Station" entityID="CIVILIAN" entityTypeID="CIV_SPACE_STATION">
-      <legacyFunctionCode name="2525C">T-----</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="SPACE_STATION_SYM" Label="Space Station" EntityID="CIVILIAN" EntityTypeID="CIV_SPACE_STATION">
+      <LegacyFunctionCode Name="2525C">T-----</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="SLV_SYM" label="Space Launched Vehicle (SLV)" entityID="MILITARY" entityTypeID="SPACE_LAUNCHED_VEHICLE">
-      <legacyFunctionCode name="2525C">L-----</legacyFunctionCode>
-    </legacySymbol>
-  </legacySymbols>
-</symbolSet>
+    <LegacySymbol ID="SLV_SYM" Label="Space Launched Vehicle (SLV)" EntityID="MILITARY" EntityTypeID="SPACE_LAUNCHED_VEHICLE">
+      <LegacyFunctionCode Name="2525C">L-----</LegacyFunctionCode>
+    </LegacySymbol>
+  </LegacySymbols>
+</SymbolSet>

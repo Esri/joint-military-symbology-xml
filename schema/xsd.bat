@@ -1,2 +1,2 @@
-xsd base.xsd /c /l:CS /n:JointMilitarySymbologyLibrary /o:"..\..\military-feature-toolbox\source\JointMilitarySymbologyLibraryCS"
-rem xsd symbolSet.xsd /c /l:CS /n:JointMilitarySymbologyLibrary /o:"..\..\military-feature-toolbox\source\JointMilitarySymbologyLibraryCS"
+xsd base.xsd /c /l:CS /n:JointMilitarySymbologyLibrary /o:"..\source\JointMilitarySymbologyLibraryCS"
+rem xsd symbolSet.xsd /c /l:CS /n:JointMilitarySymbologyLibrary /o:"..\source\JointMilitarySymbologyLibraryCS"

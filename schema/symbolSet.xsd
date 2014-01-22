@@ -7,73 +7,73 @@
 >
   <xs:include schemaLocation="core.xsd"/>
 
-  <xs:element name="symbolSet">
+  <xs:element name="SymbolSet">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="symbolSetCode" type="doubleDigitType" minOccurs="1" maxOccurs="1"/>
-        <xs:element name="legacyCodingSchemeCode" type="legacyLetterCodeType" minOccurs="1" maxOccurs="unbounded"/>
-        <xs:element name="entities" minOccurs="1" maxOccurs="1">
+        <xs:element name="SymbolSetCode" type="DoubleDigitType" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="LegacyCodingSchemeCode" type="LegacyLetterCodeType" minOccurs="1" maxOccurs="unbounded"/>
+        <xs:element name="Entities" minOccurs="1" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="entity" minOccurs="1" maxOccurs="unbounded">
+              <xs:element name="Entity" minOccurs="1" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="entityCode" type="doubleDigitType" minOccurs="1" maxOccurs="1"/>
-                    <xs:element name="entityTypes" minOccurs="0" maxOccurs="1">
+                    <xs:element name="EntityCode" type="DoubleDigitType" minOccurs="1" maxOccurs="1"/>
+                    <xs:element name="EntityTypes" minOccurs="0" maxOccurs="1">
                       <xs:complexType>
                         <xs:sequence>
-                          <xs:element name="entityType" minOccurs="1" maxOccurs="unbounded">
+                          <xs:element name="EntityType" minOccurs="1" maxOccurs="unbounded">
                             <xs:complexType>
                               <xs:sequence>
-                                <xs:element name="entityTypeCode" type="doubleDigitType" minOccurs="1" maxOccurs="1"/>
-                                <xs:element name ="entitySubTypes" minOccurs="0" maxOccurs="1">
+                                <xs:element name="EntityTypeCode" type="DoubleDigitType" minOccurs="1" maxOccurs="1"/>
+                                <xs:element name ="EntitySubTypes" minOccurs="0" maxOccurs="1">
                                   <xs:complexType>
                                     <xs:sequence>
-                                      <xs:element name="entitySubType" minOccurs="1" maxOccurs="unbounded">
+                                      <xs:element name="EntitySubType" minOccurs="1" maxOccurs="unbounded">
                                         <xs:complexType>
                                           <xs:sequence>
-                                            <xs:element name="entitySubTypeCode" type="doubleDigitType" minOccurs="1" maxOccurs="1"/>
+                                            <xs:element name="EntitySubTypeCode" type="DoubleDigitType" minOccurs="1" maxOccurs="1"/>
                                           </xs:sequence>
-                                          <xs:attributeGroup ref="framedGraphicIdentifierAttributeGroup"/>
+                                          <xs:attributeGroup ref="FramedGraphicIdentifierAttributeGroup"/>
                                         </xs:complexType>
                                       </xs:element>
                                     </xs:sequence>
                                   </xs:complexType>
                                 </xs:element>
                               </xs:sequence>
-                              <xs:attributeGroup ref="framedGraphicIdentifierAttributeGroup"/>
+                              <xs:attributeGroup ref="FramedGraphicIdentifierAttributeGroup"/>
                             </xs:complexType>
                           </xs:element>
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
                   </xs:sequence>
-                  <xs:attributeGroup ref="framedGraphicIdentifierAttributeGroup"/>
+                  <xs:attributeGroup ref="FramedGraphicIdentifierAttributeGroup"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="sectorOneModifiers" type ="modifiersType" minOccurs="0" maxOccurs="1"/>
-        <xs:element name="sectorTwoModifiers" type ="modifiersType" minOccurs="0" maxOccurs="1"/>
-        <xs:element name="legacySymbols" minOccurs="0" maxOccurs="1">
+        <xs:element name="SectorOneModifiers" type ="ModifiersType" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="SectorTwoModifiers" type ="ModifiersType" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="LegacySymbols" minOccurs="0" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="legacySymbol" minOccurs="1" maxOccurs="unbounded">
+              <xs:element name="LegacySymbol" minOccurs="1" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="legacyFunctionCode" type="legacyFunctionCodeType" minOccurs="1" maxOccurs="unbounded"/>
+                    <xs:element name="LegacyFunctionCode" type="LegacyFunctionCodeType" minOccurs="1" maxOccurs="unbounded"/>
                   </xs:sequence>
-                  <xs:attributeGroup ref="identifierAttributeGroup"/>
-                  <xs:attributeGroup ref="symbolAttributeGroup"/>
+                  <xs:attributeGroup ref="IdentifierAttributeGroup"/>
+                  <xs:attributeGroup ref="SymbolAttributeGroup"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
       </xs:sequence>
-      <xs:attributeGroup ref="identifierAttributeGroup"/>
-      <xs:attribute name="dimensionID" type="xs:IDREF" use="required"/>
+      <xs:attributeGroup ref="IdentifierAttributeGroup"/>
+      <xs:attribute name="DimensionID" type="xs:IDREF" use="required"/>
     </xs:complexType>
   </xs:element>
 </xs:schema>

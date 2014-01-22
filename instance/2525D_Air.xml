@@ -1,1074 +1,1074 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<symbolSet xmlns="http://disa.mil/JointMilSyML.xsd" id="SS_AIR" label="Air" dimensionID="AIR">
-  <symbolSetCode>
-    <digitOne>0</digitOne>
-    <digitTwo>1</digitTwo>
-  </symbolSetCode>
-  <legacyCodingSchemeCode name="2525C">S</legacyCodingSchemeCode>
-  <entities>
-    <entity id="MILITARY" label="Military" remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes." graphic="Appendices/Air/c01110000.png">
-      <entityCode>
-        <digitOne>1</digitOne>
-        <digitTwo>1</digitTwo>
-      </entityCode>
+<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="SS_AIR" Label="Air" DimensionID="AIR">
+  <SymbolSetCode>
+    <DigitOne>0</DigitOne>
+    <DigitTwo>1</DigitTwo>
+  </SymbolSetCode>
+  <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
+  <Entities>
+    <Entity ID="MILITARY" Label="Military" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes." Graphic="Appendices/Air/c01110000.png">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </EntityCode>
       
-      <entityTypes>
-        <entityType id="FIXED_WING" label="Fixed-Wing" graphic="01110100.png">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>1</digitTwo>
-          </entityTypeCode>
+      <EntityTypes>
+        <EntityType ID="FIXED_WING" Label="Fixed-Wing" Graphic="01110100.png">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
           
-          <entitySubTypes>
-            <entitySubType id="MEDEVAC" label="Medical Evacuation (MEDEVAC)" graphic="01110101.png">
-              <entitySubTypeCode>
-                <digitOne>0</digitOne>
-                <digitTwo>1</digitTwo>
-              </entitySubTypeCode>
-            </entitySubType>
+          <EntitySubTypes>
+            <EntitySubType ID="MEDEVAC" Label="Medical Evacuation (MEDEVAC)" Graphic="01110101.png">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
             
-            <entitySubType id="ATTACK_STRIKE" label="Attack/Strike" graphic="01110102.png">
-              <entitySubTypeCode>
-                <digitOne>0</digitOne>
-                <digitTwo>2</digitTwo>
-              </entitySubTypeCode>
-            </entitySubType>
+            <EntitySubType ID="ATTACK_STRIKE" Label="Attack/Strike" Graphic="01110102.png">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
 
-            <entitySubType id="BOMBER" label="Bomber" graphic="01110103.png">
-              <entitySubTypeCode>
-                <digitOne>0</digitOne>
-                <digitTwo>3</digitTwo>
-              </entitySubTypeCode>
-            </entitySubType>
+            <EntitySubType ID="BOMBER" Label="Bomber" Graphic="01110103.png">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
 
-            <entitySubType id="FIGHTER" label="Fighter" graphic="01110104.png">
-              <entitySubTypeCode>
-                <digitOne>0</digitOne>
-                <digitTwo>4</digitTwo>
-              </entitySubTypeCode>
-            </entitySubType>
+            <EntitySubType ID="FIGHTER" Label="Fighter" Graphic="01110104.png">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>4</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
 
-            <entitySubType id="FIGHTER_BOMBER" label="Fighter/Bomber" graphic="01110105.png">
-              <entitySubTypeCode>
-                <digitOne>0</digitOne>
-                <digitTwo>5</digitTwo>
-              </entitySubTypeCode>
-            </entitySubType>
+            <EntitySubType ID="FIGHTER_BOMBER" Label="Fighter/Bomber" Graphic="01110105.png">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>5</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
 
-            <entitySubType id="CARGO" label="Cargo" graphic="01110107.png">
-              <entitySubTypeCode>
-                <digitOne>0</digitOne>
-                <digitTwo>7</digitTwo>
-              </entitySubTypeCode>
-            </entitySubType>
+            <EntitySubType ID="CARGO" Label="Cargo" Graphic="01110107.png">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>7</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
 
-            <entitySubType id="ECJ" label="Electronic/Combat (EC)/Jammer" graphic="01110108.png">
-              <entitySubTypeCode>
-                <digitOne>0</digitOne>
-                <digitTwo>8</digitTwo>
-              </entitySubTypeCode>
-            </entitySubType>
+            <EntitySubType ID="ECJ" Label="Electronic/Combat (EC)/Jammer" Graphic="01110108.png">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>8</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
 
-            <entitySubType id="TANKER" label="Tanker" graphic="01110109.png">
-              <entitySubTypeCode>
-                <digitOne>0</digitOne>
-                <digitTwo>9</digitTwo>
-              </entitySubTypeCode>
-            </entitySubType>
+            <EntitySubType ID="TANKER" Label="Tanker" Graphic="01110109.png">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>9</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
 
-            <entitySubType id="PATROL" label="Patrol" graphic="01110110.png">
-              <entitySubTypeCode>
-                <digitOne>1</digitOne>
-                <digitTwo>0</digitTwo>
-              </entitySubTypeCode>
-            </entitySubType>
+            <EntitySubType ID="PATROL" Label="Patrol" Graphic="01110110.png">
+              <EntitySubTypeCode>
+                <DigitOne>1</DigitOne>
+                <DigitTwo>0</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
 
-            <entitySubType id="RECON" label="Reconnaissance" graphic="01110111.png">
-              <entitySubTypeCode>
-                <digitOne>1</digitOne>
-                <digitTwo>1</digitTwo>
-              </entitySubTypeCode>
-            </entitySubType>
+            <EntitySubType ID="RECON" Label="Reconnaissance" Graphic="01110111.png">
+              <EntitySubTypeCode>
+                <DigitOne>1</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
 
-            <entitySubType id="TRAINER" label="Trainer" graphic="01110112.png">
-              <entitySubTypeCode>
-                <digitOne>1</digitOne>
-                <digitTwo>2</digitTwo>
-              </entitySubTypeCode>
-            </entitySubType>
+            <EntitySubType ID="TRAINER" Label="Trainer" Graphic="01110112.png">
+              <EntitySubTypeCode>
+                <DigitOne>1</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
 
-            <entitySubType id="UTILITY" label="Utility" graphic="01110113.png">
-              <entitySubTypeCode>
-                <digitOne>1</digitOne>
-                <digitTwo>3</digitTwo>
-              </entitySubTypeCode>
-            </entitySubType>
+            <EntitySubType ID="UTILITY" Label="Utility" Graphic="01110113.png">
+              <EntitySubTypeCode>
+                <DigitOne>1</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
 
-            <entitySubType id="VSTOL" label="VSTOL" graphic="01110114.png">
-              <entitySubTypeCode>
-                <digitOne>1</digitOne>
-                <digitTwo>4</digitTwo>
-              </entitySubTypeCode>
-            </entitySubType>
+            <EntitySubType ID="VSTOL" Label="VSTOL" Graphic="01110114.png">
+              <EntitySubTypeCode>
+                <DigitOne>1</DigitOne>
+                <DigitTwo>4</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
 
-            <entitySubType id="ACP" label="Airborne Command Post (ACP)" graphic="01110115.png">
-              <entitySubTypeCode>
-                <digitOne>1</digitOne>
-                <digitTwo>5</digitTwo>
-              </entitySubTypeCode>
-            </entitySubType>
+            <EntitySubType ID="ACP" Label="Airborne Command Post (ACP)" Graphic="01110115.png">
+              <EntitySubTypeCode>
+                <DigitOne>1</DigitOne>
+                <DigitTwo>5</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
 
-            <entitySubType id="AEW" label="Airborne Early Warning (AEW)" graphic="01110116.png">
-              <entitySubTypeCode>
-                <digitOne>1</digitOne>
-                <digitTwo>6</digitTwo>
-              </entitySubTypeCode>
-            </entitySubType>
+            <EntitySubType ID="AEW" Label="Airborne Early Warning (AEW)" Graphic="01110116.png">
+              <EntitySubTypeCode>
+                <DigitOne>1</DigitOne>
+                <DigitTwo>6</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
 
-            <entitySubType id="ASUW" label="Antisurface Warfare (ASUW)" graphic="01110117.png">
-              <entitySubTypeCode>
-                <digitOne>1</digitOne>
-                <digitTwo>7</digitTwo>
-              </entitySubTypeCode>
-            </entitySubType>
+            <EntitySubType ID="ASUW" Label="Antisurface Warfare (ASUW)" Graphic="01110117.png">
+              <EntitySubTypeCode>
+                <DigitOne>1</DigitOne>
+                <DigitTwo>7</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
 
-            <entitySubType id="ASW" label="Antisubmarine Warfare (ASW)" graphic="01110118.png">
-              <entitySubTypeCode>
-                <digitOne>1</digitOne>
-                <digitTwo>8</digitTwo>
-              </entitySubTypeCode>
-            </entitySubType>
+            <EntitySubType ID="ASW" Label="Antisubmarine Warfare (ASW)" Graphic="01110118.png">
+              <EntitySubTypeCode>
+                <DigitOne>1</DigitOne>
+                <DigitTwo>8</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
 
-            <entitySubType id="COM" label="Communications" graphic="01110119.png">
-              <entitySubTypeCode>
-                <digitOne>1</digitOne>
-                <digitTwo>9</digitTwo>
-              </entitySubTypeCode>
-            </entitySubType>
+            <EntitySubType ID="COM" Label="Communications" Graphic="01110119.png">
+              <EntitySubTypeCode>
+                <DigitOne>1</DigitOne>
+                <DigitTwo>9</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
 
-            <entitySubType id="CSAR" label="Combat Search and Rescue (CSAR)" graphic="01110120.png">
-              <entitySubTypeCode>
-                <digitOne>2</digitOne>
-                <digitTwo>0</digitTwo>
-              </entitySubTypeCode>
-            </entitySubType>
+            <EntitySubType ID="CSAR" Label="Combat Search and Rescue (CSAR)" Graphic="01110120.png">
+              <EntitySubTypeCode>
+                <DigitOne>2</DigitOne>
+                <DigitTwo>0</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
 
-            <entitySubType id="ES" label="Electronic Support (ES)" graphic="01110121.png">
-              <entitySubTypeCode>
-                <digitOne>2</digitOne>
-                <digitTwo>1</digitTwo>
-              </entitySubTypeCode>
-            </entitySubType>
+            <EntitySubType ID="ES" Label="Electronic Support (ES)" Graphic="01110121.png">
+              <EntitySubTypeCode>
+                <DigitOne>2</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
 
-            <entitySubType id="GOV" label="Government" graphic="01110122.png">
-              <entitySubTypeCode>
-                <digitOne>2</digitOne>
-                <digitTwo>2</digitTwo>
-              </entitySubTypeCode>
-            </entitySubType>
+            <EntitySubType ID="GOV" Label="Government" Graphic="01110122.png">
+              <EntitySubTypeCode>
+                <DigitOne>2</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
 
-            <entitySubType id="MCM" label="Mine Countermeasures (MCM)" graphic="01110123.png">
-              <entitySubTypeCode>
-                <digitOne>2</digitOne>
-                <digitTwo>3</digitTwo>
-              </entitySubTypeCode>
-            </entitySubType>
+            <EntitySubType ID="MCM" Label="Mine Countermeasures (MCM)" Graphic="01110123.png">
+              <EntitySubTypeCode>
+                <DigitOne>2</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
 
-            <entitySubType id="PR" label="Personnel Recovery" graphic="01110124.png">
-              <entitySubTypeCode>
-                <digitOne>2</digitOne>
-                <digitTwo>4</digitTwo>
-              </entitySubTypeCode>
-            </entitySubType>
+            <EntitySubType ID="PR" Label="Personnel Recovery" Graphic="01110124.png">
+              <EntitySubTypeCode>
+                <DigitOne>2</DigitOne>
+                <DigitTwo>4</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
 
-            <entitySubType id="SAR" label="Search and Rescue" graphic="01110125.png">
-              <entitySubTypeCode>
-                <digitOne>2</digitOne>
-                <digitTwo>5</digitTwo>
-              </entitySubTypeCode>
-            </entitySubType>
+            <EntitySubType ID="SAR" Label="Search and Rescue" Graphic="01110125.png">
+              <EntitySubTypeCode>
+                <DigitOne>2</DigitOne>
+                <DigitTwo>5</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
 
-            <entitySubType id="SOF" label="Special Operations Forces" graphic="01110126.png">
-              <entitySubTypeCode>
-                <digitOne>2</digitOne>
-                <digitTwo>6</digitTwo>
-              </entitySubTypeCode>
-            </entitySubType>
+            <EntitySubType ID="SOF" Label="Special Operations Forces" Graphic="01110126.png">
+              <EntitySubTypeCode>
+                <DigitOne>2</DigitOne>
+                <DigitTwo>6</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
 
-            <entitySubType id="UL" label="Ultra Light" graphic="01110127.png">
-              <entitySubTypeCode>
-                <digitOne>2</digitOne>
-                <digitTwo>7</digitTwo>
-              </entitySubTypeCode>
-            </entitySubType>
+            <EntitySubType ID="UL" Label="Ultra Light" Graphic="01110127.png">
+              <EntitySubTypeCode>
+                <DigitOne>2</DigitOne>
+                <DigitTwo>7</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
 
-            <entitySubType id="PH" label="Photographic Reconnaissance" graphic="01110128.png">
-              <entitySubTypeCode>
-                <digitOne>2</digitOne>
-                <digitTwo>8</digitTwo>
-              </entitySubTypeCode>
-            </entitySubType>
+            <EntitySubType ID="PH" Label="Photographic Reconnaissance" Graphic="01110128.png">
+              <EntitySubTypeCode>
+                <DigitOne>2</DigitOne>
+                <DigitTwo>8</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
 
-            <entitySubType id="VIP" label="Very Important Person (VIP)" graphic="01110129.png">
-              <entitySubTypeCode>
-                <digitOne>2</digitOne>
-                <digitTwo>9</digitTwo>
-              </entitySubTypeCode>
-            </entitySubType>
+            <EntitySubType ID="VIP" Label="Very Important Person (VIP)" Graphic="01110129.png">
+              <EntitySubTypeCode>
+                <DigitOne>2</DigitOne>
+                <DigitTwo>9</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
 
-            <entitySubType id="SEAD" label="Suppression of Enemy Air Defense" graphic="01110130.png">
-              <entitySubTypeCode>
-                <digitOne>3</digitOne>
-                <digitTwo>0</digitTwo>
-              </entitySubTypeCode>
-            </entitySubType>
+            <EntitySubType ID="SEAD" Label="Suppression of Enemy Air Defense" Graphic="01110130.png">
+              <EntitySubTypeCode>
+                <DigitOne>3</DigitOne>
+                <DigitTwo>0</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
 
-            <entitySubType id="PX" label="Passenger" graphic="01110131.png">
-              <entitySubTypeCode>
-                <digitOne>3</digitOne>
-                <digitTwo>1</digitTwo>
-              </entitySubTypeCode>
-            </entitySubType>
+            <EntitySubType ID="PX" Label="Passenger" Graphic="01110131.png">
+              <EntitySubTypeCode>
+                <DigitOne>3</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
 
-            <entitySubType id="E" label="Escort" graphic="01110132.png">
-              <entitySubTypeCode>
-                <digitOne>3</digitOne>
-                <digitTwo>2</digitTwo>
-              </entitySubTypeCode>
-            </entitySubType>
+            <EntitySubType ID="E" Label="Escort" Graphic="01110132.png">
+              <EntitySubTypeCode>
+                <DigitOne>3</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
 
-            <entitySubType id="EA" label="Electronic Attack (EA)" graphic="01110133.png">
-              <entitySubTypeCode>
-                <digitOne>3</digitOne>
-                <digitTwo>3</digitTwo>
-              </entitySubTypeCode>
-            </entitySubType>
-          </entitySubTypes>
-        </entityType>
+            <EntitySubType ID="EA" Label="Electronic Attack (EA)" Graphic="01110133.png">
+              <EntitySubTypeCode>
+                <DigitOne>3</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
 
-        <entityType id="ROTARY_WING" label="Rotary-Wing" graphic="01110200.png">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>2</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="ROTARY_WING" Label="Rotary-Wing" Graphic="01110200.png">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="UAV" label="Unmanned Aircraft (UA)/Unmanned Aerial Vehicle (UAV)/Unmanned Aircraft System (UAS)/Remote Piloted Vehicle (RPV)" graphic="01110300.png">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>3</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="UAV" Label="Unmanned Aircraft (UA)/Unmanned Aerial Vehicle (UAV)/Unmanned Aircraft System (UAS)/Remote Piloted Vehicle (RPV)" Graphic="01110300.png">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="VT_UAV" label="Vertical-Takeoff UAV (VT-UAV)" graphic="01110400.png">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>4</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="VT_UAV" Label="Vertical-Takeoff UAV (VT-UAV)" Graphic="01110400.png">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>4</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="LIGHTER_THAN_AIR" label="Lighter Than Air" graphic="01110500.png">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>5</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="LIGHTER_THAN_AIR" Label="Lighter Than Air" Graphic="01110500.png">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>5</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="AIRSHIP" label="Airship" graphic="01110600.png">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>6</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="AIRSHIP" Label="Airship" Graphic="01110600.png">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>6</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="TETHERED_LTA" label="Tethered Lighter Than Air" graphic="01110700.png">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>7</digitTwo>
-          </entityTypeCode>
-        </entityType>
-      </entityTypes>
-    </entity>
+        <EntityType ID="TETHERED_LTA" Label="Tethered Lighter Than Air" Graphic="01110700.png">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>7</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+      </EntityTypes>
+    </Entity>
 
-    <entity id="CIVILIAN" label="Civilian" remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes." graphic="01120000.png">
-      <entityCode>
-        <digitOne>1</digitOne>
-        <digitTwo>2</digitTwo>
-      </entityCode>
+    <Entity ID="CIVILIAN" Label="Civilian" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes." Graphic="01120000.png">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </EntityCode>
 
-      <entityTypes>
-        <entityType id="CIV_FIXED_WING" label="Fixed-Wing" graphic="01120100.png">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>1</digitTwo>
-          </entityTypeCode>
-        </entityType>
+      <EntityTypes>
+        <EntityType ID="CIV_FIXED_WING" Label="Fixed-Wing" Graphic="01120100.png">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="CIV_ROTARY_WING" label="Rotary-Wing" graphic="01120200.png">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>2</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="CIV_ROTARY_WING" Label="Rotary-Wing" Graphic="01120200.png">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="CIV_UAV" label="Unmanned Aircraft (UA)/Unmanned Aerial Vehicle (UAV)/Unmanned Aircraft System (UAS)/Remote Piloted Vehicle (RPV)" graphic="01120300.png">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>3</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="CIV_UAV" Label="Unmanned Aircraft (UA)/Unmanned Aerial Vehicle (UAV)/Unmanned Aircraft System (UAS)/Remote Piloted Vehicle (RPV)" Graphic="01120300.png">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="CIV_LTA" label="Lighter Than Air" graphic="01120400.png">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>4</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="CIV_LTA" Label="Lighter Than Air" Graphic="01120400.png">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>4</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="CIV_AIRSHIP" label="Airship" graphic="01120500.png">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>5</digitTwo>
-          </entityTypeCode>
-        </entityType>
+        <EntityType ID="CIV_AIRSHIP" Label="Airship" Graphic="01120500.png">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>5</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="CIV_TETHERED_LTA" label="Tethered Lighter Than Air" graphic="01120600.png">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>6</digitTwo>
-          </entityTypeCode>
-        </entityType>
-      </entityTypes>
-    </entity>
+        <EntityType ID="CIV_TETHERED_LTA" Label="Tethered Lighter Than Air" Graphic="01120600.png">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>6</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+      </EntityTypes>
+    </Entity>
 
-    <entity id="WEAPON" label="Weapon" remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes." graphic="01130000.png">
-      <entityCode>
-        <digitOne>1</digitOne>
-        <digitTwo>3</digitTwo>
-      </entityCode>
+    <Entity ID="WEAPON" Label="Weapon" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes." Graphic="01130000.png">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </EntityCode>
 
-      <entityTypes>
-        <entityType id="BOMB" label="Bomb" graphic="01130100.png">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>1</digitTwo>
-          </entityTypeCode>
-        </entityType>
+      <EntityTypes>
+        <EntityType ID="BOMB" Label="Bomb" Graphic="01130100.png">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
 
-        <entityType id="DECOY" label="Decoy" graphic="01130200.png">
-          <entityTypeCode>
-            <digitOne>0</digitOne>
-            <digitTwo>2</digitTwo>
-          </entityTypeCode>
-        </entityType>
-      </entityTypes>
-    </entity>
+        <EntityType ID="DECOY" Label="Decoy" Graphic="01130200.png">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+      </EntityTypes>
+    </Entity>
 
-    <entity id="MANUAL_TRACK" label="Manual Track" graphic="10140000.png">
-      <entityCode>
-        <digitOne>1</digitOne>
-        <digitTwo>4</digitTwo>
-      </entityCode>
-    </entity>
-  </entities>
+    <Entity ID="MANUAL_TRACK" Label="Manual Track" Graphic="10140000.png">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </EntityCode>
+    </Entity>
+  </Entities>
   
-  <sectorOneModifiers>    
-    <modifier id="ATTACK_STRIKE_MOD" label="Attack/Strike" category="Military Aircraft Type" graphic="01011.png">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>1</digitTwo>
-      </modifierCode>
-    </modifier>
+  <SectorOneModifiers>    
+    <Modifier ID="ATTACK_STRIKE_MOD" Label="Attack/Strike" Category="Military Aircraft Type" Graphic="01011.png">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
     
-    <modifier id="BOMBER_MOD" label="Bomber" category="Military Aircraft Type" graphic="01021.png">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>2</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="BOMBER_MOD" Label="Bomber" Category="Military Aircraft Type" Graphic="01021.png">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="CARGO_MOD" label="Cargo" category="Aircraft Type" graphic="01031.png">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>3</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="CARGO_MOD" Label="Cargo" Category="Aircraft Type" Graphic="01031.png">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="FIGHTER_MOD" label="Fighter" category="Military Aircraft Type" graphic="01041.png">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>4</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="FIGHTER_MOD" Label="Fighter" Category="Military Aircraft Type" Graphic="01041.png">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="INTERCEPTOR_MOD" label="Interceptor" category="Military Aircraft Type" remarks="APP-6" graphic="01051.png">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>5</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="INTERCEPTOR_MOD" Label="Interceptor" Category="Military Aircraft Type" Remarks="APP-6" Graphic="01051.png">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="TANKER_MOD" label="Tanker" category="Aircraft Type" graphic="01061.png">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>6</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="TANKER_MOD" Label="Tanker" Category="Aircraft Type" Graphic="01061.png">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="UTILITY_MOD" label="Utility" category="Aircraft Type" graphic="01071.png">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>7</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="UTILITY_MOD" Label="Utility" Category="Aircraft Type" Graphic="01071.png">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="VSTOL_MOD" label="VSTOL/VTOL" category="Aircraft Type" graphic="01081.png">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>8</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="VSTOL_MOD" Label="VSTOL/VTOL" Category="Aircraft Type" Graphic="01081.png">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="PASSENGER_MOD" label="Passenger" category="Aircraft Type" graphic="01091.png">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>9</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="PASSENGER_MOD" Label="Passenger" Category="Aircraft Type" Graphic="01091.png">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="ULTRA_LIGHT_MOD" label="Ultra Light" category="Aircraft Type" graphic="01101.png">
-      <modifierCode>
-        <digitOne>1</digitOne>
-        <digitTwo>0</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="ULTRA_LIGHT_MOD" Label="Ultra Light" Category="Aircraft Type" Graphic="01101.png">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="ACP_MOD" label="Airborne Command Post (ACP)" category="Military Aircraft Type" graphic="01111.png">
-      <modifierCode>
-        <digitOne>1</digitOne>
-        <digitTwo>1</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="ACP_MOD" Label="Airborne Command Post (ACP)" Category="Military Aircraft Type" Graphic="01111.png">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="AEW_MOD" label="Airborne Early Warning (AEW)" category="Military Aircraft Type" graphic="01121.png">
-      <modifierCode>
-        <digitOne>1</digitOne>
-        <digitTwo>2</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="AEW_MOD" Label="Airborne Early Warning (AEW)" Category="Military Aircraft Type" Graphic="01121.png">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="GOV_MOD" label="Government" category="Aircraft Type" graphic="01131.png">
-      <modifierCode>
-        <digitOne>1</digitOne>
-        <digitTwo>3</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="GOV_MOD" Label="Government" Category="Aircraft Type" Graphic="01131.png">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="MEDEVAC_MOD" label="Medical Evacuation (MEDEVAC)" category="Mission Area" graphic="01141.png">
-      <modifierCode>
-        <digitOne>1</digitOne>
-        <digitTwo>4</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="MEDEVAC_MOD" Label="Medical Evacuation (MEDEVAC)" Category="Mission Area" Graphic="01141.png">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="ESCORT_MOD" label="Escort" category="Military Mission Area" graphic="01151.png">
-      <modifierCode>
-        <digitOne>1</digitOne>
-        <digitTwo>5</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="ESCORT_MOD" Label="Escort" Category="Military Mission Area" Graphic="01151.png">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="EC_MOD" label="Electronic Combat (EC)/Jammer" category="Military Mission Area" graphic="01161.png">
-      <modifierCode>
-        <digitOne>1</digitOne>
-        <digitTwo>6</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="EC_MOD" Label="Electronic Combat (EC)/Jammer" Category="Military Mission Area" Graphic="01161.png">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="PATROL_MOD" label="Patrol" category="Mission Area" graphic="01171.png">
-      <modifierCode>
-        <digitOne>1</digitOne>
-        <digitTwo>7</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="PATROL_MOD" Label="Patrol" Category="Mission Area" Graphic="01171.png">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="RECON_MOD" label="Reconnaissance" category="Mission Area" graphic="01181.png">
-      <modifierCode>
-        <digitOne>1</digitOne>
-        <digitTwo>8</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="RECON_MOD" Label="Reconnaissance" Category="Mission Area" Graphic="01181.png">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="TRAINER_MOD" label="Trainer" category="Mission Area" graphic="01191.png">
-      <modifierCode>
-        <digitOne>1</digitOne>
-        <digitTwo>9</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="TRAINER_MOD" Label="Trainer" Category="Mission Area" Graphic="01191.png">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="PHOTO_MOD" label="Photographic (Reconnaissance)" category="Mission Area" graphic="01201.png">
-      <modifierCode>
-        <digitOne>2</digitOne>
-        <digitTwo>0</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="PHOTO_MOD" Label="Photographic (Reconnaissance)" Category="Mission Area" Graphic="01201.png">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="PERSONNEL_RECOVERY_MOD" label="Personnel Recovery" category="Mission Area" graphic="01211.png">
-      <modifierCode>
-        <digitOne>2</digitOne>
-        <digitTwo>1</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="PERSONNEL_RECOVERY_MOD" Label="Personnel Recovery" Category="Mission Area" Graphic="01211.png">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="ASW_MOD" label="Antisubmarine Warfare" category="Military Mission Area" graphic="01221.png">
-      <modifierCode>
-        <digitOne>2</digitOne>
-        <digitTwo>2</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="ASW_MOD" Label="Antisubmarine Warfare" Category="Military Mission Area" Graphic="01221.png">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="COMMS_MOD" label="Communications" category="Mission Area" graphic="01231.png">
-      <modifierCode>
-        <digitOne>2</digitOne>
-        <digitTwo>3</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="COMMS_MOD" Label="Communications" Category="Mission Area" Graphic="01231.png">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="ES_MOD" label="Electronic Support (ES)" category="Military Mission Area" graphic="01241.png">
-      <modifierCode>
-        <digitOne>2</digitOne>
-        <digitTwo>4</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="ES_MOD" Label="Electronic Support (ES)" Category="Military Mission Area" Graphic="01241.png">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="MCM_MOD" label="Mine Countermeasures (MCM)" category="Military Mission Area" graphic="01251.png">
-      <modifierCode>
-        <digitOne>2</digitOne>
-        <digitTwo>5</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="MCM_MOD" Label="Mine Countermeasures (MCM)" Category="Military Mission Area" Graphic="01251.png">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="SAR_MOD" label="Search and Rescue" category="Mission Area" graphic="01261.png">
-      <modifierCode>
-        <digitOne>2</digitOne>
-        <digitTwo>6</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="SAR_MOD" Label="Search and Rescue" Category="Mission Area" Graphic="01261.png">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="SOF_MOD" label="Special Operations Forces" category="Military Mission Area" graphic="01271.png">
-      <modifierCode>
-        <digitOne>2</digitOne>
-        <digitTwo>7</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="SOF_MOD" Label="Special Operations Forces" Category="Military Mission Area" Graphic="01271.png">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="SURFACE_WARFARE_MOD" label="Surface Warfare" category="Military Mission Area" graphic="01281.png">
-      <modifierCode>
-        <digitOne>2</digitOne>
-        <digitTwo>8</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="SURFACE_WARFARE_MOD" Label="Surface Warfare" Category="Military Mission Area" Graphic="01281.png">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="VIP_MOD" label="Very Important Person (VIP) Transport" category="Mission Area" graphic="01291.png">
-      <modifierCode>
-        <digitOne>2</digitOne>
-        <digitTwo>9</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="VIP_MOD" Label="Very Important Person (VIP) Transport" Category="Mission Area" Graphic="01291.png">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="CSAR_MOD" label="Combat Search and Rescue (CSAR)" category="Military Mission Area" graphic="01301.png">
-      <modifierCode>
-        <digitOne>3</digitOne>
-        <digitTwo>0</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="CSAR_MOD" Label="Combat Search and Rescue (CSAR)" Category="Military Mission Area" Graphic="01301.png">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="SUPP_EAD_MOD" label="Suppression of Enemy Air Defenses" category="Military Mission Area" remarks="APP-6" graphic="01311.png">
-      <modifierCode>
-        <digitOne>3</digitOne>
-        <digitTwo>1</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="SUPP_EAD_MOD" Label="Suppression of Enemy Air Defenses" Category="Military Mission Area" Remarks="APP-6" Graphic="01311.png">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="ASUW_MOD" label="Antisurface Warfare" category="Military Mission Area" graphic="01321.png">
-      <modifierCode>
-        <digitOne>3</digitOne>
-        <digitTwo>2</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="ASUW_MOD" Label="Antisurface Warfare" Category="Military Mission Area" Graphic="01321.png">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="FB_MOD" label="Fighter/Bomber" category="Military Mission Area" graphic="01331.png">
-      <modifierCode>
-        <digitOne>3</digitOne>
-        <digitTwo>3</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="FB_MOD" Label="Fighter/Bomber" Category="Military Mission Area" Graphic="01331.png">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="IC_MOD" label="Intensive Care" category="Mission Area" graphic="01341.png">
-      <modifierCode>
-        <digitOne>3</digitOne>
-        <digitTwo>4</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="IC_MOD" Label="Intensive Care" Category="Mission Area" Graphic="01341.png">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="EA_MOD" label="Electronic Attack (EA)" category="Military Mission Area" graphic="01351.png">
-      <modifierCode>
-        <digitOne>3</digitOne>
-        <digitTwo>5</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="EA_MOD" Label="Electronic Attack (EA)" Category="Military Mission Area" Graphic="01351.png">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="MULTIMISSION_MOD" label="Multimission" category="Mission Area" graphic="01361.png">
-      <modifierCode>
-        <digitOne>3</digitOne>
-        <digitTwo>6</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="MULTIMISSION_MOD" Label="Multimission" Category="Mission Area" Graphic="01361.png">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="HIJACKING_MOD" label="Hijacking" category="crime" graphic="01371.png">
-      <modifierCode>
-        <digitOne>3</digitOne>
-        <digitTwo>7</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="HIJACKING_MOD" Label="Hijacking" Category="crime" Graphic="01371.png">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="ASW_HELO_LAMPS_MOD" label="ASW Helo - LAMPS" category="Mission Area" limitUseTo="ROTARY_WING" graphic="01381.png">
-      <modifierCode>
-        <digitOne>3</digitOne>
-        <digitTwo>8</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="ASW_HELO_LAMPS_MOD" Label="ASW Helo - LAMPS" Category="Mission Area" LimitUseTo="ROTARY_WING" Graphic="01381.png">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="ASW_HELO_SH_60R" label="ASW Helo – SH-60R" category="Mission Area" limitUseTo="ROTARY_WING" graphic="01391.png">
-      <modifierCode>
-        <digitOne>3</digitOne>
-        <digitTwo>9</digitTwo>
-      </modifierCode>
-    </modifier>
-  </sectorOneModifiers>
+    <Modifier ID="ASW_HELO_SH_60R" Label="ASW Helo – SH-60R" Category="Mission Area" LimitUseTo="ROTARY_WING" Graphic="01391.png">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+  </SectorOneModifiers>
   
-  <sectorTwoModifiers>    
-    <modifier id="HVY_MOD" label="Heavy" category="Cargo/Transport Capacity" graphic="01012.png">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>1</digitTwo>
-      </modifierCode>
-    </modifier>
+  <SectorTwoModifiers>    
+    <Modifier ID="HVY_MOD" Label="Heavy" Category="Cargo/Transport Capacity" Graphic="01012.png">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="MED_MOD" label="Medium" category="Cargo/Transport Capacity" graphic="01022.png">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>2</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="MED_MOD" Label="Medium" Category="Cargo/Transport Capacity" Graphic="01022.png">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="LT_MOD" label="Light" category="Cargo/Transport Capacity" graphic="01032.png">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>3</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="LT_MOD" Label="Light" Category="Cargo/Transport Capacity" Graphic="01032.png">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="BOOM_MOD" label="Boom-only" category="Re-fueling Capability" limitUseTo="TANKER" graphic="01042.png">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>4</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="BOOM_MOD" Label="Boom-only" Category="Re-fueling Capability" LimitUseTo="TANKER" Graphic="01042.png">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="DROGUE_MOD" label="Drogue-only" category="Re-fueling Capability" limitUseTo="TANKER" graphic="01052.png">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>5</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="DROGUE_MOD" Label="Drogue-only" Category="Re-fueling Capability" LimitUseTo="TANKER" Graphic="01052.png">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="BOOM_DROGUE_MOD" label="Boom and Drogue" category="Re-fueling Capability" limitUseTo="TANKER" graphic="01062.png">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>6</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="BOOM_DROGUE_MOD" Label="Boom and Drogue" Category="Re-fueling Capability" LimitUseTo="TANKER" Graphic="01062.png">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="CLOSE_MOD" label="Close Range" category="Range" graphic="01072.png">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>7</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="CLOSE_MOD" Label="Close Range" Category="Range" Graphic="01072.png">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="SHORT_MOD" label="Short Range" category="Range" graphic="01082.png">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>8</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="SHORT_MOD" Label="Short Range" Category="Range" Graphic="01082.png">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="MEDIUM_MOD" label="Medium Range" category="Range" graphic="01092.png">
-      <modifierCode>
-        <digitOne>0</digitOne>
-        <digitTwo>9</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="MEDIUM_MOD" Label="Medium Range" Category="Range" Graphic="01092.png">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="LONG_MOD" label="Long Range" category="Range" graphic="01102.png">
-      <modifierCode>
-        <digitOne>1</digitOne>
-        <digitTwo>0</digitTwo>
-      </modifierCode>
-    </modifier>
+    <Modifier ID="LONG_MOD" Label="Long Range" Category="Range" Graphic="01102.png">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
 
-    <modifier id="DOWNLINK_MOD" label="Downlinked" category="Track Link Availability" graphic="01112.png">
-      <modifierCode>
-        <digitOne>1</digitOne>
-        <digitTwo>1</digitTwo>
-      </modifierCode>
-    </modifier>
-  </sectorTwoModifiers>
+    <Modifier ID="DOWNLINK_MOD" Label="Downlinked" Category="Track Link Availability" Graphic="01112.png">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+  </SectorTwoModifiers>
   
-  <legacySymbols>
-    <legacySymbol id="MILITARY_SYM" label="Military" entityID="MILITARY">
-      <legacyFunctionCode name="2525C">M-----</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="FIXED_WING_SYM" label="Fixed-Wing" entityID="MILITARY" entityTypeID="FIXED_WING">
-      <legacyFunctionCode name="2525C">MF----</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="BOMBER_SYM" label="Bomber" entityID="MILITARY" entityTypeID="FIXED_WING" entitySubTypeID="BOMBER">
-      <legacyFunctionCode name="2525C">MFB---</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="FIGHTER_SYM" label="Fighter" entityID="MILITARY" entityTypeID="FIXED_WING" entitySubTypeID="FIGHTER">
-      <legacyFunctionCode name="2525C">MFF---</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="INTERCEPTOR_SYM" label="Interceptor" remarks="Deprecated in 2525D - appears in APP-6.">
-      <legacyFunctionCode name="2525C">MFFI--</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="TRAINER_SYM" label="Trainer" entityID="MILITARY" entityTypeID="FIXED_WING" entitySubTypeID="TRAINER">
-      <legacyFunctionCode name="2525C">MFT---</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="ATTK_SYM" label="Attack/Strike" entityID="MILITARY" entityTypeID="FIXED_WING" entitySubTypeID="ATTACK_STRIKE">
-      <legacyFunctionCode name="2525C">MFA---</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="VSTOL_SYM" label="VSTOL" entityID="MILITARY" entityTypeID="FIXED_WING" entitySubTypeID="VSTOL">
-      <legacyFunctionCode name="2525C">MFL---</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="TANKER_SYM" label="Tanker" entityID="MILITARY" entityTypeID="FIXED_WING" entitySubTypeID="TANKER">
-      <legacyFunctionCode name="2525C">MFK---</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="BOOM_TANKER_SYM" label="Boom-Only Tanker" entityID="MILITARY" entityTypeID="FIXED_WING" entitySubTypeID="TANKER" modifierTwoID="BOOM_MOD">
-      <legacyFunctionCode name="2525C">MFKB--</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="DROGUE_TANKER_SYM" label="Drogue-Only Tanker" entityID="MILITARY" entityTypeID="FIXED_WING" entitySubTypeID="TANKER" modifierTwoID="DROGUE_MOD">
-      <legacyFunctionCode name="2525C">MFKD--</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="CARGO_SYM" label="Cargo Airlift (Transport)" entityID="MILITARY" entityTypeID="FIXED_WING" entitySubTypeID="CARGO">
-      <legacyFunctionCode name="2525C">MFC---</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="LIGHT_CARGO_SYM" label="Light Cargo Airlift (Transport)" entityID="MILITARY" entityTypeID="FIXED_WING" entitySubTypeID="CARGO" modifierTwoID="LT_MOD">
-      <legacyFunctionCode name="2525C">MFCL--</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="MEDIUM_CARGO_SYM" label="Medium Cargo Airlift (Transport)" entityID="MILITARY" entityTypeID="FIXED_WING" entitySubTypeID="CARGO" modifierTwoID="MED_MOD">
-      <legacyFunctionCode name="2525C">MFCM--</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="HEAVY_CARGO_SYM" label="Heavy Cargo Airlift (Transport)" entityID="MILITARY" entityTypeID="FIXED_WING" entitySubTypeID="CARGO" modifierTwoID="HVY_MOD">
-      <legacyFunctionCode name="2525C">MFCH--</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="ECM_SYM" label="Electronic Countermeasures (ECM/Jammer)" entityID="MILITARY" entityTypeID="FIXED_WING" entitySubTypeID="ECJ">
-      <legacyFunctionCode name="2525C">MFJ---</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="MEDEVAC_SYM" label="Medical Evacuation (MEDEVAC)" entityID="MILITARY" entityTypeID="FIXED_WING" entitySubTypeID="MEDEVAC">
-      <legacyFunctionCode name="2525C">MFO---</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="RECON_SYM" label="Reconnaissance" entityID="MILITARY" entityTypeID="FIXED_WING" entitySubTypeID="RECON">
-      <legacyFunctionCode name="2525C">MFR---</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="AEW_SYM" label="Airborne Early Warning (AEW)" entityID="MILITARY" entityTypeID="FIXED_WING" entitySubTypeID="AEW">
-      <legacyFunctionCode name="2525C">MFRW--</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="ESM_SYM" label="Electronic Surveillance Measures" entityID="MILITARY" entityTypeID="FIXED_WING" entitySubTypeID="ES">
-      <legacyFunctionCode name="2525C">MFRZ--</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="PHOTO_SYM" label="Photographic Reconnaissance" entityID="MILITARY" entityTypeID="FIXED_WING" entitySubTypeID="PH">
-      <legacyFunctionCode name="2525C">MFRX--</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="PATROL_SYM" label="Patrol" entityID="MILITARY" entityTypeID="FIXED_WING" entitySubTypeID="PATROL">
-      <legacyFunctionCode name="2525C">MFP---</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="ASUW_SYM" label="Antisurface Warfare (ASUW)" entityID="MILITARY" entityTypeID="FIXED_WING" entitySubTypeID="ASUW">
-      <legacyFunctionCode name="2525C">MFPN--</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="MCM_SYM" label="Mine Countermeasures" entityID="MILITARY" entityTypeID="FIXED_WING" entitySubTypeID="MCM">
-      <legacyFunctionCode name="2525C">MFPM--</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="UTILITY_SYM" label="Utility" entityID="MILITARY" entityTypeID="FIXED_WING" entitySubTypeID="UTILITY">
-      <legacyFunctionCode name="2525C">MFU---</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="LIGHT_UTILITY_SYM" label="Light Utility" entityID="MILITARY" entityTypeID="FIXED_WING" entitySubTypeID="UTILITY" modifierTwoID="LT_MOD">
-      <legacyFunctionCode name="2525C">MFUL--</legacyFunctionCode>
-    </legacySymbol>
+  <LegacySymbols>
+    <LegacySymbol ID="MILITARY_SYM" Label="Military" EntityID="MILITARY">
+      <LegacyFunctionCode Name="2525C">M-----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="FIXED_WING_SYM" Label="Fixed-Wing" EntityID="MILITARY" EntityTypeID="FIXED_WING">
+      <LegacyFunctionCode Name="2525C">MF----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="BOMBER_SYM" Label="Bomber" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="BOMBER">
+      <LegacyFunctionCode Name="2525C">MFB---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="FIGHTER_SYM" Label="Fighter" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="FIGHTER">
+      <LegacyFunctionCode Name="2525C">MFF---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="INTERCEPTOR_SYM" Label="Interceptor" Remarks="Deprecated in 2525D - appears in APP-6.">
+      <LegacyFunctionCode Name="2525C">MFFI--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="TRAINER_SYM" Label="Trainer" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="TRAINER">
+      <LegacyFunctionCode Name="2525C">MFT---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="ATTK_SYM" Label="Attack/Strike" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="ATTACK_STRIKE">
+      <LegacyFunctionCode Name="2525C">MFA---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="VSTOL_SYM" Label="VSTOL" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="VSTOL">
+      <LegacyFunctionCode Name="2525C">MFL---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="TANKER_SYM" Label="Tanker" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="TANKER">
+      <LegacyFunctionCode Name="2525C">MFK---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="BOOM_TANKER_SYM" Label="Boom-Only Tanker" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="TANKER" ModifierTwoID="BOOM_MOD">
+      <LegacyFunctionCode Name="2525C">MFKB--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="DROGUE_TANKER_SYM" Label="Drogue-Only Tanker" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="TANKER" ModifierTwoID="DROGUE_MOD">
+      <LegacyFunctionCode Name="2525C">MFKD--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="CARGO_SYM" Label="Cargo Airlift (Transport)" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="CARGO">
+      <LegacyFunctionCode Name="2525C">MFC---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="LIGHT_CARGO_SYM" Label="Light Cargo Airlift (Transport)" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="CARGO" ModifierTwoID="LT_MOD">
+      <LegacyFunctionCode Name="2525C">MFCL--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="MEDIUM_CARGO_SYM" Label="Medium Cargo Airlift (Transport)" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="CARGO" ModifierTwoID="MED_MOD">
+      <LegacyFunctionCode Name="2525C">MFCM--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="HEAVY_CARGO_SYM" Label="Heavy Cargo Airlift (Transport)" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="CARGO" ModifierTwoID="HVY_MOD">
+      <LegacyFunctionCode Name="2525C">MFCH--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="ECM_SYM" Label="Electronic Countermeasures (ECM/Jammer)" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="ECJ">
+      <LegacyFunctionCode Name="2525C">MFJ---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="MEDEVAC_SYM" Label="Medical Evacuation (MEDEVAC)" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="MEDEVAC">
+      <LegacyFunctionCode Name="2525C">MFO---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="RECON_SYM" Label="Reconnaissance" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="RECON">
+      <LegacyFunctionCode Name="2525C">MFR---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="AEW_SYM" Label="Airborne Early Warning (AEW)" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="AEW">
+      <LegacyFunctionCode Name="2525C">MFRW--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="ESM_SYM" Label="Electronic Surveillance Measures" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="ES">
+      <LegacyFunctionCode Name="2525C">MFRZ--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="PHOTO_SYM" Label="Photographic Reconnaissance" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="PH">
+      <LegacyFunctionCode Name="2525C">MFRX--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="PATROL_SYM" Label="Patrol" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="PATROL">
+      <LegacyFunctionCode Name="2525C">MFP---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="ASUW_SYM" Label="Antisurface Warfare (ASUW)" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="ASUW">
+      <LegacyFunctionCode Name="2525C">MFPN--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="MCM_SYM" Label="Mine Countermeasures" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="MCM">
+      <LegacyFunctionCode Name="2525C">MFPM--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="UTILITY_SYM" Label="Utility" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="UTILITY">
+      <LegacyFunctionCode Name="2525C">MFU---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="LIGHT_UTILITY_SYM" Label="Light Utility" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="UTILITY" ModifierTwoID="LT_MOD">
+      <LegacyFunctionCode Name="2525C">MFUL--</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="MEDIUM_UTILITY_SYM" label="Medium Utility" entityID="MILITARY" entityTypeID="FIXED_WING" entitySubTypeID="UTILITY" modifierTwoID="MED_MOD">
-      <legacyFunctionCode name="2525C">MFUM--</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="MEDIUM_UTILITY_SYM" Label="Medium Utility" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="UTILITY" ModifierTwoID="MED_MOD">
+      <LegacyFunctionCode Name="2525C">MFUM--</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="HEAVY_UTILITY_SYM" label="Heavy Utility" entityID="MILITARY" entityTypeID="FIXED_WING" entitySubTypeID="UTILITY" modifierTwoID="HVY_MOD">
-      <legacyFunctionCode name="2525C">MFUH--</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="HEAVY_UTILITY_SYM" Label="Heavy Utility" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="UTILITY" ModifierTwoID="HVY_MOD">
+      <LegacyFunctionCode Name="2525C">MFUH--</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="COMMS_SYM" label="Communications" entityID="MILITARY" entityTypeID="FIXED_WING" entitySubTypeID="COM">
-      <legacyFunctionCode name="2525C">MFY---</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="COMMS_SYM" Label="Communications" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="COM">
+      <LegacyFunctionCode Name="2525C">MFY---</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="CSAR_SYM" label="Combat Search and Rescue (CSAR)" entityID="MILITARY" entityTypeID="FIXED_WING" entitySubTypeID="CSAR">
-      <legacyFunctionCode name="2525C">MFH---</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="CSAR_SYM" Label="Combat Search and Rescue (CSAR)" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="CSAR">
+      <LegacyFunctionCode Name="2525C">MFH---</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="ACP_SYM" label="Airborne Command Post (C2)" entityID="MILITARY" entityTypeID="FIXED_WING" entitySubTypeID="ACP">
-      <legacyFunctionCode name="2525C">MFD---</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="ACP_SYM" Label="Airborne Command Post (C2)" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="ACP">
+      <LegacyFunctionCode Name="2525C">MFD---</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="ASW_SYM" label="Antisubmarine Warfare (ASW)" entityID="MILITARY" entityTypeID="FIXED_WING" entitySubTypeID="ASW">
-      <legacyFunctionCode name="2525C">MFS---</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="ASW_SYM" Label="Antisubmarine Warfare (ASW)" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="ASW">
+      <LegacyFunctionCode Name="2525C">MFS---</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="SOF_SYM" label="Special Operations Forces (SOF)" entityID="MILITARY" entityTypeID="FIXED_WING" entitySubTypeID="SOF">
-      <legacyFunctionCode name="2525C">MFM---</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="SOF_SYM" Label="Special Operations Forces (SOF)" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="SOF">
+      <LegacyFunctionCode Name="2525C">MFM---</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="VIP_SYM" label="VIP" entityID="MILITARY" entityTypeID="FIXED_WING" entitySubTypeID="VIP">
-      <legacyFunctionCode name="2525C">MV----</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="VIP_SYM" Label="VIP" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="VIP">
+      <LegacyFunctionCode Name="2525C">MV----</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="ESCORT_SYM" label="Escort" entityID="MILITARY" entityTypeID="FIXED_WING" entitySubTypeID="E">
-      <legacyFunctionCode name="2525C">ME----</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="ESCORT_SYM" Label="Escort" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="E">
+      <LegacyFunctionCode Name="2525C">ME----</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="UAV_SYM" label="Drone (RPV/UA)" entityID="MILITARY" entityTypeID="UAV">
-      <legacyFunctionCode name="2525C">MFQ---</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="UAV_SYM" Label="Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV">
+      <LegacyFunctionCode Name="2525C">MFQ---</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="ATK_UAV_SYM" label="Attack Drone (RPV/UA)" entityID="MILITARY" entityTypeID="UAV" modifierOneID="ATTACK_STRIKE_MOD">
-      <legacyFunctionCode name="2525C">MFQ---</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="ATK_UAV_SYM" Label="Attack Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="ATTACK_STRIKE_MOD">
+      <LegacyFunctionCode Name="2525C">MFQ---</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="BOMBER_UAV_SYM" label="Bomber Drone (RPV/UA)" entityID="MILITARY" entityTypeID="UAV" modifierOneID="BOMBER_MOD">
-      <legacyFunctionCode name="2525C">MFQB--</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="BOMBER_UAV_SYM" Label="Bomber Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="BOMBER_MOD">
+      <LegacyFunctionCode Name="2525C">MFQB--</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="CARGO_UAV_SYM" label="Cargo Drone (RPV/UA)" entityID="MILITARY" entityTypeID="UAV" modifierOneID="CARGO_MOD">
-      <legacyFunctionCode name="2525C">MFQC--</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="CARGO_UAV_SYM" Label="Cargo Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="CARGO_MOD">
+      <LegacyFunctionCode Name="2525C">MFQC--</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="ACP_UAV_SYM" label="Airborne Command Post Drone (RPV/UA)" entityID="MILITARY" entityTypeID="UAV" modifierOneID="ACP_MOD">
-      <legacyFunctionCode name="2525C">MFQD--</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="ACP_UAV_SYM" Label="Airborne Command Post Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="ACP_MOD">
+      <LegacyFunctionCode Name="2525C">MFQD--</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="FIGHTER_UAV_SYM" label="Fighter Drone (RPV/UA)" entityID="MILITARY" entityTypeID="UAV" modifierOneID="FIGHTER_MOD">
-      <legacyFunctionCode name="2525C">MFQF--</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="FIGHTER_UAV_SYM" Label="Fighter Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="FIGHTER_MOD">
+      <LegacyFunctionCode Name="2525C">MFQF--</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="CSAR_UAV_SYM" label="Search and Rescue Drone (RPV/UA)" entityID="MILITARY" entityTypeID="UAV" modifierOneID="CSAR_MOD">
-      <legacyFunctionCode name="2525C">MFQH--</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="CSAR_UAV_SYM" Label="Search and Rescue Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="CSAR_MOD">
+      <LegacyFunctionCode Name="2525C">MFQH--</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="ECM_UAV_SYM" label="Electronic Countermeasures Drone (RPV/UA)" entityID="MILITARY" entityTypeID="UAV" modifierOneID="EC_MOD">
-      <legacyFunctionCode name="2525C">MFQJ--</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="ECM_UAV_SYM" Label="Electronic Countermeasures Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="EC_MOD">
+      <LegacyFunctionCode Name="2525C">MFQJ--</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="TANKER_UAV_SYM" label="Tanker Drone (RPV/UA)" entityID="MILITARY" entityTypeID="UAV" modifierOneID="TANKER_MOD">
-      <legacyFunctionCode name="2525C">MFQK--</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="TANKER_UAV_SYM" Label="Tanker Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="TANKER_MOD">
+      <LegacyFunctionCode Name="2525C">MFQK--</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="VSTOL_UAV_SYM" label="VSTOL Drone (RPV/UA)" entityID="MILITARY" entityTypeID="UAV" modifierOneID="VSTOL_MOD">
-      <legacyFunctionCode name="2525C">MFQL--</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="VSTOL_UAV_SYM" Label="VSTOL Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="VSTOL_MOD">
+      <LegacyFunctionCode Name="2525C">MFQL--</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="SOF_UAV_SYM" label="Special Operations Forces Drone (RPV/UA)" entityID="MILITARY" entityTypeID="UAV" modifierOneID="SOF_MOD">
-      <legacyFunctionCode name="2525C">MFQM--</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="SOF_UAV_SYM" Label="Special Operations Forces Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="SOF_MOD">
+      <LegacyFunctionCode Name="2525C">MFQM--</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="MCM_UAV_SYM" label="Mine Countermeasures Drone (RPV/UA)" entityID="MILITARY" entityTypeID="UAV" modifierOneID="MCM_MOD">
-      <legacyFunctionCode name="2525C">MFQC--</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="MCM_UAV_SYM" Label="Mine Countermeasures Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="MCM_MOD">
+      <LegacyFunctionCode Name="2525C">MFQC--</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="ASUW_UAV_SYM" label="Antisurface Warfare Drone (RPV/UA)" entityID="MILITARY" entityTypeID="UAV" modifierOneID="ASUW_MOD">
-      <legacyFunctionCode name="2525C">MFQN--</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="ASUW_UAV_SYM" Label="Antisurface Warfare Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="ASUW_MOD">
+      <LegacyFunctionCode Name="2525C">MFQN--</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="PATROL_UAV_SYM" label="Patrol Drone (RPV/UA)" entityID="MILITARY" entityTypeID="UAV" modifierOneID="PATROL_MOD">
-      <legacyFunctionCode name="2525C">MFQP--</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="PATROL_UAV_SYM" Label="Patrol Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="PATROL_MOD">
+      <LegacyFunctionCode Name="2525C">MFQP--</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="RECON_UAV_SYM" label="Reconnaissance Drone (RPV/UA)" entityID="MILITARY" entityTypeID="UAV" modifierOneID="RECON_MOD">
-      <legacyFunctionCode name="2525C">MFQR--</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="RECON_UAV_SYM" Label="Reconnaissance Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="RECON_MOD">
+      <LegacyFunctionCode Name="2525C">MFQR--</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="AEW_UAV_SYM" label="Airborne Early Warning Drone (RPV/UA)" entityID="MILITARY" entityTypeID="UAV" modifierOneID="AEW_MOD">
-      <legacyFunctionCode name="2525C">MFQRW-</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="AEW_UAV_SYM" Label="Airborne Early Warning Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="AEW_MOD">
+      <LegacyFunctionCode Name="2525C">MFQRW-</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="ESM_UAV_SYM" label="Electronic Surveillance Measures Drone (RPV/UA)" entityID="MILITARY" entityTypeID="UAV" modifierOneID="ES_MOD">
-      <legacyFunctionCode name="2525C">MFQC--</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="ESM_UAV_SYM" Label="Electronic Surveillance Measures Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="ES_MOD">
+      <LegacyFunctionCode Name="2525C">MFQC--</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="PHOTO_UAV_SYM" label="Photographic Reconnaissance Drone (RPV/UA)" entityID="MILITARY" entityTypeID="UAV" modifierOneID="PHOTO_MOD">
-      <legacyFunctionCode name="2525C">MFQRX-</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="PHOTO_UAV_SYM" Label="Photographic Reconnaissance Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="PHOTO_MOD">
+      <LegacyFunctionCode Name="2525C">MFQRX-</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="ASW_UAV_SYM" label="Antisubmarne Warfare Drone (RPV/UA)" entityID="MILITARY" entityTypeID="UAV" modifierOneID="ASW_MOD">
-      <legacyFunctionCode name="2525C">MFQS--</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="ASW_UAV_SYM" Label="Antisubmarne Warfare Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="ASW_MOD">
+      <LegacyFunctionCode Name="2525C">MFQS--</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="TRAINER_UAV_SYM" label="Trainer Drone (RPV/UA)" entityID="MILITARY" entityTypeID="UAV" modifierOneID="TRAINER_MOD">
-      <legacyFunctionCode name="2525C">MFQT--</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="TRAINER_UAV_SYM" Label="Trainer Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="TRAINER_MOD">
+      <LegacyFunctionCode Name="2525C">MFQT--</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="UTILITY_UAV_SYM" label="Utility Drone (RPV/UA)" entityID="MILITARY" entityTypeID="UAV" modifierOneID="UTILITY_MOD">
-      <legacyFunctionCode name="2525C">MFQU--</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="UTILITY_UAV_SYM" Label="Utility Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="UTILITY_MOD">
+      <LegacyFunctionCode Name="2525C">MFQU--</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="COMMS_UAV_SYM" label="Communcations Drone (RPV/UA)" entityID="MILITARY" entityTypeID="UAV" modifierOneID="COMMS_MOD">
-      <legacyFunctionCode name="2525C">MFQY--</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="COMMS_UAV_SYM" Label="Communcations Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="COMMS_MOD">
+      <LegacyFunctionCode Name="2525C">MFQY--</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="MEDEVAC_UAV_SYM" label="MEDEVAC Drone (RPV/UA)" entityID="MILITARY" entityTypeID="UAV" modifierOneID="MEDEVAC_MOD">
-      <legacyFunctionCode name="2525C">MFQO--</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="MEDEVAC_UAV_SYM" Label="MEDEVAC Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="MEDEVAC_MOD">
+      <LegacyFunctionCode Name="2525C">MFQO--</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="ROTARY_SYM" label="Rotary-Wing" entityID="MILITARY" entityTypeID="ROTARY_WING">
-      <legacyFunctionCode name="2525C">MH----</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="ROTARY_SYM" Label="Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING">
+      <LegacyFunctionCode Name="2525C">MH----</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="ATK_ROTARY_SYM" label="Attack Rotary-Wing" entityID="MILITARY" entityTypeID="ROTARY_WING" modifierOneID="ATTACK_STRIKE_MOD">
-      <legacyFunctionCode name="2525C">MHA---</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="ATK_ROTARY_SYM" Label="Attack Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="ATTACK_STRIKE_MOD">
+      <LegacyFunctionCode Name="2525C">MHA---</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="ASW_ROTARY_SYM" label="Antisubmarine Warfare Rotary-Wing" entityID="MILITARY" entityTypeID="ROTARY_WING" modifierOneID="ASW_MOD">
-      <legacyFunctionCode name="2525C">MHS---</legacyFunctionCode>
-    </legacySymbol>
+    <LegacySymbol ID="ASW_ROTARY_SYM" Label="Antisubmarine Warfare Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="ASW_MOD">
+      <LegacyFunctionCode Name="2525C">MHS---</LegacyFunctionCode>
+    </LegacySymbol>
 
-    <legacySymbol id="UTILITY_ROTARY_SYM" label="Utility Rotary-Wing" entityID="MILITARY" entityTypeID="ROTARY_WING" modifierOneID="UTILITY_MOD">
-      <legacyFunctionCode name="2525C">MHU---</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="LIGHT_UTILITY_ROTARY_SYM" label="Light Utility Rotary-Wing" entityID="MILITARY" entityTypeID="ROTARY_WING" modifierOneID="UTILITY_MOD" modifierTwoID="LT_MOD">
-      <legacyFunctionCode name="2525C">MHUL--</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="MEDIUM_UTILITY_ROTARY_SYM" label="Medium Utility Rotary-Wing" entityID="MILITARY" entityTypeID="ROTARY_WING" modifierOneID="UTILITY_MOD" modifierTwoID="MED_MOD">
-      <legacyFunctionCode name="2525C">MHUM--</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="HEAVY_UTILITY_ROTARY_SYM" label="Heavy Utility Rotary-Wing" entityID="MILITARY" entityTypeID="ROTARY_WING" modifierOneID="UTILITY_MOD" modifierTwoID="HVY_MOD">
-      <legacyFunctionCode name="2525C">MHUH--</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="MCM_ROTARY_SYM" label="Mine Countermeasures Rotary-Wing" entityID="MILITARY" entityTypeID="ROTARY_WING" modifierOneID="MCM_MOD">
-      <legacyFunctionCode name="2525C">MHI---</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="CSAR_ROTARY_SYM" label="Combat Search and Rescue Rotary-Wing" entityID="MILITARY" entityTypeID="ROTARY_WING" modifierOneID="CSAR_MOD">
-      <legacyFunctionCode name="2525C">MHH---</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="RECON_ROTARY_SYM" label="Reconnaissance Rotary-Wing" entityID="MILITARY" entityTypeID="ROTARY_WING" modifierOneID="RECON_MOD">
-      <legacyFunctionCode name="2525C">MHR---</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="UAV_ROTARY_SYM" label="Drone Rotary-Wing" entityID="MILITARY" entityTypeID="VT_UAV">
-      <legacyFunctionCode name="2525C">MHQ---</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="CARGO_ROTARY_SYM" label="Cargo Rotary-Wing" entityID="MILITARY" entityTypeID="ROTARY_WING" modifierOneID="CARGO_MOD">
-      <legacyFunctionCode name="2525C">MHC---</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="LIGHT_CARGO_ROTARY_SYM" label="Light Cargo Rotary-Wing" entityID="MILITARY" entityTypeID="ROTARY_WING" modifierOneID="CARGO_MOD" modifierTwoID="LT_MOD">
-      <legacyFunctionCode name="2525C">MHCL--</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="MEDIUM_CARGO_ROTARY_SYM" label="Medium Cargo Rotary-Wing" entityID="MILITARY" entityTypeID="ROTARY_WING" modifierOneID="CARGO_MOD" modifierTwoID="MED_MOD">
-      <legacyFunctionCode name="2525C">MHCM--</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="HEAVY_CARGO_ROTARY_SYM" label="Heavy Cargo Rotary-Wing" entityID="MILITARY" entityTypeID="ROTARY_WING" modifierOneID="CARGO_MOD" modifierTwoID="HVY_MOD">
-      <legacyFunctionCode name="2525C">MHCH--</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="TRAINER_ROTARY_SYM" label="Trainer Rotary-Wing" entityID="MILITARY" entityTypeID="ROTARY_WING" modifierOneID="TRAINER_MOD">
-      <legacyFunctionCode name="2525C">MHT---</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="MEDEVAC_ROTARY_SYM" label="MEDEVAC Rotary-Wing" entityID="MILITARY" entityTypeID="ROTARY_WING" modifierOneID="MEDEVAC_MOD">
-      <legacyFunctionCode name="2525C">MHO---</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="SOF_ROTARY_SYM" label="Special Operations Forces (SOF) Rotary-Wing" entityID="MILITARY" entityTypeID="ROTARY_WING" modifierOneID="SOF_MOD">
-      <legacyFunctionCode name="2525C">MHM---</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="ACP_ROTARY_SYM" label="Airborne Command Post Rotary-Wing" entityID="MILITARY" entityTypeID="ROTARY_WING" modifierOneID="ACP_MOD">
-      <legacyFunctionCode name="2525C">MHD---</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="TANKER_ROTARY_SYM" label="Tanker Rotary-Wing" entityID="MILITARY" entityTypeID="ROTARY_WING" modifierOneID="TANKER_MOD">
-      <legacyFunctionCode name="2525C">MHM---</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="ECM_ROTARY_SYM" label="Electronic Countermeasures Rotary-Wing" entityID="MILITARY" entityTypeID="ROTARY_WING" modifierOneID="EC_MOD">
-      <legacyFunctionCode name="2525C">MHJ---</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="LTA_SYM" label="Lighter Than Air" entityID="MILITARY" entityTypeID="LIGHTER_THAN_AIR">
-      <legacyFunctionCode name="2525C">ML----</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="BOMB_SYM" label="Bomb" entityID="WEAPON" entityTypeID="BOMB">
-      <legacyFunctionCode name="2525C">WB----</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="DECOY_SYM" label="Decoy" entityID="WEAPON" entityTypeID="DECOY">
-      <legacyFunctionCode name="2525C">WD----</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="CIV_SYM" label="Civilian" entityID="CIVILIAN">
-      <legacyFunctionCode name="2525C">C-----</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="FIXED_WING_CIV_SYM" label="Fixed-Wing Civilian" entityID="CIVILIAN" entityTypeID="CIV_FIXED_WING">
-      <legacyFunctionCode name="2525C">CF----</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="ROTARY_WING_CIV_SYM" label="Rotary-Wing Civilian" entityID="CIVILIAN" entityTypeID="CIV_ROTARY_WING">
-      <legacyFunctionCode name="2525C">CH----</legacyFunctionCode>
-    </legacySymbol>
-
-    <legacySymbol id="LTA_CIV_SYM" label="Lighter Than Air Civilian" entityID="CIVILIAN" entityTypeID="CIV_LTA">
-      <legacyFunctionCode name="2525C">CL----</legacyFunctionCode>
-    </legacySymbol>
-  </legacySymbols>
-</symbolSet>
+    <LegacySymbol ID="UTILITY_ROTARY_SYM" Label="Utility Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="UTILITY_MOD">
+      <LegacyFunctionCode Name="2525C">MHU---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="LIGHT_UTILITY_ROTARY_SYM" Label="Light Utility Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="UTILITY_MOD" ModifierTwoID="LT_MOD">
+      <LegacyFunctionCode Name="2525C">MHUL--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="MEDIUM_UTILITY_ROTARY_SYM" Label="Medium Utility Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="UTILITY_MOD" ModifierTwoID="MED_MOD">
+      <LegacyFunctionCode Name="2525C">MHUM--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="HEAVY_UTILITY_ROTARY_SYM" Label="Heavy Utility Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="UTILITY_MOD" ModifierTwoID="HVY_MOD">
+      <LegacyFunctionCode Name="2525C">MHUH--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="MCM_ROTARY_SYM" Label="Mine Countermeasures Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="MCM_MOD">
+      <LegacyFunctionCode Name="2525C">MHI---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="CSAR_ROTARY_SYM" Label="Combat Search and Rescue Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="CSAR_MOD">
+      <LegacyFunctionCode Name="2525C">MHH---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="RECON_ROTARY_SYM" Label="Reconnaissance Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="RECON_MOD">
+      <LegacyFunctionCode Name="2525C">MHR---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="UAV_ROTARY_SYM" Label="Drone Rotary-Wing" EntityID="MILITARY" EntityTypeID="VT_UAV">
+      <LegacyFunctionCode Name="2525C">MHQ---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="CARGO_ROTARY_SYM" Label="Cargo Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="CARGO_MOD">
+      <LegacyFunctionCode Name="2525C">MHC---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="LIGHT_CARGO_ROTARY_SYM" Label="Light Cargo Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="CARGO_MOD" ModifierTwoID="LT_MOD">
+      <LegacyFunctionCode Name="2525C">MHCL--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="MEDIUM_CARGO_ROTARY_SYM" Label="Medium Cargo Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="CARGO_MOD" ModifierTwoID="MED_MOD">
+      <LegacyFunctionCode Name="2525C">MHCM--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="HEAVY_CARGO_ROTARY_SYM" Label="Heavy Cargo Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="CARGO_MOD" ModifierTwoID="HVY_MOD">
+      <LegacyFunctionCode Name="2525C">MHCH--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="TRAINER_ROTARY_SYM" Label="Trainer Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="TRAINER_MOD">
+      <LegacyFunctionCode Name="2525C">MHT---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="MEDEVAC_ROTARY_SYM" Label="MEDEVAC Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="MEDEVAC_MOD">
+      <LegacyFunctionCode Name="2525C">MHO---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="SOF_ROTARY_SYM" Label="Special Operations Forces (SOF) Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="SOF_MOD">
+      <LegacyFunctionCode Name="2525C">MHM---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="ACP_ROTARY_SYM" Label="Airborne Command Post Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="ACP_MOD">
+      <LegacyFunctionCode Name="2525C">MHD---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="TANKER_ROTARY_SYM" Label="Tanker Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="TANKER_MOD">
+      <LegacyFunctionCode Name="2525C">MHM---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="ECM_ROTARY_SYM" Label="Electronic Countermeasures Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="EC_MOD">
+      <LegacyFunctionCode Name="2525C">MHJ---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="LTA_SYM" Label="Lighter Than Air" EntityID="MILITARY" EntityTypeID="LIGHTER_THAN_AIR">
+      <LegacyFunctionCode Name="2525C">ML----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="BOMB_SYM" Label="Bomb" EntityID="WEAPON" EntityTypeID="BOMB">
+      <LegacyFunctionCode Name="2525C">WB----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="DECOY_SYM" Label="Decoy" EntityID="WEAPON" EntityTypeID="DECOY">
+      <LegacyFunctionCode Name="2525C">WD----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="CIV_SYM" Label="Civilian" EntityID="CIVILIAN">
+      <LegacyFunctionCode Name="2525C">C-----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="FIXED_WING_CIV_SYM" Label="Fixed-Wing Civilian" EntityID="CIVILIAN" EntityTypeID="CIV_FIXED_WING">
+      <LegacyFunctionCode Name="2525C">CF----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="ROTARY_WING_CIV_SYM" Label="Rotary-Wing Civilian" EntityID="CIVILIAN" EntityTypeID="CIV_ROTARY_WING">
+      <LegacyFunctionCode Name="2525C">CH----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="LTA_CIV_SYM" Label="Lighter Than Air Civilian" EntityID="CIVILIAN" EntityTypeID="CIV_LTA">
+      <LegacyFunctionCode Name="2525C">CL----</LegacyFunctionCode>
+    </LegacySymbol>
+  </LegacySymbols>
+</SymbolSet>

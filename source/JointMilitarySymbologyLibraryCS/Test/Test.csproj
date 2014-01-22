@@ -81,6 +81,7 @@
     <ProjectReference Include="..\JointMilitarySymbologyLibrary.csproj">
       <Project>{59DCDEC3-469F-44CB-B42C-80DB1F9E1992}</Project>
       <Name>JointMilitarySymbologyLibrary</Name>
+      <Private>True</Private>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

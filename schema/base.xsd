@@ -8,21 +8,21 @@
   <xs:include schemaLocation="core.xsd"/>
   <xs:include schemaLocation="symbolSet.xsd"/>
 
-  <xs:element name="library">
+  <xs:element name="Library">
     <xs:complexType>
       <xs:sequence>
         
         <!--Version-->
         
-        <xs:element name="versions" minOccurs="1" maxOccurs="1">
+        <xs:element name="Versions" minOccurs="1" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="version" minOccurs="1" maxOccurs="39">
+              <xs:element name="Version" minOccurs="1" maxOccurs="39">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="versionCode" type="doubleDigitType" minOccurs="1" maxOccurs="1"/>
+                    <xs:element name="VersionCode" type="DoubleDigitType" minOccurs="1" maxOccurs="1"/>
                   </xs:sequence>
-                  <xs:attributeGroup ref="nameAttributeGroup"/>
+                  <xs:attributeGroup ref="NameAttributeGroup"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
@@ -31,27 +31,27 @@
         
         <!--Context-->
         
-        <xs:element name="contexts" minOccurs="1" maxOccurs="1">
+        <xs:element name="Contexts" minOccurs="1" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="context" minOccurs="1" maxOccurs="10">
+              <xs:element name="Context" minOccurs="1" maxOccurs="10">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="contextCode" type="singleDigitType" minOccurs="1" maxOccurs="1"/>
-                    <xs:element name="contextAmplifiers" minOccurs="1" maxOccurs="1">
+                    <xs:element name="ContextCode" type="SingleDigitType" minOccurs="1" maxOccurs="1"/>
+                    <xs:element name="ContextAmplifiers" minOccurs="1" maxOccurs="1">
                       <xs:complexType>
                         <xs:sequence>
-                          <xs:element name="contextAmplifier" minOccurs="1" maxOccurs="unbounded">
+                          <xs:element name="ContextAmplifier" minOccurs="1" maxOccurs="unbounded">
                             <xs:complexType>
-                              <xs:attributeGroup ref="graphicIdentifierAttributeGroup"/>
-                              <xs:attribute name="shape" type="shapeType" use="required"/>
+                              <xs:attributeGroup ref="GraphicIdentifierAttributeGroup"/>
+                              <xs:attribute name="Shape" type="ShapeType" use="required"/>
                             </xs:complexType>
                           </xs:element>
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
                   </xs:sequence>
-                  <xs:attributeGroup ref="identifierAttributeGroup"/>
+                  <xs:attributeGroup ref="IdentifierAttributeGroup"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
@@ -60,15 +60,15 @@
         
         <!-- Standard Identity -->
         
-        <xs:element name="standardIdentities" minOccurs="1" maxOccurs="1">
+        <xs:element name="StandardIdentities" minOccurs="1" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="standardIdentity" minOccurs="1" maxOccurs="10">
+              <xs:element name="StandardIdentity" minOccurs="1" maxOccurs="10">
                   <xs:complexType>
                     <xs:sequence>
-                      <xs:element name="standardIdentityCode" type="singleDigitType"/>
+                      <xs:element name="StandardIdentityCode" type="SingleDigitType"/>
                     </xs:sequence>
-                    <xs:attributeGroup ref="identifierAttributeGroup"/>
+                    <xs:attributeGroup ref="IdentifierAttributeGroup"/>
                   </xs:complexType>
                 </xs:element>
             </xs:sequence>
@@ -77,30 +77,30 @@
         
         <!-- Dimension -->
         
-        <xs:element name="dimensions" minOccurs="1" maxOccurs="1">
+        <xs:element name="Dimensions" minOccurs="1" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="dimension" minOccurs="1" maxOccurs="unbounded">
+              <xs:element name="Dimension" minOccurs="1" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="legacyDimensionCode" type="legacyLetterCodeType" minOccurs="0" maxOccurs="unbounded"/>            
-                    <xs:element name="symbolSets" minOccurs="1" maxOccurs="1">
+                    <xs:element name="LegacyDimensionCode" type="LegacyLetterCodeType" minOccurs="0" maxOccurs="unbounded"/>            
+                    <xs:element name="SymbolSets" minOccurs="1" maxOccurs="1">
                       <xs:complexType>
                         <xs:sequence>
-                          <xs:element name="symbolSetRef" minOccurs="1" maxOccurs="unbounded">
+                          <xs:element name="SymbolSetRef" minOccurs="1" maxOccurs="unbounded">
                             <xs:complexType>
                               <xs:sequence>
-                                <xs:element name="symbolSetCode" type="doubleDigitType"/>
+                                <xs:element name="SymbolSetCode" type="DoubleDigitType"/>
                               </xs:sequence>
-                              <xs:attributeGroup ref="identifierAttributeGroup"/>
-                              <xs:attribute name="instance" type="xs:anyURI" use="optional"/>
+                              <xs:attributeGroup ref="IdentifierAttributeGroup"/>
+                              <xs:attribute name="Instance" type="xs:anyURI" use="optional"/>
                             </xs:complexType>
                           </xs:element>
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
                   </xs:sequence>
-                  <xs:attributeGroup ref="identifierAttributeGroup"/>
+                  <xs:attributeGroup ref="IdentifierAttributeGroup"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
@@ -109,19 +109,19 @@
 
         <!-- Affiliation -->
 
-        <xs:element name="affiliations" minOccurs="1" maxOccurs="1">
+        <xs:element name="Affiliations" minOccurs="1" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="affiliation" minOccurs="1" maxOccurs="unbounded">
+              <xs:element name="Affiliation" minOccurs="1" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="legacyStandardIdentityCode" type="legacyLetterCodeType" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element name="LegacyStandardIdentityCode" type="LegacyLetterCodeType" minOccurs="0" maxOccurs="unbounded"/>
                   </xs:sequence>
-                  <xs:attributeGroup ref="graphicIdentifierAttributeGroup"/>
-                  <xs:attribute name="contextID" type="xs:IDREF" use="required"/>
-                  <xs:attribute name="standardIdentityID" type="xs:IDREF" use="required"/>
-                  <xs:attribute name="dimensionID" type="xs:IDREF" use="required"/>
-                  <xs:attribute name="shape" type ="shapeType" use="required"/>
+                  <xs:attributeGroup ref="GraphicIdentifierAttributeGroup"/>
+                  <xs:attribute name="ContextID" type="xs:IDREF" use="required"/>
+                  <xs:attribute name="StandardIdentityID" type="xs:IDREF" use="required"/>
+                  <xs:attribute name="DimensionID" type="xs:IDREF" use="required"/>
+                  <xs:attribute name="Shape" type ="ShapeType" use="required"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
@@ -130,16 +130,16 @@
 
         <!-- Status -->
         
-        <xs:element name="statuses" minOccurs="1" maxOccurs="1">
+        <xs:element name="Statuses" minOccurs="1" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="status" minOccurs="1" maxOccurs="10">
+              <xs:element name="Status" minOccurs="1" maxOccurs="10">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="statusCode" type="singleDigitType" minOccurs="1" maxOccurs="1"/>
-                    <xs:element name="legacyStatusCode" type="legacyLetterCodeType" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element name="StatusCode" type="SingleDigitType" minOccurs="1" maxOccurs="1"/>
+                    <xs:element name="LegacyStatusCode" type="LegacyLetterCodeType" minOccurs="0" maxOccurs="unbounded"/>
                   </xs:sequence>
-                  <xs:attributeGroup ref="nameAttributeGroup"/>
+                  <xs:attributeGroup ref="NameAttributeGroup"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
@@ -148,16 +148,16 @@
         
         <!-- HQ/TF/Dummy -->
 
-        <xs:element name="hqTFDummies" minOccurs="1" maxOccurs="1">
+        <xs:element name="HQTFDummies" minOccurs="1" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="hqTFDummy" minOccurs="1" maxOccurs="10">
+              <xs:element name="HQTFDummy" minOccurs="1" maxOccurs="10">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="hqTFDummyCode" type="singleDigitType" minOccurs="1" maxOccurs="1"/>
-                    <xs:element name="legacyHQTFDummyCode" type="legacyLetterCodeType" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element name="HQTFDummyCode" type="SingleDigitType" minOccurs="1" maxOccurs="1"/>
+                    <xs:element name="LegacyHQTFDummyCode" type="LegacyLetterCodeType" minOccurs="0" maxOccurs="unbounded"/>
                   </xs:sequence>
-                  <xs:attributeGroup ref="framedGraphicNameAttributeGroup"/>
+                  <xs:attributeGroup ref="FramedGraphicNameAttributeGroup"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
@@ -166,39 +166,39 @@
         
         <!-- Amplifier -->
 
-        <xs:element name="amplifierGroups" minOccurs="1" maxOccurs="1">
+        <xs:element name="AmplifierGroups" minOccurs="1" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="amplifierGroup" minOccurs="1" maxOccurs="10">
+              <xs:element name="AmplifierGroup" minOccurs="1" maxOccurs="10">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="amplifierGroupCode" type="singleDigitType" minOccurs="1" maxOccurs="1"/>
-                    <xs:element name="legacyModifierCode" type="legacyLetterCodeType" minOccurs="0" maxOccurs="unbounded"/>
-                    <xs:element name="amplifiers" minOccurs="1" maxOccurs="1">
+                    <xs:element name="AmplifierGroupCode" type="SingleDigitType" minOccurs="1" maxOccurs="1"/>
+                    <xs:element name="LegacyModifierCode" type="LegacyLetterCodeType" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element name="Amplifiers" minOccurs="1" maxOccurs="1">
                       <xs:complexType>
                         <xs:sequence>
-                          <xs:element name="amplifier" minOccurs="1" maxOccurs="10">
+                          <xs:element name="Amplifier" minOccurs="1" maxOccurs="10">
                             <xs:complexType>
                               <xs:sequence>
-                                <xs:element name="amplifierCode" type="singleDigitType" minOccurs="1" maxOccurs="1"/>
-                                <xs:element name="legacyModifierCode" type="legacyLetterCodeType" minOccurs="0" maxOccurs="unbounded"/>
+                                <xs:element name="AmplifierCode" type="SingleDigitType" minOccurs="1" maxOccurs="1"/>
+                                <xs:element name="LegacyModifierCode" type="LegacyLetterCodeType" minOccurs="0" maxOccurs="unbounded"/>
                               </xs:sequence>
-                              <xs:attributeGroup ref="framedGraphicNameAttributeGroup"/>
+                              <xs:attributeGroup ref="FramedGraphicNameAttributeGroup"/>
                             </xs:complexType>
                           </xs:element>
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
                   </xs:sequence>
-                  <xs:attributeGroup ref="nameAttributeGroup"/>
-                  <xs:attribute name="compatibleSymbolSets" type="xs:IDREFS" use="optional"/>
+                  <xs:attributeGroup ref="NameAttributeGroup"/>
+                  <xs:attribute name="CompatibleSymbolSets" type="xs:IDREFS" use="optional"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
       </xs:sequence>
-      <xs:attributeGroup ref="nameAttributeGroup"/>
+      <xs:attributeGroup ref="NameAttributeGroup"/>
     </xs:complexType>
   </xs:element>
 </xs:schema>

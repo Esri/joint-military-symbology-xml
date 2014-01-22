@@ -5,19 +5,19 @@
     xmlns:jmsml="http://disa.mil/JointMilSyML.xsd"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
 >
- <xs:simpleType name="singleLetterType">
+ <xs:simpleType name="SingleLetterType">
     <xs:restriction base="xs:token">
       <xs:length value="1" fixed="true"/>
     </xs:restriction>
   </xs:simpleType>
 
-  <xs:simpleType name="legacyTokenType">
+  <xs:simpleType name="LegacyTokenType">
     <xs:restriction base="xs:token">
       <xs:length value="6" fixed="true"/>
     </xs:restriction>
   </xs:simpleType>
 
-  <xs:simpleType name="shapeType">
+  <xs:simpleType name="ShapeType">
     <xs:restriction base="xs:token">
       <xs:enumeration value="NA"/>
       <xs:enumeration value="CIRCLE"/>
@@ -29,112 +29,112 @@
     </xs:restriction>
   </xs:simpleType>
 
-  <xs:complexType name="legacyFunctionCodeType">
+  <xs:complexType name="LegacyFunctionCodeType">
     <xs:simpleContent>
-      <xs:extension base="legacyTokenType">
-        <xs:attributeGroup ref="nameAttributeGroup"/>
+      <xs:extension base="LegacyTokenType">
+        <xs:attributeGroup ref="NameAttributeGroup"/>
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
 
-  <xs:complexType name="legacyLetterCodeType">
+  <xs:complexType name="LegacyLetterCodeType">
     <xs:simpleContent>
-      <xs:extension base="singleLetterType">
-        <xs:attributeGroup ref="nameAttributeGroup"/>
+      <xs:extension base="SingleLetterType">
+        <xs:attributeGroup ref="NameAttributeGroup"/>
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
   
-  <xs:simpleType name="singleDigitType">
+  <xs:simpleType name="SingleDigitType">
     <xs:restriction base="xs:unsignedShort">
       <xs:minInclusive value="0"/>
       <xs:maxInclusive value="9"/>
     </xs:restriction>
   </xs:simpleType>
 
-  <xs:complexType name="doubleDigitType" mixed="true">
+  <xs:complexType name="DoubleDigitType" mixed="true">
     <xs:sequence>
-      <xs:element name="digitOne" type="singleDigitType" minOccurs="1" default="0"/>
-      <xs:element name="digitTwo" type="singleDigitType" minOccurs="1" default="0"/>
+      <xs:element name="DigitOne" type="SingleDigitType" minOccurs="1" default="0"/>
+      <xs:element name="DigitTwo" type="SingleDigitType" minOccurs="1" default="0"/>
     </xs:sequence>
   </xs:complexType>
 
-  <xs:attributeGroup name="nameAttributeGroup">
-    <xs:attribute name="name" type="xs:token" use="required"/>
-    <xs:attribute name="label" type="xs:token" use="optional"/>
-    <xs:attribute name="description" type="xs:string" use="optional"/>
-    <xs:attribute name="remarks" type="xs:string" use="optional"/>
+  <xs:attributeGroup name="NameAttributeGroup">
+    <xs:attribute name="Name" type="xs:token" use="required"/>
+    <xs:attribute name="Label" type="xs:token" use="optional"/>
+    <xs:attribute name="Description" type="xs:string" use="optional"/>
+    <xs:attribute name="Remarks" type="xs:string" use="optional"/>
   </xs:attributeGroup>
 
-  <xs:attributeGroup name="identifierAttributeGroup">
-    <xs:attribute name="id" type="xs:ID" use="required"/>
-    <xs:attribute name="label" type="xs:token" use="optional"/>
-    <xs:attribute name="description" type="xs:string" use="optional"/>
-    <xs:attribute name="remarks" type="xs:string" use="optional"/>
+  <xs:attributeGroup name="IdentifierAttributeGroup">
+    <xs:attribute name="ID" type="xs:ID" use="required"/>
+    <xs:attribute name="Label" type="xs:token" use="optional"/>
+    <xs:attribute name="Description" type="xs:string" use="optional"/>
+    <xs:attribute name="Remarks" type="xs:string" use="optional"/>
   </xs:attributeGroup>
 
-  <xs:attributeGroup name="graphicNameAttributeGroup">
-    <xs:attribute name="name" type="xs:token" use="required"/>
-    <xs:attribute name="label" type="xs:token" use="optional"/>
-    <xs:attribute name="description" type="xs:string" use="optional"/>
-    <xs:attribute name="remarks" type="xs:string" use="optional"/>
-    <xs:attribute name="graphic" type="xs:anyURI" use="optional"/>
+  <xs:attributeGroup name="GraphicNameAttributeGroup">
+    <xs:attribute name="Name" type="xs:token" use="required"/>
+    <xs:attribute name="Label" type="xs:token" use="optional"/>
+    <xs:attribute name="Description" type="xs:string" use="optional"/>
+    <xs:attribute name="Remarks" type="xs:string" use="optional"/>
+    <xs:attribute name="Graphic" type="xs:anyURI" use="optional"/>
   </xs:attributeGroup>
 
-  <xs:attributeGroup name="graphicIdentifierAttributeGroup">
-    <xs:attribute name="id" type="xs:ID" use="required"/>
-    <xs:attribute name="label" type="xs:token" use="optional"/>
-    <xs:attribute name="description" type="xs:string" use="optional"/>
-    <xs:attribute name="remarks" type="xs:string" use="optional"/>
-    <xs:attribute name="graphic" type="xs:anyURI" use="optional"/>
+  <xs:attributeGroup name="GraphicIdentifierAttributeGroup">
+    <xs:attribute name="ID" type="xs:ID" use="required"/>
+    <xs:attribute name="Label" type="xs:token" use="optional"/>
+    <xs:attribute name="Description" type="xs:string" use="optional"/>
+    <xs:attribute name="Remarks" type="xs:string" use="optional"/>
+    <xs:attribute name="Graphic" type="xs:anyURI" use="optional"/>
   </xs:attributeGroup>
 
-  <xs:attributeGroup name="framedGraphicIdentifierAttributeGroup">
-    <xs:attribute name="id" type="xs:ID" use="required"/>
-    <xs:attribute name="label" type="xs:token" use="optional"/>
-    <xs:attribute name="description" type="xs:string" use="optional"/>
-    <xs:attribute name="remarks" type="xs:string" use="optional"/>
-    <xs:attribute name="graphic" type="xs:anyURI" use="optional"/>
-    <xs:attribute name="circleGraphic" type="xs:anyURI" use="optional"/>
-    <xs:attribute name="cloverGraphic" type="xs:anyURI" use="optional"/>
-    <xs:attribute name="curveGraphic" type="xs:anyURI" use="optional"/>
-    <xs:attribute name="diamondGraphic" type="xs:anyURI" use="optional"/>
-    <xs:attribute name="rectangleGraphic" type="xs:anyURI" use="optional"/>
-    <xs:attribute name="squareGraphic" type="xs:anyURI" use="optional"/>
+  <xs:attributeGroup name="FramedGraphicIdentifierAttributeGroup">
+    <xs:attribute name="ID" type="xs:ID" use="required"/>
+    <xs:attribute name="Label" type="xs:token" use="optional"/>
+    <xs:attribute name="Description" type="xs:string" use="optional"/>
+    <xs:attribute name="Remarks" type="xs:string" use="optional"/>
+    <xs:attribute name="Graphic" type="xs:anyURI" use="optional"/>
+    <xs:attribute name="CircleGraphic" type="xs:anyURI" use="optional"/>
+    <xs:attribute name="CloverGraphic" type="xs:anyURI" use="optional"/>
+    <xs:attribute name="CurveGraphic" type="xs:anyURI" use="optional"/>
+    <xs:attribute name="DiamondGraphic" type="xs:anyURI" use="optional"/>
+    <xs:attribute name="RectangleGraphic" type="xs:anyURI" use="optional"/>
+    <xs:attribute name="SquareGraphic" type="xs:anyURI" use="optional"/>
   </xs:attributeGroup>
 
-  <xs:attributeGroup name="framedGraphicNameAttributeGroup">
-    <xs:attribute name="name" type="xs:token" use="required"/>
-    <xs:attribute name="label" type="xs:token" use="optional"/>
-    <xs:attribute name="description" type="xs:string" use="optional"/>
-    <xs:attribute name="remarks" type="xs:string" use="optional"/>
-    <xs:attribute name="graphic" type="xs:anyURI" use="optional"/>
-    <xs:attribute name="circleGraphic" type="xs:anyURI" use="optional"/>
-    <xs:attribute name="cloverGraphic" type="xs:anyURI" use="optional"/>
-    <xs:attribute name="curveGraphic" type="xs:anyURI" use="optional"/>
-    <xs:attribute name="diamondGraphic" type="xs:anyURI" use="optional"/>
-    <xs:attribute name="rectangleGraphic" type="xs:anyURI" use="optional"/>
-    <xs:attribute name="squareGraphic" type="xs:anyURI" use="optional"/>
+  <xs:attributeGroup name="FramedGraphicNameAttributeGroup">
+    <xs:attribute name="Name" type="xs:token" use="required"/>
+    <xs:attribute name="Label" type="xs:token" use="optional"/>
+    <xs:attribute name="Description" type="xs:string" use="optional"/>
+    <xs:attribute name="Remarks" type="xs:string" use="optional"/>
+    <xs:attribute name="Graphic" type="xs:anyURI" use="optional"/>
+    <xs:attribute name="CircleGraphic" type="xs:anyURI" use="optional"/>
+    <xs:attribute name="CloverGraphic" type="xs:anyURI" use="optional"/>
+    <xs:attribute name="CurveGraphic" type="xs:anyURI" use="optional"/>
+    <xs:attribute name="DiamondGraphic" type="xs:anyURI" use="optional"/>
+    <xs:attribute name="RectangleGraphic" type="xs:anyURI" use="optional"/>
+    <xs:attribute name="SquareGraphic" type="xs:anyURI" use="optional"/>
   </xs:attributeGroup>
 
-  <xs:attributeGroup name="symbolAttributeGroup">
-    <xs:attribute name="entityID" type="xs:IDREF" default="NA" use="optional"/>
-    <xs:attribute name="entityTypeID" type="xs:IDREF" default="NA" use="optional"/>
-    <xs:attribute name="entitySubTypeID" type="xs:IDREF" default="NA" use="optional"/>
-    <xs:attribute name="modifierOneID" type="xs:IDREF" default="NA" use="optional"/>
-    <xs:attribute name="modifierTwoID" type="xs:IDREF" default="NA" use="optional"/>
+  <xs:attributeGroup name="SymbolAttributeGroup">
+    <xs:attribute name="EntityID" type="xs:IDREF" default="NA" use="optional"/>
+    <xs:attribute name="EntityTypeID" type="xs:IDREF" default="NA" use="optional"/>
+    <xs:attribute name="EntitySubTypeID" type="xs:IDREF" default="NA" use="optional"/>
+    <xs:attribute name="ModifierOneID" type="xs:IDREF" default="NA" use="optional"/>
+    <xs:attribute name="ModifierTwoID" type="xs:IDREF" default="NA" use="optional"/>
   </xs:attributeGroup>
 
-  <xs:complexType name="modifiersType">
+  <xs:complexType name="ModifiersType">
     <xs:sequence>
-      <xs:element name="modifier" minOccurs="1" maxOccurs="unbounded">
+      <xs:element name="Modifier" minOccurs="1" maxOccurs="unbounded">
         <xs:complexType>
           <xs:sequence>
-            <xs:element name="modifierCode" type="doubleDigitType"/>
+            <xs:element name="ModifierCode" type="DoubleDigitType"/>
           </xs:sequence>
-          <xs:attributeGroup ref="graphicIdentifierAttributeGroup"/>
-          <xs:attribute name="category" type="xs:token" use="required"/>
-          <xs:attribute name="limitUseTo" type="xs:IDREFS" use="optional"/>
+          <xs:attributeGroup ref="GraphicIdentifierAttributeGroup"/>
+          <xs:attribute name="Category" type="xs:token" use="required"/>
+          <xs:attribute name="LimitUseTo" type="xs:IDREFS" use="optional"/>
         </xs:complexType>
       </xs:element>
     </xs:sequence>

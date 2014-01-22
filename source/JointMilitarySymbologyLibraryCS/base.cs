@@ -22,19 +22,19 @@ namespace JointMilitarySymbologyLibrary {
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://disa.mil/JointMilSyML.xsd")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="http://disa.mil/JointMilSyML.xsd", IsNullable=false)]
-    public partial class symbolSet {
+    public partial class SymbolSet {
         
-        private doubleDigitType symbolSetCodeField;
+        private DoubleDigitType symbolSetCodeField;
         
-        private legacyLetterCodeType[] legacyCodingSchemeCodeField;
+        private LegacyLetterCodeType[] legacyCodingSchemeCodeField;
         
-        private symbolSetEntity[] entitiesField;
+        private SymbolSetEntity[] entitiesField;
         
-        private modifiersTypeModifier[] sectorOneModifiersField;
+        private ModifiersTypeModifier[] sectorOneModifiersField;
         
-        private modifiersTypeModifier[] sectorTwoModifiersField;
+        private ModifiersTypeModifier[] sectorTwoModifiersField;
         
-        private symbolSetLegacySymbol[] legacySymbolsField;
+        private SymbolSetLegacySymbol[] legacySymbolsField;
         
         private string idField;
         
@@ -47,7 +47,7 @@ namespace JointMilitarySymbologyLibrary {
         private string dimensionIDField;
         
         /// <remarks/>
-        public doubleDigitType symbolSetCode {
+        public DoubleDigitType SymbolSetCode {
             get {
                 return this.symbolSetCodeField;
             }
@@ -57,8 +57,8 @@ namespace JointMilitarySymbologyLibrary {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("legacyCodingSchemeCode")]
-        public legacyLetterCodeType[] legacyCodingSchemeCode {
+        [System.Xml.Serialization.XmlElementAttribute("LegacyCodingSchemeCode")]
+        public LegacyLetterCodeType[] LegacyCodingSchemeCode {
             get {
                 return this.legacyCodingSchemeCodeField;
             }
@@ -68,8 +68,8 @@ namespace JointMilitarySymbologyLibrary {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("entity", IsNullable=false)]
-        public symbolSetEntity[] entities {
+        [System.Xml.Serialization.XmlArrayItemAttribute("Entity", IsNullable=false)]
+        public SymbolSetEntity[] Entities {
             get {
                 return this.entitiesField;
             }
@@ -79,8 +79,8 @@ namespace JointMilitarySymbologyLibrary {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("modifier", IsNullable=false)]
-        public modifiersTypeModifier[] sectorOneModifiers {
+        [System.Xml.Serialization.XmlArrayItemAttribute("Modifier", IsNullable=false)]
+        public ModifiersTypeModifier[] SectorOneModifiers {
             get {
                 return this.sectorOneModifiersField;
             }
@@ -90,8 +90,8 @@ namespace JointMilitarySymbologyLibrary {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("modifier", IsNullable=false)]
-        public modifiersTypeModifier[] sectorTwoModifiers {
+        [System.Xml.Serialization.XmlArrayItemAttribute("Modifier", IsNullable=false)]
+        public ModifiersTypeModifier[] SectorTwoModifiers {
             get {
                 return this.sectorTwoModifiersField;
             }
@@ -101,8 +101,8 @@ namespace JointMilitarySymbologyLibrary {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("legacySymbol", IsNullable=false)]
-        public symbolSetLegacySymbol[] legacySymbols {
+        [System.Xml.Serialization.XmlArrayItemAttribute("LegacySymbol", IsNullable=false)]
+        public SymbolSetLegacySymbol[] LegacySymbols {
             get {
                 return this.legacySymbolsField;
             }
@@ -113,7 +113,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
-        public string id {
+        public string ID {
             get {
                 return this.idField;
             }
@@ -124,7 +124,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string label {
+        public string Label {
             get {
                 return this.labelField;
             }
@@ -135,7 +135,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string description {
+        public string Description {
             get {
                 return this.descriptionField;
             }
@@ -146,7 +146,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string remarks {
+        public string Remarks {
             get {
                 return this.remarksField;
             }
@@ -157,7 +157,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="IDREF")]
-        public string dimensionID {
+        public string DimensionID {
             get {
                 return this.dimensionIDField;
             }
@@ -173,7 +173,7 @@ namespace JointMilitarySymbologyLibrary {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://disa.mil/JointMilSyML.xsd")]
-    public partial class doubleDigitType {
+    public partial class DoubleDigitType {
         
         private ushort digitOneField;
         
@@ -181,13 +181,13 @@ namespace JointMilitarySymbologyLibrary {
         
         private string[] textField;
         
-        public doubleDigitType() {
+        public DoubleDigitType() {
             this.digitOneField = ((ushort)(0));
             this.digitTwoField = ((ushort)(0));
         }
         
         /// <remarks/>
-        public ushort digitOne {
+        public ushort DigitOne {
             get {
                 return this.digitOneField;
             }
@@ -197,7 +197,7 @@ namespace JointMilitarySymbologyLibrary {
         }
         
         /// <remarks/>
-        public ushort digitTwo {
+        public ushort DigitTwo {
             get {
                 return this.digitTwoField;
             }
@@ -224,7 +224,7 @@ namespace JointMilitarySymbologyLibrary {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://disa.mil/JointMilSyML.xsd")]
-    public partial class legacyFunctionCodeType {
+    public partial class LegacyFunctionCodeType {
         
         private string nameField;
         
@@ -238,7 +238,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string name {
+        public string Name {
             get {
                 return this.nameField;
             }
@@ -249,7 +249,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string label {
+        public string Label {
             get {
                 return this.labelField;
             }
@@ -260,7 +260,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string description {
+        public string Description {
             get {
                 return this.descriptionField;
             }
@@ -271,7 +271,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string remarks {
+        public string Remarks {
             get {
                 return this.remarksField;
             }
@@ -298,7 +298,7 @@ namespace JointMilitarySymbologyLibrary {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://disa.mil/JointMilSyML.xsd")]
-    public partial class legacyLetterCodeType {
+    public partial class LegacyLetterCodeType {
         
         private string nameField;
         
@@ -312,7 +312,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string name {
+        public string Name {
             get {
                 return this.nameField;
             }
@@ -323,7 +323,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string label {
+        public string Label {
             get {
                 return this.labelField;
             }
@@ -334,7 +334,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string description {
+        public string Description {
             get {
                 return this.descriptionField;
             }
@@ -345,7 +345,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string remarks {
+        public string Remarks {
             get {
                 return this.remarksField;
             }
@@ -372,11 +372,11 @@ namespace JointMilitarySymbologyLibrary {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://disa.mil/JointMilSyML.xsd")]
-    public partial class symbolSetEntity {
+    public partial class SymbolSetEntity {
         
-        private doubleDigitType entityCodeField;
+        private DoubleDigitType entityCodeField;
         
-        private symbolSetEntityEntityType[] entityTypesField;
+        private SymbolSetEntityEntityType[] entityTypesField;
         
         private string idField;
         
@@ -401,7 +401,7 @@ namespace JointMilitarySymbologyLibrary {
         private string squareGraphicField;
         
         /// <remarks/>
-        public doubleDigitType entityCode {
+        public DoubleDigitType EntityCode {
             get {
                 return this.entityCodeField;
             }
@@ -411,8 +411,8 @@ namespace JointMilitarySymbologyLibrary {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("entityType", IsNullable=false)]
-        public symbolSetEntityEntityType[] entityTypes {
+        [System.Xml.Serialization.XmlArrayItemAttribute("EntityType", IsNullable=false)]
+        public SymbolSetEntityEntityType[] EntityTypes {
             get {
                 return this.entityTypesField;
             }
@@ -423,7 +423,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
-        public string id {
+        public string ID {
             get {
                 return this.idField;
             }
@@ -434,7 +434,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string label {
+        public string Label {
             get {
                 return this.labelField;
             }
@@ -445,7 +445,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string description {
+        public string Description {
             get {
                 return this.descriptionField;
             }
@@ -456,7 +456,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string remarks {
+        public string Remarks {
             get {
                 return this.remarksField;
             }
@@ -467,7 +467,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string graphic {
+        public string Graphic {
             get {
                 return this.graphicField;
             }
@@ -478,7 +478,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string circleGraphic {
+        public string CircleGraphic {
             get {
                 return this.circleGraphicField;
             }
@@ -489,7 +489,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string cloverGraphic {
+        public string CloverGraphic {
             get {
                 return this.cloverGraphicField;
             }
@@ -500,7 +500,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string curveGraphic {
+        public string CurveGraphic {
             get {
                 return this.curveGraphicField;
             }
@@ -511,7 +511,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string diamondGraphic {
+        public string DiamondGraphic {
             get {
                 return this.diamondGraphicField;
             }
@@ -522,7 +522,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string rectangleGraphic {
+        public string RectangleGraphic {
             get {
                 return this.rectangleGraphicField;
             }
@@ -533,7 +533,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string squareGraphic {
+        public string SquareGraphic {
             get {
                 return this.squareGraphicField;
             }
@@ -549,11 +549,11 @@ namespace JointMilitarySymbologyLibrary {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://disa.mil/JointMilSyML.xsd")]
-    public partial class symbolSetEntityEntityType {
+    public partial class SymbolSetEntityEntityType {
         
-        private doubleDigitType entityTypeCodeField;
+        private DoubleDigitType entityTypeCodeField;
         
-        private symbolSetEntityEntityTypeEntitySubType[] entitySubTypesField;
+        private SymbolSetEntityEntityTypeEntitySubType[] entitySubTypesField;
         
         private string idField;
         
@@ -578,7 +578,7 @@ namespace JointMilitarySymbologyLibrary {
         private string squareGraphicField;
         
         /// <remarks/>
-        public doubleDigitType entityTypeCode {
+        public DoubleDigitType EntityTypeCode {
             get {
                 return this.entityTypeCodeField;
             }
@@ -588,8 +588,8 @@ namespace JointMilitarySymbologyLibrary {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("entitySubType", IsNullable=false)]
-        public symbolSetEntityEntityTypeEntitySubType[] entitySubTypes {
+        [System.Xml.Serialization.XmlArrayItemAttribute("EntitySubType", IsNullable=false)]
+        public SymbolSetEntityEntityTypeEntitySubType[] EntitySubTypes {
             get {
                 return this.entitySubTypesField;
             }
@@ -600,7 +600,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
-        public string id {
+        public string ID {
             get {
                 return this.idField;
             }
@@ -611,7 +611,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string label {
+        public string Label {
             get {
                 return this.labelField;
             }
@@ -622,7 +622,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string description {
+        public string Description {
             get {
                 return this.descriptionField;
             }
@@ -633,7 +633,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string remarks {
+        public string Remarks {
             get {
                 return this.remarksField;
             }
@@ -644,7 +644,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string graphic {
+        public string Graphic {
             get {
                 return this.graphicField;
             }
@@ -655,7 +655,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string circleGraphic {
+        public string CircleGraphic {
             get {
                 return this.circleGraphicField;
             }
@@ -666,7 +666,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string cloverGraphic {
+        public string CloverGraphic {
             get {
                 return this.cloverGraphicField;
             }
@@ -677,7 +677,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string curveGraphic {
+        public string CurveGraphic {
             get {
                 return this.curveGraphicField;
             }
@@ -688,7 +688,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string diamondGraphic {
+        public string DiamondGraphic {
             get {
                 return this.diamondGraphicField;
             }
@@ -699,7 +699,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string rectangleGraphic {
+        public string RectangleGraphic {
             get {
                 return this.rectangleGraphicField;
             }
@@ -710,7 +710,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string squareGraphic {
+        public string SquareGraphic {
             get {
                 return this.squareGraphicField;
             }
@@ -726,9 +726,9 @@ namespace JointMilitarySymbologyLibrary {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://disa.mil/JointMilSyML.xsd")]
-    public partial class symbolSetEntityEntityTypeEntitySubType {
+    public partial class SymbolSetEntityEntityTypeEntitySubType {
         
-        private doubleDigitType entitySubTypeCodeField;
+        private DoubleDigitType entitySubTypeCodeField;
         
         private string idField;
         
@@ -753,7 +753,7 @@ namespace JointMilitarySymbologyLibrary {
         private string squareGraphicField;
         
         /// <remarks/>
-        public doubleDigitType entitySubTypeCode {
+        public DoubleDigitType EntitySubTypeCode {
             get {
                 return this.entitySubTypeCodeField;
             }
@@ -764,7 +764,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
-        public string id {
+        public string ID {
             get {
                 return this.idField;
             }
@@ -775,7 +775,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string label {
+        public string Label {
             get {
                 return this.labelField;
             }
@@ -786,7 +786,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string description {
+        public string Description {
             get {
                 return this.descriptionField;
             }
@@ -797,7 +797,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string remarks {
+        public string Remarks {
             get {
                 return this.remarksField;
             }
@@ -808,7 +808,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string graphic {
+        public string Graphic {
             get {
                 return this.graphicField;
             }
@@ -819,7 +819,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string circleGraphic {
+        public string CircleGraphic {
             get {
                 return this.circleGraphicField;
             }
@@ -830,7 +830,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string cloverGraphic {
+        public string CloverGraphic {
             get {
                 return this.cloverGraphicField;
             }
@@ -841,7 +841,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string curveGraphic {
+        public string CurveGraphic {
             get {
                 return this.curveGraphicField;
             }
@@ -852,7 +852,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string diamondGraphic {
+        public string DiamondGraphic {
             get {
                 return this.diamondGraphicField;
             }
@@ -863,7 +863,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string rectangleGraphic {
+        public string RectangleGraphic {
             get {
                 return this.rectangleGraphicField;
             }
@@ -874,7 +874,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string squareGraphic {
+        public string SquareGraphic {
             get {
                 return this.squareGraphicField;
             }
@@ -890,9 +890,9 @@ namespace JointMilitarySymbologyLibrary {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://disa.mil/JointMilSyML.xsd")]
-    public partial class modifiersTypeModifier {
+    public partial class ModifiersTypeModifier {
         
-        private doubleDigitType modifierCodeField;
+        private DoubleDigitType modifierCodeField;
         
         private string idField;
         
@@ -909,7 +909,7 @@ namespace JointMilitarySymbologyLibrary {
         private string limitUseToField;
         
         /// <remarks/>
-        public doubleDigitType modifierCode {
+        public DoubleDigitType ModifierCode {
             get {
                 return this.modifierCodeField;
             }
@@ -920,7 +920,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
-        public string id {
+        public string ID {
             get {
                 return this.idField;
             }
@@ -931,7 +931,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string label {
+        public string Label {
             get {
                 return this.labelField;
             }
@@ -942,7 +942,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string description {
+        public string Description {
             get {
                 return this.descriptionField;
             }
@@ -953,7 +953,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string remarks {
+        public string Remarks {
             get {
                 return this.remarksField;
             }
@@ -964,7 +964,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string graphic {
+        public string Graphic {
             get {
                 return this.graphicField;
             }
@@ -975,7 +975,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string category {
+        public string Category {
             get {
                 return this.categoryField;
             }
@@ -986,7 +986,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="IDREFS")]
-        public string limitUseTo {
+        public string LimitUseTo {
             get {
                 return this.limitUseToField;
             }
@@ -1002,9 +1002,9 @@ namespace JointMilitarySymbologyLibrary {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://disa.mil/JointMilSyML.xsd")]
-    public partial class symbolSetLegacySymbol {
+    public partial class SymbolSetLegacySymbol {
         
-        private legacyFunctionCodeType[] legacyFunctionCodeField;
+        private LegacyFunctionCodeType[] legacyFunctionCodeField;
         
         private string idField;
         
@@ -1024,7 +1024,7 @@ namespace JointMilitarySymbologyLibrary {
         
         private string modifierTwoIDField;
         
-        public symbolSetLegacySymbol() {
+        public SymbolSetLegacySymbol() {
             this.entityIDField = "NA";
             this.entityTypeIDField = "NA";
             this.entitySubTypeIDField = "NA";
@@ -1033,8 +1033,8 @@ namespace JointMilitarySymbologyLibrary {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("legacyFunctionCode")]
-        public legacyFunctionCodeType[] legacyFunctionCode {
+        [System.Xml.Serialization.XmlElementAttribute("LegacyFunctionCode")]
+        public LegacyFunctionCodeType[] LegacyFunctionCode {
             get {
                 return this.legacyFunctionCodeField;
             }
@@ -1045,7 +1045,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
-        public string id {
+        public string ID {
             get {
                 return this.idField;
             }
@@ -1056,7 +1056,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string label {
+        public string Label {
             get {
                 return this.labelField;
             }
@@ -1067,7 +1067,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string description {
+        public string Description {
             get {
                 return this.descriptionField;
             }
@@ -1078,7 +1078,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string remarks {
+        public string Remarks {
             get {
                 return this.remarksField;
             }
@@ -1090,7 +1090,7 @@ namespace JointMilitarySymbologyLibrary {
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="IDREF")]
         [System.ComponentModel.DefaultValueAttribute("NA")]
-        public string entityID {
+        public string EntityID {
             get {
                 return this.entityIDField;
             }
@@ -1102,7 +1102,7 @@ namespace JointMilitarySymbologyLibrary {
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="IDREF")]
         [System.ComponentModel.DefaultValueAttribute("NA")]
-        public string entityTypeID {
+        public string EntityTypeID {
             get {
                 return this.entityTypeIDField;
             }
@@ -1114,7 +1114,7 @@ namespace JointMilitarySymbologyLibrary {
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="IDREF")]
         [System.ComponentModel.DefaultValueAttribute("NA")]
-        public string entitySubTypeID {
+        public string EntitySubTypeID {
             get {
                 return this.entitySubTypeIDField;
             }
@@ -1126,7 +1126,7 @@ namespace JointMilitarySymbologyLibrary {
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="IDREF")]
         [System.ComponentModel.DefaultValueAttribute("NA")]
-        public string modifierOneID {
+        public string ModifierOneID {
             get {
                 return this.modifierOneIDField;
             }
@@ -1138,7 +1138,7 @@ namespace JointMilitarySymbologyLibrary {
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="IDREF")]
         [System.ComponentModel.DefaultValueAttribute("NA")]
-        public string modifierTwoID {
+        public string ModifierTwoID {
             get {
                 return this.modifierTwoIDField;
             }
@@ -1155,23 +1155,23 @@ namespace JointMilitarySymbologyLibrary {
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://disa.mil/JointMilSyML.xsd")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="http://disa.mil/JointMilSyML.xsd", IsNullable=false)]
-    public partial class library {
+    public partial class Library {
         
-        private libraryVersion[] versionsField;
+        private LibraryVersion[] versionsField;
         
-        private libraryContext[] contextsField;
+        private LibraryContext[] contextsField;
         
-        private libraryStandardIdentity[] standardIdentitiesField;
+        private LibraryStandardIdentity[] standardIdentitiesField;
         
-        private libraryDimension[] dimensionsField;
+        private LibraryDimension[] dimensionsField;
         
-        private libraryAffiliation[] affiliationsField;
+        private LibraryAffiliation[] affiliationsField;
         
-        private libraryStatus[] statusesField;
+        private LibraryStatus[] statusesField;
         
-        private libraryHqTFDummy[] hqTFDummiesField;
+        private LibraryHQTFDummy[] hQTFDummiesField;
         
-        private libraryAmplifierGroup[] amplifierGroupsField;
+        private LibraryAmplifierGroup[] amplifierGroupsField;
         
         private string nameField;
         
@@ -1182,8 +1182,8 @@ namespace JointMilitarySymbologyLibrary {
         private string remarksField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("version", IsNullable=false)]
-        public libraryVersion[] versions {
+        [System.Xml.Serialization.XmlArrayItemAttribute("Version", IsNullable=false)]
+        public LibraryVersion[] Versions {
             get {
                 return this.versionsField;
             }
@@ -1193,8 +1193,8 @@ namespace JointMilitarySymbologyLibrary {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("context", IsNullable=false)]
-        public libraryContext[] contexts {
+        [System.Xml.Serialization.XmlArrayItemAttribute("Context", IsNullable=false)]
+        public LibraryContext[] Contexts {
             get {
                 return this.contextsField;
             }
@@ -1204,8 +1204,8 @@ namespace JointMilitarySymbologyLibrary {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("standardIdentity", IsNullable=false)]
-        public libraryStandardIdentity[] standardIdentities {
+        [System.Xml.Serialization.XmlArrayItemAttribute("StandardIdentity", IsNullable=false)]
+        public LibraryStandardIdentity[] StandardIdentities {
             get {
                 return this.standardIdentitiesField;
             }
@@ -1215,8 +1215,8 @@ namespace JointMilitarySymbologyLibrary {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("dimension", IsNullable=false)]
-        public libraryDimension[] dimensions {
+        [System.Xml.Serialization.XmlArrayItemAttribute("Dimension", IsNullable=false)]
+        public LibraryDimension[] Dimensions {
             get {
                 return this.dimensionsField;
             }
@@ -1226,8 +1226,8 @@ namespace JointMilitarySymbologyLibrary {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("affiliation", IsNullable=false)]
-        public libraryAffiliation[] affiliations {
+        [System.Xml.Serialization.XmlArrayItemAttribute("Affiliation", IsNullable=false)]
+        public LibraryAffiliation[] Affiliations {
             get {
                 return this.affiliationsField;
             }
@@ -1237,8 +1237,8 @@ namespace JointMilitarySymbologyLibrary {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("status", IsNullable=false)]
-        public libraryStatus[] statuses {
+        [System.Xml.Serialization.XmlArrayItemAttribute("Status", IsNullable=false)]
+        public LibraryStatus[] Statuses {
             get {
                 return this.statusesField;
             }
@@ -1248,19 +1248,19 @@ namespace JointMilitarySymbologyLibrary {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("hqTFDummy", IsNullable=false)]
-        public libraryHqTFDummy[] hqTFDummies {
+        [System.Xml.Serialization.XmlArrayItemAttribute("HQTFDummy", IsNullable=false)]
+        public LibraryHQTFDummy[] HQTFDummies {
             get {
-                return this.hqTFDummiesField;
+                return this.hQTFDummiesField;
             }
             set {
-                this.hqTFDummiesField = value;
+                this.hQTFDummiesField = value;
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("amplifierGroup", IsNullable=false)]
-        public libraryAmplifierGroup[] amplifierGroups {
+        [System.Xml.Serialization.XmlArrayItemAttribute("AmplifierGroup", IsNullable=false)]
+        public LibraryAmplifierGroup[] AmplifierGroups {
             get {
                 return this.amplifierGroupsField;
             }
@@ -1271,7 +1271,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string name {
+        public string Name {
             get {
                 return this.nameField;
             }
@@ -1282,7 +1282,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string label {
+        public string Label {
             get {
                 return this.labelField;
             }
@@ -1293,7 +1293,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string description {
+        public string Description {
             get {
                 return this.descriptionField;
             }
@@ -1304,7 +1304,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string remarks {
+        public string Remarks {
             get {
                 return this.remarksField;
             }
@@ -1320,9 +1320,9 @@ namespace JointMilitarySymbologyLibrary {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://disa.mil/JointMilSyML.xsd")]
-    public partial class libraryVersion {
+    public partial class LibraryVersion {
         
-        private doubleDigitType versionCodeField;
+        private DoubleDigitType versionCodeField;
         
         private string nameField;
         
@@ -1333,7 +1333,7 @@ namespace JointMilitarySymbologyLibrary {
         private string remarksField;
         
         /// <remarks/>
-        public doubleDigitType versionCode {
+        public DoubleDigitType VersionCode {
             get {
                 return this.versionCodeField;
             }
@@ -1344,7 +1344,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string name {
+        public string Name {
             get {
                 return this.nameField;
             }
@@ -1355,7 +1355,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string label {
+        public string Label {
             get {
                 return this.labelField;
             }
@@ -1366,7 +1366,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string description {
+        public string Description {
             get {
                 return this.descriptionField;
             }
@@ -1377,7 +1377,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string remarks {
+        public string Remarks {
             get {
                 return this.remarksField;
             }
@@ -1393,11 +1393,11 @@ namespace JointMilitarySymbologyLibrary {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://disa.mil/JointMilSyML.xsd")]
-    public partial class libraryContext {
+    public partial class LibraryContext {
         
         private ushort contextCodeField;
         
-        private libraryContextContextAmplifier[] contextAmplifiersField;
+        private LibraryContextContextAmplifier[] contextAmplifiersField;
         
         private string idField;
         
@@ -1408,7 +1408,7 @@ namespace JointMilitarySymbologyLibrary {
         private string remarksField;
         
         /// <remarks/>
-        public ushort contextCode {
+        public ushort ContextCode {
             get {
                 return this.contextCodeField;
             }
@@ -1418,8 +1418,8 @@ namespace JointMilitarySymbologyLibrary {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("contextAmplifier", IsNullable=false)]
-        public libraryContextContextAmplifier[] contextAmplifiers {
+        [System.Xml.Serialization.XmlArrayItemAttribute("ContextAmplifier", IsNullable=false)]
+        public LibraryContextContextAmplifier[] ContextAmplifiers {
             get {
                 return this.contextAmplifiersField;
             }
@@ -1430,7 +1430,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
-        public string id {
+        public string ID {
             get {
                 return this.idField;
             }
@@ -1441,7 +1441,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string label {
+        public string Label {
             get {
                 return this.labelField;
             }
@@ -1452,7 +1452,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string description {
+        public string Description {
             get {
                 return this.descriptionField;
             }
@@ -1463,7 +1463,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string remarks {
+        public string Remarks {
             get {
                 return this.remarksField;
             }
@@ -1479,7 +1479,7 @@ namespace JointMilitarySymbologyLibrary {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://disa.mil/JointMilSyML.xsd")]
-    public partial class libraryContextContextAmplifier {
+    public partial class LibraryContextContextAmplifier {
         
         private string idField;
         
@@ -1491,11 +1491,11 @@ namespace JointMilitarySymbologyLibrary {
         
         private string graphicField;
         
-        private shapeType shapeField;
+        private ShapeType shapeField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
-        public string id {
+        public string ID {
             get {
                 return this.idField;
             }
@@ -1506,7 +1506,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string label {
+        public string Label {
             get {
                 return this.labelField;
             }
@@ -1517,7 +1517,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string description {
+        public string Description {
             get {
                 return this.descriptionField;
             }
@@ -1528,7 +1528,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string remarks {
+        public string Remarks {
             get {
                 return this.remarksField;
             }
@@ -1539,7 +1539,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string graphic {
+        public string Graphic {
             get {
                 return this.graphicField;
             }
@@ -1550,7 +1550,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public shapeType shape {
+        public ShapeType Shape {
             get {
                 return this.shapeField;
             }
@@ -1564,7 +1564,7 @@ namespace JointMilitarySymbologyLibrary {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://disa.mil/JointMilSyML.xsd")]
-    public enum shapeType {
+    public enum ShapeType {
         
         /// <remarks/>
         NA,
@@ -1594,7 +1594,7 @@ namespace JointMilitarySymbologyLibrary {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://disa.mil/JointMilSyML.xsd")]
-    public partial class libraryStandardIdentity {
+    public partial class LibraryStandardIdentity {
         
         private ushort standardIdentityCodeField;
         
@@ -1607,7 +1607,7 @@ namespace JointMilitarySymbologyLibrary {
         private string remarksField;
         
         /// <remarks/>
-        public ushort standardIdentityCode {
+        public ushort StandardIdentityCode {
             get {
                 return this.standardIdentityCodeField;
             }
@@ -1618,7 +1618,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
-        public string id {
+        public string ID {
             get {
                 return this.idField;
             }
@@ -1629,7 +1629,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string label {
+        public string Label {
             get {
                 return this.labelField;
             }
@@ -1640,7 +1640,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string description {
+        public string Description {
             get {
                 return this.descriptionField;
             }
@@ -1651,7 +1651,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string remarks {
+        public string Remarks {
             get {
                 return this.remarksField;
             }
@@ -1667,11 +1667,11 @@ namespace JointMilitarySymbologyLibrary {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://disa.mil/JointMilSyML.xsd")]
-    public partial class libraryDimension {
+    public partial class LibraryDimension {
         
-        private legacyLetterCodeType[] legacyDimensionCodeField;
+        private LegacyLetterCodeType[] legacyDimensionCodeField;
         
-        private libraryDimensionSymbolSetRef[] symbolSetsField;
+        private LibraryDimensionSymbolSetRef[] symbolSetsField;
         
         private string idField;
         
@@ -1682,8 +1682,8 @@ namespace JointMilitarySymbologyLibrary {
         private string remarksField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("legacyDimensionCode")]
-        public legacyLetterCodeType[] legacyDimensionCode {
+        [System.Xml.Serialization.XmlElementAttribute("LegacyDimensionCode")]
+        public LegacyLetterCodeType[] LegacyDimensionCode {
             get {
                 return this.legacyDimensionCodeField;
             }
@@ -1693,8 +1693,8 @@ namespace JointMilitarySymbologyLibrary {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("symbolSetRef", IsNullable=false)]
-        public libraryDimensionSymbolSetRef[] symbolSets {
+        [System.Xml.Serialization.XmlArrayItemAttribute("SymbolSetRef", IsNullable=false)]
+        public LibraryDimensionSymbolSetRef[] SymbolSets {
             get {
                 return this.symbolSetsField;
             }
@@ -1705,7 +1705,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
-        public string id {
+        public string ID {
             get {
                 return this.idField;
             }
@@ -1716,7 +1716,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string label {
+        public string Label {
             get {
                 return this.labelField;
             }
@@ -1727,7 +1727,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string description {
+        public string Description {
             get {
                 return this.descriptionField;
             }
@@ -1738,7 +1738,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string remarks {
+        public string Remarks {
             get {
                 return this.remarksField;
             }
@@ -1754,9 +1754,9 @@ namespace JointMilitarySymbologyLibrary {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://disa.mil/JointMilSyML.xsd")]
-    public partial class libraryDimensionSymbolSetRef {
+    public partial class LibraryDimensionSymbolSetRef {
         
-        private doubleDigitType symbolSetCodeField;
+        private DoubleDigitType symbolSetCodeField;
         
         private string idField;
         
@@ -1769,7 +1769,7 @@ namespace JointMilitarySymbologyLibrary {
         private string instanceField;
         
         /// <remarks/>
-        public doubleDigitType symbolSetCode {
+        public DoubleDigitType SymbolSetCode {
             get {
                 return this.symbolSetCodeField;
             }
@@ -1780,7 +1780,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
-        public string id {
+        public string ID {
             get {
                 return this.idField;
             }
@@ -1791,7 +1791,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string label {
+        public string Label {
             get {
                 return this.labelField;
             }
@@ -1802,7 +1802,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string description {
+        public string Description {
             get {
                 return this.descriptionField;
             }
@@ -1813,7 +1813,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string remarks {
+        public string Remarks {
             get {
                 return this.remarksField;
             }
@@ -1824,7 +1824,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string instance {
+        public string Instance {
             get {
                 return this.instanceField;
             }
@@ -1840,9 +1840,9 @@ namespace JointMilitarySymbologyLibrary {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://disa.mil/JointMilSyML.xsd")]
-    public partial class libraryAffiliation {
+    public partial class LibraryAffiliation {
         
-        private legacyLetterCodeType[] legacyStandardIdentityCodeField;
+        private LegacyLetterCodeType[] legacyStandardIdentityCodeField;
         
         private string idField;
         
@@ -1860,11 +1860,11 @@ namespace JointMilitarySymbologyLibrary {
         
         private string dimensionIDField;
         
-        private shapeType shapeField;
+        private ShapeType shapeField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("legacyStandardIdentityCode")]
-        public legacyLetterCodeType[] legacyStandardIdentityCode {
+        [System.Xml.Serialization.XmlElementAttribute("LegacyStandardIdentityCode")]
+        public LegacyLetterCodeType[] LegacyStandardIdentityCode {
             get {
                 return this.legacyStandardIdentityCodeField;
             }
@@ -1875,7 +1875,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
-        public string id {
+        public string ID {
             get {
                 return this.idField;
             }
@@ -1886,7 +1886,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string label {
+        public string Label {
             get {
                 return this.labelField;
             }
@@ -1897,7 +1897,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string description {
+        public string Description {
             get {
                 return this.descriptionField;
             }
@@ -1908,7 +1908,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string remarks {
+        public string Remarks {
             get {
                 return this.remarksField;
             }
@@ -1919,7 +1919,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string graphic {
+        public string Graphic {
             get {
                 return this.graphicField;
             }
@@ -1930,7 +1930,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="IDREF")]
-        public string contextID {
+        public string ContextID {
             get {
                 return this.contextIDField;
             }
@@ -1941,7 +1941,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="IDREF")]
-        public string standardIdentityID {
+        public string StandardIdentityID {
             get {
                 return this.standardIdentityIDField;
             }
@@ -1952,7 +1952,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="IDREF")]
-        public string dimensionID {
+        public string DimensionID {
             get {
                 return this.dimensionIDField;
             }
@@ -1963,7 +1963,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public shapeType shape {
+        public ShapeType Shape {
             get {
                 return this.shapeField;
             }
@@ -1979,11 +1979,11 @@ namespace JointMilitarySymbologyLibrary {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://disa.mil/JointMilSyML.xsd")]
-    public partial class libraryStatus {
+    public partial class LibraryStatus {
         
         private ushort statusCodeField;
         
-        private legacyLetterCodeType[] legacyStatusCodeField;
+        private LegacyLetterCodeType[] legacyStatusCodeField;
         
         private string nameField;
         
@@ -1994,7 +1994,7 @@ namespace JointMilitarySymbologyLibrary {
         private string remarksField;
         
         /// <remarks/>
-        public ushort statusCode {
+        public ushort StatusCode {
             get {
                 return this.statusCodeField;
             }
@@ -2004,8 +2004,8 @@ namespace JointMilitarySymbologyLibrary {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("legacyStatusCode")]
-        public legacyLetterCodeType[] legacyStatusCode {
+        [System.Xml.Serialization.XmlElementAttribute("LegacyStatusCode")]
+        public LegacyLetterCodeType[] LegacyStatusCode {
             get {
                 return this.legacyStatusCodeField;
             }
@@ -2016,7 +2016,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string name {
+        public string Name {
             get {
                 return this.nameField;
             }
@@ -2027,7 +2027,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string label {
+        public string Label {
             get {
                 return this.labelField;
             }
@@ -2038,7 +2038,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string description {
+        public string Description {
             get {
                 return this.descriptionField;
             }
@@ -2049,7 +2049,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string remarks {
+        public string Remarks {
             get {
                 return this.remarksField;
             }
@@ -2065,11 +2065,11 @@ namespace JointMilitarySymbologyLibrary {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://disa.mil/JointMilSyML.xsd")]
-    public partial class libraryHqTFDummy {
+    public partial class LibraryHQTFDummy {
         
-        private ushort hqTFDummyCodeField;
+        private ushort hQTFDummyCodeField;
         
-        private legacyLetterCodeType[] legacyHQTFDummyCodeField;
+        private LegacyLetterCodeType[] legacyHQTFDummyCodeField;
         
         private string nameField;
         
@@ -2094,18 +2094,18 @@ namespace JointMilitarySymbologyLibrary {
         private string squareGraphicField;
         
         /// <remarks/>
-        public ushort hqTFDummyCode {
+        public ushort HQTFDummyCode {
             get {
-                return this.hqTFDummyCodeField;
+                return this.hQTFDummyCodeField;
             }
             set {
-                this.hqTFDummyCodeField = value;
+                this.hQTFDummyCodeField = value;
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("legacyHQTFDummyCode")]
-        public legacyLetterCodeType[] legacyHQTFDummyCode {
+        [System.Xml.Serialization.XmlElementAttribute("LegacyHQTFDummyCode")]
+        public LegacyLetterCodeType[] LegacyHQTFDummyCode {
             get {
                 return this.legacyHQTFDummyCodeField;
             }
@@ -2116,7 +2116,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string name {
+        public string Name {
             get {
                 return this.nameField;
             }
@@ -2127,7 +2127,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string label {
+        public string Label {
             get {
                 return this.labelField;
             }
@@ -2138,7 +2138,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string description {
+        public string Description {
             get {
                 return this.descriptionField;
             }
@@ -2149,7 +2149,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string remarks {
+        public string Remarks {
             get {
                 return this.remarksField;
             }
@@ -2160,7 +2160,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string graphic {
+        public string Graphic {
             get {
                 return this.graphicField;
             }
@@ -2171,7 +2171,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string circleGraphic {
+        public string CircleGraphic {
             get {
                 return this.circleGraphicField;
             }
@@ -2182,7 +2182,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string cloverGraphic {
+        public string CloverGraphic {
             get {
                 return this.cloverGraphicField;
             }
@@ -2193,7 +2193,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string curveGraphic {
+        public string CurveGraphic {
             get {
                 return this.curveGraphicField;
             }
@@ -2204,7 +2204,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string diamondGraphic {
+        public string DiamondGraphic {
             get {
                 return this.diamondGraphicField;
             }
@@ -2215,7 +2215,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string rectangleGraphic {
+        public string RectangleGraphic {
             get {
                 return this.rectangleGraphicField;
             }
@@ -2226,7 +2226,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string squareGraphic {
+        public string SquareGraphic {
             get {
                 return this.squareGraphicField;
             }
@@ -2242,13 +2242,13 @@ namespace JointMilitarySymbologyLibrary {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://disa.mil/JointMilSyML.xsd")]
-    public partial class libraryAmplifierGroup {
+    public partial class LibraryAmplifierGroup {
         
         private ushort amplifierGroupCodeField;
         
-        private legacyLetterCodeType[] legacyModifierCodeField;
+        private LegacyLetterCodeType[] legacyModifierCodeField;
         
-        private libraryAmplifierGroupAmplifier[] amplifiersField;
+        private LibraryAmplifierGroupAmplifier[] amplifiersField;
         
         private string nameField;
         
@@ -2261,7 +2261,7 @@ namespace JointMilitarySymbologyLibrary {
         private string compatibleSymbolSetsField;
         
         /// <remarks/>
-        public ushort amplifierGroupCode {
+        public ushort AmplifierGroupCode {
             get {
                 return this.amplifierGroupCodeField;
             }
@@ -2271,8 +2271,8 @@ namespace JointMilitarySymbologyLibrary {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("legacyModifierCode")]
-        public legacyLetterCodeType[] legacyModifierCode {
+        [System.Xml.Serialization.XmlElementAttribute("LegacyModifierCode")]
+        public LegacyLetterCodeType[] LegacyModifierCode {
             get {
                 return this.legacyModifierCodeField;
             }
@@ -2282,8 +2282,8 @@ namespace JointMilitarySymbologyLibrary {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("amplifier", IsNullable=false)]
-        public libraryAmplifierGroupAmplifier[] amplifiers {
+        [System.Xml.Serialization.XmlArrayItemAttribute("Amplifier", IsNullable=false)]
+        public LibraryAmplifierGroupAmplifier[] Amplifiers {
             get {
                 return this.amplifiersField;
             }
@@ -2294,7 +2294,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string name {
+        public string Name {
             get {
                 return this.nameField;
             }
@@ -2305,7 +2305,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string label {
+        public string Label {
             get {
                 return this.labelField;
             }
@@ -2316,7 +2316,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string description {
+        public string Description {
             get {
                 return this.descriptionField;
             }
@@ -2327,7 +2327,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string remarks {
+        public string Remarks {
             get {
                 return this.remarksField;
             }
@@ -2338,7 +2338,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="IDREFS")]
-        public string compatibleSymbolSets {
+        public string CompatibleSymbolSets {
             get {
                 return this.compatibleSymbolSetsField;
             }
@@ -2354,11 +2354,11 @@ namespace JointMilitarySymbologyLibrary {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://disa.mil/JointMilSyML.xsd")]
-    public partial class libraryAmplifierGroupAmplifier {
+    public partial class LibraryAmplifierGroupAmplifier {
         
         private ushort amplifierCodeField;
         
-        private legacyLetterCodeType[] legacyModifierCodeField;
+        private LegacyLetterCodeType[] legacyModifierCodeField;
         
         private string nameField;
         
@@ -2383,7 +2383,7 @@ namespace JointMilitarySymbologyLibrary {
         private string squareGraphicField;
         
         /// <remarks/>
-        public ushort amplifierCode {
+        public ushort AmplifierCode {
             get {
                 return this.amplifierCodeField;
             }
@@ -2393,8 +2393,8 @@ namespace JointMilitarySymbologyLibrary {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("legacyModifierCode")]
-        public legacyLetterCodeType[] legacyModifierCode {
+        [System.Xml.Serialization.XmlElementAttribute("LegacyModifierCode")]
+        public LegacyLetterCodeType[] LegacyModifierCode {
             get {
                 return this.legacyModifierCodeField;
             }
@@ -2405,7 +2405,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string name {
+        public string Name {
             get {
                 return this.nameField;
             }
@@ -2416,7 +2416,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string label {
+        public string Label {
             get {
                 return this.labelField;
             }
@@ -2427,7 +2427,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string description {
+        public string Description {
             get {
                 return this.descriptionField;
             }
@@ -2438,7 +2438,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string remarks {
+        public string Remarks {
             get {
                 return this.remarksField;
             }
@@ -2449,7 +2449,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string graphic {
+        public string Graphic {
             get {
                 return this.graphicField;
             }
@@ -2460,7 +2460,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string circleGraphic {
+        public string CircleGraphic {
             get {
                 return this.circleGraphicField;
             }
@@ -2471,7 +2471,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string cloverGraphic {
+        public string CloverGraphic {
             get {
                 return this.cloverGraphicField;
             }
@@ -2482,7 +2482,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string curveGraphic {
+        public string CurveGraphic {
             get {
                 return this.curveGraphicField;
             }
@@ -2493,7 +2493,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string diamondGraphic {
+        public string DiamondGraphic {
             get {
                 return this.diamondGraphicField;
             }
@@ -2504,7 +2504,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string rectangleGraphic {
+        public string RectangleGraphic {
             get {
                 return this.rectangleGraphicField;
             }
@@ -2515,7 +2515,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string squareGraphic {
+        public string SquareGraphic {
             get {
                 return this.squareGraphicField;
             }

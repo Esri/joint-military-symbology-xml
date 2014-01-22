@@ -21,52 +21,52 @@ using System.IO;
 
 namespace JointMilitarySymbologyLibrary
 {
-    public class symbol
+    public class Symbol
     {
         private bool _isValid = false;
-        private librarian _librarian = null;
-        private libraryVersion _version = null;
-        private libraryContext _context = null;
-        private libraryContextContextAmplifier _contextAmplifier = null;
-        private libraryStandardIdentity _standardIdentity = null;
-        private libraryDimension _dimension = null;
-        private libraryAffiliation _affiliation = null;
-        private libraryStatus _status = null;
-        private libraryHqTFDummy _hqTFDummy = null;
-        private libraryAmplifierGroup _amplifierGroup = null;
-        private libraryAmplifierGroupAmplifier _amplifier = null;
+        private Librarian _librarian = null;
+        private LibraryVersion _version = null;
+        private LibraryContext _context = null;
+        private LibraryContextContextAmplifier _contextAmplifier = null;
+        private LibraryStandardIdentity _standardIdentity = null;
+        private LibraryDimension _dimension = null;
+        private LibraryAffiliation _affiliation = null;
+        private LibraryStatus _status = null;
+        private LibraryHQTFDummy _hqTFDummy = null;
+        private LibraryAmplifierGroup _amplifierGroup = null;
+        private LibraryAmplifierGroupAmplifier _amplifier = null;
 
-        private symbolSet _symbolSet = null;
-        private symbolSetEntity _entity = null;
-        private symbolSetEntityEntityType _entityType = null;
-        private symbolSetEntityEntityTypeEntitySubType _entitySubType = null;
-        private modifiersTypeModifier _modifierOne = null;
-        private modifiersTypeModifier _modifierTwo = null;
+        private SymbolSet _symbolSet = null;
+        private SymbolSetEntity _entity = null;
+        private SymbolSetEntityEntityType _entityType = null;
+        private SymbolSetEntityEntityTypeEntitySubType _entitySubType = null;
+        private ModifiersTypeModifier _modifierOne = null;
+        private ModifiersTypeModifier _modifierTwo = null;
 
-        private symbolSetLegacySymbol _legacySymbol = null;
+        private SymbolSetLegacySymbol _legacySymbol = null;
 
-        private sidc _sidc = new sidc();
+        private SIDC _sidc = new SIDC();
         private string _legacySIDC = "SPGP-----------";
 
-        internal symbol(librarian librarian, sidc sidc)
+        internal Symbol(Librarian librarian, SIDC sidc)
         {
             _librarian = librarian;
             _sidc = sidc;
 
-            _updateFromCurrent();
-            _buildLegacySIDC();
+            _UpdateFromCurrent();
+            _BuildLegacySIDC();
         }
 
-        internal symbol(librarian librarian, string legacyStandard, string legacySIDC)
+        internal Symbol(Librarian librarian, string legacyStandard, string legacySIDC)
         {
             _librarian = librarian;
             _legacySIDC = legacySIDC;
 
-            _updateFromLegacy();
-            _buildSIDC();
+            _UpdateFromLegacy();
+            _BuildSIDC();
         }
 
-        public bool isValid
+        public bool IsValid
         {
             get
             {
@@ -74,7 +74,7 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        public sidc sidc
+        public SIDC SIDC
         {
             get
             {
@@ -84,12 +84,12 @@ namespace JointMilitarySymbologyLibrary
             set
             {
                 _sidc = value;
-                _updateFromCurrent();
-                _buildLegacySIDC();        
+                _UpdateFromCurrent();
+                _BuildLegacySIDC();        
             }
         }
 
-        public string legacySIDC
+        public string LegacySIDC
         {
             get
             {
@@ -99,12 +99,12 @@ namespace JointMilitarySymbologyLibrary
             set 
             { 
                 _legacySIDC = value;
-                _updateFromLegacy();
-                _buildSIDC();
+                _UpdateFromLegacy();
+                _BuildSIDC();
             }
         }
 
-        public Image image
+        public Image Image
         {
             get
             {
@@ -113,21 +113,21 @@ namespace JointMilitarySymbologyLibrary
 
                 Image Canvas = new Bitmap(1108, 1327);
 
-                if (_affiliation.graphic != "")
+                if (_affiliation.Graphic != "")
                 {
-                    if (File.Exists(_librarian.graphics + "/" + _affiliation.graphic))
+                    if (File.Exists(_librarian.Graphics + "/" + _affiliation.Graphic))
                     {
-                        imgFrame = Image.FromFile(_librarian.graphics + "/" + _affiliation.graphic);
+                        imgFrame = Image.FromFile(_librarian.Graphics + "/" + _affiliation.Graphic);
                     }
                 }
 
                 if (_entity != null)
                 {
-                    if (_entity.graphic != "")
+                    if (_entity.Graphic != "")
                     {
-                        if (File.Exists(_librarian.graphics + "/" + _entity.graphic))
+                        if (File.Exists(_librarian.Graphics + "/" + _entity.Graphic))
                         {
-                            imgIcon = Image.FromFile(_librarian.graphics + "/" + _entity.graphic);
+                            imgIcon = Image.FromFile(_librarian.Graphics + "/" + _entity.Graphic);
 
                             //Frame to define the dimentions
                             Rectangle Frame = new Rectangle(0, 0, 267, 320);
@@ -153,15 +153,15 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        public void saveImage(string fileName)
+        public void SaveImage(string fileName)
         {
-            Image img = this.image;
+            Image img = this.Image;
 
             if(img != null)
                 img.Save(fileName, ImageFormat.Png);
         }
 
-        private void _buildSIDC()
+        private void _BuildSIDC()
         {
             _isValid = true;
 
@@ -169,16 +169,16 @@ namespace JointMilitarySymbologyLibrary
                _standardIdentity != null && _symbolSet != null && _status != null &&
                _hqTFDummy != null && _amplifierGroup != null && _amplifier != null)
             {
-                _sidc.partAUInt = (uint)_version.versionCode.digitOne * 1000000000 +
-                                    (uint)_version.versionCode.digitTwo * 100000000 +
-                                    (uint)_context.contextCode * 10000000 +
-                                    (uint)_standardIdentity.standardIdentityCode * 1000000 +
-                                    (uint)_symbolSet.symbolSetCode.digitOne * 100000 +
-                                    (uint)_symbolSet.symbolSetCode.digitTwo * 10000 +
-                                    (uint)_status.statusCode * 1000 +
-                                    (uint)_hqTFDummy.hqTFDummyCode * 100 +
-                                    (uint)_amplifierGroup.amplifierGroupCode * 10 +
-                                    (uint)_amplifier.amplifierCode;
+                _sidc.PartAUInt = (uint)_version.VersionCode.DigitOne * 1000000000 +
+                                    (uint)_version.VersionCode.DigitTwo * 100000000 +
+                                    (uint)_context.ContextCode * 10000000 +
+                                    (uint)_standardIdentity.StandardIdentityCode * 1000000 +
+                                    (uint)_symbolSet.SymbolSetCode.DigitOne * 100000 +
+                                    (uint)_symbolSet.SymbolSetCode.DigitTwo * 10000 +
+                                    (uint)_status.StatusCode * 1000 +
+                                    (uint)_hqTFDummy.HQTFDummyCode * 100 +
+                                    (uint)_amplifierGroup.AmplifierGroupCode * 10 +
+                                    (uint)_amplifier.AmplifierCode;
             }
             else
             {
@@ -187,8 +187,8 @@ namespace JointMilitarySymbologyLibrary
 
             if (_entity != null)
             {
-                _sidc.partBUInt = (uint)_entity.entityCode.digitOne * 1000000000 +
-                                     (uint)_entity.entityCode.digitTwo * 100000000;
+                _sidc.PartBUInt = (uint)_entity.EntityCode.DigitOne * 1000000000 +
+                                     (uint)_entity.EntityCode.DigitTwo * 100000000;
             }
             else
             {
@@ -197,48 +197,48 @@ namespace JointMilitarySymbologyLibrary
 
             if (_entityType != null)
             {
-                _sidc.partBUInt = _sidc.partBUInt + (uint)_entityType.entityTypeCode.digitOne * 10000000 +
-                                                          (uint)_entityType.entityTypeCode.digitTwo * 1000000;
+                _sidc.PartBUInt = _sidc.PartBUInt + (uint)_entityType.EntityTypeCode.DigitOne * 10000000 +
+                                                          (uint)_entityType.EntityTypeCode.DigitTwo * 1000000;
 
             }
 
             if (_entitySubType != null)
             {
-                _sidc.partBUInt = _sidc.partBUInt + (uint)_entitySubType.entitySubTypeCode.digitOne * 100000 +
-                                                          (uint)_entitySubType.entitySubTypeCode.digitTwo * 10000;
+                _sidc.PartBUInt = _sidc.PartBUInt + (uint)_entitySubType.EntitySubTypeCode.DigitOne * 100000 +
+                                                          (uint)_entitySubType.EntitySubTypeCode.DigitTwo * 10000;
 
             }
 
             if (_modifierOne != null)
             {
-                _sidc.partBUInt = _sidc.partBUInt + (uint)_modifierOne.modifierCode.digitOne * 1000 +
-                                                          (uint)_modifierOne.modifierCode.digitTwo * 100;
+                _sidc.PartBUInt = _sidc.PartBUInt + (uint)_modifierOne.ModifierCode.DigitOne * 1000 +
+                                                          (uint)_modifierOne.ModifierCode.DigitTwo * 100;
 
             }
 
             if (_modifierTwo != null)
             {
-                _sidc.partBUInt = _sidc.partBUInt + (uint)_modifierTwo.modifierCode.digitOne * 10 +
-                                                          (uint)_modifierTwo.modifierCode.digitTwo;
+                _sidc.PartBUInt = _sidc.PartBUInt + (uint)_modifierTwo.ModifierCode.DigitOne * 10 +
+                                                          (uint)_modifierTwo.ModifierCode.DigitTwo;
 
             }
         }
 
-        private void _buildLegacySIDC()
+        private void _BuildLegacySIDC()
         {
             _isValid = true;
 
             if (_symbolSet != null && _affiliation != null && _dimension != null &&
                _status != null && _amplifierGroup != null && _amplifier != null)
             {
-                _legacySIDC = _symbolSet.legacyCodingSchemeCode[0].Value +
-                              _affiliation.legacyStandardIdentityCode[0].Value +
-                              _dimension.legacyDimensionCode[0].Value +
-                              _status.legacyStatusCode[0].Value;
+                _legacySIDC = _symbolSet.LegacyCodingSchemeCode[0].Value +
+                              _affiliation.LegacyStandardIdentityCode[0].Value +
+                              _dimension.LegacyDimensionCode[0].Value +
+                              _status.LegacyStatusCode[0].Value;
 
                 if (_legacySymbol != null)
                 {
-                    _legacySIDC = _legacySIDC + _legacySymbol.legacyFunctionCode[0].Value;
+                    _legacySIDC = _legacySIDC + _legacySymbol.LegacyFunctionCode[0].Value;
                 }
                 else
                 {
@@ -246,65 +246,65 @@ namespace JointMilitarySymbologyLibrary
                     _isValid = false;
                 }
 
-                _legacySIDC = _legacySIDC + _amplifierGroup.legacyModifierCode[0].Value +
-                                            _amplifier.legacyModifierCode[0].Value +
+                _legacySIDC = _legacySIDC + _amplifierGroup.LegacyModifierCode[0].Value +
+                                            _amplifier.LegacyModifierCode[0].Value +
                                             "---";
             }
             else
                 _isValid = false;
         }
 
-        private void _updateFromCurrent()
+        private void _UpdateFromCurrent()
         {
-            string first10 = _sidc.partAString;
-            string second10 = _sidc.partBString;
+            string first10 = _sidc.PartAString;
+            string second10 = _sidc.PartBString;
 
-            _version = _librarian.version(Convert.ToUInt16(first10.Substring(0, 1)),
+            _version = _librarian.Version(Convert.ToUInt16(first10.Substring(0, 1)),
                                           Convert.ToUInt16(first10.Substring(1, 1)));
             
-            _context = _librarian.context(Convert.ToUInt16(first10.Substring(2, 1)));
-            _standardIdentity = _librarian.standardIdentity(Convert.ToUInt16(first10.Substring(3, 1)));
-            _symbolSet = _librarian.symbolSet(Convert.ToUInt16(first10.Substring(4, 1)), Convert.ToUInt16(first10.Substring(5, 1)));
-            _dimension = _librarian.dimensionBySymbolSet(_symbolSet.id);
-            _affiliation = _librarian.affiliation(_context.id, _dimension.id, _standardIdentity.id);
-            _status = _librarian.status(Convert.ToUInt16(first10.Substring(6, 1)));
-            _hqTFDummy = _librarian.hqTFDummy(Convert.ToUInt16(first10.Substring(7, 1)));
-            _amplifierGroup = _librarian.amplifierGroup(Convert.ToUInt16(first10.Substring(8, 1)));
-            _amplifier = _librarian.amplifier(_amplifierGroup, Convert.ToUInt16(first10.Substring(9, 1)));
-            _contextAmplifier = _librarian.contextAmplifier(_context, _affiliation.shape);
+            _context = _librarian.Context(Convert.ToUInt16(first10.Substring(2, 1)));
+            _standardIdentity = _librarian.StandardIdentity(Convert.ToUInt16(first10.Substring(3, 1)));
+            _symbolSet = _librarian.SymbolSet(Convert.ToUInt16(first10.Substring(4, 1)), Convert.ToUInt16(first10.Substring(5, 1)));
+            _dimension = _librarian.DimensionBySymbolSet(_symbolSet.ID);
+            _affiliation = _librarian.Affiliation(_context.ID, _dimension.ID, _standardIdentity.ID);
+            _status = _librarian.Status(Convert.ToUInt16(first10.Substring(6, 1)));
+            _hqTFDummy = _librarian.HQTFDummy(Convert.ToUInt16(first10.Substring(7, 1)));
+            _amplifierGroup = _librarian.AmplifierGroup(Convert.ToUInt16(first10.Substring(8, 1)));
+            _amplifier = _librarian.Amplifier(_amplifierGroup, Convert.ToUInt16(first10.Substring(9, 1)));
+            _contextAmplifier = _librarian.ContextAmplifier(_context, _affiliation.Shape);
 
-            _entity = _librarian.entity(_symbolSet, Convert.ToUInt16(second10.Substring(0, 1)), Convert.ToUInt16(second10.Substring(1, 1)));
-            _entityType = _librarian.entityType(_entity, Convert.ToUInt16(second10.Substring(2, 1)), Convert.ToUInt16(second10.Substring(3, 1)));
-            _entitySubType = _librarian.entitySubType(_entityType, Convert.ToUInt16(second10.Substring(4, 1)), Convert.ToUInt16(second10.Substring(5, 1)));
-            _modifierOne = _librarian.modifierOne(_symbolSet, Convert.ToUInt16(second10.Substring(6, 1)), Convert.ToUInt16(second10.Substring(7, 1)));
-            _modifierTwo = _librarian.modifierTwo(_symbolSet, Convert.ToUInt16(second10.Substring(8, 1)), Convert.ToUInt16(second10.Substring(9, 1)));
-            _legacySymbol = _librarian.legacySymbol(_symbolSet, _entity, _entityType, _entitySubType, _modifierOne, _modifierTwo);
+            _entity = _librarian.Entity(_symbolSet, Convert.ToUInt16(second10.Substring(0, 1)), Convert.ToUInt16(second10.Substring(1, 1)));
+            _entityType = _librarian.EntityType(_entity, Convert.ToUInt16(second10.Substring(2, 1)), Convert.ToUInt16(second10.Substring(3, 1)));
+            _entitySubType = _librarian.EntitySubType(_entityType, Convert.ToUInt16(second10.Substring(4, 1)), Convert.ToUInt16(second10.Substring(5, 1)));
+            _modifierOne = _librarian.ModifierOne(_symbolSet, Convert.ToUInt16(second10.Substring(6, 1)), Convert.ToUInt16(second10.Substring(7, 1)));
+            _modifierTwo = _librarian.ModifierTwo(_symbolSet, Convert.ToUInt16(second10.Substring(8, 1)), Convert.ToUInt16(second10.Substring(9, 1)));
+            _legacySymbol = _librarian.LegacySymbol(_symbolSet, _entity, _entityType, _entitySubType, _modifierOne, _modifierTwo);
         }
 
-        private void _updateFromLegacy()
+        private void _UpdateFromLegacy()
         {
-            _version = _librarian.version(1, 0);
+            _version = _librarian.Version(1, 0);
 
-            _affiliation = _librarian.affiliation(_legacySIDC.Substring(1, 1), _legacySIDC.Substring(2, 1));
-            _context = _librarian.context(_affiliation.contextID);
-            _standardIdentity = _librarian.standardIdentity(_affiliation.standardIdentityID);
-            _dimension = _librarian.dimensionByLegacyCode(_legacySIDC.Substring(2, 1));
-            _symbolSet = _librarian.symbolSet(_dimension.id, _legacySIDC.Substring(4, 6));
-            _status = _librarian.status(_legacySIDC.Substring(3, 1));
-            _hqTFDummy = _librarian.hqTFDummy(_legacySIDC.Substring(10, 1));
-            _contextAmplifier = _librarian.contextAmplifier(_context, _affiliation.shape);
-            _amplifier = _librarian.amplifier(_legacySIDC.Substring(11, 1));
-            _amplifierGroup = _librarian.amplifierGroup(_amplifier);
+            _affiliation = _librarian.Affiliation(_legacySIDC.Substring(1, 1), _legacySIDC.Substring(2, 1));
+            _context = _librarian.Context(_affiliation.ContextID);
+            _standardIdentity = _librarian.StandardIdentity(_affiliation.StandardIdentityID);
+            _dimension = _librarian.DimensionByLegacyCode(_legacySIDC.Substring(2, 1));
+            _symbolSet = _librarian.SymbolSet(_dimension.ID, _legacySIDC.Substring(4, 6));
+            _status = _librarian.Status(_legacySIDC.Substring(3, 1));
+            _hqTFDummy = _librarian.HQTFDummy(_legacySIDC.Substring(10, 1));
+            _contextAmplifier = _librarian.ContextAmplifier(_context, _affiliation.Shape);
+            _amplifier = _librarian.Amplifier(_legacySIDC.Substring(11, 1));
+            _amplifierGroup = _librarian.AmplifierGroup(_amplifier);
 
-            _legacySymbol = _librarian.legacySymbol(_symbolSet, _legacySIDC.Substring(4,6));
+            _legacySymbol = _librarian.LegacySymbol(_symbolSet, _legacySIDC.Substring(4,6));
 
             if (_legacySymbol != null)
             {
-                _entity = _librarian.entity(_symbolSet, _legacySymbol.entityID);
-                _entityType = _librarian.entityType(_entity, _legacySymbol.entityTypeID);
-                _entitySubType = _librarian.entitySubType(_entityType, _legacySymbol.entitySubTypeID);
-                _modifierOne = _librarian.modifierOne(_symbolSet, _legacySymbol.modifierOneID);
-                _modifierTwo = _librarian.modifierTwo(_symbolSet, _legacySymbol.modifierTwoID);
+                _entity = _librarian.Entity(_symbolSet, _legacySymbol.EntityID);
+                _entityType = _librarian.EntityType(_entity, _legacySymbol.EntityTypeID);
+                _entitySubType = _librarian.EntitySubType(_entityType, _legacySymbol.EntitySubTypeID);
+                _modifierOne = _librarian.ModifierOne(_symbolSet, _legacySymbol.ModifierOneID);
+                _modifierTwo = _librarian.ModifierTwo(_symbolSet, _legacySymbol.ModifierTwoID);
             }
         }
     }

@@ -14,15 +14,15 @@ namespace Test
 {
     public partial class FormSIDCConverter : Form
     {
-        private librarian _librarian;
-        private symbol _symbol;
+        private Librarian _librarian;
+        private Symbol _symbol;
 
         public FormSIDCConverter()
         {
             InitializeComponent();
 
-            _librarian = new librarian();
-            _symbol = _librarian.makeSymbol(new sidc());
+            _librarian = new Librarian();
+            _symbol = _librarian.MakeSymbol(new SIDC());
 
             updateControls();
         }
@@ -41,7 +41,7 @@ namespace Test
 
         private void buttonCtoD_Click(object sender, EventArgs e)
         {
-            _symbol.legacySIDC = text2525C.Text;
+            _symbol.LegacySIDC = text2525C.Text;
 
             updateD();
             updateImage();
@@ -49,12 +49,12 @@ namespace Test
 
         private void buttonDtoC_Click(object sender, EventArgs e)
         {
-            sidc sidc = _symbol.sidc;
+            SIDC sidc = _symbol.SIDC;
 
-            sidc.partAString = text2525D_1.Text;
-            sidc.partBString = text2525D_2.Text;
+            sidc.PartAString = text2525D_1.Text;
+            sidc.PartBString = text2525D_2.Text;
 
-            _symbol.sidc = sidc;
+            _symbol.SIDC = sidc;
 
             updateC();
             updateImage();
@@ -64,13 +64,13 @@ namespace Test
 
         private void updateC()
         {
-            text2525C.Text = _symbol.legacySIDC;
+            text2525C.Text = _symbol.LegacySIDC;
         }
 
         private void updateD()
         {
-            text2525D_1.Text = _symbol.sidc.partAString;
-            text2525D_2.Text = _symbol.sidc.partBString;
+            text2525D_1.Text = _symbol.SIDC.PartAString;
+            text2525D_2.Text = _symbol.SIDC.PartBString;
         }
 
         private void updateControls()
@@ -82,11 +82,11 @@ namespace Test
 
         private void updateImage()
         {
-            if (_symbol.image != null)
+            if (_symbol.Image != null)
             {
-                pictureBoxSymbol.Image = _symbol.image;
+                pictureBoxSymbol.Image = _symbol.Image;
 
-                _symbol.saveImage("C:\\Users\\andy750\\Documents\\jmsml\\save.png");
+                _symbol.SaveImage("C:\\Users\\andy750\\Documents\\jmsml\\save.png");
             }
         }
     }
