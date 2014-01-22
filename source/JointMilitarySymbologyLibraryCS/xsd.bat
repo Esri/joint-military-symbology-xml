@@ -1,1 +1,0 @@
-xsd jmsmlConfig.xsd /c /l:CS /n:JointMilitarySymbologyLibrary
