@@ -63,6 +63,14 @@ In providing this schema, files of instance data, and sample C# code to navigate
             * NOTE: if you recieve an error message: `'msbuild' is not recognized` 
             * You may need to add the path the .NET Framework SDK (if multiple SDKs are installed)
             * E.g. `set path=%path%;C:\Windows\Microsoft.NET\Framework\v4.0.30319`
+* Use the UnitTests project and the Visual Studio Test tools to run the unit tests provided.  These will test various aspects of the source used to navigate the XML data and convert symbol ID codes (SIDC) from one military symbology standard to another.
+* Run the Test project to see a form appear, which you can use to manually test the SIDC conversion.
+	* Edit a 15-character 2525C SIDC on the left and click on the right arrow to convert that SIDC to the equivalent 20 digits for 2525D.
+	* Edit the 20 digits on the right and click the left arrow to convert that SIDC to the equivalent 15-character code for 2525C.
+	* Note that not all symbols are currently supported and not all possible 2525D codes will convert to 2525C codes, or vice versa.  
+		* Because of the component construction nature of 2525D, there are many more symbol ID combinations possible in 2525D, combinations that don't convert to 2525C.
+	* For some symbols you may see an image appear in the picture box control.  This image is a compound image created by the included JMSML C# project, from data stored in the XML instance files, using the graphic files supplied by DISA for 2525D.
+		* Not all of the necessary images are currently included, and/or referenced, at this time.  Work is ongoing between Esri and the DISA SSMC to make sure that developers will be provided with all the image files they will need to create symbols that comply with the military symbology standards.
 
 ## NLog
 
@@ -84,6 +92,9 @@ Visit http://nlog-project.org/ for more information.
 
 ## Issues
 
+* Not all of the symbols in MIL-STD 2525D or NATO APP-6(C) are included in this initial release, as not all of the appendices/chapters have been instantiated as XML data.
+* The image resources (svg/png) provided by DISA, used to display the individual elements of a complete symbol, are not all present and many are not currently "wired" in to the XML instance data, at this time.
+
 Find a bug or want to request a new feature?  Please let us know by submitting an issue.
 
 ## Contributing
@@ -92,7 +103,7 @@ Esri welcomes contributions from anyone and everyone. Please see our [guidelines
 
 ## Licensing
 
-Copyright 2013 Esri
+Copyright 2014 Esri
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -110,4 +121,4 @@ A copy of the license is available in the repository's
 [license.txt](license.txt) file.
 
 [](Esri Tags: ArcGIS Defense and Intelligence Joint Military Symbology XML)
-[](Esri Language: Python)
+[](Esri Language: XML)
