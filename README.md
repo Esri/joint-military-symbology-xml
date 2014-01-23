@@ -34,6 +34,7 @@ In providing this schema, files of instance data, and sample C# code to navigate
 
 * [Requirements](#requirements)
 * [Instructions](#instructions)
+* [NLog](#nlog)
 * [Resources](#resources)
 * [Issues](#issues)
 * [Contributing](#contributing)
@@ -45,6 +46,7 @@ In providing this schema, files of instance data, and sample C# code to navigate
 * A text editor of your choice for viewing and/or editing the XML files found under the instance or schema folders.
 * To build the .NET Solution source in source\JointMilitarySymbologyLibraryCS you will also need:
     * Visual Studio 2010 or later.
+    * NLog (see below)
     * If you do not require the C# library, you may skip this requirement.
 
 ## Instructions
@@ -61,6 +63,20 @@ In providing this schema, files of instance data, and sample C# code to navigate
             * NOTE: if you recieve an error message: `'msbuild' is not recognized` 
             * You may need to add the path the .NET Framework SDK (if multiple SDKs are installed)
             * E.g. `set path=%path%;C:\Windows\Microsoft.NET\Framework\v4.0.30319`
+
+## NLog
+
+NLog is a free logging platform for .NET, Silverlight, and Windows Phone with rich log routing and management capabilities. It makes it easy to produce and manage high-quality logs for your application regardless of its size or complexity. 
+
+Support for NLog is available via the NLog-Users group. 
+
+NLog is an open source project hosted on GitHub and its source code is available under the terms of a BSD license. 
+
+Binary packages are available via NuGet. The binary for NLog 2.1.0 is provided in the source/Dependencies folder.
+
+If you're interested in joining NLog development efforts, go to the NLog-Development group.
+
+Visit http://nlog-project.org/ for more information.
 
 ## Resources
 
