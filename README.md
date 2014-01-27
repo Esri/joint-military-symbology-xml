@@ -10,6 +10,8 @@ The purpose of defining this schema and populating its associated instance data 
 
 In providing this schema, files of instance data, and sample C# code to navigate same, it is hoped that future defense and intelligence systems will be engineered to take advantage of this technology and, in so doing, accelerate the delivery of new military symbology, reflected in updates to these standards, to warfighters.
 
+![Image of Joint Military Symbology XML]( ScreenShot.JPG "joint-military-symbology-xml" )
+
 ## Features
 
 * Schema (xsd) files for:
