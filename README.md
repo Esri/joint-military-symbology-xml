@@ -5,8 +5,8 @@ Joint Military Symbology XML (JointMilSyML or JMSML) is an XML schema, and assoc
 The purpose of defining this schema and populating its associated instance data is four-fold:
   * To aid in the configuration management (CM) of these standards.
   * To provide implementors with a machine-readable form of the contents of these standards.
-  * To help support legacy military symbology systems by providing bi-directopnal lookup of SIDCs.
-  * To aid in migrating old militay symbology information to the latest version of these standards.
+  * To help support legacy military symbology systems by providing bi-directional lookup of SIDCs.
+  * To aid in migrating old military symbology information to the latest version of these standards.
 
 In providing this schema, files of instance data, and sample C# code to navigate same, it is hoped that future defense and intelligence systems will be engineered to take advantage of this technology and, in so doing, accelerate the delivery of new military symbology, reflected in updates to these standards, to warfighters.
 
@@ -22,8 +22,11 @@ In providing this schema, files of instance data, and sample C# code to navigate
 * Instance (xml) files for:
   * The base portion of the two standards.
   * Each symbol set, including all legacy symbols from 2525C and APP-6(B).  This includes:
-    * Air symbols.
-    * Air Missile symbols.
+    * Air symbols
+    * Air Missile symbols
+    * Space symbols
+    * Space Missile symbols
+    * Sea Surface symbols
 
 * A .Net (C#) solution that contains projects with all the code to:
   * Define all the classes needed to import the XML instance data.
