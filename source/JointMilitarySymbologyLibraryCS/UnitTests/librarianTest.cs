@@ -11,7 +11,7 @@ namespace UnitTests
     ///to contain all librarianTest Unit Tests
     ///</summary>
     [TestClass()]
-    public class librarianTest
+    public class LibrarianTest
     {
 
 
@@ -68,7 +68,7 @@ namespace UnitTests
         ///A test for librarian Constructor
         ///</summary>
         [TestMethod()]
-        public void librarianConstructorTest()
+        public void LibrarianConstructorTest()
         {
             string configPath = string.Empty;
             Librarian target = new Librarian(configPath);
@@ -79,7 +79,7 @@ namespace UnitTests
         ///A test for makeSymbol
         ///</summary>
         [TestMethod()]
-        public void makeSymbolTest()
+        public void MakeSymbolTest()
         {
             string configPath = string.Empty;
             Librarian target = new Librarian(configPath);

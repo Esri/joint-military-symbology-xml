@@ -146,6 +146,19 @@
         </SymbolSetRef>
       </SymbolSets>
     </Dimension>
+
+    <Dimension ID="SEA_SURFACE" Label="Sea Surface">
+      <LegacyDimensionCode Name="2525C">S</LegacyDimensionCode>
+
+      <SymbolSets>
+        <SymbolSetRef ID="SS_SEA_SURFACE" Label="Sea Surface" Instance="2525D_Sea_Surface.xml">
+          <SymbolSetCode>
+            <DigitOne>3</DigitOne>
+            <DigitTwo>0</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
+      </SymbolSets>
+    </Dimension>
   </Dimensions>
   
   <Affiliations>
@@ -365,6 +378,78 @@
     </Affiliation>
 
     <Affiliation ID="SIMULATED_SPACE_SUSPECT" ContextID="SIMULATION" DimensionID="SPACE" StandardIdentityID="SI_SUSPECT" Shape="CURVE"/>
+  
+    <!-- Sea Surface Affiliations-->
+
+    <Affiliation ID="REALITY_SEA_PENDING" ContextID="REALITY" DimensionID="SEA_SURFACE" StandardIdentityID="SI_PENDING" Shape="CLOVER">
+      <LegacyStandardIdentityCode Name="2525C">P</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="EXERCISE_SEA_PENDING" ContextID="EXERCISE" DimensionID="SEA_SURFACE" StandardIdentityID="SI_PENDING" Shape="CLOVER">
+      <LegacyStandardIdentityCode Name="2525C">G</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="SIMULATED_SEA_PENDING" ContextID="SIMULATION" DimensionID="SEA_SURFACE" StandardIdentityID="SI_PENDING" Shape="CLOVER"/>
+
+    <Affiliation ID="REALITY_SEA_UNKNOWN" ContextID="REALITY" DimensionID="SEA_SURFACE" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER">
+      <LegacyStandardIdentityCode Name="2525C">U</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="EXERCISE_SEA_UNKNOWN" ContextID="EXERCISE" DimensionID="SEA_SURFACE" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER">
+      <LegacyStandardIdentityCode Name="2525C">W</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="SIMULATED_SEA_UNKNOWN" ContextID="SIMULATION" DimensionID="SEA_SURFACE" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER"/>
+
+    <Affiliation ID="REALITY_SEA_FRIEND" ContextID="REALITY" DimensionID="SEA_SURFACE" StandardIdentityID="SI_FRIEND" Shape="CIRCLE">
+      <LegacyStandardIdentityCode Name="2525C">F</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="EXERCISE_SEA_FRIEND" ContextID="EXERCISE" DimensionID="SEA_SURFACE" StandardIdentityID="SI_FRIEND" Shape="CIRCLE">
+      <LegacyStandardIdentityCode Name="2525C">D</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="SIMULATED_SEA_FRIEND" ContextID="SIMULATION" DimensionID="SEA_SURFACE" StandardIdentityID="SI_FRIEND" Shape="CIRCLE"/>
+
+    <Affiliation ID="REALITY_SEA_NEUTRAL" ContextID="REALITY" DimensionID="SEA_SURFACE" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE">
+      <LegacyStandardIdentityCode Name="2525C">N</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="EXERCISE_SEA_NEUTRAL" ContextID="EXERCISE" DimensionID="SEA_SURFACE" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE">
+      <LegacyStandardIdentityCode Name="2525C">L</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="SIMULATED_SEA_NEUTRAL" ContextID="SIMULATION" DimensionID="SEA_SURFACE" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE"/>
+
+    <Affiliation ID="REALITY_SEA_HOSTILE" ContextID="REALITY" DimensionID="SEA_SURFACE" StandardIdentityID="SI_HOSTILE" Shape="DIAMOND">
+      <LegacyStandardIdentityCode Name="2525C">H</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="EXERCISE_SEA_HOSTILE" ContextID="EXERCISE" DimensionID="SEA_SURFACE" StandardIdentityID="SI_FAKER" Shape="CIRCLE">
+      <LegacyStandardIdentityCode Name="2525C">K</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="SIMULATED_SEA_HOSTILE" ContextID="SIMULATION" DimensionID="SEA_SURFACE" StandardIdentityID="SI_HOSTILE" Shape="DIAMOND"/>
+
+    <Affiliation ID="REALITY_SEA_ASSUMED" ContextID="REALITY" DimensionID="SEA_SURFACE" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE">
+      <LegacyStandardIdentityCode Name="2525C">A</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="EXERCISE_SEA_ASSUMED" ContextID="EXERCISE" DimensionID="SEA_SURFACE" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE">
+      <LegacyStandardIdentityCode Name="2525C">M</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="SIMULATED_SEA_ASSUMED" ContextID="SIMULATION" DimensionID="SEA_SURFACE" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE"/>
+
+    <Affiliation ID="REALITY_SEA_SUSPECT" ContextID="REALITY" DimensionID="SEA_SURFACE" StandardIdentityID="SI_SUSPECT" Shape="DIAMOND">
+      <LegacyStandardIdentityCode Name="2525C">S</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="EXERCISE_SEA_SUSPECT" ContextID="EXERCISE" DimensionID="SEA_SURFACE" StandardIdentityID="SI_JOKER" Shape="CIRCLE">
+      <LegacyStandardIdentityCode Name="2525C">J</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="SIMULATED_SEA_SUSPECT" ContextID="SIMULATION" DimensionID="SEA_SURFACE" StandardIdentityID="SI_SUSPECT" Shape="DIAMOND"/>
   </Affiliations>
 
   <Statuses>
@@ -556,7 +641,7 @@
 
     <AmplifierGroup Name="EQUIP_MOBILITY_LAND" Label="Equipment mobility on land">
       <AmplifierGroupCode>3</AmplifierGroupCode>
-      <LegacyModifierCode Name="2525C" Description="OverrIDes character 11 in old SIDC">M</LegacyModifierCode>
+      <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC">M</LegacyModifierCode>
       
       <Amplifiers>
         <Amplifier Name="WHEEL_LIMIT_COUNTRY" Label="Wheeled limited cross country">
@@ -642,7 +727,7 @@
       </Amplifiers>
     </AmplifierGroup>
 
-    <AmplifierGroup Name="TOWED_ARRAYS" Label="Naval towed array">
+    <AmplifierGroup Name="TOWED_ARRAYS" Label="Naval towed array" CompatibleSymbolSets="SS_SEA_SURFACE">
       <AmplifierGroupCode>6</AmplifierGroupCode>
       <LegacyModifierCode Name="2525C" Description="OverrIDes character 11 in old SIDC">N</LegacyModifierCode>
       

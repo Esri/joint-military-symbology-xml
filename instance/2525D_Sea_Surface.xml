@@ -1,0 +1,1230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="SS_SEA_SURFACE" Label="Sea Surface" DimensionID="SEA_SURFACE">
+  <SymbolSetCode>
+    <DigitOne>3</DigitOne>
+    <DigitTwo>0</DigitTwo>
+  </SymbolSetCode>
+
+  <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
+
+  <Entities>
+    <Entity ID="MILITARY" Label="Military">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </EntityCode>
+    </Entity>
+    
+    <Entity ID="MILITARY_COMBAT" Label="Military Combatant">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </EntityCode>
+      
+      <EntityTypes>
+        <EntityType ID="CARRIER" Label="Carrier">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+
+        <EntityType ID="SURF_COMBAT_LINE" Label="Surface Combatant, Line">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+
+          <EntitySubTypes>
+            <EntitySubType ID="BB" Label="Battleship">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="CA" Label="Cruiser">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="DD" Label="Destroyer">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="FF" Label="Frigate">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>4</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="CORVETTE" Label="Corvette">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>5</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="LCS" Label="Littoral Combat Ship">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>6</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+
+        <EntityType ID="AMPHIB_WAR_SHIP" Label="Amphibious Warfare Ship">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </EntityTypeCode>
+
+          <EntitySubTypes>
+            <EntitySubType ID="ACS" Label="Amphibious Command Ship">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="AMPHIB_ASSAULT_NON" Label="Amphibious Assault, Non-specified">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="AMPHIB_ASSAULT_GENERAL" Label="Amphibious Assault Ship, General">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="AMPHIB_ASSAULT_MULT" Label="Amphibious Assault Ship, Multipurpose">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>4</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="AMPHIB_ASSAULT_HELO" Label="Amphibious Assault Ship, Helicopter">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>5</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="AMPHIB_TRANS_DOCK" Label="Amphibious Transport Dock">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>6</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="LANDING_SHIP" Label="Landing Ship">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>7</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="LANDING_CRAFT" Label="Landing Craft">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>8</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+
+        <EntityType ID="MINE_WARFARE" Label="Mine Warfare Ship">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>4</DigitTwo>
+          </EntityTypeCode>
+
+          <EntitySubTypes>
+            <EntitySubType ID="MINE_LAYER" Label="Mine Layer">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="MINE_SWEEPER" Label="Mine Sweeper">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="MINE_SWEEPER_DRONE" Label="Mine Sweeper, Drone">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="MINE_HUNTER" Label="Mine Hunter">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>4</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="MINE_COUNTER" Label="Mine Countermeasures">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>5</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="MINE_COUNTER_SUPPORT" Label="Mine Countermeasures, Support Ship">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>6</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+
+        <EntityType ID="PATROL_BOAT" Label="Patrol Boat">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>5</DigitTwo>
+          </EntityTypeCode>
+
+          <EntitySubTypes>
+            <EntitySubType ID="PATROL_CHASER" Label="Patrol Craft, Submarine Chaser/Escort, General">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="PATROL_SHIP" Label="Patrol Ship, General">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+
+        <EntityType ID="DECOY" Label="Decoy">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>6</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+
+        <EntityType ID="USV" Label="Unmanned Surface Water Vehicle (USV)">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>7</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+
+        <EntityType ID="SPEEDBOAT" Label="Speedboat">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>8</DigitTwo>
+          </EntityTypeCode>
+
+          <EntitySubTypes>
+            <EntitySubType ID="RHIB" Label="Rigid-Hull Inflatable Boat (RHIB)">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+
+        <EntityType ID="JET_SKI" Label="Jet Ski">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>9</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+
+        <EntityType ID="NAVY_TASK" Label="Navy Task Organization">
+          <EntityTypeCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>0</DigitTwo>
+          </EntityTypeCode>
+
+          <EntitySubTypes>
+            <EntitySubType ID="NAVY_TASK_ELEMENT" Label="Navy Task Element">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="NAVY_TASK_FORCE" Label="Navy Task Force">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="NAVY_TASK_GROUP" Label="Navy Task Group">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="NAVY_TASK_UNIT" Label="Navy Task Unit">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>4</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="CONVOY" Label="Convoy">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>5</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+
+        <EntityType ID="SEA_BASED_X" Label="Sea Based X-Band Radar">
+          <EntityTypeCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+      </EntityTypes>
+    </Entity>
+
+    <Entity ID="MILITARY_NON_COMBAT" Label="Military Non-Combatant">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </EntityCode>
+
+      <EntityTypes>
+        <EntityType ID="AUX" Label="Auxilliary Ship">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+
+          <EntitySubTypes>
+            <EntitySubType ID="AMMO_SHIP" Label="Ammunition Ship">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="NAVAL_STORES" Label="Naval Stores Ship">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="AUX_FLAG" Label="Auxiliary Flag Ship">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="INTEL_COLLECTOR" Label="Intelligence Collector">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>4</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="OCEANO_RESEARCH" Label="Oceanographic Research Ship">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>5</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="SURVEY" Label="Survey Ship">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>6</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="HOSPITAL" Label="Hospital Ship">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>7</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="NAVAL_CARGO" Label="Naval Cargo Ship">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>8</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="COMBAT_SUPPORT_FAST" Label="Combat Support Ship, Fast">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>9</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="OILER" Label="Oiler, Replenishment">
+              <EntitySubTypeCode>
+                <DigitOne>1</DigitOne>
+                <DigitTwo>0</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="REPAIR" Label="Repair Ship">
+              <EntitySubTypeCode>
+                <DigitOne>1</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="SUB_TENDER" Label="Submarine Tender">
+              <EntitySubTypeCode>
+                <DigitOne>1</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="TUG" Label="Tug, Ocean Going">
+              <EntitySubTypeCode>
+                <DigitOne>1</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+
+        <EntityType ID="SERVICE_CRAFT" Label="Service Craft/Yard">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+          
+          <EntitySubTypes>
+            <EntitySubType ID="BARGE_NON_SELF" Label="Barge, Not Self-Propelled">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="BARGE_SELF" Label="Barge, Self-Propelled">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="TUG_HARBOR" Label="Tug, Harbor">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="LAUNCH" Label="Launch">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>4</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+      </EntityTypes>
+    </Entity>
+
+    <Entity ID="CIVILIAN" Label="Civilian">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </EntityCode>
+
+      <EntityTypes>
+        <EntityType ID="CIV_MERCHANT" Label="Merchant Ship">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+
+          <EntitySubTypes>
+            <EntitySubType ID="CIV_CARGO" Label="Cargo, General">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="CIV_CONTAINER" Label="Container Ship">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="CIV_DREDGE" Label="Dredge">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="CIV_RORO" Label="Roll On/Roll Off">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>4</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="CIV_FERRY" Label="Ferry">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>5</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="CIV_HEAVY_LIFT" Label="Heavy Lift">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>6</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="CIV_HOVERCRAFT" Label="Hovercraft">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>7</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="CIV_LASH_CARRIER" Label="Lash Carrier (with Barges)">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>8</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="CIV_OILER_TANKER" Label="Oiler/Tanker">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>9</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="CIV_PASSENGER" Label="Passenger">
+              <EntitySubTypeCode>
+                <DigitOne>1</DigitOne>
+                <DigitTwo>0</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="CIV_TUG" Label="Tug, Ocean Going">
+              <EntitySubTypeCode>
+                <DigitOne>1</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="CIV_TOW" Label="Tow">
+              <EntitySubTypeCode>
+                <DigitOne>1</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="CIV_HAZMAT" Label="Transport Ship, Hazardous Material">
+              <EntitySubTypeCode>
+                <DigitOne>1</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="CIV_JUNK" Label="Junk/Dhow">
+              <EntitySubTypeCode>
+                <DigitOne>1</DigitOne>
+                <DigitTwo>4</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="CIV_BARGE" Label="Barge, Not Self-Propelled">
+              <EntitySubTypeCode>
+                <DigitOne>1</DigitOne>
+                <DigitTwo>5</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="CIV_HOSPITAL" Label="Hospital Ship">
+              <EntitySubTypeCode>
+                <DigitOne>1</DigitOne>
+                <DigitTwo>6</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+        
+        <EntityType ID="CIV_FISHING" Label="Fishing Vessel">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+
+          <EntitySubTypes>
+            <EntitySubType ID="CIV_DRIFTER" Label="Drifter">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="CIV_TRAWLER" Label="Trawler">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="CIV_DREDGER" Label="Dredger">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+
+        <EntityType ID="CIV_LAW" Label="Law Enforcement Vessel">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+
+        <EntityType ID="CIV_LEISURE_SAIL" Label="Leisure Craft, Sailing">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>4</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+
+        <EntityType ID="CIV_LEISURE_MOTOR" Label="Leisure Craft, Motorized">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>5</DigitTwo>
+          </EntityTypeCode>
+
+          <EntitySubTypes>
+            <EntitySubType ID="CIV_RHIB" Label="Rigid-Hull Inflatable Boat (RHIB)">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+
+            <EntitySubType ID="CIV_SPEED" Label="Speedboat">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+
+        <EntityType ID="CIV_JET_SKI" Label="Jet Ski">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>6</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+
+        <EntityType ID="CIV_USV" Label="Unmanned Surface Water Vehicle (USV)">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>7</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+      </EntityTypes>
+    </Entity>
+
+    <Entity ID="OWN_SHIP" Label="Own Ship">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </EntityCode>
+    </Entity>
+
+    <Entity ID="FUSED_TRACK" Label="Fused Track">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </EntityCode>
+    </Entity>
+
+    <Entity ID="MANUAL_TRACK" Label="Manual Track">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </EntityCode>
+    </Entity>
+  </Entities>
+
+  <SectorOneModifiers>
+    <Modifier ID="OWN_MOD" Label="Own Ship" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="AA_MOD" Label="Antiair Warfare" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="ASW_MOD" Label="Antisubmarine Warfare" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="ESCORT_MOD" Label="Escort" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="EW_MOD" Label="Electronic Warfare" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="ISR_MOD" Label="Intelligence, Surveillance, Reconnaissance" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="MCM_MOD" Label="Mine Countermeasures" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="MD_MOD" Label="Missile Defense" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="MED_MOD" Label="Medical" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="MIW_MOD" Label="Mine Warfare" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="RMV_MOD" Label="Remote Multimission Vehicle (RMV)" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="SOF_MOD" Label="Special Operations Forces (SOF)" Category="Asset Capability">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="SUW_MOD" Label="Surface Warfare" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="BALLISTIC_MOD" Label="Ballistic Missile" Category="Weapons Capability">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="GUIDED_MOD" Label="Guided Missile" Category="Weapons Capability">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="OTHER_GUIDED_MOD" Label="Other Guided Missile" Category="Weapons Capability">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="TORPEDO_MOD" Label="Torpedo" Category="Weapons Capability">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="DRONE_EQUIP_MOD" Label="Drone Equipped" Category="Asset Capability">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="HELO_EQUIP_MOD" Label="Helicopter/VSTOL Equipped" Category="Asset Capability">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="BALLISTIC_DEFENSE_MOD" Label="Ballistic Missile Defense, Shooter" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="LRST_MOD" Label="Ballistic Missile, Long Range Surveillance, and Track (LRST)" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="SEA_BASED_X_MOD" Label="Sea Based X-Band Radar" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="HIJACK_MOD" Label="Hijacking/Hijacked" Category="Crime">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+  </SectorOneModifiers>
+
+  <SectorTwoModifiers>
+    <Modifier ID="NUCLEAR_MOD" Label="Nuclear Powered" Category="Ship Propulsion">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="HEAVY_MOD" Label="Heavy" Category="Ship Capacity">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="LIGHT_MOD" Label="Light" Category="Ship Capacity">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="MEDIUM_MOD" Label="Medium" Category="Ship Capacity">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="DOCK_MOD" Label="Dock" Category="Cargo Capacity">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="LOGISTICS_MOD" Label="Logistics" Category="Cargo Capacity">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="TANK_MOD" Label="Tank" Category="Cargo Capacity">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="VEHICLE_MOD" Label="Vehicle" Category="Cargo Capacity">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="FAST_MOD" Label="Fast" Category="Ship Mobility">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="COMBINE_GEV_MOD" Label="Air-Cushioned (US)" Category="Ship Mobility">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="PANEURO_GEV_MOD" Label="Air-Cushioned (NATO)" Category="Ship Mobility">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="HYDROFOIL_MOD" Label="Hydrofoil" Category="Ship Mobility">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="AUTONOMOUS_MOD" Label="Autonomous Control" Category="USV Control" LimitUseTo="USV CIV_USV">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="RPV_MOD" Label="Remotely Piloted" Category="USV Control" LimitUseTo="USV CIV_USV">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="EXPENDABLE_MOD" Label="Expendable" Category="USV Control" LimitUseTo="USV CIV_USV">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+  </SectorTwoModifiers>
+
+  <LegacySymbols>
+    <LegacySymbol ID="COMBATANT_SYM" Label="Combatant" EntityID="MILITARY_COMBAT">
+      <LegacyFunctionCode Name="2525C">C-----</LegacyFunctionCode>
+    </LegacySymbol>
+    
+    <LegacySymbol ID="CARRIER_SYM" Label="Carrier" EntityID="MILITARY_COMBAT" EntityTypeID="CARRIER">
+      <LegacyFunctionCode Name="2525C">CLCV--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="LINE_SYM" Label="Line" EntityID="MILITARY_COMBAT" EntityTypeID="SURF_COMBAT_LINE">
+      <LegacyFunctionCode Name="2525C">CL----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="BB_SYM" Label="Battleship" EntityID="MILITARY_COMBAT" EntityTypeID="SURF_COMBAT_LINE" EntitySubTypeID="BB">
+      <LegacyFunctionCode Name="2525C">CLBB--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="CA_SYM" Label="Cruiser" EntityID="MILITARY_COMBAT" EntityTypeID="SURF_COMBAT_LINE" EntitySubTypeID="CA">
+      <LegacyFunctionCode Name="2525C">CLCC--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="DD_SYM" Label="Destroyer" EntityID="MILITARY_COMBAT" EntityTypeID="SURF_COMBAT_LINE" EntitySubTypeID="DD">
+      <LegacyFunctionCode Name="2525C">CLDD--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="FF_SYM" Label="Frigate/Corvette" EntityID="MILITARY_COMBAT" EntityTypeID="SURF_COMBAT_LINE" EntitySubTypeID="FF">
+      <LegacyFunctionCode Name="2525C">CLFF--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="LL_SYM" Label="Littoral Combatant" EntityID="MILITARY_COMBAT" EntityTypeID="SURF_COMBAT_LINE" EntitySubTypeID="LCS">
+      <LegacyFunctionCode Name="2525C">CLLL--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="LL_ASW_SYM" Label="Littoral Combatant (ASW)" EntityID="MILITARY_COMBAT" EntityTypeID="SURF_COMBAT_LINE" EntitySubTypeID="LCS" ModifierOneID="ASW_MOD">
+      <LegacyFunctionCode Name="2525C">CLLLAS</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="LL_MIW_SYM" Label="Littoral Combatant (MIW)" EntityID="MILITARY_COMBAT" EntityTypeID="SURF_COMBAT_LINE" EntitySubTypeID="LCS" ModifierOneID="MIW_MOD">
+      <LegacyFunctionCode Name="2525C">CLLLMI</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="LL_SUW_SYM" Label="Littoral Combatant (SUW)" EntityID="MILITARY_COMBAT" EntityTypeID="SURF_COMBAT_LINE" EntitySubTypeID="LCS" ModifierOneID="SUW_MOD">
+      <LegacyFunctionCode Name="2525C">CLLLSU</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="AMPHIB_WAR_SYM" Label="Amphibious Warfare Ship" EntityID="MILITARY_COMBAT" EntityTypeID="AMPHIB_WAR_SHIP">
+      <LegacyFunctionCode Name="2525C">CA----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="ASSAULT_SYM" Label="Assault Vessel" EntityID="MILITARY_COMBAT" EntityTypeID="AMPHIB_WAR_SHIP" EntitySubTypeID="AMPHIB_ASSAULT_NON">
+      <LegacyFunctionCode Name="2525C">CALA--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="LANDING_SYM" Label="Landing Ship" EntityID="MILITARY_COMBAT" EntityTypeID="AMPHIB_WAR_SHIP" EntitySubTypeID="LANDING_SHIP">
+      <LegacyFunctionCode Name="2525C">CALS--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="MEDIUM_LANDING_SYM" Label="Landing Ship, Medium" EntityID="MILITARY_COMBAT" EntityTypeID="AMPHIB_WAR_SHIP" EntitySubTypeID="LANDING_SHIP" ModifierTwoID="MEDIUM_MOD">
+      <LegacyFunctionCode Name="2525C">CALSM-</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="TANK_LANDING_SYM" Label="Landing Ship, Tank" EntityID="MILITARY_COMBAT" EntityTypeID="AMPHIB_WAR_SHIP" EntitySubTypeID="LANDING_SHIP" ModifierTwoID="TANK_MOD">
+      <LegacyFunctionCode Name="2525C">CALST-</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="LANDING_CRAFT_SYM" Label="Landing Craft" EntityID="MILITARY_COMBAT" EntityTypeID="AMPHIB_WAR_SHIP" EntitySubTypeID="LANDING_CRAFT">
+      <LegacyFunctionCode Name="2525C">CALC--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="MINE_WAR_SYM" Label="Mine Warfare Vessel" EntityID="MILITARY_COMBAT" EntityTypeID="MINE_WARFARE">
+      <LegacyFunctionCode Name="2525C">CM----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="MINELAYER_SYM" Label="Minelayer" EntityID="MILITARY_COMBAT" EntityTypeID="MINE_WARFARE" EntitySubTypeID="MINE_LAYER">
+      <LegacyFunctionCode Name="2525C">CMML--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="MINESWEEPER_SYM" Label="Minesweeper" EntityID="MILITARY_COMBAT" EntityTypeID="MINE_WARFARE" EntitySubTypeID="MINE_SWEEPER">
+      <LegacyFunctionCode Name="2525C">CMMS--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="MINEHUNTER_SYM" Label="Minehunter" EntityID="MILITARY_COMBAT" EntityTypeID="MINE_WARFARE" EntitySubTypeID="MINE_HUNTER">
+      <LegacyFunctionCode Name="2525C">CMMH--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="MCM_SYM" Label="MCM Support" EntityID="MILITARY_COMBAT" EntityTypeID="MINE_WARFARE" EntitySubTypeID="MINE_COUNTER_SUPPORT">
+      <LegacyFunctionCode Name="2525C">CMMA--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="PATROL_SYM" Label="Patrol" EntityID="MILITARY_COMBAT" EntityTypeID="PATROL_BOAT">
+      <LegacyFunctionCode Name="2525C">CP----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="ASW_PATROL_SYM" Label="Patrol, ASW" EntityID="MILITARY_COMBAT" EntityTypeID="PATROL_BOAT" EntitySubTypeID="PATROL_CHASER">
+      <LegacyFunctionCode Name="2525C">CPSB--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="MISSILE_PATROL_SYM" Label="Patrol, Antiship Missile Equipped" EntityID="MILITARY_COMBAT" EntityTypeID="PATROL_BOAT" EntitySubTypeID="PATROL_SHIP" ModifierOneID="OTHER_GUIDED_MOD" >
+      <LegacyFunctionCode Name="2525C">CPSUM-</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="TORPEDO_PATROL_SYM" Label="Patrol, Torpedo Equipped" EntityID="MILITARY_COMBAT" EntityTypeID="PATROL_BOAT" EntitySubTypeID="PATROL_SHIP" ModifierOneID="TORPEDO_MOD" >
+      <LegacyFunctionCode Name="2525C">CPSUT-</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="GUN_PATROL_SYM" Label="Patrol, Gun Equipped" EntityID="MILITARY_COMBAT" EntityTypeID="PATROL_BOAT" EntitySubTypeID="PATROL_SHIP">
+      <LegacyFunctionCode Name="2525C">CPSUG-</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="HOVERCRAFT_SYM" Label="Hovercraft" EntityID="MILITARY_COMBAT" ModifierTwoID="COMBINE_GEV_MOD">
+      <LegacyFunctionCode Name="2525C">CH----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="NAVY_GROUP_SYM" Label="Navy Group" EntityID="MILITARY_COMBAT" EntityTypeID="NAVY_TASK">
+      <LegacyFunctionCode Name="2525C">G-----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="NAVY_TF_SYM" Label="Navy Task Force" EntityID="MILITARY_COMBAT" EntityTypeID="NAVY_TASK" EntitySubTypeID="NAVY_TASK_FORCE">
+      <LegacyFunctionCode Name="2525C">GT----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="NAVY_TG_SYM" Label="Navy Task Group" EntityID="MILITARY_COMBAT" EntityTypeID="NAVY_TASK" EntitySubTypeID="NAVY_TASK_GROUP">
+      <LegacyFunctionCode Name="2525C">GG----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="NAVY_UNIT_SYM" Label="Navy Task Unit" EntityID="MILITARY_COMBAT" EntityTypeID="NAVY_TASK" EntitySubTypeID="NAVY_TASK_UNIT">
+      <LegacyFunctionCode Name="2525C">GU----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="CONVOY_SYM" Label="Convoy" EntityID="MILITARY_COMBAT" EntityTypeID="NAVY_TASK" EntitySubTypeID="CONVOY">
+      <LegacyFunctionCode Name="2525C">GC----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="SURFACE_DECOY_SYM" Label="Surface Decoy" EntityID="MILITARY_COMBAT" EntityTypeID="DECOY">
+      <LegacyFunctionCode Name="2525C">CD----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="USV_SYM" Label="Unmanned Surface Vehicle (USV)" EntityID="MILITARY_COMBAT" EntityTypeID="USV">
+      <LegacyFunctionCode Name="2525C">CU----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="MCM_USV_SYM" Label="USV, Mine Countermeasures" EntityID="MILITARY_COMBAT" EntityTypeID="USV" ModifierOneID="MCM_MOD">
+      <LegacyFunctionCode Name="2525C">CUM---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="ASW_USV_SYM" Label="USV, Antisubmarine Warfare" EntityID="MILITARY_COMBAT" EntityTypeID="USV" ModifierOneID="ASW_MOD">
+      <LegacyFunctionCode Name="2525C">CUS---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="SUW_USV_SYM" Label="USV, Antisurface Warfare" EntityID="MILITARY_COMBAT" EntityTypeID="USV" ModifierOneID="SUW_MOD">
+      <LegacyFunctionCode Name="2525C">CUN---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="RMV_USV_SYM" Label="USV, Remote Multimission Vehicle" EntityID="MILITARY_COMBAT" EntityTypeID="USV" ModifierOneID="RMV_MOD">
+      <LegacyFunctionCode Name="2525C">CUR---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="NONCOM_SYM" Label="Non-Combatant" EntityID="MILITARY_NON_COMBAT">
+      <LegacyFunctionCode Name="2525C">N-----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="REPAIR_SYM" Label="Underway Repair/Replenishment Ship" EntityID="MILITARY_NON_COMBAT" EntityTypeID="AUX" EntitySubTypeID="REPAIR">
+      <LegacyFunctionCode Name="2525C">NR----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="TENDER_SYM" Label="Fleet Support Tender" EntityID="MILITARY_NON_COMBAT" EntityTypeID="AUX" EntitySubTypeID="SUB_TENDER">
+      <LegacyFunctionCode Name="2525C">NF----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="INTEL_SYM" Label="Intelligence Collector" EntityID="MILITARY_NON_COMBAT" EntityTypeID="AUX" EntitySubTypeID="INTEL_COLLECTOR">
+      <LegacyFunctionCode Name="2525C">NI----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="SERVICE_SYM" Label="Service Craft/Yard" EntityID="MILITARY_NON_COMBAT" EntityTypeID="SERVICE_CRAFT">
+      <LegacyFunctionCode Name="2525C">NS----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="HOSPITAL_SYM" Label="Hospital Ship" EntityID="MILITARY_NON_COMBAT" EntityTypeID="AUX" EntitySubTypeID="HOSPITAL">
+      <LegacyFunctionCode Name="2525C">NM----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="NONCOM_HOVERCRAFT_SYM" Label="Hovercraft" EntityID="MILITARY_COMBAT" ModifierTwoID="COMBINE_GEV_MOD">
+      <LegacyFunctionCode Name="2525C">NH----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="MERCHANT_CIV_SYM" Label="Merchant" EntityID="CIVILIAN" EntityTypeID="CIV_MERCHANT">
+      <LegacyFunctionCode Name="2525C">XM----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="CARGO_CIV_SYM" Label="Cargo" EntityID="CIVILIAN" EntityTypeID="CIV_MERCHANT" EntitySubTypeID="CIV_CARGO">
+      <LegacyFunctionCode Name="2525C">XMC---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="RORO_CIV_SYM" Label="Roll On/Roll Off" EntityID="CIVILIAN" EntityTypeID="CIV_MERCHANT" EntitySubTypeID="CIV_RORO">
+      <LegacyFunctionCode Name="2525C">XMR---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="OT_CIV_SYM" Label="Oiler/Tanker" EntityID="CIVILIAN" EntityTypeID="CIV_MERCHANT" EntitySubTypeID="CIV_OILER_TANKER">
+      <LegacyFunctionCode Name="2525C">XMO---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="TUG_CIV_SYM" Label="Tug" EntityID="CIVILIAN" EntityTypeID="CIV_MERCHANT" EntitySubTypeID="CIV_TUG">
+      <LegacyFunctionCode Name="2525C">XMTU--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="FERRY_CIV_SYM" Label="Ferry" EntityID="CIVILIAN" EntityTypeID="CIV_MERCHANT" EntitySubTypeID="CIV_FERRY">
+      <LegacyFunctionCode Name="2525C">XMF---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="PASS_CIV_SYM" Label="Passenger" EntityID="CIVILIAN" EntityTypeID="CIV_MERCHANT" EntitySubTypeID="CIV_PASSENGER">
+      <LegacyFunctionCode Name="2525C">XMP---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="HAZMAT_CIV_SYM" Label="Hazardous Materials (HAZMAT)" EntityID="CIVILIAN" EntityTypeID="CIV_MERCHANT" EntitySubTypeID="CIV_HAZMAT">
+      <LegacyFunctionCode Name="2525C">XMH---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="TOW_CIV_SYM" Label="Towing Vessel" EntityID="CIVILIAN" EntityTypeID="CIV_MERCHANT" EntitySubTypeID="CIV_TOW">
+      <LegacyFunctionCode Name="2525C">XMTO--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="FISH_CIV_SYM" Label="Fishing" EntityID="CIVILIAN" EntityTypeID="CIV_FISHING">
+      <LegacyFunctionCode Name="2525C">XF----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="DRIFT_CIV_SYM" Label="Drifter" EntityID="CIVILIAN" EntityTypeID="CIV_FISHING" EntitySubTypeID="CIV_DRIFTER">
+      <LegacyFunctionCode Name="2525C">XFDF--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="DREDGE_CIV_SYM" Label="Dredger" EntityID="CIVILIAN" EntityTypeID="CIV_FISHING" EntitySubTypeID="CIV_DREDGER">
+      <LegacyFunctionCode Name="2525C">XFDR--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="TRAWL_CIV_SYM" Label="Trawler" EntityID="CIVILIAN" EntityTypeID="CIV_FISHING" EntitySubTypeID="CIV_TRAWLER">
+      <LegacyFunctionCode Name="2525C">XFTR--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="LEISURE_CIV_SYM" Label="Leisure Craft" EntityID="CIVILIAN" EntityTypeID="CIV_LEISURE_SAIL">
+      <LegacyFunctionCode Name="2525C">XR----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="LAW_CIV_SYM" Label="Law Enforcement Vessel" EntityID="CIVILIAN" EntityTypeID="CIV_LAW">
+      <LegacyFunctionCode Name="2525C">XL----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="HOVER_CIV_SYM" Label="Hovercraft" EntityID="CIVILIAN" EntityTypeID="CIV_MERCHANT" EntitySubTypeID="CIV_HOVERCRAFT">
+      <LegacyFunctionCode Name="2525C">XH----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="FAST_CIV_SYM" Label="Fast Recreational Craft" EntityID="CIVILIAN" EntityTypeID="CIV_LEISURE_MOTOR">
+      <LegacyFunctionCode Name="2525C">XA----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="RHIB_CIV_SYM" Label="Rigid-Hull Inflatable Boat" EntityID="CIVILIAN" EntityTypeID="CIV_LEISURE_MOTOR" EntitySubTypeID="CIV_RHIB">
+      <LegacyFunctionCode Name="2525C">XAR---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="SPEED_CIV_SYM" Label="Speed Boat" EntityID="CIVILIAN" EntityTypeID="CIV_LEISURE_MOTOR" EntitySubTypeID="CIV_SPEED">
+      <LegacyFunctionCode Name="2525C">XAS---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="JET_CIV_SYM" Label="Jet Ski" EntityID="CIVILIAN" EntityTypeID="CIV_JET_SKI">
+      <LegacyFunctionCode Name="2525C">XP----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="OWN_SYM" Label="Own Track" EntityID="OWN_SHIP">
+      <LegacyFunctionCode Name="2525C">O-----</LegacyFunctionCode>
+    </LegacySymbol>
+  </LegacySymbols>
+</SymbolSet>
