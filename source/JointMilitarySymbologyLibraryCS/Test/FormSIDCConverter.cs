@@ -38,28 +38,7 @@ namespace Test
             Console.WriteLine("Unknown attribute " +
             attr.Name + "='" + attr.Value + "'");
         }
-
-        private void buttonCtoD_Click(object sender, EventArgs e)
-        {
-            _symbol.LegacySIDC = text2525C.Text;
-
-            updateD();
-            updateImage();
-        }
-
-        private void buttonDtoC_Click(object sender, EventArgs e)
-        {
-            SIDC sidc = _symbol.SIDC;
-
-            sidc.PartAString = text2525D_1.Text;
-            sidc.PartBString = text2525D_2.Text;
-
-            _symbol.SIDC = sidc;
-
-            updateC();
-            updateImage();
-        }
-
+    
         // Update controls on the form
 
         private void updateC()
@@ -77,17 +56,34 @@ namespace Test
         {
             updateC();
             updateD();
-            updateImage();
         }
 
-        private void updateImage()
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (_symbol.Image != null)
-            {
-                pictureBoxSymbol.Image = _symbol.Image;
+            string s = listBox1.SelectedItem.ToString();
 
-                _symbol.SaveImage("C:\\Users\\andy750\\Documents\\jmsml\\save.png");
-            }
+            string[] l = s.Split('\t');
+            
+            _symbol.LegacySIDC = l[0];
+
+            updateControls();
+        }
+
+        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string s = listBox2.SelectedItem.ToString();
+
+            string[] l = s.Split('\t');
+            string[] ll = l[0].Split(',');
+
+            SIDC sid = _symbol.SIDC;
+
+            sid.PartAString = ll[0];
+            sid.PartBString = ll[1];
+
+            _symbol.SIDC = sid;
+
+            updateControls();
         }
     }
 }

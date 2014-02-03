@@ -10,7 +10,7 @@ The purpose of defining this schema and populating its associated instance data 
 
 In providing this schema, files of instance data, and sample C# code to navigate same, it is hoped that future defense and intelligence systems will be engineered to take advantage of this technology and, in so doing, accelerate the delivery of new military symbology, reflected in updates to these standards, to warfighters.
 
-![Image of Joint Military Symbology XML]( ScreenShot.JPG "joint-military-symbology-xml" )
+![Image of Joint Military Symbology XML]( ScreenShot.JPG )
 
 ## Features
 
@@ -63,19 +63,22 @@ In providing this schema, files of instance data, and sample C# code to navigate
 * Open and build the Visual Studio Solution at joint-military-symbology-xml\source\JointMilitarySymbologyLibraryCS
     * To use MSBuild to build the solution
         * Open a Visual Studio Command Prompt: Start Menu | Microsoft Visual Studio 2010/2012 | Visual Studio Tools | Developer Command Prompt for VS 2010/2012
-        * `cd joint-military-symbology-xml\source\JointMilitarySymbologyLibraryCS
+        * `cd joint-military-symbology-xml\source\JointMilitarySymbologyLibraryCS`
         * `msbuild JointMilitarySymbologyLibrary.sln /property:Configuration=Release`
             * NOTE: if you recieve an error message: `'msbuild' is not recognized` 
             * You may need to add the path the .NET Framework SDK (if multiple SDKs are installed)
             * E.g. `set path=%path%;C:\Windows\Microsoft.NET\Framework\v4.0.30319`
 * Use the UnitTests project and the Visual Studio Test tools to run the unit tests provided.  These will test various aspects of the source used to navigate the XML data and convert symbol ID codes (SIDC) from one military symbology standard to another.
+* To run the unit tests from a command line:
+	* Open a Visual Studio Command Prompt: Start Menu | Microsoft Visual Studio 2010/2012 | Visual Studio Tools | Developer Command Prompt for VS 2010/2012
+        * `cd joint-military-symbology-xml\source\JointMilitarySymbologyLibraryCS`
+        * `MSTest /testmetadata:JointMilitarySymbologyLibrary.vsmdi /testlist:"JMSML Tests"`
 * Run the Test project to see a form appear, which you can use to manually test the SIDC conversion.
-	* Edit a 15-character 2525C SIDC on the left and click on the right arrow to convert that SIDC to the equivalent 20 digits for 2525D.
-	* Edit the 20 digits on the right and click the left arrow to convert that SIDC to the equivalent 15-character code for 2525C.
+	* Select from either of the two lists of symbols (2525C or 2525D) and the application will use the underlying C# library to convert the selected symbol ID code (SIDC) from one standard to the other.
 	* Note that not all symbols are currently supported and not all possible 2525D codes will convert to 2525C codes, or vice versa.  
 		* Because of the component construction nature of 2525D, there are many more symbol ID combinations possible in 2525D, combinations that don't convert to 2525C.
-	* For some symbols you may see an image appear in the picture box control.  This image is a compound image created by the included JMSML C# project, from data stored in the XML instance files, using the graphic files supplied by DISA for 2525D.
-		* Not all of the necessary images are currently included, and/or referenced, at this time.  Work is ongoing between Esri and the DISA SSMC to make sure that developers will be provided with all the image files they will need to create symbols that comply with the military symbology standards.
+* DISA provides graphic files (svg/png) for the individual parts of MIL-STD 2525.  The JMSML schema supports referencing those files and the included C# library contains functionality that can be used to combine those referenced files into a complete image.  
+	* To utilize this functionality you will need to acquire these graphic files from DISA's Symbology Standards Management Committee (SSMC), place them in a folder, and amend the graphicPath line in the jmsml.config file to point to this folder.  Contact disa.meade.EE.mbx.symbology@mail.mil to learn more about the current availability and use of these graphic files.
 
 ## NLog
 
@@ -98,7 +101,7 @@ Visit http://nlog-project.org/ for more information.
 ## Issues
 
 * Not all of the symbols in MIL-STD 2525D or NATO APP-6(C) are included in this initial release, as not all of the appendices/chapters have been instantiated as XML data.
-* The image resources (svg/png) provided by DISA, used to display the individual elements of a complete symbol, are not all present and many are not currently "wired" in to the XML instance data, at this time.
+* The image resources (svg/png) provided by DISA, used to display the individual elements of a complete symbol, are not supplied with this repo.  They are still a work in progress at DISA and many are not currently "wired" in to the XML instance data, at this time.  We will provide sample code in the future that includes and uses some of these available graphic files.
 
 Find a bug or want to request a new feature?  Please let us know by submitting an issue.
 
