@@ -324,6 +324,10 @@
   </SectorTwoModifiers>
 
   <LegacySymbols>
+    <LegacySymbol ID="SPACE_SYM" Label="Space" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C">------</LegacyFunctionCode>
+    </LegacySymbol>
+    
     <LegacySymbol ID="SHUTTLE_SYM" Label="Crewed Space Vehicle" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">V-----</LegacyFunctionCode>
     </LegacySymbol>

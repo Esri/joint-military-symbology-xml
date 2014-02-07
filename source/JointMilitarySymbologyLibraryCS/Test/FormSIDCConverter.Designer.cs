@@ -127,7 +127,9 @@ namespace Test
             "SNAPMFKB-------\tBoom-Only Tanker",
             "SUAPMFCL-------\tLight Cargo Airlift",
             "SPSPCLLLSU-----\tLittoral Combat, SUW",
-            "SASACUS--------\tASW USV"});
+            "SASACUS--------\tASW USV",
+            "SFAPMFQRZ------\tRPV ES",
+            "SFAP-----------\tAir"});
             this.listBox1.Location = new System.Drawing.Point(24, 162);
             this.listBox1.Name = "listBox1";
             this.listBox1.ScrollAlwaysVisible = true;

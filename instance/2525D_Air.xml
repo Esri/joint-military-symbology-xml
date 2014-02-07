@@ -727,6 +727,10 @@
   </SectorTwoModifiers>
   
   <LegacySymbols>
+    <LegacySymbol ID="AIR_SYM" Label="Air" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C">------</LegacyFunctionCode>
+    </LegacySymbol>
+    
     <LegacySymbol ID="MILITARY_SYM" Label="Military" EntityID="MILITARY">
       <LegacyFunctionCode Name="2525C">M-----</LegacyFunctionCode>
     </LegacySymbol>
@@ -872,7 +876,7 @@
     </LegacySymbol>
 
     <LegacySymbol ID="ATK_UAV_SYM" Label="Attack Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="ATTACK_STRIKE_MOD">
-      <LegacyFunctionCode Name="2525C">MFQ---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">MFQA--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="BOMBER_UAV_SYM" Label="Bomber Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="BOMBER_MOD">
@@ -912,7 +916,7 @@
     </LegacySymbol>
 
     <LegacySymbol ID="MCM_UAV_SYM" Label="Mine Countermeasures Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="MCM_MOD">
-      <LegacyFunctionCode Name="2525C">MFQC--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">MFQI--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="ASUW_UAV_SYM" Label="Antisurface Warfare Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="ASUW_MOD">
@@ -932,7 +936,7 @@
     </LegacySymbol>
 
     <LegacySymbol ID="ESM_UAV_SYM" Label="Electronic Surveillance Measures Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="ES_MOD">
-      <LegacyFunctionCode Name="2525C">MFQC--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">MFQRZ-</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="PHOTO_UAV_SYM" Label="Photographic Reconnaissance Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="PHOTO_MOD">
@@ -1036,7 +1040,7 @@
     </LegacySymbol>
 
     <LegacySymbol ID="TANKER_ROTARY_SYM" Label="Tanker Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="TANKER_MOD">
-      <LegacyFunctionCode Name="2525C">MHM---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">MHK---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="ECM_ROTARY_SYM" Label="Electronic Countermeasures Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="EC_MOD">

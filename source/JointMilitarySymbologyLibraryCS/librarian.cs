@@ -54,7 +54,7 @@ namespace JointMilitarySymbologyLibrary
         private jmsmlConfig _configData;
         private Library _library;
 
-        private bool _logConversion = false;
+        private bool _logConversion = true;
         private int _statusFlag = 0;
 
         private List<SymbolSet> _symbolSets = new List<SymbolSet>();
@@ -1045,11 +1045,21 @@ namespace JointMilitarySymbologyLibrary
 
         public Symbol MakeSymbol(string legacyStandard, string legacySIDC)
         {
-            Symbol s =  new Symbol(this, legacyStandard, legacySIDC);
+            Symbol s = null;
 
-            if (s.SymbolStatus == SymbolStatusEnum.statusEnumInvalid)
+            if (legacySIDC.Length == 15)
             {
-                s = null;
+                s = new Symbol(this, legacyStandard, legacySIDC);
+
+                if (s.SymbolStatus == SymbolStatusEnum.statusEnumInvalid)
+                {
+                    logger.Warn("SIDC " + legacySIDC + " is an invalid symbol.");
+                    s = null;
+                }
+            }
+            else
+            {
+                logger.Error("SIDC " + legacySIDC + " is not 15 characters in length.");
             }
 
             return s;

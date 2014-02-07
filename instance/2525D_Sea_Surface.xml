@@ -959,6 +959,10 @@
   </SectorTwoModifiers>
 
   <LegacySymbols>
+    <LegacySymbol ID="SEA_SYM" Label="Sea Surface" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C">------</LegacyFunctionCode>
+    </LegacySymbol>
+    
     <LegacySymbol ID="COMBATANT_SYM" Label="Combatant" EntityID="MILITARY_COMBAT">
       <LegacyFunctionCode Name="2525C">C-----</LegacyFunctionCode>
     </LegacySymbol>
@@ -1055,7 +1059,7 @@
       <LegacyFunctionCode Name="2525C">CPSB--</LegacyFunctionCode>
     </LegacySymbol>
 
-    <LegacySymbol ID="MISSILE_PATROL_SYM" Label="Patrol, Antiship Missile Equipped" EntityID="MILITARY_COMBAT" EntityTypeID="PATROL_BOAT" EntitySubTypeID="PATROL_SHIP" ModifierOneID="OTHER_GUIDED_MOD" >
+    <LegacySymbol ID="MISSILE_PATROL_SYM" Label="Patrol, Antiship Missile Equipped" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">CPSUM-</LegacyFunctionCode>
     </LegacySymbol>
 
@@ -1067,7 +1071,7 @@
       <LegacyFunctionCode Name="2525C">CPSUG-</LegacyFunctionCode>
     </LegacySymbol>
 
-    <LegacySymbol ID="HOVERCRAFT_SYM" Label="Hovercraft" EntityID="MILITARY_COMBAT" ModifierTwoID="COMBINE_GEV_MOD">
+    <LegacySymbol ID="HOVERCRAFT_SYM" Label="Hovercraft" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">CH----</LegacyFunctionCode>
     </LegacySymbol>
 
@@ -1139,7 +1143,7 @@
       <LegacyFunctionCode Name="2525C">NM----</LegacyFunctionCode>
     </LegacySymbol>
 
-    <LegacySymbol ID="NONCOM_HOVERCRAFT_SYM" Label="Hovercraft" EntityID="MILITARY_COMBAT" ModifierTwoID="COMBINE_GEV_MOD">
+    <LegacySymbol ID="NONCOM_HOVERCRAFT_SYM" Label="Hovercraft" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">NH----</LegacyFunctionCode>
     </LegacySymbol>
 
