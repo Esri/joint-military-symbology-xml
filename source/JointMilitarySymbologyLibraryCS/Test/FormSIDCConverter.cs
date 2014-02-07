@@ -22,9 +22,7 @@ namespace Test
             InitializeComponent();
 
             _librarian = new Librarian();
-            _symbol = _librarian.MakeSymbol(new SIDC());
-
-            updateControls();
+            _librarian.IsLogging = true;
         }
 
         private void serializer_UnknownNode(object sender, XmlNodeEventArgs e)
@@ -41,21 +39,44 @@ namespace Test
     
         // Update controls on the form
 
-        private void updateC()
+        private void updateC(string s)
         {
-            text2525C.Text = _symbol.LegacySIDC;
+            text2525C.Text = s;
         }
 
-        private void updateD()
+        private void updateD(string s1, string s2)
         {
-            text2525D_1.Text = _symbol.SIDC.PartAString;
-            text2525D_2.Text = _symbol.SIDC.PartBString;
+            text2525D_1.Text = s1;
+            text2525D_2.Text = s2;
         }
 
         private void updateControls()
         {
-            updateC();
-            updateD();
+            if (_symbol != null)
+            {
+                updateC(_symbol.LegacySIDC);
+                updateD(_symbol.SIDC.PartAString, _symbol.SIDC.PartBString);
+
+                switch (_symbol.SymbolStatus)
+                {
+                    case SymbolStatusEnum.statusEnumNew:
+                        toolStripStatusLabel1.Text = "Symbol is new/introduced in 2525D";
+                        break;
+                    case SymbolStatusEnum.statusEnumOld:
+                        toolStripStatusLabel1.Text = "Symbol is old (in 2525C) and in 2525D";
+                        break;
+                    case SymbolStatusEnum.statusEnumRetired:
+                        toolStripStatusLabel1.Text = "Symbol has been retired from 2525";
+                        break;
+                }
+            }
+            else
+            {
+                updateC("");
+                updateD("", "");
+
+                toolStripStatusLabel1.Text = "Symbol is invalid or not found in the symbol library";
+            }
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -63,25 +84,21 @@ namespace Test
             string s = listBox1.SelectedItem.ToString();
 
             string[] l = s.Split('\t');
-            
-            _symbol.LegacySIDC = l[0];
+
+            _symbol = _librarian.MakeSymbol("2525C", l[0]);
 
             updateControls();
         }
 
         private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
+
             string s = listBox2.SelectedItem.ToString();
 
             string[] l = s.Split('\t');
             string[] ll = l[0].Split(',');
 
-            SIDC sid = _symbol.SIDC;
-
-            sid.PartAString = ll[0];
-            sid.PartBString = ll[1];
-
-            _symbol.SIDC = sid;
+            _symbol = _librarian.MakeSymbol(new SIDC(ll[0],ll[1]));
 
             updateControls();
         }

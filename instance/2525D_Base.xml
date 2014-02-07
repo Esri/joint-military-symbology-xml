@@ -13,7 +13,11 @@
     <Context ID="REALITY">
       <ContextCode>0</ContextCode>
       <ContextAmplifiers>
-        <ContextAmplifier ID="REALITY_AMP" Description="No reality Graphic Amplifier exists" Shape="NA"/>
+        <ContextAmplifier ID="REALITY_CLOVER_AMP" Description="No reality Graphic Amplifier exists" Shape="CLOVER"/>
+        <ContextAmplifier ID="REALITY_CURVE_AMP" Description="No reality Graphic Amplifier exists" Shape="CURVE"/>
+        <ContextAmplifier ID="REALITY_RECT_AMP" Description="No reality Graphic Amplifier exists" Shape="RECTANGLE"/>
+        <ContextAmplifier ID="REALITY_SQUARE_AMP" Description="No reality Graphic Amplifier exists" Shape="SQUARE"/>
+        <ContextAmplifier ID="REALITY_CIRCLE_AMP" Description="No reality Graphic Amplifier exists" Shape="CIRCLE"/>
       </ContextAmplifiers>
     </Context>
     <Context ID="EXERCISE" Label="Exercise">
@@ -94,6 +98,19 @@
   </StandardIdentities>
 
   <Dimensions>
+    <Dimension ID="INTERNAL" Label="Internal">
+      <LegacyDimensionCode Name="2525C">I</LegacyDimensionCode>
+
+      <SymbolSets>
+        <SymbolSetRef ID="SS_INTERNAL" Label="Internal" Instance="2525D_Internal.xml">
+          <SymbolSetCode>
+            <DigitOne>9</DigitOne>
+            <DigitTwo>8</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
+      </SymbolSets>
+    </Dimension>
+    
     <Dimension ID="UNKNOWN" Label="Unknown">
       <LegacyDimensionCode Name="2525C">Z</LegacyDimensionCode>
       
@@ -162,6 +179,10 @@
   </Dimensions>
   
   <Affiliations>
+    
+    <!-- Internal Dimension Affiliations -->
+
+    <Affiliation ID="REALITY_INTERNAL_PENDING" ContextID="REALITY" DimensionID="INTERNAL" StandardIdentityID="SI_PENDING" Shape="CLOVER"/>
     
     <!-- Unknown Dimension Affiliations -->
     

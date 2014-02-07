@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="SS_INTERNAL" Label="Internal" DimensionID="INTERNAL">
+  <SymbolSetCode>
+    <DigitOne>9</DigitOne>
+    <DigitTwo>8</DigitTwo>
+  </SymbolSetCode>
+  <LegacyCodingSchemeCode Name="2525C">*</LegacyCodingSchemeCode>
+  <Entities>
+    <Entity ID="INVALID" Label="Invalid Symbol">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </EntityCode>
+    </Entity>
+
+    <Entity ID="RETIRED" Label="Retired Symbol">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </EntityCode>
+    </Entity>
+  </Entities>
+</SymbolSet>

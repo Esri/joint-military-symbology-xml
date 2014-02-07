@@ -14,7 +14,7 @@ namespace UnitTests
     public class SymbolTest
     {
 
-
+        private static Librarian _librarian;
         private TestContext testContextInstance;
 
         /// <summary>
@@ -38,10 +38,11 @@ namespace UnitTests
         //You can use the following additional attributes as you write your tests:
         //
         //Use ClassInitialize to run code before running the first test in the class
-        //[ClassInitialize()]
-        //public static void MyClassInitialize(TestContext testContext)
-        //{
-        //}
+        [ClassInitialize()]
+        public static void MyClassInitialize(TestContext testContext)
+        {
+            _librarian = new Librarian(string.Empty);
+        }
         //
         //Use ClassCleanup to run code after all tests in a class have run
         //[ClassCleanup()]
@@ -70,10 +71,7 @@ namespace UnitTests
         [TestMethod()]
         public void LegacySIDCTest_MakeThenGet()
         {
-            string configPath = string.Empty;
-            Librarian librarian = new Librarian(configPath);
-
-            Symbol target = librarian.MakeSymbol("2525C", "SFAPM----------");
+            Symbol target = _librarian.MakeSymbol("2525C", "SFAPM----------");
             string expected = "SFAPM----------";
             string actual = target.LegacySIDC;
             Assert.AreEqual(expected, actual);
@@ -85,10 +83,7 @@ namespace UnitTests
         [TestMethod()]
         public void LegacySIDCTest_ConversionFrom2525D_Air()
         {
-            string configPath = string.Empty;
-            Librarian librarian = new Librarian(configPath);
-
-            Symbol target = librarian.MakeSymbol(1003010000, 1100000000);
+            Symbol target = _librarian.MakeSymbol(1003010000, 1100000000);
             string expected = "SFAPM----------";
             string actual = target.LegacySIDC;
             Assert.AreEqual(expected, actual);
@@ -100,10 +95,7 @@ namespace UnitTests
         [TestMethod()]
         public void LegacySIDCTest_ConversionFrom2525D_Space()
         {
-            string configPath = string.Empty;
-            Librarian librarian = new Librarian(configPath);
-
-            Symbol target = librarian.MakeSymbol(1003050000, 1107000000);
+            Symbol target = _librarian.MakeSymbol(1003050000, 1107000000);
             string expected = "SFPPS----------";
             string actual = target.LegacySIDC;
             Assert.AreEqual(expected, actual);
@@ -115,10 +107,7 @@ namespace UnitTests
         [TestMethod()]
         public void LegacySIDCTest_ConversionFrom2525D_Sea()
         {
-            string configPath = string.Empty;
-            Librarian librarian = new Librarian(configPath);
-
-            Symbol target = librarian.MakeSymbol(1004301000, 1301040000);
+            Symbol target = _librarian.MakeSymbol(1004301000, 1301040000);
             string expected = "SNSANI---------";
             string actual = target.LegacySIDC;
             Assert.AreEqual(expected, actual);
@@ -130,10 +119,7 @@ namespace UnitTests
         [TestMethod()]
         public void SIDCTest_MakeThenGet()
         {
-            string configPath = string.Empty;
-            Librarian librarian = new Librarian(configPath);
-
-            Symbol target = librarian.MakeSymbol(1003010000, 1100000000);
+            Symbol target = _librarian.MakeSymbol(1003010000, 1100000000);
             UInt32 expectedPartA = 1003010000;
             UInt32 expectedPartB = 1100000000;
             SIDC actual = target.SIDC;
@@ -147,10 +133,7 @@ namespace UnitTests
         [TestMethod()]
         public void SIDCTest_ConversionFrom2525C_Air()
         {
-            string configPath = string.Empty;
-            Librarian librarian = new Librarian(configPath);
-
-            Symbol target = librarian.MakeSymbol("2525C", "SFAPM----------");
+            Symbol target = _librarian.MakeSymbol("2525C", "SFAPM----------");
             UInt32 expectedPartA = 1003010000;
             UInt32 expectedPartB = 1100000000;
             SIDC actual = target.SIDC;
@@ -164,10 +147,7 @@ namespace UnitTests
         [TestMethod()]
         public void SIDCTest_ConversionFrom2525C_Space()
         {
-            string configPath = string.Empty;
-            Librarian librarian = new Librarian(configPath);
-
-            Symbol target = librarian.MakeSymbol("2525C", "SFPPS----------");
+            Symbol target = _librarian.MakeSymbol("2525C", "SFPPS----------");
             UInt32 expectedPartA = 1003050000;
             UInt32 expectedPartB = 1107000000;
             SIDC actual = target.SIDC;
@@ -181,15 +161,32 @@ namespace UnitTests
         [TestMethod()]
         public void SIDCTest_ConversionFrom2525C_Sea()
         {
-            string configPath = string.Empty;
-            Librarian librarian = new Librarian(configPath);
-
-            Symbol target = librarian.MakeSymbol("2525C", "SJSPCUS--------");
+            Symbol target = _librarian.MakeSymbol("2525C", "SJSPCUS--------");
             UInt32 expectedPartA = 1015300000;
             UInt32 expectedPartB = 1207000300;
             SIDC actual = target.SIDC;
             Assert.AreEqual(expectedPartA, actual.PartAUInt);
             Assert.AreEqual(expectedPartB, actual.PartBUInt);
+        }
+
+        /// <summary>
+        ///A test for bad/invalid sidc
+        ///</summary>
+        [TestMethod()]
+        public void SIDCTest_Invalid2525CCode()
+        {
+            Symbol target = _librarian.MakeSymbol("2525C", "XXXXXXXXXXXXXXX");
+            Assert.IsNull(target);
+        }
+
+        /// <summary>
+        ///A test for bad/invalid sidc
+        ///</summary>
+        [TestMethod()]
+        public void SIDCTest_Invalid2525DCode()
+        {
+            Symbol target = _librarian.MakeSymbol(1111111111, 1111111111);
+            Assert.IsNull(target);
         }
     }
 }

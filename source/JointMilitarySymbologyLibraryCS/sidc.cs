@@ -23,10 +23,52 @@ namespace JointMilitarySymbologyLibrary
         private UInt32 _first10;
         private UInt32 _second10;
 
-        public SIDC(UInt32 partA = 1000000000, UInt32 partB = 1000000000)
+        public SIDC(UInt32 partA = 1000980000, UInt32 partB = 1000000000)
         {
-            this._first10 = partA;
-            this._second10 = partB;
+            if (partA >= 1000000000 && partB >= 1000000000)
+            {
+                this._first10 = partA;
+                this._second10 = partB;
+            }
+            else
+            {
+                this._first10 = 1000980000;
+                this._second10 = 1000000000;
+            }
+        }
+
+        public SIDC(string partA, string partB)
+        {
+            UInt32 p1;
+            UInt32 p2;
+
+            if(partA.Length != 10 || partB.Length != 10)
+            {
+                partA = "1000980000";
+                partB = "1000000000";
+            }
+
+            try
+            {
+                p1 = Convert.ToUInt32(partA);
+                p2 = Convert.ToUInt32(partB);
+            }
+            catch
+            {
+                p1 = 1000980000;
+                p2 = 1000000000;
+            }
+
+            if (p1 >= 1000000000 && p2 >= 1000000000)
+            {
+                this._first10 = p1;
+                this._second10 = p2;
+            }
+            else
+            {
+                this._first10 = 1000980000;
+                this._second10 = 1000000000;
+            }
         }
 
         public UInt32 PartAUInt
@@ -38,7 +80,10 @@ namespace JointMilitarySymbologyLibrary
 
             set
             {
-                this._first10 = value;
+                if (value >= 1000000000)
+                {
+                    this._first10 = value;
+                }
             }
         }
 
@@ -51,7 +96,10 @@ namespace JointMilitarySymbologyLibrary
 
             set
             {
-                this._second10 = value;
+                if (value >= 1000000000)
+                {
+                    this._second10 = value;
+                }
             }
         }
 
@@ -64,7 +112,17 @@ namespace JointMilitarySymbologyLibrary
 
             set
             {
-                this._first10 = Convert.ToUInt32(value);
+                if (value.Length == 10)
+                {
+                    try
+                    {
+                        this._first10 = Convert.ToUInt32(value);
+                    }
+                    catch
+                    {
+                        this._first10 = 1000980000;
+                    }
+                }
             }
         }
 
@@ -77,7 +135,17 @@ namespace JointMilitarySymbologyLibrary
 
             set
             {
-                this._second10 = Convert.ToUInt32(value);
+                if (value.Length == 10)
+                {
+                    try
+                    {
+                        this._second10 = Convert.ToUInt32(value);
+                    }
+                    catch
+                    {
+                        this._second10 = 1000000000;
+                    }
+                }
             }
         }
     }

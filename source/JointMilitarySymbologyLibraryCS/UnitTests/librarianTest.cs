@@ -85,7 +85,7 @@ namespace UnitTests
             Librarian target = new Librarian(configPath);
             SIDC sidc = new SIDC(1003010000,1100000000);
             Symbol actual = null;
-            actual = target.MakeSymbol(new SIDC());
+            actual = target.MakeSymbol(sidc);
             Assert.IsNotNull(actual, "Symbol object is null.");
         }
     }

@@ -12,6 +12,7 @@
  * limitations under the License.
  */
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,13 +27,54 @@ using NLog.Targets.Wrappers;
 
 namespace JointMilitarySymbologyLibrary
 {
+    internal enum StatusCodeEnum
+    {
+        statusCodeNoVersion,
+        statusCodeNoContext,
+        statusCodeNoDimension,
+        statusCodeNoStandardIdentity,
+        statusCodeNoSymbolSet,
+        statusCodeNoStatus,
+        statusCodeNoHQTFDummy,
+        statusCodeNoAmplifierGroup,
+        statusCodeNoAmplifier,
+        statusCodeNoAffiliation,
+        statusCodeNoContextAmplifier,
+        statusCodeNoEntity,
+        statusCodeNoEntityType,
+        statusCodeNoEntitySubType,
+        statusCodeNoModifierOne,
+        statusCodeNoModifierTwo,
+        statusCodeNoLegacySymbol
+    }
+
     public class Librarian
     {
         private string _configPath;
         private jmsmlConfig _configData;
         private Library _library;
 
+        private bool _logConversion = false;
+        private int _statusFlag = 0;
+
         private List<SymbolSet> _symbolSets = new List<SymbolSet>();
+        private List<string> _statusMessages = new List<string> {"Version Not Found",
+                                                                 "Context Not Found",
+                                                                 "Dimension Not Found",
+                                                                 "Standard Identity Not Found",
+                                                                 "Symbol Set Not Found",
+                                                                 "Status Not Found",
+                                                                 "HQ/TF/Dummy Not Found",
+                                                                 "Amplifier Group Not Found",
+                                                                 "Amplifier Not Found",
+                                                                 "Affiliation Not Found",
+                                                                 "Context Amplifier Not Found",
+                                                                 "Entity Not Found",
+                                                                 "Entity Type Not Found",
+                                                                 "Entity SubType Not Found",
+                                                                 "Modifier One Not Found",
+                                                                 "Modifier Two Not Found",
+                                                                 "Legacy Symbol Not Found"};
 
         protected static Logger logger = LogManager.GetCurrentClassLogger();
 
@@ -158,7 +200,56 @@ namespace JointMilitarySymbologyLibrary
             SimpleConfigurator.ConfigureForTargetLogging(wrapper, LogLevel.Debug);
         }
 
-        public Library Library 
+        internal void LogConversionResult(string converting)
+        {
+            if (_logConversion)
+            {
+                string s = Convert.ToString(0 - _statusFlag, 2);
+                char[] bits = s.PadLeft(17, '0').ToCharArray();
+                Array.Reverse(bits);
+
+                logger.Info("----------------------------");
+                logger.Info("Converting: " + converting +  " (" + _statusFlag + ")");
+
+                for (int i = 0; i < 17; i++)
+                {
+                    if (bits[i] == '1')
+                    {
+                        logger.Info(_statusMessages[i]);
+                    }
+                }
+
+                logger.Info("----------------------------");
+            }
+        }
+
+        internal void ResetStatusCode()
+        {
+            _statusFlag = 0;
+        }
+
+        internal int StatusCode
+        {
+            get
+            {
+                return _statusFlag;
+            }
+        }
+
+        public bool IsLogging
+        {
+            get
+            {
+                return _logConversion; 
+            }
+
+            set
+            {
+                _logConversion = value;
+            }
+        }
+
+        internal Library Library 
         {
             get
             {
@@ -166,7 +257,7 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        public string Graphics
+        internal string Graphics
         {
             get
             {
@@ -174,7 +265,7 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        public LibraryVersion Version(ushort codeOne, ushort codeTwo)
+        internal LibraryVersion Version(ushort codeOne, ushort codeTwo)
         {
             LibraryVersion retObj = null;
 
@@ -187,10 +278,12 @@ namespace JointMilitarySymbologyLibrary
                 }
             }
 
+            _statusFlag -= 1;
+
             return retObj;
         }
 
-        public LibraryContext Context(ushort code)
+        internal LibraryContext Context(ushort code)
         {
             LibraryContext retObj = null;
 
@@ -202,10 +295,12 @@ namespace JointMilitarySymbologyLibrary
                 }
             }
 
+            _statusFlag -= 2;
+
             return retObj;
         }
 
-        public LibraryContext Context(string id)
+        internal LibraryContext Context(string id)
         {
             LibraryContext retObj = null;
 
@@ -217,10 +312,12 @@ namespace JointMilitarySymbologyLibrary
                 }
             }
 
+            _statusFlag -= 2;
+
             return retObj;
         }
 
-        public LibraryDimension Dimension(string id)
+        internal LibraryDimension Dimension(string id)
         {
             LibraryDimension retObj = null;
 
@@ -228,15 +325,16 @@ namespace JointMilitarySymbologyLibrary
             {
                 if (lObj.ID == id)
                 {
-                    retObj = lObj;
-                    break;
+                    return lObj;
                 }
             }
+
+            _statusFlag -= 4;
 
             return retObj;
         }
 
-        public LibraryDimension DimensionBySymbolSet(string symbolSetID)
+        internal LibraryDimension DimensionBySymbolSet(string symbolSetID)
         {
             LibraryDimension retObj = null;
 
@@ -251,10 +349,12 @@ namespace JointMilitarySymbologyLibrary
                 }
             }
 
+            _statusFlag -= 4;
+
             return retObj;
         }
 
-        public LibraryDimension DimensionByLegacyCode(string code)
+        internal LibraryDimension DimensionByLegacyCode(string code)
         {
             LibraryDimension retObj = null;
 
@@ -269,10 +369,12 @@ namespace JointMilitarySymbologyLibrary
                 }
             }
 
+            _statusFlag -= 4;
+
             return retObj;
         }
 
-        public LibraryStandardIdentity StandardIdentity(ushort code)
+        internal LibraryStandardIdentity StandardIdentity(ushort code)
         {
             LibraryStandardIdentity retObj = null;
 
@@ -284,10 +386,12 @@ namespace JointMilitarySymbologyLibrary
                 }
             }
 
+            _statusFlag -= 8;
+
             return retObj;
         }
 
-        public LibraryStandardIdentity StandardIdentity(string id)
+        internal LibraryStandardIdentity StandardIdentity(string id)
         {
             LibraryStandardIdentity retObj = null;
 
@@ -299,10 +403,12 @@ namespace JointMilitarySymbologyLibrary
                 }
             }
 
+            _statusFlag -= 8;
+
             return retObj;
         }
 
-        public SymbolSet SymbolSet(ushort symbolSetCodeOne, ushort symbolSetCodeTwo)
+        internal SymbolSet SymbolSet(ushort symbolSetCodeOne, ushort symbolSetCodeTwo)
         {
             SymbolSet retObj = null;
 
@@ -315,10 +421,12 @@ namespace JointMilitarySymbologyLibrary
                 }
             }
 
+            _statusFlag -= 16;
+
             return retObj;
         }
 
-        public SymbolSet SymbolSet(string dimensionID, string code)
+        internal SymbolSet SymbolSet(string dimensionID, string code)
         {
             SymbolSet retObj = null;
 
@@ -342,10 +450,12 @@ namespace JointMilitarySymbologyLibrary
                 }
             }
 
+            _statusFlag -= 16;
+
             return retObj;
         }
 
-        public LibraryStatus Status(ushort code)
+        internal LibraryStatus Status(ushort code)
         {
             LibraryStatus retObj = null;
 
@@ -357,10 +467,12 @@ namespace JointMilitarySymbologyLibrary
                 }
             }
 
+            _statusFlag -= 32;
+
             return retObj;
         }
 
-        public LibraryStatus Status(string code)
+        internal LibraryStatus Status(string code)
         {
             LibraryStatus retObj = null;
 
@@ -378,10 +490,12 @@ namespace JointMilitarySymbologyLibrary
                 }
             }
 
+            _statusFlag -= 32;
+
             return retObj;
         }
 
-        public LibraryHQTFDummy HQTFDummy(ushort code)
+        internal LibraryHQTFDummy HQTFDummy(ushort code)
         {
             LibraryHQTFDummy retObj = null;
 
@@ -393,20 +507,25 @@ namespace JointMilitarySymbologyLibrary
                 }
             }
 
+            _statusFlag -= 64;
+
             return retObj;
         }
 
-        public LibraryHQTFDummy HQTFDummy(string code)
+        internal LibraryHQTFDummy HQTFDummy(string code)
         {
             LibraryHQTFDummy retObj = null;
 
             foreach (LibraryHQTFDummy lObj in this._library.HQTFDummies)
             {
-                foreach (LegacyLetterCodeType lObj2 in lObj.LegacyHQTFDummyCode)
+                if (lObj.LegacyHQTFDummyCode != null)
                 {
-                    if (lObj2.Value == code)
+                    foreach (LegacyLetterCodeType lObj2 in lObj.LegacyHQTFDummyCode)
                     {
-                        return lObj;
+                        if (lObj2.Value == code)
+                        {
+                            return lObj;
+                        }
                     }
                 }
             }
@@ -419,7 +538,7 @@ namespace JointMilitarySymbologyLibrary
             return retObj;
         }
 
-        public LibraryAmplifierGroup AmplifierGroup(ushort code)
+        internal LibraryAmplifierGroup AmplifierGroup(ushort code)
         {
             LibraryAmplifierGroup retObj = null;
 
@@ -432,10 +551,12 @@ namespace JointMilitarySymbologyLibrary
                 }
             }
 
+            _statusFlag -= 128;
+
             return retObj;
         }
 
-        public LibraryAmplifierGroup AmplifierGroup(LibraryAmplifierGroupAmplifier amplifier)
+        internal LibraryAmplifierGroup AmplifierGroup(LibraryAmplifierGroupAmplifier amplifier)
         {
             LibraryAmplifierGroup retObj = null;
 
@@ -450,10 +571,12 @@ namespace JointMilitarySymbologyLibrary
                 }
             }
 
+            _statusFlag -= 128;
+
             return retObj;
         }
 
-        public LibraryAmplifierGroupAmplifier Amplifier(LibraryAmplifierGroup group, ushort code)
+        internal LibraryAmplifierGroupAmplifier Amplifier(LibraryAmplifierGroup group, ushort code)
         {
             LibraryAmplifierGroupAmplifier retObj = null;
 
@@ -468,10 +591,12 @@ namespace JointMilitarySymbologyLibrary
                 }
             }
 
+            _statusFlag -= 256;
+
             return retObj;
         }
 
-        public LibraryAmplifierGroupAmplifier Amplifier(ushort groupCode, ushort code)
+        internal LibraryAmplifierGroupAmplifier Amplifier(ushort groupCode, ushort code)
         {
             LibraryAmplifierGroup group = this.AmplifierGroup(groupCode);
 
@@ -480,28 +605,36 @@ namespace JointMilitarySymbologyLibrary
             return retObj;
         }
 
-        public LibraryAmplifierGroupAmplifier Amplifier(string code)
+        internal LibraryAmplifierGroupAmplifier Amplifier(string code)
         {
             LibraryAmplifierGroupAmplifier retObj = null;
 
             foreach (LibraryAmplifierGroup lObj in this._library.AmplifierGroups)
             {
-                foreach (LibraryAmplifierGroupAmplifier lObj2 in lObj.Amplifiers)
+                if (lObj.Amplifiers != null)
                 {
-                    foreach (LegacyLetterCodeType lObj3 in lObj2.LegacyModifierCode)
+                    foreach (LibraryAmplifierGroupAmplifier lObj2 in lObj.Amplifiers)
                     {
-                        if (lObj3.Value == code)
+                        if (lObj2.LegacyModifierCode != null)
                         {
-                            return lObj2;
+                            foreach (LegacyLetterCodeType lObj3 in lObj2.LegacyModifierCode)
+                            {
+                                if (lObj3.Value == code)
+                                {
+                                    return lObj2;
+                                }
+                            }
                         }
                     }
                 }
             }
-            
+
+            _statusFlag -= 256;
+
             return retObj;
         }
 
-        public LibraryAffiliation Affiliation(string contextID, string dimensionID, string standardIdentityID)
+        internal LibraryAffiliation Affiliation(string contextID, string dimensionID, string standardIdentityID)
         {
             LibraryAffiliation retObj = null;
 
@@ -513,10 +646,12 @@ namespace JointMilitarySymbologyLibrary
                 }
             }
 
+            _statusFlag -= 512;
+
             return retObj;
         }
 
-        public LibraryAffiliation Affiliation(string legacyStandardIdentityCode, string legacyDimensionCode)
+        internal LibraryAffiliation Affiliation(string legacyStandardIdentityCode, string legacyDimensionCode)
         {
             LibraryAffiliation retObj = null;
 
@@ -540,10 +675,12 @@ namespace JointMilitarySymbologyLibrary
                 }
             }
 
+            _statusFlag -= 512;
+
             return retObj;
         }
 
-        public LibraryContextContextAmplifier ContextAmplifier(LibraryContext context, ShapeType shape)
+        internal LibraryContextContextAmplifier ContextAmplifier(LibraryContext context, ShapeType shape)
         {
             LibraryContextContextAmplifier retObj = null;
 
@@ -561,10 +698,12 @@ namespace JointMilitarySymbologyLibrary
                 }
             }
 
+            _statusFlag -= 1024;
+
             return retObj;
         }
 
-        public SymbolSetEntity Entity(SymbolSet symbolSet, ushort entityCodeOne, ushort entityCodeTwo)
+        internal SymbolSetEntity Entity(SymbolSet symbolSet, ushort entityCodeOne, ushort entityCodeTwo)
         {
             SymbolSetEntity retObj = null;
 
@@ -582,11 +721,13 @@ namespace JointMilitarySymbologyLibrary
                     }
                 }
             }
-  
+
+            _statusFlag -= 2048;
+
             return retObj;
         }
 
-        public SymbolSetEntity Entity(SymbolSet symbolSet, string entityID)
+        internal SymbolSetEntity Entity(SymbolSet symbolSet, string entityID)
         {
             SymbolSetEntity retObj = null;
 
@@ -604,10 +745,12 @@ namespace JointMilitarySymbologyLibrary
                 }
             }
 
+            _statusFlag -= 2048;
+
             return retObj;
         }
 
-        public SymbolSetEntityEntityType EntityType(SymbolSetEntity entity, ushort entityTypeCodeOne, ushort entityTypeCodeTwo)
+        internal SymbolSetEntityEntityType EntityType(SymbolSetEntity entity, ushort entityTypeCodeOne, ushort entityTypeCodeTwo)
         {
             SymbolSetEntityEntityType retObj = null;
 
@@ -626,10 +769,12 @@ namespace JointMilitarySymbologyLibrary
                 }
             }
 
+            _statusFlag -= 4096;
+
             return retObj;
         }
 
-        public SymbolSetEntityEntityType EntityType(SymbolSetEntity entity, string entityTypeID)
+        internal SymbolSetEntityEntityType EntityType(SymbolSetEntity entity, string entityTypeID)
         {
             SymbolSetEntityEntityType retObj = null;
 
@@ -647,10 +792,12 @@ namespace JointMilitarySymbologyLibrary
                 }
             }
 
+            _statusFlag -= 4096;
+
             return retObj;
         }
 
-        public SymbolSetEntityEntityTypeEntitySubType EntitySubType(SymbolSetEntityEntityType entityType, ushort entitySubTypeCodeOne, ushort entitySubTypeCodeTwo)
+        internal SymbolSetEntityEntityTypeEntitySubType EntitySubType(SymbolSetEntityEntityType entityType, ushort entitySubTypeCodeOne, ushort entitySubTypeCodeTwo)
         {
             SymbolSetEntityEntityTypeEntitySubType retObj = null;
 
@@ -669,10 +816,12 @@ namespace JointMilitarySymbologyLibrary
                 }
             }
 
+            _statusFlag -= 8192;
+
             return retObj;
         }
 
-        public SymbolSetEntityEntityTypeEntitySubType EntitySubType(SymbolSetEntityEntityType entityType, string entitySubTypeID)
+        internal SymbolSetEntityEntityTypeEntitySubType EntitySubType(SymbolSetEntityEntityType entityType, string entitySubTypeID)
         {
             SymbolSetEntityEntityTypeEntitySubType retObj = null;
 
@@ -690,10 +839,12 @@ namespace JointMilitarySymbologyLibrary
                 }
             }
 
+            _statusFlag -= 8192;
+
             return retObj;
         }
 
-        public ModifiersTypeModifier ModifierOne(SymbolSet symbolSet, ushort modifierCodeOne, ushort modifierCodeTwo)
+        internal ModifiersTypeModifier ModifierOne(SymbolSet symbolSet, ushort modifierCodeOne, ushort modifierCodeTwo)
         {
             ModifiersTypeModifier retObj = null;
 
@@ -710,10 +861,12 @@ namespace JointMilitarySymbologyLibrary
                     }
                 }
 
+            _statusFlag -= 16384;
+
             return retObj;
         }
 
-        public ModifiersTypeModifier ModifierOne(SymbolSet symbolSet, string modifierID)
+        internal ModifiersTypeModifier ModifierOne(SymbolSet symbolSet, string modifierID)
         {
             ModifiersTypeModifier retObj = null;
 
@@ -729,10 +882,12 @@ namespace JointMilitarySymbologyLibrary
                     }
                 }
 
+            _statusFlag -= 16384;
+
             return retObj;
         }
 
-        public ModifiersTypeModifier ModifierTwo(SymbolSet symbolSet, ushort modifierCodeOne, ushort modifierCodeTwo)
+        internal ModifiersTypeModifier ModifierTwo(SymbolSet symbolSet, ushort modifierCodeOne, ushort modifierCodeTwo)
         {
             ModifiersTypeModifier retObj = null;
 
@@ -749,10 +904,12 @@ namespace JointMilitarySymbologyLibrary
                     }
                 }
 
+            _statusFlag -= 32768;
+
             return retObj;
         }
 
-        public ModifiersTypeModifier ModifierTwo(SymbolSet symbolSet, string modifierID)
+        internal ModifiersTypeModifier ModifierTwo(SymbolSet symbolSet, string modifierID)
         {
             ModifiersTypeModifier retObj = null;
 
@@ -768,31 +925,38 @@ namespace JointMilitarySymbologyLibrary
                     }
                 }
 
+            _statusFlag -= 32768;
+
             return retObj;
         }
 
-        public SymbolSetLegacySymbol LegacySymbol(SymbolSet symbolSet, string functionCode)
+        internal SymbolSetLegacySymbol LegacySymbol(SymbolSet symbolSet, string functionCode)
         {
             SymbolSetLegacySymbol retObj = null;
 
             if (symbolSet != null)
             {
-                foreach (SymbolSetLegacySymbol lObj in symbolSet.LegacySymbols)
+                if (symbolSet.LegacySymbols != null)
                 {
-                    foreach (LegacyFunctionCodeType lObj2 in lObj.LegacyFunctionCode)
+                    foreach (SymbolSetLegacySymbol lObj in symbolSet.LegacySymbols)
                     {
-                        if (lObj2.Value == functionCode)
+                        foreach (LegacyFunctionCodeType lObj2 in lObj.LegacyFunctionCode)
                         {
-                            return lObj;
+                            if (lObj2.Value == functionCode)
+                            {
+                                return lObj;
+                            }
                         }
                     }
                 }
             }
 
+            _statusFlag -= 65536;
+
             return retObj;
         }
 
-        public SymbolSetLegacySymbol LegacySymbol(SymbolSet symbolSet, 
+        internal SymbolSetLegacySymbol LegacySymbol(SymbolSet symbolSet, 
                                                   SymbolSetEntity entity, 
                                                   SymbolSetEntityEntityType entityType, 
                                                   SymbolSetEntityEntityTypeEntitySubType entitySubType, 
@@ -874,23 +1038,46 @@ namespace JointMilitarySymbologyLibrary
                 }
             }
 
+            _statusFlag -= 65536;
+
             return retObj;
         }
 
         public Symbol MakeSymbol(string legacyStandard, string legacySIDC)
         {
-            return new Symbol(this, legacyStandard, legacySIDC);
+            Symbol s =  new Symbol(this, legacyStandard, legacySIDC);
+
+            if (s.SymbolStatus == SymbolStatusEnum.statusEnumInvalid)
+            {
+                s = null;
+            }
+
+            return s;
         }
 
         public Symbol MakeSymbol(UInt32 partA, UInt32 partB)
         {
             SIDC sid = new SIDC(partA, partB);
-            return new Symbol(this, sid);
+            Symbol s = new Symbol(this, sid);
+
+            if (s.SymbolStatus == SymbolStatusEnum.statusEnumInvalid)
+            {
+                s = null;
+            }
+
+            return s;
         }
 
         public Symbol MakeSymbol(SIDC sidc)
         {
-            return new Symbol(this, sidc);
+            Symbol s = new Symbol(this, sidc);
+
+            if (s.SymbolStatus == SymbolStatusEnum.statusEnumInvalid)
+            {
+                s = null;
+            }
+
+            return s;
         }
 
         private void serializer_UnknownNode(object sender, XmlNodeEventArgs e)

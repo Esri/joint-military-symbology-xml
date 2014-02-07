@@ -18,12 +18,24 @@ using System.Text;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
+using NLog;
 
 namespace JointMilitarySymbologyLibrary
 {
+    public enum SymbolStatusEnum
+    {
+        statusEnumNew,
+        statusEnumOld,
+        statusEnumRetired,
+        statusEnumInvalid
+    };
+
     public class Symbol
     {
-        private bool _isValid = false;
+        protected static Logger logger = LogManager.GetCurrentClassLogger();
+
+        private SymbolStatusEnum _symbolStat = SymbolStatusEnum.statusEnumInvalid;
+
         private Librarian _librarian = null;
         private LibraryVersion _version = null;
         private LibraryContext _context = null;
@@ -45,8 +57,8 @@ namespace JointMilitarySymbologyLibrary
 
         private SymbolSetLegacySymbol _legacySymbol = null;
 
-        private SIDC _sidc = new SIDC();
-        private string _legacySIDC = "SPGP-----------";
+        private SIDC _sidc = new SIDC(1000980000, 1000000000);
+        private string _legacySIDC = "---------------";
 
         internal Symbol(Librarian librarian, SIDC sidc)
         {
@@ -54,7 +66,16 @@ namespace JointMilitarySymbologyLibrary
             _sidc = sidc;
 
             _UpdateFromCurrent();
-            _BuildLegacySIDC();
+
+            switch (_symbolStat)
+            {
+                case SymbolStatusEnum.statusEnumOld:
+                    _BuildLegacySIDC();
+                    break;
+                case SymbolStatusEnum.statusEnumNew:
+                    _legacySIDC = "---------------";
+                    break;
+            }
         }
 
         internal Symbol(Librarian librarian, string legacyStandard, string legacySIDC)
@@ -63,14 +84,24 @@ namespace JointMilitarySymbologyLibrary
             _legacySIDC = legacySIDC;
 
             _UpdateFromLegacy();
-            _BuildSIDC();
+
+            switch (_symbolStat)
+            {
+                case SymbolStatusEnum.statusEnumOld:
+                    _BuildSIDC();
+                    break;
+                case SymbolStatusEnum.statusEnumRetired:
+                    _sidc.PartAUInt = 1000980000;
+                    _sidc.PartBUInt = 1100000000;
+                    break;
+            }
         }
 
-        public bool IsValid
+        public SymbolStatusEnum SymbolStatus
         {
             get
             {
-                return _isValid;
+                return _symbolStat;
             }
         }
 
@@ -80,13 +111,6 @@ namespace JointMilitarySymbologyLibrary
             {
                 return _sidc;
             }
-
-            set
-            {
-                _sidc = value;
-                _UpdateFromCurrent();
-                _BuildLegacySIDC();        
-            }
         }
 
         public string LegacySIDC
@@ -95,76 +119,90 @@ namespace JointMilitarySymbologyLibrary
             {
                 return _legacySIDC;
             }
-
-            set 
-            { 
-                _legacySIDC = value;
-                _UpdateFromLegacy();
-                _BuildSIDC();
-            }
         }
 
-        public Image Image
+        private Image CreateImage()
         {
-            get
+            Image imgFrame = null;
+            Image imgIcon = null;
+
+            Image Canvas = new Bitmap(1108, 1327);
+
+            if (_affiliation != null)
             {
-                Image imgFrame = null;
-                Image imgIcon = null;
-
-                Image Canvas = new Bitmap(1108, 1327);
-
                 if (_affiliation.Graphic != "")
                 {
                     if (File.Exists(_librarian.Graphics + "/" + _affiliation.Graphic))
                     {
                         imgFrame = Image.FromFile(_librarian.Graphics + "/" + _affiliation.Graphic);
                     }
-                }
-
-                if (_entity != null)
-                {
-                    if (_entity.Graphic != "")
+                    else
                     {
-                        if (File.Exists(_librarian.Graphics + "/" + _entity.Graphic))
-                        {
-                            imgIcon = Image.FromFile(_librarian.Graphics + "/" + _entity.Graphic);
-
-                            //Frame to define the dimentions
-                            Rectangle Frame = new Rectangle(0, 0, 267, 320);
-                            Rectangle Frame2 = new Rectangle(42, 153, 1024, 1020);
-
-                            //To do drawing and stuffs
-                            Graphics Artist = Graphics.FromImage(Canvas);
-
-                            //Draw the layers on Canvas
-                            Artist.DrawImage(imgFrame, 0, 0);
-                            //Artist.DrawImage(imgFrame, Frame, Frame, 0, 0);
-                            //Artist.DrawImage(imgIcon, 0, 0);
-                            //Artist.DrawImage(imgIcon, 84, 307, Frame, GraphicsUnit.Pixel);
-                            Artist.DrawImage(imgIcon, 0, 0);
-
-                            //Free up resources when required
-                            Artist.Dispose();
-                        }
+                        logger.Warn("Can't find graphic: " + _librarian.Graphics + "/" + _affiliation.Graphic);
                     }
                 }
+            }
+            else
+            {
+                logger.Error("Affiliation not valid.");
+            }
 
-                return Canvas;
+            if (_entity != null)
+            {
+                if (_entity.Graphic != "")
+                {
+                    if (File.Exists(_librarian.Graphics + "/" + _entity.Graphic))
+                    {
+                        imgIcon = Image.FromFile(_librarian.Graphics + "/" + _entity.Graphic);
+
+                        //Frame to define the dimentions
+                        Rectangle Frame = new Rectangle(0, 0, 267, 320);
+                        Rectangle Frame2 = new Rectangle(42, 153, 1024, 1020);
+
+                        //To do drawing and stuffs
+                        Graphics Artist = Graphics.FromImage(Canvas);
+
+                        //Draw the layers on Canvas
+                        Artist.DrawImage(imgFrame, 0, 0);
+                        Artist.DrawImage(imgIcon, 0, 0);
+
+                        //Free up resources when required
+                        Artist.Dispose();
+                    }
+                    else
+                    {
+                        logger.Warn("Can't find graphic: " + _librarian.Graphics + "/" + _entity.Graphic);
+                    }
+                }
+            }
+            else
+            {
+                logger.Error("Entity not valid.");
+            }
+
+            return Canvas;
+        }
+
+        internal Image Image
+        {
+            get
+            {
+                return CreateImage();
             }
         }
 
-        public void SaveImage(string fileName)
+        internal void SaveImage(string fileName)
         {
-            Image img = this.Image;
+            Image img = CreateImage();
 
-            if(img != null)
+            if (img != null)
                 img.Save(fileName, ImageFormat.Png);
+            else
+                logger.Warn("No image to save");
         }
 
         private void _BuildSIDC()
         {
-            _isValid = true;
-
             if (_version != null && _context != null &&
                _standardIdentity != null && _symbolSet != null && _status != null &&
                _hqTFDummy != null && _amplifierGroup != null && _amplifier != null)
@@ -180,54 +218,40 @@ namespace JointMilitarySymbologyLibrary
                                     (uint)_amplifierGroup.AmplifierGroupCode * 10 +
                                     (uint)_amplifier.AmplifierCode;
             }
-            else
-            {
-                _isValid = false;
-            }
 
             if (_entity != null)
             {
                 _sidc.PartBUInt = (uint)_entity.EntityCode.DigitOne * 1000000000 +
                                      (uint)_entity.EntityCode.DigitTwo * 100000000;
             }
-            else
-            {
-                _isValid = false;
-            }
 
             if (_entityType != null)
             {
                 _sidc.PartBUInt = _sidc.PartBUInt + (uint)_entityType.EntityTypeCode.DigitOne * 10000000 +
                                                           (uint)_entityType.EntityTypeCode.DigitTwo * 1000000;
-
             }
 
             if (_entitySubType != null)
             {
                 _sidc.PartBUInt = _sidc.PartBUInt + (uint)_entitySubType.EntitySubTypeCode.DigitOne * 100000 +
                                                           (uint)_entitySubType.EntitySubTypeCode.DigitTwo * 10000;
-
             }
 
             if (_modifierOne != null)
             {
                 _sidc.PartBUInt = _sidc.PartBUInt + (uint)_modifierOne.ModifierCode.DigitOne * 1000 +
                                                           (uint)_modifierOne.ModifierCode.DigitTwo * 100;
-
             }
 
             if (_modifierTwo != null)
             {
                 _sidc.PartBUInt = _sidc.PartBUInt + (uint)_modifierTwo.ModifierCode.DigitOne * 10 +
                                                           (uint)_modifierTwo.ModifierCode.DigitTwo;
-
             }
         }
 
         private void _BuildLegacySIDC()
         {
-            _isValid = true;
-
             if (_symbolSet != null && _affiliation != null && _dimension != null &&
                _status != null && _amplifierGroup != null && _amplifier != null)
             {
@@ -243,15 +267,12 @@ namespace JointMilitarySymbologyLibrary
                 else
                 {
                     _legacySIDC = _legacySIDC + "------";
-                    _isValid = false;
                 }
 
                 _legacySIDC = _legacySIDC + _amplifierGroup.LegacyModifierCode[0].Value +
                                             _amplifier.LegacyModifierCode[0].Value +
                                             "---";
             }
-            else
-                _isValid = false;
         }
 
         private void _UpdateFromCurrent()
@@ -259,44 +280,103 @@ namespace JointMilitarySymbologyLibrary
             string first10 = _sidc.PartAString;
             string second10 = _sidc.PartBString;
 
+            _librarian.ResetStatusCode();
+
             _version = _librarian.Version(Convert.ToUInt16(first10.Substring(0, 1)),
                                           Convert.ToUInt16(first10.Substring(1, 1)));
             
             _context = _librarian.Context(Convert.ToUInt16(first10.Substring(2, 1)));
             _standardIdentity = _librarian.StandardIdentity(Convert.ToUInt16(first10.Substring(3, 1)));
             _symbolSet = _librarian.SymbolSet(Convert.ToUInt16(first10.Substring(4, 1)), Convert.ToUInt16(first10.Substring(5, 1)));
-            _dimension = _librarian.DimensionBySymbolSet(_symbolSet.ID);
-            _affiliation = _librarian.Affiliation(_context.ID, _dimension.ID, _standardIdentity.ID);
+
+            if (_symbolSet != null)
+            {
+                _dimension = _librarian.DimensionBySymbolSet(_symbolSet.ID);
+            }
+
+            if (_context != null && _dimension != null && _standardIdentity != null)
+            {
+                _affiliation = _librarian.Affiliation(_context.ID, _dimension.ID, _standardIdentity.ID);
+            }
+
             _status = _librarian.Status(Convert.ToUInt16(first10.Substring(6, 1)));
             _hqTFDummy = _librarian.HQTFDummy(Convert.ToUInt16(first10.Substring(7, 1)));
             _amplifierGroup = _librarian.AmplifierGroup(Convert.ToUInt16(first10.Substring(8, 1)));
-            _amplifier = _librarian.Amplifier(_amplifierGroup, Convert.ToUInt16(first10.Substring(9, 1)));
-            _contextAmplifier = _librarian.ContextAmplifier(_context, _affiliation.Shape);
 
-            _entity = _librarian.Entity(_symbolSet, Convert.ToUInt16(second10.Substring(0, 1)), Convert.ToUInt16(second10.Substring(1, 1)));
-            _entityType = _librarian.EntityType(_entity, Convert.ToUInt16(second10.Substring(2, 1)), Convert.ToUInt16(second10.Substring(3, 1)));
-            _entitySubType = _librarian.EntitySubType(_entityType, Convert.ToUInt16(second10.Substring(4, 1)), Convert.ToUInt16(second10.Substring(5, 1)));
-            _modifierOne = _librarian.ModifierOne(_symbolSet, Convert.ToUInt16(second10.Substring(6, 1)), Convert.ToUInt16(second10.Substring(7, 1)));
-            _modifierTwo = _librarian.ModifierTwo(_symbolSet, Convert.ToUInt16(second10.Substring(8, 1)), Convert.ToUInt16(second10.Substring(9, 1)));
-            _legacySymbol = _librarian.LegacySymbol(_symbolSet, _entity, _entityType, _entitySubType, _modifierOne, _modifierTwo);
+            if (_amplifierGroup != null)
+            {
+                _amplifier = _librarian.Amplifier(_amplifierGroup, Convert.ToUInt16(first10.Substring(9, 1)));
+            }
+
+            if (_context != null && _affiliation != null)
+            {
+                _contextAmplifier = _librarian.ContextAmplifier(_context, _affiliation.Shape);
+            }
+
+            if (_symbolSet != null)
+            {
+                _entity = _librarian.Entity(_symbolSet, Convert.ToUInt16(second10.Substring(0, 1)), Convert.ToUInt16(second10.Substring(1, 1)));
+
+                if (_entity != null)
+                {
+                    _entityType = _librarian.EntityType(_entity, Convert.ToUInt16(second10.Substring(2, 1)), Convert.ToUInt16(second10.Substring(3, 1)));
+                }
+
+                if (_entityType != null)
+                {
+                    _entitySubType = _librarian.EntitySubType(_entityType, Convert.ToUInt16(second10.Substring(4, 1)), Convert.ToUInt16(second10.Substring(5, 1)));
+                }
+
+                _modifierOne = _librarian.ModifierOne(_symbolSet, Convert.ToUInt16(second10.Substring(6, 1)), Convert.ToUInt16(second10.Substring(7, 1)));
+                _modifierTwo = _librarian.ModifierTwo(_symbolSet, Convert.ToUInt16(second10.Substring(8, 1)), Convert.ToUInt16(second10.Substring(9, 1)));
+                _legacySymbol = _librarian.LegacySymbol(_symbolSet, _entity, _entityType, _entitySubType, _modifierOne, _modifierTwo);
+            }
+
+            _librarian.LogConversionResult(_sidc.PartAString + ", " + _sidc.PartBString);
+            
+            _ValidateStatus();
         }
 
         private void _UpdateFromLegacy()
         {
+            _librarian.ResetStatusCode();
+
             _version = _librarian.Version(1, 0);
 
             _affiliation = _librarian.Affiliation(_legacySIDC.Substring(1, 1), _legacySIDC.Substring(2, 1));
-            _context = _librarian.Context(_affiliation.ContextID);
-            _standardIdentity = _librarian.StandardIdentity(_affiliation.StandardIdentityID);
+
+            if (_affiliation != null)
+            {
+                _context = _librarian.Context(_affiliation.ContextID);
+                _standardIdentity = _librarian.StandardIdentity(_affiliation.StandardIdentityID);
+            }
+            
             _dimension = _librarian.DimensionByLegacyCode(_legacySIDC.Substring(2, 1));
-            _symbolSet = _librarian.SymbolSet(_dimension.ID, _legacySIDC.Substring(4, 6));
+
+            if (_dimension != null)
+            {
+                _symbolSet = _librarian.SymbolSet(_dimension.ID, _legacySIDC.Substring(4, 6));
+            }
+
             _status = _librarian.Status(_legacySIDC.Substring(3, 1));
             _hqTFDummy = _librarian.HQTFDummy(_legacySIDC.Substring(10, 1));
-            _contextAmplifier = _librarian.ContextAmplifier(_context, _affiliation.Shape);
-            _amplifier = _librarian.Amplifier(_legacySIDC.Substring(11, 1));
-            _amplifierGroup = _librarian.AmplifierGroup(_amplifier);
 
-            _legacySymbol = _librarian.LegacySymbol(_symbolSet, _legacySIDC.Substring(4,6));
+            if (_context != null && _affiliation != null)
+            {
+                _contextAmplifier = _librarian.ContextAmplifier(_context, _affiliation.Shape);
+            }
+
+            _amplifier = _librarian.Amplifier(_legacySIDC.Substring(11, 1));
+
+            if (_amplifier != null)
+            {
+                _amplifierGroup = _librarian.AmplifierGroup(_amplifier);
+            }
+
+            if (_symbolSet != null)
+            {
+                _legacySymbol = _librarian.LegacySymbol(_symbolSet, _legacySIDC.Substring(4, 6));
+            }
 
             if (_legacySymbol != null)
             {
@@ -305,6 +385,86 @@ namespace JointMilitarySymbologyLibrary
                 _entitySubType = _librarian.EntitySubType(_entityType, _legacySymbol.EntitySubTypeID);
                 _modifierOne = _librarian.ModifierOne(_symbolSet, _legacySymbol.ModifierOneID);
                 _modifierTwo = _librarian.ModifierTwo(_symbolSet, _legacySymbol.ModifierTwoID);
+            }
+
+            _librarian.LogConversionResult(_legacySIDC);
+            
+            _ValidateStatus();
+        }
+
+        private void _SetInvalidSymbolProps()
+        {
+            _version = _librarian.Version(1, 0);
+            _context = _librarian.Context(0);
+            _dimension = _librarian.Dimension("I");
+            _standardIdentity = _librarian.StandardIdentity(0);
+            _symbolSet = _librarian.SymbolSet(8, 8);
+            _status = _librarian.Status(0);
+            _hqTFDummy = _librarian.HQTFDummy(0);
+            _amplifierGroup = _librarian.AmplifierGroup(0);
+            _amplifier = _librarian.Amplifier(_amplifierGroup, 0);
+            _affiliation = _librarian.Affiliation("REALITY", "INTERNAL", "SI_PENDING");
+            _contextAmplifier = _librarian.ContextAmplifier(_context, _affiliation.Shape);
+
+            _entityType = null;
+            _entitySubType = null;
+            _modifierOne = null;
+            _modifierTwo = null;
+        }
+
+        private void _ValidateStatus()
+        {
+            string s = Convert.ToString(0 - _librarian.StatusCode, 2);
+            char[] bits = s.PadLeft(17, '0').ToCharArray();
+
+            Array.Reverse(bits);
+
+            if (bits[(int)StatusCodeEnum.statusCodeNoLegacySymbol] == '0' && bits[(int)StatusCodeEnum.statusCodeNoEntity] == '1')
+            {
+                // Retired symbol.  Everything was found, including a LegacySymbol
+                // but there was no Entity found for that symbol.
+                // Confirm retirement with Remarks check.
+                if (_legacySymbol.Remarks == "Retired")
+                {
+                    //_SetInvalidSymbolProps();
+                    _entity = _librarian.Entity(_symbolSet, 1, 1);
+                    _symbolStat = SymbolStatusEnum.statusEnumRetired;
+                }
+                else
+                {
+                    // Remarks double check is missing
+                    logger.Warn("Symbol retirement in question - check XML instance data");
+                    _symbolStat = SymbolStatusEnum.statusEnumInvalid;
+                }
+            }
+            else
+            {
+                if (bits[(int)StatusCodeEnum.statusCodeNoVersion] == '1' ||
+                    bits[(int)StatusCodeEnum.statusCodeNoContext] == '1' ||
+                    bits[(int)StatusCodeEnum.statusCodeNoDimension] == '1' ||
+                    bits[(int)StatusCodeEnum.statusCodeNoStandardIdentity] == '1' ||
+                    bits[(int)StatusCodeEnum.statusCodeNoSymbolSet] == '1' ||
+                    bits[(int)StatusCodeEnum.statusCodeNoStatus] == '1' ||
+                    bits[(int)StatusCodeEnum.statusCodeNoHQTFDummy] == '1' ||
+                    bits[(int)StatusCodeEnum.statusCodeNoAmplifierGroup] == '1' ||
+                    bits[(int)StatusCodeEnum.statusCodeNoAmplifier] == '1' ||
+                    bits[(int)StatusCodeEnum.statusCodeNoAffiliation] == '1' ||
+                    bits[(int)StatusCodeEnum.statusCodeNoContextAmplifier] == '1' ||
+                    bits[(int)StatusCodeEnum.statusCodeNoEntity] == '1')
+                {
+                    _symbolStat = SymbolStatusEnum.statusEnumInvalid;
+                }
+                else
+                {
+                    if(_legacySymbol != null)
+                    {
+                        _symbolStat = SymbolStatusEnum.statusEnumOld;
+                    }
+                    else
+                    {
+                        _symbolStat = SymbolStatusEnum.statusEnumNew;
+                    }
+                }
             }
         }
     }

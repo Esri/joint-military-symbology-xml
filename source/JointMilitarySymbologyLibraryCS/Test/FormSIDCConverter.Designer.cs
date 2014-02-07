@@ -51,6 +51,9 @@ namespace Test
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // text2525C
@@ -117,6 +120,8 @@ namespace Test
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 15;
             this.listBox1.Items.AddRange(new object[] {
+            "YXHTXXX--------\tInvalid Symbol",
+            "SFPPV----------\tCrewed Space Vehicle",
             "SFPPS----------\tSpace Satellite",
             "SHPAT----------\tSpace Station",
             "SNAPMFKB-------\tBoom-Only Tanker",
@@ -136,6 +141,10 @@ namespace Test
             this.listBox2.FormattingEnabled = true;
             this.listBox2.ItemHeight = 15;
             this.listBox2.Items.AddRange(new object[] {
+            "1000600000,1010101010\tAn Invalid Symbol",
+            "1000980000,1000000000\tInvalid Data Symbol",
+            "1000980000,1100000000\tRetired Data Symbol",
+            "1006050000,1208000000\tMiniaturized Civilian Satellite",
             "1004050000,1119000000\tSpace Launch Vehicle",
             "1014010000,1101040000\tFighter/Bomber (Ex Neutral)",
             "1005010000,1102000701\tHeavy Utility Helicopter",
@@ -167,11 +176,27 @@ namespace Test
             this.label3.TabIndex = 11;
             this.label3.Text = "...or choose a 2525D Symbol";
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 281);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(682, 22);
+            this.statusStrip1.TabIndex = 12;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
+            // 
             // FormSIDCConverter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(682, 284);
+            this.ClientSize = new System.Drawing.Size(682, 303);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.listBox2);
@@ -184,6 +209,8 @@ namespace Test
             this.Controls.Add(this.text2525C);
             this.Name = "FormSIDCConverter";
             this.Text = "SIDC Converter";
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,6 +228,8 @@ namespace Test
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     }
 }
 
