@@ -41,6 +41,7 @@ namespace Test
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSIDCConverter));
             this.text2525C = new System.Windows.Forms.TextBox();
             this.label2525C = new System.Windows.Forms.Label();
             this.text2525D_1 = new System.Windows.Forms.TextBox();
@@ -53,18 +54,19 @@ namespace Test
             this.label3 = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.label4 = new System.Windows.Forms.Label();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // text2525C
             // 
-            this.text2525C.Enabled = false;
             this.text2525C.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.text2525C.Location = new System.Drawing.Point(102, 47);
             this.text2525C.MaxLength = 15;
             this.text2525C.Name = "text2525C";
             this.text2525C.Size = new System.Drawing.Size(184, 30);
             this.text2525C.TabIndex = 0;
+            this.text2525C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text2525C_KeyPress);
             // 
             // label2525C
             // 
@@ -78,13 +80,13 @@ namespace Test
             // 
             // text2525D_1
             // 
-            this.text2525D_1.Enabled = false;
             this.text2525D_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.text2525D_1.Location = new System.Drawing.Point(395, 26);
             this.text2525D_1.MaxLength = 10;
             this.text2525D_1.Name = "text2525D_1";
             this.text2525D_1.Size = new System.Drawing.Size(262, 30);
             this.text2525D_1.TabIndex = 2;
+            this.text2525D_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text2525D_1_KeyPress);
             // 
             // label2525D
             // 
@@ -98,12 +100,12 @@ namespace Test
             // 
             // text2525D_2
             // 
-            this.text2525D_2.Enabled = false;
             this.text2525D_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.text2525D_2.Location = new System.Drawing.Point(395, 72);
             this.text2525D_2.Name = "text2525D_2";
             this.text2525D_2.Size = new System.Drawing.Size(262, 30);
             this.text2525D_2.TabIndex = 4;
+            this.text2525D_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text2525D_2_KeyPress);
             // 
             // label1
             // 
@@ -182,7 +184,7 @@ namespace Test
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 281);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 330);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(682, 22);
             this.statusStrip1.TabIndex = 12;
@@ -193,11 +195,20 @@ namespace Test
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
             // 
+            // label4
+            // 
+            this.label4.Location = new System.Drawing.Point(24, 268);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(633, 54);
+            this.label4.TabIndex = 13;
+            this.label4.Text = resources.GetString("label4.Text");
+            // 
             // FormSIDCConverter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(682, 303);
+            this.ClientSize = new System.Drawing.Size(682, 352);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -232,6 +243,7 @@ namespace Test
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.Label label4;
     }
 }
 

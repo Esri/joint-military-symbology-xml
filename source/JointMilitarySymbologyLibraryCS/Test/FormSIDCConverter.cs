@@ -102,5 +102,35 @@ namespace Test
 
             updateControls();
         }
+
+        private void text2525C_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == (char)Keys.Return)
+            {
+                _symbol = _librarian.MakeSymbol("2525C", text2525C.Text);
+
+                updateControls();
+            }
+        }
+
+        private void text2525D_1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Return)
+            {
+                _symbol = _librarian.MakeSymbol(new SIDC(text2525D_1.Text, text2525D_2.Text));
+
+                updateControls();
+            }
+        }
+
+        private void text2525D_2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Return)
+            {
+                _symbol = _librarian.MakeSymbol(new SIDC(text2525D_1.Text, text2525D_2.Text));
+
+                updateControls();
+            }
+        }
     }
 }
