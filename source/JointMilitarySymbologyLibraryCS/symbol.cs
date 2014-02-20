@@ -59,6 +59,7 @@ namespace JointMilitarySymbologyLibrary
 
         private SIDC _sidc = new SIDC(1000980000, 1000000000);
         private string _legacySIDC = "---------------";
+        private string _tags = "";
 
         internal Symbol(Librarian librarian, SIDC sidc)
         {
@@ -76,6 +77,8 @@ namespace JointMilitarySymbologyLibrary
                     _legacySIDC = "---------------";
                     break;
             }
+
+            _BuildTags();
         }
 
         internal Symbol(Librarian librarian, string legacyStandard, string legacySIDC)
@@ -95,6 +98,8 @@ namespace JointMilitarySymbologyLibrary
                     _sidc.PartBUInt = 1100000000;
                     break;
             }
+
+            _BuildTags();
         }
 
         public SymbolStatusEnum SymbolStatus
@@ -118,6 +123,29 @@ namespace JointMilitarySymbologyLibrary
             get
             {
                 return _legacySIDC;
+            }
+        }
+
+        public GeometryType GeometryType
+        {
+            get
+            {
+                GeometryType geo = GeometryType.POINT;
+
+                if (_entity != null)
+                {
+                    geo = _entity.GeometryType;
+                }
+
+                return geo;
+            }
+        }
+
+        public string Tags
+        {
+            get
+            {
+                return _tags;
             }
         }
 
@@ -199,6 +227,69 @@ namespace JointMilitarySymbologyLibrary
                 img.Save(fileName, ImageFormat.Png);
             else
                 logger.Warn("No image to save");
+        }
+
+        private void _BuildTags()
+        {
+            if (_context != null)
+            {
+                if(! _tags.Contains(_context.Label))
+                    _tags = _tags == "" ? _context.Label : _tags + "; " + _context.Label;
+            }
+
+            if(_standardIdentity != null)
+            {
+                if (!_tags.Contains(_standardIdentity.Label))
+                    _tags = _tags == "" ? _standardIdentity.Label : _tags + "; " + _standardIdentity.Label;
+            }
+
+            if (_dimension != null)
+            {
+                if (!_tags.Contains(_dimension.Label))
+                    _tags = _tags == "" ? _dimension.Label : _tags + "; " + _dimension.Label;
+            }
+
+            if(_symbolSet != null)
+            {
+                if (!_tags.Contains(_symbolSet.Label))
+                    _tags = _tags == "" ? _symbolSet.Label : _tags + "; " + _symbolSet.Label; 
+            }
+
+            if(_entity != null)
+            {
+                if (!_tags.Contains(_entity.Label)) 
+                    _tags = _tags == "" ? _entity.Label : _tags + "; " + _entity.Label;
+            }
+
+            if(_entityType != null)
+            {
+                if (!_tags.Contains(_entityType.Label))
+                    _tags = _tags == "" ? _entityType.Label : _tags + "; " + _entityType.Label;
+            }
+
+            if(_entitySubType != null)
+            {
+                if (!_tags.Contains(_entitySubType.Label))
+                    _tags = _tags == "" ? _entitySubType.Label : _tags + "; " + _entitySubType.Label;
+            }
+
+            if(_modifierOne != null)
+            {
+                if (!_tags.Contains(_modifierOne.Label))
+                    _tags = _tags == "" ? _modifierOne.Label : _tags + "; " + _modifierOne.Label;
+            }
+
+            if(_modifierTwo != null)
+            {
+                if (!_tags.Contains(_modifierTwo.Label))
+                    _tags = _tags == "" ? _modifierTwo.Label : _tags + "; " + _modifierTwo.Label;
+            }
+
+            if(_legacySymbol != null)
+            {
+                if (!_tags.Contains(_legacySIDC))
+                    _tags = _tags == "" ? _legacySIDC : _tags + "; " + _legacySIDC;
+            }
         }
 
         private void _BuildSIDC()

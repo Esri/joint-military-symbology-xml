@@ -188,5 +188,29 @@ namespace UnitTests
             Symbol target = _librarian.MakeSymbol(1111111111, 1111111111);
             Assert.IsNull(target);
         }
+
+        /// <summary>
+        ///A test for checking the GeometryType property
+        ///</summary>
+        [TestMethod()]
+        public void SIDCTest_GeometryType()
+        {
+            Symbol target = _librarian.MakeSymbol("2525C", "SJSPCUS--------");
+            GeometryType expected = GeometryType.POINT;
+            GeometryType actual = target.GeometryType;
+            Assert.AreEqual(expected, actual);
+        }
+
+        /// <summary>
+        ///A test for checking the Tags property
+        ///</summary>
+        [TestMethod()]
+        public void SIDCTest_Tags()
+        {
+            Symbol target = _librarian.MakeSymbol(1004301000, 1301040000);
+            string expected = "Reality; Neutral; Sea Surface; Military Non-Combatant; Auxilliary Ship; Intelligence Collector; SNSANI---------";
+            string actual = target.Tags;
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

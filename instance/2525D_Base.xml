@@ -1,5 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Library xmlns="http://disa.mil/JointMilSyML.xsd" Name="2525D">
+  <Amplifiers>
+    <Amplifier ID="AO" Label="Engagement Bar" Description="A graphic amplifier for equipment or installations that indicates operational condition or capacity." Type="GRAPHIC"/>
+    <Amplifier ID="AL" Label="Operational Condition" Description="A graphic amplifier for equipment or installations that indicates operational condition or capacity." Type="GRAPHIC"/>
+    <Amplifier ID="AQ" Label="Guarded Unit" Description="During ballistic missile defense, some tracks are designated as guarded by a particular unit." Type="TEXT" Length="2" />
+    <Amplifier ID="AR" Label="Special Designator" Description="Special track designators such as Non-Real Time (NRT) and Tactically Significant (SIG) tracks are denoted here." Type="TEXT" Length="3"/>
+    <Amplifier ID="G" Label="Staff Comments" Description="A text amplifier for units, equipment, and installations." Remarks="Content is implementation specific." Type="TEXT" Length="20"/>
+    <Amplifier ID="H" Label="Additional Information" Description="A text amplifier for units, equipment, and installations." Remarks="Content is implementation specific." Type="TEXT" Length="20"/>
+    <Amplifier ID="P" Label="IFF/SIF/AIS" Description="A text amplifier displaying IFF/SIF/AIS identification modes and codes." Type="TEXT" Length="15"/>
+    <Amplifier ID="T" Label="Unique Designation" Description="A text amplifier for units, equipment and installations that uniquely identifies a particular symbol or track number." Remarks="Identifies acquisition number when used with SIGINT symbology." Type="TEXT" Length="30"/>
+    <Amplifier ID="V" Label="Type" Description="A text amplifier for equipment that indicates types of equipment." Type="TEXT" Length="24"/>
+    <Amplifier ID="X" Label="Altitude/Depth" Description="A text amplifier for units, equipment, and installations that displays either altitude, flight level, depth for submerged objects." Remarks="Alternatively, used to indicate the height of equipment or structures on the ground." Type="TEXT" Length="14"/>
+    <Amplifier ID="Y" Label="Location" Description="A text amplifier for units, equipment, and installations that displays a symbol's location in degrees, minutes, and decimal minutes." Remarks="Alternatively, in MGRS or other applicable display format." Type="TEXT" Length="19" Note="To support homeland security and homeland defense, the federal Geographic Data Committee (FGDC) US National Grid (USNG) standard when referenced to North American Datum 1983 (NAD83) is operationally equivalent to and is an accepted substitute for MGRS coordinates referenced to WGS 84. Note that at mapping scales of 1:5000 and smaller, NAD83 and WGS 84 are considered equivalent."/>
+    <Amplifier ID="Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD 6040." Type="TEXT" Length="8"/>
+  </Amplifiers>
+  
   <Versions>
     <Version Name="Base" Description="No changes to APP-6(C)/2525D">
       <VersionCode>
@@ -10,7 +25,7 @@
   </Versions>
 
   <Contexts>
-    <Context ID="REALITY">
+    <Context ID="REALITY" Label="Reality">
       <ContextCode>0</ContextCode>
       <ContextAmplifiers>
         <ContextAmplifier ID="REALITY_CLOVER_AMP" Description="No reality Graphic Amplifier exists" Shape="CLOVER"/>
@@ -100,7 +115,7 @@
   <Dimensions>
     <Dimension ID="INTERNAL" Label="Internal">
       <LegacyDimensionCode Name="2525C">I</LegacyDimensionCode>
-
+      <Fields/>
       <SymbolSets>
         <SymbolSetRef ID="SS_INTERNAL" Label="Internal" Instance="2525D_Internal.xml">
           <SymbolSetCode>
@@ -113,7 +128,7 @@
     
     <Dimension ID="UNKNOWN" Label="Unknown">
       <LegacyDimensionCode Name="2525C">Z</LegacyDimensionCode>
-      
+      <Fields/>
       <SymbolSets>
         <SymbolSetRef ID="SS_UNKNOWN" Label="Unknown" Instance="2525D_Unknown.xml">
           <SymbolSetCode>
@@ -126,7 +141,17 @@
 
     <Dimension ID="AIR" Label="Air">
       <LegacyDimensionCode Name="2525C">A</LegacyDimensionCode>
-      
+      <Fields>
+        <Field Name="AL" Label="Operational Condition" Description="Indicates operational condition." Remarks="Comprised of only one color. Ex. Aircraft: Red - damaged, Green – fully capable. Ex: Missile: Red – imminent threat, Green – no threat." AmplifierID="AL" X="0" Y="-1"/>
+        <Field Name="AO" Label="Engagement Bar" Description="May denote 1ocal/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
+        <Field Name="G" Label="Staff Comments" AmplifierID="G" X="1" Y="-2"/>
+        <Field Name="H" Label="Additional Information" AmplifierID="H" X="1" Y="-2"/>
+        <Field Name="T" Label="Unique Designation (Track Number)" Description="A text amplifier for units, equipment, and installations that uniquely identifies a particular symbol or track number." Remarks="Prefix = TN:#####  Example: TN:13579" AmplifierID="T" X="1" Y="2"/>
+        <Field Name="P" Label="IFF/SIF" Description="A text amplifier displaying IFF/SIF Identification modes and codes. Display priority: Mode 5, Mode S, Mode 4, Mode 2, Mode 3" Remarks="Mode 2 Prefix: 2:####  Example: 2:1234" AmplifierID="P" X="1" Y="1"/>
+        <Field Name="V" Label="Type" Description="A text amplifier for equipment that indicates types of equipment." AmplifierID="V" X="1" Y="0"/>
+        <Field Name="X" Label="Altitude" Description="A text amplifier for units that displays altitude flight level." Remarks="Measurement units shall be displayed within the string. Examples: 1500MSL FL150" AmplifierID="X" X="1" Y="-1"/>
+        <Field Name="Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD-6040." AmplifierID="Z" X="1" Y="-1"/>
+      </Fields>
       <SymbolSets>
         <SymbolSetRef ID="SS_AIR" Label="Air" Instance="2525D_Air.xml">
           <SymbolSetCode>
@@ -146,7 +171,16 @@
 
     <Dimension ID="SPACE" Label="Space">
       <LegacyDimensionCode Name="2525C">P</LegacyDimensionCode>
-
+      <Fields>
+        <Field Name="AL" Label="Operational Condition" Description="Indicates operational condition." Remarks="Comprised of only one color. Ex. Satellite: Red - damaged, Green – fully capable. Ex: Missile: Red – imminent threat, Green – no threat." AmplifierID="AL" X="0" Y="-1"/>
+        <Field Name="AO" Label="Engagement Bar" Description="May denote 1ocal/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
+        <Field Name="G" Label="Staff Comments" AmplifierID="G" X="1" Y="-2"/>
+        <Field Name="H" Label="Additional Information" AmplifierID="H" X="1" Y="-2"/>
+        <Field Name="T" Label="Unique Designation (Track Number)" Description="A text amplifier for units, equipment, and installations that uniquely identifies a particular symbol or track number." Remarks="Prefix = TN:#####  Example: TN:13579" AmplifierID="T" X="1" Y="2"/>
+        <Field Name="V" Label="Type" Description="A text amplifier for equipment that indicates types of equipment." AmplifierID="V" X="1" Y="1"/>
+        <Field Name="X" Label="Altitude" Description="A text amplifier for units that displays altitude flight level." Remarks="Measurement units shall be displayed within the string. Examples: 1500MSL FL150" AmplifierID="X" X="1" Y="-1"/>
+        <Field Name="Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD-6040." AmplifierID="Z" X="1" Y="-1"/>
+      </Fields>
       <SymbolSets>
         <SymbolSetRef ID="SS_SPACE" Label="Space" Instance="2525D_Space.xml">
           <SymbolSetCode>
@@ -166,7 +200,19 @@
 
     <Dimension ID="SEA_SURFACE" Label="Sea Surface">
       <LegacyDimensionCode Name="2525C">S</LegacyDimensionCode>
-
+      <Fields>
+        <Field Name="AL" Label="Operational Condition" Description="Indicates operational condition." Remarks="Comprised of only one color. Ex. Satellite: Red - damaged, Green – fully capable. Ex: Missile: Red – imminent threat, Green – no threat." AmplifierID="AL" X="0" Y="-1"/>
+        <Field Name="AO" Label="Engagement Bar" Description="May denote 1ocal/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
+        <Field Name="AQ" Label="Guarded Unit" Description="During ballistic missile defense, some tracks are designated as guarded by a particular unit." Remarks="The 2-character string, BG" AmplifierID="AQ" X="-1" Y="2"/>
+        <Field Name="AR" Label="Special Designator" Description="Special track designators, such as Non-Real Time (NRT) and Tactically Significant (SIG) tracks, are denoted here." Remarks="The 3-character strings, NRT or SIG" AmplifierID="AR" X="-1" Y="2"/>
+        <Field Name="G" Label="Staff Comments" AmplifierID="G" X="1" Y="-1"/>
+        <Field Name="H" Label="Additional Information" AmplifierID="H" X="1" Y="-1"/>
+        <Field Name="P" Label="Automatic Identification System (AIS)" Description="A text amplifier displaying the maritime Automatic Identification System." AmplifierID="P" X="1" Y="0"/>
+        <Field Name="T" Label="Unique Designation (Track Number)" Description="A text amplifier for units, equipment, and installations that uniquely identifies a particular symbol or track number." Remarks="Prefix = TN:#####  Example: TN:13579" AmplifierID="T" X="1" Y="2"/>
+        <Field Name="V" Label="Type" Description="A text amplifier for equipment that indicates types of equipment." AmplifierID="V" X="1" Y="1"/>
+        <Field Name="Y" Label="Location" Description="" AmplifierID="Y" X="1" Y="-2"/>
+        <Field Name="Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD-6040." AmplifierID="Z" X="1" Y="-2"/>
+      </Fields>
       <SymbolSets>
         <SymbolSetRef ID="SS_SEA_SURFACE" Label="Sea Surface" Instance="2525D_Sea_Surface.xml">
           <SymbolSetCode>
@@ -568,7 +614,7 @@
       </Amplifiers>
     </AmplifierGroup>
     
-    <AmplifierGroup Name="ECHELON_BDE_BELOW" Label="Echelon at brigade and below" CompatibleSymbolSets="SS_AIR">
+    <AmplifierGroup Name="ECHELON_BDE_BELOW" Label="Echelon at brigade and below" CompatibleSymbolSetIDs="SS_AIR">
       <AmplifierGroupCode>1</AmplifierGroupCode>
       <LegacyModifierCode Name="2525C" Description="OverrIDes character 11 in old SIDC">-</LegacyModifierCode>
       
@@ -619,7 +665,7 @@
       </Amplifiers>
     </AmplifierGroup>
 
-    <AmplifierGroup Name="ECHELON_DIV_ABOVE" Label="Echelon at division and above" CompatibleSymbolSets="SS_AIR">
+    <AmplifierGroup Name="ECHELON_DIV_ABOVE" Label="Echelon at division and above" CompatibleSymbolSetIDs="SS_AIR">
       <AmplifierGroupCode>2</AmplifierGroupCode>
       <LegacyModifierCode Name="2525C" Description="OverrIDes character 11 in old SIDC">-</LegacyModifierCode>
       
@@ -748,7 +794,7 @@
       </Amplifiers>
     </AmplifierGroup>
 
-    <AmplifierGroup Name="TOWED_ARRAYS" Label="Naval towed array" CompatibleSymbolSets="SS_SEA_SURFACE">
+    <AmplifierGroup Name="TOWED_ARRAYS" Label="Naval towed array" CompatibleSymbolSetIDs="SS_SEA_SURFACE">
       <AmplifierGroupCode>6</AmplifierGroupCode>
       <LegacyModifierCode Name="2525C" Description="OverrIDes character 11 in old SIDC">N</LegacyModifierCode>
       

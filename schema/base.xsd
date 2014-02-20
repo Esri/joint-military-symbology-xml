@@ -12,6 +12,23 @@
     <xs:complexType>
       <xs:sequence>
         
+        <!-- Amplifier -->
+
+        <xs:element name="Amplifiers" minOccurs="1" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Amplifier" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attributeGroup ref="IdentifierAttributeGroup"/>
+                  <xs:attribute name="Type" type="AmplifierType" default="TEXT" use="optional"/>
+                  <xs:attribute name="Length" type="xs:int" default="0" use="optional"/>
+                  <xs:attribute name="Note" type="xs:string" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        
         <!--Version-->
         
         <xs:element name="Versions" minOccurs="1" maxOccurs="1">
@@ -83,7 +100,21 @@
               <xs:element name="Dimension" minOccurs="1" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="LegacyDimensionCode" type="LegacyLetterCodeType" minOccurs="0" maxOccurs="unbounded"/>            
+                    <xs:element name="LegacyDimensionCode" type="LegacyLetterCodeType" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element name="Fields" minOccurs="1" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Field" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:attributeGroup ref="NameAttributeGroup"/>
+                              <xs:attribute name="AmplifierID" type="xs:IDREF" use="required"/>
+                              <xs:attribute name="X" type="xs:int" use="required"/>
+                              <xs:attribute name="Y" type="xs:int" use="required"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
                     <xs:element name="SymbolSets" minOccurs="1" maxOccurs="1">
                       <xs:complexType>
                         <xs:sequence>
@@ -191,7 +222,7 @@
                     </xs:element>
                   </xs:sequence>
                   <xs:attributeGroup ref="NameAttributeGroup"/>
-                  <xs:attribute name="CompatibleSymbolSets" type="xs:IDREFS" use="optional"/>
+                  <xs:attribute name="CompatibleSymbolSetIDs" type="xs:IDREFS" use="optional"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>

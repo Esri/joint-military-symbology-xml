@@ -69,6 +69,9 @@ namespace Test
                         toolStripStatusLabel1.Text = "Symbol has been retired from 2525";
                         break;
                 }
+
+                TagsLabel.Text = _symbol.Tags;
+                GeoLabel.Text = _symbol.GeometryType.ToString();
             }
             else
             {
@@ -76,6 +79,9 @@ namespace Test
                 updateD("", "");
 
                 toolStripStatusLabel1.Text = "Symbol is invalid or not found in the symbol library";
+
+                TagsLabel.Text = "";
+                GeoLabel.Text = "";
             }
         }
 
@@ -86,6 +92,8 @@ namespace Test
             string[] l = s.Split('\t');
 
             _symbol = _librarian.MakeSymbol("2525C", l[0]);
+
+            //GeometryType g = _symbol.GeometryType;
 
             updateControls();
         }

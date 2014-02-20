@@ -29,6 +29,21 @@
     </xs:restriction>
   </xs:simpleType>
 
+  <xs:simpleType name="GeometryType">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="POINT"/>
+      <xs:enumeration value="LINE"/>
+      <xs:enumeration value="AREA"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="AmplifierType">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="GRAPHIC"/>
+      <xs:enumeration value="TEXT"/>
+    </xs:restriction>
+  </xs:simpleType>
+
   <xs:complexType name="LegacyFunctionCodeType">
     <xs:simpleContent>
       <xs:extension base="LegacyTokenType">
