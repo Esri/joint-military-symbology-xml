@@ -52,15 +52,15 @@ namespace Test
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.TagsLabel = new System.Windows.Forms.TextBox();
+            this.GeoLabel = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.text2525D_2 = new System.Windows.Forms.TextBox();
             this.label2525D = new System.Windows.Forms.Label();
             this.text2525D_1 = new System.Windows.Forms.TextBox();
             this.label2525C = new System.Windows.Forms.Label();
             this.text2525C = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.GeoLabel = new System.Windows.Forms.Label();
-            this.TagsLabel = new System.Windows.Forms.TextBox();
             this.statusStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -185,6 +185,42 @@ namespace Test
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             // 
+            // TagsLabel
+            // 
+            this.TagsLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TagsLabel.Location = new System.Drawing.Point(92, 137);
+            this.TagsLabel.Multiline = true;
+            this.TagsLabel.Name = "TagsLabel";
+            this.TagsLabel.ReadOnly = true;
+            this.TagsLabel.Size = new System.Drawing.Size(525, 54);
+            this.TagsLabel.TabIndex = 13;
+            // 
+            // GeoLabel
+            // 
+            this.GeoLabel.AutoSize = true;
+            this.GeoLabel.Location = new System.Drawing.Point(89, 108);
+            this.GeoLabel.Name = "GeoLabel";
+            this.GeoLabel.Size = new System.Drawing.Size(0, 17);
+            this.GeoLabel.TabIndex = 12;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(8, 135);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(44, 17);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Tags:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(8, 108);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(74, 17);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Geometry:";
+            // 
             // text2525D_2
             // 
             this.text2525D_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -192,6 +228,7 @@ namespace Test
             this.text2525D_2.Name = "text2525D_2";
             this.text2525D_2.Size = new System.Drawing.Size(244, 30);
             this.text2525D_2.TabIndex = 9;
+            this.text2525D_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text2525D_2_KeyPress);
             // 
             // label2525D
             // 
@@ -211,6 +248,7 @@ namespace Test
             this.text2525D_1.Name = "text2525D_1";
             this.text2525D_1.Size = new System.Drawing.Size(244, 30);
             this.text2525D_1.TabIndex = 7;
+            this.text2525D_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text2525D_1_KeyPress);
             // 
             // label2525C
             // 
@@ -230,42 +268,7 @@ namespace Test
             this.text2525C.Name = "text2525C";
             this.text2525C.Size = new System.Drawing.Size(184, 30);
             this.text2525C.TabIndex = 5;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(8, 108);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(74, 17);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Geometry:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(8, 135);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(44, 17);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Tags:";
-            // 
-            // GeoLabel
-            // 
-            this.GeoLabel.AutoSize = true;
-            this.GeoLabel.Location = new System.Drawing.Point(89, 108);
-            this.GeoLabel.Name = "GeoLabel";
-            this.GeoLabel.Size = new System.Drawing.Size(0, 17);
-            this.GeoLabel.TabIndex = 12;
-            // 
-            // TagsLabel
-            // 
-            this.TagsLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TagsLabel.Location = new System.Drawing.Point(92, 137);
-            this.TagsLabel.Multiline = true;
-            this.TagsLabel.Name = "TagsLabel";
-            this.TagsLabel.ReadOnly = true;
-            this.TagsLabel.Size = new System.Drawing.Size(525, 54);
-            this.TagsLabel.TabIndex = 13;
+            this.text2525C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text2525C_KeyPress);
             // 
             // FormSIDCConverter
             // 
