@@ -265,6 +265,40 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
+        internal LibraryAmplifier SymbolAmplifier(string id)
+        {
+            LibraryAmplifier retObj = null;
+
+            foreach (LibraryAmplifier lObj in this._library.Amplifiers)
+            {
+                if (lObj.ID == id)
+                {
+                    return lObj;
+                }
+            }
+
+            logger.Warn("Label " + id + " was not found in the base library file.");
+
+            return retObj;
+        }
+
+        internal LibraryDrawRule DrawRule(string id)
+        {
+            LibraryDrawRule retObj = null;
+
+            foreach (LibraryDrawRule lObj in this._library.DrawRules)
+            {
+                if (lObj.ID == id)
+                {
+                    return lObj;
+                }
+            }
+
+            logger.Warn("DrawRule " + id + " was not found in the base library file.");
+
+            return retObj;
+        }
+
         internal LibraryVersion Version(ushort codeOne, ushort codeTwo)
         {
             LibraryVersion retObj = null;

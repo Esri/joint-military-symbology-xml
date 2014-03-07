@@ -50,6 +50,41 @@ namespace Test
             text2525D_2.Text = s2;
         }
 
+        private void updateFieldList()
+        {
+            listView1.Items.Clear();
+            List<Dictionary<string, string>> labels = _symbol.Labels;
+            foreach (Dictionary<string, string> label in labels)
+            {
+                ListViewItem item = new ListViewItem(label["Name"]);
+                item.SubItems.Add(label["Label"]);
+                item.SubItems.Add(label["Description"]);
+                item.SubItems.Add(label["Remarks"]);
+                item.SubItems.Add(label["X"]);
+                item.SubItems.Add(label["Y"]);
+                item.SubItems.Add(label["Type"]);
+                item.SubItems.Add(label["Length"]);
+                listView1.Items.Add(item);
+            }
+        }
+
+        private void updateDrawRuleList()
+        {
+            listView2.Items.Clear();
+            Dictionary<string, string> rule = _symbol.DrawRule;
+
+            if (rule != null)
+            {
+                ListViewItem item = new ListViewItem(rule["Name"]);
+                item.SubItems.Add(rule["AnchorPoints"]);
+                item.SubItems.Add(rule["SizeShape"]);
+                item.SubItems.Add(rule["Orientation"]);
+                listView2.Items.Add(item);
+            }
+
+            label10.Text = _symbol.DrawNote;
+        }
+
         private void updateControls()
         {
             if (_symbol != null)
@@ -72,6 +107,9 @@ namespace Test
 
                 TagsLabel.Text = _symbol.Tags;
                 GeoLabel.Text = _symbol.GeometryType.ToString();
+
+                updateFieldList();
+                updateDrawRuleList();
             }
             else
             {
@@ -82,6 +120,9 @@ namespace Test
 
                 TagsLabel.Text = "";
                 GeoLabel.Text = "";
+
+                listView1.Items.Clear();
+                listView2.Items.Clear();
             }
         }
 
@@ -92,8 +133,6 @@ namespace Test
             string[] l = s.Split('\t');
 
             _symbol = _librarian.MakeSymbol("2525C", l[0]);
-
-            //GeometryType g = _symbol.GeometryType;
 
             updateControls();
         }

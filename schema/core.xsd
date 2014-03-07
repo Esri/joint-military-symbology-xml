@@ -88,6 +88,13 @@
     <xs:attribute name="Remarks" type="xs:string" use="optional"/>
   </xs:attributeGroup>
 
+  <xs:attributeGroup name="IdentifierDrawRuleGroup">
+    <xs:attribute name="ID" type="xs:ID" use="required"/>
+    <xs:attribute name="AnchorPoints" type="xs:string" use="required"/>
+    <xs:attribute name="SizeShape" type="xs:string" use="optional" default="Not Applicable"/>
+    <xs:attribute name="Orientation" type="xs:string" use="optional" default="Not Applicable"/>
+  </xs:attributeGroup>
+
   <xs:attributeGroup name="GraphicNameAttributeGroup">
     <xs:attribute name="Name" type="xs:token" use="required"/>
     <xs:attribute name="Label" type="xs:token" use="optional"/>

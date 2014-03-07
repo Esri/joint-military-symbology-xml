@@ -11,6 +11,20 @@
   <xs:element name="Library">
     <xs:complexType>
       <xs:sequence>
+
+        <!-- DrawRules -->
+
+        <xs:element name="DrawRules" minOccurs="1" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DrawRule" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attributeGroup ref="IdentifierDrawRuleGroup"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
         
         <!-- Amplifier -->
 

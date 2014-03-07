@@ -1,5 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Library xmlns="http://disa.mil/JointMilSyML.xsd" Name="2525D">
+  <DrawRules>
+    <DrawRule ID="POINT1" AnchorPoints="This symbol requires one anchor point.  The anchor point defines/is the tip of the inverted cone." Orientation="The symbol will typically be oriented upright."/>
+    <DrawRule ID="POINT2" AnchorPoints="This symbol requires one anchor point. The center point defines/is the center of the symbol." Orientation="The symbol is typically centered over the desired location."/>
+    <DrawRule ID="POINT3" AnchorPoints="This symbol requires three anchor points.  Point 1 is the tip of the arrowhead.  Points 2 and 3 define the endpoints of the curved line on the back side of the symbol." Orientation="Orientation is determined by the anchor points.  The back side of the symbol encompasses the ambush position with the airhead shaft positioned at the center of mass, while the arrowhead points in the direction of fire." SizeShape="Points 2 and 3 determine the length of the curved line on the back side of the symbol.  The rear of the arrow should connect to the midpoint of the line between points 2 and 3."/>
+  </DrawRules>
+  
   <Amplifiers>
     <Amplifier ID="AO" Label="Engagement Bar" Description="A graphic amplifier for equipment or installations that indicates operational condition or capacity." Type="GRAPHIC"/>
     <Amplifier ID="AL" Label="Operational Condition" Description="A graphic amplifier for equipment or installations that indicates operational condition or capacity." Type="GRAPHIC"/>

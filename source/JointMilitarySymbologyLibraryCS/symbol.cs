@@ -20,6 +20,7 @@ using System.Drawing.Imaging;
 using System.IO;
 using NLog;
 
+
 namespace JointMilitarySymbologyLibrary
 {
     public enum SymbolStatusEnum
@@ -59,7 +60,11 @@ namespace JointMilitarySymbologyLibrary
 
         private SIDC _sidc = new SIDC(1000980000, 1000000000);
         private string _legacySIDC = "---------------";
+
         private string _tags = "";
+        private List<Dictionary<string, string>> _labels = new List<Dictionary<string, string>>();
+        private Dictionary<string, string> _drawRule = new Dictionary<string, string>();
+        private string _drawNote = "";
 
         internal Symbol(Librarian librarian, SIDC sidc)
         {
@@ -79,6 +84,8 @@ namespace JointMilitarySymbologyLibrary
             }
 
             _BuildTags();
+            _BuildLabels();
+            _BuildDrawRule();
         }
 
         internal Symbol(Librarian librarian, string legacyStandard, string legacySIDC)
@@ -100,6 +107,8 @@ namespace JointMilitarySymbologyLibrary
             }
 
             _BuildTags();
+            _BuildLabels();
+            _BuildDrawRule();
         }
 
         public SymbolStatusEnum SymbolStatus
@@ -149,7 +158,106 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        private Image CreateImage()
+        public List<Dictionary<string, string>> Labels
+        {
+            get
+            {
+                return _labels;
+            }
+        }
+
+        public Dictionary<string, string> DrawRule
+        {
+            get
+            {
+                return _drawRule;
+            }
+        }
+
+        public string DrawNote
+        {
+            get
+            {
+                return _drawNote;
+            }
+        }
+
+        private Dictionary<string, string> _CreateLabelDictionary(LibraryDimensionField field)
+        {
+            Dictionary<string, string> label = new Dictionary<string, string>();
+
+            label.Add("Name", field.Name);
+            label.Add("Label", field.Label);
+            label.Add("Description", field.Description);
+            label.Add("Remarks", field.Remarks);
+            label.Add("X", Convert.ToString(field.X));
+            label.Add("Y", Convert.ToString(field.Y));
+
+            LibraryAmplifier amp = _librarian.SymbolAmplifier(field.AmplifierID);
+            if (amp != null)
+            {
+                label.Add("Type", Convert.ToString(amp.Type));
+                label.Add("Length", Convert.ToString(amp.Length));
+            }
+
+            return label;
+        }
+
+        private void _BuildLabels()
+        {
+            if (_dimension != null)
+            {
+                foreach (LibraryDimensionField field in _dimension.Fields)
+                {
+                    _labels.Add(_CreateLabelDictionary(field));
+                }
+            }
+        }
+
+        private void _CreateDrawRuleDictionary(string id)
+        {
+            LibraryDrawRule drawRule = _librarian.DrawRule(id);
+            
+            if (drawRule != null)
+            {
+                _drawRule.Add("Name", drawRule.ID);
+                _drawRule.Add("AnchorPoints", drawRule.AnchorPoints);
+                _drawRule.Add("SizeShape", drawRule.SizeShape);
+                _drawRule.Add("Orientation", drawRule.Orientation);
+            }
+            else
+            {
+                logger.Error("Draw rule " + id + "could not be found.");
+            }
+        }
+
+        private void _BuildDrawRule()
+        {
+            string id = "";
+            _drawRule.Clear();
+            _drawNote = "";
+
+            if(_entitySubType != null)
+            {
+                id = _entitySubType.DrawRuleID;
+                _drawNote = _entitySubType.DrawNote;
+            } 
+            else if(_entityType != null)
+            {
+                id = _entityType.DrawRuleID;
+                _drawNote = _entityType.DrawNote;
+            } 
+            else if (_entity != null)
+            {
+                id = _entity.DrawRuleID;
+                _drawNote = _entity.DrawNote;
+            }
+
+            if(id != "")
+                _CreateDrawRuleDictionary(id);
+        }
+
+        private Image _CreateImage()
         {
             Image imgFrame = null;
             Image imgIcon = null;
@@ -215,13 +323,13 @@ namespace JointMilitarySymbologyLibrary
         {
             get
             {
-                return CreateImage();
+                return _CreateImage();
             }
         }
 
         internal void SaveImage(string fileName)
         {
-            Image img = CreateImage();
+            Image img = _CreateImage();
 
             if (img != null)
                 img.Save(fileName, ImageFormat.Png);

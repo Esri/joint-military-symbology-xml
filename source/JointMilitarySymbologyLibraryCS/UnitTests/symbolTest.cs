@@ -1,6 +1,7 @@
 ﻿using JointMilitarySymbologyLibrary;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.Collections.Generic;
 
 namespace UnitTests
 {
@@ -210,6 +211,42 @@ namespace UnitTests
             Symbol target = _librarian.MakeSymbol(1004301000, 1301040000);
             string expected = "Reality; Neutral; Sea Surface; Military Non-Combatant; Auxilliary Ship; Intelligence Collector; SNSANI---------";
             string actual = target.Tags;
+            Assert.AreEqual(expected, actual);
+        }
+
+        /// <summary>
+        ///A test for checking the Labels property
+        ///</summary>
+        [TestMethod()]
+        public void SIDCTest_Labels()
+        {
+            Symbol target = _librarian.MakeSymbol(1004301000, 1301040000);
+            int expected = 11;
+            List<Dictionary<string, string>> actual = target.Labels;
+            Assert.AreEqual(expected, actual.Count);
+        }
+
+        /// <summary>
+        ///A test for checking the DrawRule property
+        ///</summary>
+        [TestMethod()]
+        public void SIDCTest_DrawRule()
+        {
+            Symbol target = _librarian.MakeSymbol(1004301000, 1301040000);
+            string expected = "POINT2";
+            Dictionary<string, string> actual = target.DrawRule;
+            Assert.AreEqual(expected, actual["Name"]);
+        }
+
+        /// <summary>
+        ///A test for checking the DrawNote property
+        ///</summary>
+        [TestMethod()]
+        public void SIDCTest_DrawNote()
+        {
+            Symbol target = _librarian.MakeSymbol(1004301000, 1301040000);
+            string expected = "Not Applicable";
+            string actual = target.DrawNote;
             Assert.AreEqual(expected, actual);
         }
     }

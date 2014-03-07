@@ -35,6 +35,8 @@
                                             <xs:element name="EntitySubTypeCode" type="DoubleDigitType" minOccurs="1" maxOccurs="1"/>
                                           </xs:sequence>
                                           <xs:attributeGroup ref="FramedGraphicIdentifierAttributeGroup"/>
+                                          <xs:attribute name="DrawRuleID" type="xs:IDREF" use="optional" default="POINT2"/>
+                                          <xs:attribute name="DrawNote" type="xs:string" use="optional" default="Not Applicable"/>
                                         </xs:complexType>
                                       </xs:element>
                                     </xs:sequence>
@@ -42,6 +44,8 @@
                                 </xs:element>
                               </xs:sequence>
                               <xs:attributeGroup ref="FramedGraphicIdentifierAttributeGroup"/>
+                              <xs:attribute name="DrawRuleID" type="xs:IDREF" use="optional" default="POINT2"/>
+                              <xs:attribute name="DrawNote" type="xs:string" use="optional" default="Not Applicable"/>
                             </xs:complexType>
                           </xs:element>
                         </xs:sequence>
@@ -50,6 +54,8 @@
                   </xs:sequence>
                   <xs:attributeGroup ref="FramedGraphicIdentifierAttributeGroup"/>
                   <xs:attribute name="GeometryType" type="GeometryType" default="POINT" use="optional"/>
+                  <xs:attribute name="DrawRuleID" type="xs:IDREF" use="optional" default="POINT2"/>
+                  <xs:attribute name="DrawNote" type="xs:string" use="optional" default="Not Applicable"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
