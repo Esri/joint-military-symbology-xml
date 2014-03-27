@@ -35,6 +35,10 @@ namespace JointMilitarySymbologyLibrary
     {
         protected static Logger logger = LogManager.GetCurrentClassLogger();
 
+        private static string _blankLegacySIDC = "---------------";
+        private static string _blankLegacyFunction = "------";
+        private static string _blankLegacyTail = "---";
+
         private SymbolStatusEnum _symbolStat = SymbolStatusEnum.statusEnumInvalid;
 
         private Librarian _librarian = null;
@@ -58,8 +62,8 @@ namespace JointMilitarySymbologyLibrary
 
         private SymbolSetLegacySymbol _legacySymbol = null;
 
-        private SIDC _sidc = new SIDC(1000980000, 1000000000);
-        private string _legacySIDC = "---------------";
+        private SIDC _sidc = new SIDC();
+        private string _legacySIDC;
 
         private string _tags = "";
         private List<Dictionary<string, string>> _labels = new List<Dictionary<string, string>>();
@@ -70,6 +74,7 @@ namespace JointMilitarySymbologyLibrary
         {
             _librarian = librarian;
             _sidc = sidc;
+            _legacySIDC = _blankLegacySIDC;
 
             _UpdateFromCurrent();
 
@@ -79,7 +84,7 @@ namespace JointMilitarySymbologyLibrary
                     _BuildLegacySIDC();
                     break;
                 case SymbolStatusEnum.statusEnumNew:
-                    _legacySIDC = "---------------";
+                    _legacySIDC = _blankLegacySIDC;
                     break;
             }
 
@@ -101,8 +106,8 @@ namespace JointMilitarySymbologyLibrary
                     _BuildSIDC();
                     break;
                 case SymbolStatusEnum.statusEnumRetired:
-                    _sidc.PartAUInt = 1000980000;
-                    _sidc.PartBUInt = 1100000000;
+                    _sidc.PartAUInt = SIDC._RETIRED.PartAUInt;
+                    _sidc.PartBUInt = SIDC._RETIRED.PartBUInt;
                     break;
             }
 
@@ -465,12 +470,12 @@ namespace JointMilitarySymbologyLibrary
                 }
                 else
                 {
-                    _legacySIDC = _legacySIDC + "------";
+                    _legacySIDC = _legacySIDC + _blankLegacyFunction;
                 }
 
                 _legacySIDC = _legacySIDC + _amplifierGroup.LegacyModifierCode[0].Value +
                                             _amplifier.LegacyModifierCode[0].Value +
-                                            "---";
+                                            _blankLegacyTail;
             }
         }
 

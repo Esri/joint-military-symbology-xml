@@ -23,17 +23,25 @@ namespace JointMilitarySymbologyLibrary
         private UInt32 _first10;
         private UInt32 _second10;
 
+        private static UInt32 _smallest = 1000000000;
+        private static UInt32 _specialPartA = 1000980000;
+        private static UInt32 _invalidPartB = 1000000000;
+        private static UInt32 _retiredPartB = 1100000000;
+
+        internal static SIDC _INVALID = new SIDC(_specialPartA, _invalidPartB);
+        internal static SIDC _RETIRED = new SIDC(_specialPartA, _retiredPartB);
+
         public SIDC(UInt32 partA = 1000980000, UInt32 partB = 1000000000)
         {
-            if (partA >= 1000000000 && partB >= 1000000000)
+            if (partA >= _smallest && partB >= _smallest)
             {
                 this._first10 = partA;
                 this._second10 = partB;
             }
             else
             {
-                this._first10 = 1000980000;
-                this._second10 = 1000000000;
+                this._first10 = _specialPartA;
+                this._second10 = _invalidPartB;
             }
         }
 
@@ -44,8 +52,8 @@ namespace JointMilitarySymbologyLibrary
 
             if(partA.Length != 10 || partB.Length != 10)
             {
-                partA = "1000980000";
-                partB = "1000000000";
+                partA = SIDC._INVALID.PartAString;
+                partB = SIDC._INVALID.PartBString;
             }
 
             try
@@ -55,19 +63,19 @@ namespace JointMilitarySymbologyLibrary
             }
             catch
             {
-                p1 = 1000980000;
-                p2 = 1000000000;
+                p1 = _specialPartA;
+                p2 = _invalidPartB;
             }
 
-            if (p1 >= 1000000000 && p2 >= 1000000000)
+            if (p1 >= _smallest && p2 >= _smallest)
             {
                 this._first10 = p1;
                 this._second10 = p2;
             }
             else
             {
-                this._first10 = 1000980000;
-                this._second10 = 1000000000;
+                this._first10 = _specialPartA;
+                this._second10 = _invalidPartB;
             }
         }
 
@@ -80,7 +88,7 @@ namespace JointMilitarySymbologyLibrary
 
             set
             {
-                if (value >= 1000000000)
+                if (value >= _smallest)
                 {
                     this._first10 = value;
                 }
@@ -96,7 +104,7 @@ namespace JointMilitarySymbologyLibrary
 
             set
             {
-                if (value >= 1000000000)
+                if (value >= _smallest)
                 {
                     this._second10 = value;
                 }
@@ -120,7 +128,7 @@ namespace JointMilitarySymbologyLibrary
                     }
                     catch
                     {
-                        this._first10 = 1000980000;
+                        this._first10 = _specialPartA;
                     }
                 }
             }
@@ -143,7 +151,7 @@ namespace JointMilitarySymbologyLibrary
                     }
                     catch
                     {
-                        this._second10 = 1000000000;
+                        this._second10 = _invalidPartB;
                     }
                 }
             }
