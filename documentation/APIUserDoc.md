@@ -4,9 +4,9 @@
 
 ### Sections
 
-* [Design FAQ](#design faq)
-* [Schema Reference](#schema reference)
-* [API Reference](#api reference)
+* [Design FAQ](#design-faq)
+* [Schema Reference](#schem-reference)
+* [API Reference](#api-reference)
 * [Diagnostics](#diagnostics)
 
 ### Design FAQ
