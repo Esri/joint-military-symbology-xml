@@ -1,10 +1,33 @@
-# API User Documentation - joint-military-symbology-xml
+# joint-military-symbology-xml #
 
-## Sections
+## API User Documentation ##
 
+### Sections
+
+* [Design FAQ](#design)
+* [Schema Reference](#schema)
+* [API Reference](#api)
 * [Diagnostics](#diagnostics)
 
-## Diagnostics
+### Design FAQ
+1. What problem are you solving?
+	- This is my reasons
+	- Test
+1. What is your high-level plan for solving the problem?
+1. Why are you doing things this this way? 
+1. Is what you are creating adding value? 
+1. Will this change behavior?
+1. Is there any alternative or easier way? 
+1. Is this actually useful?
+1. Is what you are doing really worth it?
+1. Are there any other dependencies or risks to consider?
+1. Is what are doing usable in different environments?
+
+### Schema Reference
+
+### API Reference
+
+### Diagnostics
 
 Before you use a Librarian object to manufacture a Symbol, you can enable logging using the Librarian.IsLogging property.  When you use Librarian.MakeSymbol, detailed diagnostics will be written to a log file found under My Documents/jmsml/logs.  The negative status code illustrated in parentheses in these log files indicates any issues encountered in creating a symbol.  It is a binary coded value, with each bit set if the following is determined for the desired SIDC (and used to summarize this information in the log):
 
