@@ -52,15 +52,14 @@ namespace Test
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.TagsLabel = new System.Windows.Forms.TextBox();
-            this.GeoLabel = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.text2525D_2 = new System.Windows.Forms.TextBox();
-            this.label2525D = new System.Windows.Forms.Label();
-            this.text2525D_1 = new System.Windows.Forms.TextBox();
-            this.label2525C = new System.Windows.Forms.Label();
-            this.text2525C = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.listView2 = new System.Windows.Forms.ListView();
+            this.colID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colAnchorPoints = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colSizeShape = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colOrientation = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
             this.colName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -71,14 +70,16 @@ namespace Test
             this.colY = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colType = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colLength = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.label8 = new System.Windows.Forms.Label();
-            this.listView2 = new System.Windows.Forms.ListView();
-            this.colID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colAnchorPoints = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colOrientation = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colSizeShape = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.TagsLabel = new System.Windows.Forms.TextBox();
+            this.GeoLabel = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.text2525D_2 = new System.Windows.Forms.TextBox();
+            this.label2525D = new System.Windows.Forms.Label();
+            this.text2525D_1 = new System.Windows.Forms.TextBox();
+            this.label2525C = new System.Windows.Forms.Label();
+            this.text2525C = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -210,6 +211,126 @@ namespace Test
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(108, 431);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(0, 17);
+            this.label10.TabIndex = 22;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(8, 431);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(97, 17);
+            this.label9.TabIndex = 21;
+            this.label9.Text = "Drawing Note:";
+            // 
+            // listView2
+            // 
+            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.colID,
+            this.colAnchorPoints,
+            this.colSizeShape,
+            this.colOrientation});
+            this.listView2.Location = new System.Drawing.Point(11, 350);
+            this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(606, 69);
+            this.listView2.TabIndex = 20;
+            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.listView2.View = System.Windows.Forms.View.Details;
+            // 
+            // colID
+            // 
+            this.colID.Text = "Name";
+            // 
+            // colAnchorPoints
+            // 
+            this.colAnchorPoints.Text = "Anchor Points";
+            this.colAnchorPoints.Width = 130;
+            // 
+            // colSizeShape
+            // 
+            this.colSizeShape.Text = "Size/Shape";
+            this.colSizeShape.Width = 154;
+            // 
+            // colOrientation
+            // 
+            this.colOrientation.Text = "Orientation";
+            this.colOrientation.Width = 245;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(8, 330);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(96, 17);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "Drawing Rule:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(8, 190);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(119, 17);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "Amplifiers/Labels:";
+            // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.colName,
+            this.colLabel,
+            this.colDescription,
+            this.colRemarks,
+            this.colX,
+            this.colY,
+            this.colType,
+            this.colLength});
+            this.listView1.Location = new System.Drawing.Point(11, 210);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(606, 105);
+            this.listView1.TabIndex = 17;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // colName
+            // 
+            this.colName.Text = "Name";
+            this.colName.Width = 106;
+            // 
+            // colLabel
+            // 
+            this.colLabel.Text = "Label";
+            this.colLabel.Width = 100;
+            // 
+            // colDescription
+            // 
+            this.colDescription.Text = "Description";
+            // 
+            // colRemarks
+            // 
+            this.colRemarks.Text = "Remarks";
+            // 
+            // colX
+            // 
+            this.colX.Text = "X";
+            // 
+            // colY
+            // 
+            this.colY.Text = "Y";
+            // 
+            // colType
+            // 
+            this.colType.Text = "Type";
+            // 
+            // colLength
+            // 
+            this.colLength.Text = "Length";
+            // 
             // TagsLabel
             // 
             this.TagsLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -295,131 +416,22 @@ namespace Test
             this.text2525C.TabIndex = 5;
             this.text2525C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text2525C_KeyPress);
             // 
-            // label7
+            // button1
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(8, 190);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(119, 17);
-            this.label7.TabIndex = 18;
-            this.label7.Text = "Amplifiers/Labels:";
-            // 
-            // listView1
-            // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.colName,
-            this.colLabel,
-            this.colDescription,
-            this.colRemarks,
-            this.colX,
-            this.colY,
-            this.colType,
-            this.colLength});
-            this.listView1.Location = new System.Drawing.Point(11, 210);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(606, 105);
-            this.listView1.TabIndex = 17;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // colName
-            // 
-            this.colName.Text = "Name";
-            this.colName.Width = 106;
-            // 
-            // colLabel
-            // 
-            this.colLabel.Text = "Label";
-            this.colLabel.Width = 100;
-            // 
-            // colDescription
-            // 
-            this.colDescription.Text = "Description";
-            // 
-            // colRemarks
-            // 
-            this.colRemarks.Text = "Remarks";
-            // 
-            // colX
-            // 
-            this.colX.Text = "X";
-            // 
-            // colY
-            // 
-            this.colY.Text = "Y";
-            // 
-            // colType
-            // 
-            this.colType.Text = "Type";
-            // 
-            // colLength
-            // 
-            this.colLength.Text = "Length";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(8, 330);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(96, 17);
-            this.label8.TabIndex = 19;
-            this.label8.Text = "Drawing Rule:";
-            // 
-            // listView2
-            // 
-            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.colID,
-            this.colAnchorPoints,
-            this.colSizeShape,
-            this.colOrientation});
-            this.listView2.Location = new System.Drawing.Point(11, 350);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(606, 69);
-            this.listView2.TabIndex = 20;
-            this.listView2.UseCompatibleStateImageBehavior = false;
-            this.listView2.View = System.Windows.Forms.View.Details;
-            // 
-            // colID
-            // 
-            this.colID.Text = "Name";
-            // 
-            // colAnchorPoints
-            // 
-            this.colAnchorPoints.Text = "Anchor Points";
-            this.colAnchorPoints.Width = 130;
-            // 
-            // colOrientation
-            // 
-            this.colOrientation.Text = "Orientation";
-            this.colOrientation.Width = 245;
-            // 
-            // colSizeShape
-            // 
-            this.colSizeShape.Text = "Size/Shape";
-            this.colSizeShape.Width = 154;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(8, 431);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(97, 17);
-            this.label9.TabIndex = 21;
-            this.label9.Text = "Drawing Note:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(108, 431);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(0, 17);
-            this.label10.TabIndex = 22;
+            this.button1.Location = new System.Drawing.Point(582, 470);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Export";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormSIDCConverter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(682, 719);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.statusStrip1);
@@ -478,6 +490,7 @@ namespace Test
         private System.Windows.Forms.ColumnHeader colSizeShape;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button button1;
     }
 }
 

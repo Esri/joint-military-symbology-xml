@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\Unit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLegacyCodesCsv", "TestLegacyCodesCsv\TestLegacyCodesCsv.csproj", "{9B7C5BB9-095B-4CA0-AA8D-546E8303E546}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jmsml", "jmsml\jmsml.csproj", "{92B69001-B422-40E8-91F5-6066BA465F96}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = JointMilitarySymbologyLibrary.vsmdi
@@ -80,6 +82,16 @@ Global
 		{9B7C5BB9-095B-4CA0-AA8D-546E8303E546}.Release|Mixed Platforms.Build.0 = Release|x86
 		{9B7C5BB9-095B-4CA0-AA8D-546E8303E546}.Release|x86.ActiveCfg = Release|x86
 		{9B7C5BB9-095B-4CA0-AA8D-546E8303E546}.Release|x86.Build.0 = Release|x86
+		{92B69001-B422-40E8-91F5-6066BA465F96}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{92B69001-B422-40E8-91F5-6066BA465F96}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{92B69001-B422-40E8-91F5-6066BA465F96}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{92B69001-B422-40E8-91F5-6066BA465F96}.Debug|x86.ActiveCfg = Debug|x86
+		{92B69001-B422-40E8-91F5-6066BA465F96}.Debug|x86.Build.0 = Debug|x86
+		{92B69001-B422-40E8-91F5-6066BA465F96}.Release|Any CPU.ActiveCfg = Release|x86
+		{92B69001-B422-40E8-91F5-6066BA465F96}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{92B69001-B422-40E8-91F5-6066BA465F96}.Release|Mixed Platforms.Build.0 = Release|x86
+		{92B69001-B422-40E8-91F5-6066BA465F96}.Release|x86.ActiveCfg = Release|x86
+		{92B69001-B422-40E8-91F5-6066BA465F96}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

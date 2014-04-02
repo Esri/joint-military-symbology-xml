@@ -217,5 +217,35 @@ namespace UnitTests
             actual = target.PartAString;
             Assert.AreEqual("1000980000", actual);
         }
+
+        /// <summary>
+        ///A test for Invalid SIDC constant
+        ///</summary>
+        [TestMethod()]
+        public void InvalidSIDC()
+        {
+            SIDC target = SIDC.INVALID;
+            uint expected1 = 1000980000;
+            uint expected2 = 1000000000;
+            uint actual1 = target.PartAUInt;
+            uint actual2 = target.PartBUInt;
+            Assert.AreEqual(expected1, actual1);
+            Assert.AreEqual(expected2, actual2);
+        }
+
+        /// <summary>
+        ///A test for Retired SIDC constant
+        ///</summary>
+        [TestMethod()]
+        public void RetiredSIDC()
+        {
+            SIDC target = SIDC.RETIRED;
+            uint expected1 = 1000980000;
+            uint expected2 = 1100000000;
+            uint actual1 = target.PartAUInt;
+            uint actual2 = target.PartBUInt;
+            Assert.AreEqual(expected1, actual1);
+            Assert.AreEqual(expected2, actual2);
+        }
     }
 }

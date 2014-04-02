@@ -106,8 +106,8 @@ namespace JointMilitarySymbologyLibrary
                     _BuildSIDC();
                     break;
                 case SymbolStatusEnum.statusEnumRetired:
-                    _sidc.PartAUInt = SIDC._RETIRED.PartAUInt;
-                    _sidc.PartBUInt = SIDC._RETIRED.PartBUInt;
+                    _sidc.PartAUInt = SIDC.RETIRED.PartAUInt;
+                    _sidc.PartBUInt = SIDC.RETIRED.PartBUInt;
                     break;
             }
 

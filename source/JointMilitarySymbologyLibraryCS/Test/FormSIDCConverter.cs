@@ -179,5 +179,10 @@ namespace Test
                 updateControls();
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            _librarian.Export("export");
+        }
     }
 }

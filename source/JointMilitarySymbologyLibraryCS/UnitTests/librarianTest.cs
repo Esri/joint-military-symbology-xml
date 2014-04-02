@@ -88,5 +88,39 @@ namespace UnitTests
             actual = target.MakeSymbol(sidc);
             Assert.IsNotNull(actual, "Symbol object is null.");
         }
+
+        /// <summary>
+        ///A test of the InvalidSymbol property
+        ///</summary>
+        [TestMethod()]
+        public void InvalidSymbolTest()
+        {
+            string configPath = string.Empty;
+            Librarian target = new Librarian(configPath);
+            Symbol sym = target.InvalidSymbol;
+            string expected1 = "1000980000";
+            string expected2 = "1000000000";
+            string actual1 = sym.SIDC.PartAString;
+            string actual2 = sym.SIDC.PartBString;
+            Assert.AreEqual(actual1, expected1);
+            Assert.AreEqual(actual2, expected2);
+        }
+
+        /// <summary>
+        ///A test of the RetiredSymbol property
+        ///</summary>
+        [TestMethod()]
+        public void RetiredSymbolTest()
+        {
+            string configPath = string.Empty;
+            Librarian target = new Librarian(configPath);
+            Symbol sym = target.RetiredSymbol;
+            string expected1 = "1000980000";
+            string expected2 = "1100000000";
+            string actual1 = sym.SIDC.PartAString;
+            string actual2 = sym.SIDC.PartBString;
+            Assert.AreEqual(actual1, expected1);
+            Assert.AreEqual(actual2, expected2);
+        }
     }
 }

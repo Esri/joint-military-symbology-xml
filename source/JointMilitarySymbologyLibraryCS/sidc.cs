@@ -28,8 +28,8 @@ namespace JointMilitarySymbologyLibrary
         private static UInt32 _invalidPartB = 1000000000;
         private static UInt32 _retiredPartB = 1100000000;
 
-        internal static SIDC _INVALID = new SIDC(_specialPartA, _invalidPartB);
-        internal static SIDC _RETIRED = new SIDC(_specialPartA, _retiredPartB);
+        public static SIDC INVALID = new SIDC(_specialPartA, _invalidPartB);
+        public static SIDC RETIRED = new SIDC(_specialPartA, _retiredPartB);
 
         public SIDC(UInt32 partA = 1000980000, UInt32 partB = 1000000000)
         {
@@ -52,8 +52,8 @@ namespace JointMilitarySymbologyLibrary
 
             if(partA.Length != 10 || partB.Length != 10)
             {
-                partA = SIDC._INVALID.PartAString;
-                partB = SIDC._INVALID.PartBString;
+                partA = SIDC.INVALID.PartAString;
+                partB = SIDC.INVALID.PartBString;
             }
 
             try
