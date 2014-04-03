@@ -135,14 +135,7 @@
     <Dimension ID="UNKNOWN" Label="Unknown">
       <LegacyDimensionCode Name="2525C">Z</LegacyDimensionCode>
       <Fields/>
-      <SymbolSets>
-        <SymbolSetRef ID="SS_UNKNOWN" Label="Unknown" Instance="2525D_Unknown.xml">
-          <SymbolSetCode>
-            <DigitOne>0</DigitOne>
-            <DigitTwo>0</DigitTwo>
-          </SymbolSetCode>
-        </SymbolSetRef>
-      </SymbolSets>
+      <SymbolSets/>
     </Dimension>
 
     <Dimension ID="AIR" Label="Air">

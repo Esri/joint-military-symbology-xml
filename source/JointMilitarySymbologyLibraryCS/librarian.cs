@@ -57,6 +57,9 @@ namespace JointMilitarySymbologyLibrary
         private bool _logConversion = true;
         private int _statusFlag = 0;
 
+        private Symbol _invalidSymbol;
+        private Symbol _retiredSymbol;
+
         private List<SymbolSet> _symbolSets = new List<SymbolSet>();
         private List<string> _statusMessages = new List<string> {"Version Not Found",
                                                                  "Context Not Found",
@@ -159,6 +162,13 @@ namespace JointMilitarySymbologyLibrary
                                     }
                                 }
                             }
+
+                            //
+                            // Create special invalid and retired symbols for this library
+                            //
+
+                            _invalidSymbol = new Symbol(this, SIDC.INVALID);
+                            _retiredSymbol = new Symbol(this, SIDC.RETIRED);
                         }
                         else
                         {
@@ -200,6 +210,174 @@ namespace JointMilitarySymbologyLibrary
             SimpleConfigurator.ConfigureForTargetLogging(wrapper, LogLevel.Debug);
         }
 
+        private void serializer_UnknownNode(object sender, XmlNodeEventArgs e)
+        {
+            Console.WriteLine("Unknown Node:" + e.Name + "\t" + e.Text);
+        }
+
+        private void serializer_UnknownAttribute(object sender, XmlAttributeEventArgs e)
+        {
+            System.Xml.XmlAttribute attr = e.Attr;
+            Console.WriteLine("Unknown attribute " +
+            attr.Name + "='" + attr.Value + "'");
+        }
+
+        private string _buildEntityString(SymbolSet s, SymbolSetEntity e, SymbolSetEntityEntityType eType, SymbolSetEntityEntityTypeEntitySubType eSubType)
+        {
+            string result = Convert.ToString(s.SymbolSetCode.DigitOne) + Convert.ToString(s.SymbolSetCode.DigitTwo);
+            string code = "";
+
+            result = result + ",";
+
+            result = result + "\"" + e.Label + "\"";
+            code = code + Convert.ToString(e.EntityCode.DigitOne) + Convert.ToString(e.EntityCode.DigitTwo);
+
+            result = result + ",";
+
+            if (eType != null)
+            {
+                result = result + "\"" + eType.Label + "\"";
+                code = code + Convert.ToString(eType.EntityTypeCode.DigitOne) + Convert.ToString(eType.EntityTypeCode.DigitTwo);
+            }
+            else
+                code = code + "00";
+            
+            result = result + ",";
+
+            if (eSubType != null)
+            {
+                result = result + "\"" + eSubType.Label + "\"";
+                code = code + Convert.ToString(eSubType.EntitySubTypeCode.DigitOne) + Convert.ToString(eSubType.EntitySubTypeCode.DigitTwo);
+            }
+            else
+                code = code + "00";
+
+            result = result + "," + code + "," + Convert.ToString(e.GeometryType);
+
+            return result;
+        }
+
+        private string _buildModifierString(SymbolSet s, string modNumber, ModifiersTypeModifier mod)
+        {
+            string result = Convert.ToString(s.SymbolSetCode.DigitOne) + Convert.ToString(s.SymbolSetCode.DigitTwo);
+
+            result = result + "," + modNumber + ",";
+            result = result + "\"" + mod.Category + "\",";
+            result = result + "\"" + mod.Label + "\",";
+
+            result = result + Convert.ToString(mod.ModifierCode.DigitOne) + Convert.ToString(mod.ModifierCode.DigitTwo);
+
+            return result;
+        }
+
+        private void _exportEntities(string path, string symbolSetExpression = "", string expression = "", bool exportPoints = true, bool exportLines = true, bool exportAreas = true)
+        {
+            string entityHeaders = "SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType";
+
+            using(var w = new StreamWriter(path))
+            {
+                var line = string.Format("{0}", entityHeaders);
+                w.WriteLine(line);
+                w.Flush();
+
+                foreach(SymbolSet s in _symbolSets)
+                {
+                    if (symbolSetExpression != "" && !System.Text.RegularExpressions.Regex.IsMatch(s.Label, symbolSetExpression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                        continue;
+
+                    foreach (SymbolSetEntity e in s.Entities)
+                    {
+                        if (exportPoints && e.GeometryType == GeometryType.POINT ||
+                           exportLines && e.GeometryType == GeometryType.LINE ||
+                           exportAreas && e.GeometryType == GeometryType.AREA)
+                        {
+
+                            if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(e.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                            {
+                                line = string.Format("{0}", _buildEntityString(s, e, null, null));
+                                w.WriteLine(line);
+                                w.Flush();
+                            }
+
+                            if (e.EntityTypes != null)
+                            {
+                                foreach (SymbolSetEntityEntityType eType in e.EntityTypes)
+                                {
+                                    if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(eType.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                                    {
+                                        line = string.Format("{0}", _buildEntityString(s, e, eType, null));
+                                        w.WriteLine(line);
+                                        w.Flush();
+                                    }
+
+                                    if (eType.EntitySubTypes != null)
+                                    {
+                                        foreach (SymbolSetEntityEntityTypeEntitySubType eSubType in eType.EntitySubTypes)
+                                        {
+                                            if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(eSubType.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                                            {
+                                                line = string.Format("{0}", _buildEntityString(s, e, eType, eSubType));
+                                                w.WriteLine(line);
+                                                w.Flush();
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        private void _exportModifiers(string path, string symbolSetExpression = "", string expression = "")
+        {
+            string modifierHeaders = "SymbolSet,ModifierNumber,Category,Modifier,Code";
+
+            using (var w = new StreamWriter(path))
+            {
+                var line = string.Format("{0}", modifierHeaders);
+                w.WriteLine(line);
+                w.Flush();
+
+                foreach (SymbolSet s in _symbolSets)
+                {
+                    if (symbolSetExpression != "" && !System.Text.RegularExpressions.Regex.IsMatch(s.Label, symbolSetExpression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                        continue;
+
+                    if(s.SectorOneModifiers != null)
+                    {
+                        foreach (ModifiersTypeModifier mod in s.SectorOneModifiers)
+                        {
+                            if (expression == "" || 
+                                System.Text.RegularExpressions.Regex.IsMatch(mod.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase) ||
+                                System.Text.RegularExpressions.Regex.IsMatch(mod.Category, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                            {
+                                line = string.Format("{0}", _buildModifierString(s, "1", mod));
+                                w.WriteLine(line);
+                                w.Flush();
+                            }
+                        }
+                    }
+
+                    if(s.SectorTwoModifiers != null)
+                    {
+                        foreach (ModifiersTypeModifier mod in s.SectorTwoModifiers)
+                        {
+                            if (expression == "" || 
+                                System.Text.RegularExpressions.Regex.IsMatch(mod.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase) ||
+                                System.Text.RegularExpressions.Regex.IsMatch(mod.Category, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                            {
+                                line = string.Format("{0}", _buildModifierString(s, "2", mod));
+                                w.WriteLine(line);
+                                w.Flush();
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         internal void LogConversionResult(string converting)
         {
             if (_logConversion)
@@ -233,19 +411,6 @@ namespace JointMilitarySymbologyLibrary
             get
             {
                 return _statusFlag;
-            }
-        }
-
-        public bool IsLogging
-        {
-            get
-            {
-                return _logConversion; 
-            }
-
-            set
-            {
-                _logConversion = value;
             }
         }
 
@@ -1077,6 +1242,35 @@ namespace JointMilitarySymbologyLibrary
             return retObj;
         }
 
+        public Symbol InvalidSymbol
+        {
+            get
+            {
+                return _invalidSymbol;
+            }
+        }
+
+        public Symbol RetiredSymbol
+        {
+            get
+            {
+                return _retiredSymbol;
+            }
+        }
+
+        public bool IsLogging
+        {
+            get
+            {
+                return _logConversion;
+            }
+
+            set
+            {
+                _logConversion = value;
+            }
+        }
+
         public Symbol MakeSymbol(string legacyStandard, string legacySIDC)
         {
             Symbol s = null;
@@ -1124,16 +1318,10 @@ namespace JointMilitarySymbologyLibrary
             return s;
         }
 
-        private void serializer_UnknownNode(object sender, XmlNodeEventArgs e)
+        public void Export(string path, string symbolSetExpression = "", string expression = "", bool exportPoints = true, bool exportLines = true, bool exportAreas = true)
         {
-            Console.WriteLine("Unknown Node:" + e.Name + "\t" + e.Text);
-        }
-
-        private void serializer_UnknownAttribute(object sender, XmlAttributeEventArgs e)
-        {
-            System.Xml.XmlAttribute attr = e.Attr;
-            Console.WriteLine("Unknown attribute " +
-            attr.Name + "='" + attr.Value + "'");
+            _exportEntities(path + "_Entities.csv", symbolSetExpression, expression, exportPoints, exportLines, exportAreas);
+            _exportModifiers(path + "_Modifiers.csv", symbolSetExpression, expression);
         }
     }
 }
