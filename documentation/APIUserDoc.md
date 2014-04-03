@@ -77,7 +77,7 @@ What we propose here is the best way to deliver a solution that:
 - In a consistent fashion (using APIs that the military symbology community can collaboratively extend and maintain over time)...
 - To deliver new military symbology to the warfighter in less time and for less money.
 
-#### Is this actually useful?
+#### How useful is this solution? 
 Any assessment of usefulness is extremely subjective.  There are necessarily two considerations that need to be made when asking this question.  Useful to who and useful in what time frame?
 
 Clearly, usefulness will increase as the above goals are fully achieved.  The goals stated earlier are goals because no current system in the hands of the SSMC or JSP can currently meet them.  There are thousands of symbol components defined in 2525 and APP-6.  Instantiating that data in XML will take some time.  This library of military symbology information will therefore become more useful as that data is added to the system, and the project nears its intended completion.
