@@ -229,14 +229,14 @@ namespace JointMilitarySymbologyLibrary
 
             result = result + ",";
 
-            result = result + '"' + e.Label + '"';
+            result = result + "\"" + e.Label + "\"";
             code = code + Convert.ToString(e.EntityCode.DigitOne) + Convert.ToString(e.EntityCode.DigitTwo);
 
             result = result + ",";
 
             if (eType != null)
             {
-                result = result + '"' + eType.Label + '"';
+                result = result + "\"" + eType.Label + "\"";
                 code = code + Convert.ToString(eType.EntityTypeCode.DigitOne) + Convert.ToString(eType.EntityTypeCode.DigitTwo);
             }
             else
@@ -246,7 +246,7 @@ namespace JointMilitarySymbologyLibrary
 
             if (eSubType != null)
             {
-                result = result + '"' + eSubType.Label + '"';
+                result = result + "\"" + eSubType.Label + "\"";
                 code = code + Convert.ToString(eSubType.EntitySubTypeCode.DigitOne) + Convert.ToString(eSubType.EntitySubTypeCode.DigitTwo);
             }
             else
@@ -262,8 +262,10 @@ namespace JointMilitarySymbologyLibrary
             string result = Convert.ToString(s.SymbolSetCode.DigitOne) + Convert.ToString(s.SymbolSetCode.DigitTwo);
 
             result = result + "," + modNumber + ",";
-            result = result + '"' + mod.Label + '"';
-            result = result + "," + Convert.ToString(mod.ModifierCode.DigitOne) + Convert.ToString(mod.ModifierCode.DigitTwo);
+            result = result + "\"" + mod.Category + "\",";
+            result = result + "\"" + mod.Label + "\",";
+
+            result = result + Convert.ToString(mod.ModifierCode.DigitOne) + Convert.ToString(mod.ModifierCode.DigitTwo);
 
             return result;
         }
@@ -330,7 +332,7 @@ namespace JointMilitarySymbologyLibrary
 
         private void _exportModifiers(string path, string symbolSetExpression = "", string expression = "")
         {
-            string modifierHeaders = "SymbolSet,ModifierNumber,Modifier,Code";
+            string modifierHeaders = "SymbolSet,ModifierNumber,Category,Modifier,Code";
 
             using (var w = new StreamWriter(path))
             {
@@ -347,7 +349,9 @@ namespace JointMilitarySymbologyLibrary
                     {
                         foreach (ModifiersTypeModifier mod in s.SectorOneModifiers)
                         {
-                            if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(mod.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                            if (expression == "" || 
+                                System.Text.RegularExpressions.Regex.IsMatch(mod.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase) ||
+                                System.Text.RegularExpressions.Regex.IsMatch(mod.Category, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
                             {
                                 line = string.Format("{0}", _buildModifierString(s, "1", mod));
                                 w.WriteLine(line);
@@ -360,7 +364,9 @@ namespace JointMilitarySymbologyLibrary
                     {
                         foreach (ModifiersTypeModifier mod in s.SectorTwoModifiers)
                         {
-                            if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(mod.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                            if (expression == "" || 
+                                System.Text.RegularExpressions.Regex.IsMatch(mod.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase) ||
+                                System.Text.RegularExpressions.Regex.IsMatch(mod.Category, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
                             {
                                 line = string.Format("{0}", _buildModifierString(s, "2", mod));
                                 w.WriteLine(line);
@@ -1314,7 +1320,7 @@ namespace JointMilitarySymbologyLibrary
 
         public void Export(string path, string symbolSetExpression = "", string expression = "", bool exportPoints = true, bool exportLines = true, bool exportAreas = true)
         {
-            _exportEntities(path + ".csv", symbolSetExpression, expression, exportPoints, exportLines, exportAreas);
+            _exportEntities(path + "_Entities.csv", symbolSetExpression, expression, exportPoints, exportLines, exportAreas);
             _exportModifiers(path + "_Modifiers.csv", symbolSetExpression, expression);
         }
     }
