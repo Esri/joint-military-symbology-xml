@@ -11,7 +11,7 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element name="SymbolSetCode" type="DoubleDigitType" minOccurs="1" maxOccurs="1"/>
-        <xs:element name="LegacyCodingSchemeCode" type="LegacyLetterCodeType" minOccurs="1" maxOccurs="unbounded"/>
+        <xs:element name="LegacyCodingSchemeCode" type="LegacyLetterCodeType" minOccurs="0" maxOccurs="unbounded"/>
         <xs:element name="Entities" minOccurs="1" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>

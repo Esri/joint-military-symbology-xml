@@ -28,19 +28,20 @@ namespace jmsml
         {
             _librarian.IsLogging = true;
 
-            //CommandLineArgs.I.parseArgs(args, "myStringArg=defaultVal;someLong=12");
-            //Console.WriteLine("Arg myStringArg  : '{0}' ", CommandLineArgs.I.argAsString("myStringArg"));
-            //Console.WriteLine("Arg someLong     : '{0}' ", CommandLineArgs.I.argAsLong("someLong"));
-
-            CommandLineArgs.I.parseArgs(args, "");
+            CommandLineArgs.I.parseArgs(args, "/e=false");
 
             string exportPath = CommandLineArgs.I.argAsString("/x");
+            string exportDomainPath = CommandLineArgs.I.argAsString("/d");
             string symbolSet = CommandLineArgs.I.argAsString("/s");
             string query = CommandLineArgs.I.argAsString("/q");
             string help = CommandLineArgs.I.argAsString("/?");
             string xPoints = CommandLineArgs.I.argAsString("/p");
             string xLines = CommandLineArgs.I.argAsString("/l");
             string xAreas = CommandLineArgs.I.argAsString("/a");
+            string importPath = CommandLineArgs.I.argAsString("/i");
+            string legacyCode = CommandLineArgs.I.argAsString("/lc");
+            string modPath = CommandLineArgs.I.argAsString("/m");
+            bool asEsri = (CommandLineArgs.I.argAsString("/e") != "false");
 
             if (help == "/?")
             {
@@ -48,6 +49,8 @@ namespace jmsml
                 Console.WriteLine("");
                 Console.WriteLine("/?\t\t\t: Help/Show command line options.");
                 Console.WriteLine("/a\t\t\t: Export symbols with AREA geometry.");
+                Console.WriteLine("/d\t\t\t: Export coded domain tables to the specified folder.");
+                Console.WriteLine("/e\t\t\t: Export the coded domain tables in 'Esri' format.");
                 Console.WriteLine("/l\t\t\t: Export symbols with LINE geometry.");
                 Console.WriteLine("/p\t\t\t: Export symbols with POINT geometry.");
                 Console.WriteLine("/q=\"<expression>\"\t: Use regular expression to query on other labels.");
@@ -63,6 +66,16 @@ namespace jmsml
                 _librarian.Export(exportPath, symbolSet, query, xPoints == "/p" || xLines == "" && xAreas == "", 
                                                                 xLines == "/l" || xPoints == "" && xAreas == "",
                                                                 xAreas == "/a" || xPoints == "" && xLines == "");
+            }
+
+            if (exportDomainPath != "")
+            {
+                _librarian.ExportDomains(exportDomainPath, asEsri);
+            }
+
+            if (importPath != "")
+            {
+                _librarian.Import(importPath, modPath, symbolSet, legacyCode);
             }
         }
 

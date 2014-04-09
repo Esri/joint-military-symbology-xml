@@ -378,6 +378,395 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
+        private void _exportContext(string path, bool asEsri)
+        {
+            string headers = "Code,Value";
+
+            using (var w = new StreamWriter(path + "\\jmsml_Context.csv"))
+            {
+                w.WriteLine(headers);
+
+                foreach (LibraryContext obj in _library.Contexts)
+                {
+                    w.WriteLine(Convert.ToString(obj.ContextCode) + ',' + obj.Label);
+                    w.Flush();
+                }
+
+                if (asEsri)
+                {
+                    w.WriteLine("-1,NotSet");
+                    w.Flush();
+                }
+
+                w.Close();
+            }
+        }
+
+        private void _exportStandardIdentity(string path, bool asEsri)
+        {
+            string headers = "Code,Value";
+
+            using (var w = new StreamWriter(path + "\\jmsml_StandardIdentity.csv"))
+            {
+                w.WriteLine(headers);
+
+                foreach(LibraryStandardIdentity obj in _library.StandardIdentities)
+                {
+                    w.WriteLine(Convert.ToString(obj.StandardIdentityCode) + ',' + obj.Label);
+                    w.Flush();
+                }
+
+                if (asEsri)
+                {
+                    w.WriteLine("-1,NotSet");
+                    w.Flush();
+                }
+
+                w.Close();
+            }
+        }
+
+        private void _exportSymbolSet(string path, bool asEsri)
+        {
+            string headers = "Code,Value";
+
+            using (var w = new StreamWriter(path + "\\jmsml_SymbolSet.csv"))
+            {
+                w.WriteLine(headers);
+
+                foreach (LibraryDimension dimension in _library.Dimensions)
+                {
+                    if (dimension.SymbolSets != null)
+                    {
+                        foreach (LibraryDimensionSymbolSetRef obj in dimension.SymbolSets)
+                        {
+                            w.WriteLine(Convert.ToString(obj.SymbolSetCode.DigitOne) + Convert.ToString(obj.SymbolSetCode.DigitTwo) + ',' + obj.Label);
+                            w.Flush();
+                        }
+                    }
+                }
+
+                if (asEsri)
+                {
+                    w.WriteLine("-1,NotSet");
+                    w.Flush();
+                }
+
+                w.Close();
+            }
+        }
+
+        private void _exportStatus(string path, bool asEsri)
+        {
+            string headers = "Code,Value";
+
+            using (var w = new StreamWriter(path + "\\jmsml_Status.csv"))
+            {
+                w.WriteLine(headers);
+
+                foreach (LibraryStatus obj in _library.Statuses)
+                {
+                    w.WriteLine(Convert.ToString(obj.StatusCode) + ',' + obj.Label);
+                    w.Flush();
+                }
+
+                if (asEsri)
+                {
+                    w.WriteLine("-1,NotSet");
+                    w.Flush();
+                }
+
+                w.Close();
+            }
+        }
+
+        private void _exportHQTFDummy(string path, bool asEsri)
+        {
+            string headers = "Code,Value";
+
+            using (var w = new StreamWriter(path + "\\jmsml_HQTFDummy.csv"))
+            {
+                w.WriteLine(headers);
+
+                foreach (LibraryHQTFDummy obj in _library.HQTFDummies)
+                {
+                    w.WriteLine(Convert.ToString(obj.HQTFDummyCode) + ',' + obj.Label);
+                    w.Flush();
+                }
+
+                if (asEsri)
+                {
+                    w.WriteLine("-1,NotSet");
+                    w.Flush();
+                }
+
+                w.Close();
+            }
+        }
+
+        private void _exportAmplifier(string path, bool asEsri)
+        {
+            string headers = "Code,Value";
+
+            using (var w = new StreamWriter(path + "\\jmsml_Amplifier.csv"))
+            {
+                w.WriteLine(headers);
+
+                foreach (LibraryAmplifierGroup descript in _library.AmplifierGroups)
+                {
+                    if (descript.Amplifiers != null)
+                    {
+                        foreach (LibraryAmplifierGroupAmplifier obj in descript.Amplifiers)
+                        {
+                            w.WriteLine(Convert.ToString(descript.AmplifierGroupCode) + Convert.ToString(obj.AmplifierCode) + ',' + obj.Label);
+                            w.Flush();
+                        }
+                    }
+                }
+
+                if (asEsri)
+                {
+                    w.WriteLine("-1,NotSet");
+                    w.Flush();
+                }
+
+                w.Close();
+            }
+        }
+
+        private void WriteCode(StreamWriter w, string name, string digitOne, string digitTwo)
+        {
+            w.WriteLine("<" + name + ">");
+            w.WriteLine("<DigitOne>" + digitOne + "</DigitOne>");
+            w.WriteLine("<DigitTwo>" + digitTwo + "</DigitTwo>");
+            w.WriteLine("</" + name + ">");
+            w.Flush();
+        }
+
+        private void WriteEntity(ref int mode, StreamWriter w, string id, string label, string one, string two, string graphic)
+        {
+            switch (mode)
+            {
+                case 0:
+                    w.WriteLine("</Entity>");
+                    break;
+
+                case 1:
+                    w.WriteLine("</EntityType>");
+                    w.WriteLine("</EntityTypes>");
+                    w.WriteLine("</Entity>");
+                    break;
+
+                case 2:
+                    w.WriteLine("</EntitySubTypes>");
+                    w.WriteLine("</EntityType>");
+                    w.WriteLine("</EntityTypes>");
+                    w.WriteLine("</Entity>");
+                    break;
+            }
+
+            mode = 0;
+
+            w.WriteLine("<Entity ID=\"" + id + "\" Label=\"" + label + "\" Graphic=\"" + graphic + "\">");
+            WriteCode(w, "EntityCode", one, two);
+            w.Flush();
+        }
+
+        private void WriteEntityType(ref int mode, StreamWriter w, string id, string label, string one, string two, string graphic)
+        {
+            switch (mode)
+            {
+                case 0:
+                    w.WriteLine("<EntityTypes>");
+                    break;
+
+                case 1:
+                    w.WriteLine("</EntityType>");
+                    break;
+
+                case 2:
+                    w.WriteLine("</EntitySubTypes>");
+                    w.WriteLine("</EntityType>");
+                    break;
+            }
+
+            mode = 1;
+
+            w.WriteLine("<EntityType ID=\"" + id + "\" Label=\"" + label + "\" Graphic=\"" + graphic + "\">");
+            WriteCode(w, "EntityTypeCode", one, two);
+            w.Flush();
+        }
+
+        private void WriteEntitySubType(ref int mode, StreamWriter w, string id, string label, string one, string two, string graphic)
+        {
+            switch (mode)
+            {
+                case 1:
+                    w.WriteLine("<EntitySubTypes>");
+                    break;
+            }
+
+            mode = 2;
+
+            w.WriteLine("<EntitySubType ID=\"" + id + "\" Label=\"" + label + "\" Graphic=\"" + graphic + "\">");
+            WriteCode(w, "EntitySubTypeCode", one, two);
+            w.WriteLine("</EntitySubType>");
+            w.Flush();
+        }
+
+        private void WriteModifier(StreamWriter w, string id, string label, string one, string two, string graphic)
+        {
+            w.WriteLine("<Modifier ID=\"" + id + "\" Label=\"" + label + "\" Category=\"TODO\" Graphic=\"" + graphic + "\">");
+            WriteCode(w, "ModifierCode", one, two);
+            w.WriteLine("</Modifier>");
+            w.Flush();
+        }
+
+        private void WriteModifiers(string modPath, StreamWriter w, string setToDo, string modToDo)
+        {
+            StreamReader rm1 = new StreamReader(modPath);
+
+            while (!rm1.EndOfStream)
+            {
+                string line = rm1.ReadLine();
+                string[] tokens = line.Split(',');
+
+                string modSet = tokens[1].PadLeft(2,'0');
+                string modNo = tokens[2];
+
+                if(setToDo == modSet && modToDo == modNo)
+                {
+                    string mod = tokens[0];
+                    string id = mod.ToUpper();
+                    id = id.Replace('/', '_');
+                    id = id.Replace(' ', '_');
+                    id = id.Replace('-', '_');
+                    id = id.Replace('(', '_');
+                    id = id.Replace(')', '_');
+                    id = id.Trim();
+
+                    string modCode = tokens[3].PadLeft(2, '0');
+
+                    WriteModifier(w, id, mod, modCode.Substring(0,1), modCode.Substring(1,1), setToDo + modCode + modToDo + ".svg");
+                }
+            }
+
+            rm1.Close();
+        }
+
+        private void _importCSV(string path, string modPath, string ssCode, string legacyCode)
+        {
+            string line, ss, id, entity, entityType, entitySubType, codeE, codeET, codeEST, graphic;
+
+            StreamReader r = new StreamReader(path);
+            StreamWriter w = new StreamWriter("SymbolSet_" + ssCode + ".xml");
+
+            w.WriteLine("<?xml version=\"1.0\" encoding=\"utf-8\"?>");
+            w.WriteLine("<SymbolSet xmlns=\"http://disa.mil/JointMilSyML.xsd\" ID=\"AN_ID\" Label=\"A Label\" DimensionID=\"A_DIMENSION\">");
+
+            WriteCode(w, "SymbolSetCode", ssCode.Substring(0, 1), ssCode.Substring(1, 1));
+
+            if (legacyCode != "")
+            {
+                w.WriteLine("<LegacyCodingSchemeCode Name=\"2525C\">" + legacyCode + "</LegacyCodingSchemeCode>");
+            }
+
+            w.WriteLine("<Entities>");
+            w.Flush();
+
+            int mode = -1;
+           
+            while(!r.EndOfStream)
+            {
+                line = r.ReadLine();
+
+                string[] tokens = line.Split(',');
+
+                ss = tokens[0];
+                entity = tokens[1];
+                entityType = tokens[2];
+                entitySubType = tokens[3];
+
+                if (ss == ssCode)
+                {
+                    codeE = tokens[4].Substring(0, 2);
+                    codeET = tokens[4].Substring(2, 2);
+                    codeEST = tokens[4].Substring(4, 2);
+
+                    graphic = ss + tokens[4] + ".svg";
+
+                    if (entityType == "")
+                    {
+                        id = entity.ToUpper();
+                        id = id.Replace('/', '_');
+                        id = id.Replace(' ', '_');
+                        id = id.Replace('-', '_');
+                        id = id.Replace('(', '_');
+                        id = id.Replace(')', '_');
+                        id = id.Trim();
+
+                        WriteEntity(ref mode, w, id, entity, codeE.Substring(0, 1), codeE.Substring(1, 1), graphic);
+                    }
+                    else
+                    {
+                        if (entitySubType == "")
+                        {
+                            id = entityType.ToUpper();
+                            id = id.Replace('/', '_');
+                            id = id.Replace(' ', '_');
+                            id = id.Replace('-', '_');
+                            id = id.Replace('(', '_');
+                            id = id.Replace(')', '_');
+                            id = id.Trim();
+
+                            WriteEntityType(ref mode, w, id, entityType, codeET.Substring(0, 1), codeET.Substring(1, 1), graphic);
+                        }
+                        else
+                        {
+                            id = entitySubType.ToUpper();
+                            id = id.Replace('/', '_');
+                            id = id.Replace(' ', '_');
+                            id = id.Replace('-', '_');
+                            id = id.Replace('(', '_');
+                            id = id.Replace(')', '_');
+                            id = id.Trim();
+
+                            WriteEntitySubType(ref mode, w, id, entitySubType, codeEST.Substring(0, 1), codeEST.Substring(1, 1), graphic);
+                        }
+                    }
+                }
+            }
+
+            r.Close();
+
+            switch (mode)
+            {
+                case 1:
+                    w.WriteLine("</EntityType>");
+                    w.WriteLine("</EntityTypes>");
+                    break;
+                case 2:
+                    w.WriteLine("</EntitySubTypes>");
+                    w.WriteLine("</EntityType>");
+                    w.WriteLine("</EntityTypes>");
+                    break;
+            }
+
+            w.WriteLine("</Entity>");
+            w.WriteLine("</Entities>");
+
+            w.WriteLine("<SectorOneModifiers>");
+            WriteModifiers(modPath, w, ssCode, "1");
+            w.WriteLine("</SectorOneModifiers>");
+
+            w.WriteLine("<SectorTwoModifiers>");
+            WriteModifiers(modPath, w, ssCode, "2");
+            w.WriteLine("</SectorTwoModifiers>");
+
+            w.WriteLine("</SymbolSet>");
+            w.Flush();
+        }
+
         internal void LogConversionResult(string converting)
         {
             if (_logConversion)
@@ -1322,6 +1711,21 @@ namespace JointMilitarySymbologyLibrary
         {
             _exportEntities(path + "_Entities.csv", symbolSetExpression, expression, exportPoints, exportLines, exportAreas);
             _exportModifiers(path + "_Modifiers.csv", symbolSetExpression, expression);
+        }
+
+        public void ExportDomains(string path, bool asEsri)
+        {
+            _exportContext(path, asEsri);
+            _exportStandardIdentity(path, asEsri);
+            _exportSymbolSet(path, asEsri);
+            _exportStatus(path, asEsri);
+            _exportHQTFDummy(path, asEsri);
+            _exportAmplifier(path, asEsri);
+        }
+
+        public void Import(string path, string modPath, string symbolsetCode, string legacyCode)
+        {
+            _importCSV(path, modPath, symbolsetCode, legacyCode);
         }
     }
 }
