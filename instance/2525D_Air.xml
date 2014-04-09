@@ -6,238 +6,238 @@
   </SymbolSetCode>
   <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
   <Entities>
-    <Entity ID="MILITARY" Label="Military" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes." Graphic="Appendices/Air/c01110000.png">
+    <Entity ID="MILITARY" Label="Military" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes." Graphic="Appendices/Air/01110000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
       </EntityCode>
       
       <EntityTypes>
-        <EntityType ID="FIXED_WING" Label="Fixed-Wing" Graphic="01110100.png">
+        <EntityType ID="FIXED_WING" Label="Fixed-Wing" Graphic="01110100.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>1</DigitTwo>
           </EntityTypeCode>
           
           <EntitySubTypes>
-            <EntitySubType ID="MEDEVAC" Label="Medical Evacuation (MEDEVAC)" Graphic="01110101.png">
+            <EntitySubType ID="MEDEVAC" Label="Medical Evacuation (MEDEVAC)" Graphic="01110101.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
             
-            <EntitySubType ID="ATTACK_STRIKE" Label="Attack/Strike" Graphic="01110102.png">
+            <EntitySubType ID="ATTACK_STRIKE" Label="Attack/Strike" Graphic="01110102.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>2</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="BOMBER" Label="Bomber" Graphic="01110103.png">
+            <EntitySubType ID="BOMBER" Label="Bomber" Graphic="01110103.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>3</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="FIGHTER" Label="Fighter" Graphic="01110104.png">
+            <EntitySubType ID="FIGHTER" Label="Fighter" Graphic="01110104.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>4</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="FIGHTER_BOMBER" Label="Fighter/Bomber" Graphic="01110105.png">
+            <EntitySubType ID="FIGHTER_BOMBER" Label="Fighter/Bomber" Graphic="01110105.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>5</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="CARGO" Label="Cargo" Graphic="01110107.png">
+            <EntitySubType ID="CARGO" Label="Cargo" Graphic="01110107.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>7</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="ECJ" Label="Electronic/Combat (EC)/Jammer" Graphic="01110108.png">
+            <EntitySubType ID="ECJ" Label="Electronic/Combat (EC)/Jammer" Graphic="01110108.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>8</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="TANKER" Label="Tanker" Graphic="01110109.png">
+            <EntitySubType ID="TANKER" Label="Tanker" Graphic="01110109.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>9</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="PATROL" Label="Patrol" Graphic="01110110.png">
+            <EntitySubType ID="PATROL" Label="Patrol" Graphic="01110110.svg">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
                 <DigitTwo>0</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="RECON" Label="Reconnaissance" Graphic="01110111.png">
+            <EntitySubType ID="RECON" Label="Reconnaissance" Graphic="01110111.svg">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="TRAINER" Label="Trainer" Graphic="01110112.png">
+            <EntitySubType ID="TRAINER" Label="Trainer" Graphic="01110112.svg">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
                 <DigitTwo>2</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="UTILITY" Label="Utility" Graphic="01110113.png">
+            <EntitySubType ID="UTILITY" Label="Utility" Graphic="01110113.svg">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
                 <DigitTwo>3</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="VSTOL" Label="VSTOL" Graphic="01110114.png">
+            <EntitySubType ID="VSTOL" Label="VSTOL" Graphic="01110114.svg">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
                 <DigitTwo>4</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="ACP" Label="Airborne Command Post (ACP)" Graphic="01110115.png">
+            <EntitySubType ID="ACP" Label="Airborne Command Post (ACP)" Graphic="01110115.svg">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
                 <DigitTwo>5</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="AEW" Label="Airborne Early Warning (AEW)" Graphic="01110116.png">
+            <EntitySubType ID="AEW" Label="Airborne Early Warning (AEW)" Graphic="01110116.svg">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
                 <DigitTwo>6</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="ASUW" Label="Antisurface Warfare (ASUW)" Graphic="01110117.png">
+            <EntitySubType ID="ASUW" Label="Antisurface Warfare (ASUW)" Graphic="01110117.svg">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
                 <DigitTwo>7</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="ASW" Label="Antisubmarine Warfare (ASW)" Graphic="01110118.png">
+            <EntitySubType ID="ASW" Label="Antisubmarine Warfare (ASW)" Graphic="01110118.svg">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
                 <DigitTwo>8</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="COM" Label="Communications" Graphic="01110119.png">
+            <EntitySubType ID="COM" Label="Communications" Graphic="01110119.svg">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
                 <DigitTwo>9</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="CSAR" Label="Combat Search and Rescue (CSAR)" Graphic="01110120.png">
+            <EntitySubType ID="CSAR" Label="Combat Search and Rescue (CSAR)" Graphic="01110120.svg">
               <EntitySubTypeCode>
                 <DigitOne>2</DigitOne>
                 <DigitTwo>0</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="ES" Label="Electronic Support (ES)" Graphic="01110121.png">
+            <EntitySubType ID="ES" Label="Electronic Support (ES)" Graphic="01110121.svg">
               <EntitySubTypeCode>
                 <DigitOne>2</DigitOne>
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="GOV" Label="Government" Graphic="01110122.png">
+            <EntitySubType ID="GOV" Label="Government" Graphic="01110122.svg">
               <EntitySubTypeCode>
                 <DigitOne>2</DigitOne>
                 <DigitTwo>2</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="MCM" Label="Mine Countermeasures (MCM)" Graphic="01110123.png">
+            <EntitySubType ID="MCM" Label="Mine Countermeasures (MCM)" Graphic="01110123.svg">
               <EntitySubTypeCode>
                 <DigitOne>2</DigitOne>
                 <DigitTwo>3</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="PR" Label="Personnel Recovery" Graphic="01110124.png">
+            <EntitySubType ID="PR" Label="Personnel Recovery" Graphic="01110124.svg">
               <EntitySubTypeCode>
                 <DigitOne>2</DigitOne>
                 <DigitTwo>4</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="SAR" Label="Search and Rescue" Graphic="01110125.png">
+            <EntitySubType ID="SAR" Label="Search and Rescue" Graphic="01110125.svg">
               <EntitySubTypeCode>
                 <DigitOne>2</DigitOne>
                 <DigitTwo>5</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="SOF" Label="Special Operations Forces" Graphic="01110126.png">
+            <EntitySubType ID="SOF" Label="Special Operations Forces" Graphic="01110126.svg">
               <EntitySubTypeCode>
                 <DigitOne>2</DigitOne>
                 <DigitTwo>6</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="UL" Label="Ultra Light" Graphic="01110127.png">
+            <EntitySubType ID="UL" Label="Ultra Light" Graphic="01110127.svg">
               <EntitySubTypeCode>
                 <DigitOne>2</DigitOne>
                 <DigitTwo>7</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="PH" Label="Photographic Reconnaissance" Graphic="01110128.png">
+            <EntitySubType ID="PH" Label="Photographic Reconnaissance" Graphic="01110128.svg">
               <EntitySubTypeCode>
                 <DigitOne>2</DigitOne>
                 <DigitTwo>8</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="VIP" Label="Very Important Person (VIP)" Graphic="01110129.png">
+            <EntitySubType ID="VIP" Label="Very Important Person (VIP)" Graphic="01110129.svg">
               <EntitySubTypeCode>
                 <DigitOne>2</DigitOne>
                 <DigitTwo>9</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="SEAD" Label="Suppression of Enemy Air Defense" Graphic="01110130.png">
+            <EntitySubType ID="SEAD" Label="Suppression of Enemy Air Defense" Graphic="01110130.svg">
               <EntitySubTypeCode>
                 <DigitOne>3</DigitOne>
                 <DigitTwo>0</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="PX" Label="Passenger" Graphic="01110131.png">
+            <EntitySubType ID="PX" Label="Passenger" Graphic="01110131.svg">
               <EntitySubTypeCode>
                 <DigitOne>3</DigitOne>
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="E" Label="Escort" Graphic="01110132.png">
+            <EntitySubType ID="E" Label="Escort" Graphic="01110132.svg">
               <EntitySubTypeCode>
                 <DigitOne>3</DigitOne>
                 <DigitTwo>2</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="EA" Label="Electronic Attack (EA)" Graphic="01110133.png">
+            <EntitySubType ID="EA" Label="Electronic Attack (EA)" Graphic="01110133.svg">
               <EntitySubTypeCode>
                 <DigitOne>3</DigitOne>
                 <DigitTwo>3</DigitTwo>
@@ -246,42 +246,42 @@
           </EntitySubTypes>
         </EntityType>
 
-        <EntityType ID="ROTARY_WING" Label="Rotary-Wing" Graphic="01110200.png">
+        <EntityType ID="ROTARY_WING" Label="Rotary-Wing" Graphic="01110200.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
         </EntityType>
 
-        <EntityType ID="UAV" Label="Unmanned Aircraft (UA)/Unmanned Aerial Vehicle (UAV)/Unmanned Aircraft System (UAS)/Remote Piloted Vehicle (RPV)" Graphic="01110300.png">
+        <EntityType ID="UAV" Label="Unmanned Aircraft (UA)/Unmanned Aerial Vehicle (UAV)/Unmanned Aircraft System (UAS)/Remote Piloted Vehicle (RPV)" Graphic="01110300.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>3</DigitTwo>
           </EntityTypeCode>
         </EntityType>
 
-        <EntityType ID="VT_UAV" Label="Vertical-Takeoff UAV (VT-UAV)" Graphic="01110400.png">
+        <EntityType ID="VT_UAV" Label="Vertical-Takeoff UAV (VT-UAV)" Graphic="01110400.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>4</DigitTwo>
           </EntityTypeCode>
         </EntityType>
 
-        <EntityType ID="LIGHTER_THAN_AIR" Label="Lighter Than Air" Graphic="01110500.png">
+        <EntityType ID="LIGHTER_THAN_AIR" Label="Lighter Than Air" Graphic="01110500.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>5</DigitTwo>
           </EntityTypeCode>
         </EntityType>
 
-        <EntityType ID="AIRSHIP" Label="Airship" Graphic="01110600.png">
+        <EntityType ID="AIRSHIP" Label="Airship" Graphic="01110600.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>6</DigitTwo>
           </EntityTypeCode>
         </EntityType>
 
-        <EntityType ID="TETHERED_LTA" Label="Tethered Lighter Than Air" Graphic="01110700.png">
+        <EntityType ID="TETHERED_LTA" Label="Tethered Lighter Than Air" Graphic="01110700.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>7</DigitTwo>
@@ -290,49 +290,49 @@
       </EntityTypes>
     </Entity>
 
-    <Entity ID="CIVILIAN" Label="Civilian" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes." Graphic="01120000.png">
+    <Entity ID="CIVILIAN" Label="Civilian" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes." Graphic="01120000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>2</DigitTwo>
       </EntityCode>
 
       <EntityTypes>
-        <EntityType ID="CIV_FIXED_WING" Label="Fixed-Wing" Graphic="01120100.png">
+        <EntityType ID="CIV_FIXED_WING" Label="Fixed-Wing" Graphic="01120100.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>1</DigitTwo>
           </EntityTypeCode>
         </EntityType>
 
-        <EntityType ID="CIV_ROTARY_WING" Label="Rotary-Wing" Graphic="01120200.png">
+        <EntityType ID="CIV_ROTARY_WING" Label="Rotary-Wing" Graphic="01120200.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
         </EntityType>
 
-        <EntityType ID="CIV_UAV" Label="Unmanned Aircraft (UA)/Unmanned Aerial Vehicle (UAV)/Unmanned Aircraft System (UAS)/Remote Piloted Vehicle (RPV)" Graphic="01120300.png">
+        <EntityType ID="CIV_UAV" Label="Unmanned Aircraft (UA)/Unmanned Aerial Vehicle (UAV)/Unmanned Aircraft System (UAS)/Remote Piloted Vehicle (RPV)" Graphic="01120300.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>3</DigitTwo>
           </EntityTypeCode>
         </EntityType>
 
-        <EntityType ID="CIV_LTA" Label="Lighter Than Air" Graphic="01120400.png">
+        <EntityType ID="CIV_LTA" Label="Lighter Than Air" Graphic="01120400.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>4</DigitTwo>
           </EntityTypeCode>
         </EntityType>
 
-        <EntityType ID="CIV_AIRSHIP" Label="Airship" Graphic="01120500.png">
+        <EntityType ID="CIV_AIRSHIP" Label="Airship" Graphic="01120500.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>5</DigitTwo>
           </EntityTypeCode>
         </EntityType>
 
-        <EntityType ID="CIV_TETHERED_LTA" Label="Tethered Lighter Than Air" Graphic="01120600.png">
+        <EntityType ID="CIV_TETHERED_LTA" Label="Tethered Lighter Than Air" Graphic="01120600.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>6</DigitTwo>
@@ -341,21 +341,21 @@
       </EntityTypes>
     </Entity>
 
-    <Entity ID="WEAPON" Label="Weapon" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes." Graphic="01130000.png">
+    <Entity ID="WEAPON" Label="Weapon" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes." Graphic="01130000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>3</DigitTwo>
       </EntityCode>
 
       <EntityTypes>
-        <EntityType ID="BOMB" Label="Bomb" Graphic="01130100.png">
+        <EntityType ID="BOMB" Label="Bomb" Graphic="01130100.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>1</DigitTwo>
           </EntityTypeCode>
         </EntityType>
 
-        <EntityType ID="DECOY" Label="Decoy" Graphic="01130200.png">
+        <EntityType ID="DECOY" Label="Decoy" Graphic="01130200.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>2</DigitTwo>
@@ -364,7 +364,7 @@
       </EntityTypes>
     </Entity>
 
-    <Entity ID="MANUAL_TRACK" Label="Manual Track" Graphic="10140000.png">
+    <Entity ID="MANUAL_TRACK" Label="Manual Track" Graphic="10140000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>4</DigitTwo>
@@ -373,273 +373,273 @@
   </Entities>
   
   <SectorOneModifiers>    
-    <Modifier ID="ATTACK_STRIKE_MOD" Label="Attack/Strike" Category="Military Aircraft Type" Graphic="01011.png">
+    <Modifier ID="ATTACK_STRIKE_MOD" Label="Attack/Strike" Category="Military Aircraft Type" Graphic="01011.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
     
-    <Modifier ID="BOMBER_MOD" Label="Bomber" Category="Military Aircraft Type" Graphic="01021.png">
+    <Modifier ID="BOMBER_MOD" Label="Bomber" Category="Military Aircraft Type" Graphic="01021.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="CARGO_MOD" Label="Cargo" Category="Aircraft Type" Graphic="01031.png">
+    <Modifier ID="CARGO_MOD" Label="Cargo" Category="Aircraft Type" Graphic="01031.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="FIGHTER_MOD" Label="Fighter" Category="Military Aircraft Type" Graphic="01041.png">
+    <Modifier ID="FIGHTER_MOD" Label="Fighter" Category="Military Aircraft Type" Graphic="01041.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="INTERCEPTOR_MOD" Label="Interceptor" Category="Military Aircraft Type" Remarks="APP-6" Graphic="01051.png">
+    <Modifier ID="INTERCEPTOR_MOD" Label="Interceptor" Category="Military Aircraft Type" Remarks="APP-6" Graphic="01051.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="TANKER_MOD" Label="Tanker" Category="Aircraft Type" Graphic="01061.png">
+    <Modifier ID="TANKER_MOD" Label="Tanker" Category="Aircraft Type" Graphic="01061.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="UTILITY_MOD" Label="Utility" Category="Aircraft Type" Graphic="01071.png">
+    <Modifier ID="UTILITY_MOD" Label="Utility" Category="Aircraft Type" Graphic="01071.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="VSTOL_MOD" Label="VSTOL/VTOL" Category="Aircraft Type" Graphic="01081.png">
+    <Modifier ID="VSTOL_MOD" Label="VSTOL/VTOL" Category="Aircraft Type" Graphic="01081.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="PASSENGER_MOD" Label="Passenger" Category="Aircraft Type" Graphic="01091.png">
+    <Modifier ID="PASSENGER_MOD" Label="Passenger" Category="Aircraft Type" Graphic="01091.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="ULTRA_LIGHT_MOD" Label="Ultra Light" Category="Aircraft Type" Graphic="01101.png">
+    <Modifier ID="ULTRA_LIGHT_MOD" Label="Ultra Light" Category="Aircraft Type" Graphic="01101.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="ACP_MOD" Label="Airborne Command Post (ACP)" Category="Military Aircraft Type" Graphic="01111.png">
+    <Modifier ID="ACP_MOD" Label="Airborne Command Post (ACP)" Category="Military Aircraft Type" Graphic="01111.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="AEW_MOD" Label="Airborne Early Warning (AEW)" Category="Military Aircraft Type" Graphic="01121.png">
+    <Modifier ID="AEW_MOD" Label="Airborne Early Warning (AEW)" Category="Military Aircraft Type" Graphic="01121.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="GOV_MOD" Label="Government" Category="Aircraft Type" Graphic="01131.png">
+    <Modifier ID="GOV_MOD" Label="Government" Category="Aircraft Type" Graphic="01131.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="MEDEVAC_MOD" Label="Medical Evacuation (MEDEVAC)" Category="Mission Area" Graphic="01141.png">
+    <Modifier ID="MEDEVAC_MOD" Label="Medical Evacuation (MEDEVAC)" Category="Mission Area" Graphic="01141.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="ESCORT_MOD" Label="Escort" Category="Military Mission Area" Graphic="01151.png">
+    <Modifier ID="ESCORT_MOD" Label="Escort" Category="Military Mission Area" Graphic="01151.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="EC_MOD" Label="Electronic Combat (EC)/Jammer" Category="Military Mission Area" Graphic="01161.png">
+    <Modifier ID="EC_MOD" Label="Electronic Combat (EC)/Jammer" Category="Military Mission Area" Graphic="01161.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="PATROL_MOD" Label="Patrol" Category="Mission Area" Graphic="01171.png">
+    <Modifier ID="PATROL_MOD" Label="Patrol" Category="Mission Area" Graphic="01171.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="RECON_MOD" Label="Reconnaissance" Category="Mission Area" Graphic="01181.png">
+    <Modifier ID="RECON_MOD" Label="Reconnaissance" Category="Mission Area" Graphic="01181.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="TRAINER_MOD" Label="Trainer" Category="Mission Area" Graphic="01191.png">
+    <Modifier ID="TRAINER_MOD" Label="Trainer" Category="Mission Area" Graphic="01191.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="PHOTO_MOD" Label="Photographic (Reconnaissance)" Category="Mission Area" Graphic="01201.png">
+    <Modifier ID="PHOTO_MOD" Label="Photographic (Reconnaissance)" Category="Mission Area" Graphic="01201.svg">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="PERSONNEL_RECOVERY_MOD" Label="Personnel Recovery" Category="Mission Area" Graphic="01211.png">
+    <Modifier ID="PERSONNEL_RECOVERY_MOD" Label="Personnel Recovery" Category="Mission Area" Graphic="01211.svg">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="ASW_MOD" Label="Antisubmarine Warfare" Category="Military Mission Area" Graphic="01221.png">
+    <Modifier ID="ASW_MOD" Label="Antisubmarine Warfare" Category="Military Mission Area" Graphic="01221.svg">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="COMMS_MOD" Label="Communications" Category="Mission Area" Graphic="01231.png">
+    <Modifier ID="COMMS_MOD" Label="Communications" Category="Mission Area" Graphic="01231.svg">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="ES_MOD" Label="Electronic Support (ES)" Category="Military Mission Area" Graphic="01241.png">
+    <Modifier ID="ES_MOD" Label="Electronic Support (ES)" Category="Military Mission Area" Graphic="01241.svg">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="MCM_MOD" Label="Mine Countermeasures (MCM)" Category="Military Mission Area" Graphic="01251.png">
+    <Modifier ID="MCM_MOD" Label="Mine Countermeasures (MCM)" Category="Military Mission Area" Graphic="01251.svg">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="SAR_MOD" Label="Search and Rescue" Category="Mission Area" Graphic="01261.png">
+    <Modifier ID="SAR_MOD" Label="Search and Rescue" Category="Mission Area" Graphic="01261.svg">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="SOF_MOD" Label="Special Operations Forces" Category="Military Mission Area" Graphic="01271.png">
+    <Modifier ID="SOF_MOD" Label="Special Operations Forces" Category="Military Mission Area" Graphic="01271.svg">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="SURFACE_WARFARE_MOD" Label="Surface Warfare" Category="Military Mission Area" Graphic="01281.png">
+    <Modifier ID="SURFACE_WARFARE_MOD" Label="Surface Warfare" Category="Military Mission Area" Graphic="01281.svg">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="VIP_MOD" Label="Very Important Person (VIP) Transport" Category="Mission Area" Graphic="01291.png">
+    <Modifier ID="VIP_MOD" Label="Very Important Person (VIP) Transport" Category="Mission Area" Graphic="01291.svg">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="CSAR_MOD" Label="Combat Search and Rescue (CSAR)" Category="Military Mission Area" Graphic="01301.png">
+    <Modifier ID="CSAR_MOD" Label="Combat Search and Rescue (CSAR)" Category="Military Mission Area" Graphic="01301.svg">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="SUPP_EAD_MOD" Label="Suppression of Enemy Air Defenses" Category="Military Mission Area" Remarks="APP-6" Graphic="01311.png">
+    <Modifier ID="SUPP_EAD_MOD" Label="Suppression of Enemy Air Defenses" Category="Military Mission Area" Remarks="APP-6" Graphic="01311.svg">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="ASUW_MOD" Label="Antisurface Warfare" Category="Military Mission Area" Graphic="01321.png">
+    <Modifier ID="ASUW_MOD" Label="Antisurface Warfare" Category="Military Mission Area" Graphic="01321.svg">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="FB_MOD" Label="Fighter/Bomber" Category="Military Mission Area" Graphic="01331.png">
+    <Modifier ID="FB_MOD" Label="Fighter/Bomber" Category="Military Mission Area" Graphic="01331.svg">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="IC_MOD" Label="Intensive Care" Category="Mission Area" Graphic="01341.png">
+    <Modifier ID="IC_MOD" Label="Intensive Care" Category="Mission Area" Graphic="01341.svg">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="EA_MOD" Label="Electronic Attack (EA)" Category="Military Mission Area" Graphic="01351.png">
+    <Modifier ID="EA_MOD" Label="Electronic Attack (EA)" Category="Military Mission Area" Graphic="01351.svg">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="MULTIMISSION_MOD" Label="Multimission" Category="Mission Area" Graphic="01361.png">
+    <Modifier ID="MULTIMISSION_MOD" Label="Multimission" Category="Mission Area" Graphic="01361.svg">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="HIJACKING_MOD" Label="Hijacking" Category="crime" Graphic="01371.png">
+    <Modifier ID="HIJACKING_MOD" Label="Hijacking" Category="Crime" Graphic="01371.svg">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="ASW_HELO_LAMPS_MOD" Label="ASW Helo - LAMPS" Category="Mission Area" LimitUseTo="ROTARY_WING" Graphic="01381.png">
+    <Modifier ID="ASW_HELO_LAMPS_MOD" Label="ASW Helo - LAMPS" Category="Mission Area" LimitUseTo="ROTARY_WING" Graphic="01381.svg">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="ASW_HELO_SH_60R" Label="ASW Helo – SH-60R" Category="Mission Area" LimitUseTo="ROTARY_WING" Graphic="01391.png">
+    <Modifier ID="ASW_HELO_SH_60R_MOD" Label="ASW Helo – SH-60R" Category="Mission Area" LimitUseTo="ROTARY_WING" Graphic="01391.svg">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>9</DigitTwo>
@@ -648,77 +648,77 @@
   </SectorOneModifiers>
   
   <SectorTwoModifiers>    
-    <Modifier ID="HVY_MOD" Label="Heavy" Category="Cargo/Transport Capacity" Graphic="01012.png">
+    <Modifier ID="HVY_MOD" Label="Heavy" Category="Cargo/Transport Capacity" Graphic="01012.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="MED_MOD" Label="Medium" Category="Cargo/Transport Capacity" Graphic="01022.png">
+    <Modifier ID="MED_MOD" Label="Medium" Category="Cargo/Transport Capacity" Graphic="01022.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="LT_MOD" Label="Light" Category="Cargo/Transport Capacity" Graphic="01032.png">
+    <Modifier ID="LT_MOD" Label="Light" Category="Cargo/Transport Capacity" Graphic="01032.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="BOOM_MOD" Label="Boom-only" Category="Re-fueling Capability" LimitUseTo="TANKER" Graphic="01042.png">
+    <Modifier ID="BOOM_MOD" Label="Boom-Only" Category="Re-fueling Capability" LimitUseTo="TANKER" Graphic="01042.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="DROGUE_MOD" Label="Drogue-only" Category="Re-fueling Capability" LimitUseTo="TANKER" Graphic="01052.png">
+    <Modifier ID="DROGUE_MOD" Label="Drogue-Only" Category="Re-fueling Capability" LimitUseTo="TANKER" Graphic="01052.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="BOOM_DROGUE_MOD" Label="Boom and Drogue" Category="Re-fueling Capability" LimitUseTo="TANKER" Graphic="01062.png">
+    <Modifier ID="BOOM_DROGUE_MOD" Label="Boom and Drogue" Category="Re-fueling Capability" LimitUseTo="TANKER" Graphic="01062.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="CLOSE_MOD" Label="Close Range" Category="Range" Graphic="01072.png">
+    <Modifier ID="CLOSE_MOD" Label="Close Range" Category="Range" Graphic="01072.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="SHORT_MOD" Label="Short Range" Category="Range" Graphic="01082.png">
+    <Modifier ID="SHORT_MOD" Label="Short Range" Category="Range" Graphic="01082.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="MEDIUM_MOD" Label="Medium Range" Category="Range" Graphic="01092.png">
+    <Modifier ID="MEDIUM_MOD" Label="Medium Range" Category="Range" Graphic="01092.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="LONG_MOD" Label="Long Range" Category="Range" Graphic="01102.png">
+    <Modifier ID="LONG_MOD" Label="Long Range" Category="Range" Graphic="01102.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="DOWNLINK_MOD" Label="Downlinked" Category="Track Link Availability" Graphic="01112.png">
+    <Modifier ID="DOWNLINK_MOD" Label="Downlinked" Category="Track Link Availability" Graphic="01112.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
@@ -747,7 +747,7 @@
       <LegacyFunctionCode Name="2525C">MFF---</LegacyFunctionCode>
     </LegacySymbol>
 
-    <LegacySymbol ID="INTERCEPTOR_SYM" Label="Interceptor" Remarks="Retired">
+    <LegacySymbol ID="INTERCEPTOR_SYM" Label="Interceptor" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="INTERCEPTOR" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">MFFI--</LegacyFunctionCode>
     </LegacySymbol>
 
@@ -943,7 +943,7 @@
       <LegacyFunctionCode Name="2525C">MFQRX-</LegacyFunctionCode>
     </LegacySymbol>
 
-    <LegacySymbol ID="ASW_UAV_SYM" Label="Antisubmarne Warfare Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="ASW_MOD">
+    <LegacySymbol ID="ASW_UAV_SYM" Label="Antisubmarine Warfare Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="ASW_MOD">
       <LegacyFunctionCode Name="2525C">MFQS--</LegacyFunctionCode>
     </LegacySymbol>
 
