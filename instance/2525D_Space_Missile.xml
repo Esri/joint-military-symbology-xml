@@ -6,7 +6,7 @@
   </SymbolSetCode>
   <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
   <Entities>
-    <Entity ID="MISSILE" Label="Missile">
+    <Entity ID="MISSILE" Label="Missile" Graphic="Appendices/Space/06110000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
@@ -15,21 +15,21 @@
   </Entities>
 
   <SectorOneModifiers>
-    <Modifier ID="BALLISTIC_MOD" Label="Ballistic" Category="Missile Class">
+    <Modifier ID="BALLISTIC_MOD" Label="Ballistic" Category="Missile Class" Graphic="06011.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="SPACE_MOD" Label="Space" Category="Launch Origin">
+    <Modifier ID="SPACE_1_MOD" Label="Space" Category="Launch Origin" Graphic="06021.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="INTERCEPTOR_MOD" Label="Interceptor" Category="Missile Class">
+    <Modifier ID="INTERCEPTOR_MOD" Label="Interceptor" Category="Missile Class" Graphic="06031.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>3</DigitTwo>
@@ -38,84 +38,84 @@
   </SectorOneModifiers>
 
   <SectorTwoModifiers>
-    <Modifier ID="SHORT_MOD" Label="Short" Category="Missile Range">
+    <Modifier ID="SHORT_MOD" Label="Short Range" Category="Missile Range" Remarks="1000km or less" Graphic="06012.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="MEDIUM_MOD" Label="Medium" Category="Missile Range">
+    <Modifier ID="MEDIUM_MOD" Label="Medium Range" Category="Missile Range" Remarks="1000km to 3500km" Graphic="06022.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="INTERMEDIATE_MOD" Label="Intermediate" Category="Missile Range">
+    <Modifier ID="INTERMEDIATE_MOD" Label="Intermediate Range" Category="Missile Range" Remarks="1000km to 3500km" Graphic="06032.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="LONG_MOD" Label="Long" Category="Missile Range">
+    <Modifier ID="LONG_MOD" Label="Long Range" Category="Missile Range" Remarks="3500km to 5500km" Graphic="06042.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="INTERCONTINENTAL_MOD" Label="Intercontinental" Category="Missile Range">
+    <Modifier ID="INTERCONTINENTAL_MOD" Label="Intercontinental" Category="Missile Range" Remarks="5500km or greater" Graphic="06052.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="ARROW_MOD" Label="Arrow" Category="Missile Type - BMD">
+    <Modifier ID="ARROW_MOD" Label="Arrow" Category="Missile Type - BMD" LimitUseTo="INTERCEPTOR_MOD" Graphic="06062.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="GBI_MOD" Label="Ground-Based Interceptor (GBI)" Category="Missile Type - BMD">
+    <Modifier ID="GBI_MOD" Label="Ground-Based Interceptor (GBI)" Category="Missile Type - BMD" LimitUseTo="INTERCEPTOR_MOD" Graphic="06072.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="PATRIOT_MOD" Label="Patriot" Category="Missile Type - BMD">
+    <Modifier ID="PATRIOT_MOD" Label="Patriot" Category="Missile Type - BMD" LimitUseTo="INTERCEPTOR_MOD" Graphic="06082.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="SMT_MOD" Label="Standard Missile Terminal Phase (SM-T)" Category="Missile Type - BMD">
+    <Modifier ID="SMT_MOD" Label="Standard Missile - Terminal Phase (SM-T)" Category="Missile Type - BMD" LimitUseTo="INTERCEPTOR_MOD" Graphic="06092.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="SM3_MOD" Label="Standard Missile - 3 (SM-3)" Category="Missile Type - BMD">
+    <Modifier ID="SM3_MOD" Label="Standard Missile - 3 (SM-3)" Category="Missile Type - BMD" LimitUseTo="INTERCEPTOR_MOD" Graphic="06102.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="THAAD_MOD" Label="Terminal High Altitude Area Defense (THAAD)" Category="Missile Type - BMD">
+    <Modifier ID="THAAD_MOD" Label="Terminal High-Altitude Area Defense (THAAD)" Category="Missile Type - BMD" LimitUseTo="INTERCEPTOR_MOD" Graphic="06112.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="SPACE_2_MOD" Label="Space" Category="Launch Origin">
+    <Modifier ID="SPACE_2_MOD" Label="Space" Category="Launch Origin" Graphic="06122.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>2</DigitTwo>
