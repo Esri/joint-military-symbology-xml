@@ -31,7 +31,8 @@ namespace jmsml
             CommandLineArgs.I.parseArgs(args, "/e=false");
 
             string exportPath = CommandLineArgs.I.argAsString("/x");
-            string exportDomainPath = CommandLineArgs.I.argAsString("/d");
+            string exportDPath = CommandLineArgs.I.argAsString("/xd");
+            string exportDomainPath = CommandLineArgs.I.argAsString("/b");
             string symbolSet = CommandLineArgs.I.argAsString("/s");
             string query = CommandLineArgs.I.argAsString("/q");
             string help = CommandLineArgs.I.argAsString("/?");
@@ -49,13 +50,14 @@ namespace jmsml
                 Console.WriteLine("");
                 Console.WriteLine("/?\t\t\t: Help/Show command line options.");
                 Console.WriteLine("/a\t\t\t: Export symbols with AREA geometry.");
-                Console.WriteLine("/d\t\t\t: Export coded domain tables to the specified folder.");
-                Console.WriteLine("/e\t\t\t: Export the coded domain tables in 'Esri' format.");
+                Console.WriteLine("/b\t\t\t: Export all coded base domain tables to a folder.");
+                Console.WriteLine("/e\t\t\t: Use 'Esri' format when exporting base domain tables.");
                 Console.WriteLine("/l\t\t\t: Export symbols with LINE geometry.");
                 Console.WriteLine("/p\t\t\t: Export symbols with POINT geometry.");
                 Console.WriteLine("/q=\"<expression>\"\t: Use regular expression to query on other labels.");
                 Console.WriteLine("/s=\"<expression>\"\t: Use regular expression to query on symbol set labels.");
                 Console.WriteLine("/x=\"<pathname>\"\t\t: Export to specified path (omit .csv).");
+                Console.WriteLine("/xd=\"<pathname>\"\t: Export to specified path as coded domain (omit .csv).");
                 Console.WriteLine("");
                 Console.WriteLine("<Enter> to continue.");
                 Console.ReadLine();
@@ -65,7 +67,16 @@ namespace jmsml
             {
                 _librarian.Export(exportPath, symbolSet, query, xPoints == "/p" || xLines == "" && xAreas == "", 
                                                                 xLines == "/l" || xPoints == "" && xAreas == "",
-                                                                xAreas == "/a" || xPoints == "" && xLines == "");
+                                                                xAreas == "/a" || xPoints == "" && xLines == "",
+                                                                false);
+            }
+
+            if (exportDPath != "")
+            {
+                _librarian.Export(exportDPath, symbolSet, query, xPoints == "/p" || xLines == "" && xAreas == "",
+                                                                xLines == "/l" || xPoints == "" && xAreas == "",
+                                                                xAreas == "/a" || xPoints == "" && xLines == "",
+                                                                true);
             }
 
             if (exportDomainPath != "")
