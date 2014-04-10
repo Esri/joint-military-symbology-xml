@@ -115,7 +115,7 @@
       <LegacyDimensionCode Name="2525C">I</LegacyDimensionCode>
       <Fields/>
       <SymbolSets>
-        <SymbolSetRef ID="SS_INTERNAL" Label="Internal" Instance="2525D_Internal.xml">
+        <SymbolSetRef ID="SS_INTERNAL" Label="Internal" Instance="jmsml_D_Internal.xml">
           <SymbolSetCode>
             <DigitOne>9</DigitOne>
             <DigitTwo>8</DigitTwo>
@@ -144,14 +144,14 @@
         <Field Name="Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD-6040." AmplifierID="Z" X="1" Y="-1"/>
       </Fields>
       <SymbolSets>
-        <SymbolSetRef ID="SS_AIR" Label="Air" Instance="2525D_Air.xml">
+        <SymbolSetRef ID="SS_AIR" Label="Air" Instance="jmsml_D_Air.xml">
           <SymbolSetCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>1</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
 
-        <SymbolSetRef ID="SS_AIR_MISSILE" Label="Air Missile" Instance="2525D_Air_Missile.xml">
+        <SymbolSetRef ID="SS_AIR_MISSILE" Label="Air Missile" Instance="jmsml_D_Air_Missile.xml">
           <SymbolSetCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>2</DigitTwo>
@@ -173,14 +173,14 @@
         <Field Name="Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD-6040." AmplifierID="Z" X="1" Y="-1"/>
       </Fields>
       <SymbolSets>
-        <SymbolSetRef ID="SS_SPACE" Label="Space" Instance="2525D_Space.xml">
+        <SymbolSetRef ID="SS_SPACE" Label="Space" Instance="jmsml_D_Space.xml">
           <SymbolSetCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>5</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
 
-        <SymbolSetRef ID="SS_SPACE_MISSILE" Label="Space Missile" Instance="2525D_Space_Missile.xml">
+        <SymbolSetRef ID="SS_SPACE_MISSILE" Label="Space Missile" Instance="jmsml_D_Space_Missile.xml">
           <SymbolSetCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>6</DigitTwo>
@@ -205,7 +205,7 @@
         <Field Name="Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD-6040." AmplifierID="Z" X="1" Y="-2"/>
       </Fields>
       <SymbolSets>
-        <SymbolSetRef ID="SS_SEA_SURFACE" Label="Sea Surface" Instance="2525D_Sea_Surface.xml">
+        <SymbolSetRef ID="SS_SEA_SURFACE" Label="Sea Surface" Instance="jmsml_D_Sea_Surface.xml">
           <SymbolSetCode>
             <DigitOne>3</DigitOne>
             <DigitTwo>0</DigitTwo>
