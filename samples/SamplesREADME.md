@@ -24,9 +24,15 @@ Generated using the following jmsml command line arguments, to extract just the 
 	jmsml.exe /x="Air" /s="^Air$" /q="Light"
 
 ### Coded Domain Tables ###
-The coded domain tables are comma separated files that have been exported from the JMSML library, for use by developers who need a straightforward dump of its contents.  It contains the label attribute and SIDC code for each element in the standard, exported to multiple files.  The /d switch value should be the location (folder) in which you want the files placed.
+The coded domain tables are comma separated files that have been exported from the JMSML library, for use by developers who need a straightforward dump of its contents.  It contains the label attribute and SIDC code for each element in the standard, exported to multiple files.  The /b switch value should be the location (folder) in which you want the files placed.
 
 The optional /e switch causes the domain value export to add Esri specific output to these files.
 
-	jmsml.exe /d=".'
-	jmsml.exe /d="." /e
+	jmsml.exe /b=".'
+	jmsml.exe /b="." /e
+
+### Coded Domain Entity/Modifier Tables ###
+Coded domain tables for entities and modifiers can be generated with or without the same optional filters/regular expressions documented above (with the /s, /q, /a, /l, and /p switches) by specifying the /xd switch.
+
+	jmsml.exe /xd="All_Coded_Domain"
+	jmsml.exe /xd="Air_Coded_Domain" /s="^Air$"

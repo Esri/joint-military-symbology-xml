@@ -50,6 +50,8 @@ namespace JointMilitarySymbologyLibrary
 
     public class Librarian
     {
+        private const string _domainSeperator = " : ";
+
         private string _configPath;
         private jmsmlConfig _configData;
         private Library _library;
@@ -257,6 +259,34 @@ namespace JointMilitarySymbologyLibrary
             return result;
         }
 
+        private string _buildEntityDomainString(SymbolSet s, SymbolSetEntity e, SymbolSetEntityEntityType eType, SymbolSetEntityEntityTypeEntitySubType eSubType)
+        {
+            string result = "\"" + s.Label + _domainSeperator + e.Label;
+            string code = Convert.ToString(s.SymbolSetCode.DigitOne) + Convert.ToString(s.SymbolSetCode.DigitTwo);
+
+            code = code + Convert.ToString(e.EntityCode.DigitOne) + Convert.ToString(e.EntityCode.DigitTwo);
+
+            if (eType != null)
+            {
+                result = result + _domainSeperator + eType.Label;
+                code = code + Convert.ToString(eType.EntityTypeCode.DigitOne) + Convert.ToString(eType.EntityTypeCode.DigitTwo);
+            }
+            else
+                code = code + "00";
+
+            if (eSubType != null)
+            {
+                result = result + _domainSeperator + eSubType.Label;
+                code = code + Convert.ToString(eSubType.EntitySubTypeCode.DigitOne) + Convert.ToString(eSubType.EntitySubTypeCode.DigitTwo);
+            }
+            else
+                code = code + "00";
+
+            result = result + "\"," + code;
+
+            return result;
+        }
+
         private string _buildModifierString(SymbolSet s, string modNumber, ModifiersTypeModifier mod)
         {
             string result = Convert.ToString(s.SymbolSetCode.DigitOne) + Convert.ToString(s.SymbolSetCode.DigitTwo);
@@ -270,13 +300,28 @@ namespace JointMilitarySymbologyLibrary
             return result;
         }
 
-        private void _exportEntities(string path, string symbolSetExpression = "", string expression = "", bool exportPoints = true, bool exportLines = true, bool exportAreas = true)
+        private string _buildModifierDomainString(SymbolSet s, string modNumber, ModifiersTypeModifier mod)
+        {
+            string result = "\"" + s.Label + _domainSeperator + "Modifier " + modNumber + _domainSeperator + mod.Label + "\"" + ",";
+
+            result = result + Convert.ToString(s.SymbolSetCode.DigitOne) + Convert.ToString(s.SymbolSetCode.DigitTwo) +
+                              Convert.ToString(mod.ModifierCode.DigitOne) + Convert.ToString(mod.ModifierCode.DigitTwo) +
+                              modNumber;
+            return result;
+        }
+
+        private void _exportEntities(string path, string symbolSetExpression = "", string expression = "", bool exportPoints = true, bool exportLines = true, bool exportAreas = true, bool domains = false)
         {
             string entityHeaders = "SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType";
+            string entityDomainHeaders = "Name,Value";
 
             using(var w = new StreamWriter(path))
             {
                 var line = string.Format("{0}", entityHeaders);
+
+                if (domains)
+                    line = string.Format("{0}", entityDomainHeaders);
+
                 w.WriteLine(line);
                 w.Flush();
 
@@ -288,13 +333,17 @@ namespace JointMilitarySymbologyLibrary
                     foreach (SymbolSetEntity e in s.Entities)
                     {
                         if (exportPoints && e.GeometryType == GeometryType.POINT ||
-                           exportLines && e.GeometryType == GeometryType.LINE ||
-                           exportAreas && e.GeometryType == GeometryType.AREA)
+                            exportLines && e.GeometryType == GeometryType.LINE ||
+                            exportAreas && e.GeometryType == GeometryType.AREA)
                         {
 
                             if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(e.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
                             {
-                                line = string.Format("{0}", _buildEntityString(s, e, null, null));
+                                if(domains)
+                                    line = string.Format("{0}", _buildEntityDomainString(s, e, null, null));
+                                else
+                                    line = string.Format("{0}", _buildEntityString(s, e, null, null));
+
                                 w.WriteLine(line);
                                 w.Flush();
                             }
@@ -305,7 +354,11 @@ namespace JointMilitarySymbologyLibrary
                                 {
                                     if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(eType.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
                                     {
-                                        line = string.Format("{0}", _buildEntityString(s, e, eType, null));
+                                        if(domains)
+                                            line = string.Format("{0}", _buildEntityDomainString(s, e, eType, null));
+                                        else
+                                            line = string.Format("{0}", _buildEntityString(s, e, eType, null));
+
                                         w.WriteLine(line);
                                         w.Flush();
                                     }
@@ -316,7 +369,11 @@ namespace JointMilitarySymbologyLibrary
                                         {
                                             if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(eSubType.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
                                             {
-                                                line = string.Format("{0}", _buildEntityString(s, e, eType, eSubType));
+                                                if(domains)
+                                                    line = string.Format("{0}", _buildEntityDomainString(s, e, eType, eSubType));
+                                                else
+                                                    line = string.Format("{0}", _buildEntityString(s, e, eType, eSubType));
+
                                                 w.WriteLine(line);
                                                 w.Flush();
                                             }
@@ -327,16 +384,23 @@ namespace JointMilitarySymbologyLibrary
                         }
                     }
                 }
+
+                w.Close();
             }
         }
 
-        private void _exportModifiers(string path, string symbolSetExpression = "", string expression = "")
+        private void _exportModifiers(string path, string symbolSetExpression = "", string expression = "", bool domains = false)
         {
             string modifierHeaders = "SymbolSet,ModifierNumber,Category,Modifier,Code";
+            string modifierDomainHeaders = "Name,Value";
 
             using (var w = new StreamWriter(path))
             {
                 var line = string.Format("{0}", modifierHeaders);
+
+                if (domains)
+                    line = string.Format("{0}", modifierDomainHeaders);
+
                 w.WriteLine(line);
                 w.Flush();
 
@@ -353,7 +417,11 @@ namespace JointMilitarySymbologyLibrary
                                 System.Text.RegularExpressions.Regex.IsMatch(mod.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase) ||
                                 System.Text.RegularExpressions.Regex.IsMatch(mod.Category, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
                             {
-                                line = string.Format("{0}", _buildModifierString(s, "1", mod));
+                                if (domains)
+                                    line = string.Format("{0}", _buildModifierDomainString(s, "1", mod));
+                                else
+                                    line = string.Format("{0}", _buildModifierString(s, "1", mod));
+
                                 w.WriteLine(line);
                                 w.Flush();
                             }
@@ -368,13 +436,19 @@ namespace JointMilitarySymbologyLibrary
                                 System.Text.RegularExpressions.Regex.IsMatch(mod.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase) ||
                                 System.Text.RegularExpressions.Regex.IsMatch(mod.Category, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
                             {
-                                line = string.Format("{0}", _buildModifierString(s, "2", mod));
+                                if (domains)
+                                    line = string.Format("{0}", _buildModifierDomainString(s, "2", mod));
+                                else
+                                    line = string.Format("{0}", _buildModifierString(s, "2", mod));
+
                                 w.WriteLine(line);
                                 w.Flush();
                             }
                         }
                     }
                 }
+
+                w.Close();
             }
         }
 
@@ -644,6 +718,7 @@ namespace JointMilitarySymbologyLibrary
                     id = id.Replace('(', '_');
                     id = id.Replace(')', '_');
                     id = id.Trim();
+                    id = id + "_MOD";
 
                     string modCode = tokens[3].PadLeft(2, '0');
 
@@ -1707,10 +1782,10 @@ namespace JointMilitarySymbologyLibrary
             return s;
         }
 
-        public void Export(string path, string symbolSetExpression = "", string expression = "", bool exportPoints = true, bool exportLines = true, bool exportAreas = true)
+        public void Export(string path, string symbolSetExpression = "", string expression = "", bool exportPoints = true, bool exportLines = true, bool exportAreas = true, bool asCodedDomain = false)
         {
-            _exportEntities(path + "_Entities.csv", symbolSetExpression, expression, exportPoints, exportLines, exportAreas);
-            _exportModifiers(path + "_Modifiers.csv", symbolSetExpression, expression);
+            _exportEntities(path + "_Entities.csv", symbolSetExpression, expression, exportPoints, exportLines, exportAreas, asCodedDomain);
+            _exportModifiers(path + "_Modifiers.csv", symbolSetExpression, expression, asCodedDomain);
         }
 
         public void ExportDomains(string path, bool asEsri)
