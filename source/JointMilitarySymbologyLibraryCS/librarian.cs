@@ -231,14 +231,14 @@ namespace JointMilitarySymbologyLibrary
 
             result = result + ",";
 
-            result = result + "\"" + e.Label + "\"";
+            result = result + e.Label.Replace(',', '-');
             code = code + Convert.ToString(e.EntityCode.DigitOne) + Convert.ToString(e.EntityCode.DigitTwo);
 
             result = result + ",";
 
             if (eType != null)
             {
-                result = result + "\"" + eType.Label + "\"";
+                result = result + eType.Label.Replace(',', '-');
                 code = code + Convert.ToString(eType.EntityTypeCode.DigitOne) + Convert.ToString(eType.EntityTypeCode.DigitTwo);
             }
             else
@@ -248,7 +248,7 @@ namespace JointMilitarySymbologyLibrary
 
             if (eSubType != null)
             {
-                result = result + "\"" + eSubType.Label + "\"";
+                result = result + eSubType.Label.Replace(',', '-');
                 code = code + Convert.ToString(eSubType.EntitySubTypeCode.DigitOne) + Convert.ToString(eSubType.EntitySubTypeCode.DigitTwo);
             }
             else
@@ -261,14 +261,14 @@ namespace JointMilitarySymbologyLibrary
 
         private string _buildEntityDomainString(SymbolSet s, SymbolSetEntity e, SymbolSetEntityEntityType eType, SymbolSetEntityEntityTypeEntitySubType eSubType)
         {
-            string result = "\"" + s.Label + _domainSeperator + e.Label;
+            string result = s.Label.Replace(',', '-') + _domainSeperator + e.Label.Replace(',', '-');
             string code = Convert.ToString(s.SymbolSetCode.DigitOne) + Convert.ToString(s.SymbolSetCode.DigitTwo);
 
             code = code + Convert.ToString(e.EntityCode.DigitOne) + Convert.ToString(e.EntityCode.DigitTwo);
 
             if (eType != null)
             {
-                result = result + _domainSeperator + eType.Label;
+                result = result + _domainSeperator + eType.Label.Replace(',', '-');
                 code = code + Convert.ToString(eType.EntityTypeCode.DigitOne) + Convert.ToString(eType.EntityTypeCode.DigitTwo);
             }
             else
@@ -276,13 +276,13 @@ namespace JointMilitarySymbologyLibrary
 
             if (eSubType != null)
             {
-                result = result + _domainSeperator + eSubType.Label;
+                result = result + _domainSeperator + eSubType.Label.Replace(',', '-');
                 code = code + Convert.ToString(eSubType.EntitySubTypeCode.DigitOne) + Convert.ToString(eSubType.EntitySubTypeCode.DigitTwo);
             }
             else
                 code = code + "00";
 
-            result = result + "\"," + code;
+            result = result + "," + code;
 
             return result;
         }
@@ -292,8 +292,8 @@ namespace JointMilitarySymbologyLibrary
             string result = Convert.ToString(s.SymbolSetCode.DigitOne) + Convert.ToString(s.SymbolSetCode.DigitTwo);
 
             result = result + "," + modNumber + ",";
-            result = result + "\"" + mod.Category + "\",";
-            result = result + "\"" + mod.Label + "\",";
+            result = result + mod.Category.Replace(',', '-') + ",";
+            result = result + mod.Label.Replace(',', '-') + ",";
 
             result = result + Convert.ToString(mod.ModifierCode.DigitOne) + Convert.ToString(mod.ModifierCode.DigitTwo);
 
@@ -302,7 +302,7 @@ namespace JointMilitarySymbologyLibrary
 
         private string _buildModifierDomainString(SymbolSet s, string modNumber, ModifiersTypeModifier mod)
         {
-            string result = "\"" + s.Label + _domainSeperator + "Modifier " + modNumber + _domainSeperator + mod.Label + "\"" + ",";
+            string result = s.Label.Replace(',', '-') + _domainSeperator + "Modifier " + modNumber + _domainSeperator + mod.Category.Replace(',','-') + _domainSeperator + mod.Label.Replace(',', '-') + ",";
 
             result = result + Convert.ToString(s.SymbolSetCode.DigitOne) + Convert.ToString(s.SymbolSetCode.DigitTwo) +
                               Convert.ToString(mod.ModifierCode.DigitOne) + Convert.ToString(mod.ModifierCode.DigitTwo) +
@@ -452,7 +452,7 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        private void _exportContext(string path, bool asEsri)
+        private void _exportContext(string path, bool dataValidation)
         {
             string headers = "Code,Value";
 
@@ -462,11 +462,11 @@ namespace JointMilitarySymbologyLibrary
 
                 foreach (LibraryContext obj in _library.Contexts)
                 {
-                    w.WriteLine(Convert.ToString(obj.ContextCode) + ',' + obj.Label);
+                    w.WriteLine(Convert.ToString(obj.ContextCode) + ',' + obj.Label.Replace(',', '-'));
                     w.Flush();
                 }
 
-                if (asEsri)
+                if (dataValidation)
                 {
                     w.WriteLine("-1,NotSet");
                     w.Flush();
@@ -476,7 +476,7 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        private void _exportStandardIdentity(string path, bool asEsri)
+        private void _exportStandardIdentity(string path, bool dataValidation)
         {
             string headers = "Code,Value";
 
@@ -486,11 +486,11 @@ namespace JointMilitarySymbologyLibrary
 
                 foreach(LibraryStandardIdentity obj in _library.StandardIdentities)
                 {
-                    w.WriteLine(Convert.ToString(obj.StandardIdentityCode) + ',' + obj.Label);
+                    w.WriteLine(Convert.ToString(obj.StandardIdentityCode) + ',' + obj.Label.Replace(',', '-'));
                     w.Flush();
                 }
 
-                if (asEsri)
+                if (dataValidation)
                 {
                     w.WriteLine("-1,NotSet");
                     w.Flush();
@@ -500,7 +500,7 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        private void _exportSymbolSet(string path, bool asEsri)
+        private void _exportSymbolSet(string path, bool dataValidation)
         {
             string headers = "Code,Value";
 
@@ -514,13 +514,13 @@ namespace JointMilitarySymbologyLibrary
                     {
                         foreach (LibraryDimensionSymbolSetRef obj in dimension.SymbolSets)
                         {
-                            w.WriteLine(Convert.ToString(obj.SymbolSetCode.DigitOne) + Convert.ToString(obj.SymbolSetCode.DigitTwo) + ',' + obj.Label);
+                            w.WriteLine(Convert.ToString(obj.SymbolSetCode.DigitOne) + Convert.ToString(obj.SymbolSetCode.DigitTwo) + ',' + obj.Label.Replace(',', '-'));
                             w.Flush();
                         }
                     }
                 }
 
-                if (asEsri)
+                if (dataValidation)
                 {
                     w.WriteLine("-1,NotSet");
                     w.Flush();
@@ -530,7 +530,7 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        private void _exportStatus(string path, bool asEsri)
+        private void _exportStatus(string path, bool dataValidation)
         {
             string headers = "Code,Value";
 
@@ -540,11 +540,11 @@ namespace JointMilitarySymbologyLibrary
 
                 foreach (LibraryStatus obj in _library.Statuses)
                 {
-                    w.WriteLine(Convert.ToString(obj.StatusCode) + ',' + obj.Label);
+                    w.WriteLine(Convert.ToString(obj.StatusCode) + ',' + obj.Label.Replace(',', '-'));
                     w.Flush();
                 }
 
-                if (asEsri)
+                if (dataValidation)
                 {
                     w.WriteLine("-1,NotSet");
                     w.Flush();
@@ -554,7 +554,7 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        private void _exportHQTFDummy(string path, bool asEsri)
+        private void _exportHQTFDummy(string path, bool dataValidation)
         {
             string headers = "Code,Value";
 
@@ -564,11 +564,11 @@ namespace JointMilitarySymbologyLibrary
 
                 foreach (LibraryHQTFDummy obj in _library.HQTFDummies)
                 {
-                    w.WriteLine(Convert.ToString(obj.HQTFDummyCode) + ',' + obj.Label);
+                    w.WriteLine(Convert.ToString(obj.HQTFDummyCode) + ',' + obj.Label.Replace(',', '-'));
                     w.Flush();
                 }
 
-                if (asEsri)
+                if (dataValidation)
                 {
                     w.WriteLine("-1,NotSet");
                     w.Flush();
@@ -578,7 +578,7 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        private void _exportAmplifier(string path, bool asEsri)
+        private void _exportAmplifier(string path, bool dataValidation)
         {
             string headers = "Code,Value";
 
@@ -592,13 +592,13 @@ namespace JointMilitarySymbologyLibrary
                     {
                         foreach (LibraryAmplifierGroupAmplifier obj in descript.Amplifiers)
                         {
-                            w.WriteLine(Convert.ToString(descript.AmplifierGroupCode) + Convert.ToString(obj.AmplifierCode) + ',' + obj.Label);
+                            w.WriteLine(Convert.ToString(descript.AmplifierGroupCode) + Convert.ToString(obj.AmplifierCode) + ',' + obj.Label.Replace(',','-'));
                             w.Flush();
                         }
                     }
                 }
 
-                if (asEsri)
+                if (dataValidation)
                 {
                     w.WriteLine("-1,NotSet");
                     w.Flush();
@@ -1788,14 +1788,14 @@ namespace JointMilitarySymbologyLibrary
             _exportModifiers(path + "_Modifiers.csv", symbolSetExpression, expression, asCodedDomain);
         }
 
-        public void ExportDomains(string path, bool asEsri)
+        public void ExportDomains(string path, bool dataValidation)
         {
-            _exportContext(path, asEsri);
-            _exportStandardIdentity(path, asEsri);
-            _exportSymbolSet(path, asEsri);
-            _exportStatus(path, asEsri);
-            _exportHQTFDummy(path, asEsri);
-            _exportAmplifier(path, asEsri);
+            _exportContext(path, dataValidation);
+            _exportStandardIdentity(path, dataValidation);
+            _exportSymbolSet(path, dataValidation);
+            _exportStatus(path, dataValidation);
+            _exportHQTFDummy(path, dataValidation);
+            _exportAmplifier(path, dataValidation);
         }
 
         public void Import(string path, string modPath, string symbolsetCode, string legacyCode)

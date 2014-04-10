@@ -1,183 +1,183 @@
 SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
-98,"Invalid Symbol",,,100000,POINT
-98,"Retired Symbol",,,110000,POINT
-01,"Military",,,110000,POINT
-01,"Military","Fixed-Wing",,110100,POINT
-01,"Military","Fixed-Wing","Medical Evacuation (MEDEVAC)",110101,POINT
-01,"Military","Fixed-Wing","Attack/Strike",110102,POINT
-01,"Military","Fixed-Wing","Bomber",110103,POINT
-01,"Military","Fixed-Wing","Fighter",110104,POINT
-01,"Military","Fixed-Wing","Fighter/Bomber",110105,POINT
-01,"Military","Fixed-Wing","Cargo",110107,POINT
-01,"Military","Fixed-Wing","Electronic/Combat (EC)/Jammer",110108,POINT
-01,"Military","Fixed-Wing","Tanker",110109,POINT
-01,"Military","Fixed-Wing","Patrol",110110,POINT
-01,"Military","Fixed-Wing","Reconnaissance",110111,POINT
-01,"Military","Fixed-Wing","Trainer",110112,POINT
-01,"Military","Fixed-Wing","Utility",110113,POINT
-01,"Military","Fixed-Wing","VSTOL",110114,POINT
-01,"Military","Fixed-Wing","Airborne Command Post (ACP)",110115,POINT
-01,"Military","Fixed-Wing","Airborne Early Warning (AEW)",110116,POINT
-01,"Military","Fixed-Wing","Antisurface Warfare (ASUW)",110117,POINT
-01,"Military","Fixed-Wing","Antisubmarine Warfare (ASW)",110118,POINT
-01,"Military","Fixed-Wing","Communications",110119,POINT
-01,"Military","Fixed-Wing","Combat Search and Rescue (CSAR)",110120,POINT
-01,"Military","Fixed-Wing","Electronic Support (ES)",110121,POINT
-01,"Military","Fixed-Wing","Government",110122,POINT
-01,"Military","Fixed-Wing","Mine Countermeasures (MCM)",110123,POINT
-01,"Military","Fixed-Wing","Personnel Recovery",110124,POINT
-01,"Military","Fixed-Wing","Search and Rescue",110125,POINT
-01,"Military","Fixed-Wing","Special Operations Forces",110126,POINT
-01,"Military","Fixed-Wing","Ultra Light",110127,POINT
-01,"Military","Fixed-Wing","Photographic Reconnaissance",110128,POINT
-01,"Military","Fixed-Wing","Very Important Person (VIP)",110129,POINT
-01,"Military","Fixed-Wing","Suppression of Enemy Air Defense",110130,POINT
-01,"Military","Fixed-Wing","Passenger",110131,POINT
-01,"Military","Fixed-Wing","Escort",110132,POINT
-01,"Military","Fixed-Wing","Electronic Attack (EA)",110133,POINT
-01,"Military","Rotary-Wing",,110200,POINT
-01,"Military","Unmanned Aircraft (UA)/Unmanned Aerial Vehicle (UAV)/Unmanned Aircraft System (UAS)/Remote Piloted Vehicle (RPV)",,110300,POINT
-01,"Military","Vertical-Takeoff UAV (VT-UAV)",,110400,POINT
-01,"Military","Lighter Than Air",,110500,POINT
-01,"Military","Airship",,110600,POINT
-01,"Military","Tethered Lighter Than Air",,110700,POINT
-01,"Civilian",,,120000,POINT
-01,"Civilian","Fixed-Wing",,120100,POINT
-01,"Civilian","Rotary-Wing",,120200,POINT
-01,"Civilian","Unmanned Aircraft (UA)/Unmanned Aerial Vehicle (UAV)/Unmanned Aircraft System (UAS)/Remote Piloted Vehicle (RPV)",,120300,POINT
-01,"Civilian","Lighter Than Air",,120400,POINT
-01,"Civilian","Airship",,120500,POINT
-01,"Civilian","Tethered Lighter Than Air",,120600,POINT
-01,"Weapon",,,130000,POINT
-01,"Weapon","Bomb",,130100,POINT
-01,"Weapon","Decoy",,130200,POINT
-01,"Manual Track",,,140000,POINT
-02,"Missile",,,110000,POINT
-05,"Military",,,110000,POINT
-05,"Military","Space Vehicle",,110100,POINT
-05,"Military","Re-Entry Vehicle",,110200,POINT
-05,"Military","Planet Lander",,110300,POINT
-05,"Military","Orbiter Shuttle",,110400,POINT
-05,"Military","Capsule",,110500,POINT
-05,"Military","General Satellite",,110600,POINT
-05,"Military","Satellite",,110700,POINT
-05,"Military","Antisatellite Weapon",,110800,POINT
-05,"Military","Astronomical Satellite",,110900,POINT
-05,"Military","Biosatellite",,111000,POINT
-05,"Military","Communications Satellite",,111100,POINT
-05,"Military","Earth Observation Satellite",,111200,POINT
-05,"Military","Miniaturized Satellite",,111300,POINT
-05,"Military","Navigational Satellite",,111400,POINT
-05,"Military","Reconnaissance Satellite",,111500,POINT
-05,"Military","Space Station",,111600,POINT
-05,"Military","Tethered Satellite",,111700,POINT
-05,"Military","Weather Satellite",,111800,POINT
-05,"Military","Space Launched Vehicle (SLV)",,111900,POINT
-05,"Civilian",,,120000,POINT
-05,"Civilian","Orbiter Shuttle",,120100,POINT
-05,"Civilian","Capsule",,120200,POINT
-05,"Civilian","Satellite",,120300,POINT
-05,"Civilian","Astronomical Satellite",,120400,POINT
-05,"Civilian","Biosatellite",,120500,POINT
-05,"Civilian","Communications Satellite",,120600,POINT
-05,"Civilian","Earth Observation Satellite",,120700,POINT
-05,"Civilian","Miniaturized Satellite",,120800,POINT
-05,"Civilian","Navigational Satellite",,120900,POINT
-05,"Civilian","Space Station",,121000,POINT
-05,"Civilian","Tethered Satellite",,121100,POINT
-05,"Civilian","Weather Satellite",,121200,POINT
-05,"Manual Track",,,130000,POINT
-06,"Missile",,,110000,POINT
-30,"Military",,,110000,POINT
-30,"Military Combatant",,,120000,POINT
-30,"Military Combatant","Carrier",,120100,POINT
-30,"Military Combatant","Surface Combatant, Line",,120200,POINT
-30,"Military Combatant","Surface Combatant, Line","Battleship",120201,POINT
-30,"Military Combatant","Surface Combatant, Line","Cruiser",120202,POINT
-30,"Military Combatant","Surface Combatant, Line","Destroyer",120203,POINT
-30,"Military Combatant","Surface Combatant, Line","Frigate",120204,POINT
-30,"Military Combatant","Surface Combatant, Line","Corvette",120205,POINT
-30,"Military Combatant","Surface Combatant, Line","Littoral Combat Ship",120206,POINT
-30,"Military Combatant","Amphibious Warfare Ship",,120300,POINT
-30,"Military Combatant","Amphibious Warfare Ship","Amphibious Command Ship",120301,POINT
-30,"Military Combatant","Amphibious Warfare Ship","Amphibious Assault, Non-specified",120302,POINT
-30,"Military Combatant","Amphibious Warfare Ship","Amphibious Assault Ship, General",120303,POINT
-30,"Military Combatant","Amphibious Warfare Ship","Amphibious Assault Ship, Multipurpose",120304,POINT
-30,"Military Combatant","Amphibious Warfare Ship","Amphibious Assault Ship, Helicopter",120305,POINT
-30,"Military Combatant","Amphibious Warfare Ship","Amphibious Transport Dock",120306,POINT
-30,"Military Combatant","Amphibious Warfare Ship","Landing Ship",120307,POINT
-30,"Military Combatant","Amphibious Warfare Ship","Landing Craft",120308,POINT
-30,"Military Combatant","Mine Warfare Ship",,120400,POINT
-30,"Military Combatant","Mine Warfare Ship","Mine Layer",120401,POINT
-30,"Military Combatant","Mine Warfare Ship","Mine Sweeper",120402,POINT
-30,"Military Combatant","Mine Warfare Ship","Mine Sweeper, Drone",120403,POINT
-30,"Military Combatant","Mine Warfare Ship","Mine Hunter",120404,POINT
-30,"Military Combatant","Mine Warfare Ship","Mine Countermeasures",120405,POINT
-30,"Military Combatant","Mine Warfare Ship","Mine Countermeasures, Support Ship",120406,POINT
-30,"Military Combatant","Patrol Boat",,120500,POINT
-30,"Military Combatant","Patrol Boat","Patrol Craft, Submarine Chaser/Escort, General",120501,POINT
-30,"Military Combatant","Patrol Boat","Patrol Ship, General",120502,POINT
-30,"Military Combatant","Decoy",,120600,POINT
-30,"Military Combatant","Unmanned Surface Water Vehicle (USV)",,120700,POINT
-30,"Military Combatant","Speedboat",,120800,POINT
-30,"Military Combatant","Speedboat","Rigid-Hull Inflatable Boat (RHIB)",120801,POINT
-30,"Military Combatant","Jet Ski",,120900,POINT
-30,"Military Combatant","Navy Task Organization",,121000,POINT
-30,"Military Combatant","Navy Task Organization","Navy Task Element",121001,POINT
-30,"Military Combatant","Navy Task Organization","Navy Task Force",121002,POINT
-30,"Military Combatant","Navy Task Organization","Navy Task Group",121003,POINT
-30,"Military Combatant","Navy Task Organization","Navy Task Unit",121004,POINT
-30,"Military Combatant","Navy Task Organization","Convoy",121005,POINT
-30,"Military Combatant","Sea Based X-Band Radar",,121100,POINT
-30,"Military Non-Combatant",,,130000,POINT
-30,"Military Non-Combatant","Auxilliary Ship",,130100,POINT
-30,"Military Non-Combatant","Auxilliary Ship","Ammunition Ship",130101,POINT
-30,"Military Non-Combatant","Auxilliary Ship","Naval Stores Ship",130102,POINT
-30,"Military Non-Combatant","Auxilliary Ship","Auxiliary Flag Ship",130103,POINT
-30,"Military Non-Combatant","Auxilliary Ship","Intelligence Collector",130104,POINT
-30,"Military Non-Combatant","Auxilliary Ship","Oceanographic Research Ship",130105,POINT
-30,"Military Non-Combatant","Auxilliary Ship","Survey Ship",130106,POINT
-30,"Military Non-Combatant","Auxilliary Ship","Hospital Ship",130107,POINT
-30,"Military Non-Combatant","Auxilliary Ship","Naval Cargo Ship",130108,POINT
-30,"Military Non-Combatant","Auxilliary Ship","Combat Support Ship, Fast",130109,POINT
-30,"Military Non-Combatant","Auxilliary Ship","Oiler, Replenishment",130110,POINT
-30,"Military Non-Combatant","Auxilliary Ship","Repair Ship",130111,POINT
-30,"Military Non-Combatant","Auxilliary Ship","Submarine Tender",130112,POINT
-30,"Military Non-Combatant","Auxilliary Ship","Tug, Ocean Going",130113,POINT
-30,"Military Non-Combatant","Service Craft/Yard",,130200,POINT
-30,"Military Non-Combatant","Service Craft/Yard","Barge, Not Self-Propelled",130201,POINT
-30,"Military Non-Combatant","Service Craft/Yard","Barge, Self-Propelled",130202,POINT
-30,"Military Non-Combatant","Service Craft/Yard","Tug, Harbor",130203,POINT
-30,"Military Non-Combatant","Service Craft/Yard","Launch",130204,POINT
-30,"Civilian",,,140000,POINT
-30,"Civilian","Merchant Ship",,140100,POINT
-30,"Civilian","Merchant Ship","Cargo, General",140101,POINT
-30,"Civilian","Merchant Ship","Container Ship",140102,POINT
-30,"Civilian","Merchant Ship","Dredge",140103,POINT
-30,"Civilian","Merchant Ship","Roll On/Roll Off",140104,POINT
-30,"Civilian","Merchant Ship","Ferry",140105,POINT
-30,"Civilian","Merchant Ship","Heavy Lift",140106,POINT
-30,"Civilian","Merchant Ship","Hovercraft",140107,POINT
-30,"Civilian","Merchant Ship","Lash Carrier (with Barges)",140108,POINT
-30,"Civilian","Merchant Ship","Oiler/Tanker",140109,POINT
-30,"Civilian","Merchant Ship","Passenger",140110,POINT
-30,"Civilian","Merchant Ship","Tug, Ocean Going",140111,POINT
-30,"Civilian","Merchant Ship","Tow",140112,POINT
-30,"Civilian","Merchant Ship","Transport Ship, Hazardous Material",140113,POINT
-30,"Civilian","Merchant Ship","Junk/Dhow",140114,POINT
-30,"Civilian","Merchant Ship","Barge, Not Self-Propelled",140115,POINT
-30,"Civilian","Merchant Ship","Hospital Ship",140116,POINT
-30,"Civilian","Fishing Vessel",,140200,POINT
-30,"Civilian","Fishing Vessel","Drifter",140201,POINT
-30,"Civilian","Fishing Vessel","Trawler",140202,POINT
-30,"Civilian","Fishing Vessel","Dredger",140203,POINT
-30,"Civilian","Law Enforcement Vessel",,140300,POINT
-30,"Civilian","Leisure Craft, Sailing",,140400,POINT
-30,"Civilian","Leisure Craft, Motorized",,140500,POINT
-30,"Civilian","Leisure Craft, Motorized","Rigid-Hull Inflatable Boat (RHIB)",140501,POINT
-30,"Civilian","Leisure Craft, Motorized","Speedboat",140502,POINT
-30,"Civilian","Jet Ski",,140600,POINT
-30,"Civilian","Unmanned Surface Water Vehicle (USV)",,140700,POINT
-30,"Own Ship",,,150000,POINT
-30,"Fused Track",,,160000,POINT
-30,"Manual Track",,,170000,POINT
+98,Invalid Symbol,,,100000,POINT
+98,Retired Symbol,,,110000,POINT
+01,Military,,,110000,POINT
+01,Military,Fixed-Wing,,110100,POINT
+01,Military,Fixed-Wing,Medical Evacuation (MEDEVAC),110101,POINT
+01,Military,Fixed-Wing,Attack/Strike,110102,POINT
+01,Military,Fixed-Wing,Bomber,110103,POINT
+01,Military,Fixed-Wing,Fighter,110104,POINT
+01,Military,Fixed-Wing,Fighter/Bomber,110105,POINT
+01,Military,Fixed-Wing,Cargo,110107,POINT
+01,Military,Fixed-Wing,Electronic/Combat (EC)/Jammer,110108,POINT
+01,Military,Fixed-Wing,Tanker,110109,POINT
+01,Military,Fixed-Wing,Patrol,110110,POINT
+01,Military,Fixed-Wing,Reconnaissance,110111,POINT
+01,Military,Fixed-Wing,Trainer,110112,POINT
+01,Military,Fixed-Wing,Utility,110113,POINT
+01,Military,Fixed-Wing,VSTOL,110114,POINT
+01,Military,Fixed-Wing,Airborne Command Post (ACP),110115,POINT
+01,Military,Fixed-Wing,Airborne Early Warning (AEW),110116,POINT
+01,Military,Fixed-Wing,Antisurface Warfare (ASUW),110117,POINT
+01,Military,Fixed-Wing,Antisubmarine Warfare (ASW),110118,POINT
+01,Military,Fixed-Wing,Communications,110119,POINT
+01,Military,Fixed-Wing,Combat Search and Rescue (CSAR),110120,POINT
+01,Military,Fixed-Wing,Electronic Support (ES),110121,POINT
+01,Military,Fixed-Wing,Government,110122,POINT
+01,Military,Fixed-Wing,Mine Countermeasures (MCM),110123,POINT
+01,Military,Fixed-Wing,Personnel Recovery,110124,POINT
+01,Military,Fixed-Wing,Search and Rescue,110125,POINT
+01,Military,Fixed-Wing,Special Operations Forces,110126,POINT
+01,Military,Fixed-Wing,Ultra Light,110127,POINT
+01,Military,Fixed-Wing,Photographic Reconnaissance,110128,POINT
+01,Military,Fixed-Wing,Very Important Person (VIP),110129,POINT
+01,Military,Fixed-Wing,Suppression of Enemy Air Defense,110130,POINT
+01,Military,Fixed-Wing,Passenger,110131,POINT
+01,Military,Fixed-Wing,Escort,110132,POINT
+01,Military,Fixed-Wing,Electronic Attack (EA),110133,POINT
+01,Military,Rotary-Wing,,110200,POINT
+01,Military,Unmanned Aircraft (UA)/Unmanned Aerial Vehicle (UAV)/Unmanned Aircraft System (UAS)/Remote Piloted Vehicle (RPV),,110300,POINT
+01,Military,Vertical-Takeoff UAV (VT-UAV),,110400,POINT
+01,Military,Lighter Than Air,,110500,POINT
+01,Military,Airship,,110600,POINT
+01,Military,Tethered Lighter Than Air,,110700,POINT
+01,Civilian,,,120000,POINT
+01,Civilian,Fixed-Wing,,120100,POINT
+01,Civilian,Rotary-Wing,,120200,POINT
+01,Civilian,Unmanned Aircraft (UA)/Unmanned Aerial Vehicle (UAV)/Unmanned Aircraft System (UAS)/Remote Piloted Vehicle (RPV),,120300,POINT
+01,Civilian,Lighter Than Air,,120400,POINT
+01,Civilian,Airship,,120500,POINT
+01,Civilian,Tethered Lighter Than Air,,120600,POINT
+01,Weapon,,,130000,POINT
+01,Weapon,Bomb,,130100,POINT
+01,Weapon,Decoy,,130200,POINT
+01,Manual Track,,,140000,POINT
+02,Missile,,,110000,POINT
+05,Military,,,110000,POINT
+05,Military,Space Vehicle,,110100,POINT
+05,Military,Re-Entry Vehicle,,110200,POINT
+05,Military,Planet Lander,,110300,POINT
+05,Military,Orbiter Shuttle,,110400,POINT
+05,Military,Capsule,,110500,POINT
+05,Military,General Satellite,,110600,POINT
+05,Military,Satellite,,110700,POINT
+05,Military,Antisatellite Weapon,,110800,POINT
+05,Military,Astronomical Satellite,,110900,POINT
+05,Military,Biosatellite,,111000,POINT
+05,Military,Communications Satellite,,111100,POINT
+05,Military,Earth Observation Satellite,,111200,POINT
+05,Military,Miniaturized Satellite,,111300,POINT
+05,Military,Navigational Satellite,,111400,POINT
+05,Military,Reconnaissance Satellite,,111500,POINT
+05,Military,Space Station,,111600,POINT
+05,Military,Tethered Satellite,,111700,POINT
+05,Military,Weather Satellite,,111800,POINT
+05,Military,Space Launched Vehicle (SLV),,111900,POINT
+05,Civilian,,,120000,POINT
+05,Civilian,Orbiter Shuttle,,120100,POINT
+05,Civilian,Capsule,,120200,POINT
+05,Civilian,Satellite,,120300,POINT
+05,Civilian,Astronomical Satellite,,120400,POINT
+05,Civilian,Biosatellite,,120500,POINT
+05,Civilian,Communications Satellite,,120600,POINT
+05,Civilian,Earth Observation Satellite,,120700,POINT
+05,Civilian,Miniaturized Satellite,,120800,POINT
+05,Civilian,Navigational Satellite,,120900,POINT
+05,Civilian,Space Station,,121000,POINT
+05,Civilian,Tethered Satellite,,121100,POINT
+05,Civilian,Weather Satellite,,121200,POINT
+05,Manual Track,,,130000,POINT
+06,Missile,,,110000,POINT
+30,Military,,,110000,POINT
+30,Military Combatant,,,120000,POINT
+30,Military Combatant,Carrier,,120100,POINT
+30,Military Combatant,Surface Combatant- Line,,120200,POINT
+30,Military Combatant,Surface Combatant- Line,Battleship,120201,POINT
+30,Military Combatant,Surface Combatant- Line,Cruiser,120202,POINT
+30,Military Combatant,Surface Combatant- Line,Destroyer,120203,POINT
+30,Military Combatant,Surface Combatant- Line,Frigate,120204,POINT
+30,Military Combatant,Surface Combatant- Line,Corvette,120205,POINT
+30,Military Combatant,Surface Combatant- Line,Littoral Combat Ship,120206,POINT
+30,Military Combatant,Amphibious Warfare Ship,,120300,POINT
+30,Military Combatant,Amphibious Warfare Ship,Amphibious Command Ship,120301,POINT
+30,Military Combatant,Amphibious Warfare Ship,Amphibious Assault- Non-specified,120302,POINT
+30,Military Combatant,Amphibious Warfare Ship,Amphibious Assault Ship- General,120303,POINT
+30,Military Combatant,Amphibious Warfare Ship,Amphibious Assault Ship- Multipurpose,120304,POINT
+30,Military Combatant,Amphibious Warfare Ship,Amphibious Assault Ship- Helicopter,120305,POINT
+30,Military Combatant,Amphibious Warfare Ship,Amphibious Transport Dock,120306,POINT
+30,Military Combatant,Amphibious Warfare Ship,Landing Ship,120307,POINT
+30,Military Combatant,Amphibious Warfare Ship,Landing Craft,120308,POINT
+30,Military Combatant,Mine Warfare Ship,,120400,POINT
+30,Military Combatant,Mine Warfare Ship,Mine Layer,120401,POINT
+30,Military Combatant,Mine Warfare Ship,Mine Sweeper,120402,POINT
+30,Military Combatant,Mine Warfare Ship,Mine Sweeper- Drone,120403,POINT
+30,Military Combatant,Mine Warfare Ship,Mine Hunter,120404,POINT
+30,Military Combatant,Mine Warfare Ship,Mine Countermeasures,120405,POINT
+30,Military Combatant,Mine Warfare Ship,Mine Countermeasures- Support Ship,120406,POINT
+30,Military Combatant,Patrol Boat,,120500,POINT
+30,Military Combatant,Patrol Boat,Patrol Craft- Submarine Chaser/Escort- General,120501,POINT
+30,Military Combatant,Patrol Boat,Patrol Ship- General,120502,POINT
+30,Military Combatant,Decoy,,120600,POINT
+30,Military Combatant,Unmanned Surface Water Vehicle (USV),,120700,POINT
+30,Military Combatant,Speedboat,,120800,POINT
+30,Military Combatant,Speedboat,Rigid-Hull Inflatable Boat (RHIB),120801,POINT
+30,Military Combatant,Jet Ski,,120900,POINT
+30,Military Combatant,Navy Task Organization,,121000,POINT
+30,Military Combatant,Navy Task Organization,Navy Task Element,121001,POINT
+30,Military Combatant,Navy Task Organization,Navy Task Force,121002,POINT
+30,Military Combatant,Navy Task Organization,Navy Task Group,121003,POINT
+30,Military Combatant,Navy Task Organization,Navy Task Unit,121004,POINT
+30,Military Combatant,Navy Task Organization,Convoy,121005,POINT
+30,Military Combatant,Sea Based X-Band Radar,,121100,POINT
+30,Military Non-Combatant,,,130000,POINT
+30,Military Non-Combatant,Auxilliary Ship,,130100,POINT
+30,Military Non-Combatant,Auxilliary Ship,Ammunition Ship,130101,POINT
+30,Military Non-Combatant,Auxilliary Ship,Naval Stores Ship,130102,POINT
+30,Military Non-Combatant,Auxilliary Ship,Auxiliary Flag Ship,130103,POINT
+30,Military Non-Combatant,Auxilliary Ship,Intelligence Collector,130104,POINT
+30,Military Non-Combatant,Auxilliary Ship,Oceanographic Research Ship,130105,POINT
+30,Military Non-Combatant,Auxilliary Ship,Survey Ship,130106,POINT
+30,Military Non-Combatant,Auxilliary Ship,Hospital Ship,130107,POINT
+30,Military Non-Combatant,Auxilliary Ship,Naval Cargo Ship,130108,POINT
+30,Military Non-Combatant,Auxilliary Ship,Combat Support Ship- Fast,130109,POINT
+30,Military Non-Combatant,Auxilliary Ship,Oiler- Replenishment,130110,POINT
+30,Military Non-Combatant,Auxilliary Ship,Repair Ship,130111,POINT
+30,Military Non-Combatant,Auxilliary Ship,Submarine Tender,130112,POINT
+30,Military Non-Combatant,Auxilliary Ship,Tug- Ocean Going,130113,POINT
+30,Military Non-Combatant,Service Craft/Yard,,130200,POINT
+30,Military Non-Combatant,Service Craft/Yard,Barge- Not Self-Propelled,130201,POINT
+30,Military Non-Combatant,Service Craft/Yard,Barge- Self-Propelled,130202,POINT
+30,Military Non-Combatant,Service Craft/Yard,Tug- Harbor,130203,POINT
+30,Military Non-Combatant,Service Craft/Yard,Launch,130204,POINT
+30,Civilian,,,140000,POINT
+30,Civilian,Merchant Ship,,140100,POINT
+30,Civilian,Merchant Ship,Cargo- General,140101,POINT
+30,Civilian,Merchant Ship,Container Ship,140102,POINT
+30,Civilian,Merchant Ship,Dredge,140103,POINT
+30,Civilian,Merchant Ship,Roll On/Roll Off,140104,POINT
+30,Civilian,Merchant Ship,Ferry,140105,POINT
+30,Civilian,Merchant Ship,Heavy Lift,140106,POINT
+30,Civilian,Merchant Ship,Hovercraft,140107,POINT
+30,Civilian,Merchant Ship,Lash Carrier (with Barges),140108,POINT
+30,Civilian,Merchant Ship,Oiler/Tanker,140109,POINT
+30,Civilian,Merchant Ship,Passenger,140110,POINT
+30,Civilian,Merchant Ship,Tug- Ocean Going,140111,POINT
+30,Civilian,Merchant Ship,Tow,140112,POINT
+30,Civilian,Merchant Ship,Transport Ship- Hazardous Material,140113,POINT
+30,Civilian,Merchant Ship,Junk/Dhow,140114,POINT
+30,Civilian,Merchant Ship,Barge- Not Self-Propelled,140115,POINT
+30,Civilian,Merchant Ship,Hospital Ship,140116,POINT
+30,Civilian,Fishing Vessel,,140200,POINT
+30,Civilian,Fishing Vessel,Drifter,140201,POINT
+30,Civilian,Fishing Vessel,Trawler,140202,POINT
+30,Civilian,Fishing Vessel,Dredger,140203,POINT
+30,Civilian,Law Enforcement Vessel,,140300,POINT
+30,Civilian,Leisure Craft- Sailing,,140400,POINT
+30,Civilian,Leisure Craft- Motorized,,140500,POINT
+30,Civilian,Leisure Craft- Motorized,Rigid-Hull Inflatable Boat (RHIB),140501,POINT
+30,Civilian,Leisure Craft- Motorized,Speedboat,140502,POINT
+30,Civilian,Jet Ski,,140600,POINT
+30,Civilian,Unmanned Surface Water Vehicle (USV),,140700,POINT
+30,Own Ship,,,150000,POINT
+30,Fused Track,,,160000,POINT
+30,Manual Track,,,170000,POINT
