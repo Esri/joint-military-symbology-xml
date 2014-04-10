@@ -17,6 +17,14 @@
     </xs:restriction>
   </xs:simpleType>
 
+  <xs:simpleType name="StandardType">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="ALL"/>
+      <xs:enumeration value="MILSTD_2525"/>
+      <xs:enumeration value="NATO_APP6"/>
+    </xs:restriction>
+  </xs:simpleType>
+
   <xs:simpleType name="ShapeType">
     <xs:restriction base="xs:token">
       <xs:enumeration value="NA"/>
@@ -157,6 +165,7 @@
           <xs:attributeGroup ref="GraphicIdentifierAttributeGroup"/>
           <xs:attribute name="Category" type="xs:token" use="required"/>
           <xs:attribute name="LimitUseTo" type="xs:IDREFS" use="optional"/>
+          <xs:attribute name="Standard" type="StandardType" use="optional" default="ALL"/>
         </xs:complexType>
       </xs:element>
     </xs:sequence>
