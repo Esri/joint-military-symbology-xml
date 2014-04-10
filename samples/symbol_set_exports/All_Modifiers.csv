@@ -1,138 +1,138 @@
 SymbolSet,ModifierNumber,Category,Modifier,Code
-01,1,"Military Aircraft Type","Attack/Strike",01
-01,1,"Military Aircraft Type","Bomber",02
-01,1,"Aircraft Type","Cargo",03
-01,1,"Military Aircraft Type","Fighter",04
-01,1,"Military Aircraft Type","Interceptor",05
-01,1,"Aircraft Type","Tanker",06
-01,1,"Aircraft Type","Utility",07
-01,1,"Aircraft Type","VSTOL/VTOL",08
-01,1,"Aircraft Type","Passenger",09
-01,1,"Aircraft Type","Ultra Light",10
-01,1,"Military Aircraft Type","Airborne Command Post (ACP)",11
-01,1,"Military Aircraft Type","Airborne Early Warning (AEW)",12
-01,1,"Aircraft Type","Government",13
-01,1,"Mission Area","Medical Evacuation (MEDEVAC)",14
-01,1,"Military Mission Area","Escort",15
-01,1,"Military Mission Area","Electronic Combat (EC)/Jammer",16
-01,1,"Mission Area","Patrol",17
-01,1,"Mission Area","Reconnaissance",18
-01,1,"Mission Area","Trainer",19
-01,1,"Mission Area","Photographic (Reconnaissance)",20
-01,1,"Mission Area","Personnel Recovery",21
-01,1,"Military Mission Area","Antisubmarine Warfare",22
-01,1,"Mission Area","Communications",23
-01,1,"Military Mission Area","Electronic Support (ES)",24
-01,1,"Military Mission Area","Mine Countermeasures (MCM)",25
-01,1,"Mission Area","Search and Rescue",26
-01,1,"Military Mission Area","Special Operations Forces",27
-01,1,"Military Mission Area","Surface Warfare",28
-01,1,"Mission Area","Very Important Person (VIP) Transport",29
-01,1,"Military Mission Area","Combat Search and Rescue (CSAR)",30
-01,1,"Military Mission Area","Suppression of Enemy Air Defenses",31
-01,1,"Military Mission Area","Antisurface Warfare",32
-01,1,"Military Mission Area","Fighter/Bomber",33
-01,1,"Mission Area","Intensive Care",34
-01,1,"Military Mission Area","Electronic Attack (EA)",35
-01,1,"Mission Area","Multimission",36
-01,1,"crime","Hijacking",37
-01,1,"Mission Area","ASW Helo - LAMPS",38
-01,1,"Mission Area","ASW Helo – SH-60R",39
-01,2,"Cargo/Transport Capacity","Heavy",01
-01,2,"Cargo/Transport Capacity","Medium",02
-01,2,"Cargo/Transport Capacity","Light",03
-01,2,"Re-fueling Capability","Boom-only",04
-01,2,"Re-fueling Capability","Drogue-only",05
-01,2,"Re-fueling Capability","Boom and Drogue",06
-01,2,"Range","Close Range",07
-01,2,"Range","Short Range",08
-01,2,"Range","Medium Range",09
-01,2,"Range","Long Range",10
-01,2,"Track Link Availability","Downlinked",11
-02,1,"Launch Origin","Air",01
-02,1,"Launch Origin","Surface",02
-02,1,"Launch Origin","Subsurface",03
-02,1,"Launch Origin","Space",04
-02,1,"Missile Class","Anti-Ballistic",05
-02,1,"Missile Class","Ballistic",06
-02,1,"Missile Class","Cruise",07
-02,1,"Missile Class","Interceptor",08
-02,2,"Missile Destination","Air",01
-02,2,"Missile Destination","Surface",02
-02,2,"Missile Destination","Subsurface",03
-02,2,"Missile Destination","Space",04
-02,2,"Missile Status","Launched",05
-02,2,"Missile Status","Missile",06
-02,2,"Missile Type-BMD","Patriot",07
-02,2,"Missile Type-AAW","Standard Missile - 2 (SM-2)",08
-02,2,"Missile Type-AAW","Standard Missile - 6 (SM-6)",09
-02,2,"Missile Type-AAW","Evolved Sea Sparrow Missile (ESSM)",10
-02,2,"Missile Type-AAW","Rolling Airframe Missile (RAM)",11
-02,2,"Missile Range","Short Range",12
-02,2,"Missile Range","Medium Range",13
-02,2,"Missile Range","Intermediate Range",14
-02,2,"Missile Range","Long Range",15
-02,2,"Missile Range","Intercontinental",16
-05,1,"Orbit","Low Earth Orbit (LEO)",01
-05,1,"Orbit","Medium Earth Orbit (MEO)",02
-05,1,"Orbit","High Earth Orbit (MEO)",03
-05,1,"Orbit","Geosynchronous Orbit (GSO)",04
-05,1,"Orbit","Geostationary Orbit (GO)",05
-05,1,"Orbit","Molniya Orbit (MO)",06
-05,2,"Sensor","Optical",01
-05,2,"Sensor","Infrared",02
-05,2,"Sensor","Radar",03
-05,2,"Sensor","Signal Intelligence (SIGINT)",04
-06,1,"Missile Class","Ballistic",01
-06,1,"Launch Origin","Space",02
-06,1,"Missile Class","Interceptor",03
-06,2,"Missile Range","Short",01
-06,2,"Missile Range","Medium",02
-06,2,"Missile Range","Intermediate",03
-06,2,"Missile Range","Long",04
-06,2,"Missile Range","Intercontinental",05
-06,2,"Missile Type - BMD","Arrow",06
-06,2,"Missile Type - BMD","Ground-Based Interceptor (GBI)",07
-06,2,"Missile Type - BMD","Patriot",08
-06,2,"Missile Type - BMD","Standard Missile Terminal Phase (SM-T)",09
-06,2,"Missile Type - BMD","Standard Missile - 3 (SM-3)",10
-06,2,"Missile Type - BMD","Terminal High Altitude Area Defense (THAAD)",11
-06,2,"Launch Origin","Space",12
-30,1,"Mission Area","Own Ship",01
-30,1,"Mission Area","Antiair Warfare",02
-30,1,"Mission Area","Antisubmarine Warfare",03
-30,1,"Mission Area","Escort",04
-30,1,"Mission Area","Electronic Warfare",05
-30,1,"Mission Area","Intelligence, Surveillance, Reconnaissance",06
-30,1,"Mission Area","Mine Countermeasures",07
-30,1,"Mission Area","Missile Defense",08
-30,1,"Mission Area","Medical",09
-30,1,"Mission Area","Mine Warfare",10
-30,1,"Mission Area","Remote Multimission Vehicle (RMV)",11
-30,1,"Asset Capability","Special Operations Forces (SOF)",12
-30,1,"Mission Area","Surface Warfare",13
-30,1,"Weapons Capability","Ballistic Missile",14
-30,1,"Weapons Capability","Guided Missile",15
-30,1,"Weapons Capability","Other Guided Missile",16
-30,1,"Weapons Capability","Torpedo",17
-30,1,"Asset Capability","Drone Equipped",18
-30,1,"Asset Capability","Helicopter/VSTOL Equipped",19
-30,1,"Mission Area","Ballistic Missile Defense, Shooter",20
-30,1,"Mission Area","Ballistic Missile, Long Range Surveillance, and Track (LRST)",21
-30,1,"Mission Area","Sea Based X-Band Radar",22
-30,1,"Crime","Hijacking/Hijacked",23
-30,2,"Ship Propulsion","Nuclear Powered",01
-30,2,"Ship Capacity","Heavy",02
-30,2,"Ship Capacity","Light",03
-30,2,"Ship Capacity","Medium",04
-30,2,"Cargo Capacity","Dock",05
-30,2,"Cargo Capacity","Logistics",06
-30,2,"Cargo Capacity","Tank",07
-30,2,"Cargo Capacity","Vehicle",08
-30,2,"Ship Mobility","Fast",09
-30,2,"Ship Mobility","Air-Cushioned (US)",10
-30,2,"Ship Mobility","Air-Cushioned (NATO)",11
-30,2,"Ship Mobility","Hydrofoil",12
-30,2,"USV Control","Autonomous Control",13
-30,2,"USV Control","Remotely Piloted",14
-30,2,"USV Control","Expendable",15
+01,1,Military Aircraft Type,Attack/Strike,01
+01,1,Military Aircraft Type,Bomber,02
+01,1,Aircraft Type,Cargo,03
+01,1,Military Aircraft Type,Fighter,04
+01,1,Military Aircraft Type,Interceptor,05
+01,1,Aircraft Type,Tanker,06
+01,1,Aircraft Type,Utility,07
+01,1,Aircraft Type,VSTOL/VTOL,08
+01,1,Aircraft Type,Passenger,09
+01,1,Aircraft Type,Ultra Light,10
+01,1,Military Aircraft Type,Airborne Command Post (ACP),11
+01,1,Military Aircraft Type,Airborne Early Warning (AEW),12
+01,1,Aircraft Type,Government,13
+01,1,Mission Area,Medical Evacuation (MEDEVAC),14
+01,1,Military Mission Area,Escort,15
+01,1,Military Mission Area,Electronic Combat (EC)/Jammer,16
+01,1,Mission Area,Patrol,17
+01,1,Mission Area,Reconnaissance,18
+01,1,Mission Area,Trainer,19
+01,1,Mission Area,Photographic (Reconnaissance),20
+01,1,Mission Area,Personnel Recovery,21
+01,1,Military Mission Area,Antisubmarine Warfare,22
+01,1,Mission Area,Communications,23
+01,1,Military Mission Area,Electronic Support (ES),24
+01,1,Military Mission Area,Mine Countermeasures (MCM),25
+01,1,Mission Area,Search and Rescue,26
+01,1,Military Mission Area,Special Operations Forces,27
+01,1,Military Mission Area,Surface Warfare,28
+01,1,Mission Area,Very Important Person (VIP) Transport,29
+01,1,Military Mission Area,Combat Search and Rescue (CSAR),30
+01,1,Military Mission Area,Suppression of Enemy Air Defenses,31
+01,1,Military Mission Area,Antisurface Warfare,32
+01,1,Military Mission Area,Fighter/Bomber,33
+01,1,Mission Area,Intensive Care,34
+01,1,Military Mission Area,Electronic Attack (EA),35
+01,1,Mission Area,Multimission,36
+01,1,crime,Hijacking,37
+01,1,Mission Area,ASW Helo - LAMPS,38
+01,1,Mission Area,ASW Helo – SH-60R,39
+01,2,Cargo/Transport Capacity,Heavy,01
+01,2,Cargo/Transport Capacity,Medium,02
+01,2,Cargo/Transport Capacity,Light,03
+01,2,Re-fueling Capability,Boom-only,04
+01,2,Re-fueling Capability,Drogue-only,05
+01,2,Re-fueling Capability,Boom and Drogue,06
+01,2,Range,Close Range,07
+01,2,Range,Short Range,08
+01,2,Range,Medium Range,09
+01,2,Range,Long Range,10
+01,2,Track Link Availability,Downlinked,11
+02,1,Launch Origin,Air,01
+02,1,Launch Origin,Surface,02
+02,1,Launch Origin,Subsurface,03
+02,1,Launch Origin,Space,04
+02,1,Missile Class,Anti-Ballistic,05
+02,1,Missile Class,Ballistic,06
+02,1,Missile Class,Cruise,07
+02,1,Missile Class,Interceptor,08
+02,2,Missile Destination,Air,01
+02,2,Missile Destination,Surface,02
+02,2,Missile Destination,Subsurface,03
+02,2,Missile Destination,Space,04
+02,2,Missile Status,Launched,05
+02,2,Missile Status,Missile,06
+02,2,Missile Type-BMD,Patriot,07
+02,2,Missile Type-AAW,Standard Missile - 2 (SM-2),08
+02,2,Missile Type-AAW,Standard Missile - 6 (SM-6),09
+02,2,Missile Type-AAW,Evolved Sea Sparrow Missile (ESSM),10
+02,2,Missile Type-AAW,Rolling Airframe Missile (RAM),11
+02,2,Missile Range,Short Range,12
+02,2,Missile Range,Medium Range,13
+02,2,Missile Range,Intermediate Range,14
+02,2,Missile Range,Long Range,15
+02,2,Missile Range,Intercontinental,16
+05,1,Orbit,Low Earth Orbit (LEO),01
+05,1,Orbit,Medium Earth Orbit (MEO),02
+05,1,Orbit,High Earth Orbit (MEO),03
+05,1,Orbit,Geosynchronous Orbit (GSO),04
+05,1,Orbit,Geostationary Orbit (GO),05
+05,1,Orbit,Molniya Orbit (MO),06
+05,2,Sensor,Optical,01
+05,2,Sensor,Infrared,02
+05,2,Sensor,Radar,03
+05,2,Sensor,Signal Intelligence (SIGINT),04
+06,1,Missile Class,Ballistic,01
+06,1,Launch Origin,Space,02
+06,1,Missile Class,Interceptor,03
+06,2,Missile Range,Short,01
+06,2,Missile Range,Medium,02
+06,2,Missile Range,Intermediate,03
+06,2,Missile Range,Long,04
+06,2,Missile Range,Intercontinental,05
+06,2,Missile Type - BMD,Arrow,06
+06,2,Missile Type - BMD,Ground-Based Interceptor (GBI),07
+06,2,Missile Type - BMD,Patriot,08
+06,2,Missile Type - BMD,Standard Missile Terminal Phase (SM-T),09
+06,2,Missile Type - BMD,Standard Missile - 3 (SM-3),10
+06,2,Missile Type - BMD,Terminal High Altitude Area Defense (THAAD),11
+06,2,Launch Origin,Space,12
+30,1,Mission Area,Own Ship,01
+30,1,Mission Area,Antiair Warfare,02
+30,1,Mission Area,Antisubmarine Warfare,03
+30,1,Mission Area,Escort,04
+30,1,Mission Area,Electronic Warfare,05
+30,1,Mission Area,Intelligence- Surveillance- Reconnaissance,06
+30,1,Mission Area,Mine Countermeasures,07
+30,1,Mission Area,Missile Defense,08
+30,1,Mission Area,Medical,09
+30,1,Mission Area,Mine Warfare,10
+30,1,Mission Area,Remote Multimission Vehicle (RMV),11
+30,1,Asset Capability,Special Operations Forces (SOF),12
+30,1,Mission Area,Surface Warfare,13
+30,1,Weapons Capability,Ballistic Missile,14
+30,1,Weapons Capability,Guided Missile,15
+30,1,Weapons Capability,Other Guided Missile,16
+30,1,Weapons Capability,Torpedo,17
+30,1,Asset Capability,Drone Equipped,18
+30,1,Asset Capability,Helicopter/VSTOL Equipped,19
+30,1,Mission Area,Ballistic Missile Defense- Shooter,20
+30,1,Mission Area,Ballistic Missile- Long Range Surveillance- and Track (LRST),21
+30,1,Mission Area,Sea Based X-Band Radar,22
+30,1,Crime,Hijacking/Hijacked,23
+30,2,Ship Propulsion,Nuclear Powered,01
+30,2,Ship Capacity,Heavy,02
+30,2,Ship Capacity,Light,03
+30,2,Ship Capacity,Medium,04
+30,2,Cargo Capacity,Dock,05
+30,2,Cargo Capacity,Logistics,06
+30,2,Cargo Capacity,Tank,07
+30,2,Cargo Capacity,Vehicle,08
+30,2,Ship Mobility,Fast,09
+30,2,Ship Mobility,Air-Cushioned (US),10
+30,2,Ship Mobility,Air-Cushioned (NATO),11
+30,2,Ship Mobility,Hydrofoil,12
+30,2,USV Control,Autonomous Control,13
+30,2,USV Control,Remotely Piloted,14
+30,2,USV Control,Expendable,15
