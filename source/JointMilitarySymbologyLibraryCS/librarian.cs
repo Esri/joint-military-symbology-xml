@@ -758,9 +758,9 @@ namespace JointMilitarySymbologyLibrary
                 string[] tokens = line.Split(',');
 
                 ss = tokens[0];
-                entity = tokens[1];
-                entityType = tokens[2];
-                entitySubType = tokens[3];
+                entity = tokens[1].Trim;
+                entityType = tokens[2].Trim;
+                entitySubType = tokens[3].Trim;
 
                 if (ss == ssCode)
                 {
@@ -781,6 +781,7 @@ namespace JointMilitarySymbologyLibrary
                         id = id.Trim();
 
                         WriteEntity(ref mode, w, id, entity, codeE.Substring(0, 1), codeE.Substring(1, 1), graphic);
+                        w.WriteLine("");
                     }
                     else
                     {
@@ -795,6 +796,7 @@ namespace JointMilitarySymbologyLibrary
                             id = id.Trim();
 
                             WriteEntityType(ref mode, w, id, entityType, codeET.Substring(0, 1), codeET.Substring(1, 1), graphic);
+                            w.WriteLine("");
                         }
                         else
                         {
@@ -807,6 +809,7 @@ namespace JointMilitarySymbologyLibrary
                             id = id.Trim();
 
                             WriteEntitySubType(ref mode, w, id, entitySubType, codeEST.Substring(0, 1), codeEST.Substring(1, 1), graphic);
+                            w.WriteLine("");
                         }
                     }
                 }
