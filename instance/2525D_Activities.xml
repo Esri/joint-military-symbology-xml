@@ -532,7 +532,7 @@
 						<DigitTwo>5</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="BUREAU_OF_ALCOHOL_TOBACCO_FIREARMS_AND_EXPLOSIVES_ATF_DEPARTMENT_OF_JUSTICE" Label="Bureau of Alcohol,Tobacco,Firearms and Explosives (ATF) (Department of Justice)" Graphic="40131501.svg">
+						<EntitySubType ID="BUREAU_ATF" Label="Bureau of Alcohol,Tobacco,Firearms and Explosives (ATF) (Department of Justice)" Graphic="40131501.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
@@ -550,19 +550,19 @@
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="DRUG_ENFORCEMENT_ADMINISTRATION_DEA" Label="Drug Enforcement Administration (DEA)" Graphic="40131504.svg">
+						<EntitySubType ID="DRUG_ENFORCEMENT_ADMIN_DEA" Label="Drug Enforcement Administration (DEA)" Graphic="40131504.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>4</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="DEPARTMENT_OF_JUSTICE_DOJ" Label="Department of Justice (DOJ)" Graphic="40131505.svg">
+						<EntitySubType ID="JUSTICE_DEPT_DOJ" Label="Department of Justice (DOJ)" Graphic="40131505.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>5</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="FEDERAL_BUREAU_OF_INVESTIGATION_FBI" Label="Federal Bureau of Investigation (FBI)" Graphic="40131506.svg">
+						<EntitySubType ID="FEDERAL_BUREAU_NVESTIGATION_FBI" Label="Federal Bureau of Investigation (FBI)" Graphic="40131506.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>6</DigitTwo>
@@ -580,13 +580,13 @@
 								<DigitTwo>8</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="UNITED_STATES_SECRET_SERVICE_USSS" Label="United States Secret Service (USSS)" Graphic="40131509.svg">
+						<EntitySubType ID="US_SECRET_SERVICE_USSS" Label="United States Secret Service (USSS)" Graphic="40131509.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>9</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="TRANSPORTATION_SECURITY_ADMINISTRATION_TSA" Label="Transportation Security Administration (TSA)" Graphic="40131510.svg">
+						<EntitySubType ID="TRANS_SECURITY_ADMIN_TSA" Label="Transportation Security Administration (TSA)" Graphic="40131510.svg">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>0</DigitTwo>
@@ -598,7 +598,7 @@
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="US_MARSHALS_SERVICE" Label="US Marshals Service" Graphic="40131512.svg">
+						<EntitySubType ID="US_MARSHALS" Label="US Marshals Service" Graphic="40131512.svg">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>2</DigitTwo>
@@ -1473,6 +1473,250 @@
 
     <LegacySymbol ID="EM_FOOD_DISTRO_SYM" Label="Emergency Food Distribution Center" EntityID="OPERATION" EntityTypeID="EMERGENCY_OPERATION" EntitySubTypeID="EMERGENCY_FOOD_DISTRIBUTION">
       <LegacyFunctionCode Name="2525C">BL----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="FIRE_FIGHTING_SYM" Label="Fire Fighting Operation" EntityID="OPERATION" EntityTypeID="FIRE_FIGHTING_OPERATION">
+      <LegacyFunctionCode Name="2525C">C-----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="FIRE_UNIT_SYM" Label="Fire Fighting Unit" EntityID="OPERATION" EntityTypeID="FIRE_FIGHTING_OPERATION">
+      <LegacyFunctionCode Name="2525C">CA----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="FIRE_EQUIP_SYM" Label="Fire Fighting Equipment" EntityID="OPERATION" EntityTypeID="FIRE_FIGHTING_OPERATION">
+      <LegacyFunctionCode Name="2525C">CB----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="FIRE_HYD_SYM" Label="Fire Hydrant" EntityID="OPERATION" EntityTypeID="FIRE_FIGHTING_OPERATION" EntitySubTypeID="FIRE_HYDRANT">
+      <LegacyFunctionCode Name="2525C">CC----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="OTHER_WATER_SYM" Label="Other Water Supply Location" EntityID="OPERATION" EntityTypeID="FIRE_FIGHTING_OPERATION" EntitySubTypeID="OTHER_WATER_SUPPLY_LOCATION">
+      <LegacyFunctionCode Name="2525C">CD----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="FIRE_STATION_SYM" Label="Fire Station" EntityID="OPERATION" EntityTypeID="FIRE_FIGHTING_OPERATION" EntitySubTypeID="FIRE_STATION">
+      <LegacyFunctionCode Name="2525C">CE----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="LEO_SYM" Label="Law Enforcement Operation" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION">
+      <LegacyFunctionCode Name="2525C">D-----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="LEO_UNIT_SYM" Label="Law Enforcement Unit" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION">
+      <LegacyFunctionCode Name="2525C">DA----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="LEO_EQUIP_SYM" Label="Law Enforcement Equipment" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION">
+      <LegacyFunctionCode Name="2525C">DB----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="LEO_INST_SYM" Label="Law Enforcement Installation" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION">
+      <LegacyFunctionCode Name="2525C">DC----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="ATF_SYM" Label="Bureau of Alcohol, Tobacco, and Firearms" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="BUREAU_ATF">
+      <LegacyFunctionCode Name="2525C">DD----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="ATF_UNIT_SYM" Label="ATF Unit" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="BUREAU_ATF">
+      <LegacyFunctionCode Name="2525C">DDA---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="ATF_EQUIP_SYM" Label="ATF Equipment" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="BUREAU_ATF">
+      <LegacyFunctionCode Name="2525C">DDB---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="ATF_INST_SYM" Label="ATF Installation" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="BUREAU_ATF">
+      <LegacyFunctionCode Name="2525C">DDC---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="BORD_PAT_SYM" Label="Border Patrol" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="BORDER_PATROL">
+      <LegacyFunctionCode Name="2525C">DE----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="BORD_PAT_UNIT_SYM" Label="Border Patrol Unit" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="BORDER_PATROL">
+      <LegacyFunctionCode Name="2525C">DEA---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="BORD_PAT_EQUIP_SYM" Label="Border Patrol Equipment" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="BORDER_PATROL">
+      <LegacyFunctionCode Name="2525C">DEB---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="BORD_PAT_INST_SYM" Label="Border Patrol Installation" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="BORDER_PATROL">
+      <LegacyFunctionCode Name="2525C">DEC---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="CUSTOMS_SYM" Label="Customs Service" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="CUSTOMS_SERVICE">
+      <LegacyFunctionCode Name="2525C">DF----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="CUSTOMS_UNIT_SYM" Label="Customs Service Unit" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="CUSTOMS_SERVICE">
+      <LegacyFunctionCode Name="2525C">DFA---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="CUSTOMS_EQUIP_SYM" Label="Customs Service Equipment" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="CUSTOMS_SERVICE">
+      <LegacyFunctionCode Name="2525C">DFB---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="CUSTOMS_INST_SYM" Label="Customs Service Installation" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="CUSTOMS_SERVICE">
+      <LegacyFunctionCode Name="2525C">DFC---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="DEA_SYM" Label="Drug Enforcement Administration" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="DRUG_ENFORCEMENT_ADMIN_DEA">
+      <LegacyFunctionCode Name="2525C">DG----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="DEA_UNIT_SYM" Label="DEA Unit" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="DRUG_ENFORCEMENT_ADMIN_DEA">
+      <LegacyFunctionCode Name="2525C">DGA---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="DEA_EQUIP_SYM" Label="DEA Equipment" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="DRUG_ENFORCEMENT_ADMIN_DEA">
+      <LegacyFunctionCode Name="2525C">DGB---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="DEA_INST_SYM" Label="DEA Installation" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="DRUG_ENFORCEMENT_ADMIN_DEA">
+      <LegacyFunctionCode Name="2525C">DGC---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="DOJ_SYM" Label="Department of Justice" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="JUSTICE_DEPT_DOJ">
+      <LegacyFunctionCode Name="2525C">DH----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="DOJ_UNIT_SYM" Label="DOJ Unit" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="JUSTICE_DEPT_DOJ">
+      <LegacyFunctionCode Name="2525C">DHA---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="DOJ_EQUIP_SYM" Label="DOJ Equipment" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="JUSTICE_DEPT_DOJ">
+      <LegacyFunctionCode Name="2525C">DHB---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="DOJ_INST_SYM" Label="DOJ Installation" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="JUSTICE_DEPT_DOJ">
+      <LegacyFunctionCode Name="2525C">DHC---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="FBI_SYM" Label="Federal Bureau of Investigation" EntityID="OPERATION" EntityTypeID="FEDERAL_BUREAU_NVESTIGATION_FBI">
+      <LegacyFunctionCode Name="2525C">DI----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="FBI_UNIT_SYM" Label="FBI Unit" EntityID="OPERATION" EntityTypeID="FEDERAL_BUREAU_NVESTIGATION_FBI">
+      <LegacyFunctionCode Name="2525C">DIA---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="FBI_EQUIP_SYM" Label="FBI Equipment" EntityID="OPERATION" EntityTypeID="FEDERAL_BUREAU_NVESTIGATION_FBI">
+      <LegacyFunctionCode Name="2525C">DIB---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="FBI_INST_SYM" Label="FBI Installation" EntityID="OPERATION" EntityTypeID="FEDERAL_BUREAU_NVESTIGATION_FBI">
+      <LegacyFunctionCode Name="2525C">DIC---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="POLICE_SYM" Label="Police" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="POLICE">
+      <LegacyFunctionCode Name="2525C">DJ----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="POLICE_UNIT_SYM" Label="Police Unit" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="POLICE">
+      <LegacyFunctionCode Name="2525C">------</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="POLICE_EQUIP_SYM" Label="Police Equipment" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="POLICE">
+      <LegacyFunctionCode Name="2525C">DJB---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="POLICE_INST_SYM" Label="Police Installation" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="POLICE">
+      <LegacyFunctionCode Name="2525C">DJC---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="PRISON_SYM" Label="Prison" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="PRISON">
+      <LegacyFunctionCode Name="2525C">DK----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="USSS_SYM" Label="US Secret Service" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="US_SECRET_SERVICE_USSS">
+      <LegacyFunctionCode Name="2525C">DL----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="USSS_UNIT_SYM" Label="US Secret Service Unit" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="US_SECRET_SERVICE_USSS">
+      <LegacyFunctionCode Name="2525C">DLA---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="USSS_EQUIP_SYM" Label="US Secret Service Equipment" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="US_SECRET_SERVICE_USSS">
+      <LegacyFunctionCode Name="2525C">DLB---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="USSS_INST_SYM" Label="US Secret Service Installation" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="US_SECRET_SERVICE_USSS">
+      <LegacyFunctionCode Name="2525C">DLC---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="TSA_SYM" Label="Transportation Security Administration" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="TRANS_SECURITY_ADMIN_TSA">
+      <LegacyFunctionCode Name="2525C">DM----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="TSA_UNIT_SYM" Label="TSA Unit" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="TRANS_SECURITY_ADMIN_TSA">
+      <LegacyFunctionCode Name="2525C">DMA---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="TSA_EQUIP_SYM" Label="TSA Equipment" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="TRANS_SECURITY_ADMIN_TSA">
+      <LegacyFunctionCode Name="2525C">DMB---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="TSA_INST_SYM" Label="TSA Installation" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="TRANS_SECURITY_ADMIN_TSA">
+      <LegacyFunctionCode Name="2525C">DMC---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="COASTGUARD_SYM" Label="Coast Guard" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="COAST_GUARD">
+      <LegacyFunctionCode Name="2525C">DN----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="COASTGUARD_UNIT_SYM" Label="Coast Guard Unit" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="COAST_GUARD">
+      <LegacyFunctionCode Name="2525C">DNA---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="COASTGUARD_EQUIP_SYM" Label="Coast Guard Equipment" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="COAST_GUARD">
+      <LegacyFunctionCode Name="2525C">------</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="COASTGUARD_INST_SYM" Label="Coast Guard Installation" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="COAST_GUARD">
+      <LegacyFunctionCode Name="2525C">DNC---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="MARSHAL_SYM" Label="US Marshals Service" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="US_MARSHALS">
+      <LegacyFunctionCode Name="2525C">DO----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="MARSHAL_UNIT_SYM" Label="US Marshals Service Unit" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="US_MARSHALS">
+      <LegacyFunctionCode Name="2525C">DOA---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="MARSHAL_EQUIP_SYM" Label="US Marshals Service Equipment" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="US_MARSHALS">
+      <LegacyFunctionCode Name="2525C">DOB---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="MARSHAL_INST_SYM" Label="US Marshals Service Installation" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="US_MARSHALS">
+      <LegacyFunctionCode Name="2525C">DOC---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="SENS_SYM" Label="Sensor" EntityID="" EntityTypeID="" EntitySubTypeID="">
+      <LegacyFunctionCode Name="2525C">ES----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="BIO_SENS_SYM" Label="Biological Sensor" EntityID="" EntityTypeID="" EntitySubTypeID="">
+      <LegacyFunctionCode Name="2525C">EA----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="CHEM_SENS_SYM" Label="Chemical Sensor" EntityID="" EntityTypeID="">
+      <LegacyFunctionCode Name="2525C">EB----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="INT_SENS_SYM" Label="Intrusion Sensor" EntityID="" EntityTypeID="" EntitySubTypeID="">
+      <LegacyFunctionCode Name="2525C">EC----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="NUC_SENS_SYM" Label="Nuclear Sensor" EntityID="" EntityTypeID="" EntitySubTypeID="">
+      <LegacyFunctionCode Name="2525C">ED----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="RAD_SENS_SYM" Label="Radiological Sensor" EntityID="" EntityTypeID="" EntitySubTypeID="">
+      <LegacyFunctionCode Name="2525C">EE----</LegacyFunctionCode>
     </LegacySymbol>
   </LegacySymbols>  
 </SymbolSet>
