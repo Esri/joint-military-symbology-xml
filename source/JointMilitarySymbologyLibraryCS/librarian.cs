@@ -758,9 +758,9 @@ namespace JointMilitarySymbologyLibrary
                 string[] tokens = line.Split(',');
 
                 ss = tokens[0];
-                entity = tokens[1].Trim;
-                entityType = tokens[2].Trim;
-                entitySubType = tokens[3].Trim;
+                entity = tokens[1].Trim();
+                entityType = tokens[2].Trim();
+                entitySubType = tokens[3].Trim();
 
                 if (ss == ssCode)
                 {

@@ -51,7 +51,7 @@ namespace jmsml
                 Console.WriteLine("/?\t\t\t: Help/Show command line options.");
                 Console.WriteLine("/a\t\t\t: Export symbols with AREA geometry.");
                 Console.WriteLine("/b\t\t\t: Export all coded base domain tables to a folder.");
-                Console.WriteLine("/e\t\t\t: Add data validation info when exporting base domain tables.");
+                Console.WriteLine("/e\t\t\t: Add data validation when exporting domain tables.");
                 Console.WriteLine("/l\t\t\t: Export symbols with LINE geometry.");
                 Console.WriteLine("/p\t\t\t: Export symbols with POINT geometry.");
                 Console.WriteLine("/q=\"<expression>\"\t: Use regular expression to query on other labels.");
