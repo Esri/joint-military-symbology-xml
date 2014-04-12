@@ -1,0 +1,1462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="SS_ACTIVITY" Label="Activities" DimensionID="ACTIVITY">
+	<SymbolSetCode>
+		<DigitOne>4</DigitOne>
+		<DigitTwo>0</DigitTwo>
+	</SymbolSetCode>
+	<LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
+	<Entities>
+		<Entity ID="INCIDENT" Label="Incident" Remarks="No icon associated with this entity. It is for hierarchal purposes only.">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="CRIMINAL_ACTIVITY_INCIDENT" Label="Criminal Activity Incident" Graphic="40110100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="ARREST" Label="Arrest" Graphic="40110101.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ARSON" Label="Arson" Graphic="40110102.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ATTEMPTED_CRIMINAL_ACTIVITY" Label="Attempted Criminal Activity" Remarks="APP-6C" Graphic="40110103.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="DRIVE_BY_SHOOTING" Label="Drive-by Shooting" Graphic="40110104.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="DRUG_RELATED" Label="Drug Related" Remarks="APP-6C" Graphic="40110105.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="EXTORTION" Label="Extortion" Graphic="40110106.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="GRAFFITI" Label="Graffiti" Graphic="40110107.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="KILLING" Label="Killing" Graphic="40110108.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="POISONING" Label="Poisoning" Graphic="40110109.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>9</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CIVIL_RIOTING" Label="Civil Rioting" Graphic="40110110.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>0</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="BOOBY_TRAP" Label="Booby Trap" Graphic="40110111.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="HOME_EVICTION" Label="Home Eviction" Graphic="40110112.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="BLACK_MARKETING" Label="Black Marketing" Graphic="40110113.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="VANDALISM_LOOT_RANSACK_PLUNDER" Label="Vandalism / Loot / Ransack / Plunder" Graphic="40110114.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="JAIL_BREAK" Label="Jail Break" Graphic="40110115.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ROBBERY" Label="Robbery" Graphic="40110116.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="THEFT" Label="Theft" Graphic="40110117.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="BURGLARY" Label="Burglary" Graphic="40110118.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SMUGGLING" Label="Smuggling" Graphic="40110119.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>9</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ROCK_THROWING" Label="Rock Throwing" Graphic="40110120.svg">
+							<EntitySubTypeCode>
+								<DigitOne>2</DigitOne>
+								<DigitTwo>0</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="DEAD_BODY" Label="Dead Body" Graphic="40110121.svg">
+							<EntitySubTypeCode>
+								<DigitOne>2</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SABOTAGE" Label="Sabotage" Graphic="40110122.svg">
+							<EntitySubTypeCode>
+								<DigitOne>2</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SUSPICIOUS_ACTIVITY" Label="Suspicious Activity" Graphic="40110123.svg">
+							<EntitySubTypeCode>
+								<DigitOne>2</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="BOMB_BOMBING" Label="Bomb/Bombing" Graphic="40110200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="BOMB_THREAT" Label="Bomb Threat" Graphic="40110201.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="IED_EVENT" Label="IED Event" Graphic="40110300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="IED_EXPLOSION" Label="IED Explosion" Graphic="40110301.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="PREMATURE_IED_EXPLOSION" Label="Premature IED Explosion" Graphic="40110302.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="IED_CACHE" Label="IED Cache" Graphic="40110303_3.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="IED_SUICIDE_BOMBER" Label="IED Suicide Bomber" Graphic="40110304.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="SHOOTING" Label="Shooting" Graphic="40110400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="SNIPING" Label="Sniping" Graphic="40110401.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="ILLEGAL_DRUG_OPERATION" Label="Illegal Drug Operation" Graphic="40110500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="TRAFFICKING" Label="Trafficking" Graphic="40110501.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ILLEGAL_DRUG_LAB" Label="Illegal Drug Lab" Graphic="40110502.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="EXPLOSION" Label="Explosion" Graphic="40110600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="GRENADE_EXPLOSION" Label="Grenade Explosion" Graphic="40110601.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="INCENDIARY_EXPLOSION" Label="Incendiary Explosion" Graphic="40110602.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MINE_EXPLOSION" Label="Mine Explosion" Graphic="40110603.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MORTAR_FIRE_EXPLOSION" Label="Mortar Fire Explosion" Graphic="40110604.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ROCKET_EXPLOSION" Label="Rocket Explosion" Graphic="40110605.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="BOMB_EXPLOSION" Label="Bomb Explosion" Graphic="40110606.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="CIVIL_DISTURBANCE" Label="Civil Disturbance" Graphic="40120000.svg">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>2</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="DEMONSTRATION" Label="Demonstration" Graphic="40120100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="OPERATION" Label="Operation" Remarks="No icon is associated with this entity. It is for hierarchal purposes only.">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>3</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="PATROLLING" Label="Patrolling" Graphic="40130100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="MILITARY_INFORMATION_SUPPORT_OPERATION__MISO" Label="Military Information Support Operation (MISO)" Graphic="40130200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="TV_AND_RADIO_PROPAGANDA" Label="TV and Radio Propaganda" Graphic="40130201.3.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="FORAGING_SEARCHING" Label="Foraging/Searching" Graphic="40130300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="RECRUITMENT" Label="Recruitment" Remarks="No icon is associated with this entity. It is for hierarchal purposes only.">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="WILLING" Label="Willing" Graphic="40130401.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="COERCED_IMPRESSED" Label="Coerced/Impressed" Graphic="40130402.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="MINE_LAYING" Label="Mine Laying" Graphic="40130500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="SPY" Label="Spy" Graphic="40130600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="WARRANT_SERVED" Label="Warrant Served" Graphic="40130700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="EXFILTRATION" Label="Exfiltration" Graphic="40130800.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="INFILTRATION" Label="Infiltration" Graphic="40130900.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="MEETING" Label="Meeting" Graphic="40131000.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="POLLING_PLACE_ELECTION" Label="Polling Place/Election" Graphic="40131001.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="RAID_ON_HOUSE" Label="Raid on House" Graphic="40131100.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="EMERGENCY_OPERATION" Label="Emergency Operation" Graphic="40131200.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="EMERGENCY_COLLECTION_EVACUATION_POINT" Label="Emergency Collection Evacuation Point" Graphic="40131201.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="EMERGENCY_FOOD_DISTRIBUTION" Label="Emergency Food Distribution" Graphic="40131202.3.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="EMERGENCY_INCIDENT_COMMAND_CENTER" Label="Emergency Incident Command Center" Graphic="40131203.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="EMERGENCY_OPERATIONS_CENTER" Label="Emergency Operations Center" Graphic="40131204.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="EMERGENCY_PUBLIC_INFORMATION_CENTER" Label="Emergency Public Information Center" Graphic="40131205.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="EMERGENCY_SHELTER" Label="Emergency Shelter" Graphic="40131206.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="EMERGENCY_STAGING_AREA" Label="Emergency Staging Area" Graphic="40131207.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="EMERGENCY_WATER_DISTRIBUTION_CENTER" Label="Emergency Water Distribution Center" Graphic="40131208_3.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="EMERGENCY_MEDICAL_OPERATION" Label="Emergency Medical Operation" Graphic="40131300.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="EMT_STATION_LOCATION" Label="EMT Station Location" Graphic="40131301.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="HEALTH_DEPARTMENT_FACILITY" Label="Health Department Facility" Graphic="40131302.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MEDICAL_FACILITIES_OUTPATIENT" Label="Medical Facilities Outpatient" Graphic="40131303.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MORGUE" Label="Morgue" Graphic="40131304.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="PHARMACY" Label="Pharmacy" Graphic="40131305.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TRIAGE" Label="Triage" Graphic="40131306.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="FIRE_FIGHTING_OPERATION" Label="Fire Fighting Operation" Graphic="40131400.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="FIRE_HYDRANT" Label="Fire Hydrant" Graphic="40131401.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FIRE_STATION" Label="Fire Station" Graphic="40131402.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="OTHER_WATER_SUPPLY_LOCATION" Label="Other Water Supply Location" Graphic="40131403.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="LAW_ENFORCEMENT_OPERATION" Label="Law Enforcement Operation" Graphic="40131500.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="BUREAU_ATF" Label="Bureau of Alcohol,Tobacco,Firearms and Explosives (ATF) (Department of Justice)" Graphic="40131501.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="BORDER_PATROL" Label="Border Patrol" Graphic="40131502.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CUSTOMS_SERVICE" Label="Customs Service" Graphic="40131503.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="DRUG_ENFORCEMENT_ADMIN_DEA" Label="Drug Enforcement Administration (DEA)" Graphic="40131504.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="JUSTICE_DEPT_DOJ" Label="Department of Justice (DOJ)" Graphic="40131505.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FEDERAL_BUREAU_NVESTIGATION_FBI" Label="Federal Bureau of Investigation (FBI)" Graphic="40131506.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="POLICE" Label="Police" Graphic="40131507.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="PRISON" Label="Prison" Graphic="40131508.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="US_SECRET_SERVICE_USSS" Label="United States Secret Service (USSS)" Graphic="40131509.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>9</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TRANS_SECURITY_ADMIN_TSA" Label="Transportation Security Administration (TSA)" Graphic="40131510.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>0</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="COAST_GUARD" Label="Coast Guard" Graphic="40131511.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="US_MARSHALS" Label="US Marshals Service" Graphic="40131512.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="INTERNAL_SECURITY_FORCE" Label="Internal Security Force" Graphic="40131513.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="FIRE_EVENT" Label="Fire Event" Graphic="40140000.svg">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>4</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="FIRE_ORIGIN" Label="Fire Origin" Graphic="40140100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="SMOKE" Label="Smoke" Graphic="40140200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="HOT_SPOT" Label="Hot Spot" Graphic="40140300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="NON_RESIDENTIAL_FIRE" Label="Non-Residential Fire" Graphic="40140400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="RESIDENTIAL_FIRE" Label="Residential Fire" Graphic="40140500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="SCHOOL_FIRE" Label="School Fire" Graphic="40140600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="SPECIAL_NEEDS_FIRE" Label="Special Needs Fire" Graphic="40140700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="WILD_FIRE" Label="Wild Fire" Graphic="40140800.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="HAZARD_MATERIALS" Label="Hazard Materials" Remarks="No icon is associated with this entity. It is for hierarchal purposes only.">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>5</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="HAZARD_MATERIALS_INCIDENT" Label="Hazard Materials Incident" Graphic="40150100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="CHEMICAL_AGENT" Label="Chemical Agent" Graphic="40150101.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CORROSIVE_MATERIAL" Label="Corrosive Material" Graphic="40150102.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="HAZARDOUS_WHEN_WET" Label="Hazardous when Wet" Graphic="40150103.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="EXPLOSIVE_MATERIAL" Label="Explosive Material" Graphic="40150104.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FLAMMABLE_GAS" Label="Flammable Gas" Graphic="40150105.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FLAMMABLE_LIQUID" Label="Flammable Liquid" Graphic="40150106.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FLAMMABLE_SOLID" Label="Flammable Solid" Graphic="40150107.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="NON_FLAMMABLE_GAS" Label="Non-Flammable Gas" Graphic="40150108.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ORGANIC_PEROXIDE" Label="Organic Peroxide" Graphic="40150109.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>9</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="OXIDIZER" Label="Oxidizer" Graphic="40150110.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>0</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RADIOACTIVE_MATERIAL" Label="Radioactive Material" Graphic="40150111.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SPONTANEOUSLY_COMBUSTIBLE_MATERIAL" Label="Spontaneously Combustible Material" Graphic="40150112.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TOXIC_GAS" Label="Toxic Gas" Graphic="40150113.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TOXIC_INFECTIOUS_MATERIAL" Label="Toxic Infectious Material" Graphic="40150114.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="UNEXPLODED_ORDNANCE" Label="Unexploded Ordnance" Graphic="40150115.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="TRANSPORTATION_INCIDENT" Label="Transportation Incident" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes." Graphic="40160000.svg">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>6</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="AIR" Label="Air" Graphic="40160100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="MARINE" Label="Marine" Graphic="40160200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="RAIL" Label="Rail" Graphic="40160300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="VEHICLE" Label="Vehicle" Graphic="40160400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="WHEELED_VEHICLE_EXPLOSION" Label="Wheeled Vehicle Explosion" Graphic="40160500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="NATURAL_EVENT" Label="Natural Event" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes." Graphic="40170000.svg">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>7</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="GEOLOGIC" Label="Geologic" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes." Graphic="40170100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="AFTERSHOCK" Label="Aftershock" Graphic="40170101.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="AVALANCHE" Label="Avalanche" Graphic="40170102.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="EARTHQUAKE_EPICENTER" Label="Earthquake Epicenter" Graphic="40170103.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="LANDSLIDE" Label="Landslide" Graphic="40170104.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SUBSIDENCE" Label="Subsidence" Graphic="40170105.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="VOLCANIC_ERUPTION" Label="Volcanic Eruption" Graphic="40170106.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="VOLCANIC_THREAT" Label="Volcanic Threat" Graphic="40170107.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CAVE_ENTRANCE" Label="Cave Entrance" Graphic="40170108.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="HYDRO_METEOROLOGICAL" Label="Hydro-Meteorological" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes." Graphic="40170200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="DROUGHT" Label="Drought" Graphic="40170201.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FLOOD" Label="Flood" Graphic="40170202.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TSUNAMI" Label="Tsunami" Graphic="40170203.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="INFESTATION" Label="Infestation" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes." Graphic="40170300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="BIRD" Label="Bird" Graphic="40170301.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="INSECT" Label="Insect" Graphic="40170302.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MICROBIAL" Label="Microbial" Graphic="40170303.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="REPTILE" Label="Reptile" Graphic="40170304.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RODENT" Label="Rodent" Graphic="40170305.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="INDIVIDUAL" Label="Individual" Remarks="No icon is associated with this entity. It is for hierarchal purposes only." Graphic="40180000.svg">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>8</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="RELIGIOUS_LEADER" Label="Religious Leader" Graphic="40180100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="SPEAKER" Label="Speaker" Graphic="40180200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+	</Entities>
+	<SectorOneModifiers>
+		<Modifier ID="ASSASSINATION_MOD" Label="Assassination" Category="Crime" Graphic="40011.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="EXECUTION_WRONGFUL_KILLING_MOD" Label="Execution (Wrongful Killing)" Category="Crime" Graphic="40021.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>2</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="HIJACKING_MOD" Label="Hijacking/Hijacked" Category="Crime" Graphic="40031.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>3</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="HOUSE_TO_HOUSE_MOD" Label="House-to-House" Category="Psychological Operations" Graphic="40041.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>4</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="KIDNAPPING_MOD" Label="Kidnapping" Category="Crime" Graphic="40051.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>5</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="MURDER_MOD" Label="Murder" Category="Crime" Graphic="40061.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>6</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="PIRACY_MOD" Label="Piracy" Category="Crime" Graphic="40071.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>7</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="RAPE_MOD" Label="Rape" Category="Crime" Graphic="40081.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>8</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="WRITTEN_PSYCHOLOGICAL_OPERATIONS_MOD" Label="Written Psychological Operations" Category="Psychological Operations" Graphic="40091.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>9</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="PIRATE_MOD" Label="Pirate" Category="Crime" Graphic="40101.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>0</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="FALSE_MOD" Label="FALSE" Category="IED Category" Graphic="40111.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="FIND_MOD" Label="Find" Category="IED Category" Graphic="40121.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>2</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="FOUND_AND_CLEARED_MOD" Label="IED Category" Category="IED Category" Graphic="40131.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>3</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="HOAX_DECOY_MOD" Label="Hoax (Decoy)" Category="IED Category" Graphic="40141.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>4</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="ATTEMPTED_MOD" Label="Attempted" Category="Incident Qualifier" Graphic="40151.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>5</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="ACCIDENT_MOD" Label="Accident" Category="Incident Qualifier" Graphic="40161.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>6</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="INCIDENT_MOD" Label="Incident" Category="Incident Qualifier" Graphic="40171.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>7</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="THEFT_MOD" Label="Theft" Category="Crime" Graphic="40181.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>8</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+	</SectorOneModifiers>
+
+  <LegacySymbols>
+    <LegacySymbol ID="CIV_DISTURB_SYM" Label="Civil Disturbance Incident" EntityID="CIVIL_DISTURBANCE">
+      <LegacyFunctionCode Name="2525C">A-----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="CIV_DEMO_SYM" Label="Civil Demonstration" EntityID="CIVIL_DISTURBANCE" EntityTypeID="DEMONSTRATION">
+      <LegacyFunctionCode Name="2525C">------</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="CIV_RIOT_SYM" Label="Civil Rioting" EntityID="INCIDENT" EntityTypeID="CRIMINAL_ACTIVITY_INCIDENT" EntitySubTypeID="CIVIL_RIOTING">
+      <LegacyFunctionCode Name="2525C">AC----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="CRIM_ACT_INC_SYM" Label="Criminal Activity Incident" EntityID="INCIDENT" EntityTypeID="CRIMINAL_ACTIVITY_INCIDENT">
+      <LegacyFunctionCode Name="2525C">B-----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="BOMB_THREAT_SYM" Label="Bomb Threat" EntityID="INCIDENT" EntityTypeID="BOMB_BOMBING" EntitySubTypeID="BOMB_THREAT">
+      <LegacyFunctionCode Name="2525C">BA----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="BOMB_SYM" Label="Bomb" EntityID="INCIDENT" EntityTypeID="BOMB_BOMBING">
+      <LegacyFunctionCode Name="2525C">B-----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="BOMB_EXP_SYM" Label="Bomb Explosion" EntityID="Incident" EntityTypeID="BOMB_BOMBING">
+      <LegacyFunctionCode Name="2525C">BC----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="LOOTING_SYM" Label="Looting" EntityID="INCIDENT" EntityTypeID="CRIMINAL_ACTIVITY_INCIDENT" EntitySubTypeID="VANDALISM_LOOT_RANSACK_PLUNDER">
+      <LegacyFunctionCode Name="2525C">BD----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="POISONING_SYM" Label="Poisoning" EntityID="INCIDENT" EntityTypeID="CRIMINAL_ACTIVITY_INCIDENT" EntitySubTypeID="POISONING">
+      <LegacyFunctionCode Name="2525C">P-----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="SHOOTING_SYM" Label="Shooting" EntityID="INCIDENT" EntityTypeID="SHOOTING">
+      <LegacyFunctionCode Name="2525C">BF----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="FIRE_INC_SYM" Label="Fire Incident" EntityID="FIRE_EVENT">
+      <LegacyFunctionCode Name="2525C">C-----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="HOT_SPOT_SYM" Label="Hot Spot" EntityID="FIRE_EVENT" EntityTypeID="HOT_SPOT">
+      <LegacyFunctionCode Name="2525C">CA----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="NON_RES_FIRE_SYM" Label="Non-Residential Fire" EntityID="FIRE_EVENT" EntityTypeID="NON_RESIDENTIAL_FIRE">
+      <LegacyFunctionCode Name="2525C">CB----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="FIRE_ORIG_SYM" Label="Fire Origin" EntityID="FIRE_EVENT" EntityTypeID="FIRE_ORIGIN">
+      <LegacyFunctionCode Name="2525C">CC----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="RES_FIRE_SYM" Label="Residential Fire" EntityID="FIRE_EVENT" EntityTypeID="RESIDENTIAL_FIRE">
+      <LegacyFunctionCode Name="2525C">CD----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="SCHOOL_FIRE_SYM" Label="School Fire" EntityID="FIRE_EVENT" EntityTypeID="SCHOOL_FIRE">
+      <LegacyFunctionCode Name="2525C">CE----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="SMOKE_SYM" Label="Smoke" EntityID="FIRE_EVENT" EntityTypeID="SMOKE">
+      <LegacyFunctionCode Name="2525C">CF----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="SPC_NEEDS_FIRE_SYM" Label="Special Needs Fire" EntityID="FIRE_EVENT" EntityTypeID="SPECIAL_NEEDS_FIRE">
+      <LegacyFunctionCode Name="2525C">CG----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="WILDFIRE_SYM" Label="Wild Fire" EntityID="FIRE_EVENT" EntityTypeID="WILD_FIRE">
+      <LegacyFunctionCode Name="2525C">CH----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="HAZMAT_INC_SYM" Label="Hazardous Materials Incident" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARD_MATERIALS_INCIDENT">
+      <LegacyFunctionCode Name="2525C">D-----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="CHEM_AGT_SYM" Label="Chemical Agent" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARD_MATERIALS_INCIDENT" EntitySubTypeID="CHEMICAL_AGENT">
+      <LegacyFunctionCode Name="2525C">DA----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="CORROSIVE_SYM" Label="Corrosive Material" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARDOUS_MATERIALS_INCIDENT" EntitySubTypeID="CORROSIVE_MATERIAL">
+      <LegacyFunctionCode Name="2525C">DB----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="HAZ_WET_SYM" Label="Hazardous When Wet" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARDOUS_MATERIALS_INCIDENT" EntitySubTypeID="HAZARDOUS_WHEN_WET">
+      <LegacyFunctionCode Name="2525C">DC----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="EXP_MAT_SYM" Label="Explosive Material" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARDOUS_MATERIALS_INCIDENT" EntitySubTypeID="EXPLOSIVE_MATERIAL">
+      <LegacyFunctionCode Name="2525C">DD----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="FLAM_GAS_SYM" Label="Flammable Gas" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARDOUS_MATERIALS_INCIDENT" EntitySubTypeID="FLAMMABLE_GAS">
+      <LegacyFunctionCode Name="2525C">DE----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="FLAM_LIQUID_SYM" Label="Flammable Liquid" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARDOUS_MATERIALS_INCIDENT" EntitySubTypeID="FLAMMABLE_LIQUID">
+      <LegacyFunctionCode Name="2525C">DF----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="FLAM_SOLID_SYM" Label="Flammable Solid" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARDOUS_MATERIALS_INCIDENT" EntitySubTypeID="FLAMMABLE_SOLID">
+      <LegacyFunctionCode Name="2525C">DG----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="NON_FLAM_GAS_SYM" Label="Non-Flammable Gas" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARDOUS_MATERIALS_INCIDENT" EntitySubTypeID="NON_FLAMMABLE_GAS">
+      <LegacyFunctionCode Name="2525C">DH----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="ORG_PEROXIDE_SYM" Label="Organic Peroxide" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARDOUS_MATERIALS_INCIDENT" EntitySubTypeID="ORGANIC_PEROXIDE">
+      <LegacyFunctionCode Name="2525C">DI----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="OXIDIZER_SYM" Label="Oxidizer" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARDOUS_MATERIALS_INCIDENT" EntitySubTypeID="OXIDIZER">
+      <LegacyFunctionCode Name="2525C">DJ----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="RADIOACTIVE_SYM" Label="Radioactive Material" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARD_MATERIALS_INCIDENT" EntitySubTypeID="RADIOACTIVE_MATERIAL">
+      <LegacyFunctionCode Name="2525C">DK----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="SPON_COMBUST_SYM" Label="Spontaneously Combustible Material" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARD_MATERIALS_INCIDENT" EntitySubTypeID="SPONTANEOUSLY_COMBUSTIBLE_MATERIAL">
+      <LegacyFunctionCode Name="2525C">DL----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="TOX_GAS_SYM" Label="Toxic Gas" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARD_MATERIALS_INCIDENT" EntitySubTypeID="TOXIC_GAS">
+      <LegacyFunctionCode Name="2525C">DM----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="TOX_INF_MAT_SYM" Label="Toxic and Infectious Material" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARD_MATERIALS_INCIDENT" EntitySubTypeID="TOXIC_INFECTIOUS_MATERIAL">
+      <LegacyFunctionCode Name="2525C">DN----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="UXO_SYM" Label="Unexploded Ordnance" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARD_MATERIALS_INCIDENT" EntitySubTypeID="UNEXPLODED_ORDNANCE">
+      <LegacyFunctionCode Name="2525C">DO----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="AIR_INC_SYM" Label="Air Incident" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="AIR" ModifierOneID="INCIDENT_MOD">
+      <LegacyFunctionCode Name="2525C">E-----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="AIR_ACC_SYM" Label="Air Accident" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="AIR" ModifierOneID="ACCIDENT_MOD">
+      <LegacyFunctionCode Name="2525C">EA----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="AIR_HIJACK_SYM" Label="Air Hijacking" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="AIR" ModifierOneID="HIJACKING_MOD">
+      <LegacyFunctionCode Name="2525C">HA----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="MAR_INC_SYM" Label="Marine Incident" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="MARINE" ModifierOneID="INCIDENT_MOD">
+      <LegacyFunctionCode Name="2525C">F-----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="MAR_ACC_SYM" Label="Marine Accident" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="MARINE" ModifierOneID="ACCIDENT_MOD">
+      <LegacyFunctionCode Name="2525C">FA----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="MAR_HIJACK_SYM" Label="Marine Hijacking" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="MARINE" ModifierOneID="HIJACKING_MOD">
+      <LegacyFunctionCode Name="2525C">HV----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="RAIL_INC_SYM" Label="Rail Incident" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="RAIL" ModifierOneID="INCIDENT_MOD">
+      <LegacyFunctionCode Name="2525C">G-----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="RAIL_ACC_SYM" Label="Rail Accident" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="RAIL" ModifierOneID="ACCIDENT_MOD">
+      <LegacyFunctionCode Name="2525C">GA----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="RAIL_HIJACK_SYM" Label="Rail Hijacking" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="RAIL" ModifierOneID="HIJACKING_MOD">
+      <LegacyFunctionCode Name="2525C">GB----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="VEH_INC_SYM" Label="Vehicle Incident" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="VEHICLE" ModifierOneID="INCIDENT_MOD">
+      <LegacyFunctionCode Name="2525C">H-----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="VEH_ACC_SYM" Label="Vehicle Accident" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="VEHICLE" ModifierOneID="ACCIDENT_MOD">
+      <LegacyFunctionCode Name="2525C">HA----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="VEH_HIJACK_SYM" Label="Vehicle Hijacking" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="VEHICLE" ModifierOneID="HIJACKING_MOD">
+      <LegacyFunctionCode Name="2525C">HT----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="AFTERSHOCK_SYM" Label="Aftershock" EntityID="NATURAL_EVENT" EntityTypeID="GEOLOGIC" EntitySubTypeID="AFTERSHOCK">
+      <LegacyFunctionCode Name="2525C">AA----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="AVALANCHE_SYM" Label="Avalanche" EntityID="NATURAL_EVENT" EntityTypeID="GEOLOGIC" EntitySubTypeID="AVALANCHE">
+      <LegacyFunctionCode Name="2525C">AB----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="EARTHQUAKE_SYM" Label="Earthquake Epicenter" EntityID="NATURAL_EVENT" EntityTypeID="GEOLOGIC" EntitySubTypeID="EARTHQUAKE_EPICENTER">
+      <LegacyFunctionCode Name="2525C">AC----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="LANDSLIDE_SYM" Label="Landslide" EntityID="NATURAL_EVENT" EntityTypeID="GEOLOGIC" EntitySubTypeID="LANDSLIDE">
+      <LegacyFunctionCode Name="2525C">AD----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="SUBSIDENCE_SYM" Label="Subsidence (Sinkhole)" EntityID="NATURAL_EVENT" EntityTypeID="GEOLOGIC" EntitySubTypeID="SUBSIDENCE">
+      <LegacyFunctionCode Name="2525C">AE----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="VOL_THREAT_SYM" Label="Volcanic Threat" EntityID="NATURAL_EVENT" EntityTypeID="GEOLOGIC" EntitySubTypeID="VOLCANIC_THREAT">
+      <LegacyFunctionCode Name="2525C">AG----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="DROUGHT_SYM" Label="Drought" EntityID="NATURAL_EVENT" EntityTypeID="HYDRO_METEOROLOGICAL" EntitySubTypeID="DROUGHT">
+      <LegacyFunctionCode Name="2525C">BB----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="FLOOD_SYM" Label="Flood" EntityID="NATURAL_EVENT" EntityTypeID="HYDRO_METEOROLOGICAL" EntitySubTypeID="FLOOD">
+      <LegacyFunctionCode Name="2525C">BC----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="TSUNAMI_SYM" Label="Tsunami" EntityID="NATURAL_EVENT" EntityTypeID="HYDRO_METEOROLOGICAL" EntitySubTypeID="TSUNAMI">
+      <LegacyFunctionCode Name="2525C">BM----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="BIRD_INFEST_SYM" Label="Bird Infestation" EntityID="NATURAL_EVENT" EntityTypeID="INFESTATION" EntitySubTypeID="BIRD">
+      <LegacyFunctionCode Name="2525C">CA----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="INSECT_INFEST_SYM" Label="Insect Infestation" EntityID="NATURAL_EVENT" EntityTypeID="INFESTATION" EntitySubTypeID="INSECT">
+      <LegacyFunctionCode Name="2525C">CB----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="BIO_INFEST_SYM" Label="Microbial Infestation" EntityID="NATURAL_EVENT" EntityTypeID="INFESTATION" EntitySubTypeID="MICROBIAL">
+      <LegacyFunctionCode Name="2525C">CC----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="REP_INFEST_SYM" Label="Reptile Infestation" EntityID="NATURAL_EVENT" EntityTypeID="INFESTATION" EntitySubTypeID="REPTILE">
+      <LegacyFunctionCode Name="2525C">CD----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="ROD_INFEST_SYM" Label="Rodent Infestation" EntityID="NATURAL_EVENT" EntityTypeID="INFESTATION" EntitySubTypeID="RODENT">
+      <LegacyFunctionCode Name="2525C">CE----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="AFTERSHOCK_SYM" Label="Emergency Medical Operation" EntityID="OPERATION" EntityTypeID="EMERGENCY_MEDICAL_OPERATION">
+      <LegacyFunctionCode Name="2525C">A-----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="EARTHQUAKE_SYM" Label="Emergency Medical Operation Equipment" EntityID="OPERATION" EntityTypeID="EMERGENCY_MEDICAL_OPERATION">
+      <LegacyFunctionCode Name="2525C">AB----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="EM_INST" Label="Emergency Medical Operation Installation" EntityID="OPERATION" EntityTypeID="EMERGENCY_MEDICAL_OPERATION">
+      <LegacyFunctionCode Name="2525C">AC----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="EMT_STATION_SYM" Label="EMT Station Location" EntityID="OPERATION" EntityTypeID="EMERGENCY_MEDICAL_OPERATION" EntitySubTypeID="EMT_STATION_LOCATION">
+      <LegacyFunctionCode Name="2525C">AD----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="HEALTH_DEP_SYM" Label="Health Department Facility" EntityID="OPERATION" EntityTypeID="EMERGENCY_MEDICAL_OPERATION" EntitySubTypeID="HEALTH_DEPARTMENT_FACILITY">
+      <LegacyFunctionCode Name="2525C">AG----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="MED_OUT_SYM" Label="Medical Facilities Outpatient" EntityID="OPERATION" EntityTypeID="EMERGENCY_MEDICAL_OPERATION" EntitySubTypeID="MEDICAL_FACILITIES_OUTPATIENT">
+      <LegacyFunctionCode Name="2525C">AJ----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="MORGUE_SYM" Label="Morgue" EntityID="OPERATION" EntityTypeID="EMERGENCY_MEDICAL_OPERATION" EntitySubTypeID="MORGUE">
+      <LegacyFunctionCode Name="2525C">AK----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="PHARM_SYM" Label="Pharmacy" EntityID="OPERATION" EntityTypeID="EMERGENCY_MEDICAL_OPERATION" EntitySubTypeID="PHARMACY">
+      <LegacyFunctionCode Name="2525C">AL----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="TRIAGE_SYM" Label="Triage" EntityID="OPERATION" EntityTypeID="EMERGENCY_MEDICAL_OPERATION" EntitySubTypeID="TRIAGE">
+      <LegacyFunctionCode Name="2525C">AM----</LegacyFunctionCode>
+    </LegacySymbol>
+    
+    <LegacySymbol ID="EM_OPS_SYM" Label="Emergency Operation" EntityID="OPERATION" EntityTypeID="EMERGENCY_OPERATION">
+      <LegacyFunctionCode Name="2525C">B-----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="EM_EVAC_SYM" Label="Emergency Collection Evacuation Point" EntityID="OPERATION" EntityTypeID="EMERGENCY_OPERATION" EntitySubTypeID="EMERGENCY_COLLECTION_EVACUATION_POINT">
+      <LegacyFunctionCode Name="2525C">BD----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="EM_IC_SYM" Label="Emergency Incident Command Center" EntityID="OPERATION" EntityTypeID="EMERGENCY_OPERATION" EntitySubTypeID="EMERGENCY_INCIDENT_COMMAND_CENTER">
+      <LegacyFunctionCode Name="2525C">BE----</LegacyFunctionCode>
+    </LegacySymbol>
+    
+    <LegacySymbol ID="EM_EOC_SYM" Label="Emergency Operations Center" EntityID="OPERATION" EntityTypeID="EMERGENCY_OPERATION" EntitySubTypeID="EMERGENCY_OPERATIONS_CENTER">
+      <LegacyFunctionCode Name="2525C">BF----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="EM_PIC_SYM" Label="Emergency Public Information Center" EntityID="OPERATION" EntityTypeID="EMERGENCY_OPERATION" EntitySubTypeID="EMERGENCY_PUBLIC_INFORMATION_CENTER">
+      <LegacyFunctionCode Name="2525C">BG----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="EM_SHELTER_SYM" Label="Emergency Shelter" EntityID="OPERATION" EntityTypeID="EMERGENCY_OPERATION" EntitySubTypeID="EMERGENCY_SHELTER">
+      <LegacyFunctionCode Name="2525C">BH----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="EM_STAGING_SYM" Label="Emergency Staging Area" EntityID="OPERATION" EntityTypeID="EMERGENCY_OPERATION" EntitySubTypeID="EMERGENCY_STAGING_AREA">
+      <LegacyFunctionCode Name="2525C">BI----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="EM_WATER_DISTRO_SYM" Label="Emergency Water Distribution Center" EntityID="OPERATION" EntityTypeID="EMERGENCY_OPERATION" EntitySubTypeID="EMERGENCY_WATER_DISTRIBUTION_CENTER">
+      <LegacyFunctionCode Name="2525C">BK----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="EM_FOOD_DISTRO_SYM" Label="Emergency Food Distribution Center" EntityID="OPERATION" EntityTypeID="EMERGENCY_OPERATION" EntitySubTypeID="EMERGENCY_FOOD_DISTRIBUTION">
+      <LegacyFunctionCode Name="2525C">BL----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="FIRE_FIGHTING_SYM" Label="Fire Fighting Operation" EntityID="OPERATION" EntityTypeID="FIRE_FIGHTING_OPERATION">
+      <LegacyFunctionCode Name="2525C">C-----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="FIRE_HYD_SYM" Label="Fire Hydrant" EntityID="OPERATION" EntityTypeID="FIRE_FIGHTING_OPERATION" EntitySubTypeID="FIRE_HYDRANT">
+      <LegacyFunctionCode Name="2525C">CC----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="OTHER_WATER_SYM" Label="Other Water Supply Location" EntityID="OPERATION" EntityTypeID="FIRE_FIGHTING_OPERATION" EntitySubTypeID="OTHER_WATER_SUPPLY_LOCATION">
+      <LegacyFunctionCode Name="2525C">CD----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="FIRE_STATION_SYM" Label="Fire Station" EntityID="OPERATION" EntityTypeID="FIRE_FIGHTING_OPERATION" EntitySubTypeID="FIRE_STATION">
+      <LegacyFunctionCode Name="2525C">CE----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="LEO_SYM" Label="Law Enforcement Operation" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION">
+      <LegacyFunctionCode Name="2525C">D-----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="ATF_SYM" Label="Bureau of Alcohol, Tobacco, and Firearms" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="BUREAU_ATF">
+      <LegacyFunctionCode Name="2525C">DD----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="BORD_PAT_SYM" Label="Border Patrol" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="BORDER_PATROL">
+      <LegacyFunctionCode Name="2525C">DE----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="CUSTOMS_SYM" Label="Customs Service" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="CUSTOMS_SERVICE">
+      <LegacyFunctionCode Name="2525C">DF----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="DEA_SYM" Label="Drug Enforcement Administration" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="DRUG_ENFORCEMENT_ADMIN_DEA">
+      <LegacyFunctionCode Name="2525C">DG----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="DOJ_SYM" Label="Department of Justice" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="JUSTICE_DEPT_DOJ">
+      <LegacyFunctionCode Name="2525C">DH----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="FBI_SYM" Label="Federal Bureau of Investigation" EntityID="OPERATION" EntityTypeID="FEDERAL_BUREAU_NVESTIGATION_FBI">
+      <LegacyFunctionCode Name="2525C">DI----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="POLICE_SYM" Label="Police" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="POLICE">
+      <LegacyFunctionCode Name="2525C">DJ----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="PRISON_SYM" Label="Prison" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="PRISON">
+      <LegacyFunctionCode Name="2525C">DK----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="USSS_SYM" Label="US Secret Service" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="US_SECRET_SERVICE_USSS">
+      <LegacyFunctionCode Name="2525C">DL----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="TSA_SYM" Label="Transportation Security Administration" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="TRANS_SECURITY_ADMIN_TSA">
+      <LegacyFunctionCode Name="2525C">DM----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="COASTGUARD_SYM" Label="Coast Guard" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="COAST_GUARD">
+      <LegacyFunctionCode Name="2525C">DN----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="MARSHAL_SYM" Label="US Marshals Service" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="US_MARSHALS">
+      <LegacyFunctionCode Name="2525C">DO----</LegacyFunctionCode>
+    </LegacySymbol>
+  </LegacySymbols>  
+</SymbolSet>
