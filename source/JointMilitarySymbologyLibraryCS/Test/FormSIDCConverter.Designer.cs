@@ -108,7 +108,8 @@ namespace Test
             "SPSPCLLLSU-----\tLittoral Combat, SUW",
             "SASACUS--------\tASW USV",
             "SFAPMFQRZ------\tRPV ES",
-            "SFAP-----------\tAir"});
+            "SFAP-----------\tAir",
+            "EHIPF----------\tMarine Incident"});
             this.listBox1.Location = new System.Drawing.Point(24, 518);
             this.listBox1.Name = "listBox1";
             this.listBox1.ScrollAlwaysVisible = true;

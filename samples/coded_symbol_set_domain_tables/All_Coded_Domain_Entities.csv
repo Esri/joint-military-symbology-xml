@@ -61,7 +61,7 @@ Space : Military : Orbiter Shuttle,05110400
 Space : Military : Capsule,05110500
 Space : Military : General Satellite,05110600
 Space : Military : Satellite,05110700
-Space : Military : Antisatellite Weapon,05110800
+Space : Military : Anti-Satellite Weapon,05110800
 Space : Military : Astronomical Satellite,05110900
 Space : Military : Biosatellite,05111000
 Space : Military : Communications Satellite,05111100
@@ -181,3 +181,154 @@ Sea Surface : Civilian : Unmanned Surface Water Vehicle (USV),30140700
 Sea Surface : Own Ship,30150000
 Sea Surface : Fused Track,30160000
 Sea Surface : Manual Track,30170000
+Activity : Incident,40110000
+Activity : Incident : Criminal Activity Incident,40110100
+Activity : Incident : Criminal Activity Incident : Arrest,40110101
+Activity : Incident : Criminal Activity Incident : Arson,40110102
+Activity : Incident : Criminal Activity Incident : Attempted Criminal Activity,40110103
+Activity : Incident : Criminal Activity Incident : Drive-by Shooting,40110104
+Activity : Incident : Criminal Activity Incident : Drug Related,40110105
+Activity : Incident : Criminal Activity Incident : Extortion,40110106
+Activity : Incident : Criminal Activity Incident : Graffiti,40110107
+Activity : Incident : Criminal Activity Incident : Killing,40110108
+Activity : Incident : Criminal Activity Incident : Poisoning,40110109
+Activity : Incident : Criminal Activity Incident : Civil Rioting,40110110
+Activity : Incident : Criminal Activity Incident : Booby Trap,40110111
+Activity : Incident : Criminal Activity Incident : Home Eviction,40110112
+Activity : Incident : Criminal Activity Incident : Black Marketing,40110113
+Activity : Incident : Criminal Activity Incident : Vandalism / Loot / Ransack / Plunder,40110114
+Activity : Incident : Criminal Activity Incident : Jail Break,40110115
+Activity : Incident : Criminal Activity Incident : Robbery,40110116
+Activity : Incident : Criminal Activity Incident : Theft,40110117
+Activity : Incident : Criminal Activity Incident : Burglary,40110118
+Activity : Incident : Criminal Activity Incident : Smuggling,40110119
+Activity : Incident : Criminal Activity Incident : Rock Throwing,40110120
+Activity : Incident : Criminal Activity Incident : Dead Body,40110121
+Activity : Incident : Criminal Activity Incident : Sabotage,40110122
+Activity : Incident : Criminal Activity Incident : Suspicious Activity,40110123
+Activity : Incident : Bomb/Bombing,40110200
+Activity : Incident : Bomb/Bombing : Bomb Threat,40110201
+Activity : Incident : IED Event,40110300
+Activity : Incident : IED Event : IED Explosion,40110301
+Activity : Incident : IED Event : Premature IED Explosion,40110302
+Activity : Incident : IED Event : IED Cache,40110303
+Activity : Incident : IED Event : IED Suicide Bomber,40110304
+Activity : Incident : Shooting,40110400
+Activity : Incident : Shooting : Sniping,40110401
+Activity : Incident : Illegal Drug Operation,40110500
+Activity : Incident : Illegal Drug Operation : Trafficking,40110501
+Activity : Incident : Illegal Drug Operation : Illegal Drug Lab,40110502
+Activity : Incident : Explosion,40110600
+Activity : Incident : Explosion : Grenade Explosion,40110601
+Activity : Incident : Explosion : Incendiary Explosion,40110602
+Activity : Incident : Explosion : Mine Explosion,40110603
+Activity : Incident : Explosion : Mortar Fire Explosion,40110604
+Activity : Incident : Explosion : Rocket Explosion,40110605
+Activity : Incident : Explosion : Bomb Explosion,40110606
+Activity : Civil Disturbance,40120000
+Activity : Civil Disturbance : Demonstration,40120100
+Activity : Operation,40130000
+Activity : Operation : Patrolling,40130100
+Activity : Operation : Military Information Support Operation (MISO),40130200
+Activity : Operation : Military Information Support Operation (MISO) : TV and Radio Propaganda,40130201
+Activity : Operation : Foraging/Searching,40130300
+Activity : Operation : Recruitment,40130400
+Activity : Operation : Recruitment : Willing,40130401
+Activity : Operation : Recruitment : Coerced/Impressed,40130402
+Activity : Operation : Mine Laying,40130500
+Activity : Operation : Spy,40130600
+Activity : Operation : Warrant Served,40130700
+Activity : Operation : Exfiltration,40130800
+Activity : Operation : Infiltration,40130900
+Activity : Operation : Meeting,40131000
+Activity : Operation : Meeting : Polling Place/Election,40131001
+Activity : Operation : Raid on House,40131100
+Activity : Operation : Emergency Operation,40131200
+Activity : Operation : Emergency Operation : Emergency Collection Evacuation Point,40131201
+Activity : Operation : Emergency Operation : Emergency Food Distribution,40131202
+Activity : Operation : Emergency Operation : Emergency Incident Command Center,40131203
+Activity : Operation : Emergency Operation : Emergency Operations Center,40131204
+Activity : Operation : Emergency Operation : Emergency Public Information Center,40131205
+Activity : Operation : Emergency Operation : Emergency Shelter,40131206
+Activity : Operation : Emergency Operation : Emergency Staging Area,40131207
+Activity : Operation : Emergency Operation : Emergency Water Distribution Center,40131208
+Activity : Operation : Emergency Medical Operation,40131300
+Activity : Operation : Emergency Medical Operation : EMT Station Location,40131301
+Activity : Operation : Emergency Medical Operation : Health Department Facility,40131302
+Activity : Operation : Emergency Medical Operation : Medical Facilities Outpatient,40131303
+Activity : Operation : Emergency Medical Operation : Morgue,40131304
+Activity : Operation : Emergency Medical Operation : Pharmacy,40131305
+Activity : Operation : Emergency Medical Operation : Triage,40131306
+Activity : Operation : Fire Fighting Operation,40131400
+Activity : Operation : Fire Fighting Operation : Fire Hydrant,40131401
+Activity : Operation : Fire Fighting Operation : Fire Station,40131402
+Activity : Operation : Fire Fighting Operation : Other Water Supply Location,40131403
+Activity : Operation : Law Enforcement Operation,40131500
+Activity : Operation : Law Enforcement Operation : Bureau of Alcohol-Tobacco-Firearms and Explosives (ATF) (Department of Justice),40131501
+Activity : Operation : Law Enforcement Operation : Border Patrol,40131502
+Activity : Operation : Law Enforcement Operation : Customs Service,40131503
+Activity : Operation : Law Enforcement Operation : Drug Enforcement Administration (DEA),40131504
+Activity : Operation : Law Enforcement Operation : Department of Justice (DOJ),40131505
+Activity : Operation : Law Enforcement Operation : Federal Bureau of Investigation (FBI),40131506
+Activity : Operation : Law Enforcement Operation : Police,40131507
+Activity : Operation : Law Enforcement Operation : Prison,40131508
+Activity : Operation : Law Enforcement Operation : United States Secret Service (USSS),40131509
+Activity : Operation : Law Enforcement Operation : Transportation Security Administration (TSA),40131510
+Activity : Operation : Law Enforcement Operation : Coast Guard,40131511
+Activity : Operation : Law Enforcement Operation : US Marshals Service,40131512
+Activity : Operation : Law Enforcement Operation : Internal Security Force,40131513
+Activity : Fire Event,40140000
+Activity : Fire Event : Fire Origin,40140100
+Activity : Fire Event : Smoke,40140200
+Activity : Fire Event : Hot Spot,40140300
+Activity : Fire Event : Non-Residential Fire,40140400
+Activity : Fire Event : Residential Fire,40140500
+Activity : Fire Event : School Fire,40140600
+Activity : Fire Event : Special Needs Fire,40140700
+Activity : Fire Event : Wild Fire,40140800
+Activity : Hazard Materials,40150000
+Activity : Hazard Materials : Hazard Materials Incident,40150100
+Activity : Hazard Materials : Hazard Materials Incident : Chemical Agent,40150101
+Activity : Hazard Materials : Hazard Materials Incident : Corrosive Material,40150102
+Activity : Hazard Materials : Hazard Materials Incident : Hazardous when Wet,40150103
+Activity : Hazard Materials : Hazard Materials Incident : Explosive Material,40150104
+Activity : Hazard Materials : Hazard Materials Incident : Flammable Gas,40150105
+Activity : Hazard Materials : Hazard Materials Incident : Flammable Liquid,40150106
+Activity : Hazard Materials : Hazard Materials Incident : Flammable Solid,40150107
+Activity : Hazard Materials : Hazard Materials Incident : Non-Flammable Gas,40150108
+Activity : Hazard Materials : Hazard Materials Incident : Organic Peroxide,40150109
+Activity : Hazard Materials : Hazard Materials Incident : Oxidizer,40150110
+Activity : Hazard Materials : Hazard Materials Incident : Radioactive Material,40150111
+Activity : Hazard Materials : Hazard Materials Incident : Spontaneously Combustible Material,40150112
+Activity : Hazard Materials : Hazard Materials Incident : Toxic Gas,40150113
+Activity : Hazard Materials : Hazard Materials Incident : Toxic Infectious Material,40150114
+Activity : Hazard Materials : Hazard Materials Incident : Unexploded Ordnance,40150115
+Activity : Transportation Incident,40160000
+Activity : Transportation Incident : Air,40160100
+Activity : Transportation Incident : Marine,40160200
+Activity : Transportation Incident : Rail,40160300
+Activity : Transportation Incident : Vehicle,40160400
+Activity : Transportation Incident : Wheeled Vehicle Explosion,40160500
+Activity : Natural Event,40170000
+Activity : Natural Event : Geologic,40170100
+Activity : Natural Event : Geologic : Aftershock,40170101
+Activity : Natural Event : Geologic : Avalanche,40170102
+Activity : Natural Event : Geologic : Earthquake Epicenter,40170103
+Activity : Natural Event : Geologic : Landslide,40170104
+Activity : Natural Event : Geologic : Subsidence,40170105
+Activity : Natural Event : Geologic : Volcanic Eruption,40170106
+Activity : Natural Event : Geologic : Volcanic Threat,40170107
+Activity : Natural Event : Geologic : Cave Entrance,40170108
+Activity : Natural Event : Hydro-Meteorological,40170200
+Activity : Natural Event : Hydro-Meteorological : Drought,40170201
+Activity : Natural Event : Hydro-Meteorological : Flood,40170202
+Activity : Natural Event : Hydro-Meteorological : Tsunami,40170203
+Activity : Natural Event : Infestation,40170300
+Activity : Natural Event : Infestation : Bird,40170301
+Activity : Natural Event : Infestation : Insect,40170302
+Activity : Natural Event : Infestation : Microbial,40170303
+Activity : Natural Event : Infestation : Reptile,40170304
+Activity : Natural Event : Infestation : Rodent,40170305
+Activity : Individual,40180000
+Activity : Individual : Religious Leader,40180100
+Activity : Individual : Speaker,40180200

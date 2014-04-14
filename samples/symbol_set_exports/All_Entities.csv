@@ -61,7 +61,7 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 05,Military,Capsule,,110500,POINT
 05,Military,General Satellite,,110600,POINT
 05,Military,Satellite,,110700,POINT
-05,Military,Antisatellite Weapon,,110800,POINT
+05,Military,Anti-Satellite Weapon,,110800,POINT
 05,Military,Astronomical Satellite,,110900,POINT
 05,Military,Biosatellite,,111000,POINT
 05,Military,Communications Satellite,,111100,POINT
@@ -181,3 +181,154 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 30,Own Ship,,,150000,POINT
 30,Fused Track,,,160000,POINT
 30,Manual Track,,,170000,POINT
+40,Incident,,,110000,POINT
+40,Incident,Criminal Activity Incident,,110100,POINT
+40,Incident,Criminal Activity Incident,Arrest,110101,POINT
+40,Incident,Criminal Activity Incident,Arson,110102,POINT
+40,Incident,Criminal Activity Incident,Attempted Criminal Activity,110103,POINT
+40,Incident,Criminal Activity Incident,Drive-by Shooting,110104,POINT
+40,Incident,Criminal Activity Incident,Drug Related,110105,POINT
+40,Incident,Criminal Activity Incident,Extortion,110106,POINT
+40,Incident,Criminal Activity Incident,Graffiti,110107,POINT
+40,Incident,Criminal Activity Incident,Killing,110108,POINT
+40,Incident,Criminal Activity Incident,Poisoning,110109,POINT
+40,Incident,Criminal Activity Incident,Civil Rioting,110110,POINT
+40,Incident,Criminal Activity Incident,Booby Trap,110111,POINT
+40,Incident,Criminal Activity Incident,Home Eviction,110112,POINT
+40,Incident,Criminal Activity Incident,Black Marketing,110113,POINT
+40,Incident,Criminal Activity Incident,Vandalism / Loot / Ransack / Plunder,110114,POINT
+40,Incident,Criminal Activity Incident,Jail Break,110115,POINT
+40,Incident,Criminal Activity Incident,Robbery,110116,POINT
+40,Incident,Criminal Activity Incident,Theft,110117,POINT
+40,Incident,Criminal Activity Incident,Burglary,110118,POINT
+40,Incident,Criminal Activity Incident,Smuggling,110119,POINT
+40,Incident,Criminal Activity Incident,Rock Throwing,110120,POINT
+40,Incident,Criminal Activity Incident,Dead Body,110121,POINT
+40,Incident,Criminal Activity Incident,Sabotage,110122,POINT
+40,Incident,Criminal Activity Incident,Suspicious Activity,110123,POINT
+40,Incident,Bomb/Bombing,,110200,POINT
+40,Incident,Bomb/Bombing,Bomb Threat,110201,POINT
+40,Incident,IED Event,,110300,POINT
+40,Incident,IED Event,IED Explosion,110301,POINT
+40,Incident,IED Event,Premature IED Explosion,110302,POINT
+40,Incident,IED Event,IED Cache,110303,POINT
+40,Incident,IED Event,IED Suicide Bomber,110304,POINT
+40,Incident,Shooting,,110400,POINT
+40,Incident,Shooting,Sniping,110401,POINT
+40,Incident,Illegal Drug Operation,,110500,POINT
+40,Incident,Illegal Drug Operation,Trafficking,110501,POINT
+40,Incident,Illegal Drug Operation,Illegal Drug Lab,110502,POINT
+40,Incident,Explosion,,110600,POINT
+40,Incident,Explosion,Grenade Explosion,110601,POINT
+40,Incident,Explosion,Incendiary Explosion,110602,POINT
+40,Incident,Explosion,Mine Explosion,110603,POINT
+40,Incident,Explosion,Mortar Fire Explosion,110604,POINT
+40,Incident,Explosion,Rocket Explosion,110605,POINT
+40,Incident,Explosion,Bomb Explosion,110606,POINT
+40,Civil Disturbance,,,120000,POINT
+40,Civil Disturbance,Demonstration,,120100,POINT
+40,Operation,,,130000,POINT
+40,Operation,Patrolling,,130100,POINT
+40,Operation,Military Information Support Operation (MISO),,130200,POINT
+40,Operation,Military Information Support Operation (MISO),TV and Radio Propaganda,130201,POINT
+40,Operation,Foraging/Searching,,130300,POINT
+40,Operation,Recruitment,,130400,POINT
+40,Operation,Recruitment,Willing,130401,POINT
+40,Operation,Recruitment,Coerced/Impressed,130402,POINT
+40,Operation,Mine Laying,,130500,POINT
+40,Operation,Spy,,130600,POINT
+40,Operation,Warrant Served,,130700,POINT
+40,Operation,Exfiltration,,130800,POINT
+40,Operation,Infiltration,,130900,POINT
+40,Operation,Meeting,,131000,POINT
+40,Operation,Meeting,Polling Place/Election,131001,POINT
+40,Operation,Raid on House,,131100,POINT
+40,Operation,Emergency Operation,,131200,POINT
+40,Operation,Emergency Operation,Emergency Collection Evacuation Point,131201,POINT
+40,Operation,Emergency Operation,Emergency Food Distribution,131202,POINT
+40,Operation,Emergency Operation,Emergency Incident Command Center,131203,POINT
+40,Operation,Emergency Operation,Emergency Operations Center,131204,POINT
+40,Operation,Emergency Operation,Emergency Public Information Center,131205,POINT
+40,Operation,Emergency Operation,Emergency Shelter,131206,POINT
+40,Operation,Emergency Operation,Emergency Staging Area,131207,POINT
+40,Operation,Emergency Operation,Emergency Water Distribution Center,131208,POINT
+40,Operation,Emergency Medical Operation,,131300,POINT
+40,Operation,Emergency Medical Operation,EMT Station Location,131301,POINT
+40,Operation,Emergency Medical Operation,Health Department Facility,131302,POINT
+40,Operation,Emergency Medical Operation,Medical Facilities Outpatient,131303,POINT
+40,Operation,Emergency Medical Operation,Morgue,131304,POINT
+40,Operation,Emergency Medical Operation,Pharmacy,131305,POINT
+40,Operation,Emergency Medical Operation,Triage,131306,POINT
+40,Operation,Fire Fighting Operation,,131400,POINT
+40,Operation,Fire Fighting Operation,Fire Hydrant,131401,POINT
+40,Operation,Fire Fighting Operation,Fire Station,131402,POINT
+40,Operation,Fire Fighting Operation,Other Water Supply Location,131403,POINT
+40,Operation,Law Enforcement Operation,,131500,POINT
+40,Operation,Law Enforcement Operation,Bureau of Alcohol-Tobacco-Firearms and Explosives (ATF) (Department of Justice),131501,POINT
+40,Operation,Law Enforcement Operation,Border Patrol,131502,POINT
+40,Operation,Law Enforcement Operation,Customs Service,131503,POINT
+40,Operation,Law Enforcement Operation,Drug Enforcement Administration (DEA),131504,POINT
+40,Operation,Law Enforcement Operation,Department of Justice (DOJ),131505,POINT
+40,Operation,Law Enforcement Operation,Federal Bureau of Investigation (FBI),131506,POINT
+40,Operation,Law Enforcement Operation,Police,131507,POINT
+40,Operation,Law Enforcement Operation,Prison,131508,POINT
+40,Operation,Law Enforcement Operation,United States Secret Service (USSS),131509,POINT
+40,Operation,Law Enforcement Operation,Transportation Security Administration (TSA),131510,POINT
+40,Operation,Law Enforcement Operation,Coast Guard,131511,POINT
+40,Operation,Law Enforcement Operation,US Marshals Service,131512,POINT
+40,Operation,Law Enforcement Operation,Internal Security Force,131513,POINT
+40,Fire Event,,,140000,POINT
+40,Fire Event,Fire Origin,,140100,POINT
+40,Fire Event,Smoke,,140200,POINT
+40,Fire Event,Hot Spot,,140300,POINT
+40,Fire Event,Non-Residential Fire,,140400,POINT
+40,Fire Event,Residential Fire,,140500,POINT
+40,Fire Event,School Fire,,140600,POINT
+40,Fire Event,Special Needs Fire,,140700,POINT
+40,Fire Event,Wild Fire,,140800,POINT
+40,Hazard Materials,,,150000,POINT
+40,Hazard Materials,Hazard Materials Incident,,150100,POINT
+40,Hazard Materials,Hazard Materials Incident,Chemical Agent,150101,POINT
+40,Hazard Materials,Hazard Materials Incident,Corrosive Material,150102,POINT
+40,Hazard Materials,Hazard Materials Incident,Hazardous when Wet,150103,POINT
+40,Hazard Materials,Hazard Materials Incident,Explosive Material,150104,POINT
+40,Hazard Materials,Hazard Materials Incident,Flammable Gas,150105,POINT
+40,Hazard Materials,Hazard Materials Incident,Flammable Liquid,150106,POINT
+40,Hazard Materials,Hazard Materials Incident,Flammable Solid,150107,POINT
+40,Hazard Materials,Hazard Materials Incident,Non-Flammable Gas,150108,POINT
+40,Hazard Materials,Hazard Materials Incident,Organic Peroxide,150109,POINT
+40,Hazard Materials,Hazard Materials Incident,Oxidizer,150110,POINT
+40,Hazard Materials,Hazard Materials Incident,Radioactive Material,150111,POINT
+40,Hazard Materials,Hazard Materials Incident,Spontaneously Combustible Material,150112,POINT
+40,Hazard Materials,Hazard Materials Incident,Toxic Gas,150113,POINT
+40,Hazard Materials,Hazard Materials Incident,Toxic Infectious Material,150114,POINT
+40,Hazard Materials,Hazard Materials Incident,Unexploded Ordnance,150115,POINT
+40,Transportation Incident,,,160000,POINT
+40,Transportation Incident,Air,,160100,POINT
+40,Transportation Incident,Marine,,160200,POINT
+40,Transportation Incident,Rail,,160300,POINT
+40,Transportation Incident,Vehicle,,160400,POINT
+40,Transportation Incident,Wheeled Vehicle Explosion,,160500,POINT
+40,Natural Event,,,170000,POINT
+40,Natural Event,Geologic,,170100,POINT
+40,Natural Event,Geologic,Aftershock,170101,POINT
+40,Natural Event,Geologic,Avalanche,170102,POINT
+40,Natural Event,Geologic,Earthquake Epicenter,170103,POINT
+40,Natural Event,Geologic,Landslide,170104,POINT
+40,Natural Event,Geologic,Subsidence,170105,POINT
+40,Natural Event,Geologic,Volcanic Eruption,170106,POINT
+40,Natural Event,Geologic,Volcanic Threat,170107,POINT
+40,Natural Event,Geologic,Cave Entrance,170108,POINT
+40,Natural Event,Hydro-Meteorological,,170200,POINT
+40,Natural Event,Hydro-Meteorological,Drought,170201,POINT
+40,Natural Event,Hydro-Meteorological,Flood,170202,POINT
+40,Natural Event,Hydro-Meteorological,Tsunami,170203,POINT
+40,Natural Event,Infestation,,170300,POINT
+40,Natural Event,Infestation,Bird,170301,POINT
+40,Natural Event,Infestation,Insect,170302,POINT
+40,Natural Event,Infestation,Microbial,170303,POINT
+40,Natural Event,Infestation,Reptile,170304,POINT
+40,Natural Event,Infestation,Rodent,170305,POINT
+40,Individual,,,180000,POINT
+40,Individual,Religious Leader,,180100,POINT
+40,Individual,Speaker,,180200,POINT
