@@ -1026,11 +1026,14 @@ namespace JointMilitarySymbologyLibrary
 
             foreach (LibraryDimension lObj in this._library.Dimensions)
             {
-                foreach (LegacyLetterCodeType lObj2 in lObj.LegacyDimensionCode)
+                if (lObj.LegacyDimensionCode != null)
                 {
-                    if (lObj2.Value == code)
+                    foreach (LegacyLetterCodeType lObj2 in lObj.LegacyDimensionCode)
                     {
-                        return lObj;
+                        if (lObj2.Value == code)
+                        {
+                            return lObj;
+                        }
                     }
                 }
             }
