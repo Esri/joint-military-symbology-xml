@@ -28,19 +28,21 @@ namespace jmsml
         {
             _librarian.IsLogging = true;
 
-            //CommandLineArgs.I.parseArgs(args, "myStringArg=defaultVal;someLong=12");
-            //Console.WriteLine("Arg myStringArg  : '{0}' ", CommandLineArgs.I.argAsString("myStringArg"));
-            //Console.WriteLine("Arg someLong     : '{0}' ", CommandLineArgs.I.argAsLong("someLong"));
-
-            CommandLineArgs.I.parseArgs(args, "");
+            CommandLineArgs.I.parseArgs(args, "/e=false");
 
             string exportPath = CommandLineArgs.I.argAsString("/x");
+            string exportDPath = CommandLineArgs.I.argAsString("/xd");
+            string exportDomainPath = CommandLineArgs.I.argAsString("/b");
             string symbolSet = CommandLineArgs.I.argAsString("/s");
             string query = CommandLineArgs.I.argAsString("/q");
             string help = CommandLineArgs.I.argAsString("/?");
             string xPoints = CommandLineArgs.I.argAsString("/p");
             string xLines = CommandLineArgs.I.argAsString("/l");
             string xAreas = CommandLineArgs.I.argAsString("/a");
+            string importPath = CommandLineArgs.I.argAsString("/i");
+            string legacyCode = CommandLineArgs.I.argAsString("/lc");
+            string modPath = CommandLineArgs.I.argAsString("/m");
+            bool dataValidation = (CommandLineArgs.I.argAsString("/e") != "false");
 
             if (help == "/?")
             {
@@ -48,11 +50,14 @@ namespace jmsml
                 Console.WriteLine("");
                 Console.WriteLine("/?\t\t\t: Help/Show command line options.");
                 Console.WriteLine("/a\t\t\t: Export symbols with AREA geometry.");
+                Console.WriteLine("/b\t\t\t: Export all coded base domain tables to a folder.");
+                Console.WriteLine("/e\t\t\t: Add data validation when exporting domain tables.");
                 Console.WriteLine("/l\t\t\t: Export symbols with LINE geometry.");
                 Console.WriteLine("/p\t\t\t: Export symbols with POINT geometry.");
                 Console.WriteLine("/q=\"<expression>\"\t: Use regular expression to query on other labels.");
                 Console.WriteLine("/s=\"<expression>\"\t: Use regular expression to query on symbol set labels.");
                 Console.WriteLine("/x=\"<pathname>\"\t\t: Export to specified path (omit .csv).");
+                Console.WriteLine("/xd=\"<pathname>\"\t: Export to specified path as coded domain (omit .csv).");
                 Console.WriteLine("");
                 Console.WriteLine("<Enter> to continue.");
                 Console.ReadLine();
@@ -62,7 +67,26 @@ namespace jmsml
             {
                 _librarian.Export(exportPath, symbolSet, query, xPoints == "/p" || xLines == "" && xAreas == "", 
                                                                 xLines == "/l" || xPoints == "" && xAreas == "",
-                                                                xAreas == "/a" || xPoints == "" && xLines == "");
+                                                                xAreas == "/a" || xPoints == "" && xLines == "",
+                                                                false);
+            }
+
+            if (exportDPath != "")
+            {
+                _librarian.Export(exportDPath, symbolSet, query, xPoints == "/p" || xLines == "" && xAreas == "",
+                                                                xLines == "/l" || xPoints == "" && xAreas == "",
+                                                                xAreas == "/a" || xPoints == "" && xLines == "",
+                                                                true);
+            }
+
+            if (exportDomainPath != "")
+            {
+                _librarian.ExportDomains(exportDomainPath, dataValidation);
+            }
+
+            if (importPath != "")
+            {
+                _librarian.Import(importPath, modPath, symbolSet, legacyCode);
             }
         }
 

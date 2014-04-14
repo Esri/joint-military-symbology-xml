@@ -6,7 +6,7 @@ This samples folder contains sample output from the tools included in this repo.
 
 Usage for the jmsml console application is:
 
-![](http://i.imgur.com/gPiIq3f.jpg)
+![](usage.jpg)
 
 ### All_Entities.csv and All_Modifiers.csv ###
 Generated using the following jmsml command line arguments, to export all of the current contents of the JMSML library:
@@ -23,4 +23,16 @@ Generated using the following jmsml command line arguments, to extract just the 
 
 	jmsml.exe /x="Air" /s="^Air$" /q="Light"
 
+### Coded Domain Tables ###
+The coded domain tables are comma separated files that have been exported from the JMSML library, for use by developers who need a straightforward dump of its contents.  It contains the label attribute and SIDC code for each element in the standard, exported to multiple files.  The /b switch value should be the location (folder) in which you want the files placed.
 
+The optional /e switch causes the coded domain table export to add additional data validation information to the output.
+
+	jmsml.exe /b=".'
+	jmsml.exe /b="." /e
+
+### Coded Domain Entity/Modifier Tables ###
+Coded domain tables for entities and modifiers can be generated with or without the same optional filters/regular expressions documented above (with the /s, /q, /a, /l, and /p switches) by specifying the /xd switch.
+
+	jmsml.exe /xd="All_Coded_Domain"
+	jmsml.exe /xd="Air_Coded_Domain" /s="^Air$"

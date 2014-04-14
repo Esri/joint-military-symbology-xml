@@ -406,10 +406,13 @@ namespace JointMilitarySymbologyLibrary {
         
         private string drawNoteField;
         
+        private StandardType standardField;
+        
         public SymbolSetEntity() {
             this.geometryTypeField = GeometryType.POINT;
             this.drawRuleIDField = "POINT2";
             this.drawNoteField = "Not Applicable";
+            this.standardField = StandardType.ALL;
         }
         
         /// <remarks/>
@@ -589,6 +592,18 @@ namespace JointMilitarySymbologyLibrary {
                 this.drawNoteField = value;
             }
         }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute(StandardType.ALL)]
+        public StandardType Standard {
+            get {
+                return this.standardField;
+            }
+            set {
+                this.standardField = value;
+            }
+        }
     }
     
     /// <remarks/>
@@ -629,9 +644,12 @@ namespace JointMilitarySymbologyLibrary {
         
         private string drawNoteField;
         
+        private StandardType standardField;
+        
         public SymbolSetEntityEntityType() {
             this.drawRuleIDField = "POINT2";
             this.drawNoteField = "Not Applicable";
+            this.standardField = StandardType.ALL;
         }
         
         /// <remarks/>
@@ -799,6 +817,18 @@ namespace JointMilitarySymbologyLibrary {
                 this.drawNoteField = value;
             }
         }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute(StandardType.ALL)]
+        public StandardType Standard {
+            get {
+                return this.standardField;
+            }
+            set {
+                this.standardField = value;
+            }
+        }
     }
     
     /// <remarks/>
@@ -837,9 +867,12 @@ namespace JointMilitarySymbologyLibrary {
         
         private string drawNoteField;
         
+        private StandardType standardField;
+        
         public SymbolSetEntityEntityTypeEntitySubType() {
             this.drawRuleIDField = "POINT2";
             this.drawNoteField = "Not Applicable";
+            this.standardField = StandardType.ALL;
         }
         
         /// <remarks/>
@@ -996,6 +1029,34 @@ namespace JointMilitarySymbologyLibrary {
                 this.drawNoteField = value;
             }
         }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute(StandardType.ALL)]
+        public StandardType Standard {
+            get {
+                return this.standardField;
+            }
+            set {
+                this.standardField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://disa.mil/JointMilSyML.xsd")]
+    public enum StandardType {
+        
+        /// <remarks/>
+        ALL,
+        
+        /// <remarks/>
+        MILSTD_2525,
+        
+        /// <remarks/>
+        NATO_APP6,
     }
     
     /// <remarks/>
@@ -1037,6 +1098,12 @@ namespace JointMilitarySymbologyLibrary {
         private string categoryField;
         
         private string limitUseToField;
+        
+        private StandardType standardField;
+        
+        public ModifiersTypeModifier() {
+            this.standardField = StandardType.ALL;
+        }
         
         /// <remarks/>
         public DoubleDigitType ModifierCode {
@@ -1124,6 +1191,18 @@ namespace JointMilitarySymbologyLibrary {
                 this.limitUseToField = value;
             }
         }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute(StandardType.ALL)]
+        public StandardType Standard {
+            get {
+                return this.standardField;
+            }
+            set {
+                this.standardField = value;
+            }
+        }
     }
     
     /// <remarks/>
@@ -1154,12 +1233,15 @@ namespace JointMilitarySymbologyLibrary {
         
         private string modifierTwoIDField;
         
+        private StandardType standardField;
+        
         public SymbolSetLegacySymbol() {
             this.entityIDField = "NA";
             this.entityTypeIDField = "NA";
             this.entitySubTypeIDField = "NA";
             this.modifierOneIDField = "NA";
             this.modifierTwoIDField = "NA";
+            this.standardField = StandardType.ALL;
         }
         
         /// <remarks/>
@@ -1274,6 +1356,18 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.modifierTwoIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute(StandardType.ALL)]
+        public StandardType Standard {
+            get {
+                return this.standardField;
+            }
+            set {
+                this.standardField = value;
             }
         }
     }

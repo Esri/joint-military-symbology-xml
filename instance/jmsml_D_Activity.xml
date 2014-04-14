@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="SS_ACTIVITY" Label="Activities" DimensionID="ACTIVITY">
+<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="SS_ACTIVITY" Label="Activity" DimensionID="ACTIVITY">
 	<SymbolSetCode>
 		<DigitOne>4</DigitOne>
 		<DigitTwo>0</DigitTwo>
 	</SymbolSetCode>
-	<LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
+	<LegacyCodingSchemeCode Name="2525C">E</LegacyCodingSchemeCode>
 	<Entities>
 		<Entity ID="INCIDENT" Label="Incident" Remarks="No icon associated with this entity. It is for hierarchal purposes only.">
 			<EntityCode>
@@ -1099,7 +1099,7 @@
       <LegacyFunctionCode Name="2525C">B-----</LegacyFunctionCode>
     </LegacySymbol>
 
-    <LegacySymbol ID="BOMB_EXP_SYM" Label="Bomb Explosion" EntityID="Incident" EntityTypeID="BOMB_BOMBING">
+    <LegacySymbol ID="BOMB_EXP_SYM" Label="Bomb Explosion" EntityID="INCIDENT" EntityTypeID="BOMB_BOMBING">
       <LegacyFunctionCode Name="2525C">BC----</LegacyFunctionCode>
     </LegacySymbol>
 
@@ -1159,39 +1159,39 @@
       <LegacyFunctionCode Name="2525C">DA----</LegacyFunctionCode>
     </LegacySymbol>
 
-    <LegacySymbol ID="CORROSIVE_SYM" Label="Corrosive Material" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARDOUS_MATERIALS_INCIDENT" EntitySubTypeID="CORROSIVE_MATERIAL">
+    <LegacySymbol ID="CORROSIVE_SYM" Label="Corrosive Material" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARD_MATERIALS_INCIDENT" EntitySubTypeID="CORROSIVE_MATERIAL">
       <LegacyFunctionCode Name="2525C">DB----</LegacyFunctionCode>
     </LegacySymbol>
 
-    <LegacySymbol ID="HAZ_WET_SYM" Label="Hazardous When Wet" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARDOUS_MATERIALS_INCIDENT" EntitySubTypeID="HAZARDOUS_WHEN_WET">
+    <LegacySymbol ID="HAZ_WET_SYM" Label="Hazardous When Wet" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARD_MATERIALS_INCIDENT" EntitySubTypeID="HAZARDOUS_WHEN_WET">
       <LegacyFunctionCode Name="2525C">DC----</LegacyFunctionCode>
     </LegacySymbol>
 
-    <LegacySymbol ID="EXP_MAT_SYM" Label="Explosive Material" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARDOUS_MATERIALS_INCIDENT" EntitySubTypeID="EXPLOSIVE_MATERIAL">
+    <LegacySymbol ID="EXP_MAT_SYM" Label="Explosive Material" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARD_MATERIALS_INCIDENT" EntitySubTypeID="EXPLOSIVE_MATERIAL">
       <LegacyFunctionCode Name="2525C">DD----</LegacyFunctionCode>
     </LegacySymbol>
 
-    <LegacySymbol ID="FLAM_GAS_SYM" Label="Flammable Gas" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARDOUS_MATERIALS_INCIDENT" EntitySubTypeID="FLAMMABLE_GAS">
+    <LegacySymbol ID="FLAM_GAS_SYM" Label="Flammable Gas" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARD_MATERIALS_INCIDENT" EntitySubTypeID="FLAMMABLE_GAS">
       <LegacyFunctionCode Name="2525C">DE----</LegacyFunctionCode>
     </LegacySymbol>
 
-    <LegacySymbol ID="FLAM_LIQUID_SYM" Label="Flammable Liquid" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARDOUS_MATERIALS_INCIDENT" EntitySubTypeID="FLAMMABLE_LIQUID">
+    <LegacySymbol ID="FLAM_LIQUID_SYM" Label="Flammable Liquid" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARD_MATERIALS_INCIDENT" EntitySubTypeID="FLAMMABLE_LIQUID">
       <LegacyFunctionCode Name="2525C">DF----</LegacyFunctionCode>
     </LegacySymbol>
 
-    <LegacySymbol ID="FLAM_SOLID_SYM" Label="Flammable Solid" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARDOUS_MATERIALS_INCIDENT" EntitySubTypeID="FLAMMABLE_SOLID">
+    <LegacySymbol ID="FLAM_SOLID_SYM" Label="Flammable Solid" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARD_MATERIALS_INCIDENT" EntitySubTypeID="FLAMMABLE_SOLID">
       <LegacyFunctionCode Name="2525C">DG----</LegacyFunctionCode>
     </LegacySymbol>
 
-    <LegacySymbol ID="NON_FLAM_GAS_SYM" Label="Non-Flammable Gas" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARDOUS_MATERIALS_INCIDENT" EntitySubTypeID="NON_FLAMMABLE_GAS">
+    <LegacySymbol ID="NON_FLAM_GAS_SYM" Label="Non-Flammable Gas" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARD_MATERIALS_INCIDENT" EntitySubTypeID="NON_FLAMMABLE_GAS">
       <LegacyFunctionCode Name="2525C">DH----</LegacyFunctionCode>
     </LegacySymbol>
 
-    <LegacySymbol ID="ORG_PEROXIDE_SYM" Label="Organic Peroxide" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARDOUS_MATERIALS_INCIDENT" EntitySubTypeID="ORGANIC_PEROXIDE">
+    <LegacySymbol ID="ORG_PEROXIDE_SYM" Label="Organic Peroxide" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARD_MATERIALS_INCIDENT" EntitySubTypeID="ORGANIC_PEROXIDE">
       <LegacyFunctionCode Name="2525C">DI----</LegacyFunctionCode>
     </LegacySymbol>
 
-    <LegacySymbol ID="OXIDIZER_SYM" Label="Oxidizer" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARDOUS_MATERIALS_INCIDENT" EntitySubTypeID="OXIDIZER">
+    <LegacySymbol ID="OXIDIZER_SYM" Label="Oxidizer" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARD_MATERIALS_INCIDENT" EntitySubTypeID="OXIDIZER">
       <LegacyFunctionCode Name="2525C">DJ----</LegacyFunctionCode>
     </LegacySymbol>
 
@@ -1271,7 +1271,7 @@
       <LegacyFunctionCode Name="2525C">AB----</LegacyFunctionCode>
     </LegacySymbol>
 
-    <LegacySymbol ID="EARTHQUAKE_SYM" Label="Earthquake Epicenter" EntityID="NATURAL_EVENT" EntityTypeID="GEOLOGIC" EntitySubTypeID="EARTHQUAKE_EPICENTER">
+    <LegacySymbol ID="EARTHQUAKE_EPI_SYM" Label="Earthquake Epicenter" EntityID="NATURAL_EVENT" EntityTypeID="GEOLOGIC" EntitySubTypeID="EARTHQUAKE_EPICENTER">
       <LegacyFunctionCode Name="2525C">AC----</LegacyFunctionCode>
     </LegacySymbol>
 
@@ -1319,11 +1319,11 @@
       <LegacyFunctionCode Name="2525C">CE----</LegacyFunctionCode>
     </LegacySymbol>
 
-    <LegacySymbol ID="AFTERSHOCK_SYM" Label="Emergency Medical Operation" EntityID="OPERATION" EntityTypeID="EMERGENCY_MEDICAL_OPERATION">
+    <LegacySymbol ID="EM_OP_SYM" Label="Emergency Medical Operation" EntityID="OPERATION" EntityTypeID="EMERGENCY_MEDICAL_OPERATION">
       <LegacyFunctionCode Name="2525C">A-----</LegacyFunctionCode>
     </LegacySymbol>
 
-    <LegacySymbol ID="EARTHQUAKE_SYM" Label="Emergency Medical Operation Equipment" EntityID="OPERATION" EntityTypeID="EMERGENCY_MEDICAL_OPERATION">
+    <LegacySymbol ID="EM_OP_EQUIP_SYM" Label="Emergency Medical Operation Equipment" EntityID="OPERATION" EntityTypeID="EMERGENCY_MEDICAL_OPERATION">
       <LegacyFunctionCode Name="2525C">AB----</LegacyFunctionCode>
     </LegacySymbol>
 
