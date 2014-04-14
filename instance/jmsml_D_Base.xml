@@ -11,11 +11,16 @@
     <Amplifier ID="AL" Label="Operational Condition" Description="A graphic amplifier for equipment or installations that indicates operational condition or capacity." Type="GRAPHIC"/>
     <Amplifier ID="AQ" Label="Guarded Unit" Description="During ballistic missile defense, some tracks are designated as guarded by a particular unit." Type="TEXT" Length="2" />
     <Amplifier ID="AR" Label="Special Designator" Description="Special track designators such as Non-Real Time (NRT) and Tactically Significant (SIG) tracks are denoted here." Type="TEXT" Length="3"/>
+    <Amplifier ID="AS" Label="Country" Description="Identifies the country of the organization being shown." Remarks="Uses the GENC Standard." Type="TEXT" Length="3"/>
     <Amplifier ID="G" Label="Staff Comments" Description="A text amplifier for units, equipment, and installations." Remarks="Content is implementation specific." Type="TEXT" Length="20"/>
     <Amplifier ID="H" Label="Additional Information" Description="A text amplifier for units, equipment, and installations." Remarks="Content is implementation specific." Type="TEXT" Length="20"/>
+    <Amplifier ID="J" Label="Evaluation Rating" Description="A text amplifier for units, equipment and installations that consists of a one-letter reliability rating and a one-number credibility rating." Remarks="Reliability: A-F and Credibility: 1-6" Type="TEXT" Length="2"/>
     <Amplifier ID="P" Label="IFF/SIF/AIS" Description="A text amplifier displaying IFF/SIF/AIS identification modes and codes." Type="TEXT" Length="15"/>
+    <Amplifier ID="Q" Label="Direction of Movement Indicator" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." Type="GRAPHIC"/>
+    <Amplifier ID="S" Label="Headquarters Staff Indicator/Offset Location Indicator" Description="Headquarters staff indicator: A graphic amplifier for units, equipment and installations that identifies a unit as a headquarters." Remarks="Offset location indicator: A graphic amplifier for units, equipment and installations used when placing an object away from its actual location." Type="GRAPHIC"/>
     <Amplifier ID="T" Label="Unique Designation" Description="A text amplifier for units, equipment and installations that uniquely identifies a particular symbol or track number." Remarks="Identifies acquisition number when used with SIGINT symbology." Type="TEXT" Length="30"/>
     <Amplifier ID="V" Label="Type" Description="A text amplifier for equipment that indicates types of equipment." Type="TEXT" Length="24"/>
+    <Amplifier ID="W" Label="Date/Time Group (DTG)" Description="An alphanumeric designator for displaying a date-time group (DDHHMMSSZMONYYYY) or O/O for on order." Remarks="The date-time group is composed of a group of six numeric digits with a time zone suffix and the standardized three-letter abbreviation for the month followed by four digits representing the year." Type="TEXT" Length="16"/>
     <Amplifier ID="X" Label="Altitude/Depth" Description="A text amplifier for units, equipment, and installations that displays either altitude, flight level, depth for submerged objects." Remarks="Alternatively, used to indicate the height of equipment or structures on the ground." Type="TEXT" Length="14"/>
     <Amplifier ID="Y" Label="Location" Description="A text amplifier for units, equipment, and installations that displays a symbol's location in degrees, minutes, and decimal minutes." Remarks="Alternatively, in MGRS or other applicable display format." Type="TEXT" Length="19" Note="To support homeland security and homeland defense, the federal Geographic Data Committee (FGDC) US National Grid (USNG) standard when referenced to North American Datum 1983 (NAD83) is operationally equivalent to and is an accepted substitute for MGRS coordinates referenced to WGS 84. Note that at mapping scales of 1:5000 and smaller, NAD83 and WGS 84 are considered equivalent."/>
     <Amplifier ID="Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD 6040." Type="TEXT" Length="8"/>
@@ -38,6 +43,7 @@
         <ContextAmplifier ID="REALITY_CURVE_AMP" Description="No reality Graphic Amplifier exists" Shape="CURVE"/>
         <ContextAmplifier ID="REALITY_RECT_AMP" Description="No reality Graphic Amplifier exists" Shape="RECTANGLE"/>
         <ContextAmplifier ID="REALITY_SQUARE_AMP" Description="No reality Graphic Amplifier exists" Shape="SQUARE"/>
+        <ContextAmplifier ID="REALITY_DIAMOND_AMP" Description="No reality Graphic Amplifier exists" Shape="DIAMOND"/>
         <ContextAmplifier ID="REALITY_CIRCLE_AMP" Description="No reality Graphic Amplifier exists" Shape="CIRCLE"/>
       </ContextAmplifiers>
     </Context>
@@ -112,7 +118,6 @@
 
   <Dimensions>
     <Dimension ID="INTERNAL" Label="Internal">
-      <LegacyDimensionCode Name="2525C">I</LegacyDimensionCode>
       <Fields/>
       <SymbolSets>
         <SymbolSetRef ID="SS_INTERNAL" Label="Internal" Instance="jmsml_D_Internal.xml">
@@ -201,13 +206,34 @@
         <Field Name="P" Label="Automatic Identification System (AIS)" Description="A text amplifier displaying the maritime Automatic Identification System." AmplifierID="P" X="1" Y="0"/>
         <Field Name="T" Label="Unique Designation (Track Number)" Description="A text amplifier for units, equipment, and installations that uniquely identifies a particular symbol or track number." Remarks="Prefix = TN:#####  Example: TN:13579" AmplifierID="T" X="1" Y="2"/>
         <Field Name="V" Label="Type" Description="A text amplifier for equipment that indicates types of equipment." AmplifierID="V" X="1" Y="1"/>
-        <Field Name="Y" Label="Location" Description="" AmplifierID="Y" X="1" Y="-2"/>
+        <Field Name="Y" Label="Location" Description="A text amplifier for units, equipment and installations that displays a symbol’s location in degrees, minutes and seconds (or in UTM or other applicable display format)." AmplifierID="Y" X="1" Y="-2"/>
         <Field Name="Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD-6040." AmplifierID="Z" X="1" Y="-2"/>
       </Fields>
       <SymbolSets>
         <SymbolSetRef ID="SS_SEA_SURFACE" Label="Sea Surface" Instance="jmsml_D_Sea_Surface.xml">
           <SymbolSetCode>
             <DigitOne>3</DigitOne>
+            <DigitTwo>0</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
+      </SymbolSets>
+    </Dimension>
+
+    <Dimension ID="ACTIVITY" Label="Activity">
+      <LegacyDimensionCode Name="2525C">I</LegacyDimensionCode>
+      <Fields>
+        <Field Name="AS" Label="Country Indicator" Description="A three-letter code that indicates the country of origin of the organization (STANAG 1059)." Remarks="In stability activities, this field can be used for factions or groups." AmplifierID="AS" X="1" Y="2"/>
+        <Field Name="G" Label="Staff Comments" Description="Free text." Remarks="Can be used by staff for information required by commander." AmplifierID="G" X="1" Y="1"/>
+        <Field Name="H" Label="Additional Informartion" Description="Free text." AmplifierID="H" X="1" Y="0"/>
+        <Field Name="J" Label="Evaluation Rating" Description="Degree of confidence that may be placed on the information represented by the symbol." Remarks="It is shown as one letter and one number made up of Reliability of Source and Credibility of Information." AmplifierID="J" X="1" Y="-2"/>
+        <Field Name="S" Label="Offset Location Indicator" Description="It is used to denote precise location." AmplifierID="S" X="0" Y="-1"/>
+        <Field Name="W" Label="Date-Time Group" Description="An alphanumeric designator for displaying a datetime group (DDHHMMSSZMONYY) or O/O for on order." Remarks="The date-time group is composed of a group of six numeric digits with a time zone suffix and the standardized three-letter abbreviation for the month followed by two digits." AmplifierID="W" X="-1" Y="2"/>
+        <Field Name="Y" Label="Location" Description="A text amplifier for units, equipment and installations that displays a symbol’s location in degrees, minutes and seconds (or in UTM or other applicable display format)." AmplifierID="Y" X="-1" Y="1"/>
+      </Fields>
+      <SymbolSets>
+        <SymbolSetRef ID="SS_ACTIVITY" Label="Activity" Instance="jmsml_D_Activity.xml">
+          <SymbolSetCode>
+            <DigitOne>4</DigitOne>
             <DigitTwo>0</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
@@ -291,7 +317,7 @@
       <LegacyStandardIdentityCode Name="2525C">J</LegacyStandardIdentityCode>
     </Affiliation>
 
-    <Affiliation ID="SIMULATED_UNKNOWN_SUSPECT" ContextID="SIMULATION" DimensionID="UNKNOWN" StandardIdentityID="SI_SUSPECT" Shape="DIAMOND"/>
+    <Affiliation ID="SIMULATED_UNKNOWN_SUSPECT" ContextID="SIMULATION" DimensionID="UNKNOWN" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND"/>
 
     <!-- Air Dimension Affiliations -->
 
@@ -508,6 +534,78 @@
     </Affiliation>
 
     <Affiliation ID="SIMULATED_SEA_SUSPECT" ContextID="SIMULATION" DimensionID="SEA_SURFACE" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND"/>
+  
+    <!-- Activity Affiliations -->
+
+    <Affiliation ID="REALITY_ACTIVITY_PENDING" ContextID="REALITY" DimensionID="ACTIVITY" StandardIdentityID="SI_PENDING" Shape="CLOVER">
+      <LegacyStandardIdentityCode Name="2525C">P</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="EXERCISE_ACTIVITY_PENDING" ContextID="EXERCISE" DimensionID="ACTIVITY" StandardIdentityID="SI_PENDING" Shape="CLOVER">
+      <LegacyStandardIdentityCode Name="2525C">G</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="SIMULATED_ACTIVITY_PENDING" ContextID="SIMULATION" DimensionID="ACTIVITY" StandardIdentityID="SI_PENDING" Shape="CLOVER"/>
+
+    <Affiliation ID="REALITY_ACTIVITY_UNKNOWN" ContextID="REALITY" DimensionID="ACTIVITY" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER">
+      <LegacyStandardIdentityCode Name="2525C">U</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="EXERCISE_ACTIVITY_UNKNOWN" ContextID="EXERCISE" DimensionID="ACTIVITY" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER">
+      <LegacyStandardIdentityCode Name="2525C">W</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="SIMULATED_ACTIVITY_UNKNOWN" ContextID="SIMULATION" DimensionID="ACTIVITY" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER"/>
+
+    <Affiliation ID="REALITY_ACTIVITY_FRIEND" ContextID="REALITY" DimensionID="ACTIVITY" StandardIdentityID="SI_FRIEND" Shape="CIRCLE">
+      <LegacyStandardIdentityCode Name="2525C">F</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="EXERCISE_ACTIVITY_FRIEND" ContextID="EXERCISE" DimensionID="ACTIVITY" StandardIdentityID="SI_FRIEND" Shape="CIRCLE">
+      <LegacyStandardIdentityCode Name="2525C">D</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="SIMULATED_ACTIVITY_FRIEND" ContextID="SIMULATION" DimensionID="ACTIVITY" StandardIdentityID="SI_FRIEND" Shape="CIRCLE"/>
+
+    <Affiliation ID="REALITY_ACTIVITY_NEUTRAL" ContextID="REALITY" DimensionID="ACTIVITY" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE">
+      <LegacyStandardIdentityCode Name="2525C">N</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="EXERCISE_ACTIVITY_NEUTRAL" ContextID="EXERCISE" DimensionID="ACTIVITY" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE">
+      <LegacyStandardIdentityCode Name="2525C">L</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="SIMULATED_ACTIVITY_NEUTRAL" ContextID="SIMULATION" DimensionID="ACTIVITY" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE"/>
+
+    <Affiliation ID="REALITY_ACTIVITY_HOSTILE" ContextID="REALITY" DimensionID="ACTIVITY" StandardIdentityID="SI_HOSTILE_FAKER" Shape="DIAMOND">
+      <LegacyStandardIdentityCode Name="2525C">H</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="EXERCISE_ACTIVITY_HOSTILE" ContextID="EXERCISE" DimensionID="ACTIVITY" StandardIdentityID="SI_HOSTILE_FAKER" Shape="CIRCLE">
+      <LegacyStandardIdentityCode Name="2525C">K</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="SIMULATED_ACTIVITY_HOSTILE" ContextID="SIMULATION" DimensionID="ACTIVITY" StandardIdentityID="SI_HOSTILE_FAKER" Shape="DIAMOND"/>
+
+    <Affiliation ID="REALITY_ACTIVITY_ASSUMED" ContextID="REALITY" DimensionID="ACTIVITY" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE">
+      <LegacyStandardIdentityCode Name="2525C">A</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="EXERCISE_ACTIVITY_ASSUMED" ContextID="EXERCISE" DimensionID="ACTIVITY" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE">
+      <LegacyStandardIdentityCode Name="2525C">M</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="SIMULATED_ACTIVITY_ASSUMED" ContextID="SIMULATION" DimensionID="ACTIVITY" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE"/>
+
+    <Affiliation ID="REALITY_ACTIVITY_SUSPECT" ContextID="REALITY" DimensionID="ACTIVITY" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND">
+      <LegacyStandardIdentityCode Name="2525C">S</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="EXERCISE_ACTIVITY_SUSPECT" ContextID="EXERCISE" DimensionID="ACTIVITY" StandardIdentityID="SI_SUSPECT_JOKER" Shape="CIRCLE">
+      <LegacyStandardIdentityCode Name="2525C">J</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="SIMULATED_ACTIVITY_SUSPECT" ContextID="SIMULATION" DimensionID="ACTIVITY" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND"/>
   </Affiliations>
 
   <Statuses>
