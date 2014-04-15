@@ -8,70 +8,70 @@
   <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
 
   <Entities>
-    <Entity ID="MILITARY" Label="Military">
+    <Entity ID="MILITARY" Label="Military" Graphic="Appendices/SeaSurface/30110000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
       </EntityCode>
     </Entity>
-    
-    <Entity ID="MILITARY_COMBAT" Label="Military Combatant">
+
+    <Entity ID="MILITARY_COMBAT" Label="Military Combatant" Graphic="Appendices/SeaSurface/30120000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>2</DigitTwo>
       </EntityCode>
-      
+
       <EntityTypes>
-        <EntityType ID="CARRIER" Label="Carrier">
+        <EntityType ID="CARRIER" Label="Carrier" Graphic="Appendices/SeaSurface/30120100.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>1</DigitTwo>
           </EntityTypeCode>
         </EntityType>
 
-        <EntityType ID="SURF_COMBAT_LINE" Label="Surface Combatant, Line">
+        <EntityType ID="SURF_COMBAT_LINE" Label="Surface Combatant, Line" Graphic="Appendices/SeaSurface/30120200.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
 
           <EntitySubTypes>
-            <EntitySubType ID="BB" Label="Battleship">
+            <EntitySubType ID="BB" Label="Battleship" Graphic="Appendices/SeaSurface/30120201.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="CA" Label="Cruiser">
+            <EntitySubType ID="CA" Label="Cruiser" Graphic="Appendices/SeaSurface/30120202.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>2</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="DD" Label="Destroyer">
+            <EntitySubType ID="DD" Label="Destroyer" Graphic="Appendices/SeaSurface/30120203.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>3</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="FF" Label="Frigate">
+            <EntitySubType ID="FF" Label="Frigate" Graphic="Appendices/SeaSurface/30120204.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>4</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="CORVETTE" Label="Corvette">
+            <EntitySubType ID="CORVETTE" Label="Corvette" Graphic="Appendices/SeaSurface/30120205.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>5</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="LCS" Label="Littoral Combat Ship">
+            <EntitySubType ID="LCS" Label="Littoral Combatant Ship" Graphic="Appendices/SeaSurface/30120206.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>6</DigitTwo>
@@ -80,63 +80,63 @@
           </EntitySubTypes>
         </EntityType>
 
-        <EntityType ID="AMPHIB_WAR_SHIP" Label="Amphibious Warfare Ship">
+        <EntityType ID="AMPHIB_WAR_SHIP" Label="Amphibious Warfare Ship" Graphic="Appendices/SeaSurface/30120300.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>3</DigitTwo>
           </EntityTypeCode>
 
           <EntitySubTypes>
-            <EntitySubType ID="ACS" Label="Amphibious Command Ship">
+            <EntitySubType ID="ACS" Label="Amphibious Command Ship" Graphic="Appendices/SeaSurface/30120301.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="AMPHIB_ASSAULT_NON" Label="Amphibious Assault, Non-specified">
+            <EntitySubType ID="AMPHIB_ASSAULT_NON" Label="Amphibious Assault, Non-specified" Graphic="Appendices/SeaSurface/30120302.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>2</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="AMPHIB_ASSAULT_GENERAL" Label="Amphibious Assault Ship, General">
+            <EntitySubType ID="AMPHIB_ASSAULT_GENERAL" Label="Amphibious Assault Ship, General" Graphic="Appendices/SeaSurface/30120303.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>3</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="AMPHIB_ASSAULT_MULT" Label="Amphibious Assault Ship, Multipurpose">
+            <EntitySubType ID="AMPHIB_ASSAULT_MULT" Label="Amphibious Assault Ship, Multipurpose" Graphic="Appendices/SeaSurface/30120304.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>4</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="AMPHIB_ASSAULT_HELO" Label="Amphibious Assault Ship, Helicopter">
+            <EntitySubType ID="AMPHIB_ASSAULT_HELO" Label="Amphibious Assault Ship, Helicopter" Graphic="Appendices/SeaSurface/30120305.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>5</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="AMPHIB_TRANS_DOCK" Label="Amphibious Transport Dock">
+            <EntitySubType ID="AMPHIB_TRANS_DOCK" Label="Amphibious Transport Dock" Graphic="Appendices/SeaSurface/30120306.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>6</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="LANDING_SHIP" Label="Landing Ship">
+            <EntitySubType ID="LANDING_SHIP" Label="Landing Ship" Graphic="Appendices/SeaSurface/30120307.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>7</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="LANDING_CRAFT" Label="Landing Craft">
+            <EntitySubType ID="LANDING_CRAFT" Label="Landing Craft" Graphic="Appendices/SeaSurface/30120308.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>8</DigitTwo>
@@ -145,49 +145,49 @@
           </EntitySubTypes>
         </EntityType>
 
-        <EntityType ID="MINE_WARFARE" Label="Mine Warfare Ship">
+        <EntityType ID="MINE_WARFARE" Label="Mine Warfare Ship" Graphic="Appendices/SeaSurface/30120400.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>4</DigitTwo>
           </EntityTypeCode>
 
           <EntitySubTypes>
-            <EntitySubType ID="MINE_LAYER" Label="Mine Layer">
+            <EntitySubType ID="MINE_LAYER" Label="Mine Layer" Graphic="Appendices/SeaSurface/30120401.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="MINE_SWEEPER" Label="Mine Sweeper">
+            <EntitySubType ID="MINE_SWEEPER" Label="Mine Sweeper" Graphic="Appendices/SeaSurface/30120402.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>2</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="MINE_SWEEPER_DRONE" Label="Mine Sweeper, Drone">
+            <EntitySubType ID="MINE_SWEEPER_DRONE" Label="Mine Sweeper, Drone" Graphic="Appendices/SeaSurface/30120403.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>3</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="MINE_HUNTER" Label="Mine Hunter">
+            <EntitySubType ID="MINE_HUNTER" Label="Mine Hunter" Graphic="Appendices/SeaSurface/30120404.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>4</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="MINE_COUNTER" Label="Mine Countermeasures">
+            <EntitySubType ID="MINE_COUNTER" Label="Mine Countermeasures" Graphic="Appendices/SeaSurface/30120405.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>5</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="MINE_COUNTER_SUPPORT" Label="Mine Countermeasures, Support Ship">
+            <EntitySubType ID="MINE_COUNTER_SUPPORT" Label="Mine Countermeasures, Support Ship" Graphic="Appendices/SeaSurface/30120406.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>6</DigitTwo>
@@ -196,21 +196,21 @@
           </EntitySubTypes>
         </EntityType>
 
-        <EntityType ID="PATROL_BOAT" Label="Patrol Boat">
+        <EntityType ID="PATROL_BOAT" Label="Patrol Boat" Graphic="Appendices/SeaSurface/30120500.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>5</DigitTwo>
           </EntityTypeCode>
 
           <EntitySubTypes>
-            <EntitySubType ID="PATROL_CHASER" Label="Patrol Craft, Submarine Chaser/Escort, General">
+            <EntitySubType ID="PATROL_CHASER" Label="Patrol Craft, Submarine Chaser/Escort, General" Graphic="Appendices/SeaSurface/30120501.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="PATROL_SHIP" Label="Patrol Ship, General">
+            <EntitySubType ID="PATROL_SHIP" Label="Patrol Ship, General" Graphic="Appendices/SeaSurface/30120502.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>2</DigitTwo>
@@ -219,28 +219,28 @@
           </EntitySubTypes>
         </EntityType>
 
-        <EntityType ID="DECOY" Label="Decoy">
+        <EntityType ID="DECOY" Label="Decoy" Graphic="Appendices/SeaSurface/30120600.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>6</DigitTwo>
           </EntityTypeCode>
         </EntityType>
 
-        <EntityType ID="USV" Label="Unmanned Surface Water Vehicle (USV)">
+        <EntityType ID="USV" Label="Unmanned Surface Water Vehicle (USV)" Graphic="Appendices/SeaSurface/30120700.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>7</DigitTwo>
           </EntityTypeCode>
         </EntityType>
 
-        <EntityType ID="SPEEDBOAT" Label="Speedboat">
+        <EntityType ID="SPEEDBOAT" Label="Speedboat" Graphic="Appendices/SeaSurface/30120800.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>8</DigitTwo>
           </EntityTypeCode>
 
           <EntitySubTypes>
-            <EntitySubType ID="RHIB" Label="Rigid-Hull Inflatable Boat (RHIB)">
+            <EntitySubType ID="RHIB" Label="Rigid-Hull Inflatable Boat (RHIB)" Graphic="Appendices/SeaSurface/30120801.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>1</DigitTwo>
@@ -249,49 +249,49 @@
           </EntitySubTypes>
         </EntityType>
 
-        <EntityType ID="JET_SKI" Label="Jet Ski">
+        <EntityType ID="JET_SKI" Label="Jet Ski" Graphic="Appendices/SeaSurface/30120900.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>9</DigitTwo>
           </EntityTypeCode>
         </EntityType>
 
-        <EntityType ID="NAVY_TASK" Label="Navy Task Organization">
+        <EntityType ID="NAVY_TASK" Label="Navy Task Organization" Graphic="Appendices/SeaSurface/30121000.svg">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>0</DigitTwo>
           </EntityTypeCode>
 
           <EntitySubTypes>
-            <EntitySubType ID="NAVY_TASK_ELEMENT" Label="Navy Task Element">
+            <EntitySubType ID="NAVY_TASK_ELEMENT" Label="Navy Task Element" Graphic="Appendices/SeaSurface/30121001.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="NAVY_TASK_FORCE" Label="Navy Task Force">
+            <EntitySubType ID="NAVY_TASK_FORCE" Label="Navy Task Force" Graphic="Appendices/SeaSurface/30121002.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>2</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="NAVY_TASK_GROUP" Label="Navy Task Group">
+            <EntitySubType ID="NAVY_TASK_GROUP" Label="Navy Task Group" Graphic="Appendices/SeaSurface/30121003.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>3</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="NAVY_TASK_UNIT" Label="Navy Task Unit">
+            <EntitySubType ID="NAVY_TASK_UNIT" Label="Navy Task Unit" Graphic="Appendices/SeaSurface/30121004.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>4</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="CONVOY" Label="Convoy">
+            <EntitySubType ID="CONVOY" Label="Convoy" Graphic="Appendices/SeaSurface/30121005.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>5</DigitTwo>
@@ -300,7 +300,7 @@
           </EntitySubTypes>
         </EntityType>
 
-        <EntityType ID="SEA_BASED_X" Label="Sea Based X-Band Radar">
+        <EntityType ID="SEA_BASED_X" Label="Sea-Based X-Band (SBX) Radar" Graphic="Appendices/SeaSurface/30121100.svg">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>1</DigitTwo>
@@ -309,105 +309,105 @@
       </EntityTypes>
     </Entity>
 
-    <Entity ID="MILITARY_NON_COMBAT" Label="Military Non-Combatant">
+    <Entity ID="MILITARY_NON_COMBAT" Label="Military Noncombatant" Graphic="Appendices/SeaSurface/30130000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>3</DigitTwo>
       </EntityCode>
 
       <EntityTypes>
-        <EntityType ID="AUX" Label="Auxilliary Ship">
+        <EntityType ID="AUX" Label="Auxiliary Ship" Graphic="Appendices/SeaSurface/30130100.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>1</DigitTwo>
           </EntityTypeCode>
 
           <EntitySubTypes>
-            <EntitySubType ID="AMMO_SHIP" Label="Ammunition Ship">
+            <EntitySubType ID="AMMO_SHIP" Label="Ammunition Ship" Graphic="Appendices/SeaSurface/30130101.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="NAVAL_STORES" Label="Naval Stores Ship">
+            <EntitySubType ID="NAVAL_STORES" Label="Naval Stores Ship" Graphic="Appendices/SeaSurface/30130102.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>2</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="AUX_FLAG" Label="Auxiliary Flag Ship">
+            <EntitySubType ID="AUX_FLAG" Label="Auxiliary Flag Ship" Graphic="Appendices/SeaSurface/30130103.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>3</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="INTEL_COLLECTOR" Label="Intelligence Collector">
+            <EntitySubType ID="INTEL_COLLECTOR" Label="Intelligence Collector" Graphic="Appendices/SeaSurface/30130104.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>4</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="OCEANO_RESEARCH" Label="Oceanographic Research Ship">
+            <EntitySubType ID="OCEANO_RESEARCH" Label="Oceanographic Research Ship" Graphic="Appendices/SeaSurface/30130105.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>5</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="SURVEY" Label="Survey Ship">
+            <EntitySubType ID="SURVEY" Label="Survey Ship" Graphic="Appendices/SeaSurface/30130106.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>6</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="HOSPITAL" Label="Hospital Ship">
+            <EntitySubType ID="HOSPITAL" Label="Hospital Ship" Graphic="Appendices/SeaSurface/30130107.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>7</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="NAVAL_CARGO" Label="Naval Cargo Ship">
+            <EntitySubType ID="NAVAL_CARGO" Label="Naval Cargo Ship" Graphic="Appendices/SeaSurface/30130108.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>8</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="COMBAT_SUPPORT_FAST" Label="Combat Support Ship, Fast">
+            <EntitySubType ID="COMBAT_SUPPORT_FAST" Label="Combat Support Ship, Fast" Graphic="Appendices/SeaSurface/30130109.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>9</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="OILER" Label="Oiler, Replenishment">
+            <EntitySubType ID="OILER" Label="Oiler, Replenishment" Graphic="Appendices/SeaSurface/30130110.svg">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
                 <DigitTwo>0</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="REPAIR" Label="Repair Ship">
+            <EntitySubType ID="REPAIR" Label="Repair Ship" Graphic="Appendices/SeaSurface/30130111.svg">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="SUB_TENDER" Label="Submarine Tender">
+            <EntitySubType ID="SUB_TENDER" Label="Submarine Tender" Graphic="Appendices/SeaSurface/30130112.svg">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
                 <DigitTwo>2</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="TUG" Label="Tug, Ocean Going">
+            <EntitySubType ID="TUG" Label="Tug, Ocean Going" Graphic="Appendices/SeaSurface/30130113.svg">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
                 <DigitTwo>3</DigitTwo>
@@ -416,35 +416,35 @@
           </EntitySubTypes>
         </EntityType>
 
-        <EntityType ID="SERVICE_CRAFT" Label="Service Craft/Yard">
+        <EntityType ID="SERVICE_CRAFT" Label="Service Craft/Yard" Graphic="Appendices/SeaSurface/30130200.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
-          
+
           <EntitySubTypes>
-            <EntitySubType ID="BARGE_NON_SELF" Label="Barge, Not Self-Propelled">
+            <EntitySubType ID="BARGE_NON_SELF" Label="Barge, Not Self-Propelled" Graphic="Appendices/SeaSurface/30130201.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="BARGE_SELF" Label="Barge, Self-Propelled">
+            <EntitySubType ID="BARGE_SELF" Label="Barge, Self-Propelled" Graphic="Appendices/SeaSurface/30130202.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>2</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="TUG_HARBOR" Label="Tug, Harbor">
+            <EntitySubType ID="TUG_HARBOR" Label="Tug, Harbor" Graphic="Appendices/SeaSurface/30130203.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>3</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="LAUNCH" Label="Launch">
+            <EntitySubType ID="LAUNCH" Label="Launch" Graphic="Appendices/SeaSurface/30130204.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>4</DigitTwo>
@@ -455,126 +455,126 @@
       </EntityTypes>
     </Entity>
 
-    <Entity ID="CIVILIAN" Label="Civilian">
+    <Entity ID="CIVILIAN" Label="Civilian" Graphic="Appendices/SeaSurface/30140000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>4</DigitTwo>
       </EntityCode>
 
       <EntityTypes>
-        <EntityType ID="CIV_MERCHANT" Label="Merchant Ship">
+        <EntityType ID="CIV_MERCHANT" Label="Merchant Ship" Graphic="Appendices/SeaSurface/30140100.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>1</DigitTwo>
           </EntityTypeCode>
 
           <EntitySubTypes>
-            <EntitySubType ID="CIV_CARGO" Label="Cargo, General">
+            <EntitySubType ID="CIV_CARGO" Label="Cargo, General" Graphic="Appendices/SeaSurface/30140101.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="CIV_CONTAINER" Label="Container Ship">
+            <EntitySubType ID="CIV_CONTAINER" Label="Container Ship" Graphic="Appendices/SeaSurface/30140102.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>2</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="CIV_DREDGE" Label="Dredge">
+            <EntitySubType ID="CIV_DREDGE" Label="Dredge" Graphic="Appendices/SeaSurface/30140103.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>3</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="CIV_RORO" Label="Roll On/Roll Off">
+            <EntitySubType ID="CIV_RORO" Label="Roll On/Roll Off" Graphic="Appendices/SeaSurface/30140104.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>4</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="CIV_FERRY" Label="Ferry">
+            <EntitySubType ID="CIV_FERRY" Label="Ferry" Graphic="Appendices/SeaSurface/30140105.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>5</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="CIV_HEAVY_LIFT" Label="Heavy Lift">
+            <EntitySubType ID="CIV_HEAVY_LIFT" Label="Heavy Lift" Graphic="Appendices/SeaSurface/30140106.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>6</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="CIV_HOVERCRAFT" Label="Hovercraft">
+            <EntitySubType ID="CIV_HOVERCRAFT" Label="Hovercraft" Graphic="Appendices/SeaSurface/30140107.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>7</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="CIV_LASH_CARRIER" Label="Lash Carrier (with Barges)">
+            <EntitySubType ID="CIV_LASH_CARRIER" Label="Lash Carrier (with Barges)" Graphic="Appendices/SeaSurface/30140108.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>8</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="CIV_OILER_TANKER" Label="Oiler/Tanker">
+            <EntitySubType ID="CIV_OILER_TANKER" Label="Oiler/Tanker" Graphic="Appendices/SeaSurface/30140109.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>9</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="CIV_PASSENGER" Label="Passenger">
+            <EntitySubType ID="CIV_PASSENGER" Label="Passenger" Graphic="Appendices/SeaSurface/30140110.svg">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
                 <DigitTwo>0</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="CIV_TUG" Label="Tug, Ocean Going">
+            <EntitySubType ID="CIV_TUG" Label="Tug, Ocean Going" Graphic="Appendices/SeaSurface/30140111.svg">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="CIV_TOW" Label="Tow">
+            <EntitySubType ID="CIV_TOW" Label="Tow" Graphic="Appendices/SeaSurface/30140112.svg">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
                 <DigitTwo>2</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="CIV_HAZMAT" Label="Transport Ship, Hazardous Material">
+            <EntitySubType ID="CIV_HAZMAT" Label="Transport Ship, Hazardous Material" Graphic="Appendices/SeaSurface/30140113.svg">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
                 <DigitTwo>3</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="CIV_JUNK" Label="Junk/Dhow">
+            <EntitySubType ID="CIV_JUNK" Label="Junk/Dhow" Graphic="Appendices/SeaSurface/30140114.svg">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
                 <DigitTwo>4</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="CIV_BARGE" Label="Barge, Not Self-Propelled">
+            <EntitySubType ID="CIV_BARGE" Label="Barge, Not Self-Propelled" Graphic="Appendices/SeaSurface/30140115.svg">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
                 <DigitTwo>5</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="CIV_HOSPITAL" Label="Hospital Ship">
+            <EntitySubType ID="CIV_HOSPITAL" Label="Hospital Ship" Graphic="Appendices/SeaSurface/30140116.svg">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
                 <DigitTwo>6</DigitTwo>
@@ -582,29 +582,29 @@
             </EntitySubType>
           </EntitySubTypes>
         </EntityType>
-        
-        <EntityType ID="CIV_FISHING" Label="Fishing Vessel">
+
+        <EntityType ID="CIV_FISHING" Label="Fishing Vessel" Graphic="Appendices/SeaSurface/30140200.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
 
           <EntitySubTypes>
-            <EntitySubType ID="CIV_DRIFTER" Label="Drifter">
+            <EntitySubType ID="CIV_DRIFTER" Label="Drifter" Graphic="Appendices/SeaSurface/30140201.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="CIV_TRAWLER" Label="Trawler">
+            <EntitySubType ID="CIV_TRAWLER" Label="Trawler" Graphic="Appendices/SeaSurface/30140202.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>2</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="CIV_DREDGER" Label="Dredger">
+            <EntitySubType ID="CIV_DREDGER" Label="Dredger" Graphic="Appendices/SeaSurface/30140203.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>3</DigitTwo>
@@ -613,35 +613,35 @@
           </EntitySubTypes>
         </EntityType>
 
-        <EntityType ID="CIV_LAW" Label="Law Enforcement Vessel">
+        <EntityType ID="CIV_LAW" Label="Law Enforcement Vessel" Graphic="Appendices/SeaSurface/30140300.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>3</DigitTwo>
           </EntityTypeCode>
         </EntityType>
 
-        <EntityType ID="CIV_LEISURE_SAIL" Label="Leisure Craft, Sailing">
+        <EntityType ID="CIV_LEISURE_SAIL" Label="Leisure Craft, Sailing" Graphic="Appendices/SeaSurface/30140400.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>4</DigitTwo>
           </EntityTypeCode>
         </EntityType>
 
-        <EntityType ID="CIV_LEISURE_MOTOR" Label="Leisure Craft, Motorized">
+        <EntityType ID="CIV_LEISURE_MOTOR" Label="Leisure Craft, Motorized" Graphic="Appendices/SeaSurface/30140500.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>5</DigitTwo>
           </EntityTypeCode>
 
           <EntitySubTypes>
-            <EntitySubType ID="CIV_RHIB" Label="Rigid-Hull Inflatable Boat (RHIB)">
+            <EntitySubType ID="CIV_RHIB" Label="Rigid-Hull Inflatable Boat (RHIB)" Graphic="Appendices/SeaSurface/30140501.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="CIV_SPEED" Label="Speedboat">
+            <EntitySubType ID="CIV_SPEED" Label="Speedboat" Graphic="Appendices/SeaSurface/30140502.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>2</DigitTwo>
@@ -650,14 +650,14 @@
           </EntitySubTypes>
         </EntityType>
 
-        <EntityType ID="CIV_JET_SKI" Label="Jet Ski">
+        <EntityType ID="CIV_JET_SKI" Label="Jet Ski" Graphic="Appendices/SeaSurface/30140600.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>6</DigitTwo>
           </EntityTypeCode>
         </EntityType>
 
-        <EntityType ID="CIV_USV" Label="Unmanned Surface Water Vehicle (USV)">
+        <EntityType ID="CIV_USV" Label="Unmanned Surface Water Vehicle (USV)" Graphic="Appendices/SeaSurface/30140700.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>7</DigitTwo>
@@ -666,21 +666,21 @@
       </EntityTypes>
     </Entity>
 
-    <Entity ID="OWN_SHIP" Label="Own Ship">
+    <Entity ID="OWN_SHIP" Label="Own Ship" Graphic="Appendices/SeaSurface/30150000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>5</DigitTwo>
       </EntityCode>
     </Entity>
 
-    <Entity ID="FUSED_TRACK" Label="Fused Track">
+    <Entity ID="FUSED_TRACK" Label="Fused Track" Graphic="Appendices/SeaSurface/30160000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>6</DigitTwo>
       </EntityCode>
     </Entity>
 
-    <Entity ID="MANUAL_TRACK" Label="Manual Track">
+    <Entity ID="MANUAL_TRACK" Label="Manual Track" Graphic="Appendices/SeaSurface/30170000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>7</DigitTwo>
@@ -689,161 +689,161 @@
   </Entities>
 
   <SectorOneModifiers>
-    <Modifier ID="OWN_MOD" Label="Own Ship" Category="Mission Area">
+    <Modifier ID="OWN_MOD" Label="Own Ship" Category="Mission Area" Graphic="30011.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="AA_MOD" Label="Antiair Warfare" Category="Mission Area">
+    <Modifier ID="AA_MOD" Label="Antiair Warfare" Category="Mission Area" Graphic="30021.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="ASW_MOD" Label="Antisubmarine Warfare" Category="Mission Area">
+    <Modifier ID="ASW_MOD" Label="Antisubmarine Warfare" Category="Mission Area" Graphic="30031.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="ESCORT_MOD" Label="Escort" Category="Mission Area">
+    <Modifier ID="ESCORT_MOD" Label="Escort" Category="Mission Area" Graphic="30041.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="EW_MOD" Label="Electronic Warfare" Category="Mission Area">
+    <Modifier ID="EW_MOD" Label="Electronic Warfare" Category="Mission Area" Graphic="30051.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="ISR_MOD" Label="Intelligence, Surveillance, Reconnaissance" Category="Mission Area">
+    <Modifier ID="ISR_MOD" Label="Intelligence, Surveillance, Reconnaissance" Category="Mission Area" Graphic="30061.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="MCM_MOD" Label="Mine Countermeasures" Category="Mission Area">
+    <Modifier ID="MCM_MOD" Label="Mine Countermeasures" Category="Mission Area" Graphic="30071.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="MD_MOD" Label="Missile Defense" Category="Mission Area">
+    <Modifier ID="MD_MOD" Label="Missile Defense" Category="Mission Area" Graphic="30081.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="MED_MOD" Label="Medical" Category="Mission Area">
+    <Modifier ID="MED_MOD" Label="Medical" Category="Mission Area" Graphic="30091.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="MIW_MOD" Label="Mine Warfare" Category="Mission Area">
+    <Modifier ID="MIW_MOD" Label="Mine Warfare" Category="Mission Area" Graphic="30101.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="RMV_MOD" Label="Remote Multimission Vehicle (RMV)" Category="Mission Area">
+    <Modifier ID="RMV_MOD" Label="Remote Multimission Vehicle (RMV)" Category="Mission Area" Graphic="30111.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="SOF_MOD" Label="Special Operations Forces (SOF)" Category="Asset Capability">
+    <Modifier ID="SOF_MOD" Label="Special Operations Forces (SOF)" Category="Asset Capability" Graphic="30121.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="SUW_MOD" Label="Surface Warfare" Category="Mission Area">
+    <Modifier ID="SUW_MOD" Label="Surface Warfare" Category="Mission Area" Graphic="30131.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="BALLISTIC_MOD" Label="Ballistic Missile" Category="Weapons Capability">
+    <Modifier ID="BALLISTIC_MOD" Label="Ballistic Missile" Category="Weapons Capability" Graphic="30141.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="GUIDED_MOD" Label="Guided Missile" Category="Weapons Capability">
+    <Modifier ID="GUIDED_MOD" Label="Guided Missile" Category="Weapons Capability" Graphic="30151.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="OTHER_GUIDED_MOD" Label="Other Guided Missile" Category="Weapons Capability">
+    <Modifier ID="OTHER_GUIDED_MOD" Label="Other Guided Missile" Category="Weapons Capability" Graphic="30161.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="TORPEDO_MOD" Label="Torpedo" Category="Weapons Capability">
+    <Modifier ID="TORPEDO_MOD" Label="Torpedo" Category="Weapons Capability" Graphic="30171.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="DRONE_EQUIP_MOD" Label="Drone Equipped" Category="Asset Capability">
+    <Modifier ID="DRONE_EQUIP_MOD" Label="Drone Equipped" Category="Asset Capability" Graphic="30181.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="HELO_EQUIP_MOD" Label="Helicopter/VSTOL Equipped" Category="Asset Capability">
+    <Modifier ID="HELO_EQUIP_MOD" Label="Helicopter Equipped/VSTOL" Category="Asset Capability" Graphic="30191.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="BALLISTIC_DEFENSE_MOD" Label="Ballistic Missile Defense, Shooter" Category="Mission Area">
+    <Modifier ID="BALLISTIC_DEFENSE_MOD" Label="Ballistic Missile Defense, Shooter" Category="Mission Area" Graphic="30201.svg">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="LRST_MOD" Label="Ballistic Missile, Long Range Surveillance, and Track (LRST)" Category="Mission Area">
+    <Modifier ID="LRST_MOD" Label="Ballistic Missile Defense, Long-Range Surveillance and Track (LRS&amp;T)" Category="Mission Area" Graphic="30211.svg">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="SEA_BASED_X_MOD" Label="Sea Based X-Band Radar" Category="Mission Area">
+    <Modifier ID="SEA_BASED_X_MOD" Label="Sea-Based X-Band" Category="Mission Area" Graphic="30221.svg">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="HIJACK_MOD" Label="Hijacking/Hijacked" Category="Crime">
+    <Modifier ID="HIJACK_MOD" Label="Hijacking/Hijacked" Category="Crime" Graphic="30231.svg">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>3</DigitTwo>
@@ -852,105 +852,105 @@
   </SectorOneModifiers>
 
   <SectorTwoModifiers>
-    <Modifier ID="NUCLEAR_MOD" Label="Nuclear Powered" Category="Ship Propulsion">
+    <Modifier ID="NUCLEAR_MOD" Label="Nuclear Powered" Category="Ship Propulsion" Graphic="30012.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="HEAVY_MOD" Label="Heavy" Category="Ship Capacity">
+    <Modifier ID="HEAVY_MOD" Label="Heavy" Category="Ship Capacity" Graphic="30022.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="LIGHT_MOD" Label="Light" Category="Ship Capacity">
+    <Modifier ID="LIGHT_MOD" Label="Light" Category="Ship Capacity" Graphic="30032.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="MEDIUM_MOD" Label="Medium" Category="Ship Capacity">
+    <Modifier ID="MEDIUM_MOD" Label="Medium" Category="Ship Capacity" Graphic="30042.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="DOCK_MOD" Label="Dock" Category="Cargo Capacity">
+    <Modifier ID="DOCK_MOD" Label="Dock" Category="Cargo Capacity" Graphic="30052.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="LOGISTICS_MOD" Label="Logistics" Category="Cargo Capacity">
+    <Modifier ID="LOGISTICS_MOD" Label="Logistics" Category="Cargo Capacity" Graphic="30062.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="TANK_MOD" Label="Tank" Category="Cargo Capacity">
+    <Modifier ID="TANK_MOD" Label="Tank" Category="Cargo Capacity" Graphic="30072.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="VEHICLE_MOD" Label="Vehicle" Category="Cargo Capacity">
+    <Modifier ID="VEHICLE_MOD" Label="Vehicle" Category="Cargo Capacity" Graphic="30082.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="FAST_MOD" Label="Fast" Category="Ship Mobility">
+    <Modifier ID="FAST_MOD" Label="Fast" Category="Ship Mobility" Graphic="30092.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="COMBINE_GEV_MOD" Label="Air-Cushioned (US)" Category="Ship Mobility">
+    <Modifier ID="COMBINE_GEV_MOD" Label="Air-Cushioned (US)" Category="Ship Mobility" Graphic="30102.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="PANEURO_GEV_MOD" Label="Air-Cushioned (NATO)" Category="Ship Mobility">
+    <Modifier ID="PANEURO_GEV_MOD" Label="Air-Cushioned (NATO)" Category="Ship Mobility" Graphic="30112.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="HYDROFOIL_MOD" Label="Hydrofoil" Category="Ship Mobility">
+    <Modifier ID="HYDROFOIL_MOD" Label="Hydrofoil" Category="Ship Mobility" Graphic="30122.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="AUTONOMOUS_MOD" Label="Autonomous Control" Category="USV Control" LimitUseTo="USV CIV_USV">
+    <Modifier ID="AUTONOMOUS_MOD" Label="Autonomous Control" Category="USV Control" LimitUseTo="CIV_USV" Graphic="30132.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="RPV_MOD" Label="Remotely Piloted" Category="USV Control" LimitUseTo="USV CIV_USV">
+    <Modifier ID="RPV_MOD" Label="Remotely Piloted" Category="USV Control" LimitUseTo="CIV_USV" Graphic="30142.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="EXPENDABLE_MOD" Label="Expendable" Category="USV Control" LimitUseTo="USV CIV_USV">
+    <Modifier ID="EXPENDABLE_MOD" Label="Expendable" Category="USV Control" LimitUseTo="CIV_USV" Graphic="30152.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>5</DigitTwo>
@@ -962,11 +962,11 @@
     <LegacySymbol ID="SEA_SYM" Label="Sea Surface" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">------</LegacyFunctionCode>
     </LegacySymbol>
-    
+
     <LegacySymbol ID="COMBATANT_SYM" Label="Combatant" EntityID="MILITARY_COMBAT">
       <LegacyFunctionCode Name="2525C">C-----</LegacyFunctionCode>
     </LegacySymbol>
-    
+
     <LegacySymbol ID="CARRIER_SYM" Label="Carrier" EntityID="MILITARY_COMBAT" EntityTypeID="CARRIER">
       <LegacyFunctionCode Name="2525C">CLCV--</LegacyFunctionCode>
     </LegacySymbol>
