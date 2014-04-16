@@ -3,8 +3,16 @@
 ::
 :: IMPORTANT CONSTRAINT: 
 :: 1. Must be FULL PATHs (because the replacement below depends on)
-:: 2. No spaces in the folder/file names (doing text replacement of variables in DOS is just too impossible)
-:: {TODO_NO_SPACES}
+:: 2. No spaces in the folder/file names 
+::
+:: SET {TODO_NO_SPACES} to full path of 
+:: 1. input .csv 
+:: 2. desired output .style
+::
+:: Input csv format: filePath,pointSize,styleItemName,styleItemCategory,styleItemTags,notes
+::
+:: For more information on this conversion process see:
+:: https://github.com/williamscraigm/csv2ArcGISStyle 
 :: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 :: Military-Activities-Source-Icons.csv
