@@ -733,38 +733,47 @@
     
     <LegacySymbol ID="MILITARY_SYM" Label="Military" EntityID="MILITARY">
       <LegacyFunctionCode Name="2525C">M-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">M-----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="FIXED_WING_SYM" Label="Fixed-Wing" EntityID="MILITARY" EntityTypeID="FIXED_WING">
       <LegacyFunctionCode Name="2525C">MF----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MF----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="BOMBER_SYM" Label="Bomber" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="BOMBER">
       <LegacyFunctionCode Name="2525C">MFB---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFB---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="FIGHTER_SYM" Label="Fighter" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="FIGHTER">
       <LegacyFunctionCode Name="2525C">MFF---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFF---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="INTERCEPTOR_SYM" Label="Interceptor" EntityID="MILITARY" EntityTypeID="FIXED_WING" ModifierOneID="INTERCEPTOR_MOD" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">MFFI--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFFI--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="TRAINER_SYM" Label="Trainer" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="TRAINER">
       <LegacyFunctionCode Name="2525C">MFT---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFT---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="ATTK_SYM" Label="Attack/Strike" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="ATTACK_STRIKE">
       <LegacyFunctionCode Name="2525C">MFA---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFA---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="VSTOL_SYM" Label="VSTOL" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="VSTOL">
       <LegacyFunctionCode Name="2525C">MFL---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFL---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="TANKER_SYM" Label="Tanker" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="TANKER">
       <LegacyFunctionCode Name="2525C">MFK---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFK---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="BOOM_TANKER_SYM" Label="Boom-Only Tanker" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="TANKER" ModifierTwoID="BOOM_MOD">
@@ -777,90 +786,112 @@
 
     <LegacySymbol ID="CARGO_SYM" Label="Cargo Airlift (Transport)" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="CARGO">
       <LegacyFunctionCode Name="2525C">MFC---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFC---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="LIGHT_CARGO_SYM" Label="Light Cargo Airlift (Transport)" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="CARGO" ModifierTwoID="LT_MOD">
       <LegacyFunctionCode Name="2525C">MFCL--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFCL--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="MEDIUM_CARGO_SYM" Label="Medium Cargo Airlift (Transport)" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="CARGO" ModifierTwoID="MED_MOD">
       <LegacyFunctionCode Name="2525C">MFCM--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFCM--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="HEAVY_CARGO_SYM" Label="Heavy Cargo Airlift (Transport)" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="CARGO" ModifierTwoID="HVY_MOD">
       <LegacyFunctionCode Name="2525C">MFCH--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFCH--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="ECM_SYM" Label="Electronic Countermeasures (ECM/Jammer)" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="ECJ">
       <LegacyFunctionCode Name="2525C">MFJ---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFJ---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="MEDEVAC_SYM" Label="Medical Evacuation (MEDEVAC)" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="MEDEVAC">
       <LegacyFunctionCode Name="2525C">MFO---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFO---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="RECON_SYM" Label="Reconnaissance" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="RECON">
       <LegacyFunctionCode Name="2525C">MFR---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFR---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="AEW_SYM" Label="Airborne Early Warning (AEW)" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="AEW">
       <LegacyFunctionCode Name="2525C">MFRW--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFRW--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="ESM_SYM" Label="Electronic Surveillance Measures" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="ES">
       <LegacyFunctionCode Name="2525C">MFRZ--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFRZ--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="PHOTO_SYM" Label="Photographic Reconnaissance" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="PH">
       <LegacyFunctionCode Name="2525C">MFRX--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFRX--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="PATROL_SYM" Label="Patrol" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="PATROL">
       <LegacyFunctionCode Name="2525C">MFP---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFP---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="ASUW_SYM" Label="Antisurface Warfare (ASUW)" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="ASUW">
       <LegacyFunctionCode Name="2525C">MFPN--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFPN--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="MCM_SYM" Label="Mine Countermeasures" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="MCM">
       <LegacyFunctionCode Name="2525C">MFPM--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFPM--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="UTILITY_SYM" Label="Utility" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="UTILITY">
       <LegacyFunctionCode Name="2525C">MFU---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFU---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="LIGHT_UTILITY_SYM" Label="Light Utility" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="UTILITY" ModifierTwoID="LT_MOD">
       <LegacyFunctionCode Name="2525C">MFUL--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFUL--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="MEDIUM_UTILITY_SYM" Label="Medium Utility" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="UTILITY" ModifierTwoID="MED_MOD">
       <LegacyFunctionCode Name="2525C">MFUM--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFUM--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="HEAVY_UTILITY_SYM" Label="Heavy Utility" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="UTILITY" ModifierTwoID="HVY_MOD">
       <LegacyFunctionCode Name="2525C">MFUH--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFUH--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="COMMS_SYM" Label="Communications" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="COM">
       <LegacyFunctionCode Name="2525C">MFY---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFY---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="CSAR_SYM" Label="Combat Search and Rescue (CSAR)" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="CSAR">
       <LegacyFunctionCode Name="2525C">MFH---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFH---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="ACP_SYM" Label="Airborne Command Post (C2)" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="ACP">
       <LegacyFunctionCode Name="2525C">MFD---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFD---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="ASW_SYM" Label="Antisubmarine Warfare (ASW)" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="ASW">
       <LegacyFunctionCode Name="2525C">MFS---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFS---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="SOF_SYM" Label="Special Operations Forces (SOF)" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="SOF">
       <LegacyFunctionCode Name="2525C">MFM---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFM---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="VIP_SYM" Label="VIP" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="VIP">
@@ -873,182 +904,228 @@
 
     <LegacySymbol ID="UAV_SYM" Label="Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV">
       <LegacyFunctionCode Name="2525C">MFQ---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFQ---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="ATK_UAV_SYM" Label="Attack Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="ATTACK_STRIKE_MOD">
       <LegacyFunctionCode Name="2525C">MFQA--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFQA--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="BOMBER_UAV_SYM" Label="Bomber Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="BOMBER_MOD">
       <LegacyFunctionCode Name="2525C">MFQB--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFQB--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="CARGO_UAV_SYM" Label="Cargo Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="CARGO_MOD">
       <LegacyFunctionCode Name="2525C">MFQC--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFQC--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="ACP_UAV_SYM" Label="Airborne Command Post Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="ACP_MOD">
       <LegacyFunctionCode Name="2525C">MFQD--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFQD--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="FIGHTER_UAV_SYM" Label="Fighter Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="FIGHTER_MOD">
       <LegacyFunctionCode Name="2525C">MFQF--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFQF--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="CSAR_UAV_SYM" Label="Search and Rescue Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="CSAR_MOD">
       <LegacyFunctionCode Name="2525C">MFQH--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFQH--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="ECM_UAV_SYM" Label="Electronic Countermeasures Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="EC_MOD">
       <LegacyFunctionCode Name="2525C">MFQJ--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFQJ--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="TANKER_UAV_SYM" Label="Tanker Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="TANKER_MOD">
       <LegacyFunctionCode Name="2525C">MFQK--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFQK--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="VSTOL_UAV_SYM" Label="VSTOL Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="VSTOL_MOD">
       <LegacyFunctionCode Name="2525C">MFQL--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFQL--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="SOF_UAV_SYM" Label="Special Operations Forces Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="SOF_MOD">
       <LegacyFunctionCode Name="2525C">MFQM--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFQM--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="MCM_UAV_SYM" Label="Mine Countermeasures Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="MCM_MOD">
       <LegacyFunctionCode Name="2525C">MFQI--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFQI--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="ASUW_UAV_SYM" Label="Antisurface Warfare Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="ASUW_MOD">
       <LegacyFunctionCode Name="2525C">MFQN--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFQN--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="PATROL_UAV_SYM" Label="Patrol Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="PATROL_MOD">
       <LegacyFunctionCode Name="2525C">MFQP--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFQP--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="RECON_UAV_SYM" Label="Reconnaissance Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="RECON_MOD">
       <LegacyFunctionCode Name="2525C">MFQR--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFQR--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="AEW_UAV_SYM" Label="Airborne Early Warning Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="AEW_MOD">
       <LegacyFunctionCode Name="2525C">MFQRW-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFQRW-</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="ESM_UAV_SYM" Label="Electronic Surveillance Measures Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="ES_MOD">
       <LegacyFunctionCode Name="2525C">MFQRZ-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFQRZ-</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="PHOTO_UAV_SYM" Label="Photographic Reconnaissance Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="PHOTO_MOD">
       <LegacyFunctionCode Name="2525C">MFQRX-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFQRX-</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="ASW_UAV_SYM" Label="Antisubmarine Warfare Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="ASW_MOD">
       <LegacyFunctionCode Name="2525C">MFQS--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFQS--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="TRAINER_UAV_SYM" Label="Trainer Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="TRAINER_MOD">
       <LegacyFunctionCode Name="2525C">MFQT--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFQT--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="UTILITY_UAV_SYM" Label="Utility Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="UTILITY_MOD">
       <LegacyFunctionCode Name="2525C">MFQU--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFQU--</LegacyFunctionCode>
+      
     </LegacySymbol>
 
     <LegacySymbol ID="COMMS_UAV_SYM" Label="Communcations Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="COMMS_MOD">
       <LegacyFunctionCode Name="2525C">MFQY--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFQY--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="MEDEVAC_UAV_SYM" Label="MEDEVAC Drone (RPV/UA)" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="MEDEVAC_MOD">
       <LegacyFunctionCode Name="2525C">MFQO--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MFQO--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="ROTARY_SYM" Label="Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING">
       <LegacyFunctionCode Name="2525C">MH----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MH----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="ATK_ROTARY_SYM" Label="Attack Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="ATTACK_STRIKE_MOD">
       <LegacyFunctionCode Name="2525C">MHA---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MHA---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="ASW_ROTARY_SYM" Label="Antisubmarine Warfare Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="ASW_MOD">
       <LegacyFunctionCode Name="2525C">MHS---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MHS---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="UTILITY_ROTARY_SYM" Label="Utility Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="UTILITY_MOD">
       <LegacyFunctionCode Name="2525C">MHU---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MHU---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="LIGHT_UTILITY_ROTARY_SYM" Label="Light Utility Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="UTILITY_MOD" ModifierTwoID="LT_MOD">
       <LegacyFunctionCode Name="2525C">MHUL--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MHUL--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="MEDIUM_UTILITY_ROTARY_SYM" Label="Medium Utility Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="UTILITY_MOD" ModifierTwoID="MED_MOD">
       <LegacyFunctionCode Name="2525C">MHUM--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MHUM--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="HEAVY_UTILITY_ROTARY_SYM" Label="Heavy Utility Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="UTILITY_MOD" ModifierTwoID="HVY_MOD">
       <LegacyFunctionCode Name="2525C">MHUH--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MHUH--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="MCM_ROTARY_SYM" Label="Mine Countermeasures Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="MCM_MOD">
       <LegacyFunctionCode Name="2525C">MHI---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MHI---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="CSAR_ROTARY_SYM" Label="Combat Search and Rescue Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="CSAR_MOD">
       <LegacyFunctionCode Name="2525C">MHH---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MHH---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="RECON_ROTARY_SYM" Label="Reconnaissance Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="RECON_MOD">
       <LegacyFunctionCode Name="2525C">MHR---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MHR---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="UAV_ROTARY_SYM" Label="Drone Rotary-Wing" EntityID="MILITARY" EntityTypeID="VT_UAV">
       <LegacyFunctionCode Name="2525C">MHQ---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MHA---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="CARGO_ROTARY_SYM" Label="Cargo Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="CARGO_MOD">
       <LegacyFunctionCode Name="2525C">MHC---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MHC---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="LIGHT_CARGO_ROTARY_SYM" Label="Light Cargo Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="CARGO_MOD" ModifierTwoID="LT_MOD">
       <LegacyFunctionCode Name="2525C">MHCL--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MHCL--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="MEDIUM_CARGO_ROTARY_SYM" Label="Medium Cargo Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="CARGO_MOD" ModifierTwoID="MED_MOD">
       <LegacyFunctionCode Name="2525C">MHCM--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MHCM--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="HEAVY_CARGO_ROTARY_SYM" Label="Heavy Cargo Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="CARGO_MOD" ModifierTwoID="HVY_MOD">
       <LegacyFunctionCode Name="2525C">MHCH--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MHCH--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="TRAINER_ROTARY_SYM" Label="Trainer Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="TRAINER_MOD">
       <LegacyFunctionCode Name="2525C">MHT---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MHT---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="MEDEVAC_ROTARY_SYM" Label="MEDEVAC Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="MEDEVAC_MOD">
       <LegacyFunctionCode Name="2525C">MHO---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MHO---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="SOF_ROTARY_SYM" Label="Special Operations Forces (SOF) Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="SOF_MOD">
       <LegacyFunctionCode Name="2525C">MHM---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MHM---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="ACP_ROTARY_SYM" Label="Airborne Command Post Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="ACP_MOD">
       <LegacyFunctionCode Name="2525C">MHD---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MHD---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="TANKER_ROTARY_SYM" Label="Tanker Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="TANKER_MOD">
       <LegacyFunctionCode Name="2525C">MHK---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MHK---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="ECM_ROTARY_SYM" Label="Electronic Countermeasures Rotary-Wing" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="EC_MOD">
       <LegacyFunctionCode Name="2525C">MHJ---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">MHJ---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="LTA_SYM" Label="Lighter Than Air" EntityID="MILITARY" EntityTypeID="LIGHTER_THAN_AIR">
       <LegacyFunctionCode Name="2525C">ML----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">ML----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="BOMB_SYM" Label="Bomb" EntityID="WEAPON" EntityTypeID="BOMB">
@@ -1057,22 +1134,27 @@
 
     <LegacySymbol ID="DECOY_SYM" Label="Decoy" EntityID="WEAPON" EntityTypeID="DECOY">
       <LegacyFunctionCode Name="2525C">WD----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">WD----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="CIV_SYM" Label="Civilian" EntityID="CIVILIAN">
       <LegacyFunctionCode Name="2525C">C-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">C-----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="FIXED_WING_CIV_SYM" Label="Fixed-Wing Civilian" EntityID="CIVILIAN" EntityTypeID="CIV_FIXED_WING">
       <LegacyFunctionCode Name="2525C">CF----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">CF----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="ROTARY_WING_CIV_SYM" Label="Rotary-Wing Civilian" EntityID="CIVILIAN" EntityTypeID="CIV_ROTARY_WING">
       <LegacyFunctionCode Name="2525C">CH----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">CH----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="LTA_CIV_SYM" Label="Lighter Than Air Civilian" EntityID="CIVILIAN" EntityTypeID="CIV_LTA">
       <LegacyFunctionCode Name="2525C">CL----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">CL----</LegacyFunctionCode>
     </LegacySymbol>
   </LegacySymbols>
 </SymbolSet>
