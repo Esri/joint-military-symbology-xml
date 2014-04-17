@@ -77,7 +77,7 @@ In providing this schema, files of instance data, and sample C# code to navigate
 	* Select from either of the two lists of symbols (2525C or 2525D) and the application will use the underlying C# library to convert the selected symbol ID code (SIDC) from one standard to the other.
 	* Note that not all symbols are currently supported and not all possible 2525D codes will convert to 2525C codes, or vice versa.  
 		* Because of the component construction nature of 2525D, there are many more symbol ID combinations possible in 2525D, combinations that don't convert to 2525C.
-* DISA provides graphic files (svg/png) for the individual parts of MIL-STD 2525.  The JMSML schema supports referencing those files and the included C# library contains functionality that can be used to combine those referenced files into a complete image.  
+* DISA provides graphic files (svg) for the individual parts of MIL-STD 2525.  The JMSML schema supports referencing those files and the included C# library contains functionality that can be used to combine those referenced files into a complete image.  
 	* To utilize this functionality you will need to acquire these graphic files from DISA's Symbology Standards Management Committee (SSMC), place them in a folder, and amend the graphicPath line in the jmsml.config file to point to this folder.  Contact disa.meade.EE.mbx.symbology@mail.mil to learn more about the current availability and use of these graphic files.
 
 * Detailed API user documentation can be found at: [API User Doc](./documentation/APIUserDoc.md)
