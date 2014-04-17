@@ -965,30 +965,37 @@
 
     <LegacySymbol ID="COMBATANT_SYM" Label="Combatant" EntityID="MILITARY_COMBAT">
       <LegacyFunctionCode Name="2525C">C-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">C-----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="CARRIER_SYM" Label="Carrier" EntityID="MILITARY_COMBAT" EntityTypeID="CARRIER">
       <LegacyFunctionCode Name="2525C">CLCV--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">CLCV--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="LINE_SYM" Label="Line" EntityID="MILITARY_COMBAT" EntityTypeID="SURF_COMBAT_LINE">
       <LegacyFunctionCode Name="2525C">CL----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">CL----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="BB_SYM" Label="Battleship" EntityID="MILITARY_COMBAT" EntityTypeID="SURF_COMBAT_LINE" EntitySubTypeID="BB">
       <LegacyFunctionCode Name="2525C">CLBB--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">CLBB--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="CA_SYM" Label="Cruiser" EntityID="MILITARY_COMBAT" EntityTypeID="SURF_COMBAT_LINE" EntitySubTypeID="CA">
       <LegacyFunctionCode Name="2525C">CLCC--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">CLCC--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="DD_SYM" Label="Destroyer" EntityID="MILITARY_COMBAT" EntityTypeID="SURF_COMBAT_LINE" EntitySubTypeID="DD">
       <LegacyFunctionCode Name="2525C">CLDD--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">CLDD--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="FF_SYM" Label="Frigate/Corvette" EntityID="MILITARY_COMBAT" EntityTypeID="SURF_COMBAT_LINE" EntitySubTypeID="FF">
       <LegacyFunctionCode Name="2525C">CLFF--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">CLFF--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="LL_SYM" Label="Littoral Combatant" EntityID="MILITARY_COMBAT" EntityTypeID="SURF_COMBAT_LINE" EntitySubTypeID="LCS">
@@ -1009,54 +1016,71 @@
 
     <LegacySymbol ID="AMPHIB_WAR_SYM" Label="Amphibious Warfare Ship" EntityID="MILITARY_COMBAT" EntityTypeID="AMPHIB_WAR_SHIP">
       <LegacyFunctionCode Name="2525C">CA----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">CA----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="ASSAULT_SYM" Label="Assault Vessel" EntityID="MILITARY_COMBAT" EntityTypeID="AMPHIB_WAR_SHIP" EntitySubTypeID="AMPHIB_ASSAULT_NON">
       <LegacyFunctionCode Name="2525C">CALA--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">CALA--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="LANDING_SYM" Label="Landing Ship" EntityID="MILITARY_COMBAT" EntityTypeID="AMPHIB_WAR_SHIP" EntitySubTypeID="LANDING_SHIP">
       <LegacyFunctionCode Name="2525C">CALS--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">CALS--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="MEDIUM_LANDING_SYM" Label="Landing Ship, Medium" EntityID="MILITARY_COMBAT" EntityTypeID="AMPHIB_WAR_SHIP" EntitySubTypeID="LANDING_SHIP" ModifierTwoID="MEDIUM_MOD">
       <LegacyFunctionCode Name="2525C">CALSM-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">CALSM-</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="TANK_LANDING_SYM" Label="Landing Ship, Tank" EntityID="MILITARY_COMBAT" EntityTypeID="AMPHIB_WAR_SHIP" EntitySubTypeID="LANDING_SHIP" ModifierTwoID="TANK_MOD">
       <LegacyFunctionCode Name="2525C">CALST-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">CALST-</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="LANDING_CRAFT_SYM" Label="Landing Craft" EntityID="MILITARY_COMBAT" EntityTypeID="AMPHIB_WAR_SHIP" EntitySubTypeID="LANDING_CRAFT">
       <LegacyFunctionCode Name="2525C">CALC--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">CALC--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="MINE_WAR_SYM" Label="Mine Warfare Vessel" EntityID="MILITARY_COMBAT" EntityTypeID="MINE_WARFARE">
       <LegacyFunctionCode Name="2525C">CM----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">CM----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="MINELAYER_SYM" Label="Minelayer" EntityID="MILITARY_COMBAT" EntityTypeID="MINE_WARFARE" EntitySubTypeID="MINE_LAYER">
       <LegacyFunctionCode Name="2525C">CMML--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">CMML--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="MINESWEEPER_SYM" Label="Minesweeper" EntityID="MILITARY_COMBAT" EntityTypeID="MINE_WARFARE" EntitySubTypeID="MINE_SWEEPER">
       <LegacyFunctionCode Name="2525C">CMMS--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">CMMS--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="MINEHUNTER_SYM" Label="Minehunter" EntityID="MILITARY_COMBAT" EntityTypeID="MINE_WARFARE" EntitySubTypeID="MINE_HUNTER">
       <LegacyFunctionCode Name="2525C">CMMH--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">CMMH--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="MCM_SYM" Label="MCM Support" EntityID="MILITARY_COMBAT" EntityTypeID="MINE_WARFARE" EntitySubTypeID="MINE_COUNTER_SUPPORT">
       <LegacyFunctionCode Name="2525C">CMMA--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">CMMA--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="PATROL_SYM" Label="Patrol" EntityID="MILITARY_COMBAT" EntityTypeID="PATROL_BOAT">
       <LegacyFunctionCode Name="2525C">CP----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">CP----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="ASW_PATROL_SYM" Label="Patrol, ASW" EntityID="MILITARY_COMBAT" EntityTypeID="PATROL_BOAT" EntitySubTypeID="PATROL_CHASER">
       <LegacyFunctionCode Name="2525C">CPSB--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">CPSB--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="ASU_PATROL_SYM" Label="Patrol, ASUW" EntityID="MILITARY_COMBAT" EntityTypeID="PATROL_BOAT">
+      <LegacyFunctionCode Name="2525B">CPSU</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="MISSILE_PATROL_SYM" Label="Patrol, Antiship Missile Equipped" Remarks="Retired">
@@ -1073,26 +1097,32 @@
 
     <LegacySymbol ID="HOVERCRAFT_SYM" Label="Hovercraft" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">CH----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">CH----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="NAVY_GROUP_SYM" Label="Navy Group" EntityID="MILITARY_COMBAT" EntityTypeID="NAVY_TASK">
       <LegacyFunctionCode Name="2525C">G-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">G-----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="NAVY_TF_SYM" Label="Navy Task Force" EntityID="MILITARY_COMBAT" EntityTypeID="NAVY_TASK" EntitySubTypeID="NAVY_TASK_FORCE">
       <LegacyFunctionCode Name="2525C">GT----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">GT----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="NAVY_TG_SYM" Label="Navy Task Group" EntityID="MILITARY_COMBAT" EntityTypeID="NAVY_TASK" EntitySubTypeID="NAVY_TASK_GROUP">
       <LegacyFunctionCode Name="2525C">GG----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">GG----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="NAVY_UNIT_SYM" Label="Navy Task Unit" EntityID="MILITARY_COMBAT" EntityTypeID="NAVY_TASK" EntitySubTypeID="NAVY_TASK_UNIT">
       <LegacyFunctionCode Name="2525C">GU----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">GU----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="CONVOY_SYM" Label="Convoy" EntityID="MILITARY_COMBAT" EntityTypeID="NAVY_TASK" EntitySubTypeID="CONVOY">
       <LegacyFunctionCode Name="2525C">GC----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">GG----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="SURFACE_DECOY_SYM" Label="Surface Decoy" EntityID="MILITARY_COMBAT" EntityTypeID="DECOY">
@@ -1105,6 +1135,7 @@
 
     <LegacySymbol ID="MCM_USV_SYM" Label="USV, Mine Countermeasures" EntityID="MILITARY_COMBAT" EntityTypeID="USV" ModifierOneID="MCM_MOD">
       <LegacyFunctionCode Name="2525C">CUM---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">CMMD--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="ASW_USV_SYM" Label="USV, Antisubmarine Warfare" EntityID="MILITARY_COMBAT" EntityTypeID="USV" ModifierOneID="ASW_MOD">
@@ -1121,94 +1152,117 @@
 
     <LegacySymbol ID="NONCOM_SYM" Label="Non-Combatant" EntityID="MILITARY_NON_COMBAT">
       <LegacyFunctionCode Name="2525C">N-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">N-----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="REPAIR_SYM" Label="Underway Repair/Replenishment Ship" EntityID="MILITARY_NON_COMBAT" EntityTypeID="AUX" EntitySubTypeID="REPAIR">
       <LegacyFunctionCode Name="2525C">NR----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">NR----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="TENDER_SYM" Label="Fleet Support Tender" EntityID="MILITARY_NON_COMBAT" EntityTypeID="AUX" EntitySubTypeID="SUB_TENDER">
       <LegacyFunctionCode Name="2525C">NF----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">NF----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="INTEL_SYM" Label="Intelligence Collector" EntityID="MILITARY_NON_COMBAT" EntityTypeID="AUX" EntitySubTypeID="INTEL_COLLECTOR">
       <LegacyFunctionCode Name="2525C">NI----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">NI----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="SERVICE_SYM" Label="Service Craft/Yard" EntityID="MILITARY_NON_COMBAT" EntityTypeID="SERVICE_CRAFT">
       <LegacyFunctionCode Name="2525C">NS----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">NS----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="HOSPITAL_SYM" Label="Hospital Ship" EntityID="MILITARY_NON_COMBAT" EntityTypeID="AUX" EntitySubTypeID="HOSPITAL">
       <LegacyFunctionCode Name="2525C">NM----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">NM----</LegacyFunctionCode>
     </LegacySymbol>
 
-    <LegacySymbol ID="NONCOM_HOVERCRAFT_SYM" Label="Hovercraft" Remarks="Retired">
+    <LegacySymbol ID="NONCOM_HOVERCRAFT_SYM" Label="Hovercraft (Noncombatant)" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">NH----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">NH----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="MERCHANT_CIV_SYM" Label="Merchant" EntityID="CIVILIAN" EntityTypeID="CIV_MERCHANT">
       <LegacyFunctionCode Name="2525C">XM----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">XM----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="CARGO_CIV_SYM" Label="Cargo" EntityID="CIVILIAN" EntityTypeID="CIV_MERCHANT" EntitySubTypeID="CIV_CARGO">
       <LegacyFunctionCode Name="2525C">XMC---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">XMC---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="RORO_CIV_SYM" Label="Roll On/Roll Off" EntityID="CIVILIAN" EntityTypeID="CIV_MERCHANT" EntitySubTypeID="CIV_RORO">
       <LegacyFunctionCode Name="2525C">XMR---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">XMR---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="OT_CIV_SYM" Label="Oiler/Tanker" EntityID="CIVILIAN" EntityTypeID="CIV_MERCHANT" EntitySubTypeID="CIV_OILER_TANKER">
       <LegacyFunctionCode Name="2525C">XMO---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">XMO---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="TUG_CIV_SYM" Label="Tug" EntityID="CIVILIAN" EntityTypeID="CIV_MERCHANT" EntitySubTypeID="CIV_TUG">
       <LegacyFunctionCode Name="2525C">XMTU--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">XMTU--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="FERRY_CIV_SYM" Label="Ferry" EntityID="CIVILIAN" EntityTypeID="CIV_MERCHANT" EntitySubTypeID="CIV_FERRY">
       <LegacyFunctionCode Name="2525C">XMF---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">XMF---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="PASS_CIV_SYM" Label="Passenger" EntityID="CIVILIAN" EntityTypeID="CIV_MERCHANT" EntitySubTypeID="CIV_PASSENGER">
       <LegacyFunctionCode Name="2525C">XMP---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">XMP---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="HAZMAT_CIV_SYM" Label="Hazardous Materials (HAZMAT)" EntityID="CIVILIAN" EntityTypeID="CIV_MERCHANT" EntitySubTypeID="CIV_HAZMAT">
       <LegacyFunctionCode Name="2525C">XMH---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">XMH---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="TOW_CIV_SYM" Label="Towing Vessel" EntityID="CIVILIAN" EntityTypeID="CIV_MERCHANT" EntitySubTypeID="CIV_TOW">
       <LegacyFunctionCode Name="2525C">XMTO--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">XMTO--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="FISH_CIV_SYM" Label="Fishing" EntityID="CIVILIAN" EntityTypeID="CIV_FISHING">
       <LegacyFunctionCode Name="2525C">XF----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">XF----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="DRIFT_CIV_SYM" Label="Drifter" EntityID="CIVILIAN" EntityTypeID="CIV_FISHING" EntitySubTypeID="CIV_DRIFTER">
       <LegacyFunctionCode Name="2525C">XFDF--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">XFDF--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="DREDGE_CIV_SYM" Label="Dredger" EntityID="CIVILIAN" EntityTypeID="CIV_FISHING" EntitySubTypeID="CIV_DREDGER">
       <LegacyFunctionCode Name="2525C">XFDR--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">XFDR--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="TRAWL_CIV_SYM" Label="Trawler" EntityID="CIVILIAN" EntityTypeID="CIV_FISHING" EntitySubTypeID="CIV_TRAWLER">
       <LegacyFunctionCode Name="2525C">XFTR--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">XFTR--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="LEISURE_CIV_SYM" Label="Leisure Craft" EntityID="CIVILIAN" EntityTypeID="CIV_LEISURE_SAIL">
       <LegacyFunctionCode Name="2525C">XR----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">XR----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="LAW_CIV_SYM" Label="Law Enforcement Vessel" EntityID="CIVILIAN" EntityTypeID="CIV_LAW">
       <LegacyFunctionCode Name="2525C">XL----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">XL----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="HOVER_CIV_SYM" Label="Hovercraft" EntityID="CIVILIAN" EntityTypeID="CIV_MERCHANT" EntitySubTypeID="CIV_HOVERCRAFT">
       <LegacyFunctionCode Name="2525C">XH----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">XH----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="FAST_CIV_SYM" Label="Fast Recreational Craft" EntityID="CIVILIAN" EntityTypeID="CIV_LEISURE_MOTOR">
@@ -1229,6 +1283,7 @@
 
     <LegacySymbol ID="OWN_SYM" Label="Own Track" EntityID="OWN_SHIP">
       <LegacyFunctionCode Name="2525C">O-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525B">O-----</LegacyFunctionCode>
     </LegacySymbol>
   </LegacySymbols>
 </SymbolSet>
