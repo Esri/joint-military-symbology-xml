@@ -221,6 +221,7 @@
 
     <Dimension ID="ACTIVITY" Label="Activity">
       <LegacyDimensionCode Name="2525C">I</LegacyDimensionCode>
+      <LegacyDimensionCode Name="2525C">O</LegacyDimensionCode>
       <Fields>
         <Field Name="AS" Label="Country Indicator" Description="A three-letter code that indicates the country of origin of the organization (STANAG 1059)." Remarks="In stability activities, this field can be used for factions or groups." AmplifierID="AS" X="1" Y="2"/>
         <Field Name="G" Label="Staff Comments" Description="Free text." Remarks="Can be used by staff for information required by commander." AmplifierID="G" X="1" Y="1"/>

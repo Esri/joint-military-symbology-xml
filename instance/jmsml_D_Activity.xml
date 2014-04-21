@@ -5,6 +5,7 @@
 		<DigitTwo>0</DigitTwo>
 	</SymbolSetCode>
 	<LegacyCodingSchemeCode Name="2525C">E</LegacyCodingSchemeCode>
+  <LegacyCodingSchemeCode Name="2525C">O</LegacyCodingSchemeCode>
 	<Entities>
 		<Entity ID="INCIDENT" Label="Incident" Remarks="No icon associated with this entity. It is for hierarchal purposes only.">
 			<EntityCode>
@@ -310,7 +311,7 @@
 						<DigitTwo>1</DigitTwo>
 					</EntityTypeCode>
 				</EntityType>
-				<EntityType ID="MILITARY_INFORMATION_SUPPORT_OPERATION__MISO" Label="Military Information Support Operation (MISO)" Graphic="40130200.svg">
+				<EntityType ID="MILITARY_INFORMATION_SUPPORT_OPERATION_MISO" Label="Military Information Support Operation (MISO)" Graphic="40130200.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
@@ -1228,7 +1229,7 @@
     </LegacySymbol>
 
     <LegacySymbol ID="MAR_INC_SYM" Label="Marine Incident" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="MARINE" ModifierOneID="INCIDENT_MOD">
-      <LegacyFunctionCode Name="2525C">F-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" Schema="E" Dimension="I">F-----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="MAR_ACC_SYM" Label="Marine Accident" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="MARINE" ModifierOneID="ACCIDENT_MOD">
@@ -1457,6 +1458,14 @@
 
     <LegacySymbol ID="MARSHAL_SYM" Label="US Marshals Service" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="US_MARSHALS">
       <LegacyFunctionCode Name="2525C">DO----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="PSYOP_TV_SYM" Label="PSYOP TV and Radio Propaganda" EntityID="OPERATION" EntityTypeID="MILITARY_INFORMATION_SUPPORT_OPERATION_MISO" EntitySubTypeID="TV_AND_RADIO_PROPAGANDA">
+      <LegacyFunctionCode Name="2525C" Schema="O" Dimension="O">YT----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="INTERNAL_SEC_FORCE_SYM" Label="Internal Security Force" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="INTERNAL_SECURITY_FORCE">
+      <LegacyFunctionCode Name="2525C" Schema="O" Dimension="I">F-----</LegacyFunctionCode>
     </LegacySymbol>
   </LegacySymbols>  
 </SymbolSet>

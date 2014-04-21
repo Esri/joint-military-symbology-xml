@@ -25,6 +25,17 @@
     </xs:restriction>
   </xs:simpleType>
 
+  <xs:simpleType name="IconType">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="NA"/>
+      <xs:enumeration value="MAIN"/>
+      <xs:enumeration value="MAIN_1"/>
+      <xs:enumeration value="MAIN_2"/>
+      <xs:enumeration value="FULL_OCTAGON"/>
+      <xs:enumeration value="FULL_FRAME"/>
+    </xs:restriction>
+  </xs:simpleType>
+
   <xs:simpleType name="ShapeType">
     <xs:restriction base="xs:token">
       <xs:enumeration value="NA"/>
@@ -56,6 +67,8 @@
     <xs:simpleContent>
       <xs:extension base="LegacyTokenType">
         <xs:attributeGroup ref="NameAttributeGroup"/>
+        <xs:attribute name="Schema" type="xs:token" use="optional" default=""/>
+        <xs:attribute name="Dimension" type="xs:token" use="optional" default=""/>
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
@@ -131,6 +144,10 @@
     <xs:attribute name="DiamondGraphic" type="xs:anyURI" use="optional"/>
     <xs:attribute name="RectangleGraphic" type="xs:anyURI" use="optional"/>
     <xs:attribute name="SquareGraphic" type="xs:anyURI" use="optional"/>
+    <xs:attribute name="DrawRuleID" type="xs:IDREF" use="optional" default="POINT2"/>
+    <xs:attribute name="DrawNote" type="xs:string" use="optional" default="Not Applicable"/>
+    <xs:attribute name="Standard" type="StandardType" use="optional" default="ALL"/>
+    <xs:attribute name="Icon" type="IconType" use="optional" default="MAIN"/>
   </xs:attributeGroup>
 
   <xs:attributeGroup name="FramedGraphicNameAttributeGroup">
