@@ -608,6 +608,20 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
+        private string CleanString(string s)
+        {
+            string o = s.ToUpper();
+
+            o = o.Replace('/', '_');
+            o = o.Replace(' ', '_');
+            o = o.Replace('-', '_');
+            o = o.Replace('(', '_');
+            o = o.Replace(')', '_');
+            o = o.Trim();
+
+            return o;
+        }
+
         private void WriteCode(StreamWriter w, string name, string digitOne, string digitTwo)
         {
             w.WriteLine("<" + name + ">");
@@ -711,13 +725,7 @@ namespace JointMilitarySymbologyLibrary
                 if(setToDo == modSet && modToDo == modNo)
                 {
                     string mod = tokens[0];
-                    string id = mod.ToUpper();
-                    id = id.Replace('/', '_');
-                    id = id.Replace(' ', '_');
-                    id = id.Replace('-', '_');
-                    id = id.Replace('(', '_');
-                    id = id.Replace(')', '_');
-                    id = id.Trim();
+                    string id = CleanString(mod);
                     id = id + "_MOD";
 
                     string modCode = tokens[3].PadLeft(2, '0');
@@ -772,13 +780,7 @@ namespace JointMilitarySymbologyLibrary
 
                     if (entityType == "")
                     {
-                        id = entity.ToUpper();
-                        id = id.Replace('/', '_');
-                        id = id.Replace(' ', '_');
-                        id = id.Replace('-', '_');
-                        id = id.Replace('(', '_');
-                        id = id.Replace(')', '_');
-                        id = id.Trim();
+                        id = CleanString(entity);
 
                         WriteEntity(ref mode, w, id, entity, codeE.Substring(0, 1), codeE.Substring(1, 1), graphic);
                         w.WriteLine("");
@@ -787,26 +789,14 @@ namespace JointMilitarySymbologyLibrary
                     {
                         if (entitySubType == "")
                         {
-                            id = entityType.ToUpper();
-                            id = id.Replace('/', '_');
-                            id = id.Replace(' ', '_');
-                            id = id.Replace('-', '_');
-                            id = id.Replace('(', '_');
-                            id = id.Replace(')', '_');
-                            id = id.Trim();
+                            id = CleanString(entityType);
 
                             WriteEntityType(ref mode, w, id, entityType, codeET.Substring(0, 1), codeET.Substring(1, 1), graphic);
                             w.WriteLine("");
                         }
                         else
                         {
-                            id = entitySubType.ToUpper();
-                            id = id.Replace('/', '_');
-                            id = id.Replace(' ', '_');
-                            id = id.Replace('-', '_');
-                            id = id.Replace('(', '_');
-                            id = id.Replace(')', '_');
-                            id = id.Trim();
+                            id = CleanString(entitySubType);
 
                             WriteEntitySubType(ref mode, w, id, entitySubType, codeEST.Substring(0, 1), codeEST.Substring(1, 1), graphic);
                             w.WriteLine("");
@@ -1599,7 +1589,7 @@ namespace JointMilitarySymbologyLibrary
             return retObj;
         }
 
-        internal SymbolSetLegacySymbol LegacySymbol(SymbolSet symbolSet, string functionCode)
+        internal SymbolSetLegacySymbol LegacySymbol(SymbolSet symbolSet, string functionCode, string schema, string dimension)
         {
             SymbolSetLegacySymbol retObj = null;
 
@@ -1613,7 +1603,13 @@ namespace JointMilitarySymbologyLibrary
                         {
                             if (lObj2.Value == functionCode)
                             {
-                                return lObj;
+                                if (lObj2.Schema != "")
+                                {
+                                    if (lObj2.Schema == schema && lObj2.Dimension == dimension)
+                                        return lObj;
+                                }
+                                else
+                                    return lObj;
                             }
                         }
                     }

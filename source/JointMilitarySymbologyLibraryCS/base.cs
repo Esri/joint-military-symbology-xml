@@ -234,7 +234,16 @@ namespace JointMilitarySymbologyLibrary {
         
         private string remarksField;
         
+        private string schemaField;
+        
+        private string dimensionField;
+        
         private string valueField;
+        
+        public LegacyFunctionCodeType() {
+            this.schemaField = "";
+            this.dimensionField = "";
+        }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
@@ -277,6 +286,30 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.remarksField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string Schema {
+            get {
+                return this.schemaField;
+            }
+            set {
+                this.schemaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string Dimension {
+            get {
+                return this.dimensionField;
+            }
+            set {
+                this.dimensionField = value;
             }
         }
         
@@ -400,19 +433,22 @@ namespace JointMilitarySymbologyLibrary {
         
         private string squareGraphicField;
         
-        private GeometryType geometryTypeField;
-        
         private string drawRuleIDField;
         
         private string drawNoteField;
         
         private StandardType standardField;
         
+        private IconType iconField;
+        
+        private GeometryType geometryTypeField;
+        
         public SymbolSetEntity() {
-            this.geometryTypeField = GeometryType.POINT;
             this.drawRuleIDField = "POINT2";
             this.drawNoteField = "Not Applicable";
             this.standardField = StandardType.ALL;
+            this.iconField = IconType.MAIN;
+            this.geometryTypeField = GeometryType.POINT;
         }
         
         /// <remarks/>
@@ -558,18 +594,6 @@ namespace JointMilitarySymbologyLibrary {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        [System.ComponentModel.DefaultValueAttribute(GeometryType.POINT)]
-        public GeometryType GeometryType {
-            get {
-                return this.geometryTypeField;
-            }
-            set {
-                this.geometryTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="IDREF")]
         [System.ComponentModel.DefaultValueAttribute("POINT2")]
         public string DrawRuleID {
@@ -602,6 +626,30 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.standardField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute(IconType.MAIN)]
+        public IconType Icon {
+            get {
+                return this.iconField;
+            }
+            set {
+                this.iconField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute(GeometryType.POINT)]
+        public GeometryType GeometryType {
+            get {
+                return this.geometryTypeField;
+            }
+            set {
+                this.geometryTypeField = value;
             }
         }
     }
@@ -646,10 +694,13 @@ namespace JointMilitarySymbologyLibrary {
         
         private StandardType standardField;
         
+        private IconType iconField;
+        
         public SymbolSetEntityEntityType() {
             this.drawRuleIDField = "POINT2";
             this.drawNoteField = "Not Applicable";
             this.standardField = StandardType.ALL;
+            this.iconField = IconType.MAIN;
         }
         
         /// <remarks/>
@@ -829,6 +880,18 @@ namespace JointMilitarySymbologyLibrary {
                 this.standardField = value;
             }
         }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute(IconType.MAIN)]
+        public IconType Icon {
+            get {
+                return this.iconField;
+            }
+            set {
+                this.iconField = value;
+            }
+        }
     }
     
     /// <remarks/>
@@ -869,10 +932,13 @@ namespace JointMilitarySymbologyLibrary {
         
         private StandardType standardField;
         
+        private IconType iconField;
+        
         public SymbolSetEntityEntityTypeEntitySubType() {
             this.drawRuleIDField = "POINT2";
             this.drawNoteField = "Not Applicable";
             this.standardField = StandardType.ALL;
+            this.iconField = IconType.MAIN;
         }
         
         /// <remarks/>
@@ -1041,6 +1107,18 @@ namespace JointMilitarySymbologyLibrary {
                 this.standardField = value;
             }
         }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute(IconType.MAIN)]
+        public IconType Icon {
+            get {
+                return this.iconField;
+            }
+            set {
+                this.iconField = value;
+            }
+        }
     }
     
     /// <remarks/>
@@ -1057,6 +1135,31 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         NATO_APP6,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://disa.mil/JointMilSyML.xsd")]
+    public enum IconType {
+        
+        /// <remarks/>
+        NA,
+        
+        /// <remarks/>
+        MAIN,
+        
+        /// <remarks/>
+        MAIN_1,
+        
+        /// <remarks/>
+        MAIN_2,
+        
+        /// <remarks/>
+        FULL_OCTAGON,
+        
+        /// <remarks/>
+        FULL_FRAME,
     }
     
     /// <remarks/>

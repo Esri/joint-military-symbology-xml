@@ -459,17 +459,33 @@ namespace JointMilitarySymbologyLibrary
             if (_symbolSet != null && _affiliation != null && _dimension != null &&
                _status != null && _amplifierGroup != null && _amplifier != null)
             {
-                _legacySIDC = _symbolSet.LegacyCodingSchemeCode[0].Value +
-                              _affiliation.LegacyStandardIdentityCode[0].Value +
-                              _dimension.LegacyDimensionCode[0].Value +
-                              _status.LegacyStatusCode[0].Value;
-
+                
                 if (_legacySymbol != null)
                 {
+                    if(_legacySymbol.LegacyFunctionCode[0].Schema != "" && _legacySymbol.LegacyFunctionCode[0].Dimension != "")
+                    {
+                        _legacySIDC = _legacySymbol.LegacyFunctionCode[0].Schema +
+                                      _affiliation.LegacyStandardIdentityCode[0].Value +
+                                      _legacySymbol.LegacyFunctionCode[0].Dimension +
+                                      _status.LegacyStatusCode[0].Value;
+                    }
+                    else
+                    {
+                        _legacySIDC = _symbolSet.LegacyCodingSchemeCode[0].Value +
+                                      _affiliation.LegacyStandardIdentityCode[0].Value +
+                                      _dimension.LegacyDimensionCode[0].Value +
+                                      _status.LegacyStatusCode[0].Value;
+                    }
+
                     _legacySIDC = _legacySIDC + _legacySymbol.LegacyFunctionCode[0].Value;
                 }
                 else
                 {
+                    _legacySIDC = _symbolSet.LegacyCodingSchemeCode[0].Value +
+                              _affiliation.LegacyStandardIdentityCode[0].Value +
+                              _dimension.LegacyDimensionCode[0].Value +
+                              _status.LegacyStatusCode[0].Value;
+
                     _legacySIDC = _legacySIDC + _blankLegacyFunction;
                 }
 
@@ -579,7 +595,7 @@ namespace JointMilitarySymbologyLibrary
 
             if (_symbolSet != null)
             {
-                _legacySymbol = _librarian.LegacySymbol(_symbolSet, _legacySIDC.Substring(4, 6));
+                _legacySymbol = _librarian.LegacySymbol(_symbolSet, _legacySIDC.Substring(4, 6), _legacySIDC.Substring(0, 1), _legacySIDC.Substring(2, 1));
             }
 
             if (_legacySymbol != null)

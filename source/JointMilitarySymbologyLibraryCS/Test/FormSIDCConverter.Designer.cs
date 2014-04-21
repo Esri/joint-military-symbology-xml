@@ -109,7 +109,8 @@ namespace Test
             "SASACUS--------\tASW USV",
             "SFAPMFQRZ------\tRPV ES",
             "SFAP-----------\tAir",
-            "EHIPF----------\tMarine Incident"});
+            "EHIPF----------\tMarine Incident",
+            "OFOPYT---------\tRadio and TV Propaganda"});
             this.listBox1.Location = new System.Drawing.Point(24, 518);
             this.listBox1.Name = "listBox1";
             this.listBox1.ScrollAlwaysVisible = true;
@@ -132,7 +133,9 @@ namespace Test
             "1005010000,1102000701\tHeavy Utility Helicopter",
             "1001011000,1204000000\tCivilian, Lighter than Air",
             "1003301000,1204020000\tMinesweeper",
-            "1002300000,1401040000\tCivilian Merchant, RORO"});
+            "1002300000,1401040000\tCivilian Merchant, RORO",
+            "1004400000,1604001600\tVehicle Accident",
+            "1005400000,1315130000\tInternal Security Force"});
             this.listBox2.Location = new System.Drawing.Point(318, 518);
             this.listBox2.Name = "listBox2";
             this.listBox2.ScrollAlwaysVisible = true;
