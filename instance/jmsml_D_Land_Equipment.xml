@@ -1,0 +1,1603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="SS_LAND_EQUIPMENT" Label="Land Equipment" DimensionID="LAND_EQUIPMENT">
+	<SymbolSetCode>
+		<DigitOne>1</DigitOne>
+		<DigitTwo>5</DigitTwo>
+	</SymbolSetCode>
+	<LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
+	<Entities>
+		<Entity ID="WEAPON_SYSTEM" Label="Weapon/Weapon System" Graphic="15110000.svg" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes.">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="RIFLE" Label="Rifle" Graphic="15110100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="SINGLE_SHOT_RIFLE" Label="Single Shot Rifle" Graphic="15110101.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SEMIAUTOMATIC_RIFLE" Label="Semiautomatic Rifle" Graphic="15110102.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="AUTOMATIC_RIFLE" Label="Automatic Rifle" Graphic="15110103.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+
+        <EntityType ID="MACHINE_GUN" Label="Machine Gun" Graphic="15110200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="MG_LIGHT" Label="Light Machine Gun" Graphic="15110201.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MG_MEDIUM" Label="Medium Machine Gun" Graphic="15110202.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MG_HEAVY" Label="Heavy Machine Gun" Graphic="15110203.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+
+        <EntityType ID="GRENADE_LAUNCHER" Label="Grenade Launcher" Graphic="15110300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="GRENADE_LAUNCHER_LIGHT" Label="Light Grenade Launcher" Graphic="15110301.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="GRENADE_LAUNCHER_MEDIUM" Label="Medium Grenade Launcher" Graphic="15110302.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="GRENADE_LAUNCHER_HEAVY" Label="Heavy Grenade Launcher" Graphic="15110303.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+
+        <EntityType ID="FLAME_THROWER" Label="Flame Thrower" Graphic="15110400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="AIR_DEFENSE_GUN" Label="Air Defense Gun" Graphic="15110500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="AIR_DEFENSE_GUN_LIGHT" Label="Light Air Defense Gun" Graphic="15110501.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="AIR_DEFENSE_GUN_MEDIUM" Label="Medium Air Defense Gun" Graphic="15110502.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="AIR_DEFENSE_GUN_HEAVY" Label="Heavy Air Defense Gun" Graphic="15110503.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+
+        <EntityType ID="ANTITANK_GUN" Label="Antitank Gun" Graphic="15110600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="ANTITANK_GUN_LIGHT" Label="Light Antitank Gun" Graphic="15110601.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ANTITANK_GUN_MEDIUM" Label="Medium Antitank Gun" Graphic="15110602.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ANTITANK_GUN_HEAVY" Label="Heavy Antitank Gun" Graphic="15110603.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+
+        <EntityType ID="DIRECT_FIRE_GUN" Label="Direct Fire Gun" Graphic="15110700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="DIRECT_FIRE_GUN_LIGHT" Label="Light Direct Fire Gun" Graphic="15110701.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="DIRECT_FIRE_GUN_MEDIUM" Label="Medium Direct Fire Gun" Graphic="15110702.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="DIRECT_FIRE_GUN_HEAVY" Label="Heavy Direct Fire Gun" Graphic="15110703.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+
+        <EntityType ID="RECOILLESS_GUN" Label="Recoilless Gun" Graphic="15110800.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="RECOILLESS_GUN_LIGHT" Label="Light Recoilless Gun" Graphic="15110801.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RECOILLESS_GUN_MEDIUM" Label="Medium Recoilless Gun" Graphic="15110802.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RECOILLESS_GUN_HEAVY" Label="Heavy Recoilless Gun" Graphic="15110803.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+
+        <EntityType ID="HOWITZER" Label="Howitzer" Graphic="15110900.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="HOWITZER_LIGHT" Label="Light Howitzer" Graphic="15110901.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="HOWITZER_MEDIUM" Label="Medium Howitzer" Graphic="15110902.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="HOWITZER_HEAVY" Label="Heavy Howitzer" Graphic="15110903.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+
+        <EntityType ID="MISSILE_LAUNCHER" Label="Missile Launcher" Graphic="15111000.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="MISSILE_LAUNCHER_LIGHT" Label="Light Missile Launcher" Graphic="15111001.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MISSILE_LAUNCHER_MEDIUM" Label="Medium Missile Launcher" Graphic="15111002.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MISSILE_LAUNCHER_HEAVY" Label="Heavy Missile Launcher" Graphic="15111003.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+
+        <EntityType ID="AIR_DEFENSE_MISSILE_LAUNCHER" Label="Air Defense Missile Launcher" Graphic="15111100.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="AIR_DEFENSE_MISSILE_LIGHT" Label="Light Air Defense Missile Launcher" Graphic="15111101.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="AIR_DEFENSE_MISSILE_LIGHT_TLAR" Label="Light-TLAR Air Defense Missile Launcher" Graphic="15111102.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="AIR_DEFENSE_MISSILE_LIGHT_TELAR" Label="Light-TELAR Air Defense Missile Launcher" Graphic="15111103.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="AIR_DEFENSE_MISSILE_MEDIUM" Label="Medium Air Defense Missile Launcher" Graphic="15111104.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="AIR_DEFENSE_MISSILE_MEDIUM_TLAR" Label="Medium-TLAR Air Defense Missile Launcher" Graphic="15111105.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="AIR_DEFENSE_MISSILE_MEDIUM_TELAR" Label="Medium-TELAR Air Defense Missile Launcher" Graphic="15111106.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="AIR_DEFENSE_MISSILE_HEAVY" Label="Heavy Air Defense Missile Launcher" Graphic="15111107.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="AIR_DEFENSE_MISSILE_HEAVY_TLAR" Label="Heavy-TLAR Air Defense Missile Launcher" Graphic="15111108.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="AIR_DEFENSE_MISSILE_HEAVY_TELAR" Label="Heavy-TELAR Air Defense Missile Launcher" Graphic="15111109.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>9</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+
+        <EntityType ID="ANTITANK_MISSILE_LAUNCHER" Label="Antitank Missile Launcher" Graphic="15111200.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="ANTITANK_MISSILE_LAUNCHER_LIGHT" Label="Light Antitank Missile Launcher" Graphic="15111201.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ANTITANK_MISSILE_LAUNCHER_MEDIUM" Label="Medium Antitank Missile Launcher" Graphic="15111202.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ANTITANK_MISSILE_LAUNCHER_HEAVY" Label="Heavy Antitank Missile Launcher" Graphic="15111203.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+
+        <EntityType ID="SURFACE_TO_SURFACE_MISSILE_LAUNCHER" Label="Surface-to-Surface Missile Launcher" Graphic="15111300.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="SURFACE_TO_SURFACE_MISSILE_LIGHT" Label="Light Surface-to-Surface Missile Launcher" Graphic="15111301.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SURFACE_TO_SURFACE_MISSILE_MEDIUM" Label="Medium Surface-to-Surface Missile Launcher" Graphic="15111302.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SURFACE_TO_SURFACE_MISSILE_HEAVY" Label="Heavy Surface-to-Surface Missile Launcher" Graphic="15111303.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+
+        <EntityType ID="MORTAR" Label="Mortar" Graphic="15111400.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="MORTAR_LIGHT" Label="Light Mortar" Graphic="15111401.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MORTAR_MEDIUM" Label="Medium Mortar" Graphic="15111402.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MORTAR_HEAVY" Label="Heavy Mortar" Graphic="15111403.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+
+        <EntityType ID="SINGLE_ROCKET_LAUNCHER" Label="Single Rocket Launcher" Graphic="15111500.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="SINGLE_ROCKET_LIGHT" Label="Light Single Rocket Launcher" Graphic="15111501.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SINGLE_ROCKET_MEDIUM" Label="Medium Single Rocket Launcher" Graphic="15111502.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SINGLE_ROCKET_HEAVY" Label="Heavy Single Rocket Launcher" Graphic="15111503.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+
+        <EntityType ID="MULTIPLE_ROCKET_LAUNCHER" Label="Multiple Rocket Launcher" Graphic="15111600.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="MULTIPLE_ROCKET_LIGHT" Label="Light Multiple Rocket Launcher" Graphic="15111601.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MULTIPLE_ROCKET_MEDIUM" Label="Medium Multiple Rocket Launcher" Graphic="15111602.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MULTIPLE_ROCKET_HEAVY" Label="Heavy Multiple Rocket Launcher" Graphic="15111603.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+
+        <EntityType ID="ANTITANK_ROCKET_LAUNCHER" Label="Antitank Rocket Launcher" Graphic="15111701.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="ANTITANK_ROCKET_LIGHT" Label="Light Antitank Rocket Launcher" Graphic="15111701.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ANTITANK_ROCKET_MEDIUM" Label="Medium Antitank Rocket Launcher" Graphic="15111702.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ANTITANK_ROCKET_HEAVY" Label="Heavy Antitank Rocket Launcher" Graphic="15111703.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+
+        <EntityType ID="NONLETHAL_WEAPON" Label="Nonlethal Weapon" Graphic="15111800.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="TASER" Label="Taser" Graphic="15111900.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="WATER_CANNON" Label="Water Cannon" Graphic="15112000.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+
+    <Entity ID="VEHICLE" Label="Vehicle" Graphic="15120000.svg" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes.">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>2</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="VEHICLE_ARMORED" Label="Armored Vehicle" Graphic="15120100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="ARMORED_FIGHTING_VEHICLE" Label="Armored Fighting Vehicle" Graphic="15120101.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ARMORED_FIGHTING_VEHICLE_C2" Label="Armored Fighting Vehicle Command and Control" Graphic="15120102.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ARMORED_PERSONNEL_CARRIER" Label="Armored Personnel Carrier" Graphic="15120103.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ARMORED_PERSONNEL_CARRIER_AMBULANCE" Label="Armored Personnel Carrier Ambulance" Graphic="15120104.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ARMORED_PROTECTED_VEHICLE" Label="Armored Protected Vehicle" Graphic="15120105.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ARMORED_PROTECTED_VEHICLE_RECOVERY" Label="Armored Protected Vehicle Recovery" Graphic="15120106.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ARMORED_PROTECTED_VEHICLE_MEDICAL" Label="Armored Protected Vehicle Medical Evacuation" Graphic="15120107.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ARMORED_PERSONNEL_CARRIER_RECOVERY" Label="Armored Personnel Carrier-Recovery" Graphic="15120108.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="COMBAT_SERVICE_SUPPORT_VEHICLE" Label="Combat Service Support Vehicle" Graphic="15120109.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>9</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="LIGHT_WHEELED_ARMORED_VEHICLE" Label="Light Wheeled Armored Vehicle" Graphic="15120110.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>0</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+
+        <EntityType ID="TANK" Label="Tank" Graphic="15120200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="TANK_LIGHT" Label="Light Tank" Graphic="15120201.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TANK_MEDIUM" Label="Medium Tank" Graphic="15120202.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TANK_HEAVY" Label="Heavy Tank" Graphic="15120203.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+
+        <EntityType ID="TANK_RECOVERY_VEHICLE" Label="Tank Recovery Vehicle" Graphic="15120300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="TANK_RECOVERY_LIGHT" Label="Light Tank Recovery Vehicle" Graphic="15120301.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TANK_RECOVERY_MEDIUM" Label="Medium Tank Recovery Vehicle" Graphic="15120302.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TANK_RECOVERY_HEAVY" Label="Heavy Tank Recovery Vehicle" Graphic="15120303.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+
+    <Entity ID="ENGINEER_VEHICLES_EQUIPMENT" Label="Engineer Vehicles and Equipment" Graphic="15130000.svg">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>3</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="BRIDGE" Label="Bridge" Graphic="15130100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="BRIDGE_MOUNTED_UTILITY_VEHICLE" Label="Bridge Mounted on Utility Vehicle" Graphic="15130200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="FIXED_BRIDGE" Label="Fixed Bridge" Graphic="15130300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="FLOATING_BRIDGE" Label="Floating Bridge" Graphic="15130400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="FOLDING_GIRDER_BRIDGE" Label="Folding Girder Bridge" Graphic="15130500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="HOLLOW_DECK_BRIDGE" Label="Hollow Deck Bridge" Graphic="15130600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="DRILL" Label="Drill" Graphic="15130700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="DRILL_MOUNTED_ON_UTILITY_VEHICLE" Label="Drill Mounted on Utility Vehicle" Graphic="15130701.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+
+        <EntityType ID="EARTHMOVER" Label="Earthmover" Graphic="15130800.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="EARTHMOVER_DIGGER" Label="Multifunctional Earthmover/Digger" Graphic="15130801.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+
+        <EntityType ID="MINE_CLEARING_EQUIPMENT" Label="Mine Clearing Equipment" Graphic="15130900.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="MINE_CLEARING_EQUIPMENT_TRAILER" Label="Mine Clearing Equipment Trailer Mounted" Graphic="15130901.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MINE_CLEARING_EQUIPMENT_TANK_CHASSIS" Label="Mine Clearing Equipment on Tank Chassis" Graphic="15130902.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+
+        <EntityType ID="MINE_LAYING_EQUIPMENT" Label="Mine Laying Equipment" Graphic="15131000.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+          <EntitySubTypes>
+            <EntitySubType ID="MINE_LAYING_EQUIPMENT_UTILITY_VEHICLE" Label="Mine Laying Equipment on Utility Vehicle" Graphic="15131001.svg">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="ARMORED_CARRIER_VOLCANO" Label="Armored Carrier with Volcano" Graphic="15131002.svg">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="TRUCK_VOLCANO" Label="Truck Mounted Volcano" Graphic="15131003.svg">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+				</EntityType>
+
+				<EntityType ID="DOZER" Label="Dozer" Graphic="15131100.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="DOZER_ARMORED" Label="Dozer-Armored" Graphic="15131101.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+
+        <EntityType ID="ARMORED_ASSAULT" Label="Armored Assault" Graphic="15131200.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="ARMORED_ENGINEER_RECON_VEHICLE_AERV" Label="Armored Engineer Recon Vehicle (AERV)" Graphic="15131300.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="BACKHOE" Label="Backhoe" Graphic="15131400.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="CONSTRUCTION_VEHICLE" Label="Construction Vehicle" Graphic="15131500.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="FERRY_TRANSPORTER" Label="Ferry Transporter" Graphic="15131600.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+
+    <Entity ID="UTILITY_VEHICLES" Label="Utility Vehicles" Remarks="No icon is associated with this entity. It is for hierachal purposes only.">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>4</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="UTILITY_VEHICLE" Label="Utility Vehicle" Graphic="15140100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="UTILITY_VEHICLE_MEDICAL" Label="Medical Vehicle" Graphic="15140200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="UTILITY_VEHICLE_MEDEVAC" Label="Medical Evacuation Vehicle" Graphic="15140300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="UTILITY_VEHICLE_MOBILE_EMERGENCY_PHYSICIAN" Label="Mobile Emergency Physician" Graphic="15140400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="BUS" Label="Bus" Graphic="15140500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="SEMI_TRAILER_AND_TRUCK" Label="Semi-Trailer and Truck" Graphic="15140600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="SEMI_LIGHT" Label="Light Semi-Trailer and Truck" Graphic="15140601.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SEMI_MEDIUM" Label="Medium Semi-Trailer and Truck" Graphic="15140602.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SEMI_HEAVY" Label="Heavy Semi-Trailer and Truck" Graphic="15140603.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+
+        <EntityType ID="LIMITED_CROSS_COUNTRY_TRUCK" Label="Limited Cross Country Truck" Graphic="15140700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="CROSS_COUNTRY_TRUCK" Label="Cross Country Truck" Graphic="15140800.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="POL_VEHICLE" Label="Petroleum-Oil and Lubricant" Graphic="15140900.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="WATER_VEHICLE" Label="Water" Graphic="15141000.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="AMPHIBIOUS_UTILITY_WHEELED_VEHICLE" Label="Amphibious Utility Wheeled Vehicle" Graphic="15141100.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="TOW_TRUCK" Label="Tow Truck" Graphic="15141200.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="TOW_TRUCK_LIGHT" Label="Light Tow Truck" Graphic="15141201.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TOW_TRUCK_HEAVY" Label="Heavy Tow Truck" Graphic="15141202.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+
+    <Entity ID="TRAIN" Label="Train" Remarks="No icon is associated with this entity. It is for hierachal purposes only.">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>5</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="LOCOMOTIVE" Label="Locomotive" Graphic="15150100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="RAILCAR" Label="Railcar" Graphic="15150200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+
+    <Entity ID="CIVILIAN_VEHICLE" Label="Civilian Vehicle" Remarks="No icon is associated with this entity. It is for hierachal purposes only.">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>6</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="AUTOMOBILE" Label="Automobile" Graphic="15160100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="COMPACT_AUTO" Label="Compact" Graphic="15160101.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MIDSIZE_AUTO" Label="Midsize" Graphic="15160102.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SEDAN_AUTO" Label="Sedan" Graphic="15160103.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+
+        <EntityType ID="OPEN_BED_TRUCK" Label="Open-Bed Truck" Graphic="15160200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="PICKUP_TRUCK" Label="Pickup" Graphic="15160201.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SMALL_PICKUP_TRUCK" Label="Small Pickup" Graphic="15160202.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="LARGE_PICKUP_TRUCK" Label="Large Pickup" Graphic="15160203.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+
+        <EntityType ID="MULTIPLE_PASSENGER_VEHICLE" Label="Multiple Passenger Vehicle" Graphic="15160300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="VAN" Label="Van" Graphic="15160301.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SMALL_BUS" Label="Small Bus" Graphic="15160302.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="LARGE_BUS" Label="Large Bus" Graphic="15160303.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+
+        <EntityType ID="AUTO_UTILITY_VEHICLE" Label="Utility Vehicle" Graphic="15160400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="SPORT_UTILITY_VEHICLE_SUV" Label="Sport Utility Vehicle (SUV)" Graphic="15160401.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SMALL_BOX_TRUCK" Label="Small Box Truck" Graphic="15160402.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="LARGE_BOX_TRUCK" Label="Large Box Truck" Graphic="15160403.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+
+        <EntityType ID="JEEP_TYPE_VEHICLE" Label="Jeep Type Vehicle" Graphic="15160500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="JEEP_LIGHT" Label="Small/Light Jeep" Graphic="15160501.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="JEEP_MEDIUM" Label="Medium Jeep" Graphic="15160502.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="JEEP_HEAVY" Label="Large/Heavy Jeep" Graphic="15160503.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+
+        <EntityType ID="TRACTOR_TRAILER_BOX" Label="Tractor Trailer Truck with Box" Graphic="15160600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="TRACTOR_TRAILER_BOX_LIGHT" Label="Light Tractor Trailer Truck with Box" Graphic="15160601.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TRACTOR_TRAILER_BOX_MEDIUM" Label="Medium Tractor Trailer Truck with Box" Graphic="15160602.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TRACTOR_TRAILER_BOX_HEAVY" Label="Heavy Tractor Trailer Truck with Box" Graphic="15160603.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+
+        <EntityType ID="TRACTOR_TRAILER_FLATBED" Label="Tractor Trailer Truck with Flatbed Trailer" Graphic="15160700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="TRACTOR_TRAILER_BED_LIGHT" Label="Light Tractor Trailer Truck with Bed" Graphic="15160701.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TRACTOR_TRAILER_BED_MEDIUM" Label="Medium Tractor Trailer Truck with Bed" Graphic="15160702.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TRACTOR_TRAILER_BED_HEAVY" Label="Heavy Tractor Trailer Truck with Bed" Graphic="15160703.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+
+        <EntityType ID="KNOWN_INSURGENT_VEHICLE" Label="Known Insurgent Vehicle" Graphic="15160800.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="DRUG_VEHICLE" Label="Drug Vehicle" Graphic="15160900.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+
+    <Entity ID="LAW_ENFORCEMENT" Label="Law Enforcement" Graphic="15170000.svg">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>7</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="BUREAU_ALCOHOL_TOBACCO_FIREARMS_EXPLOSIVES_ATF" Label="Bureau of Alcohol-Tobacco-Firearms and Explosives (ATF) (Department of Justice)" Graphic="15170100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="BORDER_PATROL" Label="Border Patrol" Graphic="15170200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="CUSTOMS_SERVICE" Label="Customs Service" Graphic="15170300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="DRUG_ENFORCEMENT_ADMINISTRATION_DEA" Label="Drug Enforcement Administration (DEA)" Graphic="15170400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="DEPARTMENT_OF_JUSTICE_DOJ" Label="Department of Justice (DOJ)" Graphic="15170500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="FEDERAL_BUREAU_INVESTIGATION_FBI" Label="Federal Bureau of Investigation (FBI)" Graphic="15170600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="POLICE" Label="Police" Graphic="15170700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="UNITED_STATES_SECRET_SERVICE_USSS" Label="United States Secret Service (USSS)" Graphic="15170800.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="TRANSPORTATION_SECURITY_ADMINISTRATION_TSA" Label="Transportation Security Administration (TSA)" Graphic="15170900.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="COAST_GUARD" Label="Coast Guard" Graphic="15171000.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="US_MARSHALS_SERVICE" Label="US Marshals Service" Graphic="15171100.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+
+    <Entity ID="PACK_ANIMALS" Label="Pack Animals" Graphic="15180000.svg">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>8</DigitTwo>
+			</EntityCode>
+		</Entity>
+
+    <Entity ID="MISSILE_SUPPORT" Label="Missile Support" Graphic="15190000.svg">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>9</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="MISSILE_TRANSLOADER" Label="Transloader" Graphic="15190100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="MISSILE_TRANSPORTER" Label="Transporter" Graphic="15190200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="MISSILE_CRANE_LOADING_DEVICE" Label="Crane/Loading Device" Graphic="15190300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="MISSILE_PROPELLANT_TRANSPORTER" Label="Propellant Transporter" Graphic="15190400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="MISSILE_WARHEAD_TRANSPORTER" Label="Warhead Transporter" Graphic="15190500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+
+    <Entity ID="OTHER_EQUIPMENT" Label="Other Equipment" Remarks="No icon is associated with this entity. It is for hierachal purposes only.">
+			<EntityCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>0</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="ANTENNAE" Label="Antennae" Graphic="15200100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="BOMB" Label="Bomb" Graphic="15200200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="BOOBY_TRAP" Label="Booby Trap" Graphic="15200300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="CBRN_EQUIPMENT" Label="CBRN Equipment" Graphic="15200400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="COMPUTER_SYSTEM" Label="Computer System" Graphic="15200500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="COMMAND_LAUNCH_EQUIPMENT_CLE" Label="Command Launch Equipment (CLE)" Graphic="15200600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="GENERATOR_SET" Label="Generator Set" Graphic="15200700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="GMD_GFC_CENTER" Label="Ground-based Midcourse Defense (GMD) Fire Control (GFC) Center" Graphic="15200800.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="IFICS_IDT" Label="In-Flight Interceptor Communications System (IFICS) Data Terminal (IDT)" Graphic="15200900.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="LASER" Label="Laser" Graphic="15201000.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="MILITARY_INFORMATION_SUPPORT_OPERATIONS_MISO" Label="Military Information Support Operations (MISO)" Graphic="15201100.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="SUSTAINMENT_SHIPMENTS" Label="Sustainment Shipments" Graphic="15201200.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="TENT" Label="Tent" Graphic="15201300.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="UNIT_DEPLOYMENT_SHIPMENTS" Label="Unit Deployment Shipments" Graphic="15201400.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="EMERGENCY_MEDICAL_OPERATION" Label="Emergency Medical Operation" Graphic="15201500.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="MEDICAL_EVACUATION_HELICOPTER" Label="Medical Evacuation Helicopter" Graphic="15201501.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+
+    <Entity ID="LAND_MINES" Label="Land Mines" Remarks="No icon is associated with this entity. It is for hierachal purposes only.">
+			<EntityCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="LAND_MINE" Label="Land Mine" Graphic="15210100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="ANTIPERSONNEL_LAND_MINE_APL" Label="Antipersonnel Land Mine (APL)" Graphic="15210200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="ANTITANK_MINE" Label="Antitank Mine" Graphic="15210300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="IMPROVISED_EXPLOSIVES_DEVICE_IED" Label="Improvised Explosives Device (IED)" Graphic="15210400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="LESS_THAN_LETHAL" Label="Less than lethal" Graphic="15210500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+
+    <Entity ID="SENSORS" Label="Sensors" Remarks="No icon is associated with this entity. It is for hierachal purposes only.">
+			<EntityCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>2</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="SENSOR" Label="Sensor" Graphic="15220100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="SENSOR_EMPLACED" Label="Sensor Emplaced" Graphic="15220200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="RADAR" Label="Radar" Graphic="15220300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+
+    <Entity ID="EMERGENCY_OPERATION" Label="Emergency Operation" Graphic="15230000.svg">
+			<EntityCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>3</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="AMBULANCE" Label="Ambulance" Graphic="15230100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+
+        <EntityType ID="FIRE_FIGHTING_FIRE_PROTECTION" Label="Fire Fighting/Fire Protection" Graphic="15230200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+
+    <Entity ID="MANUAL_TRACK" Label="Manual Track" Graphic="15240000.svg">
+			<EntityCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>4</DigitTwo>
+			</EntityCode>
+		</Entity>
+	</Entities>
+
+  <SectorOneModifiers>
+		<Modifier ID="BIOLOGICAL_MOD" Label="Biological" Category="SENSOR_TYPE" Graphic="15011.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+
+    <Modifier ID="CHEMICAL_MOD" Label="Chemical" Category="SENSOR_TYPE" Graphic="15021.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>2</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+
+    <Modifier ID="EARLY_WARNING_RADAR_MOD" Label="Early Warning Radar" Category="SENSOR_TYPE" Graphic="15031.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>3</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+
+    <Modifier ID="INTRUSION_MOD" Label="Intrusion" Category="SENSOR_TYPE" Graphic="15041.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>4</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+
+    <Modifier ID="NUCLEAR_MOD" Label="Nuclear" Category="SENSOR_TYPE" Graphic="15051.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>5</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+
+    <Modifier ID="RADIOLOGICAL_MOD" Label="Radiological" Category="SENSOR_TYPE" Graphic="15061.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>6</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+
+    <Modifier ID="UPGRADED_EARLY_WARNING_RADAR_MOD" Label="Upgraded Early Warning Radar" Category="SENSOR_TYPE" Graphic="15071.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>7</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+
+    <Modifier ID="HIJACKING_MOD" Label="Hijacking" Category="CRIME" Graphic="15081.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>8</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+
+    <Modifier ID="CIVILIAN_MOD" Label="Civilian" Category="ORGANIZATION" Graphic="15091.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>9</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+	</SectorOneModifiers>
+</SymbolSet>
