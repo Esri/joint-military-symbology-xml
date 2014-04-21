@@ -420,7 +420,6 @@
 
     <LegacySymbol ID="SUB_SYM" Label="Submarine" EntityID="MILITARY" EntityTypeID="SUBMARINE">
       <LegacyFunctionCode Name="2525C">S-----</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525B">S-----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="SUB_SUR_SYM" Label="Submarine - Surfaced" EntityID="MILITARY" EntityTypeID="SUBMARINE" EntitySubTypeID="SUBMARINE_SURFACED">
@@ -441,7 +440,6 @@
 
     <LegacySymbol ID="NUC_SUB_SYM" Label="Nuclear Propulsion" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierTwoID="NUCLEAR_POWERED_GENERAL_MOD">
       <LegacyFunctionCode Name="2525C">SN----</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525B">SN----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="NUC_SUR_SYM" Label="Nuclear Propulsion - Surfaced" EntityID="MILITARY" EntityTypeID="SUBMARINE" EntitySubTypeID="SUBMARINE_SURFACED" ModifierTwoID="NUCLEAR_POWERED_GENERAL_MOD">
@@ -450,27 +448,22 @@
 
     <LegacySymbol ID="NUC_SSN_SYM" Label="Nuclear Propulsion - Attack" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="ATTACK_MOD" ModifierTwoID="NUCLEAR_POWERED_GENERAL_MOD" Remarks="SSN">
       <LegacyFunctionCode Name="2525C">SNA---</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525B">SNA---</LegacyFunctionCode>
     </LegacySymbol>
     
     <LegacySymbol ID="NUC_M_SYM" Label="Nuclear Propulsion - Missile" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="OTHER_GUIDED_MISSILE_MOD" ModifierTwoID="NUCLEAR_POWERED_GENERAL_MOD">
       <LegacyFunctionCode Name="2525C">SNM---</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525B">SNM---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="NUC_SSGN_SYM" Label="Nuclear Propulsion - Guided Missile" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="GUIDED_MISSILE_MOD" ModifierTwoID="NUCLEAR_POWERED_GENERAL_MOD" Remarks="SSGN">
       <LegacyFunctionCode Name="2525C">SNG---</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525B">SNG---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="NUC_SSBN_SYM" Label="Nuclear Propulsion - Ballistic Missile" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="BALLISTIC_MISSILE_MOD" ModifierTwoID="NUCLEAR_POWERED_GENERAL_MOD" Remarks="SSBN">
       <LegacyFunctionCode Name="2525C">SNB---</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525B">SNB---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="CON_SUB_SYM" Label="Conventional Propulsion" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierTwoID="DIESEL_ELECTRIC_GENERAL_MOD">
       <LegacyFunctionCode Name="2525C">SC----</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525B">SC----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="CON_SUR_SYM" Label="Conventional Propulsion - Surfaced" EntityID="MILITARY" EntityTypeID="SUBMARINE" EntitySubTypeID="SUBMARINE_SURFACED" ModifierTwoID="DIESEL_ELECTRIC_GENERAL_MOD">
@@ -479,27 +472,22 @@
 
     <LegacySymbol ID="CON_SS_SYM" Label="Conventional Propulsion - Attack" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="ATTACK_MOD" ModifierTwoID="DIESEL_ELECTRIC_GENERAL_MOD" Remarks="SS">
       <LegacyFunctionCode Name="2525C">SCA---</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525B">SCA---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="CON_M_SYM" Label="Conventional Propulsion - Missile" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="OTHER_GUIDED_MISSILE_MOD" ModifierTwoID="DIESEL_ELECTRIC_GENERAL_MOD">
       <LegacyFunctionCode Name="2525C">SCM---</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525B">SCM---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="CON_SSG_SYM" Label="Conventional Propulsion - Guided Missile" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="GUIDED_MISSILE_MOD" ModifierTwoID="DIESEL_ELECTRIC_GENERAL_MOD" Remarks="SSG">
       <LegacyFunctionCode Name="2525C">SCG---</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525B">SCG---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="CON_SSB_SYM" Label="Conventional Propulsion - Ballistic Missile" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="BALLISTIC_MISSILE_MOD" ModifierTwoID="DIESEL_ELECTRIC_GENERAL_MOD" Remarks="SSB">
       <LegacyFunctionCode Name="2525C">SCB---</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525B">SCB---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="OTH_SUB_SYM" Label="Other Submersible" EntityID="MILITARY" EntityTypeID="OTHER_SUBMERSIBLE">
       <LegacyFunctionCode Name="2525C">SO----</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525B">SO----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="OTH_SUB_SUR_SYM" Label="Other Submersible - Surfaced" EntityID="MILITARY" EntityTypeID="OTHER_SUBMERSIBLE">
@@ -508,7 +496,6 @@
 
     <LegacySymbol ID="UUV__SYM" Label="Unmanned Underwater Vehicle (UUV)" EntityID="MILITARY" EntityTypeID="AUV_UUV">
       <LegacyFunctionCode Name="2525C">SU----</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525B">SU----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="UUV_MIW_SYM" Label="Unmanned Underwater Vehicle (UUV) - Mine Warfare" EntityID="MILITARY" EntityTypeID="AUV_UUV" ModifierOneID="MINE_WARFARE_MOD">
@@ -549,12 +536,10 @@
 
     <LegacySymbol ID="WEAPON_SYM" Label="Underwater Weapon" EntityID="WEAPON">
       <LegacyFunctionCode Name="2525C">W-----</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525B">W-----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="TORPEDO_SYM" Label="Torpedo" EntityID="WEAPON" EntityTypeID="TORPEDO">
       <LegacyFunctionCode Name="2525C">WT----</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525B">WT----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="DECOY_SYM" Label="Underwater Decoy" EntityID="WEAPON" EntityTypeID="DECOY">
@@ -564,7 +549,6 @@
     
     <LegacySymbol ID="DIVER_SYM" Label="Diver" EntityID="MILITARY" EntityTypeID="DIVER">
       <LegacyFunctionCode Name="2525C">ND----</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525B">ND----</LegacyFunctionCode>
     </LegacySymbol>
   </LegacySymbols>
 </SymbolSet>

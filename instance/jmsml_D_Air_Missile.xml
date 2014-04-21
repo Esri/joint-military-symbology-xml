@@ -189,27 +189,22 @@
   <LegacySymbols>
     <LegacySymbol ID="WEAPON_SYM" Label="Weapon" EntityID="MISSILE">
       <LegacyFunctionCode Name="2525C">W-----</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525B">W-----</LegacyFunctionCode>
     </LegacySymbol>
     
     <LegacySymbol ID="MISSILE_SYM" Label="Missile in Flight" Remarks="Retired" >
       <LegacyFunctionCode Name="2525C">WM----</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525B">WM----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="SURFACE_LAUNCHED_SYM" Label="Surface Launched Missile in Flight" EntityID="MISSILE" ModifierOneID="SURFACE_MOD" ModifierTwoID="LAUNCHED_MOD">
       <LegacyFunctionCode Name="2525C">WMS---</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525B">WMS---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="SURFACE_SURFACE_SYM" Label="Surface-to-Surface Missile (SSM)" EntityID="MISSILE" ModifierOneID="SURFACE_MOD" ModifierTwoID="SURFACE_DEST_MOD">
       <LegacyFunctionCode Name="2525C">WMSS--</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525B">WMSS--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="SURFACE_AIR_SYM" Label="Surface-to-Air Missile (SAM)" EntityID="MISSILE" ModifierOneID="SURFACE_MOD" ModifierTwoID="AIR_DEST_MOD">
       <LegacyFunctionCode Name="2525C">WMSA--</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525B">WMSA--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="SURFACE_SUB_SYM" Label="Surface-to-Subsurface Missile (SAM)" EntityID="MISSILE" ModifierOneID="SURFACE_MOD" ModifierTwoID="SUB_DEST_MOD">
@@ -222,17 +217,14 @@
 
     <LegacySymbol ID="AIR_LAUNCHED_SYM" Label="Air Launched Missile in Flight" EntityID="MISSILE" ModifierOneID="AIR_MOD" ModifierTwoID="LAUNCHED_MOD">
       <LegacyFunctionCode Name="2525C">WMA---</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525B">WMA---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="AIR_SURFACE_SYM" Label="Air-to-Surface Missile (ASM)" EntityID="MISSILE" ModifierOneID="AIR_MOD" ModifierTwoID="SURFACE_DEST_MOD">
       <LegacyFunctionCode Name="2525C">WMAS--</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525B">WMAS--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="AIR_AIR_SYM" Label="Air-to-Air Missile (AAM)" EntityID="MISSILE" ModifierOneID="AIR_MOD" ModifierTwoID="AIR_DEST_MOD">
       <LegacyFunctionCode Name="2525C">WMAA--</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525B">WMAA--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="AIR_SPACE_SYM" Label="Air-to-Space Missile" EntityID="MISSILE" ModifierOneID="AIR_MOD" ModifierTwoID="SPACE_DEST_MOD">
@@ -241,12 +233,10 @@
 
     <LegacySymbol ID="SUB_SURFACE_SYM" Label="Subsurface-to-Surface Missile (S/SSM)" EntityID="MISSILE" ModifierOneID="SUB_MOD" ModifierTwoID="SURFACE_DEST_MOD">
       <LegacyFunctionCode Name="2525C">WMU---</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525B">WMU---</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="CRUISE_SYM" Label="Cruise Missile" EntityID="MISSILE" ModifierOneID="CRUISE_MOD">
       <LegacyFunctionCode Name="2525C">WMCM--</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525B">WMCM--</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="BALLISTIC_SYM" Label="Ballistic Missile" EntityID="MISSILE" ModifierOneID="BALLISTIC_MOD">

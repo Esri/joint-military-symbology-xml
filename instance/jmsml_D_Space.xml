@@ -330,17 +330,14 @@
     
     <LegacySymbol ID="SHUTTLE_SYM" Label="Crewed Space Vehicle" EntityID="MILITARY" EntityTypeID="SPACE_VEHICLE" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">V-----</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525B">V-----</LegacyFunctionCode>
     </LegacySymbol>
     
     <LegacySymbol ID="SATELLITE_SYM" Label="Satellite" EntityID="MILITARY" EntityTypeID="SATELLITE">
       <LegacyFunctionCode Name="2525C">S-----</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525B">S-----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="SPACE_STATION_SYM" Label="Space Station" EntityID="CIVILIAN" EntityTypeID="CIV_SPACE_STATION">
       <LegacyFunctionCode Name="2525C">T-----</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525B">T-----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="SLV_SYM" Label="Space Launched Vehicle (SLV)" EntityID="MILITARY" EntityTypeID="SPACE_LAUNCHED_VEHICLE">
