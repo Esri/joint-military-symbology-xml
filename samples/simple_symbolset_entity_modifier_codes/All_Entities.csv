@@ -97,7 +97,7 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 30,Military Combatant,Surface Combatant- Line,Destroyer,120203,POINT
 30,Military Combatant,Surface Combatant- Line,Frigate,120204,POINT
 30,Military Combatant,Surface Combatant- Line,Corvette,120205,POINT
-30,Military Combatant,Surface Combatant- Line,Littoral Combat Ship,120206,POINT
+30,Military Combatant,Surface Combatant- Line,Littoral Combatant Ship,120206,POINT
 30,Military Combatant,Amphibious Warfare Ship,,120300,POINT
 30,Military Combatant,Amphibious Warfare Ship,Amphibious Command Ship,120301,POINT
 30,Military Combatant,Amphibious Warfare Ship,Amphibious Assault- Non-specified,120302,POINT
@@ -128,27 +128,27 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 30,Military Combatant,Navy Task Organization,Navy Task Group,121003,POINT
 30,Military Combatant,Navy Task Organization,Navy Task Unit,121004,POINT
 30,Military Combatant,Navy Task Organization,Convoy,121005,POINT
-30,Military Combatant,Sea Based X-Band Radar,,121100,POINT
-30,Military Non-Combatant,,,130000,POINT
-30,Military Non-Combatant,Auxilliary Ship,,130100,POINT
-30,Military Non-Combatant,Auxilliary Ship,Ammunition Ship,130101,POINT
-30,Military Non-Combatant,Auxilliary Ship,Naval Stores Ship,130102,POINT
-30,Military Non-Combatant,Auxilliary Ship,Auxiliary Flag Ship,130103,POINT
-30,Military Non-Combatant,Auxilliary Ship,Intelligence Collector,130104,POINT
-30,Military Non-Combatant,Auxilliary Ship,Oceanographic Research Ship,130105,POINT
-30,Military Non-Combatant,Auxilliary Ship,Survey Ship,130106,POINT
-30,Military Non-Combatant,Auxilliary Ship,Hospital Ship,130107,POINT
-30,Military Non-Combatant,Auxilliary Ship,Naval Cargo Ship,130108,POINT
-30,Military Non-Combatant,Auxilliary Ship,Combat Support Ship- Fast,130109,POINT
-30,Military Non-Combatant,Auxilliary Ship,Oiler- Replenishment,130110,POINT
-30,Military Non-Combatant,Auxilliary Ship,Repair Ship,130111,POINT
-30,Military Non-Combatant,Auxilliary Ship,Submarine Tender,130112,POINT
-30,Military Non-Combatant,Auxilliary Ship,Tug- Ocean Going,130113,POINT
-30,Military Non-Combatant,Service Craft/Yard,,130200,POINT
-30,Military Non-Combatant,Service Craft/Yard,Barge- Not Self-Propelled,130201,POINT
-30,Military Non-Combatant,Service Craft/Yard,Barge- Self-Propelled,130202,POINT
-30,Military Non-Combatant,Service Craft/Yard,Tug- Harbor,130203,POINT
-30,Military Non-Combatant,Service Craft/Yard,Launch,130204,POINT
+30,Military Combatant,Sea-Based X-Band (SBX) Radar,,121100,POINT
+30,Military Noncombatant,,,130000,POINT
+30,Military Noncombatant,Auxiliary Ship,,130100,POINT
+30,Military Noncombatant,Auxiliary Ship,Ammunition Ship,130101,POINT
+30,Military Noncombatant,Auxiliary Ship,Naval Stores Ship,130102,POINT
+30,Military Noncombatant,Auxiliary Ship,Auxiliary Flag Ship,130103,POINT
+30,Military Noncombatant,Auxiliary Ship,Intelligence Collector,130104,POINT
+30,Military Noncombatant,Auxiliary Ship,Oceanographic Research Ship,130105,POINT
+30,Military Noncombatant,Auxiliary Ship,Survey Ship,130106,POINT
+30,Military Noncombatant,Auxiliary Ship,Hospital Ship,130107,POINT
+30,Military Noncombatant,Auxiliary Ship,Naval Cargo Ship,130108,POINT
+30,Military Noncombatant,Auxiliary Ship,Combat Support Ship- Fast,130109,POINT
+30,Military Noncombatant,Auxiliary Ship,Oiler- Replenishment,130110,POINT
+30,Military Noncombatant,Auxiliary Ship,Repair Ship,130111,POINT
+30,Military Noncombatant,Auxiliary Ship,Submarine Tender,130112,POINT
+30,Military Noncombatant,Auxiliary Ship,Tug- Ocean Going,130113,POINT
+30,Military Noncombatant,Service Craft/Yard,,130200,POINT
+30,Military Noncombatant,Service Craft/Yard,Barge- Not Self-Propelled,130201,POINT
+30,Military Noncombatant,Service Craft/Yard,Barge- Self-Propelled,130202,POINT
+30,Military Noncombatant,Service Craft/Yard,Tug- Harbor,130203,POINT
+30,Military Noncombatant,Service Craft/Yard,Launch,130204,POINT
 30,Civilian,,,140000,POINT
 30,Civilian,Merchant Ship,,140100,POINT
 30,Civilian,Merchant Ship,Cargo- General,140101,POINT
