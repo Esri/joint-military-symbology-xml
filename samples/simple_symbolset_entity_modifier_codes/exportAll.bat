@@ -1,4 +1,4 @@
 setlocal
 cd ..\..\source\JointMilitarySymbologyLibraryCS\jmsml\bin\Debug
-jmsml.exe /b="../../../../../samples/coded_base_domain_tables" /e
+jmsml.exe /x="../../../../../samples/simple_symbolset_entity_modifier_codes/All"
 endlocal
