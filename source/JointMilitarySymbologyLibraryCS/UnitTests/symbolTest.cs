@@ -209,7 +209,7 @@ namespace UnitTests
         public void SIDCTest_Tags()
         {
             Symbol target = _librarian.MakeSymbol(1004301000, 1301040000);
-            string expected = "Reality; Neutral; Sea Surface; Military Non-Combatant; Auxilliary Ship; Intelligence Collector; SNSANI---------";
+            string expected = "Reality; Neutral; Sea Surface; Military Noncombatant; Auxiliary Ship; Intelligence Collector; SNSANI---------";
             string actual = target.Tags;
             Assert.AreEqual(expected, actual);
         }
