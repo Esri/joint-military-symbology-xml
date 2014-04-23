@@ -1081,7 +1081,7 @@
     </LegacySymbol>
 
     <LegacySymbol ID="CIV_DEMO_SYM" Label="Civil Demonstration" EntityID="CIVIL_DISTURBANCE" EntityTypeID="DEMONSTRATION">
-      <LegacyFunctionCode Name="2525C">------</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" Schema="O">D-----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="CIV_RIOT_SYM" Label="Civil Rioting" EntityID="INCIDENT" EntityTypeID="CRIMINAL_ACTIVITY_INCIDENT" EntitySubTypeID="CIVIL_RIOTING">
@@ -1097,7 +1097,7 @@
     </LegacySymbol>
 
     <LegacySymbol ID="BOMB_SYM" Label="Bomb" EntityID="INCIDENT" EntityTypeID="BOMB_BOMBING">
-      <LegacyFunctionCode Name="2525C">B-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" Schema="O">B-----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="BOMB_EXP_SYM" Label="Bomb Explosion" EntityID="INCIDENT" EntityTypeID="BOMB_BOMBING">
@@ -1109,7 +1109,7 @@
     </LegacySymbol>
 
     <LegacySymbol ID="POISONING_SYM" Label="Poisoning" EntityID="INCIDENT" EntityTypeID="CRIMINAL_ACTIVITY_INCIDENT" EntitySubTypeID="POISONING">
-      <LegacyFunctionCode Name="2525C">P-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" Schema="O">P-----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="SHOOTING_SYM" Label="Shooting" EntityID="INCIDENT" EntityTypeID="SHOOTING">
@@ -1225,7 +1225,7 @@
     </LegacySymbol>
 
     <LegacySymbol ID="AIR_HIJACK_SYM" Label="Air Hijacking" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="AIR" ModifierOneID="HIJACKING_MOD">
-      <LegacyFunctionCode Name="2525C">HA----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" Schema="O">HA----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="MAR_INC_SYM" Label="Marine Incident" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="MARINE" ModifierOneID="INCIDENT_MOD">
@@ -1237,7 +1237,7 @@
     </LegacySymbol>
 
     <LegacySymbol ID="MAR_HIJACK_SYM" Label="Marine Hijacking" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="MARINE" ModifierOneID="HIJACKING_MOD">
-      <LegacyFunctionCode Name="2525C">HV----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" Schema="O">HV----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="RAIL_INC_SYM" Label="Rail Incident" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="RAIL" ModifierOneID="INCIDENT_MOD">
@@ -1261,7 +1261,7 @@
     </LegacySymbol>
 
     <LegacySymbol ID="VEH_HIJACK_SYM" Label="Vehicle Hijacking" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="VEHICLE" ModifierOneID="HIJACKING_MOD">
-      <LegacyFunctionCode Name="2525C">HT----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" Schema="O">HT----</LegacyFunctionCode>
     </LegacySymbol>
 
     <LegacySymbol ID="AFTERSHOCK_SYM" Label="Aftershock" EntityID="NATURAL_EVENT" EntityTypeID="GEOLOGIC" EntitySubTypeID="AFTERSHOCK">
