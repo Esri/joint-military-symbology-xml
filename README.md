@@ -28,6 +28,8 @@ In providing this schema, files of instance data, and sample C# code to navigate
     * Space Missile symbols
     * Sea Surface symbols
 
+* SVG files for all of the frames, entities, modifiers, and other graphic amplifiers needed to implement military symbology.
+
 * A .Net (C#) solution that contains projects with all the code to:
   * Define all the classes needed to import the XML instance data.
   * Navigate the aforementioned classes to perform the following functions:
@@ -60,6 +62,7 @@ In providing this schema, files of instance data, and sample C# code to navigate
 [New to Github? Get started here.](http://htmlpreview.github.com/?https://github.com/Esri/esri.github.com/blob/master/help/esri-getting-to-know-github.html)
 
 ### Getting Started with the solution
+* Unzip the SVG zip file found in the SVG folder.  If you intend to use these SVG files with the image conversion utilities found under the Utilities source folder, please consult its instructions [here](./source/utilities/image-conversion-utilities/README.md).
 * Open and build the Visual Studio Solution at joint-military-symbology-xml\source\JointMilitarySymbologyLibraryCS
     * To use MSBuild to build the solution
         * Open a Visual Studio Command Prompt: Start Menu | Microsoft Visual Studio 2010/2012 | Visual Studio Tools | Developer Command Prompt for VS 2010/2012
