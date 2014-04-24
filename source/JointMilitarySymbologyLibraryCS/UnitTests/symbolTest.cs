@@ -221,7 +221,7 @@ namespace UnitTests
         public void SIDCTest_Labels()
         {
             Symbol target = _librarian.MakeSymbol(1004301000, 1301040000);
-            int expected = 11;
+            int expected = 12;
             List<Dictionary<string, string>> actual = target.Labels;
             Assert.AreEqual(expected, actual.Count);
         }

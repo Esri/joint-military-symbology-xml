@@ -195,7 +195,8 @@ namespace Test
 
         private void button1_Click(object sender, EventArgs e)
         {
-            _librarian.Export("export");
+            ETL etl = new ETL(_librarian);
+            etl.Export("export");
         }
     }
 }
