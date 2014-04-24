@@ -52,7 +52,7 @@ In providing this schema, files of instance data, and sample C# code to navigate
 
 * A text editor of your choice for viewing and/or editing the XML files found under the instance or schema folders.
 * To build the .NET Solution source in source\JointMilitarySymbologyLibraryCS you will also need:
-    * Visual Studio 2010 or later.
+    * Visual Studio 2012 or later.
     * NLog (see below)
     * If you do not require the C# library, you may skip this requirement.
 
@@ -65,7 +65,7 @@ In providing this schema, files of instance data, and sample C# code to navigate
 * Unzip the SVG zip file found in the SVG folder.  If you intend to use these SVG files with the image conversion utilities found under the Utilities source folder, please consult its instructions [here](./source/utilities/image-conversion-utilities/README.md).
 * Open and build the Visual Studio Solution at joint-military-symbology-xml\source\JointMilitarySymbologyLibraryCS
     * To use MSBuild to build the solution
-        * Open a Visual Studio Command Prompt: Start Menu | Microsoft Visual Studio 2010/2012 | Visual Studio Tools | Developer Command Prompt for VS 2010/2012
+        * Open a Visual Studio Command Prompt: Start Menu | Microsoft Visual Studio 2012 | Visual Studio Tools | Developer Command Prompt for VS 2012
         * `cd joint-military-symbology-xml\source\JointMilitarySymbologyLibraryCS`
         * `msbuild JointMilitarySymbologyLibrary.sln /property:Configuration=Release`
             * NOTE: if you recieve an error message: `'msbuild' is not recognized` 
@@ -73,7 +73,7 @@ In providing this schema, files of instance data, and sample C# code to navigate
             * E.g. `set path=%path%;C:\Windows\Microsoft.NET\Framework\v4.0.30319`
 * Use the UnitTests project and the Visual Studio Test tools to run the unit tests provided.  These will test various aspects of the source used to navigate the XML data and convert symbol ID codes (SIDC) from one military symbology standard to another.
 * To run the unit tests from a command line:
-	* Open a Visual Studio Command Prompt: Start Menu | Microsoft Visual Studio 2010/2012 | Visual Studio Tools | Developer Command Prompt for VS 2010/2012
+	* Open a Visual Studio Command Prompt: Start Menu | Microsoft Visual Studio 2012 | Visual Studio Tools | Developer Command Prompt for VS 2012
         * `cd joint-military-symbology-xml\source\JointMilitarySymbologyLibraryCS`
         * `MSTest /testmetadata:JointMilitarySymbologyLibrary.vsmdi /testlist:"JMSML Tests"`
 * Run the Test project to see a form appear, which you can use to manually test the SIDC conversion.

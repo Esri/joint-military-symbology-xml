@@ -23,6 +23,7 @@ namespace jmsml
     static class Program
     {
         private static Librarian _librarian = new Librarian();
+        private static ETL _etl = new ETL(_librarian);
 
         static void Run(string[] args)
         {
@@ -65,7 +66,7 @@ namespace jmsml
 
             if (exportPath != "")
             {
-                _librarian.Export(exportPath, symbolSet, query, xPoints == "/p" || xLines == "" && xAreas == "", 
+                _etl.Export(exportPath, symbolSet, query, xPoints == "/p" || xLines == "" && xAreas == "", 
                                                                 xLines == "/l" || xPoints == "" && xAreas == "",
                                                                 xAreas == "/a" || xPoints == "" && xLines == "",
                                                                 false);
@@ -73,7 +74,7 @@ namespace jmsml
 
             if (exportDPath != "")
             {
-                _librarian.Export(exportDPath, symbolSet, query, xPoints == "/p" || xLines == "" && xAreas == "",
+                _etl.Export(exportDPath, symbolSet, query, xPoints == "/p" || xLines == "" && xAreas == "",
                                                                 xLines == "/l" || xPoints == "" && xAreas == "",
                                                                 xAreas == "/a" || xPoints == "" && xLines == "",
                                                                 true);
@@ -81,12 +82,12 @@ namespace jmsml
 
             if (exportDomainPath != "")
             {
-                _librarian.ExportDomains(exportDomainPath, dataValidation);
+                _etl.ExportDomains(exportDomainPath, dataValidation);
             }
 
             if (importPath != "")
             {
-                _librarian.Import(importPath, modPath, symbolSet, legacyCode);
+                _etl.Import(importPath, modPath, symbolSet, legacyCode);
             }
         }
 

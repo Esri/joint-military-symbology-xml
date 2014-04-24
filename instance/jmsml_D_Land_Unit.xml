@@ -1,0 +1,2538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="SS_LAND_UNIT" Label="Land Units" DimensionID="LAND_UNIT">
+	<SymbolSetCode>
+		<DigitOne>1</DigitOne>
+		<DigitTwo>0</DigitTwo>
+	</SymbolSetCode>
+	<LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
+	<Entities>
+		<Entity ID="COMMAND_AND_CONTROL" Label="Command and Control" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes." Graphic="10110000.svg">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="BROADCAST_TRANSMITTER_ANTENNAE" Label="Broadcast Transmitter Antennae" Graphic="10110100.svg" Icon="FULL_OCTAGON">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+          <EntitySubTypes>
+            <EntitySubType ID="BTA_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10111095_0.svg" RectangleGraphic="10111095_1.svg" SquareGraphic="10111095_2.svg" DiamondGraphic="10111095_3.svg" Icon="SPECIAL">
+              <EntitySubTypeCode>
+                <DigitOne>9</DigitOne>
+                <DigitTwo>5</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="BTA_DIV_AND_BELOW_SUPPORT" Label="Division and Below Support" Icon="SPECIAL">
+              <EntitySubTypeCode>
+                <DigitOne>9</DigitOne>
+                <DigitTwo>6</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="BTA_CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10111097_0.svg" RectangleGraphic="10111097_1.svg" SquareGraphic="10111097_2.svg" DiamondGraphic="10111097_3.svg" Icon="SPECIAL">
+              <EntitySubTypeCode>
+                <DigitOne>9</DigitOne>
+                <DigitTwo>7</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="BTA_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10111098_0.svg" RectangleGraphic="10111098_1.svg" SquareGraphic="10111098_2.svg" DiamondGraphic="10111098_3.svg" Icon="SPECIAL">
+              <EntitySubTypeCode>
+                <DigitOne>9</DigitOne>
+                <DigitTwo>8</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType> 
+          </EntitySubTypes>
+				</EntityType>
+				<EntityType ID="CIVIL_AFFAIRS" Label="Civil Affairs" Graphic="10110200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+          <EntitySubTypes>
+            <EntitySubType ID="CA_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10111095_0.svg" RectangleGraphic="10111095_1.svg" SquareGraphic="10111095_2.svg" DiamondGraphic="10111095_3.svg" Icon="SPECIAL">
+              <EntitySubTypeCode>
+                <DigitOne>9</DigitOne>
+                <DigitTwo>5</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="CA_DIV_AND_BELOW_SUPPORT" Label="Division and Below Support" Icon="SPECIAL">
+              <EntitySubTypeCode>
+                <DigitOne>9</DigitOne>
+                <DigitTwo>6</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="CA_CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10111097_0.svg" RectangleGraphic="10111097_1.svg" SquareGraphic="10111097_2.svg" DiamondGraphic="10111097_3.svg" Icon="SPECIAL">
+              <EntitySubTypeCode>
+                <DigitOne>9</DigitOne>
+                <DigitTwo>7</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="CA_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10111098_0.svg" RectangleGraphic="10111098_1.svg" SquareGraphic="10111098_2.svg" DiamondGraphic="10111098_3.svg" Icon="SPECIAL">
+              <EntitySubTypeCode>
+                <DigitOne>9</DigitOne>
+                <DigitTwo>8</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+				</EntityType>
+				<EntityType ID="CIVIL_MILITARY_COOPERATION" Label="Civil-Military Cooperation" Graphic="10110300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+          <EntitySubTypes>
+            <EntitySubType ID="CMO_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10111095_0.svg" RectangleGraphic="10111095_1.svg" SquareGraphic="10111095_2.svg" DiamondGraphic="10111095_3.svg" Icon="SPECIAL">
+              <EntitySubTypeCode>
+                <DigitOne>9</DigitOne>
+                <DigitTwo>5</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="CMO_DIV_AND_BELOW_SUPPORT" Label="Division and Below Support" Icon="SPECIAL">
+              <EntitySubTypeCode>
+                <DigitOne>9</DigitOne>
+                <DigitTwo>6</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="CMO_CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10111097_0.svg" RectangleGraphic="10111097_1.svg" SquareGraphic="10111097_2.svg" DiamondGraphic="10111097_3.svg" Icon="SPECIAL">
+              <EntitySubTypeCode>
+                <DigitOne>9</DigitOne>
+                <DigitTwo>7</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="CMO_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10111098_0.svg" RectangleGraphic="10111098_1.svg" SquareGraphic="10111098_2.svg" DiamondGraphic="10111098_3.svg" Icon="SPECIAL">
+              <EntitySubTypeCode>
+                <DigitOne>9</DigitOne>
+                <DigitTwo>8</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+				<EntityType ID="INFORMATION_OPERATIONS" Label="Information Operations" Graphic="10110400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+          <EntitySubTypes>
+            <EntitySubType ID="IO_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10111095_0.svg" RectangleGraphic="10111095_1.svg" SquareGraphic="10111095_2.svg" DiamondGraphic="10111095_3.svg" Icon="SPECIAL">
+              <EntitySubTypeCode>
+                <DigitOne>9</DigitOne>
+                <DigitTwo>5</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="IO_DIV_AND_BELOW_SUPPORT" Label="Division and Below Support" Icon="SPECIAL">
+              <EntitySubTypeCode>
+                <DigitOne>9</DigitOne>
+                <DigitTwo>6</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="IO_CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10111097_0.svg" RectangleGraphic="10111097_1.svg" SquareGraphic="10111097_2.svg" DiamondGraphic="10111097_3.svg" Icon="SPECIAL">
+              <EntitySubTypeCode>
+                <DigitOne>9</DigitOne>
+                <DigitTwo>7</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="IO_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10111098_0.svg" RectangleGraphic="10111098_1.svg" SquareGraphic="10111098_2.svg" DiamondGraphic="10111098_3.svg" Icon="SPECIAL">
+              <EntitySubTypeCode>
+                <DigitOne>9</DigitOne>
+                <DigitTwo>8</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+				<EntityType ID="LIAISON" Label="Liaison" Graphic="10110500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+          <EntitySubTypes>
+            <EntitySubType ID="L_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10111095_0.svg" RectangleGraphic="10111095_1.svg" SquareGraphic="10111095_2.svg" DiamondGraphic="10111095_3.svg" Icon="SPECIAL">
+              <EntitySubTypeCode>
+                <DigitOne>9</DigitOne>
+                <DigitTwo>5</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="L_DIV_AND_BELOW_SUPPORT" Label="Division and Below Support" Icon="SPECIAL">
+              <EntitySubTypeCode>
+                <DigitOne>9</DigitOne>
+                <DigitTwo>6</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="L_CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10111097_0.svg" RectangleGraphic="10111097_1.svg" SquareGraphic="10111097_2.svg" DiamondGraphic="10111097_3.svg" Icon="SPECIAL">
+              <EntitySubTypeCode>
+                <DigitOne>9</DigitOne>
+                <DigitTwo>7</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="L_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10111098_0.svg" RectangleGraphic="10111098_1.svg" SquareGraphic="10111098_2.svg" DiamondGraphic="10111098_3.svg" Icon="SPECIAL">
+              <EntitySubTypeCode>
+                <DigitOne>9</DigitOne>
+                <DigitTwo>8</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+				<EntityType ID="MILITARY_INFORMATION_SUPPORT_OPERATIONS_MISO" Label="Military Information Support Operations (MISO)" Graphic="10110600.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>6</DigitTwo>
+          </EntityTypeCode>
+          <EntitySubTypes>
+						<EntitySubType ID="BROADCAST_TRANSMITTER_ANTENNAE_MISO" Label="Broadcast Transmitter Antennae" Graphic="10110601.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="RADIO" Label="Radio" Graphic="10110700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="RADIO_RELAY" Label="Radio Relay" Graphic="10110800.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="RADIO_TELETYPE_CENTER" Label="Radio Teletype Center" Graphic="10110900.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="SIGNAL" Label="Signal" CloverGraphic="10111000_0.svg" RectangleGraphic="10111000_1.svg" SquareGraphic="10111000_2.svg" DiamondGraphic="10111000_3.svg" Icon="FULL_FRAME">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="SIGNAL_RADIO" Label="Radio" CloverGraphic="10111001_0.svg" RectangleGraphic="10111001_1.svg" SquareGraphic="10111001_2.svg" DiamondGraphic="10111001_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SIGNAL_RADIO_RELAY" Label="Radio Relay" CloverGraphic="10111002_0.svg" RectangleGraphic="10111002_1.svg" SquareGraphic="10111002_2.svg" DiamondGraphic="10111002_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SIGNAL_TELETYPE" Label="Teletype" CloverGraphic="10111003_0.svg" RectangleGraphic="10111003_1.svg" SquareGraphic="10111003_2.svg" DiamondGraphic="10111003_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SIGNAL_TACTICAL_SATELLITE" Label="Tactical Satellite" CloverGraphic="10111004_0.svg" RectangleGraphic="10111004_1.svg" SquareGraphic="10111004_2.svg" DiamondGraphic="10111004_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SIGNAL_VIDEO_IMAGERY_COMBAT_CAMERA" Label="Video Imagery (Combat Camera)" CloverGraphic="10111005_0.svg" RectangleGraphic="10111005_1.svg" SquareGraphic="10111005_2.svg" DiamondGraphic="10111005_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10111095_0.svg" RectangleGraphic="10111095_1.svg" SquareGraphic="10111095_2.svg" DiamondGraphic="10111095_3.svg" Icon="SPECIAL">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+            <EntitySubType ID="DIV_AND_BELOW_SUPPORT" Label="Division and Below Support" Icon="SPECIAL">
+              <EntitySubTypeCode>
+                <DigitOne>9</DigitOne>
+                <DigitTwo>6</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+						<EntitySubType ID="CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10111097_0.svg" RectangleGraphic="10111097_1.svg" SquareGraphic="10111097_2.svg" DiamondGraphic="10111097_3.svg" Icon="SPECIAL">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10111098_0.svg" RectangleGraphic="10111098_1.svg" SquareGraphic="10111098_2.svg" DiamondGraphic="10111098_3.svg" Icon="SPECIAL">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="TACTICAL_SATELLITE" Label="Tactical Satellite" Graphic="10111100.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="VIDEO_IMAGERY_COMBAT_CAMERA" Label="Video Imagery (Combat Camera)" Graphic="10111200.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="MOVEMENT_AND_MANEUVER" Label="Movement and Maneuver" Remarks="No icon is associated with this entity. It is for hiearchical purposes only.">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>2</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="AIR_ASSAULT_WITH_ORGANIC_LIFT" Label="Air Assault with Organic Lift" CloverGraphic="10120100_0.svg" RectangleGraphic="10120100_1.svg" SquareGraphic="10120100_2.svg" DiamondGraphic="10120100_3.svg" Icon="FULL_FRAME">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="AIR_TRAFFIC_SERVICES_AIRFIELD_OPERATIONS" Label="Air Traffic Services/Airfield Operations" Graphic="10120200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="AMPHIBIOUS" Label="Amphibious" CloverGraphic="10120300_0.svg" RectangleGraphic="10120300_1.svg" SquareGraphic="10120300_2.svg" DiamondGraphic="10120300_3.svg" Icon="FULL_FRAME">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="ANTITANK_ANTIARMOR" Label="Antitank/Antiarmor" CloverGraphic="10120400_0.svg" RectangleGraphic="10120400_1.svg" SquareGraphic="10120400_2.svg" DiamondGraphic="10120400_3.svg" Icon="FULL_FRAME">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="ARMORED" Label="Armored" CloverGraphic="10120401_0.svg" RectangleGraphic="10120401_1.svg" SquareGraphic="10120401_2.svg" DiamondGraphic="10120401_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MOTORIZED" Label="Motorized" CloverGraphic="10120402_0.svg" RectangleGraphic="10120402_1.svg" SquareGraphic="10120402_2.svg" DiamondGraphic="10120402_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="ARMOR_ARMORED_MECHANIZED_SELF_PROPELLED_TRACKED" Label="Armor/Armored/Mechanized/Self-Propelled/Tracked" Graphic="10120500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="RECONNAISSANCE_CAVALRY_SCOUT" Label="Reconnaissance/Cavalry/Scout" CloverGraphic="10120501_0.svg" RectangleGraphic="10120501_1.svg" SquareGraphic="10120501_2.svg" DiamondGraphic="10120501_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ARMORED_AMPHIBIOUS" Label="Amphibious" CloverGraphic="10120502_0.svg" RectangleGraphic="10120502_1.svg" SquareGraphic="10120502_2.svg" DiamondGraphic="10120502_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ARMORED_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10120595_0.svg" RectangleGraphic="10120595_1.svg" SquareGraphic="10120595_2.svg" DiamondGraphic="10120595_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="ARMY_AVIATION_AVIATION_ROTARY_WING" Label="Army Aviation/Aviation Rotary Wing" Graphic="10120600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="AVIATION_RECONNAISSANCE" Label="Reconnaissance" CloverGraphic="10120601_0.svg" RectangleGraphic="10120601_1.svg" SquareGraphic="10120601_2.svg" DiamondGraphic="10120601_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="AVIATION_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10120695_0.svg" RectangleGraphic="10120695_1.svg" SquareGraphic="10120695_2.svg" DiamondGraphic="10120695_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="AVIATION_CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10120697_0.svg" RectangleGraphic="10120697_1.svg" SquareGraphic="10120697_2.svg" DiamondGraphic="10120697_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="AVIATION_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10120698_0.svg" RectangleGraphic="10120698_1.svg" SquareGraphic="10120698_2.svg" DiamondGraphic="10120698_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="AVIATION_COMPOSITE" Label="Aviation Composite" Graphic="10120700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="AVIATION_COMPOSITE_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10120795_0.svg" RectangleGraphic="10120795_1.svg" SquareGraphic="10120795_2.svg" DiamondGraphic="10120795_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="AVIATION_FIXED_WING" Label="Aviation Fixed Wing" Graphic="10120800.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="AVIATION_FIXED_WING_RECONNAISSANCE" Label="Reconnaissance" CloverGraphic="10120801_0.svg" RectangleGraphic="10120801_1.svg" SquareGraphic="10120801_2.svg" DiamondGraphic="10120801_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="AVIATION_FIXED_WING_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10120895_0.svg" RectangleGraphic="10120895_1.svg" SquareGraphic="10120895_2.svg" DiamondGraphic="10120895_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="COMBAT" Label="Combat" Graphic="10120900.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="COMBINED_ARMS" Label="Combined Arms" Graphic="10121000.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="COMBINED_ARMS_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10121095_0.svg" RectangleGraphic="10121095_1.svg" SquareGraphic="10121095_2.svg" DiamondGraphic="10121095_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="INFANTRY" Label="Infantry" CloverGraphic="10121100_0.svg" RectangleGraphic="10121100_1.svg" SquareGraphic="10121100_2.svg" DiamondGraphic="10121100_3.svg" Icon="FULL_FRAME">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="INFANTRY_AMPHIBIOUS" Label="Amphibious" CloverGraphic="10121101_0.svg" RectangleGraphic="10121101_1.svg" SquareGraphic="10121101_2.svg" DiamondGraphic="10121101_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="INFANTRY_ARMORED_MECHANIZED_TRACKED" Label="Armored/Mechanized/Tracked" CloverGraphic="10121102_0.svg" RectangleGraphic="10121102_1.svg" SquareGraphic="10121102_2.svg" DiamondGraphic="10121102_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="INFANTRY_MAIN_GUN_SYSTEM" Label="Main Gun System" CloverGraphic="10121103_0.svg" RectangleGraphic="10121103_1.svg" SquareGraphic="10121103_2.svg" DiamondGraphic="10121103_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="INFANTRY_MOTORIZED" Label="Motorized" CloverGraphic="10121104_0.svg" RectangleGraphic="10121104_1.svg" SquareGraphic="10121104_2.svg" DiamondGraphic="10121104_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="INFANTRY_FIGHTING_VEHICLE" Label="Infantry Fighting Vehicle" CloverGraphic="10121105_0.svg" RectangleGraphic="10121105_1.svg" SquareGraphic="10121105_2.svg" DiamondGraphic="10121105_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="INFANTRY_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10121195_0.svg" RectangleGraphic="10121195_1.svg" SquareGraphic="10121195_2.svg" DiamondGraphic="10121195_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="OBSERVER" Label="Observer" Graphic="10121200.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="RECON_CAVALRY_SCOUT" Label="Reconnaissance/Cavalry/Scout" CloverGraphic="10121300_0.svg" RectangleGraphic="10121300_1.svg" SquareGraphic="10121300_2.svg" DiamondGraphic="10121300_3.svg" Icon="FULL_FRAME">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="RECONNAISSANCE_AND_SURVEILLANCE" Label="Reconnaissance and Surveillance" CloverGraphic="10121301_0.svg" RectangleGraphic="10121301_1.svg" SquareGraphic="10121301_2.svg" DiamondGraphic="10121301_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RECON_MARINE" Label="Marine" CloverGraphic="10121302_0.svg" RectangleGraphic="10121302_1.svg" SquareGraphic="10121302_2.svg" DiamondGraphic="10121302_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RECON_MOTORIZED" Label="Motorized" CloverGraphic="10121303_0.svg" RectangleGraphic="10121303_1.svg" SquareGraphic="10121303_2.svg" DiamondGraphic="10121303_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RECON_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10121395_0.svg" RectangleGraphic="10121395_1.svg" SquareGraphic="10121395_2.svg" DiamondGraphic="10121395_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="SEA_AIR_LAND_SEAL" Label="Sea Air Land (SEAL)" Graphic="10121400.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="SNIPER" Label="Sniper" Graphic="10121500.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="SURVEILLANCE" Label="Surveillance" Graphic="10121600.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="SPECIAL_FORCES" Label="Special Forces" Graphic="10121700.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="SF_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10121795_0.svg" RectangleGraphic="10121795_1.svg" SquareGraphic="10121795_2.svg" DiamondGraphic="10121795_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="SPECIAL_OPERATIONS_FORCES_SOF" Label="Special Operations Forces (SOF)" Graphic="10121800.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="FIXED_WING_MISO" Label="Fixed Wing MISO" Graphic="10121801.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="GROUND" Label="Ground" CloverGraphic="10121802_0.svg" RectangleGraphic="10121802_1.svg" SquareGraphic="10121802_2.svg" DiamondGraphic="10121802_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SPECIAL_BOAT" Label="Special Boat" Graphic="10121803.svg" Icon="MAIN_1">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SPECIAL_SSNR" Label="Special SSNR" Graphic="10121804.svg" Icon="MAIN_1">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="UNDERWATER_DEMOLITION_TEAM" Label="Underwater Demolition Team" Graphic="10121805.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="UNMANNED_AERIAL_SYSTEMS" Label="Unmanned Aerial Systems" Graphic="10121900.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="FIRES" Label="Fires" Remarks="No icon is associated with this entity. It is for hiearchical purposes only.">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>3</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="AIR_DEFENSE" Label="Air Defense" CloverGraphic="10130100_0.svg" RectangleGraphic="10130100_1.svg" SquareGraphic="10130100_2.svg" DiamondGraphic="10130100_3.svg" Icon="FULL_FRAME">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="AD_MAIN_GUN_SYSTEM" Label="Main Gun System" CloverGraphic="10130101_0.svg" RectangleGraphic="10130101_1.svg" SquareGraphic="10130101_2.svg" DiamondGraphic="10130101_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="AD_MISSILE" Label="Missile" CloverGraphic="10130102_0.svg" RectangleGraphic="10130102_1.svg" SquareGraphic="10130102_2.svg" DiamondGraphic="10130102_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="AD_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10130195_0.svg" RectangleGraphic="10130195_1.svg" SquareGraphic="10130195_2.svg" DiamondGraphic="10130195_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="AIR_LAND_NAVAL_GUNFIRE_LIAISON" Label="Air/Land Naval Gunfire Liaison" CloverGraphic="10130200_0.svg" RectangleGraphic="10130200_1.svg" SquareGraphic="10130200_2.svg" DiamondGraphic="10130200_3.svg" Icon="FULL_FRAME">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="FIELD_ARTILLERY" Label="Field Artillery" Graphic="10130300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="FA_SELF_PROPELLED" Label="Self-propelled" Graphic="10130301.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FA_TARGET_ACQUISITION" Label="Target Acquisition" CloverGraphic="10130302_0.svg" RectangleGraphic="10130302_1.svg" SquareGraphic="10130302_2.svg" DiamondGraphic="10130302_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FA_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10130395_0.svg" RectangleGraphic="10130395_1.svg" SquareGraphic="10130395_2.svg" DiamondGraphic="10130395_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="FIELD_ARTILLERY_OBSERVER" Label="Field Artillery Observer" Graphic="10130400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="JOINT_FIRE_SUPPORT" Label="Joint Fire Support" Graphic="10130500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="METEOROLOGICAL" Label="Meteorological" Graphic="10130600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="MISSILE" Label="Missile" Graphic="10130700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="MORTAR" Label="Mortar" Graphic="10130800.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="ARMORED_MECHANIZED_TRACKED" Label="Armored/Mechanized/Tracked" Graphic="10130801.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SELF_PROPELLED_WHEELED" Label="Self-Propelled Wheeled" Graphic="10130802.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TOWED" Label="Towed" Graphic="10130803.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="SURVEY" Label="Survey" Graphic="10130900.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="PROTECTION" Label="Protection" Remarks="No icon is associated with this entity. It is for hierarchical purposes only.">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>4</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="CHEMICAL_BIOLOGICAL_RADIOLOGICAL_NUCLEAR_DEFENSE" Label="Chemical Biological Radiological Nuclear Defense" Graphic="10140100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="CBRN_MECHANIZED" Label="Mechanized" Graphic="10140101.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CBRN_MOTORIZED" Label="Motorized" Graphic="10140102.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CBRN_RECONNAISSANCE" Label="Reconnaissance" CloverGraphic="10140103_0.svg" RectangleGraphic="10140103_1.svg" SquareGraphic="10140103_2.svg" DiamondGraphic="10140103_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CBRN_RECONNAISSANCE_ARMORED" Label="Reconnaissance Armored" CloverGraphic="10140104_0.svg" RectangleGraphic="10140104_1.svg" SquareGraphic="10140104_2.svg" DiamondGraphic="10140104_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CBRN_RECONNAISSANCE_EQUIPPED" Label="Reconnaissance Equipped" CloverGraphic="10140105_0.svg" RectangleGraphic="10140105_1.svg" SquareGraphic="10140105_2.svg" DiamondGraphic="10140105_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CBRN_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10140195_0.svg" RectangleGraphic="10140195_1.svg" SquareGraphic="10140195_2.svg" DiamondGraphic="10140195_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="COMBAT_SUPPORT_MANEUVER_ENHANCEMENT" Label="Combat Support (Maneuver Enhancement)" Graphic="10140200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="CS_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10140295_0.svg" RectangleGraphic="10140295_1.svg" SquareGraphic="10140295_2.svg" DiamondGraphic="10140295_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="CRIMINAL_INVESTIGATION_DIVISION" Label="Criminal Investigation Division" Graphic="10140300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="DIVING" Label="Diving" Graphic="10140400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="DOG" Label="Dog" Graphic="10140500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="DRILLING" Label="Drilling" Graphic="10140600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="ENGINEER" Label="Engineer" Graphic="10140700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="ENG_MECHANIZED" Label="Mechanized" Graphic="10140701.svg" >
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ENG_MOTORIZED" Label="Motorized" Graphic="10140702.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ENG_RECONNAISSANCE" Label="Reconnaissance" CloverGraphic="10140703_0.svg" RectangleGraphic="10140703_1.svg" SquareGraphic="10140703_2.svg" DiamondGraphic="10140703_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ENG_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10140795_0.svg" RectangleGraphic="10140795_1.svg" SquareGraphic="10140795_2.svg" DiamondGraphic="10140795_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="EXPLOSIVE_ORDNANCE_DISPOSAL_EOD" Label="Explosive Ordnance Disposal (EOD)" Graphic="10140800.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="FIELD_CAMP_CONSTRUCTION" Label="Field Camp Construction" Graphic="10140900.svg" Icon="MAIN_1">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="FIRE_FIGHTING_FIRE_PROTECTION" Label="Fire Fighting/Fire Protection" Graphic="10141000.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="GEOSPATIAL_SUPPORT_GEOSPATIAL_INFORMATION_SUPPORT" Label="Geospatial Support/Geospatial Information Support" Graphic="10141100.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="MILITARY_POLICE" Label="Military Police" Graphic="10141200.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="MP_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10141295_0.svg" RectangleGraphic="10141295_1.svg" SquareGraphic="10141295_2.svg" DiamondGraphic="10141295_3.svg">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="MINE" Label="Mine" Graphic="10141300.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="MINE_CLEARING" Label="Mine Clearing" Graphic="10141400.svg" Icon="FULL_OCTAGON">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="MINE_LAUNCHING" Label="Mine Launching" Graphic="10141500.svg" Icon="FULL_OCTAGON">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="MINE_LAYING" Label="Mine Laying" Graphic="10141600.svg" Icon="FULL_OCTAGON">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="SECURITY" Label="Security" Graphic="10141700.svg" >
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="SEC_MECHANIZED" Label="Mechanized" Graphic="10141701.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SEC_MOTORIZED" Label="Motorized" Graphic="10141702.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="SEARCH_AND_RESCUE" Label="Search and Rescue" Graphic="10141800.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="SECURITY_POLICE_AIR" Label="Security Police (Air)" Graphic="10141900.svg" Icon="MAIN_2">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="SHORE_PATROL" Label="Shore Patrol" Graphic="10142000.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="TOPOGRAPHIC" Label="Topographic" Graphic="10142100.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+    <Entity ID="INTELLIGENCE" Label="Intelligence" Remarks="No icon is associated with this entity. It is for hierarchical purposes only.">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </EntityCode>
+      <EntityTypes>
+        <EntityType ID="ANALYSIS" Label="Analysis" Graphic="10150100.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="COUNTERINTELLIGENCE" Label="Counterintelligence" Graphic="10150200.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="DIRECTION_FINDING" Label="Direction Finding" Graphic="10150300.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="ELECTRONIC_RANGING" Label="Electronic Ranging" Graphic="10150400.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>4</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="ELECTRONIC_WARFARE" Label="Electronic Warfare" Graphic="10150500.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>5</DigitTwo>
+          </EntityTypeCode>
+          <EntitySubTypes>
+            <EntitySubType ID="EW_ANALYSIS" Label="Analysis" Graphic="10150501.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="EW_DIRECTION_FINDING" Label="Direction Finding" Graphic="10150502.svg">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="EW_INTERCEPT" Label="Intercept" Graphic="10150503.svg">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="EW_JAMMING" Label="Jamming" CloverGraphic="10150504_0.svg" RectangleGraphic="10150504_1.svg" SquareGraphic="10150504_2.svg" DiamondGraphic="10150504_3.svg">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>4</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="EW_SEARCH" Label="Search" Graphic="10150505.svg">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>5</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+        <EntityType ID="INTERCEPT_SEARCH_AND_RECORDING" Label="Intercept (Search and Recording)" Graphic="10150600.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>6</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="INTERROGATION" Label="Interrogation" Graphic="10150700.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>7</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="JAMMING" Label="Jamming" CloverGraphic="10150800_0.svg" RectangleGraphic="10150800_1.svg" SquareGraphic="10150800_2.svg" DiamondGraphic="10150800_3.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>8</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="JOINT_INTELLIGENCE_CENTER" Label="Joint Intelligence Center" Graphic="10150900.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>9</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="MILITARY_INTELLIGENCE" Label="Military Intelligence" Graphic="10151000.svg">
+          <EntityTypeCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>0</DigitTwo>
+          </EntityTypeCode>
+          <EntitySubTypes>
+            <EntitySubType ID="MI_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10151095_0.svg" RectangleGraphic="10151095_1.svg" SquareGraphic="10151095_2.svg" DiamondGraphic="10151095_3.svg">
+              <EntitySubTypeCode>
+                <DigitOne>9</DigitOne>
+                <DigitTwo>5</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+        <EntityType ID="SEARCH" Label="Search" Graphic="10151100.svg">
+          <EntityTypeCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="SENSOR" Label="Sensor" Graphic="10151200.svg">
+          <EntityTypeCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+      </EntityTypes>
+    </Entity>
+		<Entity ID="SUSTAINMENT" Label="Sustainment" Graphic="10160000.svg">
+      <EntityCode>
+	      <DigitOne>1</DigitOne>
+	      <DigitTwo>6</DigitTwo>
+      </EntityCode>
+			<EntityTypes>
+				<EntityType ID="SUSTAIN_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10169500_0.svg" RectangleGraphic="10169500_1.svg" SquareGraphic="10169500_2.svg" DiamondGraphic="10169500_3.svg">
+					<EntityTypeCode>
+						<DigitOne>9</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="SUSTAIN_CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10169700_0.svg" RectangleGraphic="10169700_1.svg" SquareGraphic="10169700_2.svg" DiamondGraphic="10169700_3.svg">
+					<EntityTypeCode>
+						<DigitOne>9</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="SUSTAIN_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10169800_0.svg" RectangleGraphic="10169800_1.svg" SquareGraphic="10169800_2.svg" DiamondGraphic="10169800_3.svg">
+					<EntityTypeCode>
+						<DigitOne>9</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="ADMINISTRATIVE" Label="Administrative" Graphic="10160100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="ADMIN_CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10160197_0.svg" RectangleGraphic="10160197_1.svg" SquareGraphic="10160197_2.svg" DiamondGraphic="10160197_3.svg">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ADMIN_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10160198_0.svg" RectangleGraphic="10160198_1.svg" SquareGraphic="10160198_2.svg" DiamondGraphic="10160198_3.svg">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="ALL_CLASSES_OF_SUPPLY" Label="All Classes of Supply" CloverGraphic="10160200_0.svg" RectangleGraphic="10160200_1.svg" SquareGraphic="10160200_2.svg" DiamondGraphic="10160200_3.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="AIRPORT_OF_DEBARKATION_AIRPORT_OF_EMBARKATION_" Label="Airport of Debarkation/Airport of Embarkation" Graphic="10160300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="AMMUNITION" Label="Ammunition" Graphic="10160400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="BAND" Label="Band" Graphic="10160500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="COMBAT_SERVICE_SUPPORT" Label="Combat Service Support" Graphic="10160600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="FINANCE" Label="Finance" Graphic="10160700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="FINANCE_CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10160797_0.svg" RectangleGraphic="10160797_1.svg" SquareGraphic="10160797_2.svg" DiamondGraphic="10160797_3.svg">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FINANCE_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10160798_0.svg" RectangleGraphic="10160798_1.svg" SquareGraphic="10160798_2.svg" DiamondGraphic="10160798_3.svg">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="JUDGE_ADVOCATE_GENERAL" Label="Judge Advocate General" Graphic="10160800.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="LABOR" Label="Labor" Graphic="10160900.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="LAUNDRY_BATH" Label="Laundry/Bath" Graphic="10161000.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="MAINTENANCE" Label="Maintenance" Graphic="10161100.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="MAINT_HEADQUARTERS_ELEMENT_" Label="Headquarters Element" CloverGraphic="10161195_0.svg" RectangleGraphic="10161195_1.svg" SquareGraphic="10161195_2.svg" DiamondGraphic="10161195_3.svg">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MAINT_CORPS_SUPPORT_" Label="Corps Support" CloverGraphic="10161197_0.svg" RectangleGraphic="10161197_1.svg" SquareGraphic="10161197_2.svg" DiamondGraphic="10161197_3.svg">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MAINT_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10161198_0.svg" RectangleGraphic="10161198_1.svg" SquareGraphic="10161198_2.svg" DiamondGraphic="10161198_3.svg">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="MATERIAL" Label="Material" CloverGraphic="10161200_0.svg" RectangleGraphic="10161200_1.svg" SquareGraphic="10161200_2.svg" DiamondGraphic="10161200_3.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="MEDICAL" Label="Medical" CloverGraphic="10161300_0.svg" RectangleGraphic="10161300_1.svg" SquareGraphic="10161300_2.svg" DiamondGraphic="10161300_3.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="MED_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10161395_0.svg" RectangleGraphic="10161395_1.svg" SquareGraphic="10161395_2.svg" DiamondGraphic="10161395_3.svg">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MED_CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10161397_0.svg" RectangleGraphic="10161397_1.svg" SquareGraphic="10161397_2.svg" DiamondGraphic="10161397_3.svg">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MED_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10161398_0.svg" RectangleGraphic="10161398_1.svg" SquareGraphic="10161398_2.svg" DiamondGraphic="10161398_3.svg">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="MEDICAL_TREATMENT_FACILITY" Label="Medical Treatment Facility" CloverGraphic="10161400_0.svg" RectangleGraphic="10161400_1.svg" SquareGraphic="10161400_2.svg" DiamondGraphic="10161400_3.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="MORALE_WELFARE_AND_RECREATION" Label="Morale Welfare and Recreation" Graphic="10161500.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="MORTUARY_AFFAIRS_GRAVES_REGISTRATION" Label="Mortuary Affairs/Graves Registration" Graphic="10161600.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="MULTIPLE_CLASSES_OF_SUPPLY" Label="Multiple Classes of Supply" CloverGraphic="10161700_0.svg" RectangleGraphic="10161700_1.svg" SquareGraphic="10161700_2.svg" DiamondGraphic="10161700_3.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="NATO_SUPPLY_CLASS_I" Label="NATO Supply Class I" CloverGraphic="10161800_0.svg" RectangleGraphic="10161800_1.svg" SquareGraphic="10161800_2.svg" DiamondGraphic="10161800_3.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="NATO_SUPPLY_CLASS_II" Label="NATO Supply Class II" CloverGraphic="10161900_0.svg" RectangleGraphic="10161900_1.svg" SquareGraphic="10161900_2.svg" DiamondGraphic="10161900_3.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="NATO_SUPPLY_CLASS_III" Label="NATO Supply Class III" CloverGraphic="10162000_0.svg" RectangleGraphic="10162000_1.svg" SquareGraphic="10162000_2.svg" DiamondGraphic="10162000_3.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="NATO_SUPPLY_CLASS_IV" Label="NATO Supply Class IV" CloverGraphic="10162100_0.svg" RectangleGraphic="10162100_1.svg" SquareGraphic="10162100_2.svg" DiamondGraphic="10162100_3.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="NATO_SUPPLY_CLASS_V" Label="NATO Supply Class V" CloverGraphic="10162200_0.svg" RectangleGraphic="10162200_1.svg" SquareGraphic="10162200_2.svg" DiamondGraphic="10162200_3.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="ORDNANCE" Label="Ordnance" Graphic="10162300.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="ORD_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10162395_0.svg" RectangleGraphic="10162395_1.svg" SquareGraphic="10162395_2.svg" DiamondGraphic="10162395_3.svg">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ORD_CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10162397_0.svg" RectangleGraphic="10162397_1.svg" SquareGraphic="10162397_2.svg" DiamondGraphic="10162397_3.svg">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ORD_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10162398_0.svg" RectangleGraphic="10162398_1.svg" SquareGraphic="10162398_2.svg" DiamondGraphic="10162398_3.svg">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="PERSONNEL_SERVICES" Label="Personnel Services" Graphic="10162400.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="PS_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10162495_0.svg" RectangleGraphic="10162495_1.svg" SquareGraphic="10162495_2.svg" DiamondGraphic="10162495_3.svg">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="PETROLEUM_OIL_AND_LUBRICANTS" Label="Petroleum Oil and Lubricants" Graphic="10162500.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="PIPELINE" Label="Pipeline" Graphic="10162600.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="POSTAL" Label="Postal" Graphic="10162700.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="PUBLIC_AFFAIRS_PUBLIC_INFORMATION" Label="Public Affairs/Public Information" Graphic="10162800.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="QUARTERMASTER" Label="Quartermaster" Graphic="10162900.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="Q_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10162995_0.svg" RectangleGraphic="10162995_1.svg" SquareGraphic="10162995_2.svg" DiamondGraphic="10162995_3.svg">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="Q_CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10162997_0.svg" RectangleGraphic="10162997_1.svg" SquareGraphic="10162997_2.svg" DiamondGraphic="10162997_3.svg">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="Q_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10162998_0.svg" RectangleGraphic="10162998_1.svg" SquareGraphic="10162998_2.svg" DiamondGraphic="10162998_3.svg">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="RAILHEAD" Label="Railhead" Graphic="10163000.svg">
+					<EntityTypeCode>
+						<DigitOne>3</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="RELIGIOUS_SUPPORT" Label="Religious Support" Graphic="10163100.svg">
+					<EntityTypeCode>
+						<DigitOne>3</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="REPLACEMENT_HOLDING_UNIT" Label="Replacement Holding Unit" Graphic="10163200.svg">
+					<EntityTypeCode>
+						<DigitOne>3</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="SEA_PORT_OF_DEBARKATION_SEA_PORT_OF_EMBARKATION" Label="Sea Port of Debarkation/Sea Port of Embarkation" Graphic="10163300.svg">
+					<EntityTypeCode>
+						<DigitOne>3</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="SUPPLY" Label="Supply" CloverGraphic="10163400_0.svg" RectangleGraphic="10163400_1.svg" SquareGraphic="10163400_2.svg" DiamondGraphic="10163400_3.svg">
+					<EntityTypeCode>
+						<DigitOne>3</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="JOINT_INFORMATION_BUREAU" Label="Joint Information Bureau" Graphic="10163500.svg">
+					<EntityTypeCode>
+						<DigitOne>3</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="JIB_CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10163597_0.svg" RectangleGraphic="10163597_1.svg" SquareGraphic="10163597_2.svg" DiamondGraphic="10163597_3.svg">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="JIB_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10163598_0.svg" RectangleGraphic="10163598_1.svg" SquareGraphic="10163598_2.svg" DiamondGraphic="10163598_3.svg">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="TRANSPORTATION" Label="Transportation" Graphic="10163600.svg">
+					<EntityTypeCode>
+						<DigitOne>3</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="TRAN_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10163695_0.svg" RectangleGraphic="10163695_1.svg" SquareGraphic="10163695_2.svg" DiamondGraphic="10163695_3.svg">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TRAN_CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10163697_0.svg" RectangleGraphic="10163697_1.svg" SquareGraphic="10163697_2.svg" DiamondGraphic="10163697_3.svg">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TRAN_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10163698_0.svg" RectangleGraphic="10163698_1.svg" SquareGraphic="10163698_2.svg" DiamondGraphic="10163698_3.svg">
+							<EntitySubTypeCode>
+								<DigitOne>9</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="US_SUPPLY_CLASS_I" Label="US Supply Class I" CloverGraphic="10163700_0.svg" RectangleGraphic="10163700_1.svg" SquareGraphic="10163700_2.svg" DiamondGraphic="10163700_3.svg">
+					<EntityTypeCode>
+						<DigitOne>3</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="US_SUPPLY_CLASS_II" Label="US Supply Class II" CloverGraphic="10163800_0.svg" RectangleGraphic="10163800_1.svg" SquareGraphic="10163800_2.svg" DiamondGraphic="10163800_3.svg">
+					<EntityTypeCode>
+						<DigitOne>3</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="US_SUPPLY_CLASS_III" Label="US Supply Class III" CloverGraphic="10163900_0.svg" RectangleGraphic="10163900_1.svg" SquareGraphic="10163900_2.svg" DiamondGraphic="10163900_3.svg">
+					<EntityTypeCode>
+						<DigitOne>3</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="US_SUPPLY_CLASS_IV" Label="US Supply Class IV" CloverGraphic="10164000_0.svg" RectangleGraphic="10164000_1.svg" SquareGraphic="10164000_2.svg" DiamondGraphic="10164000_3.svg">
+					<EntityTypeCode>
+						<DigitOne>4</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="US_SUPPLY_CLASS_V" Label="US Supply Class V" CloverGraphic="10164100_0.svg" RectangleGraphic="10164100_1.svg" SquareGraphic="10164100_2.svg" DiamondGraphic="10164100_3.svg">
+					<EntityTypeCode>
+						<DigitOne>4</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="US_SUPPLY_CLASS_VI" Label="US Supply Class VI" CloverGraphic="10164200_0.svg" RectangleGraphic="10164200_1.svg" SquareGraphic="10164200_2.svg" DiamondGraphic="10164200_3.svg">
+					<EntityTypeCode>
+						<DigitOne>4</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="US_SUPPLY_CLASS_VII" Label="US Supply Class VII" CloverGraphic="10164300_0.svg" RectangleGraphic="10164300_1.svg" SquareGraphic="10164300_2.svg" DiamondGraphic="10164300_3.svg">
+					<EntityTypeCode>
+						<DigitOne>4</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="US_SUPPLY_CLASS_VIII" Label="US Supply Class VIII" CloverGraphic="10164400_0.svg" RectangleGraphic="10164400_1.svg" SquareGraphic="10164400_2.svg" DiamondGraphic="10164400_3.svg">
+					<EntityTypeCode>
+						<DigitOne>4</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="US_SUPPLY_CLASS_IX" Label="US Supply Class IX" CloverGraphic="10164500_0.svg" RectangleGraphic="10164500_1.svg" SquareGraphic="10164500_2.svg" DiamondGraphic="10164500_3.svg">
+					<EntityTypeCode>
+						<DigitOne>4</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="US_SUPPLY_CLASS_X" Label="US Supply Class X" CloverGraphic="10164600_0.svg" RectangleGraphic="10164600_1.svg" SquareGraphic="10164600_2.svg" DiamondGraphic="10164600_3.svg">
+					<EntityTypeCode>
+						<DigitOne>4</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="WATER" Label="Water" Graphic="10164700.svg">
+					<EntityTypeCode>
+						<DigitOne>4</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="WATER_PURIFICATION" Label="Water Purification" Graphic="10164800.svg">
+					<EntityTypeCode>
+						<DigitOne>4</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="BROADCAST" Label="Broadcast" Graphic="10164900.svg">
+					<EntityTypeCode>
+						<DigitOne>4</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+    <Entity ID="NAVAL" Label="Naval" Remarks="No icon is associated with this entity. It is for hierarchical purposes only.">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </EntityCode>
+      <EntityTypes>
+        <EntityType ID="NAVAL_ET" Label="Naval" Graphic="10170100.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+      </EntityTypes>
+    </Entity>
+    <Entity ID="NAMED_HEADQUARTERS" Label="Named Headquarters" Remarks="No icon is associated with this entity. It is for hierarchical purposes only.">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </EntityCode>
+      <EntityTypes>
+        <EntityType ID="ALLIED_COMMAND_EUROPE_RAPID_REACTION_CORPS_ARRC" Label="Allied Command Europe Rapid Reaction Corps (ARRC)" Graphic="10180100.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="ALLIED_COMMAND_OPERATIONS" Label="Allied Command Operations" Graphic="10180200.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="INTERNATIONAL_SECURITY_ASSISTANCE_FORCE_ISAF" Label="International Security Assistance Force (ISAF)" Graphic="10180300.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="MULTINATIONAL_MN" Label="Multinational (MN)" Graphic="10180400.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>4</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+      </EntityTypes>
+    </Entity>
+		<Entity ID="EMERGENCY_OPERATION" Label="Emergency Operation" Graphic="10190000.svg">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>9</DigitTwo>
+			</EntityCode>
+		</Entity>
+		<Entity ID="LAW_ENFORCEMENT" Label="Law Enforcement" Graphic="10200000.svg">
+			<EntityCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>0</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="BUREAU_OF_ALCOHOL_TOBACCO_FIREARMS_AND_EXPLOSIVES_ATF_DEPARTMENT_OF_JUSTICE" Label="Bureau of Alcohol Tobacco Firearms and Explosives (ATF) (Department of Justice)" Graphic="10200100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="BORDER_PATROL" Label="Border Patrol" Graphic="10200200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="CUSTOMS_SERVICE" Label="Customs Service" Graphic="10200300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="DRUG_ENFORCEMENT_ADMINISTRATION_DEA" Label="Drug Enforcement Administration (DEA)" Graphic="10200400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="DEPARTMENT_OF_JUSTICE_DOJ" Label="Department of Justice (DOJ)" Graphic="10200500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="FEDERAL_BUREAU_OF_INVESTIGATION_FBI" Label="Federal Bureau of Investigation (FBI)" Graphic="10200600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="POLICE" Label="Police" Graphic="10200700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="PRISON" Label="Prison" Graphic="10200800.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="UNITED_STATES_SECRET_SERVICE_USSS" Label="United States Secret Service (USSS)" Graphic="10200900.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="TRANSPORTATION_SECURITY_ADMINISTRATION_TSA" Label="Transportation Security Administration (TSA)" Graphic="10201000.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="COAST_GUARD" Label="Coast Guard" Graphic="10201100.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="US_MARSHALS_SERVICE" Label="US Marshals Service" Graphic="10201200.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="INTERNAL_SECURITY_FORCE" Label="Internal Security Force" Graphic="10201300.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+	</Entities>
+	<SectorOneModifiers>
+		<Modifier ID="AIR_MOBILE_AIR_ASSAULT_MOD" Label="Air Mobile/Air Assault" Category="Mobility" Graphic="10011.svg" Standard="MILSTD_2525">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="AREA_MOD" Label="Area" Category="Capability" Graphic="10021.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>2</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="ATTACK_MOD" Label="Attack" Category="Capability" Graphic="10031.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>3</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="BIOLOGICAL_MOD" Label="Biological" Category="Capability" Graphic="10041.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>4</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="BORDER_MOD" Label="Border" Category="Capability" Graphic="10051.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>5</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="BRIDGING_MOD" Label="Bridging" Category="Capability" Graphic="10061.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>6</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="CHEMICAL_MOD" Label="Chemical" Category="Capability" Graphic="10071.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>7</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="CLOSE_PROTECTION_MOD" Label="Close Protection" Category="Capability" Graphic="10081.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>8</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="COMBAT_MOD" Label="Combat" Category="Capability" Graphic="10091.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>9</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="COMMAND_AND_CONTROL_MOD" Label="Command and Control" Category="Capability" Graphic="10101.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>0</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="COMMUNICATIONS_CONTINGENCY_PACKAGE_MOD" Label="Communications Contingency Package" Category="Capability" Graphic="10111.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="CONSTRUCTION_MOD" Label="Construction" Category="Capability" Graphic="10121.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>2</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="CROSS_CULTURAL_COMMUNICATION_MOD" Label="Cross Cultural Communication" Category="Capability" Graphic="10131.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>3</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="CROWD_AND_RIOT_CONTROL_MOD" Label="Crowd and Riot Control" Category="Capability" Graphic="10141.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>4</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="DECONTAMINATION_MOD" Label="Decontamination" Category="Capability" Graphic="10151.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>5</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="DETENTION_MOD" Label="Detention" Category="Capability" Graphic="10161.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>6</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="DIRECT_COMMUNICATIONS_MOD" Label="Direct Communications" Category="Capability" Graphic="10171.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>7</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="DIVING_MOD" Label="Diving" Category="Capability" Graphic="10181.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>8</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="DIVISION_MOD" Label="Division" Category="Capability" Graphic="10191.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>9</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="DOG_MOD" Label="Dog" Category="Capability" Graphic="10201.svg">
+			<ModifierCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>0</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="DRILLING_MOD" Label="Drilling" Category="Capability" Graphic="10211.svg">
+			<ModifierCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="ELECTRO_OPTICAL_MOD" Label="Electro-Optical" Category="Capability" Graphic="10221.svg">
+			<ModifierCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>2</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="ENHANCED_MOD" Label="Enhanced" Category="Capability" Graphic="10231.svg">
+			<ModifierCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>3</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="EXPLOSIVE_ORDNANCE_DISPOSAL_EOD_MOD" Label="Explosive Ordnance Disposal (EOD)" Category="Capability" Graphic="10241.svg">
+			<ModifierCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>4</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="FIRE_DIRECTION_CENTER_MOD" Label="Fire Direction Center" Category="Capability" Graphic="10251.svg">
+			<ModifierCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>5</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="FORCE_MOD" Label="Force" Category="Capability" Graphic="10261.svg">
+			<ModifierCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>6</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="FORWARD_MOD" Label="Forward" Category="Capability" Graphic="10271.svg">
+			<ModifierCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>7</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="GROUND_STATION_MODULE_MOD" Label="Ground Station Module" Category="Capability" Graphic="10281.svg">
+			<ModifierCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>8</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="LANDING_SUPPORT_MOD" Label="Landing Support" Category="Capability" Graphic="10291.svg">
+			<ModifierCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>9</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="LARGE_EXTENSION_NODE_MOD" Label="Large Extension Node" Category="Capability" Graphic="10301.svg">
+			<ModifierCode>
+				<DigitOne>3</DigitOne>
+				<DigitTwo>0</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="MAINTENANCE_MOD" Label="Maintenance" Category="Capability" Graphic="10311.svg">
+			<ModifierCode>
+				<DigitOne>3</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="METEOROLOGICAL_MOD" Label="Meteorological" Category="Capability" Graphic="10321.svg">
+			<ModifierCode>
+				<DigitOne>3</DigitOne>
+				<DigitTwo>2</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="MINE_COUNTERMEASURE_MOD" Label="Mine Countermeasure" Category="Capability" Graphic="10331.svg">
+			<ModifierCode>
+				<DigitOne>3</DigitOne>
+				<DigitTwo>3</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="MISSILE_MOD" Label="Missile" Category="Capability" Graphic="10341.svg">
+			<ModifierCode>
+				<DigitOne>3</DigitOne>
+				<DigitTwo>4</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="MOBILE_ADVISOR_AND_SUPPORT_MOD" Label="Mobile Advisor and Support" Category="Capability" Graphic="10351.svg">
+			<ModifierCode>
+				<DigitOne>3</DigitOne>
+				<DigitTwo>5</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="MOBILE_SUBSCRIBER_EQUIPMENT_MOD" Label="Mobile Subscriber Equipment" Category="Capability" Graphic="10361.svg">
+			<ModifierCode>
+				<DigitOne>3</DigitOne>
+				<DigitTwo>6</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="MOBILITY_SUPPORT_MOD" Label="Mobility Support" Category="Capability" Graphic="10371.svg">
+			<ModifierCode>
+				<DigitOne>3</DigitOne>
+				<DigitTwo>7</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="MOVEMENT_CONTROL_CENTER_MOD" Label="Movement Control Center" Category="Capability" Graphic="10381.svg">
+			<ModifierCode>
+				<DigitOne>3</DigitOne>
+				<DigitTwo>8</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="MULTINATIONAL_MOD" Label="Multinational" Category="Capability" Graphic="10391.svg">
+			<ModifierCode>
+				<DigitOne>3</DigitOne>
+				<DigitTwo>9</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="MULTINATIONAL_SPECIALIZED_UNIT_MOD" Label="Multinational Specialized Unit" Category="Capability" Graphic="10401.svg">
+			<ModifierCode>
+				<DigitOne>4</DigitOne>
+				<DigitTwo>0</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="MULTIPLE_ROCKET_LAUNCHER_MOD" Label="Multiple Rocket Launcher" Category="Capability" Graphic="10411.svg">
+			<ModifierCode>
+				<DigitOne>4</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="NATO_MEDICAL_ROLE_1__MOD" Label="NATO Medical Role 1 " Category="Capability" Graphic="10421.svg">
+			<ModifierCode>
+				<DigitOne>4</DigitOne>
+				<DigitTwo>2</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="NATO_MEDICAL_ROLE_2_MOD" Label="NATO Medical Role 2" Category="Capability" Graphic="10431.svg">
+			<ModifierCode>
+				<DigitOne>4</DigitOne>
+				<DigitTwo>3</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="NATO_MEDICAL_ROLE_3_MOD" Label="NATO Medical Role 3" Category="Capability" Graphic="10441.svg">
+			<ModifierCode>
+				<DigitOne>4</DigitOne>
+				<DigitTwo>4</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="NATO_MEDICAL_ROLE_4_MOD" Label="NATO Medical Role 4" Category="Capability" Graphic="10451.svg">
+			<ModifierCode>
+				<DigitOne>4</DigitOne>
+				<DigitTwo>5</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="NAVAL_MOD" Label="Naval" Category="Capability" Graphic="10461.svg">
+			<ModifierCode>
+				<DigitOne>4</DigitOne>
+				<DigitTwo>6</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="NODE_CENTER_MOD" Label="Node Center" Category="Capability" Graphic="10471.svg">
+			<ModifierCode>
+				<DigitOne>4</DigitOne>
+				<DigitTwo>7</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="NUCLEAR_MOD" Label="Nuclear" Category="Capability" Graphic="10481.svg">
+			<ModifierCode>
+				<DigitOne>4</DigitOne>
+				<DigitTwo>8</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="OPERATIONS_MOD" Label="Operations" Category="Capability" Graphic="10491.svg">
+			<ModifierCode>
+				<DigitOne>4</DigitOne>
+				<DigitTwo>9</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="RADAR_MOD" Label="Radar" Category="Capability" Graphic="10501.svg">
+			<ModifierCode>
+				<DigitOne>5</DigitOne>
+				<DigitTwo>0</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="RADIO_FREQUENCY_IDENTIFICATION_RFID_INTERROGATOR_SENSOR_MOD" Label="Radio Frequency Identification (RFID) Interrogator / Sensor" Category="Capability" Graphic="10511.svg">
+			<ModifierCode>
+				<DigitOne>5</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="RADIOLOGICAL_MOD" Label="Radiological" Category="Capability" Graphic="10521.svg">
+			<ModifierCode>
+				<DigitOne>5</DigitOne>
+				<DigitTwo>2</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="SEARCH_AND_RESCUE_MOD" Label="Search and Rescue" Category="Capability" Graphic="10531.svg">
+			<ModifierCode>
+				<DigitOne>5</DigitOne>
+				<DigitTwo>3</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="SECURITY_MOD" Label="Security" Category="Capability" Graphic="10541.svg">
+			<ModifierCode>
+				<DigitOne>5</DigitOne>
+				<DigitTwo>4</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="SENSOR_MOD" Label="Sensor" Category="Capability" Graphic="10551.svg">
+			<ModifierCode>
+				<DigitOne>5</DigitOne>
+				<DigitTwo>5</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="SENSOR_CONTROL_MODULE_SCM_MOD" Label="Sensor Control Module (SCM)" Category="Capability" Graphic="10561.svg">
+			<ModifierCode>
+				<DigitOne>5</DigitOne>
+				<DigitTwo>6</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="SIGNALS_INTELLIGENCE_MOD" Label="Signals Intelligence" Category="Capability" Graphic="10571.svg">
+			<ModifierCode>
+				<DigitOne>5</DigitOne>
+				<DigitTwo>7</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="SINGLE_SHELTER_SWITCH_MOD" Label="Single Shelter Switch" Category="Capability" Graphic="10581.svg">
+			<ModifierCode>
+				<DigitOne>5</DigitOne>
+				<DigitTwo>8</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="SINGLE_ROCKET_LAUNCHER_MOD" Label="Single Rocket Launcher" Category="Capability" Graphic="10591.svg">
+			<ModifierCode>
+				<DigitOne>5</DigitOne>
+				<DigitTwo>9</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="SMOKE_MOD" Label="Smoke" Category="Capability" Graphic="10601.svg">
+			<ModifierCode>
+				<DigitOne>6</DigitOne>
+				<DigitTwo>0</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="SNIPER_MOD" Label="Sniper" Category="Capability" Graphic="10611.svg">
+			<ModifierCode>
+				<DigitOne>6</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="SOUND_RANGING_MOD" Label="Sound Ranging" Category="Capability" Graphic="10621.svg">
+			<ModifierCode>
+				<DigitOne>6</DigitOne>
+				<DigitTwo>2</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="SPECIAL_OPERATIONS_FORCES_SOF_MOD" Label="Special Operations Forces (SOF)" Category="Capability" Graphic="10631.svg">
+			<ModifierCode>
+				<DigitOne>6</DigitOne>
+				<DigitTwo>3</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="SPECIAL_WEAPONS_AND_TACTICS_MOD" Label="Special Weapons and Tactics" Category="Capability" Graphic="10641.svg">
+			<ModifierCode>
+				<DigitOne>6</DigitOne>
+				<DigitTwo>4</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="SURVEY_MOD" Label="Survey" Category="Capability" Graphic="10651.svg">
+			<ModifierCode>
+				<DigitOne>6</DigitOne>
+				<DigitTwo>5</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="TACTICAL_EXPLOITATION_MOD" Label="Tactical Exploitation" Category="Capability" Graphic="10661.svg">
+			<ModifierCode>
+				<DigitOne>6</DigitOne>
+				<DigitTwo>6</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="TARGET_ACQUISITION_MOD" Label="Target Acquisition" Category="Capability" Graphic="10671.svg">
+			<ModifierCode>
+				<DigitOne>6</DigitOne>
+				<DigitTwo>7</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="TOPOGRAPHIC_MOD" Label="Topographic" Category="Capability" Graphic="10681.svg">
+			<ModifierCode>
+				<DigitOne>6</DigitOne>
+				<DigitTwo>8</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="UTILITY_MOD" Label="Utility" Category="Capability" Graphic="10691.svg">
+			<ModifierCode>
+				<DigitOne>6</DigitOne>
+				<DigitTwo>9</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="VIDEO_IMAGERY__COMBAT_CAMERA__MOD" Label="Video Imagery (Combat Camera)" Category="Capability" Graphic="10701.svg">
+			<ModifierCode>
+				<DigitOne>7</DigitOne>
+				<DigitTwo>0</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="ACCIDENT_MOD" Label="Accident" Category="Composite Loss" Graphic="10711.svg">
+			<ModifierCode>
+				<DigitOne>7</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="OTHER_MOD" Label="Other" Category="Composite Loss" Graphic="10721.svg">
+			<ModifierCode>
+				<DigitOne>7</DigitOne>
+				<DigitTwo>2</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="CIVILIAN_MOD" Label="Civilian" Category="Operation" Graphic="10731.svg">
+			<ModifierCode>
+				<DigitOne>7</DigitOne>
+				<DigitTwo>3</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="ANTISUBMARINE_WARFARE_MOD" Label="Antisubmarine Warfare" Category="Capability" Graphic="10741.svg">
+			<ModifierCode>
+				<DigitOne>7</DigitOne>
+				<DigitTwo>4</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="MEDEVAC_MOD" Label="Medevac" Category="Capability" Graphic="10751.svg">
+			<ModifierCode>
+				<DigitOne>7</DigitOne>
+				<DigitTwo>5</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="RANGER_MOD" Label="Ranger" Category="Capability" Graphic="10761.svg">
+			<ModifierCode>
+				<DigitOne>7</DigitOne>
+				<DigitTwo>6</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="SUPPORT_MOD" Label="Support" Category="Capability" Graphic="10771.svg">
+			<ModifierCode>
+				<DigitOne>7</DigitOne>
+				<DigitTwo>7</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="AVIATION_MOD" Label="Aviation" Category="Capability" Graphic="10781.svg">
+			<ModifierCode>
+				<DigitOne>7</DigitOne>
+				<DigitTwo>8</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+	</SectorOneModifiers>
+	<SectorTwoModifiers>
+		<Modifier ID="AIRBORNE_MOD" Label="Airborne" Category="Mobility" Graphic="10012.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="ARCTIC_MOD" Label="Arctic" Category="Mobility" Graphic="10022.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>2</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="BATTLE_DAMAGE_REPAIR_MOD" Label="Battle Damage Repair" Category="Capability" Graphic="10032.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>3</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="BICYCLE_EQUIPPED_MOD" Label="Bicycle Equipped" Category="Mobility" Graphic="10042.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>4</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="CASUALTY_STAGING_MOD" Label="Casualty Staging" Category="Close Range and Support" Graphic="10052.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>5</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="CLEARING_MOD" Label="Clearing" Category="Capability" Graphic="10062.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>6</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="CLOSE_RANGE_MOD" Label="Close Range" Category="Capability" Graphic="10072.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>7</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="CONTROL_MOD" Label="Control" Category="Capability" Graphic="10082.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>8</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="DECONTAMINATION_2_MOD" Label="Decontamination" Category="Capability" Graphic="10092.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>9</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="DEMOLITION_MOD" Label="Demolition" Category="Capability" Graphic="10102.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>0</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="DENTAL_MOD" Label="Dental" Category="Capability" Graphic="10112.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="DIGITAL_MOD" Label="Digital" Category="Capability" Graphic="10122.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>2</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="ENHANCED_POSITION_LOCATION_REPORTING_SYSTEM_EPLRS_MOD" Label="Enhanced Position Location Reporting System (EPLRS)" Category="Capability" Graphic="10132.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>3</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="EQUIPMENT_MOD" Label="Equipment" Category="Capability" Graphic="10142.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>4</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="HEAVY_MOD" Label="Heavy" Category="Capability" Graphic="10152.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>5</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="HIGH_ALTITUDE_MOD" Label="High Altitude" Category="Capability" Graphic="10162.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>6</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="INTERMODAL_MOD" Label="Intermodal" Category="Capability" Graphic="10172.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>7</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="INTENSIVE_CARE_MOD" Label="Intensive Care" Category="Capability" Graphic="10182.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>8</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="LIGHT_MOD" Label="Light" Category="Capability" Graphic="10192.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>9</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="LABORATORY_MOD" Label="Laboratory" Category="Capability" Graphic="10202.svg">
+			<ModifierCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>0</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="LAUNCHER_MOD" Label="Launcher" Category="Capability" Graphic="10212.svg">
+			<ModifierCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="LONG_RANGE_MOD" Label="Long Range" Category="Capability" Graphic="10222.svg">
+			<ModifierCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>2</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="LOW_ALTITUDE_MOD" Label="Low Altitude" Category="Capability" Graphic="10232.svg">
+			<ModifierCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>3</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="MEDIUM_MOD" Label="Medium" Category="Capability" Graphic="10242.svg">
+			<ModifierCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>4</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="MEDIUM_ALTITUDE_MOD" Label="Medium Altitude" Category="Capability" Graphic="10252.svg">
+			<ModifierCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>5</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="MEDIUM_RANGE_MOD" Label="Medium Range" Category="Capability" Graphic="10262.svg">
+			<ModifierCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>6</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="MOUNTAIN_MOD" Label="Mountain" Category="Capability" Graphic="10272.svg">
+			<ModifierCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>7</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="HIGH_TO_MEDIUM_ALTITUDE_MOD" Label="High to Medium Altitude" Category="Capability" Graphic="10282.svg">
+			<ModifierCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>8</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="MULTI_CHANNEL_MOD" Label="Multi-Channel" Category="Capability" Graphic="10292.svg">
+			<ModifierCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>9</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="OPTICAL_FLASH_MOD" Label="Optical (Flash)" Category="Capability" Graphic="10302.svg">
+			<ModifierCode>
+				<DigitOne>3</DigitOne>
+				<DigitTwo>0</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="PACK_ANIMAL_MOD" Label="Pack Animal" Category="Capability" Graphic="10312.svg">
+			<ModifierCode>
+				<DigitOne>3</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="PATIENT_EVACUATION_COORDINATION_MOD" Label="Patient Evacuation Coordination" Category="Capability" Graphic="10322.svg">
+			<ModifierCode>
+				<DigitOne>3</DigitOne>
+				<DigitTwo>2</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="PREVENTIVE_MAINTENANCE_MOD" Label="Preventive Maintenance" Category="Capability" Graphic="10332.svg">
+			<ModifierCode>
+				<DigitOne>3</DigitOne>
+				<DigitTwo>3</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="PSYCHOLOGICAL_MOD" Label="Psychological" Category="Capability" Graphic="10342.svg">
+			<ModifierCode>
+				<DigitOne>3</DigitOne>
+				<DigitTwo>4</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="RADIO_RELAY_LINE_OF_SIGHT_MOD" Label="Radio Relay Line of Sight" Category="Capability" Graphic="10352.svg">
+			<ModifierCode>
+				<DigitOne>3</DigitOne>
+				<DigitTwo>5</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="RAILROAD_MOD" Label="Railroad" Category="Mobility" Graphic="10362.svg">
+			<ModifierCode>
+				<DigitOne>3</DigitOne>
+				<DigitTwo>6</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="RECOVERY__UNMANNED_SYSTEMS__MOD" Label="Recovery (Unmanned Systems)" Category="Capability" Graphic="10372.svg">
+			<ModifierCode>
+				<DigitOne>3</DigitOne>
+				<DigitTwo>7</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="RECOVERY__MAINTENANCE__MOD" Label="Recovery (Maintenance)" Category="Capability" Graphic="10382.svg">
+			<ModifierCode>
+				<DigitOne>3</DigitOne>
+				<DigitTwo>8</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="RESCUE_COORDINATION_CENTER_MOD" Label="Rescue Coordination Center" Category="Capability" Graphic="10392.svg">
+			<ModifierCode>
+				<DigitOne>3</DigitOne>
+				<DigitTwo>9</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="RIVERINE_MOD" Label="Riverine" Category="Mobility" Graphic="10402.svg">
+			<ModifierCode>
+				<DigitOne>4</DigitOne>
+				<DigitTwo>0</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="SINGLE_CHANNEL_MOD" Label="Single Channel" Category="Capability" Graphic="10412.svg">
+			<ModifierCode>
+				<DigitOne>4</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="SKI_MOD" Label="Ski" Category="Mobility" Graphic="10422.svg">
+			<ModifierCode>
+				<DigitOne>4</DigitOne>
+				<DigitTwo>2</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="SHORT_RANGE_MOD" Label="Short Range" Category="Capability" Graphic="10432.svg">
+			<ModifierCode>
+				<DigitOne>4</DigitOne>
+				<DigitTwo>3</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="STRATEGIC_MOD" Label="Strategic" Category="Capability" Graphic="10442.svg">
+			<ModifierCode>
+				<DigitOne>4</DigitOne>
+				<DigitTwo>4</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="SUPPORT_2_MOD" Label="Support" Category="Capability" Graphic="10452.svg">
+			<ModifierCode>
+				<DigitOne>4</DigitOne>
+				<DigitTwo>5</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="TACTICAL_MOD" Label="Tactical" Category="Capability" Graphic="10462.svg">
+			<ModifierCode>
+				<DigitOne>4</DigitOne>
+				<DigitTwo>6</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="TOWED_MOD" Label="Towed" Category="Mobility" Graphic="10472.svg">
+			<ModifierCode>
+				<DigitOne>4</DigitOne>
+				<DigitTwo>7</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="TROOP_MOD" Label="Troop" Category="Capability" Graphic="10482.svg">
+			<ModifierCode>
+				<DigitOne>4</DigitOne>
+				<DigitTwo>8</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="VERTICAL_OR_SHORT_TAKE_OFF_AND_LANDING_VTOL_VSTOL_MOD" Label="Vertical or Short Take-Off and Landing (VTOL/VSTOL)" Category="Mobility" Graphic="10492.svg">
+			<ModifierCode>
+				<DigitOne>4</DigitOne>
+				<DigitTwo>9</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="VETERINARY_MOD" Label="Veterinary" Category="Capability" Graphic="10502.svg">
+			<ModifierCode>
+				<DigitOne>5</DigitOne>
+				<DigitTwo>0</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="WHEELED_MOD" Label="Wheeled" Category="Mobility" Graphic="10512.svg">
+			<ModifierCode>
+				<DigitOne>5</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="HIGH_TO_LOW_ALTITUDE_MOD" Label="High to Low Altitude" Category="Capability" Graphic="10522.svg">
+			<ModifierCode>
+				<DigitOne>5</DigitOne>
+				<DigitTwo>2</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="MEDIUM_TO_LOW_ALTITUDE_MOD" Label="Medium to Low Altitude" Category="Capability" Graphic="10532.svg">
+			<ModifierCode>
+				<DigitOne>5</DigitOne>
+				<DigitTwo>3</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="ATTACK_2_MOD" Label="Attack" Category="Capability" Graphic="10542.svg">
+			<ModifierCode>
+				<DigitOne>5</DigitOne>
+				<DigitTwo>4</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="REFUEL_MOD" Label="Refuel" Category="Capability" Graphic="10552.svg">
+			<ModifierCode>
+				<DigitOne>5</DigitOne>
+				<DigitTwo>5</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="UTILITY_2_MOD" Label="Utility" Category="Capability" Graphic="10562.svg">
+			<ModifierCode>
+				<DigitOne>5</DigitOne>
+				<DigitTwo>6</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="COMBAT_SEARCH_AND_RESCUE_MOD" Label="Combat Search and Rescue" Category="Capability" Graphic="10572.svg">
+			<ModifierCode>
+				<DigitOne>5</DigitOne>
+				<DigitTwo>7</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+	</SectorTwoModifiers>
+  <LegacySymbols>
+    <LegacySymbol ID="GROUND_SYM" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C">------</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="UNIT_SYM" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C">U-----</LegacyFunctionCode>
+    </LegacySymbol>
+    
+    <LegacySymbol ID="COMBAT_SYM" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="COMBAT">
+      <LegacyFunctionCode Name="2525C">UC----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="AIR_DEFENSE_SYM" EntityID="FIRES" EntityTypeID="AIR_DEFENSE">
+      <LegacyFunctionCode Name="2525C">UCD---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="SRD_SYM" EntityID="FIRES" EntityTypeID="AIR_DEFENSE" ModifierTwoID="SHORT_RANGE_MOD">
+      <LegacyFunctionCode Name="2525C">UCDS--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="CHAPARRAL_SYM" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C">UCDSC-</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="STINGER_SYM" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C">UCDSS-</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="VULCAN_SYM" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C">UCDSV-</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="AD_MISSILE_SYM" EntityID="FIRES" EntityTypeID="AIR_DEFENSE" EntitySubTypeID="AD_MISSILE">
+      <LegacyFunctionCode Name="2525C">UCDM--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="LIGHT_AD_MISSILE_SYM" EntityID="FIRES" EntityTypeID="AIR_DEFENSE" EntitySubTypeID="AD_MISSILE" ModifierTwoID="LIGHT_MOD">
+      <LegacyFunctionCode Name="2525C">UCDML-</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="AVENGER_SYM" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C">UCDMLA</LegacyFunctionCode>
+    </LegacySymbol>
+    
+  </LegacySymbols>
+</SymbolSet>
