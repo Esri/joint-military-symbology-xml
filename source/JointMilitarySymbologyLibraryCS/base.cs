@@ -1160,6 +1160,9 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         FULL_FRAME,
+        
+        /// <remarks/>
+        SPECIAL,
     }
     
     /// <remarks/>

@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="base.cs" />
+    <Compile Include="etl.cs" />
     <Compile Include="sidc.cs" />
     <Compile Include="symbol.cs" />
     <Compile Include="jmsmlConfig.cs">
