@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="SS_LAND_CIVILIAN" Label="Land Civilian" DimensionID="LAND_CIVILIAN">
+	<SymbolSetCode>
+		<DigitOne>1</DigitOne>
+		<DigitTwo>1</DigitTwo>
+	</SymbolSetCode>
+	<LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
+	<Entities>
+		<Entity ID="CIVILIAN" Label="Civilian" Graphic="11110000.svg">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="ENVIRONMENTAL_PROTECTION" Label="Environmental Protection" Graphic="11110100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="GOVERNMENT_ORGANIZATION" Label="Government Organization" Graphic="11110200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="INDIVIDUAL" Label="Individual" Graphic="11110300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ORGANIZATION" Label="Organization or Group" Graphic="11110400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="KILLING_VICTIM" Label="Killing Victim" Graphic="11110500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="KILLING_VICTIMS" Label="Killing Victims" Graphic="11110600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="VICTIM_ATTEMPTED_CRIME" Label="Victim of an Attempted Crime" Graphic="11110700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="SPY" Label="Spy" Graphic="11110800.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="COMPOSITE_LOSS" Label="Composite Loss" Graphic="11110900.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="EMERGENCY_MEDICAL_OPERATION" Label="Emergency Medical Operation" Graphic="11111000.svg" Icon="FULL_OCTAGON">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+	</Entities>
+	<SectorOneModifiers>
+		<Modifier ID="ASSASSINATION_MOD" Label="Assassination" Category="CRIME" Graphic="11011.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="EXECUTION_MOD" Label="Execution (Wrongful Killing)" Category="CRIME" Graphic="11021.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>2</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="MURDER_VICTIMS_MOD" Label="Murder Victims" Category="CRIME" Graphic="11031.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>3</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="HIJACKING_MOD" Label="Hijacking" Category="CRIME" Graphic="11041.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>4</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="KIDNAPPING_MOD" Label="Kidnapping" Category="CRIME" Graphic="11051.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>5</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="PIRACY_MOD" Label="Piracy" Category="CRIME" Graphic="11061.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>6</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="RAPE_MOD" Label="Rape" Category="CRIME" Graphic="11071.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>7</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="CIVILIAN_MOD" Label="Civilian" Category="ORGANIZATION" Graphic="11081.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>8</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="DISPLACED_MOD" Label="Displaced Person(s), Refugee(s), and Evacuee(s)" Category="ORGANIZATION" Graphic="11091.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>9</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="FOREIGN_FIGHTER_MOD" Label="Foreign Fighter(s)" Category="ORGANIZATION" Graphic="11101.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>0</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="GANG_MOD" Label="Gang Member or Gang" Category="ORGANIZATION" Graphic="11111.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="GOVERNMENT_ORGANIZATION_MOD" Label="Government Organization" Category="ORGANIZATION" Graphic="11121.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>2</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="LEADER_1_MOD" Label="Leader or Leadership" Category="ORGANIZATION" Graphic="11131.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>3</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="NONGOVERNMENTAL_ORGANIZATION_MOD" Label="Nongovernmental Organization Member or Nongovernmental Organization" Category="ORGANIZATION" Graphic="11141.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>4</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="COERCED_RECRUIT_MOD" Label="Coerced/Impressed Recruit" Category="ORGANIZATION" Graphic="11151.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>5</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="WILLING_RECRUIT_MOD" Label="Willing Recruit" Category="ORGANIZATION" Graphic="11161.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>6</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="RELIGIOUS_MOD" Label="Religious or Religious Organization" Category="ORGANIZATION" Graphic="11171.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>7</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="TARGETED_MOD" Label="Targeted Individual or Organization" Category="ORGANIZATION" Graphic="11181.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>8</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="TERRORIST_MOD" Label="Terrorist or Terrorist Organization" Category="ORGANIZATION" Graphic="11191.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>9</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="SPEAKER_MOD" Label="Speaker" Category="ORGANIZATION" Graphic="11201.svg">
+			<ModifierCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>0</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="ACCIDENT_MOD" Label="Accident" Category="COMPOSITE_LOSS" Graphic="11211.svg">
+			<ModifierCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="COMBAT_MOD" Label="Combat" Category="COMPOSITE_LOSS" Graphic="11221.svg">
+			<ModifierCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>2</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="OTHER_MOD" Label="Other" Category="COMPOSITE_LOSS" Graphic="11231.svg">
+			<ModifierCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>3</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="LOOT_MOD" Label="Loot" Category="CRIME" Graphic="11241.svg">
+			<ModifierCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>4</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+	</SectorOneModifiers>
+	<SectorTwoModifiers>
+		<Modifier ID="LEADER_2_MOD" Label="Leader or Leadership" Category="ORGANIZATION" Graphic="11012.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+	</SectorTwoModifiers>
+</SymbolSet>

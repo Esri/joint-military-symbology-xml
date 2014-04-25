@@ -18,7 +18,7 @@
 						<DigitTwo>1</DigitTwo>
 					</EntityTypeCode>
           <EntitySubTypes>
-            <EntitySubType ID="BTA_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10111095_0.svg" RectangleGraphic="10111095_1.svg" SquareGraphic="10111095_2.svg" DiamondGraphic="10111095_3.svg" Icon="SPECIAL">
+            <EntitySubType ID="BTA_HEADQUARTERS_ELEMENT" Label="Headquarters Element" Graphic="10110100.svg" CloverGraphic="10111000_0.svg" RectangleGraphic="10111000_1.svg" SquareGraphic="10111000_2.svg" DiamondGraphic="10111095_3.svg" Icon="SPECIAL">
               <EntitySubTypeCode>
                 <DigitOne>9</DigitOne>
                 <DigitTwo>5</DigitTwo>
@@ -1582,31 +1582,31 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-		<Entity ID="EMERGENCY_OPERATION" Label="Emergency Operation" Graphic="10190000.svg">
+		<Entity ID="EMERGENCY_OPERATION" Label="Emergency Operation" Graphic="10190000.svg" Icon="FULL_OCTAGON">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>9</DigitTwo>
 			</EntityCode>
 		</Entity>
-		<Entity ID="LAW_ENFORCEMENT" Label="Law Enforcement" Graphic="10200000.svg">
+		<Entity ID="LAW_ENFORCEMENT" Label="Law Enforcement" Graphic="10200000.svg" Icon="FULL_OCTAGON">
 			<EntityCode>
 				<DigitOne>2</DigitOne>
 				<DigitTwo>0</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="BUREAU_OF_ALCOHOL_TOBACCO_FIREARMS_AND_EXPLOSIVES_ATF_DEPARTMENT_OF_JUSTICE" Label="Bureau of Alcohol Tobacco Firearms and Explosives (ATF) (Department of Justice)" Graphic="10200100.svg">
+				<EntityType ID="BUREAU_ATF" Label="Bureau of Alcohol Tobacco Firearms and Explosives (ATF) (Department of Justice)" Graphic="10200100.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
 					</EntityTypeCode>
 				</EntityType>
-				<EntityType ID="BORDER_PATROL" Label="Border Patrol" Graphic="10200200.svg">
+				<EntityType ID="BORDER_PATROL" Label="Border Patrol" Graphic="10200200.svg" Icon="FULL_OCTAGON">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
 					</EntityTypeCode>
 				</EntityType>
-				<EntityType ID="CUSTOMS_SERVICE" Label="Customs Service" Graphic="10200300.svg">
+				<EntityType ID="CUSTOMS_SERVICE" Label="Customs Service" Graphic="10200300.svg" Icon="FULL_OCTAGON">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>3</DigitTwo>
@@ -1618,13 +1618,13 @@
 						<DigitTwo>4</DigitTwo>
 					</EntityTypeCode>
 				</EntityType>
-				<EntityType ID="DEPARTMENT_OF_JUSTICE_DOJ" Label="Department of Justice (DOJ)" Graphic="10200500.svg">
+				<EntityType ID="DEPARTMENT_JUSTICE_DOJ" Label="Department of Justice (DOJ)" Graphic="10200500.svg" Icon="FULL_OCTAGON">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>5</DigitTwo>
 					</EntityTypeCode>
 				</EntityType>
-				<EntityType ID="FEDERAL_BUREAU_OF_INVESTIGATION_FBI" Label="Federal Bureau of Investigation (FBI)" Graphic="10200600.svg">
+				<EntityType ID="FEDERAL_BUREAU_INVESTIGATION_FBI" Label="Federal Bureau of Investigation (FBI)" Graphic="10200600.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>6</DigitTwo>
@@ -1636,7 +1636,7 @@
 						<DigitTwo>7</DigitTwo>
 					</EntityTypeCode>
 				</EntityType>
-				<EntityType ID="PRISON" Label="Prison" Graphic="10200800.svg">
+				<EntityType ID="PRISON" Label="Prison" Graphic="10200800.svg" Icon="FULL_OCTAGON">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>8</DigitTwo>
@@ -1654,13 +1654,13 @@
 						<DigitTwo>0</DigitTwo>
 					</EntityTypeCode>
 				</EntityType>
-				<EntityType ID="COAST_GUARD" Label="Coast Guard" Graphic="10201100.svg">
+				<EntityType ID="COAST_GUARD" Label="Coast Guard" Graphic="10201100.svg" Icon="FULL_OCTAGON">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>1</DigitTwo>
 					</EntityTypeCode>
 				</EntityType>
-				<EntityType ID="US_MARSHALS_SERVICE" Label="US Marshals Service" Graphic="10201200.svg">
+				<EntityType ID="US_MARSHALS_SERVICE" Label="US Marshals Service" Graphic="10201200.svg" Icon="FULL_OCTAGON">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>2</DigitTwo>
@@ -1730,7 +1730,7 @@
 				<DigitTwo>9</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="COMMAND_AND_CONTROL_MOD" Label="Command and Control" Category="Capability" Graphic="10101.svg">
+		<Modifier ID="COMMAND_CONTROL_MOD" Label="Command and Control" Category="Capability" Graphic="10101.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>0</DigitTwo>
@@ -1754,7 +1754,7 @@
 				<DigitTwo>3</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="CROWD_AND_RIOT_CONTROL_MOD" Label="Crowd and Riot Control" Category="Capability" Graphic="10141.svg">
+		<Modifier ID="CROWD_RIOT_CONTROL_MOD" Label="Crowd and Riot Control" Category="Capability" Graphic="10141.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>4</DigitTwo>
@@ -1880,7 +1880,7 @@
 				<DigitTwo>4</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="MOBILE_ADVISOR_AND_SUPPORT_MOD" Label="Mobile Advisor and Support" Category="Capability" Graphic="10351.svg">
+		<Modifier ID="MOBILE_ADVISOR_SUPPORT_MOD" Label="Mobile Advisor and Support" Category="Capability" Graphic="10351.svg">
 			<ModifierCode>
 				<DigitOne>3</DigitOne>
 				<DigitTwo>5</DigitTwo>
@@ -1976,7 +1976,7 @@
 				<DigitTwo>0</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="RADIO_FREQUENCY_IDENTIFICATION_RFID_INTERROGATOR_SENSOR_MOD" Label="Radio Frequency Identification (RFID) Interrogator / Sensor" Category="Capability" Graphic="10511.svg">
+		<Modifier ID="RFID_INTERROGATOR_SENSOR_MOD" Label="Radio Frequency Identification (RFID) Interrogator / Sensor" Category="Capability" Graphic="10511.svg">
 			<ModifierCode>
 				<DigitOne>5</DigitOne>
 				<DigitTwo>1</DigitTwo>
@@ -1988,7 +1988,7 @@
 				<DigitTwo>2</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="SEARCH_AND_RESCUE_MOD" Label="Search and Rescue" Category="Capability" Graphic="10531.svg">
+		<Modifier ID="SEARCH_RESCUE_MOD" Label="Search and Rescue" Category="Capability" Graphic="10531.svg">
 			<ModifierCode>
 				<DigitOne>5</DigitOne>
 				<DigitTwo>3</DigitTwo>
@@ -2048,13 +2048,13 @@
 				<DigitTwo>2</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="SPECIAL_OPERATIONS_FORCES_SOF_MOD" Label="Special Operations Forces (SOF)" Category="Capability" Graphic="10631.svg">
+		<Modifier ID="SPEC_OPS_SOF_MOD" Label="Special Operations Forces (SOF)" Category="Capability" Graphic="10631.svg">
 			<ModifierCode>
 				<DigitOne>6</DigitOne>
 				<DigitTwo>3</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="SPECIAL_WEAPONS_AND_TACTICS_MOD" Label="Special Weapons and Tactics" Category="Capability" Graphic="10641.svg">
+		<Modifier ID="SPECIAL_WEAPONS_TACTICS_MOD" Label="Special Weapons and Tactics" Category="Capability" Graphic="10641.svg">
 			<ModifierCode>
 				<DigitOne>6</DigitOne>
 				<DigitTwo>4</DigitTwo>
@@ -2090,7 +2090,7 @@
 				<DigitTwo>9</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="VIDEO_IMAGERY__COMBAT_CAMERA__MOD" Label="Video Imagery (Combat Camera)" Category="Capability" Graphic="10701.svg">
+		<Modifier ID="VIDEO_IMAGERY_MOD" Label="Video Imagery (Combat Camera)" Category="Capability" Graphic="10701.svg">
 			<ModifierCode>
 				<DigitOne>7</DigitOne>
 				<DigitTwo>0</DigitTwo>
@@ -2308,7 +2308,7 @@
 				<DigitTwo>7</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="HIGH_TO_MEDIUM_ALTITUDE_MOD" Label="High to Medium Altitude" Category="Capability" Graphic="10282.svg">
+		<Modifier ID="HIGH_MEDIUM_ALTITUDE_MOD" Label="High to Medium Altitude" Category="Capability" Graphic="10282.svg">
 			<ModifierCode>
 				<DigitOne>2</DigitOne>
 				<DigitTwo>8</DigitTwo>
@@ -2350,7 +2350,7 @@
 				<DigitTwo>4</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="RADIO_RELAY_LINE_OF_SIGHT_MOD" Label="Radio Relay Line of Sight" Category="Capability" Graphic="10352.svg">
+		<Modifier ID="RADIO_RELAY_LOS_MOD" Label="Radio Relay Line of Sight" Category="Capability" Graphic="10352.svg">
 			<ModifierCode>
 				<DigitOne>3</DigitOne>
 				<DigitTwo>5</DigitTwo>
@@ -2362,13 +2362,13 @@
 				<DigitTwo>6</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="RECOVERY__UNMANNED_SYSTEMS__MOD" Label="Recovery (Unmanned Systems)" Category="Capability" Graphic="10372.svg">
+		<Modifier ID="RECOVERY_UNMANNED_SYSTEMS_MOD" Label="Recovery (Unmanned Systems)" Category="Capability" Graphic="10372.svg">
 			<ModifierCode>
 				<DigitOne>3</DigitOne>
 				<DigitTwo>7</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="RECOVERY__MAINTENANCE__MOD" Label="Recovery (Maintenance)" Category="Capability" Graphic="10382.svg">
+		<Modifier ID="RECOVERY_MAINTENANCE_MOD" Label="Recovery (Maintenance)" Category="Capability" Graphic="10382.svg">
 			<ModifierCode>
 				<DigitOne>3</DigitOne>
 				<DigitTwo>8</DigitTwo>
@@ -2434,7 +2434,7 @@
 				<DigitTwo>8</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="VERTICAL_OR_SHORT_TAKE_OFF_AND_LANDING_VTOL_VSTOL_MOD" Label="Vertical or Short Take-Off and Landing (VTOL/VSTOL)" Category="Mobility" Graphic="10492.svg">
+		<Modifier ID="VERTICAL_TAKE_OFF_LANDING_VTOL_MOD" Label="Vertical or Short Take-Off and Landing (VTOL/VSTOL)" Category="Mobility" Graphic="10492.svg">
 			<ModifierCode>
 				<DigitOne>4</DigitOne>
 				<DigitTwo>9</DigitTwo>
@@ -2452,13 +2452,13 @@
 				<DigitTwo>1</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="HIGH_TO_LOW_ALTITUDE_MOD" Label="High to Low Altitude" Category="Capability" Graphic="10522.svg">
+		<Modifier ID="HIGH_LOW_ALTITUDE_MOD" Label="High to Low Altitude" Category="Capability" Graphic="10522.svg">
 			<ModifierCode>
 				<DigitOne>5</DigitOne>
 				<DigitTwo>2</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="MEDIUM_TO_LOW_ALTITUDE_MOD" Label="Medium to Low Altitude" Category="Capability" Graphic="10532.svg">
+		<Modifier ID="MEDIUM_LOW_ALTITUDE_MOD" Label="Medium to Low Altitude" Category="Capability" Graphic="10532.svg">
 			<ModifierCode>
 				<DigitOne>5</DigitOne>
 				<DigitTwo>3</DigitTwo>
@@ -2482,7 +2482,7 @@
 				<DigitTwo>6</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="COMBAT_SEARCH_AND_RESCUE_MOD" Label="Combat Search and Rescue" Category="Capability" Graphic="10572.svg">
+		<Modifier ID="COMBAT_SEARCH_RESCUE_MOD" Label="Combat Search and Rescue" Category="Capability" Graphic="10572.svg">
 			<ModifierCode>
 				<DigitOne>5</DigitOne>
 				<DigitTwo>7</DigitTwo>
