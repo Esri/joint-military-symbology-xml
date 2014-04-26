@@ -441,6 +441,18 @@ namespace JointMilitarySymbologyLibrary {
         
         private IconType iconField;
         
+        private string specialCircleGraphicField;
+        
+        private string specialCloverGraphicField;
+        
+        private string specialCurveGraphicField;
+        
+        private string specialDiamondGraphicField;
+        
+        private string specialRectangleGraphicField;
+        
+        private string specialSquareGraphicField;
+        
         private GeometryType geometryTypeField;
         
         public SymbolSetEntity() {
@@ -642,6 +654,72 @@ namespace JointMilitarySymbologyLibrary {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        public string SpecialCircleGraphic {
+            get {
+                return this.specialCircleGraphicField;
+            }
+            set {
+                this.specialCircleGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        public string SpecialCloverGraphic {
+            get {
+                return this.specialCloverGraphicField;
+            }
+            set {
+                this.specialCloverGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        public string SpecialCurveGraphic {
+            get {
+                return this.specialCurveGraphicField;
+            }
+            set {
+                this.specialCurveGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        public string SpecialDiamondGraphic {
+            get {
+                return this.specialDiamondGraphicField;
+            }
+            set {
+                this.specialDiamondGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        public string SpecialRectangleGraphic {
+            get {
+                return this.specialRectangleGraphicField;
+            }
+            set {
+                this.specialRectangleGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        public string SpecialSquareGraphic {
+            get {
+                return this.specialSquareGraphicField;
+            }
+            set {
+                this.specialSquareGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         [System.ComponentModel.DefaultValueAttribute(GeometryType.POINT)]
         public GeometryType GeometryType {
@@ -695,6 +773,18 @@ namespace JointMilitarySymbologyLibrary {
         private StandardType standardField;
         
         private IconType iconField;
+        
+        private string specialCircleGraphicField;
+        
+        private string specialCloverGraphicField;
+        
+        private string specialCurveGraphicField;
+        
+        private string specialDiamondGraphicField;
+        
+        private string specialRectangleGraphicField;
+        
+        private string specialSquareGraphicField;
         
         public SymbolSetEntityEntityType() {
             this.drawRuleIDField = "POINT2";
@@ -892,6 +982,72 @@ namespace JointMilitarySymbologyLibrary {
                 this.iconField = value;
             }
         }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        public string SpecialCircleGraphic {
+            get {
+                return this.specialCircleGraphicField;
+            }
+            set {
+                this.specialCircleGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        public string SpecialCloverGraphic {
+            get {
+                return this.specialCloverGraphicField;
+            }
+            set {
+                this.specialCloverGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        public string SpecialCurveGraphic {
+            get {
+                return this.specialCurveGraphicField;
+            }
+            set {
+                this.specialCurveGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        public string SpecialDiamondGraphic {
+            get {
+                return this.specialDiamondGraphicField;
+            }
+            set {
+                this.specialDiamondGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        public string SpecialRectangleGraphic {
+            get {
+                return this.specialRectangleGraphicField;
+            }
+            set {
+                this.specialRectangleGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        public string SpecialSquareGraphic {
+            get {
+                return this.specialSquareGraphicField;
+            }
+            set {
+                this.specialSquareGraphicField = value;
+            }
+        }
     }
     
     /// <remarks/>
@@ -933,6 +1089,18 @@ namespace JointMilitarySymbologyLibrary {
         private StandardType standardField;
         
         private IconType iconField;
+        
+        private string specialCircleGraphicField;
+        
+        private string specialCloverGraphicField;
+        
+        private string specialCurveGraphicField;
+        
+        private string specialDiamondGraphicField;
+        
+        private string specialRectangleGraphicField;
+        
+        private string specialSquareGraphicField;
         
         public SymbolSetEntityEntityTypeEntitySubType() {
             this.drawRuleIDField = "POINT2";
@@ -1117,6 +1285,72 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.iconField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        public string SpecialCircleGraphic {
+            get {
+                return this.specialCircleGraphicField;
+            }
+            set {
+                this.specialCircleGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        public string SpecialCloverGraphic {
+            get {
+                return this.specialCloverGraphicField;
+            }
+            set {
+                this.specialCloverGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        public string SpecialCurveGraphic {
+            get {
+                return this.specialCurveGraphicField;
+            }
+            set {
+                this.specialCurveGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        public string SpecialDiamondGraphic {
+            get {
+                return this.specialDiamondGraphicField;
+            }
+            set {
+                this.specialDiamondGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        public string SpecialRectangleGraphic {
+            get {
+                return this.specialRectangleGraphicField;
+            }
+            set {
+                this.specialRectangleGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        public string SpecialSquareGraphic {
+            get {
+                return this.specialSquareGraphicField;
+            }
+            set {
+                this.specialSquareGraphicField = value;
             }
         }
     }
