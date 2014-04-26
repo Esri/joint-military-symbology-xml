@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="AN_ID" Label="A Label" DimensionID="A_DIMENSION">
+	<SymbolSetCode>
+		<DigitOne>4</DigitOne>
+		<DigitTwo>7</DigitTwo>
+	</SymbolSetCode>
+	<LegacyCodingSchemeCode Name="2525C">W</LegacyCodingSchemeCode>
+	<Entities>
+		<Entity ID="SPACE" Label="Space" Graphic="47110000.svg">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</EntityCode>
+
+		</Entity>
+	</Entities>
+	<SectorOneModifiers></SectorOneModifiers>
+	<SectorTwoModifiers></SectorTwoModifiers>
+</SymbolSet>

@@ -1,0 +1,1375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="AN_ID" Label="A Label" DimensionID="A_DIMENSION">
+	<SymbolSetCode>
+		<DigitOne>4</DigitOne>
+		<DigitTwo>5</DigitTwo>
+	</SymbolSetCode>
+	<LegacyCodingSchemeCode Name="2525C">W</LegacyCodingSchemeCode>
+	<Entities>
+		<Entity ID="PRESSURE_SYSTEMS" Label="Pressure Systems" Graphic="45110000.svg">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="LOW_PRESSURE_CENTER" Label="Low Pressure Center" Graphic="45110100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="CYCLONE_CENTER" Label="Cyclone Center" Graphic="45110101.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TROPOPAUSE_LOW" Label="Tropopause Low" Graphic="45110102.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="HIGH_PRESSURE_CENTER" Label="High Pressure Center" Graphic="45110200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="ANTICYCLONE_CENTER" Label="Anticyclone Center" Graphic="45110201.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TROPOPAUSE_HIGH" Label="Tropopause High" Graphic="45110102.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="FRONTAL_SYSTEMS" Label="Frontal Systems" Graphic="45110300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="COLD_FRONT" Label="Cold Front" Graphic="45110301.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="UPPER_COLD_FRONT" Label="Upper Cold Front" Graphic="45110302.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="COLD_FRONTOGENESIS" Label="Cold Frontogenesis" Graphic="45110203.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="COLD_FRONTOLYSIS" Label="Cold Frontolysis" Graphic="45110104.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="WARM_FRONT" Label="Warm Front" Graphic="45110305.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="UPPER_WARM_FRONT" Label="Upper Warm Front" Graphic="45110306.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="WARM_FRONTOGENESIS" Label="Warm Frontogenesis" Graphic="45110307.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="WARM_FRONTOLYSIS" Label="Warm Frontolysis" Graphic="45110308.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="OCCLUDED_FRONT" Label="Occluded Front" Graphic="45110309.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>9</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="UPPER_OCCLUDED_FRONT" Label="Upper Occluded Front" Graphic="45110310.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>0</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="OCCLUDED_FRONTOLYSIS" Label="Occluded Frontolysis" Graphic="45110311.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="STATIONARY_FRONT" Label="Stationary Front" Graphic="45110312.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="UPPER_STATIONARY_FRONT" Label="Upper Stationary Front" Graphic="45110313.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="STATIONARY_FRONTOGENESIS" Label="Stationary Frontogenesis" Graphic="45110314.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="STATIONARY_FRONTOLYSIS" Label="Stationary Frontolysis" Graphic="45110315.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="LINES" Label="Lines" Graphic="45110400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="TROUGH_AXIS" Label="Trough Axis" Graphic="45110401.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="UPPER_TROUGH_AXIS" Label="Upper Trough Axis" Graphic="45110402.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RIDGE_AXIS" Label="Ridge Axis" Graphic="45110403.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SEVERE_SQUALL_LINE" Label="Severe Squall Line" Graphic="45110404.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="INSTABILITY_LINE" Label="Instability Line" Graphic="45110405.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SHEAR_LINE" Label="Shear Line" Graphic="45110406.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="INTER_TROPICAL_CONVERGENCE_ZONE" Label="Inter-Tropical Convergence Zone" Graphic="45110407.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CONVERGENCE_LINE" Label="Convergence Line" Graphic="45110408.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="INTER_TROPICAL_DISCONTINUITY" Label="Inter-Tropical Discontinuity" Graphic="45110409.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>9</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="PRESSURE_TENDENCY" Label="Pressure Tendency" Graphic="45110500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="RISE_THEN_FALL_HIGHER" Label="Rise Then Fall Higher" Graphic="45110501.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RISE_THEN_STEADY" Label="Rise Then Steady" Graphic="45110502.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RISE" Label="Rise" Graphic="45110503.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RISE_THEN_RISE_HIGHER" Label="Rise Then Rise Higher" Graphic="45110504.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="STEADY" Label="Steady" Graphic="45110505.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FALL_THEN_RISE_LOWER" Label="Fall Then Rise Lower" Graphic="45110506.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FALL_THEN_STEADY" Label="Fall Then Steady" Graphic="45110507.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FALL" Label="Fall" Graphic="45110508.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RISE_THEN_FALL_LOWER" Label="Rise Then Fall Lower" Graphic="45110509.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>9</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="TURBULENCE" Label="Turbulence" Graphic="45120000.svg">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>2</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="LIGHT" Label="Light" Graphic="45120100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="MODERATE" Label="Moderate" Graphic="45120200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="SEVERE" Label="Severe" Graphic="45120300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="EXTREME" Label="Extreme" Graphic="45120400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="MOUNTAIN_WAVES" Label="Mountain Waves" Graphic="45120500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="ICING" Label="Icing" Graphic="45130000.svg">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>3</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="CLEAR_ICING" Label="Clear Icing" Graphic="45130100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="LIGHT" Label="Light" Graphic="45130101.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MODERATE" Label="Moderate" Graphic="45130102.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SEVERE" Label="Severe" Graphic="45130103.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="RIME_ICING" Label="Rime Icing" Graphic="45130200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="LIGHT" Label="Light" Graphic="45130201.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MODERATE" Label="Moderate" Graphic="45130202.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SEVERE" Label="Severe" Graphic="45130203.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="MIXED_ICING" Label="Mixed Icing" Graphic="45130300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="LIGHT" Label="Light" Graphic="45130301.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MODERATE" Label="Moderate" Graphic="45130302.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SEVERE" Label="Severe" Graphic="45130303.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="WINDS" Label="Winds" Graphic="45140000.svg">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>4</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="CALM_WINDS" Label="Calm Winds" Graphic="45140100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="WIND_PLOT" Label="Wind Plot" Graphic="45140200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="JET_STREAM" Label="Jet Stream" Graphic="45140300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="STREAM_LINE" Label="Stream Line" Graphic="45140400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="CLOUD_COVER" Label="Cloud Cover" Graphic="45150000.svg">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>5</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="CLOUD_COVERAGE_SYMBOLS" Label="Cloud Coverage Symbols" Graphic="45150100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="CLEAR_SKY" Label="Clear Sky" Graphic="45150101.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FEW_COVERAGE" Label="Few Coverage" Graphic="45150102.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SCATTERED_COVERAGE" Label="Scattered Coverage" Graphic="45150103.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="BROKEN_COVERAGE" Label="Broken Coverage" Graphic="45150104.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="OVERCAST_COVERAGE" Label="Overcast Coverage" Graphic="45150105.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SKY_TOTALLY_OR_PARTIALLY_OBSCURED" Label="Sky Totally or Partially Obscured" Graphic="45150106.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="WEATHER_SYMBOLS" Label="Weather Symbols" Graphic="45160000.svg">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>6</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="RAIN" Label="Rain" Graphic="45160100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="INTERMITTENT_LIGHT" Label="Intermittent Light" Graphic="45160101.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CONTINUOUS_LIGHT" Label="Continuous Light" Graphic="45160102.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="INTERMITTENT_MODERATE" Label="Intermittent Moderate" Graphic="45160103.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="INTERMITTENT_MODERATE_CONTINUOUS_MODERATE" Label="Intermittent Moderate/Continuous Moderate" Graphic="45160104.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="INTERMITTENT_HEAVY" Label="Intermittent Heavy" Graphic="45160105.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="INTERMITTENT_HEAVY_CONTINUOUS_HEAVY" Label="Intermittent Heavy/Continuous Heavy" Graphic="45160106.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="FREEZING_RAIN" Label="Freezing Rain" Graphic="45160200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="LIGHT" Label="Light" Graphic="45160201.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MODERATE_HEAVY" Label="Moderate/Heavy" Graphic="45160202.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="RAIN_SHOWERS" Label="Rain Showers" Graphic="45160300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="LIGHT" Label="Light" Graphic="45160301.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MODERATE_HEAVY" Label="Moderate/Heavy" Graphic="45160302.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TORRENTIAL" Label="Torrential" Graphic="45160303.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="DRIZZLE" Label="Drizzle" Graphic="45160400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="INTERMITTENT_LIGHT" Label="Intermittent Light" Graphic="45160401.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="INTERMITTENT_LIGHT__CONTINUOUS_LIGHT" Label="Intermittent Light/ Continuous Light" Graphic="45160402.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="INTERMITTENT_MODERATE" Label="Intermittent Moderate" Graphic="45160403.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="INTERMITTENT_MODERATE__CONTINUOUS_MODERATE" Label="Intermittent Moderate /Continuous Moderate" Graphic="45160404.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="INTERMITTENT_HEAVY" Label="Intermittent Heavy" Graphic="45160405.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="INTERMITTENT_HEAVY__CONTINUOUS_HEAVY" Label="Intermittent Heavy /Continuous Heavy" Graphic="45160406.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="FREEZING_DRIZZLE" Label="Freezing Drizzle" Graphic="45160500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="LIGHT" Label="Light" Graphic="45160501.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MODERATE_HEAVY" Label="Moderate/Heavy" Graphic="45160502.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="RAIN_AND_SNOW_MIXED" Label="Rain and Snow Mixed" Graphic="45160600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="RAIN_OR_DRIZZLE_AND_SNOW___LIGHT" Label="Rain or Drizzle and Snow - Light" Graphic="45160601.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RAIN_OR_DRIZZLE_AND_SNOW___MODERATE_HEAVY" Label="Rain or Drizzle and Snow - Moderate/Heavy" Graphic="45160502.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RAIN_AND_SNOW_SHOWERS___LIGHT" Label="Rain and Snow Showers - Light" Graphic="45160503.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RAIN_AND_SNOW_SHOWERS___MODERATE_HEAVY" Label="Rain and Snow Showers - Moderate/Heavy" Graphic="45160504.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="SNOW" Label="Snow" Graphic="45160700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="INTERMITTENT_LIGHT" Label="Intermittent Light" Graphic="45160701.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="INTERMITTENT_LIGHT_CONTINUOUS_LIGHT" Label="Intermittent Light/Continuous Light" Graphic="45160702.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="INTERMITTENT_MODERATE" Label="Intermittent Moderate" Graphic="45160703.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="INTERMITTENT_MODERATE__CONTINUOUS_MODERATE" Label="Intermittent Moderate /Continuous Moderate" Graphic="45160704.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="INTERMITTENT_HEAVY" Label="Intermittent Heavy" Graphic="45160705.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="INTERMITTENT_HEAVY__CONTINUOUS_HEAVY" Label="Intermittent Heavy /Continuous Heavy" Graphic="45160706.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="BLOWING_SNOW___LIGHT_MODERATE" Label="Blowing Snow - Light/Moderate" Graphic="45160707.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="BLOWING_SNOW___HEAVY" Label="Blowing Snow - Heavy" Graphic="45160708.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="SNOW_GRAINS" Label="Snow Grains" Graphic="45160800.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="SNOW_SHOWERS" Label="Snow Showers" Graphic="45160900.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="LIGHT" Label="Light" Graphic="45160901.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MODERATE_HEAVY" Label="Moderate/Heavy" Graphic="45160902.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="HAIL" Label="Hail" Graphic="45161000.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="LIGHT_NOT_ASSOCIATED_WITH_THUNDER" Label="Light not Associated with Thunder" Graphic="45161001.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MODERATE_HEAVY_NOT_ASSOCIATED_WITH_THUNDER" Label="Moderate/Heavy not Associated with Thunder" Graphic="45161002.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="ICE_CRYSTALS__DIAMOND_DUST_" Label="Ice Crystals (Diamond Dust)" Graphic="45161100.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ICE_PELLETS__SLEET_" Label="Ice Pellets (Sleet)" Graphic="45161200.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="LIGHT" Label="Light" Graphic="45161201.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MODERATE" Label="Moderate" Graphic="45161202.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="HEAVY" Label="Heavy" Graphic="45161203.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="INVERSION" Label="Inversion" Graphic="45161300.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="STORMS" Label="Storms" Graphic="45161400.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="THUNDERSTORM___NO_PRECIPITATION" Label="Thunderstorm - No Precipitation" Graphic="45161401.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="THUNDERSTORM_LIGHT_TO_MODERATE_WITH_RAIN_SNOW___NO_HAIL" Label="Thunderstorm Light to Moderate with Rain/Snow - No Hail" Graphic="45161402.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="THUNDERSTORM_HEAVY_WITH_RAIN_SNOW____NO_HAIL" Label="Thunderstorm Heavy with Rain/Snow -  No Hail" Graphic="45161403.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="THUNDERSTORM_LIGHT_TO_MODERATE___WITH_HAIL" Label="Thunderstorm Light to Moderate - With Hail" Graphic="45161404.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="THUNDERSTORM_HEAVY___WITH_HAIL" Label="Thunderstorm Heavy - With Hail" Graphic="45161405.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FUNNEL_CLOUD__TORNADO_WATERSPOUT_" Label="Funnel Cloud (Tornado/Waterspout)" Graphic="45161406.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SQUALL" Label="Squall" Graphic="45161407.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="LIGHTNING" Label="Lightning" Graphic="45161408.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="FOG" Label="Fog" Graphic="45161500.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="SHALLOW_PATCHES" Label="Shallow Patches" Graphic="45161501.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SHALLOW_CONTINUOUS" Label="Shallow Continuous" Graphic="45161502.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="PATCHY" Label="Patchy" Graphic="45161503.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SKY_VISIBLE" Label="Sky Visible" Graphic="45161504.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SKY_OBSCURED" Label="Sky Obscured" Graphic="45161505.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FREEZING_SKY_VISIBLE" Label="Freezing-Sky Visible" Graphic="45161506.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FREEZING_SKY_OBSCURED" Label="Freezing-Sky Obscured" Graphic="45161507.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="MIST" Label="Mist" Graphic="45161600.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="SMOKE" Label="Smoke" Graphic="45161700.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="HAZE" Label="Haze" Graphic="45161800.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="DUST_OR_SAND" Label="Dust or Sand" Graphic="45161900.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="LIGHT_TO_MODERATE" Label="Light to Moderate" Graphic="45161901.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SEVERE" Label="Severe" Graphic="45161902.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="DUST_DEVIL" Label="Dust Devil" Graphic="45161903.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="BLOWING_DUST_OR_SAND" Label="Blowing Dust or Sand" Graphic="45161904.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="TROPICAL_STORM_SYSTEMS" Label="Tropical Storm Systems" Graphic="45162000.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="TROPICAL_DEPRESSION" Label="Tropical Depression" Graphic="45162001.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TROPICAL_STORM" Label="Tropical Storm" Graphic="45162002.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="HURRICANE_TYPHOON" Label="Hurricane/Typhoon" Graphic="45162003.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TROPICAL_STORM_WIND_AREAS_AND_DATE_TIME_LABELS" Label="Tropical Storm Wind Areas and Date/Time Labels" Graphic="45162004.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="VOLCANIC_ERUPTION" Label="Volcanic Eruption" Graphic="45162100.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="VOLCANIC_ASH" Label="Volcanic Ash" Graphic="45162101.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="TROPOPAUSE_LEVEL" Label="Tropopause Level" Graphic="45162200.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="FREEZING_LEVEL" Label="Freezing Level" Graphic="45162300.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="PRECIPITATION_OF_UNKNOWN_TYPE_AND_INTENSITY" Label="Precipitation of Unknown Type and Intensity" Graphic="45162400.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="BOUNDED_AREAS_OF_WEATHER" Label="Bounded Areas of Weather" Graphic="45170000.svg">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>7</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="INSTRUMENT_FLIGHT_RULE__IFR_" Label="Instrument Flight Rule (IFR)" Graphic="45170100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="MARGINAL_VISUAL_FLIGHT_RULE__MVFR_" Label="Marginal Visual Flight Rule (MVFR)" Graphic="45170200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="TURBULENCE" Label="Turbulence" Graphic="45170300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ICING" Label="Icing" Graphic="45170400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="LIQUID_PRECIPITATION___NON_CONVECTIVE_CONTINUOUS_OR_INTERMITTENT" Label="Liquid Precipitation - Non-Convective Continuous or Intermittent" Graphic="45170500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="LIQUID_PRECIPITATION___CONVECTIVE" Label="Liquid Precipitation - Convective" Graphic="45170501.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="FREEZING__FROZEN_PRECIPITATION" Label="Freezing /Frozen Precipitation" Graphic="45170600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="THUNDERSTORM" Label="Thunderstorm" Graphic="45170700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="FOG" Label="Fog" Graphic="45170800.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="DUST_OR_SAND" Label="Dust or Sand" Graphic="45170900.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="OPERATOR_DEFINED_FREEFORM" Label="Operator-Defined Freeform" Graphic="45171000.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="ISOPLETHS" Label="Isopleths" Graphic="45180000.svg">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>8</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="ISOBAR___SURFACE" Label="Isobar - Surface" Graphic="45180100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="CONTOUR___UPPER_AIR" Label="Contour - Upper Air" Graphic="45180200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ISOTHERM" Label="Isotherm" Graphic="45180300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ISOTACH" Label="Isotach" Graphic="45180400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ISODROSOTHERM" Label="Isodrosotherm" Graphic="45180500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="THICKNESS" Label="Thickness" Graphic="45180600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="OPERATOR_DEFINED_FREEFORM" Label="Operator-Defined Freeform" Graphic="45180700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="STATE_OF_THE_GROUND" Label="State of the Ground" Graphic="45190000.svg">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>9</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="WITHOUT_SNOW_OR_MEASURABLE_ICE_COVER" Label="Without Snow or Measurable Ice Cover" Graphic="45190100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="SURFACE_DRY_WITHOUT_CRACKS_OR_APPRECIABLE_DUST_OR_LOOSE_SAND" Label="Surface Dry Without Cracks or Appreciable Dust or Loose Sand" Graphic="45190101.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SURFACE_MOIST" Label="Surface Moist" Graphic="45190102.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SURFACE_WET_STANDING_WATER_IN_SMALL_OR_LARGE_POOLS" Label="Surface Wet-Standing Water in Small or Large Pools" Graphic="45190103.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SURFACE_FLOODED" Label="Surface Flooded" Graphic="45190104.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SURFACE_FROZEN" Label="Surface Frozen" Graphic="45190105.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="GLAZE__THIN_ICE__ON_GROUND" Label="Glaze (Thin Ice) on Ground" Graphic="45190106.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="LOOSE_DRY_DUST_OR_SAND_NOT_COVERING_GROUND_COMPLETELY" Label="Loose Dry Dust or Sand not Covering Ground Completely" Graphic="45190107.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="THIN_LOOSE_DRY_DUST_OR_SAND_NOT_COVERING_GROUND_COMPLETELY" Label="Thin Loose Dry Dust or Sand not Covering Ground Completely" Graphic="45190108.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MODERATE_THICK_LOOSE_DRY_DUST_OR_SAND_NOT_COVERING_GROUND_COMPLETELY" Label="Moderate/Thick Loose Dry Dust or Sand not Covering Ground Completely" Graphic="45190109.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>9</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="EXTREMELY_DRY_WITH_CRACKS" Label="Extremely Dry with Cracks" Graphic="45190110.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>0</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="WITH_SNOW_OR_MEASURABLE_ICE_COVER" Label="With Snow or Measurable Ice Cover" Graphic="45190200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="PREDOMINATELY_ICE_COVERED" Label="Predominately Ice Covered" Graphic="45190201.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="COMPACT_OR_WET_SNOW__WITH_OR_WITHOUT_ICE__COVERING_LESS_THAN_ONE_HALF_OF_GROUND" Label="Compact or Wet Snow (with or without Ice) Covering Less Than One-Half of Ground" Graphic="45190202.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="COMPACT_OR_WET_SNOW__WITH_OR_WITHOUT_ICE__COVERING__AT_LEAST_ONE_HALF_OF_GROUND_BUT_GROUND_NOT_COMPLETELY_COVERED" Label="Compact or Wet Snow (with or without Ice) Covering  at Least One-Half of Ground-but Ground not Completely Covered" Graphic="45190203.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="EVEN_LAYER_OF_COMPACT_OR_WET_SNOW_COVERING_GROUND_COMPLETELY" Label="Even Layer of Compact or Wet Snow Covering Ground Completely" Graphic="45190204.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="UNEVEN_LAYER_OF_COMPACT_OR_WET_SNOW_COVERING_GROUND_COMPLETELY" Label="Uneven Layer of Compact or Wet Snow Covering Ground Completely" Graphic="45190205.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="LOOSE_DRY_SNOW_COVERING_LESS_THAN_ONE_HALF_OF_GROUND" Label="Loose Dry Snow Covering Less Than One-Half of Ground" Graphic="45190206.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="LOOSE_DRY_SNOW_COVERING_AT_LEAST_ONE_HALF_OF_GROUND_BUT_GROUND_NOT_COMPLETELY_COVERED" Label="Loose Dry Snow Covering at Least One-Half of Ground-but Ground not Completely Covered" Graphic="45190207.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="EVEN_LAYER_OF_LOOSE_DRY_SNOW_COVERING_GROUND_COMPLETELY" Label="Even Layer of Loose Dry Snow Covering Ground Completely" Graphic="45190208.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="UNEVEN_LAYER_OF_LOOSE_DRY_SNOW_COVERING_GROUND_COMPLETELY" Label="Uneven Layer of Loose Dry Snow Covering Ground Completely" Graphic="45190209.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>9</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SNOW_COVERING_GROUND_COMPLETELY_DEEP_DRIFTS" Label="Snow Covering Ground Completely-Deep Drifts" Graphic="45190210.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>0</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+	</Entities>
+	<SectorOneModifiers></SectorOneModifiers>
+	<SectorTwoModifiers></SectorTwoModifiers>
+</SymbolSet>
