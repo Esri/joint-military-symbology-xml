@@ -187,6 +187,13 @@
             <DigitTwo>2</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
+        
+        <SymbolSetRef ID="SS_SIGINT_AIR" Label="Signals Intelligence - Air" Instance="jmsml_D_SIGINT_Air.xml">
+          <SymbolSetCode>
+            <DigitOne>5</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
       </SymbolSets>
     </Dimension>
 
@@ -215,6 +222,13 @@
           <SymbolSetCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>6</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
+        
+        <SymbolSetRef ID="SS_SIGINT_SPACE" Label="Signals Intelligence - Space" Instance="jmsml_D_SIGINT_Space.xml">
+          <SymbolSetCode>
+            <DigitOne>5</DigitOne>
+            <DigitTwo>0</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
       </SymbolSets>
@@ -262,6 +276,7 @@
             <DigitTwo>0</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
+        
         <SymbolSetRef ID="SS_LAND_CIVILIAN" Label="Land Civilian" Instance="jmsml_D_Land_Civilian.xml">
           <SymbolSetCode>
             <DigitOne>1</DigitOne>
@@ -311,6 +326,13 @@
           <SymbolSetCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>5</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
+        
+        <SymbolSetRef ID="SS_SIGINT_LAND" Label="Signals Intelligence - Land" Instance="jmsml_D_SIGINT_Land.xml">
+          <SymbolSetCode>
+            <DigitOne>5</DigitOne>
+            <DigitTwo>2</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
       </SymbolSets>
@@ -384,6 +406,13 @@
             <DigitTwo>0</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
+        
+        <SymbolSetRef ID="SS_SIGINT_SURFACE" Label="Signals Intelligence - Surface" Instance="jmsml_D_SIGINT_Surface.xml">
+          <SymbolSetCode>
+            <DigitOne>5</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
       </SymbolSets>
     </Dimension>
 
@@ -404,6 +433,20 @@
           <SymbolSetCode>
             <DigitOne>3</DigitOne>
             <DigitTwo>5</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
+
+        <SymbolSetRef ID="SS_MINE_WARFARE" Label="Mine Warfare" Instance="jmsml_D_Mine_Warfare.xml">
+          <SymbolSetCode>
+            <DigitOne>3</DigitOne>
+            <DigitTwo>5</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
+        
+        <SymbolSetRef ID="SS_SIGINT_SUBSURFACE" Label="Signals Intelligence - Subsurface" Instance="jmsml_D_SIGINT_Subsurface.xml">
+          <SymbolSetCode>
+            <DigitOne>5</DigitOne>
+            <DigitTwo>4</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
       </SymbolSets>
