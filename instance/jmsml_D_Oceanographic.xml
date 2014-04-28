@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="AN_ID" Label="A Label" DimensionID="A_DIMENSION">
+<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="SS_OCEANIC" Label="Meteorological - Oceanographic" DimensionID="METOC">
 	<SymbolSetCode>
 		<DigitOne>4</DigitOne>
 		<DigitTwo>6</DigitTwo>
 	</SymbolSetCode>
 	<LegacyCodingSchemeCode Name="2525C">W</LegacyCodingSchemeCode>
 	<Entities>
-		<Entity ID="ICE_SYSTEMS" Label="Ice Systems" Graphic="46110000.svg">
+		<Entity ID="ICE_SYSTEMS" Label="Ice Systems">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>1</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="ICEBERGS" Label="Icebergs" Graphic="46110100.svg">
+				<EntityType ID="ICEBERGS" Label="Icebergs">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
@@ -24,19 +24,19 @@
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="BELTS_AND_STRIPS" Label="Belts and Strips" Graphic="46110102.svg">
+						<EntitySubType ID="ICEBERGS_BELTS_STRIPS" Label="Belts and Strips" Graphic="46110102.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="GENERAL" Label="General" Graphic="46110103.svg">
+						<EntitySubType ID="ICEBERGS_GENERAL" Label="General" Graphic="46110103.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="MANY_ICEBERGS___GENERAL" Label="Many Icebergs - General" Graphic="46110104.svg">
+						<EntitySubType ID="MANY_ICEBERGS_GENERAL" Label="Many Icebergs - General" Graphic="46110104.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>4</DigitTwo>
@@ -81,7 +81,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="ICE_CONCENTRATION" Label="Ice Concentration" Graphic="46110200.svg">
+				<EntityType ID="ICE_CONCENTRATION" Label="Ice Concentration">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
@@ -108,7 +108,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="DYNAMIC_PROCESSES" Label="Dynamic Processes" Graphic="46110300.svg">
+				<EntityType ID="DYNAMIC_PROCESSES" Label="Dynamic Processes">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>3</DigitTwo>
@@ -126,13 +126,13 @@
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="SHEARING_OR_SHEAR_ZONE" Label="Shearing or Shear Zone" Graphic="46110303.svg">
+						<EntitySubType ID="SHEARING_SHEAR_ZONE" Label="Shearing or Shear Zone" Graphic="46110303.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="ICE_DRIFT__DIRECTION_" Label="Ice Drift (Direction)" Graphic="46110304.svg">
+						<EntitySubType ID="ICE_DRIFT_DIRECTION" Label="Ice Drift (Direction)" Graphic="46110304.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>4</DigitTwo>
@@ -147,19 +147,19 @@
 						<DigitTwo>4</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="ICE_THICKNESS__OBSERVED_" Label="Ice Thickness (Observed)" Graphic="46110401.svg">
+						<EntitySubType ID="ICE_THICKNESS_OBSERVED" Label="Ice Thickness (Observed)" Graphic="46110401.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="ICE_THICKNESS__ESTIMATED_" Label="Ice Thickness (Estimated)" Graphic="46110402.svg">
+						<EntitySubType ID="ICE_THICKNESS_ESTIMATED" Label="Ice Thickness (Estimated)" Graphic="46110402.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="MELT_PUDDLES_OR_FLOODED_ICE" Label="Melt Puddles or Flooded Ice" Graphic="46110403.svg">
+						<EntitySubType ID="MELT_PUDDLES_FLOODED_ICE" Label="Melt Puddles or Flooded Ice" Graphic="46110403.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
@@ -168,43 +168,43 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="LIMITS" Label="Limits" Graphic="46110500.svg">
+				<EntityType ID="ICE_LIMITS" Label="Limits">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>5</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="LIMITS_OF_VISUAL_OBSERVATION" Label="Limits of Visual Observation" Graphic="46110501.svg">
+						<EntitySubType ID="LIMITS_VISUAL_OBSERVATION" Label="Limits of Visual Observation" Graphic="46110501.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="LIMITS_OF_UNDER_CAST" Label="Limits of Under Cast" Graphic="46110502.svg">
+						<EntitySubType ID="LIMITS_UNDER_CAST" Label="Limits of Under Cast" Graphic="46110502.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="LIMITS_OF_RADAR_OBSERVATION" Label="Limits of Radar Observation" Graphic="46110503.svg">
+						<EntitySubType ID="LIMITS_RADAR_OBSERVATION" Label="Limits of Radar Observation" Graphic="46110503.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="OBSERVED_ICE_EDGE_OR_BOUNDARY" Label="Observed Ice Edge or Boundary" Graphic="46110504.svg">
+						<EntitySubType ID="OBSERVED_ICE_EDGE_BOUNDARY" Label="Observed Ice Edge or Boundary" Graphic="46110504.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>4</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="ESTIMATED_ICE_EDGE_OR_BOUNDARY" Label="Estimated Ice Edge or Boundary" Graphic="46110505.svg">
+						<EntitySubType ID="ESTIMATED_ICE_EDGE_BOUNDARY" Label="Estimated Ice Edge or Boundary" Graphic="46110505.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>5</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="ICE_EDGE_OR_BOUNDARY_FROM_RADAR" Label="Ice Edge or Boundary From Radar" Graphic="46110506.svg">
+						<EntitySubType ID="ICE_EDGE_BOUNDARY_FROM_RADAR" Label="Ice Edge or Boundary From Radar" Graphic="46110506.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>6</DigitTwo>
@@ -213,7 +213,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="OPENINGS_IN_THE_ICE" Label="Openings in the Ice" Graphic="46110600.svg">
+				<EntityType ID="OPENINGS_IN_THE_ICE" Label="Openings in the Ice">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>6</DigitTwo>
@@ -225,7 +225,7 @@
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="CRACKS_AT_A_SPECIFIC_LOCATION" Label="Cracks at a Specific Location" Graphic="46110602.svg">
+						<EntitySubType ID="CRACKS_SPECIFIC_LOCATION" Label="Cracks at a Specific Location" Graphic="46110602.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
@@ -252,7 +252,7 @@
 						<DigitTwo>7</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="SASTRUGI__WITH_ORIENTATION_" Label="Sastrugi (with Orientation)" Graphic="46110701.svg">
+						<EntitySubType ID="SASTRUGI_WITH_ORIENTATION" Label="Sastrugi (with Orientation)" Graphic="46110701.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
@@ -261,13 +261,13 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="TOPOGRAPHICAL_FEATURES" Label="Topographical Features" Graphic="46110800.svg">
+				<EntityType ID="TOPOGRAPHICAL_FEATURES" Label="Topographical Features">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>8</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="RIDGES_OR_HUMMOCKS" Label="Ridges or Hummocks" Graphic="46110801.svg">
+						<EntitySubType ID="RIDGES_HUMMOCKS" Label="Ridges or Hummocks" Graphic="46110801.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
@@ -290,13 +290,13 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="HYDROGRAPHY" Label="Hydrography" Graphic="46120000.svg">
+		<Entity ID="HYDROGRAPHY" Label="Hydrography">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>2</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="DEPTH" Label="Depth" Graphic="46120100.svg">
+				<EntityType ID="DEPTH" Label="Depth">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
@@ -329,7 +329,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="COASTAL_HYDROGRAPHY" Label="Coastal Hydrography" Graphic="46120200.svg">
+				<EntityType ID="COASTAL_HYDROGRAPHY" Label="Coastal Hydrography">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
@@ -359,13 +359,13 @@
 								<DigitTwo>4</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="FORESHORE___LINE" Label="Foreshore - Line" Graphic="46120205.svg">
+						<EntitySubType ID="FORESHORE_LINE" Label="Foreshore - Line" Graphic="46120205.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>5</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="FORESHORE___AREA" Label="Foreshore - Area" Graphic="46120206.svg">
+						<EntitySubType ID="FORESHORE_AREA" Label="Foreshore - Area" Graphic="46120206.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>6</DigitTwo>
@@ -374,43 +374,43 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="PORTS_AND_HARBORS" Label="Ports and Harbors" Graphic="46120300.svg">
+				<EntityType ID="PORTS_HARBORS" Label="Ports and Harbors">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>3</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="PORTS" Label="Ports" Graphic="46120301.svg">
+						<EntitySubType ID="PORTS" Label="Ports">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="BERTHS__ONSHORE_" Label="Berths (Onshore)" Graphic="46120302.svg">
+						<EntitySubType ID="BERTHS_ONSHORE" Label="Berths (Onshore)" Graphic="46120302.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="BERTHS__ANCHOR_" Label="Berths (Anchor)" Graphic="46120303.svg">
+						<EntitySubType ID="BERTHS_ANCHOR" Label="Berths (Anchor)" Graphic="46120303.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="ANCHORAGE___POINT" Label="Anchorage - Point" Graphic="46120304.svg">
+						<EntitySubType ID="ANCHORAGE_POINT" Label="Anchorage - Point" Graphic="46120304.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>4</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="ANCHORAGE___LINE" Label="Anchorage - Line" Graphic="46120305.svg">
+						<EntitySubType ID="ANCHORAGE_LINE" Label="Anchorage - Line" Graphic="46120305.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>5</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="ANCHORAGE___AREA" Label="Anchorage - Area" Graphic="46120306.svg">
+						<EntitySubType ID="ANCHORAGE_AREA" Label="Anchorage - Area" Graphic="46120306.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>6</DigitTwo>
@@ -428,31 +428,31 @@
 								<DigitTwo>8</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="FISHING_HARBOR___POINT" Label="Fishing Harbor - Point" Graphic="46120309.svg">
+						<EntitySubType ID="FISHING_HARBOR_POINT" Label="Fishing Harbor - Point" Graphic="46120309.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>9</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="FISH_WEIRS___POINT" Label="Fish Weirs - Point" Graphic="46120310.svg">
+						<EntitySubType ID="FISH_WEIRS_POINT" Label="Fish Weirs - Point" Graphic="46120310.svg">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>0</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="FISH_STAKES___POINT" Label="Fish Stakes - Point" Graphic="46120311.svg">
+						<EntitySubType ID="FISH_STAKES_POINT" Label="Fish Stakes - Point" Graphic="46120311.svg">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="FISH_TRAPS___AREA" Label="Fish Traps - Area" Graphic="46120312.svg">
+						<EntitySubType ID="FISH_TRAPS_AREA" Label="Fish Traps - Area" Graphic="46120312.svg">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="FACILITIES" Label="Facilities" Graphic="46120313.svg">
+						<EntitySubType ID="FACILITIES" Label="Facilities">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>3</DigitTwo>
@@ -470,31 +470,31 @@
 								<DigitTwo>5</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="OFFSHORE_LOADING_FACILITY___POINT" Label="Offshore Loading Facility - Point" Graphic="46120316.svg">
+						<EntitySubType ID="OFFSHORE_LOADING_FACILITY_POINT" Label="Offshore Loading Facility - Point" Graphic="46120316.svg">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>6</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="OFFSHORE_LOADING_FACILITY___LINE" Label="Offshore Loading Facility - Line" Graphic="46120317.svg">
+						<EntitySubType ID="OFFSHORE_LOADING_FACILITY_LINE" Label="Offshore Loading Facility - Line" Graphic="46120317.svg">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>7</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="OFFSHORE_LOADING_FACILITY___AREA" Label="Offshore Loading Facility - Area" Graphic="46120318.svg">
+						<EntitySubType ID="OFFSHORE_LOADING_FACILITY_AREA" Label="Offshore Loading Facility - Area" Graphic="46120318.svg">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>8</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="RAMP___ABOVE_WATER" Label="Ramp - Above Water" Graphic="46120319.svg">
+						<EntitySubType ID="RAMP_ABOVE_WATER" Label="Ramp - Above Water" Graphic="46120319.svg">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>9</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="RAMP___BELOW_WATER" Label="Ramp - Below Water" Graphic="46120320.svg">
+						<EntitySubType ID="RAMP_BELOW_WATER" Label="Ramp - Below Water" Graphic="46120320.svg">
 							<EntitySubTypeCode>
 								<DigitOne>2</DigitOne>
 								<DigitTwo>0</DigitTwo>
@@ -524,19 +524,19 @@
 								<DigitTwo>4</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="SHORELINE_PROTECTION" Label="Shoreline Protection" Graphic="46120325.svg">
+						<EntitySubType ID="SHORELINE_PROTECTION" Label="Shoreline Protection">
 							<EntitySubTypeCode>
 								<DigitOne>2</DigitOne>
 								<DigitTwo>5</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="BREAKWATER_GROIN_JETTY___ABOVE_WATER" Label="Breakwater/Groin/Jetty - Above Water" Graphic="46120326.svg">
+						<EntitySubType ID="BREAKWATER_GROIN_JETTY_ABOVE_WATER" Label="Breakwater/Groin/Jetty - Above Water" Graphic="46120326.svg">
 							<EntitySubTypeCode>
 								<DigitOne>2</DigitOne>
 								<DigitTwo>6</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="BREAKWATER_GROIN_JETTY___BELOW_WATER" Label="Breakwater/Groin/Jetty - Below Water" Graphic="46120327.svg">
+						<EntitySubType ID="BREAKWATER_GROIN_JETTY_BELOW_WATER" Label="Breakwater/Groin/Jetty - Below Water" Graphic="46120327.svg">
 							<EntitySubTypeCode>
 								<DigitOne>2</DigitOne>
 								<DigitTwo>7</DigitTwo>
@@ -551,7 +551,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="AIDS_TO_NAVIGATION" Label="Aids to Navigation" Graphic="46120400.svg">
+				<EntityType ID="AIDS_NAVIGATION" Label="Aids to Navigation">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>4</DigitTwo>
@@ -575,13 +575,13 @@
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="PERCHES_STAKES___POINT" Label="Perches/Stakes - Point" Graphic="46120404.svg">
+						<EntitySubType ID="PERCHES_STAKES_POINT" Label="Perches/Stakes - Point" Graphic="46120404.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>4</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="PERCHES_STAKES___AREA" Label="Perches/Stakes - Area" Graphic="46120405.svg">
+						<EntitySubType ID="PERCHES_STAKES_AREA" Label="Perches/Stakes - Area" Graphic="46120405.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>5</DigitTwo>
@@ -614,7 +614,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="DANGERS_HAZARDS" Label="Dangers/Hazards" Graphic="46120500.svg">
+				<EntityType ID="DANGERS_HAZARDS" Label="Dangers/Hazards">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>5</DigitTwo>
@@ -638,25 +638,25 @@
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="FOUL_GROUND___POINT" Label="Foul Ground - Point" Graphic="46120504.svg">
+						<EntitySubType ID="FOUL_GROUND_POINT" Label="Foul Ground - Point" Graphic="46120504.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>4</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="FOUL_GROUND___AREA" Label="Foul Ground - Area" Graphic="46120505.svg">
+						<EntitySubType ID="FOUL_GROUND_AREA" Label="Foul Ground - Area" Graphic="46120505.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>5</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="KELP_SEAWEED___POINT" Label="Kelp/Seaweed - Point" Graphic="46120506.svg">
+						<EntitySubType ID="KELP_SEAWEED_POINT" Label="Kelp/Seaweed - Point" Graphic="46120506.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>6</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="KELP_SEAWEED___AREA" Label="Kelp/Seaweed - Area" Graphic="46120507.svg">
+						<EntitySubType ID="KELP_SEAWEED_AREA" Label="Kelp/Seaweed - Area" Graphic="46120507.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>7</DigitTwo>
@@ -668,13 +668,13 @@
 								<DigitTwo>8</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="WRECK__UNCOVERS_" Label="Wreck (Uncovers)" Graphic="46120509.svg">
+						<EntitySubType ID="WRECK_UNCOVERS" Label="Wreck (Uncovers)" Graphic="46120509.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>9</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="WRECK__SUBMERGED_" Label="Wreck (Submerged)" Graphic="46120510.svg">
+						<EntitySubType ID="WRECK_SUBMERGED" Label="Wreck (Submerged)" Graphic="46120510.svg">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>0</DigitTwo>
@@ -707,91 +707,91 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="BOTTOM_FEATURES" Label="Bottom Features" Graphic="46120600.svg">
+				<EntityType ID="BOTTOM_FEATURES" Label="Bottom Features">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>6</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="BOTTOM_CHARACTERISTICS____SAND" Label="Bottom Characteristics  - Sand" Graphic="46120601.svg">
+						<EntitySubType ID="BOTTOM_CHARACTERISTICS_SAND" Label="Bottom Characteristics - Sand" Graphic="46120601.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="BOTTOM_CHARACTERISTICS____MUD" Label="Bottom Characteristics  - Mud" Graphic="46120602.svg">
+						<EntitySubType ID="BOTTOM_CHARACTERISTICS_MUD" Label="Bottom Characteristics - Mud" Graphic="46120602.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="BOTTOM_CHARACTERISTICS____CLAY" Label="Bottom Characteristics  - Clay" Graphic="46120603.svg">
+						<EntitySubType ID="BOTTOM_CHARACTERISTICS_CLAY" Label="Bottom Characteristics - Clay" Graphic="46120603.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="BOTTOM_CHARACTERISTICS____SILT" Label="Bottom Characteristics  - Silt" Graphic="46120604.svg">
+						<EntitySubType ID="BOTTOM_CHARACTERISTICS_SILT" Label="Bottom Characteristics - Silt" Graphic="46120604.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>4</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="BOTTOM_CHARACTERISTICS____STONES" Label="Bottom Characteristics  - Stones" Graphic="46120605.svg">
+						<EntitySubType ID="BOTTOM_CHARACTERISTICS_STONES" Label="Bottom Characteristics - Stones" Graphic="46120605.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>5</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="BOTTOM_CHARACTERISTICS____GRAVEL" Label="Bottom Characteristics  - Gravel" Graphic="46120606.svg">
+						<EntitySubType ID="BOTTOM_CHARACTERISTICS_GRAVEL" Label="Bottom Characteristics - Gravel" Graphic="46120606.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>6</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="BOTTOM_CHARACTERISTICS____PEBBLES" Label="Bottom Characteristics  - Pebbles" Graphic="46120607.svg">
+						<EntitySubType ID="BOTTOM_CHARACTERISTICS_PEBBLES" Label="Bottom Characteristics - Pebbles" Graphic="46120607.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>7</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="BOTTOM_CHARACTERISTICS____COBBLES" Label="Bottom Characteristics  - Cobbles" Graphic="46120608.svg">
+						<EntitySubType ID="BOTTOM_CHARACTERISTICS_COBBLES" Label="Bottom Characteristics - Cobbles" Graphic="46120608.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>8</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="BOTTOM_CHARACTERISTICS____ROCK" Label="Bottom Characteristics  - Rock" Graphic="46120609.svg">
+						<EntitySubType ID="BOTTOM_CHARACTERISTICS_ROCK" Label="Bottom Characteristics - Rock" Graphic="46120609.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>9</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="BOTTOM_CHARACTERISTICS____CORAL" Label="Bottom Characteristics  - Coral" Graphic="46120610.svg">
+						<EntitySubType ID="BOTTOM_CHARACTERISTICS_CORAL" Label="Bottom Characteristics - Coral" Graphic="46120610.svg">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>0</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="BOTTOM_CHARACTERISTICS____SHELL" Label="Bottom Characteristics  - Shell" Graphic="46120611.svg">
+						<EntitySubType ID="BOTTOM_CHARACTERISTICS_SHELL" Label="Bottom Characteristics - Shell" Graphic="46120611.svg">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="QUALIFYING_TERMS___FINE" Label="Qualifying Terms - Fine" Graphic="46120612.svg">
+						<EntitySubType ID="QUALIFYING_TERMS_FINE" Label="Qualifying Terms - Fine" Graphic="46120612.svg">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="QUALIFYING_TERMS___MEDIUM" Label="Qualifying Terms - Medium" Graphic="46120613.svg">
+						<EntitySubType ID="QUALIFYING_TERMS_MEDIUM" Label="Qualifying Terms - Medium" Graphic="46120613.svg">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="QUALIFYING_TERMS___COARSE" Label="Qualifying Terms - Coarse" Graphic="46120614.svg">
+						<EntitySubType ID="QUALIFYING_TERMS_COARSE" Label="Qualifying Terms - Coarse" Graphic="46120614.svg">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>4</DigitTwo>
@@ -800,7 +800,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="TIDE_AND_CURRENT" Label="Tide and Current" Graphic="46120700.svg">
+				<EntityType ID="TIDE_AND_CURRENT" Label="Tide and Current">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>7</DigitTwo>
@@ -812,13 +812,13 @@
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="CURRENT_FLOW___EBB" Label="Current Flow - Ebb" Graphic="46120702.svg">
+						<EntitySubType ID="CURRENT_FLOW_EBB" Label="Current Flow - Ebb" Graphic="46120702.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="CURRENT_FLOW___FLOOD" Label="Current Flow - Flood" Graphic="46120703.svg">
+						<EntitySubType ID="CURRENT_FLOW_FLOOD" Label="Current Flow - Flood" Graphic="46120703.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
@@ -841,19 +841,19 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="OCEANOGRAPHY" Label="Oceanography" Graphic="46130000.svg">
+		<Entity ID="OCEANOGRAPHY" Label="Oceanography">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>3</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="BIOLUMINESCENCE" Label="Bioluminescence" Graphic="46130100.svg">
+				<EntityType ID="BIOLUMINESCENCE" Label="Bioluminescence" Remarks="Measured by Visual Detection Ratio (VDR)">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="VISUAL_DETECTION_RATIO__VDR__LEVEL_1_2" Label="Visual Detection Ratio (VDR) Level 1-2" Graphic="46130101.svg">
+						<EntitySubType ID="VDR_LEVEL_1_2" Label="VDR Level 1-2" Graphic="46130101.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
@@ -910,31 +910,31 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="BEACH_SLOPE" Label="Beach Slope" Graphic="46130200.svg">
+				<EntityType ID="BEACH_SLOPE" Label="Beach Slope">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="FLAT" Label="Flat" Graphic="46130201.svg">
+						<EntitySubType ID="BEACH_SLOPE_FLAT" Label="Flat" Graphic="46130201.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="GENTLE" Label="Gentle" Graphic="46130202.svg">
+						<EntitySubType ID="BEACH_SLOPE_GENTLE" Label="Gentle" Graphic="46130202.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="MODERATE" Label="Moderate" Graphic="46130203.svg">
+						<EntitySubType ID="BEACH_SLOPE_MODERATE" Label="Moderate" Graphic="46130203.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="STEEP" Label="Steep" Graphic="46130204.svg">
+						<EntitySubType ID="BEACH_SLOPE_STEEP" Label="Steep" Graphic="46130204.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>4</DigitTwo>
@@ -945,181 +945,181 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="GEOPHYSICS_ACOUSTICS" Label="Geophysics/Acoustics" Graphic="46140000.svg">
+		<Entity ID="GEOPHYSICS_ACOUSTICS" Label="Geophysics/Acoustics">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>4</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="MINE_WARFARE__MIW__BOTTOM_DESCRIPTORS" Label="Mine Warfare (MIW) Bottom Descriptors" Graphic="46140100.svg">
+				<EntityType ID="MINE_WARFARE_MIW_BOTTOM_DESCRIPTORS" Label="Mine Warfare (MIW) Bottom Descriptors">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="MIW_BOTTOM_SEDIMENTS___SOLID_ROCK" Label="MIW Bottom Sediments - Solid Rock" Graphic="46140101.svg">
+						<EntitySubType ID="MIW_BOTTOM_SEDIMENTS_SOLID_ROCK" Label="MIW Bottom Sediments - Solid Rock" Graphic="46140101.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="MIW_BOTTOM_SEDIMENTS___CLAY" Label="MIW Bottom Sediments - Clay" Graphic="46140102.svg">
+						<EntitySubType ID="MIW_BOTTOM_SEDIMENTS_CLAY" Label="MIW Bottom Sediments - Clay" Graphic="46140102.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="MIW_BOTTOM_SEDIMENTS___VERY_COARSE_SAND" Label="MIW Bottom Sediments - Very Coarse Sand" Graphic="46140103.svg">
+						<EntitySubType ID="MIW_BOTTOM_SEDIMENTS_VERY_COARSE_SAND" Label="MIW Bottom Sediments - Very Coarse Sand" Graphic="46140103.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="MIW_BOTTOM_SEDIMENTS___COARSE_SAND" Label="MIW Bottom Sediments - Coarse Sand" Graphic="46140104.svg">
+						<EntitySubType ID="MIW_BOTTOM_SEDIMENTS_COARSE_SAND" Label="MIW Bottom Sediments - Coarse Sand" Graphic="46140104.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>4</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="MIW_BOTTOM_SEDIMENTS___MEDIUM_SAND" Label="MIW Bottom Sediments - Medium Sand" Graphic="46140105.svg">
+						<EntitySubType ID="MIW_BOTTOM_SEDIMENTS_MEDIUM_SAND" Label="MIW Bottom Sediments - Medium Sand" Graphic="46140105.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>5</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="MIW_BOTTOM_SEDIMENTS___FINE_SAND" Label="MIW Bottom Sediments - Fine Sand" Graphic="46140106.svg">
+						<EntitySubType ID="MIW_BOTTOM_SEDIMENTS_FINE_SAND" Label="MIW Bottom Sediments - Fine Sand" Graphic="46140106.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>6</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="MIW_BOTTOM_SEDIMENTS___VERY_FINE_SAND" Label="MIW Bottom Sediments - Very Fine Sand" Graphic="46140107.svg">
+						<EntitySubType ID="MIW_BOTTOM_SEDIMENTS_VERY_FINE_SAND" Label="MIW Bottom Sediments - Very Fine Sand" Graphic="46140107.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>7</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="MIW_BOTTOM_SEDIMENTS___VERY_FINE_SILT" Label="MIW Bottom Sediments - Very Fine Silt" Graphic="46140108.svg">
+						<EntitySubType ID="MIW_BOTTOM_SEDIMENTS_VERY_FINE_SILT" Label="MIW Bottom Sediments - Very Fine Silt" Graphic="46140108.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>8</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="MIW_BOTTOM_SEDIMENTS___FINE_SILT" Label="MIW Bottom Sediments - Fine Silt" Graphic="46140109.svg">
+						<EntitySubType ID="MIW_BOTTOM_SEDIMENTS_FINE_SILT" Label="MIW Bottom Sediments - Fine Silt" Graphic="46140109.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>9</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="MIW_BOTTOM_SEDIMENTS___MEDIUM_SILT" Label="MIW Bottom Sediments - Medium Silt" Graphic="46140110.svg">
+						<EntitySubType ID="MIW_BOTTOM_SEDIMENTS_MEDIUM_SILT" Label="MIW Bottom Sediments - Medium Silt" Graphic="46140110.svg">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>0</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="MIW_BOTTOM_SEDIMENTS___COARSE_SILT" Label="MIW Bottom Sediments - Coarse Silt" Graphic="46140111.svg">
+						<EntitySubType ID="MIW_BOTTOM_SEDIMENTS_COARSE_SILT" Label="MIW Bottom Sediments - Coarse Silt" Graphic="46140111.svg">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="MIW_BOTTOM_SEDIMENTS___BOULDERS" Label="MIW Bottom Sediments - Boulders" Graphic="46140112.svg">
+						<EntitySubType ID="MIW_BOTTOM_SEDIMENTS_BOULDERS" Label="MIW Bottom Sediments - Boulders" Graphic="46140112.svg">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="MIW_BOTTOM_SEDIMENTS___COBBLES_OYSTER_SHELLS" Label="MIW Bottom Sediments - Cobbles-Oyster Shells" Graphic="46140113.svg">
+						<EntitySubType ID="MIW_BOTTOM_SEDIMENTS_COBBLES_OYSTER_SHELLS" Label="MIW Bottom Sediments - Cobbles-Oyster Shells" Graphic="46140113.svg">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="MIW_BOTTOM_SEDIMENTS___PEBBLES_SHELLS" Label="MIW Bottom Sediments - Pebbles-Shells" Graphic="46140114.svg">
+						<EntitySubType ID="MIW_BOTTOM_SEDIMENTS_PEBBLES_SHELLS" Label="MIW Bottom Sediments - Pebbles-Shells" Graphic="46140114.svg">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>4</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="MIW_BOTTOM_SEDIMENTS___SAND_AND_SHELLS" Label="MIW Bottom Sediments - Sand and Shells" Graphic="46140115.svg">
+						<EntitySubType ID="MIW_BOTTOM_SEDIMENTS_SAND_AND_SHELLS" Label="MIW Bottom Sediments - Sand and Shells" Graphic="46140115.svg">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>5</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="MIW_BOTTOM_SEDIMENT___LAND" Label="MIW Bottom Sediment - Land" Graphic="46140116.svg">
+						<EntitySubType ID="MIW_BOTTOM_SEDIMENT_LAND" Label="MIW Bottom Sediment - Land" Graphic="46140116.svg">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>6</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="MIW_BOTTOM_SEDIMENT___NO_DATA" Label="MIW Bottom Sediment - No Data" Graphic="46140117.svg">
+						<EntitySubType ID="MIW_BOTTOM_SEDIMENT_NO_DATA" Label="MIW Bottom Sediment - No Data" Graphic="46140117.svg">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>7</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="BOTTOM_ROUGHNESS___SMOOTH" Label="Bottom Roughness - Smooth" Graphic="46140118.svg">
+						<EntitySubType ID="BOTTOM_ROUGHNESS_SMOOTH" Label="Bottom Roughness - Smooth" Graphic="46140118.svg">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>8</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="BOTTOM_ROUGHNESS___MODERATE" Label="Bottom Roughness - Moderate" Graphic="46140119.svg">
+						<EntitySubType ID="BOTTOM_ROUGHNESS_MODERATE" Label="Bottom Roughness - Moderate" Graphic="46140119.svg">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>9</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="BOTTOM_ROUGHNESS___ROUGH" Label="Bottom Roughness - Rough" Graphic="46140120.svg">
+						<EntitySubType ID="BOTTOM_ROUGHNESS_ROUGH" Label="Bottom Roughness - Rough" Graphic="46140120.svg">
 							<EntitySubTypeCode>
 								<DigitOne>2</DigitOne>
 								<DigitTwo>0</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="CLUTTER__BOTTOM____LOW" Label="Clutter (Bottom) - Low" Graphic="46140121.svg">
+						<EntitySubType ID="CLUTTER_BOTTOM_LOW" Label="Clutter (Bottom) - Low" Graphic="46140121.svg">
 							<EntitySubTypeCode>
 								<DigitOne>2</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="CLUTTER__BOTTOM____MEDIUM" Label="Clutter (Bottom) - Medium" Graphic="46140122.svg">
+						<EntitySubType ID="CLUTTER_BOTTOM_MEDIUM" Label="Clutter (Bottom) - Medium" Graphic="46140122.svg">
 							<EntitySubTypeCode>
 								<DigitOne>2</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="CLUTTER__BOTTOM____HIGH" Label="Clutter (Bottom) - High" Graphic="46140123.svg">
+						<EntitySubType ID="CLUTTER_BOTTOM_HIGH" Label="Clutter (Bottom) - High" Graphic="46140123.svg">
 							<EntitySubTypeCode>
 								<DigitOne>2</DigitOne>
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="IMPACT_BURIAL____0%" Label="Impact Burial  - 0%" Graphic="46140124.svg">
+						<EntitySubType ID="IMPACT_BURIAL_0" Label="Impact Burial - 0%" Graphic="46140124.svg">
 							<EntitySubTypeCode>
 								<DigitOne>2</DigitOne>
 								<DigitTwo>4</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="IMPACT_BURIAL____0_10%" Label="Impact Burial  - 0-10%" Graphic="46140125.svg">
+						<EntitySubType ID="IMPACT_BURIAL_0_10" Label="Impact Burial - 0-10%" Graphic="46140125.svg">
 							<EntitySubTypeCode>
 								<DigitOne>2</DigitOne>
 								<DigitTwo>5</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="IMPACT_BURIAL____10_20%" Label="Impact Burial  - 10-20%" Graphic="46140126.svg">
+						<EntitySubType ID="IMPACT_BURIAL_10_20" Label="Impact Burial - 10-20%" Graphic="46140126.svg">
 							<EntitySubTypeCode>
 								<DigitOne>2</DigitOne>
 								<DigitTwo>6</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="IMPACT_BURIAL____20_75%" Label="Impact Burial  - 20-75%" Graphic="46140127.svg">
+						<EntitySubType ID="IMPACT_BURIAL_20_75" Label="Impact Burial - 20-75%" Graphic="46140127.svg">
 							<EntitySubTypeCode>
 								<DigitOne>2</DigitOne>
 								<DigitTwo>7</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="IMPACT_BURIAL____>75%" Label="Impact Burial  - >75%" Graphic="46140128.svg">
+						<EntitySubType ID="IMPACT_BURIAL_75" Label="Impact Burial - >75%" Graphic="46140128.svg">
 							<EntitySubTypeCode>
 								<DigitOne>2</DigitOne>
 								<DigitTwo>8</DigitTwo>
@@ -1202,7 +1202,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="LIMITS" Label="Limits" Graphic="46150000.svg">
+		<Entity ID="MARITIME_LIMITS" Label="Limits">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>5</DigitTwo>
@@ -1243,7 +1243,7 @@
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="OPERATOR_DEFINED" Label="Operator-Defined" Graphic="46150600.svg">
+				<EntityType ID="LIMITS_OPERATOR_DEFINED" Label="Operator-Defined Maritime Limits" Graphic="46150600.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>6</DigitTwo>
@@ -1252,7 +1252,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="MAN_MADE_STRUCTURES" Label="Man-Made Structures" Graphic="46160000.svg">
+		<Entity ID="MAN_MADE_STRUCTURES" Label="Man-Made Structures">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>6</DigitTwo>
@@ -1324,6 +1324,4 @@
 			</EntityTypes>
 		</Entity>
 	</Entities>
-	<SectorOneModifiers></SectorOneModifiers>
-	<SectorTwoModifiers></SectorTwoModifiers>
 </SymbolSet>

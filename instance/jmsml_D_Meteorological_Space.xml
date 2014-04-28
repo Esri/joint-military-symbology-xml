@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="AN_ID" Label="A Label" DimensionID="A_DIMENSION">
+<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="SS_MET_SPACE" Label="Meteorological - Space" DimensionID="METOC">
 	<SymbolSetCode>
 		<DigitOne>4</DigitOne>
 		<DigitTwo>7</DigitTwo>
 	</SymbolSetCode>
 	<LegacyCodingSchemeCode Name="2525C">W</LegacyCodingSchemeCode>
 	<Entities>
-		<Entity ID="SPACE" Label="Space" Graphic="47110000.svg">
+		<Entity ID="SPACE" Label="Space" Remarks="No icon is associated with this entity. It is for hierarchal purposes only.">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>1</DigitTwo>
@@ -14,6 +14,4 @@
 
 		</Entity>
 	</Entities>
-	<SectorOneModifiers></SectorOneModifiers>
-	<SectorTwoModifiers></SectorTwoModifiers>
 </SymbolSet>

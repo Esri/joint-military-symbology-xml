@@ -508,6 +508,37 @@
         </SymbolSetRef>
       </SymbolSets>
     </Dimension>
+
+    <Dimension ID="METOC" Label="Meteorological">
+      <LegacyDimensionCode Name="2525C">W</LegacyDimensionCode>
+      <Fields>
+        <Field Name="G" Label="Staff Comments" Description="Free text." Remarks="Can be used by staff for information required by commander." AmplifierID="G" X="1" Y="1"/>
+        <Field Name="H" Label="Additional Informartion" Description="Free text." AmplifierID="H" X="1" Y="0"/>
+        <Field Name="S" Label="Offset Location Indicator" Description="It is used to denote precise location." AmplifierID="S" X="0" Y="-1"/>
+        <Field Name="W" Label="Date-Time Group" Description="An alphanumeric designator for displaying a datetime group (DDHHMMSSZMONYY) or O/O for on order." Remarks="The date-time group is composed of a group of six numeric digits with a time zone suffix and the standardized three-letter abbreviation for the month followed by two digits." AmplifierID="W" X="-1" Y="2"/>
+        <Field Name="Y" Label="Location" Description="A text amplifier for units, equipment and installations that displays a symbol’s location in degrees, minutes and seconds (or in UTM or other applicable display format)." AmplifierID="Y" X="-1" Y="1"/>
+      </Fields>
+      <SymbolSets>
+        <SymbolSetRef ID="SS_ATMOSPHERIC" Label="Atmospheric" Instance="jmsml_D_Atmospheric.xml">
+          <SymbolSetCode>
+            <DigitOne>4</DigitOne>
+            <DigitTwo>5</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
+        <SymbolSetRef ID="SS_OCEANIC" Label="Activity" Instance="jmsml_D_Oceanographic.xml">
+          <SymbolSetCode>
+            <DigitOne>4</DigitOne>
+            <DigitTwo>6</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
+        <SymbolSetRef ID="SS_MET_SPACE" Label="Meteorological Space" Instance="jmsml_D_Meteorological_Space.xml">
+          <SymbolSetCode>
+            <DigitOne>4</DigitOne>
+            <DigitTwo>7</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
+      </SymbolSets>
+    </Dimension>
   </Dimensions>
   
   <Affiliations>
