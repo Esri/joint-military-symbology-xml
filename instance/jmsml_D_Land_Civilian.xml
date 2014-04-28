@@ -86,145 +86,145 @@
 		</Entity>
 	</Entities>
 	<SectorOneModifiers>
-		<Modifier ID="ASSASSINATION_MOD" Label="Assassination" Category="CRIME" Graphic="11011.svg">
+		<Modifier ID="ASSASSINATION_MOD" Label="Assassination" Category="Crime" Graphic="11011.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>1</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="EXECUTION_MOD" Label="Execution (Wrongful Killing)" Category="CRIME" Graphic="11021.svg">
+		<Modifier ID="EXECUTION_MOD" Label="Execution (Wrongful Killing)" Category="Crime" Graphic="11021.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>2</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="MURDER_VICTIMS_MOD" Label="Murder Victims" Category="CRIME" Graphic="11031.svg">
+		<Modifier ID="MURDER_VICTIMS_MOD" Label="Murder Victims" Category="Crime" Graphic="11031.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>3</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="HIJACKING_MOD" Label="Hijacking" Category="CRIME" Graphic="11041.svg">
+		<Modifier ID="HIJACKING_MOD" Label="Hijacking" Category="Crime" Graphic="11041.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>4</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="KIDNAPPING_MOD" Label="Kidnapping" Category="CRIME" Graphic="11051.svg">
+		<Modifier ID="KIDNAPPING_MOD" Label="Kidnapping" Category="Crime" Graphic="11051.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>5</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="PIRACY_MOD" Label="Piracy" Category="CRIME" Graphic="11061.svg">
+		<Modifier ID="PIRACY_MOD" Label="Piracy" Category="Crime" Graphic="11061.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>6</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="RAPE_MOD" Label="Rape" Category="CRIME" Graphic="11071.svg">
+		<Modifier ID="RAPE_MOD" Label="Rape" Category="Crime" Graphic="11071.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>7</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="CIVILIAN_MOD" Label="Civilian" Category="ORGANIZATION" Graphic="11081.svg">
+		<Modifier ID="CIVILIAN_MOD" Label="Civilian" Category="Organization" Graphic="11081.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>8</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="DISPLACED_MOD" Label="Displaced Person(s), Refugee(s), and Evacuee(s)" Category="ORGANIZATION" Graphic="11091.svg">
+		<Modifier ID="DISPLACED_MOD" Label="Displaced Person(s), Refugee(s), and Evacuee(s)" Category="Organization" Graphic="11091.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>9</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="FOREIGN_FIGHTER_MOD" Label="Foreign Fighter(s)" Category="ORGANIZATION" Graphic="11101.svg">
+		<Modifier ID="FOREIGN_FIGHTER_MOD" Label="Foreign Fighter(s)" Category="Organization" Graphic="11101.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>0</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="GANG_MOD" Label="Gang Member or Gang" Category="ORGANIZATION" Graphic="11111.svg">
+		<Modifier ID="GANG_MOD" Label="Gang Member or Gang" Category="Organization" Graphic="11111.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>1</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="GOVERNMENT_ORGANIZATION_MOD" Label="Government Organization" Category="ORGANIZATION" Graphic="11121.svg">
+		<Modifier ID="GOVERNMENT_ORGANIZATION_MOD" Label="Government Organization" Category="Organization" Graphic="11121.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>2</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="LEADER_1_MOD" Label="Leader or Leadership" Category="ORGANIZATION" Graphic="11131.svg">
+		<Modifier ID="LEADER_1_MOD" Label="Leader or Leadership" Category="Organization" Graphic="11131.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>3</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="NONGOVERNMENTAL_ORGANIZATION_MOD" Label="Nongovernmental Organization Member or Nongovernmental Organization" Category="ORGANIZATION" Graphic="11141.svg">
+		<Modifier ID="NONGOVERNMENTAL_ORGANIZATION_MOD" Label="Nongovernmental Organization Member or Nongovernmental Organization" Category="Organization" Graphic="11141.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>4</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="COERCED_RECRUIT_MOD" Label="Coerced/Impressed Recruit" Category="ORGANIZATION" Graphic="11151.svg">
+		<Modifier ID="COERCED_RECRUIT_MOD" Label="Coerced/Impressed Recruit" Category="Organization" Graphic="11151.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>5</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="WILLING_RECRUIT_MOD" Label="Willing Recruit" Category="ORGANIZATION" Graphic="11161.svg">
+		<Modifier ID="WILLING_RECRUIT_MOD" Label="Willing Recruit" Category="Organization" Graphic="11161.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>6</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="RELIGIOUS_MOD" Label="Religious or Religious Organization" Category="ORGANIZATION" Graphic="11171.svg">
+		<Modifier ID="RELIGIOUS_MOD" Label="Religious or Religious Organization" Category="Organization" Graphic="11171.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>7</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="TARGETED_MOD" Label="Targeted Individual or Organization" Category="ORGANIZATION" Graphic="11181.svg">
+		<Modifier ID="TARGETED_MOD" Label="Targeted Individual or Organization" Category="Organization" Graphic="11181.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>8</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="TERRORIST_MOD" Label="Terrorist or Terrorist Organization" Category="ORGANIZATION" Graphic="11191.svg">
+		<Modifier ID="TERRORIST_MOD" Label="Terrorist or Terrorist Organization" Category="Organization" Graphic="11191.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>9</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="SPEAKER_MOD" Label="Speaker" Category="ORGANIZATION" Graphic="11201.svg">
+		<Modifier ID="SPEAKER_MOD" Label="Speaker" Category="Organization" Graphic="11201.svg">
 			<ModifierCode>
 				<DigitOne>2</DigitOne>
 				<DigitTwo>0</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="ACCIDENT_MOD" Label="Accident" Category="COMPOSITE_LOSS" Graphic="11211.svg">
+		<Modifier ID="ACCIDENT_MOD" Label="Accident" Category="Composite Loss" Graphic="11211.svg">
 			<ModifierCode>
 				<DigitOne>2</DigitOne>
 				<DigitTwo>1</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="COMBAT_MOD" Label="Combat" Category="COMPOSITE_LOSS" Graphic="11221.svg">
+		<Modifier ID="COMBAT_MOD" Label="Combat" Category="Composite Loss" Graphic="11221.svg">
 			<ModifierCode>
 				<DigitOne>2</DigitOne>
 				<DigitTwo>2</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="OTHER_MOD" Label="Other" Category="COMPOSITE_LOSS" Graphic="11231.svg">
+		<Modifier ID="OTHER_MOD" Label="Other" Category="Composite Loss" Graphic="11231.svg">
 			<ModifierCode>
 				<DigitOne>2</DigitOne>
 				<DigitTwo>3</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="LOOT_MOD" Label="Loot" Category="CRIME" Graphic="11241.svg">
+		<Modifier ID="LOOT_MOD" Label="Loot" Category="Crime" Graphic="11241.svg">
 			<ModifierCode>
 				<DigitOne>2</DigitOne>
 				<DigitTwo>4</DigitTwo>
@@ -232,7 +232,7 @@
 		</Modifier>
 	</SectorOneModifiers>
 	<SectorTwoModifiers>
-		<Modifier ID="LEADER_2_MOD" Label="Leader or Leadership" Category="ORGANIZATION" Graphic="11012.svg">
+		<Modifier ID="LEADER_2_MOD" Label="Leader or Leadership" Category="Organization" Graphic="11012.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>1</DigitTwo>
