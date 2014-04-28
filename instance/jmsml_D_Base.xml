@@ -194,6 +194,13 @@
             <DigitTwo>1</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
+
+        <SymbolSetRef ID="SS_CYBER_AIR" Label="Cyberspace - Air" Instance="jmsml_D_Cyberspace_Air.xml">
+          <SymbolSetCode>
+            <DigitOne>6</DigitOne>
+            <DigitTwo>0</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
       </SymbolSets>
     </Dimension>
 
@@ -228,6 +235,13 @@
         <SymbolSetRef ID="SS_SIGINT_SPACE" Label="Signals Intelligence - Space" Instance="jmsml_D_SIGINT_Space.xml">
           <SymbolSetCode>
             <DigitOne>5</DigitOne>
+            <DigitTwo>0</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
+
+        <SymbolSetRef ID="SS_CYBER_SPACE" Label="Cyberspace - Space" Instance="jmsml_D_Cyberspace_Space.xml">
+          <SymbolSetCode>
+            <DigitOne>6</DigitOne>
             <DigitTwo>0</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
@@ -335,6 +349,13 @@
             <DigitTwo>2</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
+
+        <SymbolSetRef ID="SS_CYBER_LAND" Label="Cyberspace - Land" Instance="jmsml_D_Cyberspace_Land.xml">
+          <SymbolSetCode>
+            <DigitOne>6</DigitOne>
+            <DigitTwo>0</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
       </SymbolSets>
     </Dimension>
     
@@ -413,6 +434,13 @@
             <DigitTwo>3</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
+
+        <SymbolSetRef ID="SS_CYBER_SURFACE" Label="Cyberspace - Surface" Instance="jmsml_D_Cyberspace_Surface.xml">
+          <SymbolSetCode>
+            <DigitOne>6</DigitOne>
+            <DigitTwo>0</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
       </SymbolSets>
     </Dimension>
 
@@ -449,6 +477,13 @@
             <DigitTwo>4</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
+
+        <SymbolSetRef ID="SS_CYBER_SUBSURFACE" Label="Cyberspace - Subsurface" Instance="jmsml_D_Cyberspace_Subsurface.xml">
+          <SymbolSetCode>
+            <DigitOne>6</DigitOne>
+            <DigitTwo>0</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
       </SymbolSets>
     </Dimension>
 
@@ -457,11 +492,9 @@
       <LegacyDimensionCode Name="2525C">O</LegacyDimensionCode>
       <Fields>
         <Field Name="AS" Label="Country Indicator" Description="A three-letter code that indicates the country of origin of the organization (STANAG 1059)." Remarks="In stability activities, this field can be used for factions or groups." AmplifierID="AS" X="1" Y="2"/>
-
         <Field Name="G" Label="Staff Comments" Description="Free text." Remarks="Can be used by staff for information required by commander." AmplifierID="G" X="1" Y="1"/>
         <Field Name="H" Label="Additional Informartion" Description="Free text." AmplifierID="H" X="1" Y="0"/>
         <Field Name="J" Label="Evaluation Rating" Description="Degree of confidence that may be placed on the information represented by the symbol." Remarks="It is shown as one letter and one number made up of Reliability of Source and Credibility of Information." AmplifierID="J" X="1" Y="-2"/>
-
         <Field Name="S" Label="Offset Location Indicator" Description="It is used to denote precise location." AmplifierID="S" X="0" Y="-1"/>
         <Field Name="W" Label="Date-Time Group" Description="An alphanumeric designator for displaying a datetime group (DDHHMMSSZMONYY) or O/O for on order." Remarks="The date-time group is composed of a group of six numeric digits with a time zone suffix and the standardized three-letter abbreviation for the month followed by two digits." AmplifierID="W" X="-1" Y="2"/>
         <Field Name="Y" Label="Location" Description="A text amplifier for units, equipment and installations that displays a symbol’s location in degrees, minutes and seconds (or in UTM or other applicable display format)." AmplifierID="Y" X="-1" Y="1"/>
@@ -470,26 +503,6 @@
         <SymbolSetRef ID="SS_ACTIVITY" Label="Activity" Instance="jmsml_D_Activity.xml">
           <SymbolSetCode>
             <DigitOne>4</DigitOne>
-            <DigitTwo>0</DigitTwo>
-          </SymbolSetCode>
-        </SymbolSetRef>
-      </SymbolSets>
-    </Dimension>
-  
-    <Dimension ID="CYBERSPACE" Label="Cyberspace">
-      <Fields>
-        <Field Name="AS" Label="Country Indicator" Description="A three-letter code that indicates the country of origin of the organization (STANAG 1059)." Remarks="In stability activities, this field can be used for factions or groups." AmplifierID="AS" X="1" Y="2"/>
-        <Field Name="G" Label="Staff Comments" Description="Free text." Remarks="Can be used by staff for information required by commander." AmplifierID="G" X="1" Y="1"/>
-        <Field Name="H" Label="Additional Informartion" Description="Free text." AmplifierID="H" X="1" Y="0"/>
-        <Field Name="J" Label="Evaluation Rating" Description="Degree of confidence that may be placed on the information represented by the symbol." Remarks="It is shown as one letter and one number made up of Reliability of Source and Credibility of Information." AmplifierID="J" X="1" Y="-2"/>
-        <Field Name="S" Label="Offset Location Indicator" Description="It is used to denote precise location." AmplifierID="S" X="0" Y="-1"/>
-        <Field Name="W" Label="Date-Time Group" Description="An alphanumeric designator for displaying a datetime group (DDHHMMSSZMONYY) or O/O for on order." Remarks="The date-time group is composed of a group of six numeric digits with a time zone suffix and the standardized three-letter abbreviation for the month followed by two digits." AmplifierID="W" X="-1" Y="2"/>
-        <Field Name="Y" Label="Location" Description="A text amplifier for units, equipment and installations that displays a symbol’s location in degrees, minutes and seconds (or in UTM or other applicable display format)." AmplifierID="Y" X="-1" Y="1"/>
-      </Fields>
-      <SymbolSets>
-        <SymbolSetRef ID="SS_CYBER" Label="Cyberspace" Instance="jmsml_D_Cyberspace.xml">
-          <SymbolSetCode>
-            <DigitOne>6</DigitOne>
             <DigitTwo>0</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
