@@ -786,11 +786,14 @@ namespace JointMilitarySymbologyLibrary {
         
         private string specialSquareGraphicField;
         
+        private GeometryType geometryTypeField;
+        
         public SymbolSetEntityEntityType() {
             this.drawRuleIDField = "POINT2";
             this.drawNoteField = "Not Applicable";
             this.standardField = StandardType.ALL;
             this.iconField = IconType.MAIN;
+            this.geometryTypeField = GeometryType.POINT;
         }
         
         /// <remarks/>
@@ -1048,6 +1051,18 @@ namespace JointMilitarySymbologyLibrary {
                 this.specialSquareGraphicField = value;
             }
         }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute(GeometryType.POINT)]
+        public GeometryType GeometryType {
+            get {
+                return this.geometryTypeField;
+            }
+            set {
+                this.geometryTypeField = value;
+            }
+        }
     }
     
     /// <remarks/>
@@ -1102,11 +1117,14 @@ namespace JointMilitarySymbologyLibrary {
         
         private string specialSquareGraphicField;
         
+        private GeometryType geometryTypeField;
+        
         public SymbolSetEntityEntityTypeEntitySubType() {
             this.drawRuleIDField = "POINT2";
             this.drawNoteField = "Not Applicable";
             this.standardField = StandardType.ALL;
             this.iconField = IconType.MAIN;
+            this.geometryTypeField = GeometryType.POINT;
         }
         
         /// <remarks/>
@@ -1351,6 +1369,18 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.specialSquareGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute(GeometryType.POINT)]
+        public GeometryType GeometryType {
+            get {
+                return this.geometryTypeField;
+            }
+            set {
+                this.geometryTypeField = value;
             }
         }
     }

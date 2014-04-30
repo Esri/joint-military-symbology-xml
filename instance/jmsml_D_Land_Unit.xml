@@ -496,12 +496,6 @@
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="ARMORED_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10120595_0.svg" RectangleGraphic="10120595_1.svg" SquareGraphic="10120595_2.svg" DiamondGraphic="10120595_3.svg" Icon="FULL_FRAME">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
 					</EntitySubTypes>
 				</EntityType>
 				<EntityType ID="ARMY_AVIATION_AVIATION_ROTARY_WING" Label="Army Aviation/Aviation Rotary Wing" Graphic="10120600.svg">
@@ -516,24 +510,6 @@
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="AVIATION_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10120695_0.svg" RectangleGraphic="10120695_1.svg" SquareGraphic="10120695_2.svg" DiamondGraphic="10120695_3.svg" Icon="FULL_FRAME">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="AVIATION_CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10120697_0.svg" RectangleGraphic="10120697_1.svg" SquareGraphic="10120697_2.svg" DiamondGraphic="10120697_3.svg" Icon="FULL_FRAME">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>7</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="AVIATION_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10120698_0.svg" RectangleGraphic="10120698_1.svg" SquareGraphic="10120698_2.svg" DiamondGraphic="10120698_3.svg" Icon="FULL_FRAME">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>8</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
 					</EntitySubTypes>
 				</EntityType>
 				<EntityType ID="AVIATION_COMPOSITE" Label="Aviation Composite" Graphic="10120700.svg">
@@ -541,14 +517,6 @@
 						<DigitOne>0</DigitOne>
 						<DigitTwo>7</DigitTwo>
 					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="AVIATION_COMPOSITE_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10120795_0.svg" RectangleGraphic="10120795_1.svg" SquareGraphic="10120795_2.svg" DiamondGraphic="10120795_3.svg" Icon="FULL_FRAME">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-					</EntitySubTypes>
 				</EntityType>
 				<EntityType ID="AVIATION_FIXED_WING" Label="Aviation Fixed Wing" Graphic="10120800.svg">
 					<EntityTypeCode>
@@ -560,12 +528,6 @@
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="AVIATION_FIXED_WING_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10120895_0.svg" RectangleGraphic="10120895_1.svg" SquareGraphic="10120895_2.svg" DiamondGraphic="10120895_3.svg" Icon="FULL_FRAME">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>5</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
 					</EntitySubTypes>
@@ -581,14 +543,6 @@
 						<DigitOne>1</DigitOne>
 						<DigitTwo>0</DigitTwo>
 					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="COMBINED_ARMS_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10121095_0.svg" RectangleGraphic="10121095_1.svg" SquareGraphic="10121095_2.svg" DiamondGraphic="10121095_3.svg" Icon="FULL_FRAME">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-					</EntitySubTypes>
 				</EntityType>
 				<EntityType ID="INFANTRY" Label="Infantry" CloverGraphic="10121100_0.svg" RectangleGraphic="10121100_1.svg" SquareGraphic="10121100_2.svg" DiamondGraphic="10121100_3.svg" Icon="FULL_FRAME">
 					<EntityTypeCode>
@@ -623,12 +577,6 @@
 						<EntitySubType ID="INFANTRY_FIGHTING_VEHICLE" Label="Infantry Fighting Vehicle" CloverGraphic="10121105_0.svg" RectangleGraphic="10121105_1.svg" SquareGraphic="10121105_2.svg" DiamondGraphic="10121105_3.svg" Icon="FULL_FRAME">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="INFANTRY_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10121195_0.svg" RectangleGraphic="10121195_1.svg" SquareGraphic="10121195_2.svg" DiamondGraphic="10121195_3.svg" Icon="FULL_FRAME">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
 								<DigitTwo>5</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
