@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="SS_CYBER_LAND" Label="Cyberspace - Land" DimensionID="LAND_EQUIPMENT">
+	<SymbolSetCode>
+		<DigitOne>6</DigitOne>
+		<DigitTwo>0</DigitTwo>
+	</SymbolSetCode>
+	<LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
+	<Entities>
+		<Entity ID="BOTNET" Label="Botnet" Remarks="There is no symbol associated with this entity.">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="COMMAND_AND_CONTROL_C2" Label="Command and Control (C2)" Graphic="60110100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="HERDER" Label="Herder" Graphic="60110200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="CALLBACK_DOMAIN" Label="Callback Domain" Graphic="60110300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="ZOMBIE" Label="Zombie" Graphic="60110400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="INFECTION" Label="Infection" Remarks="There is no symbol associated with this entity.">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>2</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="ADVANCED_PERSISTENT_THREAT_APT" Label="Advanced Persistent Threat (APT)" Graphic="60120100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="APT_WITH_C2" Label="APT with C2" Graphic="60120101.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="APT_WITH_SELF_PROPAGATION" Label="APT with Self Propagation" Graphic="60120102.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="APT_WITH_C2_AND_SELF_PROPAGATION" Label="APT with C2 and Self Propagation" Graphic="60120103.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="APT_OTHER" Label="APT Other" Graphic="60120104.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="NON_ADVANCED_PERSISTENT_THREAT__NAPT_" Label="Non-Advanced Persistent Threat (NAPT)" Graphic="60120200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="NAPT_WITH_C2" Label="NAPT with C2" Graphic="60120201.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="NAPT_WITH_SELF_PROPAGATION" Label="NAPT with Self Propagation" Graphic="60120202.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="NAPT_WITH_C2_AND_SELF_PROPAGATION" Label="NAPT with C2 and Self Propagation" Graphic="60120203.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="NAPT_OTHER" Label="NAPT Other" Graphic="60120204.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="HEALTH_AND_STATUS" Label="Health and Status" Remarks="There is no symbol associated with this entity.">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>3</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="NORMAL" Label="Normal" Graphic="60130100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="NETWORK_OUTAGE" Label="Network Outage" Graphic="60130200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="UNKNOWN" Label="Unknown" Graphic="60130300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="IMPAIRED" Label="Impaired" Graphic="60130400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="DEVICE_TYPE" Label="Device Type" Remarks="There is no symbol associated with this entity.">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>4</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="CORE_ROUTER" Label="Core Router" Graphic="60140100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="ROUTER" Label="Router" Graphic="60140200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="CROSS_DOMAIN_SOLUTION" Label="Cross Domain Solution" Graphic="60140300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="MAIL_SERVER" Label="Mail Server" Graphic="60140400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="WEB_SERVER" Label="Web Server" Graphic="60140500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="DOMAIN_SERVER" Label="Domain Server" Graphic="60140600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="FILE_SERVER" Label="File Server" Graphic="60140700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="PEER_TO_PEER_NODE" Label="Peer-to-Peer Node" Graphic="60140800.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="FIREWALL" Label="Firewall" Graphic="60140900.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="SWITCH" Label="Switch" Graphic="60141000.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="HOST" Label="Host" Graphic="60141100.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="VIRTUAL_PRIVATE_NETWORK__VPN_" Label="Virtual Private Network (VPN)" Graphic="60141200.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="DEVICE_DOMAIN" Label="Device Domain" Remarks="There is no symbol associated with this entity.">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>5</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="DEPARTMENT_OF_DEFENSE__DOD_" Label="Department of Defense (DoD)" Graphic="60150100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="GOVERNMENT" Label="Government" Graphic="60150200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="CONTRACTOR" Label="Contractor" Graphic="60150300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="SUPERVISORY_CONTROL_AND_DATA_ACQUISITION__SCADA_" Label="Supervisory Control and Data Acquisition (SCADA)" Graphic="60150400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="NON_GOVERNMENT" Label="Non-Government" Graphic="60150500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="EFFECT" Label="Effect" Graphic="60160000.svg">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>6</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="CYBER_INFECTION" Label="Infection" Graphic="60160100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="DEGRADATION" Label="Degradation" Graphic="60160200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="DATA_SPOOFING" Label="Data Spoofing" Graphic="60160300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="DATA_MANIPULATION" Label="Data Manipulation" Graphic="60160400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="EXFILTRATION" Label="Exfiltration" Graphic="60160500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="POWER_OUTAGE" Label="Power Outage" Graphic="60160600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="CYBER_NETWORK_OUTAGE" Label="Network Outage" Graphic="60160700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="SERVICE_OUTAGE" Label="Service Outage" Graphic="60160800.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+				<EntityType ID="DEVICE_OUTAGE" Label="Device Outage" Graphic="60160900.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+	</Entities>
+</SymbolSet>

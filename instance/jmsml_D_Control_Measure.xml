@@ -1,0 +1,4181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="AN_ID" Label="A Label" DimensionID="A_DIMENSION">
+	<SymbolSetCode>
+		<DigitOne>2</DigitOne>
+		<DigitTwo>5</DigitTwo>
+	</SymbolSetCode>
+	<LegacyCodingSchemeCode Name="2525C">G</LegacyCodingSchemeCode>
+	<Entities>
+		<Entity ID="COMMAND_AND_CONTROL_LINES" Label="Command and Control Lines" Graphic="25110000.svg">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="BOUNDARY" Label="Boundary" Graphic="25110100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="LATERAL" Label="Lateral" Graphic="25110101.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FORWARD" Label="Forward" Graphic="25110102.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="REAR" Label="Rear" Graphic="25110103.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="LIGHT_LINE" Label="Light Line" Graphic="25110200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="COMMAND_AND_CONTROL_AREAS" Label="Command and Control Areas" Graphic="25120000.svg">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>2</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="AREA_OF_OPERATIONS" Label="Area of Operations" Graphic="25120100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="NAMED_AREA_OF_INTEREST" Label="Named Area of Interest" Graphic="25120200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="TARGETED_AREA_OF_INTEREST" Label="Targeted Area of Interest" Graphic="25120300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="AIRFIELD_ZONE" Label="Airfield Zone" Graphic="25120400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="COMMAND_AND_CONTROL_POINTS" Label="Command and Control Points" Graphic="25130000.svg">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>3</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="UNSPECIFIED_CONTROL_POINT" Label="Unspecified Control Point" Graphic="25130100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="AMNESTY_POINT" Label="Amnesty Point" Graphic="25130200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="CHECKPOINT" Label="Checkpoint" Graphic="25130300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="CENTER_OF_MAIN_EFFORT" Label="Center of Main Effort" Graphic="25130400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="CONTACT_POINT" Label="Contact Point" Graphic="25130500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="COORDINATING_POINT" Label="Coordinating Point" Graphic="25130600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="DECISION_POINT" Label="Decision Point" Graphic="25130700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="DISTRESS_CALL" Label="Distress Call" Graphic="25130800.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ENTRY_CONTROL_POINT" Label="Entry Control Point" Graphic="25130900.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="FLY_TO_POINT" Label="Fly-To-Point" Graphic="25131000.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="SONOBUOY" Label="Sonobuoy" Graphic="25131001.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="WEAPON" Label="Weapon" Graphic="25131002.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="NORMAL" Label="Normal" Graphic="25131003.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="LINKUP_POINT" Label="Linkup Point" Graphic="25131100.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="PASSAGE_POINT" Label="Passage Point" Graphic="25131200.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="POINT_OF_INTEREST" Label="Point of Interest" Graphic="25131300.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="LAUNCH_EVENT" Label="Launch Event" Graphic="25131301.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="RALLY_POINT" Label="Rally Point" Graphic="25131400.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="RELEASE_POINT" Label="Release Point" Graphic="25131500.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="START_POINT" Label="Start Point" Graphic="25131600.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="SPECIAL_POINT" Label="Special Point" Graphic="25131700.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="WAYPOINT" Label="Waypoint" Graphic="25131800.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="AIRFIELD" Label="Airfield" Graphic="25131900.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="MANEUVER_LINES" Label="Maneuver Lines" Graphic="25140000.svg">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>4</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="FORWARD_LINE_OF_TROOPS" Label="Forward Line of Troops" Graphic="25140100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="FRIENDLY_PRESENT" Label="Friendly Present" Graphic="25140101.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FRIENDLY_PLANNED_OR_ON_ORDER" Label="Friendly Planned or on Order" Graphic="25140102.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ENEMY_KNOWN" Label="Enemy Known" Graphic="25140103.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ENEMY_SUSPECTED_OR_TEMPLATED" Label="Enemy Suspected or Templated" Graphic="25140104.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="LINE_OF_CONTACT" Label="Line of Contact" Graphic="25140200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="PHASE_LINE" Label="Phase Line" Graphic="25140300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="FORWARD_EDGE_OF_THE_BATTLE_AREA" Label="Forward Edge of the Battle Area" Graphic="25140400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="PROPOSED_OR_ON_ORDER" Label="Proposed or On Order" Graphic="25140401.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="PRINCIPLE_DIRECTION_OF_FIRE" Label="Principle Direction of Fire" Graphic="25140500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="DIRECTION_OF_ATTACK" Label="Direction of Attack" Graphic="25140600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="FRIENDLY_AVIATION" Label="Friendly Aviation" Graphic="25140601.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FRIENDLY_MAIN_ATTACK__DECISIVE" Label="Friendly Main Attack /Decisive" Graphic="25140602.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FRIENDLY_SUPPORTING_ATTACK" Label="Friendly Supporting Attack" Graphic="25140603.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FRIENDLY_PLANNED_OR_ON_ORDER" Label="Friendly Planned or On Order" Graphic="25140604.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FEINT" Label="Feint" Graphic="25140605.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ENEMY_CONFIRMED" Label="Enemy Confirmed" Graphic="25140606.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ENEMY_TEMPLATED_OR_SUSPECTED" Label="Enemy Templated or Suspected" Graphic="25140607.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="FINAL_COORDINATION_LINE" Label="Final Coordination Line" Graphic="25140700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="INFILTRATION_LANE" Label="Infiltration Lane" Graphic="25140800.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="LIMIT_OF_ADVANCE" Label="Limit of Advance" Graphic="25140900.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="LINE_OF_DEPARTURE" Label="Line of Departure" Graphic="25141000.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="LINE_OF_DEPARTURE_LINE_OF_CONTACT" Label="Line of Departure/Line of Contact" Graphic="25141100.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="PROBABLE_LINE_OF_DEPLOYMENT" Label="Probable Line of Deployment" Graphic="25141200.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="AIRHEAD_LINE" Label="Airhead Line" Graphic="25141300.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="BRIDGEHEAD_LINE" Label="Bridgehead Line" Graphic="25141400.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="HOLDING_LINE" Label="Holding Line" Graphic="25141500.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="RELEASE_LINE" Label="Release Line" Graphic="25141600.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="AMBUSH" Label="Ambush" Graphic="25141700.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="MANEUVER_AREAS" Label="Maneuver Areas" Graphic="25150000.svg">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>5</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="AREA" Label="Area" Graphic="25150100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="FRIENDLY" Label="Friendly" Graphic="25150101.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FRIENDLY_PLANNED_OR_ON_ORDER" Label="Friendly Planned or On Order" Graphic="25150102.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ENEMY_KNOWN_OR_CONFIRMED" Label="Enemy Known or Confirmed" Graphic="25150103.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ENEMY_SUSPECTED" Label="Enemy Suspected" Graphic="25150104.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="ASSEMBLY_AREA" Label="Assembly Area" Graphic="25150200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="OCCUPIED_ASSEMBLY_AREA" Label="Occupied Assembly Area" Graphic="25150300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="OFFSET_UNIT" Label="Offset Unit" Graphic="25150301.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="OFFSET_UNITS" Label="Offset Units" Graphic="25150302.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="PROPOSED_OR_ON_ORDER" Label="Proposed or On Order" Graphic="25150400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ACTION_AREA" Label="Action Area" Graphic="25150500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="JOINT_TACTICAL_ACTION_AREA__JTAA_" Label="Joint Tactical Action Area (JTAA)" Graphic="25150501.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SUBMARINE_ACTION_AREA__SAA_" Label="Submarine Action Area (SAA)" Graphic="25150502.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SUBMARINE_GENERATED_ACTION_AREA__SGAA_" Label="Submarine-Generated Action Area (SGAA)" Graphic="25150503.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="DROP_ZONE" Label="Drop Zone" Graphic="25150600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="EXTRACTION_ZONE" Label="Extraction Zone" Graphic="25150700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="LANDING_ZONE" Label="Landing Zone" Graphic="25150800.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="PICK_UP_ZONE" Label="Pick-Up Zone" Graphic="25150900.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="FORTIFIED_AREA" Label="Fortified Area" Graphic="25151000.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="LIMITED_ACCESS_AREA" Label="Limited Access Area" Graphic="25151100.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="BATTLE_POSITION" Label="Battle Position" Graphic="25151200.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="PLANNED" Label="Planned" Graphic="25151201.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="PREPARED__P__BUT_NOT_OCCUPIED" Label="Prepared (P) but not Occupied" Graphic="25151202.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="STRONG_POINT" Label="Strong Point" Graphic="25151203.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CONTAIN" Label="Contain" Graphic="25151204.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RETAIN" Label="Retain" Graphic="25151205.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="ENGAGEMENT_AREA__EA_" Label="Engagement Area (EA)" Graphic="25151300.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="AXIS_OF_ADVANCE" Label="Axis of Advance" Graphic="25151400.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="FRIENDLY_AIRBORNE_AVIATION" Label="Friendly Airborne/Aviation" Graphic="25151401.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ATTACK_HELICOPTER" Label="Attack Helicopter" Graphic="25151402.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MAIN_ATTACK" Label="Main Attack" Graphic="25151403.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SUPPORTING_ATTACK" Label="Supporting Attack" Graphic="25151404.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SUPPORTING_ATTACK_PLANNED_OR_ON_ORDER" Label="Supporting Attack Planned or On Order" Graphic="25151405.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FEINT" Label="Feint" Graphic="25151406.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ENEMY_CONFIRMED" Label="Enemy Confirmed" Graphic="25151407.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ENEMY_TEMPLATED_OR_SUSPECTED" Label="Enemy Templated or Suspected" Graphic="25151408.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="ASSAULT_POSITION" Label="Assault Position" Graphic="25151500.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ATTACK_POSITION" Label="Attack Position" Graphic="25151600.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="OBJECTIVE" Label="Objective" Graphic="25151700.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ENCIRCLEMENT" Label="Encirclement" Graphic="25151800.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="FRIENDLY" Label="Friendly" Graphic="25151801.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ENEMY" Label="Enemy" Graphic="25151802.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="PENETRATION_BOX" Label="Penetration Box" Graphic="25151900.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ATTACK_BY_FIRE_POSITION" Label="Attack by Fire Position" Graphic="25152000.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="SUPPORT_BY_FIRE" Label="Support by Fire" Graphic="25152100.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="SEARCH_AREA_RECONNAISSANCE_AREA" Label="Search Area/Reconnaissance Area" Graphic="25152200.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="MANEUVER_POINTS" Label="Maneuver Points" Graphic="25160000.svg">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>6</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="OBSERVATION_POST_OUTPOST__UNSPECIFIED_" Label="Observation Post/Outpost (unspecified)" Graphic="25160100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="OBSERVATION_POST_OUTPOST__SPECIFIED_" Label="Observation Post/Outpost (specified)" Graphic="25160200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="RECONNAISSANCE_OUTPOST" Label="Reconnaissance Outpost" Graphic="25160201.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FORWARD_OBSERVER_OUTPOST" Label="Forward Observer Outpost" Graphic="25160202.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CBRN_OBSERVATION_OUTPOST" Label="CBRN Observation Outpost" Graphic="25160203.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SENSOR_OUTPOST__LISTENING_POST" Label="Sensor Outpost /Listening Post" Graphic="25160204.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="COMBAT_OUTPOST" Label="Combat Outpost" Graphic="25160205.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="TARGET_REFERENCE_POINT" Label="Target Reference Point" Graphic="25160300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="POINT_OF_DEPARTURE" Label="Point of Departure" Graphic="25160400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="AIRSPACE_CONTROL__CORRIDORS__AREAS" Label="Airspace Control (Corridors) Areas" Graphic="25170000.svg">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>7</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="AIR_CORRIDOR" Label="Air Corridor" Graphic="25170100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="WITH_MULTIPLE_SEGMENTS" Label="With Multiple Segments" Graphic="25170101.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="LOW_LEVEL_TRANSIT_ROUTE" Label="Low Level Transit Route" Graphic="25170200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="MINIMUM_RISK_ROUTE" Label="Minimum-Risk Route" Graphic="25170300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="SAFE_LANE" Label="Safe Lane" Graphic="25170400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="STANDARD_USE_ARMY_AIRCRAFT_FLIGHT_ROUTE" Label="Standard Use Army Aircraft Flight Route" Graphic="25170500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="TRANSIT_CORRIDOR" Label="Transit Corridor" Graphic="25170600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="UNMANNED_AIRCRAFT__UA__ROUTE" Label="Unmanned Aircraft (UA) Route" Graphic="25170700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="BASE_DEFENSE_ZONE" Label="Base Defense Zone" Graphic="25170800.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="HIGH_DENSITY_AIRSPACE_CONTROL_ZONE" Label="High-Density Airspace Control Zone" Graphic="25170900.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="RESTRICTED_OPERATIONS_ZONE" Label="Restricted Operations Zone" Graphic="25171000.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="AIR_TO_AIR_RESTRICTED_OPERATING_ZONE" Label="Air-to-Air Restricted Operating Zone" Graphic="25171100.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="UNMANNED_AIRCRAFT_RESTRICTED_OPERATING_ZONE" Label="Unmanned Aircraft Restricted Operating Zone" Graphic="25171200.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="WEAPON_ENGAGEMENT_ZONE" Label="Weapon Engagement Zone" Graphic="25171300.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="FIGHTER_ENGAGEMENT_ZONE" Label="Fighter Engagement Zone" Graphic="25171400.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="JOINT_ENGAGEMENT_ZONE" Label="Joint Engagement Zone" Graphic="25171500.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="MISSILE_ENGAGEMENT_ZONE" Label="Missile Engagement Zone" Graphic="25171600.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="LOW_ALTITUDE_MISSILE_ENGAGEMENT_ZONE" Label="Low Altitude Missile Engagement Zone" Graphic="25171700.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="HIGH_ALTITUDE_MISSILE_ENGAGEMENT_ZONE" Label="High Altitude Missile Engagement Zone" Graphic="25171800.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="SHORT_RANGE_AIR_DEFENSE_ENGAGEMENT_ZONE" Label="Short Range Air Defense Engagement Zone" Graphic="25171900.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="WEAPONS_FREE_ZONE" Label="Weapons Free Zone" Graphic="25172000.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="AIRSPACE_CONTROL_POINTS" Label="Airspace Control Points" Graphic="25180000.svg">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>8</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="AIR_CONTROL_POINT" Label="Air Control Point" Graphic="25180100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="COMMUNICATIONS_CHECKPOINT" Label="Communications Checkpoint" Graphic="25180200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="DOWNED_AIRCRAFT_PICK_UP_POINT" Label="Downed Aircraft Pick-up Point" Graphic="25180300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="POP_UP_POINT" Label="Pop-up Point" Graphic="25180400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="AIR_CONTROL_RENDEZVOUS" Label="Air Control Rendezvous" Graphic="25180500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="TACAN" Label="TACAN" Graphic="25180600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="CAP_STATION" Label="CAP Station" Graphic="25180700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="AEW_STATION" Label="AEW Station" Graphic="25180800.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ASW__HELO_AND_F_W__STATION" Label="ASW (Helo and F/W) Station" Graphic="25180900.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="STRIKE_INITIAL_POINT" Label="Strike Initial Point" Graphic="25181000.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="REPLEMENSHMENT_STATION" Label="Replemenshment Station" Graphic="25181100.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="TANKING" Label="Tanking" Graphic="25181200.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ANTISUBMARINE_WARFARE_ROTARY_WING" Label="Antisubmarine Warfare-Rotary Wing" Graphic="25181300.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="SUCAP___FIXED_WING" Label="SUCAP - Fixed Wing" Graphic="25181400.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="SUCAP___ROTARY_WING" Label="SUCAP - Rotary Wing" Graphic="25181500.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="MIW___FIXED_WING" Label="MIW - Fixed Wing" Graphic="25181600.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="MIW___ROTARY_WING" Label="MIW - Rotary Wing" Graphic="25181700.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="TOMCAT" Label="Tomcat" Graphic="25181800.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="RESCUE" Label="Rescue" Graphic="25181900.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="UNMANNED_AERIAL_SYSTEM__UAS_UA_" Label="Unmanned Aerial System (UAS/UA)" Graphic="25182000.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="VTUA" Label="VTUA" Graphic="25182100.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ORBIT" Label="Orbit" Graphic="25182200.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ORBIT___FIGURE_EIGHT" Label="Orbit - Figure Eight" Graphic="25182300.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ORBIT___RACE_TRACK" Label="Orbit - Race Track" Graphic="25182400.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ORBIT___RANDOM_CLOSED" Label="Orbit - Random Closed" Graphic="25182500.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="AIRSPACE_CONTROL_LINES" Label="Airspace Control Lines" Graphic="25190000.svg">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>9</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="IDENTIFICATION_FRIEND_OR_FOE_OFF_LINE" Label="Identification Friend or Foe Off Line" Graphic="25190100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="IDENTIFICATION_FRIEND_OR_FOE_ON_LINE" Label="Identification Friend or Foe On Line" Graphic="25190200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="MARITIME_CONTROL_AREAS" Label="Maritime Control Areas" Graphic="25200000.svg">
+			<EntityCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>0</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="LAUNCH_AREA" Label="Launch Area" Graphic="25200100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="ELLIPSE_CIRCLE" Label="Ellipse/Circle" Graphic="25200101.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="DEFENDED_AREA" Label="Defended Area" Graphic="25200200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="ELLIPSE_CIRCLE" Label="Ellipse/Circle" Graphic="25200201.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RECTANGLE" Label="Rectangle" Graphic="25200202.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="NO_ATTACK__NOTACK__ZONE" Label="No Attack (NOTACK) Zone" Graphic="25200300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="SHIP_AREA_OF_INTEREST" Label="Ship Area of Interest" Graphic="25200400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="ELLIPSE_CIRCLE" Label="Ellipse/Circle" Graphic="25200401.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RECTANGLE" Label="Rectangle" Graphic="25200402.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="ACTIVE_MANEUVER_AREA" Label="Active Maneuver Area" Graphic="25200500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="CUED_ACQUISITION_DOCTRINE" Label="Cued Acquisition Doctrine" Graphic="25200600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="RADAR_SEARCH_DOCTRINE" Label="Radar Search Doctrine" Graphic="25200700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="MARITIME_CONTROL_POINTS" Label="Maritime Control Points" Graphic="25210000.svg">
+			<EntityCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="PLAN_SHIP" Label="Plan Ship" Graphic="25210100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="AIM_POINT" Label="Aim Point" Graphic="25210200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="DEFENDED_ASSET" Label="Defended Asset" Graphic="25210300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="DROP_POINT" Label="Drop Point" Graphic="25210400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ENTRY_POINT" Label="Entry Point" Graphic="25210500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="AIR__DETONATION" Label="Air  Detonation" Graphic="25210600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="GROUND_ZERO" Label="Ground Zero" Graphic="25210700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="IMPACT_POINT" Label="Impact Point" Graphic="25210800.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="PREDICTED_IMPACT_POINT" Label="Predicted Impact Point" Graphic="25210900.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="LAUNCHED_TORPEDO" Label="Launched Torpedo" Graphic="25211000.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="MISSILE_DETECTION_POINT" Label="Missile Detection Point" Graphic="25211100.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ACOUSTIC_COUNTERMEASURE__DECOY_" Label="Acoustic Countermeasure (Decoy)" Graphic="25211200.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ELECTRONIC_COUNTERMEASURES__ECM__DECOY" Label="Electronic Countermeasures (ECM) Decoy" Graphic="25211300.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="BRIEF_CONTACT" Label="Brief Contact" Graphic="25211400.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="DATUM_LOST_CONTACT" Label="Datum Lost Contact" Graphic="25211500.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="BT_BUOY_DROP" Label="BT Buoy Drop" Graphic="25211600.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="REPORTED_BOTTOM_SUB" Label="Reported Bottom Sub" Graphic="25211700.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="MOVING_HAVEN" Label="Moving Haven" Graphic="25211800.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="SCREEN_CENTER" Label="Screen Center" Graphic="25211900.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="LOST_CONTACT" Label="Lost Contact" Graphic="25212000.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="SINKER" Label="Sinker" Graphic="25212100.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="TRIAL_TRACK" Label="Trial Track" Graphic="25212200.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ACOUSTIC_FIX" Label="Acoustic Fix" Graphic="25212300.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ELECTROMAGNETIC_FIX" Label="Electromagnetic Fix" Graphic="25212400.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ELECTROMAGNETIC___MAGNETIC_ANOMALY_DETECTION__MAD_" Label="Electromagnetic - Magnetic Anomaly Detection (MAD)" Graphic="25212500.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="OPTICAL_FIX" Label="Optical Fix" Graphic="25212600.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="FORMATION" Label="Formation" Graphic="25212700.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="HARBOR" Label="Harbor" Graphic="25212800.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="HARBOR_ENTRANCE_POINT" Label="Harbor Entrance Point" Graphic="25212900.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="A" Label="A" Graphic="25212901.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="Q" Label="Q" Graphic="25212902.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="X" Label="X" Graphic="25212903.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="Y" Label="Y" Graphic="25212904.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="DIP_POSITION" Label="Dip Position" Graphic="25213000.svg">
+					<EntityTypeCode>
+						<DigitOne>3</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="SEARCH" Label="Search" Graphic="25213100.svg">
+					<EntityTypeCode>
+						<DigitOne>3</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="SEARCH_AREA" Label="Search Area" Graphic="25213200.svg">
+					<EntityTypeCode>
+						<DigitOne>3</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="SEARCH_CENTER" Label="Search Center" Graphic="25213300.svg">
+					<EntityTypeCode>
+						<DigitOne>3</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="NAVIGATIONAL_REFERENCE_POINT" Label="Navigational Reference Point" Graphic="25213400.svg">
+					<EntityTypeCode>
+						<DigitOne>3</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="SONOBUOY" Label="Sonobuoy" Graphic="25213500.svg">
+					<EntityTypeCode>
+						<DigitOne>3</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="AMBIENT_NOISE" Label="Ambient Noise" Graphic="25213501.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="AIR_TRANSPORTABLE_COMMUNICATION" Label="Air Transportable Communication" Graphic="25213502.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="BARRA" Label="Barra" Graphic="25213503.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="BATHYTHERMOGRAPH_TRANSMITTING" Label="Bathythermograph Transmitting" Graphic="25213504.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="COMMAND_ACTIVE_MULTI_BEAM__CAMBS_" Label="Command Active Multi-Beam (CAMBS)" Graphic="25213505.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="COMMAND_ACTIVE_SONOBUOY_DIRECTIONAL_COMMAND_ACTIVE_SONOBUOY_SYSTEM__CASS_" Label="Command Active Sonobuoy Directional Command Active Sonobuoy System (CASS)" Graphic="25213506.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="DIGITAL_FREQUENCY_ANALYSIS_AND_RECORDING__DIFAR_" Label="Digital Frequency Analysis and Recording (DIFAR)" Graphic="25213507.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="DIRECTIONAL_COMMAND_ACTIVE_SONOBUOY_SYSTEM__DICASS_" Label="Directional Command Active Sonobuoy System (DICASS)" Graphic="25213508.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="EXPENDABLE_RELIABLE_ACOUSTIC_PATH_SONOBUOY__ERAPS_" Label="Expendable Reliable Acoustic Path Sonobuoy (ERAPS)" Graphic="25213509.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>9</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="EXPIRED" Label="Expired" Graphic="25213510.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>0</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="KINGPIN" Label="Kingpin" Graphic="25213511.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="LOW_FREQUENCY_ANALYSIS_AND_RECORDING__LOFAR_" Label="Low Frequency Analysis and Recording (LOFAR)" Graphic="25213512.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="PATTERN_CENTER" Label="Pattern Center" Graphic="25213513.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RANGE_ONLY" Label="Range Only" Graphic="25213514.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="VERTICAL_LINE_ARRAY_DIRECTIONAL_FREQUENCY_ANALYSIS_AND_RECORDING__DIFAR_" Label="Vertical Line Array Directional Frequency Analysis and Recording (DIFAR)" Graphic="25213515.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="REFERENCE_POINT" Label="Reference Point" Graphic="25213600.svg">
+					<EntityTypeCode>
+						<DigitOne>3</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="SPECIAL_POINT" Label="Special Point" Graphic="25213700.svg">
+					<EntityTypeCode>
+						<DigitOne>3</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="NAVIGATIONAL_REFERENCE_POINT_POINTS_" Label="Navigational Reference Point(Points)" Graphic="25213800.svg">
+					<EntityTypeCode>
+						<DigitOne>3</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="DATA_LINK_REFERENCE_POINT" Label="Data Link Reference Point" Graphic="25213900.svg">
+					<EntityTypeCode>
+						<DigitOne>3</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="FORWARD_OBSERVER___SPOTTER_POSITION" Label="Forward Observer / Spotter Position" Graphic="25214000.svg">
+					<EntityTypeCode>
+						<DigitOne>4</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="VITAL_AREA_CENTER" Label="Vital Area Center" Graphic="25214100.svg">
+					<EntityTypeCode>
+						<DigitOne>4</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="CORRIDOR_TAB_POINT" Label="Corridor Tab Point" Graphic="25214200.svg">
+					<EntityTypeCode>
+						<DigitOne>4</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ENEMY_POINT" Label="Enemy Point" Graphic="25214300.svg">
+					<EntityTypeCode>
+						<DigitOne>4</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="MARSHALL_POINT" Label="Marshall Point" Graphic="25214400.svg">
+					<EntityTypeCode>
+						<DigitOne>4</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="POSITION_AND_INTENDED_MOVEMENT__PIM_" Label="Position and Intended Movement (PIM)" Graphic="25214500.svg">
+					<EntityTypeCode>
+						<DigitOne>4</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="PRE_LANDFALL_WAYPOINT" Label="Pre-Landfall Waypoint" Graphic="25214600.svg">
+					<EntityTypeCode>
+						<DigitOne>4</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ESTIMATED_POSITION__EP_" Label="Estimated Position (EP)" Graphic="25214700.svg">
+					<EntityTypeCode>
+						<DigitOne>4</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="WAYPOINT" Label="Waypoint" Graphic="25214800.svg">
+					<EntityTypeCode>
+						<DigitOne>4</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="GENERAL_SUBSURFACE_STATION" Label="General Subsurface Station" Graphic="25214900.svg">
+					<EntityTypeCode>
+						<DigitOne>4</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="SUBMARINE_SUBSURFACE_STATION" Label="Submarine Subsurface Station" Graphic="25215000.svg">
+					<EntityTypeCode>
+						<DigitOne>5</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="SUBMARINE_ANTISUBMARINE_WARFARE_SUBSURFACE_STATION" Label="Submarine Antisubmarine Warfare Subsurface Station" Graphic="25215100.svg">
+					<EntityTypeCode>
+						<DigitOne>5</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="UNMANNED_UNDERWATER_VEHICLE_SUBSURFACE_STATION" Label="Unmanned Underwater Vehicle Subsurface Station" Graphic="25215200.svg">
+					<EntityTypeCode>
+						<DigitOne>5</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ANTISUBMARINE_WARFARE__ASW__UNMANNED_UNDERWATER_VEHICLE_SUBSURFACE_STATION" Label="Antisubmarine Warfare (ASW) Unmanned Underwater Vehicle Subsurface Station" Graphic="25215300.svg">
+					<EntityTypeCode>
+						<DigitOne>5</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="MINE_WARFARE_UNMANNED_UNDERWATER_VEHICLE_SUBSURFACE_STATION" Label="Mine Warfare Unmanned Underwater Vehicle Subsurface Station" Graphic="25215400.svg">
+					<EntityTypeCode>
+						<DigitOne>5</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="SURFACE_WARFARE_UNMANNED_UNDERWATER_VEHICLE_SUBSURFACE_STATION" Label="Surface Warfare Unmanned Underwater Vehicle Subsurface Station" Graphic="25215500.svg">
+					<EntityTypeCode>
+						<DigitOne>5</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="GENERAL_SURFACE_STATION" Label="General Surface Station" Graphic="25215600.svg">
+					<EntityTypeCode>
+						<DigitOne>5</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ANTISUBMARINE_WARFARE__ASW__SURFACE_STATION" Label="Antisubmarine Warfare (ASW) Surface Station" Graphic="25215700.svg">
+					<EntityTypeCode>
+						<DigitOne>5</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="MINE_WARFARE_SURFACE_STATION" Label="Mine Warfare Surface Station" Graphic="25215800.svg">
+					<EntityTypeCode>
+						<DigitOne>5</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="NON_COMBATANT_SURFACE_STATION" Label="Non-Combatant Surface Station" Graphic="25215900.svg">
+					<EntityTypeCode>
+						<DigitOne>5</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="PICKET_SURFACE_STATION" Label="Picket Surface Station" Graphic="25216000.svg">
+					<EntityTypeCode>
+						<DigitOne>6</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="RENDEZVOUS_SURFACE_STATION" Label="Rendezvous Surface Station" Graphic="25216100.svg">
+					<EntityTypeCode>
+						<DigitOne>6</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="REPLENISHMENT_AT_SEA_SURFACE_STATION" Label="Replenishment at Sea Surface Station" Graphic="25216200.svg">
+					<EntityTypeCode>
+						<DigitOne>6</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="RESCUE_SURFACE_STATION" Label="Rescue Surface Station" Graphic="25216300.svg">
+					<EntityTypeCode>
+						<DigitOne>6</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="SURFACE_WARFARE_SURFACE_STATION" Label="Surface Warfare Surface Station" Graphic="25216400.svg">
+					<EntityTypeCode>
+						<DigitOne>6</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="UNMANNED_UNDERWATER_VEHICLE_SURFACE_STATION" Label="Unmanned Underwater Vehicle Surface Station" Graphic="25216500.svg">
+					<EntityTypeCode>
+						<DigitOne>6</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ANTISUBMARINE_WARFARE__ASW__UNMANNED_UNDERWATER_VEHICLE_SURFACE_STATION" Label="Antisubmarine Warfare (ASW) Unmanned Underwater Vehicle Surface Station" Graphic="25216600.svg">
+					<EntityTypeCode>
+						<DigitOne>6</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="MINE_WARFARE_UNMANNED_UNDERWATER_VEHICLE_SURFACE_STATION" Label="Mine Warfare Unmanned Underwater Vehicle Surface Station" Graphic="25216700.svg">
+					<EntityTypeCode>
+						<DigitOne>6</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="REMOTE_MULTI_MISSION_VEHICLE_MINE_WARFARE_UNMANNED_UNDERWATER" Label="Remote Multi-Mission Vehicle Mine Warfare Unmanned Underwater" Graphic="25216800.svg">
+					<EntityTypeCode>
+						<DigitOne>6</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="SURFACE_WARFARE_MINE_WARFARE_UNMANNED_UNDERWATER_VEHICLE" Label="Surface Warfare Mine Warfare Unmanned Underwater Vehicle" Graphic="25216900.svg">
+					<EntityTypeCode>
+						<DigitOne>6</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="SHORE_CONTROL_STATION" Label="Shore Control Station" Graphic="25217000.svg">
+					<EntityTypeCode>
+						<DigitOne>7</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="GENERAL_ROUTE" Label="General Route" Graphic="25217100.svg">
+					<EntityTypeCode>
+						<DigitOne>7</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="DIVERSION_ROUTE" Label="Diversion Route" Graphic="25217200.svg">
+					<EntityTypeCode>
+						<DigitOne>7</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="POSITION_AND_INTENDED_MOVEMENT__PIM__ROUTE" Label="Position and Intended Movement (PIM) Route" Graphic="25217300.svg">
+					<EntityTypeCode>
+						<DigitOne>7</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="PICKET_ROUTE" Label="Picket Route" Graphic="25217400.svg">
+					<EntityTypeCode>
+						<DigitOne>7</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="POINT_R_ROUTE" Label="Point R Route" Graphic="25217500.svg">
+					<EntityTypeCode>
+						<DigitOne>7</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="RENDEZVOUS_ROUTE" Label="Rendezvous Route" Graphic="25217600.svg">
+					<EntityTypeCode>
+						<DigitOne>7</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="WAYPOINT_ROUTE" Label="Waypoint Route" Graphic="25217700.svg">
+					<EntityTypeCode>
+						<DigitOne>7</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="CLUTTER_STATIONARY_OR_CEASE_REPORTING" Label="Clutter-Stationary or Cease Reporting" Graphic="25217800.svg">
+					<EntityTypeCode>
+						<DigitOne>7</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="TENTATIVE_OR_PROVISIONAL_TRACK" Label="Tentative or Provisional Track" Graphic="25217900.svg">
+					<EntityTypeCode>
+						<DigitOne>7</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="DISTRESSED_VESSEL" Label="Distressed Vessel" Graphic="25218000.svg">
+					<EntityTypeCode>
+						<DigitOne>8</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="DITCHED_AIRCRAFT_DOWNED_AIRCRAFT" Label="Ditched Aircraft/Downed Aircraft" Graphic="25218100.svg">
+					<EntityTypeCode>
+						<DigitOne>8</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="PERSON_IN_WATER_BAILOUT" Label="Person in Water/Bailout" Graphic="25218200.svg">
+					<EntityTypeCode>
+						<DigitOne>8</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ICEBERG" Label="Iceberg" Graphic="25218300.svg">
+					<EntityTypeCode>
+						<DigitOne>8</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="NAVIGATIONAL" Label="Navigational" Graphic="25218400.svg">
+					<EntityTypeCode>
+						<DigitOne>8</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="OIL_RIG" Label="Oil Rig" Graphic="25218500.svg">
+					<EntityTypeCode>
+						<DigitOne>8</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="SEA_MINE_LIKE" Label="Sea Mine-Like" Graphic="25218600.svg">
+					<EntityTypeCode>
+						<DigitOne>8</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="BOTTOM_RETURN_NON_MINE_LIKE_BOTTOM_OBJECT__NOMBO_" Label="Bottom Return/Non-Mine Like Bottom Object (NOMBO)" Graphic="25218700.svg">
+					<EntityTypeCode>
+						<DigitOne>8</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="BOTTOM_RETURN_NON_MINE_LIKE_BOTTOM_OBJECT__NOMBO__INSTALLATION_MANMADE" Label="Bottom Return/Non-Mine Like Bottom Object (NOMBO)/Installation Manmade" Graphic="25218800.svg">
+					<EntityTypeCode>
+						<DigitOne>8</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="MARINE_LIFE" Label="Marine Life" Graphic="25218900.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>0</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SEA_ANOMALY__WAKE_CURRENT_KNUCKLE_" Label="Sea Anomaly (Wake-Current-Knuckle)" Graphic="25219000.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>0</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="BOTTOM_RETURN_NON_MILCO_WRECK_DANGEROUS" Label="Bottom Return/Non-MILCO-Wreck-Dangerous" Graphic="25219100.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>0</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="BOTTOM_RETURN_NON_MILCO_WRECK_NON_DANGEROUS" Label="Bottom Return/Non-MILCO-Wreck-Non Dangerous" Graphic="25219200.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>0</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="MARITIME_CONTROL_LINES" Label="Maritime Control Lines" Graphic="25220000.svg">
+			<EntityCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>2</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="BEARING_LINE" Label="Bearing Line" Graphic="25220100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="ELECTRONIC" Label="Electronic" Graphic="25220101.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ELECTRONIC_WARFARE__EW_" Label="Electronic Warfare (EW)" Graphic="25220102.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ACOUSTIC" Label="Acoustic" Graphic="25220103.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ACOUSTIC__AMBIGUOUS_" Label="Acoustic (Ambiguous)" Graphic="25220104.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TORPEDO" Label="Torpedo" Graphic="25220105.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ELECTRO_OPTICAL_INTERCEPT" Label="Electro-Optical Intercept" Graphic="25220106.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="JAMMER" Label="Jammer" Graphic="25220107.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RADIO_DIRECTION_FINDER__RDF_" Label="Radio Direction Finder (RDF)" Graphic="25220108.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="DECEPTION" Label="Deception" Graphic="25230000.svg">
+			<EntityCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>3</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="DECOY_DUMMY" Label="Decoy/Dummy" Graphic="25230100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="DECOY_DUMMY_FEINT" Label="Decoy/Dummy/Feint" Graphic="25230200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="FIRES_AREAS" Label="Fires Areas" Graphic="25240000.svg">
+			<EntityCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>4</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="AIRSPACE_COORDINATION_AREA" Label="Airspace Coordination Area" Graphic="25240100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="IRREGULAR" Label="Irregular" Graphic="25240101.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RECTANGULAR" Label="Rectangular" Graphic="25240102.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CIRCULAR" Label="Circular" Graphic="25240103.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="FREE_FIRE_AREA" Label="Free Fire Area" Graphic="25240200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="IRREGULAR" Label="Irregular" Graphic="25240201.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RECTANGULAR" Label="Rectangular" Graphic="25240202.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CIRCULAR" Label="Circular" Graphic="25240203.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="NO_FIRE_AREA" Label="No Fire Area" Graphic="25240300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="IRREGULAR" Label="Irregular" Graphic="25240301.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RECTANGULAR" Label="Rectangular" Graphic="25240302.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CIRCULAR" Label="Circular" Graphic="25240303.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="RESTRICTED_FIRE_AREA" Label="Restricted Fire Area" Graphic="25240400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="IRREGULAR" Label="Irregular" Graphic="25240401.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RECTANGULAR" Label="Rectangular" Graphic="25240402.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CIRCULAR" Label="Circular" Graphic="25240403.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="POSITION_AREA_FOR_ARTILLERY__PAA_" Label="Position Area For Artillery (PAA)" Graphic="25240500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="RECTANGULAR" Label="Rectangular" Graphic="25240501.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CIRCULAR" Label="Circular" Graphic="25240502.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="POINT_TARGETS" Label="Point Targets" Graphic="25240600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="POINT_OR_SINGLE_TARGET" Label="Point or Single Target" Graphic="25240601.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="NUCLEAR_TARGET" Label="Nuclear Target" Graphic="25240602.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TARGET_RECORDED" Label="Target-Recorded" Graphic="25240603.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="LINEAR_TARGETS" Label="Linear Targets" Graphic="25240700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="LINEAR_TARGET" Label="Linear Target" Graphic="25240701.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="LINEAR_SMOKE_TARGET" Label="Linear Smoke Target" Graphic="25240702.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FINAL_PROTECTIVE_FIRE__FPF_" Label="Final Protective Fire (FPF)" Graphic="25240703.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="AREA_TARGETS" Label="Area Targets" Graphic="25240800.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="AREA_TARGET" Label="Area Target" Graphic="25240801.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RECTANGULAR_TARGET" Label="Rectangular Target" Graphic="25240802.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CIRCULAR_TARGET" Label="Circular Target" Graphic="25240803.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RECTANGULAR_TARGET___SINGLE_TARGET" Label="Rectangular Target - Single Target" Graphic="25240804.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SERIES_OF_TARGETS" Label="Series of Targets" Graphic="25240805.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="GROUP_OF_TARGETS" Label="Group of Targets" Graphic="25240806.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SMOKE_TARGET" Label="Smoke Target" Graphic="25240807.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SMOKE_PLANNED_OR_ON_ORDER" Label="Smoke Planned or On Order" Graphic="25240808.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="BOMB_AREA" Label="Bomb Area" Graphic="25240809.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>9</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="FIRE_SUPPORT_STATION" Label="Fire Support Station" Graphic="25240900.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="FIRE_SUPPORT_AREA" Label="Fire Support Area" Graphic="25241000.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="IRREGULAR" Label="Irregular" Graphic="25241001.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RECTANGULAR" Label="Rectangular" Graphic="25241002.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CIRCULAR" Label="Circular" Graphic="25241003.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="ARTILLERY_TARGET_INTELLIGENCE_ZONE" Label="Artillery Target Intelligence Zone" Graphic="25241100.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="IRREGULAR" Label="Irregular" Graphic="25241101.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RECTANGULAR" Label="Rectangular" Graphic="25241102.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CIRCULAR" Label="Circular" Graphic="25241103.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="CALL_FOR_FIRE_AREA" Label="Call for Fire Area" Graphic="25241200.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="IRREGULAR" Label="Irregular" Graphic="25241201.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RECTANGULAR" Label="Rectangular" Graphic="25241202.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CIRCULAR" Label="Circular" Graphic="25241203.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="CENSOR_AREA" Label="Censor Area" Graphic="25241300.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="IRREGULAR" Label="Irregular" Graphic="25241301.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RECTANGULAR" Label="Rectangular" Graphic="25241302.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CIRCULAR" Label="Circular" Graphic="25241303.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="CRITICAL_FRIENDLY_AREA" Label="Critical Friendly Area" Graphic="25241400.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="IRREGULAR" Label="Irregular" Graphic="25241401.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RECTANGULAR" Label="Rectangular" Graphic="25241402.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CIRCULAR" Label="Circular" Graphic="25241403.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="DEAD_SPACE_AREA" Label="Dead Space Area" Graphic="25241500.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="IRREGULAR" Label="Irregular" Graphic="25241501.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RECTANGULAR" Label="Rectangular" Graphic="25241502.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CIRCULAR" Label="Circular" Graphic="25241503.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="SENSOR_AREA" Label="Sensor Area" Graphic="25241600.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="IRREGULAR" Label="Irregular" Graphic="25241601.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RECTANGULAR" Label="Rectangular" Graphic="25241602.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CIRCULAR" Label="Circular" Graphic="25241603.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="TARGET_BUILD_UP_AREA" Label="Target Build-up Area" Graphic="25241700.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="IRREGULAR" Label="Irregular" Graphic="25241701.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RECTANGULAR" Label="Rectangular" Graphic="25241702.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CIRCULAR" Label="Circular" Graphic="25241703.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="TARGET_VALUE_AREA" Label="Target Value Area" Graphic="25241800.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="IRREGULAR" Label="Irregular" Graphic="25241801.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RECTANGULAR" Label="Rectangular" Graphic="25241802.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CIRCULAR" Label="Circular" Graphic="25241803.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="ZONE_OF_RESPONSIBILITY" Label="Zone of Responsibility" Graphic="25241900.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="IRREGULAR" Label="Irregular" Graphic="25241901.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RECTANGULAR" Label="Rectangular" Graphic="25241902.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CIRCULAR" Label="Circular" Graphic="25241903.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="TERMINALLY_GUIDED_MUNITION_FOOTPRINT__TGMF_" Label="Terminally Guided Munition Footprint (TGMF)" Graphic="25242000.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="WEAPON_SENSOR_RANGE_FAN_CIRCULAR" Label="Weapon/Sensor Range fan-Circular" Graphic="25242100.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="WEAPON_SENSOR_RANGE_FAN_SECTOR" Label="Weapon/Sensor Range fan-Sector" Graphic="25242200.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="KILL_BOX" Label="Kill Box" Graphic="25242300.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="IRREGULAR_BLUE" Label="Irregular-Blue" Graphic="25242301.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RECTANGULAR_BLUE" Label="Rectangular-Blue" Graphic="25242302.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CIRCULAR_BLUE" Label="Circular-Blue" Graphic="25242303.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="IRREGULAR_PURPLE" Label="Irregular-Purple" Graphic="25242304.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RECTANGULAR_PURPLE" Label="Rectangular-Purple" Graphic="25242305.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CIRCULAR_PURPLE" Label="Circular-Purple" Graphic="25242306.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="FIRES_POINTS" Label="Fires Points" Graphic="25250000.svg">
+			<EntityCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>5</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="FIRING_POINT" Label="Firing Point" Graphic="25250100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="HIDE_POINT" Label="Hide Point" Graphic="25250200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="LAUNCH_POINT" Label="Launch Point" Graphic="25250300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="RELOAD_POINT" Label="Reload Point" Graphic="25250400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="SURVEY_CONTROL_POINT" Label="Survey Control Point" Graphic="25250500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="FIRE_LINES" Label="Fire Lines" Graphic="25260000.svg">
+			<EntityCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>6</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="FIRE_SUPPORT_COORDINATION_LINE__FSCL_" Label="Fire Support Coordination Line (FSCL)" Graphic="25260100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="COORDINATED_FIRE_LINE__CFL_" Label="Coordinated Fire Line (CFL)" Graphic="25260200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="NO_FIRE_LINE" Label="No Fire Line" Graphic="25260300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="RESTRICTIVE_FIRE_LINE" Label="Restrictive Fire Line" Graphic="25260400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="BATTLEFIELD_COORDINATION_LINE" Label="Battlefield Coordination Line" Graphic="25260500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="MUNITION_FLIGHT_PATH" Label="Munition Flight Path" Graphic="25260600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="PROTECTION_AREAS" Label="Protection Areas" Graphic="25270000.svg">
+			<EntityCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>7</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="OBSTACLE_BELT" Label="Obstacle Belt" Graphic="25270100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="OBSTACLE_ZONE" Label="Obstacle Zone" Graphic="25270200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="OBSTACLE_FREE_ZONE" Label="Obstacle Free Zone" Graphic="25270300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="OBSTACLE_RESTRICTED_ZONE" Label="Obstacle Restricted Zone" Graphic="25270400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="OBSTACLE_EFFECTS" Label="Obstacle Effects" Graphic="25270500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="BLOCK" Label="Block" Graphic="25270501.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="DISRUPT" Label="Disrupt" Graphic="25270502.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="FIX" Label="Fix" Graphic="25270503.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="TURN" Label="Turn" Graphic="25270504.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="OBSTACLE_BYPASS" Label="Obstacle Bypass" Graphic="25270600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="EASY" Label="Easy" Graphic="25270601.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="DIFFICULT" Label="Difficult" Graphic="25270602.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="IMPOSSIBLE" Label="Impossible" Graphic="25270603.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="MINEFIELD" Label="Minefield" Graphic="25270700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="COMPLETED" Label="Completed" Graphic="25270701.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="PLANNED" Label="Planned" Graphic="25270702.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="KNOWN_ENEMY" Label="Known Enemy" Graphic="25270703.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SUSPECTED_OR_TEMPLATED_ENEMY" Label="Suspected or Templated Enemy" Graphic="25270704.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="DUMMY" Label="Dummy" Graphic="25270705.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="DUMMY._DYMANIC" Label="Dummy. Dymanic" Graphic="25270706.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="DYNAMIC_DEPICTION" Label="Dynamic Depiction" Graphic="25270707.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="MINED_AREA" Label="Mined Area" Graphic="25270800.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="DECOY_MINED_AREA" Label="Decoy Mined Area" Graphic="25270900.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="FENCED" Label="Fenced" Graphic="25270901.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="UNEXPLODED_EXPLOSIVE_ORDNANCE__UXO__AREA" Label="Unexploded Explosive Ordnance (UXO) Area" Graphic="25271000.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="BRIDGE_OR_GAP" Label="Bridge or Gap" Graphic="25271100.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ROADBLOCKS_CRATERS_AND_BLOWN_BRIDGES" Label="Roadblocks-Craters and Blown Bridges" Graphic="25271200.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="PLANNED" Label="Planned" Graphic="25271201.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="EXPLOSIVES_STATE_OF_READINESS_1__SAFE_" Label="Explosives-State of Readiness 1 (Safe)" Graphic="25271202.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="EXPLOSIVES_STATE_OF_READINESS_2__ARMED_BUT_PASSABLE_" Label="Explosives-State of Readiness 2 (armed but passable)" Graphic="25271203.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ROADBLOCK_COMPLETE__EXECUTED_" Label="Roadblock Complete (Executed)" Graphic="25271204.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="ASSAULT_CROSSING" Label="Assault Crossing" Graphic="25271300.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="BRIDGE" Label="Bridge" Graphic="25271400.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="FORD_EASY" Label="Ford Easy" Graphic="25271500.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="FORD_DIFFICULT" Label="Ford Difficult" Graphic="25271600.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="BIOLOGICAL_CONTAMINATED_AREA" Label="Biological Contaminated Area" Graphic="25271700.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="TOXIC_INDUSTRIAL_MATERIAL" Label="Toxic Industrial Material" Graphic="25271701.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="CHEMICAL_CONTAMINATED_AREA" Label="Chemical Contaminated Area" Graphic="25271800.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="TOXIC_INDUSTRIAL_MATERIAL" Label="Toxic Industrial Material" Graphic="25271801.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="NUCLEAR_CONTAMINATED_AREA" Label="Nuclear Contaminated Area" Graphic="25271900.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="RADIOLOGICAL_CONTAMINATED_AREA" Label="Radiological Contaminated Area" Graphic="25272000.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="TOXIC_INDUSTRIAL_MATERIAL" Label="Toxic Industrial Material" Graphic="25272001.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="MINIMUM_SAFE_DISTANCE_ZONE" Label="Minimum Safe Distance Zone" Graphic="25272100.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="RADIATION_DOSE_RATE_CONTOUR_LINES" Label="Radiation Dose Rate Contour Lines" Graphic="25272200.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="PROTECTION_POINTS" Label="Protection Points" Graphic="25280000.svg">
+			<EntityCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>8</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="ABATIS" Label="Abatis" Graphic="25280100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ANTIPERSONNEL_MINE" Label="Antipersonnel Mine" Graphic="25280200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="ANTIPERSONNEL_MINE_WITH_DIRECTIONAL_EFFECTS" Label="Antipersonnel Mine with Directional Effects" Graphic="25280201.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="ANTITANK_MINE" Label="Antitank Mine" Graphic="25280300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ANTITANK_MINE_WITH_HANDLING_DEVICE" Label="Antitank Mine with Handling Device" Graphic="25280400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="WIDE_AREA_ANTITANK_MINE" Label="Wide Area Antitank Mine" Graphic="25280500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="UNSPECIFIED_MINE" Label="Unspecified Mine" Graphic="25280600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="BOOBY_TRAP" Label="Booby Trap" Graphic="25280700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ENGINEER_REGULATING_POINT" Label="Engineer Regulating Point" Graphic="25280800.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="SHELTER" Label="Shelter" Graphic="25280900.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="SHELTER_ABOVE_GROUND" Label="Shelter Above Ground" Graphic="25281000.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="BELOW_GROUND_SHELTER" Label="Below Ground Shelter" Graphic="25281100.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="FORT" Label="Fort" Graphic="25281200.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="CHEMICAL_EVENT" Label="Chemical Event" Graphic="25281300.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="TOXIC_INDUSTRIAL_MATERIAL" Label="Toxic Industrial Material" Graphic="25281301.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="BIOLOGICAL_EVENT" Label="Biological Event" Graphic="25281400.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="TOXIC_INDUSTRIAL_MATERIAL" Label="Toxic Industrial Material" Graphic="25281401.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="NUCLEAR_EVENT" Label="Nuclear Event" Graphic="25281500.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="NUCLEAR_FALLOUT_PRODUCING_EVENT" Label="Nuclear Fallout Producing Event" Graphic="25281600.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="RADIOLOGICAL" Label="Radiological" Graphic="25281700.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="TOXIC_INDUSTRIAL_MATERIAL" Label="Toxic Industrial Material" Graphic="25281701.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="GENERAL_DECONTAMINATION_POINT_SITE" Label="General Decontamination Point/Site" Graphic="25281800.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="ALTERNATE" Label="Alternate" Graphic="25281801.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="EQUIPMENT" Label="Equipment" Graphic="25281802.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TROOP" Label="Troop" Graphic="25281803.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="EQUIPMENT_TROOP" Label="Equipment/Troop" Graphic="25281804.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="OPERATIONAL" Label="Operational" Graphic="25281805.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="THOROUGH" Label="Thorough" Graphic="25281806.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MAIN_EQUIPMENT" Label="Main Equipment" Graphic="25281807.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FORWARD_TROOP" Label="Forward Troop" Graphic="25281808.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="WOUNDED_PERSONNEL" Label="Wounded Personnel" Graphic="25281809.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>9</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="TETRAHEDRONS_DRAGONS_TEETH_AND_OTHER_SIMILAR_OBSTACLES" Label="Tetrahedrons-Dragons Teeth-and Other Similar Obstacles" Graphic="25281900.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="FIXED_AND_PREFABRICATED" Label="Fixed and Prefabricated" Graphic="25281901.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MOVABLE" Label="Movable" Graphic="25281902.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MOVABLE_AND_PREFABRICATED" Label="Movable and Prefabricated" Graphic="25281903.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="VERTICAL_OBSTRUCTIONS" Label="Vertical Obstructions" Graphic="25282000.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="TOWER_LOW" Label="Tower-Low" Graphic="25282001.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TOWER_HIGH" Label="Tower-High" Graphic="25282002.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="OVERHEAD_WIRE" Label="Overhead Wire" Graphic="25282003.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="PROTECTION_LINES" Label="Protection Lines" Graphic="25290000.svg">
+			<EntityCode>
+				<DigitOne>2</DigitOne>
+				<DigitTwo>9</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="OBSTACLE_LINE" Label="Obstacle Line" Graphic="25290100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ANTITANK_OBSTACLES" Label="Antitank Obstacles" Graphic="25290200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="UNDER_CONSTRUCTION" Label="Under Construction" Graphic="25290201.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="COMPLETED" Label="Completed" Graphic="25290202.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="REINFORCED_WITH_ANTITANK_MINES" Label="Reinforced-with Antitank Mines" Graphic="25290203.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ANTITANK_WALL" Label="Antitank Wall" Graphic="25290204.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="WIRE_OBSTACLES" Label="Wire Obstacles" Graphic="25290300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="UNSPECIFIED_WIRE" Label="Unspecified Wire" Graphic="25290301.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SINGLE_FENCE_WIRE" Label="Single Fence Wire" Graphic="25290302.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="DOUBLE_FENCE_WIRE" Label="Double Fence Wire" Graphic="25290303.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="DOUBLE_APRON_FENCE" Label="Double Apron Fence" Graphic="25290304.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="LOW_WIRE_FENCE" Label="Low Wire Fence" Graphic="25290305.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="HIGH_WIRE_FENCE" Label="High Wire Fence" Graphic="25290306.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SINGLE_CONCERTINA" Label="Single Concertina" Graphic="25290307.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="DOUBLE_STRAND_CONCERTINA" Label="Double Strand Concertina" Graphic="25290308.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TRIPLE_STRAND_CONCERTINA" Label="Triple Strand Concertina" Graphic="25290309.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>9</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="MINE_CLUSTER" Label="Mine Cluster" Graphic="25290400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="TRIP_WIRE" Label="Trip Wire" Graphic="25290500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="LANE" Label="Lane" Graphic="25290600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="FERRY" Label="Ferry" Graphic="25290700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="RAFT_SITE" Label="Raft Site" Graphic="25290800.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="FORTIFIED_LINE" Label="Fortified Line" Graphic="25290900.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="FORTIFIED_POSITION" Label="Fortified Position" Graphic="25291000.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="INTELLIGENCE_LINES" Label="Intelligence Lines" Graphic="25300000.svg">
+			<EntityCode>
+				<DigitOne>3</DigitOne>
+				<DigitTwo>0</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="INTELLIGENCE_COORDINATION_LINE" Label="Intelligence Coordination Line" Graphic="25300100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="SUSTAINMENT_AREAS" Label="Sustainment Areas" Graphic="25310000.svg">
+			<EntityCode>
+				<DigitOne>3</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="DETAINEE_HOLDING_AREA" Label="Detainee Holding Area" Graphic="25310100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ENEMY_PRISONER_OR_WAR_HOLDING_AREA" Label="Enemy Prisoner or War Holding Area" Graphic="25310200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="FORWARD_ARMING_AND_REFUELING_POINT" Label="Forward Arming and Refueling Point" Graphic="25310300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="REFUGEE_HOLDING_AREA" Label="Refugee Holding Area" Graphic="25310400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="REGIMENTAL_SUPPORT_AREA" Label="Regimental Support Area" Graphic="25310500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="BRIGADE_SUPPORT_AREA" Label="Brigade Support Area" Graphic="25310600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="DIVISION_SUPPORT_AREA" Label="Division Support Area" Graphic="25310700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="SUSTAINMENT_POINTS" Label="Sustainment Points" Graphic="25320000.svg">
+			<EntityCode>
+				<DigitOne>3</DigitOne>
+				<DigitTwo>2</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="AMBULANCE_EXCHANGE_POINT" Label="Ambulance Exchange Point" Graphic="25320100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="AMMUNITION_SUPPLY_POINT" Label="Ammunition Supply Point" Graphic="25320200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="AMMUNITION_TRANSFER_POINT" Label="Ammunition Transfer Point" Graphic="25320310.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="CANNIBALIZATION_POINT" Label="Cannibalization Point" Graphic="25320400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="CASUALTY_COLLECTION_POINT" Label="Casualty Collection Point" Graphic="25320500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="CIVILIAN_COLLECTION_POINT" Label="Civilian Collection Point" Graphic="25320600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="DETAINEE_COLLECTION_POINT" Label="Detainee Collection Point" Graphic="25320700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ENEMY_PRISONER_OF_WAR_COLLECTION_POINT" Label="Enemy Prisoner of War Collection Point" Graphic="25320800.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="LOGISTICS_RELEASE_POINT" Label="Logistics Release Point" Graphic="25320900.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="MAINTENANCE_COLLECTION_POINT__MCP_" Label="Maintenance Collection Point (MCP)" Graphic="25321000.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="MEDICAL_EVACUATION_POINT__MEDEVAC__PICK_UP_POINT" Label="Medical Evacuation Point (MEDEVAC) Pick-Up Point" Graphic="25321100.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="REARM_REFUEL_AND_RESUPPLY_POINT__R3P_" Label="Rearm-Refuel and Resupply Point (R3P)" Graphic="25321200.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="REFUEL_ON_THE_MOVE__ROM__POINT" Label="Refuel on the Move (ROM) Point" Graphic="25321300.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="TRAFFIC_CONTROL_POST__TCP_" Label="Traffic Control Post (TCP)" Graphic="25321400.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="TRAILER_TRANSFER_POINT__TTP_" Label="Trailer Transfer Point (TTP)" Graphic="25321500.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="UNIT_MAINTENANCE_COLLECTION_POINT__UNCP_" Label="Unit Maintenance Collection Point (UNCP)" Graphic="25321600.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="GENERAL_SUPPLY_POINT" Label="General Supply Point" Graphic="25321700.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="NATO_CLASS_I_SUPPLY_POINT" Label="NATO Class I Supply Point" Graphic="25321701.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="NATO_CLASS_II_SUPPLY_POINT" Label="NATO Class II Supply Point" Graphic="25321702.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="NATO_CLASS_III_SUPPLY_POINT" Label="NATO Class III Supply Point" Graphic="25321703.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="NATO_CLASS_IV_SUPPLY_POINT" Label="NATO Class IV Supply Point" Graphic="25321704.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="NATO_CLASS_V_SUPPLY_POINT" Label="NATO Class V Supply Point" Graphic="25321705.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="NATO_MULTIPLE_CLASS_SUPPLY_POINT" Label="NATO Multiple Class Supply Point" Graphic="25321706.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="US_CLASS_I_SUPPLY_POINT" Label="US Class I Supply Point" Graphic="25321707.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="US_CLASS_II_SUPPLY_POINT" Label="US Class II Supply Point" Graphic="25321708.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="US_CLASS_III_SUPPLY_POINT" Label="US Class III Supply Point" Graphic="25321709.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>9</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="US_CLASS_IV_SUPPLY_POINT" Label="US Class IV Supply Point" Graphic="25321710.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>0</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="US_CLASS_V_SUPPLY_POINT" Label="US Class V Supply Point" Graphic="25321711.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="US_CLASS_VI_SUPPLY_POINT" Label="US Class VI Supply Point" Graphic="25321712.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="US_CLASS_VII_SUPPLY_POINT" Label="US Class VII Supply Point" Graphic="25321713.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="US_CLASS_VIII_SUPPLY_POINT" Label="US Class VIII Supply Point" Graphic="25321714.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="US_CLASS_IX_SUPPLY_POINT" Label="US Class IX Supply Point" Graphic="25321715.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="US_CLASS_X_SUPPLY_POINT" Label="US Class X Supply Point" Graphic="25321716.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="MEDICAL_SUPPLY_POINT" Label="Medical Supply Point" Graphic="25321800.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="SUSTAINMENT_LINES" Label="Sustainment Lines" Graphic="25330000.svg">
+			<EntityCode>
+				<DigitOne>3</DigitOne>
+				<DigitTwo>3</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="MOVING_CONVOY" Label="Moving Convoy" Graphic="25330100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="HALTED_CONVOY" Label="Halted Convoy" Graphic="25330200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="MAIN_SUPPLY_ROUTE" Label="Main Supply Route" Graphic="25330300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="ONE_WAY_TRAFFIC" Label="One Way Traffic" Graphic="25330301.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TWO_WAY_TRAFFIC" Label="Two Way Traffic" Graphic="25330302.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ALTERNATING_TRAFFIC" Label="Alternating Traffic" Graphic="25330303.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="ALTERNATE_SUPPLY_ROUTE" Label="Alternate Supply Route" Graphic="25330400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="ONE_WAY_TRAFFIC" Label="One Way Traffic" Graphic="25330401.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TWO_WAY_TRAFFIC" Label="Two Way Traffic" Graphic="25330402.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ALTERNATING_TRAFFIC" Label="Alternating Traffic" Graphic="25330403.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="MISSION_TASKS" Label="Mission Tasks" Graphic="25340000.svg">
+			<EntityCode>
+				<DigitOne>3</DigitOne>
+				<DigitTwo>4</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="BLOCK" Label="Block" Graphic="25340100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="BREACH" Label="Breach" Graphic="25340200.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="BYPASS" Label="Bypass" Graphic="25340300.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="CANALIZE" Label="Canalize" Graphic="25340400.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="CLEAR" Label="Clear" Graphic="25340500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="COUNTERATTACK" Label="Counterattack" Graphic="25340600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="COUNTERATTACK_BY_FIRE" Label="Counterattack by Fire" Graphic="25340700.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="DELAY" Label="Delay" Graphic="25340800.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="DESTROY" Label="Destroy" Graphic="25340900.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="_BLANK?_ERROR?_" Label="(BLANK?/ERROR?)" Graphic="25341000.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+		<Entity ID="MISSION_TASKS" Label="Mission Tasks" Graphic="25341100.svg">
+			<EntityCode>
+				<DigitOne>3</DigitOne>
+				<DigitTwo>4</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="FOLLOW_AND_ASSUME" Label="Follow and Assume" Graphic="25341200.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="FOLLOW_AND_SUPPORT" Label="Follow and Support" Graphic="25341300.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="INTERDICT" Label="Interdict" Graphic="25341400.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ISOLATE" Label="Isolate" Graphic="25341500.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="NEUTRALIZE" Label="Neutralize" Graphic="25341600.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="OCCUPY" Label="Occupy" Graphic="25341700.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="PENETRATE" Label="Penetrate" Graphic="25341800.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="RELIEF_IN_PLACE__RIP_" Label="Relief in Place (RIP)" Graphic="25341900.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="RETIRE_RETIREMENT" Label="Retire/Retirement" Graphic="25342000.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="SECURE" Label="Secure" Graphic="25342100.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="SECURITY" Label="Security" Graphic="25342200.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="COVER" Label="Cover" Graphic="25342201.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="GUARD" Label="Guard" Graphic="25342202.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SCREEN" Label="Screen" Graphic="25342203.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="SEIZE" Label="Seize" Graphic="25342300.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="WITHDRAW" Label="Withdraw" Graphic="25342400.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="WITHDRAW_UNDER_PRESSURE" Label="Withdraw Under Pressure" Graphic="25342500.svg">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+	</Entities>
+	<SectorOneModifiers></SectorOneModifiers>
+	<SectorTwoModifiers></SectorTwoModifiers>
+</SymbolSet>
