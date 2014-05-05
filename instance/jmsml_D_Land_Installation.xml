@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="SS_LAND_INSTALLATION" Label="Land Installation" DimensionID="LAND_INSTALLATION">
+	<SymbolSetCode>
+		<DigitOne>2</DigitOne>
+		<DigitTwo>0</DigitTwo>
+	</SymbolSetCode>
+	<LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
+	<Entities>
+		<Entity ID="INSTALLATION" Label="Military Installation" Graphic="20110000.svg" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes.">
+			<EntityCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</EntityCode>
+			<EntityTypes>
+				<EntityType ID="AIRCRAFT_PRODUCTION_ASSEMBLY" Label="Aircraft Production/Assembly" Graphic="20110100.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="AMMUNITION_EXPLOSIVES_ASSEMBLY" Label="Ammunition and Explosives/Assembly" Graphic="20110200.svg" Icon="FULL_OCTAGON">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="AMMUNITION_CACHE" Label="Ammunition Cache" CloverGraphic="20110300_0.svg" RectangleGraphic="20110300_1.svg" SquareGraphic="20110300_2.svg" DiamondGraphic="20110300_3.svg" Icon="FULL_FRAME" >
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ARMAMENT_PRODUCTION" Label="Armament Production" Graphic="20110400.svg" Icon="FULL_OCTAGON">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="BLACK_LIST_LOCATION" Label="Black List Location" Graphic="20110500.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="CBRN" Label="Chemical-Biological-Radiological and Nuclear (CBRN)" Graphic="20110600.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="ENGINEERING_EQUIPMENT_PRODUCTION" Label="Engineering Equipment Production" Graphic="20110700.svg" Icon="FULL_OCTAGON">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="BRIDGE" Label="Bridge" Graphic="20110701.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="EQUIPMENT_MANUFACTURE" Label="Equipment Manufacture" Graphic="20110800.svg" Icon="FULL_OCTAGON">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="GOVERNMENT_LEADERSHIP" Label="Government Leadership" Graphic="20110900.svg">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="GRAY_LIST_LOCATION" Label="Gray List Location" Graphic="20111000.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="MASS_GRAVE_SITE" Label="Mass Grave Site" Graphic="20111100.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="MATERIEL" Label="Materiel" Graphic="" CloverGraphic="20111200_0.svg" RectangleGraphic="20111200_1.svg" SquareGraphic="20111200_2.svg" DiamondGraphic="20111200_3.svg" Icon="FULL_FRAME">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="MINE" Label="Mine" Graphic="20111300.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="MISSILE_SPACE_SYSTEM_PRODUCTION" Label="Missile and Space System Production" Graphic="20111400.svg" Icon="FULL_OCTAGON">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="NUCLEAR_DEFENSE" Label="Nuclear (Non CBRN Defense)" Graphic="20111500.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="PRINTED_MEDIA" Label="Printed Media" Graphic="20111600.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="SAFE_HOUSE" Label="Safe House" Graphic="20111700.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="WHITE_LIST_LOCATION" Label="White List Location" Graphic="20111800.svg">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="TENTED_CAMP" Label="Tented Camp" Graphic="20111900.svg" Icon="FULL_OCTAGON">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="DISPLACED_PERSONS_CAMP" Label="Displaced Persons, Refugee, Evacuees Camp" Graphic="20111901.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TRAINING_CAMP" Label="Training Camp" Graphic="20111902.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="WAREHOUSE_STORAGE_FACILITY" Label="Warehouse/Storage Facility" Graphic="20112000.svg" Icon="FULL_OCTAGON">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="LAW_ENFORCEMENT" Label="Law Enforcement" Graphic="20112100.svg" Icon="FULL_OCTAGON">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="BUREAU_ATF" Label="Bureau of Alcohol-Tobacco-Firearms and Explosives (ATF) (Department of Justice)" Graphic="20112101.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="BORDER_PATROL" Label="Border Patrol" Graphic="20112102.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CUSTOMS_SERVICE" Label="Customs Service" Graphic="20112103.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="DRUG_ENFORCEMENT_ADMINISTRATION_DEA" Label="Drug Enforcement Administration (DEA)" Graphic="20112104.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="DEPARTMENT_JUSTICE_DOJ" Label="Department of Justice (DOJ)" Graphic="20112105.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FEDERAL_BUREAU_INVESTIGATION_FBI" Label="Federal Bureau of Investigation (FBI)" Graphic="20112106.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="POLICE" Label="Police" Graphic="20112107.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="PRISON" Label="Prison" Graphic="20112108.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="UNITED_STATES_SECRET_SERVICE_USSS" Label="United States Secret Service (USSS)" Graphic="20112109.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>9</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TRANSPORTATION_SECURITY_ADMINISTRATION_TSA" Label="Transportation Security Administration (TSA)" Graphic="20112110.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>0</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="COAST_GUARD" Label="Coast Guard" Graphic="20112111.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="US_MARSHALS_SERVICE" Label="US Marshals Service" Graphic="20112112.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="EMERGENCY_OPERATION" Label="Emergency Operation" Graphic="20112200.svg" Icon="FULL_OCTAGON">
+					<EntityTypeCode>
+						<DigitOne>2</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="FIRE_STATION" Label="Fire Station" Graphic="20112201.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="EMERGENCY_MEDICAL_OPERATION" Label="Emergency Medical Operation" Graphic="20112202.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="INFRASTRUCTURE" Label="Emergency Operation" Remarks="No icon is associated with this entity. It is for hierarchal purposes only.">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="AGRICULTURE_FOOD_INFRASTRUCTURE" Label="Agriculture and Food Infrastructure" Graphic="20120100.svg" Icon="FULL_OCTAGON">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="AGRICULTURE_LABORATORY" Label="Agriculture Laboratory" Graphic="20120101.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ANIMAL_FEEDLOT" Label="Animal Feedlot" Graphic="20120102.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="COMMERCIAL_FOOD_DISTRIBUTION" Label="Commercial Food Distribution Center" CloverGraphic="20120103_0.svg" RectangleGraphic="20120103_1.svg" SquareGraphic="20120103_2.svg" DiamondGraphic="20120103_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FARM_RANCH" Label="Farm/Ranch" Graphic="20120104.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FOOD_DISTRIBUTION" Label="Food Distribution" CloverGraphic="20120105_0.svg" RectangleGraphic="20120105_1.svg" SquareGraphic="20120105_2.svg" DiamondGraphic="20120105_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FOOD_PRODUCTION_CENTER" Label="Food Production Center" CloverGraphic="20120106_0.svg" RectangleGraphic="20120106_1.svg" SquareGraphic="20120106_2.svg" DiamondGraphic="20120106_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FOOD_RETAIL" Label="Food Retail" CloverGraphic="20120107_0.svg" RectangleGraphic="20120107_1.svg" SquareGraphic="20120107_2.svg" DiamondGraphic="20120107_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="GRAIN_STORAGE" Label="Grain Storage" Graphic="20120108.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="BANKING_INFRASTRUCTURE" Label="Banking, Finance, and Insurance Infrastructure" Graphic="20120200.svg" Icon="FULL_OCTAGON">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="ATM" Label="ATM" Graphic="20120201.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="BANK" Label="Bank" Graphic="20120202.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="BULLION_STORAGE" Label="Bullion Storage" Graphic="20120203.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ECONOMIC_INFRASTRUCTURE_ASSET" Label="Economic Infrastructure Asset" Graphic="20120204.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FEDERAL_RESERVE_BANK" Label="Federal Reserve Bank" Graphic="20120205.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FINANCIAL_EXCHANGE" Label="Financial Exchange" Graphic="20120206.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FINANCIAL_SERVICES_OTHER" Label="Financial Services-Other" Graphic="20120207.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="COMMERCIAL_INFRASTRUCTURE" Label="Commercial Infrastructure" Graphic="20120300.svg" Icon="FULL_OCTAGON">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="CHEMICAL_PLANT" Label="Chemical Plant" Graphic="20120301.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FIREARMS_MANUFACTURER" Label="Firearms Manufacturer" Graphic="20120302.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FIREARMS_RETAILER" Label="Firearms Retailer" Graphic="20120303.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="HAZARDOUS_MATERIAL_PRODUCTION" Label="Hazardous Material Production" Graphic="20120304.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="HAZARDOUS_MATERIAL_STORAGE" Label="Hazardous Material Storage" Graphic="20120305.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="INDUSTRIAL_SITE" Label="Industrial Site" Graphic="20120306.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="LANDFILL" Label="Landfill" Graphic="20120307.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="PHARMACEUTICAL_MANUFACTURER" Label="Pharmaceutical Manufacturer" Graphic="20120308.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CONTAMINATED_HAZARDOUS_WASTE_SITE" Label="Contaminated Hazardous Waste Site" Graphic="20120309.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>9</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TOXIC_RELEASE_INVENTORY" Label="Toxic Release Inventory" Graphic="20120310.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>0</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="EDUCATIONAL_FACILITIES_INFRASTRUCTURE" Label="Educational Facilities Infrastructure" Graphic="20120400.svg" Icon="FULL_OCTAGON">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="COLLEGE_UNIVERSITY" Label="College/University" Graphic="20120401.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SCHOOL" Label="School" Graphic="20120402.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="ENERGY_FACILITY_INFRASTRUCTURE" Label="Energy Facility Infrastructure" Graphic="20120500.svg" Icon="FULL_OCTAGON">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>5</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="ELECTRIC_POWER" Label="Electric Power" Graphic="20120501.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="GENERATION_STATION" Label="Generation Station" Graphic="20120502.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="NATURAL_GAS_FACILITY" Label="Natural Gas Facility" Graphic="20120503.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="PETROLEUM_FACILITY" Label="Petroleum Facility" Graphic="20120504.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="PETROLEUM_GAS_OIL" Label="Petroleum/Gas/Oil" Graphic="20120505.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="PROPANE_FACILITY" Label="Propane Facility" Graphic="20120506.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="GOVERNMENT_SITE_INFRASTRUCTURE" Label="Government Site Infrastructure" Graphic="20120600.svg" Icon="FULL_OCTAGON">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>6</DigitTwo>
+					</EntityTypeCode>
+
+				</EntityType>
+				<EntityType ID="MEDICAL_INFRASTRUCTURE" Label="Medical Infrastructure" Remarks="No icon is assoicated with this entity. It is for hierarchal purposes only.">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>7</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="MEDICAL" Label="Medical" CloverGraphic="20120701_0.svg" RectangleGraphic="20120701_1.svg" SquareGraphic="20120701_2.svg" DiamondGraphic="20120701_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MTF_HOSPITAL" Label="Medical Treatment Facility (Hospital)" CloverGraphic="20120702_0.svg" RectangleGraphic="20120702_1.svg" SquareGraphic="20120702_2.svg" DiamondGraphic="20120702_3.svg" Icon="FULL_FRAME">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="MILITARY_INFRASTRUCTURE" Label="Military Infrastructure" Graphic="20120800.svg" Icon="FULL_OCTAGON">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>8</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="MILITARY_ARMORY" Label="Military Armory" Graphic="20120801.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MILITARY_BASE" Label="Military Base" Graphic="20120802.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="POSTAL_SERVICES_INFRASTRUCTURE" Label="Postal Services Infrastructure" Graphic="20120900.svg" Icon="FULL_OCTAGON">
+					<EntityTypeCode>
+						<DigitOne>0</DigitOne>
+						<DigitTwo>9</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="POSTAL_DISTRIBUTION_CENTER" Label="Postal Distribution Center" Graphic="20120901.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="POST_OFFICE" Label="Post Office" Graphic="20120902.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="PUBLIC_VENUES_INFRASTRUCTURE" Label="Public Venues Infrastructure" Graphic="20121000.svg" Icon="FULL_OCTAGON">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>0</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="ENCLOSED_FACILITY" Label="Enclosed Facility" Graphic="20121001.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="OPEN_FACILITY" Label="Open Facility" Graphic="20121002.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RECREATIONAL_AREA" Label="Recreational Area" Graphic="20121003.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RELIGIOUS_INSTITUTION" Label="Religious Institution" Graphic="20121004.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="SPECIAL_NEEDS_INFRASTRUCTURE" Label="Special Needs Infrastructure" Graphic="20121100.svg" Icon="FULL_OCTAGON">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>1</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="ADULT_DAY_CARE" Label="Adult Day Care" Graphic="20121101.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="CHILD_DAY_CARE" Label="Child Day Care" Graphic="20121102.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ELDER_CARE" Label="Elder Care" Graphic="20121103.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="TELECOMMUNICATIONS_INFRASTRUCTURE" Label="Telecommunications Infrastructure" Graphic="20121200.svg" Icon="FULL_OCTAGON">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>2</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="BROADCAST_TRANSMITTER_ANTENNAE" Label="Broadcast Transmitter Antennae" Graphic="20121201.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TELECOMMUNICATIONS" Label="Telecommunications" Graphic="20121202.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TELECOMMUNICATIONS_TOWER" Label="Telecommunications Tower" Graphic="20121203.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="TRANSPORTATION_INFRASTRUCTURE" Label="Transportation Infrastructure" Graphic="20121300.svg" Icon="FULL_OCTAGON">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>3</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="AIRPORT_AIR_BASE" Label="Airport/Air Base" Graphic="20121301.svg" Icon="MAIN_1">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="ATC_FACILITY" Label="Air Traffic Control Facility" Graphic="20121302.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="BUS_STATION" Label="Bus Station" Graphic="20121303.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="FERRY_TERMINAL" Label="Ferry Terminal" Graphic="20121304.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="HELICOPTER_LANDING_SITE" Label="Helicopter Landing Site" Graphic="20121305.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="MAINTENANCE_FACILITY" Label="Maintenance Facility" Graphic="20121306.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RAILHEAD_RAILROAD_STATION" Label="Railhead/Railroad Station" Graphic="20121307.svg" Icon="MAIN_1">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="REST_STOP" Label="Rest Stop" Graphic="20121308.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SEA_PORT_NAVAL_BASE" Label="Sea Port/Naval Base" Graphic="20121309.svg" Icon="MAIN_1">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>9</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SHIP_YARD" Label="Ship Yard" Graphic="20121310.svg" Icon="MAIN_1">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>0</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TOLL_FACILITY" Label="Toll Facility" Graphic="20121311.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TRAFFIC_INSPECTION_FACILITY" Label="Traffic Inspection Facility" Graphic="20121312.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="TUNNEL" Label="Tunnel" Graphic="20121313.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+				<EntityType ID="WATER_SUPPLY_INFRASTRUCTURE" Label="Water Supply Infrastructure" Graphic="20121400.svg" Icon="FULL_OCTAGON">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="CONTROL_VALVE" Label="Control Valve" Graphic="20121401.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="DAM" Label="Dam" Graphic="20121402.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="DISCHARGE_OUTFALL" Label="Discharge Outfall" Graphic="20121403.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="GROUND_WATER_WELL" Label="Ground Water Well" Graphic="20121404.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="PUMPING_STATION" Label="Pumping Station" Graphic="20121405.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="RESERVOIR" Label="Reservoir" Graphic="20121406.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="STORAGE_TOWER" Label="Storage Tower" Graphic="20121407.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="SURFACE_WATER_INTAKE" Label="Surface Water Intake" Graphic="20121408.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="WASTEWATER_TREATMENT_FACILITY" Label="Wastewater Treatment Facility" Graphic="20121409.svg" Icon="FULL_OCTAGON">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>9</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="WATER" Label="Water" Graphic="20121410.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>0</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="WATER_TREATMENT" Label="Water Treatment" Graphic="20121411.svg">
+							<EntitySubTypeCode>
+								<DigitOne>1</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+
+					</EntitySubTypes>
+				</EntityType>
+			</EntityTypes>
+		</Entity>
+	</Entities>
+	<SectorOneModifiers>
+		<Modifier ID="BIOLOGICAL_1_MOD" Label="Biological" Category="CBRN Type" Graphic="20011.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="CHEMICAL_1_MOD" Label="Chemical " Category="CBRN Type" Graphic="20021.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>2</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="NUCLEAR_1_MOD" Label="Nuclear" Category="CBRN Type" Graphic="20031.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>3</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="RADIOLOGICAL_1_MOD" Label="Radiological" Category="CBRN Type" Graphic="20041.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>4</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="DECONTAMINATION_MOD" Label="Decontamination" Category="CBRN Type" Graphic="20051.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>5</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="COAL_MOD" Label="Coal" Category="Electric Power Type" Graphic="20061.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>6</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="GEOTHERMAL_MOD" Label="Geothermal" Category="Electric Power Type" Graphic="20071.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>7</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="HYDROELECTRIC_MOD" Label="Hydroelectric" Category="Electric Power Type" Graphic="20081.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>8</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="NATURAL_GAS_MOD" Label="Natural Gas" Category="Electric Power Type" Graphic="20091.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>9</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="PETROLEUM_MOD" Label="Petroleum" Category="Electric Power Type" Graphic="20101.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>0</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="CIVILIAN_MOD" Label="Civilian " Category="Operation" Graphic="20111.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="CIVILIAN_TELEPHONE_MOD" Label="Civilian Telephone" Category="Civilian Telecommunications Type" Graphic="20121.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>2</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="CIVILIAN_TELEVISION_MOD" Label="Civilian Television" Category="Civilian Telecommunications Type" Graphic="20131.svg">
+			<ModifierCode>
+				<DigitOne>1</DigitOne>
+				<DigitTwo>3</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+	</SectorOneModifiers>
+	<SectorTwoModifiers>
+		<Modifier ID="BIOLOGICAL_2_MOD" Label="Biological" Category="TODO" Graphic="20012.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>1</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="CHEMICAL_2_MOD" Label="Chemical " Category="TODO" Graphic="20022.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>2</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="NUCLEAR_2_MOD" Label="Nuclear" Category="TODO" Graphic="20032.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>3</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="RADIOLOGICAL_2_MOD" Label="Radiological" Category="TODO" Graphic="20042.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>4</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="ATOMIC_ENERGY_REACTOR_MOD" Label="Atomic Energy Reactor" Category="TODO" Graphic="20052.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>5</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="NUCLEAR_MATERIAL_PRODUCTION_MOD" Label="Nuclear Material Production" Category="TODO" Graphic="20062.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>6</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="NUCLEAR_MATERIAL_STORAGE_MOD" Label="Nuclear Material Storage" Category="TODO" Graphic="20072.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>7</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+		<Modifier ID="WEAPONS_GRADE_MOD" Label="Weapons Grade" Category="TODO" Graphic="20082.svg">
+			<ModifierCode>
+				<DigitOne>0</DigitOne>
+				<DigitTwo>8</DigitTwo>
+			</ModifierCode>
+		</Modifier>
+	</SectorTwoModifiers>
+</SymbolSet>

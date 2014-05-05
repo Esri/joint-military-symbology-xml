@@ -1,9 +1,67 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Library xmlns="http://disa.mil/JointMilSyML.xsd" Name="2525D">
   <DrawRules>
-    <DrawRule ID="POINT1" AnchorPoints="This symbol requires one anchor point.  The anchor point defines/is the tip of the inverted cone." Orientation="The symbol will typically be oriented upright."/>
+    <DrawRule ID="AREA1" AnchorPoints="This symbol requires at least three anchor points to define the boundary of the area. Add as many points as necessary to accurately reflect the area's size and shape." SizeShape="Determined by the anchor points. The information fields should be moveable and scalable as a block within the area."/>
+    <DrawRule ID="AREA2" AnchorPoints="This symbol requires at least three anchor points to define the boundary of the area. Add as many points as necessary to accurately reflect the area’s size and shape. The LAA point symbol requires one anchor point and is connected to the area symbol with a straight line." SizeShape="Determined by the anchor points. The information fields should be moveable and scalable as a block within the area."/>
+    <DrawRule ID="AREA3" AnchorPoints="This symbol requires at least three anchor points to define the boundary of the area. Add as many points as necessary to accurately reflect the area's size and shape." SizeShape="Determined by the anchor points." Orientation="The side opposite Field B (Echelon) faces toward the hostile force."/>
+    <DrawRule ID="AREA4" AnchorPoints="This symbol requires at least three anchor points to define the boundary of the area. Add as many points as necessary to accurately reflect the area's size and shape." SizeShape="Determined by the anchor points. The information fields should be moveable and scalable as a block within the area. The default tic length should be the same as the text height of the echelon field (B). Spacing between the tics should also be the height of B. Users should be provided a facility to allow them to manually alter the height of B, which in turn should affect the tic length and spacing accordingly."/>
+    <DrawRule ID="AREA5" AnchorPoints="This symbol requires at least three anchor points. Points 1 and 2 define the endpoints of the semicircle's opening. Point 3 defines the end of the arrow." SizeShape=". Points 1 and 2 determine the diameter of the semicircle and point 3 determines the length of the arrow. The tip of the arrowhead will be at the center point of the semicircle's diameter and will project perpendicularly from the line between points 1 and 2. The default tic length should be the same as the text height of the echelon field (B). Spacing between the tics should also be the height of B. Users should be provided a facility to allow them to manually alter the height of B, which in turn should affect the tic length and spacing accordingly." Orientation="The opening typically faces enemy forces."/>
+    <DrawRule ID="AREA6" AnchorPoints="This graphic requires two anchor points. Point 1 defines the center point of the graphic and point 2 defines the graphic’s start point and radius." SizeShape="Points 1 and 2 will determine a radius that is long enough for the graphic to encompass the feature(s) being retained. The opening will be a 30-degree arc of the circle. The default tic length should be the same as the text height of the echelon field (R). Spacing between the tics should also be the height of R. Users should be provided a facility to allow them to manually alter the height of R, which in turn should affect the tic length and spacing accordingly." Orientation="The opening will be on the friendly side of the graphic."/>
+    <DrawRule ID="AREA7" AnchorPoints="This symbol requires three anchor points. Point 1 is the tip of the arrowhead. Points 2 and 3 define the endpoints of the straight line on the back side of the symbol." SizeShape="Points 2 and 3 determine the length of the straight line on the back side of the symbol. The rear of the arrow should connect to the midpoint of the line between points 2 and 3." Orientation="Orientation is determined by the anchor points. The back side of the symbol encompasses the firing position, while the arrowhead typically points at the target."/>
+    <DrawRule ID="AREA8" AnchorPoints="This symbol requires four anchor points. Points 1 and 2 define the endpoints of the straight line on the back side of the symbol. Points 3 and 4 define the tips of the arrowheads." SizeShape="Points 1 and 2 determine the length of the straight line on the back side of the symbol. The rear of the arrows should connect to points 1 and 2." Orientation="Orientation is determined by the anchor points. The back side of the symbol encompasses the firing position, while the arrowheads typically indicate the left and right limits of coverage that the firing position is meant to support."/>
+    <DrawRule ID="AREA9" AnchorPoints="This symbol requires at least three anchor points to define the boundary of the area. Add as many points as necessary to accurately reflect the area’s size and shape." SizeShape="Determined by the anchor points." Orientation="Not applicable. The area will encompass two or more fire support graphics (point/single target, nuclear target, circular target, rectangular target, or area target). The naming convention determines whether the area describes a series or group of targets."/>
+    <DrawRule ID="AREA10" AnchorPoints="This symbol requires a minimum of three (3) and a maximum of six (6) anchor points to define the boundary of the area. The anchor points shall be sequentially numbered, in increments of one (1), beginning with point one (1)." SizeShape="Determined by the anchor points. The information fields should be moveable and scalable as a block within the area."/>
+    <DrawRule ID="AREA11" AnchorPoints="This graphic requires three anchor points. Points 1 and 2 define the endpoints of the graphic’s vertical line. Point 3 defines the endpoint of the graphic’s horizontal line." SizeShape="Points 1 and 2 determine the length of the vertical line. The length of the horizontal line is determined by plotting point 3 on a plane extending perpendicularly from the midpoint of the vertical line." Orientation="The head of the “T” typically faces enemy forces."/>
+    <DrawRule ID="AREA12" AnchorPoints="This symbol requires three anchor points. Points 1 and 2 define the end points of the symbol’s vertical line. Point 3 defines the tip of the longest arrow." SizeShape="Points 1 and 2 determine the height of the symbol and point 3 determines its length. The spacing between the symbol’s arrows will stay proportional to the symbol’s vertical line. The length of the short arrows will remain in proportion to the length of the longest arrow." Orientation="The arrows point away from enemy forces."/>
+    <DrawRule ID="AREA13" AnchorPoints="This symbol requires at least two anchor points. Points 1 and 2 define the corners of the symbol." SizeShape="Points 1 and 2 determine the length of the straight line. The radius of the semicircle is ½ the length of the straight line."/>
+    <DrawRule ID="AREA14" AnchorPoints="This symbol requires four anchor points. The center point defines the center of the symbol. Points 1, 2 and 3 define the radii of circles 1, 2 and 3." SizeShape="As defined by the operator." Orientation="The center point is typically centered over the known/suspected source location of a CBRN event."/>
+    <DrawRule ID="AREA15" AnchorPoints="This graphic requires two anchor points. Point 1 defines the center point of the graphic and point 2 defines the graphic’s start point and radius." SizeShape="The radius will be long enough for the graphic to encompass the UEI(s) or feature(s) being isolated. The opening will be a 30 degree arc of the circle." Orientation="The opening will be on the friendly side of the graphic."/>
+    <DrawRule ID="AREA16" AnchorPoints="This graphic requires two anchor points. Point 1 defines the center point of the graphic and point 2 defines the graphic’s start point and radius." SizeShape="Points 1 and 2 will determine a radius that is long enough for the graphic to encompass the feature(s) being occupied. The opening will be a 30-degree arc of the circle." Orientation="The opening will be on the friendly side of the control measure."/>
+    <DrawRule ID="AREA17" AnchorPoints="This graphic requires three anchor points. Points 1 and 2 define the endpoints of the graphic’s vertical line. Point 3 defines the rear of the graphic." SizeShape="Points 1 and 2 determine the height of the graphic and point 3 determines its length. The arrow will project perpendicularly from the midpoint of the vertical line." Orientation="The arrow points toward enemy forces."/>
+    <DrawRule ID="AREA18" AnchorPoints="This graphic requires four anchor points. Point 1 defines the tip of the first arrowhead. Point 2 defines the end of the straight line portion of the first arrow. Point 3 defines the tip of the second arrowhead. Point 4 defines the end of the second arrow." SizeShape="Points 1 and 2 and points 3 and 4 determine the length of each arrow. Points 2 and 3 shall be connected by a smooth, curved line." Orientation="Determined by the anchor points. The unit being relieved is typically located at the base of the curve and the unit performing the relief is typically located at the end of the symbol. The arrowhead typically points to the location the relieved unit should move to."/>
+    <DrawRule ID="AREA19" AnchorPoints="This graphic requires two anchor points. Point 1 defines the center point of the graphic and point 2 defines the graphic’s start point and radius." SizeShape="Points 1 and 2 will determine a radius that is long enough for the graphic to encompass the feature(s) being secured. The opening will be a 30-degree arc of the circle." Orientation="The opening will be on the friendly side of the graphic."/>
+    <DrawRule ID="POINT1" AnchorPoints="This symbol requires one anchor point. The anchor point defines/is the tip of the inverted cone." Orientation="The symbol will typically be oriented upright."/>
     <DrawRule ID="POINT2" AnchorPoints="This symbol requires one anchor point. The center point defines/is the center of the symbol." Orientation="The symbol is typically centered over the desired location."/>
-    <DrawRule ID="POINT3" AnchorPoints="This symbol requires three anchor points.  Point 1 is the tip of the arrowhead.  Points 2 and 3 define the endpoints of the curved line on the back side of the symbol." Orientation="Orientation is determined by the anchor points.  The back side of the symbol encompasses the ambush position with the airhead shaft positioned at the center of mass, while the arrowhead points in the direction of fire." SizeShape="Points 2 and 3 determine the length of the curved line on the back side of the symbol.  The rear of the arrow should connect to the midpoint of the line between points 2 and 3."/>
+    <DrawRule ID="POINT3" AnchorPoints="This symbol requires three anchor points. Point 1 is the tip of the arrowhead. Points 2 and 3 define the endpoints of the curved line on the back side of the symbol." SizeShape="Points 2 and 3 determine the length of the curved line on the back side of the symbol. The rear of the arrow should connect to the midpoint of the line between points 2 and 3." Orientation="Orientation is determined by the anchor points. The back side of the symbol encompasses the ambush position with the airhead shaft positioned at the center of mass, while the arrowhead points in the direction of fire."/>
+    <DrawRule ID="POINT4" AnchorPoints="This symbol requires one anchor point. The center point defines the center of the symbol." SizeShape="Static. Maneuver area graphic shall be drawn with a black border.  Maneuver areas may be either unfilled or filled with performance-contoured color options." Orientation="The symbol is typically centered over the desired location."/>
+    <DrawRule ID="POINT5" AnchorPoints="This symbol requires one anchor point. The point defines the bottom of the central vertical line in the symbol where the curved and vertical lines meet." Orientation="The symbol will typically be oriented upright (as shown in the template and example)."/>
+    <DrawRule ID="POINT6" AnchorPoints="This symbol requires one anchor point. The point defines the point where all the lines meet." Orientation="The symbol will typically be oriented upright (as shown in the example)."/>
+    <DrawRule ID="POINT7" AnchorPoints="This symbol requires one anchor point. The anchor point defines/is the center of the bottom of the control measure symbol as shown in the template and example." Orientation="The symbol will typically be oriented upright."/>
+    <DrawRule ID="POINT8" AnchorPoints="This symbol requires one anchor point. The anchor point defines the midpoint of the symbol’s base." Orientation="The symbol will typically be oriented upright (as shown in the template and example)."/>
+    <DrawRule ID="POINT9" AnchorPoints="This symbol requires one anchor point. The center point defines the center of the symbol." SizeShape="Static. The symbol’s corners form a 70- degree angle." Orientation="The symbol is typically centered over the desired location. A user can use this symbol to define a new type of point if the selection that follows is not sufficient."/>
+    <DrawRule ID="POINT10" AnchorPoints="This symbol requires one anchor (center) point. The point defines the center of the symbol." SizeShape="Static. The symbol's height should be 2x the symbol's width." Orientation="The symbol’s center point is typically centered over the desired location. The symbol shall be oriented upright, as shown in the examples."/>
+    <DrawRule ID="POINT11" AnchorPoints="This symbol requires one anchor point. The point defines the center of the circle." SizeShape="Static. The diameter of the circle should be 1/2 the height of the symbol." Orientation="The symbol’s center point is typically centered over the desired location. The symbol will be oriented upright, as shown in the example."/>
+    <DrawRule ID="POINT12" AnchorPoints="This symbol requires one center point. The point defines the center of the symbol." SizeShape="Static. Length is 2x the size of height." Orientation="The symbol is centered over the desired location. The symbol shall be oriented upright, as shown in the example."/>
+    <DrawRule ID="POINT13" AnchorPoints="This symbol requires three anchor points. Points 1 and 2 define the tips of the arrowheads and point 3 defines the rear of the symbol." SizeShape="Points 1 and 2 determine the symbol’s height and point 3 determines its length. The vertical line at the rear of the symbol will be the same length as the opening." Orientation="The opening typically faces enemy forces."/>
+    <DrawRule ID="POINT14" AnchorPoints="This symbol requires one anchor point. The center point defines the center of the circle." Orientation="The symbol is typically centered over the desired location."/>
+    <DrawRule ID="POINT15" AnchorPoints="This graphic requires one anchor point. The center point defines the center of the graphic." SizeShape="There should be 45 degrees of angular separation between the two arrows." Orientation="The graphic is typically centered over the desired location."/>
+    <DrawRule ID="LINE1" AnchorPoints="This symbol requires at least two anchor points, points 1 and 2, to define the line. Additional points can be defined to extend the line." SizeShape="The first and last anchor points determine the length of the line." Orientation="Orientation is determined by the order in which the anchor points are entered."/>
+    <DrawRule ID="LINE2" AnchorPoints="This symbol requires at least two anchor points, points 1 and 2, to define the line. Additional points can be defined to extend the line." SizeShape="The first and last anchor points determine the length of the line. The end-of line information will typically be posted at the ends of the line as it is displayed on the screen." Orientation="Orientation is determined by the order in which the anchor points are entered."/>
+    <DrawRule ID="LINE3" AnchorPoints="This symbol requires three anchor points. Point 1 defines the vertex of the symbol. Points 2 and 3 define the tips of the arrowheads." SizeShape="The length and orientation of the arrows can vary independently." Orientation="Orientation is determined by the anchor points. The arrowheads may touch other symbols that define the limits of the task. The top of the tactical symbol indicator may touch point 1."/>
+    <DrawRule ID="LINE4" AnchorPoints="This symbol requires two anchor points. Points 1 and 2 define the corner points of the symbol." SizeShape="The symbol varies only in length." Orientation="Orientation is determined by the anchor points."/>
+    <DrawRule ID="LINE5" AnchorPoints="This graphic requires two anchor points. Points 1 and 2 define the endpoints of the symbol." SizeShape="The symbol varies only in length." Orientation="One point defines the origin from which the bearing is being taken and the other point defines the location or direction from which a contact is made."/>
+    <DrawRule ID="LINE6" AnchorPoints="This symbol requires 3 anchor points. Point 1 defines the vertex of the symbol and points 2 and 3 define its endpoints." SizeShape="Points 1, 2 and 3 determine the length of the lines connecting them. The line defined by points 1 and 2 is typically the same length as the line between points 2 and 3." Orientation="Orientation is determined by the anchor points."/>
+    <DrawRule ID="LINE7" AnchorPoints="This symbol requires at least two anchor points, points 1 and 2, to define the line. Additional points can be defined to extend the line." SizeShape="The first and last anchor points determine the length of the line. The line information will be posted once at the center of the line as it is displayed on the screen." Orientation="Orientation is determined by the order in which the anchor points are entered."/>
+    <DrawRule ID="LINE8" AnchorPoints="This graphic requires a minimum of two (2) anchor points. Up to 298 additional points can be added to extend the line. The first point (point 1) defines the start point. The last point defines the endpoint. The points are numbered sequentially beginning with point one (1), in increments of one." SizeShape="The anchor points define the size and shape." Orientation="The orientation is determined by the anchor points."/>
+    <DrawRule ID="LINE9" AnchorPoints="This symbol requires 2 anchor points. Point 1 defines the tip of the arrowhead and point 2 defines the rear of the symbol." SizeShape="Points 1 and 2 determine the length of the symbol, which varies only in length." Orientation="The orientation is determined by the anchor points."/>
+    <DrawRule ID="LINE10" AnchorPoints="This symbol requires two anchor points. Point 1 defines the rear of the symbol. Point 2 defines the tip of the arrowhead. Point 3 defines the 90 degree arc." SizeShape="Points 1 and 2 are connected by a 90 degree arc. Point 3 indicates on which side of the line the arc is placed." Orientation="The rear of the symbol identifies the enemy’s location and the arrow points in the direction the obstacle should force the enemy to turn."/>
+    <DrawRule ID="LINE11" AnchorPoints="This symbol requires four points. Points 1 and 2 define one side of the gap and points 3 and 4 define the opposite side of the gap." SizeShape="Determined by the anchor points."/>
+    <DrawRule ID="LINE12" AnchorPoints="This symbol requires three anchor points. Points 1 and 2 define the endpoints of the symbol and point 3 defines the location of one side of the symbol." SizeShape="Points 1 and 2 determine the centerline of the symbol and point 3 determines its width." Orientation="Orientation is determined by the anchor points."/>
+    <DrawRule ID="LINE13" AnchorPoints="This symbol requires at least two anchor points, points 1 and 2, to define the line. Additional points can be defined to extend the line." SizeShape="The first and last anchor points determine the length of the line. The size of the tooth does not change." Orientation="Orientation is determined by the anchor points."/>
+    <DrawRule ID="LINE14" AnchorPoints="This symbol requires two anchor points. Points 1 and 2 define the tips of the arrowheads." SizeShape="Points 1 and 2 determine the length of the symbol, which varies only in length. The lines of the arrowhead will form an acute angle." Orientation="Orientation is determined by the anchor points."/>
+    <DrawRule ID="LINE15" AnchorPoints="This symbol requires three anchor points. Points 1 and 2 define the vertical straight line portion of the symbol. Point 3 defines an end of the horizontal line." SizeShape="Points 1 and 2 determine the length of the vertical, straight-line portion of the symbol and point 3 determines its width. The distance between the line connecting points 1 and 2 and point 3 is the radius of the 90 degree arc at the bottom of the symbol." Orientation="Orientation is determined by the anchor points."/>
+    <DrawRule ID="LINE16" AnchorPoints="This symbol requires four points. Points 1 and 2 define one side of the assault crossing site and points 3 and 4 define the opposite side of the assault crossing site." SizeShape="Determined by the anchor points."/>
+    <DrawRule ID="LINE17" AnchorPoints="This symbol requires three anchor points. Points 1 and 2 define the endpoints of the first line. Point 3 defines the location of the parallel line." SizeShape="Points 1 and 2 determine the length of the symbol. Point 3 determines its width." Orientation="Orientation is determined by the anchor points."/>
+    <DrawRule ID="LINE18" AnchorPoints="This symbol requires two anchor points. Points 1 and two define the tips of the arrowheads" SizeShape="Points 1 and 2 determine the length of the symbol, which varies only in length. The arrowheads will be filled-in versions of a common arrowhead." Orientation="Orientation is determined by the anchor points."/>
+    <DrawRule ID="LINE19" AnchorPoints="This symbol requires two anchor points. Points 1 and two define the corners on the front of the symbol." SizeShape="Points 1 and 2 determine the length of the symbol, which varies only in length." Orientation="Orientation is determined by the anchor points."/>
+    <DrawRule ID="LINE20" AnchorPoints="This symbol requires 2 anchor points. Point 1 is the midpoint of the base opposite the tip of the arrowhead and point 2 defines the rear of the symbol." SizeShape="Points 1 and 2 determine the length of the symbol, which varies only in length." Orientation="The orientation is determined by the anchor points."/>
+    <DrawRule ID="LINE21" AnchorPoints="This symbol requires at least two anchor points to define the line. Additional points can be defined to extend and shape the line." SizeShape="The first and last anchor points determine the length of the line." Orientation="Orientation is determined by the order in which the anchor points are entered."/>
+    <DrawRule ID="LINE22" AnchorPoints="This graphic requires three anchor points. Points 1 and 2 define the endpoints of the graphic’s opening and point 3 defines the rear of the graphic." SizeShape="Points 1 and 2 determine the graphic’s height and point 3 determines its length. The vertical line at the rear of the graphic will be the same height as the opening and parallel to it." Orientation="The opening defines the span of the breach and typically faces enemy forces."/>
+    <DrawRule ID="LINE23" AnchorPoints="This graphic requires three anchor points. Points 1 and 2 define the endpoints of the graphic’s vertical line and point 3 defines the rear of the graphic." SizeShape="Points 1 and 2 determine the graphic’s height and point 3 determines its length. The spacing between the graphic’s arrows will stay proportional to the graphic’s height. The tip of the middle arrowhead will be at the midpoint of the vertical line. The arrows will stay perpendicular to the vertical line, regardless of the rotational orientation of the graphic as a whole." Orientation="The arrows typically point toward enemy forces."/>
+    <DrawRule ID="LINE24" AnchorPoints="This graphic requires three anchor points. Point 1 defines the tip of the arrowhead. Point 2 defines the end of the straight line portion of the graphic. Point 3 defines the diameter and orientation of the 180 degree circular arc." SizeShape="Points 1 and 2 determine the length of the straight line portion of the symbol. Point 3 defines which side of the line the arc is on and the diameter of the arc." Orientation="The arrow points in the direction of the action. The tip of the arrowhead may indicate the location where the action is to conclude. The unit’s current location is typically represented at the base of the arc. The 180 degree circular arc is always perpendicular to the line."/>
+    <DrawRule ID="LINE25" AnchorPoints="This graphic requires exactly two anchor points. Point 1 defines the tip of the arrowhead and point 2 defines the rear of the graphic." SizeShape="Points 1 and 2 determine the length of the graphic, which varies only in length." Orientation="The arrow typically points in the direction of the action."/>
+    <DrawRule ID="LINE26" AnchorPoints="Where four points are available Point 1 and Point 2 define the ends of one arrow and Point 3 and Point 4 define the ends of the other arrow. Point 1 and Point 4 define the ends of their respective arrowheads. Where three points are available Point 1 defines the vertex of the graphic. Points 2 and 3 define the tips of the arrowheads." SizeShape="Where four points are available, Points 1 and 2 and Points 3 and 4 determine the length of the arrows. Where three points are available Points 1 and 2 and points 1 and 3 determine the length of the arrows. The length and orientation of the arrows can vary independently." Orientation="Orientation is determined by the anchor points. The arrowheads may touch other graphics that define the limits of the task. The tactical symbol indicator is centered between point 2 and point 3 when four points are in use or centered on Point 1 when three points are in use."/>
+    <DrawRule ID="LINE27" AnchorPoints="Where four points are available Point 1 defines the center of the circle. Point 2 defines the radius of the circle. Point 3 defines the curvature of the arc. Point 4 defines the end of the arrow. Where three points are available Point 1 defines the center point of the circle. Point 2 defines the tip of the arrowhead. Point 3 defines the 90 degree arc." SizeShape="Where four points are available, Points 1 and 2 define the size of the circle, which should be adjusted as needed to contain the unit assigned the task. Point 3 controls the curvature of the arc. Point 4 defines the end of the arrow. Where three points are available Points 1 and 2 are connected by a 90 degree arc. The circle will at least be large enough to accommodate a tactical symbol. Point 3 indicates on which side of the line the arc is placed." Orientation="The arrowhead identifies the location/object to be seized and the circle identifies the unit(s) assigned the task. See paragraph 5.3.11 for options to accommodate multiple units."/>
   </DrawRules>
   
   <Amplifiers>
@@ -187,6 +245,20 @@
             <DigitTwo>2</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
+        
+        <SymbolSetRef ID="SS_SIGINT_AIR" Label="Signals Intelligence - Air" Instance="jmsml_D_SIGINT_Air.xml">
+          <SymbolSetCode>
+            <DigitOne>5</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
+
+        <SymbolSetRef ID="SS_CYBER_AIR" Label="Cyberspace - Air" Instance="jmsml_D_Cyberspace_Air.xml">
+          <SymbolSetCode>
+            <DigitOne>6</DigitOne>
+            <DigitTwo>0</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
       </SymbolSets>
     </Dimension>
 
@@ -215,6 +287,20 @@
           <SymbolSetCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>6</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
+        
+        <SymbolSetRef ID="SS_SIGINT_SPACE" Label="Signals Intelligence - Space" Instance="jmsml_D_SIGINT_Space.xml">
+          <SymbolSetCode>
+            <DigitOne>5</DigitOne>
+            <DigitTwo>0</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
+
+        <SymbolSetRef ID="SS_CYBER_SPACE" Label="Cyberspace - Space" Instance="jmsml_D_Cyberspace_Space.xml">
+          <SymbolSetCode>
+            <DigitOne>6</DigitOne>
+            <DigitTwo>0</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
       </SymbolSets>
@@ -262,6 +348,13 @@
             <DigitTwo>0</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
+        
+        <SymbolSetRef ID="SS_LAND_CIVILIAN" Label="Land Civilian" Instance="jmsml_D_Land_Civilian.xml">
+          <SymbolSetCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>        
       </SymbolSets>
     </Dimension>
     
@@ -307,6 +400,20 @@
             <DigitTwo>5</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
+        
+        <SymbolSetRef ID="SS_SIGINT_LAND" Label="Signals Intelligence - Land" Instance="jmsml_D_SIGINT_Land.xml">
+          <SymbolSetCode>
+            <DigitOne>5</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
+
+        <SymbolSetRef ID="SS_CYBER_LAND" Label="Cyberspace - Land" Instance="jmsml_D_Cyberspace_Land.xml">
+          <SymbolSetCode>
+            <DigitOne>6</DigitOne>
+            <DigitTwo>0</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
       </SymbolSets>
     </Dimension>
     
@@ -346,7 +453,7 @@
         <Field Name="Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD-6040." AmplifierID="Z" X="1" Y="-1"/>
       </Fields>
       <SymbolSets>
-        <SymbolSetRef ID="SS_LAND_INSTALLATION" Label="Land Installations" Instance="jmsml_D_Land_Installations.xml">
+        <SymbolSetRef ID="SS_LAND_INSTALLATION" Label="Land Installation" Instance="jmsml_D_Land_Installation.xml">
           <SymbolSetCode>
             <DigitOne>2</DigitOne>
             <DigitTwo>0</DigitTwo>
@@ -378,6 +485,20 @@
             <DigitTwo>0</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
+        
+        <SymbolSetRef ID="SS_SIGINT_SURFACE" Label="Signals Intelligence - Surface" Instance="jmsml_D_SIGINT_Surface.xml">
+          <SymbolSetCode>
+            <DigitOne>5</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
+
+        <SymbolSetRef ID="SS_CYBER_SURFACE" Label="Cyberspace - Surface" Instance="jmsml_D_Cyberspace_Surface.xml">
+          <SymbolSetCode>
+            <DigitOne>6</DigitOne>
+            <DigitTwo>0</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
       </SymbolSets>
     </Dimension>
 
@@ -400,6 +521,27 @@
             <DigitTwo>5</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
+
+        <SymbolSetRef ID="SS_MINE_WARFARE" Label="Mine Warfare" Instance="jmsml_D_Mine_Warfare.xml">
+          <SymbolSetCode>
+            <DigitOne>3</DigitOne>
+            <DigitTwo>5</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
+        
+        <SymbolSetRef ID="SS_SIGINT_SUBSURFACE" Label="Signals Intelligence - Subsurface" Instance="jmsml_D_SIGINT_Subsurface.xml">
+          <SymbolSetCode>
+            <DigitOne>5</DigitOne>
+            <DigitTwo>4</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
+
+        <SymbolSetRef ID="SS_CYBER_SUBSURFACE" Label="Cyberspace - Subsurface" Instance="jmsml_D_Cyberspace_Subsurface.xml">
+          <SymbolSetCode>
+            <DigitOne>6</DigitOne>
+            <DigitTwo>0</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
       </SymbolSets>
     </Dimension>
 
@@ -408,11 +550,9 @@
       <LegacyDimensionCode Name="2525C">O</LegacyDimensionCode>
       <Fields>
         <Field Name="AS" Label="Country Indicator" Description="A three-letter code that indicates the country of origin of the organization (STANAG 1059)." Remarks="In stability activities, this field can be used for factions or groups." AmplifierID="AS" X="1" Y="2"/>
-
         <Field Name="G" Label="Staff Comments" Description="Free text." Remarks="Can be used by staff for information required by commander." AmplifierID="G" X="1" Y="1"/>
         <Field Name="H" Label="Additional Informartion" Description="Free text." AmplifierID="H" X="1" Y="0"/>
         <Field Name="J" Label="Evaluation Rating" Description="Degree of confidence that may be placed on the information represented by the symbol." Remarks="It is shown as one letter and one number made up of Reliability of Source and Credibility of Information." AmplifierID="J" X="1" Y="-2"/>
-
         <Field Name="S" Label="Offset Location Indicator" Description="It is used to denote precise location." AmplifierID="S" X="0" Y="-1"/>
         <Field Name="W" Label="Date-Time Group" Description="An alphanumeric designator for displaying a datetime group (DDHHMMSSZMONYY) or O/O for on order." Remarks="The date-time group is composed of a group of six numeric digits with a time zone suffix and the standardized three-letter abbreviation for the month followed by two digits." AmplifierID="W" X="-1" Y="2"/>
         <Field Name="Y" Label="Location" Description="A text amplifier for units, equipment and installations that displays a symbol’s location in degrees, minutes and seconds (or in UTM or other applicable display format)." AmplifierID="Y" X="-1" Y="1"/>
@@ -426,22 +566,33 @@
         </SymbolSetRef>
       </SymbolSets>
     </Dimension>
-  
-    <Dimension ID="CYBERSPACE" Label="Cyberspace">
+
+    <Dimension ID="METOC" Label="Meteorological">
+      <LegacyDimensionCode Name="2525C">W</LegacyDimensionCode>
       <Fields>
-        <Field Name="AS" Label="Country Indicator" Description="A three-letter code that indicates the country of origin of the organization (STANAG 1059)." Remarks="In stability activities, this field can be used for factions or groups." AmplifierID="AS" X="1" Y="2"/>
         <Field Name="G" Label="Staff Comments" Description="Free text." Remarks="Can be used by staff for information required by commander." AmplifierID="G" X="1" Y="1"/>
         <Field Name="H" Label="Additional Informartion" Description="Free text." AmplifierID="H" X="1" Y="0"/>
-        <Field Name="J" Label="Evaluation Rating" Description="Degree of confidence that may be placed on the information represented by the symbol." Remarks="It is shown as one letter and one number made up of Reliability of Source and Credibility of Information." AmplifierID="J" X="1" Y="-2"/>
         <Field Name="S" Label="Offset Location Indicator" Description="It is used to denote precise location." AmplifierID="S" X="0" Y="-1"/>
         <Field Name="W" Label="Date-Time Group" Description="An alphanumeric designator for displaying a datetime group (DDHHMMSSZMONYY) or O/O for on order." Remarks="The date-time group is composed of a group of six numeric digits with a time zone suffix and the standardized three-letter abbreviation for the month followed by two digits." AmplifierID="W" X="-1" Y="2"/>
         <Field Name="Y" Label="Location" Description="A text amplifier for units, equipment and installations that displays a symbol’s location in degrees, minutes and seconds (or in UTM or other applicable display format)." AmplifierID="Y" X="-1" Y="1"/>
       </Fields>
       <SymbolSets>
-        <SymbolSetRef ID="SS_CYBER" Label="Cyberspace" Instance="jmsml_D_Cyberspace.xml">
+        <SymbolSetRef ID="SS_ATMOSPHERIC" Label="Atmospheric" Instance="jmsml_D_Atmospheric.xml">
           <SymbolSetCode>
-            <DigitOne>6</DigitOne>
-            <DigitTwo>0</DigitTwo>
+            <DigitOne>4</DigitOne>
+            <DigitTwo>5</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
+        <SymbolSetRef ID="SS_OCEANIC" Label="Activity" Instance="jmsml_D_Oceanographic.xml">
+          <SymbolSetCode>
+            <DigitOne>4</DigitOne>
+            <DigitTwo>6</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
+        <SymbolSetRef ID="SS_MET_SPACE" Label="Meteorological Space" Instance="jmsml_D_Meteorological_Space.xml">
+          <SymbolSetCode>
+            <DigitOne>4</DigitOne>
+            <DigitTwo>7</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
       </SymbolSets>
@@ -741,6 +892,78 @@
     </Affiliation>
 
     <Affiliation ID="SIMULATED_LU_SUSPECT" ContextID="SIMULATION" DimensionID="LAND_UNIT" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="2510.svg"/>
+
+    <!-- Land Civilian Affiliations-->
+
+    <Affiliation ID="REALITY_LC_PENDING" ContextID="REALITY" DimensionID="LAND_UNIT" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="0010.svg">
+      <LegacyStandardIdentityCode Name="2525C">P</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="EXERCISE_LC_PENDING" ContextID="EXERCISE" DimensionID="LAND_UNIT" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="1010.svg">
+      <LegacyStandardIdentityCode Name="2525C">G</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="SIMULATED_LC_PENDING" ContextID="SIMULATION" DimensionID="LAND_UNIT" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="2010.svg"/>
+
+    <Affiliation ID="REALITY_LC_UNKNOWN" ContextID="REALITY" DimensionID="LAND_UNIT" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="0130.svg">
+      <LegacyStandardIdentityCode Name="2525C">U</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="EXERCISE_LC_UNKNOWN" ContextID="EXERCISE" DimensionID="LAND_UNIT" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="1110.svg">
+      <LegacyStandardIdentityCode Name="2525C">W</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="SIMULATED_LC_UNKNOWN" ContextID="SIMULATION" DimensionID="LAND_UNIT" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="2110.svg"/>
+
+    <Affiliation ID="REALITY_LC_FRIEND" ContextID="REALITY" DimensionID="LAND_UNIT" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="0310.svg">
+      <LegacyStandardIdentityCode Name="2525C">F</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="EXERCISE_LC_FRIEND" ContextID="EXERCISE" DimensionID="LAND_UNIT" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="1310.svg">
+      <LegacyStandardIdentityCode Name="2525C">D</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="SIMULATED_LC_FRIEND" ContextID="SIMULATION" DimensionID="LAND_UNIT" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="2310.svg"/>
+
+    <Affiliation ID="REALITY_LC_NEUTRAL" ContextID="REALITY" DimensionID="LAND_UNIT" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="0410.svg">
+      <LegacyStandardIdentityCode Name="2525C">N</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="EXERCISE_LC_NEUTRAL" ContextID="EXERCISE" DimensionID="LAND_UNIT" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="1410.svg">
+      <LegacyStandardIdentityCode Name="2525C">L</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="SIMULATED_LC_NEUTRAL" ContextID="SIMULATION" DimensionID="LAND_UNIT" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="2410.svg"/>
+
+    <Affiliation ID="REALITY_LC_HOSTILE" ContextID="REALITY" DimensionID="LAND_UNIT" StandardIdentityID="SI_HOSTILE_FAKER" Shape="DIAMOND" Graphic="0610.svg">
+      <LegacyStandardIdentityCode Name="2525C">H</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="EXERCISE_LC_HOSTILE" ContextID="EXERCISE" DimensionID="LAND_UNIT" StandardIdentityID="SI_HOSTILE_FAKER" Shape="CIRCLE" Graphic="1610.svg">
+      <LegacyStandardIdentityCode Name="2525C">K</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="SIMULATED_LC_HOSTILE" ContextID="SIMULATION" DimensionID="LAND_UNIT" StandardIdentityID="SI_HOSTILE_FAKER" Shape="DIAMOND" Graphic="2610.svg"/>
+
+    <Affiliation ID="REALITY_LC_ASSUMED" ContextID="REALITY" DimensionID="LAND_UNIT" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="0210.svg">
+      <LegacyStandardIdentityCode Name="2525C">A</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="EXERCISE_LC_ASSUMED" ContextID="EXERCISE" DimensionID="LAND_UNIT" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="1210.svg">
+      <LegacyStandardIdentityCode Name="2525C">M</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="SIMULATED_LC_ASSUMED" ContextID="SIMULATION" DimensionID="LAND_UNIT" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="2210.svg"/>
+
+    <Affiliation ID="REALITY_LC_SUSPECT" ContextID="REALITY" DimensionID="LAND_UNIT" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="0510.svg">
+      <LegacyStandardIdentityCode Name="2525C">S</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="EXERCISE_LC_SUSPECT" ContextID="EXERCISE" DimensionID="LAND_UNIT" StandardIdentityID="SI_SUSPECT_JOKER" Shape="CIRCLE" Graphic="1510.svg">
+      <LegacyStandardIdentityCode Name="2525C">J</LegacyStandardIdentityCode>
+    </Affiliation>
+
+    <Affiliation ID="SIMULATED_LC_SUSPECT" ContextID="SIMULATION" DimensionID="LAND_UNIT" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="2510.svg"/>
   
     <!-- Land Equipment Affiliations-->
 

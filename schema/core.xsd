@@ -149,6 +149,12 @@
     <xs:attribute name="DrawNote" type="xs:string" use="optional" default="Not Applicable"/>
     <xs:attribute name="Standard" type="StandardType" use="optional" default="ALL"/>
     <xs:attribute name="Icon" type="IconType" use="optional" default="MAIN"/>
+    <xs:attribute name="SpecialCircleGraphic" type="xs:anyURI" use="optional"/>
+    <xs:attribute name="SpecialCloverGraphic" type="xs:anyURI" use="optional"/>
+    <xs:attribute name="SpecialCurveGraphic" type="xs:anyURI" use="optional"/>
+    <xs:attribute name="SpecialDiamondGraphic" type="xs:anyURI" use="optional"/>
+    <xs:attribute name="SpecialRectangleGraphic" type="xs:anyURI" use="optional"/>
+    <xs:attribute name="SpecialSquareGraphic" type="xs:anyURI" use="optional"/>
   </xs:attributeGroup>
 
   <xs:attributeGroup name="FramedGraphicNameAttributeGroup">

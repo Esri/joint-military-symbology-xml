@@ -158,140 +158,140 @@
 	</Entities>
 
   <SectorOneModifiers>
-		<Modifier ID="ANTISUBMARINE_WARFARE_MOD" Label="Antisubmarine Warfare" Category="MISSION_AREA" Graphic="35011.svg">
+		<Modifier ID="ANTISUBMARINE_WARFARE_MOD" Label="Antisubmarine Warfare" Category="Mission Area" Graphic="35011.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>1</DigitTwo>
 			</ModifierCode>
 		</Modifier>
 
-    <Modifier ID="AUXILIARY_MOD" Label="Auxiliary" Category="MISSION_AREA" LimitUseTo="SUBMARINE" Graphic="35021.svg">
+    <Modifier ID="AUXILIARY_MOD" Label="Auxiliary" Category="Mission Area" LimitUseTo="SUBMARINE" Graphic="35021.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>2</DigitTwo>
 			</ModifierCode>
 		</Modifier>
 
-    <Modifier ID="COMMAND_AND_CONTROL_MOD" Label="Command and Control" Category="MISSION_AREA" LimitUseTo="SUBMARINE" Graphic="35031.svg">
+    <Modifier ID="COMMAND_AND_CONTROL_MOD" Label="Command and Control" Category="Mission Area" LimitUseTo="SUBMARINE" Graphic="35031.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>3</DigitTwo>
 			</ModifierCode>
 		</Modifier>
 
-    <Modifier ID="INTELLIGENCE_SURVEILLANCE_RECONNAISSANCE_MOD" Label="Intelligence Surveillance Reconnaissance" Category="MISSION_AREA" Graphic="35041.svg">
+    <Modifier ID="INTELLIGENCE_SURVEILLANCE_RECONNAISSANCE_MOD" Label="Intelligence Surveillance Reconnaissance" Category="Mission Area" Graphic="35041.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>4</DigitTwo>
 			</ModifierCode>
 		</Modifier>
 
-    <Modifier ID="MINE_COUNTERMEASURES_MOD" Label="Mine Countermeasures" Category="MISSION_AREA" Graphic="35051.svg">
+    <Modifier ID="MINE_COUNTERMEASURES_MOD" Label="Mine Countermeasures" Category="Mission Area" Graphic="35051.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>5</DigitTwo>
 			</ModifierCode>
 		</Modifier>
 
-    <Modifier ID="MINE_WARFARE_MOD" Label="Mine Warfare" Category="MISSION_AREA" Graphic="35061.svg">
+    <Modifier ID="MINE_WARFARE_MOD" Label="Mine Warfare" Category="Mission Area" Graphic="35061.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>6</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="SURFACE_WARFARE_MOD" Label="Surface Warfare" Category="MISSION_AREA" Graphic="35071.svg">
+		<Modifier ID="SURFACE_WARFARE_MOD" Label="Surface Warfare" Category="Mission Area" Graphic="35071.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>7</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="ATTACK_MOD" Label="Attack" Category="WEAPONS_CAPABILITY" LimitUseTo="SUBMARINE" Graphic="35081.svg">
+		<Modifier ID="ATTACK_MOD" Label="Attack" Category="Weapons Capability" LimitUseTo="SUBMARINE" Graphic="35081.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>8</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="BALLISTIC_MISSILE_MOD" Label="Ballistic Missile " Category="WEAPONS_CAPABILITY" LimitUseTo="SUBMARINE" Graphic="35091.svg">
+		<Modifier ID="BALLISTIC_MISSILE_MOD" Label="Ballistic Missile " Category="Weapons Capability" LimitUseTo="SUBMARINE" Graphic="35091.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>9</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="GUIDED_MISSILE_MOD" Label="Guided Missile " Category="WEAPONS_CAPABILITY" LimitUseTo="SUBMARINE" Graphic="35101.svg">
+		<Modifier ID="GUIDED_MISSILE_MOD" Label="Guided Missile " Category="Weapons Capability" LimitUseTo="SUBMARINE" Graphic="35101.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>0</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="OTHER_GUIDED_MISSILE_MOD" Label="Other Guided Missile" Category="WEAPONS_CAPABILITY" LimitUseTo="SUBMARINE" Graphic="35111.svg">
+		<Modifier ID="OTHER_GUIDED_MISSILE_MOD" Label="Other Guided Missile" Category="Weapons Capability" LimitUseTo="SUBMARINE" Graphic="35111.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>1</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="SPECIAL_OPERATIONS_FORCES_SOF_MOD" Label="Special Operations Forces (SOF)" Category="ASSET_CAPABILITY" LimitUseTo="SUBMARINE" Graphic="35121.svg">
+		<Modifier ID="SPECIAL_OPERATIONS_FORCES_SOF_MOD" Label="Special Operations Forces (SOF)" Category="Asset Capability" LimitUseTo="SUBMARINE" Graphic="35121.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>2</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="POSSIBLE_SUBMARINE_LOW_1_MOD" Label="Possible Submarine Low 1 " Category="SUBMARINE_CONFIDENCE" LimitUseTo="SUBMARINE" Graphic="35131.svg">
+		<Modifier ID="POSSIBLE_SUBMARINE_LOW_1_MOD" Label="Possible Submarine Low 1 " Category="Submarine Confidence" LimitUseTo="SUBMARINE" Graphic="35131.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>3</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="POSSIBLE_SUBMARINE_LOW_2_MOD" Label="Possible Submarine Low 2" Category="SUBMARINE_CONFIDENCE" LimitUseTo="SUBMARINE" Graphic="35141.svg">
+		<Modifier ID="POSSIBLE_SUBMARINE_LOW_2_MOD" Label="Possible Submarine Low 2" Category="Submarine Confidence" LimitUseTo="SUBMARINE" Graphic="35141.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>4</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="POSSIBLE_SUBMARINE_HIGH_3_MOD" Label="Possible Submarine High 3" Category="SUBMARINE_CONFIDENCE" LimitUseTo="SUBMARINE" Graphic="35151.svg">
+		<Modifier ID="POSSIBLE_SUBMARINE_HIGH_3_MOD" Label="Possible Submarine High 3" Category="Submarine Confidence" LimitUseTo="SUBMARINE" Graphic="35151.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>5</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="POSSIBLE_SUBMARINE_HIGH_4_MOD" Label="Possible Submarine High 4" Category="SUBMARINE_CONFIDENCE" LimitUseTo="SUBMARINE" Graphic="35161.svg">
+		<Modifier ID="POSSIBLE_SUBMARINE_HIGH_4_MOD" Label="Possible Submarine High 4" Category="Submarine Confidence" LimitUseTo="SUBMARINE" Graphic="35161.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>6</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="PROBABLE_SUBMARINE_MOD" Label="Probable Submarine" Category="SUBMARINE_CONFIDENCE" LimitUseTo="SUBMARINE" Graphic="35171.svg">
+		<Modifier ID="PROBABLE_SUBMARINE_MOD" Label="Probable Submarine" Category="Submarine Confidence" LimitUseTo="SUBMARINE" Graphic="35171.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>7</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="CERTAIN_SUBMARINE_MOD" Label="Certain Submarine" Category="SUBMARINE_CONFIDENCE" LimitUseTo="SUBMARINE" Graphic="35181.svg">
+		<Modifier ID="CERTAIN_SUBMARINE_MOD" Label="Certain Submarine" Category="Submarine Confidence" LimitUseTo="SUBMARINE" Graphic="35181.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>8</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="ANTI_TORPEDO_TORPEDO_MOD" Label="Anti-torpedo Torpedo" Category="WEAPONS_CAPABILITY" LimitUseTo="TORPEDO" Graphic="35191.svg">
+		<Modifier ID="ANTI_TORPEDO_TORPEDO_MOD" Label="Anti-torpedo Torpedo" Category="Weapons Capability" LimitUseTo="TORPEDO" Graphic="35191.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>9</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="HIJACKING_HIGHJACKED_MOD" Label="Hijacking/Highjacked" Category="CRIME" Graphic="35201.svg">
+		<Modifier ID="HIJACKING_HIGHJACKED_MOD" Label="Hijacking/Highjacked" Category="Crime" Graphic="35201.svg">
 			<ModifierCode>
 				<DigitOne>2</DigitOne>
 				<DigitTwo>0</DigitTwo>
@@ -300,112 +300,112 @@
 	</SectorOneModifiers>
   
 	<SectorTwoModifiers>
-		<Modifier ID="AIR_INDEPENDENT_PROPULSION_MOD" Label="Air Independent Propulsion" Category="SHIP_PROPULSION" LimitUseTo="SUBMARINE" Graphic="35012.svg">
+		<Modifier ID="AIR_INDEPENDENT_PROPULSION_MOD" Label="Air Independent Propulsion" Category="Ship Propulsion" LimitUseTo="SUBMARINE" Graphic="35012.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>1</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="DIESEL_ELECTRIC_GENERAL_MOD" Label="Diesel Electric General" Category="SHIP_PROPULSION" LimitUseTo="SUBMARINE" Graphic="35022.svg">
+		<Modifier ID="DIESEL_ELECTRIC_GENERAL_MOD" Label="Diesel Electric General" Category="Ship Propulsion" LimitUseTo="SUBMARINE" Graphic="35022.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>2</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="DIESEL___TYPE_1_MOD" Label="Diesel - Type 1" Category="SHIP_PROPULSION" LimitUseTo="SUBMARINE" Graphic="35032.svg">
+		<Modifier ID="DIESEL___TYPE_1_MOD" Label="Diesel - Type 1" Category="Ship Propulsion" LimitUseTo="SUBMARINE" Graphic="35032.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>3</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="DIESEL___TYPE_2_MOD" Label="Diesel - Type 2" Category="SHIP_PROPULSION" LimitUseTo="SUBMARINE" Graphic="35042.svg">
+		<Modifier ID="DIESEL___TYPE_2_MOD" Label="Diesel - Type 2" Category="Ship Propulsion" LimitUseTo="SUBMARINE" Graphic="35042.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>4</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="DIESEL___TYPE_3_MOD" Label="Diesel - Type 3" Category="SHIP_PROPULSION" LimitUseTo="SUBMARINE" Graphic="35052.svg">
+		<Modifier ID="DIESEL___TYPE_3_MOD" Label="Diesel - Type 3" Category="Ship Propulsion" LimitUseTo="SUBMARINE" Graphic="35052.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>5</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="NUCLEAR_POWERED_GENERAL_MOD" Label="Nuclear Powered General" Category="SHIP_PROPULSION" LimitUseTo="SUBMARINE" Graphic="35062.svg">
+		<Modifier ID="NUCLEAR_POWERED_GENERAL_MOD" Label="Nuclear Powered General" Category="Ship Propulsion" LimitUseTo="SUBMARINE" Graphic="35062.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>6</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="NUCLEAR___TYPE_1_MOD" Label="Nuclear - Type 1" Category="SHIP_PROPULSION" LimitUseTo="SUBMARINE" Graphic="35072.svg">
+		<Modifier ID="NUCLEAR___TYPE_1_MOD" Label="Nuclear - Type 1" Category="Ship Propulsion" LimitUseTo="SUBMARINE" Graphic="35072.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>7</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="NUCLEAR___TYPE_2_MOD" Label="Nuclear - Type 2" Category="SHIP_PROPULSION" LimitUseTo="SUBMARINE" Graphic="35082.svg">
+		<Modifier ID="NUCLEAR___TYPE_2_MOD" Label="Nuclear - Type 2" Category="Ship Propulsion" LimitUseTo="SUBMARINE" Graphic="35082.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>8</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="NUCLEAR___TYPE_3_MOD" Label="Nuclear - Type 3" Category="SHIP_PROPULSION" LimitUseTo="SUBMARINE" Graphic="35092.svg">
+		<Modifier ID="NUCLEAR___TYPE_3_MOD" Label="Nuclear - Type 3" Category="Ship Propulsion" LimitUseTo="SUBMARINE" Graphic="35092.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>9</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="NUCLEAR___TYPE_4_MOD" Label="Nuclear - Type 4" Category="SHIP_PROPULSION" LimitUseTo="SUBMARINE" Graphic="35102.svg">
+		<Modifier ID="NUCLEAR___TYPE_4_MOD" Label="Nuclear - Type 4" Category="Ship Propulsion" LimitUseTo="SUBMARINE" Graphic="35102.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>0</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="NUCLEAR___TYPE_5_MOD" Label="Nuclear - Type 5" Category="SHIP_PROPULSION" LimitUseTo="SUBMARINE" Graphic="35112.svg">
+		<Modifier ID="NUCLEAR___TYPE_5_MOD" Label="Nuclear - Type 5" Category="Ship Propulsion" LimitUseTo="SUBMARINE" Graphic="35112.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>1</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="NUCLEAR___TYPE_6_MOD" Label="Nuclear - Type 6" Category="SHIP_PROPULSION" LimitUseTo="SUBMARINE" Graphic="35122.svg">
+		<Modifier ID="NUCLEAR___TYPE_6_MOD" Label="Nuclear - Type 6" Category="Ship Propulsion" LimitUseTo="SUBMARINE" Graphic="35122.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>2</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="NUCLEAR___TYPE_7_MOD" Label="Nuclear - Type 7" Category="SHIP_PROPULSION" LimitUseTo="SUBMARINE" Graphic="35132.svg">
+		<Modifier ID="NUCLEAR___TYPE_7_MOD" Label="Nuclear - Type 7" Category="Ship Propulsion" LimitUseTo="SUBMARINE" Graphic="35132.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>3</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="AUTONOMOUS_CONTROL_MOD" Label="Autonomous Control" Category="UUV_CONTROL" LimitUseTo="AUV_UUV" Graphic="35142.svg">
+		<Modifier ID="AUTONOMOUS_CONTROL_MOD" Label="Autonomous Control" Category="UUV Control" LimitUseTo="AUV_UUV" Graphic="35142.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>4</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="REMOTELY_PILOTED_MOD" Label="Remotely Piloted" Category="UUV_CONTROL" LimitUseTo="AUV_UUV" Graphic="35152.svg">
+		<Modifier ID="REMOTELY_PILOTED_MOD" Label="Remotely Piloted" Category="UUV Control" LimitUseTo="AUV_UUV" Graphic="35152.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>5</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="EXPENDABLE_MOD" Label="Expendable" Category="UUV_CONTROL" LimitUseTo="AUV_UUV" Graphic="35162.svg">
+		<Modifier ID="EXPENDABLE_MOD" Label="Expendable" Category="UUV Control" LimitUseTo="AUV_UUV" Graphic="35162.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>6</DigitTwo>
