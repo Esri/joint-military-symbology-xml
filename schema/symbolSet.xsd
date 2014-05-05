@@ -35,6 +35,7 @@
                                             <xs:element name="EntitySubTypeCode" type="DoubleDigitType" minOccurs="1" maxOccurs="1"/>
                                           </xs:sequence>
                                           <xs:attributeGroup ref="FramedGraphicIdentifierAttributeGroup"/>
+                                          <xs:attribute name="GeometryType" type="GeometryType" default="POINT" use="optional"/>
                                         </xs:complexType>
                                       </xs:element>
                                     </xs:sequence>
@@ -42,6 +43,7 @@
                                 </xs:element>
                               </xs:sequence>
                               <xs:attributeGroup ref="FramedGraphicIdentifierAttributeGroup"/>
+                              <xs:attribute name="GeometryType" type="GeometryType" default="POINT" use="optional"/>
                             </xs:complexType>
                           </xs:element>
                         </xs:sequence>

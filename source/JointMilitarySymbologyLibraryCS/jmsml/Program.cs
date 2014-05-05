@@ -30,6 +30,7 @@ namespace jmsml
             _librarian.IsLogging = true;
 
             CommandLineArgs.I.parseArgs(args, "/e=false");
+            CommandLineArgs.I.parseArgs(args, "/+=false");
 
             string exportPath = CommandLineArgs.I.argAsString("/x");
             string exportDPath = CommandLineArgs.I.argAsString("/xd");
@@ -43,13 +44,16 @@ namespace jmsml
             string importPath = CommandLineArgs.I.argAsString("/i");
             string legacyCode = CommandLineArgs.I.argAsString("/lc");
             string modPath = CommandLineArgs.I.argAsString("/m");
+            string imagePath = CommandLineArgs.I.argAsString("/xi");
             bool dataValidation = (CommandLineArgs.I.argAsString("/e") != "false");
+            bool appendFiles = (CommandLineArgs.I.argAsString("/+") != "false");
 
             if (help == "/?")
             {
                 Console.WriteLine("jmsml.exe - Usage - Command line options are:");
                 Console.WriteLine("");
                 Console.WriteLine("/?\t\t\t: Help/Show command line options.");
+                Console.WriteLine("/+\t\t\t: Append multiple e(x)port files together.");
                 Console.WriteLine("/a\t\t\t: Export symbols with AREA geometry.");
                 Console.WriteLine("/b\t\t\t: Export all coded base domain tables to a folder.");
                 Console.WriteLine("/e\t\t\t: Add data validation when exporting domain tables.");
@@ -59,6 +63,7 @@ namespace jmsml
                 Console.WriteLine("/s=\"<expression>\"\t: Use regular expression to query on symbol set labels.");
                 Console.WriteLine("/x=\"<pathname>\"\t\t: Export to specified path (omit .csv).");
                 Console.WriteLine("/xd=\"<pathname>\"\t: Export to specified path as coded domain (omit .csv).");
+                Console.WriteLine("/xi=\"<pathname>\"\t: Export to specified path image/name/category/tag info.");
                 Console.WriteLine("");
                 Console.WriteLine("<Enter> to continue.");
                 Console.ReadLine();
@@ -69,7 +74,8 @@ namespace jmsml
                 _etl.Export(exportPath, symbolSet, query, xPoints == "/p" || xLines == "" && xAreas == "", 
                                                                 xLines == "/l" || xPoints == "" && xAreas == "",
                                                                 xAreas == "/a" || xPoints == "" && xLines == "",
-                                                                false);
+                                                                ETLExportEnum.ETLExportSimple,
+                                                                appendFiles);
             }
 
             if (exportDPath != "")
@@ -77,7 +83,8 @@ namespace jmsml
                 _etl.Export(exportDPath, symbolSet, query, xPoints == "/p" || xLines == "" && xAreas == "",
                                                                 xLines == "/l" || xPoints == "" && xAreas == "",
                                                                 xAreas == "/a" || xPoints == "" && xLines == "",
-                                                                true);
+                                                                ETLExportEnum.ETLExportDomain,
+                                                                appendFiles);
             }
 
             if (exportDomainPath != "")
@@ -88,6 +95,15 @@ namespace jmsml
             if (importPath != "")
             {
                 _etl.Import(importPath, modPath, symbolSet, legacyCode);
+            }
+
+            if (imagePath != "")
+            {
+                _etl.Export(imagePath, symbolSet, query, xPoints == "/p" || xLines == "" && xAreas == "",
+                                                                xLines == "/l" || xPoints == "" && xAreas == "",
+                                                                xAreas == "/a" || xPoints == "" && xLines == "",
+                                                                ETLExportEnum.ETLExportImage,
+                                                                appendFiles);
             }
         }
 

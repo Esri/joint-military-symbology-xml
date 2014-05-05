@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="SS_ACTIVITY" Label="Activity" DimensionID="ACTIVITY">
+<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="SS_ACTIVITY" Label="Activities" DimensionID="ACTIVITY">
 	<SymbolSetCode>
 		<DigitOne>4</DigitOne>
 		<DigitTwo>0</DigitTwo>
@@ -7,7 +7,7 @@
 	<LegacyCodingSchemeCode Name="2525C">E</LegacyCodingSchemeCode>
   <LegacyCodingSchemeCode Name="2525C">O</LegacyCodingSchemeCode>
 	<Entities>
-		<Entity ID="INCIDENT" Label="Incident" Remarks="No icon associated with this entity. It is for hierarchal purposes only.">
+		<Entity ID="INCIDENT" Label="Incident" Remarks="No icon is associated with this entity. It is for hierarchal purposes only." Icon="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>1</DigitTwo>
@@ -299,7 +299,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="OPERATION" Label="Operation" Remarks="No icon is associated with this entity. It is for hierarchal purposes only.">
+		<Entity ID="OPERATION" Label="Operation" Remarks="No icon is associated with this entity. It is for hierarchal purposes only." Icon="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>3</DigitTwo>
@@ -331,7 +331,7 @@
 						<DigitTwo>3</DigitTwo>
 					</EntityTypeCode>
 				</EntityType>
-				<EntityType ID="RECRUITMENT" Label="Recruitment" Remarks="No icon is associated with this entity. It is for hierarchal purposes only.">
+				<EntityType ID="RECRUITMENT" Label="Recruitment" Remarks="No icon is associated with this entity. It is for hierarchal purposes only." Icon="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>4</DigitTwo>
@@ -671,7 +671,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="HAZARD_MATERIALS" Label="Hazard Materials" Remarks="No icon is associated with this entity. It is for hierarchal purposes only.">
+		<Entity ID="HAZARD_MATERIALS" Label="Hazard Materials" Remarks="No icon is associated with this entity. It is for hierarchal purposes only." Icon="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>5</DigitTwo>
@@ -943,7 +943,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="INDIVIDUAL" Label="Individual" Remarks="No icon is associated with this entity. It is for hierarchal purposes only." Graphic="40180000.svg">
+		<Entity ID="INDIVIDUAL" Label="Individual" Remarks="No icon is associated with this entity. It is for hierarchal purposes only." Icon="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>8</DigitTwo>

@@ -33,6 +33,15 @@ namespace JointMilitarySymbologyLibrary
 
     public class Symbol
     {
+        // Instances of the Symbol class can only be created by a Librarian object.
+        // A Symbol object represents one possible 2525 symbol, in multiple standards
+        // if possible.
+
+        // When created with a given SIDC, the Symbol object uses search facilities in
+        // its parent Library object to construct that symbol from JMSML elements.  In
+        // so doing, it also tries to construct the symbol for legacy standards (2525C,
+        // 2525B, etc.
+
         protected static Logger logger = LogManager.GetCurrentClassLogger();
 
         private static string _blankLegacySIDC = "---------------";
@@ -407,6 +416,9 @@ namespace JointMilitarySymbologyLibrary
 
         private void _BuildSIDC()
         {
+            // Builds a current (2525D) SIDC from the JMSML Library elements currently associated 
+            // with this symbol.
+
             if (_version != null && _context != null &&
                _standardIdentity != null && _symbolSet != null && _status != null &&
                _hqTFDummy != null && _amplifierGroup != null && _amplifier != null)
@@ -456,6 +468,9 @@ namespace JointMilitarySymbologyLibrary
 
         private void _BuildLegacySIDC()
         {
+            // Builds an older/legacy SIDC (for 2525C, 2525B, etc) from the JMSML Library elements currently associated 
+            // with this symbol.
+
             if (_symbolSet != null && _affiliation != null && _dimension != null &&
                _status != null && _amplifierGroup != null && _amplifier != null)
             {
@@ -497,6 +512,9 @@ namespace JointMilitarySymbologyLibrary
 
         private void _UpdateFromCurrent()
         {
+            // Search for the appropriate JMSML Library elements, given the current (2525D)
+            // SIDC for this Symbol.
+
             string first10 = _sidc.PartAString;
             string second10 = _sidc.PartBString;
 
@@ -559,6 +577,9 @@ namespace JointMilitarySymbologyLibrary
 
         private void _UpdateFromLegacy()
         {
+            // Search for the appropriate JMSML Library elements, given the older/legacy (2525C, 2525B, etc.)
+            // SIDC for this Symbol.
+
             _librarian.ResetStatusCode();
 
             _version = _librarian.Version(1, 0);
@@ -614,6 +635,9 @@ namespace JointMilitarySymbologyLibrary
 
         private void _SetInvalidSymbolProps()
         {
+            // If a symbol can't be recognized, this method sets up
+            // the current symbol to represent the special Invalid symbol.
+
             _version = _librarian.Version(1, 0);
             _context = _librarian.Context(0);
             _dimension = _librarian.Dimension("I");
@@ -634,6 +658,9 @@ namespace JointMilitarySymbologyLibrary
 
         private void _ValidateStatus()
         {
+            // Validates the legacy translation of this Symbol.  If there
+            // are issues with the conversion then those issues are logged externally.
+
             string s = Convert.ToString(0 - _librarian.StatusCode, 2);
             char[] bits = s.PadLeft(17, '0').ToCharArray();
 
