@@ -722,12 +722,6 @@
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="AD_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10130195_0.svg" RectangleGraphic="10130195_1.svg" SquareGraphic="10130195_2.svg" DiamondGraphic="10130195_3.svg" Icon="FULL_FRAME">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
 					</EntitySubTypes>
 				</EntityType>
 				<EntityType ID="AIR_LAND_NAVAL_GUNFIRE_LIAISON" Label="Air/Land Naval Gunfire Liaison" CloverGraphic="10130200_0.svg" RectangleGraphic="10130200_1.svg" SquareGraphic="10130200_2.svg" DiamondGraphic="10130200_3.svg" Icon="FULL_FRAME">
@@ -752,12 +746,6 @@
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="FA_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10130395_0.svg" RectangleGraphic="10130395_1.svg" SquareGraphic="10130395_2.svg" DiamondGraphic="10130395_3.svg" Icon="FULL_FRAME">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>5</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
 					</EntitySubTypes>
@@ -862,12 +850,6 @@
 								<DigitTwo>5</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="CBRN_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10140195_0.svg" RectangleGraphic="10140195_1.svg" SquareGraphic="10140195_2.svg" DiamondGraphic="10140195_3.svg" Icon="FULL_FRAME">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
 					</EntitySubTypes>
 				</EntityType>
 				<EntityType ID="COMBAT_SUPPORT_MANEUVER_ENHANCEMENT" Label="Combat Support (Maneuver Enhancement)" Graphic="10140200.svg">
@@ -875,14 +857,6 @@
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
 					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="CS_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10140295_0.svg" RectangleGraphic="10140295_1.svg" SquareGraphic="10140295_2.svg" DiamondGraphic="10140295_3.svg" Icon="FULL_FRAME">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-					</EntitySubTypes>
 				</EntityType>
 				<EntityType ID="CRIMINAL_INVESTIGATION_DIVISION" Label="Criminal Investigation Division" Graphic="10140300.svg">
 					<EntityTypeCode>
@@ -930,12 +904,6 @@
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="ENG_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10140795_0.svg" RectangleGraphic="10140795_1.svg" SquareGraphic="10140795_2.svg" DiamondGraphic="10140795_3.svg" Icon="FULL_FRAME">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>5</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
 					</EntitySubTypes>
@@ -1116,7 +1084,7 @@
             </EntitySubType>
           </EntitySubTypes>
         </EntityType>
-        <EntityType ID="INTERCEPT_SEARCH_AND_RECORDING" Label="Intercept (Search and Recording)" Graphic="10150600.svg">
+        <EntityType ID="INTERCEPT_SEARCH_RECORDING" Label="Intercept (Search and Recording)" Graphic="10150600.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>6</DigitTwo>
@@ -1145,14 +1113,6 @@
             <DigitOne>1</DigitOne>
             <DigitTwo>0</DigitTwo>
           </EntityTypeCode>
-          <EntitySubTypes>
-            <EntitySubType ID="MI_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10151095_0.svg" RectangleGraphic="10151095_1.svg" SquareGraphic="10151095_2.svg" DiamondGraphic="10151095_3.svg">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>5</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-          </EntitySubTypes>
         </EntityType>
         <EntityType ID="SEARCH" Label="Search" Graphic="10151100.svg">
           <EntityTypeCode>
@@ -1174,51 +1134,19 @@
 	      <DigitTwo>6</DigitTwo>
       </EntityCode>
 			<EntityTypes>
-				<EntityType ID="SUSTAIN_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10169500_0.svg" RectangleGraphic="10169500_1.svg" SquareGraphic="10169500_2.svg" DiamondGraphic="10169500_3.svg">
-					<EntityTypeCode>
-						<DigitOne>9</DigitOne>
-						<DigitTwo>5</DigitTwo>
-					</EntityTypeCode>
-				</EntityType>
-				<EntityType ID="SUSTAIN_CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10169700_0.svg" RectangleGraphic="10169700_1.svg" SquareGraphic="10169700_2.svg" DiamondGraphic="10169700_3.svg">
-					<EntityTypeCode>
-						<DigitOne>9</DigitOne>
-						<DigitTwo>7</DigitTwo>
-					</EntityTypeCode>
-				</EntityType>
-				<EntityType ID="SUSTAIN_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10169800_0.svg" RectangleGraphic="10169800_1.svg" SquareGraphic="10169800_2.svg" DiamondGraphic="10169800_3.svg">
-					<EntityTypeCode>
-						<DigitOne>9</DigitOne>
-						<DigitTwo>8</DigitTwo>
-					</EntityTypeCode>
-				</EntityType>
 				<EntityType ID="ADMINISTRATIVE" Label="Administrative" Graphic="10160100.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
 					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="ADMIN_CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10160197_0.svg" RectangleGraphic="10160197_1.svg" SquareGraphic="10160197_2.svg" DiamondGraphic="10160197_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>7</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="ADMIN_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10160198_0.svg" RectangleGraphic="10160198_1.svg" SquareGraphic="10160198_2.svg" DiamondGraphic="10160198_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>8</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="ALL_CLASSES_OF_SUPPLY" Label="All Classes of Supply" CloverGraphic="10160200_0.svg" RectangleGraphic="10160200_1.svg" SquareGraphic="10160200_2.svg" DiamondGraphic="10160200_3.svg">
+				<EntityType ID="ALL_CLASSES_SUPPLY" Label="All Classes of Supply" CloverGraphic="10160200_0.svg" RectangleGraphic="10160200_1.svg" SquareGraphic="10160200_2.svg" DiamondGraphic="10160200_3.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
 					</EntityTypeCode>
 				</EntityType>
-				<EntityType ID="AIRPORT_OF_DEBARKATION_AIRPORT_OF_EMBARKATION_" Label="Airport of Debarkation/Airport of Embarkation" Graphic="10160300.svg">
+				<EntityType ID="AIRPORT_DEBARKATION_AIRPORT_EMBARKATION_" Label="Airport of Debarkation/Airport of Embarkation" Graphic="10160300.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>3</DigitTwo>
@@ -1247,20 +1175,6 @@
 						<DigitOne>0</DigitOne>
 						<DigitTwo>7</DigitTwo>
 					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="FINANCE_CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10160797_0.svg" RectangleGraphic="10160797_1.svg" SquareGraphic="10160797_2.svg" DiamondGraphic="10160797_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>7</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="FINANCE_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10160798_0.svg" RectangleGraphic="10160798_1.svg" SquareGraphic="10160798_2.svg" DiamondGraphic="10160798_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>8</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-					</EntitySubTypes>
 				</EntityType>
 				<EntityType ID="JUDGE_ADVOCATE_GENERAL" Label="Judge Advocate General" Graphic="10160800.svg">
 					<EntityTypeCode>
@@ -1285,26 +1199,6 @@
 						<DigitOne>1</DigitOne>
 						<DigitTwo>1</DigitTwo>
 					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="MAINT_HEADQUARTERS_ELEMENT_" Label="Headquarters Element" CloverGraphic="10161195_0.svg" RectangleGraphic="10161195_1.svg" SquareGraphic="10161195_2.svg" DiamondGraphic="10161195_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="MAINT_CORPS_SUPPORT_" Label="Corps Support" CloverGraphic="10161197_0.svg" RectangleGraphic="10161197_1.svg" SquareGraphic="10161197_2.svg" DiamondGraphic="10161197_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>7</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="MAINT_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10161198_0.svg" RectangleGraphic="10161198_1.svg" SquareGraphic="10161198_2.svg" DiamondGraphic="10161198_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>8</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-					</EntitySubTypes>
 				</EntityType>
 				<EntityType ID="MATERIAL" Label="Material" CloverGraphic="10161200_0.svg" RectangleGraphic="10161200_1.svg" SquareGraphic="10161200_2.svg" DiamondGraphic="10161200_3.svg">
 					<EntityTypeCode>
@@ -1317,26 +1211,6 @@
 						<DigitOne>1</DigitOne>
 						<DigitTwo>3</DigitTwo>
 					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="MED_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10161395_0.svg" RectangleGraphic="10161395_1.svg" SquareGraphic="10161395_2.svg" DiamondGraphic="10161395_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="MED_CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10161397_0.svg" RectangleGraphic="10161397_1.svg" SquareGraphic="10161397_2.svg" DiamondGraphic="10161397_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>7</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="MED_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10161398_0.svg" RectangleGraphic="10161398_1.svg" SquareGraphic="10161398_2.svg" DiamondGraphic="10161398_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>8</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-					</EntitySubTypes>
 				</EntityType>
 				<EntityType ID="MEDICAL_TREATMENT_FACILITY" Label="Medical Treatment Facility" CloverGraphic="10161400_0.svg" RectangleGraphic="10161400_1.svg" SquareGraphic="10161400_2.svg" DiamondGraphic="10161400_3.svg">
 					<EntityTypeCode>
@@ -1397,42 +1271,14 @@
 						<DigitOne>2</DigitOne>
 						<DigitTwo>3</DigitTwo>
 					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="ORD_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10162395_0.svg" RectangleGraphic="10162395_1.svg" SquareGraphic="10162395_2.svg" DiamondGraphic="10162395_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="ORD_CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10162397_0.svg" RectangleGraphic="10162397_1.svg" SquareGraphic="10162397_2.svg" DiamondGraphic="10162397_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>7</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="ORD_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10162398_0.svg" RectangleGraphic="10162398_1.svg" SquareGraphic="10162398_2.svg" DiamondGraphic="10162398_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>8</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-					</EntitySubTypes>
 				</EntityType>
 				<EntityType ID="PERSONNEL_SERVICES" Label="Personnel Services" Graphic="10162400.svg">
 					<EntityTypeCode>
 						<DigitOne>2</DigitOne>
 						<DigitTwo>4</DigitTwo>
 					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="PS_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10162495_0.svg" RectangleGraphic="10162495_1.svg" SquareGraphic="10162495_2.svg" DiamondGraphic="10162495_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="PETROLEUM_OIL_AND_LUBRICANTS" Label="Petroleum Oil and Lubricants" Graphic="10162500.svg">
+				<EntityType ID="PETROLEUM_OIL_LUBRICANTS" Label="Petroleum Oil and Lubricants" Graphic="10162500.svg">
 					<EntityTypeCode>
 						<DigitOne>2</DigitOne>
 						<DigitTwo>5</DigitTwo>
@@ -1461,26 +1307,6 @@
 						<DigitOne>2</DigitOne>
 						<DigitTwo>9</DigitTwo>
 					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="Q_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10162995_0.svg" RectangleGraphic="10162995_1.svg" SquareGraphic="10162995_2.svg" DiamondGraphic="10162995_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="Q_CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10162997_0.svg" RectangleGraphic="10162997_1.svg" SquareGraphic="10162997_2.svg" DiamondGraphic="10162997_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>7</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="Q_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10162998_0.svg" RectangleGraphic="10162998_1.svg" SquareGraphic="10162998_2.svg" DiamondGraphic="10162998_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>8</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-					</EntitySubTypes>
 				</EntityType>
 				<EntityType ID="RAILHEAD" Label="Railhead" Graphic="10163000.svg">
 					<EntityTypeCode>
@@ -1500,7 +1326,7 @@
 						<DigitTwo>2</DigitTwo>
 					</EntityTypeCode>
 				</EntityType>
-				<EntityType ID="SEA_PORT_OF_DEBARKATION_SEA_PORT_OF_EMBARKATION" Label="Sea Port of Debarkation/Sea Port of Embarkation" Graphic="10163300.svg">
+				<EntityType ID="SEA_PORT_DEBARKATION_SEA_PORT_EMBARKATION" Label="Sea Port of Debarkation/Sea Port of Embarkation" Graphic="10163300.svg">
 					<EntityTypeCode>
 						<DigitOne>3</DigitOne>
 						<DigitTwo>3</DigitTwo>
@@ -1517,46 +1343,12 @@
 						<DigitOne>3</DigitOne>
 						<DigitTwo>5</DigitTwo>
 					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="JIB_CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10163597_0.svg" RectangleGraphic="10163597_1.svg" SquareGraphic="10163597_2.svg" DiamondGraphic="10163597_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>7</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="JIB_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10163598_0.svg" RectangleGraphic="10163598_1.svg" SquareGraphic="10163598_2.svg" DiamondGraphic="10163598_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>8</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-					</EntitySubTypes>
 				</EntityType>
 				<EntityType ID="TRANSPORTATION" Label="Transportation" Graphic="10163600.svg">
 					<EntityTypeCode>
 						<DigitOne>3</DigitOne>
 						<DigitTwo>6</DigitTwo>
 					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="TRAN_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10163695_0.svg" RectangleGraphic="10163695_1.svg" SquareGraphic="10163695_2.svg" DiamondGraphic="10163695_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="TRAN_CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10163697_0.svg" RectangleGraphic="10163697_1.svg" SquareGraphic="10163697_2.svg" DiamondGraphic="10163697_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>7</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="TRAN_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10163698_0.svg" RectangleGraphic="10163698_1.svg" SquareGraphic="10163698_2.svg" DiamondGraphic="10163698_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>8</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-					</EntitySubTypes>
 				</EntityType>
 				<EntityType ID="US_SUPPLY_CLASS_I" Label="US Supply Class I" CloverGraphic="10163700_0.svg" RectangleGraphic="10163700_1.svg" SquareGraphic="10163700_2.svg" DiamondGraphic="10163700_3.svg">
 					<EntityTypeCode>

@@ -6,7 +6,7 @@
 	</SymbolSetCode>
 	<LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
 	<Entities>
-		<Entity ID="INSTALLATION" Label="Military Installation" Graphic="20110000.svg" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes.">
+		<Entity ID="INSTALLATION" Label="Installation" Graphic="20110000.svg" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes.">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>1</DigitTwo>
@@ -276,7 +276,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="INFRASTRUCTURE" Label="Emergency Operation" Remarks="No icon is associated with this entity. It is for hierarchal purposes only.">
+				<EntityType ID="INFRASTRUCTURE" Label="Infrastructure" Remarks="No icon is associated with this entity. It is for hierarchal purposes only.">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>0</DigitTwo>

@@ -1,376 +1,361 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="AN_ID" Label="A Label" DimensionID="A_DIMENSION">
+<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="SS_CONTROL_MEASURE" Label="Control Measure" DimensionID="CONTROL_MEASURE">
 	<SymbolSetCode>
 		<DigitOne>2</DigitOne>
 		<DigitTwo>5</DigitTwo>
 	</SymbolSetCode>
 	<LegacyCodingSchemeCode Name="2525C">G</LegacyCodingSchemeCode>
 	<Entities>
-		<Entity ID="COMMAND_AND_CONTROL_LINES" Label="Command and Control Lines" Graphic="25110000.svg">
+		<Entity ID="COMMAND_CONTROL_LINES" Label="Command and Control Lines">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>1</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="BOUNDARY" Label="Boundary" Graphic="25110100.svg">
+				<EntityType ID="BOUNDARY" Label="Boundary" GeometryType="LINE">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
 					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="LATERAL" Label="Lateral" Graphic="25110101.svg">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>1</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="FORWARD" Label="Forward" Graphic="25110102.svg">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>2</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="REAR" Label="Rear" Graphic="25110103.svg">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>3</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-
-					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="LIGHT_LINE" Label="Light Line" Graphic="25110200.svg">
+<!--How are we going to implement Boundaries?-->
+				<EntityType ID="LIGHT_LINE" Label="Light Line" Graphic="25110200.svg" GeometryType="LINE">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
 					</EntityTypeCode>
-
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="COMMAND_AND_CONTROL_AREAS" Label="Command and Control Areas" Graphic="25120000.svg">
+    
+		<Entity ID="COMMAND_CONTROL_AREAS" Label="Command and Control Areas">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>2</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="AREA_OF_OPERATIONS" Label="Area of Operations" Graphic="25120100.svg">
+				<EntityType ID="AREA_OPERATIONS" Label="Area of Operations" Graphic="25120100.svg" GeometryType="AREA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
 					</EntityTypeCode>
-
 				</EntityType>
-				<EntityType ID="NAMED_AREA_OF_INTEREST" Label="Named Area of Interest" Graphic="25120200.svg">
+        
+				<EntityType ID="NAMED_AREA_INTEREST" Label="Named Area of Interest" Graphic="25120200.svg" GeometryType="AREA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
 					</EntityTypeCode>
-
 				</EntityType>
-				<EntityType ID="TARGETED_AREA_OF_INTEREST" Label="Targeted Area of Interest" Graphic="25120300.svg">
+        
+				<EntityType ID="TARGETED_AREA_INTEREST" Label="Targeted Area of Interest" Graphic="25120300.svg" GeometryType="AREA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>3</DigitTwo>
 					</EntityTypeCode>
-
 				</EntityType>
+        
 				<EntityType ID="AIRFIELD_ZONE" Label="Airfield Zone" Graphic="25120400.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>4</DigitTwo>
 					</EntityTypeCode>
-
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="COMMAND_AND_CONTROL_POINTS" Label="Command and Control Points" Graphic="25130000.svg">
+    
+		<Entity ID="COMMAND_CONTROL_POINTS" Label="Command and Control Points">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>3</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="UNSPECIFIED_CONTROL_POINT" Label="Unspecified Control Point" Graphic="25130100.svg">
+				<EntityType ID="ACTION_POINT" Label="Action Point (General)" Graphic="25130100.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
 					</EntityTypeCode>
-
 				</EntityType>
+        
 				<EntityType ID="AMNESTY_POINT" Label="Amnesty Point" Graphic="25130200.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
 					</EntityTypeCode>
-
 				</EntityType>
+        
 				<EntityType ID="CHECKPOINT" Label="Checkpoint" Graphic="25130300.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>3</DigitTwo>
 					</EntityTypeCode>
-
 				</EntityType>
-				<EntityType ID="CENTER_OF_MAIN_EFFORT" Label="Center of Main Effort" Graphic="25130400.svg">
+        
+				<EntityType ID="CENTER_MAIN_EFFORT" Label="Center of Main Effort" Graphic="25130400.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>4</DigitTwo>
 					</EntityTypeCode>
-
 				</EntityType>
+        
 				<EntityType ID="CONTACT_POINT" Label="Contact Point" Graphic="25130500.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>5</DigitTwo>
 					</EntityTypeCode>
-
 				</EntityType>
+        
 				<EntityType ID="COORDINATING_POINT" Label="Coordinating Point" Graphic="25130600.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>6</DigitTwo>
 					</EntityTypeCode>
-
 				</EntityType>
+        
 				<EntityType ID="DECISION_POINT" Label="Decision Point" Graphic="25130700.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>7</DigitTwo>
 					</EntityTypeCode>
-
 				</EntityType>
+        
 				<EntityType ID="DISTRESS_CALL" Label="Distress Call" Graphic="25130800.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>8</DigitTwo>
 					</EntityTypeCode>
-
 				</EntityType>
+        
 				<EntityType ID="ENTRY_CONTROL_POINT" Label="Entry Control Point" Graphic="25130900.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>9</DigitTwo>
 					</EntityTypeCode>
-
 				</EntityType>
-				<EntityType ID="FLY_TO_POINT" Label="Fly-To-Point" Graphic="25131000.svg">
+        
+				<EntityType ID="FLY_TO_POINT" Label="Fly-To-Point">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>0</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="SONOBUOY" Label="Sonobuoy" Graphic="25131001.svg">
+						<EntitySubType ID="FLY_TO_POINT_SONOBUOY" Label="Fly-To-Point (Sonobuoy)" Graphic="25131001.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="WEAPON" Label="Weapon" Graphic="25131002.svg">
+            
+						<EntitySubType ID="FLY_TO_POINT_WEAPON" Label="Fly-To-Point (Weapon)" Graphic="25131002.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="NORMAL" Label="Normal" Graphic="25131003.svg">
+            
+						<EntitySubType ID="FLY_TO_POINT_NORMAL" Label="Fly-To-Point (Normal)" Graphic="25131003.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-
 					</EntitySubTypes>
 				</EntityType>
+        
 				<EntityType ID="LINKUP_POINT" Label="Linkup Point" Graphic="25131100.svg">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>1</DigitTwo>
 					</EntityTypeCode>
-
 				</EntityType>
+        
 				<EntityType ID="PASSAGE_POINT" Label="Passage Point" Graphic="25131200.svg">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>2</DigitTwo>
 					</EntityTypeCode>
-
 				</EntityType>
+        
 				<EntityType ID="POINT_OF_INTEREST" Label="Point of Interest" Graphic="25131300.svg">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>3</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="LAUNCH_EVENT" Label="Launch Event" Graphic="25131301.svg">
+						<EntitySubType ID="POI_LAUNCH_EVENT" Label="Launch Event (Point of Interest)" Graphic="25131301.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-
 					</EntitySubTypes>
 				</EntityType>
+        
 				<EntityType ID="RALLY_POINT" Label="Rally Point" Graphic="25131400.svg">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>4</DigitTwo>
 					</EntityTypeCode>
-
 				</EntityType>
+        
 				<EntityType ID="RELEASE_POINT" Label="Release Point" Graphic="25131500.svg">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>5</DigitTwo>
 					</EntityTypeCode>
-
 				</EntityType>
+        
 				<EntityType ID="START_POINT" Label="Start Point" Graphic="25131600.svg">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>6</DigitTwo>
 					</EntityTypeCode>
-
 				</EntityType>
+        
 				<EntityType ID="SPECIAL_POINT" Label="Special Point" Graphic="25131700.svg">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>7</DigitTwo>
 					</EntityTypeCode>
-
 				</EntityType>
+        
 				<EntityType ID="WAYPOINT" Label="Waypoint" Graphic="25131800.svg">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>8</DigitTwo>
 					</EntityTypeCode>
-
 				</EntityType>
+        
 				<EntityType ID="AIRFIELD" Label="Airfield" Graphic="25131900.svg">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>9</DigitTwo>
 					</EntityTypeCode>
-
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="MANEUVER_LINES" Label="Maneuver Lines" Graphic="25140000.svg">
+    
+		<Entity ID="MANEUVER_LINES" Label="Maneuver Lines">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>4</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="FORWARD_LINE_OF_TROOPS" Label="Forward Line of Troops" Graphic="25140100.svg">
+				<EntityType ID="FORWARD_LINE_OF_TROOPS" Label="Forward Line of Troops">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="FRIENDLY_PRESENT" Label="Friendly Present" Graphic="25140101.svg">
+						<EntitySubType ID="FLOT_FRIENDLY_PRESENT" Label="Friendly Present" Graphic="25140101.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="FRIENDLY_PLANNED_OR_ON_ORDER" Label="Friendly Planned or on Order" Graphic="25140102.svg">
+            
+						<EntitySubType ID="FLOT_FRIENDLY_PLANNED_ON_ORDER" Label="Friendly Planned or on Order" Graphic="25140102.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="ENEMY_KNOWN" Label="Enemy Known" Graphic="25140103.svg">
+            
+						<EntitySubType ID="FLOT_ENEMY_KNOWN" Label="Enemy Known" Graphic="25140103.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="ENEMY_SUSPECTED_OR_TEMPLATED" Label="Enemy Suspected or Templated" Graphic="25140104.svg">
+            
+						<EntitySubType ID="FLOT_ENEMY_SUSPECTED_TEMPLATED" Label="Enemy Suspected or Templated" Graphic="25140104.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>4</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="LINE_OF_CONTACT" Label="Line of Contact" Graphic="25140200.svg">
+        
+				<EntityType ID="LINE_OF_CONTACT" Label="Line of Contact" Graphic="25140200.svg" GeometryType="LINE">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
 					</EntityTypeCode>
-
 				</EntityType>
-				<EntityType ID="PHASE_LINE" Label="Phase Line" Graphic="25140300.svg">
+        
+				<EntityType ID="PHASE_LINE" Label="Phase Line" Graphic="25140300.svg" GeometryType="LINE">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>3</DigitTwo>
 					</EntityTypeCode>
-
 				</EntityType>
-				<EntityType ID="FORWARD_EDGE_OF_THE_BATTLE_AREA" Label="Forward Edge of the Battle Area" Graphic="25140400.svg">
+        
+				<EntityType ID="FORWARD_EDGE_BATTLE_AREA" Label="Forward Edge of the Battle Area" Graphic="25140400.svg" GeometryType="LINE">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>4</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="PROPOSED_OR_ON_ORDER" Label="Proposed or On Order" Graphic="25140401.svg">
+						<EntitySubType ID="FEBA_PROPOSED_ON_ORDER" Label="Proposed or On Order" Graphic="25140401.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="PRINCIPLE_DIRECTION_OF_FIRE" Label="Principle Direction of Fire" Graphic="25140500.svg">
+        
+				<EntityType ID="PRINCIPLE_DIRECTION_OF_FIRE" Label="Principle Direction of Fire" Graphic="25140500.svg" GeometryType="LINE"><!--Should this be a line?-->
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>5</DigitTwo>
 					</EntityTypeCode>
-
 				</EntityType>
-				<EntityType ID="DIRECTION_OF_ATTACK" Label="Direction of Attack" Graphic="25140600.svg">
+        
+				<EntityType ID="DIRECTION_OF_ATTACK" Label="Direction of Attack">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>6</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="FRIENDLY_AVIATION" Label="Friendly Aviation" Graphic="25140601.svg">
+						<EntitySubType ID="FRIENDLY_AVIATION" Label="Friendly Aviation" Graphic="25140601.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="FRIENDLY_MAIN_ATTACK__DECISIVE" Label="Friendly Main Attack /Decisive" Graphic="25140602.svg">
+						<EntitySubType ID="FRIENDLY_MAIN_ATTACK_DECISIVE" Label="Friendly Direction of Main Attack" Graphic="25140602.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="FRIENDLY_SUPPORTING_ATTACK" Label="Friendly Supporting Attack" Graphic="25140603.svg">
+						<EntitySubType ID="FRIENDLY_SUPPORTING_ATTACK" Label="Friendly Direction of Supporting Attack" Graphic="25140603.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="FRIENDLY_PLANNED_OR_ON_ORDER" Label="Friendly Planned or On Order" Graphic="25140604.svg">
+						<EntitySubType ID="FRIENDLY_PLANNED_ON_ORDER" Label="Friendly Planned or On Order" Graphic="25140604.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>4</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="FEINT" Label="Feint" Graphic="25140605.svg">
+						<EntitySubType ID="FEINT" Label="Feint" Graphic="25140605.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>5</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="ENEMY_CONFIRMED" Label="Enemy Confirmed" Graphic="25140606.svg">
+						<EntitySubType ID="ENEMY_CONFIRMED" Label="Enemy Confirmed" Graphic="25140606.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>6</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="ENEMY_TEMPLATED_OR_SUSPECTED" Label="Enemy Templated or Suspected" Graphic="25140607.svg">
+						<EntitySubType ID="ENEMY_TEMPLATED_OR_SUSPECTED" Label="Enemy Templated or Suspected" Graphic="25140607.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>7</DigitTwo>
@@ -379,77 +364,77 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="FINAL_COORDINATION_LINE" Label="Final Coordination Line" Graphic="25140700.svg">
+				<EntityType ID="FINAL_COORDINATION_LINE" Label="Final Coordination Line" Graphic="25140700.svg" GeometryType="LINE">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>7</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="INFILTRATION_LANE" Label="Infiltration Lane" Graphic="25140800.svg">
+				<EntityType ID="INFILTRATION_LANE" Label="Infiltration Lane" Graphic="25140800.svg" GeometryType="LINE">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>8</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="LIMIT_OF_ADVANCE" Label="Limit of Advance" Graphic="25140900.svg">
+				<EntityType ID="LIMIT_OF_ADVANCE" Label="Limit of Advance" Graphic="25140900.svg" GeometryType="LINE">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>9</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="LINE_OF_DEPARTURE" Label="Line of Departure" Graphic="25141000.svg">
+				<EntityType ID="LINE_OF_DEPARTURE" Label="Line of Departure" Graphic="25141000.svg" GeometryType="LINE">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>0</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="LINE_OF_DEPARTURE_LINE_OF_CONTACT" Label="Line of Departure/Line of Contact" Graphic="25141100.svg">
+				<EntityType ID="LINE_OF_DEPARTURE_LINE_OF_CONTACT" Label="Line of Departure/Line of Contact" Graphic="25141100.svg" GeometryType="LINE">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>1</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="PROBABLE_LINE_OF_DEPLOYMENT" Label="Probable Line of Deployment" Graphic="25141200.svg">
+				<EntityType ID="PROBABLE_LINE_OF_DEPLOYMENT" Label="Probable Line of Deployment" Graphic="25141200.svg" GeometryType="LINE">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>2</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="AIRHEAD_LINE" Label="Airhead Line" Graphic="25141300.svg">
+				<EntityType ID="AIRHEAD_LINE" Label="Airhead Line" Graphic="25141300.svg" GeometryType="AREA">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>3</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="BRIDGEHEAD_LINE" Label="Bridgehead Line" Graphic="25141400.svg">
+				<EntityType ID="BRIDGEHEAD_LINE" Label="Bridgehead Line" Graphic="25141400.svg" GeometryType="LINE">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>4</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="HOLDING_LINE" Label="Holding Line" Graphic="25141500.svg">
+				<EntityType ID="HOLDING_LINE" Label="Holding Line" Graphic="25141500.svg" GeometryType="LINE">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>5</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="RELEASE_LINE" Label="Release Line" Graphic="25141600.svg">
+				<EntityType ID="RELEASE_LINE" Label="Release Line" Graphic="25141600.svg" GeometryType="LINE">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>6</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="AMBUSH" Label="Ambush" Graphic="25141700.svg">
+				<EntityType ID="AMBUSH" Label="Ambush" Graphic="25141700.svg" GeometryType="POINT"> <!--Is this a point?-->
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>7</DigitTwo>
@@ -458,37 +443,37 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="MANEUVER_AREAS" Label="Maneuver Areas" Graphic="25150000.svg">
+		<Entity ID="MANEUVER_AREAS" Label="Maneuver Areas">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>5</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="AREA" Label="Area" Graphic="25150100.svg">
+				<EntityType ID="AREA" Label="Area">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="FRIENDLY" Label="Friendly" Graphic="25150101.svg">
+						<EntitySubType ID="AREA_FRIENDLY" Label="Friendly" Graphic="25150101.svg" GeometryType="AREA">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="FRIENDLY_PLANNED_OR_ON_ORDER" Label="Friendly Planned or On Order" Graphic="25150102.svg">
+						<EntitySubType ID="AREA_FRIENDLY_PLANNED_OR_ON_ORDER" Label="Friendly Planned or On Order" Graphic="25150102.svg" GeometryType="AREA">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="ENEMY_KNOWN_OR_CONFIRMED" Label="Enemy Known or Confirmed" Graphic="25150103.svg">
+						<EntitySubType ID="AREA_ENEMY_KNOWN_OR_CONFIRMED" Label="Enemy Known or Confirmed" Graphic="25150103.svg" GeometryType="AREA">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="ENEMY_SUSPECTED" Label="Enemy Suspected" Graphic="25150104.svg">
+						<EntitySubType ID="AREA_ENEMY_SUSPECTED" Label="Enemy Suspected" Graphic="25150104.svg" GeometryType="AREA">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>4</DigitTwo>
@@ -497,26 +482,26 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="ASSEMBLY_AREA" Label="Assembly Area" Graphic="25150200.svg">
+				<EntityType ID="ASSEMBLY_AREA" Label="Assembly Area" Graphic="25150200.svg" GeometryType="AREA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="OCCUPIED_ASSEMBLY_AREA" Label="Occupied Assembly Area" Graphic="25150300.svg">
+				<EntityType ID="OCCUPIED_ASSEMBLY_AREA" Label="Occupied Assembly Area" Graphic="25150300.svg" GeometryType="AREA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>3</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="OFFSET_UNIT" Label="Offset Unit" Graphic="25150301.svg">
+						<EntitySubType ID="OCCUPIED_AA_OFFSET_UNIT" Label="Occupied Assembly Area w/ Offset Unit" Graphic="25150301.svg" GeometryType="AREA">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="OFFSET_UNITS" Label="Offset Units" Graphic="25150302.svg">
+						<EntitySubType ID="OCCUPIED_AA_OFFSET_UNITS" Label="Occupied Assembly Area w/ Offset Units" Graphic="25150302.svg" GeometryType="AREA">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
@@ -525,32 +510,32 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="PROPOSED_OR_ON_ORDER" Label="Proposed or On Order" Graphic="25150400.svg">
+				<EntityType ID="AA_PROPOSED_ON_ORDER" Label="Proposed or On Order Assembly Area" Graphic="25150400.svg" GeometryType="AREA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>4</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="ACTION_AREA" Label="Action Area" Graphic="25150500.svg">
+				<EntityType ID="ACTION_AREA" Label="Action Area">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>5</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="JOINT_TACTICAL_ACTION_AREA__JTAA_" Label="Joint Tactical Action Area (JTAA)" Graphic="25150501.svg">
+						<EntitySubType ID="JOINT_TACTICAL_ACTION_AREA_JTAA" Label="Joint Tactical Action Area (JTAA)" Graphic="25150501.svg" GeometryType="AREA">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="SUBMARINE_ACTION_AREA__SAA_" Label="Submarine Action Area (SAA)" Graphic="25150502.svg">
+						<EntitySubType ID="SUBMARINE_ACTION_AREA_SAA" Label="Submarine Action Area (SAA)" Graphic="25150502.svg" GeometryType="AREA">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="SUBMARINE_GENERATED_ACTION_AREA__SGAA_" Label="Submarine-Generated Action Area (SGAA)" Graphic="25150503.svg">
+						<EntitySubType ID="SUBMARINE_GENERATED_ACTION_AREA_SGAA" Label="Submarine-Generated Action Area (SGAA)" Graphic="25150503.svg" GeometryType="AREA">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
@@ -566,60 +551,60 @@
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="EXTRACTION_ZONE" Label="Extraction Zone" Graphic="25150700.svg">
+				<EntityType ID="EXTRACTION_ZONE" Label="Extraction Zone" Graphic="25150700.svg" GeometryType="AREA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>7</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="LANDING_ZONE" Label="Landing Zone" Graphic="25150800.svg">
+				<EntityType ID="LANDING_ZONE" Label="Landing Zone" Graphic="25150800.svg" GeometryType="AREA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>8</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="PICK_UP_ZONE" Label="Pick-Up Zone" Graphic="25150900.svg">
+				<EntityType ID="PICK_UP_ZONE" Label="Pick-Up Zone" Graphic="25150900.svg" GeometryType="AREA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>9</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="FORTIFIED_AREA" Label="Fortified Area" Graphic="25151000.svg">
+				<EntityType ID="FORTIFIED_AREA" Label="Fortified Area" Graphic="25151000.svg" GeometryType="AREA">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>0</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="LIMITED_ACCESS_AREA" Label="Limited Access Area" Graphic="25151100.svg">
+				<EntityType ID="LIMITED_ACCESS_AREA" Label="Limited Access Area" Graphic="25151100.svg" GeometryType="AREA">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>1</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="BATTLE_POSITION" Label="Battle Position" Graphic="25151200.svg">
+				<EntityType ID="BATTLE_POSITION" Label="Battle Position" Graphic="25151200.svg" GeometryType="AREA">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>2</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="PLANNED" Label="Planned" Graphic="25151201.svg">
+						<EntitySubType ID="BP_PLANNED" Label="Battle Position - Planned" Graphic="25151201.svg" GeometryType="AREA">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="PREPARED__P__BUT_NOT_OCCUPIED" Label="Prepared (P) but not Occupied" Graphic="25151202.svg">
+						<EntitySubType ID="PREPARED_BUT_NOT_OCCUPIED" Label="Battle Position - Prepared (P) but not Occupied" Graphic="25151202.svg" GeometryType="AREA">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="STRONG_POINT" Label="Strong Point" Graphic="25151203.svg">
+						<EntitySubType ID="STRONG_POINT" Label="Strong Point" Graphic="25151203.svg" GeometryType="AREA">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
@@ -640,70 +625,14 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="ENGAGEMENT_AREA__EA_" Label="Engagement Area (EA)" Graphic="25151300.svg">
+				<EntityType ID="ENGAGEMENT_AREA_EA" Label="Engagement Area (EA)" Graphic="25151300.svg" GeometryType="AREA">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>3</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="AXIS_OF_ADVANCE" Label="Axis of Advance" Graphic="25151400.svg">
-					<EntityTypeCode>
-						<DigitOne>1</DigitOne>
-						<DigitTwo>4</DigitTwo>
-					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="FRIENDLY_AIRBORNE_AVIATION" Label="Friendly Airborne/Aviation" Graphic="25151401.svg">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>1</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="ATTACK_HELICOPTER" Label="Attack Helicopter" Graphic="25151402.svg">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>2</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="MAIN_ATTACK" Label="Main Attack" Graphic="25151403.svg">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>3</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="SUPPORTING_ATTACK" Label="Supporting Attack" Graphic="25151404.svg">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>4</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="SUPPORTING_ATTACK_PLANNED_OR_ON_ORDER" Label="Supporting Attack Planned or On Order" Graphic="25151405.svg">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="FEINT" Label="Feint" Graphic="25151406.svg">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>6</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="ENEMY_CONFIRMED" Label="Enemy Confirmed" Graphic="25151407.svg">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>7</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="ENEMY_TEMPLATED_OR_SUSPECTED" Label="Enemy Templated or Suspected" Graphic="25151408.svg">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>8</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
 
-					</EntitySubTypes>
-				</EntityType>
 				<EntityType ID="ASSAULT_POSITION" Label="Assault Position" Graphic="25151500.svg">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
@@ -776,20 +705,20 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="MANEUVER_POINTS" Label="Maneuver Points" Graphic="25160000.svg">
+		<Entity ID="MANEUVER_POINTS" Label="Maneuver Points">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>6</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="OBSERVATION_POST_OUTPOST__UNSPECIFIED_" Label="Observation Post/Outpost (unspecified)" Graphic="25160100.svg">
+				<EntityType ID="OBSERVATION_POST_OUTPOST_UNSPECIFIED" Label="Observation Post/Outpost (Unspecified)" Graphic="25160100.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="OBSERVATION_POST_OUTPOST__SPECIFIED_" Label="Observation Post/Outpost (specified)" Graphic="25160200.svg">
+				<EntityType ID="OBSERVATION_POST_OUTPOST_SPECIFIED" Label="Observation Post/Outpost (Specified)" Graphic="25160200.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
@@ -813,7 +742,7 @@
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="SENSOR_OUTPOST__LISTENING_POST" Label="Sensor Outpost /Listening Post" Graphic="25160204.svg">
+						<EntitySubType ID="SENSOR_OUTPOST_LISTENING_POST" Label="Sensor Outpost/Listening Post" Graphic="25160204.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>4</DigitTwo>
@@ -825,7 +754,6 @@
 								<DigitTwo>5</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-
 					</EntitySubTypes>
 				</EntityType>
 				<EntityType ID="TARGET_REFERENCE_POINT" Label="Target Reference Point" Graphic="25160300.svg">
@@ -833,8 +761,65 @@
 						<DigitOne>0</DigitOne>
 						<DigitTwo>3</DigitTwo>
 					</EntityTypeCode>
-
 				</EntityType>
+        
+				<EntityType ID="AXIS_ADVANCE" Label="Axis of Advance">
+					<EntityTypeCode>
+						<DigitOne>1</DigitOne>
+						<DigitTwo>4</DigitTwo>
+					</EntityTypeCode>
+					<EntitySubTypes>
+						<EntitySubType ID="AXIS_ADVANCE_FRIENDLY_AIRBORNE_AVIATION" Label="Friendly Airborne/Aviation" Graphic="25151401.svg" GeometryType="LINE">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>1</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="AXIS_ADVANCE_ATTACK_HELICOPTER" Label="Attack Helicopter" Graphic="25151402.svg" GeometryType="LINE">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>2</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="AXIS_ADVANCE_MAIN_ATTACK" Label="Main Attack" Graphic="25151403.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>3</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="AXIS_ADVANCE_SUPPORTING_ATTACK" Label="Supporting Attack" Graphic="25151404.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>4</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="AXIS_ADVANCE_SUPPORTING_ATTACK_PLANNED_ON_ORDER" Label="Supporting Attack Planned or On Order" Graphic="25151405.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>5</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="AXIS_ADVANCE_FEINT" Label="Feint" Graphic="25151406.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>6</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="AXIS_ADVANCE_ENEMY_CONFIRMED" Label="Enemy Confirmed" Graphic="25151407.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>7</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+						<EntitySubType ID="AXIS_ADVANCE_ENEMY_TEMPLATED_SUSPECTED" Label="Enemy Templated or Suspected" Graphic="25151408.svg">
+							<EntitySubTypeCode>
+								<DigitOne>0</DigitOne>
+								<DigitTwo>8</DigitTwo>
+							</EntitySubTypeCode>
+						</EntitySubType>
+					</EntitySubTypes>
+				</EntityType>
+        
 				<EntityType ID="POINT_OF_DEPARTURE" Label="Point of Departure" Graphic="25160400.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
