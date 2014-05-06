@@ -64,8 +64,8 @@ SymbolSet,ModifierNumber,Category,Name,Code
 02,2,Missile Status,Launched,05
 02,2,Missile Status,Missile,06
 02,2,Missile Type-BMD,Patriot,07
-02,2,Missile Type-AAW,Standard Missile - 2 (SM-2),08
-02,2,Missile Type-AAW,Standard Missile - 6 (SM-6),09
+02,2,Missile Type-AAW,Standard Missile-2 (SM-2),08
+02,2,Missile Type-AAW,Standard Missile-6 (SM-6),09
 02,2,Missile Type-AAW,Evolved Sea Sparrow Missile (ESSM),10
 02,2,Missile Type-AAW,Rolling Airframe Missile (RAM),11
 02,2,Missile Range,Short Range,12
@@ -183,7 +183,7 @@ SymbolSet,ModifierNumber,Category,Name,Code
 50,1,Space/Air/Land/Sea Surface/Subsurface Radar,Unknown,62
 50,1,Space/Air/Land/Sea Surface/Subsurface Radar,Video Remoting,63
 50,1,Space/Air/Land/Sea Surface/Subsurface Radar,Experimental,64
-10,1,Mobility,Air Mobile/Air Assault,01
+10,1,Mobility,Air Mobile/Air Assault (US Only),01
 10,1,Capability,Area,02
 10,1,Capability,Attack,03
 10,1,Capability,Biological,04
@@ -326,7 +326,7 @@ SymbolSet,ModifierNumber,Category,Name,Code
 11,1,Crime,Piracy,06
 11,1,Crime,Rape,07
 11,1,Organization,Civilian,08
-11,1,Organization,Displaced Person(s)- Refugee(s)- and Evacuee(s),09
+11,1,Organization,Displaced Person(s)- Refugee(s) and Evacuee(s),09
 11,1,Organization,Foreign Fighter(s),10
 11,1,Organization,Gang Member or Gang,11
 11,1,Organization,Government Organization,12
@@ -436,18 +436,18 @@ SymbolSet,ModifierNumber,Category,Name,Code
 30,1,Mission Area,Missile Defense,08
 30,1,Mission Area,Medical,09
 30,1,Mission Area,Mine Warfare,10
-30,1,Mission Area,Remote Multimission Vehicle (RMV),11
+30,1,Mission Area,Remote Multi-Mission Vehicle (USV-only),11
 30,1,Asset Capability,Special Operations Forces (SOF),12
 30,1,Mission Area,Surface Warfare,13
 30,1,Weapons Capability,Ballistic Missile,14
 30,1,Weapons Capability,Guided Missile,15
 30,1,Weapons Capability,Other Guided Missile,16
 30,1,Weapons Capability,Torpedo,17
-30,1,Asset Capability,Drone Equipped,18
-30,1,Asset Capability,Helicopter Equipped/VSTOL,19
+30,1,Asset Capability,Drone-Equipped,18
+30,1,Asset Capability,Helicopter-Equipped/VSTOL,19
 30,1,Mission Area,Ballistic Missile Defense- Shooter,20
 30,1,Mission Area,Ballistic Missile Defense- Long-Range Surveillance and Track (LRST),21
-30,1,Mission Area,Sea-Based X-Band,22
+30,1,Mission Area,Sea-Base X-Band,22
 30,1,Crime,Hijacking/Hijacked,23
 30,2,Ship Propulsion,Nuclear Powered,01
 30,2,Ship Capacity,Heavy,02
@@ -595,9 +595,9 @@ SymbolSet,ModifierNumber,Category,Name,Code
 40,1,Crime,Rape,08
 40,1,Psychological Operations,Written Psychological Operations,09
 40,1,Crime,Pirate,10
-40,1,IED Category,FALSE,11
+40,1,IED Category,False,11
 40,1,IED Category,Find,12
-40,1,IED Category,IED Category,13
+40,1,IED Category,Found and Cleared,13
 40,1,IED Category,Hoax (Decoy),14
 40,1,Incident Qualifier,Attempted,15
 40,1,Incident Qualifier,Accident,16

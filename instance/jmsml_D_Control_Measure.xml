@@ -434,7 +434,7 @@
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="AMBUSH" Label="Ambush" Graphic="25141700.svg" GeometryType="POINT"> <!--Is this a point?-->
+				<EntityType ID="AMBUSH" Label="Ambush" Graphic="25141700.svg" GeometryType="LINE">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>7</DigitTwo>
@@ -443,6 +443,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
+    
 		<Entity ID="MANEUVER_AREAS" Label="Maneuver Areas">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
@@ -632,7 +633,63 @@
 					</EntityTypeCode>
 
 				</EntityType>
-
+        <EntityType ID="AXIS_ADVANCE" Label="Axis of Advance">
+          <EntityTypeCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>4</DigitTwo>
+          </EntityTypeCode>
+          <EntitySubTypes>
+            <EntitySubType ID="AXIS_ADVANCE_FRIENDLY_AIRBORNE_AVIATION" Label="Friendly Airborne/Aviation" Graphic="25151401.svg" GeometryType="LINE">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="AXIS_ADVANCE_ATTACK_HELICOPTER" Label="Attack Helicopter" Graphic="25151402.svg" GeometryType="LINE">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="AXIS_ADVANCE_MAIN_ATTACK" Label="Main Attack" Graphic="25151403.svg">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="AXIS_ADVANCE_SUPPORTING_ATTACK" Label="Supporting Attack" Graphic="25151404.svg">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>4</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="AXIS_ADVANCE_SUPPORTING_ATTACK_PLANNED_ON_ORDER" Label="Supporting Attack Planned or On Order" Graphic="25151405.svg">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>5</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="AXIS_ADVANCE_FEINT" Label="Feint" Graphic="25151406.svg">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>6</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="AXIS_ADVANCE_ENEMY_CONFIRMED" Label="Enemy Confirmed" Graphic="25151407.svg">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>7</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="AXIS_ADVANCE_ENEMY_TEMPLATED_SUSPECTED" Label="Enemy Templated or Suspected" Graphic="25151408.svg">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>8</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+        
 				<EntityType ID="ASSAULT_POSITION" Label="Assault Position" Graphic="25151500.svg">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
@@ -705,6 +762,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
+    
 		<Entity ID="MANEUVER_POINTS" Label="Maneuver Points">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
@@ -761,63 +819,6 @@
 						<DigitOne>0</DigitOne>
 						<DigitTwo>3</DigitTwo>
 					</EntityTypeCode>
-				</EntityType>
-        
-				<EntityType ID="AXIS_ADVANCE" Label="Axis of Advance">
-					<EntityTypeCode>
-						<DigitOne>1</DigitOne>
-						<DigitTwo>4</DigitTwo>
-					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="AXIS_ADVANCE_FRIENDLY_AIRBORNE_AVIATION" Label="Friendly Airborne/Aviation" Graphic="25151401.svg" GeometryType="LINE">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>1</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="AXIS_ADVANCE_ATTACK_HELICOPTER" Label="Attack Helicopter" Graphic="25151402.svg" GeometryType="LINE">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>2</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="AXIS_ADVANCE_MAIN_ATTACK" Label="Main Attack" Graphic="25151403.svg">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>3</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="AXIS_ADVANCE_SUPPORTING_ATTACK" Label="Supporting Attack" Graphic="25151404.svg">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>4</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="AXIS_ADVANCE_SUPPORTING_ATTACK_PLANNED_ON_ORDER" Label="Supporting Attack Planned or On Order" Graphic="25151405.svg">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="AXIS_ADVANCE_FEINT" Label="Feint" Graphic="25151406.svg">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>6</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="AXIS_ADVANCE_ENEMY_CONFIRMED" Label="Enemy Confirmed" Graphic="25151407.svg">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>7</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="AXIS_ADVANCE_ENEMY_TEMPLATED_SUSPECTED" Label="Enemy Templated or Suspected" Graphic="25151408.svg">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>8</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-					</EntitySubTypes>
 				</EntityType>
         
 				<EntityType ID="POINT_OF_DEPARTURE" Label="Point of Departure" Graphic="25160400.svg">

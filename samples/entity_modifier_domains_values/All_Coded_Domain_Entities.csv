@@ -9,7 +9,7 @@ Air : Military : Fixed-Wing : Bomber,01110103
 Air : Military : Fixed-Wing : Fighter,01110104
 Air : Military : Fixed-Wing : Fighter/Bomber,01110105
 Air : Military : Fixed-Wing : Cargo,01110107
-Air : Military : Fixed-Wing : Electronic/Combat (EC)/Jammer,01110108
+Air : Military : Fixed-Wing : Electronic Combat (EC)/Jammer,01110108
 Air : Military : Fixed-Wing : Tanker,01110109
 Air : Military : Fixed-Wing : Patrol,01110110
 Air : Military : Fixed-Wing : Reconnaissance,01110111
@@ -18,8 +18,8 @@ Air : Military : Fixed-Wing : Utility,01110113
 Air : Military : Fixed-Wing : VSTOL,01110114
 Air : Military : Fixed-Wing : Airborne Command Post (ACP),01110115
 Air : Military : Fixed-Wing : Airborne Early Warning (AEW),01110116
-Air : Military : Fixed-Wing : Antisurface Warfare (ASUW),01110117
-Air : Military : Fixed-Wing : Antisubmarine Warfare (ASW),01110118
+Air : Military : Fixed-Wing : Antisurface Warfare,01110117
+Air : Military : Fixed-Wing : Antisubmarine Warfare,01110118
 Air : Military : Fixed-Wing : Communications,01110119
 Air : Military : Fixed-Wing : Combat Search and Rescue (CSAR),01110120
 Air : Military : Fixed-Wing : Electronic Support (ES),01110121
@@ -42,26 +42,80 @@ Air : Military : Lighter Than Air,01110500
 Air : Military : Airship,01110600
 Air : Military : Tethered Lighter Than Air,01110700
 Air : Civilian,01120000
-Air : Civilian : Fixed-Wing,01120100
-Air : Civilian : Rotary-Wing,01120200
-Air : Civilian : Unmanned Aircraft (UA)/Unmanned Aerial Vehicle (UAV)/Unmanned Aircraft System (UAS)/Remote Piloted Vehicle (RPV),01120300
+Air : Civilian : Fixed Wing,01120100
+Air : Civilian : Rotary Wing,01120200
+Air : Civilian : Unmanned Aircraft (UA) / Unmanned Aerial Vehicle (UAV) / Unmanned Aircraft System (UAS) / Remote Piloted Vehicle (RPV),01120300
 Air : Civilian : Lighter Than Air,01120400
 Air : Civilian : Airship,01120500
-Air : Civilian : Tethered Lighter Than Air,01120600
+Air : Civilian : Tethered Lighter than Air,01120600
 Air : Weapon,01130000
 Air : Weapon : Bomb,01130100
 Air : Weapon : Decoy,01130200
 Air : Manual Track,01140000
 Air Missile : Missile,02110000
+Signals Intelligence - Air : Signal Intercept,51110000
+Signals Intelligence - Air : Signal Intercept : Communications,51110100
+Signals Intelligence - Air : Signal Intercept : Jammer,51110200
+Signals Intelligence - Air : Signal Intercept : Radar,51110300
+Cyberspace - Air : Botnet,60110000
+Cyberspace - Air : Botnet : Command and Control (C2),60110100
+Cyberspace - Air : Botnet : Herder,60110200
+Cyberspace - Air : Botnet : Callback Domain,60110300
+Cyberspace - Air : Botnet : Zombie,60110400
+Cyberspace - Air : Infection,60120000
+Cyberspace - Air : Infection : Advanced Persistent Threat (APT),60120100
+Cyberspace - Air : Infection : Advanced Persistent Threat (APT) : APT with C2,60120101
+Cyberspace - Air : Infection : Advanced Persistent Threat (APT) : APT with Self Propagation,60120102
+Cyberspace - Air : Infection : Advanced Persistent Threat (APT) : APT with C2 and Self Propagation,60120103
+Cyberspace - Air : Infection : Advanced Persistent Threat (APT) : APT Other,60120104
+Cyberspace - Air : Infection : Non-Advanced Persistent Threat (NAPT),60120200
+Cyberspace - Air : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with C2,60120201
+Cyberspace - Air : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with Self Propagation,60120202
+Cyberspace - Air : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with C2 and Self Propagation,60120203
+Cyberspace - Air : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT Other,60120204
+Cyberspace - Air : Health and Status,60130000
+Cyberspace - Air : Health and Status : Normal,60130100
+Cyberspace - Air : Health and Status : Network Outage,60130200
+Cyberspace - Air : Health and Status : Unknown,60130300
+Cyberspace - Air : Health and Status : Impaired,60130400
+Cyberspace - Air : Device Type,60140000
+Cyberspace - Air : Device Type : Core Router,60140100
+Cyberspace - Air : Device Type : Router,60140200
+Cyberspace - Air : Device Type : Cross Domain Solution,60140300
+Cyberspace - Air : Device Type : Mail Server,60140400
+Cyberspace - Air : Device Type : Web Server,60140500
+Cyberspace - Air : Device Type : Domain Server,60140600
+Cyberspace - Air : Device Type : File Server,60140700
+Cyberspace - Air : Device Type : Peer-to-Peer Node,60140800
+Cyberspace - Air : Device Type : Firewall,60140900
+Cyberspace - Air : Device Type : Switch,60141000
+Cyberspace - Air : Device Type : Host,60141100
+Cyberspace - Air : Device Type : Virtual Private Network (VPN),60141200
+Cyberspace - Air : Device Domain,60150000
+Cyberspace - Air : Device Domain : Department of Defense (DoD),60150100
+Cyberspace - Air : Device Domain : Government,60150200
+Cyberspace - Air : Device Domain : Contractor,60150300
+Cyberspace - Air : Device Domain : Supervisory Control and Data Acquisition (SCADA),60150400
+Cyberspace - Air : Device Domain : Non-Government,60150500
+Cyberspace - Air : Effect,60160000
+Cyberspace - Air : Effect : Infection,60160100
+Cyberspace - Air : Effect : Degradation,60160200
+Cyberspace - Air : Effect : Data Spoofing,60160300
+Cyberspace - Air : Effect : Data Manipulation,60160400
+Cyberspace - Air : Effect : Exfiltration,60160500
+Cyberspace - Air : Effect : Power Outage,60160600
+Cyberspace - Air : Effect : Network Outage,60160700
+Cyberspace - Air : Effect : Service Outage,60160800
+Cyberspace - Air : Effect : Device Outage,60160900
 Space : Military,05110000
 Space : Military : Space Vehicle,05110100
 Space : Military : Re-Entry Vehicle,05110200
 Space : Military : Planet Lander,05110300
 Space : Military : Orbiter Shuttle,05110400
 Space : Military : Capsule,05110500
-Space : Military : General Satellite,05110600
+Space : Military : Satellite- General,05110600
 Space : Military : Satellite,05110700
-Space : Military : Anti-Satellite Weapon,05110800
+Space : Military : Antisatellite Weapon,05110800
 Space : Military : Astronomical Satellite,05110900
 Space : Military : Biosatellite,05111000
 Space : Military : Communications Satellite,05111100
@@ -88,6 +142,675 @@ Space : Civilian : Tethered Satellite,05121100
 Space : Civilian : Weather Satellite,05121200
 Space : Manual Track,05130000
 Space Missile : Missile,06110000
+Signals Intelligence - Space : Signal Intercept,50110000
+Signals Intelligence - Space : Signal Intercept : Communications,50110100
+Signals Intelligence - Space : Signal Intercept : Jammer,50110200
+Signals Intelligence - Space : Signal Intercept : Radar,50110300
+Cyberspace - Space : Botnet,60110000
+Cyberspace - Space : Botnet : Command and Control (C2),60110100
+Cyberspace - Space : Botnet : Herder,60110200
+Cyberspace - Space : Botnet : Callback Domain,60110300
+Cyberspace - Space : Botnet : Zombie,60110400
+Cyberspace - Space : Infection,60120000
+Cyberspace - Space : Infection : Advanced Persistent Threat (APT),60120100
+Cyberspace - Space : Infection : Advanced Persistent Threat (APT) : APT with C2,60120101
+Cyberspace - Space : Infection : Advanced Persistent Threat (APT) : APT with Self Propagation,60120102
+Cyberspace - Space : Infection : Advanced Persistent Threat (APT) : APT with C2 and Self Propagation,60120103
+Cyberspace - Space : Infection : Advanced Persistent Threat (APT) : APT Other,60120104
+Cyberspace - Space : Infection : Non-Advanced Persistent Threat (NAPT),60120200
+Cyberspace - Space : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with C2,60120201
+Cyberspace - Space : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with Self Propagation,60120202
+Cyberspace - Space : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with C2 and Self Propagation,60120203
+Cyberspace - Space : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT Other,60120204
+Cyberspace - Space : Health and Status,60130000
+Cyberspace - Space : Health and Status : Normal,60130100
+Cyberspace - Space : Health and Status : Network Outage,60130200
+Cyberspace - Space : Health and Status : Unknown,60130300
+Cyberspace - Space : Health and Status : Impaired,60130400
+Cyberspace - Space : Device Type,60140000
+Cyberspace - Space : Device Type : Core Router,60140100
+Cyberspace - Space : Device Type : Router,60140200
+Cyberspace - Space : Device Type : Cross Domain Solution,60140300
+Cyberspace - Space : Device Type : Mail Server,60140400
+Cyberspace - Space : Device Type : Web Server,60140500
+Cyberspace - Space : Device Type : Domain Server,60140600
+Cyberspace - Space : Device Type : File Server,60140700
+Cyberspace - Space : Device Type : Peer-to-Peer Node,60140800
+Cyberspace - Space : Device Type : Firewall,60140900
+Cyberspace - Space : Device Type : Switch,60141000
+Cyberspace - Space : Device Type : Host,60141100
+Cyberspace - Space : Device Type : Virtual Private Network (VPN),60141200
+Cyberspace - Space : Device Domain,60150000
+Cyberspace - Space : Device Domain : Department of Defense (DoD),60150100
+Cyberspace - Space : Device Domain : Government,60150200
+Cyberspace - Space : Device Domain : Contractor,60150300
+Cyberspace - Space : Device Domain : Supervisory Control and Data Acquisition (SCADA),60150400
+Cyberspace - Space : Device Domain : Non-Government,60150500
+Cyberspace - Space : Effect,60160000
+Cyberspace - Space : Effect : Infection,60160100
+Cyberspace - Space : Effect : Degradation,60160200
+Cyberspace - Space : Effect : Data Spoofing,60160300
+Cyberspace - Space : Effect : Data Manipulation,60160400
+Cyberspace - Space : Effect : Exfiltration,60160500
+Cyberspace - Space : Effect : Power Outage,60160600
+Cyberspace - Space : Effect : Network Outage,60160700
+Cyberspace - Space : Effect : Service Outage,60160800
+Cyberspace - Space : Effect : Device Outage,60160900
+Land Units : Command and Control,10110000
+Land Units : Command and Control : Broadcast Transmitter Antennae,10110100
+Land Units : Command and Control : Civil Affairs,10110200
+Land Units : Command and Control : Civil-Military Cooperation,10110300
+Land Units : Command and Control : Information Operations,10110400
+Land Units : Command and Control : Liaison,10110500
+Land Units : Command and Control : Military Information Support Operations (MISO),10110600
+Land Units : Command and Control : Military Information Support Operations (MISO) : Broadcast Transmitter Antennae,10110601
+Land Units : Command and Control : Radio,10110700
+Land Units : Command and Control : Radio Relay,10110800
+Land Units : Command and Control : Radio Teletype Center,10110900
+Land Units : Command and Control : Signal,10111000
+Land Units : Command and Control : Signal : Radio,10111001
+Land Units : Command and Control : Signal : Radio Relay,10111002
+Land Units : Command and Control : Signal : Teletype,10111003
+Land Units : Command and Control : Signal : Tactical Satellite,10111004
+Land Units : Command and Control : Signal : Video Imagery (Combat Camera),10111005
+Land Units : Command and Control : Tactical Satellite,10111100
+Land Units : Command and Control : Video Imagery (Combat Camera),10111200
+Land Units : Movement and Maneuver,10120000
+Land Units : Movement and Maneuver : Air Assault with Organic Lift,10120100
+Land Units : Movement and Maneuver : Air Traffic Services/Airfield Operations,10120200
+Land Units : Movement and Maneuver : Amphibious,10120300
+Land Units : Movement and Maneuver : Antitank/Antiarmor,10120400
+Land Units : Movement and Maneuver : Antitank/Antiarmor : Armored,10120401
+Land Units : Movement and Maneuver : Antitank/Antiarmor : Motorized,10120402
+Land Units : Movement and Maneuver : Armor/Armored/Mechanized/Self-Propelled/Tracked,10120500
+Land Units : Movement and Maneuver : Armor/Armored/Mechanized/Self-Propelled/Tracked : Reconnaissance/Cavalry/Scout,10120501
+Land Units : Movement and Maneuver : Armor/Armored/Mechanized/Self-Propelled/Tracked : Amphibious,10120502
+Land Units : Movement and Maneuver : Army Aviation/Aviation Rotary Wing,10120600
+Land Units : Movement and Maneuver : Army Aviation/Aviation Rotary Wing : Reconnaissance,10120601
+Land Units : Movement and Maneuver : Aviation Composite,10120700
+Land Units : Movement and Maneuver : Aviation Fixed Wing,10120800
+Land Units : Movement and Maneuver : Aviation Fixed Wing : Reconnaissance,10120801
+Land Units : Movement and Maneuver : Combat,10120900
+Land Units : Movement and Maneuver : Combined Arms,10121000
+Land Units : Movement and Maneuver : Infantry,10121100
+Land Units : Movement and Maneuver : Infantry : Amphibious,10121101
+Land Units : Movement and Maneuver : Infantry : Armored/Mechanized/Tracked,10121102
+Land Units : Movement and Maneuver : Infantry : Main Gun System,10121103
+Land Units : Movement and Maneuver : Infantry : Motorized,10121104
+Land Units : Movement and Maneuver : Infantry : Infantry Fighting Vehicle,10121105
+Land Units : Movement and Maneuver : Observer,10121200
+Land Units : Movement and Maneuver : Reconnaissance/Cavalry/Scout,10121300
+Land Units : Movement and Maneuver : Reconnaissance/Cavalry/Scout : Reconnaissance and Surveillance,10121301
+Land Units : Movement and Maneuver : Reconnaissance/Cavalry/Scout : Marine,10121302
+Land Units : Movement and Maneuver : Reconnaissance/Cavalry/Scout : Motorized,10121303
+Land Units : Movement and Maneuver : Reconnaissance/Cavalry/Scout : Headquarters Element,10121395
+Land Units : Movement and Maneuver : Sea Air Land (SEAL),10121400
+Land Units : Movement and Maneuver : Sniper,10121500
+Land Units : Movement and Maneuver : Surveillance,10121600
+Land Units : Movement and Maneuver : Special Forces,10121700
+Land Units : Movement and Maneuver : Special Forces : Headquarters Element,10121795
+Land Units : Movement and Maneuver : Special Operations Forces (SOF),10121800
+Land Units : Movement and Maneuver : Special Operations Forces (SOF) : Fixed Wing MISO,10121801
+Land Units : Movement and Maneuver : Special Operations Forces (SOF) : Ground,10121802
+Land Units : Movement and Maneuver : Special Operations Forces (SOF) : Special Boat,10121803
+Land Units : Movement and Maneuver : Special Operations Forces (SOF) : Special SSNR,10121804
+Land Units : Movement and Maneuver : Special Operations Forces (SOF) : Underwater Demolition Team,10121805
+Land Units : Movement and Maneuver : Unmanned Aerial Systems,10121900
+Land Units : Fires,10130000
+Land Units : Fires : Air Defense,10130100
+Land Units : Fires : Air Defense : Main Gun System,10130101
+Land Units : Fires : Air Defense : Missile,10130102
+Land Units : Fires : Air/Land Naval Gunfire Liaison,10130200
+Land Units : Fires : Field Artillery,10130300
+Land Units : Fires : Field Artillery : Self-propelled,10130301
+Land Units : Fires : Field Artillery : Target Acquisition,10130302
+Land Units : Fires : Field Artillery Observer,10130400
+Land Units : Fires : Joint Fire Support,10130500
+Land Units : Fires : Meteorological,10130600
+Land Units : Fires : Missile,10130700
+Land Units : Fires : Mortar,10130800
+Land Units : Fires : Mortar : Armored/Mechanized/Tracked,10130801
+Land Units : Fires : Mortar : Self-Propelled Wheeled,10130802
+Land Units : Fires : Mortar : Towed,10130803
+Land Units : Fires : Survey,10130900
+Land Units : Protection,10140000
+Land Units : Protection : Chemical Biological Radiological Nuclear Defense,10140100
+Land Units : Protection : Chemical Biological Radiological Nuclear Defense : Mechanized,10140101
+Land Units : Protection : Chemical Biological Radiological Nuclear Defense : Motorized,10140102
+Land Units : Protection : Chemical Biological Radiological Nuclear Defense : Reconnaissance,10140103
+Land Units : Protection : Chemical Biological Radiological Nuclear Defense : Reconnaissance Armored,10140104
+Land Units : Protection : Chemical Biological Radiological Nuclear Defense : Reconnaissance Equipped,10140105
+Land Units : Protection : Combat Support (Maneuver Enhancement),10140200
+Land Units : Protection : Criminal Investigation Division,10140300
+Land Units : Protection : Diving,10140400
+Land Units : Protection : Dog,10140500
+Land Units : Protection : Drilling,10140600
+Land Units : Protection : Engineer,10140700
+Land Units : Protection : Engineer : Mechanized,10140701
+Land Units : Protection : Engineer : Motorized,10140702
+Land Units : Protection : Engineer : Reconnaissance,10140703
+Land Units : Protection : Explosive Ordnance Disposal (EOD),10140800
+Land Units : Protection : Field Camp Construction,10140900
+Land Units : Protection : Fire Fighting/Fire Protection,10141000
+Land Units : Protection : Geospatial Support/Geospatial Information Support,10141100
+Land Units : Protection : Military Police,10141200
+Land Units : Protection : Military Police : Headquarters Element,10141295
+Land Units : Protection : Mine,10141300
+Land Units : Protection : Mine Clearing,10141400
+Land Units : Protection : Mine Launching,10141500
+Land Units : Protection : Mine Laying,10141600
+Land Units : Protection : Security,10141700
+Land Units : Protection : Security : Mechanized,10141701
+Land Units : Protection : Security : Motorized,10141702
+Land Units : Protection : Search and Rescue,10141800
+Land Units : Protection : Security Police (Air),10141900
+Land Units : Protection : Shore Patrol,10142000
+Land Units : Protection : Topographic,10142100
+Land Units : Intelligence,10150000
+Land Units : Intelligence : Analysis,10150100
+Land Units : Intelligence : Counterintelligence,10150200
+Land Units : Intelligence : Direction Finding,10150300
+Land Units : Intelligence : Electronic Ranging,10150400
+Land Units : Intelligence : Electronic Warfare,10150500
+Land Units : Intelligence : Electronic Warfare : Analysis,10150501
+Land Units : Intelligence : Electronic Warfare : Direction Finding,10150502
+Land Units : Intelligence : Electronic Warfare : Intercept,10150503
+Land Units : Intelligence : Electronic Warfare : Jamming,10150504
+Land Units : Intelligence : Electronic Warfare : Search,10150505
+Land Units : Intelligence : Intercept (Search and Recording),10150600
+Land Units : Intelligence : Interrogation,10150700
+Land Units : Intelligence : Jamming,10150800
+Land Units : Intelligence : Joint Intelligence Center,10150900
+Land Units : Intelligence : Military Intelligence,10151000
+Land Units : Intelligence : Search,10151100
+Land Units : Intelligence : Sensor,10151200
+Land Units : Sustainment,10160000
+Land Units : Sustainment : Administrative,10160100
+Land Units : Sustainment : All Classes of Supply,10160200
+Land Units : Sustainment : Airport of Debarkation/Airport of Embarkation,10160300
+Land Units : Sustainment : Ammunition,10160400
+Land Units : Sustainment : Band,10160500
+Land Units : Sustainment : Combat Service Support,10160600
+Land Units : Sustainment : Finance,10160700
+Land Units : Sustainment : Judge Advocate General,10160800
+Land Units : Sustainment : Labor,10160900
+Land Units : Sustainment : Laundry/Bath,10161000
+Land Units : Sustainment : Maintenance,10161100
+Land Units : Sustainment : Material,10161200
+Land Units : Sustainment : Medical,10161300
+Land Units : Sustainment : Medical Treatment Facility,10161400
+Land Units : Sustainment : Morale Welfare and Recreation,10161500
+Land Units : Sustainment : Mortuary Affairs/Graves Registration,10161600
+Land Units : Sustainment : Multiple Classes of Supply,10161700
+Land Units : Sustainment : NATO Supply Class I,10161800
+Land Units : Sustainment : NATO Supply Class II,10161900
+Land Units : Sustainment : NATO Supply Class III,10162000
+Land Units : Sustainment : NATO Supply Class IV,10162100
+Land Units : Sustainment : NATO Supply Class V,10162200
+Land Units : Sustainment : Ordnance,10162300
+Land Units : Sustainment : Personnel Services,10162400
+Land Units : Sustainment : Petroleum Oil and Lubricants,10162500
+Land Units : Sustainment : Pipeline,10162600
+Land Units : Sustainment : Postal,10162700
+Land Units : Sustainment : Public Affairs/Public Information,10162800
+Land Units : Sustainment : Quartermaster,10162900
+Land Units : Sustainment : Railhead,10163000
+Land Units : Sustainment : Religious Support,10163100
+Land Units : Sustainment : Replacement Holding Unit,10163200
+Land Units : Sustainment : Sea Port of Debarkation/Sea Port of Embarkation,10163300
+Land Units : Sustainment : Supply,10163400
+Land Units : Sustainment : Joint Information Bureau,10163500
+Land Units : Sustainment : Transportation,10163600
+Land Units : Sustainment : US Supply Class I,10163700
+Land Units : Sustainment : US Supply Class II,10163800
+Land Units : Sustainment : US Supply Class III,10163900
+Land Units : Sustainment : US Supply Class IV,10164000
+Land Units : Sustainment : US Supply Class V,10164100
+Land Units : Sustainment : US Supply Class VI,10164200
+Land Units : Sustainment : US Supply Class VII,10164300
+Land Units : Sustainment : US Supply Class VIII,10164400
+Land Units : Sustainment : US Supply Class IX,10164500
+Land Units : Sustainment : US Supply Class X,10164600
+Land Units : Sustainment : Water,10164700
+Land Units : Sustainment : Water Purification,10164800
+Land Units : Sustainment : Broadcast,10164900
+Land Units : Naval,10170000
+Land Units : Naval : Naval,10170100
+Land Units : Named Headquarters,10180000
+Land Units : Named Headquarters : Allied Command Europe Rapid Reaction Corps (ARRC),10180100
+Land Units : Named Headquarters : Allied Command Operations,10180200
+Land Units : Named Headquarters : International Security Assistance Force (ISAF),10180300
+Land Units : Named Headquarters : Multinational (MN),10180400
+Land Units : Emergency Operation,10190000
+Land Units : Law Enforcement,10200000
+Land Units : Law Enforcement : Bureau of Alcohol Tobacco Firearms and Explosives (ATF) (Department of Justice),10200100
+Land Units : Law Enforcement : Border Patrol,10200200
+Land Units : Law Enforcement : Customs Service,10200300
+Land Units : Law Enforcement : Drug Enforcement Administration (DEA),10200400
+Land Units : Law Enforcement : Department of Justice (DOJ),10200500
+Land Units : Law Enforcement : Federal Bureau of Investigation (FBI),10200600
+Land Units : Law Enforcement : Police,10200700
+Land Units : Law Enforcement : Prison,10200800
+Land Units : Law Enforcement : United States Secret Service (USSS),10200900
+Land Units : Law Enforcement : Transportation Security Administration (TSA),10201000
+Land Units : Law Enforcement : Coast Guard,10201100
+Land Units : Law Enforcement : US Marshals Service,10201200
+Land Units : Law Enforcement : Internal Security Force,10201300
+Land Civilian : Civilian,11110000
+Land Civilian : Civilian : Environmental Protection,11110100
+Land Civilian : Civilian : Government Organization,11110200
+Land Civilian : Civilian : Individual,11110300
+Land Civilian : Civilian : Organization or Group,11110400
+Land Civilian : Civilian : Killing Victim,11110500
+Land Civilian : Civilian : Killing Victims,11110600
+Land Civilian : Civilian : Victim of an Attempted Crime,11110700
+Land Civilian : Civilian : Spy,11110800
+Land Civilian : Civilian : Composite Loss,11110900
+Land Civilian : Civilian : Emergency Medical Operation,11111000
+Land Equipment : Weapon/Weapon System,15110000
+Land Equipment : Weapon/Weapon System : Rifle,15110100
+Land Equipment : Weapon/Weapon System : Rifle : Single Shot Rifle,15110101
+Land Equipment : Weapon/Weapon System : Rifle : Semiautomatic Rifle,15110102
+Land Equipment : Weapon/Weapon System : Rifle : Automatic Rifle,15110103
+Land Equipment : Weapon/Weapon System : Machine Gun,15110200
+Land Equipment : Weapon/Weapon System : Machine Gun : Light,15110201
+Land Equipment : Weapon/Weapon System : Machine Gun : Medium,15110202
+Land Equipment : Weapon/Weapon System : Machine Gun : Heavy,15110203
+Land Equipment : Weapon/Weapon System : Grenade Launcher,15110300
+Land Equipment : Weapon/Weapon System : Grenade Launcher : Light,15110301
+Land Equipment : Weapon/Weapon System : Grenade Launcher : Medium,15110302
+Land Equipment : Weapon/Weapon System : Grenade Launcher : Heavy,15110303
+Land Equipment : Weapon/Weapon System : Flame Thrower,15110400
+Land Equipment : Weapon/Weapon System : Air Defense Gun,15110500
+Land Equipment : Weapon/Weapon System : Air Defense Gun : Light,15110501
+Land Equipment : Weapon/Weapon System : Air Defense Gun : Medium,15110502
+Land Equipment : Weapon/Weapon System : Air Defense Gun : Heavy,15110503
+Land Equipment : Weapon/Weapon System : Antitank Gun,15110600
+Land Equipment : Weapon/Weapon System : Antitank Gun : Light,15110601
+Land Equipment : Weapon/Weapon System : Antitank Gun : Medium,15110602
+Land Equipment : Weapon/Weapon System : Antitank Gun : Heavy,15110603
+Land Equipment : Weapon/Weapon System : Direct Fire Gun,15110700
+Land Equipment : Weapon/Weapon System : Direct Fire Gun : Light,15110701
+Land Equipment : Weapon/Weapon System : Direct Fire Gun : Medium,15110702
+Land Equipment : Weapon/Weapon System : Direct Fire Gun : Heavy,15110703
+Land Equipment : Weapon/Weapon System : Recoilless Gun,15110800
+Land Equipment : Weapon/Weapon System : Recoilless Gun : Light,15110801
+Land Equipment : Weapon/Weapon System : Recoilless Gun : Medium,15110802
+Land Equipment : Weapon/Weapon System : Recoilless Gun : Heavy,15110803
+Land Equipment : Weapon/Weapon System : Howitzer,15110900
+Land Equipment : Weapon/Weapon System : Howitzer : Light,15110901
+Land Equipment : Weapon/Weapon System : Howitzer : Medium,15110902
+Land Equipment : Weapon/Weapon System : Howitzer : Heavy,15110903
+Land Equipment : Weapon/Weapon System : Missile Launcher,15111000
+Land Equipment : Weapon/Weapon System : Missile Launcher : Light,15111001
+Land Equipment : Weapon/Weapon System : Missile Launcher : Medium,15111002
+Land Equipment : Weapon/Weapon System : Missile Launcher : Heavy,15111003
+Land Equipment : Weapon/Weapon System : Air Defense Missile Launcher,15111100
+Land Equipment : Weapon/Weapon System : Air Defense Missile Launcher : Light,15111101
+Land Equipment : Weapon/Weapon System : Air Defense Missile Launcher : Light- Light Transporter-Launcher and Radar (TLAR),15111102
+Land Equipment : Weapon/Weapon System : Air Defense Missile Launcher : Light- Light Tactical Landing Approach Radar (TELAR),15111103
+Land Equipment : Weapon/Weapon System : Air Defense Missile Launcher : Medium,15111104
+Land Equipment : Weapon/Weapon System : Air Defense Missile Launcher : Medium- TLAR,15111105
+Land Equipment : Weapon/Weapon System : Air Defense Missile Launcher : Medium- TELAR Air Defense Missile Launcher,15111106
+Land Equipment : Weapon/Weapon System : Air Defense Missile Launcher : Heavy,15111107
+Land Equipment : Weapon/Weapon System : Air Defense Missile Launcher : Heavy- TLAR,15111108
+Land Equipment : Weapon/Weapon System : Air Defense Missile Launcher : Heavy- TELAR,15111109
+Land Equipment : Weapon/Weapon System : Antitank Missile Launcher,15111200
+Land Equipment : Weapon/Weapon System : Antitank Missile Launcher : Light,15111201
+Land Equipment : Weapon/Weapon System : Antitank Missile Launcher : Medium,15111202
+Land Equipment : Weapon/Weapon System : Antitank Missile Launcher : Heavy,15111203
+Land Equipment : Weapon/Weapon System : Surface-to-Surface Missile Launcher,15111300
+Land Equipment : Weapon/Weapon System : Surface-to-Surface Missile Launcher : Light,15111301
+Land Equipment : Weapon/Weapon System : Surface-to-Surface Missile Launcher : Medium,15111302
+Land Equipment : Weapon/Weapon System : Surface-to-Surface Missile Launcher : Heavy,15111303
+Land Equipment : Weapon/Weapon System : Mortar,15111400
+Land Equipment : Weapon/Weapon System : Mortar : Light,15111401
+Land Equipment : Weapon/Weapon System : Mortar : Medium,15111402
+Land Equipment : Weapon/Weapon System : Mortar : Heavy,15111403
+Land Equipment : Weapon/Weapon System : Single Rocket Launcher,15111500
+Land Equipment : Weapon/Weapon System : Single Rocket Launcher : Light,15111501
+Land Equipment : Weapon/Weapon System : Single Rocket Launcher : Medium,15111502
+Land Equipment : Weapon/Weapon System : Single Rocket Launcher : Heavy,15111503
+Land Equipment : Weapon/Weapon System : Multiple Rocket Launcher,15111600
+Land Equipment : Weapon/Weapon System : Multiple Rocket Launcher : Light,15111601
+Land Equipment : Weapon/Weapon System : Multiple Rocket Launcher : Medium,15111602
+Land Equipment : Weapon/Weapon System : Multiple Rocket Launcher : Heavy,15111603
+Land Equipment : Weapon/Weapon System : Antitank Rocket Launcher,15111700
+Land Equipment : Weapon/Weapon System : Antitank Rocket Launcher : Light,15111701
+Land Equipment : Weapon/Weapon System : Antitank Rocket Launcher : Medium,15111702
+Land Equipment : Weapon/Weapon System : Antitank Rocket Launcher : Heavy,15111703
+Land Equipment : Weapon/Weapon System : Nonlethal Weapon,15111800
+Land Equipment : Weapon/Weapon System : Taser,15111900
+Land Equipment : Weapon/Weapon System : Water Cannon,15112000
+Land Equipment : Vehicle,15120000
+Land Equipment : Vehicle : Armored Vehicle,15120100
+Land Equipment : Vehicle : Armored Vehicle : Armored Fighting Vehicle,15120101
+Land Equipment : Vehicle : Armored Vehicle : Armored Fighting Vehicle Command and Control,15120102
+Land Equipment : Vehicle : Armored Vehicle : Armored Personnel Carrier,15120103
+Land Equipment : Vehicle : Armored Vehicle : Armored Personnel Carrier Ambulance,15120104
+Land Equipment : Vehicle : Armored Vehicle : Armored Protected Vehicle,15120105
+Land Equipment : Vehicle : Armored Vehicle : Armored Protected Vehicle Recovery,15120106
+Land Equipment : Vehicle : Armored Vehicle : Armored Protected Vehicle Medical Evacuation,15120107
+Land Equipment : Vehicle : Armored Vehicle : Armored Personnel Carrier-Recovery,15120108
+Land Equipment : Vehicle : Armored Vehicle : Combat Service Support Vehicle,15120109
+Land Equipment : Vehicle : Armored Vehicle : Light Wheeled Armored Vehicle,15120110
+Land Equipment : Vehicle : Tank,15120200
+Land Equipment : Vehicle : Tank : Light,15120201
+Land Equipment : Vehicle : Tank : Medium,15120202
+Land Equipment : Vehicle : Tank : Heavy,15120203
+Land Equipment : Vehicle : Tank Recovery Vehicle,15120300
+Land Equipment : Vehicle : Tank Recovery Vehicle : Light,15120301
+Land Equipment : Vehicle : Tank Recovery Vehicle : Medium,15120302
+Land Equipment : Vehicle : Tank Recovery Vehicle : Heavy,15120303
+Land Equipment : Engineer Vehicles and Equipment,15130000
+Land Equipment : Engineer Vehicles and Equipment : Bridge,15130100
+Land Equipment : Engineer Vehicles and Equipment : Bridge Mounted on Utility Vehicle,15130200
+Land Equipment : Engineer Vehicles and Equipment : Fixed Bridge,15130300
+Land Equipment : Engineer Vehicles and Equipment : Floating Bridge,15130400
+Land Equipment : Engineer Vehicles and Equipment : Folding Girder Bridge,15130500
+Land Equipment : Engineer Vehicles and Equipment : Hollow Deck Bridge,15130600
+Land Equipment : Engineer Vehicles and Equipment : Drill,15130700
+Land Equipment : Engineer Vehicles and Equipment : Drill : Drill Mounted on Utility Vehicle,15130701
+Land Equipment : Engineer Vehicles and Equipment : Earthmover,15130800
+Land Equipment : Engineer Vehicles and Equipment : Earthmover : Multifunctional Earthmover/Digger,15130801
+Land Equipment : Engineer Vehicles and Equipment : Mine Clearing Equipment,15130900
+Land Equipment : Engineer Vehicles and Equipment : Mine Clearing Equipment : Trailer Mounted,15130901
+Land Equipment : Engineer Vehicles and Equipment : Mine Clearing Equipment : Mine Clearing Equipment on Tank Chassis,15130902
+Land Equipment : Engineer Vehicles and Equipment : Mine Laying Equipment,15131000
+Land Equipment : Engineer Vehicles and Equipment : Mine Laying Equipment : Mine Laying Equipment on Utility Vehicle,15131001
+Land Equipment : Engineer Vehicles and Equipment : Mine Laying Equipment : Armored Carrier with Volcano,15131002
+Land Equipment : Engineer Vehicles and Equipment : Mine Laying Equipment : Truck Mounted with Volcano,15131003
+Land Equipment : Engineer Vehicles and Equipment : Dozer,15131100
+Land Equipment : Engineer Vehicles and Equipment : Dozer : Dozer-Armored,15131101
+Land Equipment : Engineer Vehicles and Equipment : Armored Assault,15131200
+Land Equipment : Engineer Vehicles and Equipment : Armored Engineer Recon Vehicle (AERV),15131300
+Land Equipment : Engineer Vehicles and Equipment : Backhoe,15131400
+Land Equipment : Engineer Vehicles and Equipment : Construction Vehicle,15131500
+Land Equipment : Engineer Vehicles and Equipment : Ferry Transporter,15131600
+Land Equipment : Utility Vehicles,15140000
+Land Equipment : Utility Vehicles : Utility Vehicle,15140100
+Land Equipment : Utility Vehicles : Medical,15140200
+Land Equipment : Utility Vehicles : Medical Evacuation,15140300
+Land Equipment : Utility Vehicles : Mobile Emergency Physician,15140400
+Land Equipment : Utility Vehicles : Bus,15140500
+Land Equipment : Utility Vehicles : Semi-Trailer and Truck,15140600
+Land Equipment : Utility Vehicles : Semi-Trailer and Truck : Light,15140601
+Land Equipment : Utility Vehicles : Semi-Trailer and Truck : Medium,15140602
+Land Equipment : Utility Vehicles : Semi-Trailer and Truck : Heavy,15140603
+Land Equipment : Utility Vehicles : Limited Cross Country Truck,15140700
+Land Equipment : Utility Vehicles : Cross Country Truck,15140800
+Land Equipment : Utility Vehicles : Petroleum-Oil and Lubricant,15140900
+Land Equipment : Utility Vehicles : Water,15141000
+Land Equipment : Utility Vehicles : Amphibious Utility Wheeled Vehicle,15141100
+Land Equipment : Utility Vehicles : Tow Truck,15141200
+Land Equipment : Utility Vehicles : Tow Truck : Light,15141201
+Land Equipment : Utility Vehicles : Tow Truck : Heavy,15141202
+Land Equipment : Train,15150000
+Land Equipment : Train : Locomotive,15150100
+Land Equipment : Train : Railcar,15150200
+Land Equipment : Civilian Vehicle,15160000
+Land Equipment : Civilian Vehicle : Automobile,15160100
+Land Equipment : Civilian Vehicle : Automobile : Compact,15160101
+Land Equipment : Civilian Vehicle : Automobile : Midsize,15160102
+Land Equipment : Civilian Vehicle : Automobile : Sedan,15160103
+Land Equipment : Civilian Vehicle : Open-Bed Truck,15160200
+Land Equipment : Civilian Vehicle : Open-Bed Truck : Pickup,15160201
+Land Equipment : Civilian Vehicle : Open-Bed Truck : Small,15160202
+Land Equipment : Civilian Vehicle : Open-Bed Truck : Large,15160203
+Land Equipment : Civilian Vehicle : Multiple Passenger Vehicle,15160300
+Land Equipment : Civilian Vehicle : Multiple Passenger Vehicle : Van,15160301
+Land Equipment : Civilian Vehicle : Multiple Passenger Vehicle : Small Bus,15160302
+Land Equipment : Civilian Vehicle : Multiple Passenger Vehicle : Large Bus,15160303
+Land Equipment : Civilian Vehicle : Utility Vehicle,15160400
+Land Equipment : Civilian Vehicle : Utility Vehicle : Sport Utility Vehicle (SUV),15160401
+Land Equipment : Civilian Vehicle : Utility Vehicle : Small Box Truck,15160402
+Land Equipment : Civilian Vehicle : Utility Vehicle : Large Box Truck,15160403
+Land Equipment : Civilian Vehicle : Jeep Type Vehicle,15160500
+Land Equipment : Civilian Vehicle : Jeep Type Vehicle : Small/Light,15160501
+Land Equipment : Civilian Vehicle : Jeep Type Vehicle : Medium,15160502
+Land Equipment : Civilian Vehicle : Jeep Type Vehicle : Large/Heavy,15160503
+Land Equipment : Civilian Vehicle : Tractor Trailer Truck with Box,15160600
+Land Equipment : Civilian Vehicle : Tractor Trailer Truck with Box : Small/Light,15160601
+Land Equipment : Civilian Vehicle : Tractor Trailer Truck with Box : Medium,15160602
+Land Equipment : Civilian Vehicle : Tractor Trailer Truck with Box : Large/Heavy,15160603
+Land Equipment : Civilian Vehicle : Tractor Trailer Truck with Flatbed Trailer,15160700
+Land Equipment : Civilian Vehicle : Tractor Trailer Truck with Flatbed Trailer : Small/Light,15160701
+Land Equipment : Civilian Vehicle : Tractor Trailer Truck with Flatbed Trailer : Medium,15160702
+Land Equipment : Civilian Vehicle : Tractor Trailer Truck with Flatbed Trailer : Large/Heavy,15160703
+Land Equipment : Civilian Vehicle : Known Insurgent Vehicle,15160800
+Land Equipment : Civilian Vehicle : Drug Vehicle,15160900
+Land Equipment : Law Enforcement,15170000
+Land Equipment : Law Enforcement : Bureau of Alcohol-Tobacco-Firearms and Explosives (ATF) (Department of Justice),15170100
+Land Equipment : Law Enforcement : Border Patrol,15170200
+Land Equipment : Law Enforcement : Customs Service,15170300
+Land Equipment : Law Enforcement : Drug Enforcement Administration (DEA),15170400
+Land Equipment : Law Enforcement : Department of Justice (DOJ),15170500
+Land Equipment : Law Enforcement : Federal Bureau of Investigation (FBI),15170600
+Land Equipment : Law Enforcement : Police,15170700
+Land Equipment : Law Enforcement : United States Secret Service (USSS),15170800
+Land Equipment : Law Enforcement : Transportation Security Administration (TSA),15170900
+Land Equipment : Law Enforcement : Coast Guard,15171000
+Land Equipment : Law Enforcement : US Marshals Service,15171100
+Land Equipment : Pack Animals,15180000
+Land Equipment : Missile Support,15190000
+Land Equipment : Missile Support : Transloader,15190100
+Land Equipment : Missile Support : Transporter,15190200
+Land Equipment : Missile Support : Crane/Loading Device,15190300
+Land Equipment : Missile Support : Propellant Transporter,15190400
+Land Equipment : Missile Support : Warhead Transporter,15190500
+Land Equipment : Other Equipment,15200000
+Land Equipment : Other Equipment : Antennae,15200100
+Land Equipment : Other Equipment : Bomb,15200200
+Land Equipment : Other Equipment : Booby Trap,15200300
+Land Equipment : Other Equipment : CBRN Equipment,15200400
+Land Equipment : Other Equipment : Computer System,15200500
+Land Equipment : Other Equipment : Command Launch Equipment (CLE),15200600
+Land Equipment : Other Equipment : Generator Set,15200700
+Land Equipment : Other Equipment : Ground-based Midcourse Defense (GMD) Fire Control (GFC) Center,15200800
+Land Equipment : Other Equipment : In-Flight Interceptor Communications System (IFICS) Data Terminal (IDT),15200900
+Land Equipment : Other Equipment : Laser,15201000
+Land Equipment : Other Equipment : Military Information Support Operations (MISO),15201100
+Land Equipment : Other Equipment : Sustainment Shipments,15201200
+Land Equipment : Other Equipment : Tent,15201300
+Land Equipment : Other Equipment : Unit Deployment Shipments,15201400
+Land Equipment : Other Equipment : Emergency Medical Operation,15201500
+Land Equipment : Other Equipment : Emergency Medical Operation : Medical Evacuation Helicopter,15201501
+Land Equipment : Land Mines,15210000
+Land Equipment : Land Mines : Land Mine,15210100
+Land Equipment : Land Mines : Antipersonnel Land Mine (APL),15210200
+Land Equipment : Land Mines : Antitank Mine,15210300
+Land Equipment : Land Mines : Improvised Explosives Device (IED),15210400
+Land Equipment : Land Mines : Less than lethal,15210500
+Land Equipment : Sensors,15220000
+Land Equipment : Sensors : Sensor,15220100
+Land Equipment : Sensors : Sensor Emplaced,15220200
+Land Equipment : Sensors : Radar,15220300
+Land Equipment : Emergency Operation,15230000
+Land Equipment : Emergency Operation : Ambulance,15230100
+Land Equipment : Emergency Operation : Fire Fighting/Fire Protection,15230200
+Land Equipment : Manual Track,15240000
+Signals Intelligence - Land : Signal Intercept,52110000
+Signals Intelligence - Land : Signal Intercept : Communications,52110100
+Signals Intelligence - Land : Signal Intercept : Jammer,52110200
+Signals Intelligence - Land : Signal Intercept : Radar,52110300
+Cyberspace - Land : Botnet,60110000
+Cyberspace - Land : Botnet : Command and Control (C2),60110100
+Cyberspace - Land : Botnet : Herder,60110200
+Cyberspace - Land : Botnet : Callback Domain,60110300
+Cyberspace - Land : Botnet : Zombie,60110400
+Cyberspace - Land : Infection,60120000
+Cyberspace - Land : Infection : Advanced Persistent Threat (APT),60120100
+Cyberspace - Land : Infection : Advanced Persistent Threat (APT) : APT with C2,60120101
+Cyberspace - Land : Infection : Advanced Persistent Threat (APT) : APT with Self Propagation,60120102
+Cyberspace - Land : Infection : Advanced Persistent Threat (APT) : APT with C2 and Self Propagation,60120103
+Cyberspace - Land : Infection : Advanced Persistent Threat (APT) : APT Other,60120104
+Cyberspace - Land : Infection : Non-Advanced Persistent Threat (NAPT),60120200
+Cyberspace - Land : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with C2,60120201
+Cyberspace - Land : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with Self Propagation,60120202
+Cyberspace - Land : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with C2 and Self Propagation,60120203
+Cyberspace - Land : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT Other,60120204
+Cyberspace - Land : Health and Status,60130000
+Cyberspace - Land : Health and Status : Normal,60130100
+Cyberspace - Land : Health and Status : Network Outage,60130200
+Cyberspace - Land : Health and Status : Unknown,60130300
+Cyberspace - Land : Health and Status : Impaired,60130400
+Cyberspace - Land : Device Type,60140000
+Cyberspace - Land : Device Type : Core Router,60140100
+Cyberspace - Land : Device Type : Router,60140200
+Cyberspace - Land : Device Type : Cross Domain Solution,60140300
+Cyberspace - Land : Device Type : Mail Server,60140400
+Cyberspace - Land : Device Type : Web Server,60140500
+Cyberspace - Land : Device Type : Domain Server,60140600
+Cyberspace - Land : Device Type : File Server,60140700
+Cyberspace - Land : Device Type : Peer-to-Peer Node,60140800
+Cyberspace - Land : Device Type : Firewall,60140900
+Cyberspace - Land : Device Type : Switch,60141000
+Cyberspace - Land : Device Type : Host,60141100
+Cyberspace - Land : Device Type : Virtual Private Network (VPN),60141200
+Cyberspace - Land : Device Domain,60150000
+Cyberspace - Land : Device Domain : Department of Defense (DoD),60150100
+Cyberspace - Land : Device Domain : Government,60150200
+Cyberspace - Land : Device Domain : Contractor,60150300
+Cyberspace - Land : Device Domain : Supervisory Control and Data Acquisition (SCADA),60150400
+Cyberspace - Land : Device Domain : Non-Government,60150500
+Cyberspace - Land : Effect,60160000
+Cyberspace - Land : Effect : Infection,60160100
+Cyberspace - Land : Effect : Degradation,60160200
+Cyberspace - Land : Effect : Data Spoofing,60160300
+Cyberspace - Land : Effect : Data Manipulation,60160400
+Cyberspace - Land : Effect : Exfiltration,60160500
+Cyberspace - Land : Effect : Power Outage,60160600
+Cyberspace - Land : Effect : Network Outage,60160700
+Cyberspace - Land : Effect : Service Outage,60160800
+Cyberspace - Land : Effect : Device Outage,60160900
+Land Installation : Installation,20110000
+Land Installation : Installation : Aircraft Production/Assembly,20110100
+Land Installation : Installation : Ammunition and Explosives/Assembly,20110200
+Land Installation : Installation : Ammunition Cache,20110300
+Land Installation : Installation : Armament Production,20110400
+Land Installation : Installation : Black List Location,20110500
+Land Installation : Installation : Chemical-Biological-Radiological and Nuclear (CBRN),20110600
+Land Installation : Installation : Engineering Equipment Production,20110700
+Land Installation : Installation : Engineering Equipment Production : Bridge,20110701
+Land Installation : Installation : Equipment Manufacture,20110800
+Land Installation : Installation : Government Leadership,20110900
+Land Installation : Installation : Gray List Location,20111000
+Land Installation : Installation : Mass Grave Site,20111100
+Land Installation : Installation : Materiel,20111200
+Land Installation : Installation : Mine,20111300
+Land Installation : Installation : Missile and Space System Production,20111400
+Land Installation : Installation : Nuclear (Non CBRN Defense),20111500
+Land Installation : Installation : Printed Media,20111600
+Land Installation : Installation : Safe House,20111700
+Land Installation : Installation : White List Location,20111800
+Land Installation : Installation : Tented Camp,20111900
+Land Installation : Installation : Tented Camp : Displaced Persons / Refugee / Evacuees Camp,20111901
+Land Installation : Installation : Tented Camp : Training Camp,20111902
+Land Installation : Installation : Warehouse/Storage Facility,20112000
+Land Installation : Installation : Law Enforcement,20112100
+Land Installation : Installation : Law Enforcement : Bureau of Alcohol-Tobacco-Firearms and Explosives (ATF) (Department of Justice),20112101
+Land Installation : Installation : Law Enforcement : Border Patrol,20112102
+Land Installation : Installation : Law Enforcement : Customs Service,20112103
+Land Installation : Installation : Law Enforcement : Drug Enforcement Administration (DEA),20112104
+Land Installation : Installation : Law Enforcement : Department of Justice (DOJ),20112105
+Land Installation : Installation : Law Enforcement : Federal Bureau of Investigation (FBI),20112106
+Land Installation : Installation : Law Enforcement : Police,20112107
+Land Installation : Installation : Law Enforcement : Prison,20112108
+Land Installation : Installation : Law Enforcement : United States Secret Service (USSS),20112109
+Land Installation : Installation : Law Enforcement : Transportation Security Administration (TSA),20112110
+Land Installation : Installation : Law Enforcement : Coast Guard,20112111
+Land Installation : Installation : Law Enforcement : US Marshals Service,20112112
+Land Installation : Installation : Emergency Operation,20112200
+Land Installation : Installation : Emergency Operation : Fire Station,20112201
+Land Installation : Installation : Emergency Operation : Emergency Medical Operation,20112202
+Land Installation : Installation : Infrastructure,20110000
+Land Installation : Installation : Agriculture and Food Infrastructure,20110100
+Land Installation : Installation : Agriculture and Food Infrastructure : Agriculture Laboratory,20110101
+Land Installation : Installation : Agriculture and Food Infrastructure : Animal Feedlot,20110102
+Land Installation : Installation : Agriculture and Food Infrastructure : Commercial Food Distribution Center,20110103
+Land Installation : Installation : Agriculture and Food Infrastructure : Farm/Ranch,20110104
+Land Installation : Installation : Agriculture and Food Infrastructure : Food Distribution,20110105
+Land Installation : Installation : Agriculture and Food Infrastructure : Food Production Center,20110106
+Land Installation : Installation : Agriculture and Food Infrastructure : Food Retail,20110107
+Land Installation : Installation : Agriculture and Food Infrastructure : Grain Storage,20110108
+Land Installation : Installation : Banking- Finance- and Insurance Infrastructure,20110200
+Land Installation : Installation : Banking- Finance- and Insurance Infrastructure : ATM,20110201
+Land Installation : Installation : Banking- Finance- and Insurance Infrastructure : Bank,20110202
+Land Installation : Installation : Banking- Finance- and Insurance Infrastructure : Bullion Storage,20110203
+Land Installation : Installation : Banking- Finance- and Insurance Infrastructure : Economic Infrastructure Asset,20110204
+Land Installation : Installation : Banking- Finance- and Insurance Infrastructure : Federal Reserve Bank,20110205
+Land Installation : Installation : Banking- Finance- and Insurance Infrastructure : Financial Exchange,20110206
+Land Installation : Installation : Banking- Finance- and Insurance Infrastructure : Financial Services-Other,20110207
+Land Installation : Installation : Commercial Infrastructure,20110300
+Land Installation : Installation : Commercial Infrastructure : Chemical Plant,20110301
+Land Installation : Installation : Commercial Infrastructure : Firearms Manufacturer,20110302
+Land Installation : Installation : Commercial Infrastructure : Firearms Retailer,20110303
+Land Installation : Installation : Commercial Infrastructure : Hazardous Material Production,20110304
+Land Installation : Installation : Commercial Infrastructure : Hazardous Material Storage,20110305
+Land Installation : Installation : Commercial Infrastructure : Industrial Site,20110306
+Land Installation : Installation : Commercial Infrastructure : Landfill,20110307
+Land Installation : Installation : Commercial Infrastructure : Pharmaceutical Manufacturer,20110308
+Land Installation : Installation : Commercial Infrastructure : Contaminated Hazardous Waste Site,20110309
+Land Installation : Installation : Commercial Infrastructure : Toxic Release Inventory,20110310
+Land Installation : Installation : Educational Facilities Infrastructure,20110400
+Land Installation : Installation : Educational Facilities Infrastructure : College/University,20110401
+Land Installation : Installation : Educational Facilities Infrastructure : School,20110402
+Land Installation : Installation : Energy Facility Infrastructure,20110500
+Land Installation : Installation : Energy Facility Infrastructure : Electric Power,20110501
+Land Installation : Installation : Energy Facility Infrastructure : Generation Station,20110502
+Land Installation : Installation : Energy Facility Infrastructure : Natural Gas Facility,20110503
+Land Installation : Installation : Energy Facility Infrastructure : Petroleum Facility,20110504
+Land Installation : Installation : Energy Facility Infrastructure : Petroleum/Gas/Oil,20110505
+Land Installation : Installation : Energy Facility Infrastructure : Propane Facility,20110506
+Land Installation : Installation : Government Site Infrastructure,20110600
+Land Installation : Installation : Medical Infrastructure,20110700
+Land Installation : Installation : Medical Infrastructure : Medical,20110701
+Land Installation : Installation : Medical Infrastructure : Medical Treatment Facility (Hospital),20110702
+Land Installation : Installation : Military Infrastructure,20110800
+Land Installation : Installation : Military Infrastructure : Military Armory,20110801
+Land Installation : Installation : Military Infrastructure : Military Base,20110802
+Land Installation : Installation : Postal Services Infrastructure,20110900
+Land Installation : Installation : Postal Services Infrastructure : Postal Distribution Center,20110901
+Land Installation : Installation : Postal Services Infrastructure : Post Office,20110902
+Land Installation : Installation : Public Venues Infrastructure,20111000
+Land Installation : Installation : Public Venues Infrastructure : Enclosed Facility,20111001
+Land Installation : Installation : Public Venues Infrastructure : Open Facility,20111002
+Land Installation : Installation : Public Venues Infrastructure : Recreational Area,20111003
+Land Installation : Installation : Public Venues Infrastructure : Religious Institution,20111004
+Land Installation : Installation : Special Needs Infrastructure,20111100
+Land Installation : Installation : Special Needs Infrastructure : Adult Day Care,20111101
+Land Installation : Installation : Special Needs Infrastructure : Child Day Care,20111102
+Land Installation : Installation : Special Needs Infrastructure : Elder Care,20111103
+Land Installation : Installation : Telecommunications Infrastructure,20111200
+Land Installation : Installation : Telecommunications Infrastructure : Broadcast Transmitter Antennae,20111201
+Land Installation : Installation : Telecommunications Infrastructure : Telecommunications,20111202
+Land Installation : Installation : Telecommunications Infrastructure : Telecommunications Tower,20111203
+Land Installation : Installation : Transportation Infrastructure,20111300
+Land Installation : Installation : Transportation Infrastructure : Airport/Air Base,20111301
+Land Installation : Installation : Transportation Infrastructure : Air Traffic Control Facility,20111302
+Land Installation : Installation : Transportation Infrastructure : Bus Station,20111303
+Land Installation : Installation : Transportation Infrastructure : Ferry Terminal,20111304
+Land Installation : Installation : Transportation Infrastructure : Helicopter Landing Site,20111305
+Land Installation : Installation : Transportation Infrastructure : Maintenance Facility,20111306
+Land Installation : Installation : Transportation Infrastructure : Railhead/Railroad Station,20111307
+Land Installation : Installation : Transportation Infrastructure : Rest Stop,20111308
+Land Installation : Installation : Transportation Infrastructure : Sea Port/Naval Base,20111309
+Land Installation : Installation : Transportation Infrastructure : Ship Yard,20111310
+Land Installation : Installation : Transportation Infrastructure : Toll Facility,20111311
+Land Installation : Installation : Transportation Infrastructure : Traffic Inspection Facility,20111312
+Land Installation : Installation : Transportation Infrastructure : Tunnel,20111313
+Land Installation : Installation : Water Supply Infrastructure,20111400
+Land Installation : Installation : Water Supply Infrastructure : Control Valve,20111401
+Land Installation : Installation : Water Supply Infrastructure : Dam,20111402
+Land Installation : Installation : Water Supply Infrastructure : Discharge Outfall,20111403
+Land Installation : Installation : Water Supply Infrastructure : Ground Water Well,20111404
+Land Installation : Installation : Water Supply Infrastructure : Pumping Station,20111405
+Land Installation : Installation : Water Supply Infrastructure : Reservoir,20111406
+Land Installation : Installation : Water Supply Infrastructure : Storage Tower,20111407
+Land Installation : Installation : Water Supply Infrastructure : Surface Water Intake,20111408
+Land Installation : Installation : Water Supply Infrastructure : Wastewater Treatment Facility,20111409
+Land Installation : Installation : Water Supply Infrastructure : Water,20111410
+Land Installation : Installation : Water Supply Infrastructure : Water Treatment,20111411
 Sea Surface : Military,30110000
 Sea Surface : Military Combatant,30120000
 Sea Surface : Military Combatant : Carrier,30120100
@@ -128,7 +851,7 @@ Sea Surface : Military Combatant : Navy Task Organization : Navy Task Force,3012
 Sea Surface : Military Combatant : Navy Task Organization : Navy Task Group,30121003
 Sea Surface : Military Combatant : Navy Task Organization : Navy Task Unit,30121004
 Sea Surface : Military Combatant : Navy Task Organization : Convoy,30121005
-Sea Surface : Military Combatant : Sea-Based X-Band (SBX) Radar,30121100
+Sea Surface : Military Combatant : Sea-Based X-Band Radar,30121100
 Sea Surface : Military Noncombatant,30130000
 Sea Surface : Military Noncombatant : Auxiliary Ship,30130100
 Sea Surface : Military Noncombatant : Auxiliary Ship : Ammunition Ship,30130101
@@ -181,6 +904,199 @@ Sea Surface : Civilian : Unmanned Surface Water Vehicle (USV),30140700
 Sea Surface : Own Ship,30150000
 Sea Surface : Fused Track,30160000
 Sea Surface : Manual Track,30170000
+Signals Intelligence - Surface : Signal Intercept,53110000
+Signals Intelligence - Surface : Signal Intercept : Communications,53110100
+Signals Intelligence - Surface : Signal Intercept : Jammer,53110200
+Signals Intelligence - Surface : Signal Intercept : Radar,53110300
+Cyberspace - Surface : Botnet,60110000
+Cyberspace - Surface : Botnet : Command and Control (C2),60110100
+Cyberspace - Surface : Botnet : Herder,60110200
+Cyberspace - Surface : Botnet : Callback Domain,60110300
+Cyberspace - Surface : Botnet : Zombie,60110400
+Cyberspace - Surface : Infection,60120000
+Cyberspace - Surface : Infection : Advanced Persistent Threat (APT),60120100
+Cyberspace - Surface : Infection : Advanced Persistent Threat (APT) : APT with C2,60120101
+Cyberspace - Surface : Infection : Advanced Persistent Threat (APT) : APT with Self Propagation,60120102
+Cyberspace - Surface : Infection : Advanced Persistent Threat (APT) : APT with C2 and Self Propagation,60120103
+Cyberspace - Surface : Infection : Advanced Persistent Threat (APT) : APT Other,60120104
+Cyberspace - Surface : Infection : Non-Advanced Persistent Threat (NAPT),60120200
+Cyberspace - Surface : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with C2,60120201
+Cyberspace - Surface : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with Self Propagation,60120202
+Cyberspace - Surface : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with C2 and Self Propagation,60120203
+Cyberspace - Surface : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT Other,60120204
+Cyberspace - Surface : Health and Status,60130000
+Cyberspace - Surface : Health and Status : Normal,60130100
+Cyberspace - Surface : Health and Status : Network Outage,60130200
+Cyberspace - Surface : Health and Status : Unknown,60130300
+Cyberspace - Surface : Health and Status : Impaired,60130400
+Cyberspace - Surface : Device Type,60140000
+Cyberspace - Surface : Device Type : Core Router,60140100
+Cyberspace - Surface : Device Type : Router,60140200
+Cyberspace - Surface : Device Type : Cross Domain Solution,60140300
+Cyberspace - Surface : Device Type : Mail Server,60140400
+Cyberspace - Surface : Device Type : Web Server,60140500
+Cyberspace - Surface : Device Type : Domain Server,60140600
+Cyberspace - Surface : Device Type : File Server,60140700
+Cyberspace - Surface : Device Type : Peer-to-Peer Node,60140800
+Cyberspace - Surface : Device Type : Firewall,60140900
+Cyberspace - Surface : Device Type : Switch,60141000
+Cyberspace - Surface : Device Type : Host,60141100
+Cyberspace - Surface : Device Type : Virtual Private Network (VPN),60141200
+Cyberspace - Surface : Device Domain,60150000
+Cyberspace - Surface : Device Domain : Department of Defense (DoD),60150100
+Cyberspace - Surface : Device Domain : Government,60150200
+Cyberspace - Surface : Device Domain : Contractor,60150300
+Cyberspace - Surface : Device Domain : Supervisory Control and Data Acquisition (SCADA),60150400
+Cyberspace - Surface : Device Domain : Non-Government,60150500
+Cyberspace - Surface : Effect,60160000
+Cyberspace - Surface : Effect : Infection,60160100
+Cyberspace - Surface : Effect : Degradation,60160200
+Cyberspace - Surface : Effect : Data Spoofing,60160300
+Cyberspace - Surface : Effect : Data Manipulation,60160400
+Cyberspace - Surface : Effect : Exfiltration,60160500
+Cyberspace - Surface : Effect : Power Outage,60160600
+Cyberspace - Surface : Effect : Network Outage,60160700
+Cyberspace - Surface : Effect : Service Outage,60160800
+Cyberspace - Surface : Effect : Device Outage,60160900
+Sea Subsurface : Military,35110000
+Sea Subsurface : Military : Submarine,35110100
+Sea Subsurface : Military : Submarine : Submarine-Surfaced,35110101
+Sea Subsurface : Military : Submarine : Submarine-Snorkeling,35110102
+Sea Subsurface : Military : Submarine : Submarine-Bottomed,35110103
+Sea Subsurface : Military : Other Submersible,35110200
+Sea Subsurface : Military : Nonsubmarine,35110300
+Sea Subsurface : Military : Autonomous Underwater Vehicle (AUV)/Unmanned Underwater Vehicle (UUV),35110400
+Sea Subsurface : Military : Diver,35110500
+Sea Subsurface : Civilian,35120000
+Sea Subsurface : Civilian : Submersible,35120100
+Sea Subsurface : Civilian : Autonomous Underwater Vehicle (AUV)/ Underwater Vehicle (UUV),35120200
+Sea Subsurface : Civilian : Diver,35120300
+Sea Subsurface : Weapon,35130000
+Sea Subsurface : Weapon : Torpedo,35130100
+Sea Subsurface : Weapon : Improvised Explosive Device (IED),35130200
+Sea Subsurface : Weapon : Decoy,35130300
+Sea Subsurface : Echo Tracker Classifier (ETC) / Possible Contact (POSCON),35140000
+Sea Subsurface : Fused Track,35150000
+Sea Subsurface : Manual Track,35160000
+Mine Warfare : Sea Mine-General,36110000
+Mine Warfare : Sea Mine-General : Sea Mine-Bottom,36110100
+Mine Warfare : Sea Mine-General : Sea Mine-Moored,36110200
+Mine Warfare : Sea Mine-General : Sea Mine-Floating,36110300
+Mine Warfare : Sea Mine-General : Sea Mine-Rising,36110400
+Mine Warfare : Sea Mine-General : Sea Mine-Other Position,36110500
+Mine Warfare : Sea Mine-General : Kingfisher,36110600
+Mine Warfare : Sea Mine-General : Small Object-Mine-Like,36110700
+Mine Warfare : Sea Mine-General : Exercise Mine-General,36110800
+Mine Warfare : Sea Mine-General : Exercise Mine-General : Exercise Mine-Bottom,36110801
+Mine Warfare : Sea Mine-General : Exercise Mine-General : Exercise Mine-Moored,36110802
+Mine Warfare : Sea Mine-General : Exercise Mine-General : Exercise Mine-Floating,36110803
+Mine Warfare : Sea Mine-General : Exercise Mine-General : Exercise Mine-Rising,36110804
+Mine Warfare : Sea Mine-General : Neutralized Mine-General,36110900
+Mine Warfare : Sea Mine-General : Neutralized Mine-General : Neutralized Mine-Bottom,36110901
+Mine Warfare : Sea Mine-General : Neutralized Mine-General : Neutralized Mine-Moored,36110902
+Mine Warfare : Sea Mine-General : Neutralized Mine-General : Neutralized Mine-Floating,36110903
+Mine Warfare : Sea Mine-General : Neutralized Mine-General : Neutralized Mine-Rising,36110904
+Mine Warfare : Sea Mine-General : Neutralized Mine-General : Neutralized Mine-Other Position,36110905
+Mine Warfare : Unexploded Ordnance,36120000
+Mine Warfare : Sea Mine Decoy,36130000
+Mine Warfare : Sea Mine Decoy : Sea Mine Decoy-Bottom,36130100
+Mine Warfare : Sea Mine Decoy : Sea Mine Decoy-Moored,36130200
+Mine Warfare : Mine-Like Contact (MILCO),36140000
+Mine Warfare : Mine-Like Contact (MILCO) : MILCO - General,36140100
+Mine Warfare : Mine-Like Contact (MILCO) : MILCO - General : MILCO - General-Confidence-Level 1,36140101
+Mine Warfare : Mine-Like Contact (MILCO) : MILCO - General : MILCO - General-Confidence-Level 2,36140102
+Mine Warfare : Mine-Like Contact (MILCO) : MILCO - General : MILCO - General-Confidence-Level 3,36140103
+Mine Warfare : Mine-Like Contact (MILCO) : MILCO - General : MILCO - General-Confidence-Level 4,36140104
+Mine Warfare : Mine-Like Contact (MILCO) : MILCO - General : MILCO - General-Confidence-Level 5,36140105
+Mine Warfare : Mine-Like Contact (MILCO) : MILCO - Bottom,36140200
+Mine Warfare : Mine-Like Contact (MILCO) : MILCO - Bottom : MILCO - Bottom-Confidence-Level 1,36140201
+Mine Warfare : Mine-Like Contact (MILCO) : MILCO - Bottom : MILCO - Bottom-Confidence-Level 2,36140202
+Mine Warfare : Mine-Like Contact (MILCO) : MILCO - Bottom : MILCO - Bottom-Confidence-Level 3,36140203
+Mine Warfare : Mine-Like Contact (MILCO) : MILCO - Bottom : MILCO - Bottom-Confidence-Level 4,36140204
+Mine Warfare : Mine-Like Contact (MILCO) : MILCO - Bottom : MILCO - Bottom-Confidence-Level 5,36140205
+Mine Warfare : Mine-Like Contact (MILCO) : MILCO - Moored,36140300
+Mine Warfare : Mine-Like Contact (MILCO) : MILCO - Moored : MILCO - Moored-Confidence-Level 1,36140301
+Mine Warfare : Mine-Like Contact (MILCO) : MILCO - Moored : MILCO - Moored-Confidence-Level 2,36140302
+Mine Warfare : Mine-Like Contact (MILCO) : MILCO - Moored : MILCO - Moored-Confidence-Level 3,36140303
+Mine Warfare : Mine-Like Contact (MILCO) : MILCO - Moored : MILCO - Moored-Confidence-Level 4,36140304
+Mine Warfare : Mine-Like Contact (MILCO) : MILCO - Moored : MILCO - Moored-Confidence-Level 5,36140305
+Mine Warfare : Mine-Like Contact (MILCO) : MILCO - Floating,36140400
+Mine Warfare : Mine-Like Contact (MILCO) : MILCO - Floating : MILCO - Floating-Confidence-Level 1,36140401
+Mine Warfare : Mine-Like Contact (MILCO) : MILCO - Floating : MILCO - Floating-Confidence-Level 2,36140402
+Mine Warfare : Mine-Like Contact (MILCO) : MILCO - Floating : MILCO - Floating-Confidence-Level 3,36140403
+Mine Warfare : Mine-Like Contact (MILCO) : MILCO - Floating : MILCO - Floating-Confidence-Level 4,36140404
+Mine Warfare : Mine-Like Contact (MILCO) : MILCO - Floating : MILCO - Floating-Confidence-Level 5,36140405
+Mine Warfare : Mine-Like Echo (MILEC)-General,36150000
+Mine Warfare : Mine-Like Echo (MILEC)-General : Mine-Like Echo-Bottom,36150100
+Mine Warfare : Mine-Like Echo (MILEC)-General : Mine-Like Echo-Moored,36150200
+Mine Warfare : Mine-Like Echo (MILEC)-General : Mine-Like Echo-Floating,36150300
+Mine Warfare : Negative Reacquisition-General,36160000
+Mine Warfare : Negative Reacquisition-General : Negative Reacquisition-Bottom,36160100
+Mine Warfare : Negative Reacquisition-General : Negative Reacquisition-Moored,36160200
+Mine Warfare : Negative Reacquisition-General : Negative Reacquisition-Floating,36160300
+Mine Warfare : Obstructor,36170000
+Mine Warfare : Obstructor : Neutralized Obstructor,36170100
+Mine Warfare : General Mine Anchor,36180000
+Mine Warfare : Non-Mine Mine-Like Object (NMLO)-General,36190000
+Mine Warfare : Non-Mine Mine-Like Object (NMLO)-General : Non-Mine Mine-Like Object-Bottom,36190100
+Mine Warfare : Non-Mine Mine-Like Object (NMLO)-General : Non-Mine Mine-Like Object-Moored,36190200
+Mine Warfare : Non-Mine Mine-Like Object (NMLO)-General : Non-Mine Mine-Like Object-Floating,36190300
+Mine Warfare : Environmental Report Location,36200000
+Mine Warfare : Dive Report Location,36210000
+Signals Intelligence - Subsurface : Signal Intercept,54110000
+Signals Intelligence - Subsurface : Signal Intercept : Communications,54110100
+Signals Intelligence - Subsurface : Signal Intercept : Jammer,54110200
+Signals Intelligence - Subsurface : Signal Intercept : Radar,54110300
+Cyberspace - Subsurface : Botnet,60110000
+Cyberspace - Subsurface : Botnet : Command and Control (C2),60110100
+Cyberspace - Subsurface : Botnet : Herder,60110200
+Cyberspace - Subsurface : Botnet : Callback Domain,60110300
+Cyberspace - Subsurface : Botnet : Zombie,60110400
+Cyberspace - Subsurface : Infection,60120000
+Cyberspace - Subsurface : Infection : Advanced Persistent Threat (APT),60120100
+Cyberspace - Subsurface : Infection : Advanced Persistent Threat (APT) : APT with C2,60120101
+Cyberspace - Subsurface : Infection : Advanced Persistent Threat (APT) : APT with Self Propagation,60120102
+Cyberspace - Subsurface : Infection : Advanced Persistent Threat (APT) : APT with C2 and Self Propagation,60120103
+Cyberspace - Subsurface : Infection : Advanced Persistent Threat (APT) : APT Other,60120104
+Cyberspace - Subsurface : Infection : Non-Advanced Persistent Threat (NAPT),60120200
+Cyberspace - Subsurface : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with C2,60120201
+Cyberspace - Subsurface : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with Self Propagation,60120202
+Cyberspace - Subsurface : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with C2 and Self Propagation,60120203
+Cyberspace - Subsurface : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT Other,60120204
+Cyberspace - Subsurface : Health and Status,60130000
+Cyberspace - Subsurface : Health and Status : Normal,60130100
+Cyberspace - Subsurface : Health and Status : Network Outage,60130200
+Cyberspace - Subsurface : Health and Status : Unknown,60130300
+Cyberspace - Subsurface : Health and Status : Impaired,60130400
+Cyberspace - Subsurface : Device Type,60140000
+Cyberspace - Subsurface : Device Type : Core Router,60140100
+Cyberspace - Subsurface : Device Type : Router,60140200
+Cyberspace - Subsurface : Device Type : Cross Domain Solution,60140300
+Cyberspace - Subsurface : Device Type : Mail Server,60140400
+Cyberspace - Subsurface : Device Type : Web Server,60140500
+Cyberspace - Subsurface : Device Type : Domain Server,60140600
+Cyberspace - Subsurface : Device Type : File Server,60140700
+Cyberspace - Subsurface : Device Type : Peer-to-Peer Node,60140800
+Cyberspace - Subsurface : Device Type : Firewall,60140900
+Cyberspace - Subsurface : Device Type : Switch,60141000
+Cyberspace - Subsurface : Device Type : Host,60141100
+Cyberspace - Subsurface : Device Type : Virtual Private Network (VPN),60141200
+Cyberspace - Subsurface : Device Domain,60150000
+Cyberspace - Subsurface : Device Domain : Department of Defense (DoD),60150100
+Cyberspace - Subsurface : Device Domain : Government,60150200
+Cyberspace - Subsurface : Device Domain : Contractor,60150300
+Cyberspace - Subsurface : Device Domain : Supervisory Control and Data Acquisition (SCADA),60150400
+Cyberspace - Subsurface : Device Domain : Non-Government,60150500
+Cyberspace - Subsurface : Effect,60160000
+Cyberspace - Subsurface : Effect : Infection,60160100
+Cyberspace - Subsurface : Effect : Degradation,60160200
+Cyberspace - Subsurface : Effect : Data Spoofing,60160300
+Cyberspace - Subsurface : Effect : Data Manipulation,60160400
+Cyberspace - Subsurface : Effect : Exfiltration,60160500
+Cyberspace - Subsurface : Effect : Power Outage,60160600
+Cyberspace - Subsurface : Effect : Network Outage,60160700
+Cyberspace - Subsurface : Effect : Service Outage,60160800
+Cyberspace - Subsurface : Effect : Device Outage,60160900
 Activity : Incident,40110000
 Activity : Incident : Criminal Activity Incident,40110100
 Activity : Incident : Criminal Activity Incident : Arrest,40110101
@@ -332,3 +1248,1019 @@ Activity : Natural Event : Infestation : Rodent,40170305
 Activity : Individual,40180000
 Activity : Individual : Religious Leader,40180100
 Activity : Individual : Speaker,40180200
+Control Measure : Command and Control Lines,25110000
+Control Measure : Command and Control Lines : Boundary,25110100
+Control Measure : Command and Control Lines : Light Line,25110200
+Control Measure : Command and Control Areas,25120000
+Control Measure : Command and Control Areas : Area of Operations,25120100
+Control Measure : Command and Control Areas : Named Area of Interest,25120200
+Control Measure : Command and Control Areas : Targeted Area of Interest,25120300
+Control Measure : Command and Control Areas : Airfield Zone,25120400
+Control Measure : Command and Control Points,25130000
+Control Measure : Command and Control Points : Action Point (General),25130100
+Control Measure : Command and Control Points : Amnesty Point,25130200
+Control Measure : Command and Control Points : Checkpoint,25130300
+Control Measure : Command and Control Points : Center of Main Effort,25130400
+Control Measure : Command and Control Points : Contact Point,25130500
+Control Measure : Command and Control Points : Coordinating Point,25130600
+Control Measure : Command and Control Points : Decision Point,25130700
+Control Measure : Command and Control Points : Distress Call,25130800
+Control Measure : Command and Control Points : Entry Control Point,25130900
+Control Measure : Command and Control Points : Fly-To-Point,25131000
+Control Measure : Command and Control Points : Fly-To-Point : Fly-To-Point (Sonobuoy),25131001
+Control Measure : Command and Control Points : Fly-To-Point : Fly-To-Point (Weapon),25131002
+Control Measure : Command and Control Points : Fly-To-Point : Fly-To-Point (Normal),25131003
+Control Measure : Command and Control Points : Linkup Point,25131100
+Control Measure : Command and Control Points : Passage Point,25131200
+Control Measure : Command and Control Points : Point of Interest,25131300
+Control Measure : Command and Control Points : Point of Interest : Launch Event (Point of Interest),25131301
+Control Measure : Command and Control Points : Rally Point,25131400
+Control Measure : Command and Control Points : Release Point,25131500
+Control Measure : Command and Control Points : Start Point,25131600
+Control Measure : Command and Control Points : Special Point,25131700
+Control Measure : Command and Control Points : Waypoint,25131800
+Control Measure : Command and Control Points : Airfield,25131900
+Control Measure : Maneuver Lines,25140000
+Control Measure : Maneuver Lines : Forward Line of Troops,25140100
+Control Measure : Maneuver Lines : Forward Line of Troops : Friendly Present,25140101
+Control Measure : Maneuver Lines : Forward Line of Troops : Friendly Planned or on Order,25140102
+Control Measure : Maneuver Lines : Forward Line of Troops : Enemy Known,25140103
+Control Measure : Maneuver Lines : Forward Line of Troops : Enemy Suspected or Templated,25140104
+Control Measure : Maneuver Lines : Line of Contact,25140200
+Control Measure : Maneuver Lines : Phase Line,25140300
+Control Measure : Maneuver Lines : Forward Edge of the Battle Area,25140400
+Control Measure : Maneuver Lines : Forward Edge of the Battle Area : Proposed or On Order,25140401
+Control Measure : Maneuver Lines : Principle Direction of Fire,25140500
+Control Measure : Maneuver Lines : Direction of Attack,25140600
+Control Measure : Maneuver Lines : Direction of Attack : Friendly Aviation,25140601
+Control Measure : Maneuver Lines : Direction of Attack : Friendly Direction of Main Attack,25140602
+Control Measure : Maneuver Lines : Direction of Attack : Friendly Direction of Supporting Attack,25140603
+Control Measure : Maneuver Lines : Direction of Attack : Friendly Planned or On Order,25140604
+Control Measure : Maneuver Lines : Direction of Attack : Feint,25140605
+Control Measure : Maneuver Lines : Direction of Attack : Enemy Confirmed,25140606
+Control Measure : Maneuver Lines : Direction of Attack : Enemy Templated or Suspected,25140607
+Control Measure : Maneuver Lines : Final Coordination Line,25140700
+Control Measure : Maneuver Lines : Infiltration Lane,25140800
+Control Measure : Maneuver Lines : Limit of Advance,25140900
+Control Measure : Maneuver Lines : Line of Departure,25141000
+Control Measure : Maneuver Lines : Line of Departure/Line of Contact,25141100
+Control Measure : Maneuver Lines : Probable Line of Deployment,25141200
+Control Measure : Maneuver Lines : Airhead Line,25141300
+Control Measure : Maneuver Lines : Bridgehead Line,25141400
+Control Measure : Maneuver Lines : Holding Line,25141500
+Control Measure : Maneuver Lines : Release Line,25141600
+Control Measure : Maneuver Lines : Ambush,25141700
+Control Measure : Maneuver Areas,25150000
+Control Measure : Maneuver Areas : Area,25150100
+Control Measure : Maneuver Areas : Area : Friendly,25150101
+Control Measure : Maneuver Areas : Area : Friendly Planned or On Order,25150102
+Control Measure : Maneuver Areas : Area : Enemy Known or Confirmed,25150103
+Control Measure : Maneuver Areas : Area : Enemy Suspected,25150104
+Control Measure : Maneuver Areas : Assembly Area,25150200
+Control Measure : Maneuver Areas : Occupied Assembly Area,25150300
+Control Measure : Maneuver Areas : Occupied Assembly Area : Occupied Assembly Area w/ Offset Unit,25150301
+Control Measure : Maneuver Areas : Occupied Assembly Area : Occupied Assembly Area w/ Offset Units,25150302
+Control Measure : Maneuver Areas : Proposed or On Order Assembly Area,25150400
+Control Measure : Maneuver Areas : Action Area,25150500
+Control Measure : Maneuver Areas : Action Area : Joint Tactical Action Area (JTAA),25150501
+Control Measure : Maneuver Areas : Action Area : Submarine Action Area (SAA),25150502
+Control Measure : Maneuver Areas : Action Area : Submarine-Generated Action Area (SGAA),25150503
+Control Measure : Maneuver Areas : Drop Zone,25150600
+Control Measure : Maneuver Areas : Extraction Zone,25150700
+Control Measure : Maneuver Areas : Landing Zone,25150800
+Control Measure : Maneuver Areas : Pick-Up Zone,25150900
+Control Measure : Maneuver Areas : Fortified Area,25151000
+Control Measure : Maneuver Areas : Limited Access Area,25151100
+Control Measure : Maneuver Areas : Battle Position,25151200
+Control Measure : Maneuver Areas : Battle Position : Battle Position - Planned,25151201
+Control Measure : Maneuver Areas : Battle Position : Battle Position - Prepared (P) but not Occupied,25151202
+Control Measure : Maneuver Areas : Battle Position : Strong Point,25151203
+Control Measure : Maneuver Areas : Battle Position : Contain,25151204
+Control Measure : Maneuver Areas : Battle Position : Retain,25151205
+Control Measure : Maneuver Areas : Engagement Area (EA),25151300
+Control Measure : Maneuver Areas : Assault Position,25151500
+Control Measure : Maneuver Areas : Attack Position,25151600
+Control Measure : Maneuver Areas : Objective,25151700
+Control Measure : Maneuver Areas : Encirclement,25151800
+Control Measure : Maneuver Areas : Encirclement : Friendly,25151801
+Control Measure : Maneuver Areas : Encirclement : Enemy,25151802
+Control Measure : Maneuver Areas : Penetration Box,25151900
+Control Measure : Maneuver Areas : Attack by Fire Position,25152000
+Control Measure : Maneuver Areas : Support by Fire,25152100
+Control Measure : Maneuver Areas : Search Area/Reconnaissance Area,25152200
+Control Measure : Maneuver Points,25160000
+Control Measure : Maneuver Points : Observation Post/Outpost (Unspecified),25160100
+Control Measure : Maneuver Points : Observation Post/Outpost (Specified),25160200
+Control Measure : Maneuver Points : Observation Post/Outpost (Specified) : Reconnaissance Outpost,25160201
+Control Measure : Maneuver Points : Observation Post/Outpost (Specified) : Forward Observer Outpost,25160202
+Control Measure : Maneuver Points : Observation Post/Outpost (Specified) : CBRN Observation Outpost,25160203
+Control Measure : Maneuver Points : Observation Post/Outpost (Specified) : Sensor Outpost/Listening Post,25160204
+Control Measure : Maneuver Points : Observation Post/Outpost (Specified) : Combat Outpost,25160205
+Control Measure : Maneuver Points : Target Reference Point,25160300
+Control Measure : Maneuver Points : Axis of Advance,25161400
+Control Measure : Maneuver Points : Axis of Advance : Friendly Airborne/Aviation,25161401
+Control Measure : Maneuver Points : Axis of Advance : Attack Helicopter,25161402
+Control Measure : Maneuver Points : Axis of Advance : Main Attack,25161403
+Control Measure : Maneuver Points : Axis of Advance : Supporting Attack,25161404
+Control Measure : Maneuver Points : Axis of Advance : Supporting Attack Planned or On Order,25161405
+Control Measure : Maneuver Points : Axis of Advance : Feint,25161406
+Control Measure : Maneuver Points : Axis of Advance : Enemy Confirmed,25161407
+Control Measure : Maneuver Points : Axis of Advance : Enemy Templated or Suspected,25161408
+Control Measure : Maneuver Points : Point of Departure,25160400
+Control Measure : Airspace Control (Corridors) Areas,25170000
+Control Measure : Airspace Control (Corridors) Areas : Air Corridor,25170100
+Control Measure : Airspace Control (Corridors) Areas : Air Corridor : With Multiple Segments,25170101
+Control Measure : Airspace Control (Corridors) Areas : Low Level Transit Route,25170200
+Control Measure : Airspace Control (Corridors) Areas : Minimum-Risk Route,25170300
+Control Measure : Airspace Control (Corridors) Areas : Safe Lane,25170400
+Control Measure : Airspace Control (Corridors) Areas : Standard Use Army Aircraft Flight Route,25170500
+Control Measure : Airspace Control (Corridors) Areas : Transit Corridor,25170600
+Control Measure : Airspace Control (Corridors) Areas : Unmanned Aircraft (UA) Route,25170700
+Control Measure : Airspace Control (Corridors) Areas : Base Defense Zone,25170800
+Control Measure : Airspace Control (Corridors) Areas : High-Density Airspace Control Zone,25170900
+Control Measure : Airspace Control (Corridors) Areas : Restricted Operations Zone,25171000
+Control Measure : Airspace Control (Corridors) Areas : Air-to-Air Restricted Operating Zone,25171100
+Control Measure : Airspace Control (Corridors) Areas : Unmanned Aircraft Restricted Operating Zone,25171200
+Control Measure : Airspace Control (Corridors) Areas : Weapon Engagement Zone,25171300
+Control Measure : Airspace Control (Corridors) Areas : Fighter Engagement Zone,25171400
+Control Measure : Airspace Control (Corridors) Areas : Joint Engagement Zone,25171500
+Control Measure : Airspace Control (Corridors) Areas : Missile Engagement Zone,25171600
+Control Measure : Airspace Control (Corridors) Areas : Low Altitude Missile Engagement Zone,25171700
+Control Measure : Airspace Control (Corridors) Areas : High Altitude Missile Engagement Zone,25171800
+Control Measure : Airspace Control (Corridors) Areas : Short Range Air Defense Engagement Zone,25171900
+Control Measure : Airspace Control (Corridors) Areas : Weapons Free Zone,25172000
+Control Measure : Airspace Control Points,25180000
+Control Measure : Airspace Control Points : Air Control Point,25180100
+Control Measure : Airspace Control Points : Communications Checkpoint,25180200
+Control Measure : Airspace Control Points : Downed Aircraft Pick-up Point,25180300
+Control Measure : Airspace Control Points : Pop-up Point,25180400
+Control Measure : Airspace Control Points : Air Control Rendezvous,25180500
+Control Measure : Airspace Control Points : TACAN,25180600
+Control Measure : Airspace Control Points : CAP Station,25180700
+Control Measure : Airspace Control Points : AEW Station,25180800
+Control Measure : Airspace Control Points : ASW (Helo and F/W) Station,25180900
+Control Measure : Airspace Control Points : Strike Initial Point,25181000
+Control Measure : Airspace Control Points : Replemenshment Station,25181100
+Control Measure : Airspace Control Points : Tanking,25181200
+Control Measure : Airspace Control Points : Antisubmarine Warfare-Rotary Wing,25181300
+Control Measure : Airspace Control Points : SUCAP - Fixed Wing,25181400
+Control Measure : Airspace Control Points : SUCAP - Rotary Wing,25181500
+Control Measure : Airspace Control Points : MIW - Fixed Wing,25181600
+Control Measure : Airspace Control Points : MIW - Rotary Wing,25181700
+Control Measure : Airspace Control Points : Tomcat,25181800
+Control Measure : Airspace Control Points : Rescue,25181900
+Control Measure : Airspace Control Points : Unmanned Aerial System (UAS/UA),25182000
+Control Measure : Airspace Control Points : VTUA,25182100
+Control Measure : Airspace Control Points : Orbit,25182200
+Control Measure : Airspace Control Points : Orbit - Figure Eight,25182300
+Control Measure : Airspace Control Points : Orbit - Race Track,25182400
+Control Measure : Airspace Control Points : Orbit - Random Closed,25182500
+Control Measure : Airspace Control Lines,25190000
+Control Measure : Airspace Control Lines : Identification Friend or Foe Off Line,25190100
+Control Measure : Airspace Control Lines : Identification Friend or Foe On Line,25190200
+Control Measure : Maritime Control Areas,25200000
+Control Measure : Maritime Control Areas : Launch Area,25200100
+Control Measure : Maritime Control Areas : Launch Area : Ellipse/Circle,25200101
+Control Measure : Maritime Control Areas : Defended Area,25200200
+Control Measure : Maritime Control Areas : Defended Area : Ellipse/Circle,25200201
+Control Measure : Maritime Control Areas : Defended Area : Rectangle,25200202
+Control Measure : Maritime Control Areas : No Attack (NOTACK) Zone,25200300
+Control Measure : Maritime Control Areas : Ship Area of Interest,25200400
+Control Measure : Maritime Control Areas : Ship Area of Interest : Ellipse/Circle,25200401
+Control Measure : Maritime Control Areas : Ship Area of Interest : Rectangle,25200402
+Control Measure : Maritime Control Areas : Active Maneuver Area,25200500
+Control Measure : Maritime Control Areas : Cued Acquisition Doctrine,25200600
+Control Measure : Maritime Control Areas : Radar Search Doctrine,25200700
+Control Measure : Maritime Control Points,25210000
+Control Measure : Maritime Control Points : Plan Ship,25210100
+Control Measure : Maritime Control Points : Aim Point,25210200
+Control Measure : Maritime Control Points : Defended Asset,25210300
+Control Measure : Maritime Control Points : Drop Point,25210400
+Control Measure : Maritime Control Points : Entry Point,25210500
+Control Measure : Maritime Control Points : Air  Detonation,25210600
+Control Measure : Maritime Control Points : Ground Zero,25210700
+Control Measure : Maritime Control Points : Impact Point,25210800
+Control Measure : Maritime Control Points : Predicted Impact Point,25210900
+Control Measure : Maritime Control Points : Launched Torpedo,25211000
+Control Measure : Maritime Control Points : Missile Detection Point,25211100
+Control Measure : Maritime Control Points : Acoustic Countermeasure (Decoy),25211200
+Control Measure : Maritime Control Points : Electronic Countermeasures (ECM) Decoy,25211300
+Control Measure : Maritime Control Points : Brief Contact,25211400
+Control Measure : Maritime Control Points : Datum Lost Contact,25211500
+Control Measure : Maritime Control Points : BT Buoy Drop,25211600
+Control Measure : Maritime Control Points : Reported Bottom Sub,25211700
+Control Measure : Maritime Control Points : Moving Haven,25211800
+Control Measure : Maritime Control Points : Screen Center,25211900
+Control Measure : Maritime Control Points : Lost Contact,25212000
+Control Measure : Maritime Control Points : Sinker,25212100
+Control Measure : Maritime Control Points : Trial Track,25212200
+Control Measure : Maritime Control Points : Acoustic Fix,25212300
+Control Measure : Maritime Control Points : Electromagnetic Fix,25212400
+Control Measure : Maritime Control Points : Electromagnetic - Magnetic Anomaly Detection (MAD),25212500
+Control Measure : Maritime Control Points : Optical Fix,25212600
+Control Measure : Maritime Control Points : Formation,25212700
+Control Measure : Maritime Control Points : Harbor,25212800
+Control Measure : Maritime Control Points : Harbor Entrance Point,25212900
+Control Measure : Maritime Control Points : Harbor Entrance Point : A,25212901
+Control Measure : Maritime Control Points : Harbor Entrance Point : Q,25212902
+Control Measure : Maritime Control Points : Harbor Entrance Point : X,25212903
+Control Measure : Maritime Control Points : Harbor Entrance Point : Y,25212904
+Control Measure : Maritime Control Points : Dip Position,25213000
+Control Measure : Maritime Control Points : Search,25213100
+Control Measure : Maritime Control Points : Search Area,25213200
+Control Measure : Maritime Control Points : Search Center,25213300
+Control Measure : Maritime Control Points : Navigational Reference Point,25213400
+Control Measure : Maritime Control Points : Sonobuoy,25213500
+Control Measure : Maritime Control Points : Sonobuoy : Ambient Noise,25213501
+Control Measure : Maritime Control Points : Sonobuoy : Air Transportable Communication,25213502
+Control Measure : Maritime Control Points : Sonobuoy : Barra,25213503
+Control Measure : Maritime Control Points : Sonobuoy : Bathythermograph Transmitting,25213504
+Control Measure : Maritime Control Points : Sonobuoy : Command Active Multi-Beam (CAMBS),25213505
+Control Measure : Maritime Control Points : Sonobuoy : Command Active Sonobuoy Directional Command Active Sonobuoy System (CASS),25213506
+Control Measure : Maritime Control Points : Sonobuoy : Digital Frequency Analysis and Recording (DIFAR),25213507
+Control Measure : Maritime Control Points : Sonobuoy : Directional Command Active Sonobuoy System (DICASS),25213508
+Control Measure : Maritime Control Points : Sonobuoy : Expendable Reliable Acoustic Path Sonobuoy (ERAPS),25213509
+Control Measure : Maritime Control Points : Sonobuoy : Expired,25213510
+Control Measure : Maritime Control Points : Sonobuoy : Kingpin,25213511
+Control Measure : Maritime Control Points : Sonobuoy : Low Frequency Analysis and Recording (LOFAR),25213512
+Control Measure : Maritime Control Points : Sonobuoy : Pattern Center,25213513
+Control Measure : Maritime Control Points : Sonobuoy : Range Only,25213514
+Control Measure : Maritime Control Points : Sonobuoy : Vertical Line Array Directional Frequency Analysis and Recording (DIFAR),25213515
+Control Measure : Maritime Control Points : Reference Point,25213600
+Control Measure : Maritime Control Points : Special Point,25213700
+Control Measure : Maritime Control Points : Navigational Reference Point(Points),25213800
+Control Measure : Maritime Control Points : Data Link Reference Point,25213900
+Control Measure : Maritime Control Points : Forward Observer / Spotter Position,25214000
+Control Measure : Maritime Control Points : Vital Area Center,25214100
+Control Measure : Maritime Control Points : Corridor Tab Point,25214200
+Control Measure : Maritime Control Points : Enemy Point,25214300
+Control Measure : Maritime Control Points : Marshall Point,25214400
+Control Measure : Maritime Control Points : Position and Intended Movement (PIM),25214500
+Control Measure : Maritime Control Points : Pre-Landfall Waypoint,25214600
+Control Measure : Maritime Control Points : Estimated Position (EP),25214700
+Control Measure : Maritime Control Points : Waypoint,25214800
+Control Measure : Maritime Control Points : General Subsurface Station,25214900
+Control Measure : Maritime Control Points : Submarine Subsurface Station,25215000
+Control Measure : Maritime Control Points : Submarine Antisubmarine Warfare Subsurface Station,25215100
+Control Measure : Maritime Control Points : Unmanned Underwater Vehicle Subsurface Station,25215200
+Control Measure : Maritime Control Points : Antisubmarine Warfare (ASW) Unmanned Underwater Vehicle Subsurface Station,25215300
+Control Measure : Maritime Control Points : Mine Warfare Unmanned Underwater Vehicle Subsurface Station,25215400
+Control Measure : Maritime Control Points : Surface Warfare Unmanned Underwater Vehicle Subsurface Station,25215500
+Control Measure : Maritime Control Points : General Surface Station,25215600
+Control Measure : Maritime Control Points : Antisubmarine Warfare (ASW) Surface Station,25215700
+Control Measure : Maritime Control Points : Mine Warfare Surface Station,25215800
+Control Measure : Maritime Control Points : Non-Combatant Surface Station,25215900
+Control Measure : Maritime Control Points : Picket Surface Station,25216000
+Control Measure : Maritime Control Points : Rendezvous Surface Station,25216100
+Control Measure : Maritime Control Points : Replenishment at Sea Surface Station,25216200
+Control Measure : Maritime Control Points : Rescue Surface Station,25216300
+Control Measure : Maritime Control Points : Surface Warfare Surface Station,25216400
+Control Measure : Maritime Control Points : Unmanned Underwater Vehicle Surface Station,25216500
+Control Measure : Maritime Control Points : Antisubmarine Warfare (ASW) Unmanned Underwater Vehicle Surface Station,25216600
+Control Measure : Maritime Control Points : Mine Warfare Unmanned Underwater Vehicle Surface Station,25216700
+Control Measure : Maritime Control Points : Remote Multi-Mission Vehicle Mine Warfare Unmanned Underwater,25216800
+Control Measure : Maritime Control Points : Surface Warfare Mine Warfare Unmanned Underwater Vehicle,25216900
+Control Measure : Maritime Control Points : Shore Control Station,25217000
+Control Measure : Maritime Control Points : General Route,25217100
+Control Measure : Maritime Control Points : Diversion Route,25217200
+Control Measure : Maritime Control Points : Position and Intended Movement (PIM) Route,25217300
+Control Measure : Maritime Control Points : Picket Route,25217400
+Control Measure : Maritime Control Points : Point R Route,25217500
+Control Measure : Maritime Control Points : Rendezvous Route,25217600
+Control Measure : Maritime Control Points : Waypoint Route,25217700
+Control Measure : Maritime Control Points : Clutter-Stationary or Cease Reporting,25217800
+Control Measure : Maritime Control Points : Tentative or Provisional Track,25217900
+Control Measure : Maritime Control Points : Distressed Vessel,25218000
+Control Measure : Maritime Control Points : Ditched Aircraft/Downed Aircraft,25218100
+Control Measure : Maritime Control Points : Person in Water/Bailout,25218200
+Control Measure : Maritime Control Points : Iceberg,25218300
+Control Measure : Maritime Control Points : Navigational,25218400
+Control Measure : Maritime Control Points : Oil Rig,25218500
+Control Measure : Maritime Control Points : Sea Mine-Like,25218600
+Control Measure : Maritime Control Points : Bottom Return/Non-Mine Like Bottom Object (NOMBO),25218700
+Control Measure : Maritime Control Points : Bottom Return/Non-Mine Like Bottom Object (NOMBO)/Installation Manmade,25218800
+Control Measure : Maritime Control Points : Bottom Return/Non-Mine Like Bottom Object (NOMBO)/Installation Manmade : Marine Life,25218800
+Control Measure : Maritime Control Points : Bottom Return/Non-Mine Like Bottom Object (NOMBO)/Installation Manmade : Sea Anomaly (Wake-Current-Knuckle),25218800
+Control Measure : Maritime Control Points : Bottom Return/Non-Mine Like Bottom Object (NOMBO)/Installation Manmade : Bottom Return/Non-MILCO-Wreck-Dangerous,25218800
+Control Measure : Maritime Control Points : Bottom Return/Non-Mine Like Bottom Object (NOMBO)/Installation Manmade : Bottom Return/Non-MILCO-Wreck-Non Dangerous,25218800
+Control Measure : Maritime Control Lines,25220000
+Control Measure : Maritime Control Lines : Bearing Line,25220100
+Control Measure : Maritime Control Lines : Bearing Line : Electronic,25220101
+Control Measure : Maritime Control Lines : Bearing Line : Electronic Warfare (EW),25220102
+Control Measure : Maritime Control Lines : Bearing Line : Acoustic,25220103
+Control Measure : Maritime Control Lines : Bearing Line : Acoustic (Ambiguous),25220104
+Control Measure : Maritime Control Lines : Bearing Line : Torpedo,25220105
+Control Measure : Maritime Control Lines : Bearing Line : Electro-Optical Intercept,25220106
+Control Measure : Maritime Control Lines : Bearing Line : Jammer,25220107
+Control Measure : Maritime Control Lines : Bearing Line : Radio Direction Finder (RDF),25220108
+Control Measure : Deception,25230000
+Control Measure : Deception : Decoy/Dummy,25230100
+Control Measure : Deception : Decoy/Dummy/Feint,25230200
+Control Measure : Fires Areas,25240000
+Control Measure : Fires Areas : Airspace Coordination Area,25240100
+Control Measure : Fires Areas : Airspace Coordination Area : Irregular,25240101
+Control Measure : Fires Areas : Airspace Coordination Area : Rectangular,25240102
+Control Measure : Fires Areas : Airspace Coordination Area : Circular,25240103
+Control Measure : Fires Areas : Free Fire Area,25240200
+Control Measure : Fires Areas : Free Fire Area : Irregular,25240201
+Control Measure : Fires Areas : Free Fire Area : Rectangular,25240202
+Control Measure : Fires Areas : Free Fire Area : Circular,25240203
+Control Measure : Fires Areas : No Fire Area,25240300
+Control Measure : Fires Areas : No Fire Area : Irregular,25240301
+Control Measure : Fires Areas : No Fire Area : Rectangular,25240302
+Control Measure : Fires Areas : No Fire Area : Circular,25240303
+Control Measure : Fires Areas : Restricted Fire Area,25240400
+Control Measure : Fires Areas : Restricted Fire Area : Irregular,25240401
+Control Measure : Fires Areas : Restricted Fire Area : Rectangular,25240402
+Control Measure : Fires Areas : Restricted Fire Area : Circular,25240403
+Control Measure : Fires Areas : Position Area For Artillery (PAA),25240500
+Control Measure : Fires Areas : Position Area For Artillery (PAA) : Rectangular,25240501
+Control Measure : Fires Areas : Position Area For Artillery (PAA) : Circular,25240502
+Control Measure : Fires Areas : Point Targets,25240600
+Control Measure : Fires Areas : Point Targets : Point or Single Target,25240601
+Control Measure : Fires Areas : Point Targets : Nuclear Target,25240602
+Control Measure : Fires Areas : Point Targets : Target-Recorded,25240603
+Control Measure : Fires Areas : Linear Targets,25240700
+Control Measure : Fires Areas : Linear Targets : Linear Target,25240701
+Control Measure : Fires Areas : Linear Targets : Linear Smoke Target,25240702
+Control Measure : Fires Areas : Linear Targets : Final Protective Fire (FPF),25240703
+Control Measure : Fires Areas : Area Targets,25240800
+Control Measure : Fires Areas : Area Targets : Area Target,25240801
+Control Measure : Fires Areas : Area Targets : Rectangular Target,25240802
+Control Measure : Fires Areas : Area Targets : Circular Target,25240803
+Control Measure : Fires Areas : Area Targets : Rectangular Target - Single Target,25240804
+Control Measure : Fires Areas : Area Targets : Series of Targets,25240805
+Control Measure : Fires Areas : Area Targets : Group of Targets,25240806
+Control Measure : Fires Areas : Area Targets : Smoke Target,25240807
+Control Measure : Fires Areas : Area Targets : Smoke Planned or On Order,25240808
+Control Measure : Fires Areas : Area Targets : Bomb Area,25240809
+Control Measure : Fires Areas : Fire Support Station,25240900
+Control Measure : Fires Areas : Fire Support Area,25241000
+Control Measure : Fires Areas : Fire Support Area : Irregular,25241001
+Control Measure : Fires Areas : Fire Support Area : Rectangular,25241002
+Control Measure : Fires Areas : Fire Support Area : Circular,25241003
+Control Measure : Fires Areas : Artillery Target Intelligence Zone,25241100
+Control Measure : Fires Areas : Artillery Target Intelligence Zone : Irregular,25241101
+Control Measure : Fires Areas : Artillery Target Intelligence Zone : Rectangular,25241102
+Control Measure : Fires Areas : Artillery Target Intelligence Zone : Circular,25241103
+Control Measure : Fires Areas : Call for Fire Area,25241200
+Control Measure : Fires Areas : Call for Fire Area : Irregular,25241201
+Control Measure : Fires Areas : Call for Fire Area : Rectangular,25241202
+Control Measure : Fires Areas : Call for Fire Area : Circular,25241203
+Control Measure : Fires Areas : Censor Area,25241300
+Control Measure : Fires Areas : Censor Area : Irregular,25241301
+Control Measure : Fires Areas : Censor Area : Rectangular,25241302
+Control Measure : Fires Areas : Censor Area : Circular,25241303
+Control Measure : Fires Areas : Critical Friendly Area,25241400
+Control Measure : Fires Areas : Critical Friendly Area : Irregular,25241401
+Control Measure : Fires Areas : Critical Friendly Area : Rectangular,25241402
+Control Measure : Fires Areas : Critical Friendly Area : Circular,25241403
+Control Measure : Fires Areas : Dead Space Area,25241500
+Control Measure : Fires Areas : Dead Space Area : Irregular,25241501
+Control Measure : Fires Areas : Dead Space Area : Rectangular,25241502
+Control Measure : Fires Areas : Dead Space Area : Circular,25241503
+Control Measure : Fires Areas : Sensor Area,25241600
+Control Measure : Fires Areas : Sensor Area : Irregular,25241601
+Control Measure : Fires Areas : Sensor Area : Rectangular,25241602
+Control Measure : Fires Areas : Sensor Area : Circular,25241603
+Control Measure : Fires Areas : Target Build-up Area,25241700
+Control Measure : Fires Areas : Target Build-up Area : Irregular,25241701
+Control Measure : Fires Areas : Target Build-up Area : Rectangular,25241702
+Control Measure : Fires Areas : Target Build-up Area : Circular,25241703
+Control Measure : Fires Areas : Target Value Area,25241800
+Control Measure : Fires Areas : Target Value Area : Irregular,25241801
+Control Measure : Fires Areas : Target Value Area : Rectangular,25241802
+Control Measure : Fires Areas : Target Value Area : Circular,25241803
+Control Measure : Fires Areas : Zone of Responsibility,25241900
+Control Measure : Fires Areas : Zone of Responsibility : Irregular,25241901
+Control Measure : Fires Areas : Zone of Responsibility : Rectangular,25241902
+Control Measure : Fires Areas : Zone of Responsibility : Circular,25241903
+Control Measure : Fires Areas : Terminally Guided Munition Footprint (TGMF),25242000
+Control Measure : Fires Areas : Weapon/Sensor Range fan-Circular,25242100
+Control Measure : Fires Areas : Weapon/Sensor Range fan-Sector,25242200
+Control Measure : Fires Areas : Kill Box,25242300
+Control Measure : Fires Areas : Kill Box : Irregular-Blue,25242301
+Control Measure : Fires Areas : Kill Box : Rectangular-Blue,25242302
+Control Measure : Fires Areas : Kill Box : Circular-Blue,25242303
+Control Measure : Fires Areas : Kill Box : Irregular-Purple,25242304
+Control Measure : Fires Areas : Kill Box : Rectangular-Purple,25242305
+Control Measure : Fires Areas : Kill Box : Circular-Purple,25242306
+Control Measure : Fires Points,25250000
+Control Measure : Fires Points : Firing Point,25250100
+Control Measure : Fires Points : Hide Point,25250200
+Control Measure : Fires Points : Launch Point,25250300
+Control Measure : Fires Points : Reload Point,25250400
+Control Measure : Fires Points : Survey Control Point,25250500
+Control Measure : Fire Lines,25260000
+Control Measure : Fire Lines : Fire Support Coordination Line (FSCL),25260100
+Control Measure : Fire Lines : Coordinated Fire Line (CFL),25260200
+Control Measure : Fire Lines : No Fire Line,25260300
+Control Measure : Fire Lines : Restrictive Fire Line,25260400
+Control Measure : Fire Lines : Battlefield Coordination Line,25260500
+Control Measure : Fire Lines : Munition Flight Path,25260600
+Control Measure : Protection Areas,25270000
+Control Measure : Protection Areas : Obstacle Belt,25270100
+Control Measure : Protection Areas : Obstacle Zone,25270200
+Control Measure : Protection Areas : Obstacle Free Zone,25270300
+Control Measure : Protection Areas : Obstacle Restricted Zone,25270400
+Control Measure : Protection Areas : Obstacle Effects,25270500
+Control Measure : Protection Areas : Block,25270500
+Control Measure : Protection Areas : Disrupt,25270500
+Control Measure : Protection Areas : Fix,25270500
+Control Measure : Protection Areas : Turn,25270500
+Control Measure : Protection Areas : Obstacle Bypass,25270600
+Control Measure : Protection Areas : Obstacle Bypass : Easy,25270601
+Control Measure : Protection Areas : Obstacle Bypass : Difficult,25270602
+Control Measure : Protection Areas : Obstacle Bypass : Impossible,25270603
+Control Measure : Protection Areas : Minefield,25270700
+Control Measure : Protection Areas : Minefield : Completed,25270701
+Control Measure : Protection Areas : Minefield : Planned,25270702
+Control Measure : Protection Areas : Minefield : Known Enemy,25270703
+Control Measure : Protection Areas : Minefield : Suspected or Templated Enemy,25270704
+Control Measure : Protection Areas : Minefield : Dummy,25270705
+Control Measure : Protection Areas : Minefield : Dummy. Dymanic,25270706
+Control Measure : Protection Areas : Minefield : Dynamic Depiction,25270707
+Control Measure : Protection Areas : Mined Area,25270800
+Control Measure : Protection Areas : Decoy Mined Area,25270900
+Control Measure : Protection Areas : Decoy Mined Area : Fenced,25270901
+Control Measure : Protection Areas : Unexploded Explosive Ordnance (UXO) Area,25271000
+Control Measure : Protection Areas : Bridge or Gap,25271100
+Control Measure : Protection Areas : Roadblocks-Craters and Blown Bridges,25271200
+Control Measure : Protection Areas : Roadblocks-Craters and Blown Bridges : Planned,25271201
+Control Measure : Protection Areas : Roadblocks-Craters and Blown Bridges : Explosives-State of Readiness 1 (Safe),25271202
+Control Measure : Protection Areas : Roadblocks-Craters and Blown Bridges : Explosives-State of Readiness 2 (armed but passable),25271203
+Control Measure : Protection Areas : Roadblocks-Craters and Blown Bridges : Roadblock Complete (Executed),25271204
+Control Measure : Protection Areas : Assault Crossing,25271300
+Control Measure : Protection Areas : Bridge,25271400
+Control Measure : Protection Areas : Ford Easy,25271500
+Control Measure : Protection Areas : Ford Difficult,25271600
+Control Measure : Protection Areas : Biological Contaminated Area,25271700
+Control Measure : Protection Areas : Biological Contaminated Area : Toxic Industrial Material,25271701
+Control Measure : Protection Areas : Chemical Contaminated Area,25271800
+Control Measure : Protection Areas : Chemical Contaminated Area : Toxic Industrial Material,25271801
+Control Measure : Protection Areas : Nuclear Contaminated Area,25271900
+Control Measure : Protection Areas : Radiological Contaminated Area,25272000
+Control Measure : Protection Areas : Radiological Contaminated Area : Toxic Industrial Material,25272001
+Control Measure : Protection Areas : Minimum Safe Distance Zone,25272100
+Control Measure : Protection Areas : Radiation Dose Rate Contour Lines,25272200
+Control Measure : Protection Points,25280000
+Control Measure : Protection Points : Abatis,25280100
+Control Measure : Protection Points : Antipersonnel Mine,25280200
+Control Measure : Protection Points : Antipersonnel Mine : Antipersonnel Mine with Directional Effects,25280201
+Control Measure : Protection Points : Antitank Mine,25280300
+Control Measure : Protection Points : Antitank Mine with Handling Device,25280400
+Control Measure : Protection Points : Wide Area Antitank Mine,25280500
+Control Measure : Protection Points : Unspecified Mine,25280600
+Control Measure : Protection Points : Booby Trap,25280700
+Control Measure : Protection Points : Engineer Regulating Point,25280800
+Control Measure : Protection Points : Shelter,25280900
+Control Measure : Protection Points : Shelter Above Ground,25281000
+Control Measure : Protection Points : Below Ground Shelter,25281100
+Control Measure : Protection Points : Fort,25281200
+Control Measure : Protection Points : Chemical Event,25281300
+Control Measure : Protection Points : Chemical Event : Toxic Industrial Material,25281301
+Control Measure : Protection Points : Biological Event,25281400
+Control Measure : Protection Points : Biological Event : Toxic Industrial Material,25281401
+Control Measure : Protection Points : Nuclear Event,25281500
+Control Measure : Protection Points : Nuclear Fallout Producing Event,25281600
+Control Measure : Protection Points : Radiological,25281700
+Control Measure : Protection Points : Radiological : Toxic Industrial Material,25281701
+Control Measure : Protection Points : General Decontamination Point/Site,25281800
+Control Measure : Protection Points : General Decontamination Point/Site : Alternate,25281801
+Control Measure : Protection Points : General Decontamination Point/Site : Equipment,25281802
+Control Measure : Protection Points : General Decontamination Point/Site : Troop,25281803
+Control Measure : Protection Points : General Decontamination Point/Site : Equipment/Troop,25281804
+Control Measure : Protection Points : General Decontamination Point/Site : Operational,25281805
+Control Measure : Protection Points : General Decontamination Point/Site : Thorough,25281806
+Control Measure : Protection Points : General Decontamination Point/Site : Main Equipment,25281807
+Control Measure : Protection Points : General Decontamination Point/Site : Forward Troop,25281808
+Control Measure : Protection Points : General Decontamination Point/Site : Wounded Personnel,25281809
+Control Measure : Protection Points : Tetrahedrons-Dragons Teeth-and Other Similar Obstacles,25281900
+Control Measure : Protection Points : Tetrahedrons-Dragons Teeth-and Other Similar Obstacles : Fixed and Prefabricated,25281901
+Control Measure : Protection Points : Tetrahedrons-Dragons Teeth-and Other Similar Obstacles : Movable,25281902
+Control Measure : Protection Points : Tetrahedrons-Dragons Teeth-and Other Similar Obstacles : Movable and Prefabricated,25281903
+Control Measure : Protection Points : Vertical Obstructions,25282000
+Control Measure : Protection Points : Vertical Obstructions : Tower-Low,25282001
+Control Measure : Protection Points : Vertical Obstructions : Tower-High,25282002
+Control Measure : Protection Points : Vertical Obstructions : Overhead Wire,25282003
+Control Measure : Protection Lines,25290000
+Control Measure : Protection Lines : Obstacle Line,25290100
+Control Measure : Protection Lines : Antitank Obstacles,25290200
+Control Measure : Protection Lines : Antitank Obstacles : Under Construction,25290201
+Control Measure : Protection Lines : Antitank Obstacles : Completed,25290202
+Control Measure : Protection Lines : Antitank Obstacles : Reinforced-with Antitank Mines,25290203
+Control Measure : Protection Lines : Antitank Obstacles : Antitank Wall,25290204
+Control Measure : Protection Lines : Wire Obstacles,25290300
+Control Measure : Protection Lines : Wire Obstacles : Unspecified Wire,25290301
+Control Measure : Protection Lines : Wire Obstacles : Single Fence Wire,25290302
+Control Measure : Protection Lines : Wire Obstacles : Double Fence Wire,25290303
+Control Measure : Protection Lines : Wire Obstacles : Double Apron Fence,25290304
+Control Measure : Protection Lines : Wire Obstacles : Low Wire Fence,25290305
+Control Measure : Protection Lines : Wire Obstacles : High Wire Fence,25290306
+Control Measure : Protection Lines : Wire Obstacles : Single Concertina,25290307
+Control Measure : Protection Lines : Wire Obstacles : Double Strand Concertina,25290308
+Control Measure : Protection Lines : Wire Obstacles : Triple Strand Concertina,25290309
+Control Measure : Protection Lines : Mine Cluster,25290400
+Control Measure : Protection Lines : Trip Wire,25290500
+Control Measure : Protection Lines : Lane,25290600
+Control Measure : Protection Lines : Ferry,25290700
+Control Measure : Protection Lines : Raft Site,25290800
+Control Measure : Protection Lines : Fortified Line,25290900
+Control Measure : Protection Lines : Fortified Position,25291000
+Control Measure : Intelligence Lines,25300000
+Control Measure : Intelligence Lines : Intelligence Coordination Line,25300100
+Control Measure : Sustainment Areas,25310000
+Control Measure : Sustainment Areas : Detainee Holding Area,25310100
+Control Measure : Sustainment Areas : Enemy Prisoner or War Holding Area,25310200
+Control Measure : Sustainment Areas : Forward Arming and Refueling Point,25310300
+Control Measure : Sustainment Areas : Refugee Holding Area,25310400
+Control Measure : Sustainment Areas : Regimental Support Area,25310500
+Control Measure : Sustainment Areas : Brigade Support Area,25310600
+Control Measure : Sustainment Areas : Division Support Area,25310700
+Control Measure : Sustainment Points,25320000
+Control Measure : Sustainment Points : Ambulance Exchange Point,25320100
+Control Measure : Sustainment Points : Ammunition Supply Point,25320200
+Control Measure : Sustainment Points : Ammunition Transfer Point,25320300
+Control Measure : Sustainment Points : Cannibalization Point,25320400
+Control Measure : Sustainment Points : Casualty Collection Point,25320500
+Control Measure : Sustainment Points : Civilian Collection Point,25320600
+Control Measure : Sustainment Points : Detainee Collection Point,25320700
+Control Measure : Sustainment Points : Enemy Prisoner of War Collection Point,25320800
+Control Measure : Sustainment Points : Logistics Release Point,25320900
+Control Measure : Sustainment Points : Maintenance Collection Point (MCP),25321000
+Control Measure : Sustainment Points : Medical Evacuation Point (MEDEVAC) Pick-Up Point,25321100
+Control Measure : Sustainment Points : Rearm-Refuel and Resupply Point (R3P),25321200
+Control Measure : Sustainment Points : Refuel on the Move (ROM) Point,25321300
+Control Measure : Sustainment Points : Traffic Control Post (TCP),25321400
+Control Measure : Sustainment Points : Trailer Transfer Point (TTP),25321500
+Control Measure : Sustainment Points : Unit Maintenance Collection Point (UNCP),25321600
+Control Measure : Sustainment Points : General Supply Point,25321700
+Control Measure : Sustainment Points : General Supply Point : NATO Class I Supply Point,25321701
+Control Measure : Sustainment Points : General Supply Point : NATO Class II Supply Point,25321702
+Control Measure : Sustainment Points : General Supply Point : NATO Class III Supply Point,25321703
+Control Measure : Sustainment Points : General Supply Point : NATO Class IV Supply Point,25321704
+Control Measure : Sustainment Points : General Supply Point : NATO Class V Supply Point,25321705
+Control Measure : Sustainment Points : General Supply Point : NATO Multiple Class Supply Point,25321706
+Control Measure : Sustainment Points : General Supply Point : US Class I Supply Point,25321707
+Control Measure : Sustainment Points : General Supply Point : US Class II Supply Point,25321708
+Control Measure : Sustainment Points : General Supply Point : US Class III Supply Point,25321709
+Control Measure : Sustainment Points : General Supply Point : US Class IV Supply Point,25321710
+Control Measure : Sustainment Points : General Supply Point : US Class V Supply Point,25321711
+Control Measure : Sustainment Points : General Supply Point : US Class VI Supply Point,25321712
+Control Measure : Sustainment Points : General Supply Point : US Class VII Supply Point,25321713
+Control Measure : Sustainment Points : General Supply Point : US Class VIII Supply Point,25321714
+Control Measure : Sustainment Points : General Supply Point : US Class IX Supply Point,25321715
+Control Measure : Sustainment Points : General Supply Point : US Class X Supply Point,25321716
+Control Measure : Sustainment Points : Medical Supply Point,25321800
+Control Measure : Sustainment Lines,25330000
+Control Measure : Sustainment Lines : Moving Convoy,25330100
+Control Measure : Sustainment Lines : Halted Convoy,25330200
+Control Measure : Sustainment Lines : Main Supply Route,25330300
+Control Measure : Sustainment Lines : Main Supply Route : One Way Traffic,25330301
+Control Measure : Sustainment Lines : Main Supply Route : Two Way Traffic,25330302
+Control Measure : Sustainment Lines : Main Supply Route : Alternating Traffic,25330303
+Control Measure : Sustainment Lines : Alternate Supply Route,25330400
+Control Measure : Sustainment Lines : Alternate Supply Route : One Way Traffic,25330401
+Control Measure : Sustainment Lines : Alternate Supply Route : Two Way Traffic,25330402
+Control Measure : Sustainment Lines : Alternate Supply Route : Alternating Traffic,25330403
+Control Measure : Mission Tasks,25340000
+Control Measure : Mission Tasks : Block,25340100
+Control Measure : Mission Tasks : Breach,25340200
+Control Measure : Mission Tasks : Bypass,25340300
+Control Measure : Mission Tasks : Canalize,25340400
+Control Measure : Mission Tasks : Clear,25340500
+Control Measure : Mission Tasks : Counterattack,25340600
+Control Measure : Mission Tasks : Counterattack by Fire,25340700
+Control Measure : Mission Tasks : Delay,25340800
+Control Measure : Mission Tasks : Destroy,25340900
+Control Measure : Mission Tasks : (BLANK?/ERROR?),25341000
+Control Measure : Mission Tasks,25340000
+Control Measure : Mission Tasks : Follow and Assume,25341200
+Control Measure : Mission Tasks : Follow and Support,25341300
+Control Measure : Mission Tasks : Interdict,25341400
+Control Measure : Mission Tasks : Isolate,25341500
+Control Measure : Mission Tasks : Neutralize,25341600
+Control Measure : Mission Tasks : Occupy,25341700
+Control Measure : Mission Tasks : Penetrate,25341800
+Control Measure : Mission Tasks : Relief in Place (RIP),25341900
+Control Measure : Mission Tasks : Retire/Retirement,25342000
+Control Measure : Mission Tasks : Secure,25342100
+Control Measure : Mission Tasks : Security,25342200
+Control Measure : Mission Tasks : Security : Cover,25342201
+Control Measure : Mission Tasks : Security : Guard,25342202
+Control Measure : Mission Tasks : Security : Screen,25342203
+Control Measure : Mission Tasks : Seize,25342300
+Control Measure : Mission Tasks : Withdraw,25342400
+Control Measure : Mission Tasks : Withdraw Under Pressure,25342500
+Meteorological - Atmospheric : Pressure Systems,45110000
+Meteorological - Atmospheric : Pressure Systems : Low Pressure Center,45110100
+Meteorological - Atmospheric : Pressure Systems : Low Pressure Center : Cyclone Center,45110101
+Meteorological - Atmospheric : Pressure Systems : Low Pressure Center : Tropopause Low,45110102
+Meteorological - Atmospheric : Pressure Systems : High Pressure Center,45110200
+Meteorological - Atmospheric : Pressure Systems : High Pressure Center : Anticyclone Center,45110201
+Meteorological - Atmospheric : Pressure Systems : High Pressure Center : Tropopause High,45110202
+Meteorological - Atmospheric : Pressure Systems : Frontal Systems,45110300
+Meteorological - Atmospheric : Pressure Systems : Frontal Systems : Cold Front,45110301
+Meteorological - Atmospheric : Pressure Systems : Frontal Systems : Upper Cold Front,45110302
+Meteorological - Atmospheric : Pressure Systems : Frontal Systems : Cold Frontogenesis,45110303
+Meteorological - Atmospheric : Pressure Systems : Frontal Systems : Cold Frontolysis,45110304
+Meteorological - Atmospheric : Pressure Systems : Frontal Systems : Warm Front,45110305
+Meteorological - Atmospheric : Pressure Systems : Frontal Systems : Upper Warm Front,45110306
+Meteorological - Atmospheric : Pressure Systems : Frontal Systems : Warm Frontogenesis,45110307
+Meteorological - Atmospheric : Pressure Systems : Frontal Systems : Warm Frontolysis,45110308
+Meteorological - Atmospheric : Pressure Systems : Frontal Systems : Occluded Front,45110309
+Meteorological - Atmospheric : Pressure Systems : Frontal Systems : Upper Occluded Front,45110310
+Meteorological - Atmospheric : Pressure Systems : Frontal Systems : Occluded Frontolysis,45110311
+Meteorological - Atmospheric : Pressure Systems : Frontal Systems : Stationary Front,45110312
+Meteorological - Atmospheric : Pressure Systems : Frontal Systems : Upper Stationary Front,45110313
+Meteorological - Atmospheric : Pressure Systems : Frontal Systems : Stationary Frontogenesis,45110314
+Meteorological - Atmospheric : Pressure Systems : Frontal Systems : Stationary Frontolysis,45110315
+Meteorological - Atmospheric : Pressure Systems : Lines,45110400
+Meteorological - Atmospheric : Pressure Systems : Lines : Trough Axis,45110401
+Meteorological - Atmospheric : Pressure Systems : Lines : Upper Trough Axis,45110402
+Meteorological - Atmospheric : Pressure Systems : Lines : Ridge Axis,45110403
+Meteorological - Atmospheric : Pressure Systems : Lines : Severe Squall Line,45110404
+Meteorological - Atmospheric : Pressure Systems : Lines : Instability Line,45110405
+Meteorological - Atmospheric : Pressure Systems : Lines : Shear Line,45110406
+Meteorological - Atmospheric : Pressure Systems : Lines : Inter-Tropical Convergence Zone,45110407
+Meteorological - Atmospheric : Pressure Systems : Lines : Convergence Line,45110408
+Meteorological - Atmospheric : Pressure Systems : Lines : Inter-Tropical Discontinuity,45110409
+Meteorological - Atmospheric : Pressure Systems : Pressure Tendency,45110500
+Meteorological - Atmospheric : Pressure Systems : Pressure Tendency : Rise Then Fall Higher,45110501
+Meteorological - Atmospheric : Pressure Systems : Pressure Tendency : Rise Then Steady,45110502
+Meteorological - Atmospheric : Pressure Systems : Pressure Tendency : Rise,45110503
+Meteorological - Atmospheric : Pressure Systems : Pressure Tendency : Rise Then Rise Higher,45110504
+Meteorological - Atmospheric : Pressure Systems : Pressure Tendency : Steady,45110505
+Meteorological - Atmospheric : Pressure Systems : Pressure Tendency : Fall Then Rise Lower,45110506
+Meteorological - Atmospheric : Pressure Systems : Pressure Tendency : Fall Then Steady,45110507
+Meteorological - Atmospheric : Pressure Systems : Pressure Tendency : Fall,45110508
+Meteorological - Atmospheric : Pressure Systems : Pressure Tendency : Rise Then Fall Lower,45110509
+Meteorological - Atmospheric : Turbulence,45120000
+Meteorological - Atmospheric : Turbulence : Light,45120100
+Meteorological - Atmospheric : Turbulence : Moderate,45120200
+Meteorological - Atmospheric : Turbulence : Severe,45120300
+Meteorological - Atmospheric : Turbulence : Extreme,45120400
+Meteorological - Atmospheric : Turbulence : Mountain Waves,45120500
+Meteorological - Atmospheric : Icing,45130000
+Meteorological - Atmospheric : Icing : Clear Icing,45130100
+Meteorological - Atmospheric : Icing : Clear Icing : Light,45130101
+Meteorological - Atmospheric : Icing : Clear Icing : Moderate,45130102
+Meteorological - Atmospheric : Icing : Clear Icing : Severe,45130103
+Meteorological - Atmospheric : Icing : Rime Icing,45130200
+Meteorological - Atmospheric : Icing : Rime Icing : Light,45130201
+Meteorological - Atmospheric : Icing : Rime Icing : Moderate,45130202
+Meteorological - Atmospheric : Icing : Rime Icing : Severe,45130203
+Meteorological - Atmospheric : Icing : Mixed Icing,45130300
+Meteorological - Atmospheric : Icing : Mixed Icing : Light,45130301
+Meteorological - Atmospheric : Icing : Mixed Icing : Moderate,45130302
+Meteorological - Atmospheric : Icing : Mixed Icing : Severe,45130303
+Meteorological - Atmospheric : Winds,45140000
+Meteorological - Atmospheric : Winds : Calm Winds,45140100
+Meteorological - Atmospheric : Winds : Wind Plot,45140200
+Meteorological - Atmospheric : Winds : Jet Stream,45140300
+Meteorological - Atmospheric : Winds : Stream Line,45140400
+Meteorological - Atmospheric : Cloud Cover,45150000
+Meteorological - Atmospheric : Cloud Cover : Cloud Coverage Symbols,45150100
+Meteorological - Atmospheric : Cloud Cover : Cloud Coverage Symbols : Clear Sky,45150101
+Meteorological - Atmospheric : Cloud Cover : Cloud Coverage Symbols : Few Coverage,45150102
+Meteorological - Atmospheric : Cloud Cover : Cloud Coverage Symbols : Scattered Coverage,45150103
+Meteorological - Atmospheric : Cloud Cover : Cloud Coverage Symbols : Broken Coverage,45150104
+Meteorological - Atmospheric : Cloud Cover : Cloud Coverage Symbols : Overcast Coverage,45150105
+Meteorological - Atmospheric : Cloud Cover : Cloud Coverage Symbols : Sky Totally or Partially Obscured,45150106
+Meteorological - Atmospheric : Weather Symbols,45160000
+Meteorological - Atmospheric : Weather Symbols : Rain,45160100
+Meteorological - Atmospheric : Weather Symbols : Rain : Intermittent Light,45160101
+Meteorological - Atmospheric : Weather Symbols : Rain : Continuous Light,45160102
+Meteorological - Atmospheric : Weather Symbols : Rain : Intermittent Moderate,45160103
+Meteorological - Atmospheric : Weather Symbols : Rain : Intermittent Moderate/Continuous Moderate,45160104
+Meteorological - Atmospheric : Weather Symbols : Rain : Intermittent Heavy,45160105
+Meteorological - Atmospheric : Weather Symbols : Rain : Intermittent Heavy/Continuous Heavy,45160106
+Meteorological - Atmospheric : Weather Symbols : Freezing Rain,45160200
+Meteorological - Atmospheric : Weather Symbols : Freezing Rain : Light,45160201
+Meteorological - Atmospheric : Weather Symbols : Freezing Rain : Moderate/Heavy,45160202
+Meteorological - Atmospheric : Weather Symbols : Rain Showers,45160300
+Meteorological - Atmospheric : Weather Symbols : Rain Showers : Light,45160301
+Meteorological - Atmospheric : Weather Symbols : Rain Showers : Moderate/Heavy,45160302
+Meteorological - Atmospheric : Weather Symbols : Rain Showers : Torrential,45160303
+Meteorological - Atmospheric : Weather Symbols : Drizzle,45160400
+Meteorological - Atmospheric : Weather Symbols : Drizzle : Intermittent Light,45160401
+Meteorological - Atmospheric : Weather Symbols : Drizzle : Intermittent Light/Continuous Light,45160402
+Meteorological - Atmospheric : Weather Symbols : Drizzle : Intermittent Moderate,45160403
+Meteorological - Atmospheric : Weather Symbols : Drizzle : Intermittent Moderate/Continuous Moderate,45160404
+Meteorological - Atmospheric : Weather Symbols : Drizzle : Intermittent Heavy,45160405
+Meteorological - Atmospheric : Weather Symbols : Drizzle : Intermittent Heavy/Continuous Heavy,45160406
+Meteorological - Atmospheric : Weather Symbols : Freezing Drizzle,45160500
+Meteorological - Atmospheric : Weather Symbols : Freezing Drizzle : Light,45160501
+Meteorological - Atmospheric : Weather Symbols : Freezing Drizzle : Moderate/Heavy,45160502
+Meteorological - Atmospheric : Weather Symbols : Rain and Snow Mixed,45160600
+Meteorological - Atmospheric : Weather Symbols : Rain and Snow Mixed : Rain or Drizzle and Snow - Light,45160601
+Meteorological - Atmospheric : Weather Symbols : Rain and Snow Mixed : Rain or Drizzle and Snow - Moderate/Heavy,45160602
+Meteorological - Atmospheric : Weather Symbols : Rain and Snow Mixed : Rain and Snow Showers - Light,45160603
+Meteorological - Atmospheric : Weather Symbols : Rain and Snow Mixed : Rain and Snow Showers - Moderate/Heavy,45160604
+Meteorological - Atmospheric : Weather Symbols : Snow,45160700
+Meteorological - Atmospheric : Weather Symbols : Snow : Intermittent Light,45160701
+Meteorological - Atmospheric : Weather Symbols : Snow : Intermittent Light/Continuous Light,45160702
+Meteorological - Atmospheric : Weather Symbols : Snow : Intermittent Moderate,45160703
+Meteorological - Atmospheric : Weather Symbols : Snow : Intermittent Moderate/Continuous Moderate,45160704
+Meteorological - Atmospheric : Weather Symbols : Snow : Intermittent Heavy,45160705
+Meteorological - Atmospheric : Weather Symbols : Snow : Intermittent Heavy/Continuous Heavy,45160706
+Meteorological - Atmospheric : Weather Symbols : Snow : Blowing Snow - Light/Moderate,45160707
+Meteorological - Atmospheric : Weather Symbols : Snow : Blowing Snow - Heavy,45160708
+Meteorological - Atmospheric : Weather Symbols : Snow Grains,45160800
+Meteorological - Atmospheric : Weather Symbols : Snow Showers,45160900
+Meteorological - Atmospheric : Weather Symbols : Snow Showers : Light,45160901
+Meteorological - Atmospheric : Weather Symbols : Snow Showers : Moderate/Heavy,45160902
+Meteorological - Atmospheric : Weather Symbols : Hail,45161000
+Meteorological - Atmospheric : Weather Symbols : Hail : Light not Associated with Thunder,45161001
+Meteorological - Atmospheric : Weather Symbols : Hail : Moderate/Heavy not Associated with Thunder,45161002
+Meteorological - Atmospheric : Weather Symbols : Ice Crystals (Diamond Dust),45161100
+Meteorological - Atmospheric : Weather Symbols : Ice Pellets (Sleet),45161200
+Meteorological - Atmospheric : Weather Symbols : Ice Pellets (Sleet) : Light,45161201
+Meteorological - Atmospheric : Weather Symbols : Ice Pellets (Sleet) : Moderate,45161202
+Meteorological - Atmospheric : Weather Symbols : Ice Pellets (Sleet) : Heavy,45161203
+Meteorological - Atmospheric : Weather Symbols : Inversion,45161300
+Meteorological - Atmospheric : Weather Symbols : Storms,45161400
+Meteorological - Atmospheric : Weather Symbols : Storms : Thunderstorm - No Precipitation,45161401
+Meteorological - Atmospheric : Weather Symbols : Storms : Thunderstorm Light to Moderate with Rain/Snow - No Hail,45161402
+Meteorological - Atmospheric : Weather Symbols : Storms : Thunderstorm Heavy with Rain/Snow - No Hail,45161403
+Meteorological - Atmospheric : Weather Symbols : Storms : Thunderstorm Light to Moderate - With Hail,45161404
+Meteorological - Atmospheric : Weather Symbols : Storms : Thunderstorm Heavy - With Hail,45161405
+Meteorological - Atmospheric : Weather Symbols : Storms : Funnel Cloud (Tornado/Waterspout),45161406
+Meteorological - Atmospheric : Weather Symbols : Storms : Squall,45161407
+Meteorological - Atmospheric : Weather Symbols : Storms : Lightning,45161408
+Meteorological - Atmospheric : Weather Symbols : Fog,45161500
+Meteorological - Atmospheric : Weather Symbols : Fog : Shallow Patches,45161501
+Meteorological - Atmospheric : Weather Symbols : Fog : Shallow Continuous,45161502
+Meteorological - Atmospheric : Weather Symbols : Fog : Patchy,45161503
+Meteorological - Atmospheric : Weather Symbols : Fog : Sky Visible,45161504
+Meteorological - Atmospheric : Weather Symbols : Fog : Sky Obscured,45161505
+Meteorological - Atmospheric : Weather Symbols : Fog : Freezing-Sky Visible,45161506
+Meteorological - Atmospheric : Weather Symbols : Fog : Freezing-Sky Obscured,45161507
+Meteorological - Atmospheric : Weather Symbols : Mist,45161600
+Meteorological - Atmospheric : Weather Symbols : Smoke,45161700
+Meteorological - Atmospheric : Weather Symbols : Haze,45161800
+Meteorological - Atmospheric : Weather Symbols : Dust or Sand,45161900
+Meteorological - Atmospheric : Weather Symbols : Dust or Sand : Light to Moderate,45161901
+Meteorological - Atmospheric : Weather Symbols : Dust or Sand : Severe,45161902
+Meteorological - Atmospheric : Weather Symbols : Dust or Sand : Dust Devil,45161903
+Meteorological - Atmospheric : Weather Symbols : Dust or Sand : Blowing Dust or Sand,45161904
+Meteorological - Atmospheric : Weather Symbols : Tropical Storm Systems,45162000
+Meteorological - Atmospheric : Weather Symbols : Tropical Storm Systems : Tropical Depression,45162001
+Meteorological - Atmospheric : Weather Symbols : Tropical Storm Systems : Tropical Storm,45162002
+Meteorological - Atmospheric : Weather Symbols : Tropical Storm Systems : Hurricane/Typhoon,45162003
+Meteorological - Atmospheric : Weather Symbols : Tropical Storm Systems : Tropical Storm Wind Areas and Date/Time Labels,45162004
+Meteorological - Atmospheric : Weather Symbols : Volcanic Eruption,45162100
+Meteorological - Atmospheric : Weather Symbols : Volcanic Eruption : Volcanic Ash,45162101
+Meteorological - Atmospheric : Weather Symbols : Tropopause Level,45162200
+Meteorological - Atmospheric : Weather Symbols : Freezing Level,45162300
+Meteorological - Atmospheric : Weather Symbols : Precipitation of Unknown Type and Intensity,45162400
+Meteorological - Atmospheric : Bounded Areas of Weather,45170000
+Meteorological - Atmospheric : Bounded Areas of Weather : Instrument Flight Rule (IFR),45170100
+Meteorological - Atmospheric : Bounded Areas of Weather : Marginal Visual Flight Rule (MVFR),45170200
+Meteorological - Atmospheric : Bounded Areas of Weather : Turbulence,45170300
+Meteorological - Atmospheric : Bounded Areas of Weather : Icing,45170400
+Meteorological - Atmospheric : Bounded Areas of Weather : Liquid Precipitation - Non-Convective Continuous or Intermittent,45170500
+Meteorological - Atmospheric : Bounded Areas of Weather : Liquid Precipitation - Non-Convective Continuous or Intermittent : Liquid Precipitation - Convective,45170501
+Meteorological - Atmospheric : Bounded Areas of Weather : Freezing /Frozen Precipitation,45170600
+Meteorological - Atmospheric : Bounded Areas of Weather : Thunderstorm,45170700
+Meteorological - Atmospheric : Bounded Areas of Weather : Fog,45170800
+Meteorological - Atmospheric : Bounded Areas of Weather : Dust or Sand,45170900
+Meteorological - Atmospheric : Bounded Areas of Weather : Operator-Defined Freeform,45171000
+Meteorological - Atmospheric : Isopleths,45180000
+Meteorological - Atmospheric : Isopleths : Isobar - Surface,45180100
+Meteorological - Atmospheric : Isopleths : Contour - Upper Air,45180200
+Meteorological - Atmospheric : Isopleths : Isotherm,45180300
+Meteorological - Atmospheric : Isopleths : Isotach,45180400
+Meteorological - Atmospheric : Isopleths : Isodrosotherm,45180500
+Meteorological - Atmospheric : Isopleths : Thickness,45180600
+Meteorological - Atmospheric : Isopleths : Operator-Defined Freeform,45180700
+Meteorological - Atmospheric : State of the Ground,45190000
+Meteorological - Atmospheric : State of the Ground : Without Snow or Measurable Ice Cover,45190100
+Meteorological - Atmospheric : State of the Ground : Without Snow or Measurable Ice Cover : Surface Dry Without Cracks or Appreciable Dust or Loose Sand,45190101
+Meteorological - Atmospheric : State of the Ground : Without Snow or Measurable Ice Cover : Surface Moist,45190102
+Meteorological - Atmospheric : State of the Ground : Without Snow or Measurable Ice Cover : Surface Wet-Standing Water in Small or Large Pools,45190103
+Meteorological - Atmospheric : State of the Ground : Without Snow or Measurable Ice Cover : Surface Flooded,45190104
+Meteorological - Atmospheric : State of the Ground : Without Snow or Measurable Ice Cover : Surface Frozen,45190105
+Meteorological - Atmospheric : State of the Ground : Without Snow or Measurable Ice Cover : Glaze (Thin Ice) on Ground,45190106
+Meteorological - Atmospheric : State of the Ground : Without Snow or Measurable Ice Cover : Loose Dry Dust or Sand not Covering Ground Completely,45190107
+Meteorological - Atmospheric : State of the Ground : Without Snow or Measurable Ice Cover : Thin Loose Dry Dust or Sand Covering Ground Completely,45190108
+Meteorological - Atmospheric : State of the Ground : Without Snow or Measurable Ice Cover : Moderate/Thick Loose Dry Dust or Sand Covering Ground Completely,45190109
+Meteorological - Atmospheric : State of the Ground : Without Snow or Measurable Ice Cover : Extremely Dry with Cracks,45190110
+Meteorological - Atmospheric : State of the Ground : With Snow or Measurable Ice Cover,45190200
+Meteorological - Atmospheric : State of the Ground : With Snow or Measurable Ice Cover : Predominately Ice Covered,45190201
+Meteorological - Atmospheric : State of the Ground : With Snow or Measurable Ice Cover : Compact or Wet Snow (with or without Ice) Covering Less Than One-Half of Ground,45190202
+Meteorological - Atmospheric : State of the Ground : With Snow or Measurable Ice Cover : Compact or Wet Snow (with or without Ice) Covering  at Least One-Half of Ground-but Ground not Completely Covered,45190203
+Meteorological - Atmospheric : State of the Ground : With Snow or Measurable Ice Cover : Even Layer of Compact or Wet Snow Covering Ground Completely,45190204
+Meteorological - Atmospheric : State of the Ground : With Snow or Measurable Ice Cover : Uneven Layer of Compact or Wet Snow Covering Ground Completely,45190205
+Meteorological - Atmospheric : State of the Ground : With Snow or Measurable Ice Cover : Loose Dry Snow Covering Less Than One-Half of Ground,45190206
+Meteorological - Atmospheric : State of the Ground : With Snow or Measurable Ice Cover : Loose Dry Snow Covering at Least One-Half of Ground-but Ground not Completely Covered,45190207
+Meteorological - Atmospheric : State of the Ground : With Snow or Measurable Ice Cover : Even Layer of Loose Dry Snow Covering Ground Completely,45190208
+Meteorological - Atmospheric : State of the Ground : With Snow or Measurable Ice Cover : Uneven Layer of Loose Dry Snow Covering Ground Completely,45190209
+Meteorological - Atmospheric : State of the Ground : With Snow or Measurable Ice Cover : Snow Covering Ground Completely-Deep Drifts,45190210
+Meteorological - Oceanographic : Ice Systems,46110000
+Meteorological - Oceanographic : Ice Systems : Icebergs,46110100
+Meteorological - Oceanographic : Ice Systems : Icebergs : Many Icebergs,46110101
+Meteorological - Oceanographic : Ice Systems : Icebergs : Belts and Strips,46110102
+Meteorological - Oceanographic : Ice Systems : Icebergs : General,46110103
+Meteorological - Oceanographic : Ice Systems : Icebergs : Many Icebergs - General,46110104
+Meteorological - Oceanographic : Ice Systems : Icebergs : Bergy Bit,46110105
+Meteorological - Oceanographic : Ice Systems : Icebergs : Many Bergy Bits,46110106
+Meteorological - Oceanographic : Ice Systems : Icebergs : Growler,46110107
+Meteorological - Oceanographic : Ice Systems : Icebergs : Many Growlers,46110108
+Meteorological - Oceanographic : Ice Systems : Icebergs : Floeberg,46110109
+Meteorological - Oceanographic : Ice Systems : Icebergs : Ice Island,46110110
+Meteorological - Oceanographic : Ice Systems : Ice Concentration,46110200
+Meteorological - Oceanographic : Ice Systems : Ice Concentration : Bergy Water,46110201
+Meteorological - Oceanographic : Ice Systems : Ice Concentration : Water with Radar Targets,46110202
+Meteorological - Oceanographic : Ice Systems : Ice Concentration : Ice Free,46110203
+Meteorological - Oceanographic : Ice Systems : Dynamic Processes,46110300
+Meteorological - Oceanographic : Ice Systems : Dynamic Processes : Convergence,46110301
+Meteorological - Oceanographic : Ice Systems : Dynamic Processes : Divergence,46110302
+Meteorological - Oceanographic : Ice Systems : Dynamic Processes : Shearing or Shear Zone,46110303
+Meteorological - Oceanographic : Ice Systems : Dynamic Processes : Ice Drift (Direction),46110304
+Meteorological - Oceanographic : Ice Systems : Sea Ice,46110400
+Meteorological - Oceanographic : Ice Systems : Sea Ice : Ice Thickness (Observed),46110401
+Meteorological - Oceanographic : Ice Systems : Sea Ice : Ice Thickness (Estimated),46110402
+Meteorological - Oceanographic : Ice Systems : Sea Ice : Melt Puddles or Flooded Ice,46110403
+Meteorological - Oceanographic : Ice Systems : Limits,46110500
+Meteorological - Oceanographic : Ice Systems : Limits : Limits of Visual Observation,46110501
+Meteorological - Oceanographic : Ice Systems : Limits : Limits of Under Cast,46110502
+Meteorological - Oceanographic : Ice Systems : Limits : Limits of Radar Observation,46110503
+Meteorological - Oceanographic : Ice Systems : Limits : Observed Ice Edge or Boundary,46110504
+Meteorological - Oceanographic : Ice Systems : Limits : Estimated Ice Edge or Boundary,46110505
+Meteorological - Oceanographic : Ice Systems : Limits : Ice Edge or Boundary From Radar,46110506
+Meteorological - Oceanographic : Ice Systems : Openings in the Ice,46110600
+Meteorological - Oceanographic : Ice Systems : Openings in the Ice : Cracks,46110601
+Meteorological - Oceanographic : Ice Systems : Openings in the Ice : Cracks at a Specific Location,46110602
+Meteorological - Oceanographic : Ice Systems : Openings in the Ice : Lead,46110603
+Meteorological - Oceanographic : Ice Systems : Openings in the Ice : Frozen Lead,46110604
+Meteorological - Oceanographic : Ice Systems : Snow Cover,46110700
+Meteorological - Oceanographic : Ice Systems : Snow Cover : Sastrugi (with Orientation),46110701
+Meteorological - Oceanographic : Ice Systems : Topographical Features,46110800
+Meteorological - Oceanographic : Ice Systems : Topographical Features : Ridges or Hummocks,46110801
+Meteorological - Oceanographic : Ice Systems : Topographical Features : Rafting,46110802
+Meteorological - Oceanographic : Ice Systems : Topographical Features : Jammed Brash Barrier,46110803
+Meteorological - Oceanographic : Hydrography,46120000
+Meteorological - Oceanographic : Hydrography : Depth,46120100
+Meteorological - Oceanographic : Hydrography : Depth : Soundings,46120101
+Meteorological - Oceanographic : Hydrography : Depth : Depth Curve,46120102
+Meteorological - Oceanographic : Hydrography : Depth : Depth Contour,46120103
+Meteorological - Oceanographic : Hydrography : Depth : Depth Area,46120104
+Meteorological - Oceanographic : Hydrography : Coastal Hydrography,46120200
+Meteorological - Oceanographic : Hydrography : Coastal Hydrography : Coastline,46120201
+Meteorological - Oceanographic : Hydrography : Coastal Hydrography : Island,46120202
+Meteorological - Oceanographic : Hydrography : Coastal Hydrography : Beach,46120203
+Meteorological - Oceanographic : Hydrography : Coastal Hydrography : Water,46120204
+Meteorological - Oceanographic : Hydrography : Coastal Hydrography : Foreshore - Line,46120205
+Meteorological - Oceanographic : Hydrography : Coastal Hydrography : Foreshore - Area,46120206
+Meteorological - Oceanographic : Hydrography : Ports and Harbors,46120300
+Meteorological - Oceanographic : Hydrography : Ports and Harbors : Ports,46120301
+Meteorological - Oceanographic : Hydrography : Ports and Harbors : Berths (Onshore),46120302
+Meteorological - Oceanographic : Hydrography : Ports and Harbors : Berths (Anchor),46120303
+Meteorological - Oceanographic : Hydrography : Ports and Harbors : Anchorage - Point,46120304
+Meteorological - Oceanographic : Hydrography : Ports and Harbors : Anchorage - Line,46120305
+Meteorological - Oceanographic : Hydrography : Ports and Harbors : Anchorage - Area,46120306
+Meteorological - Oceanographic : Hydrography : Ports and Harbors : Call in Point,46120307
+Meteorological - Oceanographic : Hydrography : Ports and Harbors : Pier/Wharf/Quay,46120308
+Meteorological - Oceanographic : Hydrography : Ports and Harbors : Fishing Harbor - Point,46120309
+Meteorological - Oceanographic : Hydrography : Ports and Harbors : Fish Weirs - Point,46120310
+Meteorological - Oceanographic : Hydrography : Ports and Harbors : Fish Stakes - Point,46120311
+Meteorological - Oceanographic : Hydrography : Ports and Harbors : Fish Traps - Area,46120312
+Meteorological - Oceanographic : Hydrography : Ports and Harbors : Facilities,46120313
+Meteorological - Oceanographic : Hydrography : Ports and Harbors : Drydock,46120314
+Meteorological - Oceanographic : Hydrography : Ports and Harbors : Landing Place,46120315
+Meteorological - Oceanographic : Hydrography : Ports and Harbors : Offshore Loading Facility - Point,46120316
+Meteorological - Oceanographic : Hydrography : Ports and Harbors : Offshore Loading Facility - Line,46120317
+Meteorological - Oceanographic : Hydrography : Ports and Harbors : Offshore Loading Facility - Area,46120318
+Meteorological - Oceanographic : Hydrography : Ports and Harbors : Ramp - Above Water,46120319
+Meteorological - Oceanographic : Hydrography : Ports and Harbors : Ramp - Below Water,46120320
+Meteorological - Oceanographic : Hydrography : Ports and Harbors : Landing Ring,46120321
+Meteorological - Oceanographic : Hydrography : Ports and Harbors : Ferry Crossing,46120322
+Meteorological - Oceanographic : Hydrography : Ports and Harbors : Cable Ferry Crossing,46120323
+Meteorological - Oceanographic : Hydrography : Ports and Harbors : Dolphin,46120324
+Meteorological - Oceanographic : Hydrography : Ports and Harbors : Shoreline Protection,46120325
+Meteorological - Oceanographic : Hydrography : Ports and Harbors : Breakwater/Groin/Jetty - Above Water,46120326
+Meteorological - Oceanographic : Hydrography : Ports and Harbors : Breakwater/Groin/Jetty - Below Water,46120327
+Meteorological - Oceanographic : Hydrography : Ports and Harbors : Seawall,46120328
+Meteorological - Oceanographic : Hydrography : Aids to Navigation,46120400
+Meteorological - Oceanographic : Hydrography : Aids to Navigation : Beacon,46120401
+Meteorological - Oceanographic : Hydrography : Aids to Navigation : Buoy Default,46120402
+Meteorological - Oceanographic : Hydrography : Aids to Navigation : Marker,46120403
+Meteorological - Oceanographic : Hydrography : Aids to Navigation : Perches/Stakes - Point,46120404
+Meteorological - Oceanographic : Hydrography : Aids to Navigation : Perches/Stakes - Area,46120405
+Meteorological - Oceanographic : Hydrography : Aids to Navigation : Light,46120406
+Meteorological - Oceanographic : Hydrography : Aids to Navigation : Leading Line,46120407
+Meteorological - Oceanographic : Hydrography : Aids to Navigation : Light Vessel/Light Ship,46120408
+Meteorological - Oceanographic : Hydrography : Aids to Navigation : Lighthouse,46120409
+Meteorological - Oceanographic : Hydrography : Dangers/Hazards,46120500
+Meteorological - Oceanographic : Hydrography : Dangers/Hazards : Rock Submerged,46120501
+Meteorological - Oceanographic : Hydrography : Dangers/Hazards : Rock Awashed,46120502
+Meteorological - Oceanographic : Hydrography : Dangers/Hazards : Underwater Danger/Hazard,46120503
+Meteorological - Oceanographic : Hydrography : Dangers/Hazards : Foul Ground - Point,46120504
+Meteorological - Oceanographic : Hydrography : Dangers/Hazards : Foul Ground - Area,46120505
+Meteorological - Oceanographic : Hydrography : Dangers/Hazards : Kelp/Seaweed - Point,46120506
+Meteorological - Oceanographic : Hydrography : Dangers/Hazards : Kelp/Seaweed - Area,46120507
+Meteorological - Oceanographic : Hydrography : Dangers/Hazards : Snags/Stumps,46120508
+Meteorological - Oceanographic : Hydrography : Dangers/Hazards : Wreck (Uncovers),46120509
+Meteorological - Oceanographic : Hydrography : Dangers/Hazards : Wreck (Submerged),46120510
+Meteorological - Oceanographic : Hydrography : Dangers/Hazards : Breakers,46120511
+Meteorological - Oceanographic : Hydrography : Dangers/Hazards : Reef,46120512
+Meteorological - Oceanographic : Hydrography : Dangers/Hazards : Eddies/Overfalls/Tide Rips,46120513
+Meteorological - Oceanographic : Hydrography : Dangers/Hazards : Discolored Water,46120514
+Meteorological - Oceanographic : Hydrography : Bottom Features,46120600
+Meteorological - Oceanographic : Hydrography : Bottom Features : Bottom Characteristics - Sand,46120601
+Meteorological - Oceanographic : Hydrography : Bottom Features : Bottom Characteristics - Mud,46120602
+Meteorological - Oceanographic : Hydrography : Bottom Features : Bottom Characteristics - Clay,46120603
+Meteorological - Oceanographic : Hydrography : Bottom Features : Bottom Characteristics - Silt,46120604
+Meteorological - Oceanographic : Hydrography : Bottom Features : Bottom Characteristics - Stones,46120605
+Meteorological - Oceanographic : Hydrography : Bottom Features : Bottom Characteristics - Gravel,46120606
+Meteorological - Oceanographic : Hydrography : Bottom Features : Bottom Characteristics - Pebbles,46120607
+Meteorological - Oceanographic : Hydrography : Bottom Features : Bottom Characteristics - Cobbles,46120608
+Meteorological - Oceanographic : Hydrography : Bottom Features : Bottom Characteristics - Rock,46120609
+Meteorological - Oceanographic : Hydrography : Bottom Features : Bottom Characteristics - Coral,46120610
+Meteorological - Oceanographic : Hydrography : Bottom Features : Bottom Characteristics - Shell,46120611
+Meteorological - Oceanographic : Hydrography : Bottom Features : Qualifying Terms - Fine,46120612
+Meteorological - Oceanographic : Hydrography : Bottom Features : Qualifying Terms - Medium,46120613
+Meteorological - Oceanographic : Hydrography : Bottom Features : Qualifying Terms - Coarse,46120614
+Meteorological - Oceanographic : Hydrography : Tide and Current,46120700
+Meteorological - Oceanographic : Hydrography : Tide and Current : Water Turbulence,46120701
+Meteorological - Oceanographic : Hydrography : Tide and Current : Current Flow - Ebb,46120702
+Meteorological - Oceanographic : Hydrography : Tide and Current : Current Flow - Flood,46120703
+Meteorological - Oceanographic : Hydrography : Tide and Current : Tide Data Point,46120704
+Meteorological - Oceanographic : Hydrography : Tide and Current : Tide Gauge,46120705
+Meteorological - Oceanographic : Oceanography,46130000
+Meteorological - Oceanographic : Oceanography : Bioluminescence,46130100
+Meteorological - Oceanographic : Oceanography : Bioluminescence : Visual Detection Ratio (VDR) Level 1-2,46130101
+Meteorological - Oceanographic : Oceanography : Bioluminescence : VDR Level 2-3,46130102
+Meteorological - Oceanographic : Oceanography : Bioluminescence : VDR Level 3-4,46130103
+Meteorological - Oceanographic : Oceanography : Bioluminescence : VDR Level 4-5,46130104
+Meteorological - Oceanographic : Oceanography : Bioluminescence : VDR Level 5-6,46130105
+Meteorological - Oceanographic : Oceanography : Bioluminescence : VDR Level 6-7,46130106
+Meteorological - Oceanographic : Oceanography : Bioluminescence : VDR Level 7-8,46130107
+Meteorological - Oceanographic : Oceanography : Bioluminescence : VDR Level 8-9,46130108
+Meteorological - Oceanographic : Oceanography : Bioluminescence : VDR Level 9-10,46130109
+Meteorological - Oceanographic : Oceanography : Beach Slope,46130200
+Meteorological - Oceanographic : Oceanography : Beach Slope : Flat,46130201
+Meteorological - Oceanographic : Oceanography : Beach Slope : Gentle,46130202
+Meteorological - Oceanographic : Oceanography : Beach Slope : Moderate,46130203
+Meteorological - Oceanographic : Oceanography : Beach Slope : Steep,46130204
+Meteorological - Oceanographic : Geophysics/Acoustics,46140000
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors,46140100
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : MIW Bottom Sediments - Solid Rock,46140101
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : MIW Bottom Sediments - Clay,46140102
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : MIW Bottom Sediments - Very Coarse Sand,46140103
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : MIW Bottom Sediments - Coarse Sand,46140104
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : MIW Bottom Sediments - Medium Sand,46140105
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : MIW Bottom Sediments - Fine Sand,46140106
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : MIW Bottom Sediments - Very Fine Sand,46140107
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : MIW Bottom Sediments - Very Fine Silt,46140108
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : MIW Bottom Sediments - Fine Silt,46140109
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : MIW Bottom Sediments - Medium Silt,46140110
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : MIW Bottom Sediments - Coarse Silt,46140111
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : MIW Bottom Sediments - Boulders,46140112
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : MIW Bottom Sediments - Cobbles-Oyster Shells,46140113
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : MIW Bottom Sediments - Pebbles-Shells,46140114
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : MIW Bottom Sediments - Sand and Shells,46140115
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : MIW Bottom Sediment - Land,46140116
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : MIW Bottom Sediment - No Data,46140117
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : Bottom Roughness - Smooth,46140118
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : Bottom Roughness - Moderate,46140119
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : Bottom Roughness - Rough,46140120
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : Clutter (Bottom) - Low,46140121
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : Clutter (Bottom) - Medium,46140122
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : Clutter (Bottom) - High,46140123
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : Impact Burial - 0%,46140124
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : Impact Burial - 0-10%,46140125
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : Impact Burial - 10-20%,46140126
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : Impact Burial - 20-75%,46140127
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : Impact Burial - >75%,46140128
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : MIW Bottom Category A,46140129
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : MIW Bottom Category B,46140130
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : MIW Bottom Category C,46140131
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : MIW Bottom Type A1,46140132
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : MIW Bottom Type A2,46140133
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : MIW Bottom Type A3,46140134
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : MIW Bottom Type B1,46140135
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : MIW Bottom Type B2,46140136
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : MIW Bottom Type B3,46140137
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : MIW Bottom Type C1,46140138
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : MIW Bottom Type C2,46140139
+Meteorological - Oceanographic : Geophysics/Acoustics : Mine Warfare (MIW) Bottom Descriptors : MIW Bottom Type C3,46140140
+Meteorological - Oceanographic : Limits,46150000
+Meteorological - Oceanographic : Limits : Maritime Limit Boundary,46150100
+Meteorological - Oceanographic : Limits : Maritime Area,46150200
+Meteorological - Oceanographic : Limits : Restricted Area,46150300
+Meteorological - Oceanographic : Limits : Swept Area,46150400
+Meteorological - Oceanographic : Limits : Training Area,46150500
+Meteorological - Oceanographic : Limits : Operator-Defined,46150600
+Meteorological - Oceanographic : Man-Made Structures,46160000
+Meteorological - Oceanographic : Man-Made Structures : Submarine Cable,46160100
+Meteorological - Oceanographic : Man-Made Structures : Submerged Crib,46160200
+Meteorological - Oceanographic : Man-Made Structures : Canal,46160300
+Meteorological - Oceanographic : Man-Made Structures : Ford,46160400
+Meteorological - Oceanographic : Man-Made Structures : Lock,46160500
+Meteorological - Oceanographic : Man-Made Structures : Oil/Gas Rig,46160600
+Meteorological - Oceanographic : Man-Made Structures : Oil/Gas Rig Field,46160700
+Meteorological - Oceanographic : Man-Made Structures : Pipelines/Pipe,46160800
+Meteorological - Oceanographic : Man-Made Structures : Pile/Piling/Post,46160900
+Meteorological - Space : Space,47110000

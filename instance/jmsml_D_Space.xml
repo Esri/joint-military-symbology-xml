@@ -48,7 +48,7 @@
           </EntityTypeCode>
         </EntityType>
 
-        <EntityType ID="GENERAL_SATELLITE" Label="General Satellite" Graphic="05110600.svg">
+        <EntityType ID="GENERAL_SATELLITE" Label="Satellite, General" Graphic="05110600.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>6</DigitTwo>
@@ -62,7 +62,7 @@
           </EntityTypeCode>
         </EntityType>
 
-        <EntityType ID="ANTISATELLITE_WEAPON" Label="Anti-Satellite Weapon" Graphic="05110800.svg">
+        <EntityType ID="ANTISATELLITE_WEAPON" Label="Antisatellite Weapon" Graphic="05110800.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>8</DigitTwo>
