@@ -45,13 +45,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="base.cs" />
-    <Compile Include="etl.cs" />
-    <Compile Include="sidc.cs" />
-    <Compile Include="symbol.cs" />
+    <Compile Include="ConfigHelper.cs" />
+    <Compile Include="DomainEntityExport.cs" />
+    <Compile Include="DomainModifierExport.cs" />
+    <Compile Include="ETL.cs" />
+    <Compile Include="EntityExport.cs" />
+    <Compile Include="IEntityExport.cs" />
+    <Compile Include="ImageEntityExport.cs" />
+    <Compile Include="ImageModifierExport.cs" />
+    <Compile Include="IModifierExport.cs" />
+    <Compile Include="ModifierExport.cs" />
+    <Compile Include="SIDC.cs" />
+    <Compile Include="SimpleEntityExport.cs" />
+    <Compile Include="SimpleModifierExport.cs" />
+    <Compile Include="Symbol.cs" />
     <Compile Include="jmsmlConfig.cs">
       <DependentUpon>jmsmlConfig.xsd</DependentUpon>
     </Compile>
-    <Compile Include="librarian.cs" />
+    <Compile Include="Librarian.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

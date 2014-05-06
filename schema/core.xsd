@@ -135,16 +135,16 @@
 
   <xs:attributeGroup name="FramedGraphicIdentifierAttributeGroup">
     <xs:attribute name="ID" type="xs:ID" use="required"/>
-    <xs:attribute name="Label" type="xs:token" use="optional"/>
-    <xs:attribute name="Description" type="xs:string" use="optional"/>
-    <xs:attribute name="Remarks" type="xs:string" use="optional"/>
-    <xs:attribute name="Graphic" type="xs:anyURI" use="optional"/>
-    <xs:attribute name="CircleGraphic" type="xs:anyURI" use="optional"/>
-    <xs:attribute name="CloverGraphic" type="xs:anyURI" use="optional"/>
-    <xs:attribute name="CurveGraphic" type="xs:anyURI" use="optional"/>
-    <xs:attribute name="DiamondGraphic" type="xs:anyURI" use="optional"/>
-    <xs:attribute name="RectangleGraphic" type="xs:anyURI" use="optional"/>
-    <xs:attribute name="SquareGraphic" type="xs:anyURI" use="optional"/>
+    <xs:attribute name="Label" type="xs:token" use="optional" default=""/>
+    <xs:attribute name="Description" type="xs:string" use="optional" default=""/>
+    <xs:attribute name="Remarks" type="xs:string" use="optional" default=""/>
+    <xs:attribute name="Graphic" type="xs:anyURI" use="optional" default=""/>
+    <xs:attribute name="CircleGraphic" type="xs:anyURI" use="optional" default=""/>
+    <xs:attribute name="CloverGraphic" type="xs:anyURI" use="optional" default=""/>
+    <xs:attribute name="CurveGraphic" type="xs:anyURI" use="optional" default=""/>
+    <xs:attribute name="DiamondGraphic" type="xs:anyURI" use="optional" default=""/>
+    <xs:attribute name="RectangleGraphic" type="xs:anyURI" use="optional" default=""/>
+    <xs:attribute name="SquareGraphic" type="xs:anyURI" use="optional" default=""/>
     <xs:attribute name="DrawRuleID" type="xs:IDREF" use="optional" default="POINT2"/>
     <xs:attribute name="DrawNote" type="xs:string" use="optional" default="Not Applicable"/>
     <xs:attribute name="Standard" type="StandardType" use="optional" default="ALL"/>

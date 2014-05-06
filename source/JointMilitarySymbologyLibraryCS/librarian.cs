@@ -50,10 +50,27 @@ namespace JointMilitarySymbologyLibrary
 
     public class Librarian
     {
+        // This class is the work horse of the library.  It wraps the
+        // auto-generated schema-focused classes under base.cs.
+
+        // It sets up a logger (NLog) for use throughout the code base.
+
+        // It initiates the deserealization of the JMSML XML data that 
+        // is specified in the active config file (jmsml.config).
+
+        // It holds a collection of all the SymbolSet objects that are
+        // also deserialized.
+
+        // It provides methods to assist in searching the deserialized
+        // objects for a given JMSML element, using either 2525D number 
+        // codes or 2525C letter codes.
+
+        // It also serves as the sole way to create a Symbol object.
+
         private const string _domainSeperator = " : ";
 
         private string _configPath;
-        private jmsmlConfig _configData;
+        private JMSMLConfig _configData;
         private Library _library;
 
         private bool _logConversion = true;
@@ -91,7 +108,7 @@ namespace JointMilitarySymbologyLibrary
             // Deserialize the configuration xml to get the location of the symbology library
             //
 
-            XmlSerializer serializer = new XmlSerializer(typeof(jmsmlConfig));
+            XmlSerializer serializer = new XmlSerializer(typeof(JMSMLConfig));
 
             serializer.UnknownNode += new XmlNodeEventHandler(serializer_UnknownNode);
             serializer.UnknownAttribute += new XmlAttributeEventHandler(serializer_UnknownAttribute);
@@ -112,7 +129,7 @@ namespace JointMilitarySymbologyLibrary
 
                 if (fs.CanRead)
                 {
-                    _configData = (jmsmlConfig)serializer.Deserialize(fs);
+                    _configData = (JMSMLConfig)serializer.Deserialize(fs);
 
                     //
                     // Deserialize the library's base xml to get the base contents of the symbology standard
@@ -120,7 +137,7 @@ namespace JointMilitarySymbologyLibrary
 
                     serializer = new XmlSerializer(typeof(Library));
 
-                    string path = _configData.libraryPath + "/" + _configData.libraryName;
+                    string path = _configData.LibraryPath + "/" + _configData.LibraryName;
 
                     if (File.Exists(path))
                     {
@@ -138,7 +155,7 @@ namespace JointMilitarySymbologyLibrary
                             {
                                 foreach (LibraryDimensionSymbolSetRef ssRef in dimension.SymbolSets)
                                 {
-                                    path = _configData.libraryPath + "/" + ssRef.Instance;
+                                    path = _configData.LibraryPath + "/" + ssRef.Instance;
                                     if (File.Exists(path))
                                     {
                                         fs = new FileStream(path, FileMode.Open, FileAccess.Read);
@@ -260,7 +277,7 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        internal jmsmlConfig ConfigData
+        internal JMSMLConfig ConfigData
         {
             get
             {
@@ -288,7 +305,7 @@ namespace JointMilitarySymbologyLibrary
         {
             get
             {
-                return this._configData.graphicPath;
+                return "TODO";
             }
         }
 

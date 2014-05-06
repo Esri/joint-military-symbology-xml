@@ -5,18 +5,20 @@
     <DigitTwo>8</DigitTwo>
   </SymbolSetCode>
   <Entities>
-    <Entity ID="INVALID" Label="Invalid Symbol">
+    <Entity ID="INVALID" Label="Invalid Symbol" Graphic="UNKNOWN.svg" Icon="FULL_OCTAGON">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>0</DigitTwo>
       </EntityCode>
     </Entity>
 
+    <!--
     <Entity ID="RETIRED" Label="Retired Symbol">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
       </EntityCode>
     </Entity>
+    /-->
   </Entities>
 </SymbolSet>

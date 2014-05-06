@@ -24,131 +24,50 @@ using NLog.Targets.Wrappers;
 
 namespace JointMilitarySymbologyLibrary
 {
+    public enum ETLExportEnum
+    {
+        ETLExportSimple,
+        ETLExportDomain,
+        ETLExportImage
+    }
+
     public class ETL
     {
-        protected static Logger logger = LogManager.GetCurrentClassLogger();
+        // ETL serves as the primary Extract, Transform, and Load class for
+        // importing raw simple CSV into raw JMSML Symbol Set XML, and more
+        // importantly, exporting all or some of the contents of the JMSML
+        // XML to CSV files.
 
-        private string _domainSeperator = " : ";
-        private int _pointSize;
+        protected static Logger logger = LogManager.GetCurrentClassLogger();
 
         private Librarian _librarian;
         private Library _library;
         private List<SymbolSet> _symbolSets;
-        //private jmsmlConfigEtl _etlConfig;
-
-        private string _graphicRoot;
-        private string _graphicExtension;
+        private ConfigHelper _configHelper;
 
         public ETL(Librarian librarian)
         {
             _librarian = librarian;
             _library = _librarian.Library;
             _symbolSets = _librarian.SymbolSets;
-            //_etlConfig = _librarian.ConfigData.etl;
 
-            //_domainSeperator = _etlConfig.domainSeparator;
-            //_pointSize = _etlConfig.pointSize;
-            //_graphicRoot = _etlConfig.graphicRoot;
-            //_graphicExtension = _etlConfig.graphicExtension;
+            _configHelper = new ConfigHelper(_librarian);
         }
 
-        private string _buildEntityString(SymbolSet s, SymbolSetEntity e, SymbolSetEntityEntityType eType, SymbolSetEntityEntityTypeEntitySubType eSubType)
+        private void _exportEntities(IEntityExport exporter, string path, string symbolSetExpression = "", string expression = "", bool exportPoints = true, bool exportLines = true, bool exportAreas = true)
         {
-            string result = Convert.ToString(s.SymbolSetCode.DigitOne) + Convert.ToString(s.SymbolSetCode.DigitTwo);
-            string code = "";
+            // Exports entity, entity types, and entity sub types to CSV, by optionally testing a 
+            // regular expression against the Label attributes of the containing symbol sets
+            // and of the entitites in those symbol sets.  It also allows filtering on geometry,
+            // so only point, line, or area symbols can be exported.
 
-            result = result + ",";
-
-            result = result + e.Label.Replace(',', '-');
-            code = code + Convert.ToString(e.EntityCode.DigitOne) + Convert.ToString(e.EntityCode.DigitTwo);
-
-            result = result + ",";
-
-            if (eType != null)
-            {
-                result = result + eType.Label.Replace(',', '-');
-                code = code + Convert.ToString(eType.EntityTypeCode.DigitOne) + Convert.ToString(eType.EntityTypeCode.DigitTwo);
-            }
-            else
-                code = code + "00";
-
-            result = result + ",";
-
-            if (eSubType != null)
-            {
-                result = result + eSubType.Label.Replace(',', '-');
-                code = code + Convert.ToString(eSubType.EntitySubTypeCode.DigitOne) + Convert.ToString(eSubType.EntitySubTypeCode.DigitTwo);
-            }
-            else
-                code = code + "00";
-
-            result = result + "," + code + "," + Convert.ToString(e.GeometryType);
-
-            return result;
-        }
-
-        private string _buildEntityDomainString(SymbolSet s, SymbolSetEntity e, SymbolSetEntityEntityType eType, SymbolSetEntityEntityTypeEntitySubType eSubType)
-        {
-            string result = s.Label.Replace(',', '-') + _domainSeperator + e.Label.Replace(',', '-');
-            string code = Convert.ToString(s.SymbolSetCode.DigitOne) + Convert.ToString(s.SymbolSetCode.DigitTwo);
-
-            code = code + Convert.ToString(e.EntityCode.DigitOne) + Convert.ToString(e.EntityCode.DigitTwo);
-
-            if (eType != null)
-            {
-                result = result + _domainSeperator + eType.Label.Replace(',', '-');
-                code = code + Convert.ToString(eType.EntityTypeCode.DigitOne) + Convert.ToString(eType.EntityTypeCode.DigitTwo);
-            }
-            else
-                code = code + "00";
-
-            if (eSubType != null)
-            {
-                result = result + _domainSeperator + eSubType.Label.Replace(',', '-');
-                code = code + Convert.ToString(eSubType.EntitySubTypeCode.DigitOne) + Convert.ToString(eSubType.EntitySubTypeCode.DigitTwo);
-            }
-            else
-                code = code + "00";
-
-            result = result + "," + code;
-
-            return result;
-        }
-
-        private string _buildModifierString(SymbolSet s, string modNumber, ModifiersTypeModifier mod)
-        {
-            string result = Convert.ToString(s.SymbolSetCode.DigitOne) + Convert.ToString(s.SymbolSetCode.DigitTwo);
-
-            result = result + "," + modNumber + ",";
-            result = result + mod.Category.Replace(',', '-') + ",";
-            result = result + mod.Label.Replace(',', '-') + ",";
-
-            result = result + Convert.ToString(mod.ModifierCode.DigitOne) + Convert.ToString(mod.ModifierCode.DigitTwo);
-
-            return result;
-        }
-
-        private string _buildModifierDomainString(SymbolSet s, string modNumber, ModifiersTypeModifier mod)
-        {
-            string result = s.Label.Replace(',', '-') + _domainSeperator + "Modifier " + modNumber + _domainSeperator + mod.Category.Replace(',', '-') + _domainSeperator + mod.Label.Replace(',', '-') + ",";
-
-            result = result + Convert.ToString(s.SymbolSetCode.DigitOne) + Convert.ToString(s.SymbolSetCode.DigitTwo) +
-                              Convert.ToString(mod.ModifierCode.DigitOne) + Convert.ToString(mod.ModifierCode.DigitTwo) +
-                              modNumber;
-            return result;
-        }
-
-        private void _exportEntities(string path, string symbolSetExpression = "", string expression = "", bool exportPoints = true, bool exportLines = true, bool exportAreas = true, bool domains = false)
-        {
-            string entityHeaders = "SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType";
-            string entityDomainHeaders = "Name,Value";
+            // This method accepts an exporter, a light weight object that knows what column
+            // headings to return and how to compose a CSV line of output from the data its
+            // provided.
 
             using (var w = new StreamWriter(path))
             {
-                var line = string.Format("{0}", entityHeaders);
-
-                if (domains)
-                    line = string.Format("{0}", entityDomainHeaders);
+                var line = string.Format("{0}", exporter.Headers);
 
                 w.WriteLine(line);
                 w.Flush();
@@ -165,12 +84,9 @@ namespace JointMilitarySymbologyLibrary
                             exportAreas && e.GeometryType == GeometryType.AREA)
                         {
 
-                            if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(e.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                            if (e.Icon != IconType.NA && (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(e.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase)))
                             {
-                                if (domains)
-                                    line = string.Format("{0}", _buildEntityDomainString(s, e, null, null));
-                                else
-                                    line = string.Format("{0}", _buildEntityString(s, e, null, null));
+                                line = string.Format("{0}", exporter.Line(s, e, null, null));
 
                                 w.WriteLine(line);
                                 w.Flush();
@@ -180,12 +96,9 @@ namespace JointMilitarySymbologyLibrary
                             {
                                 foreach (SymbolSetEntityEntityType eType in e.EntityTypes)
                                 {
-                                    if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(eType.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                                    if (eType.Icon != IconType.NA && (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(eType.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase)))
                                     {
-                                        if (domains)
-                                            line = string.Format("{0}", _buildEntityDomainString(s, e, eType, null));
-                                        else
-                                            line = string.Format("{0}", _buildEntityString(s, e, eType, null));
+                                        line = string.Format("{0}", exporter.Line(s, e, eType, null));
 
                                         w.WriteLine(line);
                                         w.Flush();
@@ -195,12 +108,9 @@ namespace JointMilitarySymbologyLibrary
                                     {
                                         foreach (SymbolSetEntityEntityTypeEntitySubType eSubType in eType.EntitySubTypes)
                                         {
-                                            if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(eSubType.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                                            if (eSubType.Icon != IconType.NA && (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(eSubType.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase)))
                                             {
-                                                if (domains)
-                                                    line = string.Format("{0}", _buildEntityDomainString(s, e, eType, eSubType));
-                                                else
-                                                    line = string.Format("{0}", _buildEntityString(s, e, eType, eSubType));
+                                                line = string.Format("{0}", exporter.Line(s, e, eType, eSubType));
 
                                                 w.WriteLine(line);
                                                 w.Flush();
@@ -217,20 +127,31 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        private void _exportModifiers(string path, string symbolSetExpression = "", string expression = "", bool domains = false)
+        private void _exportModifiers(IModifierExport exporter, string path, string symbolSetExpression = "", string expression = "", bool append = false)
         {
-            string modifierHeaders = "SymbolSet,ModifierNumber,Category,Name,Code";
-            string modifierDomainHeaders = "Name,Value";
+            // Exports sector one and sector two modifiers to CSV, by optionally testing a 
+            // regular expression against the Label attributes of the containing symbol sets
+            // and of the modifiers in those symbol sets.  It also allows for appendig the
+            // resulting output to an existing file.
 
-            using (var w = new StreamWriter(path))
+            // This method accepts an exporter, a light weight object that knows what column
+            // headings to return and how to compose a CSV line of output from the data its
+            // provided.
+
+            using (var w = new StreamWriter(path, append))
             {
-                var line = string.Format("{0}", modifierHeaders);
+                string line;
 
-                if (domains)
-                    line = string.Format("{0}", modifierDomainHeaders);
+                // If we're appending this to another file we don't need the
+                // header line added again to that file.
 
-                w.WriteLine(line);
-                w.Flush();
+                if (!append)
+                {
+                    line = string.Format("{0}", exporter.Headers);
+
+                    w.WriteLine(line);
+                    w.Flush();
+                }
 
                 foreach (SymbolSet s in _symbolSets)
                 {
@@ -245,10 +166,7 @@ namespace JointMilitarySymbologyLibrary
                                 System.Text.RegularExpressions.Regex.IsMatch(mod.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase) ||
                                 System.Text.RegularExpressions.Regex.IsMatch(mod.Category, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
                             {
-                                if (domains)
-                                    line = string.Format("{0}", _buildModifierDomainString(s, "1", mod));
-                                else
-                                    line = string.Format("{0}", _buildModifierString(s, "1", mod));
+                                line = string.Format("{0}", exporter.Line(s, "1", mod));
 
                                 w.WriteLine(line);
                                 w.Flush();
@@ -264,10 +182,7 @@ namespace JointMilitarySymbologyLibrary
                                 System.Text.RegularExpressions.Regex.IsMatch(mod.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase) ||
                                 System.Text.RegularExpressions.Regex.IsMatch(mod.Category, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
                             {
-                                if (domains)
-                                    line = string.Format("{0}", _buildModifierDomainString(s, "2", mod));
-                                else
-                                    line = string.Format("{0}", _buildModifierString(s, "2", mod));
+                                line = string.Format("{0}", exporter.Line(s, "2", mod));
 
                                 w.WriteLine(line);
                                 w.Flush();
@@ -282,6 +197,8 @@ namespace JointMilitarySymbologyLibrary
 
         private void _exportContext(string path, bool dataValidation)
         {
+            // Export the Context elements in the library as a coded domain CSV.
+            
             string headers = "Code,Value";
 
             using (var w = new StreamWriter(path + "\\jmsml_Context.csv"))
@@ -306,6 +223,8 @@ namespace JointMilitarySymbologyLibrary
 
         private void _exportStandardIdentity(string path, bool dataValidation)
         {
+            // Export the Standard Identity elements in the library as a coded domain CSV.
+
             string headers = "Code,Value";
 
             using (var w = new StreamWriter(path + "\\jmsml_StandardIdentity.csv"))
@@ -330,6 +249,8 @@ namespace JointMilitarySymbologyLibrary
 
         private void _exportSymbolSet(string path, bool dataValidation)
         {
+            // Export the Symbol Set elements in the library as a coded domain CSV.
+
             string headers = "Code,Value";
 
             using (var w = new StreamWriter(path + "\\jmsml_SymbolSet.csv"))
@@ -360,6 +281,8 @@ namespace JointMilitarySymbologyLibrary
 
         private void _exportStatus(string path, bool dataValidation)
         {
+            // Export the Status elements in the library as a coded domain CSV.
+
             string headers = "Code,Value";
 
             using (var w = new StreamWriter(path + "\\jmsml_Status.csv"))
@@ -384,6 +307,8 @@ namespace JointMilitarySymbologyLibrary
 
         private void _exportHQTFDummy(string path, bool dataValidation)
         {
+            // Export the HQTFDummy elements in the library as a coded domain CSV.
+
             string headers = "Code,Value";
 
             using (var w = new StreamWriter(path + "\\jmsml_HQTFDummy.csv"))
@@ -408,6 +333,8 @@ namespace JointMilitarySymbologyLibrary
 
         private void _exportAmplifier(string path, bool dataValidation)
         {
+            // Export the Amplifier elements in the library as a coded domain CSV.
+
             string headers = "Code,Value";
 
             using (var w = new StreamWriter(path + "\\jmsml_Amplifier.csv"))
@@ -438,6 +365,8 @@ namespace JointMilitarySymbologyLibrary
 
         private string _cleanString(string s)
         {
+            // Replace characters we don't like with the underscore
+
             string o = s.ToUpper();
 
             o = o.Replace('/', '_');
@@ -452,6 +381,11 @@ namespace JointMilitarySymbologyLibrary
 
         private void _writeCode(StreamWriter w, string name, string digitOne, string digitTwo)
         {
+            // Write a basic two digt code to XML
+            // The source data comes from a manual dump of the tables
+            // from Appendix A of 2525, modified in Excel to provide
+            // further information to start fully populating JMSML XML.
+
             w.WriteLine("<" + name + ">");
             w.WriteLine("<DigitOne>" + digitOne + "</DigitOne>");
             w.WriteLine("<DigitTwo>" + digitTwo + "</DigitTwo>");
@@ -461,6 +395,11 @@ namespace JointMilitarySymbologyLibrary
 
         private void _writeEntity(ref int mode, StreamWriter w, string id, string label, string one, string two, string graphic)
         {
+            // Write an Entity element to XML.
+            // The source data comes from a manual dump of the tables
+            // from Appendix A of 2525, modified in Excel to provide
+            // further information to start fully populating JMSML XML.
+
             switch (mode)
             {
                 case 0:
@@ -490,6 +429,11 @@ namespace JointMilitarySymbologyLibrary
 
         private void _writeEntityType(ref int mode, StreamWriter w, string id, string label, string one, string two, string graphic)
         {
+            // Write an EntityType element to XML.
+            // The source data comes from a manual dump of the tables
+            // from Appendix A of 2525, modified in Excel to provide
+            // further information to start fully populating JMSML XML.
+
             switch (mode)
             {
                 case 0:
@@ -515,6 +459,11 @@ namespace JointMilitarySymbologyLibrary
 
         private void _writeEntitySubType(ref int mode, StreamWriter w, string id, string label, string one, string two, string graphic)
         {
+            // Write an EntitySubType element to XML.
+            // The source data comes from a manual dump of the tables
+            // from Appendix A of 2525, modified in Excel to provide
+            // further information to start fully populating JMSML XML.
+
             switch (mode)
             {
                 case 1:
@@ -532,6 +481,11 @@ namespace JointMilitarySymbologyLibrary
 
         private void _writeModifier(StreamWriter w, string id, string label, string one, string two, string graphic)
         {
+            // Write a Modifier element to XML.
+            // The source data comes from a manual dump of the tables
+            // from Appendix A of 2525, modified in Excel to provide
+            // further information to start fully populating JMSML XML.
+
             w.WriteLine("<Modifier ID=\"" + id + "\" Label=\"" + label + "\" Category=\"TODO\" Graphic=\"" + graphic + "\">");
             _writeCode(w, "ModifierCode", one, two);
             w.WriteLine("</Modifier>");
@@ -540,6 +494,11 @@ namespace JointMilitarySymbologyLibrary
 
         private void _writeModifiers(string modPath, StreamWriter w, string setToDo, string modToDo)
         {
+            // Write Modifier elements to XML.
+            // The source data comes from a manual dump of the tables
+            // from Appendix A of 2525, modified in Excel to provide
+            // further information to start fully populating JMSML XML.
+
             StreamReader rm1 = new StreamReader(modPath);
 
             while (!rm1.EndOfStream)
@@ -567,6 +526,12 @@ namespace JointMilitarySymbologyLibrary
 
         private void _importCSV(string path, string modPath, string ssCode, string legacyCode)
         {
+            // Read in a CSV file containing raw symbol data and use the above
+            // methods to write out what is read as rough XML.
+            // The source data comes from a manual dump of the tables
+            // from Appendix A of 2525, modified in Excel to provide
+            // further information to start fully populating JMSML XML.
+            
             string line, ss, id, entity, entityType, entitySubType, codeE, codeET, codeEST, graphic;
 
             StreamReader r = new StreamReader(path);
@@ -665,17 +630,77 @@ namespace JointMilitarySymbologyLibrary
 
         public void Import(string path, string modPath, string symbolsetCode, string legacyCode)
         {
+            // The public entry point to import a CSV file containing entities, and another containing
+            // modiffiers, and use the above methods to do the work of
+            // building a raw JMSML XML Symbol Set file.
+            //
+            // The source data comes from a manual dump of the tables
+            // from Appendix A of 2525, modified in Excel to provide
+            // further information to start fully populating JMSML XML.
+
             _importCSV(path, modPath, symbolsetCode, legacyCode);
         }
 
-        public void Export(string path, string symbolSetExpression = "", string expression = "", bool exportPoints = true, bool exportLines = true, bool exportAreas = true, bool asCodedDomain = false)
+        public void Export(string path, string symbolSetExpression = "", string expression = "", bool exportPoints = true, bool exportLines = true, bool exportAreas = true, ETLExportEnum exportType = ETLExportEnum.ETLExportSimple, bool append = false)
         {
-            _exportEntities(path + "_Entities.csv", symbolSetExpression, expression, exportPoints, exportLines, exportAreas, asCodedDomain);
-            _exportModifiers(path + "_Modifiers.csv", symbolSetExpression, expression, asCodedDomain);
+            // The public entry point for exporting selective contents of the JMSML library
+            // into CSV format.
+            
+            // Accepts a path for the output (sans file name extension).  The caller 
+            // may also provide optional regular expressions to filter on the Label
+            // attributes of SymbolSets in the library and a second optional regular
+            // expression for filtering on the Label attributes of other objects being
+            // exported.
+
+            IEntityExport entityExporter = null;
+            IModifierExport modifierExporter = null;
+
+            string entityPath = path;
+            string modifierPath = path;
+
+            switch (exportType)
+            {
+                // Based on the type of export, create instances of the
+                // appropriate helper class(es).
+
+                case ETLExportEnum.ETLExportSimple:
+                    entityExporter = new SimpleEntityExport();
+                    modifierExporter = new SimpleModifierExport();
+                    break;
+
+                case ETLExportEnum.ETLExportDomain:
+                    entityExporter = new DomainEntityExport(_configHelper);
+                    modifierExporter = new DomainModifierExport(_configHelper);
+                    break;
+
+                case ETLExportEnum.ETLExportImage:
+                    entityExporter = new ImageEntityExport(_configHelper);
+                    modifierExporter = new ImageModifierExport(_configHelper);
+                    break;
+            }
+
+            if (!append)
+            {
+                // If we're not appending the modifiers to the entities
+                // then add a string to the file name to make them unique.
+
+                entityPath = entityPath + "_Entities";
+                modifierPath = modifierPath + "_Modifiers";
+            }
+
+            entityPath = entityPath + ".csv";
+            modifierPath = modifierPath + ".csv";
+
+            _exportEntities(entityExporter, entityPath, symbolSetExpression, expression, exportPoints, exportLines, exportAreas);
+            _exportModifiers(modifierExporter, modifierPath, symbolSetExpression, expression, append);
         }
 
         public void ExportDomains(string path, bool dataValidation)
         {
+            // The public entry point for exporting parts of the
+            // 2525 and APP-6 base document - the codes making
+            // up an SIDC's first ten digits.
+
             _exportContext(path, dataValidation);
             _exportStandardIdentity(path, dataValidation);
             _exportSymbolSet(path, dataValidation);

@@ -36,3 +36,12 @@ Coded domain tables for entities and modifiers can be generated with or without 
 
 	jmsml.exe /xd="All_Coded_Domain"
 	jmsml.exe /xd="Air_Coded_Domain" /s="^Air$"
+
+### Image File, Name, Category, Tags Tables ###
+The information exported in these files includes that which can be used to generate ArcGIS Style files.  The information includes the path and name of each graphic/image file for a symbol, its name, the category of icon it belongs to, and a semicolon delimited list of tag values that users can use to find a given symbol.
+
+The /s, /q, /a, /l, and /p switches documented above are also respected.  /+ can be used to tell the exporter to append the modifier output to the end of the entity output.
+
+	jmsml.exe /xi="Military-Air-Source-Icons" /s="Air"
+	jmsml.exe /xi="Military-Air-Source-Icons" /s="Air" /+
+

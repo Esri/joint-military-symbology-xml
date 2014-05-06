@@ -20,6 +20,10 @@ namespace JointMilitarySymbologyLibrary
 {
     public class SIDC
     {
+        // This class represents a 20 digit (2525D) Symbol ID Code.
+        // It lets users manipulate the two elements of an SIDC
+        // as strings or 32 bit unsigned integers.
+         
         private UInt32 _first10;
         private UInt32 _second10;
 
