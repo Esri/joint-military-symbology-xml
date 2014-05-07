@@ -57,56 +57,56 @@ Signals Intelligence - Air : Signal Intercept,51110000
 Signals Intelligence - Air : Signal Intercept : Communications,51110100
 Signals Intelligence - Air : Signal Intercept : Jammer,51110200
 Signals Intelligence - Air : Signal Intercept : Radar,51110300
-Cyberspace - Air : Botnet,60110000
-Cyberspace - Air : Botnet : Command and Control (C2),60110100
-Cyberspace - Air : Botnet : Herder,60110200
-Cyberspace - Air : Botnet : Callback Domain,60110300
-Cyberspace - Air : Botnet : Zombie,60110400
-Cyberspace - Air : Infection,60120000
-Cyberspace - Air : Infection : Advanced Persistent Threat (APT),60120100
-Cyberspace - Air : Infection : Advanced Persistent Threat (APT) : APT with C2,60120101
-Cyberspace - Air : Infection : Advanced Persistent Threat (APT) : APT with Self Propagation,60120102
-Cyberspace - Air : Infection : Advanced Persistent Threat (APT) : APT with C2 and Self Propagation,60120103
-Cyberspace - Air : Infection : Advanced Persistent Threat (APT) : APT Other,60120104
-Cyberspace - Air : Infection : Non-Advanced Persistent Threat (NAPT),60120200
-Cyberspace - Air : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with C2,60120201
-Cyberspace - Air : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with Self Propagation,60120202
-Cyberspace - Air : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with C2 and Self Propagation,60120203
-Cyberspace - Air : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT Other,60120204
-Cyberspace - Air : Health and Status,60130000
-Cyberspace - Air : Health and Status : Normal,60130100
-Cyberspace - Air : Health and Status : Network Outage,60130200
-Cyberspace - Air : Health and Status : Unknown,60130300
-Cyberspace - Air : Health and Status : Impaired,60130400
-Cyberspace - Air : Device Type,60140000
-Cyberspace - Air : Device Type : Core Router,60140100
-Cyberspace - Air : Device Type : Router,60140200
-Cyberspace - Air : Device Type : Cross Domain Solution,60140300
-Cyberspace - Air : Device Type : Mail Server,60140400
-Cyberspace - Air : Device Type : Web Server,60140500
-Cyberspace - Air : Device Type : Domain Server,60140600
-Cyberspace - Air : Device Type : File Server,60140700
-Cyberspace - Air : Device Type : Peer-to-Peer Node,60140800
-Cyberspace - Air : Device Type : Firewall,60140900
-Cyberspace - Air : Device Type : Switch,60141000
-Cyberspace - Air : Device Type : Host,60141100
-Cyberspace - Air : Device Type : Virtual Private Network (VPN),60141200
-Cyberspace - Air : Device Domain,60150000
-Cyberspace - Air : Device Domain : Department of Defense (DoD),60150100
-Cyberspace - Air : Device Domain : Government,60150200
-Cyberspace - Air : Device Domain : Contractor,60150300
-Cyberspace - Air : Device Domain : Supervisory Control and Data Acquisition (SCADA),60150400
-Cyberspace - Air : Device Domain : Non-Government,60150500
-Cyberspace - Air : Effect,60160000
-Cyberspace - Air : Effect : Infection,60160100
-Cyberspace - Air : Effect : Degradation,60160200
-Cyberspace - Air : Effect : Data Spoofing,60160300
-Cyberspace - Air : Effect : Data Manipulation,60160400
-Cyberspace - Air : Effect : Exfiltration,60160500
-Cyberspace - Air : Effect : Power Outage,60160600
-Cyberspace - Air : Effect : Network Outage,60160700
-Cyberspace - Air : Effect : Service Outage,60160800
-Cyberspace - Air : Effect : Device Outage,60160900
+Cyberspace : Botnet,60110000
+Cyberspace : Botnet : Command and Control (C2),60110100
+Cyberspace : Botnet : Herder,60110200
+Cyberspace : Botnet : Callback Domain,60110300
+Cyberspace : Botnet : Zombie,60110400
+Cyberspace : Infection,60120000
+Cyberspace : Infection : Advanced Persistent Threat (APT),60120100
+Cyberspace : Infection : Advanced Persistent Threat (APT) : APT with C2,60120101
+Cyberspace : Infection : Advanced Persistent Threat (APT) : APT with Self Propagation,60120102
+Cyberspace : Infection : Advanced Persistent Threat (APT) : APT with C2 and Self Propagation,60120103
+Cyberspace : Infection : Advanced Persistent Threat (APT) : APT Other,60120104
+Cyberspace : Infection : Non-Advanced Persistent Threat (NAPT),60120200
+Cyberspace : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with C2,60120201
+Cyberspace : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with Self Propagation,60120202
+Cyberspace : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with C2 and Self Propagation,60120203
+Cyberspace : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT Other,60120204
+Cyberspace : Health and Status,60130000
+Cyberspace : Health and Status : Normal,60130100
+Cyberspace : Health and Status : Network Outage,60130200
+Cyberspace : Health and Status : Unknown,60130300
+Cyberspace : Health and Status : Impaired,60130400
+Cyberspace : Device Type,60140000
+Cyberspace : Device Type : Core Router,60140100
+Cyberspace : Device Type : Router,60140200
+Cyberspace : Device Type : Cross Domain Solution,60140300
+Cyberspace : Device Type : Mail Server,60140400
+Cyberspace : Device Type : Web Server,60140500
+Cyberspace : Device Type : Domain Server,60140600
+Cyberspace : Device Type : File Server,60140700
+Cyberspace : Device Type : Peer-to-Peer Node,60140800
+Cyberspace : Device Type : Firewall,60140900
+Cyberspace : Device Type : Switch,60141000
+Cyberspace : Device Type : Host,60141100
+Cyberspace : Device Type : Virtual Private Network (VPN),60141200
+Cyberspace : Device Domain,60150000
+Cyberspace : Device Domain : Department of Defense (DoD),60150100
+Cyberspace : Device Domain : Government,60150200
+Cyberspace : Device Domain : Contractor,60150300
+Cyberspace : Device Domain : Supervisory Control and Data Acquisition (SCADA),60150400
+Cyberspace : Device Domain : Non-Government,60150500
+Cyberspace : Effect,60160000
+Cyberspace : Effect : Infection,60160100
+Cyberspace : Effect : Degradation,60160200
+Cyberspace : Effect : Data Spoofing,60160300
+Cyberspace : Effect : Data Manipulation,60160400
+Cyberspace : Effect : Exfiltration,60160500
+Cyberspace : Effect : Power Outage,60160600
+Cyberspace : Effect : Network Outage,60160700
+Cyberspace : Effect : Service Outage,60160800
+Cyberspace : Effect : Device Outage,60160900
 Space : Military,05110000
 Space : Military : Space Vehicle,05110100
 Space : Military : Re-Entry Vehicle,05110200
@@ -146,56 +146,56 @@ Signals Intelligence - Space : Signal Intercept,50110000
 Signals Intelligence - Space : Signal Intercept : Communications,50110100
 Signals Intelligence - Space : Signal Intercept : Jammer,50110200
 Signals Intelligence - Space : Signal Intercept : Radar,50110300
-Cyberspace - Space : Botnet,60110000
-Cyberspace - Space : Botnet : Command and Control (C2),60110100
-Cyberspace - Space : Botnet : Herder,60110200
-Cyberspace - Space : Botnet : Callback Domain,60110300
-Cyberspace - Space : Botnet : Zombie,60110400
-Cyberspace - Space : Infection,60120000
-Cyberspace - Space : Infection : Advanced Persistent Threat (APT),60120100
-Cyberspace - Space : Infection : Advanced Persistent Threat (APT) : APT with C2,60120101
-Cyberspace - Space : Infection : Advanced Persistent Threat (APT) : APT with Self Propagation,60120102
-Cyberspace - Space : Infection : Advanced Persistent Threat (APT) : APT with C2 and Self Propagation,60120103
-Cyberspace - Space : Infection : Advanced Persistent Threat (APT) : APT Other,60120104
-Cyberspace - Space : Infection : Non-Advanced Persistent Threat (NAPT),60120200
-Cyberspace - Space : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with C2,60120201
-Cyberspace - Space : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with Self Propagation,60120202
-Cyberspace - Space : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with C2 and Self Propagation,60120203
-Cyberspace - Space : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT Other,60120204
-Cyberspace - Space : Health and Status,60130000
-Cyberspace - Space : Health and Status : Normal,60130100
-Cyberspace - Space : Health and Status : Network Outage,60130200
-Cyberspace - Space : Health and Status : Unknown,60130300
-Cyberspace - Space : Health and Status : Impaired,60130400
-Cyberspace - Space : Device Type,60140000
-Cyberspace - Space : Device Type : Core Router,60140100
-Cyberspace - Space : Device Type : Router,60140200
-Cyberspace - Space : Device Type : Cross Domain Solution,60140300
-Cyberspace - Space : Device Type : Mail Server,60140400
-Cyberspace - Space : Device Type : Web Server,60140500
-Cyberspace - Space : Device Type : Domain Server,60140600
-Cyberspace - Space : Device Type : File Server,60140700
-Cyberspace - Space : Device Type : Peer-to-Peer Node,60140800
-Cyberspace - Space : Device Type : Firewall,60140900
-Cyberspace - Space : Device Type : Switch,60141000
-Cyberspace - Space : Device Type : Host,60141100
-Cyberspace - Space : Device Type : Virtual Private Network (VPN),60141200
-Cyberspace - Space : Device Domain,60150000
-Cyberspace - Space : Device Domain : Department of Defense (DoD),60150100
-Cyberspace - Space : Device Domain : Government,60150200
-Cyberspace - Space : Device Domain : Contractor,60150300
-Cyberspace - Space : Device Domain : Supervisory Control and Data Acquisition (SCADA),60150400
-Cyberspace - Space : Device Domain : Non-Government,60150500
-Cyberspace - Space : Effect,60160000
-Cyberspace - Space : Effect : Infection,60160100
-Cyberspace - Space : Effect : Degradation,60160200
-Cyberspace - Space : Effect : Data Spoofing,60160300
-Cyberspace - Space : Effect : Data Manipulation,60160400
-Cyberspace - Space : Effect : Exfiltration,60160500
-Cyberspace - Space : Effect : Power Outage,60160600
-Cyberspace - Space : Effect : Network Outage,60160700
-Cyberspace - Space : Effect : Service Outage,60160800
-Cyberspace - Space : Effect : Device Outage,60160900
+Cyberspace : Botnet,60110000
+Cyberspace : Botnet : Command and Control (C2),60110100
+Cyberspace : Botnet : Herder,60110200
+Cyberspace : Botnet : Callback Domain,60110300
+Cyberspace : Botnet : Zombie,60110400
+Cyberspace : Infection,60120000
+Cyberspace : Infection : Advanced Persistent Threat (APT),60120100
+Cyberspace : Infection : Advanced Persistent Threat (APT) : APT with C2,60120101
+Cyberspace : Infection : Advanced Persistent Threat (APT) : APT with Self Propagation,60120102
+Cyberspace : Infection : Advanced Persistent Threat (APT) : APT with C2 and Self Propagation,60120103
+Cyberspace : Infection : Advanced Persistent Threat (APT) : APT Other,60120104
+Cyberspace : Infection : Non-Advanced Persistent Threat (NAPT),60120200
+Cyberspace : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with C2,60120201
+Cyberspace : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with Self Propagation,60120202
+Cyberspace : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with C2 and Self Propagation,60120203
+Cyberspace : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT Other,60120204
+Cyberspace : Health and Status,60130000
+Cyberspace : Health and Status : Normal,60130100
+Cyberspace : Health and Status : Network Outage,60130200
+Cyberspace : Health and Status : Unknown,60130300
+Cyberspace : Health and Status : Impaired,60130400
+Cyberspace : Device Type,60140000
+Cyberspace : Device Type : Core Router,60140100
+Cyberspace : Device Type : Router,60140200
+Cyberspace : Device Type : Cross Domain Solution,60140300
+Cyberspace : Device Type : Mail Server,60140400
+Cyberspace : Device Type : Web Server,60140500
+Cyberspace : Device Type : Domain Server,60140600
+Cyberspace : Device Type : File Server,60140700
+Cyberspace : Device Type : Peer-to-Peer Node,60140800
+Cyberspace : Device Type : Firewall,60140900
+Cyberspace : Device Type : Switch,60141000
+Cyberspace : Device Type : Host,60141100
+Cyberspace : Device Type : Virtual Private Network (VPN),60141200
+Cyberspace : Device Domain,60150000
+Cyberspace : Device Domain : Department of Defense (DoD),60150100
+Cyberspace : Device Domain : Government,60150200
+Cyberspace : Device Domain : Contractor,60150300
+Cyberspace : Device Domain : Supervisory Control and Data Acquisition (SCADA),60150400
+Cyberspace : Device Domain : Non-Government,60150500
+Cyberspace : Effect,60160000
+Cyberspace : Effect : Infection,60160100
+Cyberspace : Effect : Degradation,60160200
+Cyberspace : Effect : Data Spoofing,60160300
+Cyberspace : Effect : Data Manipulation,60160400
+Cyberspace : Effect : Exfiltration,60160500
+Cyberspace : Effect : Power Outage,60160600
+Cyberspace : Effect : Network Outage,60160700
+Cyberspace : Effect : Service Outage,60160800
+Cyberspace : Effect : Device Outage,60160900
 Land Units : Command and Control,10110000
 Land Units : Command and Control : Broadcast Transmitter Antennae,10110100
 Land Units : Command and Control : Civil Affairs,10110200
@@ -633,56 +633,56 @@ Signals Intelligence - Land : Signal Intercept,52110000
 Signals Intelligence - Land : Signal Intercept : Communications,52110100
 Signals Intelligence - Land : Signal Intercept : Jammer,52110200
 Signals Intelligence - Land : Signal Intercept : Radar,52110300
-Cyberspace - Land : Botnet,60110000
-Cyberspace - Land : Botnet : Command and Control (C2),60110100
-Cyberspace - Land : Botnet : Herder,60110200
-Cyberspace - Land : Botnet : Callback Domain,60110300
-Cyberspace - Land : Botnet : Zombie,60110400
-Cyberspace - Land : Infection,60120000
-Cyberspace - Land : Infection : Advanced Persistent Threat (APT),60120100
-Cyberspace - Land : Infection : Advanced Persistent Threat (APT) : APT with C2,60120101
-Cyberspace - Land : Infection : Advanced Persistent Threat (APT) : APT with Self Propagation,60120102
-Cyberspace - Land : Infection : Advanced Persistent Threat (APT) : APT with C2 and Self Propagation,60120103
-Cyberspace - Land : Infection : Advanced Persistent Threat (APT) : APT Other,60120104
-Cyberspace - Land : Infection : Non-Advanced Persistent Threat (NAPT),60120200
-Cyberspace - Land : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with C2,60120201
-Cyberspace - Land : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with Self Propagation,60120202
-Cyberspace - Land : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with C2 and Self Propagation,60120203
-Cyberspace - Land : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT Other,60120204
-Cyberspace - Land : Health and Status,60130000
-Cyberspace - Land : Health and Status : Normal,60130100
-Cyberspace - Land : Health and Status : Network Outage,60130200
-Cyberspace - Land : Health and Status : Unknown,60130300
-Cyberspace - Land : Health and Status : Impaired,60130400
-Cyberspace - Land : Device Type,60140000
-Cyberspace - Land : Device Type : Core Router,60140100
-Cyberspace - Land : Device Type : Router,60140200
-Cyberspace - Land : Device Type : Cross Domain Solution,60140300
-Cyberspace - Land : Device Type : Mail Server,60140400
-Cyberspace - Land : Device Type : Web Server,60140500
-Cyberspace - Land : Device Type : Domain Server,60140600
-Cyberspace - Land : Device Type : File Server,60140700
-Cyberspace - Land : Device Type : Peer-to-Peer Node,60140800
-Cyberspace - Land : Device Type : Firewall,60140900
-Cyberspace - Land : Device Type : Switch,60141000
-Cyberspace - Land : Device Type : Host,60141100
-Cyberspace - Land : Device Type : Virtual Private Network (VPN),60141200
-Cyberspace - Land : Device Domain,60150000
-Cyberspace - Land : Device Domain : Department of Defense (DoD),60150100
-Cyberspace - Land : Device Domain : Government,60150200
-Cyberspace - Land : Device Domain : Contractor,60150300
-Cyberspace - Land : Device Domain : Supervisory Control and Data Acquisition (SCADA),60150400
-Cyberspace - Land : Device Domain : Non-Government,60150500
-Cyberspace - Land : Effect,60160000
-Cyberspace - Land : Effect : Infection,60160100
-Cyberspace - Land : Effect : Degradation,60160200
-Cyberspace - Land : Effect : Data Spoofing,60160300
-Cyberspace - Land : Effect : Data Manipulation,60160400
-Cyberspace - Land : Effect : Exfiltration,60160500
-Cyberspace - Land : Effect : Power Outage,60160600
-Cyberspace - Land : Effect : Network Outage,60160700
-Cyberspace - Land : Effect : Service Outage,60160800
-Cyberspace - Land : Effect : Device Outage,60160900
+Cyberspace : Botnet,60110000
+Cyberspace : Botnet : Command and Control (C2),60110100
+Cyberspace : Botnet : Herder,60110200
+Cyberspace : Botnet : Callback Domain,60110300
+Cyberspace : Botnet : Zombie,60110400
+Cyberspace : Infection,60120000
+Cyberspace : Infection : Advanced Persistent Threat (APT),60120100
+Cyberspace : Infection : Advanced Persistent Threat (APT) : APT with C2,60120101
+Cyberspace : Infection : Advanced Persistent Threat (APT) : APT with Self Propagation,60120102
+Cyberspace : Infection : Advanced Persistent Threat (APT) : APT with C2 and Self Propagation,60120103
+Cyberspace : Infection : Advanced Persistent Threat (APT) : APT Other,60120104
+Cyberspace : Infection : Non-Advanced Persistent Threat (NAPT),60120200
+Cyberspace : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with C2,60120201
+Cyberspace : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with Self Propagation,60120202
+Cyberspace : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with C2 and Self Propagation,60120203
+Cyberspace : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT Other,60120204
+Cyberspace : Health and Status,60130000
+Cyberspace : Health and Status : Normal,60130100
+Cyberspace : Health and Status : Network Outage,60130200
+Cyberspace : Health and Status : Unknown,60130300
+Cyberspace : Health and Status : Impaired,60130400
+Cyberspace : Device Type,60140000
+Cyberspace : Device Type : Core Router,60140100
+Cyberspace : Device Type : Router,60140200
+Cyberspace : Device Type : Cross Domain Solution,60140300
+Cyberspace : Device Type : Mail Server,60140400
+Cyberspace : Device Type : Web Server,60140500
+Cyberspace : Device Type : Domain Server,60140600
+Cyberspace : Device Type : File Server,60140700
+Cyberspace : Device Type : Peer-to-Peer Node,60140800
+Cyberspace : Device Type : Firewall,60140900
+Cyberspace : Device Type : Switch,60141000
+Cyberspace : Device Type : Host,60141100
+Cyberspace : Device Type : Virtual Private Network (VPN),60141200
+Cyberspace : Device Domain,60150000
+Cyberspace : Device Domain : Department of Defense (DoD),60150100
+Cyberspace : Device Domain : Government,60150200
+Cyberspace : Device Domain : Contractor,60150300
+Cyberspace : Device Domain : Supervisory Control and Data Acquisition (SCADA),60150400
+Cyberspace : Device Domain : Non-Government,60150500
+Cyberspace : Effect,60160000
+Cyberspace : Effect : Infection,60160100
+Cyberspace : Effect : Degradation,60160200
+Cyberspace : Effect : Data Spoofing,60160300
+Cyberspace : Effect : Data Manipulation,60160400
+Cyberspace : Effect : Exfiltration,60160500
+Cyberspace : Effect : Power Outage,60160600
+Cyberspace : Effect : Network Outage,60160700
+Cyberspace : Effect : Service Outage,60160800
+Cyberspace : Effect : Device Outage,60160900
 Land Installation : Installation,20110000
 Land Installation : Installation : Aircraft Production/Assembly,20110100
 Land Installation : Installation : Ammunition and Explosives/Assembly,20110200
@@ -908,56 +908,56 @@ Signals Intelligence - Surface : Signal Intercept,53110000
 Signals Intelligence - Surface : Signal Intercept : Communications,53110100
 Signals Intelligence - Surface : Signal Intercept : Jammer,53110200
 Signals Intelligence - Surface : Signal Intercept : Radar,53110300
-Cyberspace - Surface : Botnet,60110000
-Cyberspace - Surface : Botnet : Command and Control (C2),60110100
-Cyberspace - Surface : Botnet : Herder,60110200
-Cyberspace - Surface : Botnet : Callback Domain,60110300
-Cyberspace - Surface : Botnet : Zombie,60110400
-Cyberspace - Surface : Infection,60120000
-Cyberspace - Surface : Infection : Advanced Persistent Threat (APT),60120100
-Cyberspace - Surface : Infection : Advanced Persistent Threat (APT) : APT with C2,60120101
-Cyberspace - Surface : Infection : Advanced Persistent Threat (APT) : APT with Self Propagation,60120102
-Cyberspace - Surface : Infection : Advanced Persistent Threat (APT) : APT with C2 and Self Propagation,60120103
-Cyberspace - Surface : Infection : Advanced Persistent Threat (APT) : APT Other,60120104
-Cyberspace - Surface : Infection : Non-Advanced Persistent Threat (NAPT),60120200
-Cyberspace - Surface : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with C2,60120201
-Cyberspace - Surface : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with Self Propagation,60120202
-Cyberspace - Surface : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with C2 and Self Propagation,60120203
-Cyberspace - Surface : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT Other,60120204
-Cyberspace - Surface : Health and Status,60130000
-Cyberspace - Surface : Health and Status : Normal,60130100
-Cyberspace - Surface : Health and Status : Network Outage,60130200
-Cyberspace - Surface : Health and Status : Unknown,60130300
-Cyberspace - Surface : Health and Status : Impaired,60130400
-Cyberspace - Surface : Device Type,60140000
-Cyberspace - Surface : Device Type : Core Router,60140100
-Cyberspace - Surface : Device Type : Router,60140200
-Cyberspace - Surface : Device Type : Cross Domain Solution,60140300
-Cyberspace - Surface : Device Type : Mail Server,60140400
-Cyberspace - Surface : Device Type : Web Server,60140500
-Cyberspace - Surface : Device Type : Domain Server,60140600
-Cyberspace - Surface : Device Type : File Server,60140700
-Cyberspace - Surface : Device Type : Peer-to-Peer Node,60140800
-Cyberspace - Surface : Device Type : Firewall,60140900
-Cyberspace - Surface : Device Type : Switch,60141000
-Cyberspace - Surface : Device Type : Host,60141100
-Cyberspace - Surface : Device Type : Virtual Private Network (VPN),60141200
-Cyberspace - Surface : Device Domain,60150000
-Cyberspace - Surface : Device Domain : Department of Defense (DoD),60150100
-Cyberspace - Surface : Device Domain : Government,60150200
-Cyberspace - Surface : Device Domain : Contractor,60150300
-Cyberspace - Surface : Device Domain : Supervisory Control and Data Acquisition (SCADA),60150400
-Cyberspace - Surface : Device Domain : Non-Government,60150500
-Cyberspace - Surface : Effect,60160000
-Cyberspace - Surface : Effect : Infection,60160100
-Cyberspace - Surface : Effect : Degradation,60160200
-Cyberspace - Surface : Effect : Data Spoofing,60160300
-Cyberspace - Surface : Effect : Data Manipulation,60160400
-Cyberspace - Surface : Effect : Exfiltration,60160500
-Cyberspace - Surface : Effect : Power Outage,60160600
-Cyberspace - Surface : Effect : Network Outage,60160700
-Cyberspace - Surface : Effect : Service Outage,60160800
-Cyberspace - Surface : Effect : Device Outage,60160900
+Cyberspace : Botnet,60110000
+Cyberspace : Botnet : Command and Control (C2),60110100
+Cyberspace : Botnet : Herder,60110200
+Cyberspace : Botnet : Callback Domain,60110300
+Cyberspace : Botnet : Zombie,60110400
+Cyberspace : Infection,60120000
+Cyberspace : Infection : Advanced Persistent Threat (APT),60120100
+Cyberspace : Infection : Advanced Persistent Threat (APT) : APT with C2,60120101
+Cyberspace : Infection : Advanced Persistent Threat (APT) : APT with Self Propagation,60120102
+Cyberspace : Infection : Advanced Persistent Threat (APT) : APT with C2 and Self Propagation,60120103
+Cyberspace : Infection : Advanced Persistent Threat (APT) : APT Other,60120104
+Cyberspace : Infection : Non-Advanced Persistent Threat (NAPT),60120200
+Cyberspace : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with C2,60120201
+Cyberspace : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with Self Propagation,60120202
+Cyberspace : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with C2 and Self Propagation,60120203
+Cyberspace : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT Other,60120204
+Cyberspace : Health and Status,60130000
+Cyberspace : Health and Status : Normal,60130100
+Cyberspace : Health and Status : Network Outage,60130200
+Cyberspace : Health and Status : Unknown,60130300
+Cyberspace : Health and Status : Impaired,60130400
+Cyberspace : Device Type,60140000
+Cyberspace : Device Type : Core Router,60140100
+Cyberspace : Device Type : Router,60140200
+Cyberspace : Device Type : Cross Domain Solution,60140300
+Cyberspace : Device Type : Mail Server,60140400
+Cyberspace : Device Type : Web Server,60140500
+Cyberspace : Device Type : Domain Server,60140600
+Cyberspace : Device Type : File Server,60140700
+Cyberspace : Device Type : Peer-to-Peer Node,60140800
+Cyberspace : Device Type : Firewall,60140900
+Cyberspace : Device Type : Switch,60141000
+Cyberspace : Device Type : Host,60141100
+Cyberspace : Device Type : Virtual Private Network (VPN),60141200
+Cyberspace : Device Domain,60150000
+Cyberspace : Device Domain : Department of Defense (DoD),60150100
+Cyberspace : Device Domain : Government,60150200
+Cyberspace : Device Domain : Contractor,60150300
+Cyberspace : Device Domain : Supervisory Control and Data Acquisition (SCADA),60150400
+Cyberspace : Device Domain : Non-Government,60150500
+Cyberspace : Effect,60160000
+Cyberspace : Effect : Infection,60160100
+Cyberspace : Effect : Degradation,60160200
+Cyberspace : Effect : Data Spoofing,60160300
+Cyberspace : Effect : Data Manipulation,60160400
+Cyberspace : Effect : Exfiltration,60160500
+Cyberspace : Effect : Power Outage,60160600
+Cyberspace : Effect : Network Outage,60160700
+Cyberspace : Effect : Service Outage,60160800
+Cyberspace : Effect : Device Outage,60160900
 Sea Subsurface : Military,35110000
 Sea Subsurface : Military : Submarine,35110100
 Sea Subsurface : Military : Submarine : Submarine-Surfaced,35110101
@@ -1047,56 +1047,56 @@ Signals Intelligence - Subsurface : Signal Intercept,54110000
 Signals Intelligence - Subsurface : Signal Intercept : Communications,54110100
 Signals Intelligence - Subsurface : Signal Intercept : Jammer,54110200
 Signals Intelligence - Subsurface : Signal Intercept : Radar,54110300
-Cyberspace - Subsurface : Botnet,60110000
-Cyberspace - Subsurface : Botnet : Command and Control (C2),60110100
-Cyberspace - Subsurface : Botnet : Herder,60110200
-Cyberspace - Subsurface : Botnet : Callback Domain,60110300
-Cyberspace - Subsurface : Botnet : Zombie,60110400
-Cyberspace - Subsurface : Infection,60120000
-Cyberspace - Subsurface : Infection : Advanced Persistent Threat (APT),60120100
-Cyberspace - Subsurface : Infection : Advanced Persistent Threat (APT) : APT with C2,60120101
-Cyberspace - Subsurface : Infection : Advanced Persistent Threat (APT) : APT with Self Propagation,60120102
-Cyberspace - Subsurface : Infection : Advanced Persistent Threat (APT) : APT with C2 and Self Propagation,60120103
-Cyberspace - Subsurface : Infection : Advanced Persistent Threat (APT) : APT Other,60120104
-Cyberspace - Subsurface : Infection : Non-Advanced Persistent Threat (NAPT),60120200
-Cyberspace - Subsurface : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with C2,60120201
-Cyberspace - Subsurface : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with Self Propagation,60120202
-Cyberspace - Subsurface : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with C2 and Self Propagation,60120203
-Cyberspace - Subsurface : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT Other,60120204
-Cyberspace - Subsurface : Health and Status,60130000
-Cyberspace - Subsurface : Health and Status : Normal,60130100
-Cyberspace - Subsurface : Health and Status : Network Outage,60130200
-Cyberspace - Subsurface : Health and Status : Unknown,60130300
-Cyberspace - Subsurface : Health and Status : Impaired,60130400
-Cyberspace - Subsurface : Device Type,60140000
-Cyberspace - Subsurface : Device Type : Core Router,60140100
-Cyberspace - Subsurface : Device Type : Router,60140200
-Cyberspace - Subsurface : Device Type : Cross Domain Solution,60140300
-Cyberspace - Subsurface : Device Type : Mail Server,60140400
-Cyberspace - Subsurface : Device Type : Web Server,60140500
-Cyberspace - Subsurface : Device Type : Domain Server,60140600
-Cyberspace - Subsurface : Device Type : File Server,60140700
-Cyberspace - Subsurface : Device Type : Peer-to-Peer Node,60140800
-Cyberspace - Subsurface : Device Type : Firewall,60140900
-Cyberspace - Subsurface : Device Type : Switch,60141000
-Cyberspace - Subsurface : Device Type : Host,60141100
-Cyberspace - Subsurface : Device Type : Virtual Private Network (VPN),60141200
-Cyberspace - Subsurface : Device Domain,60150000
-Cyberspace - Subsurface : Device Domain : Department of Defense (DoD),60150100
-Cyberspace - Subsurface : Device Domain : Government,60150200
-Cyberspace - Subsurface : Device Domain : Contractor,60150300
-Cyberspace - Subsurface : Device Domain : Supervisory Control and Data Acquisition (SCADA),60150400
-Cyberspace - Subsurface : Device Domain : Non-Government,60150500
-Cyberspace - Subsurface : Effect,60160000
-Cyberspace - Subsurface : Effect : Infection,60160100
-Cyberspace - Subsurface : Effect : Degradation,60160200
-Cyberspace - Subsurface : Effect : Data Spoofing,60160300
-Cyberspace - Subsurface : Effect : Data Manipulation,60160400
-Cyberspace - Subsurface : Effect : Exfiltration,60160500
-Cyberspace - Subsurface : Effect : Power Outage,60160600
-Cyberspace - Subsurface : Effect : Network Outage,60160700
-Cyberspace - Subsurface : Effect : Service Outage,60160800
-Cyberspace - Subsurface : Effect : Device Outage,60160900
+Cyberspace : Botnet,60110000
+Cyberspace : Botnet : Command and Control (C2),60110100
+Cyberspace : Botnet : Herder,60110200
+Cyberspace : Botnet : Callback Domain,60110300
+Cyberspace : Botnet : Zombie,60110400
+Cyberspace : Infection,60120000
+Cyberspace : Infection : Advanced Persistent Threat (APT),60120100
+Cyberspace : Infection : Advanced Persistent Threat (APT) : APT with C2,60120101
+Cyberspace : Infection : Advanced Persistent Threat (APT) : APT with Self Propagation,60120102
+Cyberspace : Infection : Advanced Persistent Threat (APT) : APT with C2 and Self Propagation,60120103
+Cyberspace : Infection : Advanced Persistent Threat (APT) : APT Other,60120104
+Cyberspace : Infection : Non-Advanced Persistent Threat (NAPT),60120200
+Cyberspace : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with C2,60120201
+Cyberspace : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with Self Propagation,60120202
+Cyberspace : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT with C2 and Self Propagation,60120203
+Cyberspace : Infection : Non-Advanced Persistent Threat (NAPT) : NAPT Other,60120204
+Cyberspace : Health and Status,60130000
+Cyberspace : Health and Status : Normal,60130100
+Cyberspace : Health and Status : Network Outage,60130200
+Cyberspace : Health and Status : Unknown,60130300
+Cyberspace : Health and Status : Impaired,60130400
+Cyberspace : Device Type,60140000
+Cyberspace : Device Type : Core Router,60140100
+Cyberspace : Device Type : Router,60140200
+Cyberspace : Device Type : Cross Domain Solution,60140300
+Cyberspace : Device Type : Mail Server,60140400
+Cyberspace : Device Type : Web Server,60140500
+Cyberspace : Device Type : Domain Server,60140600
+Cyberspace : Device Type : File Server,60140700
+Cyberspace : Device Type : Peer-to-Peer Node,60140800
+Cyberspace : Device Type : Firewall,60140900
+Cyberspace : Device Type : Switch,60141000
+Cyberspace : Device Type : Host,60141100
+Cyberspace : Device Type : Virtual Private Network (VPN),60141200
+Cyberspace : Device Domain,60150000
+Cyberspace : Device Domain : Department of Defense (DoD),60150100
+Cyberspace : Device Domain : Government,60150200
+Cyberspace : Device Domain : Contractor,60150300
+Cyberspace : Device Domain : Supervisory Control and Data Acquisition (SCADA),60150400
+Cyberspace : Device Domain : Non-Government,60150500
+Cyberspace : Effect,60160000
+Cyberspace : Effect : Infection,60160100
+Cyberspace : Effect : Degradation,60160200
+Cyberspace : Effect : Data Spoofing,60160300
+Cyberspace : Effect : Data Manipulation,60160400
+Cyberspace : Effect : Exfiltration,60160500
+Cyberspace : Effect : Power Outage,60160600
+Cyberspace : Effect : Network Outage,60160700
+Cyberspace : Effect : Service Outage,60160800
+Cyberspace : Effect : Device Outage,60160900
 Activity : Incident,40110000
 Activity : Incident : Criminal Activity Incident,40110100
 Activity : Incident : Criminal Activity Incident : Arrest,40110101
@@ -1338,6 +1338,15 @@ Control Measure : Maneuver Areas : Battle Position : Strong Point,25151203
 Control Measure : Maneuver Areas : Battle Position : Contain,25151204
 Control Measure : Maneuver Areas : Battle Position : Retain,25151205
 Control Measure : Maneuver Areas : Engagement Area (EA),25151300
+Control Measure : Maneuver Areas : Axis of Advance,25151400
+Control Measure : Maneuver Areas : Axis of Advance : Friendly Airborne/Aviation,25151401
+Control Measure : Maneuver Areas : Axis of Advance : Attack Helicopter,25151402
+Control Measure : Maneuver Areas : Axis of Advance : Main Attack,25151403
+Control Measure : Maneuver Areas : Axis of Advance : Supporting Attack,25151404
+Control Measure : Maneuver Areas : Axis of Advance : Supporting Attack Planned or On Order,25151405
+Control Measure : Maneuver Areas : Axis of Advance : Feint,25151406
+Control Measure : Maneuver Areas : Axis of Advance : Enemy Confirmed,25151407
+Control Measure : Maneuver Areas : Axis of Advance : Enemy Templated or Suspected,25151408
 Control Measure : Maneuver Areas : Assault Position,25151500
 Control Measure : Maneuver Areas : Attack Position,25151600
 Control Measure : Maneuver Areas : Objective,25151700
@@ -1357,15 +1366,6 @@ Control Measure : Maneuver Points : Observation Post/Outpost (Specified) : CBRN 
 Control Measure : Maneuver Points : Observation Post/Outpost (Specified) : Sensor Outpost/Listening Post,25160204
 Control Measure : Maneuver Points : Observation Post/Outpost (Specified) : Combat Outpost,25160205
 Control Measure : Maneuver Points : Target Reference Point,25160300
-Control Measure : Maneuver Points : Axis of Advance,25161400
-Control Measure : Maneuver Points : Axis of Advance : Friendly Airborne/Aviation,25161401
-Control Measure : Maneuver Points : Axis of Advance : Attack Helicopter,25161402
-Control Measure : Maneuver Points : Axis of Advance : Main Attack,25161403
-Control Measure : Maneuver Points : Axis of Advance : Supporting Attack,25161404
-Control Measure : Maneuver Points : Axis of Advance : Supporting Attack Planned or On Order,25161405
-Control Measure : Maneuver Points : Axis of Advance : Feint,25161406
-Control Measure : Maneuver Points : Axis of Advance : Enemy Confirmed,25161407
-Control Measure : Maneuver Points : Axis of Advance : Enemy Templated or Suspected,25161408
 Control Measure : Maneuver Points : Point of Departure,25160400
 Control Measure : Airspace Control (Corridors) Areas,25170000
 Control Measure : Airspace Control (Corridors) Areas : Air Corridor,25170100
@@ -1402,7 +1402,7 @@ Control Measure : Airspace Control Points : ASW (Helo and F/W) Station,25180900
 Control Measure : Airspace Control Points : Strike Initial Point,25181000
 Control Measure : Airspace Control Points : Replemenshment Station,25181100
 Control Measure : Airspace Control Points : Tanking,25181200
-Control Measure : Airspace Control Points : Antisubmarine Warfare-Rotary Wing,25181300
+Control Measure : Airspace Control Points : Antisubmarine Warfare- Rotary Wing,25181300
 Control Measure : Airspace Control Points : SUCAP - Fixed Wing,25181400
 Control Measure : Airspace Control Points : SUCAP - Rotary Wing,25181500
 Control Measure : Airspace Control Points : MIW - Fixed Wing,25181600
@@ -1488,7 +1488,7 @@ Control Measure : Maritime Control Points : Sonobuoy : Range Only,25213514
 Control Measure : Maritime Control Points : Sonobuoy : Vertical Line Array Directional Frequency Analysis and Recording (DIFAR),25213515
 Control Measure : Maritime Control Points : Reference Point,25213600
 Control Measure : Maritime Control Points : Special Point,25213700
-Control Measure : Maritime Control Points : Navigational Reference Point(Points),25213800
+Control Measure : Maritime Control Points : Navigational Reference Point,25213800
 Control Measure : Maritime Control Points : Data Link Reference Point,25213900
 Control Measure : Maritime Control Points : Forward Observer / Spotter Position,25214000
 Control Measure : Maritime Control Points : Vital Area Center,25214100
@@ -1539,10 +1539,10 @@ Control Measure : Maritime Control Points : Oil Rig,25218500
 Control Measure : Maritime Control Points : Sea Mine-Like,25218600
 Control Measure : Maritime Control Points : Bottom Return/Non-Mine Like Bottom Object (NOMBO),25218700
 Control Measure : Maritime Control Points : Bottom Return/Non-Mine Like Bottom Object (NOMBO)/Installation Manmade,25218800
-Control Measure : Maritime Control Points : Bottom Return/Non-Mine Like Bottom Object (NOMBO)/Installation Manmade : Marine Life,25218800
-Control Measure : Maritime Control Points : Bottom Return/Non-Mine Like Bottom Object (NOMBO)/Installation Manmade : Sea Anomaly (Wake-Current-Knuckle),25218800
-Control Measure : Maritime Control Points : Bottom Return/Non-Mine Like Bottom Object (NOMBO)/Installation Manmade : Bottom Return/Non-MILCO-Wreck-Dangerous,25218800
-Control Measure : Maritime Control Points : Bottom Return/Non-Mine Like Bottom Object (NOMBO)/Installation Manmade : Bottom Return/Non-MILCO-Wreck-Non Dangerous,25218800
+Control Measure : Maritime Control Points : Marine Life,25218900
+Control Measure : Maritime Control Points : Sea Anomaly (Wake-Current-Knuckle),25219000
+Control Measure : Maritime Control Points : Bottom Return/Non-MILCO-Wreck-Dangerous,25219100
+Control Measure : Maritime Control Points : Bottom Return/Non-MILCO-Wreck-Non Dangerous,25219200
 Control Measure : Maritime Control Lines,25220000
 Control Measure : Maritime Control Lines : Bearing Line,25220100
 Control Measure : Maritime Control Lines : Bearing Line : Electronic,25220101
@@ -1590,10 +1590,9 @@ Control Measure : Fires Areas : Area Targets : Rectangular Target,25240802
 Control Measure : Fires Areas : Area Targets : Circular Target,25240803
 Control Measure : Fires Areas : Area Targets : Rectangular Target - Single Target,25240804
 Control Measure : Fires Areas : Area Targets : Series of Targets,25240805
-Control Measure : Fires Areas : Area Targets : Group of Targets,25240806
-Control Measure : Fires Areas : Area Targets : Smoke Target,25240807
-Control Measure : Fires Areas : Area Targets : Smoke Planned or On Order,25240808
-Control Measure : Fires Areas : Area Targets : Bomb Area,25240809
+Control Measure : Fires Areas : Area Targets : Smoke Target,25240806
+Control Measure : Fires Areas : Area Targets : Smoke Planned or On Order,25240807
+Control Measure : Fires Areas : Area Targets : Bomb Area,25240808
 Control Measure : Fires Areas : Fire Support Station,25240900
 Control Measure : Fires Areas : Fire Support Area,25241000
 Control Measure : Fires Areas : Fire Support Area : Irregular,25241001
@@ -1607,22 +1606,22 @@ Control Measure : Fires Areas : Call for Fire Area,25241200
 Control Measure : Fires Areas : Call for Fire Area : Irregular,25241201
 Control Measure : Fires Areas : Call for Fire Area : Rectangular,25241202
 Control Measure : Fires Areas : Call for Fire Area : Circular,25241203
-Control Measure : Fires Areas : Censor Area,25241300
-Control Measure : Fires Areas : Censor Area : Irregular,25241301
-Control Measure : Fires Areas : Censor Area : Rectangular,25241302
-Control Measure : Fires Areas : Censor Area : Circular,25241303
-Control Measure : Fires Areas : Critical Friendly Area,25241400
-Control Measure : Fires Areas : Critical Friendly Area : Irregular,25241401
-Control Measure : Fires Areas : Critical Friendly Area : Rectangular,25241402
-Control Measure : Fires Areas : Critical Friendly Area : Circular,25241403
+Control Measure : Fires Areas : Censor Zone,25241300
+Control Measure : Fires Areas : Censor Zone : Irregular,25241301
+Control Measure : Fires Areas : Censor Zone : Rectangular,25241302
+Control Measure : Fires Areas : Censor Zone : Circular,25241303
+Control Measure : Fires Areas : Critical Friendly Zone,25241400
+Control Measure : Fires Areas : Critical Friendly Zone : Irregular,25241401
+Control Measure : Fires Areas : Critical Friendly Zone : Rectangular,25241402
+Control Measure : Fires Areas : Critical Friendly Zone : Circular,25241403
 Control Measure : Fires Areas : Dead Space Area,25241500
 Control Measure : Fires Areas : Dead Space Area : Irregular,25241501
 Control Measure : Fires Areas : Dead Space Area : Rectangular,25241502
 Control Measure : Fires Areas : Dead Space Area : Circular,25241503
-Control Measure : Fires Areas : Sensor Area,25241600
-Control Measure : Fires Areas : Sensor Area : Irregular,25241601
-Control Measure : Fires Areas : Sensor Area : Rectangular,25241602
-Control Measure : Fires Areas : Sensor Area : Circular,25241603
+Control Measure : Fires Areas : Sensor Zone,25241600
+Control Measure : Fires Areas : Sensor Zone : Irregular,25241601
+Control Measure : Fires Areas : Sensor Zone : Rectangular,25241602
+Control Measure : Fires Areas : Sensor Zone : Circular,25241603
 Control Measure : Fires Areas : Target Build-up Area,25241700
 Control Measure : Fires Areas : Target Build-up Area : Irregular,25241701
 Control Measure : Fires Areas : Target Build-up Area : Rectangular,25241702
@@ -1655,8 +1654,8 @@ Control Measure : Fire Lines,25260000
 Control Measure : Fire Lines : Fire Support Coordination Line (FSCL),25260100
 Control Measure : Fire Lines : Coordinated Fire Line (CFL),25260200
 Control Measure : Fire Lines : No Fire Line,25260300
-Control Measure : Fire Lines : Restrictive Fire Line,25260400
-Control Measure : Fire Lines : Battlefield Coordination Line,25260500
+Control Measure : Fire Lines : Battlefield Coordination Line,25260400
+Control Measure : Fire Lines : Restrictive Fire Line,25260500
 Control Measure : Fire Lines : Munition Flight Path,25260600
 Control Measure : Protection Areas,25270000
 Control Measure : Protection Areas : Obstacle Belt,25270100
@@ -1664,10 +1663,10 @@ Control Measure : Protection Areas : Obstacle Zone,25270200
 Control Measure : Protection Areas : Obstacle Free Zone,25270300
 Control Measure : Protection Areas : Obstacle Restricted Zone,25270400
 Control Measure : Protection Areas : Obstacle Effects,25270500
-Control Measure : Protection Areas : Block,25270500
-Control Measure : Protection Areas : Disrupt,25270500
-Control Measure : Protection Areas : Fix,25270500
-Control Measure : Protection Areas : Turn,25270500
+Control Measure : Protection Areas : Obstacle Effects : Block,25270501
+Control Measure : Protection Areas : Obstacle Effects : Disrupt,25270502
+Control Measure : Protection Areas : Obstacle Effects : Fix,25270503
+Control Measure : Protection Areas : Obstacle Effects : Turn,25270504
 Control Measure : Protection Areas : Obstacle Bypass,25270600
 Control Measure : Protection Areas : Obstacle Bypass : Easy,25270601
 Control Measure : Protection Areas : Obstacle Bypass : Difficult,25270602
@@ -1678,18 +1677,18 @@ Control Measure : Protection Areas : Minefield : Planned,25270702
 Control Measure : Protection Areas : Minefield : Known Enemy,25270703
 Control Measure : Protection Areas : Minefield : Suspected or Templated Enemy,25270704
 Control Measure : Protection Areas : Minefield : Dummy,25270705
-Control Measure : Protection Areas : Minefield : Dummy. Dymanic,25270706
+Control Measure : Protection Areas : Minefield : Dummy Minefield- Dymanic,25270706
 Control Measure : Protection Areas : Minefield : Dynamic Depiction,25270707
 Control Measure : Protection Areas : Mined Area,25270800
 Control Measure : Protection Areas : Decoy Mined Area,25270900
 Control Measure : Protection Areas : Decoy Mined Area : Fenced,25270901
 Control Measure : Protection Areas : Unexploded Explosive Ordnance (UXO) Area,25271000
 Control Measure : Protection Areas : Bridge or Gap,25271100
-Control Measure : Protection Areas : Roadblocks-Craters and Blown Bridges,25271200
-Control Measure : Protection Areas : Roadblocks-Craters and Blown Bridges : Planned,25271201
-Control Measure : Protection Areas : Roadblocks-Craters and Blown Bridges : Explosives-State of Readiness 1 (Safe),25271202
-Control Measure : Protection Areas : Roadblocks-Craters and Blown Bridges : Explosives-State of Readiness 2 (armed but passable),25271203
-Control Measure : Protection Areas : Roadblocks-Craters and Blown Bridges : Roadblock Complete (Executed),25271204
+Control Measure : Protection Areas : Roadblocks- Craters and Blown Bridges,25271200
+Control Measure : Protection Areas : Roadblocks- Craters and Blown Bridges : Planned,25271201
+Control Measure : Protection Areas : Roadblocks- Craters and Blown Bridges : Explosives-State of Readiness 1 (Safe),25271202
+Control Measure : Protection Areas : Roadblocks- Craters and Blown Bridges : Explosives-State of Readiness 2 (armed but passable),25271203
+Control Measure : Protection Areas : Roadblocks- Craters and Blown Bridges : Roadblock Complete (Executed),25271204
 Control Measure : Protection Areas : Assault Crossing,25271300
 Control Measure : Protection Areas : Bridge,25271400
 Control Measure : Protection Areas : Ford Easy,25271500
@@ -1708,7 +1707,7 @@ Control Measure : Protection Points : Abatis,25280100
 Control Measure : Protection Points : Antipersonnel Mine,25280200
 Control Measure : Protection Points : Antipersonnel Mine : Antipersonnel Mine with Directional Effects,25280201
 Control Measure : Protection Points : Antitank Mine,25280300
-Control Measure : Protection Points : Antitank Mine with Handling Device,25280400
+Control Measure : Protection Points : Antitank Mine with Anti-handling Device,25280400
 Control Measure : Protection Points : Wide Area Antitank Mine,25280500
 Control Measure : Protection Points : Unspecified Mine,25280600
 Control Measure : Protection Points : Booby Trap,25280700
@@ -1735,10 +1734,10 @@ Control Measure : Protection Points : General Decontamination Point/Site : Thoro
 Control Measure : Protection Points : General Decontamination Point/Site : Main Equipment,25281807
 Control Measure : Protection Points : General Decontamination Point/Site : Forward Troop,25281808
 Control Measure : Protection Points : General Decontamination Point/Site : Wounded Personnel,25281809
-Control Measure : Protection Points : Tetrahedrons-Dragons Teeth-and Other Similar Obstacles,25281900
-Control Measure : Protection Points : Tetrahedrons-Dragons Teeth-and Other Similar Obstacles : Fixed and Prefabricated,25281901
-Control Measure : Protection Points : Tetrahedrons-Dragons Teeth-and Other Similar Obstacles : Movable,25281902
-Control Measure : Protection Points : Tetrahedrons-Dragons Teeth-and Other Similar Obstacles : Movable and Prefabricated,25281903
+Control Measure : Protection Points : Tetrahedrons- Dragons Teeth- and Other Similar Obstacles,25281900
+Control Measure : Protection Points : Tetrahedrons- Dragons Teeth- and Other Similar Obstacles : Fixed and Prefabricated,25281901
+Control Measure : Protection Points : Tetrahedrons- Dragons Teeth- and Other Similar Obstacles : Movable,25281902
+Control Measure : Protection Points : Tetrahedrons- Dragons Teeth- and Other Similar Obstacles : Movable and Prefabricated,25281903
 Control Measure : Protection Points : Vertical Obstructions,25282000
 Control Measure : Protection Points : Vertical Obstructions : Tower-Low,25282001
 Control Measure : Protection Points : Vertical Obstructions : Tower-High,25282002
@@ -1771,7 +1770,7 @@ Control Measure : Intelligence Lines,25300000
 Control Measure : Intelligence Lines : Intelligence Coordination Line,25300100
 Control Measure : Sustainment Areas,25310000
 Control Measure : Sustainment Areas : Detainee Holding Area,25310100
-Control Measure : Sustainment Areas : Enemy Prisoner or War Holding Area,25310200
+Control Measure : Sustainment Areas : Enemy Prisoner of War Holding Area,25310200
 Control Measure : Sustainment Areas : Forward Arming and Refueling Point,25310300
 Control Measure : Sustainment Areas : Refugee Holding Area,25310400
 Control Measure : Sustainment Areas : Regimental Support Area,25310500
@@ -1788,12 +1787,12 @@ Control Measure : Sustainment Points : Detainee Collection Point,25320700
 Control Measure : Sustainment Points : Enemy Prisoner of War Collection Point,25320800
 Control Measure : Sustainment Points : Logistics Release Point,25320900
 Control Measure : Sustainment Points : Maintenance Collection Point (MCP),25321000
-Control Measure : Sustainment Points : Medical Evacuation Point (MEDEVAC) Pick-Up Point,25321100
+Control Measure : Sustainment Points : Medical Evacuation (MEDEVAC) Pick-up Point,25321100
 Control Measure : Sustainment Points : Rearm-Refuel and Resupply Point (R3P),25321200
 Control Measure : Sustainment Points : Refuel on the Move (ROM) Point,25321300
 Control Measure : Sustainment Points : Traffic Control Post (TCP),25321400
 Control Measure : Sustainment Points : Trailer Transfer Point (TTP),25321500
-Control Measure : Sustainment Points : Unit Maintenance Collection Point (UNCP),25321600
+Control Measure : Sustainment Points : Unit Maintenance Collection Point (UMCP),25321600
 Control Measure : Sustainment Points : General Supply Point,25321700
 Control Measure : Sustainment Points : General Supply Point : NATO Class I Supply Point,25321701
 Control Measure : Sustainment Points : General Supply Point : NATO Class II Supply Point,25321702
@@ -1833,8 +1832,8 @@ Control Measure : Mission Tasks : Counterattack,25340600
 Control Measure : Mission Tasks : Counterattack by Fire,25340700
 Control Measure : Mission Tasks : Delay,25340800
 Control Measure : Mission Tasks : Destroy,25340900
-Control Measure : Mission Tasks : (BLANK?/ERROR?),25341000
-Control Measure : Mission Tasks,25340000
+Control Measure : Mission Tasks : Disrupt,25341000
+Control Measure : Mission Tasks : Fix,25341100
 Control Measure : Mission Tasks : Follow and Assume,25341200
 Control Measure : Mission Tasks : Follow and Support,25341300
 Control Measure : Mission Tasks : Interdict,25341400

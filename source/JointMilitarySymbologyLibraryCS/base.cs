@@ -156,7 +156,7 @@ namespace JointMilitarySymbologyLibrary {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="IDREF")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="IDREFS")]
         public string DimensionID {
             get {
                 return this.dimensionIDField;
@@ -2700,7 +2700,7 @@ namespace JointMilitarySymbologyLibrary {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="IDREF")]
         public string ID {
             get {
                 return this.idField;

@@ -253,7 +253,7 @@
           </SymbolSetCode>
         </SymbolSetRef>
 
-        <SymbolSetRef ID="SS_CYBER_AIR" Label="Cyberspace - Air" Instance="jmsml_D_Cyberspace_Air.xml">
+        <SymbolSetRef ID="SS_CYBERSPACE" Label="Cyberspace" Instance="jmsml_D_Cyberspace.xml">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>0</DigitTwo>
@@ -297,7 +297,7 @@
           </SymbolSetCode>
         </SymbolSetRef>
 
-        <SymbolSetRef ID="SS_CYBER_SPACE" Label="Cyberspace - Space" Instance="jmsml_D_Cyberspace_Space.xml">
+        <SymbolSetRef ID="SS_CYBERSPACE" Label="Cyberspace" Instance="jmsml_D_Cyberspace.xml">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>0</DigitTwo>
@@ -408,7 +408,7 @@
           </SymbolSetCode>
         </SymbolSetRef>
 
-        <SymbolSetRef ID="SS_CYBER_LAND" Label="Cyberspace - Land" Instance="jmsml_D_Cyberspace_Land.xml">
+        <SymbolSetRef ID="SS_CYBERSPACE" Label="Cyberspace" Instance="jmsml_D_Cyberspace.xml">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>0</DigitTwo>
@@ -493,7 +493,7 @@
           </SymbolSetCode>
         </SymbolSetRef>
 
-        <SymbolSetRef ID="SS_CYBER_SURFACE" Label="Cyberspace - Surface" Instance="jmsml_D_Cyberspace_Surface.xml">
+        <SymbolSetRef ID="SS_CYBERSPACE" Label="Cyberspace" Instance="jmsml_D_Cyberspace.xml">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>0</DigitTwo>
@@ -536,7 +536,7 @@
           </SymbolSetCode>
         </SymbolSetRef>
 
-        <SymbolSetRef ID="SS_CYBER_SUBSURFACE" Label="Cyberspace - Subsurface" Instance="jmsml_D_Cyberspace_Subsurface.xml">
+        <SymbolSetRef ID="SS_CYBERSPACE" Label="Cyberspace" Instance="jmsml_D_Cyberspace.xml">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>0</DigitTwo>
@@ -1442,7 +1442,7 @@
   <AmplifierGroups>
     <AmplifierGroup Name="NA" Label="Not applicable">
       <AmplifierGroupCode>0</AmplifierGroupCode>
-      <LegacyModifierCode Name="2525C" Description="OverrIDes character 11 in old SIDC">-</LegacyModifierCode>
+      <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC">-</LegacyModifierCode>
       
       <Amplifiers>
         <Amplifier Name="NA" Label="Not applicable">
@@ -1454,7 +1454,7 @@
     
     <AmplifierGroup Name="ECHELON_BDE_BELOW" Label="Echelon at brigade and below" CompatibleSymbolSetIDs="SS_AIR">
       <AmplifierGroupCode>1</AmplifierGroupCode>
-      <LegacyModifierCode Name="2525C" Description="OverrIDes character 11 in old SIDC">-</LegacyModifierCode>
+      <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC">-</LegacyModifierCode>
       
       <Amplifiers>
         <Amplifier Name="TEAM_CREW" Label="Team/Crew">
@@ -1472,7 +1472,7 @@
           <LegacyModifierCode Name="2525C">C</LegacyModifierCode>
         </Amplifier>
 
-        <Amplifier Name="PLT_DETACHMENT" Label="Platoon/Detachment">
+        <Amplifier Name="PLT_DETACHMENT" Label="Platoon/Detachment" Graphic="">
           <AmplifierCode>4</AmplifierCode>
           <LegacyModifierCode Name="2525C">D</LegacyModifierCode>
         </Amplifier>
@@ -1505,7 +1505,7 @@
 
     <AmplifierGroup Name="ECHELON_DIV_ABOVE" Label="Echelon at division and above" CompatibleSymbolSetIDs="SS_AIR">
       <AmplifierGroupCode>2</AmplifierGroupCode>
-      <LegacyModifierCode Name="2525C" Description="OverrIDes character 11 in old SIDC">-</LegacyModifierCode>
+      <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC">-</LegacyModifierCode>
       
       <Amplifiers>
         <Amplifier Name="DIV" Label="Division">
@@ -1592,7 +1592,7 @@
 
     <AmplifierGroup Name="EQUIP_MOBILITY_SNOW" Label="Equipment mobility on snow">
       <AmplifierGroupCode>4</AmplifierGroupCode>
-      <LegacyModifierCode Name="2525C" Description="OverrIDes character 11 in old SIDC">M</LegacyModifierCode>
+      <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC">M</LegacyModifierCode>
       
       <Amplifiers>
         <Amplifier Name="OVER_SNOW" Label="Over snow (prime mover)">
@@ -1613,7 +1613,7 @@
 
     <AmplifierGroup Name="EQUIP_MOBILITY_WATER" Label="Equipment mobility on water">
       <AmplifierGroupCode>5</AmplifierGroupCode>
-      <LegacyModifierCode Name="2525C" Description="OverrIDes character 11 in old SIDC">M</LegacyModifierCode>
+      <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC">M</LegacyModifierCode>
       
       <Amplifiers>
         <Amplifier Name="BARGE" Label="Barge">
@@ -1634,7 +1634,7 @@
 
     <AmplifierGroup Name="TOWED_ARRAYS" Label="Naval towed array" CompatibleSymbolSetIDs="SS_SEA_SURFACE">
       <AmplifierGroupCode>6</AmplifierGroupCode>
-      <LegacyModifierCode Name="2525C" Description="OverrIDes character 11 in old SIDC">N</LegacyModifierCode>
+      <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC">N</LegacyModifierCode>
       
       <Amplifiers>
         <Amplifier Name="SHORT_TOWED_ARRAY" Label="Short towed array">

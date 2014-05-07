@@ -1338,6 +1338,15 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Maneuver Areas,Battle Position,Contain,151204,POINT
 25,Maneuver Areas,Battle Position,Retain,151205,POINT
 25,Maneuver Areas,Engagement Area (EA),,151300,POINT
+25,Maneuver Areas,Axis of Advance,,151400,POINT
+25,Maneuver Areas,Axis of Advance,Friendly Airborne/Aviation,151401,POINT
+25,Maneuver Areas,Axis of Advance,Attack Helicopter,151402,POINT
+25,Maneuver Areas,Axis of Advance,Main Attack,151403,POINT
+25,Maneuver Areas,Axis of Advance,Supporting Attack,151404,POINT
+25,Maneuver Areas,Axis of Advance,Supporting Attack Planned or On Order,151405,POINT
+25,Maneuver Areas,Axis of Advance,Feint,151406,POINT
+25,Maneuver Areas,Axis of Advance,Enemy Confirmed,151407,POINT
+25,Maneuver Areas,Axis of Advance,Enemy Templated or Suspected,151408,POINT
 25,Maneuver Areas,Assault Position,,151500,POINT
 25,Maneuver Areas,Attack Position,,151600,POINT
 25,Maneuver Areas,Objective,,151700,POINT
@@ -1357,15 +1366,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Maneuver Points,Observation Post/Outpost (Specified),Sensor Outpost/Listening Post,160204,POINT
 25,Maneuver Points,Observation Post/Outpost (Specified),Combat Outpost,160205,POINT
 25,Maneuver Points,Target Reference Point,,160300,POINT
-25,Maneuver Points,Axis of Advance,,161400,POINT
-25,Maneuver Points,Axis of Advance,Friendly Airborne/Aviation,161401,POINT
-25,Maneuver Points,Axis of Advance,Attack Helicopter,161402,POINT
-25,Maneuver Points,Axis of Advance,Main Attack,161403,POINT
-25,Maneuver Points,Axis of Advance,Supporting Attack,161404,POINT
-25,Maneuver Points,Axis of Advance,Supporting Attack Planned or On Order,161405,POINT
-25,Maneuver Points,Axis of Advance,Feint,161406,POINT
-25,Maneuver Points,Axis of Advance,Enemy Confirmed,161407,POINT
-25,Maneuver Points,Axis of Advance,Enemy Templated or Suspected,161408,POINT
 25,Maneuver Points,Point of Departure,,160400,POINT
 25,Airspace Control (Corridors) Areas,,,170000,POINT
 25,Airspace Control (Corridors) Areas,Air Corridor,,170100,POINT
@@ -1402,7 +1402,7 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Airspace Control Points,Strike Initial Point,,181000,POINT
 25,Airspace Control Points,Replemenshment Station,,181100,POINT
 25,Airspace Control Points,Tanking,,181200,POINT
-25,Airspace Control Points,Antisubmarine Warfare-Rotary Wing,,181300,POINT
+25,Airspace Control Points,Antisubmarine Warfare- Rotary Wing,,181300,POINT
 25,Airspace Control Points,SUCAP - Fixed Wing,,181400,POINT
 25,Airspace Control Points,SUCAP - Rotary Wing,,181500,POINT
 25,Airspace Control Points,MIW - Fixed Wing,,181600,POINT
@@ -1488,7 +1488,7 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Maritime Control Points,Sonobuoy,Vertical Line Array Directional Frequency Analysis and Recording (DIFAR),213515,POINT
 25,Maritime Control Points,Reference Point,,213600,POINT
 25,Maritime Control Points,Special Point,,213700,POINT
-25,Maritime Control Points,Navigational Reference Point(Points),,213800,POINT
+25,Maritime Control Points,Navigational Reference Point,,213800,POINT
 25,Maritime Control Points,Data Link Reference Point,,213900,POINT
 25,Maritime Control Points,Forward Observer / Spotter Position,,214000,POINT
 25,Maritime Control Points,Vital Area Center,,214100,POINT
@@ -1539,10 +1539,10 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Maritime Control Points,Sea Mine-Like,,218600,POINT
 25,Maritime Control Points,Bottom Return/Non-Mine Like Bottom Object (NOMBO),,218700,POINT
 25,Maritime Control Points,Bottom Return/Non-Mine Like Bottom Object (NOMBO)/Installation Manmade,,218800,POINT
-25,Maritime Control Points,Bottom Return/Non-Mine Like Bottom Object (NOMBO)/Installation Manmade,Marine Life,218800,POINT
-25,Maritime Control Points,Bottom Return/Non-Mine Like Bottom Object (NOMBO)/Installation Manmade,Sea Anomaly (Wake-Current-Knuckle),218800,POINT
-25,Maritime Control Points,Bottom Return/Non-Mine Like Bottom Object (NOMBO)/Installation Manmade,Bottom Return/Non-MILCO-Wreck-Dangerous,218800,POINT
-25,Maritime Control Points,Bottom Return/Non-Mine Like Bottom Object (NOMBO)/Installation Manmade,Bottom Return/Non-MILCO-Wreck-Non Dangerous,218800,POINT
+25,Maritime Control Points,Marine Life,,218900,POINT
+25,Maritime Control Points,Sea Anomaly (Wake-Current-Knuckle),,219000,POINT
+25,Maritime Control Points,Bottom Return/Non-MILCO-Wreck-Dangerous,,219100,POINT
+25,Maritime Control Points,Bottom Return/Non-MILCO-Wreck-Non Dangerous,,219200,POINT
 25,Maritime Control Lines,,,220000,POINT
 25,Maritime Control Lines,Bearing Line,,220100,POINT
 25,Maritime Control Lines,Bearing Line,Electronic,220101,POINT
@@ -1590,10 +1590,9 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Fires Areas,Area Targets,Circular Target,240803,POINT
 25,Fires Areas,Area Targets,Rectangular Target - Single Target,240804,POINT
 25,Fires Areas,Area Targets,Series of Targets,240805,POINT
-25,Fires Areas,Area Targets,Group of Targets,240806,POINT
-25,Fires Areas,Area Targets,Smoke Target,240807,POINT
-25,Fires Areas,Area Targets,Smoke Planned or On Order,240808,POINT
-25,Fires Areas,Area Targets,Bomb Area,240809,POINT
+25,Fires Areas,Area Targets,Smoke Target,240806,POINT
+25,Fires Areas,Area Targets,Smoke Planned or On Order,240807,POINT
+25,Fires Areas,Area Targets,Bomb Area,240808,POINT
 25,Fires Areas,Fire Support Station,,240900,POINT
 25,Fires Areas,Fire Support Area,,241000,POINT
 25,Fires Areas,Fire Support Area,Irregular,241001,POINT
@@ -1607,22 +1606,22 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Fires Areas,Call for Fire Area,Irregular,241201,POINT
 25,Fires Areas,Call for Fire Area,Rectangular,241202,POINT
 25,Fires Areas,Call for Fire Area,Circular,241203,POINT
-25,Fires Areas,Censor Area,,241300,POINT
-25,Fires Areas,Censor Area,Irregular,241301,POINT
-25,Fires Areas,Censor Area,Rectangular,241302,POINT
-25,Fires Areas,Censor Area,Circular,241303,POINT
-25,Fires Areas,Critical Friendly Area,,241400,POINT
-25,Fires Areas,Critical Friendly Area,Irregular,241401,POINT
-25,Fires Areas,Critical Friendly Area,Rectangular,241402,POINT
-25,Fires Areas,Critical Friendly Area,Circular,241403,POINT
+25,Fires Areas,Censor Zone,,241300,POINT
+25,Fires Areas,Censor Zone,Irregular,241301,POINT
+25,Fires Areas,Censor Zone,Rectangular,241302,POINT
+25,Fires Areas,Censor Zone,Circular,241303,POINT
+25,Fires Areas,Critical Friendly Zone,,241400,POINT
+25,Fires Areas,Critical Friendly Zone,Irregular,241401,POINT
+25,Fires Areas,Critical Friendly Zone,Rectangular,241402,POINT
+25,Fires Areas,Critical Friendly Zone,Circular,241403,POINT
 25,Fires Areas,Dead Space Area,,241500,POINT
 25,Fires Areas,Dead Space Area,Irregular,241501,POINT
 25,Fires Areas,Dead Space Area,Rectangular,241502,POINT
 25,Fires Areas,Dead Space Area,Circular,241503,POINT
-25,Fires Areas,Sensor Area,,241600,POINT
-25,Fires Areas,Sensor Area,Irregular,241601,POINT
-25,Fires Areas,Sensor Area,Rectangular,241602,POINT
-25,Fires Areas,Sensor Area,Circular,241603,POINT
+25,Fires Areas,Sensor Zone,,241600,POINT
+25,Fires Areas,Sensor Zone,Irregular,241601,POINT
+25,Fires Areas,Sensor Zone,Rectangular,241602,POINT
+25,Fires Areas,Sensor Zone,Circular,241603,POINT
 25,Fires Areas,Target Build-up Area,,241700,POINT
 25,Fires Areas,Target Build-up Area,Irregular,241701,POINT
 25,Fires Areas,Target Build-up Area,Rectangular,241702,POINT
@@ -1655,8 +1654,8 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Fire Lines,Fire Support Coordination Line (FSCL),,260100,POINT
 25,Fire Lines,Coordinated Fire Line (CFL),,260200,POINT
 25,Fire Lines,No Fire Line,,260300,POINT
-25,Fire Lines,Restrictive Fire Line,,260400,POINT
-25,Fire Lines,Battlefield Coordination Line,,260500,POINT
+25,Fire Lines,Battlefield Coordination Line,,260400,POINT
+25,Fire Lines,Restrictive Fire Line,,260500,POINT
 25,Fire Lines,Munition Flight Path,,260600,POINT
 25,Protection Areas,,,270000,POINT
 25,Protection Areas,Obstacle Belt,,270100,POINT
@@ -1664,10 +1663,10 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Protection Areas,Obstacle Free Zone,,270300,POINT
 25,Protection Areas,Obstacle Restricted Zone,,270400,POINT
 25,Protection Areas,Obstacle Effects,,270500,POINT
-25,Protection Areas,Block,,270500,POINT
-25,Protection Areas,Disrupt,,270500,POINT
-25,Protection Areas,Fix,,270500,POINT
-25,Protection Areas,Turn,,270500,POINT
+25,Protection Areas,Obstacle Effects,Block,270501,POINT
+25,Protection Areas,Obstacle Effects,Disrupt,270502,POINT
+25,Protection Areas,Obstacle Effects,Fix,270503,POINT
+25,Protection Areas,Obstacle Effects,Turn,270504,POINT
 25,Protection Areas,Obstacle Bypass,,270600,POINT
 25,Protection Areas,Obstacle Bypass,Easy,270601,POINT
 25,Protection Areas,Obstacle Bypass,Difficult,270602,POINT
@@ -1678,18 +1677,18 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Protection Areas,Minefield,Known Enemy,270703,POINT
 25,Protection Areas,Minefield,Suspected or Templated Enemy,270704,POINT
 25,Protection Areas,Minefield,Dummy,270705,POINT
-25,Protection Areas,Minefield,Dummy. Dymanic,270706,POINT
+25,Protection Areas,Minefield,Dummy Minefield- Dymanic,270706,POINT
 25,Protection Areas,Minefield,Dynamic Depiction,270707,POINT
 25,Protection Areas,Mined Area,,270800,POINT
 25,Protection Areas,Decoy Mined Area,,270900,POINT
 25,Protection Areas,Decoy Mined Area,Fenced,270901,POINT
 25,Protection Areas,Unexploded Explosive Ordnance (UXO) Area,,271000,POINT
 25,Protection Areas,Bridge or Gap,,271100,POINT
-25,Protection Areas,Roadblocks-Craters and Blown Bridges,,271200,POINT
-25,Protection Areas,Roadblocks-Craters and Blown Bridges,Planned,271201,POINT
-25,Protection Areas,Roadblocks-Craters and Blown Bridges,Explosives-State of Readiness 1 (Safe),271202,POINT
-25,Protection Areas,Roadblocks-Craters and Blown Bridges,Explosives-State of Readiness 2 (armed but passable),271203,POINT
-25,Protection Areas,Roadblocks-Craters and Blown Bridges,Roadblock Complete (Executed),271204,POINT
+25,Protection Areas,Roadblocks- Craters and Blown Bridges,,271200,POINT
+25,Protection Areas,Roadblocks- Craters and Blown Bridges,Planned,271201,POINT
+25,Protection Areas,Roadblocks- Craters and Blown Bridges,Explosives-State of Readiness 1 (Safe),271202,POINT
+25,Protection Areas,Roadblocks- Craters and Blown Bridges,Explosives-State of Readiness 2 (armed but passable),271203,POINT
+25,Protection Areas,Roadblocks- Craters and Blown Bridges,Roadblock Complete (Executed),271204,POINT
 25,Protection Areas,Assault Crossing,,271300,POINT
 25,Protection Areas,Bridge,,271400,POINT
 25,Protection Areas,Ford Easy,,271500,POINT
@@ -1708,7 +1707,7 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Protection Points,Antipersonnel Mine,,280200,POINT
 25,Protection Points,Antipersonnel Mine,Antipersonnel Mine with Directional Effects,280201,POINT
 25,Protection Points,Antitank Mine,,280300,POINT
-25,Protection Points,Antitank Mine with Handling Device,,280400,POINT
+25,Protection Points,Antitank Mine with Anti-handling Device,,280400,POINT
 25,Protection Points,Wide Area Antitank Mine,,280500,POINT
 25,Protection Points,Unspecified Mine,,280600,POINT
 25,Protection Points,Booby Trap,,280700,POINT
@@ -1735,10 +1734,10 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Protection Points,General Decontamination Point/Site,Main Equipment,281807,POINT
 25,Protection Points,General Decontamination Point/Site,Forward Troop,281808,POINT
 25,Protection Points,General Decontamination Point/Site,Wounded Personnel,281809,POINT
-25,Protection Points,Tetrahedrons-Dragons Teeth-and Other Similar Obstacles,,281900,POINT
-25,Protection Points,Tetrahedrons-Dragons Teeth-and Other Similar Obstacles,Fixed and Prefabricated,281901,POINT
-25,Protection Points,Tetrahedrons-Dragons Teeth-and Other Similar Obstacles,Movable,281902,POINT
-25,Protection Points,Tetrahedrons-Dragons Teeth-and Other Similar Obstacles,Movable and Prefabricated,281903,POINT
+25,Protection Points,Tetrahedrons- Dragons Teeth- and Other Similar Obstacles,,281900,POINT
+25,Protection Points,Tetrahedrons- Dragons Teeth- and Other Similar Obstacles,Fixed and Prefabricated,281901,POINT
+25,Protection Points,Tetrahedrons- Dragons Teeth- and Other Similar Obstacles,Movable,281902,POINT
+25,Protection Points,Tetrahedrons- Dragons Teeth- and Other Similar Obstacles,Movable and Prefabricated,281903,POINT
 25,Protection Points,Vertical Obstructions,,282000,POINT
 25,Protection Points,Vertical Obstructions,Tower-Low,282001,POINT
 25,Protection Points,Vertical Obstructions,Tower-High,282002,POINT
@@ -1771,7 +1770,7 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Intelligence Lines,Intelligence Coordination Line,,300100,POINT
 25,Sustainment Areas,,,310000,POINT
 25,Sustainment Areas,Detainee Holding Area,,310100,POINT
-25,Sustainment Areas,Enemy Prisoner or War Holding Area,,310200,POINT
+25,Sustainment Areas,Enemy Prisoner of War Holding Area,,310200,POINT
 25,Sustainment Areas,Forward Arming and Refueling Point,,310300,POINT
 25,Sustainment Areas,Refugee Holding Area,,310400,POINT
 25,Sustainment Areas,Regimental Support Area,,310500,POINT
@@ -1788,12 +1787,12 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Sustainment Points,Enemy Prisoner of War Collection Point,,320800,POINT
 25,Sustainment Points,Logistics Release Point,,320900,POINT
 25,Sustainment Points,Maintenance Collection Point (MCP),,321000,POINT
-25,Sustainment Points,Medical Evacuation Point (MEDEVAC) Pick-Up Point,,321100,POINT
+25,Sustainment Points,Medical Evacuation (MEDEVAC) Pick-up Point,,321100,POINT
 25,Sustainment Points,Rearm-Refuel and Resupply Point (R3P),,321200,POINT
 25,Sustainment Points,Refuel on the Move (ROM) Point,,321300,POINT
 25,Sustainment Points,Traffic Control Post (TCP),,321400,POINT
 25,Sustainment Points,Trailer Transfer Point (TTP),,321500,POINT
-25,Sustainment Points,Unit Maintenance Collection Point (UNCP),,321600,POINT
+25,Sustainment Points,Unit Maintenance Collection Point (UMCP),,321600,POINT
 25,Sustainment Points,General Supply Point,,321700,POINT
 25,Sustainment Points,General Supply Point,NATO Class I Supply Point,321701,POINT
 25,Sustainment Points,General Supply Point,NATO Class II Supply Point,321702,POINT
@@ -1833,8 +1832,8 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Mission Tasks,Counterattack by Fire,,340700,POINT
 25,Mission Tasks,Delay,,340800,POINT
 25,Mission Tasks,Destroy,,340900,POINT
-25,Mission Tasks,(BLANK?/ERROR?),,341000,POINT
-25,Mission Tasks,,,340000,POINT
+25,Mission Tasks,Disrupt,,341000,POINT
+25,Mission Tasks,Fix,,341100,POINT
 25,Mission Tasks,Follow and Assume,,341200,POINT
 25,Mission Tasks,Follow and Support,,341300,POINT
 25,Mission Tasks,Interdict,,341400,POINT
