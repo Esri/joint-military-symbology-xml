@@ -32,13 +32,16 @@ namespace JointMilitarySymbologyLibrary
 
         string IEntityExport.Line(SymbolSet ss, SymbolSetEntity e, SymbolSetEntityEntityType eType, SymbolSetEntityEntityTypeEntitySubType eSubType)
         {
+            GeometryType geoType = GeometryType.POINT;
+
             string result = Convert.ToString(ss.SymbolSetCode.DigitOne) + Convert.ToString(ss.SymbolSetCode.DigitTwo);
             string code = "";
-
+            
             result = result + ",";
 
             result = result + e.Label.Replace(',', '-');
             code = code + Convert.ToString(e.EntityCode.DigitOne) + Convert.ToString(e.EntityCode.DigitTwo);
+            geoType = e.GeometryType;
 
             result = result + ",";
 
@@ -46,6 +49,7 @@ namespace JointMilitarySymbologyLibrary
             {
                 result = result + eType.Label.Replace(',', '-');
                 code = code + Convert.ToString(eType.EntityTypeCode.DigitOne) + Convert.ToString(eType.EntityTypeCode.DigitTwo);
+                geoType = eType.GeometryType;
             }
             else
                 code = code + "00";
@@ -56,11 +60,12 @@ namespace JointMilitarySymbologyLibrary
             {
                 result = result + eSubType.Label.Replace(',', '-');
                 code = code + Convert.ToString(eSubType.EntitySubTypeCode.DigitOne) + Convert.ToString(eSubType.EntitySubTypeCode.DigitTwo);
+                geoType = eSubType.GeometryType;
             }
             else
                 code = code + "00";
 
-            result = result + "," + code + "," + _geometryList[(int)eType.GeometryType];
+            result = result + "," + code + "," + _geometryList[(int)geoType];
 
             return result;
         }

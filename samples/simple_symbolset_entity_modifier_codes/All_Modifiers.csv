@@ -73,6 +73,60 @@ SymbolSet,ModifierNumber,Category,Name,Code
 02,2,Missile Range,Intermediate Range,14
 02,2,Missile Range,Long Range,15
 02,2,Missile Range,Intercontinental,16
+51,1,AIR RADAR,Airborne Search and Bombing,02
+51,1,AIR RADAR,Airborne Intercept,03
+51,1,AIR RADAR,Altimeter,04
+51,1,AIR RADAR,Airborne Reconnaissance and Mapping,05
+51,1,AIR/LAND/SEA SURFACE RADAR,Air Traffic Control,06
+51,1,AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Beacon Transponder (not IFF),07
+51,1,AIR/LAND RADAR,Battlefield Surveillance,08
+51,1,AIR/LAND/SEA SURFACE RADAR,Controlled Intercept,10
+51,1,AIR/LAND/SEA SURFACE/SUBSURFACE COMMUNICATIONS,Cellular/Mobile,11
+51,1,LAND RADAR,Coastal Surveillance,12
+51,1,AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Decoy/Mimic,13
+51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Data Transmission,14
+51,1,AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Early Warning,16
+51,1,AIR/LAND/SEA SURFACE RADAR,Fire Control,17
+51,1,AIR RADAR,Ground Mapping,18
+51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Identification Friend or Foe (Interrogator),21
+51,1,AIR/LAND RADAR,Ionospheric Sounding,23
+51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Identification Friend or Foe (Transponder),24
+51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER,Barrage Jammer,25
+51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER,Click Jammer,26
+51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER,Deceptive Jammer,27
+51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER,Frequency Swept Jammer,28
+51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER,Jammer (General),29
+51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER,Noise Jammer,30
+51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER,Pulsed Jammer,31
+51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER,Repeater Jammer,32
+51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER,Spot Noise Jammer,33
+51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER,Transponder Jammer,34
+51,1,AIR/LAND/SEA SURFACE RADAR,Missile Acquisition,35
+51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Missile Control,36
+51,1,AIR RADAR,Missile Downlink,37
+51,1,AIR/LAND/SEA SURFACE RADAR,Meteorological,38
+51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER,Multi-Function,39
+51,1,AIR/LAND/SEA SURFACE RADAR,Missile Guidance,40
+51,1,AIR RADAR,Missile Homing,41
+51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER,Missile Tracking,42
+51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER,Navigational/General,43
+51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER,Navigational/Distance Measuring Equipment,44
+51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER,Navigation/Terrain Following,45
+51,1,AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER,Navigational/Weather Avoidance,46
+51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE COMMUNICATIONS,Omni-Line of Sight (LOS),47
+51,1,AIR RADAR,Proximity Use,48
+51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE COMMUNICATIONS,Point-to-Point Line of Sight (LOS),49
+51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Instrumentation,50
+51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Range Only,51
+51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Space,54
+51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Surface Search,55
+51,1,AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Satellite Uplink,57
+51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Target Acquisition,58
+51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Target Illumination,59
+51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Target Tracking,61
+51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Unknown,62
+51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Video Remoting,63
+51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Experimental,64
 05,1,Orbit,Low Earth Orbit (LEO),01
 05,1,Orbit,Medium Earth Orbit (MEO),02
 05,1,Orbit,High Earth Orbit (MEO),03
@@ -98,6 +152,280 @@ SymbolSet,ModifierNumber,Category,Name,Code
 06,2,Missile Type - BMD,Standard Missile - 3 (SM-3),10
 06,2,Missile Type - BMD,Terminal High-Altitude Area Defense (THAAD),11
 06,2,Launch Origin,Space,12
+50,1,Space/Air/Land/Sea Surface/Subsurface Radar,Data Transmission,14
+50,1,Space Radar,Earth Surveillance,15
+50,1,Space/Air/Land/Sea Surface/Subsurface Radar,Identification Friend or Foe (Interrogator),21
+50,1,Space/Air/Land/Sea Surface/Subsurface Radar,Identification Friend or Foe (Transponder),24
+50,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Barrage Jammer,25
+50,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Click Jammer,26
+50,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Deceptive Jammer,27
+50,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Frequency Swept Jammer,28
+50,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Jammer (general),29
+50,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Noise Jammer,30
+50,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Pulsed Jammer,31
+50,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Repeater Jammer,32
+50,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Spot Noise Jammer,33
+50,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Transponder Jammer,34
+50,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Missile Control,36
+50,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Multi-Function,39
+50,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Missile Tracking,42
+50,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Navigational/General,43
+50,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Navigational/Distance Measuring Equipment,44
+50,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Navigation/Terrain Following,45
+50,1,Space/Air/Land/Sea Surface/Subsurface Communications,Point-to-Point Line of Sight (LOS),49
+50,1,Space/Air/Land/Sea Surface/Subsurface Radar,Instrumentation,50
+50,1,Space/Air/Land/Sea Surface/Subsurface Radar,Range Only,51
+50,1,Space Communications,Satellite Downlink,53
+50,1,Space/Air/Land/Sea Surface/Subsurface Radar,Space,54
+50,1,Space/Air/Land/Sea Surface/Subsurface Radar,Surface Search,55
+50,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Target Acquisition,58
+50,1,Space/Air/Land/Sea Surface/Subsurface Radar,Target Tracking,61
+50,1,Space/Air/Land/Sea Surface/Subsurface Radar,Unknown,62
+50,1,Space/Air/Land/Sea Surface/Subsurface Radar,Video Remoting,63
+50,1,Space/Air/Land/Sea Surface/Subsurface Radar,Experimental,64
+10,1,Mobility,Air Mobile/Air Assault,01
+10,1,Capability,Area,02
+10,1,Capability,Attack,03
+10,1,Capability,Biological,04
+10,1,Capability,Border,05
+10,1,Capability,Bridging,06
+10,1,Capability,Chemical,07
+10,1,Capability,Close Protection,08
+10,1,Capability,Combat,09
+10,1,Capability,Command and Control,10
+10,1,Capability,Communications Contingency Package,11
+10,1,Capability,Construction,12
+10,1,Capability,Cross Cultural Communication,13
+10,1,Capability,Crowd and Riot Control,14
+10,1,Capability,Decontamination,15
+10,1,Capability,Detention,16
+10,1,Capability,Direct Communications,17
+10,1,Capability,Diving,18
+10,1,Capability,Division,19
+10,1,Capability,Dog,20
+10,1,Capability,Drilling,21
+10,1,Capability,Electro-Optical,22
+10,1,Capability,Enhanced,23
+10,1,Capability,Explosive Ordnance Disposal (EOD),24
+10,1,Capability,Fire Direction Center,25
+10,1,Capability,Force,26
+10,1,Capability,Forward,27
+10,1,Capability,Ground Station Module,28
+10,1,Capability,Landing Support,29
+10,1,Capability,Large Extension Node,30
+10,1,Capability,Maintenance,31
+10,1,Capability,Meteorological,32
+10,1,Capability,Mine Countermeasure,33
+10,1,Capability,Missile,34
+10,1,Capability,Mobile Advisor and Support,35
+10,1,Capability,Mobile Subscriber Equipment,36
+10,1,Capability,Mobility Support,37
+10,1,Capability,Movement Control Center,38
+10,1,Capability,Multinational,39
+10,1,Capability,Multinational Specialized Unit,40
+10,1,Capability,Multiple Rocket Launcher,41
+10,1,Capability,NATO Medical Role 1,42
+10,1,Capability,NATO Medical Role 2,43
+10,1,Capability,NATO Medical Role 3,44
+10,1,Capability,NATO Medical Role 4,45
+10,1,Capability,Naval,46
+10,1,Capability,Node Center,47
+10,1,Capability,Nuclear,48
+10,1,Capability,Operations,49
+10,1,Capability,Radar,50
+10,1,Capability,Radio Frequency Identification (RFID) Interrogator / Sensor,51
+10,1,Capability,Radiological,52
+10,1,Capability,Search and Rescue,53
+10,1,Capability,Security,54
+10,1,Capability,Sensor,55
+10,1,Capability,Sensor Control Module (SCM),56
+10,1,Capability,Signals Intelligence,57
+10,1,Capability,Single Shelter Switch,58
+10,1,Capability,Single Rocket Launcher,59
+10,1,Capability,Smoke,60
+10,1,Capability,Sniper,61
+10,1,Capability,Sound Ranging,62
+10,1,Capability,Special Operations Forces (SOF),63
+10,1,Capability,Special Weapons and Tactics,64
+10,1,Capability,Survey,65
+10,1,Capability,Tactical Exploitation,66
+10,1,Capability,Target Acquisition,67
+10,1,Capability,Topographic,68
+10,1,Capability,Utility,69
+10,1,Capability,Video Imagery (Combat Camera),70
+10,1,Composite Loss,Accident,71
+10,1,Composite Loss,Other,72
+10,1,Operation,Civilian,73
+10,1,Capability,Antisubmarine Warfare,74
+10,1,Capability,Medevac,75
+10,1,Capability,Ranger,76
+10,1,Capability,Support,77
+10,1,Capability,Aviation,78
+10,2,Mobility,Airborne,01
+10,2,Mobility,Arctic,02
+10,2,Capability,Battle Damage Repair,03
+10,2,Mobility,Bicycle Equipped,04
+10,2,Close Range and Support,Casualty Staging,05
+10,2,Capability,Clearing,06
+10,2,Capability,Close Range,07
+10,2,Capability,Control,08
+10,2,Capability,Decontamination,09
+10,2,Capability,Demolition,10
+10,2,Capability,Dental,11
+10,2,Capability,Digital,12
+10,2,Capability,Enhanced Position Location Reporting System (EPLRS),13
+10,2,Capability,Equipment,14
+10,2,Capability,Heavy,15
+10,2,Capability,High Altitude,16
+10,2,Capability,Intermodal,17
+10,2,Capability,Intensive Care,18
+10,2,Capability,Light,19
+10,2,Capability,Laboratory,20
+10,2,Capability,Launcher,21
+10,2,Capability,Long Range,22
+10,2,Capability,Low Altitude,23
+10,2,Capability,Medium,24
+10,2,Capability,Medium Altitude,25
+10,2,Capability,Medium Range,26
+10,2,Capability,Mountain,27
+10,2,Capability,High to Medium Altitude,28
+10,2,Capability,Multi-Channel,29
+10,2,Capability,Optical (Flash),30
+10,2,Capability,Pack Animal,31
+10,2,Capability,Patient Evacuation Coordination,32
+10,2,Capability,Preventive Maintenance,33
+10,2,Capability,Psychological,34
+10,2,Capability,Radio Relay Line of Sight,35
+10,2,Mobility,Railroad,36
+10,2,Capability,Recovery (Unmanned Systems),37
+10,2,Capability,Recovery (Maintenance),38
+10,2,Capability,Rescue Coordination Center,39
+10,2,Mobility,Riverine,40
+10,2,Capability,Single Channel,41
+10,2,Mobility,Ski,42
+10,2,Capability,Short Range,43
+10,2,Capability,Strategic,44
+10,2,Capability,Support,45
+10,2,Capability,Tactical,46
+10,2,Mobility,Towed,47
+10,2,Capability,Troop,48
+10,2,Mobility,Vertical or Short Take-Off and Landing (VTOL/VSTOL),49
+10,2,Capability,Veterinary,50
+10,2,Mobility,Wheeled,51
+10,2,Capability,High to Low Altitude,52
+10,2,Capability,Medium to Low Altitude,53
+10,2,Capability,Attack,54
+10,2,Capability,Refuel,55
+10,2,Capability,Utility,56
+10,2,Capability,Combat Search and Rescue,57
+11,1,Crime,Assassination,01
+11,1,Crime,Execution (Wrongful Killing),02
+11,1,Crime,Murder Victims,03
+11,1,Crime,Hijacking,04
+11,1,Crime,Kidnapping,05
+11,1,Crime,Piracy,06
+11,1,Crime,Rape,07
+11,1,Organization,Civilian,08
+11,1,Organization,Displaced Person(s)- Refugee(s)- and Evacuee(s),09
+11,1,Organization,Foreign Fighter(s),10
+11,1,Organization,Gang Member or Gang,11
+11,1,Organization,Government Organization,12
+11,1,Organization,Leader or Leadership,13
+11,1,Organization,Nongovernmental Organization Member or Nongovernmental Organization,14
+11,1,Organization,Coerced/Impressed Recruit,15
+11,1,Organization,Willing Recruit,16
+11,1,Organization,Religious or Religious Organization,17
+11,1,Organization,Targeted Individual or Organization,18
+11,1,Organization,Terrorist or Terrorist Organization,19
+11,1,Organization,Speaker,20
+11,1,Composite Loss,Accident,21
+11,1,Composite Loss,Combat,22
+11,1,Composite Loss,Other,23
+11,1,Crime,Loot,24
+11,2,Organization,Leader or Leadership,01
+15,1,Sensor Type,Biological,01
+15,1,Sensor Type,Chemical,02
+15,1,Sensor Type,Early Warning Radar,03
+15,1,Sensor Type,Intrusion,04
+15,1,Sensor Type,Nuclear,05
+15,1,Sensor Type,Radiological,06
+15,1,Sensor Type,Upgraded Early Warning Radar,07
+15,1,Crime,Hijacking,08
+15,1,Organization,Civilian,09
+52,1,Land/Sea Surface Radar,Anti-Aircraft Fire Control,01
+52,1,Air/Land/Sea Surface Radar,Air Traffic Control,06
+52,1,Air/Land/Sea Surface/Subsurface Radar,Beacon Transponder (not IFF),07
+52,1,Air/Land Radar,Battlefield Surveillance,08
+52,1,Land/Sea Surface Radar,Controlled Approach,09
+52,1,Air/Land/Sea Surface Radar,Controlled Intercept,10
+52,1,Air/Land/Sea Surface/Subsurface Communications,Cellular/Mobile,11
+52,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Decoy/Mimic,13
+52,1,Space/Air/Land/Sea Surface/Subsurface Radar,Data Transmission,14
+52,1,Air/Land/Sea Surface/Subsurface Radar,Early Warning,16
+52,1,Air/Land/Sea Surface Radar,Fire Control,17
+52,1,Land/Sea Surface Radar,Height Finding,19
+52,1,Land Radar,Harbor Surveillance,20
+52,1,Space/Air/Land/Sea Surface/Subsurface Radar,Identification Friend or Foe (Interrogator),21
+52,1,Land/Sea Surface Radar,Instrument Landing System,22
+52,1,Air/Land Radar,Ionospheric Sounding,23
+52,1,Space/Air/Land/Sea Surface/Subsurface Radar,Identification Friend or Foe (Transponder),24
+52,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Barrage Jammer,25
+52,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Click Jammer,26
+52,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Deceptive Jammer,27
+52,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Frequency Swept Jammer,28
+52,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Jammer (general),29
+52,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Noise Jammer,30
+52,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Pulsed Jammer,31
+52,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Repeater Jammer,32
+52,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Spot Noise Jammer,33
+52,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Transponder Jammer,34
+52,1,Air/Land/Sea Surface Radar,Missile Acquisition,35
+52,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Missile Control,36
+52,1,Air/Land/Sea Surface Radar,Meteorological,38
+52,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Multi-Function,39
+52,1,Air/Land/Sea Surface Radar,Missile Guidance,40
+52,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Missile Tracking,42
+52,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Navigational/General,43
+52,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Navigational/Distance Measuring Equipment,44
+52,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Navigation/Terrain Following,45
+52,1,Air/Land/Sea Surface/Subsurface Jammer,Navigational/Weather Avoidance,46
+52,1,Air/Land/Sea Surface/Subsurface Communications,Omni-Line of Sight (LOS),47
+52,1,Space/Air/Land/Sea Surface/Subsurface Communications,Point-to-Point Line of Sight (LOS),49
+52,1,Space/Air/Land/Sea Surface/Subsurface Radar,Instrumentation,50
+52,1,Space/Air/Land/Sea Surface/Subsurface Radar,Range Only,51
+52,1,Space Communications,Satellite Downlink,53
+52,1,Space/Air/Land/Sea Surface/Subsurface Radar,Space,54
+52,1,Space/Air/Land/Sea Surface/Subsurface Radar,Surface Search,55
+52,1,Land Radar,Shell Tracking,56
+52,1,Air/Land/Sea Surface/Subsurface Communications,Satellite Uplink,57
+52,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Target Acquisition,58
+52,1,Air/Land/Sea Surface Radar,Target Illumination,59
+52,1,Land Communications,Tropospheric Scatter,60
+52,1,Space/Air/Land/Sea Surface/Subsurface Radar,Target Tracking,61
+52,1,Space/Air/Land/Sea Surface/Subsurface Radar,Unknown,62
+52,1,Space/Air/Land/Sea Surface/Subsurface Radar,Video Remoting,63
+52,1,Space/Air/Land/Sea Surface/Subsurface Radar,Experimental,64
+20,1,CBRN Type,Biological,01
+20,1,CBRN Type,Chemical,02
+20,1,CBRN Type,Nuclear,03
+20,1,CBRN Type,Radiological,04
+20,1,CBRN Type,Decontamination,05
+20,1,Electric Power Type,Coal,06
+20,1,Electric Power Type,Geothermal,07
+20,1,Electric Power Type,Hydroelectric,08
+20,1,Electric Power Type,Natural Gas,09
+20,1,Electric Power Type,Petroleum,10
+20,1,Operation,Civilian,11
+20,1,Civilian Telecommunications Type,Civilian Telephone,12
+20,1,Civilian Telecommunications Type,Civilian Television,13
+20,2,TODO,Biological,01
+20,2,TODO,Chemical,02
+20,2,TODO,Nuclear,03
+20,2,TODO,Radiological,04
+20,2,TODO,Atomic Energy Reactor,05
+20,2,TODO,Nuclear Material Production,06
+20,2,TODO,Nuclear Material Storage,07
+20,2,TODO,Weapons Grade,08
 30,1,Mission Area,Own Ship,01
 30,1,Mission Area,Antiair Warfare,02
 30,1,Mission Area,Antisubmarine Warfare,03
@@ -136,6 +464,127 @@ SymbolSet,ModifierNumber,Category,Name,Code
 30,2,USV Control,Autonomous Control,13
 30,2,USV Control,Remotely Piloted,14
 30,2,USV Control,Expendable,15
+53,1,Land/Sea Surface Radar,Anti-Aircraft Fire Control,01
+53,1,Air/Land/Sea Surface Radar,Air Traffic Control,06
+53,1,Air/Land/Sea Surface/Subsurface Radar,Beacon Transponder (not IFF),07
+53,1,Land/Sea Surface Radar,Controlled Approach,09
+53,1,Air/Land/Sea Surface Radar,Controlled Intercept,10
+53,1,Air/Land/Sea Surface/Subsurface Communications,Cellular/Mobile,11
+53,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Decoy/Mimic,13
+53,1,Space/Air/Land/Sea Surface/Subsurface Radar,Data Transmission,14
+53,1,Air/Land/Sea Surface/Subsurface Radar,Early Warning,16
+53,1,Air/Land/Sea Surface Radar,Fire Control,17
+53,1,Land/Sea Surface Radar,Height Finding,19
+53,1,Space/Air/Land/Sea Surface/Subsurface Radar,Identification Friend or Foe (Interrogator),21
+53,1,Land/Sea Surface Radar,Instrument Landing System,22
+53,1,Space/Air/Land/Sea Surface/Subsurface Radar,Identification Friend or Foe (Transponder),24
+53,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Barrage Jammer,25
+53,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Click Jammer,26
+53,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Deceptive Jammer,27
+53,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Frequency Swept Jammer,28
+53,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Jammer (General),29
+53,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Noise Jammer,30
+53,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Pulsed Jammer,31
+53,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Repeater Jammer,32
+53,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Spot Noise Jammer,33
+53,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Transponder Jammer,34
+53,1,Air/Land/Sea Surface Radar,Missile Acquisition,35
+53,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Missile Control,36
+53,1,Air/Land/Sea Surface Radar,Meteorological,38
+53,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Multi-Function,39
+53,1,Air/Land/Sea Surface Radar,Missile Guidance,40
+53,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Missile Tracking,42
+53,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Navigational/General,43
+53,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Navigational/Distance Measuring Equipment,44
+53,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Navigation/Terrain Following,45
+53,1,Air/Land/Sea Surface/Subsurface Jammer,Navigational/Weather Avoidance,46
+53,1,Air/Land/Sea Surface/Subsurface Communications,Omni-Line of Sight (LOS),47
+53,1,Space/Air/Land/Sea Surface/Subsurface Communications,Point-to-Point Line of Sight (LOS),49
+53,1,Space/Air/Land/Sea Surface/Subsurface Radar,Instrumentation,50
+53,1,Space/Air/Land/Sea Surface/Subsurface Radar,Range Only,51
+53,1,Sea Surface/Subsurface Radar,Sonobuoy,52
+53,1,Space/Air/Land/Sea Surface/Subsurface Radar,Space,54
+53,1,Space/Air/Land/Sea Surface/Subsurface Radar,Surface Search,55
+53,1,Air/Land/Sea Surface/Subsurface Communications,Satellite Uplink,57
+53,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Target Acquisition,58
+53,1,Air/Land/Sea Surface Radar,Target Illumination,59
+53,1,Space/Air/Land/Sea Surface/Subsurface Radar,Target Tracking,61
+53,1,Space/Air/Land/Sea Surface/Subsurface Radar,Unknown,62
+53,1,Space/Air/Land/Sea Surface/Subsurface Radar,Video Remoting,63
+53,1,Space/Air/Land/Sea Surface/Subsurface Radar,Experimental,64
+35,1,Mission Area,Antisubmarine Warfare,01
+35,1,Mission Area,Auxiliary,02
+35,1,Mission Area,Command and Control,03
+35,1,Mission Area,Intelligence Surveillance Reconnaissance,04
+35,1,Mission Area,Mine Countermeasures,05
+35,1,Mission Area,Mine Warfare,06
+35,1,Mission Area,Surface Warfare,07
+35,1,Weapons Capability,Attack,08
+35,1,Weapons Capability,Ballistic Missile,09
+35,1,Weapons Capability,Guided Missile,10
+35,1,Weapons Capability,Other Guided Missile,11
+35,1,Asset Capability,Special Operations Forces (SOF),12
+35,1,Submarine Confidence,Possible Submarine Low 1,13
+35,1,Submarine Confidence,Possible Submarine Low 2,14
+35,1,Submarine Confidence,Possible Submarine High 3,15
+35,1,Submarine Confidence,Possible Submarine High 4,16
+35,1,Submarine Confidence,Probable Submarine,17
+35,1,Submarine Confidence,Certain Submarine,18
+35,1,Weapons Capability,Anti-torpedo Torpedo,19
+35,1,Crime,Hijacking/Highjacked,20
+35,2,Ship Propulsion,Air Independent Propulsion,01
+35,2,Ship Propulsion,Diesel Electric General,02
+35,2,Ship Propulsion,Diesel - Type 1,03
+35,2,Ship Propulsion,Diesel - Type 2,04
+35,2,Ship Propulsion,Diesel - Type 3,05
+35,2,Ship Propulsion,Nuclear Powered General,06
+35,2,Ship Propulsion,Nuclear - Type 1,07
+35,2,Ship Propulsion,Nuclear - Type 2,08
+35,2,Ship Propulsion,Nuclear - Type 3,09
+35,2,Ship Propulsion,Nuclear - Type 4,10
+35,2,Ship Propulsion,Nuclear - Type 5,11
+35,2,Ship Propulsion,Nuclear - Type 6,12
+35,2,Ship Propulsion,Nuclear - Type 7,13
+35,2,UUV Control,Autonomous Control,14
+35,2,UUV Control,Remotely Piloted,15
+35,2,UUV Control,Expendable,16
+54,1,Air/Land/Sea Surface/Subsurface Radar,Beacon Transponder (not IFF),07
+54,1,Air/Land/Sea Surface/Subsurface Communications,Cellular/Mobile,11
+54,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Decoy/Mimic,13
+54,1,Space/Air/Land/Sea Surface/Subsurface Radar,Data Transmission,14
+54,1,Air/Land/Sea Surface/Subsurface Radar,Early Warning,16
+54,1,Space/Air/Land/Sea Surface/Subsurface Radar,Identification Friend or Foe (Interrogator),21
+54,1,Space/Air/Land/Sea Surface/Subsurface Radar,Identification Friend or Foe (Transponder),24
+54,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Barrage Jammer,25
+54,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Click Jammer,26
+54,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Deceptive Jammer,27
+54,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Frequency Swept Jammer,28
+54,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Jammer (general),29
+54,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Noise Jammer,30
+54,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Pulsed Jammer,31
+54,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Repeater Jammer,32
+54,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Spot Noise Jammer,33
+54,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Transponder Jammer,34
+54,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Missile Control,36
+54,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Multi-Function,39
+54,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Missile Tracking,42
+54,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Navigational/General,43
+54,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Navigational/Distance Measuring Equipment,44
+54,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Navigation/Terrain Following,45
+54,1,Air/Land/Sea Surface/Subsurface Jammer,Navigational/Weather Avoidance,46
+54,1,Air/Land/Sea Surface/Subsurface Communications,Omni-Line of Sight (LOS),47
+54,1,Space/Air/Land/Sea Surface/Subsurface Communications,Point-to-Point Line of Sight (LOS),49
+54,1,Space/Air/Land/Sea Surface/Subsurface Radar,Instrumentation,50
+54,1,Space/Air/Land/Sea Surface/Subsurface Radar,Range Only,51
+54,1,Sea Surface/Subsurface Radar,Sonobuoy,52
+54,1,Space/Air/Land/Sea Surface/Subsurface Radar,Space,54
+54,1,Space/Air/Land/Sea Surface/Subsurface Radar,Surface Search,55
+54,1,Air/Land/Sea Surface/Subsurface Communications,Satellite Uplink,57
+54,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Target Acquisition,58
+54,1,Space/Air/Land/Sea Surface/Subsurface Radar,Target Tracking,61
+54,1,Space/Air/Land/Sea Surface/Subsurface Radar,Unknown,62
+54,1,Space/Air/Land/Sea Surface/Subsurface Radar,Video Remoting,63
+54,1,Space/Air/Land/Sea Surface/Subsurface Radar,Experimental,64
 40,1,Crime,Assassination,01
 40,1,Crime,Execution (Wrongful Killing),02
 40,1,Crime,Hijacking/Hijacked,03

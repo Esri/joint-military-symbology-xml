@@ -2,14 +2,27 @@ Code,Value
 98,Internal
 01,Air
 02,Air Missile
+51,Signals Intelligence - Air
+60,Cyberspace - Air
 05,Space
 06,Space Missile
+50,Signals Intelligence - Space
+60,Cyberspace - Space
 10,Land Units
 11,Land Civilian
 15,Land Equipment
+52,Signals Intelligence - Land
+60,Cyberspace - Land
 20,Land Installation
 30,Sea Surface
+53,Signals Intelligence - Surface
+60,Cyberspace - Surface
 35,Sea Subsurface
+35,Mine Warfare
+54,Signals Intelligence - Subsurface
+60,Cyberspace - Subsurface
 40,Activity
-60,Cyberspace
+45,Atmospheric
+46,Activity
+47,Meteorological Space
 -1,NotSet
