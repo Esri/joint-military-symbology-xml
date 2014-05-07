@@ -185,12 +185,10 @@ namespace JointMilitarySymbologyLibrary
 
             if (result.Length > 255)
             {
-                // Can't have a tag string greater than 255 in length
-                // So for now we'll truncate it at 255
-                // TODO: come up with a better plan
+                // Can't have a tag string greater than 255 in length.
+                // Human interaction will be required to resolve these on a case by case basis.
 
                 _notes = _notes + "styleItemTags > 255;";
-                result = result.Substring(0, 255);
             }
 
             return result;

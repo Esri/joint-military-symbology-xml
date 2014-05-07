@@ -84,7 +84,7 @@ namespace JointMilitarySymbologyLibrary
                             exportAreas && e.GeometryType == GeometryType.AREA)
                         {
 
-                            if (e.Icon != IconType.NA && (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(e.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase)))
+                            if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(e.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
                             {
                                 line = string.Format("{0}", exporter.Line(s, e, null, null));
 
@@ -96,7 +96,7 @@ namespace JointMilitarySymbologyLibrary
                             {
                                 foreach (SymbolSetEntityEntityType eType in e.EntityTypes)
                                 {
-                                    if (eType.Icon != IconType.NA && (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(eType.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase)))
+                                    if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(eType.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
                                     {
                                         line = string.Format("{0}", exporter.Line(s, e, eType, null));
 
@@ -108,7 +108,7 @@ namespace JointMilitarySymbologyLibrary
                                     {
                                         foreach (SymbolSetEntityEntityTypeEntitySubType eSubType in eType.EntitySubTypes)
                                         {
-                                            if (eSubType.Icon != IconType.NA && (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(eSubType.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase)))
+                                            if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(eSubType.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
                                             {
                                                 line = string.Format("{0}", exporter.Line(s, e, eType, eSubType));
 
