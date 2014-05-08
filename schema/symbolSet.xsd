@@ -77,7 +77,7 @@
         </xs:element>
       </xs:sequence>
       <xs:attributeGroup ref="IdentifierAttributeGroup"/>
-      <xs:attribute name="DimensionID" type="xs:IDREF" use="required"/>
+      <xs:attribute name="DimensionID" type="xs:IDREFS" use="required"/>
     </xs:complexType>
   </xs:element>
 </xs:schema>

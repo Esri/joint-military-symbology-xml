@@ -110,6 +110,13 @@
     <xs:attribute name="Remarks" type="xs:string" use="optional"/>
   </xs:attributeGroup>
 
+  <xs:attributeGroup name="IdentifierAttributeGroup2">
+    <xs:attribute name="ID" type="xs:IDREF" use="required"/>
+    <xs:attribute name="Label" type="xs:token" use="optional"/>
+    <xs:attribute name="Description" type="xs:string" use="optional"/>
+    <xs:attribute name="Remarks" type="xs:string" use="optional"/>
+  </xs:attributeGroup>
+
   <xs:attributeGroup name="IdentifierDrawRuleGroup">
     <xs:attribute name="ID" type="xs:ID" use="required"/>
     <xs:attribute name="AnchorPoints" type="xs:string" use="required"/>
