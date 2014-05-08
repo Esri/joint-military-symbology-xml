@@ -214,14 +214,14 @@
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="BALLISTIC_MISSILE_MOD" Label="Ballistic Missile " Category="Weapons Capability" LimitUseTo="SUBMARINE" Graphic="35091.svg">
+		<Modifier ID="BALLISTIC_MISSILE_MOD" Label="Ballistic Missile" Category="Weapons Capability" LimitUseTo="SUBMARINE" Graphic="35091.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>9</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="GUIDED_MISSILE_MOD" Label="Guided Missile " Category="Weapons Capability" LimitUseTo="SUBMARINE" Graphic="35101.svg">
+		<Modifier ID="GUIDED_MISSILE_MOD" Label="Guided Missile" Category="Weapons Capability" LimitUseTo="SUBMARINE" Graphic="35101.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>0</DigitTwo>
@@ -242,7 +242,7 @@
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="POSSIBLE_SUBMARINE_LOW_1_MOD" Label="Possible Submarine Low 1 " Category="Submarine Confidence" LimitUseTo="SUBMARINE" Graphic="35131.svg">
+		<Modifier ID="POSSIBLE_SUBMARINE_LOW_1_MOD" Label="Possible Submarine Low 1" Category="Submarine Confidence" LimitUseTo="SUBMARINE" Graphic="35131.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>3</DigitTwo>

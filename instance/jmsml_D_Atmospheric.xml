@@ -336,19 +336,19 @@
 						<DigitTwo>1</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="CLEAR_ICING_LIGHT" Label="Light Clear Icing" Graphic="45130101.svg">
+						<EntitySubType ID="CLEAR_ICING_LIGHT" Label="Light" Graphic="45130101.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="CLEAR_ICING_MODERATE" Label="Moderate Clear Icing" Graphic="45130102.svg">
+						<EntitySubType ID="CLEAR_ICING_MODERATE" Label="Moderate" Graphic="45130102.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="CLEAR_ICING_SEVERE" Label="Severe Clear Icing" Graphic="45130103.svg">
+						<EntitySubType ID="CLEAR_ICING_SEVERE" Label="Severe" Graphic="45130103.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
@@ -363,19 +363,19 @@
 						<DigitTwo>2</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="RIME_ICING_LIGHT" Label="Light Rime Icing" Graphic="45130201.svg">
+						<EntitySubType ID="RIME_ICING_LIGHT" Label="Light" Graphic="45130201.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="RIME_ICING_MODERATE" Label="Moderate Rime Icing" Graphic="45130202.svg">
+						<EntitySubType ID="RIME_ICING_MODERATE" Label="Moderate" Graphic="45130202.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="RIME_ICING_SEVERE" Label="Severe Rime Icing" Graphic="45130203.svg">
+						<EntitySubType ID="RIME_ICING_SEVERE" Label="Severe" Graphic="45130203.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
@@ -390,19 +390,19 @@
 						<DigitTwo>3</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="MIXED_ICING_LIGHT" Label="Light Mixed Icing" Graphic="45130301.svg">
+						<EntitySubType ID="MIXED_ICING_LIGHT" Label="Light" Graphic="45130301.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="MIXED_ICING_MODERATE" Label="Moderate Mixed Icing" Graphic="45130302.svg">
+						<EntitySubType ID="MIXED_ICING_MODERATE" Label="Moderate" Graphic="45130302.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="MIXED_ICING_SEVERE" Label="Severe Mixed Icing" Graphic="45130303.svg">
+						<EntitySubType ID="MIXED_ICING_SEVERE" Label="Severe" Graphic="45130303.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
@@ -514,37 +514,37 @@
 						<DigitTwo>1</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="RAIN_INTERMITTENT_LIGHT" Label="Intermittent Light Rain" Graphic="45160101.svg">
+						<EntitySubType ID="RAIN_INTERMITTENT_LIGHT" Label="Intermittent Light" Graphic="45160101.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="RAIN_CONTINUOUS_LIGHT" Label="Continuous Light Rain" Graphic="45160102.svg">
+						<EntitySubType ID="RAIN_CONTINUOUS_LIGHT" Label="Continuous Light" Graphic="45160102.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="RAIN_INTERMITTENT_MODERATE" Label="Intermittent Moderate Rain" Graphic="45160103.svg">
+						<EntitySubType ID="RAIN_INTERMITTENT_MODERATE" Label="Intermittent Moderate" Graphic="45160103.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="RAIN_INTERMITTENT_CONTINUOUS_MODERATE" Label="Intermittent/Continuous Moderate Rain" Graphic="45160104.svg">
+						<EntitySubType ID="RAIN_INTERMITTENT_CONTINUOUS_MODERATE" Label="Intermittent Moderate/Continuous Moderate" Graphic="45160104.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>4</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="RAIN_INTERMITTENT_HEAVY" Label="Intermittent Heavy Rain" Graphic="45160105.svg">
+						<EntitySubType ID="RAIN_INTERMITTENT_HEAVY" Label="Intermittent Heavy" Graphic="45160105.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>5</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="RAIN_INTERMITTENT_CONTINUOUS_HEAVY" Label="Intermittent/Continuous Heavy Rain" Graphic="45160106.svg">
+						<EntitySubType ID="RAIN_INTERMITTENT_CONTINUOUS_HEAVY" Label="Intermittent Heavy/Continuous Heavy" Graphic="45160106.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>6</DigitTwo>
@@ -559,13 +559,13 @@
 						<DigitTwo>2</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="FREEZING_RAIN_LIGHT" Label="Light Freezing Rain" Graphic="45160201.svg">
+						<EntitySubType ID="FREEZING_RAIN_LIGHT" Label="Light" Graphic="45160201.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="FREEZING_RAIN_MODERATE_HEAVY" Label="Moderate/Heavy Freezing Rain" Graphic="45160202.svg">
+						<EntitySubType ID="FREEZING_RAIN_MODERATE_HEAVY" Label="Moderate/Heavy" Graphic="45160202.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
@@ -580,19 +580,19 @@
 						<DigitTwo>3</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="RAIN_SHOWERS_LIGHT" Label="Light Rain Showers" Graphic="45160301.svg">
+						<EntitySubType ID="RAIN_SHOWERS_LIGHT" Label="Light" Graphic="45160301.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="RAIN_SHOWERS_MODERATE_HEAVY" Label="Moderate/Heavy Rain Showers" Graphic="45160302.svg">
+						<EntitySubType ID="RAIN_SHOWERS_MODERATE_HEAVY" Label="Moderate/Heavy" Graphic="45160302.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="RAIN_SHOWERS_TORRENTIAL" Label="Torrential Rain Showers" Graphic="45160303.svg">
+						<EntitySubType ID="RAIN_SHOWERS_TORRENTIAL" Label="Torrential" Graphic="45160303.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
@@ -607,37 +607,37 @@
 						<DigitTwo>4</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="DRIZZLE_INTERMITTENT_LIGHT" Label="Intermittent Light Drizzle" Graphic="45160401.svg">
+						<EntitySubType ID="DRIZZLE_INTERMITTENT_LIGHT" Label="Intermittent Light" Graphic="45160401.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="DRIZZLE_INTERMITTENT_CONTINUOUS_LIGHT" Label="Intermittent/Continuous Light Drizzle" Graphic="45160402.svg">
+						<EntitySubType ID="DRIZZLE_INTERMITTENT_CONTINUOUS_LIGHT" Label="Intermittent Light/Continuous Light" Graphic="45160402.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="DRIZZLE_INTERMITTENT_MODERATE" Label="Intermittent Moderate Drizzle" Graphic="45160403.svg">
+						<EntitySubType ID="DRIZZLE_INTERMITTENT_MODERATE" Label="Intermittent Moderate" Graphic="45160403.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="DRIZZLE_INTERMITTENT_CONTINUOUS_MODERATE" Label="Intermittent/Continuous Moderate Drizzle" Graphic="45160404.svg">
+						<EntitySubType ID="DRIZZLE_INTERMITTENT_CONTINUOUS_MODERATE" Label="Intermittent Moderate/Continuous Moderate" Graphic="45160404.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>4</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="DRIZZLE_INTERMITTENT_HEAVY" Label="Intermittent Heavy Drizzle" Graphic="45160405.svg">
+						<EntitySubType ID="DRIZZLE_INTERMITTENT_HEAVY" Label="Intermittent Heavy" Graphic="45160405.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>5</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="DRIZZLE_INTERMITTENT_CONTINUOUS_HEAVY" Label="Intermittent/Continuous Heavy Drizzle" Graphic="45160406.svg">
+						<EntitySubType ID="DRIZZLE_INTERMITTENT_CONTINUOUS_HEAVY" Label="Intermittent Heavy/Continuous Heavy" Graphic="45160406.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>6</DigitTwo>
@@ -652,13 +652,13 @@
 						<DigitTwo>5</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="FREEZING_DRIZZLE_LIGHT" Label="Light Freezing Drizzle" Graphic="45160501.svg">
+						<EntitySubType ID="FREEZING_DRIZZLE_LIGHT" Label="Light" Graphic="45160501.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="FREEZING_DRIZZLE_MODERATE_HEAVY" Label="Moderate/Heavy Freezing Drizzle" Graphic="45160502.svg">
+						<EntitySubType ID="FREEZING_DRIZZLE_MODERATE_HEAVY" Label="Moderate/Heavy" Graphic="45160502.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
@@ -706,37 +706,37 @@
 						<DigitTwo>7</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="SNOW_INTERMITTENT_LIGHT" Label="Intermittent Light Snow" Graphic="45160701.svg">
+						<EntitySubType ID="SNOW_INTERMITTENT_LIGHT" Label="Intermittent Light" Graphic="45160701.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="SNOW_INTERMITTENT_CONTINUOUS_LIGHT" Label="Intermittent/Continuous Light Snow" Graphic="45160702.svg">
+						<EntitySubType ID="SNOW_INTERMITTENT_CONTINUOUS_LIGHT" Label="Intermittent Light/Continuous Light" Graphic="45160702.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="SNOW_INTERMITTENT_MODERATE" Label="Intermittent Moderate Snow" Graphic="45160703.svg">
+						<EntitySubType ID="SNOW_INTERMITTENT_MODERATE" Label="Intermittent Moderate" Graphic="45160703.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="SNOW_INTERMITTENT_CONTINUOUS_MODERATE" Label="Intermittent/Continuous Moderate Snow" Graphic="45160704.svg">
+						<EntitySubType ID="SNOW_INTERMITTENT_CONTINUOUS_MODERATE" Label="Intermittent Moderate/Continuous Moderate" Graphic="45160704.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>4</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="SNOW_INTERMITTENT_HEAVY" Label="Intermittent Heavy Snow" Graphic="45160705.svg">
+						<EntitySubType ID="SNOW_INTERMITTENT_HEAVY" Label="Intermittent Heavy" Graphic="45160705.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>5</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="SNOW_INTERMITTENT_CONTINUOUS_HEAVY" Label="Intermittent/Continuous Heavy Snow" Graphic="45160706.svg">
+						<EntitySubType ID="SNOW_INTERMITTENT_CONTINUOUS_HEAVY" Label="Intermittent Heavy/Continuous Heavy" Graphic="45160706.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>6</DigitTwo>
@@ -770,13 +770,13 @@
 						<DigitTwo>9</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="SNOW_SHOWERS_LIGHT" Label="Light Snow Showers" Graphic="45160901.svg">
+						<EntitySubType ID="SNOW_SHOWERS_LIGHT" Label="Light" Graphic="45160901.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="SNOW_SHOWERS_MODERATE_HEAVY" Label="Moderate/Heavy Snow Showers" Graphic="45160902.svg">
+						<EntitySubType ID="SNOW_SHOWERS_MODERATE_HEAVY" Label="Moderate/Heavy" Graphic="45160902.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
@@ -791,13 +791,13 @@
 						<DigitTwo>0</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="HAIL_LIGHT_NOT_THUNDER" Label="Light Hail not Associated with Thunder" Graphic="45161001.svg">
+						<EntitySubType ID="HAIL_LIGHT_NOT_THUNDER" Label="Light not Associated with Thunder" Graphic="45161001.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="HAIL_MODERATE_HEAVY_NOT_THUNDER" Label="Moderate/Heavy Hail not Associated with Thunder" Graphic="45161002.svg">
+						<EntitySubType ID="HAIL_MODERATE_HEAVY_NOT_THUNDER" Label="Moderate/Heavy not Associated with Thunder" Graphic="45161002.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
@@ -819,19 +819,19 @@
 						<DigitTwo>2</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="SLEET_LIGHT" Label="Light Sleet" Graphic="45161201.svg">
+						<EntitySubType ID="SLEET_LIGHT" Label="Light" Graphic="45161201.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="SLEET_MODERATE" Label="Moderate Sleet" Graphic="45161202.svg">
+						<EntitySubType ID="SLEET_MODERATE" Label="Moderate" Graphic="45161202.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="SLEET_HEAVY" Label="Heavy Sleet" Graphic="45161203.svg">
+						<EntitySubType ID="SLEET_HEAVY" Label="Heavy" Graphic="45161203.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
@@ -910,43 +910,43 @@
 						<DigitTwo>5</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="FOG_SHALLOW_PATCHES" Label="Shallow Patches Fog" Graphic="45161501.svg">
+						<EntitySubType ID="FOG_SHALLOW_PATCHES" Label="Shallow Patches" Graphic="45161501.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="FOG_SHALLOW_CONTINUOUS" Label="Shallow Continuous Fog" Graphic="45161502.svg">
+						<EntitySubType ID="FOG_SHALLOW_CONTINUOUS" Label="Shallow Continuous" Graphic="45161502.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="FOG_PATCHY" Label="Patchy Fog" Graphic="45161503.svg">
+						<EntitySubType ID="FOG_PATCHY" Label="Patchy" Graphic="45161503.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="FOG_SKY_VISIBLE" Label="Sky Visible Fog" Graphic="45161504.svg">
+						<EntitySubType ID="FOG_SKY_VISIBLE" Label="Sky Visible" Graphic="45161504.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>4</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="FOG_SKY_OBSCURED" Label="Sky Obscured Fog" Graphic="45161505.svg">
+						<EntitySubType ID="FOG_SKY_OBSCURED" Label="Sky Obscured" Graphic="45161505.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>5</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="FOG_FREEZING_SKY_VISIBLE" Label="Freezing-Sky Visible Fog" Graphic="45161506.svg">
+						<EntitySubType ID="FOG_FREEZING_SKY_VISIBLE" Label="Freezing-Sky Visible" Graphic="45161506.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>6</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="FOG_FREEZING_SKY_OBSCURED" Label="Freezing-Sky Obscured Fog" Graphic="45161507.svg">
+						<EntitySubType ID="FOG_FREEZING_SKY_OBSCURED" Label="Freezing-Sky Obscured" Graphic="45161507.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>7</DigitTwo>
@@ -982,13 +982,13 @@
 						<DigitTwo>9</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="DUST_SAND_LIGHT_TO_MODERATE" Label="Light to Moderate Dust or Sand" Graphic="45161901.svg">
+						<EntitySubType ID="DUST_SAND_LIGHT_TO_MODERATE" Label="Light to Moderate" Graphic="45161901.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="DUST_SAND_SEVERE" Label="Severe Dust or Sand" Graphic="45161902.svg">
+						<EntitySubType ID="DUST_SAND_SEVERE" Label="Severe" Graphic="45161902.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>

@@ -17,160 +17,30 @@
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
 					</EntityTypeCode>
-          <EntitySubTypes>
-            <EntitySubType ID="BTA_HEADQUARTERS_ELEMENT" Label="Broadcast Transmitter Antennae Headquarters Element" Graphic="10110100.svg" SpecialCloverGraphic="10xxxx95_0.svg" SpecialRectangleGraphic="10xxxx95_1.svg" SpecialSquareGraphic="10xxxx95_2.svg" SpecialDiamondGraphic="10xxxx95_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>5</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="BTA_DIV_AND_BELOW_SUPPORT" Label="Division and Below Support Broadcast Transmitter Antennae" Graphic="10110100.svg" SpecialCloverGraphic="10xxxx96_0.svg" SpecialRectangleGraphic="10xxxx96_1.svg" SpecialSquareGraphic="10xxxx96_2.svg" SpecialDiamondGraphic="10xxxx96_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>6</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="BTA_CORPS_SUPPORT" Label="Corps Support Broadcast Transmitter Antennae" Graphic="10110100.svg" SpecialCloverGraphic="10xxxx97_0.svg" SpecialRectangleGraphic="10xxxx97_1.svg" SpecialSquareGraphic="10xxxx98_2.svg" SpecialDiamondGraphic="10xxxx98_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>7</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="BTA_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support Broadcast Transmitter Antennae" Graphic="10110100.svg" SpecialCloverGraphic="10xxxx98_0.svg" SpecialRectangleGraphic="10xxxx98_1.svg" SpecialSquareGraphic="10xxxx98_2.svg" DiamondGraphic="10xxxx98_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>8</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType> 
-          </EntitySubTypes>
 				</EntityType>
 				<EntityType ID="CIVIL_AFFAIRS" Label="Civil Affairs" Graphic="10110200.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
 					</EntityTypeCode>
-          <EntitySubTypes>
-            <EntitySubType ID="CA_HEADQUARTERS_ELEMENT" Label="Civil Affairs Headquarters Element" Graphic="10110200.svg" SpecialCloverGraphic="10xxxx95_0.svg" SpecialRectangleGraphic="10xxxx95_1.svg" SpecialSquareGraphic="10xxxx95_2.svg" SpecialDiamondGraphic="10xxxx95_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>5</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="CA_DIV_AND_BELOW_SUPPORT" Label="Division and Below Support Civil Affairs" Graphic="10110200.svg" SpecialCloverGraphic="10xxxx96_0.svg" SpecialRectangleGraphic="10xxxx96_1.svg" SpecialSquareGraphic="10xxxx96_2.svg" SpecialDiamondGraphic="10xxxx96_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>6</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="CA_CORPS_SUPPORT" Label="Corps Support Civil Affairs" Graphic="10110200.svg" SpecialCloverGraphic="10xxxx97_0.svg" SpecialRectangleGraphic="10xxxx97_1.svg" SpecialSquareGraphic="10xxxx98_2.svg" SpecialDiamondGraphic="10xxxx98_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>7</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="CA_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support Civil Affairs" Graphic="10110200.svg" SpecialCloverGraphic="10xxxx98_0.svg" SpecialRectangleGraphic="10xxxx98_1.svg" SpecialSquareGraphic="10xxxx98_2.svg" DiamondGraphic="10xxxx98_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>8</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-          </EntitySubTypes>
 				</EntityType>
 				<EntityType ID="CIVIL_MILITARY_COOPERATION" Label="Civil-Military Cooperation" Graphic="10110300.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>3</DigitTwo>
 					</EntityTypeCode>
-          <EntitySubTypes>
-            <EntitySubType ID="CMO_HEADQUARTERS_ELEMENT" Label="Civil-Military Cooperation Headquarters Element" Graphic="10110300.svg" SpecialCloverGraphic="10xxxx95_0.svg" SpecialRectangleGraphic="10xxxx95_1.svg" SpecialSquareGraphic="10xxxx95_2.svg" SpecialDiamondGraphic="10xxxx95_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>5</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="CMO_DIV_AND_BELOW_SUPPORT" Label="Division and Below Support Civil-Military Cooperation" Graphic="10110300.svg" SpecialCloverGraphic="10xxxx96_0.svg" SpecialRectangleGraphic="10xxxx96_1.svg" SpecialSquareGraphic="10xxxx96_2.svg" SpecialDiamondGraphic="10xxxx96_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>6</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="CMO_CORPS_SUPPORT" Label="Corps Support Civil-Military Cooperation" Graphic="10110300.svg" SpecialCloverGraphic="10xxxx97_0.svg" SpecialRectangleGraphic="10xxxx97_1.svg" SpecialSquareGraphic="10xxxx98_2.svg" SpecialDiamondGraphic="10xxxx98_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>7</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="CMO_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Graphic="10110300.svg" Label="Theatre/Echelons Above Corps Support Civil-Military Cooperation" SpecialCloverGraphic="10xxxx98_0.svg" SpecialRectangleGraphic="10xxxx98_1.svg" SpecialSquareGraphic="10xxxx98_2.svg" DiamondGraphic="10xxxx98_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>8</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-          </EntitySubTypes>
         </EntityType>
 				<EntityType ID="INFORMATION_OPERATIONS" Label="Information Operations" Graphic="10110400.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>4</DigitTwo>
 					</EntityTypeCode>
-          <EntitySubTypes>
-            <EntitySubType ID="IO_HEADQUARTERS_ELEMENT" Label="Information Operations Headquarters Element" Graphic="10110400.svg" SpecialCloverGraphic="10xxxx95_0.svg" SpecialRectangleGraphic="10xxxx95_1.svg" SpecialSquareGraphic="10xxxx95_2.svg" SpecialDiamondGraphic="10xxxx95_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>5</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="IO_DIV_AND_BELOW_SUPPORT" Label="Division and Below Support Information Operations" Graphic="10110400.svg" SpecialCloverGraphic="10xxxx96_0.svg" SpecialRectangleGraphic="10xxxx96_1.svg" SpecialSquareGraphic="10xxxx96_2.svg" SpecialDiamondGraphic="10xxxx96_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>6</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="IO_CORPS_SUPPORT" Label="Corps Support Information Operations" Graphic="10110400.svg" SpecialCloverGraphic="10xxxx97_0.svg" SpecialRectangleGraphic="10xxxx97_1.svg" SpecialSquareGraphic="10xxxx98_2.svg" SpecialDiamondGraphic="10xxxx98_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>7</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="IO_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support Information Operations" Graphic="10110400.svg" SpecialCloverGraphic="10xxxx98_0.svg" SpecialRectangleGraphic="10xxxx98_1.svg" SpecialSquareGraphic="10xxxx98_2.svg" DiamondGraphic="10xxxx98_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>8</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-          </EntitySubTypes>
         </EntityType>
 				<EntityType ID="LIAISON" Label="Liaison" Graphic="10110500.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>5</DigitTwo>
 					</EntityTypeCode>
-          <EntitySubTypes>
-            <EntitySubType ID="L_HEADQUARTERS_ELEMENT" Label="Liaison Headquarters Element" Graphic="10110500.svg" SpecialCloverGraphic="10xxxx95_0.svg" SpecialRectangleGraphic="10xxxx95_1.svg" SpecialSquareGraphic="10xxxx95_2.svg" SpecialDiamondGraphic="10xxxx95_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>5</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="L_DIV_AND_BELOW_SUPPORT" Label="Division and Below Support Liaison" Graphic="10110500.svg" SpecialCloverGraphic="10xxxx96_0.svg" SpecialRectangleGraphic="10xxxx96_1.svg" SpecialSquareGraphic="10xxxx96_2.svg" SpecialDiamondGraphic="10xxxx96_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>6</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="L_CORPS_SUPPORT" Label="Corps Support Liaison" Graphic="10110500.svg" SpecialCloverGraphic="10xxxx97_0.svg" SpecialRectangleGraphic="10xxxx97_1.svg" SpecialSquareGraphic="10xxxx98_2.svg" SpecialDiamondGraphic="10xxxx98_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>7</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="L_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support Liaison" Graphic="10110500.svg" SpecialCloverGraphic="10xxxx98_0.svg" SpecialRectangleGraphic="10xxxx98_1.svg" SpecialSquareGraphic="10xxxx98_2.svg" DiamondGraphic="10xxxx98_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>8</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-          </EntitySubTypes>
         </EntityType>
 				<EntityType ID="MILITARY_INFORMATION_SUPPORT_OPERATIONS_MISO" Label="Military Information Support Operations (MISO)" Graphic="10110600.svg">
           <EntityTypeCode>
@@ -178,34 +48,10 @@
             <DigitTwo>6</DigitTwo>
           </EntityTypeCode>
           <EntitySubTypes>
-            <EntitySubType ID="BROADCAST_TRANSMITTER_ANTENNAE_MISO" Label="MISO Broadcast Transmitter Antennae" Graphic="10110601.svg" Icon="FULL_OCTAGON">
+            <EntitySubType ID="BROADCAST_TRANSMITTER_ANTENNAE_MISO" Label="Broadcast Transmitter Antennae" Graphic="10110601.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>1</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="MISO_HEADQUARTERS_ELEMENT" Label="MISO Headquarters Element" Graphic="10110600.svg" SpecialCloverGraphic="10xxxx95_0.svg" SpecialRectangleGraphic="10xxxx95_1.svg" SpecialSquareGraphic="10xxxx95_2.svg" SpecialDiamondGraphic="10xxxx95_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>5</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="MISO_DIV_AND_BELOW_SUPPORT" Label="Division and Below Support MISO" Graphic="10110600.svg" SpecialCloverGraphic="10xxxx96_0.svg" SpecialRectangleGraphic="10xxxx96_1.svg" SpecialSquareGraphic="10xxxx96_2.svg" SpecialDiamondGraphic="10xxxx96_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>6</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="MISO_CORPS_SUPPORT" Label="Corps Support MISO" Graphic="10110600.svg" SpecialCloverGraphic="10xxxx97_0.svg" SpecialRectangleGraphic="10xxxx97_1.svg" SpecialSquareGraphic="10xxxx98_2.svg" SpecialDiamondGraphic="10xxxx98_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>7</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="MISO_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support MISO" Graphic="10110600.svg" SpecialCloverGraphic="10xxxx98_0.svg" SpecialRectangleGraphic="10xxxx98_1.svg" SpecialSquareGraphic="10xxxx98_2.svg" DiamondGraphic="10xxxx98_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>8</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
           </EntitySubTypes>
@@ -215,96 +61,18 @@
 						<DigitOne>0</DigitOne>
 						<DigitTwo>7</DigitTwo>
 					</EntityTypeCode>
-          <EntitySubTypes>
-            <EntitySubType ID="RADIO_HEADQUARTERS_ELEMENT" Label="Radio Headquarters Element" Graphic="10110700.svg" SpecialCloverGraphic="10xxxx95_0.svg" SpecialRectangleGraphic="10xxxx95_1.svg" SpecialSquareGraphic="10xxxx95_2.svg" SpecialDiamondGraphic="10xxxx95_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>5</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="RADIO_DIV_AND_BELOW_SUPPORT" Label="Division and Below Support Radio" Graphic="10110700.svg" SpecialCloverGraphic="10xxxx96_0.svg" SpecialRectangleGraphic="10xxxx96_1.svg" SpecialSquareGraphic="10xxxx96_2.svg" SpecialDiamondGraphic="10xxxx96_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>6</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="RADIO_CORPS_SUPPORT" Label="Corps Support Radio" Graphic="10110700.svg" SpecialCloverGraphic="10xxxx97_0.svg" SpecialRectangleGraphic="10xxxx97_1.svg" SpecialSquareGraphic="10xxxx98_2.svg" SpecialDiamondGraphic="10xxxx98_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>7</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="RADIO_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support Radio" Graphic="10110700.svg" SpecialCloverGraphic="10xxxx98_0.svg" SpecialRectangleGraphic="10xxxx98_1.svg" SpecialSquareGraphic="10xxxx98_2.svg" DiamondGraphic="10xxxx98_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>8</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-          </EntitySubTypes>          
 				</EntityType>
 				<EntityType ID="RADIO_RELAY" Label="Radio Relay" Graphic="10110800.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>8</DigitTwo>
 					</EntityTypeCode>
-          <EntitySubTypes>
-            <EntitySubType ID="RADIO_RELAY_HEADQUARTERS_ELEMENT" Label="Radio Relay Headquarters Element" Graphic="10110800.svg" SpecialCloverGraphic="10xxxx95_0.svg" SpecialRectangleGraphic="10xxxx95_1.svg" SpecialSquareGraphic="10xxxx95_2.svg" SpecialDiamondGraphic="10xxxx95_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>5</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="RADIO_RELAY_DIV_AND_BELOW_SUPPORT" Label="Division and Below Support Radio Relay" Graphic="10110800.svg" SpecialCloverGraphic="10xxxx96_0.svg" SpecialRectangleGraphic="10xxxx96_1.svg" SpecialSquareGraphic="10xxxx96_2.svg" SpecialDiamondGraphic="10xxxx96_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>6</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="RADIO_RELAY_CORPS_SUPPORT" Label="Corps Support Radio Relay" Graphic="10110800.svg" SpecialCloverGraphic="10xxxx97_0.svg" SpecialRectangleGraphic="10xxxx97_1.svg" SpecialSquareGraphic="10xxxx98_2.svg" SpecialDiamondGraphic="10xxxx98_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>7</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="RADIO_RELAY_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support Radio Relay" Graphic="10110800.svg" SpecialCloverGraphic="10xxxx98_0.svg" SpecialRectangleGraphic="10xxxx98_1.svg" SpecialSquareGraphic="10xxxx98_2.svg" DiamondGraphic="10xxxx98_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>8</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-          </EntitySubTypes>          
 				</EntityType>
 				<EntityType ID="RADIO_TELETYPE_CENTER" Label="Radio Teletype Center" Graphic="10110900.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>9</DigitTwo>
 					</EntityTypeCode>
-          <EntitySubTypes>
-            <EntitySubType ID="TELETYPE_HEADQUARTERS_ELEMENT" Label="Radio Teletype Center Headquarters Element" Graphic="10110900.svg" SpecialCloverGraphic="10xxxx95_0.svg" SpecialRectangleGraphic="10xxxx95_1.svg" SpecialSquareGraphic="10xxxx95_2.svg" SpecialDiamondGraphic="10xxxx95_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>5</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="TELETYPE_DIV_AND_BELOW_SUPPORT" Label="Division and Below Support Radio Teletype Center" Graphic="10110900.svg" SpecialCloverGraphic="10xxxx96_0.svg" SpecialRectangleGraphic="10xxxx96_1.svg" SpecialSquareGraphic="10xxxx96_2.svg" SpecialDiamondGraphic="10xxxx96_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>6</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="TELETYPE_CORPS_SUPPORT" Label="Corps Support Radio Teletype Center" Graphic="10110900.svg" SpecialCloverGraphic="10xxxx97_0.svg" SpecialRectangleGraphic="10xxxx97_1.svg" SpecialSquareGraphic="10xxxx98_2.svg" SpecialDiamondGraphic="10xxxx98_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>7</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="TELETYPE_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support Radio Teletype Center" Graphic="10110900.svg" SpecialCloverGraphic="10xxxx98_0.svg" SpecialRectangleGraphic="10xxxx98_1.svg" SpecialSquareGraphic="10xxxx98_2.svg" DiamondGraphic="10xxxx98_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>8</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-          </EntitySubTypes>          
 				</EntityType>
 				<EntityType ID="SIGNAL" Label="Signal" CloverGraphic="10111000_0.svg" RectangleGraphic="10111000_1.svg" SquareGraphic="10111000_2.svg" DiamondGraphic="10111000_3.svg" Icon="FULL_FRAME">
 					<EntityTypeCode>
@@ -312,60 +80,36 @@
 						<DigitTwo>0</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="SIGNAL_RADIO" Label="Signal-Radio" CloverGraphic="10111001_0.svg" RectangleGraphic="10111001_1.svg" SquareGraphic="10111001_2.svg" DiamondGraphic="10111001_3.svg" Icon="FULL_FRAME">
+						<EntitySubType ID="SIGNAL_RADIO" Label="Radio" CloverGraphic="10111001_0.svg" RectangleGraphic="10111001_1.svg" SquareGraphic="10111001_2.svg" DiamondGraphic="10111001_3.svg" Icon="FULL_FRAME">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="SIGNAL_RADIO_RELAY" Label="Signal-Radio Relay" CloverGraphic="10111002_0.svg" RectangleGraphic="10111002_1.svg" SquareGraphic="10111002_2.svg" DiamondGraphic="10111002_3.svg" Icon="FULL_FRAME">
+						<EntitySubType ID="SIGNAL_RADIO_RELAY" Label="Radio Relay" CloverGraphic="10111002_0.svg" RectangleGraphic="10111002_1.svg" SquareGraphic="10111002_2.svg" DiamondGraphic="10111002_3.svg" Icon="FULL_FRAME">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="SIGNAL_TELETYPE" Label="Signal-Teletype" CloverGraphic="10111003_0.svg" RectangleGraphic="10111003_1.svg" SquareGraphic="10111003_2.svg" DiamondGraphic="10111003_3.svg" Icon="FULL_FRAME">
+						<EntitySubType ID="SIGNAL_TELETYPE" Label="Teletype" CloverGraphic="10111003_0.svg" RectangleGraphic="10111003_1.svg" SquareGraphic="10111003_2.svg" DiamondGraphic="10111003_3.svg" Icon="FULL_FRAME">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="SIGNAL_TACTICAL_SATELLITE" Label="Signal-Tactical Satellite" CloverGraphic="10111004_0.svg" RectangleGraphic="10111004_1.svg" SquareGraphic="10111004_2.svg" DiamondGraphic="10111004_3.svg" Icon="FULL_FRAME">
+						<EntitySubType ID="SIGNAL_TACTICAL_SATELLITE" Label="Tactical Satellite" CloverGraphic="10111004_0.svg" RectangleGraphic="10111004_1.svg" SquareGraphic="10111004_2.svg" DiamondGraphic="10111004_3.svg" Icon="FULL_FRAME">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>4</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="SIGNAL_VIDEO_IMAGERY_COMBAT_CAMERA" Label="Signal-Video Imagery (Combat Camera)" CloverGraphic="10111005_0.svg" RectangleGraphic="10111005_1.svg" SquareGraphic="10111005_2.svg" DiamondGraphic="10111005_3.svg" Icon="FULL_FRAME">
+						<EntitySubType ID="SIGNAL_VIDEO_IMAGERY_COMBAT_CAMERA" Label="Video Imagery (Combat Camera)" CloverGraphic="10111005_0.svg" RectangleGraphic="10111005_1.svg" SquareGraphic="10111005_2.svg" DiamondGraphic="10111005_3.svg" Icon="FULL_FRAME">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>5</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-            <EntitySubType ID="SIGNAL_HEADQUARTERS_ELEMENT" Label="Signal Headquarters Element" CloverGraphic="10111000_0.svg" RectangleGraphic="10111000_1.svg" SquareGraphic="10111000_2.svg" DiamondGraphic="10111000_3.svg" SpecialCloverGraphic="10xxxx95_0.svg" SpecialRectangleGraphic="10xxxx95_1.svg" SpecialSquareGraphic="10xxxx95_2.svg" SpecialDiamondGraphic="10xxxx95_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>5</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="SIGNAL_DIV_AND_BELOW_SUPPORT" Label="Division and Below Support Signal" CloverGraphic="10111000_0.svg" RectangleGraphic="10111000_1.svg" SquareGraphic="10111000_2.svg" DiamondGraphic="10111000_3.svg" SpecialCloverGraphic="10xxxx96_0.svg" SpecialRectangleGraphic="10xxxx96_1.svg" SpecialSquareGraphic="10xxxx96_2.svg" SpecialDiamondGraphic="10xxxx96_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>6</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="SIGNAL_CORPS_SUPPORT" Label="Corps Support Signal" CloverGraphic="10111000_0.svg" RectangleGraphic="10111000_1.svg" SquareGraphic="10111000_2.svg" DiamondGraphic="10111000_3.svg" SpecialCloverGraphic="10xxxx97_0.svg" SpecialRectangleGraphic="10xxxx97_1.svg" SpecialSquareGraphic="10xxxx97_2.svg" SpecialDiamondGraphic="10xxxx97_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>7</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="SIGNAL_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support Signal" CloverGraphic="10111000_0.svg" RectangleGraphic="10111000_1.svg" SquareGraphic="10111000_2.svg" DiamondGraphic="10111000_3.svg" SpecialCloverGraphic="10xxxx98_0.svg" SpecialRectangleGraphic="10xxxx98_1.svg" SpecialSquareGraphic="10xxxx98_2.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>8</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
 					</EntitySubTypes>
 				</EntityType>
 				<EntityType ID="TACTICAL_SATELLITE" Label="Tactical Satellite" Graphic="10111100.svg">
@@ -373,64 +117,12 @@
 						<DigitOne>1</DigitOne>
 						<DigitTwo>1</DigitTwo>
 					</EntityTypeCode>
-          <EntitySubTypes>
-            <EntitySubType ID="TACSAT_HEADQUARTERS_ELEMENT" Label="Tactical Satellite Headquarters Element" Graphic="10111100.svg" SpecialCloverGraphic="10xxxx95_0.svg" SpecialRectangleGraphic="10xxxx95_1.svg" SpecialSquareGraphic="10xxxx95_2.svg" SpecialDiamondGraphic="10xxxx95_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>5</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="TACSAT_DIV_AND_BELOW_SUPPORT" Label="Division and Below Support Tactical Satellite" Graphic="10111100.svg" SpecialCloverGraphic="10xxxx96_0.svg" SpecialRectangleGraphic="10xxxx96_1.svg" SpecialSquareGraphic="10xxxx96_2.svg" SpecialDiamondGraphic="10xxxx96_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>6</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="TACSAT_CORPS_SUPPORT" Label="Corps Support Tactical Satellite" Graphic="10111100.svg" SpecialCloverGraphic="10xxxx97_0.svg" SpecialRectangleGraphic="10xxxx97_1.svg" SpecialSquareGraphic="10xxxx98_2.svg" SpecialDiamondGraphic="10xxxx98_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>7</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="TACSAT_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support Tactical Satellite" Graphic="10111100.svg" SpecialCloverGraphic="10xxxx98_0.svg" SpecialRectangleGraphic="10xxxx98_1.svg" SpecialSquareGraphic="10xxxx98_2.svg" DiamondGraphic="10xxxx98_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>8</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-          </EntitySubTypes>
         </EntityType>
 				<EntityType ID="VIDEO_IMAGERY_COMBAT_CAMERA" Label="Video Imagery (Combat Camera)" Graphic="10111200.svg">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>2</DigitTwo>
 					</EntityTypeCode>
-          <EntitySubTypes>
-            <EntitySubType ID="VIDEO_HEADQUARTERS_ELEMENT" Label="Combat Camera Headquarters Element" Graphic="10111200.svg" SpecialCloverGraphic="10xxxx95_0.svg" SpecialRectangleGraphic="10xxxx95_1.svg" SpecialSquareGraphic="10xxxx95_2.svg" SpecialDiamondGraphic="10xxxx95_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>5</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="VIDEO_DIV_AND_BELOW_SUPPORT" Label="Division and Below Support Combat Camera" Graphic="10111200.svg" SpecialCloverGraphic="10xxxx96_0.svg" SpecialRectangleGraphic="10xxxx96_1.svg" SpecialSquareGraphic="10xxxx96_2.svg" SpecialDiamondGraphic="10xxxx96_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>6</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="VIDEO_CORPS_SUPPORT" Label="Corps Support Combat Camera" Graphic="10111200.svg" SpecialCloverGraphic="10xxxx97_0.svg" SpecialRectangleGraphic="10xxxx97_1.svg" SpecialSquareGraphic="10xxxx98_2.svg" SpecialDiamondGraphic="10xxxx98_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>7</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-            <EntitySubType ID="VIDEO_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support Combat Camera" Graphic="10111200.svg" SpecialCloverGraphic="10xxxx98_0.svg" SpecialRectangleGraphic="10xxxx98_1.svg" SpecialSquareGraphic="10xxxx98_2.svg" DiamondGraphic="10xxxx98_3.svg" Icon="SPECIAL">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>8</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-          </EntitySubTypes>          
 				</EntityType>
 			</EntityTypes>
 		</Entity>
@@ -722,12 +414,6 @@
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="AD_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10130195_0.svg" RectangleGraphic="10130195_1.svg" SquareGraphic="10130195_2.svg" DiamondGraphic="10130195_3.svg" Icon="FULL_FRAME">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
 					</EntitySubTypes>
 				</EntityType>
 				<EntityType ID="AIR_LAND_NAVAL_GUNFIRE_LIAISON" Label="Air/Land Naval Gunfire Liaison" CloverGraphic="10130200_0.svg" RectangleGraphic="10130200_1.svg" SquareGraphic="10130200_2.svg" DiamondGraphic="10130200_3.svg" Icon="FULL_FRAME">
@@ -752,12 +438,6 @@
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="FA_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10130395_0.svg" RectangleGraphic="10130395_1.svg" SquareGraphic="10130395_2.svg" DiamondGraphic="10130395_3.svg" Icon="FULL_FRAME">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>5</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
 					</EntitySubTypes>
@@ -862,12 +542,6 @@
 								<DigitTwo>5</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="CBRN_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10140195_0.svg" RectangleGraphic="10140195_1.svg" SquareGraphic="10140195_2.svg" DiamondGraphic="10140195_3.svg" Icon="FULL_FRAME">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
 					</EntitySubTypes>
 				</EntityType>
 				<EntityType ID="COMBAT_SUPPORT_MANEUVER_ENHANCEMENT" Label="Combat Support (Maneuver Enhancement)" Graphic="10140200.svg">
@@ -875,14 +549,6 @@
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
 					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="CS_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10140295_0.svg" RectangleGraphic="10140295_1.svg" SquareGraphic="10140295_2.svg" DiamondGraphic="10140295_3.svg" Icon="FULL_FRAME">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-					</EntitySubTypes>
 				</EntityType>
 				<EntityType ID="CRIMINAL_INVESTIGATION_DIVISION" Label="Criminal Investigation Division" Graphic="10140300.svg">
 					<EntityTypeCode>
@@ -930,12 +596,6 @@
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="ENG_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10140795_0.svg" RectangleGraphic="10140795_1.svg" SquareGraphic="10140795_2.svg" DiamondGraphic="10140795_3.svg" Icon="FULL_FRAME">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>5</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
 					</EntitySubTypes>
@@ -1116,7 +776,7 @@
             </EntitySubType>
           </EntitySubTypes>
         </EntityType>
-        <EntityType ID="INTERCEPT_SEARCH_AND_RECORDING" Label="Intercept (Search and Recording)" Graphic="10150600.svg">
+        <EntityType ID="INTERCEPT_SEARCH_RECORDING" Label="Intercept (Search and Recording)" Graphic="10150600.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>6</DigitTwo>
@@ -1145,14 +805,6 @@
             <DigitOne>1</DigitOne>
             <DigitTwo>0</DigitTwo>
           </EntityTypeCode>
-          <EntitySubTypes>
-            <EntitySubType ID="MI_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10151095_0.svg" RectangleGraphic="10151095_1.svg" SquareGraphic="10151095_2.svg" DiamondGraphic="10151095_3.svg">
-              <EntitySubTypeCode>
-                <DigitOne>9</DigitOne>
-                <DigitTwo>5</DigitTwo>
-              </EntitySubTypeCode>
-            </EntitySubType>
-          </EntitySubTypes>
         </EntityType>
         <EntityType ID="SEARCH" Label="Search" Graphic="10151100.svg">
           <EntityTypeCode>
@@ -1174,51 +826,19 @@
 	      <DigitTwo>6</DigitTwo>
       </EntityCode>
 			<EntityTypes>
-				<EntityType ID="SUSTAIN_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10169500_0.svg" RectangleGraphic="10169500_1.svg" SquareGraphic="10169500_2.svg" DiamondGraphic="10169500_3.svg">
-					<EntityTypeCode>
-						<DigitOne>9</DigitOne>
-						<DigitTwo>5</DigitTwo>
-					</EntityTypeCode>
-				</EntityType>
-				<EntityType ID="SUSTAIN_CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10169700_0.svg" RectangleGraphic="10169700_1.svg" SquareGraphic="10169700_2.svg" DiamondGraphic="10169700_3.svg">
-					<EntityTypeCode>
-						<DigitOne>9</DigitOne>
-						<DigitTwo>7</DigitTwo>
-					</EntityTypeCode>
-				</EntityType>
-				<EntityType ID="SUSTAIN_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10169800_0.svg" RectangleGraphic="10169800_1.svg" SquareGraphic="10169800_2.svg" DiamondGraphic="10169800_3.svg">
-					<EntityTypeCode>
-						<DigitOne>9</DigitOne>
-						<DigitTwo>8</DigitTwo>
-					</EntityTypeCode>
-				</EntityType>
 				<EntityType ID="ADMINISTRATIVE" Label="Administrative" Graphic="10160100.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
 					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="ADMIN_CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10160197_0.svg" RectangleGraphic="10160197_1.svg" SquareGraphic="10160197_2.svg" DiamondGraphic="10160197_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>7</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="ADMIN_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10160198_0.svg" RectangleGraphic="10160198_1.svg" SquareGraphic="10160198_2.svg" DiamondGraphic="10160198_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>8</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="ALL_CLASSES_OF_SUPPLY" Label="All Classes of Supply" CloverGraphic="10160200_0.svg" RectangleGraphic="10160200_1.svg" SquareGraphic="10160200_2.svg" DiamondGraphic="10160200_3.svg">
+				<EntityType ID="ALL_CLASSES_SUPPLY" Label="All Classes of Supply" CloverGraphic="10160200_0.svg" RectangleGraphic="10160200_1.svg" SquareGraphic="10160200_2.svg" DiamondGraphic="10160200_3.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
 					</EntityTypeCode>
 				</EntityType>
-				<EntityType ID="AIRPORT_OF_DEBARKATION_AIRPORT_OF_EMBARKATION_" Label="Airport of Debarkation/Airport of Embarkation" Graphic="10160300.svg">
+				<EntityType ID="AIRPORT_DEBARKATION_AIRPORT_EMBARKATION_" Label="Airport of Debarkation/Airport of Embarkation" Graphic="10160300.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>3</DigitTwo>
@@ -1247,20 +867,6 @@
 						<DigitOne>0</DigitOne>
 						<DigitTwo>7</DigitTwo>
 					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="FINANCE_CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10160797_0.svg" RectangleGraphic="10160797_1.svg" SquareGraphic="10160797_2.svg" DiamondGraphic="10160797_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>7</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="FINANCE_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10160798_0.svg" RectangleGraphic="10160798_1.svg" SquareGraphic="10160798_2.svg" DiamondGraphic="10160798_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>8</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-					</EntitySubTypes>
 				</EntityType>
 				<EntityType ID="JUDGE_ADVOCATE_GENERAL" Label="Judge Advocate General" Graphic="10160800.svg">
 					<EntityTypeCode>
@@ -1285,26 +891,6 @@
 						<DigitOne>1</DigitOne>
 						<DigitTwo>1</DigitTwo>
 					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="MAINT_HEADQUARTERS_ELEMENT_" Label="Headquarters Element" CloverGraphic="10161195_0.svg" RectangleGraphic="10161195_1.svg" SquareGraphic="10161195_2.svg" DiamondGraphic="10161195_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="MAINT_CORPS_SUPPORT_" Label="Corps Support" CloverGraphic="10161197_0.svg" RectangleGraphic="10161197_1.svg" SquareGraphic="10161197_2.svg" DiamondGraphic="10161197_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>7</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="MAINT_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10161198_0.svg" RectangleGraphic="10161198_1.svg" SquareGraphic="10161198_2.svg" DiamondGraphic="10161198_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>8</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-					</EntitySubTypes>
 				</EntityType>
 				<EntityType ID="MATERIAL" Label="Material" CloverGraphic="10161200_0.svg" RectangleGraphic="10161200_1.svg" SquareGraphic="10161200_2.svg" DiamondGraphic="10161200_3.svg">
 					<EntityTypeCode>
@@ -1317,26 +903,6 @@
 						<DigitOne>1</DigitOne>
 						<DigitTwo>3</DigitTwo>
 					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="MED_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10161395_0.svg" RectangleGraphic="10161395_1.svg" SquareGraphic="10161395_2.svg" DiamondGraphic="10161395_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="MED_CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10161397_0.svg" RectangleGraphic="10161397_1.svg" SquareGraphic="10161397_2.svg" DiamondGraphic="10161397_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>7</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="MED_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10161398_0.svg" RectangleGraphic="10161398_1.svg" SquareGraphic="10161398_2.svg" DiamondGraphic="10161398_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>8</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-					</EntitySubTypes>
 				</EntityType>
 				<EntityType ID="MEDICAL_TREATMENT_FACILITY" Label="Medical Treatment Facility" CloverGraphic="10161400_0.svg" RectangleGraphic="10161400_1.svg" SquareGraphic="10161400_2.svg" DiamondGraphic="10161400_3.svg">
 					<EntityTypeCode>
@@ -1397,42 +963,14 @@
 						<DigitOne>2</DigitOne>
 						<DigitTwo>3</DigitTwo>
 					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="ORD_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10162395_0.svg" RectangleGraphic="10162395_1.svg" SquareGraphic="10162395_2.svg" DiamondGraphic="10162395_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="ORD_CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10162397_0.svg" RectangleGraphic="10162397_1.svg" SquareGraphic="10162397_2.svg" DiamondGraphic="10162397_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>7</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="ORD_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10162398_0.svg" RectangleGraphic="10162398_1.svg" SquareGraphic="10162398_2.svg" DiamondGraphic="10162398_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>8</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-					</EntitySubTypes>
 				</EntityType>
 				<EntityType ID="PERSONNEL_SERVICES" Label="Personnel Services" Graphic="10162400.svg">
 					<EntityTypeCode>
 						<DigitOne>2</DigitOne>
 						<DigitTwo>4</DigitTwo>
 					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="PS_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10162495_0.svg" RectangleGraphic="10162495_1.svg" SquareGraphic="10162495_2.svg" DiamondGraphic="10162495_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="PETROLEUM_OIL_AND_LUBRICANTS" Label="Petroleum Oil and Lubricants" Graphic="10162500.svg">
+				<EntityType ID="PETROLEUM_OIL_LUBRICANTS" Label="Petroleum Oil and Lubricants" Graphic="10162500.svg">
 					<EntityTypeCode>
 						<DigitOne>2</DigitOne>
 						<DigitTwo>5</DigitTwo>
@@ -1461,26 +999,6 @@
 						<DigitOne>2</DigitOne>
 						<DigitTwo>9</DigitTwo>
 					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="Q_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10162995_0.svg" RectangleGraphic="10162995_1.svg" SquareGraphic="10162995_2.svg" DiamondGraphic="10162995_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="Q_CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10162997_0.svg" RectangleGraphic="10162997_1.svg" SquareGraphic="10162997_2.svg" DiamondGraphic="10162997_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>7</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="Q_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10162998_0.svg" RectangleGraphic="10162998_1.svg" SquareGraphic="10162998_2.svg" DiamondGraphic="10162998_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>8</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-					</EntitySubTypes>
 				</EntityType>
 				<EntityType ID="RAILHEAD" Label="Railhead" Graphic="10163000.svg">
 					<EntityTypeCode>
@@ -1500,7 +1018,7 @@
 						<DigitTwo>2</DigitTwo>
 					</EntityTypeCode>
 				</EntityType>
-				<EntityType ID="SEA_PORT_OF_DEBARKATION_SEA_PORT_OF_EMBARKATION" Label="Sea Port of Debarkation/Sea Port of Embarkation" Graphic="10163300.svg">
+				<EntityType ID="SEA_PORT_DEBARKATION_SEA_PORT_EMBARKATION" Label="Sea Port of Debarkation/Sea Port of Embarkation" Graphic="10163300.svg">
 					<EntityTypeCode>
 						<DigitOne>3</DigitOne>
 						<DigitTwo>3</DigitTwo>
@@ -1517,46 +1035,12 @@
 						<DigitOne>3</DigitOne>
 						<DigitTwo>5</DigitTwo>
 					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="JIB_CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10163597_0.svg" RectangleGraphic="10163597_1.svg" SquareGraphic="10163597_2.svg" DiamondGraphic="10163597_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>7</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="JIB_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10163598_0.svg" RectangleGraphic="10163598_1.svg" SquareGraphic="10163598_2.svg" DiamondGraphic="10163598_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>8</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-					</EntitySubTypes>
 				</EntityType>
 				<EntityType ID="TRANSPORTATION" Label="Transportation" Graphic="10163600.svg">
 					<EntityTypeCode>
 						<DigitOne>3</DigitOne>
 						<DigitTwo>6</DigitTwo>
 					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="TRAN_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10163695_0.svg" RectangleGraphic="10163695_1.svg" SquareGraphic="10163695_2.svg" DiamondGraphic="10163695_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="TRAN_CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10163697_0.svg" RectangleGraphic="10163697_1.svg" SquareGraphic="10163697_2.svg" DiamondGraphic="10163697_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>7</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="TRAN_THEATRE_ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theatre/Echelons Above Corps Support" CloverGraphic="10163698_0.svg" RectangleGraphic="10163698_1.svg" SquareGraphic="10163698_2.svg" DiamondGraphic="10163698_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>8</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-					</EntitySubTypes>
 				</EntityType>
 				<EntityType ID="US_SUPPLY_CLASS_I" Label="US Supply Class I" CloverGraphic="10163700_0.svg" RectangleGraphic="10163700_1.svg" SquareGraphic="10163700_2.svg" DiamondGraphic="10163700_3.svg">
 					<EntityTypeCode>
@@ -1778,7 +1262,7 @@
 		</Entity>
 	</Entities>
 	<SectorOneModifiers>
-		<Modifier ID="AIR_MOBILE_AIR_ASSAULT_MOD" Label="Air Mobile/Air Assault" Category="Mobility" Graphic="10011.svg" Standard="MILSTD_2525">
+		<Modifier ID="AIR_MOBILE_AIR_ASSAULT_MOD" Label="Air Mobile/Air Assault (US Only)" Category="Mobility" Graphic="10011.svg" Standard="MILSTD_2525">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>1</DigitTwo>
@@ -2024,7 +1508,7 @@
 				<DigitTwo>1</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="NATO_MEDICAL_ROLE_1__MOD" Label="NATO Medical Role 1 " Category="Capability" Graphic="10421.svg">
+		<Modifier ID="NATO_MEDICAL_ROLE_1_MOD" Label="NATO Medical Role 1" Category="Capability" Graphic="10421.svg">
 			<ModifierCode>
 				<DigitOne>4</DigitOne>
 				<DigitTwo>2</DigitTwo>

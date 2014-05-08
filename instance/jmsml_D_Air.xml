@@ -62,7 +62,7 @@
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="ECJ" Label="Electronic/Combat (EC)/Jammer" Graphic="01110108.svg">
+            <EntitySubType ID="ECJ" Label="Electronic Combat (EC)/Jammer" Graphic="01110108.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>8</DigitTwo>
@@ -125,14 +125,14 @@
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="ASUW" Label="Antisurface Warfare (ASUW)" Graphic="01110117.svg">
+            <EntitySubType ID="ASUW" Label="Antisurface Warfare" Graphic="01110117.svg">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
                 <DigitTwo>7</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="ASW" Label="Antisubmarine Warfare (ASW)" Graphic="01110118.svg">
+            <EntitySubType ID="ASW" Label="Antisubmarine Warfare" Graphic="01110118.svg">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
                 <DigitTwo>8</DigitTwo>
@@ -297,21 +297,21 @@
       </EntityCode>
 
       <EntityTypes>
-        <EntityType ID="CIV_FIXED_WING" Label="Fixed-Wing" Graphic="01120100.svg">
+        <EntityType ID="CIV_FIXED_WING" Label="Fixed Wing" Graphic="01120100.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>1</DigitTwo>
           </EntityTypeCode>
         </EntityType>
 
-        <EntityType ID="CIV_ROTARY_WING" Label="Rotary-Wing" Graphic="01120200.svg">
+        <EntityType ID="CIV_ROTARY_WING" Label="Rotary Wing" Graphic="01120200.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
         </EntityType>
 
-        <EntityType ID="CIV_UAV" Label="Unmanned Aircraft (UA)/Unmanned Aerial Vehicle (UAV)/Unmanned Aircraft System (UAS)/Remote Piloted Vehicle (RPV)" Graphic="01120300.svg">
+        <EntityType ID="CIV_UAV" Label="Unmanned Aircraft (UA) / Unmanned Aerial Vehicle (UAV) / Unmanned Aircraft System (UAS) / Remote Piloted Vehicle (RPV)" Graphic="01120300.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>3</DigitTwo>
@@ -332,7 +332,7 @@
           </EntityTypeCode>
         </EntityType>
 
-        <EntityType ID="CIV_TETHERED_LTA" Label="Tethered Lighter Than Air" Graphic="01120600.svg">
+        <EntityType ID="CIV_TETHERED_LTA" Label="Tethered Lighter than Air" Graphic="01120600.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>6</DigitTwo>

@@ -253,7 +253,7 @@
           </SymbolSetCode>
         </SymbolSetRef>
 
-        <SymbolSetRef ID="SS_CYBER_AIR" Label="Cyberspace - Air" Instance="jmsml_D_Cyberspace_Air.xml">
+        <SymbolSetRef ID="SS_CYBERSPACE" Label="Cyberspace" Instance="jmsml_D_Cyberspace.xml">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>0</DigitTwo>
@@ -297,7 +297,7 @@
           </SymbolSetCode>
         </SymbolSetRef>
 
-        <SymbolSetRef ID="SS_CYBER_SPACE" Label="Cyberspace - Space" Instance="jmsml_D_Cyberspace_Space.xml">
+        <SymbolSetRef ID="SS_CYBERSPACE" Label="Cyberspace" Instance="jmsml_D_Cyberspace.xml">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>0</DigitTwo>
@@ -408,7 +408,7 @@
           </SymbolSetCode>
         </SymbolSetRef>
 
-        <SymbolSetRef ID="SS_CYBER_LAND" Label="Cyberspace - Land" Instance="jmsml_D_Cyberspace_Land.xml">
+        <SymbolSetRef ID="SS_CYBERSPACE" Label="Cyberspace" Instance="jmsml_D_Cyberspace.xml">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>0</DigitTwo>
@@ -449,7 +449,7 @@
         <Field Name="V" Label="Type" Description="A text amplifier for equipment that indicates types of equipment." AmplifierID="V" X="1" Y="1"/>
         <Field Name="W" Label="Date-Time Group (DTG)" Description="An alphanumeric designator for displaying a date-time group or on order." Remarks="DDHHMMSSZMONYYYY or O/O, where DD = Day, HH = Hour, MM = Minute, SS = Second, Z = Time Zone, MON = Month, YYYY = Year, O/O = On Order" AmplifierID="W" X="-1" Y="2"/>
         <Field Name="X" Label="Altitude" Description="A text amplifier for units that displays altitude flight level." Remarks="Measurement units shall be displayed within the string. Examples: 1500MSL FL150" AmplifierID="X" X="1" Y="-1"/>
-        <Field Name="Y" Label="A text amplifier for units, equipment, and installations that displays a symbol's location in degrees, minutes, and decimal minutes." Remarks="Alternatively, in MGRS or other applicable display format." AmplifierID="Y" X="-1" Y="1"/>        
+        <Field Name="Y" Description="Location" Label="A text amplifier for units, equipment, and installations that displays a symbol's location in degrees, minutes, and decimal minutes." Remarks="Alternatively, in MGRS or other applicable display format." AmplifierID="Y" X="-1" Y="1"/>        
         <Field Name="Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD-6040." AmplifierID="Z" X="1" Y="-1"/>
       </Fields>
       <SymbolSets>
@@ -493,7 +493,7 @@
           </SymbolSetCode>
         </SymbolSetRef>
 
-        <SymbolSetRef ID="SS_CYBER_SURFACE" Label="Cyberspace - Surface" Instance="jmsml_D_Cyberspace_Surface.xml">
+        <SymbolSetRef ID="SS_CYBERSPACE" Label="Cyberspace" Instance="jmsml_D_Cyberspace.xml">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>0</DigitTwo>
@@ -536,7 +536,7 @@
           </SymbolSetCode>
         </SymbolSetRef>
 
-        <SymbolSetRef ID="SS_CYBER_SUBSURFACE" Label="Cyberspace - Subsurface" Instance="jmsml_D_Cyberspace_Subsurface.xml">
+        <SymbolSetRef ID="SS_CYBERSPACE" Label="Cyberspace" Instance="jmsml_D_Cyberspace.xml">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>0</DigitTwo>
@@ -567,6 +567,37 @@
       </SymbolSets>
     </Dimension>
 
+    <Dimension ID="CONTROL_MEASURE" Label="Control Measure">
+      <LegacyDimensionCode Name="2525C">G</LegacyDimensionCode>
+      <Fields>
+<!--Not sure what to do with amplifier coordinates, so zeroed out the values.-->
+        <Field Name="AM" Label="Distance" Description="A numeric amplifier that displays a minimum, maximum, or a specific distance (range, radius, width, length, etc.) in meters." AmplifierID="AM" X="0" Y="0"/>
+        <Field Name="AN" Label="Azimuth" Description="A numeric amplifier that displays an angle measured from true north to any other line in degrees." AmplifierID="AN" X="0" Y="0"/>
+        <Field Name="AP" Label="Target Designator" Description="A six character text modifier used in Fire Support operations to uniquely designate targets in accordance with STANAG 2147." Remarks="AANNNN where A = Alphabetic, N = Numeric" AmplifierID="AP" X="0" Y="0"/>
+        <Field Name="AS" Label="Country Indicator" Description="A three-letter code that indicates the country of origin of the organization (STANAG 1059)." Remarks="In stability activities, this field can be used for factions or groups." AmplifierID="AS" X="0" Y="0"/>
+        <Field Name="A" Label="Symbol Icon" Description="The innermost part of a symbol that represents a joint military object." AmplifierID="A" X="0" Y="0"/>
+        <Field Name="B" Label="Echelon" Description="A graphic amplifier in a unit symbol that identifies command level." AmplifierID="B" X="0" Y="0"/>
+        <Field Name="C" Label="Quantity" Description="A text amplifier in an equipment symbol that identifies the number of items present." AmplifierID="C" X="0" Y="0"/>
+        <Field Name="H" Label="Additional Information" Description="A text amplifier for control measure symbols; content is implementation specific." AmplifierID="H" X="0" Y="0"/>
+        <Field Name="N" Label="Hostile (Enemy)" Description="A text amplifier for control measure symbols; the letters 'ENY' denote hostile control measure symbols." AmplifierID="N" X="0" Y="0"/>
+        <Field Name="Q" Label="Direction of Movement Indicator" Description="A graphic amplifier for events that identifies the direction of movement." AmplifierID="Q" X="0" Y="0"/>
+        <Field Name="S" Label="Offset Location Indicator" Description="A graphic amplifier for points and CBRN events used when placing an object away from its actual location." AmplifierID="S" X="0" Y="0"/>
+        <Field Name="T" Label="Unique Designation" Description="A text amplifier that uniquely identifies a particular control measure symbol or target number." Remarks="Prefix = TN:##### Example: TN:13579 Nuclear: delivery unit" AmplifierID="T" X="0" Y="0"/>
+        <Field Name="V" Label="Type" Description="A text amplifier for equipment that indicates types of equipment." AmplifierID="V" X="0" Y="0"/>
+        <Field Name="W" Label="Date-Time Group (DTG)" Description="An alphanumeric designator for displaying a date-time group or on order." Remarks="DDHHMMSSZMONYYYY or O/O, where DD = Day, HH = Hour, MM = Minute, SS = Second, Z = Time Zone, MON = Month, YYYY = Year, O/O = On Order" AmplifierID="W" X="0" Y="0"/>
+        <Field Name="X" Label="Altitude/Depth" Description="A text amplifier that displays the minimum, maximum and/or specific altitude (in feet or meters), flight level, or depth." Remarks="Measurement units shall be displayed within the string. Examples: 1500MSL FL150" AmplifierID="X" X="0" Y="0"/>
+        <Field Name="Y" Label="Location" Description="A text amplifier that displays a graphic's location in degrees, minutes, and decimal minutes." Remarks="Alternatively, in MGRS or other applicable display format." AmplifierID="Y" X="0" Y="0"/>
+      </Fields>
+      <SymbolSets>
+        <SymbolSetRef ID="SS_CONTROL_MEASURE" Label="Control Measure" Instance="jmsml_D_Control_Measure.xml">
+          <SymbolSetCode>
+            <DigitOne>2</DigitOne>
+            <DigitTwo>5</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
+      </SymbolSets>
+    </Dimension>
+    
     <Dimension ID="METOC" Label="Meteorological">
       <LegacyDimensionCode Name="2525C">W</LegacyDimensionCode>
       <Fields>
@@ -1411,7 +1442,7 @@
   <AmplifierGroups>
     <AmplifierGroup Name="NA" Label="Not applicable">
       <AmplifierGroupCode>0</AmplifierGroupCode>
-      <LegacyModifierCode Name="2525C" Description="OverrIDes character 11 in old SIDC">-</LegacyModifierCode>
+      <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC">-</LegacyModifierCode>
       
       <Amplifiers>
         <Amplifier Name="NA" Label="Not applicable">
@@ -1423,7 +1454,7 @@
     
     <AmplifierGroup Name="ECHELON_BDE_BELOW" Label="Echelon at brigade and below" CompatibleSymbolSetIDs="SS_AIR">
       <AmplifierGroupCode>1</AmplifierGroupCode>
-      <LegacyModifierCode Name="2525C" Description="OverrIDes character 11 in old SIDC">-</LegacyModifierCode>
+      <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC">-</LegacyModifierCode>
       
       <Amplifiers>
         <Amplifier Name="TEAM_CREW" Label="Team/Crew">
@@ -1441,7 +1472,7 @@
           <LegacyModifierCode Name="2525C">C</LegacyModifierCode>
         </Amplifier>
 
-        <Amplifier Name="PLT_DETACHMENT" Label="Platoon/Detachment">
+        <Amplifier Name="PLT_DETACHMENT" Label="Platoon/Detachment" Graphic="">
           <AmplifierCode>4</AmplifierCode>
           <LegacyModifierCode Name="2525C">D</LegacyModifierCode>
         </Amplifier>
@@ -1474,7 +1505,7 @@
 
     <AmplifierGroup Name="ECHELON_DIV_ABOVE" Label="Echelon at division and above" CompatibleSymbolSetIDs="SS_AIR">
       <AmplifierGroupCode>2</AmplifierGroupCode>
-      <LegacyModifierCode Name="2525C" Description="OverrIDes character 11 in old SIDC">-</LegacyModifierCode>
+      <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC">-</LegacyModifierCode>
       
       <Amplifiers>
         <Amplifier Name="DIV" Label="Division">
@@ -1561,7 +1592,7 @@
 
     <AmplifierGroup Name="EQUIP_MOBILITY_SNOW" Label="Equipment mobility on snow">
       <AmplifierGroupCode>4</AmplifierGroupCode>
-      <LegacyModifierCode Name="2525C" Description="OverrIDes character 11 in old SIDC">M</LegacyModifierCode>
+      <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC">M</LegacyModifierCode>
       
       <Amplifiers>
         <Amplifier Name="OVER_SNOW" Label="Over snow (prime mover)">
@@ -1582,7 +1613,7 @@
 
     <AmplifierGroup Name="EQUIP_MOBILITY_WATER" Label="Equipment mobility on water">
       <AmplifierGroupCode>5</AmplifierGroupCode>
-      <LegacyModifierCode Name="2525C" Description="OverrIDes character 11 in old SIDC">M</LegacyModifierCode>
+      <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC">M</LegacyModifierCode>
       
       <Amplifiers>
         <Amplifier Name="BARGE" Label="Barge">
@@ -1603,7 +1634,7 @@
 
     <AmplifierGroup Name="TOWED_ARRAYS" Label="Naval towed array" CompatibleSymbolSetIDs="SS_SEA_SURFACE">
       <AmplifierGroupCode>6</AmplifierGroupCode>
-      <LegacyModifierCode Name="2525C" Description="OverrIDes character 11 in old SIDC">N</LegacyModifierCode>
+      <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC">N</LegacyModifierCode>
       
       <Amplifiers>
         <Amplifier Name="SHORT_TOWED_ARRAY" Label="Short towed array">

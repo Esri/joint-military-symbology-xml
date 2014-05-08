@@ -64,8 +64,8 @@ Air Missile : Modifier 2 : Missile Destination : Space,02042
 Air Missile : Modifier 2 : Missile Status : Launched,02052
 Air Missile : Modifier 2 : Missile Status : Missile,02062
 Air Missile : Modifier 2 : Missile Type-BMD : Patriot,02072
-Air Missile : Modifier 2 : Missile Type-AAW : Standard Missile - 2 (SM-2),02082
-Air Missile : Modifier 2 : Missile Type-AAW : Standard Missile - 6 (SM-6),02092
+Air Missile : Modifier 2 : Missile Type-AAW : Standard Missile-2 (SM-2),02082
+Air Missile : Modifier 2 : Missile Type-AAW : Standard Missile-6 (SM-6),02092
 Air Missile : Modifier 2 : Missile Type-AAW : Evolved Sea Sparrow Missile (ESSM),02102
 Air Missile : Modifier 2 : Missile Type-AAW : Rolling Airframe Missile (RAM),02112
 Air Missile : Modifier 2 : Missile Range : Short Range,02122
@@ -183,7 +183,7 @@ Signals Intelligence - Space : Modifier 1 : Space/Air/Land/Sea Surface/Subsurfac
 Signals Intelligence - Space : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Radar : Unknown,50621
 Signals Intelligence - Space : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Radar : Video Remoting,50631
 Signals Intelligence - Space : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Radar : Experimental,50641
-Land Units : Modifier 1 : Mobility : Air Mobile/Air Assault,10011
+Land Units : Modifier 1 : Mobility : Air Mobile/Air Assault (US Only),10011
 Land Units : Modifier 1 : Capability : Area,10021
 Land Units : Modifier 1 : Capability : Attack,10031
 Land Units : Modifier 1 : Capability : Biological,10041
@@ -436,18 +436,18 @@ Sea Surface : Modifier 1 : Mission Area : Mine Countermeasures,30071
 Sea Surface : Modifier 1 : Mission Area : Missile Defense,30081
 Sea Surface : Modifier 1 : Mission Area : Medical,30091
 Sea Surface : Modifier 1 : Mission Area : Mine Warfare,30101
-Sea Surface : Modifier 1 : Mission Area : Remote Multimission Vehicle (RMV),30111
+Sea Surface : Modifier 1 : Mission Area : Remote Multi-Mission Vehicle (USV-only),30111
 Sea Surface : Modifier 1 : Asset Capability : Special Operations Forces (SOF),30121
 Sea Surface : Modifier 1 : Mission Area : Surface Warfare,30131
 Sea Surface : Modifier 1 : Weapons Capability : Ballistic Missile,30141
 Sea Surface : Modifier 1 : Weapons Capability : Guided Missile,30151
 Sea Surface : Modifier 1 : Weapons Capability : Other Guided Missile,30161
 Sea Surface : Modifier 1 : Weapons Capability : Torpedo,30171
-Sea Surface : Modifier 1 : Asset Capability : Drone Equipped,30181
-Sea Surface : Modifier 1 : Asset Capability : Helicopter Equipped/VSTOL,30191
+Sea Surface : Modifier 1 : Asset Capability : Drone-Equipped,30181
+Sea Surface : Modifier 1 : Asset Capability : Helicopter-Equipped/VSTOL,30191
 Sea Surface : Modifier 1 : Mission Area : Ballistic Missile Defense- Shooter,30201
 Sea Surface : Modifier 1 : Mission Area : Ballistic Missile Defense- Long-Range Surveillance and Track (LRST),30211
-Sea Surface : Modifier 1 : Mission Area : Sea-Based X-Band,30221
+Sea Surface : Modifier 1 : Mission Area : Sea-Base X-Band,30221
 Sea Surface : Modifier 1 : Crime : Hijacking/Hijacked,30231
 Sea Surface : Modifier 2 : Ship Propulsion : Nuclear Powered,30012
 Sea Surface : Modifier 2 : Ship Capacity : Heavy,30022
@@ -585,21 +585,21 @@ Signals Intelligence - Subsurface : Modifier 1 : Space/Air/Land/Sea Surface/Subs
 Signals Intelligence - Subsurface : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Radar : Unknown,54621
 Signals Intelligence - Subsurface : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Radar : Video Remoting,54631
 Signals Intelligence - Subsurface : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Radar : Experimental,54641
-Activities : Modifier 1 : Crime : Assassination,40011
-Activities : Modifier 1 : Crime : Execution (Wrongful Killing),40021
-Activities : Modifier 1 : Crime : Hijacking/Hijacked,40031
-Activities : Modifier 1 : Psychological Operations : House-to-House,40041
-Activities : Modifier 1 : Crime : Kidnapping,40051
-Activities : Modifier 1 : Crime : Murder,40061
-Activities : Modifier 1 : Crime : Piracy,40071
-Activities : Modifier 1 : Crime : Rape,40081
-Activities : Modifier 1 : Psychological Operations : Written Psychological Operations,40091
-Activities : Modifier 1 : Crime : Pirate,40101
-Activities : Modifier 1 : IED Category : FALSE,40111
-Activities : Modifier 1 : IED Category : Find,40121
-Activities : Modifier 1 : IED Category : IED Category,40131
-Activities : Modifier 1 : IED Category : Hoax (Decoy),40141
-Activities : Modifier 1 : Incident Qualifier : Attempted,40151
-Activities : Modifier 1 : Incident Qualifier : Accident,40161
-Activities : Modifier 1 : Incident Qualifier : Incident,40171
-Activities : Modifier 1 : Crime : Theft,40181
+Activity : Modifier 1 : Crime : Assassination,40011
+Activity : Modifier 1 : Crime : Execution (Wrongful Killing),40021
+Activity : Modifier 1 : Crime : Hijacking/Hijacked,40031
+Activity : Modifier 1 : Psychological Operations : House-to-House,40041
+Activity : Modifier 1 : Crime : Kidnapping,40051
+Activity : Modifier 1 : Crime : Murder,40061
+Activity : Modifier 1 : Crime : Piracy,40071
+Activity : Modifier 1 : Crime : Rape,40081
+Activity : Modifier 1 : Psychological Operations : Written Psychological Operations,40091
+Activity : Modifier 1 : Crime : Pirate,40101
+Activity : Modifier 1 : IED Category : False,40111
+Activity : Modifier 1 : IED Category : Find,40121
+Activity : Modifier 1 : IED Category : Found and Cleared,40131
+Activity : Modifier 1 : IED Category : Hoax (Decoy),40141
+Activity : Modifier 1 : Incident Qualifier : Attempted,40151
+Activity : Modifier 1 : Incident Qualifier : Accident,40161
+Activity : Modifier 1 : Incident Qualifier : Incident,40171
+Activity : Modifier 1 : Crime : Theft,40181

@@ -137,7 +137,7 @@
                               <xs:sequence>
                                 <xs:element name="SymbolSetCode" type="DoubleDigitType"/>
                               </xs:sequence>
-                              <xs:attributeGroup ref="IdentifierAttributeGroup"/>
+                              <xs:attributeGroup ref="IdentifierAttributeGroup2"/>
                               <xs:attribute name="Instance" type="xs:anyURI" use="optional"/>
                             </xs:complexType>
                           </xs:element>
