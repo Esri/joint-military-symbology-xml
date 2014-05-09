@@ -47,25 +47,45 @@ namespace JointMilitarySymbologyLibrary
                          
             if (eSubType != null)
             {
-                graphic = eSubType.Graphic;
+                // TODO: handle this differently, but for now, we export the square
+                // graphic if there are in fact multiple files.
+
+                if (eSubType.Graphic != "" && eSubType.Icon != IconType.FULL_FRAME)
+                    graphic = eSubType.Graphic;
+                else
+                    graphic = eSubType.SquareGraphic;
+
                 iType = eSubType.Icon;
             }
             else if (eType != null)
             {
-                graphic = eType.Graphic;
+                if (eType.Graphic != "" && eType.Icon != IconType.FULL_FRAME)
+                    graphic = eType.Graphic;
+                else
+                    graphic = eType.SquareGraphic;
+
                 iType = eType.Icon;
             }
             else if (e != null)
             {
-                graphic = e.Graphic;
+                if (e.Graphic != "" && e.Icon != IconType.FULL_FRAME)
+                    graphic = e.Graphic;
+                else
+                    graphic = e.SquareGraphic;
+
                 iType = e.Icon;
             }
+
+            if (iType == IconType.NA)
+                _notes = _notes + "icon is NA - entity is never to be drawn;";
+            else
+                _notes = _notes + "icon is " + Convert.ToString(iType) + ";";
 
             string itemRootedPath = _configHelper.BuildRootedPath(graphicPath, graphic);
             string itemActualPath = _configHelper.BuildActualPath(graphicPath, graphic);
 
             if (!File.Exists(itemActualPath))
-                _notes = _notes + "Image file does not exist;";
+                _notes = _notes + "image file does not exist;";
             
             string itemName = BuildEntityItemName(ss, e, eType, eSubType);
             string itemCategory = BuildEntityItemCategory(ss, iType);

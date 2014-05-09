@@ -7,7 +7,7 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 01,Military,Fixed-Wing,Fighter,110104,Point
 01,Military,Fixed-Wing,Fighter/Bomber,110105,Point
 01,Military,Fixed-Wing,Cargo,110107,Point
-01,Military,Fixed-Wing,Electronic/Combat (EC)/Jammer,110108,Point
+01,Military,Fixed-Wing,Electronic Combat (EC)/Jammer,110108,Point
 01,Military,Fixed-Wing,Tanker,110109,Point
 01,Military,Fixed-Wing,Patrol,110110,Point
 01,Military,Fixed-Wing,Reconnaissance,110111,Point
@@ -16,8 +16,8 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 01,Military,Fixed-Wing,VSTOL,110114,Point
 01,Military,Fixed-Wing,Airborne Command Post (ACP),110115,Point
 01,Military,Fixed-Wing,Airborne Early Warning (AEW),110116,Point
-01,Military,Fixed-Wing,Antisurface Warfare (ASUW),110117,Point
-01,Military,Fixed-Wing,Antisubmarine Warfare (ASW),110118,Point
+01,Military,Fixed-Wing,Antisurface Warfare,110117,Point
+01,Military,Fixed-Wing,Antisubmarine Warfare,110118,Point
 01,Military,Fixed-Wing,Communications,110119,Point
 01,Military,Fixed-Wing,Combat Search and Rescue (CSAR),110120,Point
 01,Military,Fixed-Wing,Electronic Support (ES),110121,Point
@@ -40,12 +40,12 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 01,Military,Airship,,110600,Point
 01,Military,Tethered Lighter Than Air,,110700,Point
 01,Civilian,,,120000,Point
-01,Civilian,Fixed-Wing,,120100,Point
-01,Civilian,Rotary-Wing,,120200,Point
-01,Civilian,Unmanned Aircraft (UA)/Unmanned Aerial Vehicle (UAV)/Unmanned Aircraft System (UAS)/Remote Piloted Vehicle (RPV),,120300,Point
+01,Civilian,Fixed Wing,,120100,Point
+01,Civilian,Rotary Wing,,120200,Point
+01,Civilian,Unmanned Aircraft (UA) / Unmanned Aerial Vehicle (UAV) / Unmanned Aircraft System (UAS) / Remote Piloted Vehicle (RPV),,120300,Point
 01,Civilian,Lighter Than Air,,120400,Point
 01,Civilian,Airship,,120500,Point
-01,Civilian,Tethered Lighter Than Air,,120600,Point
+01,Civilian,Tethered Lighter than Air,,120600,Point
 01,Weapon,,,130000,Point
 01,Weapon,Bomb,,130100,Point
 01,Weapon,Decoy,,130200,Point

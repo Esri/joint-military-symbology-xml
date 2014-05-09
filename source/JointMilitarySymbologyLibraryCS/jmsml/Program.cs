@@ -89,7 +89,7 @@ namespace jmsml
 
             if (exportDomainPath != "")
             {
-                _etl.ExportDomains(exportDomainPath, dataValidation);
+                _etl.ExportDomains(exportDomainPath, dataValidation, appendFiles);
             }
 
             if (importPath != "")

@@ -132,16 +132,18 @@ namespace JointMilitarySymbologyLibrary
 
                 // The following is a work around because our symbol system doesn't
                 // need the export of multiple SVG files for the same symbol.
-                // TODO: handle this differently, but for now, we export the diamond
+                // TODO: handle this differently, but for now, we export the square
                 // graphic if there are in fact multiple files.
 
-                if (eSubType.Graphic != "" && eSubType.Icon != IconType.FULL_FRAME)
-                    graphic = eSubType.Graphic;
-                else
+                if (eSubType.Icon == IconType.FULL_FRAME)
                 {
-                    graphic = eSubType.DiamondGraphic;
+                    graphic = eSubType.SquareGraphic;
                     _notes = _notes + "icon touches frame;";
                 }
+                else if (eSubType.Icon == IconType.NA)
+                    graphic = "";
+                else
+                    graphic = eSubType.Graphic;
             }
             else if(eType != null)
             {
@@ -149,16 +151,18 @@ namespace JointMilitarySymbologyLibrary
 
                 geometry = _geometryList[(int)eType.GeometryType];
 
-                // TODO: handle this differently, but for now, we export the diamond
+                // TODO: handle this differently, but for now, we export the square
                 // graphic if there are in fact multiple files.
 
-                if (eType.Graphic != "" && eType.Icon != IconType.FULL_FRAME)
-                    graphic = eType.Graphic;
-                else
+                if (eType.Icon == IconType.FULL_FRAME)
                 {
-                    graphic = eType.DiamondGraphic;
+                    graphic = eType.SquareGraphic;
                     _notes = _notes + "icon touches frame;";
                 }
+                else if (eType.Icon == IconType.NA)
+                    graphic = "";
+                else
+                    graphic = eType.Graphic;
             }
             else if(e != null)
             {
@@ -166,16 +170,18 @@ namespace JointMilitarySymbologyLibrary
 
                 geometry = _geometryList[(int)e.GeometryType];
 
-                // TODO: handle this differently, but for now, we export the diamond
+                // TODO: handle this differently, but for now, we export the square
                 // graphic if there are in fact multiple files.
 
-                if (e.Graphic != "" && e.Icon != IconType.FULL_FRAME)
-                    graphic = e.Graphic;
-                else
+                if (e.Icon == IconType.FULL_FRAME)
                 {
-                    graphic = e.DiamondGraphic;
+                    graphic = e.SquareGraphic;
                     _notes = _notes + "icon touches frame;";
                 }
+                else if (e.Icon == IconType.NA)
+                    graphic = "";
+                else
+                    graphic = e.Graphic;
             }
 
             result = result + ";" + geometry;
