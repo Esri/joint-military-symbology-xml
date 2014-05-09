@@ -240,7 +240,7 @@ namespace JointMilitarySymbologyLibrary
             }
             catch (KeyNotFoundException e)
             {
-                logger.Error("No graphic path could be found for " + getWhat + ".");
+                logger.Error(e.Message + "No graphic path could be found for " + getWhat + ".");
             }
 
             return result;

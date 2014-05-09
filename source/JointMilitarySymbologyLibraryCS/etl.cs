@@ -195,25 +195,46 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        private void _exportContext(string path, bool dataValidation)
+        private void _exportContext(string path, bool dataValidation, bool append = false, bool isFirst = false)
         {
             // Export the Context elements in the library as a coded domain CSV.
-            
-            string headers = "Code,Value";
 
-            using (var w = new StreamWriter(path + "\\jmsml_Context.csv"))
+            string headers;
+            string filePath;
+
+            if (append)
             {
-                w.WriteLine(headers);
+                filePath = path;
+                headers = "Type,Code,Value";
+            }
+            else
+            {
+                filePath = path + "\\jmsml_Context.csv";
+                headers = "Code,Value";
+            }
+
+            using (var w = new StreamWriter(filePath, (append && !isFirst)))
+            {
+                if (isFirst || !append)
+                    w.WriteLine(headers);
 
                 foreach (LibraryContext obj in _library.Contexts)
                 {
-                    w.WriteLine(Convert.ToString(obj.ContextCode) + ',' + obj.Label.Replace(',', '-'));
+                    if(append)
+                        w.WriteLine("Context," + Convert.ToString(obj.ContextCode) + ',' + obj.Label.Replace(',', '-'));
+                    else
+                        w.WriteLine(Convert.ToString(obj.ContextCode) + ',' + obj.Label.Replace(',', '-'));
+
                     w.Flush();
                 }
 
                 if (dataValidation)
                 {
-                    w.WriteLine("-1,NotSet");
+                    if(append)
+                        w.WriteLine("Context,-1,NotSet");
+                    else
+                        w.WriteLine("-1,NotSet");
+
                     w.Flush();
                 }
 
@@ -221,25 +242,46 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        private void _exportStandardIdentity(string path, bool dataValidation)
+        private void _exportStandardIdentity(string path, bool dataValidation, bool append = false, bool isFirst = false)
         {
             // Export the Standard Identity elements in the library as a coded domain CSV.
 
-            string headers = "Code,Value";
+            string headers;
+            string filePath;
 
-            using (var w = new StreamWriter(path + "\\jmsml_StandardIdentity.csv"))
+            if (append)
             {
-                w.WriteLine(headers);
+                filePath = path;
+                headers = "Type,Code,Value";
+            }
+            else
+            {
+                filePath = path + "\\jmsml_StandardIdentity.csv";
+                headers = "Code,Value";
+            }
+
+            using (var w = new StreamWriter(filePath, (append && !isFirst)))
+            {
+                if (isFirst || !append)
+                    w.WriteLine(headers);
 
                 foreach (LibraryStandardIdentity obj in _library.StandardIdentities)
                 {
-                    w.WriteLine(Convert.ToString(obj.StandardIdentityCode) + ',' + obj.Label.Replace(',', '-'));
+                    if(append)
+                        w.WriteLine("Identity," + Convert.ToString(obj.StandardIdentityCode) + ',' + obj.Label.Replace(',', '-'));
+                    else
+                        w.WriteLine(Convert.ToString(obj.StandardIdentityCode) + ',' + obj.Label.Replace(',', '-'));
+
                     w.Flush();
                 }
 
                 if (dataValidation)
                 {
-                    w.WriteLine("-1,NotSet");
+                    if(append)
+                        w.WriteLine("Identity,-1,NotSet");
+                    else
+                        w.WriteLine("-1,NotSet");
+
                     w.Flush();
                 }
 
@@ -247,31 +289,46 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        private void _exportSymbolSet(string path, bool dataValidation)
+        private void _exportSymbolSet(string path, bool dataValidation, bool append = false, bool isFirst = false)
         {
             // Export the Symbol Set elements in the library as a coded domain CSV.
 
-            string headers = "Code,Value";
+            string headers;
+            string filePath;
 
-            using (var w = new StreamWriter(path + "\\jmsml_SymbolSet.csv"))
+            if (append)
             {
-                w.WriteLine(headers);
+                filePath = path;
+                headers = "Type,Code,Value";
+            }
+            else
+            {
+                filePath = path + "\\jmsml_SymbolSet.csv";
+                headers = "Code,Value";
+            }
 
-                foreach (LibraryDimension dimension in _library.Dimensions)
+            using (var w = new StreamWriter(filePath, (append && !isFirst)))
+            {
+                if (isFirst || !append)
+                    w.WriteLine(headers);
+
+                foreach(SymbolSet obj in _symbolSets)
                 {
-                    if (dimension.SymbolSets != null)
-                    {
-                        foreach (LibraryDimensionSymbolSetRef obj in dimension.SymbolSets)
-                        {
-                            w.WriteLine(Convert.ToString(obj.SymbolSetCode.DigitOne) + Convert.ToString(obj.SymbolSetCode.DigitTwo) + ',' + obj.Label.Replace(',', '-'));
-                            w.Flush();
-                        }
-                    }
+                    if(append)
+                        w.WriteLine("SymbolSet," + Convert.ToString(obj.SymbolSetCode.DigitOne) + Convert.ToString(obj.SymbolSetCode.DigitTwo) + ',' + obj.Label.Replace(',', '-'));
+                    else
+                        w.WriteLine(Convert.ToString(obj.SymbolSetCode.DigitOne) + Convert.ToString(obj.SymbolSetCode.DigitTwo) + ',' + obj.Label.Replace(',', '-'));
+                    
+                    w.Flush();
                 }
 
                 if (dataValidation)
                 {
-                    w.WriteLine("-1,NotSet");
+                    if(append)
+                        w.WriteLine("SymbolSet,-1,NotSet");
+                    else
+                        w.WriteLine("-1,NotSet");
+
                     w.Flush();
                 }
 
@@ -279,25 +336,46 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        private void _exportStatus(string path, bool dataValidation)
+        private void _exportStatus(string path, bool dataValidation, bool append = false, bool isFirst = false)
         {
             // Export the Status elements in the library as a coded domain CSV.
 
-            string headers = "Code,Value";
+            string headers;
+            string filePath;
 
-            using (var w = new StreamWriter(path + "\\jmsml_Status.csv"))
+            if (append)
             {
-                w.WriteLine(headers);
+                filePath = path;
+                headers = "Type,Code,Value";
+            }
+            else
+            {
+                filePath = path + "\\jmsml_Status.csv";
+                headers = "Code,Value";
+            }
+
+            using (var w = new StreamWriter(filePath, (append && !isFirst)))
+            {
+                if (isFirst || !append)
+                    w.WriteLine(headers);
 
                 foreach (LibraryStatus obj in _library.Statuses)
                 {
-                    w.WriteLine(Convert.ToString(obj.StatusCode) + ',' + obj.Label.Replace(',', '-'));
+                    if(append)
+                        w.WriteLine("Status," + Convert.ToString(obj.StatusCode) + ',' + obj.Label.Replace(',', '-'));
+                    else
+                        w.WriteLine(Convert.ToString(obj.StatusCode) + ',' + obj.Label.Replace(',', '-'));
+
                     w.Flush();
                 }
 
                 if (dataValidation)
                 {
-                    w.WriteLine("-1,NotSet");
+                    if(append)
+                        w.WriteLine("Status,-1,NotSet");
+                    else
+                        w.WriteLine("-1,NotSet");
+
                     w.Flush();
                 }
 
@@ -305,25 +383,46 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        private void _exportHQTFDummy(string path, bool dataValidation)
+        private void _exportHQTFDummy(string path, bool dataValidation, bool append = false, bool isFirst = false)
         {
             // Export the HQTFDummy elements in the library as a coded domain CSV.
 
-            string headers = "Code,Value";
+            string headers;
+            string filePath;
 
-            using (var w = new StreamWriter(path + "\\jmsml_HQTFDummy.csv"))
+            if (append)
             {
-                w.WriteLine(headers);
+                filePath = path;
+                headers = "Type,Code,Value";
+            }
+            else
+            {
+                filePath = path + "\\jmsml_HQTFDummy.csv";
+                headers = "Code,Value";
+            }
+
+            using (var w = new StreamWriter(filePath, (append && !isFirst)))
+            {
+                if (isFirst || !append)
+                    w.WriteLine(headers);
 
                 foreach (LibraryHQTFDummy obj in _library.HQTFDummies)
                 {
-                    w.WriteLine(Convert.ToString(obj.HQTFDummyCode) + ',' + obj.Label.Replace(',', '-'));
+                    if(append)
+                        w.WriteLine("HQ_TF_FD," + Convert.ToString(obj.HQTFDummyCode) + ',' + obj.Label.Replace(',', '-'));
+                    else
+                        w.WriteLine(Convert.ToString(obj.HQTFDummyCode) + ',' + obj.Label.Replace(',', '-'));
+
                     w.Flush();
                 }
 
                 if (dataValidation)
                 {
-                    w.WriteLine("-1,NotSet");
+                    if(append)
+                        w.WriteLine("HQ_TF_FD,-1,NotSet");
+                    else
+                        w.WriteLine("-1,NotSet");
+
                     w.Flush();
                 }
 
@@ -331,15 +430,28 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        private void _exportAmplifier(string path, bool dataValidation)
+        private void _exportAmplifier(string path, bool dataValidation, bool append = false, bool isFirst = false)
         {
             // Export the Amplifier elements in the library as a coded domain CSV.
 
-            string headers = "Code,Value";
+            string headers;
+            string filePath;
 
-            using (var w = new StreamWriter(path + "\\jmsml_Amplifier.csv"))
+            if (append)
             {
-                w.WriteLine(headers);
+                filePath = path;
+                headers = "Type,Code,Value";
+            }
+            else
+            {
+                filePath = path + "\\jmsml_Amplifier.csv";
+                headers = "Code,Value";
+            }
+
+            using (var w = new StreamWriter(filePath, (append && !isFirst)))
+            {
+                if (isFirst || !append)
+                    w.WriteLine(headers);
 
                 foreach (LibraryAmplifierGroup descript in _library.AmplifierGroups)
                 {
@@ -347,7 +459,11 @@ namespace JointMilitarySymbologyLibrary
                     {
                         foreach (LibraryAmplifierGroupAmplifier obj in descript.Amplifiers)
                         {
-                            w.WriteLine(Convert.ToString(descript.AmplifierGroupCode) + Convert.ToString(obj.AmplifierCode) + ',' + obj.Label.Replace(',', '-'));
+                            if(append)
+                                w.WriteLine("Amplifier," + Convert.ToString(descript.AmplifierGroupCode) + Convert.ToString(obj.AmplifierCode) + ',' + obj.Label.Replace(',', '-'));
+                            else
+                                w.WriteLine(Convert.ToString(descript.AmplifierGroupCode) + Convert.ToString(obj.AmplifierCode) + ',' + obj.Label.Replace(',', '-'));
+
                             w.Flush();
                         }
                     }
@@ -355,7 +471,11 @@ namespace JointMilitarySymbologyLibrary
 
                 if (dataValidation)
                 {
-                    w.WriteLine("-1,NotSet");
+                    if(append)
+                        w.WriteLine("Amplifier,-1,NotSet");
+                    else
+                        w.WriteLine("-1,NotSet");
+
                     w.Flush();
                 }
 
@@ -695,18 +815,18 @@ namespace JointMilitarySymbologyLibrary
             _exportModifiers(modifierExporter, modifierPath, symbolSetExpression, expression, append);
         }
 
-        public void ExportDomains(string path, bool dataValidation)
+        public void ExportDomains(string path, bool dataValidation, bool append = false)
         {
             // The public entry point for exporting parts of the
             // 2525 and APP-6 base document - the codes making
             // up an SIDC's first ten digits.
 
-            _exportContext(path, dataValidation);
-            _exportStandardIdentity(path, dataValidation);
-            _exportSymbolSet(path, dataValidation);
-            _exportStatus(path, dataValidation);
-            _exportHQTFDummy(path, dataValidation);
-            _exportAmplifier(path, dataValidation);
+            _exportAmplifier(path, dataValidation, append, true);
+            _exportContext(path, dataValidation, append, false);
+            _exportHQTFDummy(path, dataValidation, append, false);
+            _exportStandardIdentity(path, dataValidation, append, false);
+            _exportStatus(path, dataValidation, append, false);
+            _exportSymbolSet(path, dataValidation, append, false);
         }
     }
 }

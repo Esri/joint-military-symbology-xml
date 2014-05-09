@@ -79,6 +79,7 @@ namespace JointMilitarySymbologyLibrary
         private Symbol _invalidSymbol;
         private Symbol _retiredSymbol;
 
+        private SortedDictionary<ushort, SymbolSet> _sortedSymbolSets = new SortedDictionary<ushort,SymbolSet>();
         private List<SymbolSet> _symbolSets = new List<SymbolSet>();
         private List<string> _statusMessages = new List<string> {"Version Not Found",
                                                                  "Context Not Found",
@@ -155,29 +156,34 @@ namespace JointMilitarySymbologyLibrary
                             {
                                 foreach (LibraryDimensionSymbolSetRef ssRef in dimension.SymbolSets)
                                 {
-                                    path = _configData.LibraryPath + "/" + ssRef.Instance;
-                                    if (File.Exists(path))
+                                    ushort ssCode = CodeToShort(ssRef.SymbolSetCode);
+                                    if (!_sortedSymbolSets.ContainsKey(ssCode))
                                     {
-                                        fs = new FileStream(path, FileMode.Open, FileAccess.Read);
-
-                                        if (fs.CanRead)
+                                        path = _configData.LibraryPath + "/" + ssRef.Instance;
+                                        if (File.Exists(path))
                                         {
-                                            serializer = new XmlSerializer(typeof(SymbolSet));
-                                            SymbolSet ss = (SymbolSet)serializer.Deserialize(fs);
+                                            fs = new FileStream(path, FileMode.Open, FileAccess.Read);
 
-                                            if (ss != null)
+                                            if (fs.CanRead)
                                             {
-                                                _symbolSets.Add(ss);
+                                                serializer = new XmlSerializer(typeof(SymbolSet));
+                                                SymbolSet ss = (SymbolSet)serializer.Deserialize(fs);
+
+                                                if (ss != null)
+                                                {
+                                                    _sortedSymbolSets.Add(ssCode, ss);
+                                                    _symbolSets.Add(ss);
+                                                }
+                                            }
+                                            else
+                                            {
+                                                logger.Error("Unreadable symbol set: " + path);
                                             }
                                         }
                                         else
                                         {
-                                            logger.Error("Unreadable symbol set: " + path);
+                                            logger.Error("Symbol set is missing: " + path);
                                         }
-                                    }
-                                    else
-                                    {
-                                        logger.Error("Symbol set is missing: " + path);
                                     }
                                 }
                             }
@@ -208,6 +214,14 @@ namespace JointMilitarySymbologyLibrary
             {
                 logger.Error("Config file is missing: " + _configPath);
             }
+        }
+
+        private ushort CodeToShort(DoubleDigitType code)
+        {
+            if (code.DigitOne == 0)
+                return code.DigitTwo;
+            else
+                return (ushort)(code.DigitOne * 10 + code.DigitTwo);
         }
 
         private void InitializeNLog()
@@ -297,7 +311,8 @@ namespace JointMilitarySymbologyLibrary
         {
             get
             {
-                return this._symbolSets;
+                return new List<SymbolSet>(_sortedSymbolSets.Values);
+                //return this._symbolSets;
             }
         }
 
