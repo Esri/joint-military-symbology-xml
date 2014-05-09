@@ -7,6 +7,6 @@ jmsml.exe /xi="../../../../../samples/imagefile_name_category_tags/Military-Land
 jmsml.exe /xi="../../../../../samples/imagefile_name_category_tags/Military-Sea-Source-Icons-Test" /s="^Sea Surface|Sea Subsurface|Mine Warfare$" /+
 jmsml.exe /xi="../../../../../samples/imagefile_name_category_tags/Military-Space-Source-Icons-Test" /s="^Space|Space Missile$" /+
 jmsml.exe /xi="../../../../../samples/imagefile_name_category_tags/Military-Sigint-Source-Icons-Test" /s="Signals Intelligence" /+
-jmsml.exe /xi="../../../../../samples/imagefile_name_category_tags/Military-ControlMeasures-Source-Icons-Test" /s="^Control Measures$" /+
+jmsml.exe /xi="../../../../../samples/imagefile_name_category_tags/Military-ControlMeasures-Source-Icons-Test" /s="^Control Measure$" /+
 jmsml.exe /xi="../../../../../samples/imagefile_name_category_tags/Military-Weather-Source-Icons-Test" /s="Atmospheric|Oceanographic|Meteorological Space" /+
 endlocal
