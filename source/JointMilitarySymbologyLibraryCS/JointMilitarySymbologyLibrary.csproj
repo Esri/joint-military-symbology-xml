@@ -50,8 +50,11 @@
     <Compile Include="DomainModifierExport.cs" />
     <Compile Include="ETL.cs" />
     <Compile Include="EntityExport.cs" />
+    <Compile Include="FrameExport.cs" />
     <Compile Include="IEntityExport.cs" />
+    <Compile Include="IFrameExport.cs" />
     <Compile Include="ImageEntityExport.cs" />
+    <Compile Include="ImageFrameExport.cs" />
     <Compile Include="ImageModifierExport.cs" />
     <Compile Include="IModifierExport.cs" />
     <Compile Include="ModifierExport.cs" />
@@ -68,6 +71,7 @@
   <ItemGroup>
     <None Include="jmsml.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </None>
     <None Include="jmsmlConfig.xsd">
       <SubType>Designer</SubType>

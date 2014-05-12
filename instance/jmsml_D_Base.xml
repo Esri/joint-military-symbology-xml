@@ -200,6 +200,10 @@
 
   <Dimensions>
     <Dimension ID="INTERNAL" Label="Internal">
+      <DimensionCode>
+        <DigitOne>9</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </DimensionCode>
       <Fields/>
       <SymbolSets>
         <SymbolSetRef ID="SS_INTERNAL" Label="Internal" Instance="jmsml_D_Internal.xml">
@@ -212,12 +216,20 @@
     </Dimension>
     
     <Dimension ID="UNKNOWN" Label="Unknown">
+      <DimensionCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </DimensionCode>
       <LegacyDimensionCode Name="2525C">Z</LegacyDimensionCode>
       <Fields/>
       <SymbolSets/>
     </Dimension>
 
     <Dimension ID="AIR" Label="Air">
+      <DimensionCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </DimensionCode>
       <LegacyDimensionCode Name="2525C">A</LegacyDimensionCode>
       <Fields>
         <Field Name="AL" Label="Operational Condition" Description="Indicates operational condition." Remarks="Comprised of only one color. Ex. Aircraft: Red - damaged, Green – fully capable. Ex: Missile: Red – imminent threat, Green – no threat." AmplifierID="AL" X="0" Y="-1"/>
@@ -263,6 +275,10 @@
     </Dimension>
 
     <Dimension ID="SPACE" Label="Space">
+      <DimensionCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </DimensionCode>
       <LegacyDimensionCode Name="2525C">P</LegacyDimensionCode>
       <Fields>
         <Field Name="AL" Label="Operational Condition" Description="Indicates operational condition." Remarks="Comprised of only one color. Ex. Satellite: Red - damaged, Green – fully capable. Ex: Missile: Red – imminent threat, Green – no threat." AmplifierID="AL" X="0" Y="-1"/>
@@ -307,6 +323,10 @@
     </Dimension>
 
     <Dimension ID="LAND_UNIT" Label="Land Unit">
+      <DimensionCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </DimensionCode>
       <LegacyDimensionCode Name="2525C">G</LegacyDimensionCode>
       <Fields>
         <Field Name="AA" Label="Special C2 Headquarters" Description="A text modifier for units; indicator is contained inside the frame; contains the name of the special C2 Headquarters." AmplifierID="AA" X="0" Y="0"/>
@@ -359,6 +379,10 @@
     </Dimension>
     
     <Dimension ID="LAND_EQUIPMENT" Label="Land Equipment">
+      <DimensionCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </DimensionCode>
       <LegacyDimensionCode Name="2525C">G</LegacyDimensionCode>
       <Fields>
         <Field Name="AA" Label="Special C2 Headquarters" Description="A text modifier for units; indicator is contained inside the frame; contains the name of the special C2 Headquarters." AmplifierID="AA" X="0" Y="0"/>
@@ -418,6 +442,10 @@
     </Dimension>
     
     <Dimension ID="LAND_INSTALLATION" Label="Land Installations">
+      <DimensionCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </DimensionCode>
       <LegacyDimensionCode Name="2525C">G</LegacyDimensionCode>
       <Fields>
         <Field Name="AA" Label="Special C2 Headquarters" Description="A text modifier for units; indicator is contained inside the frame; contains the name of the special C2 Headquarters." AmplifierID="AA" X="0" Y="0"/>
@@ -463,6 +491,10 @@
     </Dimension>
     
     <Dimension ID="SEA_SURFACE" Label="Sea Surface">
+      <DimensionCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </DimensionCode>
       <LegacyDimensionCode Name="2525C">S</LegacyDimensionCode>
       <Fields>
         <Field Name="AL" Label="Operational Condition" Description="Indicates operational condition." Remarks="Comprised of only one color. Ex. Satellite: Red - damaged, Green – fully capable. Ex: Missile: Red – imminent threat, Green – no threat." AmplifierID="AL" X="0" Y="-1"/>
@@ -502,7 +534,11 @@
       </SymbolSets>
     </Dimension>
 
-    <Dimension ID="SEA_SUBSURFACE" Label="Sea Surface">
+    <Dimension ID="SEA_SUBSURFACE" Label="Sea Subsurface">
+      <DimensionCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </DimensionCode>
       <LegacyDimensionCode Name="2525C">U</LegacyDimensionCode>
       <Fields>
         <Field Name="AL" Label="Operational Condition" Description="Indicates operational condition." Remarks="Comprised of only one color. Ex. Satellite: Red - damaged, Green – fully capable. Ex: Missile: Red – imminent threat, Green – no threat." AmplifierID="AL" X="0" Y="-1"/>
@@ -546,6 +582,10 @@
     </Dimension>
 
     <Dimension ID="ACTIVITY" Label="Activities">
+      <DimensionCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </DimensionCode>
       <LegacyDimensionCode Name="2525C">I</LegacyDimensionCode>
       <LegacyDimensionCode Name="2525C">O</LegacyDimensionCode>
       <Fields>
@@ -568,6 +608,10 @@
     </Dimension>
 
     <Dimension ID="CONTROL_MEASURE" Label="Control Measure">
+      <DimensionCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </DimensionCode>
       <LegacyDimensionCode Name="2525C">G</LegacyDimensionCode>
       <Fields>
 <!--Not sure what to do with amplifier coordinates, so zeroed out the values.-->
@@ -599,6 +643,10 @@
     </Dimension>
     
     <Dimension ID="METOC" Label="Meteorological">
+      <DimensionCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </DimensionCode>
       <LegacyDimensionCode Name="2525C">W</LegacyDimensionCode>
       <Fields>
         <Field Name="G" Label="Staff Comments" Description="Free text." Remarks="Can be used by staff for information required by commander." AmplifierID="G" X="1" Y="1"/>
@@ -614,7 +662,7 @@
             <DigitTwo>5</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
-        <SymbolSetRef ID="SS_OCEANIC" Label="Activity" Instance="jmsml_D_Oceanographic.xml">
+        <SymbolSetRef ID="SS_OCEANIC" Label="Oceanographic" Instance="jmsml_D_Oceanographic.xml">
           <SymbolSetCode>
             <DigitOne>4</DigitOne>
             <DigitTwo>6</DigitTwo>
@@ -634,7 +682,7 @@
     
     <!-- Internal Dimension Affiliations -->
 
-    <Affiliation ID="REALITY_INTERNAL_PENDING" ContextID="REALITY" DimensionID="INTERNAL" StandardIdentityID="SI_PENDING" Shape="CLOVER"/>
+    <Affiliation ID="REALITY_INTERNAL_PENDING" ContextID="REALITY" DimensionID="INTERNAL" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="0098.svg"/>
     
     <!-- Unknown Dimension Affiliations -->
     
@@ -730,15 +778,15 @@
 
     <Affiliation ID="SIMULATED_AIR_UNKNOWN" ContextID="SIMULATION" DimensionID="AIR" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="2101.svg"/>
 
-    <Affiliation ID="REALITY_AIR_FRIEND" ContextID="REALITY" DimensionID="AIR" StandardIdentityID="SI_FRIEND" Shape="CURVE" Graphic="0305.svg">
+    <Affiliation ID="REALITY_AIR_FRIEND" ContextID="REALITY" DimensionID="AIR" StandardIdentityID="SI_FRIEND" Shape="CURVE" Graphic="0301.svg">
       <LegacyStandardIdentityCode Name="2525C">F</LegacyStandardIdentityCode>
     </Affiliation>
 
-    <Affiliation ID="EXERCISE_AIR_FRIEND" ContextID="EXERCISE" DimensionID="AIR" StandardIdentityID="SI_FRIEND" Shape="CURVE" Graphic="1305.svg">
+    <Affiliation ID="EXERCISE_AIR_FRIEND" ContextID="EXERCISE" DimensionID="AIR" StandardIdentityID="SI_FRIEND" Shape="CURVE" Graphic="1301.svg">
       <LegacyStandardIdentityCode Name="2525C">D</LegacyStandardIdentityCode>
     </Affiliation>
 
-    <Affiliation ID="SIMULATED_AIR_FRIEND" ContextID="SIMULATION" DimensionID="AIR" StandardIdentityID="SI_FRIEND" Shape="CURVE" Graphic="2305.svg"/>
+    <Affiliation ID="SIMULATED_AIR_FRIEND" ContextID="SIMULATION" DimensionID="AIR" StandardIdentityID="SI_FRIEND" Shape="CURVE" Graphic="2301.svg"/>
 
     <Affiliation ID="REALITY_AIR_NEUTRAL" ContextID="REALITY" DimensionID="AIR" StandardIdentityID="SI_NEUTRAL" Shape="CURVE" Graphic="0401.svg">
       <LegacyStandardIdentityCode Name="2525C">N</LegacyStandardIdentityCode>
@@ -812,7 +860,7 @@
 
     <Affiliation ID="SIMULATED_SPACE_FRIEND" ContextID="SIMULATION" DimensionID="SPACE" StandardIdentityID="SI_FRIEND" Shape="CURVE" Graphic="2305.svg"/>
 
-    <Affiliation ID="REALITY_SPACE_NEUTRAL" ContextID="REALITY" DimensionID="SPACE" StandardIdentityID="SI_NEUTRAL" Shape="CURVE" Graphic="0401.svg">
+    <Affiliation ID="REALITY_SPACE_NEUTRAL" ContextID="REALITY" DimensionID="SPACE" StandardIdentityID="SI_NEUTRAL" Shape="CURVE" Graphic="0405.svg">
       <LegacyStandardIdentityCode Name="2525C">N</LegacyStandardIdentityCode>
     </Affiliation>
 
@@ -822,7 +870,7 @@
 
     <Affiliation ID="SIMULATED_SPACE_NEUTRAL" ContextID="SIMULATION" DimensionID="SPACE" StandardIdentityID="SI_NEUTRAL" Shape="CURVE" Graphic="2405.svg"/>
 
-    <Affiliation ID="REALITY_SPACE_HOSTILE" ContextID="REALITY" DimensionID="SPACE" StandardIdentityID="SI_HOSTILE_FAKER" Shape="CURVE" Graphic="0601.svg">
+    <Affiliation ID="REALITY_SPACE_HOSTILE" ContextID="REALITY" DimensionID="SPACE" StandardIdentityID="SI_HOSTILE_FAKER" Shape="CURVE" Graphic="0605.svg">
       <LegacyStandardIdentityCode Name="2525C">H</LegacyStandardIdentityCode>
     </Affiliation>
 
@@ -832,17 +880,17 @@
 
     <Affiliation ID="SIMULATED_SPACE_HOSTILE" ContextID="SIMULATION" DimensionID="SPACE" StandardIdentityID="SI_HOSTILE_FAKER" Shape="CURVE" Graphic="2605.svg"/>
 
-    <Affiliation ID="REALITY_SPACE_ASSUMED" ContextID="REALITY" DimensionID="SPACE" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CURVE" Graphic="0201.svg">
+    <Affiliation ID="REALITY_SPACE_ASSUMED" ContextID="REALITY" DimensionID="SPACE" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CURVE" Graphic="0205.svg">
       <LegacyStandardIdentityCode Name="2525C">A</LegacyStandardIdentityCode>
     </Affiliation>
 
-    <Affiliation ID="EXERCISE_SPACE_ASSUMED" ContextID="EXERCISE" DimensionID="SPACE" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CURVE" Graphic="1201.svg">
+    <Affiliation ID="EXERCISE_SPACE_ASSUMED" ContextID="EXERCISE" DimensionID="SPACE" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CURVE" Graphic="1205.svg">
       <LegacyStandardIdentityCode Name="2525C">M</LegacyStandardIdentityCode>
     </Affiliation>
 
     <Affiliation ID="SIMULATED_SPACE_ASSUMED" ContextID="SIMULATION" DimensionID="SPACE" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CURVE" Graphic="2205.svg"/>
 
-    <Affiliation ID="REALITY_SPACE_SUSPECT" ContextID="REALITY" DimensionID="SPACE" StandardIdentityID="SI_SUSPECT_JOKER" Shape="CURVE" Graphic="0501.svg">
+    <Affiliation ID="REALITY_SPACE_SUSPECT" ContextID="REALITY" DimensionID="SPACE" StandardIdentityID="SI_SUSPECT_JOKER" Shape="CURVE" Graphic="0505.svg">
       <LegacyStandardIdentityCode Name="2525C">S</LegacyStandardIdentityCode>
     </Affiliation>
 
@@ -864,7 +912,7 @@
 
     <Affiliation ID="SIMULATED_LU_PENDING" ContextID="SIMULATION" DimensionID="LAND_UNIT" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="2010.svg"/>
 
-    <Affiliation ID="REALITY_LU_UNKNOWN" ContextID="REALITY" DimensionID="LAND_UNIT" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="0130.svg">
+    <Affiliation ID="REALITY_LU_UNKNOWN" ContextID="REALITY" DimensionID="LAND_UNIT" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="0110.svg">
       <LegacyStandardIdentityCode Name="2525C">U</LegacyStandardIdentityCode>
     </Affiliation>
 
@@ -923,150 +971,78 @@
     </Affiliation>
 
     <Affiliation ID="SIMULATED_LU_SUSPECT" ContextID="SIMULATION" DimensionID="LAND_UNIT" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="2510.svg"/>
-
-    <!-- Land Civilian Affiliations-->
-
-    <Affiliation ID="REALITY_LC_PENDING" ContextID="REALITY" DimensionID="LAND_UNIT" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="0010.svg">
-      <LegacyStandardIdentityCode Name="2525C">P</LegacyStandardIdentityCode>
-    </Affiliation>
-
-    <Affiliation ID="EXERCISE_LC_PENDING" ContextID="EXERCISE" DimensionID="LAND_UNIT" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="1010.svg">
-      <LegacyStandardIdentityCode Name="2525C">G</LegacyStandardIdentityCode>
-    </Affiliation>
-
-    <Affiliation ID="SIMULATED_LC_PENDING" ContextID="SIMULATION" DimensionID="LAND_UNIT" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="2010.svg"/>
-
-    <Affiliation ID="REALITY_LC_UNKNOWN" ContextID="REALITY" DimensionID="LAND_UNIT" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="0130.svg">
-      <LegacyStandardIdentityCode Name="2525C">U</LegacyStandardIdentityCode>
-    </Affiliation>
-
-    <Affiliation ID="EXERCISE_LC_UNKNOWN" ContextID="EXERCISE" DimensionID="LAND_UNIT" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="1110.svg">
-      <LegacyStandardIdentityCode Name="2525C">W</LegacyStandardIdentityCode>
-    </Affiliation>
-
-    <Affiliation ID="SIMULATED_LC_UNKNOWN" ContextID="SIMULATION" DimensionID="LAND_UNIT" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="2110.svg"/>
-
-    <Affiliation ID="REALITY_LC_FRIEND" ContextID="REALITY" DimensionID="LAND_UNIT" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="0310.svg">
-      <LegacyStandardIdentityCode Name="2525C">F</LegacyStandardIdentityCode>
-    </Affiliation>
-
-    <Affiliation ID="EXERCISE_LC_FRIEND" ContextID="EXERCISE" DimensionID="LAND_UNIT" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="1310.svg">
-      <LegacyStandardIdentityCode Name="2525C">D</LegacyStandardIdentityCode>
-    </Affiliation>
-
-    <Affiliation ID="SIMULATED_LC_FRIEND" ContextID="SIMULATION" DimensionID="LAND_UNIT" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="2310.svg"/>
-
-    <Affiliation ID="REALITY_LC_NEUTRAL" ContextID="REALITY" DimensionID="LAND_UNIT" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="0410.svg">
-      <LegacyStandardIdentityCode Name="2525C">N</LegacyStandardIdentityCode>
-    </Affiliation>
-
-    <Affiliation ID="EXERCISE_LC_NEUTRAL" ContextID="EXERCISE" DimensionID="LAND_UNIT" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="1410.svg">
-      <LegacyStandardIdentityCode Name="2525C">L</LegacyStandardIdentityCode>
-    </Affiliation>
-
-    <Affiliation ID="SIMULATED_LC_NEUTRAL" ContextID="SIMULATION" DimensionID="LAND_UNIT" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="2410.svg"/>
-
-    <Affiliation ID="REALITY_LC_HOSTILE" ContextID="REALITY" DimensionID="LAND_UNIT" StandardIdentityID="SI_HOSTILE_FAKER" Shape="DIAMOND" Graphic="0610.svg">
-      <LegacyStandardIdentityCode Name="2525C">H</LegacyStandardIdentityCode>
-    </Affiliation>
-
-    <Affiliation ID="EXERCISE_LC_HOSTILE" ContextID="EXERCISE" DimensionID="LAND_UNIT" StandardIdentityID="SI_HOSTILE_FAKER" Shape="CIRCLE" Graphic="1610.svg">
-      <LegacyStandardIdentityCode Name="2525C">K</LegacyStandardIdentityCode>
-    </Affiliation>
-
-    <Affiliation ID="SIMULATED_LC_HOSTILE" ContextID="SIMULATION" DimensionID="LAND_UNIT" StandardIdentityID="SI_HOSTILE_FAKER" Shape="DIAMOND" Graphic="2610.svg"/>
-
-    <Affiliation ID="REALITY_LC_ASSUMED" ContextID="REALITY" DimensionID="LAND_UNIT" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="0210.svg">
-      <LegacyStandardIdentityCode Name="2525C">A</LegacyStandardIdentityCode>
-    </Affiliation>
-
-    <Affiliation ID="EXERCISE_LC_ASSUMED" ContextID="EXERCISE" DimensionID="LAND_UNIT" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="1210.svg">
-      <LegacyStandardIdentityCode Name="2525C">M</LegacyStandardIdentityCode>
-    </Affiliation>
-
-    <Affiliation ID="SIMULATED_LC_ASSUMED" ContextID="SIMULATION" DimensionID="LAND_UNIT" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="2210.svg"/>
-
-    <Affiliation ID="REALITY_LC_SUSPECT" ContextID="REALITY" DimensionID="LAND_UNIT" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="0510.svg">
-      <LegacyStandardIdentityCode Name="2525C">S</LegacyStandardIdentityCode>
-    </Affiliation>
-
-    <Affiliation ID="EXERCISE_LC_SUSPECT" ContextID="EXERCISE" DimensionID="LAND_UNIT" StandardIdentityID="SI_SUSPECT_JOKER" Shape="CIRCLE" Graphic="1510.svg">
-      <LegacyStandardIdentityCode Name="2525C">J</LegacyStandardIdentityCode>
-    </Affiliation>
-
-    <Affiliation ID="SIMULATED_LC_SUSPECT" ContextID="SIMULATION" DimensionID="LAND_UNIT" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="2510.svg"/>
   
     <!-- Land Equipment Affiliations-->
 
-    <Affiliation ID="REALITY_LE_PENDING" ContextID="REALITY" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="0010.svg">
+    <Affiliation ID="REALITY_LE_PENDING" ContextID="REALITY" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="0015.svg">
       <LegacyStandardIdentityCode Name="2525C">P</LegacyStandardIdentityCode>
     </Affiliation>
 
-    <Affiliation ID="EXERCISE_LE_PENDING" ContextID="EXERCISE" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="1010.svg">
+    <Affiliation ID="EXERCISE_LE_PENDING" ContextID="EXERCISE" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="1015.svg">
       <LegacyStandardIdentityCode Name="2525C">G</LegacyStandardIdentityCode>
     </Affiliation>
 
-    <Affiliation ID="SIMULATED_LE_PENDING" ContextID="SIMULATION" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="2010.svg"/>
+    <Affiliation ID="SIMULATED_LE_PENDING" ContextID="SIMULATION" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="2015.svg"/>
 
-    <Affiliation ID="REALITY_LE_UNKNOWN" ContextID="REALITY" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="0110.svg">
+    <Affiliation ID="REALITY_LE_UNKNOWN" ContextID="REALITY" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="0115.svg">
       <LegacyStandardIdentityCode Name="2525C">U</LegacyStandardIdentityCode>
     </Affiliation>
 
-    <Affiliation ID="EXERCISE_LE_UNKNOWN" ContextID="EXERCISE" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="1110.svg">
+    <Affiliation ID="EXERCISE_LE_UNKNOWN" ContextID="EXERCISE" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="1115.svg">
       <LegacyStandardIdentityCode Name="2525C">W</LegacyStandardIdentityCode>
     </Affiliation>
 
-    <Affiliation ID="SIMULATED_LE_UNKNOWN" ContextID="SIMULATION" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="2110.svg"/>
+    <Affiliation ID="SIMULATED_LE_UNKNOWN" ContextID="SIMULATION" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="2115.svg"/>
 
-    <Affiliation ID="REALITY_LE_FRIEND" ContextID="REALITY" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="0310.svg">
+    <Affiliation ID="REALITY_LE_FRIEND" ContextID="REALITY" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="0315.svg">
       <LegacyStandardIdentityCode Name="2525C">F</LegacyStandardIdentityCode>
     </Affiliation>
 
-    <Affiliation ID="EXERCISE_LE_FRIEND" ContextID="EXERCISE" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="1310.svg">
+    <Affiliation ID="EXERCISE_LE_FRIEND" ContextID="EXERCISE" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="1315.svg">
       <LegacyStandardIdentityCode Name="2525C">D</LegacyStandardIdentityCode>
     </Affiliation>
 
-    <Affiliation ID="SIMULATED_LE_FRIEND" ContextID="SIMULATION" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="2310.svg"/>
+    <Affiliation ID="SIMULATED_LE_FRIEND" ContextID="SIMULATION" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="2315.svg"/>
 
-    <Affiliation ID="REALITY_LE_NEUTRAL" ContextID="REALITY" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="0410.svg">
+    <Affiliation ID="REALITY_LE_NEUTRAL" ContextID="REALITY" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="0415.svg">
       <LegacyStandardIdentityCode Name="2525C">N</LegacyStandardIdentityCode>
     </Affiliation>
 
-    <Affiliation ID="EXERCISE_LE_NEUTRAL" ContextID="EXERCISE" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="1410.svg">
+    <Affiliation ID="EXERCISE_LE_NEUTRAL" ContextID="EXERCISE" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="1415.svg">
       <LegacyStandardIdentityCode Name="2525C">L</LegacyStandardIdentityCode>
     </Affiliation>
 
-    <Affiliation ID="SIMULATED_LE_NEUTRAL" ContextID="SIMULATION" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="2410.svg"/>
+    <Affiliation ID="SIMULATED_LE_NEUTRAL" ContextID="SIMULATION" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="2415.svg"/>
 
-    <Affiliation ID="REALITY_LE_HOSTILE" ContextID="REALITY" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_HOSTILE_FAKER" Shape="DIAMOND" Graphic="0610.svg">
+    <Affiliation ID="REALITY_LE_HOSTILE" ContextID="REALITY" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_HOSTILE_FAKER" Shape="DIAMOND" Graphic="0615.svg">
       <LegacyStandardIdentityCode Name="2525C">H</LegacyStandardIdentityCode>
     </Affiliation>
 
-    <Affiliation ID="EXERCISE_LE_HOSTILE" ContextID="EXERCISE" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_HOSTILE_FAKER" Shape="CIRCLE" Graphic="1610.svg">
+    <Affiliation ID="EXERCISE_LE_HOSTILE" ContextID="EXERCISE" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_HOSTILE_FAKER" Shape="CIRCLE" Graphic="1615.svg">
       <LegacyStandardIdentityCode Name="2525C">K</LegacyStandardIdentityCode>
     </Affiliation>
 
-    <Affiliation ID="SIMULATED_LE_HOSTILE" ContextID="SIMULATION" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_HOSTILE_FAKER" Shape="DIAMOND" Graphic="2610.svg"/>
+    <Affiliation ID="SIMULATED_LE_HOSTILE" ContextID="SIMULATION" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_HOSTILE_FAKER" Shape="DIAMOND" Graphic="2615.svg"/>
 
-    <Affiliation ID="REALITY_LE_ASSUMED" ContextID="REALITY" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="0210.svg">
+    <Affiliation ID="REALITY_LE_ASSUMED" ContextID="REALITY" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="0215.svg">
       <LegacyStandardIdentityCode Name="2525C">A</LegacyStandardIdentityCode>
     </Affiliation>
 
-    <Affiliation ID="EXERCISE_LE_ASSUMED" ContextID="EXERCISE" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="1210.svg">
+    <Affiliation ID="EXERCISE_LE_ASSUMED" ContextID="EXERCISE" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="1215.svg">
       <LegacyStandardIdentityCode Name="2525C">M</LegacyStandardIdentityCode>
     </Affiliation>
 
-    <Affiliation ID="SIMULATED_LE_ASSUMED" ContextID="SIMULATION" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="2210.svg"/>
+    <Affiliation ID="SIMULATED_LE_ASSUMED" ContextID="SIMULATION" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="2215.svg"/>
 
-    <Affiliation ID="REALITY_LE_SUSPECT" ContextID="REALITY" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="0510.svg">
+    <Affiliation ID="REALITY_LE_SUSPECT" ContextID="REALITY" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="0515.svg">
       <LegacyStandardIdentityCode Name="2525C">S</LegacyStandardIdentityCode>
     </Affiliation>
 
-    <Affiliation ID="EXERCISE_LE_SUSPECT" ContextID="EXERCISE" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_SUSPECT_JOKER" Shape="CIRCLE" Graphic="1510.svg">
+    <Affiliation ID="EXERCISE_LE_SUSPECT" ContextID="EXERCISE" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_SUSPECT_JOKER" Shape="CIRCLE" Graphic="1515.svg">
       <LegacyStandardIdentityCode Name="2525C">J</LegacyStandardIdentityCode>
     </Affiliation>
 
-    <Affiliation ID="SIMULATED_LE_SUSPECT" ContextID="SIMULATION" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="2510.svg"/>
+    <Affiliation ID="SIMULATED_LE_SUSPECT" ContextID="SIMULATION" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="2515.svg"/>
     
     <!-- Land Installation Affiliations-->
 

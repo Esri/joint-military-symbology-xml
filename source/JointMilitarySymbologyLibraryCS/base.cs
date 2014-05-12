@@ -2537,6 +2537,8 @@ namespace JointMilitarySymbologyLibrary {
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://disa.mil/JointMilSyML.xsd")]
     public partial class LibraryDimension {
         
+        private DoubleDigitType dimensionCodeField;
+        
         private LegacyLetterCodeType[] legacyDimensionCodeField;
         
         private LibraryDimensionField[] fieldsField;
@@ -2550,6 +2552,16 @@ namespace JointMilitarySymbologyLibrary {
         private string descriptionField;
         
         private string remarksField;
+        
+        /// <remarks/>
+        public DoubleDigitType DimensionCode {
+            get {
+                return this.dimensionCodeField;
+            }
+            set {
+                this.dimensionCodeField = value;
+            }
+        }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("LegacyDimensionCode")]

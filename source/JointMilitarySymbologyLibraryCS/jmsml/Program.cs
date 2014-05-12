@@ -37,6 +37,9 @@ namespace jmsml
             string exportDomainPath = CommandLineArgs.I.argAsString("/b");
             string symbolSet = CommandLineArgs.I.argAsString("/s");
             string query = CommandLineArgs.I.argAsString("/q");
+            string dimensionQuery = CommandLineArgs.I.argAsString("/qd");
+            string identityQuery = CommandLineArgs.I.argAsString("/qi");
+            string contextQuery = CommandLineArgs.I.argAsString("/qc");
             string help = CommandLineArgs.I.argAsString("/?");
             string xPoints = CommandLineArgs.I.argAsString("/p");
             string xLines = CommandLineArgs.I.argAsString("/l");
@@ -45,6 +48,8 @@ namespace jmsml
             string legacyCode = CommandLineArgs.I.argAsString("/lc");
             string modPath = CommandLineArgs.I.argAsString("/m");
             string imagePath = CommandLineArgs.I.argAsString("/xi");
+            string frameImagePath = CommandLineArgs.I.argAsString("/xf");
+
             bool dataValidation = (CommandLineArgs.I.argAsString("/e") != "false");
             bool appendFiles = (CommandLineArgs.I.argAsString("/+") != "false");
 
@@ -57,13 +62,19 @@ namespace jmsml
                 Console.WriteLine("/a\t\t\t: Export symbols with AREA geometry.");
                 Console.WriteLine("/b\t\t\t: Export all coded base domain tables to a folder.");
                 Console.WriteLine("/e\t\t\t: Add data validation when exporting domain tables.");
+                Console.WriteLine("/i\t\t\t: Import raw CSV into stubbed out symbol set XML.");
                 Console.WriteLine("/l\t\t\t: Export symbols with LINE geometry.");
                 Console.WriteLine("/p\t\t\t: Export symbols with POINT geometry.");
-                Console.WriteLine("/q=\"<expression>\"\t: Use regular expression to query on other labels.");
+                Console.WriteLine("/q=\"<expression>\"\t: Use regular expression to query on labels.");
+                Console.WriteLine("/qc=\"<expression>\"\t: Use regular expression to query on context.");
+                Console.WriteLine("/qd=\"<expression>\"\t: Use regular expression to query on dimension.");
+                Console.WriteLine("/qi=\"<expression>\"\t: Use regular expression to query on standard identity.");
                 Console.WriteLine("/s=\"<expression>\"\t: Use regular expression to query on symbol set labels.");
-                Console.WriteLine("/x=\"<pathname>\"\t\t: Export to specified path (omit .csv).");
-                Console.WriteLine("/xd=\"<pathname>\"\t: Export to specified path as coded domain (omit .csv).");
-                Console.WriteLine("/xi=\"<pathname>\"\t: Export to specified path image/name/category/tag info.");
+                Console.WriteLine("");
+                Console.WriteLine("/x=\"<pathname>\"\t\t: Export entities and modifiers in simple format.");
+                Console.WriteLine("/xd=\"<pathname>\"\t: Export entities and modifiers as coded domains.");
+                Console.WriteLine("/xf=\"<pathname>\"\t: Export frames for style file input.");
+                Console.WriteLine("/xi=\"<pathname>\"\t: Export entities and modifiers for style file input.");
                 Console.WriteLine("");
                 Console.WriteLine("<Enter> to continue.");
                 Console.ReadLine();
@@ -104,6 +115,11 @@ namespace jmsml
                                                                 xAreas == "/a" || xPoints == "" && xLines == "",
                                                                 ETLExportEnum.ETLExportImage,
                                                                 appendFiles);
+            }
+
+            if (frameImagePath != "")
+            {
+                _etl.ExportFrames(frameImagePath, contextQuery, identityQuery, dimensionQuery, ETLExportEnum.ETLExportImage);
             }
         }
 

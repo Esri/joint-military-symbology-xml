@@ -45,3 +45,7 @@ The /s, /q, /a, /l, and /p switches documented above are also respected.  /+ can
 	jmsml.exe /xi="Military-Air-Source-Icons" /s="Air"
 	jmsml.exe /xi="Military-Air-Source-Icons" /s="Air" /+
 
+Frame image file/name/category/tags information can be exported with the /xf switch.  Use optional switches /qc, /qd, and /qi to provide regular expressions to filter on Context, Dimension, and Standard Identity respectively.
+
+	jmsml.exe /xf="Military-Frame-Source-Icons"
+	jmsml.exe /xf="Military-Reality-Frame-Source-Icons" /qc="Reality"

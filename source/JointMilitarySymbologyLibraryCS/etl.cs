@@ -799,20 +799,23 @@ namespace JointMilitarySymbologyLibrary
                     break;
             }
 
-            if (!append)
+            if (entityExporter != null && modifierExporter != null)
             {
-                // If we're not appending the modifiers to the entities
-                // then add a string to the file name to make them unique.
+                if (!append)
+                {
+                    // If we're not appending the modifiers to the entities
+                    // then add a string to the file name to make them unique.
 
-                entityPath = entityPath + "_Entities";
-                modifierPath = modifierPath + "_Modifiers";
+                    entityPath = entityPath + "_Entities";
+                    modifierPath = modifierPath + "_Modifiers";
+                }
+
+                entityPath = entityPath + ".csv";
+                modifierPath = modifierPath + ".csv";
+
+                _exportEntities(entityExporter, entityPath, symbolSetExpression, expression, exportPoints, exportLines, exportAreas);
+                _exportModifiers(modifierExporter, modifierPath, symbolSetExpression, expression, append);
             }
-
-            entityPath = entityPath + ".csv";
-            modifierPath = modifierPath + ".csv";
-
-            _exportEntities(entityExporter, entityPath, symbolSetExpression, expression, exportPoints, exportLines, exportAreas);
-            _exportModifiers(modifierExporter, modifierPath, symbolSetExpression, expression, append);
         }
 
         public void ExportDomains(string path, bool dataValidation, bool append = false)
@@ -827,6 +830,64 @@ namespace JointMilitarySymbologyLibrary
             _exportStandardIdentity(path, dataValidation, append, false);
             _exportStatus(path, dataValidation, append, false);
             _exportSymbolSet(path, dataValidation, append, false);
+        }
+
+        public void ExportFrames(string path, string contextExpression = "", string standardIdentityExpression = "", string dimensionExpression = "", ETLExportEnum exportType = ETLExportEnum.ETLExportSimple)
+        {
+            // The public entry point for exporting frames from the JMSML library
+            // into CSV format.
+
+            // Accepts a path for the output (sans file name extension).  The caller 
+            // may also provide optional regular expressions to filter on the Label
+            // attributes of the objects being exported.
+
+            IFrameExport frameExporter = null;
+
+            switch (exportType)
+            {
+                case ETLExportEnum.ETLExportImage:
+                    frameExporter = new ImageFrameExport(_configHelper);
+                    break;
+            }
+
+            if (frameExporter != null)
+            {
+                using (var w = new StreamWriter(path + ".csv"))
+                {
+                    var line = string.Format("{0}", frameExporter.Headers);
+
+                    w.WriteLine(line);
+                    w.Flush();
+
+                    foreach (LibraryContext context in _library.Contexts)
+                    {
+                        if (contextExpression != "" && !System.Text.RegularExpressions.Regex.IsMatch(context.Label, contextExpression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                            continue;
+
+                        foreach (LibraryStandardIdentity identity in _library.StandardIdentities)
+                        {
+                            if (standardIdentityExpression != "" && !System.Text.RegularExpressions.Regex.IsMatch(identity.Label, standardIdentityExpression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                                continue;
+
+                            foreach (LibraryDimension dimension in _library.Dimensions)
+                            {
+                                if (dimensionExpression != "" && !System.Text.RegularExpressions.Regex.IsMatch(dimension.Label, dimensionExpression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                                    continue;
+
+                                line = frameExporter.Line(_librarian, context, identity, dimension);
+
+                                if (line != "")
+                                {
+                                    w.WriteLine(line);
+                                    w.Flush();
+                                }
+                            }
+                        }
+                    }
+
+                    w.Close();
+                }
+            }
         }
     }
 }
