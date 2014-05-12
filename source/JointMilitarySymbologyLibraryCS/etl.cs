@@ -761,7 +761,7 @@ namespace JointMilitarySymbologyLibrary
             _importCSV(path, modPath, symbolsetCode, legacyCode);
         }
 
-        public void Export(string path, string symbolSetExpression = "", string expression = "", bool exportPoints = true, bool exportLines = true, bool exportAreas = true, ETLExportEnum exportType = ETLExportEnum.ETLExportSimple, bool append = false)
+        public void Export(string path, string symbolSetExpression = "", string expression = "", bool exportPoints = true, bool exportLines = true, bool exportAreas = true, ETLExportEnum exportType = ETLExportEnum.ETLExportSimple, bool append = false, bool omitSource = false)
         {
             // The public entry point for exporting selective contents of the JMSML library
             // into CSV format.
@@ -794,8 +794,8 @@ namespace JointMilitarySymbologyLibrary
                     break;
 
                 case ETLExportEnum.ETLExportImage:
-                    entityExporter = new ImageEntityExport(_configHelper);
-                    modifierExporter = new ImageModifierExport(_configHelper);
+                    entityExporter = new ImageEntityExport(_configHelper, omitSource);
+                    modifierExporter = new ImageModifierExport(_configHelper, omitSource);
                     break;
             }
 
@@ -832,7 +832,7 @@ namespace JointMilitarySymbologyLibrary
             _exportSymbolSet(path, dataValidation, append, false);
         }
 
-        public void ExportFrames(string path, string contextExpression = "", string standardIdentityExpression = "", string dimensionExpression = "", ETLExportEnum exportType = ETLExportEnum.ETLExportSimple)
+        public void ExportFrames(string path, string contextExpression = "", string standardIdentityExpression = "", string dimensionExpression = "", ETLExportEnum exportType = ETLExportEnum.ETLExportSimple, bool omitSource = false)
         {
             // The public entry point for exporting frames from the JMSML library
             // into CSV format.
@@ -846,7 +846,7 @@ namespace JointMilitarySymbologyLibrary
             switch (exportType)
             {
                 case ETLExportEnum.ETLExportImage:
-                    frameExporter = new ImageFrameExport(_configHelper);
+                    frameExporter = new ImageFrameExport(_configHelper, omitSource);
                     break;
             }
 

@@ -51,7 +51,7 @@ namespace JointMilitarySymbologyLibrary
             return result;
         }
 
-        protected string BuildFrameItemTags(LibraryContext context, LibraryStandardIdentity identity, LibraryDimension dimension, string graphicPath)
+        protected string BuildFrameItemTags(LibraryContext context, LibraryStandardIdentity identity, LibraryDimension dimension, string graphicPath, bool omitSource)
         {
             // Constructs a string of semicolon delimited tags that users can utilize to search
             // for or find a given symbol.
@@ -75,7 +75,9 @@ namespace JointMilitarySymbologyLibrary
                 }
             }
 
-            result = result + graphicPath + ";";
+            if(!omitSource)
+                result = result + graphicPath + ";";
+
             result = result + BuildFrameCode(context, identity, dimension);
 
             return result;

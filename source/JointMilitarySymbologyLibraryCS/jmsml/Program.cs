@@ -52,6 +52,7 @@ namespace jmsml
 
             bool dataValidation = (CommandLineArgs.I.argAsString("/e") != "false");
             bool appendFiles = (CommandLineArgs.I.argAsString("/+") != "false");
+            bool omitSource = (CommandLineArgs.I.argAsString("/-source") != "false");
 
             if (help == "/?")
             {
@@ -59,6 +60,7 @@ namespace jmsml
                 Console.WriteLine("");
                 Console.WriteLine("/?\t\t\t: Help/Show command line options.");
                 Console.WriteLine("/+\t\t\t: Append multiple e(x)port files together.");
+                Console.WriteLine("/-source\t\t: Leave source file out of exported tags.");
                 Console.WriteLine("/a\t\t\t: Export symbols with AREA geometry.");
                 Console.WriteLine("/b\t\t\t: Export all coded base domain tables to a folder.");
                 Console.WriteLine("/e\t\t\t: Add data validation when exporting domain tables.");
@@ -86,7 +88,8 @@ namespace jmsml
                                                                 xLines == "/l" || xPoints == "" && xAreas == "",
                                                                 xAreas == "/a" || xPoints == "" && xLines == "",
                                                                 ETLExportEnum.ETLExportSimple,
-                                                                appendFiles);
+                                                                appendFiles,
+                                                                omitSource);
             }
 
             if (exportDPath != "")
@@ -95,7 +98,8 @@ namespace jmsml
                                                                 xLines == "/l" || xPoints == "" && xAreas == "",
                                                                 xAreas == "/a" || xPoints == "" && xLines == "",
                                                                 ETLExportEnum.ETLExportDomain,
-                                                                appendFiles);
+                                                                appendFiles,
+                                                                omitSource);
             }
 
             if (exportDomainPath != "")
@@ -114,12 +118,13 @@ namespace jmsml
                                                                 xLines == "/l" || xPoints == "" && xAreas == "",
                                                                 xAreas == "/a" || xPoints == "" && xLines == "",
                                                                 ETLExportEnum.ETLExportImage,
-                                                                appendFiles);
+                                                                appendFiles,
+                                                                omitSource);
             }
 
             if (frameImagePath != "")
             {
-                _etl.ExportFrames(frameImagePath, contextQuery, identityQuery, dimensionQuery, ETLExportEnum.ETLExportImage);
+                _etl.ExportFrames(frameImagePath, contextQuery, identityQuery, dimensionQuery, ETLExportEnum.ETLExportImage, omitSource);
             }
         }
 

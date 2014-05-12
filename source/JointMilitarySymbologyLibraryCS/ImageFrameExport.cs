@@ -21,9 +21,12 @@ namespace JointMilitarySymbologyLibrary
 {
     class ImageFrameExport : FrameExport, IFrameExport
     {
-        public ImageFrameExport(ConfigHelper configHelper)
+        private bool _omitSource = false;
+
+        public ImageFrameExport(ConfigHelper configHelper, bool omitSource)
         {
             _configHelper = configHelper;
+            _omitSource = omitSource;
         }
 
         string IFrameExport.Headers
@@ -54,7 +57,7 @@ namespace JointMilitarySymbologyLibrary
 
                 string itemName = BuildFrameItemName(context, dimension, identity);
                 string itemCategory = "Frame";
-                string itemTags = BuildFrameItemTags(context, identity, dimension, graphicPath + "\\" + graphic);
+                string itemTags = BuildFrameItemTags(context, identity, dimension, graphicPath + "\\" + graphic, _omitSource);
 
                 result = itemRootedPath + "," +
                          Convert.ToString(_configHelper.PointSize) + "," +

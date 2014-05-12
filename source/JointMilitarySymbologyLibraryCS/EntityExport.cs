@@ -106,7 +106,8 @@ namespace JointMilitarySymbologyLibrary
         protected string BuildEntityItemTags(SymbolSet ss,
                                              SymbolSetEntity e,
                                              SymbolSetEntityEntityType eType,
-                                             SymbolSetEntityEntityTypeEntitySubType eSubType)
+                                             SymbolSetEntityEntityTypeEntitySubType eSubType,
+                                             bool omitSource)
         {
             // Constructs a string of semicolon delimited tags that users can utilize to search
             // for or find a given symbol.
@@ -185,7 +186,10 @@ namespace JointMilitarySymbologyLibrary
             }
 
             result = result + ";" + geometry;
-            result = result + ";" + _configHelper.GetPath(ss.ID, FindEnum.FindEntities) + "\\" + graphic;
+
+            if(!omitSource)
+                result = result + ";" + _configHelper.GetPath(ss.ID, FindEnum.FindEntities) + "\\" + graphic;
+
             result = result + ";" + BuildEntityItemName(ss, e, eType, eSubType);
             result = result + ";" + BuildEntityCode(ss, e, eType, eSubType);
 
