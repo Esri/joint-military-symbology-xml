@@ -114,6 +114,7 @@
               <xs:element name="Dimension" minOccurs="1" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:sequence>
+                    <xs:element name="DimensionCode" type="DoubleDigitType"/>
                     <xs:element name="LegacyDimensionCode" type="LegacyLetterCodeType" minOccurs="0" maxOccurs="unbounded"/>
                     <xs:element name="Fields" minOccurs="1" maxOccurs="1">
                       <xs:complexType>

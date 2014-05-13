@@ -25,9 +25,12 @@ namespace JointMilitarySymbologyLibrary
         // by outputting image file path information, its name and the category of icon it falls within,
         // and the tags associated with that SymbolSet and entity.
 
-        public ImageEntityExport(ConfigHelper configHelper)
+        private bool _omitSource = false;
+
+        public ImageEntityExport(ConfigHelper configHelper, bool omitSource)
         {
             _configHelper = configHelper;
+            _omitSource = omitSource;
         }
 
         string IEntityExport.Headers
@@ -89,7 +92,7 @@ namespace JointMilitarySymbologyLibrary
             
             string itemName = BuildEntityItemName(ss, e, eType, eSubType);
             string itemCategory = BuildEntityItemCategory(ss, iType);
-            string itemTags = BuildEntityItemTags(ss, e, eType, eSubType);
+            string itemTags = BuildEntityItemTags(ss, e, eType, eSubType, _omitSource);
 
             result = itemRootedPath + "," +
                      Convert.ToString(_configHelper.PointSize) + "," +

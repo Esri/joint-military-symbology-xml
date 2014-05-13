@@ -9,4 +9,5 @@ jmsml.exe /xi="../../../../../samples/imagefile_name_category_tags/Military-Spac
 jmsml.exe /xi="../../../../../samples/imagefile_name_category_tags/Military-Sigint-Source-Icons-Test" /s="Signals Intelligence" /+
 jmsml.exe /xi="../../../../../samples/imagefile_name_category_tags/Military-ControlMeasures-Source-Icons-Test" /s="^Control Measure$" /+
 jmsml.exe /xi="../../../../../samples/imagefile_name_category_tags/Military-Weather-Source-Icons-Test" /s="Atmospheric|Oceanographic|Meteorological Space" /+
+jmsml.exe /xf="../../../../../samples/imagefile_name_category_tags/Military-Frame-And-Modifier-Source-Icons-Test" /qc="Reality"
 endlocal

@@ -58,7 +58,7 @@ namespace JointMilitarySymbologyLibrary
         // modifier.  Information includes the Label attributes, geometry
         // type, location of the original graphic file, the code, etc.
 
-        protected string BuildModifierItemTags(SymbolSet ss, string modNumber, ModifiersTypeModifier m)
+        protected string BuildModifierItemTags(SymbolSet ss, string modNumber, ModifiersTypeModifier m, bool omitSource)
         {
             string path = "";
             string result = ss.Label.Replace(',', '-');
@@ -76,7 +76,9 @@ namespace JointMilitarySymbologyLibrary
                     break;
             }
 
-            result = result + ";" + path + "\\" + m.Graphic;
+            if(!omitSource)
+                result = result + ";" + path + "\\" + m.Graphic;
+
             result = result + ";" + BuildModifierItemName(ss, modNumber, m);
             result = result + ";" + m.Category;
             result = result + ";" + BuildModifierCode(ss, modNumber, m);

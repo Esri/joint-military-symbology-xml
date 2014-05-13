@@ -25,9 +25,12 @@ namespace JointMilitarySymbologyLibrary
         // by outputting image file path information, its name and the category of icon it falls within,
         // and the tags associated with that SymbolSet and modifier.
 
-        public ImageModifierExport(ConfigHelper configHelper)
+        private bool _omitSource = false;
+
+        public ImageModifierExport(ConfigHelper configHelper, bool omitSource)
         {
             _configHelper = configHelper;
+            _omitSource = omitSource;
         }
 
         string IModifierExport.Headers
@@ -61,7 +64,7 @@ namespace JointMilitarySymbologyLibrary
 
             string itemName = BuildModifierItemName(ss, modNumber, m);
             string itemCategory = BuildModifierItemCategory(ss, modNumber);
-            string itemTags = BuildModifierItemTags(ss, modNumber, m);
+            string itemTags = BuildModifierItemTags(ss, modNumber, m, _omitSource);
 
             result = itemRootedPath + "," +
                      Convert.ToString(_configHelper.PointSize) + "," +
