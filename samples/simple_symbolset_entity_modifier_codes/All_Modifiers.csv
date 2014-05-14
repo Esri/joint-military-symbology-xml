@@ -31,7 +31,7 @@ SymbolSet,ModifierNumber,Category,Name,Code
 01,1,Military Mission Area,Combat Search and Rescue (CSAR),30
 01,1,Military Mission Area,Suppression of Enemy Air Defenses,31
 01,1,Military Mission Area,Antisurface Warfare,32
-01,1,Military Mission Area,Fighter/Bomber,33
+01,1,Military Aircraft Type,Fighter/Bomber,33
 01,1,Mission Area,Intensive Care,34
 01,1,Military Mission Area,Electronic Attack (EA),35
 01,1,Mission Area,Multimission,36
@@ -280,14 +280,14 @@ SymbolSet,ModifierNumber,Category,Name,Code
 20,1,Operation,Civilian,11
 20,1,Civilian Telecommunications Type,Civilian Telephone,12
 20,1,Civilian Telecommunications Type,Civilian Television,13
-20,2,TODO,Biological,01
-20,2,TODO,Chemical,02
-20,2,TODO,Nuclear,03
-20,2,TODO,Radiological,04
-20,2,TODO,Atomic Energy Reactor,05
-20,2,TODO,Nuclear Material Production,06
-20,2,TODO,Nuclear Material Storage,07
-20,2,TODO,Weapons Grade,08
+20,2,No Category Listed,Biological,01
+20,2,No Category Listed,Chemical,02
+20,2,No Category Listed,Nuclear,03
+20,2,No Category Listed,Radiological,04
+20,2,No Category Listed,Atomic Energy Reactor,05
+20,2,No Category Listed,Nuclear Material Production,06
+20,2,No Category Listed,Nuclear Material Storage,07
+20,2,No Category Listed,Weapons Grade,08
 30,1,Mission Area,Own Ship,01
 30,1,Mission Area,Antiair Warfare,02
 30,1,Mission Area,Antisubmarine Warfare,03
@@ -411,60 +411,60 @@ SymbolSet,ModifierNumber,Category,Name,Code
 50,1,Space/Air/Land/Sea Surface/Subsurface Radar,Unknown,62
 50,1,Space/Air/Land/Sea Surface/Subsurface Radar,Video Remoting,63
 50,1,Space/Air/Land/Sea Surface/Subsurface Radar,Experimental,64
-51,1,AIR RADAR,Airborne Search and Bombing,02
-51,1,AIR RADAR,Airborne Intercept,03
-51,1,AIR RADAR,Altimeter,04
-51,1,AIR RADAR,Airborne Reconnaissance and Mapping,05
-51,1,AIR/LAND/SEA SURFACE RADAR,Air Traffic Control,06
-51,1,AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Beacon Transponder (not IFF),07
-51,1,AIR/LAND RADAR,Battlefield Surveillance,08
-51,1,AIR/LAND/SEA SURFACE RADAR,Controlled Intercept,10
-51,1,AIR/LAND/SEA SURFACE/SUBSURFACE COMMUNICATIONS,Cellular/Mobile,11
-51,1,LAND RADAR,Coastal Surveillance,12
-51,1,AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Decoy/Mimic,13
-51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Data Transmission,14
-51,1,AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Early Warning,16
-51,1,AIR/LAND/SEA SURFACE RADAR,Fire Control,17
-51,1,AIR RADAR,Ground Mapping,18
-51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Identification Friend or Foe (Interrogator),21
-51,1,AIR/LAND RADAR,Ionospheric Sounding,23
-51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Identification Friend or Foe (Transponder),24
-51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER,Barrage Jammer,25
-51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER,Click Jammer,26
-51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER,Deceptive Jammer,27
-51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER,Frequency Swept Jammer,28
-51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER,Jammer (General),29
-51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER,Noise Jammer,30
-51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER,Pulsed Jammer,31
-51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER,Repeater Jammer,32
-51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER,Spot Noise Jammer,33
-51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER,Transponder Jammer,34
-51,1,AIR/LAND/SEA SURFACE RADAR,Missile Acquisition,35
-51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Missile Control,36
-51,1,AIR RADAR,Missile Downlink,37
-51,1,AIR/LAND/SEA SURFACE RADAR,Meteorological,38
-51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER,Multi-Function,39
-51,1,AIR/LAND/SEA SURFACE RADAR,Missile Guidance,40
-51,1,AIR RADAR,Missile Homing,41
-51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER,Missile Tracking,42
-51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER,Navigational/General,43
-51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER,Navigational/Distance Measuring Equipment,44
-51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER,Navigation/Terrain Following,45
-51,1,AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER,Navigational/Weather Avoidance,46
-51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE COMMUNICATIONS,Omni-Line of Sight (LOS),47
-51,1,AIR RADAR,Proximity Use,48
-51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE COMMUNICATIONS,Point-to-Point Line of Sight (LOS),49
-51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Instrumentation,50
-51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Range Only,51
-51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Space,54
-51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Surface Search,55
-51,1,AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Satellite Uplink,57
-51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Target Acquisition,58
-51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Target Illumination,59
-51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Target Tracking,61
-51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Unknown,62
-51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Video Remoting,63
-51,1,SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR,Experimental,64
+51,1,Air Radar,Airborne Search and Bombing,02
+51,1,Air Radar,Airborne Intercept,03
+51,1,Air Radar,Altimeter,04
+51,1,Air Radar,Airborne Reconnaissance and Mapping,05
+51,1,Air/Land/Sea Surface Radar,Air Traffic Control,06
+51,1,Air/Land/Sea Surface/Subsurface Radar,Beacon Transponder (not IFF),07
+51,1,Air/Land Radar,Battlefield Surveillance,08
+51,1,Air/Land/Sea Surface Radar,Controlled Intercept,10
+51,1,Air/Land/Sea Surface/Subsurface Communications,Cellular/Mobile,11
+51,1,Land Radar,Coastal Surveillance,12
+51,1,Air/Land/Sea Surface/Subsurface Radar,Decoy/Mimic,13
+51,1,Space/Air/Land/Sea Surface/Subsurface Radar,Data Transmission,14
+51,1,Air/Land/Sea Surface/Subsurface Radar,Early Warning,16
+51,1,Air/Land/Sea Surface Radar,Fire Control,17
+51,1,Air Radar,Ground Mapping,18
+51,1,Space/Air/Land/Sea Surface/Subsurface Radar,Identification Friend or Foe (Interrogator),21
+51,1,Air/Land Radar,Ionospheric Sounding,23
+51,1,Space/Air/Land/Sea Surface/Subsurface Radar,Identification Friend or Foe (Transponder),24
+51,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Barrage Jammer,25
+51,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Click Jammer,26
+51,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Deceptive Jammer,27
+51,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Frequency Swept Jammer,28
+51,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Jammer (General),29
+51,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Noise Jammer,30
+51,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Pulsed Jammer,31
+51,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Repeater Jammer,32
+51,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Spot Noise Jammer,33
+51,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Transponder Jammer,34
+51,1,Air/Land/Sea Surface Radar,Missile Acquisition,35
+51,1,Space/Air/Land/Sea Surface/Subsurface Radar,Missile Control,36
+51,1,Air Radar,Missile Downlink,37
+51,1,Air/Land/Sea Surface Radar,Meteorological,38
+51,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Multi-Function,39
+51,1,Air/Land/Sea Surface Radar,Missile Guidance,40
+51,1,Air Radar,Missile Homing,41
+51,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Missile Tracking,42
+51,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Navigational/General,43
+51,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Navigational/Distance Measuring Equipment,44
+51,1,Space/Air/Land/Sea Surface/Subsurface Jammer,Navigation/Terrain Following,45
+51,1,Air/Land/Sea Surface/Subsurface Jammer,Navigational/Weather Avoidance,46
+51,1,Space/Air/Land/Sea Surface/Subsurface Communications,Omni-Line of Sight (LOS),47
+51,1,Air Radar,Proximity Use,48
+51,1,Space/Air/Land/Sea Surface/Subsurface Communications,Point-to-Point Line of Sight (LOS),49
+51,1,Space/Air/Land/Sea Surface/Subsurface Radar,Instrumentation,50
+51,1,Space/Air/Land/Sea Surface/Subsurface Radar,Range Only,51
+51,1,Space/Air/Land/Sea Surface/Subsurface Radar,Space,54
+51,1,Space/Air/Land/Sea Surface/Subsurface Radar,Surface Search,55
+51,1,Air/Land/Sea Surface/Subsurface Radar,Satellite Uplink,57
+51,1,Space/Air/Land/Sea Surface/Subsurface Radar,Target Acquisition,58
+51,1,Space/Air/Land/Sea Surface/Subsurface Radar,Target Illumination,59
+51,1,Space/Air/Land/Sea Surface/Subsurface Radar,Target Tracking,61
+51,1,Space/Air/Land/Sea Surface/Subsurface Radar,Unknown,62
+51,1,Space/Air/Land/Sea Surface/Subsurface Radar,Video Remoting,63
+51,1,Space/Air/Land/Sea Surface/Subsurface Radar,Experimental,64
 52,1,Land/Sea Surface Radar,Anti-Aircraft Fire Control,01
 52,1,Air/Land/Sea Surface Radar,Air Traffic Control,06
 52,1,Air/Land/Sea Surface/Subsurface Radar,Beacon Transponder (not IFF),07

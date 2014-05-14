@@ -31,7 +31,7 @@ Air : Modifier 1 : Mission Area : Very Important Person (VIP) Transport,01291
 Air : Modifier 1 : Military Mission Area : Combat Search and Rescue (CSAR),01301
 Air : Modifier 1 : Military Mission Area : Suppression of Enemy Air Defenses,01311
 Air : Modifier 1 : Military Mission Area : Antisurface Warfare,01321
-Air : Modifier 1 : Military Mission Area : Fighter/Bomber,01331
+Air : Modifier 1 : Military Aircraft Type : Fighter/Bomber,01331
 Air : Modifier 1 : Mission Area : Intensive Care,01341
 Air : Modifier 1 : Military Mission Area : Electronic Attack (EA),01351
 Air : Modifier 1 : Mission Area : Multimission,01361
@@ -280,14 +280,14 @@ Land Installation : Modifier 1 : Electric Power Type : Petroleum,20101
 Land Installation : Modifier 1 : Operation : Civilian,20111
 Land Installation : Modifier 1 : Civilian Telecommunications Type : Civilian Telephone,20121
 Land Installation : Modifier 1 : Civilian Telecommunications Type : Civilian Television,20131
-Land Installation : Modifier 2 : TODO : Biological,20012
-Land Installation : Modifier 2 : TODO : Chemical,20022
-Land Installation : Modifier 2 : TODO : Nuclear,20032
-Land Installation : Modifier 2 : TODO : Radiological,20042
-Land Installation : Modifier 2 : TODO : Atomic Energy Reactor,20052
-Land Installation : Modifier 2 : TODO : Nuclear Material Production,20062
-Land Installation : Modifier 2 : TODO : Nuclear Material Storage,20072
-Land Installation : Modifier 2 : TODO : Weapons Grade,20082
+Land Installation : Modifier 2 : No Category Listed : Biological,20012
+Land Installation : Modifier 2 : No Category Listed : Chemical,20022
+Land Installation : Modifier 2 : No Category Listed : Nuclear,20032
+Land Installation : Modifier 2 : No Category Listed : Radiological,20042
+Land Installation : Modifier 2 : No Category Listed : Atomic Energy Reactor,20052
+Land Installation : Modifier 2 : No Category Listed : Nuclear Material Production,20062
+Land Installation : Modifier 2 : No Category Listed : Nuclear Material Storage,20072
+Land Installation : Modifier 2 : No Category Listed : Weapons Grade,20082
 Sea Surface : Modifier 1 : Mission Area : Own Ship,30011
 Sea Surface : Modifier 1 : Mission Area : Antiair Warfare,30021
 Sea Surface : Modifier 1 : Mission Area : Antisubmarine Warfare,30031
@@ -411,60 +411,60 @@ Signals Intelligence - Space : Modifier 1 : Space/Air/Land/Sea Surface/Subsurfac
 Signals Intelligence - Space : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Radar : Unknown,50621
 Signals Intelligence - Space : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Radar : Video Remoting,50631
 Signals Intelligence - Space : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Radar : Experimental,50641
-Signals Intelligence - Air : Modifier 1 : AIR RADAR : Airborne Search and Bombing,51021
-Signals Intelligence - Air : Modifier 1 : AIR RADAR : Airborne Intercept,51031
-Signals Intelligence - Air : Modifier 1 : AIR RADAR : Altimeter,51041
-Signals Intelligence - Air : Modifier 1 : AIR RADAR : Airborne Reconnaissance and Mapping,51051
-Signals Intelligence - Air : Modifier 1 : AIR/LAND/SEA SURFACE RADAR : Air Traffic Control,51061
-Signals Intelligence - Air : Modifier 1 : AIR/LAND/SEA SURFACE/SUBSURFACE RADAR : Beacon Transponder (not IFF),51071
-Signals Intelligence - Air : Modifier 1 : AIR/LAND RADAR : Battlefield Surveillance,51081
-Signals Intelligence - Air : Modifier 1 : AIR/LAND/SEA SURFACE RADAR : Controlled Intercept,51101
-Signals Intelligence - Air : Modifier 1 : AIR/LAND/SEA SURFACE/SUBSURFACE COMMUNICATIONS : Cellular/Mobile,51111
-Signals Intelligence - Air : Modifier 1 : LAND RADAR : Coastal Surveillance,51121
-Signals Intelligence - Air : Modifier 1 : AIR/LAND/SEA SURFACE/SUBSURFACE RADAR : Decoy/Mimic,51131
-Signals Intelligence - Air : Modifier 1 : SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR : Data Transmission,51141
-Signals Intelligence - Air : Modifier 1 : AIR/LAND/SEA SURFACE/SUBSURFACE RADAR : Early Warning,51161
-Signals Intelligence - Air : Modifier 1 : AIR/LAND/SEA SURFACE RADAR : Fire Control,51171
-Signals Intelligence - Air : Modifier 1 : AIR RADAR : Ground Mapping,51181
-Signals Intelligence - Air : Modifier 1 : SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR : Identification Friend or Foe (Interrogator),51211
-Signals Intelligence - Air : Modifier 1 : AIR/LAND RADAR : Ionospheric Sounding,51231
-Signals Intelligence - Air : Modifier 1 : SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR : Identification Friend or Foe (Transponder),51241
-Signals Intelligence - Air : Modifier 1 : SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER : Barrage Jammer,51251
-Signals Intelligence - Air : Modifier 1 : SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER : Click Jammer,51261
-Signals Intelligence - Air : Modifier 1 : SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER : Deceptive Jammer,51271
-Signals Intelligence - Air : Modifier 1 : SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER : Frequency Swept Jammer,51281
-Signals Intelligence - Air : Modifier 1 : SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER : Jammer (General),51291
-Signals Intelligence - Air : Modifier 1 : SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER : Noise Jammer,51301
-Signals Intelligence - Air : Modifier 1 : SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER : Pulsed Jammer,51311
-Signals Intelligence - Air : Modifier 1 : SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER : Repeater Jammer,51321
-Signals Intelligence - Air : Modifier 1 : SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER : Spot Noise Jammer,51331
-Signals Intelligence - Air : Modifier 1 : SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER : Transponder Jammer,51341
-Signals Intelligence - Air : Modifier 1 : AIR/LAND/SEA SURFACE RADAR : Missile Acquisition,51351
-Signals Intelligence - Air : Modifier 1 : SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR : Missile Control,51361
-Signals Intelligence - Air : Modifier 1 : AIR RADAR : Missile Downlink,51371
-Signals Intelligence - Air : Modifier 1 : AIR/LAND/SEA SURFACE RADAR : Meteorological,51381
-Signals Intelligence - Air : Modifier 1 : SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER : Multi-Function,51391
-Signals Intelligence - Air : Modifier 1 : AIR/LAND/SEA SURFACE RADAR : Missile Guidance,51401
-Signals Intelligence - Air : Modifier 1 : AIR RADAR : Missile Homing,51411
-Signals Intelligence - Air : Modifier 1 : SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER : Missile Tracking,51421
-Signals Intelligence - Air : Modifier 1 : SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER : Navigational/General,51431
-Signals Intelligence - Air : Modifier 1 : SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER : Navigational/Distance Measuring Equipment,51441
-Signals Intelligence - Air : Modifier 1 : SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER : Navigation/Terrain Following,51451
-Signals Intelligence - Air : Modifier 1 : AIR/LAND/SEA SURFACE/SUBSURFACE JAMMER : Navigational/Weather Avoidance,51461
-Signals Intelligence - Air : Modifier 1 : SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE COMMUNICATIONS : Omni-Line of Sight (LOS),51471
-Signals Intelligence - Air : Modifier 1 : AIR RADAR : Proximity Use,51481
-Signals Intelligence - Air : Modifier 1 : SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE COMMUNICATIONS : Point-to-Point Line of Sight (LOS),51491
-Signals Intelligence - Air : Modifier 1 : SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR : Instrumentation,51501
-Signals Intelligence - Air : Modifier 1 : SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR : Range Only,51511
-Signals Intelligence - Air : Modifier 1 : SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR : Space,51541
-Signals Intelligence - Air : Modifier 1 : SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR : Surface Search,51551
-Signals Intelligence - Air : Modifier 1 : AIR/LAND/SEA SURFACE/SUBSURFACE RADAR : Satellite Uplink,51571
-Signals Intelligence - Air : Modifier 1 : SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR : Target Acquisition,51581
-Signals Intelligence - Air : Modifier 1 : SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR : Target Illumination,51591
-Signals Intelligence - Air : Modifier 1 : SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR : Target Tracking,51611
-Signals Intelligence - Air : Modifier 1 : SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR : Unknown,51621
-Signals Intelligence - Air : Modifier 1 : SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR : Video Remoting,51631
-Signals Intelligence - Air : Modifier 1 : SPACE/AIR/LAND/SEA SURFACE/SUBSURFACE RADAR : Experimental,51641
+Signals Intelligence - Air : Modifier 1 : Air Radar : Airborne Search and Bombing,51021
+Signals Intelligence - Air : Modifier 1 : Air Radar : Airborne Intercept,51031
+Signals Intelligence - Air : Modifier 1 : Air Radar : Altimeter,51041
+Signals Intelligence - Air : Modifier 1 : Air Radar : Airborne Reconnaissance and Mapping,51051
+Signals Intelligence - Air : Modifier 1 : Air/Land/Sea Surface Radar : Air Traffic Control,51061
+Signals Intelligence - Air : Modifier 1 : Air/Land/Sea Surface/Subsurface Radar : Beacon Transponder (not IFF),51071
+Signals Intelligence - Air : Modifier 1 : Air/Land Radar : Battlefield Surveillance,51081
+Signals Intelligence - Air : Modifier 1 : Air/Land/Sea Surface Radar : Controlled Intercept,51101
+Signals Intelligence - Air : Modifier 1 : Air/Land/Sea Surface/Subsurface Communications : Cellular/Mobile,51111
+Signals Intelligence - Air : Modifier 1 : Land Radar : Coastal Surveillance,51121
+Signals Intelligence - Air : Modifier 1 : Air/Land/Sea Surface/Subsurface Radar : Decoy/Mimic,51131
+Signals Intelligence - Air : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Radar : Data Transmission,51141
+Signals Intelligence - Air : Modifier 1 : Air/Land/Sea Surface/Subsurface Radar : Early Warning,51161
+Signals Intelligence - Air : Modifier 1 : Air/Land/Sea Surface Radar : Fire Control,51171
+Signals Intelligence - Air : Modifier 1 : Air Radar : Ground Mapping,51181
+Signals Intelligence - Air : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Radar : Identification Friend or Foe (Interrogator),51211
+Signals Intelligence - Air : Modifier 1 : Air/Land Radar : Ionospheric Sounding,51231
+Signals Intelligence - Air : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Radar : Identification Friend or Foe (Transponder),51241
+Signals Intelligence - Air : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Jammer : Barrage Jammer,51251
+Signals Intelligence - Air : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Jammer : Click Jammer,51261
+Signals Intelligence - Air : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Jammer : Deceptive Jammer,51271
+Signals Intelligence - Air : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Jammer : Frequency Swept Jammer,51281
+Signals Intelligence - Air : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Jammer : Jammer (General),51291
+Signals Intelligence - Air : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Jammer : Noise Jammer,51301
+Signals Intelligence - Air : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Jammer : Pulsed Jammer,51311
+Signals Intelligence - Air : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Jammer : Repeater Jammer,51321
+Signals Intelligence - Air : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Jammer : Spot Noise Jammer,51331
+Signals Intelligence - Air : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Jammer : Transponder Jammer,51341
+Signals Intelligence - Air : Modifier 1 : Air/Land/Sea Surface Radar : Missile Acquisition,51351
+Signals Intelligence - Air : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Radar : Missile Control,51361
+Signals Intelligence - Air : Modifier 1 : Air Radar : Missile Downlink,51371
+Signals Intelligence - Air : Modifier 1 : Air/Land/Sea Surface Radar : Meteorological,51381
+Signals Intelligence - Air : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Jammer : Multi-Function,51391
+Signals Intelligence - Air : Modifier 1 : Air/Land/Sea Surface Radar : Missile Guidance,51401
+Signals Intelligence - Air : Modifier 1 : Air Radar : Missile Homing,51411
+Signals Intelligence - Air : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Jammer : Missile Tracking,51421
+Signals Intelligence - Air : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Jammer : Navigational/General,51431
+Signals Intelligence - Air : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Jammer : Navigational/Distance Measuring Equipment,51441
+Signals Intelligence - Air : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Jammer : Navigation/Terrain Following,51451
+Signals Intelligence - Air : Modifier 1 : Air/Land/Sea Surface/Subsurface Jammer : Navigational/Weather Avoidance,51461
+Signals Intelligence - Air : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Communications : Omni-Line of Sight (LOS),51471
+Signals Intelligence - Air : Modifier 1 : Air Radar : Proximity Use,51481
+Signals Intelligence - Air : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Communications : Point-to-Point Line of Sight (LOS),51491
+Signals Intelligence - Air : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Radar : Instrumentation,51501
+Signals Intelligence - Air : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Radar : Range Only,51511
+Signals Intelligence - Air : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Radar : Space,51541
+Signals Intelligence - Air : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Radar : Surface Search,51551
+Signals Intelligence - Air : Modifier 1 : Air/Land/Sea Surface/Subsurface Radar : Satellite Uplink,51571
+Signals Intelligence - Air : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Radar : Target Acquisition,51581
+Signals Intelligence - Air : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Radar : Target Illumination,51591
+Signals Intelligence - Air : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Radar : Target Tracking,51611
+Signals Intelligence - Air : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Radar : Unknown,51621
+Signals Intelligence - Air : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Radar : Video Remoting,51631
+Signals Intelligence - Air : Modifier 1 : Space/Air/Land/Sea Surface/Subsurface Radar : Experimental,51641
 Signals Intelligence - Land : Modifier 1 : Land/Sea Surface Radar : Anti-Aircraft Fire Control,52011
 Signals Intelligence - Land : Modifier 1 : Air/Land/Sea Surface Radar : Air Traffic Control,52061
 Signals Intelligence - Land : Modifier 1 : Air/Land/Sea Surface/Subsurface Radar : Beacon Transponder (not IFF),52071

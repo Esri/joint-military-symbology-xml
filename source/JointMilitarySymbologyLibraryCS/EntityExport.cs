@@ -185,11 +185,10 @@ namespace JointMilitarySymbologyLibrary
                     graphic = e.Graphic;
             }
 
-            result = result + ";" + geometry;
-
             if(!omitSource)
-                result = result + ";" + _configHelper.GetPath(ss.ID, FindEnum.FindEntities) + "\\" + graphic;
+                result = result + ";" + _configHelper.GetPath(ss.ID, FindEnum.FindEntities, true) + "\\" + graphic;
 
+            result = result + ";" + geometry;
             result = result + ";" + BuildEntityItemName(ss, e, eType, eSubType);
             result = result + ";" + BuildEntityCode(ss, e, eType, eSubType);
 
