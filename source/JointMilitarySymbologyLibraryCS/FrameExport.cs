@@ -76,8 +76,10 @@ namespace JointMilitarySymbologyLibrary
             }
 
             if(!omitSource)
-                result = result + graphicPath + ";";
+                result = result + graphicPath.Substring(1) + ";";
 
+            result = result + "Point" + ";";
+            result = result + BuildFrameItemName(context, dimension, identity) + ";";
             result = result + BuildFrameCode(context, identity, dimension);
 
             return result;

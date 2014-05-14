@@ -6,7 +6,7 @@
 	</SymbolSetCode>
 	<LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
 	<Entities>
-		<Entity ID="BOTNET" Label="Botnet" Remarks="There is no symbol associated with this entity.">
+		<Entity ID="BOTNET" Label="Botnet" Remarks="There is no symbol associated with this entity." Icon="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>1</DigitTwo>
@@ -38,7 +38,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="INFECTION" Label="Infection" Remarks="There is no symbol associated with this entity.">
+		<Entity ID="INFECTION" Label="Infection" Remarks="There is no symbol associated with this entity." Icon="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>2</DigitTwo>
@@ -110,7 +110,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="HEALTH_AND_STATUS" Label="Health and Status" Remarks="There is no symbol associated with this entity.">
+		<Entity ID="HEALTH_AND_STATUS" Label="Health and Status" Remarks="There is no symbol associated with this entity." Icon="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>3</DigitTwo>
@@ -142,7 +142,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="DEVICE_TYPE" Label="Device Type" Remarks="There is no symbol associated with this entity.">
+		<Entity ID="DEVICE_TYPE" Label="Device Type" Remarks="There is no symbol associated with this entity." Icon="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>4</DigitTwo>
@@ -222,7 +222,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="DEVICE_DOMAIN" Label="Device Domain" Remarks="There is no symbol associated with this entity.">
+		<Entity ID="DEVICE_DOMAIN" Label="Device Domain" Remarks="There is no symbol associated with this entity." Icon="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>5</DigitTwo>

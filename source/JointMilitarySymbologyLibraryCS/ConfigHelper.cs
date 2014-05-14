@@ -246,7 +246,7 @@ namespace JointMilitarySymbologyLibrary
             return result;
         }
 
-        public string GetPath(string getWhat, FindEnum ofType)
+        public string GetPath(string getWhat, FindEnum ofType, bool sansLeadingSlash = false)
         {
             // The public entry point for retrieving and returning a file path
             // string from the various Dictionarys that hold them.
@@ -291,6 +291,9 @@ namespace JointMilitarySymbologyLibrary
                     result = _getPath("JMSML_SPECIALS", _basePaths);
                     break;
             }
+
+            if (result.Length > 1 && sansLeadingSlash)
+                result = result.Substring(1);
 
             return result;
         }

@@ -29,8 +29,7 @@ namespace jmsml
         {
             _librarian.IsLogging = true;
 
-            CommandLineArgs.I.parseArgs(args, "/e=false");
-            CommandLineArgs.I.parseArgs(args, "/+=false");
+            CommandLineArgs.I.parseArgs(args, "/e=false;/+=false;/-source=false");
 
             string exportPath = CommandLineArgs.I.argAsString("/x");
             string exportDPath = CommandLineArgs.I.argAsString("/xd");
