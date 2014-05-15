@@ -2259,13 +2259,13 @@
 						<DigitTwo>5</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="PAA_RECTANGULAR" Label="Rectangular" Graphic="25240501.svg">
+						<EntitySubType ID="PAA_RECTANGULAR" Label="Rectangular" Graphic="25240501.svg" GeometryType="AREA">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="PAA_CIRCULAR" Label="Circular" Graphic="25240502.svg">
+						<EntitySubType ID="PAA_CIRCULAR" Label="Circular" Graphic="25240502.svg" GeometryType="AREA">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
