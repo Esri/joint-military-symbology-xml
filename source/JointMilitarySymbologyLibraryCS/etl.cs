@@ -81,7 +81,8 @@ namespace JointMilitarySymbologyLibrary
                     {
                         if (exportPoints && e.GeometryType == GeometryType.POINT ||
                             exportLines && e.GeometryType == GeometryType.LINE ||
-                            exportAreas && e.GeometryType == GeometryType.AREA)
+                            exportAreas && e.GeometryType == GeometryType.AREA ||
+                            e.GeometryType == GeometryType.NA)
                         {
 
                             if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(e.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
