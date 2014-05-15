@@ -42,7 +42,7 @@ namespace JointMilitarySymbologyLibrary
                                          "Main Icon",
                                          "Main Icon"};
 
-        protected string[] _geometryList = { "Point", "Line", "Area" };
+        protected string[] _geometryList = { "NotValid", "Point", "Line", "Area" };
 
         protected string BuildEntityCode(SymbolSet ss,
                                          SymbolSetEntity e,

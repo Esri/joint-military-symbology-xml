@@ -7,7 +7,7 @@
 	<LegacyCodingSchemeCode Name="2525C">E</LegacyCodingSchemeCode>
   <LegacyCodingSchemeCode Name="2525C">O</LegacyCodingSchemeCode>
 	<Entities>
-		<Entity ID="INCIDENT" Label="Incident" Remarks="No icon is associated with this entity. It is for hierarchal purposes only." Icon="NA">
+		<Entity ID="INCIDENT" Label="Incident" Remarks="No icon is associated with this entity. It is for hierarchal purposes only." Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>1</DigitTwo>
@@ -299,7 +299,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="OPERATION" Label="Operation" Remarks="No icon is associated with this entity. It is for hierarchal purposes only." Icon="NA">
+		<Entity ID="OPERATION" Label="Operation" Remarks="No icon is associated with this entity. It is for hierarchal purposes only." Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>3</DigitTwo>
@@ -671,7 +671,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="HAZARD_MATERIALS" Label="Hazard Materials" Remarks="No icon is associated with this entity. It is for hierarchal purposes only." Icon="NA">
+		<Entity ID="HAZARD_MATERIALS" Label="Hazard Materials" Remarks="No icon is associated with this entity. It is for hierarchal purposes only." Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>5</DigitTwo>
@@ -943,7 +943,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="INDIVIDUAL" Label="Individual" Remarks="No icon is associated with this entity. It is for hierarchal purposes only." Icon="NA">
+		<Entity ID="INDIVIDUAL" Label="Individual" Remarks="No icon is associated with this entity. It is for hierarchal purposes only." Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>8</DigitTwo>

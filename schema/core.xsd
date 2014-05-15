@@ -51,6 +51,7 @@
 
   <xs:simpleType name="GeometryType">
     <xs:restriction base="xs:token">
+      <xs:enumeration value="NA"/>
       <xs:enumeration value="POINT"/>
       <xs:enumeration value="LINE"/>
       <xs:enumeration value="AREA"/>
