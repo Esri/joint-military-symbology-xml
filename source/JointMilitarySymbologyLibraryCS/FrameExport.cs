@@ -45,8 +45,7 @@ namespace JointMilitarySymbologyLibrary
 
             result = result + context.Label + _configHelper.DomainSeparator;
             result = result + identity.Label + _configHelper.DomainSeparator;
-            result = result + dimension.Label + _configHelper.DomainSeparator;
-            result = result + BuildFrameCode(context, identity, dimension);
+            result = result + dimension.Label;
 
             return result;
         }

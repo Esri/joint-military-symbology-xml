@@ -1496,6 +1496,9 @@ namespace JointMilitarySymbologyLibrary {
     public enum GeometryType {
         
         /// <remarks/>
+        NA,
+        
+        /// <remarks/>
         POINT,
         
         /// <remarks/>
