@@ -126,7 +126,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="MOVEMENT_AND_MANEUVER" Label="Movement and Maneuver" Remarks="No icon is associated with this entity. It is for hiearchical purposes only." Icon="NA">
+		<Entity ID="MOVEMENT_AND_MANEUVER" Label="Movement and Maneuver" Remarks="No icon is associated with this entity. It is for hiearchical purposes only." Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>2</DigitTwo>
@@ -335,14 +335,6 @@
 						<DigitOne>1</DigitOne>
 						<DigitTwo>7</DigitTwo>
 					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="SF_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10121795_0.svg" RectangleGraphic="10121795_1.svg" SquareGraphic="10121795_2.svg" DiamondGraphic="10121795_3.svg" Icon="FULL_FRAME">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-					</EntitySubTypes>
 				</EntityType>
 				<EntityType ID="SPECIAL_OPERATIONS_FORCES_SOF" Label="Special Operations Forces (SOF)" Graphic="10121800.svg">
 					<EntityTypeCode>
@@ -390,7 +382,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="FIRES" Label="Fires" Remarks="No icon is associated with this entity. It is for hiearchical purposes only.">
+		<Entity ID="FIRES" Label="Fires" Remarks="No icon is associated with this entity. It is for hiearchical purposes only." Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>3</DigitTwo>
@@ -500,7 +492,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="PROTECTION" Label="Protection" Remarks="No icon is associated with this entity. It is for hierarchical purposes only.">
+		<Entity ID="PROTECTION" Label="Protection" Remarks="No icon is associated with this entity. It is for hierarchical purposes only." Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>4</DigitTwo>
@@ -629,14 +621,6 @@
 						<DigitOne>1</DigitOne>
 						<DigitTwo>2</DigitTwo>
 					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="MP_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10141295_0.svg" RectangleGraphic="10141295_1.svg" SquareGraphic="10141295_2.svg" DiamondGraphic="10141295_3.svg">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-					</EntitySubTypes>
 				</EntityType>
 				<EntityType ID="MINE" Label="Mine" Graphic="10141300.svg">
 					<EntityTypeCode>
@@ -708,7 +692,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-    <Entity ID="INTELLIGENCE" Label="Intelligence" Remarks="No icon is associated with this entity. It is for hierarchical purposes only.">
+    <Entity ID="INTELLIGENCE" Label="Intelligence" Remarks="No icon is associated with this entity. It is for hierarchical purposes only." Icon="NA" GeometryType="NA">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>5</DigitTwo>
@@ -762,7 +746,7 @@
                 <DigitTwo>3</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="EW_JAMMING" Label="Jamming" CloverGraphic="10150504_0.svg" RectangleGraphic="10150504_1.svg" SquareGraphic="10150504_2.svg" DiamondGraphic="10150504_3.svg">
+            <EntitySubType ID="EW_JAMMING" Label="Jamming" CloverGraphic="10150504_0.svg" RectangleGraphic="10150504_1.svg" SquareGraphic="10150504_2.svg" DiamondGraphic="10150504_3.svg" Icon="FULL_FRAME">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>4</DigitTwo>
@@ -1122,7 +1106,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-    <Entity ID="NAVAL" Label="Naval" Remarks="No icon is associated with this entity. It is for hierarchical purposes only.">
+    <Entity ID="NAVAL" Label="Naval" Remarks="No icon is associated with this entity. It is for hierarchical purposes only." Icon="NA" GeometryType="NA">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>7</DigitTwo>
@@ -1136,7 +1120,7 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="NAMED_HEADQUARTERS" Label="Named Headquarters" Remarks="No icon is associated with this entity. It is for hierarchical purposes only.">
+    <Entity ID="NAMED_HEADQUARTERS" Label="Named Headquarters" Remarks="No icon is associated with this entity. It is for hierarchical purposes only." Icon="NA" GeometryType="NA">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>8</DigitTwo>

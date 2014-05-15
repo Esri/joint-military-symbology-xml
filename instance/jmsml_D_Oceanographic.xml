@@ -6,13 +6,13 @@
 	</SymbolSetCode>
 	<LegacyCodingSchemeCode Name="2525C">W</LegacyCodingSchemeCode>
 	<Entities>
-		<Entity ID="ICE_SYSTEMS" Label="Ice Systems">
+		<Entity ID="ICE_SYSTEMS" Label="Ice Systems" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>1</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="ICEBERGS" Label="Icebergs">
+				<EntityType ID="ICEBERGS" Label="Icebergs" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
@@ -81,7 +81,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="ICE_CONCENTRATION" Label="Ice Concentration">
+				<EntityType ID="ICE_CONCENTRATION" Label="Ice Concentration" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
@@ -108,7 +108,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="DYNAMIC_PROCESSES" Label="Dynamic Processes">
+				<EntityType ID="DYNAMIC_PROCESSES" Label="Dynamic Processes" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>3</DigitTwo>
@@ -168,7 +168,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="ICE_LIMITS" Label="Limits">
+				<EntityType ID="ICE_LIMITS" Label="Limits" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>5</DigitTwo>
@@ -261,7 +261,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="TOPOGRAPHICAL_FEATURES" Label="Topographical Features">
+				<EntityType ID="TOPOGRAPHICAL_FEATURES" Label="Topographical Features" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>8</DigitTwo>
@@ -290,13 +290,13 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="HYDROGRAPHY" Label="Hydrography">
+		<Entity ID="HYDROGRAPHY" Label="Hydrography" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>2</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="DEPTH" Label="Depth">
+				<EntityType ID="DEPTH" Label="Depth" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
@@ -329,7 +329,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="COASTAL_HYDROGRAPHY" Label="Coastal Hydrography">
+				<EntityType ID="COASTAL_HYDROGRAPHY" Label="Coastal Hydrography" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
@@ -374,13 +374,13 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="PORTS_HARBORS" Label="Ports and Harbors">
+				<EntityType ID="PORTS_HARBORS" Label="Ports and Harbors" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>3</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="PORTS" Label="Ports">
+						<EntitySubType ID="PORTS" Label="Ports" Icon="NA" GeometryType="NA">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
@@ -452,7 +452,7 @@
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="FACILITIES" Label="Facilities">
+						<EntitySubType ID="FACILITIES" Label="Facilities" Icon="NA" GeometryType="NA">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>3</DigitTwo>
@@ -551,7 +551,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="AIDS_NAVIGATION" Label="Aids to Navigation">
+				<EntityType ID="AIDS_NAVIGATION" Label="Aids to Navigation" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>4</DigitTwo>
@@ -614,7 +614,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="DANGERS_HAZARDS" Label="Dangers/Hazards">
+				<EntityType ID="DANGERS_HAZARDS" Label="Dangers/Hazards" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>5</DigitTwo>
@@ -707,7 +707,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="BOTTOM_FEATURES" Label="Bottom Features">
+				<EntityType ID="BOTTOM_FEATURES" Label="Bottom Features" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>6</DigitTwo>
@@ -800,7 +800,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="TIDE_AND_CURRENT" Label="Tide and Current">
+				<EntityType ID="TIDE_AND_CURRENT" Label="Tide and Current" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>7</DigitTwo>
@@ -841,13 +841,13 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="OCEANOGRAPHY" Label="Oceanography">
+		<Entity ID="OCEANOGRAPHY" Label="Oceanography" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>3</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="BIOLUMINESCENCE" Label="Bioluminescence" Remarks="Measured by Visual Detection Ratio (VDR)">
+				<EntityType ID="BIOLUMINESCENCE" Label="Bioluminescence" Remarks="Measured by Visual Detection Ratio (VDR)" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
@@ -910,7 +910,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="BEACH_SLOPE" Label="Beach Slope">
+				<EntityType ID="BEACH_SLOPE" Label="Beach Slope" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
@@ -945,13 +945,13 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="GEOPHYSICS_ACOUSTICS" Label="Geophysics/Acoustics">
+		<Entity ID="GEOPHYSICS_ACOUSTICS" Label="Geophysics/Acoustics" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>4</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="MINE_WARFARE_MIW_BOTTOM_DESCRIPTORS" Label="Mine Warfare (MIW) Bottom Descriptors">
+				<EntityType ID="MINE_WARFARE_MIW_BOTTOM_DESCRIPTORS" Label="Mine Warfare (MIW) Bottom Descriptors" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
@@ -1202,7 +1202,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="MARITIME_LIMITS" Label="Limits">
+		<Entity ID="MARITIME_LIMITS" Label="Limits" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>5</DigitTwo>
@@ -1252,7 +1252,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="MAN_MADE_STRUCTURES" Label="Man-Made Structures">
+		<Entity ID="MAN_MADE_STRUCTURES" Label="Man-Made Structures" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>6</DigitTwo>

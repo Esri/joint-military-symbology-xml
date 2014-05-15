@@ -6,7 +6,7 @@
 	</SymbolSetCode>
 	<LegacyCodingSchemeCode Name="2525C">W</LegacyCodingSchemeCode>
 	<Entities>
-		<Entity ID="PRESSURE_SYSTEMS" Label="Pressure Systems">
+		<Entity ID="PRESSURE_SYSTEMS" Label="Pressure Systems" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>1</DigitTwo>
@@ -54,7 +54,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="FRONTAL_SYSTEMS" Label="Frontal Systems" Remarks="For special lines that are not symmetrical, such as Fronts, the sequence of anchor points determines the proper alighment of the line.">
+				<EntityType ID="FRONTAL_SYSTEMS" Label="Frontal Systems" Remarks="For special lines that are not symmetrical, such as Fronts, the sequence of anchor points determines the proper alighment of the line." Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>3</DigitTwo>
@@ -153,7 +153,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="LINES" Label="Lines">
+				<EntityType ID="LINES" Label="Lines" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>4</DigitTwo>
@@ -216,7 +216,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="PRESSURE_TENDENCY" Label="Pressure Tendency" Remarks="Each symbols within the pressure tendency group is static, but only one can be applied to a particular station plot, dependent upon the pressure tendency at that location. As such, the group of symbols is dynamic.">
+				<EntityType ID="PRESSURE_TENDENCY" Label="Pressure Tendency" Remarks="Each symbols within the pressure tendency group is static, but only one can be applied to a particular station plot, dependent upon the pressure tendency at that location. As such, the group of symbols is dynamic." Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>5</DigitTwo>
@@ -281,7 +281,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="TURBULENCE" Label="Turbulence" Remarks="USAF turbulence forecasts are based on Category II type aircraft.">
+		<Entity ID="TURBULENCE" Label="Turbulence" Remarks="USAF turbulence forecasts are based on Category II type aircraft." Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>2</DigitTwo>
@@ -324,13 +324,13 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="ICING" Label="Icing">
+		<Entity ID="ICING" Label="Icing" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>3</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="CLEAR_ICING" Label="Clear Icing">
+				<EntityType ID="CLEAR_ICING" Label="Clear Icing" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
@@ -357,7 +357,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="RIME_ICING" Label="Rime Icing">
+				<EntityType ID="RIME_ICING" Label="Rime Icing" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
@@ -384,7 +384,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="MIXED_ICING" Label="Mixed Icing">
+				<EntityType ID="MIXED_ICING" Label="Mixed Icing" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>3</DigitTwo>
@@ -413,7 +413,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="WINDS" Label="Winds">
+		<Entity ID="WINDS" Label="Winds" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>4</DigitTwo>
@@ -449,13 +449,13 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="CLOUD_COVER" Label="Cloud Cover">
+		<Entity ID="CLOUD_COVER" Label="Cloud Cover" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>5</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="CLOUD_COVERAGE_SYMBOLS" Label="Cloud Coverage Symbols">
+				<EntityType ID="CLOUD_COVERAGE_SYMBOLS" Label="Cloud Coverage Symbols" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
@@ -502,13 +502,13 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="WEATHER_SYMBOLS" Label="Weather Symbols">
+		<Entity ID="WEATHER_SYMBOLS" Label="Weather Symbols" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>6</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="RAIN" Label="Rain">
+				<EntityType ID="RAIN" Label="Rain" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
@@ -553,7 +553,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="FREEZING_RAIN" Label="Freezing Rain">
+				<EntityType ID="FREEZING_RAIN" Label="Freezing Rain" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
@@ -574,7 +574,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="RAIN_SHOWERS" Label="Rain Showers">
+				<EntityType ID="RAIN_SHOWERS" Label="Rain Showers" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>3</DigitTwo>
@@ -601,7 +601,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="DRIZZLE" Label="Drizzle">
+				<EntityType ID="DRIZZLE" Label="Drizzle" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>4</DigitTwo>
@@ -646,7 +646,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="FREEZING_DRIZZLE" Label="Freezing Drizzle">
+				<EntityType ID="FREEZING_DRIZZLE" Label="Freezing Drizzle" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>5</DigitTwo>
@@ -667,7 +667,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="RAIN_SNOW_MIXED" Label="Rain and Snow Mixed">
+				<EntityType ID="RAIN_SNOW_MIXED" Label="Rain and Snow Mixed" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>6</DigitTwo>
@@ -764,7 +764,7 @@
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="SNOW_SHOWERS" Label="Snow Showers">
+				<EntityType ID="SNOW_SHOWERS" Label="Snow Showers" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>9</DigitTwo>
@@ -785,7 +785,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="HAIL" Label="Hail">
+				<EntityType ID="HAIL" Label="Hail" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>0</DigitTwo>
@@ -813,7 +813,7 @@
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="ICE_PELLETS_SLEET" Label="Ice Pellets (Sleet)">
+				<EntityType ID="ICE_PELLETS_SLEET" Label="Ice Pellets (Sleet)" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>2</DigitTwo>
@@ -847,7 +847,7 @@
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="STORMS" Label="Storms">
+				<EntityType ID="STORMS" Label="Storms" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>4</DigitTwo>
@@ -904,7 +904,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="FOG" Label="Fog">
+				<EntityType ID="FOG" Label="Fog" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>5</DigitTwo>
@@ -976,7 +976,7 @@
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="DUST_SAND" Label="Dust or Sand">
+				<EntityType ID="DUST_SAND" Label="Dust or Sand" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>9</DigitTwo>
@@ -1009,7 +1009,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="TROPICAL_STORM_SYSTEMS" Label="Tropical Storm Systems">
+				<EntityType ID="TROPICAL_STORM_SYSTEMS" Label="Tropical Storm Systems" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>2</DigitOne>
 						<DigitTwo>0</DigitTwo>
@@ -1080,7 +1080,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="BOUNDED_AREAS_WEATHER" Label="Bounded Areas of Weather">
+		<Entity ID="BOUNDED_AREAS_WEATHER" Label="Bounded Areas of Weather" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>7</DigitTwo>
@@ -1166,7 +1166,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="ISOPLETHS" Label="Isopleths">
+		<Entity ID="ISOPLETHS" Label="Isopleths" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>8</DigitTwo>
@@ -1223,13 +1223,13 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="STATE_GROUND" Label="State of the Ground">
+		<Entity ID="STATE_GROUND" Label="State of the Ground" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>9</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="WITHOUT_SNOW_MEASURABLE_ICE_COVER" Label="Without Snow or Measurable Ice Cover">
+				<EntityType ID="WITHOUT_SNOW_MEASURABLE_ICE_COVER" Label="Without Snow or Measurable Ice Cover" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
@@ -1297,7 +1297,7 @@
 						</EntitySubType>
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="WITH_SNOW_MEASURABLE_ICE_COVER" Label="With Snow or Measurable Ice Cover">
+				<EntityType ID="WITH_SNOW_MEASURABLE_ICE_COVER" Label="With Snow or Measurable Ice Cover" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>

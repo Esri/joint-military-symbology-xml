@@ -26,7 +26,7 @@
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="AMMUNITION_CACHE" Label="Ammunition Cache" CloverGraphic="20110300_0.svg" RectangleGraphic="20110300_1.svg" SquareGraphic="20110300_2.svg" DiamondGraphic="20110300_3.svg" Icon="FULL_FRAME" >
+				<EntityType ID="AMMUNITION_CACHE" Label="Ammunition Cache" CloverGraphic="20110300_0.svg" RectangleGraphic="20110300_1.svg" SquareGraphic="20110300_2.svg" DiamondGraphic="20110300_3.svg" Icon="FULL_FRAME">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>3</DigitTwo>
@@ -97,7 +97,7 @@
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="MATERIEL" Label="Materiel" Graphic="" CloverGraphic="20111200_0.svg" RectangleGraphic="20111200_1.svg" SquareGraphic="20111200_2.svg" DiamondGraphic="20111200_3.svg" Icon="FULL_FRAME">
+				<EntityType ID="MATERIEL" Label="Materiel" CloverGraphic="20111200_0.svg" RectangleGraphic="20111200_1.svg" SquareGraphic="20111200_2.svg" DiamondGraphic="20111200_3.svg" Icon="FULL_FRAME">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>2</DigitTwo>
@@ -276,7 +276,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="INFRASTRUCTURE" Label="Infrastructure" Remarks="No icon is associated with this entity. It is for hierarchal purposes only.">
+				<EntityType ID="INFRASTRUCTURE" Label="Infrastructure" Remarks="No icon is associated with this entity. It is for hierarchal purposes only." Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>0</DigitTwo>
@@ -533,7 +533,7 @@
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="MEDICAL_INFRASTRUCTURE" Label="Medical Infrastructure" Remarks="No icon is assoicated with this entity. It is for hierarchal purposes only.">
+				<EntityType ID="MEDICAL_INFRASTRUCTURE" Label="Medical Infrastructure" Remarks="No icon is assoicated with this entity. It is for hierarchal purposes only." Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>7</DigitTwo>
