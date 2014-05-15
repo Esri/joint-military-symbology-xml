@@ -60,91 +60,91 @@
 						<DigitTwo>3</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="COLD_FRONT" Label="Cold Front" Graphic="45110301.svg">
+						<EntitySubType ID="COLD_FRONT" Label="Cold Front" Graphic="45110301.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="UPPER_COLD_FRONT" Label="Upper Cold Front" Graphic="45110302.svg">
+						<EntitySubType ID="UPPER_COLD_FRONT" Label="Upper Cold Front" Graphic="45110302.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="COLD_FRONTOGENESIS" Label="Cold Frontogenesis" Graphic="45110203.svg">
+						<EntitySubType ID="COLD_FRONTOGENESIS" Label="Cold Frontogenesis" Graphic="45110203.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="COLD_FRONTOLYSIS" Label="Cold Frontolysis" Graphic="45110104.svg">
+						<EntitySubType ID="COLD_FRONTOLYSIS" Label="Cold Frontolysis" Graphic="45110104.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>4</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="WARM_FRONT" Label="Warm Front" Graphic="45110305.svg">
+						<EntitySubType ID="WARM_FRONT" Label="Warm Front" Graphic="45110305.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>5</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="UPPER_WARM_FRONT" Label="Upper Warm Front" Graphic="45110306.svg">
+						<EntitySubType ID="UPPER_WARM_FRONT" Label="Upper Warm Front" Graphic="45110306.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>6</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="WARM_FRONTOGENESIS" Label="Warm Frontogenesis" Graphic="45110307.svg">
+						<EntitySubType ID="WARM_FRONTOGENESIS" Label="Warm Frontogenesis" Graphic="45110307.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>7</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="WARM_FRONTOLYSIS" Label="Warm Frontolysis" Graphic="45110308.svg">
+						<EntitySubType ID="WARM_FRONTOLYSIS" Label="Warm Frontolysis" Graphic="45110308.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>8</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="OCCLUDED_FRONT" Label="Occluded Front" Graphic="45110309.svg">
+						<EntitySubType ID="OCCLUDED_FRONT" Label="Occluded Front" Graphic="45110309.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>9</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="UPPER_OCCLUDED_FRONT" Label="Upper Occluded Front" Graphic="45110310.svg">
+						<EntitySubType ID="UPPER_OCCLUDED_FRONT" Label="Upper Occluded Front" Graphic="45110310.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>0</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="OCCLUDED_FRONTOLYSIS" Label="Occluded Frontolysis" Graphic="45110311.svg">
+						<EntitySubType ID="OCCLUDED_FRONTOLYSIS" Label="Occluded Frontolysis" Graphic="45110311.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="STATIONARY_FRONT" Label="Stationary Front" Graphic="45110312.svg">
+						<EntitySubType ID="STATIONARY_FRONT" Label="Stationary Front" Graphic="45110312.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="UPPER_STATIONARY_FRONT" Label="Upper Stationary Front" Graphic="45110313.svg">
+						<EntitySubType ID="UPPER_STATIONARY_FRONT" Label="Upper Stationary Front" Graphic="45110313.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="STATIONARY_FRONTOGENESIS" Label="Stationary Frontogenesis" Graphic="45110314.svg">
+						<EntitySubType ID="STATIONARY_FRONTOGENESIS" Label="Stationary Frontogenesis" Graphic="45110314.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>4</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="STATIONARY_FRONTOLYSIS" Label="Stationary Frontolysis" Graphic="45110315.svg">
+						<EntitySubType ID="STATIONARY_FRONTOLYSIS" Label="Stationary Frontolysis" Graphic="45110315.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>5</DigitTwo>
@@ -159,19 +159,19 @@
 						<DigitTwo>4</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="TROUGH_AXIS" Label="Trough Axis" Graphic="45110401.svg">
+						<EntitySubType ID="TROUGH_AXIS" Label="Trough Axis" Graphic="45110401.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="UPPER_TROUGH_AXIS" Label="Upper Trough Axis" Graphic="45110402.svg">
+						<EntitySubType ID="UPPER_TROUGH_AXIS" Label="Upper Trough Axis" Graphic="45110402.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="RIDGE_AXIS" Label="Ridge Axis" Graphic="45110403.svg">
+						<EntitySubType ID="RIDGE_AXIS" Label="Ridge Axis" Graphic="45110403.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
@@ -183,31 +183,31 @@
 								<DigitTwo>4</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="INSTABILITY_LINE" Label="Instability Line" Graphic="45110405.svg">
+						<EntitySubType ID="INSTABILITY_LINE" Label="Instability Line" Graphic="45110405.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>5</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="SHEAR_LINE" Label="Shear Line" Graphic="45110406.svg">
+						<EntitySubType ID="SHEAR_LINE" Label="Shear Line" Graphic="45110406.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>6</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="INTER_TROPICAL_CONVERGENCE_ZONE" Label="Inter-Tropical Convergence Zone" Graphic="45110407.svg">
+						<EntitySubType ID="INTER_TROPICAL_CONVERGENCE_ZONE" Label="Inter-Tropical Convergence Zone" Graphic="45110407.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>7</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="CONVERGENCE_LINE" Label="Convergence Line" Graphic="45110408.svg">
+						<EntitySubType ID="CONVERGENCE_LINE" Label="Convergence Line" Graphic="45110408.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>8</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="INTER_TROPICAL_DISCONTINUITY" Label="Inter-Tropical Discontinuity" Graphic="45110409.svg">
+						<EntitySubType ID="INTER_TROPICAL_DISCONTINUITY" Label="Inter-Tropical Discontinuity" Graphic="45110409.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>9</DigitTwo>
@@ -433,14 +433,14 @@
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="JET_STREAM" Label="Jet Stream" Graphic="45140300.svg">
+				<EntityType ID="JET_STREAM" Label="Jet Stream" Graphic="45140300.svg" GeometryType="LINE">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>3</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="STREAM_LINE" Label="Stream Line" Graphic="45140400.svg">
+				<EntityType ID="STREAM_LINE" Label="Stream Line" Graphic="45140400.svg" GeometryType="LINE">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>4</DigitTwo>
@@ -1033,7 +1033,7 @@
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="TROPICAL_STORM_WIND_AREAS_DATE_TIME_LABELS" Label="Tropical Storm Wind Areas and Date/Time Labels" Graphic="45162004.svg">
+						<EntitySubType ID="TROPICAL_STORM_WIND_AREAS_DATE_TIME_LABELS" Label="Tropical Storm Wind Areas and Date/Time Labels" Graphic="45162004.svg" GeometryType="AREA">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>4</DigitTwo>
@@ -1086,41 +1086,41 @@
 				<DigitTwo>7</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="INSTRUMENT_FLIGHT_RULE_IFR" Label="Instrument Flight Rule (IFR)" Graphic="45170100.svg">
+				<EntityType ID="INSTRUMENT_FLIGHT_RULE_IFR" Label="Instrument Flight Rule (IFR)" Graphic="45170100.svg" GeometryType="AREA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="MARGINAL_VISUAL_FLIGHT_RULE_MVFR" Label="Marginal Visual Flight Rule (MVFR)" Graphic="45170200.svg">
+				<EntityType ID="MARGINAL_VISUAL_FLIGHT_RULE_MVFR" Label="Marginal Visual Flight Rule (MVFR)" Graphic="45170200.svg" GeometryType="AREA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="TURBULENCE_BOUNDED" Label="Turbulence" Graphic="45170300.svg">
+				<EntityType ID="TURBULENCE_BOUNDED" Label="Turbulence" Graphic="45170300.svg" GeometryType="AREA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>3</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="ICING_BOUNDED" Label="Icing" Graphic="45170400.svg">
+				<EntityType ID="ICING_BOUNDED" Label="Icing" Graphic="45170400.svg" GeometryType="AREA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>4</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="LIQUID_PRECIPITATION_NON_CONVECTIVE" Label="Liquid Precipitation - Non-Convective Continuous or Intermittent" Graphic="45170500.svg">
+				<EntityType ID="LIQUID_PRECIPITATION_NON_CONVECTIVE" Label="Liquid Precipitation - Non-Convective Continuous or Intermittent" Graphic="45170500.svg" GeometryType="AREA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>5</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="LIQUID_PRECIPITATION_CONVECTIVE" Label="Liquid Precipitation - Convective" Graphic="45170501.svg">
+						<EntitySubType ID="LIQUID_PRECIPITATION_CONVECTIVE" Label="Liquid Precipitation - Convective" Graphic="45170501.svg" GeometryType="AREA">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
@@ -1129,35 +1129,35 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="FREEZING_PRECIPITATION" Label="Freezing /Frozen Precipitation" Graphic="45170600.svg">
+				<EntityType ID="FREEZING_PRECIPITATION" Label="Freezing /Frozen Precipitation" Graphic="45170600.svg" GeometryType="AREA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>6</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="THUNDERSTORM_BOUNDED" Label="Thunderstorm" Graphic="45170700.svg">
+				<EntityType ID="THUNDERSTORM_BOUNDED" Label="Thunderstorm" Graphic="45170700.svg" GeometryType="AREA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>7</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="FOG_BOUNDED" Label="Fog" Graphic="45170800.svg">
+				<EntityType ID="FOG_BOUNDED" Label="Fog" Graphic="45170800.svg" GeometryType="AREA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>8</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="DUST_SAND_BOUNDED" Label="Dust or Sand" Graphic="45170900.svg">
+				<EntityType ID="DUST_SAND_BOUNDED" Label="Dust or Sand" Graphic="45170900.svg" GeometryType="AREA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>9</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="OPERATOR_DEFINED_FREEFORM_BOUNDED" Label="Operator-Defined Freeform" Graphic="45171000.svg">
+				<EntityType ID="OPERATOR_DEFINED_FREEFORM_BOUNDED" Label="Operator-Defined Freeform" Graphic="45171000.svg" GeometryType="AREA">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>0</DigitTwo>
@@ -1172,49 +1172,49 @@
 				<DigitTwo>8</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="ISOBAR_SURFACE" Label="Isobar - Surface" Graphic="45180100.svg">
+				<EntityType ID="ISOBAR_SURFACE" Label="Isobar - Surface" Graphic="45180100.svg" GeometryType="LINE">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="CONTOUR_UPPER_AIR" Label="Contour - Upper Air" Graphic="45180200.svg">
+				<EntityType ID="CONTOUR_UPPER_AIR" Label="Contour - Upper Air" Graphic="45180200.svg" GeometryType="LINE">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="ISOTHERM" Label="Isotherm" Graphic="45180300.svg">
+				<EntityType ID="ISOTHERM" Label="Isotherm" Graphic="45180300.svg" GeometryType="LINE">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>3</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="ISOTACH" Label="Isotach" Graphic="45180400.svg">
+				<EntityType ID="ISOTACH" Label="Isotach" Graphic="45180400.svg" GeometryType="LINE">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>4</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="ISODROSOTHERM" Label="Isodrosotherm" Graphic="45180500.svg">
+				<EntityType ID="ISODROSOTHERM" Label="Isodrosotherm" Graphic="45180500.svg" GeometryType="LINE">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>5</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="THICKNESS" Label="Thickness" Graphic="45180600.svg">
+				<EntityType ID="THICKNESS" Label="Thickness" Graphic="45180600.svg" GeometryType="LINE">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>6</DigitTwo>
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="OPERATOR_DEFINED_FREEFORM" Label="Operator-Defined Freeform" Graphic="45180700.svg">
+				<EntityType ID="OPERATOR_DEFINED_FREEFORM" Label="Operator-Defined Freeform" Graphic="45180700.svg" GeometryType="LINE">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>7</DigitTwo>
