@@ -6,7 +6,7 @@
 	</SymbolSetCode>
 	<LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
 	<Entities>
-		<Entity ID="BOTNET" Label="Botnet" Remarks="There is no symbol associated with this entity." Icon="NA">
+		<Entity ID="BOTNET" Label="Botnet" Remarks="There is no symbol associated with this entity." Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>1</DigitTwo>
@@ -38,7 +38,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="INFECTION" Label="Infection" Remarks="There is no symbol associated with this entity." Icon="NA">
+		<Entity ID="INFECTION" Label="Infection" Remarks="There is no symbol associated with this entity." Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>2</DigitTwo>
@@ -76,7 +76,7 @@
 						</EntitySubType>
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="NON_ADVANCED_PERSISTENT_THREAT__NAPT_" Label="Non-Advanced Persistent Threat (NAPT)" Graphic="60120200.svg">
+				<EntityType ID="NON_ADVANCED_PERSISTENT_THREAT_NAPT" Label="Non-Advanced Persistent Threat (NAPT)" Graphic="60120200.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
@@ -110,7 +110,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="HEALTH_AND_STATUS" Label="Health and Status" Remarks="There is no symbol associated with this entity." Icon="NA">
+		<Entity ID="HEALTH_AND_STATUS" Label="Health and Status" Remarks="There is no symbol associated with this entity." Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>3</DigitTwo>
@@ -142,7 +142,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="DEVICE_TYPE" Label="Device Type" Remarks="There is no symbol associated with this entity." Icon="NA">
+		<Entity ID="DEVICE_TYPE" Label="Device Type" Remarks="There is no symbol associated with this entity." Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>4</DigitTwo>
@@ -214,7 +214,7 @@
 						<DigitTwo>1</DigitTwo>
 					</EntityTypeCode>
 				</EntityType>
-				<EntityType ID="VIRTUAL_PRIVATE_NETWORK__VPN_" Label="Virtual Private Network (VPN)" Graphic="60141200.svg">
+				<EntityType ID="VIRTUAL_PRIVATE_NETWORK_VPN" Label="Virtual Private Network (VPN)" Graphic="60141200.svg">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>2</DigitTwo>
@@ -222,13 +222,13 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="DEVICE_DOMAIN" Label="Device Domain" Remarks="There is no symbol associated with this entity." Icon="NA">
+		<Entity ID="DEVICE_DOMAIN" Label="Device Domain" Remarks="There is no symbol associated with this entity." Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>5</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="DEPARTMENT_OF_DEFENSE__DOD_" Label="Department of Defense (DoD)" Graphic="60150100.svg">
+				<EntityType ID="DEPARTMENT_OF_DEFENSE_DOD" Label="Department of Defense (DoD)" Graphic="60150100.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
@@ -246,7 +246,7 @@
 						<DigitTwo>3</DigitTwo>
 					</EntityTypeCode>
 				</EntityType>
-				<EntityType ID="SUPERVISORY_CONTROL_AND_DATA_ACQUISITION__SCADA_" Label="Supervisory Control and Data Acquisition (SCADA)" Graphic="60150400.svg">
+				<EntityType ID="SUPERVISORY_CONTROL_AND_DATA_ACQUISITION_SCADA" Label="Supervisory Control and Data Acquisition (SCADA)" Graphic="60150400.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>4</DigitTwo>

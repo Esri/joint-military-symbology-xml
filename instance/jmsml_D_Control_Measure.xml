@@ -6,7 +6,7 @@
 	</SymbolSetCode>
 	<LegacyCodingSchemeCode Name="2525C">G</LegacyCodingSchemeCode>
 	<Entities>
-		<Entity ID="COMMAND_CONTROL_LINES" Label="Command and Control Lines">
+		<Entity ID="COMMAND_CONTROL_LINES" Label="Command and Control Lines" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>1</DigitTwo>
@@ -28,7 +28,7 @@
 			</EntityTypes>
 		</Entity>
     
-		<Entity ID="COMMAND_CONTROL_AREAS" Label="Command and Control Areas">
+		<Entity ID="COMMAND_CONTROL_AREAS" Label="Command and Control Areas" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>2</DigitTwo>
@@ -64,7 +64,7 @@
 			</EntityTypes>
 		</Entity>
     
-		<Entity ID="COMMAND_CONTROL_POINTS" Label="Command and Control Points">
+		<Entity ID="COMMAND_CONTROL_POINTS" Label="Command and Control Points" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>3</DigitTwo>
@@ -133,7 +133,7 @@
 					</EntityTypeCode>
 				</EntityType>
         
-				<EntityType ID="FLY_TO_POINT" Label="Fly-To-Point">
+				<EntityType ID="FLY_TO_POINT" Label="Fly-To-Point" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>0</DigitTwo>
@@ -235,13 +235,13 @@
 			</EntityTypes>
 		</Entity>
     
-		<Entity ID="MANEUVER_LINES" Label="Maneuver Lines">
+		<Entity ID="MANEUVER_LINES" Label="Maneuver Lines" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>4</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="FORWARD_LINE_OF_TROOPS" Label="Forward Line of Troops">
+				<EntityType ID="FORWARD_LINE_OF_TROOPS" Label="Forward Line of Troops" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
@@ -313,7 +313,7 @@
 					</EntityTypeCode>
 				</EntityType>
         
-				<EntityType ID="DIRECTION_OF_ATTACK" Label="Direction of Attack">
+				<EntityType ID="DIRECTION_OF_ATTACK" Label="Direction of Attack" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>6</DigitTwo>
@@ -444,13 +444,13 @@
 			</EntityTypes>
 		</Entity>
     
-		<Entity ID="MANEUVER_AREAS" Label="Maneuver Areas">
+		<Entity ID="MANEUVER_AREAS" Label="Maneuver Areas" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>5</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="AREA" Label="Area">
+				<EntityType ID="AREA" Label="Area" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
@@ -518,7 +518,7 @@
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="ACTION_AREA" Label="Action Area">
+				<EntityType ID="ACTION_AREA" Label="Action Area" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>5</DigitTwo>
@@ -633,7 +633,7 @@
 					</EntityTypeCode>
 
 				</EntityType>
-        <EntityType ID="AXIS_ADVANCE" Label="Axis of Advance">
+        <EntityType ID="AXIS_ADVANCE" Label="Axis of Advance" Icon="NA" GeometryType="NA">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>4</DigitTwo>
@@ -711,7 +711,7 @@
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="ENCIRCLEMENT" Label="Encirclement">
+				<EntityType ID="ENCIRCLEMENT" Label="Encirclement" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>8</DigitTwo>
@@ -763,7 +763,7 @@
 			</EntityTypes>
 		</Entity>
     
-		<Entity ID="MANEUVER_POINTS" Label="Maneuver Points">
+		<Entity ID="MANEUVER_POINTS" Label="Maneuver Points" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>6</DigitTwo>
@@ -830,7 +830,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="AIRSPACE_CONTROL_CORRIDORS_AREAS" Label="Airspace Control (Corridors) Areas">
+		<Entity ID="AIRSPACE_CONTROL_CORRIDORS_AREAS" Label="Airspace Control (Corridors) Areas" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>7</DigitTwo>
@@ -1169,7 +1169,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="AIRSPACE_CONTROL_LINES" Label="Airspace Control Lines">
+		<Entity ID="AIRSPACE_CONTROL_LINES" Label="Airspace Control Lines" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>9</DigitTwo>
@@ -1191,13 +1191,13 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="MARITIME_CONTROL_AREAS" Label="Maritime Control Areas">
+		<Entity ID="MARITIME_CONTROL_AREAS" Label="Maritime Control Areas" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>2</DigitOne>
 				<DigitTwo>0</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="LAUNCH_AREA" Label="Launch Area">
+				<EntityType ID="LAUNCH_AREA" Label="Launch Area" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
@@ -1212,7 +1212,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="DEFENDED_AREA" Label="Defended Area">
+				<EntityType ID="DEFENDED_AREA" Label="Defended Area" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
@@ -1284,7 +1284,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="MARITIME_CONTROL_POINTS" Label="Maritime Control Points">
+		<Entity ID="MARITIME_CONTROL_POINTS" Label="Maritime Control Points" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>2</DigitOne>
 				<DigitTwo>1</DigitTwo>
@@ -2052,7 +2052,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="MARITIME_CONTROL_LINES" Label="Maritime Control Lines">
+		<Entity ID="MARITIME_CONTROL_LINES" Label="Maritime Control Lines" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>2</DigitOne>
 				<DigitTwo>2</DigitTwo>
@@ -2117,7 +2117,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="DECEPTION" Label="Deception">
+		<Entity ID="DECEPTION" Label="Deception" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>2</DigitOne>
 				<DigitTwo>3</DigitTwo>
@@ -2139,7 +2139,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="FIRES_AREAS" Label="Fires Areas">
+		<Entity ID="FIRES_AREAS" Label="Fires Areas" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>2</DigitOne>
 				<DigitTwo>4</DigitTwo>
@@ -2172,7 +2172,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="FREE_FIRE_AREA" Label="Free Fire Area">
+				<EntityType ID="FREE_FIRE_AREA" Label="Free Fire Area" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
@@ -2199,7 +2199,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="NO_FIRE_AREA" Label="No Fire Area">
+				<EntityType ID="NO_FIRE_AREA" Label="No Fire Area" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>3</DigitTwo>
@@ -2226,7 +2226,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="RESTRICTED_FIRE_AREA" Label="Restricted Fire Area">
+				<EntityType ID="RESTRICTED_FIRE_AREA" Label="Restricted Fire Area" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>4</DigitTwo>
@@ -2253,7 +2253,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="POSITION_AREA_FOR_ARTILLERY_PAA" Label="Position Area For Artillery (PAA)">
+				<EntityType ID="POSITION_AREA_FOR_ARTILLERY_PAA" Label="Position Area For Artillery (PAA)" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>5</DigitTwo>
@@ -2274,7 +2274,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="POINT_TARGETS" Label="Point Targets">
+				<EntityType ID="POINT_TARGETS" Label="Point Targets" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>6</DigitTwo>
@@ -2301,7 +2301,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="LINEAR_TARGETS" Label="Linear Targets">
+				<EntityType ID="LINEAR_TARGETS" Label="Linear Targets" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>7</DigitTwo>
@@ -2328,7 +2328,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="AREA_TARGETS" Label="Area Targets">
+				<EntityType ID="AREA_TARGETS" Label="Area Targets" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>8</DigitTwo>
@@ -2392,7 +2392,7 @@
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="FIRE_SUPPORT_AREA" Label="Fire Support Area">
+				<EntityType ID="FIRE_SUPPORT_AREA" Label="Fire Support Area" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>0</DigitTwo>
@@ -2419,7 +2419,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="ARTILLERY_TARGET_INTELLIGENCE_ZONE" Label="Artillery Target Intelligence Zone">
+				<EntityType ID="ARTILLERY_TARGET_INTELLIGENCE_ZONE" Label="Artillery Target Intelligence Zone" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>1</DigitTwo>
@@ -2446,7 +2446,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="CALL_FOR_FIRE_AREA" Label="Call for Fire Area">
+				<EntityType ID="CALL_FOR_FIRE_AREA" Label="Call for Fire Area" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>2</DigitTwo>
@@ -2473,7 +2473,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="CENSOR_ZONE" Label="Censor Zone">
+				<EntityType ID="CENSOR_ZONE" Label="Censor Zone" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>3</DigitTwo>
@@ -2500,7 +2500,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="CRITICAL_FRIENDLY_ZONE" Label="Critical Friendly Zone">
+				<EntityType ID="CRITICAL_FRIENDLY_ZONE" Label="Critical Friendly Zone" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>4</DigitTwo>
@@ -2527,7 +2527,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="DEAD_SPACE_AREA" Label="Dead Space Area">
+				<EntityType ID="DEAD_SPACE_AREA" Label="Dead Space Area" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>5</DigitTwo>
@@ -2554,7 +2554,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="SENSOR_ZONE" Label="Sensor Zone">
+				<EntityType ID="SENSOR_ZONE" Label="Sensor Zone" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>6</DigitTwo>
@@ -2581,7 +2581,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="TARGET_BUILD_UP_AREA" Label="Target Build-up Area">
+				<EntityType ID="TARGET_BUILD_UP_AREA" Label="Target Build-up Area" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>7</DigitTwo>
@@ -2608,7 +2608,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="TARGET_VALUE_AREA" Label="Target Value Area">
+				<EntityType ID="TARGET_VALUE_AREA" Label="Target Value Area" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>8</DigitTwo>
@@ -2635,7 +2635,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="ZONE_OF_RESPONSIBILITY" Label="Zone of Responsibility">
+				<EntityType ID="ZONE_OF_RESPONSIBILITY" Label="Zone of Responsibility" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>9</DigitTwo>
@@ -2683,7 +2683,7 @@
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="KILL_BOX" Label="Kill Box">
+				<EntityType ID="KILL_BOX" Label="Kill Box" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>2</DigitOne>
 						<DigitTwo>3</DigitTwo>
@@ -2730,7 +2730,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="FIRES_POINTS" Label="Fires Points">
+		<Entity ID="FIRES_POINTS" Label="Fires Points" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>2</DigitOne>
 				<DigitTwo>5</DigitTwo>
@@ -2773,7 +2773,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="FIRE_LINES" Label="Fire Lines">
+		<Entity ID="FIRE_LINES" Label="Fire Lines" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>2</DigitOne>
 				<DigitTwo>6</DigitTwo>
@@ -2823,7 +2823,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="PROTECTION_AREAS" Label="Protection Areas">
+		<Entity ID="PROTECTION_AREAS" Label="Protection Areas" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>2</DigitOne>
 				<DigitTwo>7</DigitTwo>
@@ -2857,7 +2857,7 @@
 					</EntityTypeCode>
 
 				</EntityType>
-        <EntityType ID="OBSTACLE_EFFECTS" Label="Obstacle Effects">
+        <EntityType ID="OBSTACLE_EFFECTS" Label="Obstacle Effects" Icon="NA" GeometryType="NA">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>5</DigitTwo>
@@ -2889,7 +2889,7 @@
             </EntitySubType>
           </EntitySubTypes>
         </EntityType>
-				<EntityType ID="OBSTACLE_BYPASS" Label="Obstacle Bypass">
+				<EntityType ID="OBSTACLE_BYPASS" Label="Obstacle Bypass" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>6</DigitTwo>
@@ -2916,7 +2916,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="MINEFIELD" Label="Minefield">
+				<EntityType ID="MINEFIELD" Label="Minefield" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>7</DigitTwo>
@@ -3003,7 +3003,7 @@
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="ROADBLOCKS_CRATERS_BLOWN_BRIDGES" Label="Roadblocks, Craters and Blown Bridges">
+				<EntityType ID="ROADBLOCKS_CRATERS_BLOWN_BRIDGES" Label="Roadblocks, Craters and Blown Bridges" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>2</DigitTwo>
@@ -3132,7 +3132,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="PROTECTION_POINTS" Label="Protection Points">
+		<Entity ID="PROTECTION_POINTS" Label="Protection Points" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>2</DigitOne>
 				<DigitTwo>8</DigitTwo>
@@ -3352,7 +3352,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="OTHER_SIMILAR_OBSTACLES" Label="Tetrahedrons, Dragons Teeth, and Other Similar Obstacles">
+				<EntityType ID="OTHER_SIMILAR_OBSTACLES" Label="Tetrahedrons, Dragons Teeth, and Other Similar Obstacles" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>9</DigitTwo>
@@ -3379,7 +3379,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="VERTICAL_OBSTRUCTIONS" Label="Vertical Obstructions">
+				<EntityType ID="VERTICAL_OBSTRUCTIONS" Label="Vertical Obstructions" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>2</DigitOne>
 						<DigitTwo>0</DigitTwo>
@@ -3408,7 +3408,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="PROTECTION_LINES" Label="Protection Lines">
+		<Entity ID="PROTECTION_LINES" Label="Protection Lines" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>2</DigitOne>
 				<DigitTwo>9</DigitTwo>
@@ -3421,7 +3421,7 @@
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="ANTITANK_OBSTACLES" Label="Antitank Obstacles">
+				<EntityType ID="ANTITANK_OBSTACLES" Label="Antitank Obstacles" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
@@ -3454,7 +3454,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="WIRE_OBSTACLES" Label="Wire Obstacles">
+				<EntityType ID="WIRE_OBSTACLES" Label="Wire Obstacles" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>3</DigitTwo>
@@ -3568,7 +3568,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="INTELLIGENCE_LINES" Label="Intelligence Lines">
+		<Entity ID="INTELLIGENCE_LINES" Label="Intelligence Lines" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>3</DigitOne>
 				<DigitTwo>0</DigitTwo>
@@ -3583,7 +3583,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="SUSTAINMENT_AREAS" Label="Sustainment Areas">
+		<Entity ID="SUSTAINMENT_AREAS" Label="Sustainment Areas" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>3</DigitOne>
 				<DigitTwo>1</DigitTwo>
@@ -3640,7 +3640,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="SUSTAINMENT_POINTS" Label="Sustainment Points">
+		<Entity ID="SUSTAINMENT_POINTS" Label="Sustainment Points" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>3</DigitOne>
 				<DigitTwo>2</DigitTwo>
@@ -3872,7 +3872,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="SUSTAINMENT_LINES" Label="Sustainment Lines">
+		<Entity ID="SUSTAINMENT_LINES" Label="Sustainment Lines" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>3</DigitOne>
 				<DigitTwo>3</DigitTwo>
@@ -3948,7 +3948,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="MISSION_TASKS" Label="Mission Tasks">
+		<Entity ID="MISSION_TASKS" Label="Mission Tasks" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>3</DigitOne>
 				<DigitTwo>4</DigitTwo>
@@ -4102,7 +4102,7 @@
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="SECURITY" Label="Security">
+				<EntityType ID="SECURITY" Label="Security" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>2</DigitOne>
 						<DigitTwo>2</DigitTwo>

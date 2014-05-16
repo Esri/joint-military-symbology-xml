@@ -5,7 +5,8 @@
 		<DigitTwo>6</DigitTwo>
 	</SymbolSetCode>
 	<LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
-	<Entities>
+<!--We need to incorporate support for both MEDAL and Alternative icons.-->
+  <Entities>
 		<Entity ID="SEA_MINE_GENERAL" Label="Sea Mine-General" Graphic="36110000.svg" Icon="FULL_OCTAGON">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
