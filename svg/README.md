@@ -12,7 +12,28 @@ When unzipping these files for use with the included image conversion utility, p
 * [Licensing](#licensing)
 
 ## Naming ##
-Naming conventions for the SVG files (TBD).
+Below is the final breakdown on the naming convention that was used to create the symbols.
+ 
+Frame (4): Uses SIDC positions 3-6.
+
+Main Icon (8): Uses SIDC positions 5-6 and 11-16.
+
+For full-frame main icons, an additional value has added to the end depending on the frame that is being displayed:
+
+o   _0 = Unknown
+o   _1 = Friend
+o   _2 = Neutral
+o   _3 = Hostile
+
+Modifier 1 (5): Uses SIDC positions 5-6 and 17-18 along with the number 1 at the end.
+
+Modifier 2 (5): Uses SIDC positions 5-6 and 19-20 along with the number 2 at the end.
+
+Task Force (2): Uses SIDC positions 4 and 8.
+
+Amplifier (Echelon/Mobility/Towed Array) (3): Uses SIDC positions 4 and 9-10.
+
+HQ/Feint/Dummy (4): Uses SIDC positions 4-6 and position 8.
 
 ## Details ##
 This section describes the details of the internal composition of the SVG files, for those developers who wish to make their own changes (TBD).
