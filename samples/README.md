@@ -51,3 +51,8 @@ Frame image file/name/category/tags information can be exported with the /xf swi
 	jmsml.exe /xf="Military-Reality-Frame-Source-Icons" /qc="Reality"
 
 The /-source switch can be used to disable the export of source image file information, for production purposes.
+
+Amplifiers (Echelon, Mobility, and Auxiliary Equipment) can be exported with the /xa switch.  The /-source switch can be used to disable the export of source file information and the /+ switch can be used to force output to be appended to an existing export file.
+
+	jmsml.exe /xa="Military-Amplifier-Source-Icons"
+	jmsml.exe /xa="Military-Frame-And-Amplifier-Icons" /-source /+

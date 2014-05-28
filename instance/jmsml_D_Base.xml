@@ -198,6 +198,24 @@
     </StandardIdentity>
   </StandardIdentities>
 
+  <StandardIdentityGroups>
+    <StandardIdentityGroup ID="SIG_UNKNOWN" Label="Unknown" StandardIdentityIDs="SI_PENDING SI_UNKNOWN">
+      <StandardIdentityGroupCode>1</StandardIdentityGroupCode>
+    </StandardIdentityGroup>
+
+    <StandardIdentityGroup ID="SIG_FRIEND" Label="Friend" StandardIdentityIDs="SI_ASSUMED_FRIEND SI_FRIEND">
+      <StandardIdentityGroupCode>3</StandardIdentityGroupCode>
+    </StandardIdentityGroup>
+
+    <StandardIdentityGroup ID="SIG_NEUTRAL" Label="Neutral" StandardIdentityIDs="SI_NEUTRAL">
+      <StandardIdentityGroupCode>4</StandardIdentityGroupCode>
+    </StandardIdentityGroup>
+
+    <StandardIdentityGroup ID="SIG_HOSTILE" Label="Hostile" StandardIdentityIDs="SI_HOSTILE_FAKER SI_SUSPECT_JOKER">
+      <StandardIdentityGroupCode>6</StandardIdentityGroupCode>
+    </StandardIdentityGroup>
+  </StandardIdentityGroups>
+
   <Dimensions>
     <Dimension ID="INTERNAL" Label="Internal">
       <DimensionCode>
@@ -1436,41 +1454,89 @@
         <Amplifier Name="TEAM_CREW" Label="Team/Crew">
           <AmplifierCode>1</AmplifierCode>
           <LegacyModifierCode Name="2525C">A</LegacyModifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="111.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="311.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="411.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="611.svg"/>
+          </Graphics>
         </Amplifier>
 
         <Amplifier Name="SQUAD" Label="Squad">
           <AmplifierCode>2</AmplifierCode>
           <LegacyModifierCode Name="2525C">B</LegacyModifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN"  Graphic="112.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND"  Graphic="312.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="412.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="612.svg"/>
+          </Graphics>
         </Amplifier>
 
         <Amplifier Name="SEC" Label="Section">
           <AmplifierCode>3</AmplifierCode>
           <LegacyModifierCode Name="2525C">C</LegacyModifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="113.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="313.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="413.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="613.svg"/>
+          </Graphics>
         </Amplifier>
 
-        <Amplifier Name="PLT_DETACHMENT" Label="Platoon/Detachment" Graphic="">
+        <Amplifier Name="PLT_DETACHMENT" Label="Platoon/Detachment">
           <AmplifierCode>4</AmplifierCode>
           <LegacyModifierCode Name="2525C">D</LegacyModifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="114.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="314.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="414.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="614.svg"/>
+          </Graphics>
         </Amplifier>
 
         <Amplifier Name="CPY_BTY_TRP" Label="Company/Battery/Troop">
           <AmplifierCode>5</AmplifierCode>
           <LegacyModifierCode Name="2525C">E</LegacyModifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="115.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="315.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="415.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="615.svg"/>
+          </Graphics>
         </Amplifier>
 
         <Amplifier Name="BN_SQUADRON" Label="Battalion/Squadron">
           <AmplifierCode>6</AmplifierCode>
           <LegacyModifierCode Name="2525C">F</LegacyModifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="116.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="316.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="416.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="616.svg"/>
+          </Graphics>
         </Amplifier>
 
         <Amplifier Name="REGT_GRP" Label="Regiment/Group">
           <AmplifierCode>7</AmplifierCode>
           <LegacyModifierCode Name="2525C">G</LegacyModifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="117.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="317.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="417.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="617.svg"/>
+          </Graphics>
         </Amplifier>
 
         <Amplifier Name="BDE" Label="Brigade">
           <AmplifierCode>8</AmplifierCode>
           <LegacyModifierCode Name="2525C">H</LegacyModifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="118.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="318.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="418.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="618.svg"/>
+          </Graphics>
         </Amplifier>
 
         <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension">
@@ -1487,31 +1553,67 @@
         <Amplifier Name="DIV" Label="Division">
           <AmplifierCode>1</AmplifierCode>
           <LegacyModifierCode Name="2525C">I</LegacyModifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="121.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="321.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="421.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="621.svg"/>
+          </Graphics>
         </Amplifier>
 
         <Amplifier Name="CORPS_MEF" Label="Corps/MEF">
           <AmplifierCode>2</AmplifierCode>
           <LegacyModifierCode Name="2525C">J</LegacyModifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="122.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="322.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="422.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="622.svg"/>
+          </Graphics>
         </Amplifier>
 
         <Amplifier Name="ARMY" Label="Army">
           <AmplifierCode>3</AmplifierCode>
           <LegacyModifierCode Name="2525C">K</LegacyModifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="123.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="323.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="423.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="623.svg"/>
+          </Graphics>
         </Amplifier>
 
         <Amplifier Name="ARMY_GROUP_FRONT" Label="Army Group/Front">
           <AmplifierCode>4</AmplifierCode>
           <LegacyModifierCode Name="2525C">L</LegacyModifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="124.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="324.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="424.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="624.svg"/>
+          </Graphics>
         </Amplifier>
 
         <Amplifier Name="REGION_THEATER" Label="Region/Theater">
           <AmplifierCode>5</AmplifierCode>
           <LegacyModifierCode Name="2525C">M</LegacyModifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="125.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="325.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="425.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="625.svg"/>
+          </Graphics>
         </Amplifier>
 
         <Amplifier Name="COMMAND" Label="Command">
           <AmplifierCode>6</AmplifierCode>
           <LegacyModifierCode Name="2525C">N</LegacyModifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="126.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="326.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="426.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="626.svg"/>
+          </Graphics>
         </Amplifier>
 
         <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension">
@@ -1528,36 +1630,78 @@
         <Amplifier Name="WHEEL_LIMIT_COUNTRY" Label="Wheeled limited cross country">
           <AmplifierCode>1</AmplifierCode>
           <LegacyModifierCode Name="2525C">O</LegacyModifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="131.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="331.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="431.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="631.svg"/>
+          </Graphics>
         </Amplifier>
 
         <Amplifier Name="WHEEL_COUNTRY" Label="Wheeled cross country">
           <AmplifierCode>2</AmplifierCode>
           <LegacyModifierCode Name="2525C">P</LegacyModifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="132.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="332.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="432.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="632.svg"/>
+          </Graphics>
         </Amplifier>
 
         <Amplifier Name="TRACKED" Label="Tracked">
           <AmplifierCode>3</AmplifierCode>
           <LegacyModifierCode Name="2525C">Q</LegacyModifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="133.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="333.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="433.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="633.svg"/>
+          </Graphics>
         </Amplifier>
 
         <Amplifier Name="WHEEL_TRACK" Label="Wheeled and tracked combination">
           <AmplifierCode>4</AmplifierCode>
           <LegacyModifierCode Name="2525C">R</LegacyModifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="134.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="334.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="434.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="634.svg"/>
+          </Graphics>
         </Amplifier>
 
         <Amplifier Name="TOWED" Label="Towed">
           <AmplifierCode>5</AmplifierCode>
           <LegacyModifierCode Name="2525C">S</LegacyModifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="135.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="335.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="435.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="635.svg"/>
+          </Graphics>
         </Amplifier>
 
         <Amplifier Name="RAIL" Label="Rail">
           <AmplifierCode>6</AmplifierCode>
           <LegacyModifierCode Name="2525C">T</LegacyModifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="136.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="336.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="436.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="636.svg"/>
+          </Graphics>
         </Amplifier>
 
         <Amplifier Name="PACK_ANIMALS" Label="Pack animals">
           <AmplifierCode>7</AmplifierCode>
           <LegacyModifierCode Name="2525C">W</LegacyModifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="137.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="337.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="437.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="637.svg"/>
+          </Graphics>
         </Amplifier>
 
         <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension">
@@ -1574,11 +1718,23 @@
         <Amplifier Name="OVER_SNOW" Label="Over snow (prime mover)">
           <AmplifierCode>1</AmplifierCode>
           <LegacyModifierCode Name="2525C">U</LegacyModifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="141.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="341.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="441.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="641.svg"/>
+          </Graphics>
         </Amplifier>
 
         <Amplifier Name="SLED" Label="Sled">
           <AmplifierCode>2</AmplifierCode>
           <LegacyModifierCode Name="2525C">V</LegacyModifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="142.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="342.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="442.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="642.svg"/>
+          </Graphics>
         </Amplifier>
 
         <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension">
@@ -1595,11 +1751,23 @@
         <Amplifier Name="BARGE" Label="Barge">
           <AmplifierCode>1</AmplifierCode>
           <LegacyModifierCode Name="2525C">X</LegacyModifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="151.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="351.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="451.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="651.svg"/>
+          </Graphics>
         </Amplifier>
 
         <Amplifier Name="AMPHIB" Label="Amphibious">
           <AmplifierCode>2</AmplifierCode>
           <LegacyModifierCode Name="2525C">Y</LegacyModifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="152.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="352.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="452.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="652.svg"/>
+          </Graphics>
         </Amplifier>
 
         <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension">
@@ -1616,11 +1784,23 @@
         <Amplifier Name="SHORT_TOWED_ARRAY" Label="Short towed array">
           <AmplifierCode>1</AmplifierCode>
           <LegacyModifierCode Name="2525C">S</LegacyModifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="161.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="361.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="461.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="661.svg"/>
+          </Graphics>
         </Amplifier>
 
         <Amplifier Name="LONG_TOWED_ARRAY" Label="Long towed array">
           <AmplifierCode>2</AmplifierCode>
           <LegacyModifierCode Name="2525C">L</LegacyModifierCode>
+          <Graphics>
+            <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="162.svg"/>
+            <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="362.svg"/>
+            <Graphic StandardIdentityGroup="SIG_NEUTRAL" Graphic="462.svg"/>
+            <Graphic StandardIdentityGroup="SIG_HOSTILE" Graphic="662.svg"/>
+          </Graphics>
         </Amplifier>
 
         <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension">

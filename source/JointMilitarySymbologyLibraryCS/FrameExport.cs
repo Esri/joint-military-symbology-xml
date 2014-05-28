@@ -28,6 +28,8 @@ namespace JointMilitarySymbologyLibrary
 
         protected string BuildFrameCode(LibraryContext context, LibraryStandardIdentity identity, LibraryDimension dimension)
         {
+            // Creates the unique idntifier code for a given frame.
+
             string code = Convert.ToString(context.ContextCode) +
                           Convert.ToString(identity.StandardIdentityCode) +
                           Convert.ToString(dimension.DimensionCode.DigitOne) + Convert.ToString(dimension.DimensionCode.DigitTwo);
@@ -43,9 +45,9 @@ namespace JointMilitarySymbologyLibrary
 
             string result = "Frame" + _configHelper.DomainSeparator;
 
-            result = result + context.Label + _configHelper.DomainSeparator;
-            result = result + identity.Label + _configHelper.DomainSeparator;
-            result = result + dimension.Label;
+            result = result + context.Label.Replace(',', '-') + _configHelper.DomainSeparator;
+            result = result + identity.Label.Replace(',', '-') + _configHelper.DomainSeparator;
+            result = result + dimension.Label.Replace(',', '-');
 
             return result;
         }
@@ -59,9 +61,9 @@ namespace JointMilitarySymbologyLibrary
             // Information includes the Label attributes, location of the original graphic file, the code, etc.
 
             string result = "Frame;";
-            result = result + context.Label + ";";
-            result = result + identity.Label + ";";
-            result = result + dimension.Label + ";";
+            result = result + context.Label.Replace(',', '-') + ";";
+            result = result + identity.Label.Replace(',', '-') + ";";
+            result = result + dimension.Label.Replace(',', '-') + ";";
 
             // Loop through each symbol set in the dimension and add any labels from those
 
@@ -70,14 +72,18 @@ namespace JointMilitarySymbologyLibrary
                 foreach (LibraryDimensionSymbolSetRef ssRef in dimension.SymbolSets)
                 {
                     if (ssRef.Label != dimension.Label)
-                        result = result + ssRef.Label + ";";
+                        result = result + ssRef.Label.Replace(',', '-') + ";";
                 }
             }
 
             if(!omitSource)
                 result = result + graphicPath.Substring(1) + ";";
 
-            result = result + "Point" + ";";
+            if(_configHelper.Librarian.Affiliation(context.ID, dimension.ID, identity.ID).Graphic != null)
+                result = result + "Point;";
+            else
+                result = result + "NotValid;";
+
             result = result + BuildFrameItemName(context, dimension, identity) + ";";
             result = result + BuildFrameCode(context, identity, dimension);
 

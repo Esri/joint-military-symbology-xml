@@ -13,12 +13,14 @@
     <xs:attribute name="Frames" type="xs:IDREFS" use="optional" default="false"/>
     <xs:attribute name="Echelons" type="xs:boolean" use="optional" default="false"/>
     <xs:attribute name="Mobilities" type="xs:boolean" use="optional" default="false"/>
-    <xs:attribute name="HQTFDummies" type="xs:boolean" use="optional" default="false"/>
-    <xs:attribute name="Arrays" type="xs:boolean" use="optional" default="false"/>
+    <xs:attribute name="Headquarters" type="xs:boolean" use="optional" default="false"/>
+    <xs:attribute name="AuxiliaryEquipment" type="xs:boolean" use="optional" default="false"/>
     <xs:attribute name="Specials" type="xs:boolean" use="optional" default="false"/>
     <xs:attribute name="Entities" type="xs:IDREFS" use="optional"/>
     <xs:attribute name="ModifierOnes" type="xs:IDREFS" use="optional"/>
     <xs:attribute name="ModifierTwos" type="xs:IDREFS" use="optional"/>
+    <xs:attribute name="TaskForces" type="xs:boolean" use="optional"/>
+    <xs:attribute name="FeintDummies" type="xs:boolean" use="optional"/>
   </xs:complexType>
   
   <xs:element name="JMSMLConfig">

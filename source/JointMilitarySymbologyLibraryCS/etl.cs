@@ -833,6 +833,64 @@ namespace JointMilitarySymbologyLibrary
             _exportSymbolSet(path, dataValidation, append, false);
         }
 
+        public void ExportAmplifiers(string path, ETLExportEnum exportType = ETLExportEnum.ETLExportSimple, bool append = false, bool omitSource = false)
+        {
+            // The public entry point for exporting amplifiers from the JMSML library
+            // into CSV format.  These include echelons, mobilities, and auxiliary equipment
+
+            // Accepts a path for the output (sans file name extension).  The output may also
+            // be appended to an existing file.
+
+            IAmplifierExport amplifierExporter = null;
+            string line = "";
+
+            switch (exportType)
+            {
+                case ETLExportEnum.ETLExportImage:
+                    amplifierExporter = new ImageAmplifierExport(_configHelper, omitSource);
+                    break;
+            }
+
+            if (amplifierExporter != null)
+            {
+                using (var w = new StreamWriter(path + ".csv", append))
+                {
+                    if (!append)
+                    {
+                        line = string.Format("{0}", amplifierExporter.Headers);
+
+                        w.WriteLine(line);
+                        w.Flush();
+                    }
+
+                    foreach (LibraryAmplifierGroup lag in _library.AmplifierGroups)
+                    {
+                        if (lag.Amplifiers != null)
+                        {
+                            foreach (LibraryAmplifierGroupAmplifier amp in lag.Amplifiers)
+                            {
+                                if (amp.Graphics != null)
+                                {
+                                    foreach (LibraryAmplifierGroupAmplifierGraphic graphic in amp.Graphics)
+                                    {
+                                        line = amplifierExporter.Line(lag, amp, graphic);
+
+                                        if (line != "")
+                                        {
+                                            w.WriteLine(line);
+                                            w.Flush();
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    w.Close();
+                }
+            }
+        }
+
         public void ExportFrames(string path, string contextExpression = "", string standardIdentityExpression = "", string dimensionExpression = "", ETLExportEnum exportType = ETLExportEnum.ETLExportSimple, bool omitSource = false)
         {
             // The public entry point for exporting frames from the JMSML library

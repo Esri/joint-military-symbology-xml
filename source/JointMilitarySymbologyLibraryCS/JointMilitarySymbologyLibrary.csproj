@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AmplifierExport.cs" />
     <Compile Include="base.cs" />
     <Compile Include="ConfigHelper.cs" />
     <Compile Include="DomainEntityExport.cs" />
@@ -51,8 +52,10 @@
     <Compile Include="ETL.cs" />
     <Compile Include="EntityExport.cs" />
     <Compile Include="FrameExport.cs" />
+    <Compile Include="IAmplifierExport.cs" />
     <Compile Include="IEntityExport.cs" />
     <Compile Include="IFrameExport.cs" />
+    <Compile Include="ImageAmplifierExport.cs" />
     <Compile Include="ImageEntityExport.cs" />
     <Compile Include="ImageFrameExport.cs" />
     <Compile Include="ImageModifierExport.cs" />

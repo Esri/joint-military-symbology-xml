@@ -106,6 +106,24 @@
           </xs:complexType>
         </xs:element>
         
+        <!-- Standard Identity Group -->
+
+        <xs:element name="StandardIdentityGroups" minOccurs="1" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StandardIdentityGroup" minOccurs="1" maxOccurs="4">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="StandardIdentityGroupCode" type="SingleDigitType"/>
+                  </xs:sequence>
+                  <xs:attributeGroup ref="IdentifierAttributeGroup"/>
+                  <xs:attribute name="StandardIdentityIDs" type="xs:IDREFS" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        
         <!-- Dimension -->
         
         <xs:element name="Dimensions" minOccurs="1" maxOccurs="1">
@@ -228,8 +246,19 @@
                               <xs:sequence>
                                 <xs:element name="AmplifierCode" type="SingleDigitType" minOccurs="1" maxOccurs="1"/>
                                 <xs:element name="LegacyModifierCode" type="LegacyLetterCodeType" minOccurs="0" maxOccurs="unbounded"/>
+                                <xs:element name="Graphics" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Graphic" minOccurs="1" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                          <xs:attributeGroup ref="SIGraphicAttributeGroup"/>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
                               </xs:sequence>
-                              <xs:attributeGroup ref="FramedGraphicNameAttributeGroup"/>
+                              <xs:attributeGroup ref="NameAttributeGroup"/>
                             </xs:complexType>
                           </xs:element>
                         </xs:sequence>
