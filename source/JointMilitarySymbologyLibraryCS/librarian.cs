@@ -504,6 +504,21 @@ namespace JointMilitarySymbologyLibrary
             return retObj;
         }
 
+        internal LibraryStandardIdentityGroup StandardIdentityGroup(string id)
+        {
+            LibraryStandardIdentityGroup retObj = null;
+
+            foreach (LibraryStandardIdentityGroup lObj in this._library.StandardIdentityGroups)
+            {
+                if (lObj.ID == id)
+                {
+                    return lObj;
+                }
+            }
+
+            return retObj;
+        }
+
         internal SymbolSet SymbolSet(ushort symbolSetCodeOne, ushort symbolSetCodeTwo)
         {
             SymbolSet retObj = null;

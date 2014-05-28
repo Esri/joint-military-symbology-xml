@@ -48,6 +48,7 @@ namespace jmsml
             string modPath = CommandLineArgs.I.argAsString("/m");
             string imagePath = CommandLineArgs.I.argAsString("/xi");
             string frameImagePath = CommandLineArgs.I.argAsString("/xf");
+            string amplifierImagePath = CommandLineArgs.I.argAsString("/xa");
 
             bool dataValidation = (CommandLineArgs.I.argAsString("/e") != "false");
             bool appendFiles = (CommandLineArgs.I.argAsString("/+") != "false");
@@ -73,6 +74,7 @@ namespace jmsml
                 Console.WriteLine("/s=\"<expression>\"\t: Use regular expression to query on symbol set labels.");
                 Console.WriteLine("");
                 Console.WriteLine("/x=\"<pathname>\"\t\t: Export entities and modifiers in simple format.");
+                Console.WriteLine("/xa=\"<pathname>\"\t: Export amplifiers for style file input.");
                 Console.WriteLine("/xd=\"<pathname>\"\t: Export entities and modifiers as coded domains.");
                 Console.WriteLine("/xf=\"<pathname>\"\t: Export frames for style file input.");
                 Console.WriteLine("/xi=\"<pathname>\"\t: Export entities and modifiers for style file input.");
@@ -124,6 +126,11 @@ namespace jmsml
             if (frameImagePath != "")
             {
                 _etl.ExportFrames(frameImagePath, contextQuery, identityQuery, dimensionQuery, ETLExportEnum.ETLExportImage, omitSource);
+            }
+
+            if (amplifierImagePath != "")
+            {
+                _etl.ExportAmplifiers(amplifierImagePath, ETLExportEnum.ETLExportImage, appendFiles, omitSource);
             }
         }
 

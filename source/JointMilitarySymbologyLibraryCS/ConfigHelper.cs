@@ -28,8 +28,10 @@ namespace JointMilitarySymbologyLibrary
         FindEchelons,
         FindSpecials,
         FindMobilities,
-        FindArrays,
-        FindHQTFDummies
+        FindAuxiliaryEquipment,
+        FindHeadquarters,
+        FindTaskForces,
+        FindFeintDummies
     }
 
     public class ConfigHelper
@@ -60,6 +62,7 @@ namespace JointMilitarySymbologyLibrary
             _findPaths();
         }
 
+        public Librarian Librarian { get { return _librarian; } }
         public GraphicFolderType[] GraphicFolders { get { return _etlConfig.GraphicFolder; } }
         public string GraphicHome { get { return _etlConfig.GraphicHome; } }
         public string GraphicRoot { get { return _etlConfig.GraphicRoot; } }
@@ -101,8 +104,8 @@ namespace JointMilitarySymbologyLibrary
 
                 switch (findThis)
                 {
-                    case FindEnum.FindArrays:
-                        foundIt = inThis.Arrays;
+                    case FindEnum.FindAuxiliaryEquipment:
+                        foundIt = inThis.AuxiliaryEquipment;
                         break;
 
                     case FindEnum.FindEchelons:
@@ -123,8 +126,8 @@ namespace JointMilitarySymbologyLibrary
                         }
                         break;
 
-                    case FindEnum.FindHQTFDummies:
-                        foundIt = inThis.HQTFDummies;
+                    case FindEnum.FindHeadquarters:
+                        foundIt = inThis.Headquarters;
                         break;
 
                     case FindEnum.FindMobilities:
@@ -147,6 +150,14 @@ namespace JointMilitarySymbologyLibrary
 
                     case FindEnum.FindSpecials:
                         foundIt = inThis.Specials;
+                        break;
+
+                    case FindEnum.FindFeintDummies:
+                        foundIt = inThis.FeintDummies;
+                        break;
+
+                    case FindEnum.FindTaskForces:
+                        foundIt = inThis.TaskForces;
                         break;
                 }
 
@@ -221,10 +232,10 @@ namespace JointMilitarySymbologyLibrary
             // Find the rest of the paths
 
             _findPath(FindEnum.FindSpecials, "JMSML_SPECIALS", _basePaths);
-            _findPath(FindEnum.FindHQTFDummies, "JMSML_HQTFDUMMIES", _basePaths);
+            _findPath(FindEnum.FindHeadquarters, "JMSML_HQTFDUMMIES", _basePaths);
             _findPath(FindEnum.FindEchelons, "JMSML_ECHELONS", _basePaths);
             _findPath(FindEnum.FindMobilities, "JMSML_MOBILITIES", _basePaths);
-            _findPath(FindEnum.FindArrays, "JMSML_ARRAYS", _basePaths);
+            _findPath(FindEnum.FindAuxiliaryEquipment, "JMSML_AUXILIARY", _basePaths);
         }
 
         private string _getPath(string getWhat, Dictionary<string, string> inThis)
@@ -255,8 +266,8 @@ namespace JointMilitarySymbologyLibrary
 
             switch (ofType)
             {
-                case FindEnum.FindArrays:
-                    result = _getPath("JMSML_ARRAYS", _basePaths);
+                case FindEnum.FindAuxiliaryEquipment:
+                    result = _getPath("JMSML_AUXILIARY", _basePaths);
                     break;
 
                 case FindEnum.FindEchelons:
@@ -271,7 +282,7 @@ namespace JointMilitarySymbologyLibrary
                     result = _getPath(getWhat, _framePaths);
                     break;
 
-                case FindEnum.FindHQTFDummies:
+                case FindEnum.FindHeadquarters:
                     result = _getPath("JMSML_HQTFDUMMIES", _basePaths);
                     break;
 

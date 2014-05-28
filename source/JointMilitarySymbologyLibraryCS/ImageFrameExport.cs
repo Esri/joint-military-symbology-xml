@@ -19,7 +19,7 @@ using System.IO;
 
 namespace JointMilitarySymbologyLibrary
 {
-    class ImageFrameExport : FrameExport, IFrameExport
+    public class ImageFrameExport : FrameExport, IFrameExport
     {
         private bool _omitSource = false;
 
@@ -48,6 +48,9 @@ namespace JointMilitarySymbologyLibrary
             if (affiliation != null)
             {
                 graphic = affiliation.Graphic;
+
+                if (graphic == null)
+                    _notes = _notes + "graphic is missing - frame is NA - frame is never to be drawn;";
 
                 string itemRootedPath = _configHelper.BuildRootedPath(graphicPath, graphic);
                 string itemActualPath = _configHelper.BuildActualPath(graphicPath, graphic);
