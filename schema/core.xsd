@@ -138,6 +138,12 @@
     <xs:attribute name="Graphic" type="xs:anyURI" use="required"/>
   </xs:attributeGroup>
 
+  <xs:attributeGroup name="SIDimensionGraphicAttributeGroup">
+    <xs:attribute name="StandardIdentityGroup" type="xs:IDREF" use="required"/>
+    <xs:attribute name="Dimension" type="xs:IDREF" use="required"/>
+    <xs:attribute name="Graphic" type="xs:anyURI" use="required"/>
+  </xs:attributeGroup>
+
   <xs:attributeGroup name="GraphicIdentifierAttributeGroup">
     <xs:attribute name="ID" type="xs:ID" use="required"/>
     <xs:attribute name="Label" type="xs:token" use="optional"/>

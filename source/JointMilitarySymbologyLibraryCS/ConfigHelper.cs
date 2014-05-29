@@ -29,9 +29,7 @@ namespace JointMilitarySymbologyLibrary
         FindSpecials,
         FindMobilities,
         FindAuxiliaryEquipment,
-        FindHeadquarters,
-        FindTaskForces,
-        FindFeintDummies
+        FindHQTFFD
     }
 
     public class ConfigHelper
@@ -126,8 +124,8 @@ namespace JointMilitarySymbologyLibrary
                         }
                         break;
 
-                    case FindEnum.FindHeadquarters:
-                        foundIt = inThis.Headquarters;
+                    case FindEnum.FindHQTFFD:
+                        foundIt = inThis.HQTFFD;
                         break;
 
                     case FindEnum.FindMobilities:
@@ -150,14 +148,6 @@ namespace JointMilitarySymbologyLibrary
 
                     case FindEnum.FindSpecials:
                         foundIt = inThis.Specials;
-                        break;
-
-                    case FindEnum.FindFeintDummies:
-                        foundIt = inThis.FeintDummies;
-                        break;
-
-                    case FindEnum.FindTaskForces:
-                        foundIt = inThis.TaskForces;
                         break;
                 }
 
@@ -232,7 +222,7 @@ namespace JointMilitarySymbologyLibrary
             // Find the rest of the paths
 
             _findPath(FindEnum.FindSpecials, "JMSML_SPECIALS", _basePaths);
-            _findPath(FindEnum.FindHeadquarters, "JMSML_HQTFDUMMIES", _basePaths);
+            _findPath(FindEnum.FindHQTFFD, "JMSML_HQTFDUMMIES", _basePaths);
             _findPath(FindEnum.FindEchelons, "JMSML_ECHELONS", _basePaths);
             _findPath(FindEnum.FindMobilities, "JMSML_MOBILITIES", _basePaths);
             _findPath(FindEnum.FindAuxiliaryEquipment, "JMSML_AUXILIARY", _basePaths);
@@ -282,7 +272,7 @@ namespace JointMilitarySymbologyLibrary
                     result = _getPath(getWhat, _framePaths);
                     break;
 
-                case FindEnum.FindHeadquarters:
+                case FindEnum.FindHQTFFD:
                     result = _getPath("JMSML_HQTFDUMMIES", _basePaths);
                     break;
 

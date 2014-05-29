@@ -11,4 +11,5 @@ jmsml.exe /xi="../../../../../samples/imagefile_name_category_tags/Military-Cont
 jmsml.exe /xi="../../../../../samples/imagefile_name_category_tags/Military-Weather-Source-Icons" /s="Atmospheric|Oceanographic|Meteorological Space" /+
 jmsml.exe /xf="../../../../../samples/imagefile_name_category_tags/Military-Frame-And-Amplifier-Source-Icons"
 jmsml.exe /xa="../../../../../samples/imagefile_name_category_tags/Military-Frame-And-Amplifier-Source-Icons" /+
+jmsml.exe /xh="../../../../../samples/imagefile_name_category_tags/Military-Frame-And-Amplifier-Source-Icons" /+
 endlocal
