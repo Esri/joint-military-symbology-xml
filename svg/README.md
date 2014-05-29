@@ -1,46 +1,50 @@
 # joint-military-symbology-xml #
 
-## SVG Files ##
+## SVG Files
 
-This folder contains a zip file with all of the SVG files supplied by DISA, for use in implementing MIL-STD 2525.
+This folder contains a zip file with all of the SVG files supplied by DISA, for use in implementing MIL-STD-2525.
 
-When unzipping these files for use with the included image conversion utility, please refer to its instructions [here](../source/Utilities/image-conversion-utilities/README.md).
+When unzipping these files for use with the included image conversion utility, please refer to its instructions [here](../source/utilities/image-conversion-utilities/README.md).
 
 ## Sections
+
 * [Naming Conventions](#naming)
 * [File Details](#details)
 * [Licensing](#licensing)
 
-## Naming ##
-All files are named according to parts of the SIDC in order to give them proper uniqueness and consistency.
+## Naming
 
-For symbol assembly purposes, the following SIDC positions are used to determine what icons are to be used to create the proper symbol.
+All files are named according to select portions of the 20-character Symbol Identification Code (SIDC) in order to give them proper uniqueness and consistency.
 
-![](SIDC.png)
+For symbol assembly purposes, the following SIDC positions are used to determine what icons are to be used to create the proper symbol layers. Note: all of these icon layers do not apply to all Symbol Sets.
+
+![Image of SIDC](sidc.png)
  
-Frame (4): Uses SIDC positions 3-6.
+* Frame (Folder: `Frames` - Digits: 4): Uses SIDC positions 3-6.
 
-Main Icon (8): Uses SIDC positions 5-6 and 11-16.
+* Main Icon (Folder: `Appendices\XXX` - Digits: 8): Uses SIDC positions 5-6 and 11-16.
+    * Note: For full-frame main icons (main icons that touch the frame), there is an additional suffix depending on the frame that the icon must touch:
+    * _0 = Unknown
+    * _1 = Friend
+    * _2 = Neutral
+    * _3 = Hostile
 
-For full-frame main icons, an additional value has added to the end depending on the frame that is being displayed:
+* Modifier 1 (Folder: `Appendices\XXX\mod1` - Digits: 5): Uses SIDC positions 5-6 and 17-18 along with the number 1 at the end.
 
-o   _0 = Unknown
-o   _1 = Friend
-o   _2 = Neutral
-o   _3 = Hostile
+* Modifier 2 (Folder: `Appendices\XXX\mod2` - Digits: 5): Uses SIDC positions 5-6 and 19-20 along with the number 2 at the end.
 
-Modifier 1 (5): Uses SIDC positions 5-6 and 17-18 along with the number 1 at the end.
+* Amplifier (Echelon/Mobility/Towed Array) (Folder: `Amplifier` - Digits: 3): Uses SIDC positions 4 and 9-10.
 
-Modifier 2 (5): Uses SIDC positions 5-6 and 19-20 along with the number 2 at the end.
+* Headquarters(HQ)/Task Force(TF)/Feint/Dummy(FD) (Folder: `HQTFFD` - Digits: 4): Uses SIDC positions 4-6 and position 8.
 
-Amplifier (Echelon/Mobility/Towed Array) (3): Uses SIDC positions 4 and 9-10.
+* Status - (TBD)
 
-HQ/Task Force/Feint/Dummy (4): Uses SIDC positions 4-6 and position 8.
+## Details
 
-## Details ##
 This section describes the details of the internal composition of the SVG files, for those developers who wish to make their own changes (TBD).
 
-## Licensing ##
+## Licensing
+
 Copyright 2014 DISA (SSMC Technical Working Group)
 
 Licensed under the Apache License, Version 2.0 (the "License");
