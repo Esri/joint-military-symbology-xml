@@ -1396,36 +1396,246 @@
     <HQTFDummy Name="FEINT_DUMMY" Label="Feint/Dummy">
       <HQTFDummyCode>1</HQTFDummyCode>
       <LegacyHQTFDummyCode Name="2525C">F</LegacyHQTFDummyCode>
+      <Graphics>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="AIR" Graphic="1011.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="AIR" Graphic="3011.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="AIR" Graphic="4011.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="AIR" Graphic="6011.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="SPACE" Graphic="1051.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="SPACE" Graphic="3051.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="SPACE" Graphic="4051.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="SPACE" Graphic="6051.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="LAND_UNIT" Graphic="1101.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="LAND_UNIT" Graphic="3101.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="LAND_UNIT" Graphic="4101.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="LAND_UNIT" Graphic="6101.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="LAND_EQUIPMENT" Graphic="1151.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="LAND_EQUIPMENT" Graphic="3151.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="LAND_EQUIPMENT" Graphic="4151.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="LAND_EQUIPMENT" Graphic="6151.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="LAND_INSTALLATION" Graphic="1201.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="LAND_INSTALLATION" Graphic="3201.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="LAND_INSTALLATION" Graphic="4201.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="LAND_INSTALLATION" Graphic="6201.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="SEA_SURFACE" Graphic="1301.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="SEA_SURFACE" Graphic="3301.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="SEA_SURFACE" Graphic="4301.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="SEA_SURFACE" Graphic="6301.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="SEA_SUBSURFACE" Graphic="1351.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="SEA_SUBSURFACE" Graphic="3351.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="SEA_SUBSURFACE" Graphic="4351.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="SEA_SUBSURFACE" Graphic="6351.svg"/>
+      </Graphics>
     </HQTFDummy>
     
     <HQTFDummy Name="HQ" Label="Headquarters">
       <HQTFDummyCode>2</HQTFDummyCode>
       <LegacyHQTFDummyCode Name="2525C">A</LegacyHQTFDummyCode>
+      <Graphics>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="AIR" Graphic="1012.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="AIR" Graphic="3012.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="AIR" Graphic="4012.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="AIR" Graphic="6012.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="SPACE" Graphic="1052.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="SPACE" Graphic="3052.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="SPACE" Graphic="4052.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="SPACE" Graphic="6052.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="LAND_UNIT" Graphic="1102.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="LAND_UNIT" Graphic="3102.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="LAND_UNIT" Graphic="4102.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="LAND_UNIT" Graphic="6102.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="LAND_EQUIPMENT" Graphic="1152.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="LAND_EQUIPMENT" Graphic="3152.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="LAND_EQUIPMENT" Graphic="4152.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="LAND_EQUIPMENT" Graphic="6152.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="LAND_INSTALLATION" Graphic="1202.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="LAND_INSTALLATION" Graphic="3202.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="LAND_INSTALLATION" Graphic="4202.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="LAND_INSTALLATION" Graphic="6202.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="SEA_SURFACE" Graphic="1302.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="SEA_SURFACE" Graphic="3302.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="SEA_SURFACE" Graphic="4302.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="SEA_SURFACE" Graphic="6302.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="SEA_SUBSURFACE" Graphic="1352.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="SEA_SUBSURFACE" Graphic="3352.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="SEA_SUBSURFACE" Graphic="4352.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="SEA_SUBSURFACE" Graphic="6352.svg"/>
+      </Graphics>
     </HQTFDummy>
     
     <HQTFDummy Name="FEINT_DUMMY_HQ" Label="Feint/Dummy Headquarters">
       <HQTFDummyCode>3</HQTFDummyCode>
       <LegacyHQTFDummyCode Name="2525C">C</LegacyHQTFDummyCode>
+      <Graphics>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="AIR" Graphic="1013.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="AIR" Graphic="3013.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="AIR" Graphic="4013.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="AIR" Graphic="6013.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="SPACE" Graphic="1053.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="SPACE" Graphic="3053.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="SPACE" Graphic="4053.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="SPACE" Graphic="6053.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="LAND_UNIT" Graphic="1103.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="LAND_UNIT" Graphic="3103.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="LAND_UNIT" Graphic="4103.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="LAND_UNIT" Graphic="6103.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="LAND_EQUIPMENT" Graphic="1153.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="LAND_EQUIPMENT" Graphic="3153.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="LAND_EQUIPMENT" Graphic="4153.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="LAND_EQUIPMENT" Graphic="6153.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="LAND_INSTALLATION" Graphic="1203.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="LAND_INSTALLATION" Graphic="3203.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="LAND_INSTALLATION" Graphic="4203.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="LAND_INSTALLATION" Graphic="6203.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="SEA_SURFACE" Graphic="1303.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="SEA_SURFACE" Graphic="3303.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="SEA_SURFACE" Graphic="4303.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="SEA_SURFACE" Graphic="6303.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="SEA_SUBSURFACE" Graphic="1353.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="SEA_SUBSURFACE" Graphic="3353.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="SEA_SUBSURFACE" Graphic="4353.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="SEA_SUBSURFACE" Graphic="6353.svg"/>
+      </Graphics>
     </HQTFDummy>
     
     <HQTFDummy Name="TF" Label="Task Force">
       <HQTFDummyCode>4</HQTFDummyCode>
       <LegacyHQTFDummyCode Name="2525C">E</LegacyHQTFDummyCode>
+      <Graphics>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="AIR" Graphic="1014.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="AIR" Graphic="3014.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="AIR" Graphic="4014.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="AIR" Graphic="6014.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="SPACE" Graphic="1054.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="SPACE" Graphic="3054.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="SPACE" Graphic="4054.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="SPACE" Graphic="6054.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="LAND_UNIT" Graphic="1104.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="LAND_UNIT" Graphic="3104.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="LAND_UNIT" Graphic="4104.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="LAND_UNIT" Graphic="6104.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="LAND_EQUIPMENT" Graphic="1154.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="LAND_EQUIPMENT" Graphic="3154.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="LAND_EQUIPMENT" Graphic="4154.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="LAND_EQUIPMENT" Graphic="6154.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="LAND_INSTALLATION" Graphic="1204.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="LAND_INSTALLATION" Graphic="3204.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="LAND_INSTALLATION" Graphic="4204.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="LAND_INSTALLATION" Graphic="6204.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="SEA_SURFACE" Graphic="1304.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="SEA_SURFACE" Graphic="3304.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="SEA_SURFACE" Graphic="4304.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="SEA_SURFACE" Graphic="6304.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="SEA_SUBSURFACE" Graphic="1354.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="SEA_SUBSURFACE" Graphic="3354.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="SEA_SUBSURFACE" Graphic="4354.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="SEA_SUBSURFACE" Graphic="6354.svg"/>
+      </Graphics>
     </HQTFDummy>
     
     <HQTFDummy Name="FEINT_DUMMY_TF" Label="Feint/Dummy Task Force">
       <HQTFDummyCode>5</HQTFDummyCode>
       <LegacyHQTFDummyCode Name="2525C">G</LegacyHQTFDummyCode>
+      <Graphics>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="AIR" Graphic="1015.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="AIR" Graphic="3015.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="AIR" Graphic="4015.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="AIR" Graphic="6015.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="SPACE" Graphic="1055.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="SPACE" Graphic="3055.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="SPACE" Graphic="4055.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="SPACE" Graphic="6055.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="LAND_UNIT" Graphic="1105.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="LAND_UNIT" Graphic="3105.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="LAND_UNIT" Graphic="4105.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="LAND_UNIT" Graphic="6105.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="LAND_EQUIPMENT" Graphic="1155.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="LAND_EQUIPMENT" Graphic="3155.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="LAND_EQUIPMENT" Graphic="4155.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="LAND_EQUIPMENT" Graphic="6155.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="LAND_INSTALLATION" Graphic="1205.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="LAND_INSTALLATION" Graphic="3205.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="LAND_INSTALLATION" Graphic="4205.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="LAND_INSTALLATION" Graphic="6205.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="SEA_SURFACE" Graphic="1305.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="SEA_SURFACE" Graphic="3305.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="SEA_SURFACE" Graphic="4305.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="SEA_SURFACE" Graphic="6305.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="SEA_SUBSURFACE" Graphic="1355.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="SEA_SUBSURFACE" Graphic="3355.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="SEA_SUBSURFACE" Graphic="4355.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="SEA_SUBSURFACE" Graphic="6355.svg"/>
+      </Graphics>
     </HQTFDummy>
     
     <HQTFDummy Name="TF_HQ" Label="Task Force Headquarters">
       <HQTFDummyCode>6</HQTFDummyCode>
       <LegacyHQTFDummyCode Name="2525C">B</LegacyHQTFDummyCode>
+      <Graphics>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="AIR" Graphic="1016.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="AIR" Graphic="3016.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="AIR" Graphic="4016.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="AIR" Graphic="6016.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="SPACE" Graphic="1056.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="SPACE" Graphic="3056.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="SPACE" Graphic="4056.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="SPACE" Graphic="6056.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="LAND_UNIT" Graphic="1106.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="LAND_UNIT" Graphic="3106.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="LAND_UNIT" Graphic="4106.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="LAND_UNIT" Graphic="6106.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="LAND_EQUIPMENT" Graphic="1156.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="LAND_EQUIPMENT" Graphic="3156.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="LAND_EQUIPMENT" Graphic="4156.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="LAND_EQUIPMENT" Graphic="6156.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="LAND_INSTALLATION" Graphic="1206.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="LAND_INSTALLATION" Graphic="3206.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="LAND_INSTALLATION" Graphic="4206.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="LAND_INSTALLATION" Graphic="6206.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="SEA_SURFACE" Graphic="1306.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="SEA_SURFACE" Graphic="3306.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="SEA_SURFACE" Graphic="4306.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="SEA_SURFACE" Graphic="6306.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="SEA_SUBSURFACE" Graphic="1356.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="SEA_SUBSURFACE" Graphic="3356.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="SEA_SUBSURFACE" Graphic="4356.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="SEA_SUBSURFACE" Graphic="6356.svg"/>
+      </Graphics>
     </HQTFDummy>
     
     <HQTFDummy Name="FEINT_DUMMY_TF_HQ" Label="Feint/Dummy Task Force Headquarters">
       <HQTFDummyCode>7</HQTFDummyCode>
       <LegacyHQTFDummyCode Name="2525C">D</LegacyHQTFDummyCode>
+      <Graphics>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="AIR" Graphic="1017.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="AIR" Graphic="3017.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="AIR" Graphic="4017.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="AIR" Graphic="6017.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="SPACE" Graphic="1057.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="SPACE" Graphic="3057.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="SPACE" Graphic="4057.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="SPACE" Graphic="6057.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="LAND_UNIT" Graphic="1107.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="LAND_UNIT" Graphic="3107.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="LAND_UNIT" Graphic="4107.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="LAND_UNIT" Graphic="6107.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="LAND_EQUIPMENT" Graphic="1157.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="LAND_EQUIPMENT" Graphic="3157.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="LAND_EQUIPMENT" Graphic="4157.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="LAND_EQUIPMENT" Graphic="6157.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="LAND_INSTALLATION" Graphic="1207.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="LAND_INSTALLATION" Graphic="3207.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="LAND_INSTALLATION" Graphic="4207.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="LAND_INSTALLATION" Graphic="6207.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="SEA_SURFACE" Graphic="1307.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="SEA_SURFACE" Graphic="3307.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="SEA_SURFACE" Graphic="4307.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="SEA_SURFACE" Graphic="6307.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" Dimension="SEA_SUBSURFACE" Graphic="1357.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" Dimension="SEA_SUBSURFACE" Graphic="3357.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" Dimension="SEA_SUBSURFACE" Graphic="4357.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" Dimension="SEA_SUBSURFACE" Graphic="6357.svg"/>
+      </Graphics>
     </HQTFDummy>
 
     <HQTFDummy Name="EXTENSION" Label="Extension" Description="Details specified by extension">

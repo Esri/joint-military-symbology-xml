@@ -49,6 +49,7 @@ namespace jmsml
             string imagePath = CommandLineArgs.I.argAsString("/xi");
             string frameImagePath = CommandLineArgs.I.argAsString("/xf");
             string amplifierImagePath = CommandLineArgs.I.argAsString("/xa");
+            string hqTFFDImagePath = CommandLineArgs.I.argAsString("/xh");
 
             bool dataValidation = (CommandLineArgs.I.argAsString("/e") != "false");
             bool appendFiles = (CommandLineArgs.I.argAsString("/+") != "false");
@@ -77,6 +78,7 @@ namespace jmsml
                 Console.WriteLine("/xa=\"<pathname>\"\t: Export amplifiers for style file input.");
                 Console.WriteLine("/xd=\"<pathname>\"\t: Export entities and modifiers as coded domains.");
                 Console.WriteLine("/xf=\"<pathname>\"\t: Export frames for style file input.");
+                Console.WriteLine("/xh=\"<pathname>\"\t: Export HQ/TF/FD for style file input.");
                 Console.WriteLine("/xi=\"<pathname>\"\t: Export entities and modifiers for style file input.");
                 Console.WriteLine("");
                 Console.WriteLine("<Enter> to continue.");
@@ -131,6 +133,11 @@ namespace jmsml
             if (amplifierImagePath != "")
             {
                 _etl.ExportAmplifiers(amplifierImagePath, ETLExportEnum.ETLExportImage, appendFiles, omitSource);
+            }
+
+            if (hqTFFDImagePath != "")
+            {
+                _etl.ExportHQTFFD(hqTFFDImagePath, ETLExportEnum.ETLExportImage, appendFiles, omitSource);
             }
         }
 

@@ -948,5 +948,55 @@ namespace JointMilitarySymbologyLibrary
                 }
             }
         }
+
+        public void ExportHQTFFD(string path, ETLExportEnum exportType = ETLExportEnum.ETLExportSimple, bool append = false, bool omitSource = false)
+        {
+            // The public entry point for exporting HQTFFD from the JMSML library
+            // into CSV format.  These include combinations of headquarter, task force, and feint/dummy amplifiers
+
+            // Accepts a path for the output (sans file name extension).  The output may also
+            // be appended to an existing file.
+
+            IHQTFFDExport hqTFFDExporter = null;
+            string line = "";
+
+            switch (exportType)
+            {
+                case ETLExportEnum.ETLExportImage:
+                    hqTFFDExporter = new ImageHQTFFDExport(_configHelper, omitSource);
+                    break;
+            }
+
+            if (hqTFFDExporter != null)
+            {
+                using (var w = new StreamWriter(path + ".csv", append))
+                {
+                    if (!append)
+                    {
+                        line = string.Format("{0}", hqTFFDExporter.Headers);
+
+                        w.WriteLine(line);
+                        w.Flush();
+                    }
+
+                    foreach(LibraryHQTFDummy hqTFFD in _library.HQTFDummies)
+                    {
+                        if (hqTFFD.Graphics != null)
+                        {
+                            foreach (LibraryHQTFDummyGraphic graphic in hqTFFD.Graphics)
+                            {
+                                line = hqTFFDExporter.Line(hqTFFD, graphic);
+
+                                if (line != "")
+                                {
+                                    w.WriteLine(line);
+                                    w.Flush();
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

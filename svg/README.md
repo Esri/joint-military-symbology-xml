@@ -12,7 +12,11 @@ When unzipping these files for use with the included image conversion utility, p
 * [Licensing](#licensing)
 
 ## Naming ##
-Below is the final breakdown on the naming convention that was used to create the symbols.
+All files are named according to parts of the SIDC in order to give them proper uniqueness and consistency.
+
+For symbol assembly purposes, the following SIDC positions are used to determine what icons are to be used to create the proper symbol.
+
+![](SIDC.png)
  
 Frame (4): Uses SIDC positions 3-6.
 
@@ -29,11 +33,9 @@ Modifier 1 (5): Uses SIDC positions 5-6 and 17-18 along with the number 1 at the
 
 Modifier 2 (5): Uses SIDC positions 5-6 and 19-20 along with the number 2 at the end.
 
-Task Force (2): Uses SIDC positions 4 and 8.
-
 Amplifier (Echelon/Mobility/Towed Array) (3): Uses SIDC positions 4 and 9-10.
 
-HQ/Feint/Dummy (4): Uses SIDC positions 4-6 and position 8.
+HQ/Task Force/Feint/Dummy (4): Uses SIDC positions 4-6 and position 8.
 
 ## Details ##
 This section describes the details of the internal composition of the SVG files, for those developers who wish to make their own changes (TBD).

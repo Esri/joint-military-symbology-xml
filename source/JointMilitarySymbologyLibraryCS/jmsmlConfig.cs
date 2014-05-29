@@ -181,7 +181,7 @@ namespace JointMilitarySymbologyLibrary {
         
         private bool mobilitiesField;
         
-        private bool headquartersField;
+        private bool hQTFFDField;
         
         private bool auxiliaryEquipmentField;
         
@@ -193,19 +193,11 @@ namespace JointMilitarySymbologyLibrary {
         
         private string modifierTwosField;
         
-        private bool taskForcesField;
-        
-        private bool taskForcesFieldSpecified;
-        
-        private bool feintDummiesField;
-        
-        private bool feintDummiesFieldSpecified;
-        
         public GraphicFolderType() {
             this.framesField = "false";
             this.echelonsField = false;
             this.mobilitiesField = false;
-            this.headquartersField = false;
+            this.hQTFFDField = false;
             this.auxiliaryEquipmentField = false;
             this.specialsField = false;
         }
@@ -271,12 +263,12 @@ namespace JointMilitarySymbologyLibrary {
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         [System.ComponentModel.DefaultValueAttribute(false)]
-        public bool Headquarters {
+        public bool HQTFFD {
             get {
-                return this.headquartersField;
+                return this.hQTFFDField;
             }
             set {
-                this.headquartersField = value;
+                this.hQTFFDField = value;
             }
         }
         
@@ -334,50 +326,6 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.modifierTwosField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public bool TaskForces {
-            get {
-                return this.taskForcesField;
-            }
-            set {
-                this.taskForcesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool TaskForcesSpecified {
-            get {
-                return this.taskForcesFieldSpecified;
-            }
-            set {
-                this.taskForcesFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public bool FeintDummies {
-            get {
-                return this.feintDummiesField;
-            }
-            set {
-                this.feintDummiesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool FeintDummiesSpecified {
-            get {
-                return this.feintDummiesFieldSpecified;
-            }
-            set {
-                this.feintDummiesFieldSpecified = value;
             }
         }
     }

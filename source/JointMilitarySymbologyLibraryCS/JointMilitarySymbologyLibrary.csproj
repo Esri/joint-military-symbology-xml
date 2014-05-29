@@ -52,12 +52,15 @@
     <Compile Include="ETL.cs" />
     <Compile Include="EntityExport.cs" />
     <Compile Include="FrameExport.cs" />
+    <Compile Include="HQTFFDExport.cs" />
     <Compile Include="IAmplifierExport.cs" />
     <Compile Include="IEntityExport.cs" />
     <Compile Include="IFrameExport.cs" />
+    <Compile Include="IHQTFFDExport.cs" />
     <Compile Include="ImageAmplifierExport.cs" />
     <Compile Include="ImageEntityExport.cs" />
     <Compile Include="ImageFrameExport.cs" />
+    <Compile Include="ImageHQTFFDExport.cs" />
     <Compile Include="ImageModifierExport.cs" />
     <Compile Include="IModifierExport.cs" />
     <Compile Include="ModifierExport.cs" />
