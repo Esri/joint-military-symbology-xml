@@ -138,7 +138,6 @@ Land Units : Movement and Maneuver : Sea Air Land (SEAL),10121400
 Land Units : Movement and Maneuver : Sniper,10121500
 Land Units : Movement and Maneuver : Surveillance,10121600
 Land Units : Movement and Maneuver : Special Forces,10121700
-Land Units : Movement and Maneuver : Special Forces : Headquarters Element,10121795
 Land Units : Movement and Maneuver : Special Operations Forces (SOF),10121800
 Land Units : Movement and Maneuver : Special Operations Forces (SOF) : Fixed Wing MISO,10121801
 Land Units : Movement and Maneuver : Special Operations Forces (SOF) : Ground,10121802
@@ -184,7 +183,6 @@ Land Units : Protection : Field Camp Construction,10140900
 Land Units : Protection : Fire Fighting/Fire Protection,10141000
 Land Units : Protection : Geospatial Support/Geospatial Information Support,10141100
 Land Units : Protection : Military Police,10141200
-Land Units : Protection : Military Police : Headquarters Element,10141295
 Land Units : Protection : Mine,10141300
 Land Units : Protection : Mine Clearing,10141400
 Land Units : Protection : Mine Launching,10141500
@@ -559,94 +557,94 @@ Land Installation : Installation : Law Enforcement : US Marshals Service,2011211
 Land Installation : Installation : Emergency Operation,20112200
 Land Installation : Installation : Emergency Operation : Fire Station,20112201
 Land Installation : Installation : Emergency Operation : Emergency Medical Operation,20112202
-Land Installation : Installation : Infrastructure,20110000
-Land Installation : Installation : Agriculture and Food Infrastructure,20110100
-Land Installation : Installation : Agriculture and Food Infrastructure : Agriculture Laboratory,20110101
-Land Installation : Installation : Agriculture and Food Infrastructure : Animal Feedlot,20110102
-Land Installation : Installation : Agriculture and Food Infrastructure : Commercial Food Distribution Center,20110103
-Land Installation : Installation : Agriculture and Food Infrastructure : Farm/Ranch,20110104
-Land Installation : Installation : Agriculture and Food Infrastructure : Food Distribution,20110105
-Land Installation : Installation : Agriculture and Food Infrastructure : Food Production Center,20110106
-Land Installation : Installation : Agriculture and Food Infrastructure : Food Retail,20110107
-Land Installation : Installation : Agriculture and Food Infrastructure : Grain Storage,20110108
-Land Installation : Installation : Banking- Finance- and Insurance Infrastructure,20110200
-Land Installation : Installation : Banking- Finance- and Insurance Infrastructure : ATM,20110201
-Land Installation : Installation : Banking- Finance- and Insurance Infrastructure : Bank,20110202
-Land Installation : Installation : Banking- Finance- and Insurance Infrastructure : Bullion Storage,20110203
-Land Installation : Installation : Banking- Finance- and Insurance Infrastructure : Economic Infrastructure Asset,20110204
-Land Installation : Installation : Banking- Finance- and Insurance Infrastructure : Federal Reserve Bank,20110205
-Land Installation : Installation : Banking- Finance- and Insurance Infrastructure : Financial Exchange,20110206
-Land Installation : Installation : Banking- Finance- and Insurance Infrastructure : Financial Services-Other,20110207
-Land Installation : Installation : Commercial Infrastructure,20110300
-Land Installation : Installation : Commercial Infrastructure : Chemical Plant,20110301
-Land Installation : Installation : Commercial Infrastructure : Firearms Manufacturer,20110302
-Land Installation : Installation : Commercial Infrastructure : Firearms Retailer,20110303
-Land Installation : Installation : Commercial Infrastructure : Hazardous Material Production,20110304
-Land Installation : Installation : Commercial Infrastructure : Hazardous Material Storage,20110305
-Land Installation : Installation : Commercial Infrastructure : Industrial Site,20110306
-Land Installation : Installation : Commercial Infrastructure : Landfill,20110307
-Land Installation : Installation : Commercial Infrastructure : Pharmaceutical Manufacturer,20110308
-Land Installation : Installation : Commercial Infrastructure : Contaminated Hazardous Waste Site,20110309
-Land Installation : Installation : Commercial Infrastructure : Toxic Release Inventory,20110310
-Land Installation : Installation : Educational Facilities Infrastructure,20110400
-Land Installation : Installation : Educational Facilities Infrastructure : College/University,20110401
-Land Installation : Installation : Educational Facilities Infrastructure : School,20110402
-Land Installation : Installation : Energy Facility Infrastructure,20110500
-Land Installation : Installation : Energy Facility Infrastructure : Electric Power,20110501
-Land Installation : Installation : Energy Facility Infrastructure : Generation Station,20110502
-Land Installation : Installation : Energy Facility Infrastructure : Natural Gas Facility,20110503
-Land Installation : Installation : Energy Facility Infrastructure : Petroleum Facility,20110504
-Land Installation : Installation : Energy Facility Infrastructure : Petroleum/Gas/Oil,20110505
-Land Installation : Installation : Energy Facility Infrastructure : Propane Facility,20110506
-Land Installation : Installation : Government Site Infrastructure,20110600
-Land Installation : Installation : Medical Infrastructure,20110700
-Land Installation : Installation : Medical Infrastructure : Medical,20110701
-Land Installation : Installation : Medical Infrastructure : Medical Treatment Facility (Hospital),20110702
-Land Installation : Installation : Military Infrastructure,20110800
-Land Installation : Installation : Military Infrastructure : Military Armory,20110801
-Land Installation : Installation : Military Infrastructure : Military Base,20110802
-Land Installation : Installation : Postal Services Infrastructure,20110900
-Land Installation : Installation : Postal Services Infrastructure : Postal Distribution Center,20110901
-Land Installation : Installation : Postal Services Infrastructure : Post Office,20110902
-Land Installation : Installation : Public Venues Infrastructure,20111000
-Land Installation : Installation : Public Venues Infrastructure : Enclosed Facility,20111001
-Land Installation : Installation : Public Venues Infrastructure : Open Facility,20111002
-Land Installation : Installation : Public Venues Infrastructure : Recreational Area,20111003
-Land Installation : Installation : Public Venues Infrastructure : Religious Institution,20111004
-Land Installation : Installation : Special Needs Infrastructure,20111100
-Land Installation : Installation : Special Needs Infrastructure : Adult Day Care,20111101
-Land Installation : Installation : Special Needs Infrastructure : Child Day Care,20111102
-Land Installation : Installation : Special Needs Infrastructure : Elder Care,20111103
-Land Installation : Installation : Telecommunications Infrastructure,20111200
-Land Installation : Installation : Telecommunications Infrastructure : Broadcast Transmitter Antennae,20111201
-Land Installation : Installation : Telecommunications Infrastructure : Telecommunications,20111202
-Land Installation : Installation : Telecommunications Infrastructure : Telecommunications Tower,20111203
-Land Installation : Installation : Transportation Infrastructure,20111300
-Land Installation : Installation : Transportation Infrastructure : Airport/Air Base,20111301
-Land Installation : Installation : Transportation Infrastructure : Air Traffic Control Facility,20111302
-Land Installation : Installation : Transportation Infrastructure : Bus Station,20111303
-Land Installation : Installation : Transportation Infrastructure : Ferry Terminal,20111304
-Land Installation : Installation : Transportation Infrastructure : Helicopter Landing Site,20111305
-Land Installation : Installation : Transportation Infrastructure : Maintenance Facility,20111306
-Land Installation : Installation : Transportation Infrastructure : Railhead/Railroad Station,20111307
-Land Installation : Installation : Transportation Infrastructure : Rest Stop,20111308
-Land Installation : Installation : Transportation Infrastructure : Sea Port/Naval Base,20111309
-Land Installation : Installation : Transportation Infrastructure : Ship Yard,20111310
-Land Installation : Installation : Transportation Infrastructure : Toll Facility,20111311
-Land Installation : Installation : Transportation Infrastructure : Traffic Inspection Facility,20111312
-Land Installation : Installation : Transportation Infrastructure : Tunnel,20111313
-Land Installation : Installation : Water Supply Infrastructure,20111400
-Land Installation : Installation : Water Supply Infrastructure : Control Valve,20111401
-Land Installation : Installation : Water Supply Infrastructure : Dam,20111402
-Land Installation : Installation : Water Supply Infrastructure : Discharge Outfall,20111403
-Land Installation : Installation : Water Supply Infrastructure : Ground Water Well,20111404
-Land Installation : Installation : Water Supply Infrastructure : Pumping Station,20111405
-Land Installation : Installation : Water Supply Infrastructure : Reservoir,20111406
-Land Installation : Installation : Water Supply Infrastructure : Storage Tower,20111407
-Land Installation : Installation : Water Supply Infrastructure : Surface Water Intake,20111408
-Land Installation : Installation : Water Supply Infrastructure : Wastewater Treatment Facility,20111409
-Land Installation : Installation : Water Supply Infrastructure : Water,20111410
-Land Installation : Installation : Water Supply Infrastructure : Water Treatment,20111411
+Land Installation : Infrastructure,20120000
+Land Installation : Infrastructure : Agriculture and Food Infrastructure,20120100
+Land Installation : Infrastructure : Agriculture and Food Infrastructure : Agriculture Laboratory,20120101
+Land Installation : Infrastructure : Agriculture and Food Infrastructure : Animal Feedlot,20120102
+Land Installation : Infrastructure : Agriculture and Food Infrastructure : Commercial Food Distribution Center,20120103
+Land Installation : Infrastructure : Agriculture and Food Infrastructure : Farm/Ranch,20120104
+Land Installation : Infrastructure : Agriculture and Food Infrastructure : Food Distribution,20120105
+Land Installation : Infrastructure : Agriculture and Food Infrastructure : Food Production Center,20120106
+Land Installation : Infrastructure : Agriculture and Food Infrastructure : Food Retail,20120107
+Land Installation : Infrastructure : Agriculture and Food Infrastructure : Grain Storage,20120108
+Land Installation : Infrastructure : Banking- Finance- and Insurance Infrastructure,20120200
+Land Installation : Infrastructure : Banking- Finance- and Insurance Infrastructure : ATM,20120201
+Land Installation : Infrastructure : Banking- Finance- and Insurance Infrastructure : Bank,20120202
+Land Installation : Infrastructure : Banking- Finance- and Insurance Infrastructure : Bullion Storage,20120203
+Land Installation : Infrastructure : Banking- Finance- and Insurance Infrastructure : Economic Infrastructure Asset,20120204
+Land Installation : Infrastructure : Banking- Finance- and Insurance Infrastructure : Federal Reserve Bank,20120205
+Land Installation : Infrastructure : Banking- Finance- and Insurance Infrastructure : Financial Exchange,20120206
+Land Installation : Infrastructure : Banking- Finance- and Insurance Infrastructure : Financial Services-Other,20120207
+Land Installation : Infrastructure : Commercial Infrastructure,20120300
+Land Installation : Infrastructure : Commercial Infrastructure : Chemical Plant,20120301
+Land Installation : Infrastructure : Commercial Infrastructure : Firearms Manufacturer,20120302
+Land Installation : Infrastructure : Commercial Infrastructure : Firearms Retailer,20120303
+Land Installation : Infrastructure : Commercial Infrastructure : Hazardous Material Production,20120304
+Land Installation : Infrastructure : Commercial Infrastructure : Hazardous Material Storage,20120305
+Land Installation : Infrastructure : Commercial Infrastructure : Industrial Site,20120306
+Land Installation : Infrastructure : Commercial Infrastructure : Landfill,20120307
+Land Installation : Infrastructure : Commercial Infrastructure : Pharmaceutical Manufacturer,20120308
+Land Installation : Infrastructure : Commercial Infrastructure : Contaminated Hazardous Waste Site,20120309
+Land Installation : Infrastructure : Commercial Infrastructure : Toxic Release Inventory,20120310
+Land Installation : Infrastructure : Educational Facilities Infrastructure,20120400
+Land Installation : Infrastructure : Educational Facilities Infrastructure : College/University,20120401
+Land Installation : Infrastructure : Educational Facilities Infrastructure : School,20120402
+Land Installation : Infrastructure : Energy Facility Infrastructure,20120500
+Land Installation : Infrastructure : Energy Facility Infrastructure : Electric Power,20120501
+Land Installation : Infrastructure : Energy Facility Infrastructure : Generation Station,20120502
+Land Installation : Infrastructure : Energy Facility Infrastructure : Natural Gas Facility,20120503
+Land Installation : Infrastructure : Energy Facility Infrastructure : Petroleum Facility,20120504
+Land Installation : Infrastructure : Energy Facility Infrastructure : Petroleum/Gas/Oil,20120505
+Land Installation : Infrastructure : Energy Facility Infrastructure : Propane Facility,20120506
+Land Installation : Infrastructure : Government Site Infrastructure,20120600
+Land Installation : Infrastructure : Medical Infrastructure,20120700
+Land Installation : Infrastructure : Medical Infrastructure : Medical,20120701
+Land Installation : Infrastructure : Medical Infrastructure : Medical Treatment Facility (Hospital),20120702
+Land Installation : Infrastructure : Military Infrastructure,20120800
+Land Installation : Infrastructure : Military Infrastructure : Military Armory,20120801
+Land Installation : Infrastructure : Military Infrastructure : Military Base,20120802
+Land Installation : Infrastructure : Postal Services Infrastructure,20120900
+Land Installation : Infrastructure : Postal Services Infrastructure : Postal Distribution Center,20120901
+Land Installation : Infrastructure : Postal Services Infrastructure : Post Office,20120902
+Land Installation : Infrastructure : Public Venues Infrastructure,20121000
+Land Installation : Infrastructure : Public Venues Infrastructure : Enclosed Facility,20121001
+Land Installation : Infrastructure : Public Venues Infrastructure : Open Facility,20121002
+Land Installation : Infrastructure : Public Venues Infrastructure : Recreational Area,20121003
+Land Installation : Infrastructure : Public Venues Infrastructure : Religious Institution,20121004
+Land Installation : Infrastructure : Special Needs Infrastructure,20121100
+Land Installation : Infrastructure : Special Needs Infrastructure : Adult Day Care,20121101
+Land Installation : Infrastructure : Special Needs Infrastructure : Child Day Care,20121102
+Land Installation : Infrastructure : Special Needs Infrastructure : Elder Care,20121103
+Land Installation : Infrastructure : Telecommunications Infrastructure,20121200
+Land Installation : Infrastructure : Telecommunications Infrastructure : Broadcast Transmitter Antennae,20121201
+Land Installation : Infrastructure : Telecommunications Infrastructure : Telecommunications,20121202
+Land Installation : Infrastructure : Telecommunications Infrastructure : Telecommunications Tower,20121203
+Land Installation : Infrastructure : Transportation Infrastructure,20121300
+Land Installation : Infrastructure : Transportation Infrastructure : Airport/Air Base,20121301
+Land Installation : Infrastructure : Transportation Infrastructure : Air Traffic Control Facility,20121302
+Land Installation : Infrastructure : Transportation Infrastructure : Bus Station,20121303
+Land Installation : Infrastructure : Transportation Infrastructure : Ferry Terminal,20121304
+Land Installation : Infrastructure : Transportation Infrastructure : Helicopter Landing Site,20121305
+Land Installation : Infrastructure : Transportation Infrastructure : Maintenance Facility,20121306
+Land Installation : Infrastructure : Transportation Infrastructure : Railhead/Railroad Station,20121307
+Land Installation : Infrastructure : Transportation Infrastructure : Rest Stop,20121308
+Land Installation : Infrastructure : Transportation Infrastructure : Sea Port/Naval Base,20121309
+Land Installation : Infrastructure : Transportation Infrastructure : Ship Yard,20121310
+Land Installation : Infrastructure : Transportation Infrastructure : Toll Facility,20121311
+Land Installation : Infrastructure : Transportation Infrastructure : Traffic Inspection Facility,20121312
+Land Installation : Infrastructure : Transportation Infrastructure : Tunnel,20121313
+Land Installation : Infrastructure : Water Supply Infrastructure,20121400
+Land Installation : Infrastructure : Water Supply Infrastructure : Control Valve,20121401
+Land Installation : Infrastructure : Water Supply Infrastructure : Dam,20121402
+Land Installation : Infrastructure : Water Supply Infrastructure : Discharge Outfall,20121403
+Land Installation : Infrastructure : Water Supply Infrastructure : Ground Water Well,20121404
+Land Installation : Infrastructure : Water Supply Infrastructure : Pumping Station,20121405
+Land Installation : Infrastructure : Water Supply Infrastructure : Reservoir,20121406
+Land Installation : Infrastructure : Water Supply Infrastructure : Storage Tower,20121407
+Land Installation : Infrastructure : Water Supply Infrastructure : Surface Water Intake,20121408
+Land Installation : Infrastructure : Water Supply Infrastructure : Wastewater Treatment Facility,20121409
+Land Installation : Infrastructure : Water Supply Infrastructure : Water,20121410
+Land Installation : Infrastructure : Water Supply Infrastructure : Water Treatment,20121411
 Control Measure : Command and Control Lines,25110000
 Control Measure : Command and Control Lines : Boundary,25110100
 Control Measure : Command and Control Lines : Light Line,25110200
