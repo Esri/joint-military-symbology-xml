@@ -47,7 +47,10 @@
     <Compile Include="AmplifierExport.cs" />
     <Compile Include="base.cs" />
     <Compile Include="ConfigHelper.cs" />
+    <Compile Include="DomainAmplifierExport.cs" />
     <Compile Include="DomainEntityExport.cs" />
+    <Compile Include="DomainFrameExport.cs" />
+    <Compile Include="DomainHQTFFDExport.cs" />
     <Compile Include="DomainModifierExport.cs" />
     <Compile Include="ETL.cs" />
     <Compile Include="EntityExport.cs" />

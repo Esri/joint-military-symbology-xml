@@ -24,15 +24,15 @@ namespace jmsml
     {
         private static Librarian _librarian = new Librarian();
         private static ETL _etl = new ETL(_librarian);
+        private static Dictionary<string, ETLExportEnum> _exportAsLookup = new Dictionary<string, ETLExportEnum>();
 
         static void Run(string[] args)
         {
             _librarian.IsLogging = true;
 
-            CommandLineArgs.I.parseArgs(args, "/e=false;/+=false;/-source=false");
+            CommandLineArgs.I.parseArgs(args, "/e=false;/+=false;/-source=false;/xas=SIMPLE");
 
-            string exportPath = CommandLineArgs.I.argAsString("/x");
-            string exportDPath = CommandLineArgs.I.argAsString("/xd");
+            string exportPath = CommandLineArgs.I.argAsString("/xe");
             string exportDomainPath = CommandLineArgs.I.argAsString("/b");
             string symbolSet = CommandLineArgs.I.argAsString("/s");
             string query = CommandLineArgs.I.argAsString("/q");
@@ -46,10 +46,10 @@ namespace jmsml
             string importPath = CommandLineArgs.I.argAsString("/i");
             string legacyCode = CommandLineArgs.I.argAsString("/lc");
             string modPath = CommandLineArgs.I.argAsString("/m");
-            string imagePath = CommandLineArgs.I.argAsString("/xi");
-            string frameImagePath = CommandLineArgs.I.argAsString("/xf");
-            string amplifierImagePath = CommandLineArgs.I.argAsString("/xa");
-            string hqTFFDImagePath = CommandLineArgs.I.argAsString("/xh");
+            string framePath = CommandLineArgs.I.argAsString("/xf");
+            string amplifierPath = CommandLineArgs.I.argAsString("/xa");
+            string hqTFFDPath = CommandLineArgs.I.argAsString("/xh");
+            string exportAs = CommandLineArgs.I.argAsString("/xas").ToUpper();
 
             bool dataValidation = (CommandLineArgs.I.argAsString("/e") != "false");
             bool appendFiles = (CommandLineArgs.I.argAsString("/+") != "false");
@@ -74,33 +74,28 @@ namespace jmsml
                 Console.WriteLine("/qi=\"<expression>\"\t: Use regular expression to query on standard identity.");
                 Console.WriteLine("/s=\"<expression>\"\t: Use regular expression to query on symbol set labels.");
                 Console.WriteLine("");
-                Console.WriteLine("/x=\"<pathname>\"\t\t: Export entities and modifiers in simple format.");
-                Console.WriteLine("/xa=\"<pathname>\"\t: Export amplifiers for style file input.");
-                Console.WriteLine("/xd=\"<pathname>\"\t: Export entities and modifiers as coded domains.");
-                Console.WriteLine("/xf=\"<pathname>\"\t: Export frames for style file input.");
-                Console.WriteLine("/xh=\"<pathname>\"\t: Export HQ/TF/FD for style file input.");
-                Console.WriteLine("/xi=\"<pathname>\"\t: Export entities and modifiers for style file input.");
+                Console.WriteLine("/xa=\"<pathname>\"\t: Export amplifiers.");
+                Console.WriteLine("/xe=\"<pathname>\"\t: Export entities and modifiers.");
+                Console.WriteLine("/xf=\"<pathname>\"\t: Export frames.");
+                Console.WriteLine("/xh=\"<pathname>\"\t: Export HQ/TF/FD.");
+                Console.WriteLine("/xas=\"<as_option>\"\t: Export as SIMPLE, DOMAIN, or IMAGE.");
                 Console.WriteLine("");
                 Console.WriteLine("<Enter> to continue.");
                 Console.ReadLine();
             }
+
+            _exportAsLookup.Add("SIMPLE", ETLExportEnum.ETLExportSimple);
+            _exportAsLookup.Add("DOMAIN", ETLExportEnum.ETLExportDomain);
+            _exportAsLookup.Add("IMAGE", ETLExportEnum.ETLExportImage);
+
+            ETLExportEnum _exportThisAs = _exportAsLookup[exportAs];
 
             if (exportPath != "")
             {
                 _etl.Export(exportPath, symbolSet, query, xPoints == "/p" || xLines == "" && xAreas == "", 
                                                                 xLines == "/l" || xPoints == "" && xAreas == "",
                                                                 xAreas == "/a" || xPoints == "" && xLines == "",
-                                                                ETLExportEnum.ETLExportSimple,
-                                                                appendFiles,
-                                                                omitSource);
-            }
-
-            if (exportDPath != "")
-            {
-                _etl.Export(exportDPath, symbolSet, query, xPoints == "/p" || xLines == "" && xAreas == "",
-                                                                xLines == "/l" || xPoints == "" && xAreas == "",
-                                                                xAreas == "/a" || xPoints == "" && xLines == "",
-                                                                ETLExportEnum.ETLExportDomain,
+                                                                _exportThisAs,
                                                                 appendFiles,
                                                                 omitSource);
             }
@@ -115,29 +110,19 @@ namespace jmsml
                 _etl.Import(importPath, modPath, symbolSet, legacyCode);
             }
 
-            if (imagePath != "")
+            if (framePath != "")
             {
-                _etl.Export(imagePath, symbolSet, query, xPoints == "/p" || xLines == "" && xAreas == "",
-                                                                xLines == "/l" || xPoints == "" && xAreas == "",
-                                                                xAreas == "/a" || xPoints == "" && xLines == "",
-                                                                ETLExportEnum.ETLExportImage,
-                                                                appendFiles,
-                                                                omitSource);
+                _etl.ExportFrames(framePath, contextQuery, identityQuery, dimensionQuery, _exportThisAs, omitSource);
             }
 
-            if (frameImagePath != "")
+            if (amplifierPath != "")
             {
-                _etl.ExportFrames(frameImagePath, contextQuery, identityQuery, dimensionQuery, ETLExportEnum.ETLExportImage, omitSource);
+                _etl.ExportAmplifiers(amplifierPath, _exportThisAs, appendFiles, omitSource);
             }
 
-            if (amplifierImagePath != "")
+            if (hqTFFDPath != "")
             {
-                _etl.ExportAmplifiers(amplifierImagePath, ETLExportEnum.ETLExportImage, appendFiles, omitSource);
-            }
-
-            if (hqTFFDImagePath != "")
-            {
-                _etl.ExportHQTFFD(hqTFFDImagePath, ETLExportEnum.ETLExportImage, appendFiles, omitSource);
+                _etl.ExportHQTFFD(hqTFFDPath, _exportThisAs, appendFiles, omitSource);
             }
         }
 

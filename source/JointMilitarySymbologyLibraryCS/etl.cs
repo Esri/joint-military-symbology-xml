@@ -79,37 +79,45 @@ namespace JointMilitarySymbologyLibrary
 
                     foreach (SymbolSetEntity e in s.Entities)
                     {
-                        if (exportPoints && e.GeometryType == GeometryType.POINT ||
-                            exportLines && e.GeometryType == GeometryType.LINE ||
-                            exportAreas && e.GeometryType == GeometryType.AREA ||
-                            e.GeometryType == GeometryType.NA)
+                        if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(e.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
                         {
-
-                            if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(e.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                            if (exportPoints && e.GeometryType == GeometryType.POINT ||
+                                exportLines && e.GeometryType == GeometryType.LINE ||
+                                exportAreas && e.GeometryType == GeometryType.AREA)
                             {
                                 line = string.Format("{0}", exporter.Line(s, e, null, null));
 
                                 w.WriteLine(line);
                                 w.Flush();
                             }
+                        }
 
-                            if (e.EntityTypes != null)
+                        if (e.EntityTypes != null)
+                        {
+                            foreach (SymbolSetEntityEntityType eType in e.EntityTypes)
                             {
-                                foreach (SymbolSetEntityEntityType eType in e.EntityTypes)
+                                if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(eType.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
                                 {
-                                    if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(eType.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                                    if (exportPoints && eType.GeometryType == GeometryType.POINT ||
+                                        exportLines && eType.GeometryType == GeometryType.LINE ||
+                                        exportAreas && eType.GeometryType == GeometryType.AREA)
                                     {
                                         line = string.Format("{0}", exporter.Line(s, e, eType, null));
 
                                         w.WriteLine(line);
                                         w.Flush();
                                     }
+                                }
 
-                                    if (eType.EntitySubTypes != null)
+                                if (eType.EntitySubTypes != null)
+                                {
+                                    foreach (SymbolSetEntityEntityTypeEntitySubType eSubType in eType.EntitySubTypes)
                                     {
-                                        foreach (SymbolSetEntityEntityTypeEntitySubType eSubType in eType.EntitySubTypes)
+                                        if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(eSubType.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
                                         {
-                                            if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(eSubType.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                                            if (exportPoints && eSubType.GeometryType == GeometryType.POINT ||
+                                                exportLines && eSubType.GeometryType == GeometryType.LINE ||
+                                                exportAreas && eSubType.GeometryType == GeometryType.AREA)
                                             {
                                                 line = string.Format("{0}", exporter.Line(s, e, eType, eSubType));
 
@@ -128,20 +136,61 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        private void _exportModifiers(IModifierExport exporter, string path, string symbolSetExpression = "", string expression = "", bool append = false)
+        private void _exportModifier2(IModifierExport exporter, string path, string symbolSetExpression = "", string expression = "", bool append = false)
         {
-            // Exports sector one and sector two modifiers to CSV, by optionally testing a 
-            // regular expression against the Label attributes of the containing symbol sets
-            // and of the modifiers in those symbol sets.  It also allows for appendig the
-            // resulting output to an existing file.
-
-            // This method accepts an exporter, a light weight object that knows what column
-            // headings to return and how to compose a CSV line of output from the data its
-            // provided.
-
             using (var w = new StreamWriter(path, append))
             {
                 string line;
+                bool deleteIt = true;
+
+                // If we're appending this to another file we don't need the
+                // header line added again to that file.
+
+                if (!append)
+                {
+                    line = string.Format("{0}", exporter.Headers);
+
+                    w.WriteLine(line);
+                    w.Flush();
+                }
+
+                foreach (SymbolSet s in _symbolSets)
+                {
+                    if (symbolSetExpression != "" && !System.Text.RegularExpressions.Regex.IsMatch(s.Label, symbolSetExpression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                        continue;
+
+                    if (s.SectorTwoModifiers != null)
+                    {
+                        deleteIt = false;
+
+                        foreach (ModifiersTypeModifier mod in s.SectorTwoModifiers)
+                        {
+                            if (expression == "" ||
+                                System.Text.RegularExpressions.Regex.IsMatch(mod.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase) ||
+                                System.Text.RegularExpressions.Regex.IsMatch(mod.Category, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                            {
+                                line = string.Format("{0}", exporter.Line(s, "2", mod));
+
+                                w.WriteLine(line);
+                                w.Flush();
+                            }
+                        }
+                    }
+                }
+
+                w.Close();
+
+                if (deleteIt && !append)
+                    File.Delete(path);
+            }
+        }
+
+        private void _exportModifier1(IModifierExport exporter, string path, string symbolSetExpression = "", string expression = "", bool append = false)
+        {
+            using (var w = new StreamWriter(path, append))
+            {
+                string line;
+                bool deleteIt = true;
 
                 // If we're appending this to another file we don't need the
                 // header line added again to that file.
@@ -161,6 +210,8 @@ namespace JointMilitarySymbologyLibrary
 
                     if (s.SectorOneModifiers != null)
                     {
+                        deleteIt = false;
+
                         foreach (ModifiersTypeModifier mod in s.SectorOneModifiers)
                         {
                             if (expression == "" ||
@@ -174,26 +225,28 @@ namespace JointMilitarySymbologyLibrary
                             }
                         }
                     }
-
-                    if (s.SectorTwoModifiers != null)
-                    {
-                        foreach (ModifiersTypeModifier mod in s.SectorTwoModifiers)
-                        {
-                            if (expression == "" ||
-                                System.Text.RegularExpressions.Regex.IsMatch(mod.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase) ||
-                                System.Text.RegularExpressions.Regex.IsMatch(mod.Category, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
-                            {
-                                line = string.Format("{0}", exporter.Line(s, "2", mod));
-
-                                w.WriteLine(line);
-                                w.Flush();
-                            }
-                        }
-                    }
                 }
 
                 w.Close();
+
+                if (deleteIt && !append)
+                    File.Delete(path);
             }
+        }
+
+        private void _exportModifiers(IModifierExport exporter, string path1, string path2, string symbolSetExpression = "", string expression = "", bool append = false)
+        {
+            // Exports sector one and sector two modifiers to CSV, by optionally testing a 
+            // regular expression against the Label attributes of the containing symbol sets
+            // and of the modifiers in those symbol sets.  It also allows for appendig the
+            // resulting output to an existing file.
+
+            // This method accepts an exporter, a light weight object that knows what column
+            // headings to return and how to compose a CSV line of output from the data its
+            // provided.
+
+            _exportModifier1(exporter, path1, symbolSetExpression, expression, append);
+            _exportModifier2(exporter, path2, symbolSetExpression, expression, append);
         }
 
         private void _exportContext(string path, bool dataValidation, bool append = false, bool isFirst = false)
@@ -777,7 +830,8 @@ namespace JointMilitarySymbologyLibrary
             IModifierExport modifierExporter = null;
 
             string entityPath = path;
-            string modifierPath = path;
+            string modifier1Path = path;
+            string modifier2Path = path;
 
             switch (exportType)
             {
@@ -808,14 +862,16 @@ namespace JointMilitarySymbologyLibrary
                     // then add a string to the file name to make them unique.
 
                     entityPath = entityPath + "_Entities";
-                    modifierPath = modifierPath + "_Modifiers";
+                    modifier1Path = modifier1Path + "_Modifier_Ones";
+                    modifier2Path = modifier2Path + "_Modifier_Twos";
                 }
 
                 entityPath = entityPath + ".csv";
-                modifierPath = modifierPath + ".csv";
+                modifier1Path = modifier1Path + ".csv";
+                modifier2Path = modifier2Path + ".csv";
 
                 _exportEntities(entityExporter, entityPath, symbolSetExpression, expression, exportPoints, exportLines, exportAreas);
-                _exportModifiers(modifierExporter, modifierPath, symbolSetExpression, expression, append);
+                _exportModifiers(modifierExporter, modifier1Path, modifier2Path, symbolSetExpression, expression, append);
             }
         }
 
@@ -846,6 +902,10 @@ namespace JointMilitarySymbologyLibrary
 
             switch (exportType)
             {
+                case ETLExportEnum.ETLExportDomain:
+                    amplifierExporter = new DomainAmplifierExport(_configHelper);
+                    break;
+
                 case ETLExportEnum.ETLExportImage:
                     amplifierExporter = new ImageAmplifierExport(_configHelper, omitSource);
                     break;
@@ -904,6 +964,10 @@ namespace JointMilitarySymbologyLibrary
 
             switch (exportType)
             {
+                case ETLExportEnum.ETLExportDomain:
+                    frameExporter = new DomainFrameExport(_configHelper);
+                    break;
+
                 case ETLExportEnum.ETLExportImage:
                     frameExporter = new ImageFrameExport(_configHelper, omitSource);
                     break;
@@ -962,6 +1026,10 @@ namespace JointMilitarySymbologyLibrary
 
             switch (exportType)
             {
+                case ETLExportEnum.ETLExportDomain:
+                    hqTFFDExporter = new DomainHQTFFDExport(_configHelper);
+                    break;
+
                 case ETLExportEnum.ETLExportImage:
                     hqTFFDExporter = new ImageHQTFFDExport(_configHelper, omitSource);
                     break;

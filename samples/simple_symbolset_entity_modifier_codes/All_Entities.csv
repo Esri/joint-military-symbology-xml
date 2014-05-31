@@ -105,7 +105,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 10,Command and Control,Signal,Video Imagery (Combat Camera),111005,Point
 10,Command and Control,Tactical Satellite,,111100,Point
 10,Command and Control,Video Imagery (Combat Camera),,111200,Point
-10,Movement and Maneuver,,,120000,NotValid
 10,Movement and Maneuver,Air Assault with Organic Lift,,120100,Point
 10,Movement and Maneuver,Air Traffic Services/Airfield Operations,,120200,Point
 10,Movement and Maneuver,Amphibious,,120300,Point
@@ -145,7 +144,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 10,Movement and Maneuver,Special Operations Forces (SOF),Special SSNR,121804,Point
 10,Movement and Maneuver,Special Operations Forces (SOF),Underwater Demolition Team,121805,Point
 10,Movement and Maneuver,Unmanned Aerial Systems,,121900,Point
-10,Fires,,,130000,NotValid
 10,Fires,Air Defense,,130100,Point
 10,Fires,Air Defense,Main Gun System,130101,Point
 10,Fires,Air Defense,Missile,130102,Point
@@ -162,7 +160,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 10,Fires,Mortar,Self-Propelled Wheeled,130802,Point
 10,Fires,Mortar,Towed,130803,Point
 10,Fires,Survey,,130900,Point
-10,Protection,,,140000,NotValid
 10,Protection,Chemical Biological Radiological Nuclear Defense,,140100,Point
 10,Protection,Chemical Biological Radiological Nuclear Defense,Mechanized,140101,Point
 10,Protection,Chemical Biological Radiological Nuclear Defense,Motorized,140102,Point
@@ -194,7 +191,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 10,Protection,Security Police (Air),,141900,Point
 10,Protection,Shore Patrol,,142000,Point
 10,Protection,Topographic,,142100,Point
-10,Intelligence,,,150000,NotValid
 10,Intelligence,Analysis,,150100,Point
 10,Intelligence,Counterintelligence,,150200,Point
 10,Intelligence,Direction Finding,,150300,Point
@@ -262,9 +258,7 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 10,Sustainment,Water,,164700,Point
 10,Sustainment,Water Purification,,164800,Point
 10,Sustainment,Broadcast,,164900,Point
-10,Naval,,,170000,NotValid
 10,Naval,Naval,,170100,Point
-10,Named Headquarters,,,180000,NotValid
 10,Named Headquarters,Allied Command Europe Rapid Reaction Corps (ARRC),,180100,Point
 10,Named Headquarters,Allied Command Operations,,180200,Point
 10,Named Headquarters,International Security Assistance Force (ISAF),,180300,Point
@@ -486,7 +480,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 15,Missile Support,Crane/Loading Device,,190300,Point
 15,Missile Support,Propellant Transporter,,190400,Point
 15,Missile Support,Warhead Transporter,,190500,Point
-15,Other Equipment,,,200000,NotValid
 15,Other Equipment,Antennae,,200100,Point
 15,Other Equipment,Bomb,,200200,Point
 15,Other Equipment,Booby Trap,,200300,Point
@@ -503,13 +496,11 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 15,Other Equipment,Unit Deployment Shipments,,201400,Point
 15,Other Equipment,Emergency Medical Operation,,201500,Point
 15,Other Equipment,Emergency Medical Operation,Medical Evacuation Helicopter,201501,Point
-15,Land Mines,,,210000,NotValid
 15,Land Mines,Land Mine,,210100,Point
 15,Land Mines,Antipersonnel Land Mine (APL),,210200,Point
 15,Land Mines,Antitank Mine,,210300,Point
 15,Land Mines,Improvised Explosives Device (IED),,210400,Point
 15,Land Mines,Less than lethal,,210500,Point
-15,Sensors,,,220000,NotValid
 15,Sensors,Sensor,,220100,Point
 15,Sensors,Sensor Emplaced,,220200,Point
 15,Sensors,Radar,,220300,Point
@@ -557,7 +548,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 20,Installation,Emergency Operation,,112200,Point
 20,Installation,Emergency Operation,Fire Station,112201,Point
 20,Installation,Emergency Operation,Emergency Medical Operation,112202,Point
-20,Infrastructure,,,120000,NotValid
 20,Infrastructure,Agriculture and Food Infrastructure,,120100,Point
 20,Infrastructure,Agriculture and Food Infrastructure,Agriculture Laboratory,120101,Point
 20,Infrastructure,Agriculture and Food Infrastructure,Animal Feedlot,120102,Point
@@ -597,7 +587,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 20,Infrastructure,Energy Facility Infrastructure,Petroleum/Gas/Oil,120505,Point
 20,Infrastructure,Energy Facility Infrastructure,Propane Facility,120506,Point
 20,Infrastructure,Government Site Infrastructure,,120600,Point
-20,Infrastructure,Medical Infrastructure,,120700,NotValid
 20,Infrastructure,Medical Infrastructure,Medical,120701,Point
 20,Infrastructure,Medical Infrastructure,Medical Treatment Facility (Hospital),120702,Point
 20,Infrastructure,Military Infrastructure,,120800,Point
@@ -645,15 +634,12 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 20,Infrastructure,Water Supply Infrastructure,Wastewater Treatment Facility,121409,Point
 20,Infrastructure,Water Supply Infrastructure,Water,121410,Point
 20,Infrastructure,Water Supply Infrastructure,Water Treatment,121411,Point
-25,Command and Control Lines,,,110000,NotValid
 25,Command and Control Lines,Boundary,,110100,Line
 25,Command and Control Lines,Light Line,,110200,Line
-25,Command and Control Areas,,,120000,NotValid
 25,Command and Control Areas,Area of Operations,,120100,Area
 25,Command and Control Areas,Named Area of Interest,,120200,Area
 25,Command and Control Areas,Targeted Area of Interest,,120300,Area
 25,Command and Control Areas,Airfield Zone,,120400,Point
-25,Command and Control Points,,,130000,NotValid
 25,Command and Control Points,Action Point (General),,130100,Point
 25,Command and Control Points,Amnesty Point,,130200,Point
 25,Command and Control Points,Checkpoint,,130300,Point
@@ -663,7 +649,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Command and Control Points,Decision Point,,130700,Point
 25,Command and Control Points,Distress Call,,130800,Point
 25,Command and Control Points,Entry Control Point,,130900,Point
-25,Command and Control Points,Fly-To-Point,,131000,NotValid
 25,Command and Control Points,Fly-To-Point,Fly-To-Point (Sonobuoy),131001,Point
 25,Command and Control Points,Fly-To-Point,Fly-To-Point (Weapon),131002,Point
 25,Command and Control Points,Fly-To-Point,Fly-To-Point (Normal),131003,Point
@@ -677,8 +662,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Command and Control Points,Special Point,,131700,Point
 25,Command and Control Points,Waypoint,,131800,Point
 25,Command and Control Points,Airfield,,131900,Point
-25,Maneuver Lines,,,140000,NotValid
-25,Maneuver Lines,Forward Line of Troops,,140100,NotValid
 25,Maneuver Lines,Forward Line of Troops,Friendly Present,140101,Line
 25,Maneuver Lines,Forward Line of Troops,Friendly Planned or on Order,140102,Line
 25,Maneuver Lines,Forward Line of Troops,Enemy Known,140103,Line
@@ -688,7 +671,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Maneuver Lines,Forward Edge of the Battle Area,,140400,Line
 25,Maneuver Lines,Forward Edge of the Battle Area,Proposed or On Order,140401,Line
 25,Maneuver Lines,Principle Direction of Fire,,140500,Line
-25,Maneuver Lines,Direction of Attack,,140600,NotValid
 25,Maneuver Lines,Direction of Attack,Friendly Aviation,140601,Line
 25,Maneuver Lines,Direction of Attack,Friendly Direction of Main Attack,140602,Line
 25,Maneuver Lines,Direction of Attack,Friendly Direction of Supporting Attack,140603,Line
@@ -707,8 +689,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Maneuver Lines,Holding Line,,141500,Line
 25,Maneuver Lines,Release Line,,141600,Line
 25,Maneuver Lines,Ambush,,141700,Line
-25,Maneuver Areas,,,150000,NotValid
-25,Maneuver Areas,Area,,150100,NotValid
 25,Maneuver Areas,Area,Friendly,150101,Area
 25,Maneuver Areas,Area,Friendly Planned or On Order,150102,Area
 25,Maneuver Areas,Area,Enemy Known or Confirmed,150103,Area
@@ -718,7 +698,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Maneuver Areas,Occupied Assembly Area,Occupied Assembly Area w/ Offset Unit,150301,Area
 25,Maneuver Areas,Occupied Assembly Area,Occupied Assembly Area w/ Offset Units,150302,Area
 25,Maneuver Areas,Proposed or On Order Assembly Area,,150400,Area
-25,Maneuver Areas,Action Area,,150500,NotValid
 25,Maneuver Areas,Action Area,Joint Tactical Action Area (JTAA),150501,Area
 25,Maneuver Areas,Action Area,Submarine Action Area (SAA),150502,Area
 25,Maneuver Areas,Action Area,Submarine-Generated Action Area (SGAA),150503,Area
@@ -735,7 +714,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Maneuver Areas,Battle Position,Contain,151204,Line
 25,Maneuver Areas,Battle Position,Retain,151205,Line
 25,Maneuver Areas,Engagement Area (EA),,151300,Area
-25,Maneuver Areas,Axis of Advance,,151400,NotValid
 25,Maneuver Areas,Axis of Advance,Friendly Airborne/Aviation,151401,Line
 25,Maneuver Areas,Axis of Advance,Attack Helicopter,151402,Line
 25,Maneuver Areas,Axis of Advance,Main Attack,151403,Line
@@ -747,14 +725,12 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Maneuver Areas,Assault Position,,151500,Area
 25,Maneuver Areas,Attack Position,,151600,Area
 25,Maneuver Areas,Objective,,151700,Area
-25,Maneuver Areas,Encirclement,,151800,NotValid
 25,Maneuver Areas,Encirclement,Friendly,151801,Area
 25,Maneuver Areas,Encirclement,Enemy,151802,Area
 25,Maneuver Areas,Penetration Box,,151900,Area
 25,Maneuver Areas,Attack by Fire Position,,152000,Area
 25,Maneuver Areas,Support by Fire,,152100,Line
 25,Maneuver Areas,Search Area/Reconnaissance Area,,152200,Line
-25,Maneuver Points,,,160000,NotValid
 25,Maneuver Points,Observation Post/Outpost (Unspecified),,160100,Point
 25,Maneuver Points,Observation Post/Outpost (Specified),,160200,Point
 25,Maneuver Points,Observation Post/Outpost (Specified),Reconnaissance Outpost,160201,Point
@@ -764,7 +740,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Maneuver Points,Observation Post/Outpost (Specified),Combat Outpost,160205,Point
 25,Maneuver Points,Target Reference Point,,160300,Point
 25,Maneuver Points,Point of Departure,,160400,Point
-25,Airspace Control (Corridors) Areas,,,170000,NotValid
 25,Airspace Control (Corridors) Areas,Air Corridor,,170100,Area
 25,Airspace Control (Corridors) Areas,Air Corridor,With Multiple Segments,170101,Area
 25,Airspace Control (Corridors) Areas,Low Level Transit Route,,170200,Area
@@ -812,13 +787,9 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Airspace Control Points,Orbit - Figure Eight,,182300,Point
 25,Airspace Control Points,Orbit - Race Track,,182400,Point
 25,Airspace Control Points,Orbit - Random Closed,,182500,Point
-25,Airspace Control Lines,,,190000,NotValid
 25,Airspace Control Lines,Identification Friend or Foe Off Line,,190100,Line
 25,Airspace Control Lines,Identification Friend or Foe On Line,,190200,Line
-25,Maritime Control Areas,,,200000,NotValid
-25,Maritime Control Areas,Launch Area,,200100,NotValid
 25,Maritime Control Areas,Launch Area,Ellipse/Circle,200101,Area
-25,Maritime Control Areas,Defended Area,,200200,NotValid
 25,Maritime Control Areas,Defended Area,Ellipse/Circle,200201,Area
 25,Maritime Control Areas,Defended Area,Rectangle,200202,Area
 25,Maritime Control Areas,No Attack (NOTACK) Zone,,200300,Area
@@ -828,7 +799,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Maritime Control Areas,Active Maneuver Area,,200500,Area
 25,Maritime Control Areas,Cued Acquisition Doctrine,,200600,Area
 25,Maritime Control Areas,Radar Search Doctrine,,200700,Area
-25,Maritime Control Points,,,210000,NotValid
 25,Maritime Control Points,Plan Ship,,210100,Point
 25,Maritime Control Points,Aim Point,,210200,Point
 25,Maritime Control Points,Defended Asset,,210300,Point
@@ -940,7 +910,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Maritime Control Points,Sea Anomaly (Wake-Current-Knuckle),,219000,Point
 25,Maritime Control Points,Bottom Return/Non-MILCO-Wreck-Dangerous,,219100,Point
 25,Maritime Control Points,Bottom Return/Non-MILCO-Wreck-Non Dangerous,,219200,Point
-25,Maritime Control Lines,,,220000,NotValid
 25,Maritime Control Lines,Bearing Line,,220100,Line
 25,Maritime Control Lines,Bearing Line,Electronic,220101,Line
 25,Maritime Control Lines,Bearing Line,Electronic Warfare (EW),220102,Line
@@ -950,38 +919,29 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Maritime Control Lines,Bearing Line,Electro-Optical Intercept,220106,Line
 25,Maritime Control Lines,Bearing Line,Jammer,220107,Line
 25,Maritime Control Lines,Bearing Line,Radio Direction Finder (RDF),220108,Line
-25,Deception,,,230000,NotValid
 25,Deception,Decoy/Dummy,,230100,Line
 25,Deception,Decoy/Dummy/Feint,,230200,Line
-25,Fires Areas,,,240000,NotValid
 25,Fires Areas,Airspace Coordination Area,,240100,Point
 25,Fires Areas,Airspace Coordination Area,Irregular,240101,Area
 25,Fires Areas,Airspace Coordination Area,Rectangular,240102,Area
 25,Fires Areas,Airspace Coordination Area,Circular,240103,Area
-25,Fires Areas,Free Fire Area,,240200,NotValid
 25,Fires Areas,Free Fire Area,Irregular,240201,Area
 25,Fires Areas,Free Fire Area,Rectangular,240202,Area
 25,Fires Areas,Free Fire Area,Circular,240203,Area
-25,Fires Areas,No Fire Area,,240300,NotValid
 25,Fires Areas,No Fire Area,Irregular,240301,Area
 25,Fires Areas,No Fire Area,Rectangular,240302,Area
 25,Fires Areas,No Fire Area,Circular,240303,Area
-25,Fires Areas,Restricted Fire Area,,240400,NotValid
 25,Fires Areas,Restricted Fire Area,Irregular,240401,Area
 25,Fires Areas,Restricted Fire Area,Rectangular,240402,Area
 25,Fires Areas,Restricted Fire Area,Circular,240403,Area
-25,Fires Areas,Position Area For Artillery (PAA),,240500,NotValid
 25,Fires Areas,Position Area For Artillery (PAA),Rectangular,240501,Area
 25,Fires Areas,Position Area For Artillery (PAA),Circular,240502,Area
-25,Fires Areas,Point Targets,,240600,NotValid
 25,Fires Areas,Point Targets,Point or Single Target,240601,Point
 25,Fires Areas,Point Targets,Nuclear Target,240602,Point
 25,Fires Areas,Point Targets,Target-Recorded,240603,Point
-25,Fires Areas,Linear Targets,,240700,NotValid
 25,Fires Areas,Linear Targets,Linear Target,240701,Line
 25,Fires Areas,Linear Targets,Linear Smoke Target,240702,Line
 25,Fires Areas,Linear Targets,Final Protective Fire (FPF),240703,Line
-25,Fires Areas,Area Targets,,240800,NotValid
 25,Fires Areas,Area Targets,Area Target,240801,Area
 25,Fires Areas,Area Targets,Rectangular Target,240802,Area
 25,Fires Areas,Area Targets,Circular Target,240803,Area
@@ -991,84 +951,67 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Fires Areas,Area Targets,Smoke Planned or On Order,240807,Area
 25,Fires Areas,Area Targets,Bomb Area,240808,Area
 25,Fires Areas,Fire Support Station,,240900,Point
-25,Fires Areas,Fire Support Area,,241000,NotValid
 25,Fires Areas,Fire Support Area,Irregular,241001,Area
 25,Fires Areas,Fire Support Area,Rectangular,241002,Area
 25,Fires Areas,Fire Support Area,Circular,241003,Area
-25,Fires Areas,Artillery Target Intelligence Zone,,241100,NotValid
 25,Fires Areas,Artillery Target Intelligence Zone,Irregular,241101,Area
 25,Fires Areas,Artillery Target Intelligence Zone,Rectangular,241102,Area
 25,Fires Areas,Artillery Target Intelligence Zone,Circular,241103,Area
-25,Fires Areas,Call for Fire Area,,241200,NotValid
 25,Fires Areas,Call for Fire Area,Irregular,241201,Area
 25,Fires Areas,Call for Fire Area,Rectangular,241202,Area
 25,Fires Areas,Call for Fire Area,Circular,241203,Area
-25,Fires Areas,Censor Zone,,241300,NotValid
 25,Fires Areas,Censor Zone,Irregular,241301,Area
 25,Fires Areas,Censor Zone,Rectangular,241302,Area
 25,Fires Areas,Censor Zone,Circular,241303,Area
-25,Fires Areas,Critical Friendly Zone,,241400,NotValid
 25,Fires Areas,Critical Friendly Zone,Irregular,241401,Area
 25,Fires Areas,Critical Friendly Zone,Rectangular,241402,Area
 25,Fires Areas,Critical Friendly Zone,Circular,241403,Area
-25,Fires Areas,Dead Space Area,,241500,NotValid
 25,Fires Areas,Dead Space Area,Irregular,241501,Area
 25,Fires Areas,Dead Space Area,Rectangular,241502,Area
 25,Fires Areas,Dead Space Area,Circular,241503,Area
-25,Fires Areas,Sensor Zone,,241600,NotValid
 25,Fires Areas,Sensor Zone,Irregular,241601,Area
 25,Fires Areas,Sensor Zone,Rectangular,241602,Area
 25,Fires Areas,Sensor Zone,Circular,241603,Area
-25,Fires Areas,Target Build-up Area,,241700,NotValid
 25,Fires Areas,Target Build-up Area,Irregular,241701,Area
 25,Fires Areas,Target Build-up Area,Rectangular,241702,Area
 25,Fires Areas,Target Build-up Area,Circular,241703,Area
-25,Fires Areas,Target Value Area,,241800,NotValid
 25,Fires Areas,Target Value Area,Irregular,241801,Area
 25,Fires Areas,Target Value Area,Rectangular,241802,Area
 25,Fires Areas,Target Value Area,Circular,241803,Area
-25,Fires Areas,Zone of Responsibility,,241900,NotValid
 25,Fires Areas,Zone of Responsibility,Irregular,241901,Point
 25,Fires Areas,Zone of Responsibility,Rectangular,241902,Point
 25,Fires Areas,Zone of Responsibility,Circular,241903,Point
 25,Fires Areas,Terminally Guided Munition Footprint (TGMF),,242000,Area
 25,Fires Areas,Weapon/Sensor Range fan-Circular,,242100,Area
 25,Fires Areas,Weapon/Sensor Range fan-Sector,,242200,Area
-25,Fires Areas,Kill Box,,242300,NotValid
 25,Fires Areas,Kill Box,Irregular-Blue,242301,Area
 25,Fires Areas,Kill Box,Rectangular-Blue,242302,Area
 25,Fires Areas,Kill Box,Circular-Blue,242303,Area
 25,Fires Areas,Kill Box,Irregular-Purple,242304,Area
 25,Fires Areas,Kill Box,Rectangular-Purple,242305,Area
 25,Fires Areas,Kill Box,Circular-Purple,242306,Area
-25,Fires Points,,,250000,NotValid
 25,Fires Points,Firing Point,,250100,Point
 25,Fires Points,Hide Point,,250200,Point
 25,Fires Points,Launch Point,,250300,Point
 25,Fires Points,Reload Point,,250400,Point
 25,Fires Points,Survey Control Point,,250500,Point
-25,Fire Lines,,,260000,NotValid
 25,Fire Lines,Fire Support Coordination Line (FSCL),,260100,Line
 25,Fire Lines,Coordinated Fire Line (CFL),,260200,Line
 25,Fire Lines,No Fire Line,,260300,Line
 25,Fire Lines,Battlefield Coordination Line,,260400,Line
 25,Fire Lines,Restrictive Fire Line,,260500,Line
 25,Fire Lines,Munition Flight Path,,260600,Line
-25,Protection Areas,,,270000,NotValid
 25,Protection Areas,Obstacle Belt,,270100,Area
 25,Protection Areas,Obstacle Zone,,270200,Area
 25,Protection Areas,Obstacle Free Zone,,270300,Area
 25,Protection Areas,Obstacle Restricted Zone,,270400,Area
-25,Protection Areas,Obstacle Effects,,270500,NotValid
 25,Protection Areas,Obstacle Effects,Block,270501,Line
 25,Protection Areas,Obstacle Effects,Disrupt,270502,Line
 25,Protection Areas,Obstacle Effects,Fix,270503,Line
 25,Protection Areas,Obstacle Effects,Turn,270504,Line
-25,Protection Areas,Obstacle Bypass,,270600,NotValid
 25,Protection Areas,Obstacle Bypass,Easy,270601,Line
 25,Protection Areas,Obstacle Bypass,Difficult,270602,Line
 25,Protection Areas,Obstacle Bypass,Impossible,270603,Line
-25,Protection Areas,Minefield,,270700,NotValid
 25,Protection Areas,Minefield,Completed,270701,Area
 25,Protection Areas,Minefield,Planned,270702,Area
 25,Protection Areas,Minefield,Known Enemy,270703,Area
@@ -1081,7 +1024,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Protection Areas,Decoy Mined Area,Fenced,270901,Area
 25,Protection Areas,Unexploded Explosive Ordnance (UXO) Area,,271000,Area
 25,Protection Areas,Bridge or Gap,,271100,Area
-25,Protection Areas,Roadblocks- Craters and Blown Bridges,,271200,NotValid
 25,Protection Areas,Roadblocks- Craters and Blown Bridges,Planned,271201,Line
 25,Protection Areas,Roadblocks- Craters and Blown Bridges,Explosives-State of Readiness 1 (Safe),271202,Line
 25,Protection Areas,Roadblocks- Craters and Blown Bridges,Explosives-State of Readiness 2 (armed but passable),271203,Line
@@ -1099,7 +1041,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Protection Areas,Radiological Contaminated Area,Toxic Industrial Material,272001,Area
 25,Protection Areas,Minimum Safe Distance Zone,,272100,Area
 25,Protection Areas,Radiation Dose Rate Contour Lines,,272200,Area
-25,Protection Points,,,280000,NotValid
 25,Protection Points,Abatis,,280100,Line
 25,Protection Points,Antipersonnel Mine,,280200,Point
 25,Protection Points,Antipersonnel Mine,Antipersonnel Mine with Directional Effects,280201,Point
@@ -1131,22 +1072,17 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Protection Points,General Decontamination Point/Site,Main Equipment,281807,Point
 25,Protection Points,General Decontamination Point/Site,Forward Troop,281808,Point
 25,Protection Points,General Decontamination Point/Site,Wounded Personnel,281809,Point
-25,Protection Points,Tetrahedrons- Dragons Teeth- and Other Similar Obstacles,,281900,NotValid
 25,Protection Points,Tetrahedrons- Dragons Teeth- and Other Similar Obstacles,Fixed and Prefabricated,281901,Point
 25,Protection Points,Tetrahedrons- Dragons Teeth- and Other Similar Obstacles,Movable,281902,Point
 25,Protection Points,Tetrahedrons- Dragons Teeth- and Other Similar Obstacles,Movable and Prefabricated,281903,Point
-25,Protection Points,Vertical Obstructions,,282000,NotValid
 25,Protection Points,Vertical Obstructions,Tower-Low,282001,Point
 25,Protection Points,Vertical Obstructions,Tower-High,282002,Point
 25,Protection Points,Vertical Obstructions,Overhead Wire,282003,Line
-25,Protection Lines,,,290000,NotValid
 25,Protection Lines,Obstacle Line,,290100,Line
-25,Protection Lines,Antitank Obstacles,,290200,NotValid
 25,Protection Lines,Antitank Obstacles,Under Construction,290201,Line
 25,Protection Lines,Antitank Obstacles,Completed,290202,Line
 25,Protection Lines,Antitank Obstacles,Reinforced-with Antitank Mines,290203,Line
 25,Protection Lines,Antitank Obstacles,Antitank Wall,290204,Line
-25,Protection Lines,Wire Obstacles,,290300,NotValid
 25,Protection Lines,Wire Obstacles,Unspecified Wire,290301,Line
 25,Protection Lines,Wire Obstacles,Single Fence Wire,290302,Line
 25,Protection Lines,Wire Obstacles,Double Fence Wire,290303,Line
@@ -1163,9 +1099,7 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Protection Lines,Raft Site,,290800,Line
 25,Protection Lines,Fortified Line,,290900,Line
 25,Protection Lines,Fortified Position,,291000,Line
-25,Intelligence Lines,,,300000,NotValid
 25,Intelligence Lines,Intelligence Coordination Line,,300100,Line
-25,Sustainment Areas,,,310000,NotValid
 25,Sustainment Areas,Detainee Holding Area,,310100,Area
 25,Sustainment Areas,Enemy Prisoner of War Holding Area,,310200,Area
 25,Sustainment Areas,Forward Arming and Refueling Point,,310300,Area
@@ -1173,7 +1107,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Sustainment Areas,Regimental Support Area,,310500,Area
 25,Sustainment Areas,Brigade Support Area,,310600,Area
 25,Sustainment Areas,Division Support Area,,310700,Area
-25,Sustainment Points,,,320000,NotValid
 25,Sustainment Points,Ambulance Exchange Point,,320100,Point
 25,Sustainment Points,Ammunition Supply Point,,320200,Point
 25,Sustainment Points,Ammunition Transfer Point,,320300,Point
@@ -1208,7 +1141,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Sustainment Points,General Supply Point,US Class IX Supply Point,321715,Point
 25,Sustainment Points,General Supply Point,US Class X Supply Point,321716,Point
 25,Sustainment Points,Medical Supply Point,,321800,Point
-25,Sustainment Lines,,,330000,NotValid
 25,Sustainment Lines,Moving Convoy,,330100,Line
 25,Sustainment Lines,Halted Convoy,,330200,Line
 25,Sustainment Lines,Main Supply Route,,330300,Line
@@ -1219,7 +1151,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Sustainment Lines,Alternate Supply Route,One Way Traffic,330401,Line
 25,Sustainment Lines,Alternate Supply Route,Two Way Traffic,330402,Line
 25,Sustainment Lines,Alternate Supply Route,Alternating Traffic,330403,Line
-25,Mission Tasks,,,340000,NotValid
 25,Mission Tasks,Block,,340100,Line
 25,Mission Tasks,Breach,,340200,Line
 25,Mission Tasks,Bypass,,340300,Line
@@ -1241,7 +1172,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 25,Mission Tasks,Relief in Place (RIP),,341900,Line
 25,Mission Tasks,Retire/Retirement,,342000,Line
 25,Mission Tasks,Secure,,342100,Line
-25,Mission Tasks,Security,,342200,NotValid
 25,Mission Tasks,Security,Cover,342201,Line
 25,Mission Tasks,Security,Guard,342202,Line
 25,Mission Tasks,Security,Screen,342203,Line
@@ -1426,7 +1356,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 36,Non-Mine Mine-Like Object (NMLO)-General,Non-Mine Mine-Like Object-Floating,,190300,Point
 36,Environmental Report Location,,,200000,Point
 36,Dive Report Location,,,210000,Point
-40,Incident,,,110000,NotValid
 40,Incident,Criminal Activity Incident,,110100,Point
 40,Incident,Criminal Activity Incident,Arrest,110101,Point
 40,Incident,Criminal Activity Incident,Arson,110102,Point
@@ -1472,12 +1401,10 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 40,Incident,Explosion,Bomb Explosion,110606,Point
 40,Civil Disturbance,,,120000,Point
 40,Civil Disturbance,Demonstration,,120100,Point
-40,Operation,,,130000,NotValid
 40,Operation,Patrolling,,130100,Point
 40,Operation,Military Information Support Operation (MISO),,130200,Point
 40,Operation,Military Information Support Operation (MISO),TV and Radio Propaganda,130201,Point
 40,Operation,Foraging/Searching,,130300,Point
-40,Operation,Recruitment,,130400,NotValid
 40,Operation,Recruitment,Willing,130401,Point
 40,Operation,Recruitment,Coerced/Impressed,130402,Point
 40,Operation,Mine Laying,,130500,Point
@@ -1531,7 +1458,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 40,Fire Event,School Fire,,140600,Point
 40,Fire Event,Special Needs Fire,,140700,Point
 40,Fire Event,Wild Fire,,140800,Point
-40,Hazard Materials,,,150000,NotValid
 40,Hazard Materials,Hazard Materials Incident,,150100,Point
 40,Hazard Materials,Hazard Materials Incident,Chemical Agent,150101,Point
 40,Hazard Materials,Hazard Materials Incident,Corrosive Material,150102,Point
@@ -1574,17 +1500,14 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 40,Natural Event,Infestation,Microbial,170303,Point
 40,Natural Event,Infestation,Reptile,170304,Point
 40,Natural Event,Infestation,Rodent,170305,Point
-40,Individual,,,180000,NotValid
 40,Individual,Religious Leader,,180100,Point
 40,Individual,Speaker,,180200,Point
-45,Pressure Systems,,,110000,NotValid
 45,Pressure Systems,Low Pressure Center,,110100,Point
 45,Pressure Systems,Low Pressure Center,Cyclone Center,110101,Point
 45,Pressure Systems,Low Pressure Center,Tropopause Low,110102,Point
 45,Pressure Systems,High Pressure Center,,110200,Point
 45,Pressure Systems,High Pressure Center,Anticyclone Center,110201,Point
 45,Pressure Systems,High Pressure Center,Tropopause High,110202,Point
-45,Pressure Systems,Frontal Systems,,110300,NotValid
 45,Pressure Systems,Frontal Systems,Cold Front,110301,Line
 45,Pressure Systems,Frontal Systems,Upper Cold Front,110302,Line
 45,Pressure Systems,Frontal Systems,Cold Frontogenesis,110303,Line
@@ -1600,7 +1523,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 45,Pressure Systems,Frontal Systems,Upper Stationary Front,110313,Line
 45,Pressure Systems,Frontal Systems,Stationary Frontogenesis,110314,Line
 45,Pressure Systems,Frontal Systems,Stationary Frontolysis,110315,Line
-45,Pressure Systems,Lines,,110400,NotValid
 45,Pressure Systems,Lines,Trough Axis,110401,Line
 45,Pressure Systems,Lines,Upper Trough Axis,110402,Line
 45,Pressure Systems,Lines,Ridge Axis,110403,Line
@@ -1610,7 +1532,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 45,Pressure Systems,Lines,Inter-Tropical Convergence Zone,110407,Line
 45,Pressure Systems,Lines,Convergence Line,110408,Line
 45,Pressure Systems,Lines,Inter-Tropical Discontinuity,110409,Line
-45,Pressure Systems,Pressure Tendency,,110500,NotValid
 45,Pressure Systems,Pressure Tendency,Rise Then Fall Higher,110501,Point
 45,Pressure Systems,Pressure Tendency,Rise Then Steady,110502,Point
 45,Pressure Systems,Pressure Tendency,Rise,110503,Point
@@ -1620,64 +1541,49 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 45,Pressure Systems,Pressure Tendency,Fall Then Steady,110507,Point
 45,Pressure Systems,Pressure Tendency,Fall,110508,Point
 45,Pressure Systems,Pressure Tendency,Rise Then Fall Lower,110509,Point
-45,Turbulence,,,120000,NotValid
 45,Turbulence,Light,,120100,Point
 45,Turbulence,Moderate,,120200,Point
 45,Turbulence,Severe,,120300,Point
 45,Turbulence,Extreme,,120400,Point
 45,Turbulence,Mountain Waves,,120500,Point
-45,Icing,,,130000,NotValid
-45,Icing,Clear Icing,,130100,NotValid
 45,Icing,Clear Icing,Light,130101,Point
 45,Icing,Clear Icing,Moderate,130102,Point
 45,Icing,Clear Icing,Severe,130103,Point
-45,Icing,Rime Icing,,130200,NotValid
 45,Icing,Rime Icing,Light,130201,Point
 45,Icing,Rime Icing,Moderate,130202,Point
 45,Icing,Rime Icing,Severe,130203,Point
-45,Icing,Mixed Icing,,130300,NotValid
 45,Icing,Mixed Icing,Light,130301,Point
 45,Icing,Mixed Icing,Moderate,130302,Point
 45,Icing,Mixed Icing,Severe,130303,Point
-45,Winds,,,140000,NotValid
 45,Winds,Calm Winds,,140100,Point
 45,Winds,Wind Plot,,140200,Point
 45,Winds,Jet Stream,,140300,Line
 45,Winds,Stream Line,,140400,Line
-45,Cloud Cover,,,150000,NotValid
-45,Cloud Cover,Cloud Coverage Symbols,,150100,NotValid
 45,Cloud Cover,Cloud Coverage Symbols,Clear Sky,150101,Point
 45,Cloud Cover,Cloud Coverage Symbols,Few Coverage,150102,Point
 45,Cloud Cover,Cloud Coverage Symbols,Scattered Coverage,150103,Point
 45,Cloud Cover,Cloud Coverage Symbols,Broken Coverage,150104,Point
 45,Cloud Cover,Cloud Coverage Symbols,Overcast Coverage,150105,Point
 45,Cloud Cover,Cloud Coverage Symbols,Sky Totally or Partially Obscured,150106,Point
-45,Weather Symbols,,,160000,NotValid
-45,Weather Symbols,Rain,,160100,NotValid
 45,Weather Symbols,Rain,Intermittent Light,160101,Point
 45,Weather Symbols,Rain,Continuous Light,160102,Point
 45,Weather Symbols,Rain,Intermittent Moderate,160103,Point
 45,Weather Symbols,Rain,Intermittent Moderate/Continuous Moderate,160104,Point
 45,Weather Symbols,Rain,Intermittent Heavy,160105,Point
 45,Weather Symbols,Rain,Intermittent Heavy/Continuous Heavy,160106,Point
-45,Weather Symbols,Freezing Rain,,160200,NotValid
 45,Weather Symbols,Freezing Rain,Light,160201,Point
 45,Weather Symbols,Freezing Rain,Moderate/Heavy,160202,Point
-45,Weather Symbols,Rain Showers,,160300,NotValid
 45,Weather Symbols,Rain Showers,Light,160301,Point
 45,Weather Symbols,Rain Showers,Moderate/Heavy,160302,Point
 45,Weather Symbols,Rain Showers,Torrential,160303,Point
-45,Weather Symbols,Drizzle,,160400,NotValid
 45,Weather Symbols,Drizzle,Intermittent Light,160401,Point
 45,Weather Symbols,Drizzle,Intermittent Light/Continuous Light,160402,Point
 45,Weather Symbols,Drizzle,Intermittent Moderate,160403,Point
 45,Weather Symbols,Drizzle,Intermittent Moderate/Continuous Moderate,160404,Point
 45,Weather Symbols,Drizzle,Intermittent Heavy,160405,Point
 45,Weather Symbols,Drizzle,Intermittent Heavy/Continuous Heavy,160406,Point
-45,Weather Symbols,Freezing Drizzle,,160500,NotValid
 45,Weather Symbols,Freezing Drizzle,Light,160501,Point
 45,Weather Symbols,Freezing Drizzle,Moderate/Heavy,160502,Point
-45,Weather Symbols,Rain and Snow Mixed,,160600,NotValid
 45,Weather Symbols,Rain and Snow Mixed,Rain or Drizzle and Snow - Light,160601,Point
 45,Weather Symbols,Rain and Snow Mixed,Rain or Drizzle and Snow - Moderate/Heavy,160602,Point
 45,Weather Symbols,Rain and Snow Mixed,Rain and Snow Showers - Light,160603,Point
@@ -1692,19 +1598,15 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 45,Weather Symbols,Snow,Blowing Snow - Light/Moderate,160707,Point
 45,Weather Symbols,Snow,Blowing Snow - Heavy,160708,Point
 45,Weather Symbols,Snow Grains,,160800,Point
-45,Weather Symbols,Snow Showers,,160900,NotValid
 45,Weather Symbols,Snow Showers,Light,160901,Point
 45,Weather Symbols,Snow Showers,Moderate/Heavy,160902,Point
-45,Weather Symbols,Hail,,161000,NotValid
 45,Weather Symbols,Hail,Light not Associated with Thunder,161001,Point
 45,Weather Symbols,Hail,Moderate/Heavy not Associated with Thunder,161002,Point
 45,Weather Symbols,Ice Crystals (Diamond Dust),,161100,Point
-45,Weather Symbols,Ice Pellets (Sleet),,161200,NotValid
 45,Weather Symbols,Ice Pellets (Sleet),Light,161201,Point
 45,Weather Symbols,Ice Pellets (Sleet),Moderate,161202,Point
 45,Weather Symbols,Ice Pellets (Sleet),Heavy,161203,Point
 45,Weather Symbols,Inversion,,161300,Point
-45,Weather Symbols,Storms,,161400,NotValid
 45,Weather Symbols,Storms,Thunderstorm - No Precipitation,161401,Point
 45,Weather Symbols,Storms,Thunderstorm Light to Moderate with Rain/Snow - No Hail,161402,Point
 45,Weather Symbols,Storms,Thunderstorm Heavy with Rain/Snow - No Hail,161403,Point
@@ -1713,7 +1615,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 45,Weather Symbols,Storms,Funnel Cloud (Tornado/Waterspout),161406,Point
 45,Weather Symbols,Storms,Squall,161407,Point
 45,Weather Symbols,Storms,Lightning,161408,Point
-45,Weather Symbols,Fog,,161500,NotValid
 45,Weather Symbols,Fog,Shallow Patches,161501,Point
 45,Weather Symbols,Fog,Shallow Continuous,161502,Point
 45,Weather Symbols,Fog,Patchy,161503,Point
@@ -1724,12 +1625,10 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 45,Weather Symbols,Mist,,161600,Point
 45,Weather Symbols,Smoke,,161700,Point
 45,Weather Symbols,Haze,,161800,Point
-45,Weather Symbols,Dust or Sand,,161900,NotValid
 45,Weather Symbols,Dust or Sand,Light to Moderate,161901,Point
 45,Weather Symbols,Dust or Sand,Severe,161902,Point
 45,Weather Symbols,Dust or Sand,Dust Devil,161903,Point
 45,Weather Symbols,Dust or Sand,Blowing Dust or Sand,161904,Point
-45,Weather Symbols,Tropical Storm Systems,,162000,NotValid
 45,Weather Symbols,Tropical Storm Systems,Tropical Depression,162001,Point
 45,Weather Symbols,Tropical Storm Systems,Tropical Storm,162002,Point
 45,Weather Symbols,Tropical Storm Systems,Hurricane/Typhoon,162003,Point
@@ -1739,7 +1638,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 45,Weather Symbols,Tropopause Level,,162200,Point
 45,Weather Symbols,Freezing Level,,162300,Point
 45,Weather Symbols,Precipitation of Unknown Type and Intensity,,162400,Point
-45,Bounded Areas of Weather,,,170000,NotValid
 45,Bounded Areas of Weather,Instrument Flight Rule (IFR),,170100,Area
 45,Bounded Areas of Weather,Marginal Visual Flight Rule (MVFR),,170200,Area
 45,Bounded Areas of Weather,Turbulence,,170300,Area
@@ -1751,7 +1649,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 45,Bounded Areas of Weather,Fog,,170800,Area
 45,Bounded Areas of Weather,Dust or Sand,,170900,Area
 45,Bounded Areas of Weather,Operator-Defined Freeform,,171000,Area
-45,Isopleths,,,180000,NotValid
 45,Isopleths,Isobar - Surface,,180100,Line
 45,Isopleths,Contour - Upper Air,,180200,Line
 45,Isopleths,Isotherm,,180300,Line
@@ -1759,8 +1656,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 45,Isopleths,Isodrosotherm,,180500,Line
 45,Isopleths,Thickness,,180600,Line
 45,Isopleths,Operator-Defined Freeform,,180700,Line
-45,State of the Ground,,,190000,NotValid
-45,State of the Ground,Without Snow or Measurable Ice Cover,,190100,NotValid
 45,State of the Ground,Without Snow or Measurable Ice Cover,Surface Dry Without Cracks or Appreciable Dust or Loose Sand,190101,Point
 45,State of the Ground,Without Snow or Measurable Ice Cover,Surface Moist,190102,Point
 45,State of the Ground,Without Snow or Measurable Ice Cover,Surface Wet-Standing Water in Small or Large Pools,190103,Point
@@ -1771,7 +1666,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 45,State of the Ground,Without Snow or Measurable Ice Cover,Thin Loose Dry Dust or Sand Covering Ground Completely,190108,Point
 45,State of the Ground,Without Snow or Measurable Ice Cover,Moderate/Thick Loose Dry Dust or Sand Covering Ground Completely,190109,Point
 45,State of the Ground,Without Snow or Measurable Ice Cover,Extremely Dry with Cracks,190110,Point
-45,State of the Ground,With Snow or Measurable Ice Cover,,190200,NotValid
 45,State of the Ground,With Snow or Measurable Ice Cover,Predominately Ice Covered,190201,Point
 45,State of the Ground,With Snow or Measurable Ice Cover,Compact or Wet Snow (with or without Ice) Covering Less Than One-Half of Ground,190202,Point
 45,State of the Ground,With Snow or Measurable Ice Cover,Compact or Wet Snow (with or without Ice) Covering  at Least One-Half of Ground-but Ground not Completely Covered,190203,Point
@@ -1782,8 +1676,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 45,State of the Ground,With Snow or Measurable Ice Cover,Even Layer of Loose Dry Snow Covering Ground Completely,190208,Point
 45,State of the Ground,With Snow or Measurable Ice Cover,Uneven Layer of Loose Dry Snow Covering Ground Completely,190209,Point
 45,State of the Ground,With Snow or Measurable Ice Cover,Snow Covering Ground Completely-Deep Drifts,190210,Point
-46,Ice Systems,,,110000,NotValid
-46,Ice Systems,Icebergs,,110100,NotValid
 46,Ice Systems,Icebergs,Many Icebergs,110101,Point
 46,Ice Systems,Icebergs,Belts and Strips,110102,Point
 46,Ice Systems,Icebergs,General,110103,Point
@@ -1794,11 +1686,9 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 46,Ice Systems,Icebergs,Many Growlers,110108,Point
 46,Ice Systems,Icebergs,Floeberg,110109,Point
 46,Ice Systems,Icebergs,Ice Island,110110,Point
-46,Ice Systems,Ice Concentration,,110200,NotValid
 46,Ice Systems,Ice Concentration,Bergy Water,110201,Point
 46,Ice Systems,Ice Concentration,Water with Radar Targets,110202,Point
 46,Ice Systems,Ice Concentration,Ice Free,110203,Point
-46,Ice Systems,Dynamic Processes,,110300,NotValid
 46,Ice Systems,Dynamic Processes,Convergence,110301,Point
 46,Ice Systems,Dynamic Processes,Divergence,110302,Point
 46,Ice Systems,Dynamic Processes,Shearing or Shear Zone,110303,Point
@@ -1807,7 +1697,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 46,Ice Systems,Sea Ice,Ice Thickness (Observed),110401,Point
 46,Ice Systems,Sea Ice,Ice Thickness (Estimated),110402,Point
 46,Ice Systems,Sea Ice,Melt Puddles or Flooded Ice,110403,Point
-46,Ice Systems,Limits,,110500,NotValid
 46,Ice Systems,Limits,Limits of Visual Observation,110501,Line
 46,Ice Systems,Limits,Limits of Under Cast,110502,Line
 46,Ice Systems,Limits,Limits of Radar Observation,110503,Line
@@ -1821,25 +1710,19 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 46,Ice Systems,Openings in the Ice,Frozen Lead,110604,Line
 46,Ice Systems,Snow Cover,,110700,Point
 46,Ice Systems,Snow Cover,Sastrugi (with Orientation),110701,Point
-46,Ice Systems,Topographical Features,,110800,NotValid
 46,Ice Systems,Topographical Features,Ridges or Hummocks,110801,Point
 46,Ice Systems,Topographical Features,Rafting,110802,Point
 46,Ice Systems,Topographical Features,Jammed Brash Barrier,110803,Point
-46,Hydrography,,,120000,NotValid
-46,Hydrography,Depth,,120100,NotValid
 46,Hydrography,Depth,Soundings,120101,Point
 46,Hydrography,Depth,Depth Curve,120102,Line
 46,Hydrography,Depth,Depth Contour,120103,Line
 46,Hydrography,Depth,Depth Area,120104,Area
-46,Hydrography,Coastal Hydrography,,120200,NotValid
 46,Hydrography,Coastal Hydrography,Coastline,120201,Line
 46,Hydrography,Coastal Hydrography,Island,120202,Area
 46,Hydrography,Coastal Hydrography,Beach,120203,Area
 46,Hydrography,Coastal Hydrography,Water,120204,Area
 46,Hydrography,Coastal Hydrography,Foreshore - Line,120205,Line
 46,Hydrography,Coastal Hydrography,Foreshore - Area,120206,Area
-46,Hydrography,Ports and Harbors,,120300,NotValid
-46,Hydrography,Ports and Harbors,Ports,120301,NotValid
 46,Hydrography,Ports and Harbors,Berths (Onshore),120302,Point
 46,Hydrography,Ports and Harbors,Berths (Anchor),120303,Point
 46,Hydrography,Ports and Harbors,Anchorage - Point,120304,Point
@@ -1851,7 +1734,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 46,Hydrography,Ports and Harbors,Fish Weirs - Point,120310,Point
 46,Hydrography,Ports and Harbors,Fish Stakes - Point,120311,Point
 46,Hydrography,Ports and Harbors,Fish Traps - Area,120312,Area
-46,Hydrography,Ports and Harbors,Facilities,120313,NotValid
 46,Hydrography,Ports and Harbors,Drydock,120314,Area
 46,Hydrography,Ports and Harbors,Landing Place,120315,Point
 46,Hydrography,Ports and Harbors,Offshore Loading Facility - Point,120316,Point
@@ -1867,7 +1749,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 46,Hydrography,Ports and Harbors,Breakwater/Groin/Jetty - Above Water,120326,Line
 46,Hydrography,Ports and Harbors,Breakwater/Groin/Jetty - Below Water,120327,Line
 46,Hydrography,Ports and Harbors,Seawall,120328,Line
-46,Hydrography,Aids to Navigation,,120400,NotValid
 46,Hydrography,Aids to Navigation,Beacon,120401,Point
 46,Hydrography,Aids to Navigation,Buoy Default,120402,Point
 46,Hydrography,Aids to Navigation,Marker,120403,Point
@@ -1877,7 +1758,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 46,Hydrography,Aids to Navigation,Leading Line,120407,Line
 46,Hydrography,Aids to Navigation,Light Vessel/Light Ship,120408,Point
 46,Hydrography,Aids to Navigation,Lighthouse,120409,Point
-46,Hydrography,Dangers/Hazards,,120500,NotValid
 46,Hydrography,Dangers/Hazards,Rock Submerged,120501,Point
 46,Hydrography,Dangers/Hazards,Rock Awashed,120502,Point
 46,Hydrography,Dangers/Hazards,Underwater Danger/Hazard,120503,Area
@@ -1892,7 +1772,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 46,Hydrography,Dangers/Hazards,Reef,120512,Line
 46,Hydrography,Dangers/Hazards,Eddies/Overfalls/Tide Rips,120513,Point
 46,Hydrography,Dangers/Hazards,Discolored Water,120514,Area
-46,Hydrography,Bottom Features,,120600,NotValid
 46,Hydrography,Bottom Features,Bottom Characteristics - Sand,120601,Point
 46,Hydrography,Bottom Features,Bottom Characteristics - Mud,120602,Point
 46,Hydrography,Bottom Features,Bottom Characteristics - Clay,120603,Point
@@ -1907,14 +1786,11 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 46,Hydrography,Bottom Features,Qualifying Terms - Fine,120612,Point
 46,Hydrography,Bottom Features,Qualifying Terms - Medium,120613,Point
 46,Hydrography,Bottom Features,Qualifying Terms - Coarse,120614,Point
-46,Hydrography,Tide and Current,,120700,NotValid
 46,Hydrography,Tide and Current,Water Turbulence,120701,Point
 46,Hydrography,Tide and Current,Current Flow - Ebb,120702,Line
 46,Hydrography,Tide and Current,Current Flow - Flood,120703,Line
 46,Hydrography,Tide and Current,Tide Data Point,120704,Point
 46,Hydrography,Tide and Current,Tide Gauge,120705,Point
-46,Oceanography,,,130000,NotValid
-46,Oceanography,Bioluminescence,,130100,NotValid
 46,Oceanography,Bioluminescence,Visual Detection Ratio (VDR) Level 1-2,130101,Area
 46,Oceanography,Bioluminescence,VDR Level 2-3,130102,Area
 46,Oceanography,Bioluminescence,VDR Level 3-4,130103,Area
@@ -1924,13 +1800,10 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 46,Oceanography,Bioluminescence,VDR Level 7-8,130107,Area
 46,Oceanography,Bioluminescence,VDR Level 8-9,130108,Area
 46,Oceanography,Bioluminescence,VDR Level 9-10,130109,Area
-46,Oceanography,Beach Slope,,130200,NotValid
 46,Oceanography,Beach Slope,Flat,130201,Area
 46,Oceanography,Beach Slope,Gentle,130202,Area
 46,Oceanography,Beach Slope,Moderate,130203,Area
 46,Oceanography,Beach Slope,Steep,130204,Area
-46,Geophysics/Acoustics,,,140000,NotValid
-46,Geophysics/Acoustics,Mine Warfare (MIW) Bottom Descriptors,,140100,NotValid
 46,Geophysics/Acoustics,Mine Warfare (MIW) Bottom Descriptors,MIW Bottom Sediments - Solid Rock,140101,Area
 46,Geophysics/Acoustics,Mine Warfare (MIW) Bottom Descriptors,MIW Bottom Sediments - Clay,140102,Area
 46,Geophysics/Acoustics,Mine Warfare (MIW) Bottom Descriptors,MIW Bottom Sediments - Very Coarse Sand,140103,Area
@@ -1971,14 +1844,12 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 46,Geophysics/Acoustics,Mine Warfare (MIW) Bottom Descriptors,MIW Bottom Type C1,140138,Area
 46,Geophysics/Acoustics,Mine Warfare (MIW) Bottom Descriptors,MIW Bottom Type C2,140139,Area
 46,Geophysics/Acoustics,Mine Warfare (MIW) Bottom Descriptors,MIW Bottom Type C3,140140,Area
-46,Limits,,,150000,NotValid
 46,Limits,Maritime Limit Boundary,,150100,Line
 46,Limits,Maritime Area,,150200,Area
 46,Limits,Restricted Area,,150300,Line
 46,Limits,Swept Area,,150400,Area
 46,Limits,Training Area,,150500,Area
 46,Limits,Operator-Defined,,150600,Area
-46,Man-Made Structures,,,160000,NotValid
 46,Man-Made Structures,Submarine Cable,,160100,Line
 46,Man-Made Structures,Submerged Crib,,160200,Area
 46,Man-Made Structures,Canal,,160300,Line
@@ -1988,33 +1859,25 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 46,Man-Made Structures,Oil/Gas Rig Field,,160700,Area
 46,Man-Made Structures,Pipelines/Pipe,,160800,Line
 46,Man-Made Structures,Pile/Piling/Post,,160900,Point
-47,Space,,,110000,NotValid
-50,Signal Intercept,,,110000,NotValid
 50,Signal Intercept,Communications,,110100,Point
 50,Signal Intercept,Jammer,,110200,Point
 50,Signal Intercept,Radar,,110300,Point
-51,Signal Intercept,,,110000,NotValid
 51,Signal Intercept,Communications,,110100,Point
 51,Signal Intercept,Jammer,,110200,Point
 51,Signal Intercept,Radar,,110300,Point
-52,Signal Intercept,,,110000,NotValid
 52,Signal Intercept,Communications,,110100,Point
 52,Signal Intercept,Jammer,,110200,Point
 52,Signal Intercept,Radar,,110300,Point
-53,Signal Intercept,,,110000,NotValid
 53,Signal Intercept,Communications,,110100,Point
 53,Signal Intercept,Jammer,,110200,Point
 53,Signal Intercept,Radar,,110300,Point
-54,Signal Intercept,,,110000,NotValid
 54,Signal Intercept,Communications,,110100,Point
 54,Signal Intercept,Jammer,,110200,Point
 54,Signal Intercept,Radar,,110300,Point
-60,Botnet,,,110000,NotValid
 60,Botnet,Command and Control (C2),,110100,Point
 60,Botnet,Herder,,110200,Point
 60,Botnet,Callback Domain,,110300,Point
 60,Botnet,Zombie,,110400,Point
-60,Infection,,,120000,NotValid
 60,Infection,Advanced Persistent Threat (APT),,120100,Point
 60,Infection,Advanced Persistent Threat (APT),APT with C2,120101,Point
 60,Infection,Advanced Persistent Threat (APT),APT with Self Propagation,120102,Point
@@ -2025,12 +1888,10 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 60,Infection,Non-Advanced Persistent Threat (NAPT),NAPT with Self Propagation,120202,Point
 60,Infection,Non-Advanced Persistent Threat (NAPT),NAPT with C2 and Self Propagation,120203,Point
 60,Infection,Non-Advanced Persistent Threat (NAPT),NAPT Other,120204,Point
-60,Health and Status,,,130000,NotValid
 60,Health and Status,Normal,,130100,Point
 60,Health and Status,Network Outage,,130200,Point
 60,Health and Status,Unknown,,130300,Point
 60,Health and Status,Impaired,,130400,Point
-60,Device Type,,,140000,NotValid
 60,Device Type,Core Router,,140100,Point
 60,Device Type,Router,,140200,Point
 60,Device Type,Cross Domain Solution,,140300,Point
@@ -2043,7 +1904,6 @@ SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType
 60,Device Type,Switch,,141000,Point
 60,Device Type,Host,,141100,Point
 60,Device Type,Virtual Private Network (VPN),,141200,Point
-60,Device Domain,,,150000,NotValid
 60,Device Domain,Department of Defense (DoD),,150100,Point
 60,Device Domain,Government,,150200,Point
 60,Device Domain,Contractor,,150300,Point
