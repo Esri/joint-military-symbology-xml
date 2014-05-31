@@ -21,6 +21,8 @@ namespace JointMilitarySymbologyLibrary
 {
     public class ImageFrameExport : FrameExport, IFrameExport
     {
+        // Class designed to export Frame elements as image path, name, category, and tag information
+
         private bool _omitSource = false;
 
         public ImageFrameExport(ConfigHelper configHelper, bool omitSource)
