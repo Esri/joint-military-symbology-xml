@@ -112,7 +112,7 @@ namespace jmsml
 
             if (framePath != "")
             {
-                _etl.ExportFrames(framePath, contextQuery, identityQuery, dimensionQuery, _exportThisAs, omitSource);
+                _etl.ExportFrames(framePath, contextQuery, identityQuery, dimensionQuery, _exportThisAs, appendFiles, omitSource);
             }
 
             if (amplifierPath != "")
