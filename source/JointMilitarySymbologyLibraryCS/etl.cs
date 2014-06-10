@@ -951,7 +951,7 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        public void ExportFrames(string path, string contextExpression = "", string standardIdentityExpression = "", string dimensionExpression = "", ETLExportEnum exportType = ETLExportEnum.ETLExportSimple, bool omitSource = false)
+        public void ExportFrames(string path, string contextExpression = "", string standardIdentityExpression = "", string dimensionExpression = "", ETLExportEnum exportType = ETLExportEnum.ETLExportSimple, bool append = false, bool omitSource = false)
         {
             // The public entry point for exporting frames from the JMSML library
             // into CSV format.
@@ -961,6 +961,7 @@ namespace JointMilitarySymbologyLibrary
             // attributes of the objects being exported.
 
             IFrameExport frameExporter = null;
+            string line = "";
 
             switch (exportType)
             {
@@ -975,12 +976,15 @@ namespace JointMilitarySymbologyLibrary
 
             if (frameExporter != null)
             {
-                using (var w = new StreamWriter(path + ".csv"))
+                using (var w = new StreamWriter(path + ".csv", append))
                 {
-                    var line = string.Format("{0}", frameExporter.Headers);
+                    if (!append)
+                    {
+                        line = string.Format("{0}", frameExporter.Headers);
 
-                    w.WriteLine(line);
-                    w.Flush();
+                        w.WriteLine(line);
+                        w.Flush();
+                    }
 
                     foreach (LibraryContext context in _library.Contexts)
                     {
