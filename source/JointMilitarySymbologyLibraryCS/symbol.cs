@@ -196,7 +196,7 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        private Dictionary<string, string> _CreateLabelDictionary(LibraryDimensionField field)
+        private Dictionary<string, string> _CreateLabelDictionary(FieldListTypeField field)
         {
             Dictionary<string, string> label = new Dictionary<string, string>();
 
@@ -221,7 +221,7 @@ namespace JointMilitarySymbologyLibrary
         {
             if (_dimension != null)
             {
-                foreach (LibraryDimensionField field in _dimension.Fields)
+                foreach (FieldListTypeField field in _dimension.Fields)
                 {
                     _labels.Add(_CreateLabelDictionary(field));
                 }

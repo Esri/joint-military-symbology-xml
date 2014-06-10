@@ -6,7 +6,7 @@
   </SymbolSetCode>
   <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
   <Entities>
-    <Entity ID="MISSILE" Label="Missile" Graphic="02110000.svg">
+    <Entity ID="MISSILE" Label="Missile" LabelAlias="Missile (Air Missile)" Graphic="02110000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
@@ -50,7 +50,7 @@
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="BALLISTIC_MOD" Label="Ballistic" Category="Missile Class" Graphic="02061.svg">
+    <Modifier ID="BALLISTIC_MOD" Label="Ballistic" LabelAlias="Ballistic (Air Missile)" Category="Missile Class" Graphic="02061.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>6</DigitTwo>
@@ -64,7 +64,7 @@
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="INTERCEPTOR_MOD" Label="Interceptor" Category="Missile Class" Graphic="02081.svg">
+    <Modifier ID="INTERCEPTOR_MOD" Label="Interceptor" LabelAlias="Interceptor (Air Missile)" Category="Missile Class" Graphic="02081.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>8</DigitTwo>
@@ -150,35 +150,35 @@
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="SHORT_MOD" Label="Short Range" Category="Missile Range" Remarks="1000km or less." Graphic="02122.svg">
+    <Modifier ID="SHORT_MOD" Label="Short Range" LabelAlias="Short Range (Air Missile)" Category="Missile Range" Remarks="1000km or less." Graphic="02122.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="MED_MOD" Label="Medium Range" Category="Missile Range" Remarks="1000km to 3500km. Typically used in reference to surface-to-air missiles." Graphic="02132.svg">
+    <Modifier ID="MED_MOD" Label="Medium Range" LabelAlias="Medium Range (Air Missile)" Category="Missile Range" Remarks="1000km to 3500km. Typically used in reference to surface-to-air missiles." Graphic="02132.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="INTER_MOD" Label="Intermediate Range" Category="Missile Range" Remarks="1000km to 3500km. Typically used in reference to ballistic missiles." Graphic="02142.svg">
+    <Modifier ID="INTER_MOD" Label="Intermediate Range" LabelAlias="Intermediate Range (Air Missile)" Category="Missile Range" Remarks="1000km to 3500km. Typically used in reference to ballistic missiles." Graphic="02142.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="LONG_MOD" Label="Long Range" Category="Missile Range" Remarks="3500km to 5500km." Graphic="02152.svg">
+    <Modifier ID="LONG_MOD" Label="Long Range" LabelAlias="Long Range (Air Missile)" Category="Missile Range" Remarks="3500km to 5500km." Graphic="02152.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="INTERCONT_MOD" Label="Intercontinental" Category="Missile Range" Remarks="5500km or greater." Graphic="02162.svg">
+    <Modifier ID="INTERCONT_MOD" Label="Intercontinental" LabelAlias="Intercontinental (Air Missile)" Category="Missile Range" Remarks="5500km or greater." Graphic="02162.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>6</DigitTwo>

@@ -47,7 +47,9 @@ namespace JointMilitarySymbologyLibrary
  
             result = result + identityGroup.Label.Replace(',', '-') + _configHelper.DomainSeparator;
             result = result + dimension.Label.Replace(',', '-') + _configHelper.DomainSeparator;
-            result = result + hqTFFD.Label.Replace(',', '-');
+
+            string hqTFFDLabel = (hqTFFD.LabelAlias == "") ? hqTFFD.Label : hqTFFD.LabelAlias;
+            result = result + hqTFFDLabel.Replace(',', '-');
 
             return result;
         }

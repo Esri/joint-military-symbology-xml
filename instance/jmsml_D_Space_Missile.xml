@@ -6,7 +6,7 @@
   </SymbolSetCode>
   <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
   <Entities>
-    <Entity ID="MISSILE" Label="Missile" Graphic="06110000.svg">
+    <Entity ID="MISSILE" Label="Missile" LabelAlias="Missile (Space Missile)" Graphic="06110000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
@@ -15,21 +15,21 @@
   </Entities>
 
   <SectorOneModifiers>
-    <Modifier ID="BALLISTIC_MOD" Label="Ballistic" Category="Missile Class" Graphic="06011.svg">
+    <Modifier ID="BALLISTIC_MOD" Label="Ballistic" LabelAlias="Ballistic (Space Missile)" Category="Missile Class" Graphic="06011.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="SPACE_1_MOD" Label="Space" Category="Launch Origin" Graphic="06021.svg">
+    <Modifier ID="SPACE_1_MOD" Label="Space" LabelAlias="Space 1" Category="Launch Origin" Graphic="06021.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="INTERCEPTOR_MOD" Label="Interceptor" Category="Missile Class" Graphic="06031.svg">
+    <Modifier ID="INTERCEPTOR_MOD" Label="Interceptor" LabelAlias="Interceptor (Space Missile)" Category="Missile Class" Graphic="06031.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>3</DigitTwo>
@@ -38,35 +38,35 @@
   </SectorOneModifiers>
 
   <SectorTwoModifiers>
-    <Modifier ID="SHORT_MOD" Label="Short Range" Category="Missile Range" Remarks="1000km or less" Graphic="06012.svg">
+    <Modifier ID="SHORT_MOD" Label="Short Range" LabelAlias="Short Range (Space Missile)" Category="Missile Range" Remarks="1000km or less" Graphic="06012.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="MEDIUM_MOD" Label="Medium Range" Category="Missile Range" Remarks="1000km to 3500km" Graphic="06022.svg">
+    <Modifier ID="MEDIUM_MOD" Label="Medium Range" LabelAlias="Medium Range (Space Missile)" Category="Missile Range" Remarks="1000km to 3500km" Graphic="06022.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="INTERMEDIATE_MOD" Label="Intermediate Range" Category="Missile Range" Remarks="1000km to 3500km" Graphic="06032.svg">
+    <Modifier ID="INTERMEDIATE_MOD" Label="Intermediate Range" LabelAlias="Intermediate Range (Space Missile)" Category="Missile Range" Remarks="1000km to 3500km" Graphic="06032.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="LONG_MOD" Label="Long Range" Category="Missile Range" Remarks="3500km to 5500km" Graphic="06042.svg">
+    <Modifier ID="LONG_MOD" Label="Long Range" LabelAlias="Long Range (Space Missile)" Category="Missile Range" Remarks="3500km to 5500km" Graphic="06042.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="INTERCONTINENTAL_MOD" Label="Intercontinental" Category="Missile Range" Remarks="5500km or greater" Graphic="06052.svg">
+    <Modifier ID="INTERCONTINENTAL_MOD" Label="Intercontinental" LabelAlias="Intercontinental (Space Missile)" Category="Missile Range" Remarks="5500km or greater" Graphic="06052.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>5</DigitTwo>
@@ -115,7 +115,7 @@
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="SPACE_2_MOD" Label="Space" Category="Launch Origin" Graphic="06122.svg">
+    <Modifier ID="SPACE_2_MOD" Label="Space" LabelAlias="Space 2" Category="Launch Origin" Graphic="06122.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>2</DigitTwo>

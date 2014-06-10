@@ -533,7 +533,7 @@
 						<DigitTwo>5</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="BUREAU_ATF" Label="Bureau of Alcohol,Tobacco,Firearms and Explosives (ATF) (Department of Justice)" Graphic="40131501.svg">
+						<EntitySubType ID="BUREAU_ATF" Label="Bureau of Alcohol,Tobacco,Firearms and Explosives (ATF) (Department of Justice)" LabelAlias="ATF" Graphic="40131501.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
@@ -551,19 +551,19 @@
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="DRUG_ENFORCEMENT_ADMIN_DEA" Label="Drug Enforcement Administration (DEA)" Graphic="40131504.svg">
+						<EntitySubType ID="DRUG_ENFORCEMENT_ADMIN_DEA" Label="Drug Enforcement Administration (DEA)" LabelAlias="DEA" Graphic="40131504.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>4</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="JUSTICE_DEPT_DOJ" Label="Department of Justice (DOJ)" Graphic="40131505.svg">
+						<EntitySubType ID="JUSTICE_DEPT_DOJ" Label="Department of Justice (DOJ)" LabelAlias="DOJ" Graphic="40131505.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>5</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="FEDERAL_BUREAU_NVESTIGATION_FBI" Label="Federal Bureau of Investigation (FBI)" Graphic="40131506.svg">
+						<EntitySubType ID="FEDERAL_BUREAU_NVESTIGATION_FBI" Label="Federal Bureau of Investigation (FBI)" LabelAlias="FBI" Graphic="40131506.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>6</DigitTwo>
@@ -581,13 +581,13 @@
 								<DigitTwo>8</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="US_SECRET_SERVICE_USSS" Label="United States Secret Service (USSS)" Graphic="40131509.svg">
+						<EntitySubType ID="US_SECRET_SERVICE_USSS" Label="United States Secret Service (USSS)" LabelAlias="USSS" Graphic="40131509.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>9</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="TRANS_SECURITY_ADMIN_TSA" Label="Transportation Security Administration (TSA)" Graphic="40131510.svg">
+						<EntitySubType ID="TRANS_SECURITY_ADMIN_TSA" Label="Transportation Security Administration (TSA)" LabelAlias="TSA" Graphic="40131510.svg">
 							<EntitySubTypeCode>
 								<DigitOne>1</DigitOne>
 								<DigitTwo>0</DigitTwo>
@@ -677,7 +677,7 @@
 				<DigitTwo>5</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="HAZARD_MATERIALS_INCIDENT" Label="Hazard Materials Incident" Graphic="40150100.svg">
+				<EntityType ID="HAZARD_MATERIALS_INCIDENT" Label="Hazard Materials Incident" LabelAlias="Incident" Graphic="40150100.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
@@ -965,19 +965,19 @@
 		</Entity>
 	</Entities>
 	<SectorOneModifiers>
-		<Modifier ID="ASSASSINATION_MOD" Label="Assassination" Category="Crime" Graphic="40011.svg">
+		<Modifier ID="ASSASSINATION_MOD" Label="Assassination" LabelAlias="Assasination (Activities)" Category="Crime" Graphic="40011.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>1</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="EXECUTION_WRONGFUL_KILLING_MOD" Label="Execution (Wrongful Killing)" Category="Crime" Graphic="40021.svg">
+		<Modifier ID="EXECUTION_WRONGFUL_KILLING_MOD" Label="Execution (Wrongful Killing)" LabelAlias="Execution (Wrongful Killing) (Activities)" Category="Crime" Graphic="40021.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>2</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="HIJACKING_MOD" Label="Hijacking/Hijacked" Category="Crime" Graphic="40031.svg">
+		<Modifier ID="HIJACKING_MOD" Label="Hijacking/Hijacked" LabelAlias="Hijacking/Hijacked (Activities)" Category="Crime" Graphic="40031.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>3</DigitTwo>
@@ -989,7 +989,7 @@
 				<DigitTwo>4</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="KIDNAPPING_MOD" Label="Kidnapping" Category="Crime" Graphic="40051.svg">
+		<Modifier ID="KIDNAPPING_MOD" Label="Kidnapping" LabelAlias="Kidnapping (Activities)" Category="Crime" Graphic="40051.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>5</DigitTwo>
@@ -1001,13 +1001,13 @@
 				<DigitTwo>6</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="PIRACY_MOD" Label="Piracy" Category="Crime" Graphic="40071.svg">
+		<Modifier ID="PIRACY_MOD" Label="Piracy" LabelAlias="Piracy (Activities)" Category="Crime" Graphic="40071.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>7</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="RAPE_MOD" Label="Rape" Category="Crime" Graphic="40081.svg">
+		<Modifier ID="RAPE_MOD" Label="Rape" LabelAlias="Rape (Activities)" Category="Crime" Graphic="40081.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>8</DigitTwo>

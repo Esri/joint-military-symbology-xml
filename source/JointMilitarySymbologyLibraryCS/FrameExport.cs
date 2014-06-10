@@ -45,7 +45,9 @@ namespace JointMilitarySymbologyLibrary
 
             string result = "Frame" + _configHelper.DomainSeparator;
 
-            result = result + context.Label.Replace(',', '-') + _configHelper.DomainSeparator;
+            if (context.Label != "Reality")
+                result = result + context.Label.Replace(',', '-') + _configHelper.DomainSeparator;
+
             result = result + identity.Label.Replace(',', '-') + _configHelper.DomainSeparator;
             result = result + dimension.Label.Replace(',', '-');
 

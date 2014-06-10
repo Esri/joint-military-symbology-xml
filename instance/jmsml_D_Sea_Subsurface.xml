@@ -8,7 +8,7 @@
 	<LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
   
 	<Entities>
-		<Entity ID="MILITARY" Label="Military" Graphic="35110000.svg">
+		<Entity ID="MILITARY" Label="Military" LabelAlias="Military (Sea Subsurface)" Graphic="35110000.svg">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>1</DigitTwo>
@@ -59,7 +59,7 @@
 					</EntityTypeCode>
 				</EntityType>
 
-        <EntityType ID="AUV_UUV" Label="Autonomous Underwater Vehicle (AUV)/Unmanned Underwater Vehicle (UUV)" Graphic="35110400.svg">
+        <EntityType ID="AUV_UUV" Label="Autonomous Underwater Vehicle (AUV)/Unmanned Underwater Vehicle (UUV)" LabelAlias="Autonomous Underwater Vehicle (AUV)" Graphic="35110400.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>4</DigitTwo>
@@ -75,7 +75,7 @@
 			</EntityTypes>
 		</Entity>
 
-    <Entity ID="CIVILIAN" Label="Civilian" Graphic="35120000.svg">
+    <Entity ID="CIVILIAN" Label="Civilian" LabelAlias="Civilian (Sea Subsurface)" Graphic="35120000.svg">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>2</DigitTwo>
@@ -89,7 +89,7 @@
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="AUV_UUV_CIV" Label="Autonomous Underwater Vehicle (AUV)/ Underwater Vehicle (UUV)" Graphic="35120200.svg">
+				<EntityType ID="AUV_UUV_CIV" Label="Autonomous Underwater Vehicle (AUV)/ Underwater Vehicle (UUV)" LabelAlias="Autonomous Underwater Vehicle (AUV)" Graphic="35120200.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
@@ -105,7 +105,7 @@
 			</EntityTypes>
 		</Entity>
 
-    <Entity ID="WEAPON" Label="Weapon" Graphic="35130000.svg">
+    <Entity ID="WEAPON" Label="Weapon" LabelAlias="Weapon (Sea Subsurface)" Graphic="35130000.svg">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>3</DigitTwo>
@@ -142,14 +142,14 @@
 			</EntityCode>
 		</Entity>
 
-    <Entity ID="FUSED_TRACK" Label="Fused Track" Remarks="All fused tracks shall have a pending standard identity frame." Graphic="35150000.svg">
+    <Entity ID="FUSED_TRACK" Label="Fused Track" LabelAlias="Fused Track (Sea Subsurface)" Remarks="All fused tracks shall have a pending standard identity frame." Graphic="35150000.svg">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>5</DigitTwo>
 			</EntityCode>
 		</Entity>
 
-    <Entity ID="MANUAL_TRACK" Label="Manual Track" Graphic="35160000.svg">
+    <Entity ID="MANUAL_TRACK" Label="Manual Track" LabelAlias="Manual Track (Sea Subsurface)" Graphic="35160000.svg">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>6</DigitTwo>
@@ -158,7 +158,7 @@
 	</Entities>
 
   <SectorOneModifiers>
-		<Modifier ID="ANTISUBMARINE_WARFARE_MOD" Label="Antisubmarine Warfare" Category="Mission Area" Graphic="35011.svg">
+		<Modifier ID="ANTISUBMARINE_WARFARE_MOD" Label="Antisubmarine Warfare" LabelAlias="Antisubmarine Warfare (Sea Subsurface)" Category="Mission Area" Graphic="35011.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>1</DigitTwo>
@@ -186,21 +186,21 @@
 			</ModifierCode>
 		</Modifier>
 
-    <Modifier ID="MINE_COUNTERMEASURES_MOD" Label="Mine Countermeasures" Category="Mission Area" Graphic="35051.svg">
+    <Modifier ID="MINE_COUNTERMEASURES_MOD" Label="Mine Countermeasures" LabelAlias="Mine Countermeasures (Sea Subsurface)" Category="Mission Area" Graphic="35051.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>5</DigitTwo>
 			</ModifierCode>
 		</Modifier>
 
-    <Modifier ID="MINE_WARFARE_MOD" Label="Mine Warfare" Category="Mission Area" Graphic="35061.svg">
+    <Modifier ID="MINE_WARFARE_MOD" Label="Mine Warfare" LabelAlias="Mine Warfare (Sea Subsurface)" Category="Mission Area" Graphic="35061.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>6</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="SURFACE_WARFARE_MOD" Label="Surface Warfare" Category="Mission Area" Graphic="35071.svg">
+		<Modifier ID="SURFACE_WARFARE_MOD" Label="Surface Warfare" LabelAlias="Surface Warfare (Sea Subsurface)" Category="Mission Area" Graphic="35071.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>7</DigitTwo>
@@ -214,28 +214,28 @@
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="BALLISTIC_MISSILE_MOD" Label="Ballistic Missile" Category="Weapons Capability" LimitUseTo="SUBMARINE" Graphic="35091.svg">
+		<Modifier ID="BALLISTIC_MISSILE_MOD" Label="Ballistic Missile" LabelAlias="Ballistic Missile (Sea Subsurface)" Category="Weapons Capability" LimitUseTo="SUBMARINE" Graphic="35091.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>9</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="GUIDED_MISSILE_MOD" Label="Guided Missile" Category="Weapons Capability" LimitUseTo="SUBMARINE" Graphic="35101.svg">
+		<Modifier ID="GUIDED_MISSILE_MOD" Label="Guided Missile" LabelAlias="Guided Missile (Sea Subsurface)" Category="Weapons Capability" LimitUseTo="SUBMARINE" Graphic="35101.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>0</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="OTHER_GUIDED_MISSILE_MOD" Label="Other Guided Missile" Category="Weapons Capability" LimitUseTo="SUBMARINE" Graphic="35111.svg">
+		<Modifier ID="OTHER_GUIDED_MISSILE_MOD" Label="Other Guided Missile" LabelAlias="Other Guided Missile (Sea Subsurface)" Category="Weapons Capability" LimitUseTo="SUBMARINE" Graphic="35111.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>1</DigitTwo>
 			</ModifierCode>
 		</Modifier>
     
-		<Modifier ID="SPECIAL_OPERATIONS_FORCES_SOF_MOD" Label="Special Operations Forces (SOF)" Category="Asset Capability" LimitUseTo="SUBMARINE" Graphic="35121.svg">
+		<Modifier ID="SPECIAL_OPERATIONS_FORCES_SOF_MOD" Label="Special Operations Forces (SOF)" LabelAlias="SOF (Sea Subsurface)" Category="Asset Capability" LimitUseTo="SUBMARINE" Graphic="35121.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>2</DigitTwo>
