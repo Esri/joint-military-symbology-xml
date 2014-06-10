@@ -77,16 +77,20 @@ namespace JointMilitarySymbologyLibrary
             // is seperated by a DomainSeparator (usually a colon).  Builds this for each group
             // of related SymbolSet and entity.
 
-            string result = ss.Label.Replace(',', '-') + _configHelper.DomainSeparator + e.Label.Replace(',', '-');
-            
+            //string result = ss.Label.Replace(',', '-') + _configHelper.DomainSeparator + e.Label.Replace(',', '-');
+
+            string result = (e.LabelAlias == "") ? e.Label : e.LabelAlias;
+
             if (eType != null)
             {
-                result = result + _configHelper.DomainSeparator + eType.Label.Replace(',', '-');   
+                string eTypeLabel = (eType.LabelAlias == "") ? eType.Label : eType.LabelAlias;
+                result = result + _configHelper.DomainSeparator + eTypeLabel.Replace(',', '-');   
             }
             
             if (eSubType != null)
             {
-                result = result + _configHelper.DomainSeparator + eSubType.Label.Replace(',', '-');
+                string eSubTypeLabel = (eSubType.LabelAlias == "") ? eSubType.Label : eSubType.LabelAlias;
+                result = result + _configHelper.DomainSeparator + eSubTypeLabel.Replace(',', '-');
             }
             
             return result;

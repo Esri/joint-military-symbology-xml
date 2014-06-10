@@ -31,9 +31,13 @@ namespace JointMilitarySymbologyLibrary
             // is seperated by a DomainSeparator (usually a colon).  Builds this for each group
             // of related SymbolSet and modifier.
 
-            string result = this.BuildModifierItemCategory(ss, modNumber);
+            //string result = this.BuildModifierItemCategory(ss, modNumber);
 
-            result = result + _configHelper.DomainSeparator + m.Category.Replace(',', '-') + _configHelper.DomainSeparator + m.Label.Replace(',', '-');
+            //result = result + _configHelper.DomainSeparator + m.Category.Replace(',', '-') + _configHelper.DomainSeparator + m.Label.Replace(',', '-');
+
+            string result = m.Category + _configHelper.DomainSeparator + ((m.LabelAlias == "") ? m.Label : m.LabelAlias);
+            
+            result = result.Replace(',', '-');
 
             return result;
         }

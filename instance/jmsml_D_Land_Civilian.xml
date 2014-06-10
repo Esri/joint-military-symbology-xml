@@ -6,7 +6,7 @@
 	</SymbolSetCode>
 	<LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
 	<Entities>
-		<Entity ID="CIVILIAN" Label="Civilian" Graphic="11110000.svg">
+		<Entity ID="CIVILIAN" Label="Civilian" LabelAlias="Civilian (Land Civilian)" Graphic="11110000.svg">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>1</DigitTwo>
@@ -86,13 +86,13 @@
 		</Entity>
 	</Entities>
 	<SectorOneModifiers>
-		<Modifier ID="ASSASSINATION_MOD" Label="Assassination" Category="Crime" Graphic="11011.svg">
+		<Modifier ID="ASSASSINATION_MOD" Label="Assassination" LabelAlias="Assassination (Land Civilian)" Category="Crime" Graphic="11011.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>1</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="EXECUTION_MOD" Label="Execution (Wrongful Killing)" Category="Crime" Graphic="11021.svg">
+		<Modifier ID="EXECUTION_MOD" Label="Execution (Wrongful Killing)" LabelAlias="Execution (Wrongful Killing) (Land Civilian)" Category="Crime" Graphic="11021.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>2</DigitTwo>
@@ -104,31 +104,31 @@
 				<DigitTwo>3</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="HIJACKING_MOD" Label="Hijacking" Category="Crime" Graphic="11041.svg">
+		<Modifier ID="HIJACKING_MOD" Label="Hijacking" LabelAlias="Hijacking (Land Civilian)" Category="Crime" Graphic="11041.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>4</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="KIDNAPPING_MOD" Label="Kidnapping" Category="Crime" Graphic="11051.svg">
+		<Modifier ID="KIDNAPPING_MOD" Label="Kidnapping" LabelAlias="Kidnapping (Land Civilian)" Category="Crime" Graphic="11051.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>5</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="PIRACY_MOD" Label="Piracy" Category="Crime" Graphic="11061.svg">
+		<Modifier ID="PIRACY_MOD" Label="Piracy" LabelAlias="Piracy (Land Civilian)" Category="Crime" Graphic="11061.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>6</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="RAPE_MOD" Label="Rape" Category="Crime" Graphic="11071.svg">
+		<Modifier ID="RAPE_MOD" Label="Rape" LabelAlias="Rape (Land Civilian)" Category="Crime" Graphic="11071.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>7</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="CIVILIAN_MOD" Label="Civilian" Category="Organization" Graphic="11081.svg">
+		<Modifier ID="CIVILIAN_MOD" Label="Civilian" LabelAlias="Civilian (Land Civilian)" Category="Organization" Graphic="11081.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>8</DigitTwo>
@@ -158,7 +158,7 @@
 				<DigitTwo>2</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="LEADER_1_MOD" Label="Leader or Leadership" Category="Organization" Graphic="11131.svg">
+		<Modifier ID="LEADER_1_MOD" Label="Leader or Leadership" LabelAlias="Leader or Leadership 1" Category="Organization" Graphic="11131.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>3</DigitTwo>
@@ -206,7 +206,7 @@
 				<DigitTwo>0</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="ACCIDENT_MOD" Label="Accident" Category="Composite Loss" Graphic="11211.svg">
+		<Modifier ID="ACCIDENT_MOD" Label="Accident" LabelAlias="Accident (Land Civilian)" Category="Composite Loss" Graphic="11211.svg">
 			<ModifierCode>
 				<DigitOne>2</DigitOne>
 				<DigitTwo>1</DigitTwo>
@@ -218,7 +218,7 @@
 				<DigitTwo>2</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="OTHER_MOD" Label="Other" Category="Composite Loss" Graphic="11231.svg">
+		<Modifier ID="OTHER_MOD" Label="Other" LabelAlias="Other (Land Civilian)" Category="Composite Loss" Graphic="11231.svg">
 			<ModifierCode>
 				<DigitOne>2</DigitOne>
 				<DigitTwo>3</DigitTwo>
@@ -232,7 +232,7 @@
 		</Modifier>
 	</SectorOneModifiers>
 	<SectorTwoModifiers>
-		<Modifier ID="LEADER_2_MOD" Label="Leader or Leadership" Category="Organization" Graphic="11012.svg">
+		<Modifier ID="LEADER_2_MOD" Label="Leader or Leadership" LabelAlias="Leader or Leadership 2" Category="Organization" Graphic="11012.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>1</DigitTwo>

@@ -286,7 +286,7 @@
 					</EntityCode>
           <EntityTypes>
 
-				<EntityType ID="AGRICULTURE_FOOD_INFRASTRUCTURE" Label="Agriculture and Food Infrastructure" Graphic="20120100.svg" Icon="FULL_OCTAGON">
+				<EntityType ID="AGRICULTURE_FOOD_INFRASTRUCTURE" Label="Agriculture and Food Infrastructure" LabelAlias="Agriculture and Food" Graphic="20120100.svg" Icon="FULL_OCTAGON">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
@@ -343,7 +343,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="BANKING_INFRASTRUCTURE" Label="Banking, Finance, and Insurance Infrastructure" Graphic="20120200.svg" Icon="FULL_OCTAGON">
+				<EntityType ID="BANKING_INFRASTRUCTURE" Label="Banking, Finance, and Insurance Infrastructure" LabelAlias="Banking, Finance, and Insurance" Graphic="20120200.svg" Icon="FULL_OCTAGON">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
@@ -394,7 +394,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="COMMERCIAL_INFRASTRUCTURE" Label="Commercial Infrastructure" Graphic="20120300.svg" Icon="FULL_OCTAGON">
+				<EntityType ID="COMMERCIAL_INFRASTRUCTURE" Label="Commercial Infrastructure" LabelAlias="Commercial" Graphic="20120300.svg" Icon="FULL_OCTAGON">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>3</DigitTwo>
@@ -463,7 +463,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="EDUCATIONAL_FACILITIES_INFRASTRUCTURE" Label="Educational Facilities Infrastructure" Graphic="20120400.svg" Icon="FULL_OCTAGON">
+				<EntityType ID="EDUCATIONAL_FACILITIES_INFRASTRUCTURE" Label="Educational Facilities Infrastructure" LabelAlias="Educational Facilities" Graphic="20120400.svg" Icon="FULL_OCTAGON">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>4</DigitTwo>
@@ -484,7 +484,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="ENERGY_FACILITY_INFRASTRUCTURE" Label="Energy Facility Infrastructure" Graphic="20120500.svg" Icon="FULL_OCTAGON">
+				<EntityType ID="ENERGY_FACILITY_INFRASTRUCTURE" Label="Energy Facility Infrastructure" LabelAlias="Energy Facility" Graphic="20120500.svg" Icon="FULL_OCTAGON">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>5</DigitTwo>
@@ -536,7 +536,7 @@
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="MEDICAL_INFRASTRUCTURE" Label="Medical Infrastructure" Remarks="No icon is assoicated with this entity. It is for hierarchal purposes only." Icon="NA" GeometryType="NA">
+				<EntityType ID="MEDICAL_INFRASTRUCTURE" Label="Medical Infrastructure" LabelAlias="Medical" Remarks="No icon is assoicated with this entity. It is for hierarchal purposes only." Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>7</DigitTwo>
@@ -557,7 +557,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="MILITARY_INFRASTRUCTURE" Label="Military Infrastructure" Graphic="20120800.svg" Icon="FULL_OCTAGON">
+				<EntityType ID="MILITARY_INFRASTRUCTURE" Label="Military Infrastructure" LabelAlias="Military" Graphic="20120800.svg" Icon="FULL_OCTAGON">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>8</DigitTwo>
@@ -578,7 +578,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="POSTAL_SERVICES_INFRASTRUCTURE" Label="Postal Services Infrastructure" Graphic="20120900.svg" Icon="FULL_OCTAGON">
+				<EntityType ID="POSTAL_SERVICES_INFRASTRUCTURE" Label="Postal Services Infrastructure" LabelAlias="Postal Services" Graphic="20120900.svg" Icon="FULL_OCTAGON">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>9</DigitTwo>
@@ -599,7 +599,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="PUBLIC_VENUES_INFRASTRUCTURE" Label="Public Venues Infrastructure" Graphic="20121000.svg" Icon="FULL_OCTAGON">
+				<EntityType ID="PUBLIC_VENUES_INFRASTRUCTURE" Label="Public Venues Infrastructure" LabelAlias="Public Venues" Graphic="20121000.svg" Icon="FULL_OCTAGON">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>0</DigitTwo>
@@ -632,7 +632,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="SPECIAL_NEEDS_INFRASTRUCTURE" Label="Special Needs Infrastructure" Graphic="20121100.svg" Icon="FULL_OCTAGON">
+				<EntityType ID="SPECIAL_NEEDS_INFRASTRUCTURE" Label="Special Needs Infrastructure" LabelAlias="Special Needs" Graphic="20121100.svg" Icon="FULL_OCTAGON">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>1</DigitTwo>
@@ -659,7 +659,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="TELECOMMUNICATIONS_INFRASTRUCTURE" Label="Telecommunications Infrastructure" Graphic="20121200.svg" Icon="FULL_OCTAGON">
+				<EntityType ID="TELECOMMUNICATIONS_INFRASTRUCTURE" Label="Telecommunications Infrastructure" LabelAlias="Telecommunications" Graphic="20121200.svg" Icon="FULL_OCTAGON">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>2</DigitTwo>
@@ -686,7 +686,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="TRANSPORTATION_INFRASTRUCTURE" Label="Transportation Infrastructure" Graphic="20121300.svg" Icon="FULL_OCTAGON">
+				<EntityType ID="TRANSPORTATION_INFRASTRUCTURE" Label="Transportation Infrastructure" LabelAlias="Transportation" Graphic="20121300.svg" Icon="FULL_OCTAGON">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>3</DigitTwo>
@@ -773,7 +773,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="WATER_SUPPLY_INFRASTRUCTURE" Label="Water Supply Infrastructure" Graphic="20121400.svg" Icon="FULL_OCTAGON">
+				<EntityType ID="WATER_SUPPLY_INFRASTRUCTURE" Label="Water Supply Infrastructure" LabelAlias="Water Supply" Graphic="20121400.svg" Icon="FULL_OCTAGON">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>4</DigitTwo>
@@ -912,7 +912,7 @@
 				<DigitTwo>0</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="CIVILIAN_MOD" Label="Civilian " Category="Operation" Graphic="20111.svg">
+		<Modifier ID="CIVILIAN_MOD" Label="Civilian" LabelAlias="Civilian (Land Installation)" Category="Operation" Graphic="20111.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>1</DigitTwo>

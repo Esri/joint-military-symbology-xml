@@ -262,7 +262,7 @@
 					</EntitySubTypes>
 				</EntityType>
 
-        <EntityType ID="AIR_DEFENSE_MISSILE_LAUNCHER" Label="Air Defense Missile Launcher" Graphic="15111100.svg">
+        <EntityType ID="AIR_DEFENSE_MISSILE_LAUNCHER" Label="Air Defense Missile Launcher" LabelAlias="ADML" Graphic="15111100.svg">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>1</DigitTwo>
@@ -528,7 +528,7 @@
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="ARMORED_FIGHTING_VEHICLE_C2" Label="Armored Fighting Vehicle Command and Control" Graphic="15120102.svg">
+						<EntitySubType ID="ARMORED_FIGHTING_VEHICLE_C2" Label="Armored Fighting Vehicle Command and Control" LabelAlias="Armored Fighting Vehicle C2" Graphic="15120102.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
@@ -558,7 +558,7 @@
 								<DigitTwo>6</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="ARMORED_PROTECTED_VEHICLE_MEDICAL" Label="Armored Protected Vehicle Medical Evacuation" Graphic="15120107.svg">
+						<EntitySubType ID="ARMORED_PROTECTED_VEHICLE_MEDICAL" Label="Armored Protected Vehicle Medical Evacuation" LabelAlias="Armored Protected Medical Evacuation" Graphic="15120107.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>7</DigitTwo>
@@ -641,7 +641,7 @@
 			</EntityTypes>
 		</Entity>
 
-    <Entity ID="ENGINEER_VEHICLES_EQUIPMENT" Label="Engineer Vehicles and Equipment" Graphic="15130000.svg">
+    <Entity ID="ENGINEER_VEHICLES_EQUIPMENT" Label="Engineer Vehicles and Equipment" LabelAlias="Engineer Equipment" Graphic="15130000.svg">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>3</DigitTwo>
@@ -1108,7 +1108,7 @@
 					</EntitySubTypes>
 				</EntityType>
 
-        <EntityType ID="TRACTOR_TRAILER_BOX" Label="Tractor Trailer Truck with Box" Graphic="15160600.svg">
+        <EntityType ID="TRACTOR_TRAILER_BOX" Label="Tractor Trailer Truck with Box" LabelAlias="Tractor Trailer with Box" Graphic="15160600.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>6</DigitTwo>
@@ -1135,7 +1135,7 @@
 					</EntitySubTypes>
 				</EntityType>
 
-        <EntityType ID="TRACTOR_TRAILER_FLATBED" Label="Tractor Trailer Truck with Flatbed Trailer" Graphic="15160700.svg">
+        <EntityType ID="TRACTOR_TRAILER_FLATBED" Label="Tractor Trailer Truck with Flatbed Trailer" LabelAlias="Tractor Trailer with Flatbed" Graphic="15160700.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>7</DigitTwo>
@@ -1178,13 +1178,13 @@
 			</EntityTypes>
 		</Entity>
 
-    <Entity ID="LAW_ENFORCEMENT" Label="Law Enforcement" Graphic="15170000.svg">
+    <Entity ID="LAW_ENFORCEMENT" Label="Law Enforcement" LabelAlias="Law Enforcement (Land Equipment)" Graphic="15170000.svg">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>7</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="BUREAU_ALCOHOL_TOBACCO_FIREARMS_EXPLOSIVES_ATF" Label="Bureau of Alcohol-Tobacco-Firearms and Explosives (ATF) (Department of Justice)" Graphic="15170100.svg">
+				<EntityType ID="BUREAU_ALCOHOL_TOBACCO_FIREARMS_EXPLOSIVES_ATF" Label="Bureau of Alcohol-Tobacco-Firearms and Explosives (ATF) (Department of Justice)" LabelAlias="ATF DOJ" Graphic="15170100.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
@@ -1205,21 +1205,21 @@
 					</EntityTypeCode>
 				</EntityType>
 
-        <EntityType ID="DRUG_ENFORCEMENT_ADMINISTRATION_DEA" Label="Drug Enforcement Administration (DEA)" Graphic="15170400.svg">
+        <EntityType ID="DRUG_ENFORCEMENT_ADMINISTRATION_DEA" Label="Drug Enforcement Administration (DEA)" LabelAlias="DEA" Graphic="15170400.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>4</DigitTwo>
 					</EntityTypeCode>
 				</EntityType>
 
-        <EntityType ID="DEPARTMENT_OF_JUSTICE_DOJ" Label="Department of Justice (DOJ)" Graphic="15170500.svg">
+        <EntityType ID="DEPARTMENT_OF_JUSTICE_DOJ" Label="Department of Justice (DOJ)" LabelAlias="DOJ" Graphic="15170500.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>5</DigitTwo>
 					</EntityTypeCode>
 				</EntityType>
 
-        <EntityType ID="FEDERAL_BUREAU_INVESTIGATION_FBI" Label="Federal Bureau of Investigation (FBI)" Graphic="15170600.svg">
+        <EntityType ID="FEDERAL_BUREAU_INVESTIGATION_FBI" Label="Federal Bureau of Investigation (FBI)" LabelAlias="FBI" Graphic="15170600.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>6</DigitTwo>
@@ -1233,14 +1233,14 @@
 					</EntityTypeCode>
 				</EntityType>
 
-        <EntityType ID="UNITED_STATES_SECRET_SERVICE_USSS" Label="United States Secret Service (USSS)" Graphic="15170800.svg">
+        <EntityType ID="UNITED_STATES_SECRET_SERVICE_USSS" Label="United States Secret Service (USSS)" LabelAlias="US Secret Service (USSS)" Graphic="15170800.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>8</DigitTwo>
 					</EntityTypeCode>
 				</EntityType>
 
-        <EntityType ID="TRANSPORTATION_SECURITY_ADMINISTRATION_TSA" Label="Transportation Security Administration (TSA)" Graphic="15170900.svg">
+        <EntityType ID="TRANSPORTATION_SECURITY_ADMINISTRATION_TSA" Label="Transportation Security Administration (TSA)" LabelAlias="TSA"  Graphic="15170900.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>9</DigitTwo>
@@ -1506,7 +1506,7 @@
 			</EntityTypes>
 		</Entity>
 
-    <Entity ID="EMERGENCY_OPERATION" Label="Emergency Operation" Graphic="15230000.svg">
+    <Entity ID="EMERGENCY_OPERATION" Label="Emergency Operation" LabelAlias="Emergency Operation (Land Equipment)" Graphic="15230000.svg">
 			<EntityCode>
 				<DigitOne>2</DigitOne>
 				<DigitTwo>3</DigitTwo>
@@ -1528,7 +1528,7 @@
 			</EntityTypes>
 		</Entity>
 
-    <Entity ID="MANUAL_TRACK" Label="Manual Track" Graphic="15240000.svg">
+    <Entity ID="MANUAL_TRACK" Label="Manual Track" LabelAlias="Manual Track (Land Equipment)" Graphic="15240000.svg">
 			<EntityCode>
 				<DigitOne>2</DigitOne>
 				<DigitTwo>4</DigitTwo>
@@ -1586,14 +1586,14 @@
 			</ModifierCode>
 		</Modifier>
 
-    <Modifier ID="HIJACKING_MOD" Label="Hijacking" Category="Crime" Graphic="15081.svg">
+    <Modifier ID="HIJACKING_MOD" Label="Hijacking" LabelAlias="Hijacking (Land Equipment)" Category="Crime" Graphic="15081.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>8</DigitTwo>
 			</ModifierCode>
 		</Modifier>
 
-    <Modifier ID="CIVILIAN_MOD" Label="Civilian" Category="Organization" Graphic="15091.svg">
+    <Modifier ID="CIVILIAN_MOD" Label="Civilian" LabelAlias="Civilian (Land Equipment)" Category="Organization" Graphic="15091.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>9</DigitTwo>

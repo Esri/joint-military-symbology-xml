@@ -830,7 +830,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="AIRSPACE_CONTROL_CORRIDORS_AREAS" Label="Airspace Control (Corridors) Areas" Icon="NA" GeometryType="NA">
+		<Entity ID="AIRSPACE_CONTROL_CORRIDORS_AREAS" Label="Airspace Control (Corridors) Areas" LabelAlias="Air Corridors" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>7</DigitTwo>
@@ -1191,7 +1191,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="MARITIME_CONTROL_AREAS" Label="Maritime Control Areas" Icon="NA" GeometryType="NA">
+		<Entity ID="MARITIME_CONTROL_AREAS" Label="Maritime Control Areas" LabelAlias="Maritime Areas" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>2</DigitOne>
 				<DigitTwo>0</DigitTwo>
@@ -1284,7 +1284,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="MARITIME_CONTROL_POINTS" Label="Maritime Control Points" Icon="NA" GeometryType="NA">
+		<Entity ID="MARITIME_CONTROL_POINTS" Label="Maritime Control Points" LabelAlias="Maritime Points" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>2</DigitOne>
 				<DigitTwo>1</DigitTwo>
@@ -2052,7 +2052,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="MARITIME_CONTROL_LINES" Label="Maritime Control Lines" Icon="NA" GeometryType="NA">
+		<Entity ID="MARITIME_CONTROL_LINES" Label="Maritime Control Lines" LabelAlias="Maritime Lines" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>2</DigitOne>
 				<DigitTwo>2</DigitTwo>
@@ -3151,7 +3151,7 @@
 						<DigitTwo>2</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="ANTIPERSONNEL_MINE_WITH_DIRECTIONAL_EFFECTS" Label="Antipersonnel Mine with Directional Effects" Graphic="25280201.svg">
+						<EntitySubType ID="ANTIPERSONNEL_MINE_WITH_DIRECTIONAL_EFFECTS" Label="Antipersonnel Mine with Directional Effects" LabelAlias="With Directional Effects" Graphic="25280201.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
@@ -3289,7 +3289,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="GENERAL_DECONTAMINATION_POINT_SITE" Label="General Decontamination Point/Site" Graphic="25281800.svg">
+				<EntityType ID="GENERAL_DECONTAMINATION_POINT_SITE" Label="General Decontamination Point/Site" LabelAlias="Decontamination/Site" Graphic="25281800.svg">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>8</DigitTwo>
@@ -3758,7 +3758,7 @@
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="GENERAL_SUPPLY_POINT" Label="General Supply Point" Graphic="25321700.svg">
+				<EntityType ID="GENERAL_SUPPLY_POINT" Label="General Supply Point" LabelAlias="General Supply" Graphic="25321700.svg">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>7</DigitTwo>

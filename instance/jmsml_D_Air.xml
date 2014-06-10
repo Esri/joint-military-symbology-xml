@@ -6,7 +6,7 @@
   </SymbolSetCode>
   <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
   <Entities>
-    <Entity ID="MILITARY" Label="Military" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes." Graphic="01110000.svg">
+    <Entity ID="MILITARY" Label="Military" LabelAlias="Military (Air)" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes." Graphic="01110000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
@@ -290,7 +290,7 @@
       </EntityTypes>
     </Entity>
 
-    <Entity ID="CIVILIAN" Label="Civilian" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes." Graphic="01120000.svg">
+    <Entity ID="CIVILIAN" Label="Civilian" LabelAlias="Civilian (Air)" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes." Graphic="01120000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>2</DigitTwo>
@@ -341,7 +341,7 @@
       </EntityTypes>
     </Entity>
 
-    <Entity ID="WEAPON" Label="Weapon" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes." Graphic="01130000.svg">
+    <Entity ID="WEAPON" Label="Weapon" LabelAlias="Weapon (Air)" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes." Graphic="01130000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>3</DigitTwo>
@@ -364,7 +364,7 @@
       </EntityTypes>
     </Entity>
 
-    <Entity ID="MANUAL_TRACK" Label="Manual Track" Graphic="10140000.svg" Icon="FULL_OCTAGON">
+    <Entity ID="MANUAL_TRACK" Label="Manual Track" LabelAlias="Manual Track (Air)" Graphic="10140000.svg" Icon="FULL_OCTAGON">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>4</DigitTwo>
@@ -625,7 +625,7 @@
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="HIJACKING_MOD" Label="Hijacking" Category="Crime" Graphic="01371.svg">
+    <Modifier ID="HIJACKING_MOD" Label="Hijacking" LabelAlias="Hijacking (Air)" Category="Crime" Graphic="01371.svg">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>7</DigitTwo>

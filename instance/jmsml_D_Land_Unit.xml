@@ -42,7 +42,7 @@
 						<DigitTwo>5</DigitTwo>
 					</EntityTypeCode>
         </EntityType>
-				<EntityType ID="MILITARY_INFORMATION_SUPPORT_OPERATIONS_MISO" Label="Military Information Support Operations (MISO)" Graphic="10110600.svg">
+				<EntityType ID="MILITARY_INFORMATION_SUPPORT_OPERATIONS_MISO" Label="Military Information Support Operations (MISO)" LabelAlias="Military Information Support (MISO)" Graphic="10110600.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>6</DigitTwo>
@@ -336,7 +336,7 @@
 						<DigitTwo>7</DigitTwo>
 					</EntityTypeCode>
 				</EntityType>
-				<EntityType ID="SPECIAL_OPERATIONS_FORCES_SOF" Label="Special Operations Forces (SOF)" Graphic="10121800.svg">
+				<EntityType ID="SPECIAL_OPERATIONS_FORCES_SOF" Label="Special Operations Forces (SOF)" LabelAlias="SOF" Graphic="10121800.svg">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>8</DigitTwo>
@@ -498,7 +498,7 @@
 				<DigitTwo>4</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="CHEMICAL_BIOLOGICAL_RADIOLOGICAL_NUCLEAR_DEFENSE" Label="Chemical Biological Radiological Nuclear Defense" Graphic="10140100.svg">
+				<EntityType ID="CHEMICAL_BIOLOGICAL_RADIOLOGICAL_NUCLEAR_DEFENSE" Label="Chemical Biological Radiological Nuclear Defense" LabelAlias="CBRN Defense" Graphic="10140100.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
@@ -1152,19 +1152,19 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-		<Entity ID="EMERGENCY_OPERATION" Label="Emergency Operation" Graphic="10190000.svg" Icon="FULL_OCTAGON">
+		<Entity ID="EMERGENCY_OPERATION" Label="Emergency Operation" LabelAlias="Emergency Operation (Land Units)" Graphic="10190000.svg" Icon="FULL_OCTAGON">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>9</DigitTwo>
 			</EntityCode>
 		</Entity>
-		<Entity ID="LAW_ENFORCEMENT" Label="Law Enforcement" Graphic="10200000.svg" Icon="FULL_OCTAGON">
+		<Entity ID="LAW_ENFORCEMENT" Label="Law Enforcement" LabelAlias="Law Enforcement (Land Units)" Graphic="10200000.svg" Icon="FULL_OCTAGON">
 			<EntityCode>
 				<DigitOne>2</DigitOne>
 				<DigitTwo>0</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="BUREAU_ATF" Label="Bureau of Alcohol Tobacco Firearms and Explosives (ATF) (Department of Justice)" Graphic="10200100.svg">
+				<EntityType ID="BUREAU_ATF" Label="Bureau of Alcohol Tobacco Firearms and Explosives (ATF) (Department of Justice)" LabelAlias="ATF DOJ" Graphic="10200100.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
@@ -1182,19 +1182,19 @@
 						<DigitTwo>3</DigitTwo>
 					</EntityTypeCode>
 				</EntityType>
-				<EntityType ID="DRUG_ENFORCEMENT_ADMINISTRATION_DEA" Label="Drug Enforcement Administration (DEA)" Graphic="10200400.svg">
+				<EntityType ID="DRUG_ENFORCEMENT_ADMINISTRATION_DEA" Label="Drug Enforcement Administration (DEA)" LabelAlias="DEA" Graphic="10200400.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>4</DigitTwo>
 					</EntityTypeCode>
 				</EntityType>
-				<EntityType ID="DEPARTMENT_JUSTICE_DOJ" Label="Department of Justice (DOJ)" Graphic="10200500.svg" Icon="FULL_OCTAGON">
+				<EntityType ID="DEPARTMENT_JUSTICE_DOJ" Label="Department of Justice (DOJ)" LabelAlias="DOJ" Graphic="10200500.svg" Icon="FULL_OCTAGON">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>5</DigitTwo>
 					</EntityTypeCode>
 				</EntityType>
-				<EntityType ID="FEDERAL_BUREAU_INVESTIGATION_FBI" Label="Federal Bureau of Investigation (FBI)" Graphic="10200600.svg">
+				<EntityType ID="FEDERAL_BUREAU_INVESTIGATION_FBI" Label="Federal Bureau of Investigation (FBI)" LabelAlias="FBI" Graphic="10200600.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>6</DigitTwo>
@@ -1212,13 +1212,13 @@
 						<DigitTwo>8</DigitTwo>
 					</EntityTypeCode>
 				</EntityType>
-				<EntityType ID="UNITED_STATES_SECRET_SERVICE_USSS" Label="United States Secret Service (USSS)" Graphic="10200900.svg">
+				<EntityType ID="UNITED_STATES_SECRET_SERVICE_USSS" Label="United States Secret Service (USSS)" LabelAlias="US Secret Service (USSS)" Graphic="10200900.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>9</DigitTwo>
 					</EntityTypeCode>
 				</EntityType>
-				<EntityType ID="TRANSPORTATION_SECURITY_ADMINISTRATION_TSA" Label="Transportation Security Administration (TSA)" Graphic="10201000.svg">
+				<EntityType ID="TRANSPORTATION_SECURITY_ADMINISTRATION_TSA" Label="Transportation Security Administration (TSA)" LabelAlias="TSA" Graphic="10201000.svg">
 					<EntityTypeCode>
 						<DigitOne>1</DigitOne>
 						<DigitTwo>0</DigitTwo>
@@ -1258,7 +1258,7 @@
 				<DigitTwo>2</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="ATTACK_MOD" Label="Attack" Category="Capability" Graphic="10031.svg">
+		<Modifier ID="ATTACK_MOD" Label="Attack" LabelAlias="Attack 1" Category="Capability" Graphic="10031.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>3</DigitTwo>
@@ -1330,7 +1330,7 @@
 				<DigitTwo>4</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="DECONTAMINATION_MOD" Label="Decontamination" Category="Capability" Graphic="10151.svg">
+		<Modifier ID="DECONTAMINATION_MOD" Label="Decontamination" LabelAlias="Decontamination 1" Category="Capability" Graphic="10151.svg">
 			<ModifierCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>5</DigitTwo>
@@ -1546,7 +1546,7 @@
 				<DigitTwo>0</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="RFID_INTERROGATOR_SENSOR_MOD" Label="Radio Frequency Identification (RFID) Interrogator / Sensor" Category="Capability" Graphic="10511.svg">
+		<Modifier ID="RFID_INTERROGATOR_SENSOR_MOD" Label="Radio Frequency Identification (RFID) Interrogator / Sensor" LabelAlias="RFID Interrogator/Sensor" Category="Capability" Graphic="10511.svg">
 			<ModifierCode>
 				<DigitOne>5</DigitOne>
 				<DigitTwo>1</DigitTwo>
@@ -1654,7 +1654,7 @@
 				<DigitTwo>8</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="UTILITY_MOD" Label="Utility" Category="Capability" Graphic="10691.svg">
+		<Modifier ID="UTILITY_MOD" Label="Utility" LabelAlias="Utility 1" Category="Capability" Graphic="10691.svg">
 			<ModifierCode>
 				<DigitOne>6</DigitOne>
 				<DigitTwo>9</DigitTwo>
@@ -1666,19 +1666,19 @@
 				<DigitTwo>0</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="ACCIDENT_MOD" Label="Accident" Category="Composite Loss" Graphic="10711.svg">
+		<Modifier ID="ACCIDENT_MOD" Label="Accident" LabelAlias="Accident (Land Units)" Category="Composite Loss" Graphic="10711.svg">
 			<ModifierCode>
 				<DigitOne>7</DigitOne>
 				<DigitTwo>1</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="OTHER_MOD" Label="Other" Category="Composite Loss" Graphic="10721.svg">
+		<Modifier ID="OTHER_MOD" Label="Other" LabelAlias="Other (Land Units)" Category="Composite Loss" Graphic="10721.svg">
 			<ModifierCode>
 				<DigitOne>7</DigitOne>
 				<DigitTwo>2</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="CIVILIAN_MOD" Label="Civilian" Category="Operation" Graphic="10731.svg">
+		<Modifier ID="CIVILIAN_MOD" Label="Civilian" LabelAlias="Civilian (Land Units)" Category="Operation" Graphic="10731.svg">
 			<ModifierCode>
 				<DigitOne>7</DigitOne>
 				<DigitTwo>3</DigitTwo>
@@ -1702,7 +1702,7 @@
 				<DigitTwo>6</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="SUPPORT_MOD" Label="Support" Category="Capability" Graphic="10771.svg">
+		<Modifier ID="SUPPORT_MOD" Label="Support" LabelAlias="Support 1" Category="Capability" Graphic="10771.svg">
 			<ModifierCode>
 				<DigitOne>7</DigitOne>
 				<DigitTwo>7</DigitTwo>
@@ -1764,7 +1764,7 @@
 				<DigitTwo>8</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="DECONTAMINATION_2_MOD" Label="Decontamination" Category="Capability" Graphic="10092.svg">
+		<Modifier ID="DECONTAMINATION_2_MOD" Label="Decontamination" LabelAlias="Decontamination 2" Category="Capability" Graphic="10092.svg">
 			<ModifierCode>
 				<DigitOne>0</DigitOne>
 				<DigitTwo>9</DigitTwo>
@@ -1980,7 +1980,7 @@
 				<DigitTwo>4</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="SUPPORT_2_MOD" Label="Support" Category="Capability" Graphic="10452.svg">
+		<Modifier ID="SUPPORT_2_MOD" Label="Support" LabelAlias="Support 2" Category="Capability" Graphic="10452.svg">
 			<ModifierCode>
 				<DigitOne>4</DigitOne>
 				<DigitTwo>5</DigitTwo>
@@ -2034,7 +2034,7 @@
 				<DigitTwo>3</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="ATTACK_2_MOD" Label="Attack" Category="Capability" Graphic="10542.svg">
+		<Modifier ID="ATTACK_2_MOD" Label="Attack" LabelAlias="Attack 2" Category="Capability" Graphic="10542.svg">
 			<ModifierCode>
 				<DigitOne>5</DigitOne>
 				<DigitTwo>4</DigitTwo>
@@ -2046,7 +2046,7 @@
 				<DigitTwo>5</DigitTwo>
 			</ModifierCode>
 		</Modifier>
-		<Modifier ID="UTILITY_2_MOD" Label="Utility" Category="Capability" Graphic="10562.svg">
+		<Modifier ID="UTILITY_2_MOD" Label="Utility" LabelAlias="Utility 2" Category="Capability" Graphic="10562.svg">
 			<ModifierCode>
 				<DigitOne>5</DigitOne>
 				<DigitTwo>6</DigitTwo>

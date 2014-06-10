@@ -455,7 +455,7 @@
 				<DigitTwo>5</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="CLOUD_COVERAGE_SYMBOLS" Label="Cloud Coverage Symbols" Icon="NA" GeometryType="NA">
+				<EntityType ID="CLOUD_COVERAGE_SYMBOLS" Label="Cloud Coverage Symbols" LabelAlias="Cloud Coverage" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
@@ -1080,7 +1080,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="BOUNDED_AREAS_WEATHER" Label="Bounded Areas of Weather" Icon="NA" GeometryType="NA">
+		<Entity ID="BOUNDED_AREAS_WEATHER" Label="Bounded Areas of Weather" LabelAlias="Bounded Areas" Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>7</DigitTwo>

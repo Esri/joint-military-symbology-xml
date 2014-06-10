@@ -64,6 +64,18 @@
       <xs:enumeration value="TEXT"/>
     </xs:restriction>
   </xs:simpleType>
+  
+  <xs:simpleType name="AttributeTypeType">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="BOOLEAN"/>
+      <xs:enumeration value="DATETIME"/>
+      <xs:enumeration value="DOUBLE"/>
+      <xs:enumeration value="INTEGER"/>
+      <xs:enumeration value="LONG"/>
+      <xs:enumeration value="SINGLE"/>
+      <xs:enumeration value="STRING"/>
+    </xs:restriction>
+  </xs:simpleType>
 
   <xs:complexType name="LegacyFunctionCodeType">
     <xs:simpleContent>
@@ -100,6 +112,7 @@
   <xs:attributeGroup name="NameAttributeGroup">
     <xs:attribute name="Name" type="xs:token" use="required"/>
     <xs:attribute name="Label" type="xs:token" use="optional"/>
+    <xs:attribute name="LabelAlias" type="xs:token" use="optional" default=""/>
     <xs:attribute name="Description" type="xs:string" use="optional"/>
     <xs:attribute name="Remarks" type="xs:string" use="optional"/>
   </xs:attributeGroup>
@@ -147,6 +160,7 @@
   <xs:attributeGroup name="GraphicIdentifierAttributeGroup">
     <xs:attribute name="ID" type="xs:ID" use="required"/>
     <xs:attribute name="Label" type="xs:token" use="optional"/>
+    <xs:attribute name="LabelAlias" type="xs:token" use="optional" default=""/>
     <xs:attribute name="Description" type="xs:string" use="optional"/>
     <xs:attribute name="Remarks" type="xs:string" use="optional"/>
     <xs:attribute name="Graphic" type="xs:anyURI" use="optional"/>
@@ -155,6 +169,7 @@
   <xs:attributeGroup name="FramedGraphicIdentifierAttributeGroup">
     <xs:attribute name="ID" type="xs:ID" use="required"/>
     <xs:attribute name="Label" type="xs:token" use="optional" default=""/>
+    <xs:attribute name="LabelAlias" type="xs:token" use="optional" default=""/>
     <xs:attribute name="Description" type="xs:string" use="optional" default=""/>
     <xs:attribute name="Remarks" type="xs:string" use="optional" default=""/>
     <xs:attribute name="Graphic" type="xs:anyURI" use="optional" default=""/>
@@ -213,4 +228,167 @@
       </xs:element>
     </xs:sequence>
   </xs:complexType>
+
+  <xs:complexType name="FieldListType">
+    <xs:sequence>
+      <xs:element name="Field" minOccurs="0" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:attributeGroup ref="NameAttributeGroup"/>
+          <xs:attribute name="Type" type="AttributeTypeType"/>
+          <xs:attribute name="AmplifierID" type="xs:IDREF" use="required"/>
+          <xs:attribute name="X" type="xs:int" use="optional" default="0"/>
+          <xs:attribute name="Y" type="xs:int" use="optional" default="0"/>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <!-- Label Placement -->
+  
+  <xs:simpleType name="LabelRuleType">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="Point"/>
+      <xs:enumeration value="Line"/>
+      <xs:enumeration value="Area"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="PointLabelMethodType">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="NA"/>
+      <xs:enumeration value="AroundPoint"/>
+			<xs:enumeration value="CenteredOnPoint"/>
+			<xs:enumeration value="NorthOfPoint"/>
+			<xs:enumeration value="NorthEastOfPoint"/>
+			<xs:enumeration value="EastOfPoint"/>
+			<xs:enumeration value="SouthEastOfPoint"/>
+			<xs:enumeration value="SouthOfPoint"/>
+			<xs:enumeration value="SouthWestOfPoint"/>
+			<xs:enumeration value="WestOfPoint"/>
+			<xs:enumeration value="NorthWestOfPoint"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="LineLabelMethodType">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="NA"/>
+      <xs:enumeration value="CenteredHorizontalOnLine"/>
+			<xs:enumeration value="CenteredStraightOnLine"/>
+			<xs:enumeration value="CenteredCurvedOnLine"/>
+			<xs:enumeration value="CenteredPerpendicularOnLine"/>
+			<xs:enumeration value="OffsetHorizontalFromLine"/>
+			<xs:enumeration value="OffsetStraightFromLine"/>
+			<xs:enumeration value="OffsetCurvedFromLine"/>
+			<xs:enumeration value="OffsetPerpendicularFromLine"/>
+      </xs:restriction>
+  </xs:simpleType>
+  
+   <xs:simpleType name="AreaLabelMethodType">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="NA"/>
+      <xs:enumeration value="HorizontalInPolygon"/>
+			<xs:enumeration value="StraightInPolygon"/>
+			<xs:enumeration value="CurvedInPolygon"/>
+			<xs:enumeration value="HorizontalAroundPolygon"/>
+			<xs:enumeration value="RepeatAlongBoundary"/>
+			<xs:enumeration value="CurvedAroundPolygon"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="MultiPartOptionType">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="OneLabelPerFeature"/>
+			<xs:enumeration value="OneLabelPerPart"/>
+			<xs:enumeration value="OneLabelPerSegment"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="ConstrainOffsetType">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="NoConstraint"/>
+			<xs:enumeration value="AboveLine"/>
+			<xs:enumeration value="BelowLine"/>
+			<xs:enumeration value="LeftOfLine"/>
+			<xs:enumeration value="RightOfLine"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="OffsetAlongLinePlacementType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="BestPositionAlongLine"/>
+			<xs:enumeration value="BeforeStartOfLine"/>
+			<xs:enumeration value="AlongLineFromStart"/>
+			<xs:enumeration value="AlongLineFromEnd"/>
+			<xs:enumeration value="AfterEndOfLine"/>
+		</xs:restriction>
+	</xs:simpleType>
+  
+  <xs:simpleType name="LabelAnchorPointType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="CenterOfLabel"/>
+			<xs:enumeration value="NearestSideOfLabel"/>
+			<xs:enumeration value="FurthestSideOfLabel"/>
+		</xs:restriction>
+	</xs:simpleType>
+  
+  <xs:simpleType name="LabelUnitType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Map"/>
+			<xs:enumeration value="MM"/>
+			<xs:enumeration value="Inch"/>
+			<xs:enumeration value="Point"/>
+			<xs:enumeration value="Percentage"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+  <xs:simpleType name="LabelExternalZoneType">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="NA"/>
+      <xs:enumeration value="AboveLeft"/>
+      <xs:enumeration value="AboveCenter"/>
+      <xs:enumeration value="AboveRight"/>
+      <xs:enumeration value="CenterRight"/>
+      <xs:enumeration value="BelowRight"/>
+      <xs:enumeration value="BelowCenter"/>
+      <xs:enumeration value="BelowLeft"/>
+      <xs:enumeration value="CenterLeft"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="LabelInternalZoneType">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="NA"/>
+      <xs:enumeration value="AboveLeft"/>
+      <xs:enumeration value="AboveCenter"/>
+      <xs:enumeration value="AboveRight"/>
+      <xs:enumeration value="CenterRight"/>
+      <xs:enumeration value="BelowRight"/>
+      <xs:enumeration value="BelowCenter"/>
+      <xs:enumeration value="BelowLeft"/>
+      <xs:enumeration value="CenterLeft"/>
+      <xs:enumeration value="Center"/>
+    </xs:restriction>
+  </xs:simpleType>
+                 
+  <xs:attributeGroup name="LabelRuleAttributeGroup">
+    <xs:attribute name="ID" type="xs:ID" use="required"/>
+    <xs:attribute name="Type" type="LabelRuleType" use="required"/>
+    <xs:attribute name="PointLabelMethod" type="PointLabelMethodType" use="optional" default="NA"/>
+    <xs:attribute name="LineLabelMethod" type="LineLabelMethodType" use="optional" default="NA"/>
+    <xs:attribute name="AreaLabelMethod" type="AreaLabelMethodType" use="optional" default="NA"/>
+    <xs:attribute name="MultiPartOption" type="MultiPartOptionType" use="optional" default="OneLabelPerFeature"/>
+    <xs:attribute name="ConstrainOffset" type="ConstrainOffsetType" use="optional" default="NoConstraint"/>
+    <xs:attribute name="ExternalZone" type="LabelExternalZoneType" use="optional" default="NA"/>
+    <xs:attribute name="InternalZone" type="LabelInternalZoneType" use="optional" default="NA"/>
+    <xs:attribute name="Offset" type="xs:double" use="optional" default="0"/>
+    <xs:attribute name="OffsetUnit" type="LabelUnitType" use="optional" default="Map"/>
+  </xs:attributeGroup>
+
+  <xs:attributeGroup name="OffsetAlongLineAttributeGroup">
+    <xs:attribute name="PlacementMethod" type="OffsetAlongLinePlacementType" use="required"/>
+    <xs:attribute name="LabelAnchorPoint" type="LabelAnchorPointType" use="required"/>
+    <xs:attribute name="Distance" type="xs:double" use="optional" default="0"/>
+    <xs:attribute name="Tolerance" type="xs:double" use="optional" default="0"/>
+    <xs:attribute name="DistanceUnit" type="LabelUnitType" use="optional" default="Map"/>
+  </xs:attributeGroup>
 </xs:schema>

@@ -26,6 +26,24 @@
           </xs:complexType>
         </xs:element>
         
+        <!-- LabelPlacementRules-->
+
+        <xs:element name="LabelRules" minOccurs="1" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LabelRule" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Expression" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                    <xs:element name="OffsetAlongLine" type="OffsetAlongLinePlacementType" minOccurs="0" maxOccurs="1"/>
+                  </xs:sequence>
+                  <xs:attributeGroup ref="LabelRuleAttributeGroup"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        
         <!-- Amplifier -->
 
         <xs:element name="Amplifiers" minOccurs="1" maxOccurs="1">
@@ -134,20 +152,7 @@
                   <xs:sequence>
                     <xs:element name="DimensionCode" type="DoubleDigitType"/>
                     <xs:element name="LegacyDimensionCode" type="LegacyLetterCodeType" minOccurs="0" maxOccurs="unbounded"/>
-                    <xs:element name="Fields" minOccurs="1" maxOccurs="1">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element name="Field" minOccurs="0" maxOccurs="unbounded">
-                            <xs:complexType>
-                              <xs:attributeGroup ref="NameAttributeGroup"/>
-                              <xs:attribute name="AmplifierID" type="xs:IDREF" use="required"/>
-                              <xs:attribute name="X" type="xs:int" use="required"/>
-                              <xs:attribute name="Y" type="xs:int" use="required"/>
-                            </xs:complexType>
-                          </xs:element>
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
+                    <xs:element name="Fields" type="FieldListType" minOccurs="1" maxOccurs="1"/>
                     <xs:element name="SymbolSets" minOccurs="1" maxOccurs="1">
                       <xs:complexType>
                         <xs:sequence>

@@ -36,10 +36,7 @@ namespace JointMilitarySymbologyLibrary
 
         string IModifierExport.Line(SymbolSet ss, string modNumber, ModifiersTypeModifier m)
         {
-            string result = ss.Label.Replace(',', '-') + _configHelper.DomainSeparator + 
-                            "Modifier " + modNumber + _configHelper.DomainSeparator + 
-                            m.Category.Replace(',', '-') + _configHelper.DomainSeparator + 
-                            m.Label.Replace(',', '-') + ",";
+            string result = BuildModifierItemName(ss, modNumber, m) + ",";
 
             result = result + Convert.ToString(ss.SymbolSetCode.DigitOne) + Convert.ToString(ss.SymbolSetCode.DigitTwo) +
                               Convert.ToString(m.ModifierCode.DigitOne) + Convert.ToString(m.ModifierCode.DigitTwo) +

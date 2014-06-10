@@ -8,7 +8,7 @@
   <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
 
   <Entities>
-    <Entity ID="MILITARY" Label="Military" Graphic="30110000.svg">
+    <Entity ID="MILITARY" Label="Military" LabelAlias="Military (Sea Surface)" Graphic="30110000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
@@ -87,42 +87,42 @@
           </EntityTypeCode>
 
           <EntitySubTypes>
-            <EntitySubType ID="ACS" Label="Amphibious Command Ship" Graphic="30120301.svg">
+            <EntitySubType ID="ACS" Label="Amphibious Command Ship" LabelAlias="Command Ship" Graphic="30120301.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="AMPHIB_ASSAULT_NON" Label="Amphibious Assault, Non-specified" Graphic="30120302.svg">
+            <EntitySubType ID="AMPHIB_ASSAULT_NON" Label="Amphibious Assault, Non-specified" LabelAlias="Assault, Non-specified" Graphic="30120302.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>2</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="AMPHIB_ASSAULT_GENERAL" Label="Amphibious Assault Ship, General" Graphic="30120303.svg">
+            <EntitySubType ID="AMPHIB_ASSAULT_GENERAL" Label="Amphibious Assault Ship, General" LabelAlias="Assault Ship, General" Graphic="30120303.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>3</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="AMPHIB_ASSAULT_MULT" Label="Amphibious Assault Ship, Multipurpose" Graphic="30120304.svg">
+            <EntitySubType ID="AMPHIB_ASSAULT_MULT" Label="Amphibious Assault Ship, Multipurpose" LabelAlias="Assault Ship, Multipurpose" Graphic="30120304.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>4</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="AMPHIB_ASSAULT_HELO" Label="Amphibious Assault Ship, Helicopter" Graphic="30120305.svg">
+            <EntitySubType ID="AMPHIB_ASSAULT_HELO" Label="Amphibious Assault Ship, Helicopter" LabelAlias="Assault Ship, Helicopter" Graphic="30120305.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>5</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
 
-            <EntitySubType ID="AMPHIB_TRANS_DOCK" Label="Amphibious Transport Dock" Graphic="30120306.svg">
+            <EntitySubType ID="AMPHIB_TRANS_DOCK" Label="Amphibious Transport Dock" LabelAlias="Transport Dock" Graphic="30120306.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>6</DigitTwo>
@@ -240,7 +240,7 @@
           </EntityTypeCode>
 
           <EntitySubTypes>
-            <EntitySubType ID="RHIB" Label="Rigid-Hull Inflatable Boat (RHIB)" Graphic="30120801.svg">
+            <EntitySubType ID="RHIB" Label="Rigid-Hull Inflatable Boat (RHIB)" LabelAlias="Rigid-Hull Inflatable Boat" Graphic="30120801.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>1</DigitTwo>
@@ -455,7 +455,7 @@
       </EntityTypes>
     </Entity>
 
-    <Entity ID="CIVILIAN" Label="Civilian" Graphic="30140000.svg">
+    <Entity ID="CIVILIAN" Label="Civilian" LabelAlias="Civilian (Sea Surface)" Graphic="30140000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>4</DigitTwo>
@@ -634,7 +634,7 @@
           </EntityTypeCode>
 
           <EntitySubTypes>
-            <EntitySubType ID="CIV_RHIB" Label="Rigid-Hull Inflatable Boat (RHIB)" Graphic="30140501.svg">
+            <EntitySubType ID="CIV_RHIB" Label="Rigid-Hull Inflatable Boat (RHIB)" LabelAlias="Rigid-Hull Inflatable Boat" Graphic="30140501.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>1</DigitTwo>
@@ -673,14 +673,14 @@
       </EntityCode>
     </Entity>
 
-    <Entity ID="FUSED_TRACK" Label="Fused Track" Graphic="30160000.svg">
+    <Entity ID="FUSED_TRACK" Label="Fused Track" LabelAlias="Fused Track (Sea Surface)" Graphic="30160000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>6</DigitTwo>
       </EntityCode>
     </Entity>
 
-    <Entity ID="MANUAL_TRACK" Label="Manual Track" Graphic="30170000.svg">
+    <Entity ID="MANUAL_TRACK" Label="Manual Track" LabelAlias="Manual Track (Sea Surface)" Graphic="30170000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>7</DigitTwo>
@@ -703,7 +703,7 @@
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="ASW_MOD" Label="Antisubmarine Warfare" Category="Mission Area" Graphic="30031.svg">
+    <Modifier ID="ASW_MOD" Label="Antisubmarine Warfare" LabelAlias="Antisubmarine Warfare (Sea Surface)" Category="Mission Area" Graphic="30031.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>3</DigitTwo>
@@ -731,7 +731,7 @@
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="MCM_MOD" Label="Mine Countermeasures" Category="Mission Area" Graphic="30071.svg">
+    <Modifier ID="MCM_MOD" Label="Mine Countermeasures" LabelAlias="Mine Countermeasures (Sea Surface)" Category="Mission Area" Graphic="30071.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>7</DigitTwo>
@@ -752,7 +752,7 @@
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="MIW_MOD" Label="Mine Warfare" Category="Mission Area" Graphic="30101.svg">
+    <Modifier ID="MIW_MOD" Label="Mine Warfare" LabelAlias="Mine Warfare (Sea Surface)" Category="Mission Area" Graphic="30101.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>0</DigitTwo>
@@ -766,35 +766,35 @@
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="SOF_MOD" Label="Special Operations Forces (SOF)" Category="Asset Capability" Graphic="30121.svg">
+    <Modifier ID="SOF_MOD" Label="Special Operations Forces (SOF)" LabelAlias="SOF (Sea Surface)" Category="Asset Capability" Graphic="30121.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="SUW_MOD" Label="Surface Warfare" Category="Mission Area" Graphic="30131.svg">
+    <Modifier ID="SUW_MOD" Label="Surface Warfare" LabelAlias="Surface Warfare (Sea Surface)" Category="Mission Area" Graphic="30131.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="BALLISTIC_MOD" Label="Ballistic Missile" Category="Weapons Capability" Graphic="30141.svg">
+    <Modifier ID="BALLISTIC_MOD" Label="Ballistic Missile" LabelAlias="Ballistic Missile (Sea Surface)" Category="Weapons Capability" Graphic="30141.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="GUIDED_MOD" Label="Guided Missile" Category="Weapons Capability" Graphic="30151.svg">
+    <Modifier ID="GUIDED_MOD" Label="Guided Missile" LabelAlias="Guided Missile (Sea Surface)" Category="Weapons Capability" Graphic="30151.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="OTHER_GUIDED_MOD" Label="Other Guided Missile" Category="Weapons Capability" Graphic="30161.svg">
+    <Modifier ID="OTHER_GUIDED_MOD" Label="Other Guided Missile" LabelAlias="Other Guided Missile (Sea Surface)" Category="Weapons Capability" Graphic="30161.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>6</DigitTwo>
@@ -843,7 +843,7 @@
       </ModifierCode>
     </Modifier>
 
-    <Modifier ID="HIJACK_MOD" Label="Hijacking/Hijacked" Category="Crime" Graphic="30231.svg">
+    <Modifier ID="HIJACK_MOD" Label="Hijacking/Hijacked" LabelAlias="Hijacking/Hijacked (Sea Surface)" Category="Crime" Graphic="30231.svg">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>3</DigitTwo>

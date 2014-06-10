@@ -44,7 +44,7 @@
 				<DigitTwo>2</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="ADVANCED_PERSISTENT_THREAT_APT" Label="Advanced Persistent Threat (APT)" Graphic="60120100.svg">
+				<EntityType ID="ADVANCED_PERSISTENT_THREAT_APT" Label="Advanced Persistent Threat (APT)" LabelAlias="APT" Graphic="60120100.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
@@ -68,7 +68,7 @@
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="APT_OTHER" Label="APT Other" Graphic="60120104.svg">
+						<EntitySubType ID="APT_OTHER" Label="APT Other" LabelAlias="Other" Graphic="60120104.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>4</DigitTwo>
@@ -76,7 +76,7 @@
 						</EntitySubType>
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="NON_ADVANCED_PERSISTENT_THREAT_NAPT" Label="Non-Advanced Persistent Threat (NAPT)" Graphic="60120200.svg">
+				<EntityType ID="NON_ADVANCED_PERSISTENT_THREAT_NAPT" Label="Non-Advanced Persistent Threat (NAPT)" LabelAlias="NAPT" Graphic="60120200.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
@@ -100,7 +100,7 @@
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="NAPT_OTHER" Label="NAPT Other" Graphic="60120204.svg">
+						<EntitySubType ID="NAPT_OTHER" Label="NAPT Other" LabelAlias="Other" Graphic="60120204.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>4</DigitTwo>
