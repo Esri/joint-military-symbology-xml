@@ -253,7 +253,7 @@
           </EntityTypeCode>
         </EntityType>
 
-        <EntityType ID="UAV" Label="Unmanned Aircraft (UA)/Unmanned Aerial Vehicle (UAV)/Unmanned Aircraft System (UAS)/Remote Piloted Vehicle (RPV)" Graphic="01110300.svg">
+        <EntityType ID="UAV" Label="Unmanned Aircraft (UA)/Unmanned Aerial Vehicle (UAV)/Unmanned Aircraft System (UAS)/Remote Piloted Vehicle (RPV)" LabelAlias="Unmanned Aircraft (UA, UAV, UAS, RPV)" Graphic="01110300.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>3</DigitTwo>
@@ -311,7 +311,7 @@
           </EntityTypeCode>
         </EntityType>
 
-        <EntityType ID="CIV_UAV" Label="Unmanned Aircraft (UA) / Unmanned Aerial Vehicle (UAV) / Unmanned Aircraft System (UAS) / Remote Piloted Vehicle (RPV)" Graphic="01120300.svg">
+        <EntityType ID="CIV_UAV" Label="Unmanned Aircraft (UA) / Unmanned Aerial Vehicle (UAV) / Unmanned Aircraft System (UAS) / Remote Piloted Vehicle (RPV)" LabelAlias="Unmanned Aircraft (UA, UAV, UAS, RPV)" Graphic="01120300.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>3</DigitTwo>
