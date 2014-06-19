@@ -85,10 +85,26 @@ namespace JointMilitarySymbologyLibrary
                                 exportLines && e.GeometryType == GeometryType.LINE ||
                                 exportAreas && e.GeometryType == GeometryType.AREA)
                             {
-                                line = string.Format("{0}", exporter.Line(s, e, null, null));
+                                // If the icon is Full Frame then four lines need to be exported, to reflect the four icon shapes.
+                                // Else just write out one line for non-Full-Frame.
 
-                                w.WriteLine(line);
-                                w.Flush();
+                                if (e.Icon == IconType.FULL_FRAME)
+                                {
+                                    foreach (LibraryStandardIdentityGroup sig in _library.StandardIdentityGroups)
+                                    {
+                                        line = string.Format("{0}", exporter.Line(sig, s, e, null, null));
+
+                                        w.WriteLine(line);
+                                        w.Flush();
+                                    }
+                                }
+                                else
+                                {
+                                    line = string.Format("{0}", exporter.Line(null, s, e, null, null));
+
+                                    w.WriteLine(line);
+                                    w.Flush();
+                                }
                             }
                         }
 
@@ -102,10 +118,26 @@ namespace JointMilitarySymbologyLibrary
                                         exportLines && eType.GeometryType == GeometryType.LINE ||
                                         exportAreas && eType.GeometryType == GeometryType.AREA)
                                     {
-                                        line = string.Format("{0}", exporter.Line(s, e, eType, null));
+                                        // If the icon is Full Frame then four lines need to be exported, to reflect the four icon shapes.
+                                        // Else just write out one line for non-Full-Frame.
 
-                                        w.WriteLine(line);
-                                        w.Flush();
+                                        if (eType.Icon == IconType.FULL_FRAME)
+                                        {
+                                            foreach (LibraryStandardIdentityGroup sig in _library.StandardIdentityGroups)
+                                            {
+                                                line = string.Format("{0}", exporter.Line(sig, s, e, eType, null));
+
+                                                w.WriteLine(line);
+                                                w.Flush();
+                                            }
+                                        }
+                                        else
+                                        {
+                                            line = string.Format("{0}", exporter.Line(null, s, e, eType, null));
+
+                                            w.WriteLine(line);
+                                            w.Flush();
+                                        }
                                     }
                                 }
 
@@ -119,10 +151,26 @@ namespace JointMilitarySymbologyLibrary
                                                 exportLines && eSubType.GeometryType == GeometryType.LINE ||
                                                 exportAreas && eSubType.GeometryType == GeometryType.AREA)
                                             {
-                                                line = string.Format("{0}", exporter.Line(s, e, eType, eSubType));
+                                                // If the icon is Full Frame then four lines need to be exported, to reflect the four icon shapes.
+                                                // Else just write out one line for non-Full-Frame.
 
-                                                w.WriteLine(line);
-                                                w.Flush();
+                                                if (eSubType.Icon == IconType.FULL_FRAME)
+                                                {
+                                                    foreach (LibraryStandardIdentityGroup sig in _library.StandardIdentityGroups)
+                                                    {
+                                                        line = string.Format("{0}", exporter.Line(sig, s, e, eType, eSubType));
+
+                                                        w.WriteLine(line);
+                                                        w.Flush();
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    line = string.Format("{0}", exporter.Line(null, s, e, eType, eSubType));
+
+                                                    w.WriteLine(line);
+                                                    w.Flush();
+                                                }
                                             }
                                         }
                                     }

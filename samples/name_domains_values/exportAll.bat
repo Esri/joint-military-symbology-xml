@@ -19,4 +19,10 @@ jmsml.exe /xe="../../../../../samples/name_domains_values/Coded_Domain_METOC_Are
 jmsml.exe /xf="../../../../../samples/name_domains_values/Coded_Domain_Frames" /xas="DOMAIN"
 jmsml.exe /xa="../../../../../samples/name_domains_values/Coded_Domain_Amplifiers" /xas="DOMAIN"
 jmsml.exe /xh="../../../../../samples/name_domains_values/Coded_Domain_HQTFFD" /xas="DOMAIN"
+
+REM *** Append all coded domain values together in a single file ***
+
+jmsml.exe /xe="../../../../../samples/name_domains_values/All_Coded_Domain_Values" /xas="DOMAIN"
+jmsml.exe /xe="../../../../../samples/name_domains_values/All_Coded_Domain_Values" /xas="DOMAIN" /+
+
 endlocal

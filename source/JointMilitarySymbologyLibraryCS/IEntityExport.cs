@@ -25,7 +25,8 @@ namespace JointMilitarySymbologyLibrary
 
         string Headers { get; }
 
-        string Line(SymbolSet ss,
+        string Line(LibraryStandardIdentityGroup sig,
+                    SymbolSet ss,
                     SymbolSetEntity e, 
                     SymbolSetEntityEntityType eType, 
                     SymbolSetEntityEntityTypeEntitySubType eSubType);

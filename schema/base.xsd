@@ -136,6 +136,7 @@
                   </xs:sequence>
                   <xs:attributeGroup ref="IdentifierAttributeGroup"/>
                   <xs:attribute name="StandardIdentityIDs" type="xs:IDREFS" use="required"/>
+                  <xs:attribute name="GraphicSuffix" type="xs:token" use="required"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>

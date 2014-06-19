@@ -55,9 +55,9 @@ namespace JointMilitarySymbologyLibrary
             }
 
             result = result + category + _configHelper.DomainSeparator;
-            result = result + identityGroup.Label.Replace(',', '-') + _configHelper.DomainSeparator;
-            result = result + amplifier.Label.Replace(',', '-');
-
+            result = result + amplifier.Label.Replace(',', '-') + _configHelper.DomainSeparator;
+            result = result + identityGroup.Label.Replace(',', '-') ;
+            
             return result;
         }
 
@@ -95,8 +95,8 @@ namespace JointMilitarySymbologyLibrary
             }
 
             result = result + category;
-            result = result + identityGroup.Label.Replace(',', '-') + ";";
             result = result + amplifier.Label.Replace(',', '-') + ";";
+            result = result + identityGroup.Label.Replace(',', '-') + ";";
 
             // Loop through standard identities in the group and add them
 

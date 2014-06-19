@@ -44,7 +44,8 @@ namespace JointMilitarySymbologyLibrary
 
         protected string[] _geometryList = { "NotValid", "Point", "Line", "Area" };
 
-        protected string BuildEntityCode(SymbolSet ss,
+        protected string BuildEntityCode(LibraryStandardIdentityGroup sig,
+                                         SymbolSet ss,
                                          SymbolSetEntity e,
                                          SymbolSetEntityEntityType eType,
                                          SymbolSetEntityEntityTypeEntitySubType eSubType)
@@ -52,7 +53,9 @@ namespace JointMilitarySymbologyLibrary
             // Constructs a string containing the symbol set and entity codes for a given
             // set of those objects.
 
-            string code = Convert.ToString(ss.SymbolSetCode.DigitOne) + Convert.ToString(ss.SymbolSetCode.DigitTwo);
+            string code = "";
+
+            code = code + Convert.ToString(ss.SymbolSetCode.DigitOne) + Convert.ToString(ss.SymbolSetCode.DigitTwo);
             code = code + Convert.ToString(e.EntityCode.DigitOne) + Convert.ToString(e.EntityCode.DigitTwo);
 
             if (eType != null)
@@ -65,10 +68,16 @@ namespace JointMilitarySymbologyLibrary
             else
                 code = code + "00";
 
+            if (sig != null)
+            {
+                code = code + sig.GraphicSuffix;
+            }
+
             return code;
         }
 
-        protected string BuildEntityItemName(SymbolSet ss,
+        protected string BuildEntityItemName(LibraryStandardIdentityGroup sig,
+                                             SymbolSet ss,
                                              SymbolSetEntity e,
                                              SymbolSetEntityEntityType eType,
                                              SymbolSetEntityEntityTypeEntitySubType eSubType)
@@ -92,6 +101,11 @@ namespace JointMilitarySymbologyLibrary
                 string eSubTypeLabel = (eSubType.LabelAlias == "") ? eSubType.Label : eSubType.LabelAlias;
                 result = result + _configHelper.DomainSeparator + eSubTypeLabel.Replace(',', '-');
             }
+
+            if (sig != null)
+            {
+                result = result + _configHelper.DomainSeparator + sig.Label;
+            }
             
             return result;
         }
@@ -107,7 +121,34 @@ namespace JointMilitarySymbologyLibrary
             return result;
         }
 
-        protected string BuildEntityItemTags(SymbolSet ss,
+        protected string GrabGraphic(string uGraphic, string fGraphic, string nGraphic, string hGraphic, string gSuffix)
+        {
+            string graphic = "";
+
+            switch (gSuffix)
+            {
+                case "_0":
+                    graphic = uGraphic;
+                    break;
+
+                case "_1":
+                    graphic = fGraphic;
+                    break;
+
+                case "_2":
+                    graphic = nGraphic;
+                    break;
+
+                case "_3":
+                    graphic = hGraphic;
+                    break;
+            }
+
+            return graphic;
+        }
+
+        protected string BuildEntityItemTags(LibraryStandardIdentityGroup sig,
+                                             SymbolSet ss,
                                              SymbolSetEntity e,
                                              SymbolSetEntityEntityType eType,
                                              SymbolSetEntityEntityTypeEntitySubType eSubType,
@@ -123,26 +164,30 @@ namespace JointMilitarySymbologyLibrary
             string result = ss.Label.Replace(',', '-') + ";" + e.Label.Replace(',', '-');
             string graphic = "";
             string geometry = "";
+            string iType = Convert.ToString(e.Icon);
 
             if (eType != null)
+            {
                 result = result + ";" + eType.Label.Replace(',', '-');
+                iType = Convert.ToString(eType.Icon);
+            }
 
             if (eSubType != null)
             {
                 result = result + ";" + eSubType.Label.Replace(',', '-');
+                iType = Convert.ToString(eSubType.Icon);
 
                 // Add the type of geometry
 
                 geometry = _geometryList[(int)eSubType.GeometryType];
 
-                // The following is a work around because our symbol system doesn't
-                // need the export of multiple SVG files for the same symbol.
-                // TODO: handle this differently, but for now, we export the square
-                // graphic if there are in fact multiple files.
-
                 if (eSubType.Icon == IconType.FULL_FRAME)
                 {
-                    graphic = eSubType.SquareGraphic;
+                    if (sig != null)
+                    {
+                        graphic = GrabGraphic(eSubType.CloverGraphic, eSubType.RectangleGraphic, eSubType.SquareGraphic, eSubType.DiamondGraphic, sig.GraphicSuffix);
+                    }
+                    
                     _notes = _notes + "icon touches frame;";
                 }
                 else if (eSubType.Icon == IconType.NA)
@@ -156,12 +201,13 @@ namespace JointMilitarySymbologyLibrary
 
                 geometry = _geometryList[(int)eType.GeometryType];
 
-                // TODO: handle this differently, but for now, we export the square
-                // graphic if there are in fact multiple files.
-
                 if (eType.Icon == IconType.FULL_FRAME)
                 {
-                    graphic = eType.SquareGraphic;
+                    if (sig != null)
+                    {
+                        graphic = GrabGraphic(eType.CloverGraphic, eType.RectangleGraphic, eType.SquareGraphic, eType.DiamondGraphic, sig.GraphicSuffix);
+                    }
+                    
                     _notes = _notes + "icon touches frame;";
                 }
                 else if (eType.Icon == IconType.NA)
@@ -175,12 +221,13 @@ namespace JointMilitarySymbologyLibrary
 
                 geometry = _geometryList[(int)e.GeometryType];
 
-                // TODO: handle this differently, but for now, we export the square
-                // graphic if there are in fact multiple files.
-
                 if (e.Icon == IconType.FULL_FRAME)
                 {
-                    graphic = e.SquareGraphic;
+                    if (sig != null)
+                    {
+                        graphic = GrabGraphic(e.CloverGraphic, e.RectangleGraphic, e.SquareGraphic, e.DiamondGraphic, sig.GraphicSuffix);
+                    }
+                    
                     _notes = _notes + "icon touches frame;";
                 }
                 else if (e.Icon == IconType.NA)
@@ -189,12 +236,19 @@ namespace JointMilitarySymbologyLibrary
                     graphic = e.Graphic;
             }
 
+            if (sig != null)
+            {
+                result = result + ";" + sig.Label;
+            }
+
+            result = result + ";" + iType;
+
             if(!omitSource)
                 result = result + ";" + _configHelper.GetPath(ss.ID, FindEnum.FindEntities, true) + "\\" + graphic;
 
             result = result + ";" + geometry;
-            result = result + ";" + BuildEntityItemName(ss, e, eType, eSubType);
-            result = result + ";" + BuildEntityCode(ss, e, eType, eSubType);
+            result = result + ";" + BuildEntityItemName(sig, ss, e, eType, eSubType);
+            result = result + ";" + BuildEntityCode(sig, ss, e, eType, eSubType);
 
             if (result.Length > 255)
             {

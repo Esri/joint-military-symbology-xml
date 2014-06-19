@@ -3206,6 +3206,8 @@ namespace JointMilitarySymbologyLibrary {
         
         private string standardIdentityIDsField;
         
+        private string graphicSuffixField;
+        
         /// <remarks/>
         public ushort StandardIdentityGroupCode {
             get {
@@ -3268,6 +3270,17 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.standardIdentityIDsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string GraphicSuffix {
+            get {
+                return this.graphicSuffixField;
+            }
+            set {
+                this.graphicSuffixField = value;
             }
         }
     }
