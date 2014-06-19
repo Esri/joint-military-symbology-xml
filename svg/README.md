@@ -33,7 +33,9 @@ For symbol assembly purposes, the following SIDC positions are used to determine
 
 * Modifier 2 (Folder: `Appendices\XXX\mod2` - Digits: 5): Uses SIDC positions 5-6 and 19-20 along with the number 2 at the end.
 
-* Amplifier (Echelon/Mobility/Towed Array) (Folder: `Amplifier` - Digits: 3): Uses SIDC positions 4 and 9-10.
+* Echelon (Folder: `Echelon` - Digits: 3): Uses SIDC positions 4 and 9-10.
+
+* Amplifier (Mobility/Towed Array) (Folder: `Amplifier` - Digits: 3): Uses SIDC positions 4 and 9-10.
 
 * Headquarters(HQ)/Task Force(TF)/Feint/Dummy(FD) (Folder: `HQTFFD` - Digits: 4): Uses SIDC positions 4-6 and position 8.
 
