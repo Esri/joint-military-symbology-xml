@@ -44,13 +44,13 @@ namespace JointMilitarySymbologyLibrary
             // of related identity, dimension, and HQTFFD.
 
             string result = "HQTFFD" + _configHelper.DomainSeparator;
- 
-            result = result + identityGroup.Label.Replace(',', '-') + _configHelper.DomainSeparator;
-            result = result + dimension.Label.Replace(',', '-') + _configHelper.DomainSeparator;
 
             string hqTFFDLabel = (hqTFFD.LabelAlias == "") ? hqTFFD.Label : hqTFFD.LabelAlias;
-            result = result + hqTFFDLabel.Replace(',', '-');
+            result = result + hqTFFDLabel.Replace(',', '-') + _configHelper.DomainSeparator;
 
+            result = result + dimension.Label.Replace(',', '-') + _configHelper.DomainSeparator;
+            result = result + identityGroup.Label.Replace(',', '-');
+            
             return result;
         }
 
@@ -63,10 +63,10 @@ namespace JointMilitarySymbologyLibrary
             // Information includes the Label attributes, location of the original graphic file, the code, etc.
 
             string result = "HQTFFD;";
-            result = result + identityGroup.Label.Replace(',', '-') + ";";
-            result = result + dimension.Label.Replace(',', '-') + ";";
             result = result + hqTFFD.Label.Replace(',', '-') + ";";
-
+            result = result + dimension.Label.Replace(',', '-') + ";";
+            result = result + identityGroup.Label.Replace(',', '-') + ";";
+            
             // Loop through standard identities in the group and add them
 
             foreach (string sIID in identityGroup.StandardIdentityIDs.Split(' '))

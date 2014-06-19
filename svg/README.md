@@ -20,7 +20,7 @@ For symbol assembly purposes, the following SIDC positions are used to determine
 
 ![Image of SIDC](sidc.png)
  
-* Frame (Folder: `Frames` - Digits: 4): Uses SIDC positions 3-6.
+* Frame (Folder: `Frames` - Digits: 4): Uses SIDC positions 3-6, with an underscore between the first two digits in the name.
 
 * Main Icon (Folder: `Appendices\XXX` - Digits: 8): Uses SIDC positions 5-6 and 11-16.
     * Note: For full-frame main icons (main icons that touch the frame), there is an additional suffix depending on the frame that the icon must touch:

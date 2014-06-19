@@ -28,7 +28,10 @@ Incident : Bomb/Bombing : Bomb Threat,40110201
 Incident : IED Event,40110300
 Incident : IED Event : IED Explosion,40110301
 Incident : IED Event : Premature IED Explosion,40110302
-Incident : IED Event : IED Cache,40110303
+Incident : IED Event : IED Cache : Unknown,40110303_0
+Incident : IED Event : IED Cache : Friend,40110303_1
+Incident : IED Event : IED Cache : Neutral,40110303_2
+Incident : IED Event : IED Cache : Hostile,40110303_3
 Incident : IED Event : IED Suicide Bomber,40110304
 Incident : Shooting,40110400
 Incident : Shooting : Sniping,40110401
@@ -46,7 +49,10 @@ Civil Disturbance,40120000
 Civil Disturbance : Demonstration,40120100
 Operation : Patrolling,40130100
 Operation : Military Information Support Operation (MISO),40130200
-Operation : Military Information Support Operation (MISO) : TV and Radio Propaganda,40130201
+Operation : Military Information Support Operation (MISO) : TV and Radio Propaganda : Unknown,40130201_0
+Operation : Military Information Support Operation (MISO) : TV and Radio Propaganda : Friend,40130201_1
+Operation : Military Information Support Operation (MISO) : TV and Radio Propaganda : Neutral,40130201_2
+Operation : Military Information Support Operation (MISO) : TV and Radio Propaganda : Hostile,40130201_3
 Operation : Foraging/Searching,40130300
 Operation : Recruitment : Willing,40130401
 Operation : Recruitment : Coerced/Impressed,40130402
@@ -60,13 +66,19 @@ Operation : Meeting : Polling Place/Election,40131001
 Operation : Raid on House,40131100
 Operation : Emergency Operation,40131200
 Operation : Emergency Operation : Emergency Collection Evacuation Point,40131201
-Operation : Emergency Operation : Emergency Food Distribution,40131202
+Operation : Emergency Operation : Emergency Food Distribution : Unknown,40131202_0
+Operation : Emergency Operation : Emergency Food Distribution : Friend,40131202_1
+Operation : Emergency Operation : Emergency Food Distribution : Neutral,40131202_2
+Operation : Emergency Operation : Emergency Food Distribution : Hostile,40131202_3
 Operation : Emergency Operation : Emergency Incident Command Center,40131203
 Operation : Emergency Operation : Emergency Operations Center,40131204
 Operation : Emergency Operation : Emergency Public Information Center,40131205
 Operation : Emergency Operation : Emergency Shelter,40131206
 Operation : Emergency Operation : Emergency Staging Area,40131207
-Operation : Emergency Operation : Emergency Water Distribution Center,40131208
+Operation : Emergency Operation : Emergency Water Distribution Center : Unknown,40131208_0
+Operation : Emergency Operation : Emergency Water Distribution Center : Friend,40131208_1
+Operation : Emergency Operation : Emergency Water Distribution Center : Neutral,40131208_2
+Operation : Emergency Operation : Emergency Water Distribution Center : Hostile,40131208_3
 Operation : Emergency Medical Operation,40131300
 Operation : Emergency Medical Operation : EMT Station Location,40131301
 Operation : Emergency Medical Operation : Health Department Facility,40131302

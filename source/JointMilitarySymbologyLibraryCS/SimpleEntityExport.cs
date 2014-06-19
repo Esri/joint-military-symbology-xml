@@ -27,10 +27,10 @@ namespace JointMilitarySymbologyLibrary
 
         string IEntityExport.Headers
         {
-            get { return "SymbolSet,Entity,EntityType,EntitySubType,Code,GeometryType"; }
+            get { return "SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType"; }
         }
 
-        string IEntityExport.Line(SymbolSet ss, SymbolSetEntity e, SymbolSetEntityEntityType eType, SymbolSetEntityEntityTypeEntitySubType eSubType)
+        string IEntityExport.Line(LibraryStandardIdentityGroup sig, SymbolSet ss, SymbolSetEntity e, SymbolSetEntityEntityType eType, SymbolSetEntityEntityTypeEntitySubType eSubType)
         {
             GeometryType geoType = GeometryType.POINT;
 
@@ -64,6 +64,16 @@ namespace JointMilitarySymbologyLibrary
             }
             else
                 code = code + "00";
+
+            if (sig != null)
+            {
+                result = result + "," + sig.Label;
+                code = code + sig.GraphicSuffix;
+            }
+            else
+            {
+                result = result + ",";
+            }
 
             result = result + "," + code + "," + _geometryList[(int)geoType];
 

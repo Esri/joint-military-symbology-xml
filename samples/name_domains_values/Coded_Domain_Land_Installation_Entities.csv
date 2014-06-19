@@ -2,7 +2,10 @@ Name,Value
 Installation,20110000
 Installation : Aircraft Production/Assembly,20110100
 Installation : Ammunition and Explosives/Assembly,20110200
-Installation : Ammunition Cache,20110300
+Installation : Ammunition Cache : Unknown,20110300_0
+Installation : Ammunition Cache : Friend,20110300_1
+Installation : Ammunition Cache : Neutral,20110300_2
+Installation : Ammunition Cache : Hostile,20110300_3
 Installation : Armament Production,20110400
 Installation : Black List Location,20110500
 Installation : Chemical-Biological-Radiological and Nuclear (CBRN),20110600
@@ -12,7 +15,10 @@ Installation : Equipment Manufacture,20110800
 Installation : Government Leadership,20110900
 Installation : Gray List Location,20111000
 Installation : Mass Grave Site,20111100
-Installation : Materiel,20111200
+Installation : Materiel : Unknown,20111200_0
+Installation : Materiel : Friend,20111200_1
+Installation : Materiel : Neutral,20111200_2
+Installation : Materiel : Hostile,20111200_3
 Installation : Mine,20111300
 Installation : Missile and Space System Production,20111400
 Installation : Nuclear (Non CBRN Defense),20111500
@@ -42,11 +48,23 @@ Installation : Emergency Operation : Emergency Medical Operation,20112202
 Infrastructure : Agriculture and Food,20120100
 Infrastructure : Agriculture and Food : Agriculture Laboratory,20120101
 Infrastructure : Agriculture and Food : Animal Feedlot,20120102
-Infrastructure : Agriculture and Food : Commercial Food Distribution Center,20120103
+Infrastructure : Agriculture and Food : Commercial Food Distribution Center : Unknown,20120103_0
+Infrastructure : Agriculture and Food : Commercial Food Distribution Center : Friend,20120103_1
+Infrastructure : Agriculture and Food : Commercial Food Distribution Center : Neutral,20120103_2
+Infrastructure : Agriculture and Food : Commercial Food Distribution Center : Hostile,20120103_3
 Infrastructure : Agriculture and Food : Farm/Ranch,20120104
-Infrastructure : Agriculture and Food : Food Distribution,20120105
-Infrastructure : Agriculture and Food : Food Production Center,20120106
-Infrastructure : Agriculture and Food : Food Retail,20120107
+Infrastructure : Agriculture and Food : Food Distribution : Unknown,20120105_0
+Infrastructure : Agriculture and Food : Food Distribution : Friend,20120105_1
+Infrastructure : Agriculture and Food : Food Distribution : Neutral,20120105_2
+Infrastructure : Agriculture and Food : Food Distribution : Hostile,20120105_3
+Infrastructure : Agriculture and Food : Food Production Center : Unknown,20120106_0
+Infrastructure : Agriculture and Food : Food Production Center : Friend,20120106_1
+Infrastructure : Agriculture and Food : Food Production Center : Neutral,20120106_2
+Infrastructure : Agriculture and Food : Food Production Center : Hostile,20120106_3
+Infrastructure : Agriculture and Food : Food Retail : Unknown,20120107_0
+Infrastructure : Agriculture and Food : Food Retail : Friend,20120107_1
+Infrastructure : Agriculture and Food : Food Retail : Neutral,20120107_2
+Infrastructure : Agriculture and Food : Food Retail : Hostile,20120107_3
 Infrastructure : Agriculture and Food : Grain Storage,20120108
 Infrastructure : Banking- Finance- and Insurance,20120200
 Infrastructure : Banking- Finance- and Insurance : ATM,20120201
@@ -78,8 +96,14 @@ Infrastructure : Energy Facility : Petroleum Facility,20120504
 Infrastructure : Energy Facility : Petroleum/Gas/Oil,20120505
 Infrastructure : Energy Facility : Propane Facility,20120506
 Infrastructure : Government Site Infrastructure,20120600
-Infrastructure : Medical : Medical,20120701
-Infrastructure : Medical : Medical Treatment Facility (Hospital),20120702
+Infrastructure : Medical : Medical : Unknown,20120701_0
+Infrastructure : Medical : Medical : Friend,20120701_1
+Infrastructure : Medical : Medical : Neutral,20120701_2
+Infrastructure : Medical : Medical : Hostile,20120701_3
+Infrastructure : Medical : Medical Treatment Facility (Hospital) : Unknown,20120702_0
+Infrastructure : Medical : Medical Treatment Facility (Hospital) : Friend,20120702_1
+Infrastructure : Medical : Medical Treatment Facility (Hospital) : Neutral,20120702_2
+Infrastructure : Medical : Medical Treatment Facility (Hospital) : Hostile,20120702_3
 Infrastructure : Military,20120800
 Infrastructure : Military : Military Armory,20120801
 Infrastructure : Military : Military Base,20120802

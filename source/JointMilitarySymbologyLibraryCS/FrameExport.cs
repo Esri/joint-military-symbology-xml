@@ -30,7 +30,7 @@ namespace JointMilitarySymbologyLibrary
         {
             // Creates the unique idntifier code for a given frame.
 
-            string code = Convert.ToString(context.ContextCode) +
+            string code = Convert.ToString(context.ContextCode) + "_" +
                           Convert.ToString(identity.StandardIdentityCode) +
                           Convert.ToString(dimension.DimensionCode.DigitOne) + Convert.ToString(dimension.DimensionCode.DigitTwo);
 
