@@ -143,7 +143,7 @@ namespace JointMilitarySymbologyLibrary
 
                                 if (eType.EntitySubTypes != null)
                                 {
-                                    foreach (SymbolSetEntityEntityTypeEntitySubType eSubType in eType.EntitySubTypes)
+                                    foreach (EntitySubTypeType eSubType in eType.EntitySubTypes)
                                     {
                                         if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(eSubType.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
                                         {
@@ -175,6 +175,32 @@ namespace JointMilitarySymbologyLibrary
                                         }
                                     }
                                 }
+                            }
+                        }
+                    }
+
+                    // Now process through any special entity sub types that might exist in a symbol set
+
+                    if (s.SpecialEntitySubTypes != null)
+                    {
+                        foreach (EntitySubTypeType eSubType in s.SpecialEntitySubTypes)
+                        {
+                            if (eSubType.Icon == IconType.FULL_FRAME)
+                            {
+                                foreach (LibraryStandardIdentityGroup sig in _library.StandardIdentityGroups)
+                                {
+                                    line = string.Format("{0}", exporter.Line(sig, s, eSubType));
+
+                                    w.WriteLine(line);
+                                    w.Flush();
+                                }
+                            }
+                            else
+                            {
+                                line = string.Format("{0}", exporter.Line(null, s, eSubType));
+
+                                w.WriteLine(line);
+                                w.Flush();
                             }
                         }
                     }

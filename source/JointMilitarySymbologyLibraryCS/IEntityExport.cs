@@ -28,7 +28,11 @@ namespace JointMilitarySymbologyLibrary
         string Line(LibraryStandardIdentityGroup sig,
                     SymbolSet ss,
                     SymbolSetEntity e, 
-                    SymbolSetEntityEntityType eType, 
-                    SymbolSetEntityEntityTypeEntitySubType eSubType);
+                    SymbolSetEntityEntityType eType,
+                    EntitySubTypeType eSubType);
+
+        string Line(LibraryStandardIdentityGroup sig,
+                    SymbolSet ss,
+                    EntitySubTypeType eSubType);
     }
 }

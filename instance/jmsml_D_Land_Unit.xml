@@ -304,12 +304,6 @@
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="RECON_HEADQUARTERS_ELEMENT" Label="Headquarters Element" CloverGraphic="10121395_0.svg" RectangleGraphic="10121395_1.svg" SquareGraphic="10121395_2.svg" DiamondGraphic="10121395_3.svg" Icon="FULL_FRAME">
-							<EntitySubTypeCode>
-								<DigitOne>9</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
 					</EntitySubTypes>
 				</EntityType>
 				<EntityType ID="SEA_AIR_LAND_SEAL" Label="Sea Air Land (SEAL)" Graphic="10121400.svg">
@@ -1245,6 +1239,34 @@
 			</EntityTypes>
 		</Entity>
 	</Entities>
+  
+  <SpecialEntitySubTypes>
+    <EntitySubType ID="HQ_ELEMENT" Label="Headquarters Element" CloverGraphic="10xxxx95_0.svg" RectangleGraphic="10xxxx95_1.svg" SquareGraphic="10xxxx95_2.svg" DiamondGraphic="10xxxx95_3.svg" Icon="FULL_FRAME" EntityCode="xx" EntityTypeCode="xx">
+      <EntitySubTypeCode>
+        <DigitOne>9</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </EntitySubTypeCode>
+    </EntitySubType>
+    <EntitySubType ID="DIVISION_AND_BELOW_SUPPORT" Label="Division and Below Support" CloverGraphic="10xxxx96_0.svg" RectangleGraphic="10xxxx96_1.svg" SquareGraphic="10xxxx96_2.svg" DiamondGraphic="10xxxx96_3.svg" Icon="FULL_FRAME" EntityCode="xx" EntityTypeCode="xx">
+      <EntitySubTypeCode>
+        <DigitOne>9</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </EntitySubTypeCode>
+    </EntitySubType>
+    <EntitySubType ID="CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10xxxx97_0.svg" RectangleGraphic="10xxxx97_1.svg" SquareGraphic="10xxxx97_2.svg" DiamondGraphic="10xxxx97_3.svg" Icon="FULL_FRAME" EntityCode="xx" EntityTypeCode="xx">
+      <EntitySubTypeCode>
+        <DigitOne>9</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </EntitySubTypeCode>
+    </EntitySubType>
+    <EntitySubType ID="ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theater/Echelons Above Corps Support" CloverGraphic="10xxxx98_0.svg" RectangleGraphic="10xxxx98_1.svg" SquareGraphic="10xxxx98_2.svg" DiamondGraphic="10xxxx98_3.svg" Icon="FULL_FRAME" EntityCode="xx" EntityTypeCode="xx">
+      <EntitySubTypeCode>
+        <DigitOne>9</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </EntitySubTypeCode>
+    </EntitySubType>
+  </SpecialEntitySubTypes>
+  
 	<SectorOneModifiers>
 		<Modifier ID="AIR_MOBILE_AIR_ASSAULT_MOD" Label="Air Mobile/Air Assault (US Only)" Category="Mobility" Graphic="10011.svg" Standard="MILSTD_2525">
 			<ModifierCode>

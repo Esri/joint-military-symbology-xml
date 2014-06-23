@@ -38,29 +38,18 @@ namespace JointMilitarySymbologyLibrary
                                   SymbolSet ss,
                                   SymbolSetEntity e,
                                   SymbolSetEntityEntityType eType,
-                                  SymbolSetEntityEntityTypeEntitySubType eSubType)
+                                  EntitySubTypeType eSubType)
         {
-            //string code = Convert.ToString(ss.SymbolSetCode.DigitOne) + Convert.ToString(ss.SymbolSetCode.DigitTwo);
-
-            //code = code + Convert.ToString(e.EntityCode.DigitOne) + Convert.ToString(e.EntityCode.DigitTwo);
-
-            //if (eType != null)
-            //{
-            //    code = code + Convert.ToString(eType.EntityTypeCode.DigitOne) + Convert.ToString(eType.EntityTypeCode.DigitTwo);
-            //}
-            //else
-            //    code = code + "00";
-
-            //if (eSubType != null)
-            //{
-            //    code = code + Convert.ToString(eSubType.EntitySubTypeCode.DigitOne) + Convert.ToString(eSubType.EntitySubTypeCode.DigitTwo);
-            //}
-            //else
-            //    code = code + "00";
-
             string code = BuildEntityCode(sig, ss, e, eType, eSubType);
 
             return BuildEntityItemName(sig, ss, e, eType, eSubType) + "," + code;
+        }
+
+        string IEntityExport.Line(LibraryStandardIdentityGroup sig, SymbolSet ss, EntitySubTypeType eSubType)
+        {
+            string code = BuildEntityCode(sig, ss, null, null, eSubType);
+
+            return BuildEntityItemName(sig, ss, null, null, eSubType) + "," + code;
         }
     }
 }

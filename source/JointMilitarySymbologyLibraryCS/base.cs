@@ -30,6 +30,8 @@ namespace JointMilitarySymbologyLibrary {
         
         private SymbolSetEntity[] entitiesField;
         
+        private EntitySubTypeType[] specialEntitySubTypesField;
+        
         private ModifiersTypeModifier[] sectorOneModifiersField;
         
         private ModifiersTypeModifier[] sectorTwoModifiersField;
@@ -75,6 +77,17 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.entitiesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("EntitySubType", IsNullable=false)]
+        public EntitySubTypeType[] SpecialEntitySubTypes {
+            get {
+                return this.specialEntitySubTypesField;
+            }
+            set {
+                this.specialEntitySubTypesField = value;
             }
         }
         
@@ -338,6 +351,454 @@ namespace JointMilitarySymbologyLibrary {
                 this.valueField = value;
             }
         }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://disa.mil/JointMilSyML.xsd")]
+    public partial class EntitySubTypeType {
+        
+        private DoubleDigitType entitySubTypeCodeField;
+        
+        private string idField;
+        
+        private string labelField;
+        
+        private string labelAliasField;
+        
+        private string descriptionField;
+        
+        private string remarksField;
+        
+        private string graphicField;
+        
+        private string circleGraphicField;
+        
+        private string cloverGraphicField;
+        
+        private string curveGraphicField;
+        
+        private string diamondGraphicField;
+        
+        private string rectangleGraphicField;
+        
+        private string squareGraphicField;
+        
+        private string drawRuleIDField;
+        
+        private string drawNoteField;
+        
+        private StandardType standardField;
+        
+        private IconType iconField;
+        
+        private string specialCircleGraphicField;
+        
+        private string specialCloverGraphicField;
+        
+        private string specialCurveGraphicField;
+        
+        private string specialDiamondGraphicField;
+        
+        private string specialRectangleGraphicField;
+        
+        private string specialSquareGraphicField;
+        
+        private GeometryType geometryTypeField;
+        
+        private string entityCodeField;
+        
+        private string entityTypeCodeField;
+        
+        public EntitySubTypeType() {
+            this.labelField = "";
+            this.labelAliasField = "";
+            this.descriptionField = "";
+            this.remarksField = "";
+            this.graphicField = "";
+            this.circleGraphicField = "";
+            this.cloverGraphicField = "";
+            this.curveGraphicField = "";
+            this.diamondGraphicField = "";
+            this.rectangleGraphicField = "";
+            this.squareGraphicField = "";
+            this.drawRuleIDField = "POINT2";
+            this.drawNoteField = "Not Applicable";
+            this.standardField = StandardType.ALL;
+            this.iconField = IconType.MAIN;
+            this.geometryTypeField = GeometryType.POINT;
+            this.entityCodeField = "00";
+            this.entityTypeCodeField = "00";
+        }
+        
+        /// <remarks/>
+        public DoubleDigitType EntitySubTypeCode {
+            get {
+                return this.entitySubTypeCodeField;
+            }
+            set {
+                this.entitySubTypeCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
+        public string ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string Label {
+            get {
+                return this.labelField;
+            }
+            set {
+                this.labelField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string LabelAlias {
+            get {
+                return this.labelAliasField;
+            }
+            set {
+                this.labelAliasField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string Remarks {
+            get {
+                return this.remarksField;
+            }
+            set {
+                this.remarksField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string Graphic {
+            get {
+                return this.graphicField;
+            }
+            set {
+                this.graphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string CircleGraphic {
+            get {
+                return this.circleGraphicField;
+            }
+            set {
+                this.circleGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string CloverGraphic {
+            get {
+                return this.cloverGraphicField;
+            }
+            set {
+                this.cloverGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string CurveGraphic {
+            get {
+                return this.curveGraphicField;
+            }
+            set {
+                this.curveGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string DiamondGraphic {
+            get {
+                return this.diamondGraphicField;
+            }
+            set {
+                this.diamondGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string RectangleGraphic {
+            get {
+                return this.rectangleGraphicField;
+            }
+            set {
+                this.rectangleGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string SquareGraphic {
+            get {
+                return this.squareGraphicField;
+            }
+            set {
+                this.squareGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="IDREF")]
+        [System.ComponentModel.DefaultValueAttribute("POINT2")]
+        public string DrawRuleID {
+            get {
+                return this.drawRuleIDField;
+            }
+            set {
+                this.drawRuleIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute("Not Applicable")]
+        public string DrawNote {
+            get {
+                return this.drawNoteField;
+            }
+            set {
+                this.drawNoteField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute(StandardType.ALL)]
+        public StandardType Standard {
+            get {
+                return this.standardField;
+            }
+            set {
+                this.standardField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute(IconType.MAIN)]
+        public IconType Icon {
+            get {
+                return this.iconField;
+            }
+            set {
+                this.iconField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        public string SpecialCircleGraphic {
+            get {
+                return this.specialCircleGraphicField;
+            }
+            set {
+                this.specialCircleGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        public string SpecialCloverGraphic {
+            get {
+                return this.specialCloverGraphicField;
+            }
+            set {
+                this.specialCloverGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        public string SpecialCurveGraphic {
+            get {
+                return this.specialCurveGraphicField;
+            }
+            set {
+                this.specialCurveGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        public string SpecialDiamondGraphic {
+            get {
+                return this.specialDiamondGraphicField;
+            }
+            set {
+                this.specialDiamondGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        public string SpecialRectangleGraphic {
+            get {
+                return this.specialRectangleGraphicField;
+            }
+            set {
+                this.specialRectangleGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        public string SpecialSquareGraphic {
+            get {
+                return this.specialSquareGraphicField;
+            }
+            set {
+                this.specialSquareGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute(GeometryType.POINT)]
+        public GeometryType GeometryType {
+            get {
+                return this.geometryTypeField;
+            }
+            set {
+                this.geometryTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("00")]
+        public string EntityCode {
+            get {
+                return this.entityCodeField;
+            }
+            set {
+                this.entityCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("00")]
+        public string EntityTypeCode {
+            get {
+                return this.entityTypeCodeField;
+            }
+            set {
+                this.entityTypeCodeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://disa.mil/JointMilSyML.xsd")]
+    public enum StandardType {
+        
+        /// <remarks/>
+        ALL,
+        
+        /// <remarks/>
+        MILSTD_2525,
+        
+        /// <remarks/>
+        NATO_APP6,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://disa.mil/JointMilSyML.xsd")]
+    public enum IconType {
+        
+        /// <remarks/>
+        NA,
+        
+        /// <remarks/>
+        MAIN,
+        
+        /// <remarks/>
+        MAIN_1,
+        
+        /// <remarks/>
+        MAIN_2,
+        
+        /// <remarks/>
+        FULL_OCTAGON,
+        
+        /// <remarks/>
+        FULL_FRAME,
+        
+        /// <remarks/>
+        SPECIAL,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://disa.mil/JointMilSyML.xsd")]
+    public enum GeometryType {
+        
+        /// <remarks/>
+        NA,
+        
+        /// <remarks/>
+        POINT,
+        
+        /// <remarks/>
+        LINE,
+        
+        /// <remarks/>
+        AREA,
     }
     
     /// <remarks/>
@@ -810,7 +1271,7 @@ namespace JointMilitarySymbologyLibrary {
         
         private DoubleDigitType entityTypeCodeField;
         
-        private SymbolSetEntityEntityTypeEntitySubType[] entitySubTypesField;
+        private EntitySubTypeType[] entitySubTypesField;
         
         private string idField;
         
@@ -889,7 +1350,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayItemAttribute("EntitySubType", IsNullable=false)]
-        public SymbolSetEntityEntityTypeEntitySubType[] EntitySubTypes {
+        public EntitySubTypeType[] EntitySubTypes {
             get {
                 return this.entitySubTypesField;
             }
@@ -1166,424 +1627,6 @@ namespace JointMilitarySymbologyLibrary {
                 this.geometryTypeField = value;
             }
         }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://disa.mil/JointMilSyML.xsd")]
-    public partial class SymbolSetEntityEntityTypeEntitySubType {
-        
-        private DoubleDigitType entitySubTypeCodeField;
-        
-        private string idField;
-        
-        private string labelField;
-        
-        private string labelAliasField;
-        
-        private string descriptionField;
-        
-        private string remarksField;
-        
-        private string graphicField;
-        
-        private string circleGraphicField;
-        
-        private string cloverGraphicField;
-        
-        private string curveGraphicField;
-        
-        private string diamondGraphicField;
-        
-        private string rectangleGraphicField;
-        
-        private string squareGraphicField;
-        
-        private string drawRuleIDField;
-        
-        private string drawNoteField;
-        
-        private StandardType standardField;
-        
-        private IconType iconField;
-        
-        private string specialCircleGraphicField;
-        
-        private string specialCloverGraphicField;
-        
-        private string specialCurveGraphicField;
-        
-        private string specialDiamondGraphicField;
-        
-        private string specialRectangleGraphicField;
-        
-        private string specialSquareGraphicField;
-        
-        private GeometryType geometryTypeField;
-        
-        public SymbolSetEntityEntityTypeEntitySubType() {
-            this.labelField = "";
-            this.labelAliasField = "";
-            this.descriptionField = "";
-            this.remarksField = "";
-            this.graphicField = "";
-            this.circleGraphicField = "";
-            this.cloverGraphicField = "";
-            this.curveGraphicField = "";
-            this.diamondGraphicField = "";
-            this.rectangleGraphicField = "";
-            this.squareGraphicField = "";
-            this.drawRuleIDField = "POINT2";
-            this.drawNoteField = "Not Applicable";
-            this.standardField = StandardType.ALL;
-            this.iconField = IconType.MAIN;
-            this.geometryTypeField = GeometryType.POINT;
-        }
-        
-        /// <remarks/>
-        public DoubleDigitType EntitySubTypeCode {
-            get {
-                return this.entitySubTypeCodeField;
-            }
-            set {
-                this.entitySubTypeCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
-        public string ID {
-            get {
-                return this.idField;
-            }
-            set {
-                this.idField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        [System.ComponentModel.DefaultValueAttribute("")]
-        public string Label {
-            get {
-                return this.labelField;
-            }
-            set {
-                this.labelField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        [System.ComponentModel.DefaultValueAttribute("")]
-        public string LabelAlias {
-            get {
-                return this.labelAliasField;
-            }
-            set {
-                this.labelAliasField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        [System.ComponentModel.DefaultValueAttribute("")]
-        public string Description {
-            get {
-                return this.descriptionField;
-            }
-            set {
-                this.descriptionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        [System.ComponentModel.DefaultValueAttribute("")]
-        public string Remarks {
-            get {
-                return this.remarksField;
-            }
-            set {
-                this.remarksField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        [System.ComponentModel.DefaultValueAttribute("")]
-        public string Graphic {
-            get {
-                return this.graphicField;
-            }
-            set {
-                this.graphicField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        [System.ComponentModel.DefaultValueAttribute("")]
-        public string CircleGraphic {
-            get {
-                return this.circleGraphicField;
-            }
-            set {
-                this.circleGraphicField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        [System.ComponentModel.DefaultValueAttribute("")]
-        public string CloverGraphic {
-            get {
-                return this.cloverGraphicField;
-            }
-            set {
-                this.cloverGraphicField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        [System.ComponentModel.DefaultValueAttribute("")]
-        public string CurveGraphic {
-            get {
-                return this.curveGraphicField;
-            }
-            set {
-                this.curveGraphicField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        [System.ComponentModel.DefaultValueAttribute("")]
-        public string DiamondGraphic {
-            get {
-                return this.diamondGraphicField;
-            }
-            set {
-                this.diamondGraphicField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        [System.ComponentModel.DefaultValueAttribute("")]
-        public string RectangleGraphic {
-            get {
-                return this.rectangleGraphicField;
-            }
-            set {
-                this.rectangleGraphicField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        [System.ComponentModel.DefaultValueAttribute("")]
-        public string SquareGraphic {
-            get {
-                return this.squareGraphicField;
-            }
-            set {
-                this.squareGraphicField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="IDREF")]
-        [System.ComponentModel.DefaultValueAttribute("POINT2")]
-        public string DrawRuleID {
-            get {
-                return this.drawRuleIDField;
-            }
-            set {
-                this.drawRuleIDField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        [System.ComponentModel.DefaultValueAttribute("Not Applicable")]
-        public string DrawNote {
-            get {
-                return this.drawNoteField;
-            }
-            set {
-                this.drawNoteField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        [System.ComponentModel.DefaultValueAttribute(StandardType.ALL)]
-        public StandardType Standard {
-            get {
-                return this.standardField;
-            }
-            set {
-                this.standardField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        [System.ComponentModel.DefaultValueAttribute(IconType.MAIN)]
-        public IconType Icon {
-            get {
-                return this.iconField;
-            }
-            set {
-                this.iconField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string SpecialCircleGraphic {
-            get {
-                return this.specialCircleGraphicField;
-            }
-            set {
-                this.specialCircleGraphicField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string SpecialCloverGraphic {
-            get {
-                return this.specialCloverGraphicField;
-            }
-            set {
-                this.specialCloverGraphicField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string SpecialCurveGraphic {
-            get {
-                return this.specialCurveGraphicField;
-            }
-            set {
-                this.specialCurveGraphicField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string SpecialDiamondGraphic {
-            get {
-                return this.specialDiamondGraphicField;
-            }
-            set {
-                this.specialDiamondGraphicField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string SpecialRectangleGraphic {
-            get {
-                return this.specialRectangleGraphicField;
-            }
-            set {
-                this.specialRectangleGraphicField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
-        public string SpecialSquareGraphic {
-            get {
-                return this.specialSquareGraphicField;
-            }
-            set {
-                this.specialSquareGraphicField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        [System.ComponentModel.DefaultValueAttribute(GeometryType.POINT)]
-        public GeometryType GeometryType {
-            get {
-                return this.geometryTypeField;
-            }
-            set {
-                this.geometryTypeField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://disa.mil/JointMilSyML.xsd")]
-    public enum StandardType {
-        
-        /// <remarks/>
-        ALL,
-        
-        /// <remarks/>
-        MILSTD_2525,
-        
-        /// <remarks/>
-        NATO_APP6,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://disa.mil/JointMilSyML.xsd")]
-    public enum IconType {
-        
-        /// <remarks/>
-        NA,
-        
-        /// <remarks/>
-        MAIN,
-        
-        /// <remarks/>
-        MAIN_1,
-        
-        /// <remarks/>
-        MAIN_2,
-        
-        /// <remarks/>
-        FULL_OCTAGON,
-        
-        /// <remarks/>
-        FULL_FRAME,
-        
-        /// <remarks/>
-        SPECIAL,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://disa.mil/JointMilSyML.xsd")]
-    public enum GeometryType {
-        
-        /// <remarks/>
-        NA,
-        
-        /// <remarks/>
-        POINT,
-        
-        /// <remarks/>
-        LINE,
-        
-        /// <remarks/>
-        AREA,
     }
     
     /// <remarks/>
