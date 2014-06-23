@@ -65,7 +65,7 @@ namespace JointMilitarySymbologyLibrary
         private SymbolSet _symbolSet = null;
         private SymbolSetEntity _entity = null;
         private SymbolSetEntityEntityType _entityType = null;
-        private SymbolSetEntityEntityTypeEntitySubType _entitySubType = null;
+        private EntitySubTypeType _entitySubType = null;
         private ModifiersTypeModifier _modifierOne = null;
         private ModifiersTypeModifier _modifierTwo = null;
 

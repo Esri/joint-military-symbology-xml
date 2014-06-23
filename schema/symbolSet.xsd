@@ -29,15 +29,7 @@
                                 <xs:element name ="EntitySubTypes" minOccurs="0" maxOccurs="1">
                                   <xs:complexType>
                                     <xs:sequence>
-                                      <xs:element name="EntitySubType" minOccurs="1" maxOccurs="unbounded">
-                                        <xs:complexType>
-                                          <xs:sequence>
-                                            <xs:element name="EntitySubTypeCode" type="DoubleDigitType" minOccurs="1" maxOccurs="1"/>
-                                          </xs:sequence>
-                                          <xs:attributeGroup ref="FramedGraphicIdentifierAttributeGroup"/>
-                                          <xs:attribute name="GeometryType" type="GeometryType" default="POINT" use="optional"/>
-                                        </xs:complexType>
-                                      </xs:element>
+                                      <xs:element name="EntitySubType" type="EntitySubTypeType" minOccurs="1" maxOccurs="unbounded"/>
                                     </xs:sequence>
                                   </xs:complexType>
                                 </xs:element>
@@ -54,6 +46,13 @@
                   <xs:attribute name="GeometryType" type="GeometryType" default="POINT" use="optional"/>
                 </xs:complexType>
               </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SpecialEntitySubTypes" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EntitySubType" type="EntitySubTypeType" minOccurs="1" maxOccurs="unbounded"/>
             </xs:sequence>
           </xs:complexType>
         </xs:element>

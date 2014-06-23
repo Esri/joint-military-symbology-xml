@@ -908,15 +908,15 @@ namespace JointMilitarySymbologyLibrary
             return retObj;
         }
 
-        internal SymbolSetEntityEntityTypeEntitySubType EntitySubType(SymbolSetEntityEntityType entityType, ushort entitySubTypeCodeOne, ushort entitySubTypeCodeTwo)
+        internal EntitySubTypeType EntitySubType(SymbolSetEntityEntityType entityType, ushort entitySubTypeCodeOne, ushort entitySubTypeCodeTwo)
         {
-            SymbolSetEntityEntityTypeEntitySubType retObj = null;
+            EntitySubTypeType retObj = null;
 
             if (entityType != null)
             {
                 if (entityType.EntitySubTypes != null)
                 {
-                    foreach (SymbolSetEntityEntityTypeEntitySubType lObj in entityType.EntitySubTypes)
+                    foreach (EntitySubTypeType lObj in entityType.EntitySubTypes)
                     {
                         if (lObj.EntitySubTypeCode.DigitOne == entitySubTypeCodeOne &&
                             lObj.EntitySubTypeCode.DigitTwo == entitySubTypeCodeTwo)
@@ -932,15 +932,15 @@ namespace JointMilitarySymbologyLibrary
             return retObj;
         }
 
-        internal SymbolSetEntityEntityTypeEntitySubType EntitySubType(SymbolSetEntityEntityType entityType, string entitySubTypeID)
+        internal EntitySubTypeType EntitySubType(SymbolSetEntityEntityType entityType, string entitySubTypeID)
         {
-            SymbolSetEntityEntityTypeEntitySubType retObj = null;
+            EntitySubTypeType retObj = null;
 
             if (entityType != null)
             {
                 if (entityType.EntitySubTypes != null)
                 {
-                    foreach (SymbolSetEntityEntityTypeEntitySubType lObj in entityType.EntitySubTypes)
+                    foreach (EntitySubTypeType lObj in entityType.EntitySubTypes)
                     {
                         if (lObj.ID == entitySubTypeID)
                         {
@@ -1076,7 +1076,7 @@ namespace JointMilitarySymbologyLibrary
         internal SymbolSetLegacySymbol LegacySymbol(SymbolSet symbolSet, 
                                                   SymbolSetEntity entity, 
                                                   SymbolSetEntityEntityType entityType, 
-                                                  SymbolSetEntityEntityTypeEntitySubType entitySubType, 
+                                                  EntitySubTypeType entitySubType, 
                                                   ModifiersTypeModifier modifierOne, 
                                                   ModifiersTypeModifier modifierTwo)
         {

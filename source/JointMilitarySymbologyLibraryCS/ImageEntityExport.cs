@@ -38,7 +38,7 @@ namespace JointMilitarySymbologyLibrary
             get { return "filePath,pointSize,styleItemName,styleItemCategory,styleItemTags,notes"; }
         }
 
-        string IEntityExport.Line(LibraryStandardIdentityGroup sig, SymbolSet ss, SymbolSetEntity e, SymbolSetEntityEntityType eType, SymbolSetEntityEntityTypeEntitySubType eSubType)
+        string IEntityExport.Line(LibraryStandardIdentityGroup sig, SymbolSet ss, SymbolSetEntity e, SymbolSetEntityEntityType eType, EntitySubTypeType eSubType)
         {
             _notes = "";
 
@@ -50,9 +50,6 @@ namespace JointMilitarySymbologyLibrary
                          
             if (eSubType != null)
             {
-                // TODO: handle this differently, but for now, we export the square
-                // graphic if there are in fact multiple files.
-
                 if (eSubType.Graphic != "" && eSubType.Icon != IconType.FULL_FRAME)
                     graphic = eSubType.Graphic;
                 else
@@ -60,7 +57,6 @@ namespace JointMilitarySymbologyLibrary
                     {
                         graphic = GrabGraphic(eSubType.CloverGraphic, eSubType.RectangleGraphic, eSubType.SquareGraphic, eSubType.DiamondGraphic, sig.GraphicSuffix);
                     }
-                    //graphic = eSubType.SquareGraphic;
 
                 iType = eSubType.Icon;
             }
@@ -73,7 +69,6 @@ namespace JointMilitarySymbologyLibrary
                     {
                         graphic = GrabGraphic(eType.CloverGraphic, eType.RectangleGraphic, eType.SquareGraphic, eType.DiamondGraphic, sig.GraphicSuffix);
                     }
-                    //graphic = eType.SquareGraphic;
 
                 iType = eType.Icon;
             }
@@ -86,7 +81,6 @@ namespace JointMilitarySymbologyLibrary
                     {
                         graphic = GrabGraphic(e.CloverGraphic, e.RectangleGraphic, e.SquareGraphic, e.DiamondGraphic, sig.GraphicSuffix);
                     }
-                    //graphic = e.SquareGraphic;
 
                 iType = e.Icon;
             }
@@ -114,6 +108,12 @@ namespace JointMilitarySymbologyLibrary
                      _notes;
 
             return result;
+        }
+
+        string IEntityExport.Line(LibraryStandardIdentityGroup sig, SymbolSet ss, EntitySubTypeType eSubType)
+        {
+            IEntityExport iEx = this;
+            return iEx.Line(sig, ss, null, null, eSubType);
         }
     }
 }

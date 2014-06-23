@@ -391,4 +391,14 @@
     <xs:attribute name="Tolerance" type="xs:double" use="optional" default="0"/>
     <xs:attribute name="DistanceUnit" type="LabelUnitType" use="optional" default="Map"/>
   </xs:attributeGroup>
+
+  <xs:complexType name="EntitySubTypeType">
+    <xs:sequence>
+      <xs:element name="EntitySubTypeCode" type="DoubleDigitType" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="FramedGraphicIdentifierAttributeGroup"/>
+    <xs:attribute name="GeometryType" type="GeometryType" default="POINT" use="optional"/>
+    <xs:attribute name="EntityCode" type="xs:token" use="optional" default="00"/>
+    <xs:attribute name="EntityTypeCode" type="xs:token" use="optional" default="00"/>
+  </xs:complexType>
 </xs:schema>

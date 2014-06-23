@@ -48,7 +48,7 @@ namespace JointMilitarySymbologyLibrary
                                          SymbolSet ss,
                                          SymbolSetEntity e,
                                          SymbolSetEntityEntityType eType,
-                                         SymbolSetEntityEntityTypeEntitySubType eSubType)
+                                         EntitySubTypeType eSubType)
         {
             // Constructs a string containing the symbol set and entity codes for a given
             // set of those objects.
@@ -56,18 +56,30 @@ namespace JointMilitarySymbologyLibrary
             string code = "";
 
             code = code + Convert.ToString(ss.SymbolSetCode.DigitOne) + Convert.ToString(ss.SymbolSetCode.DigitTwo);
-            code = code + Convert.ToString(e.EntityCode.DigitOne) + Convert.ToString(e.EntityCode.DigitTwo);
 
-            if (eType != null)
-                code = code + Convert.ToString(eType.EntityTypeCode.DigitOne) + Convert.ToString(eType.EntityTypeCode.DigitTwo);
+            if (e == null && eType == null && eSubType != null)
+            {
+                // Deal with the special entity sub types as a special case
+
+                code = code + eSubType.EntityCode + eSubType.EntityTypeCode + Convert.ToString(eSubType.EntitySubTypeCode.DigitOne) + Convert.ToString(eSubType.EntitySubTypeCode.DigitTwo);
+            }
             else
-                code = code + "00";
+            {
+                // Almost everything is dealt with below
 
-            if (eSubType != null)
-                code = code + Convert.ToString(eSubType.EntitySubTypeCode.DigitOne) + Convert.ToString(eSubType.EntitySubTypeCode.DigitTwo);
-            else
-                code = code + "00";
+                code = code + Convert.ToString(e.EntityCode.DigitOne) + Convert.ToString(e.EntityCode.DigitTwo);
 
+                if (eType != null)
+                    code = code + Convert.ToString(eType.EntityTypeCode.DigitOne) + Convert.ToString(eType.EntityTypeCode.DigitTwo);
+                else
+                    code = code + "00";
+
+                if (eSubType != null)
+                    code = code + Convert.ToString(eSubType.EntitySubTypeCode.DigitOne) + Convert.ToString(eSubType.EntitySubTypeCode.DigitTwo);
+                else
+                    code = code + "00";
+            }
+            
             if (sig != null)
             {
                 code = code + sig.GraphicSuffix;
@@ -80,26 +92,33 @@ namespace JointMilitarySymbologyLibrary
                                              SymbolSet ss,
                                              SymbolSetEntity e,
                                              SymbolSetEntityEntityType eType,
-                                             SymbolSetEntityEntityTypeEntitySubType eSubType)
+                                             EntitySubTypeType eSubType)
         {
             // Constructs a string containing the name of an entity, where each label value
             // is seperated by a DomainSeparator (usually a colon).  Builds this for each group
             // of related SymbolSet and entity.
 
-            //string result = ss.Label.Replace(',', '-') + _configHelper.DomainSeparator + e.Label.Replace(',', '-');
+            string result = "";
 
-            string result = (e.LabelAlias == "") ? e.Label : e.LabelAlias;
-
-            if (eType != null)
+            if (e == null && eType == null && eSubType != null)
             {
-                string eTypeLabel = (eType.LabelAlias == "") ? eType.Label : eType.LabelAlias;
-                result = result + _configHelper.DomainSeparator + eTypeLabel.Replace(',', '-');   
+                result = "Special Entity Subtypes" + _configHelper.DomainSeparator + eSubType.Label.Replace(',', '-');
             }
-            
-            if (eSubType != null)
+            else
             {
-                string eSubTypeLabel = (eSubType.LabelAlias == "") ? eSubType.Label : eSubType.LabelAlias;
-                result = result + _configHelper.DomainSeparator + eSubTypeLabel.Replace(',', '-');
+                result = (e.LabelAlias == "") ? e.Label : e.LabelAlias;
+
+                if (eType != null)
+                {
+                    string eTypeLabel = (eType.LabelAlias == "") ? eType.Label : eType.LabelAlias;
+                    result = result + _configHelper.DomainSeparator + eTypeLabel.Replace(',', '-');
+                }
+
+                if (eSubType != null)
+                {
+                    string eSubTypeLabel = (eSubType.LabelAlias == "") ? eSubType.Label : eSubType.LabelAlias;
+                    result = result + _configHelper.DomainSeparator + eSubTypeLabel.Replace(',', '-');
+                }
             }
 
             if (sig != null)
@@ -151,7 +170,7 @@ namespace JointMilitarySymbologyLibrary
                                              SymbolSet ss,
                                              SymbolSetEntity e,
                                              SymbolSetEntityEntityType eType,
-                                             SymbolSetEntityEntityTypeEntitySubType eSubType,
+                                             EntitySubTypeType eSubType,
                                              bool omitSource)
         {
             // Constructs a string of semicolon delimited tags that users can utilize to search
@@ -161,10 +180,21 @@ namespace JointMilitarySymbologyLibrary
             // entity (type and sub type).  Information includes the Label attributes, geometry
             // type, location of the original graphic file, the code, etc.
 
-            string result = ss.Label.Replace(',', '-') + ";" + e.Label.Replace(',', '-');
+            string result = ss.Label.Replace(',', '-');
             string graphic = "";
             string geometry = "";
-            string iType = Convert.ToString(e.Icon);
+            string iType = "";
+
+            if (e == null && eType == null && eSubType != null)
+            {
+                result = result + ";" + "Special Entity Subtypes";
+            }
+
+            if(e != null)
+            {
+                result = result + ";" + e.Label.Replace(',', '-');
+                iType = Convert.ToString(e.Icon);
+            }
 
             if (eType != null)
             {

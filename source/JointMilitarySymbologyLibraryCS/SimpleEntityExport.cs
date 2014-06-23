@@ -30,17 +30,17 @@ namespace JointMilitarySymbologyLibrary
             get { return "SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType"; }
         }
 
-        string IEntityExport.Line(LibraryStandardIdentityGroup sig, SymbolSet ss, SymbolSetEntity e, SymbolSetEntityEntityType eType, SymbolSetEntityEntityTypeEntitySubType eSubType)
+        string IEntityExport.Line(LibraryStandardIdentityGroup sig, SymbolSet ss, SymbolSetEntity e, SymbolSetEntityEntityType eType, EntitySubTypeType eSubType)
         {
             GeometryType geoType = GeometryType.POINT;
 
             string result = Convert.ToString(ss.SymbolSetCode.DigitOne) + Convert.ToString(ss.SymbolSetCode.DigitTwo);
-            string code = "";
+            
+            string code = BuildEntityCode(sig, ss, e, eType, eSubType);
             
             result = result + ",";
 
             result = result + e.Label.Replace(',', '-');
-            code = code + Convert.ToString(e.EntityCode.DigitOne) + Convert.ToString(e.EntityCode.DigitTwo);
             geoType = e.GeometryType;
 
             result = result + ",";
@@ -48,27 +48,46 @@ namespace JointMilitarySymbologyLibrary
             if (eType != null)
             {
                 result = result + eType.Label.Replace(',', '-');
-                code = code + Convert.ToString(eType.EntityTypeCode.DigitOne) + Convert.ToString(eType.EntityTypeCode.DigitTwo);
                 geoType = eType.GeometryType;
             }
-            else
-                code = code + "00";
 
             result = result + ",";
 
             if (eSubType != null)
             {
                 result = result + eSubType.Label.Replace(',', '-');
-                code = code + Convert.ToString(eSubType.EntitySubTypeCode.DigitOne) + Convert.ToString(eSubType.EntitySubTypeCode.DigitTwo);
                 geoType = eSubType.GeometryType;
             }
-            else
-                code = code + "00";
 
             if (sig != null)
             {
                 result = result + "," + sig.Label;
-                code = code + sig.GraphicSuffix;
+            }
+            else
+            {
+                result = result + ",";
+            }
+
+            result = result + "," + code + "," + _geometryList[(int)geoType];
+
+            return result;
+        }
+
+        string IEntityExport.Line(LibraryStandardIdentityGroup sig, SymbolSet ss, EntitySubTypeType eSubType)
+        {
+            // Dealing with a special entity sub type
+
+            GeometryType geoType = GeometryType.POINT;
+
+            string result = Convert.ToString(ss.SymbolSetCode.DigitOne) + Convert.ToString(ss.SymbolSetCode.DigitTwo);
+            string code = BuildEntityCode(sig, ss, null, null, eSubType);
+
+            result = result + "," + eSubType.EntityCode + "," + eSubType.EntityTypeCode + "," + eSubType.Label.Replace(',', '-');
+            geoType = eSubType.GeometryType;
+
+            if (sig != null)
+            {
+                result = result + "," + sig.Label;
             }
             else
             {

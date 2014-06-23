@@ -120,10 +120,6 @@ Movement and Maneuver : Reconnaissance/Cavalry/Scout : Motorized : Unknown,10121
 Movement and Maneuver : Reconnaissance/Cavalry/Scout : Motorized : Friend,10121303_1
 Movement and Maneuver : Reconnaissance/Cavalry/Scout : Motorized : Neutral,10121303_2
 Movement and Maneuver : Reconnaissance/Cavalry/Scout : Motorized : Hostile,10121303_3
-Movement and Maneuver : Reconnaissance/Cavalry/Scout : Headquarters Element : Unknown,10121395_0
-Movement and Maneuver : Reconnaissance/Cavalry/Scout : Headquarters Element : Friend,10121395_1
-Movement and Maneuver : Reconnaissance/Cavalry/Scout : Headquarters Element : Neutral,10121395_2
-Movement and Maneuver : Reconnaissance/Cavalry/Scout : Headquarters Element : Hostile,10121395_3
 Movement and Maneuver : Sea Air Land (SEAL),10121400
 Movement and Maneuver : Sniper,10121500
 Movement and Maneuver : Surveillance,10121600
@@ -368,6 +364,22 @@ Law Enforcement (Land Units) : TSA,10201000
 Law Enforcement (Land Units) : Coast Guard,10201100
 Law Enforcement (Land Units) : US Marshals Service,10201200
 Law Enforcement (Land Units) : Internal Security Force,10201300
+Special Entity Subtypes : Headquarters Element : Unknown,10xxxx95_0
+Special Entity Subtypes : Headquarters Element : Friend,10xxxx95_1
+Special Entity Subtypes : Headquarters Element : Neutral,10xxxx95_2
+Special Entity Subtypes : Headquarters Element : Hostile,10xxxx95_3
+Special Entity Subtypes : Division and Below Support : Unknown,10xxxx96_0
+Special Entity Subtypes : Division and Below Support : Friend,10xxxx96_1
+Special Entity Subtypes : Division and Below Support : Neutral,10xxxx96_2
+Special Entity Subtypes : Division and Below Support : Hostile,10xxxx96_3
+Special Entity Subtypes : Corps Support : Unknown,10xxxx97_0
+Special Entity Subtypes : Corps Support : Friend,10xxxx97_1
+Special Entity Subtypes : Corps Support : Neutral,10xxxx97_2
+Special Entity Subtypes : Corps Support : Hostile,10xxxx97_3
+Special Entity Subtypes : Theater/Echelons Above Corps Support : Unknown,10xxxx98_0
+Special Entity Subtypes : Theater/Echelons Above Corps Support : Friend,10xxxx98_1
+Special Entity Subtypes : Theater/Echelons Above Corps Support : Neutral,10xxxx98_2
+Special Entity Subtypes : Theater/Echelons Above Corps Support : Hostile,10xxxx98_3
 Civilian (Land Civilian),11110000
 Civilian (Land Civilian) : Environmental Protection,11110100
 Civilian (Land Civilian) : Government Organization,11110200
