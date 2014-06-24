@@ -37,205 +37,205 @@
     </Entity>
   </Entities>
   <SectorOneModifiers>
-    <Modifier ID="ANTI_AIRCRAFT_FIRE_CONTROL_MOD" Label="Anti-Aircraft Fire Control" LabelAlias="Anti-Aircraft Fire Control (Sea Surface)" Category="Land/Sea Surface Radar" Graphic="52011.svg">
+    <Modifier ID="ANTI_AIRCRAFT_FIRE_CONTROL_MOD" Label="Anti-Aircraft Fire Control" LabelAlias="Anti-Aircraft Fire Control (Sea Surface)" Category="Land/Sea Surface Radar" CategoryAlias="Radar" Graphic="52011.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="AIR_TRAFFIC_CONTROL_MOD" Label="Air Traffic Control" LabelAlias="Air Traffic Control (Sea Surface)" Category="Air/Land/Sea Surface Radar" Graphic="52061.svg">
+    <Modifier ID="AIR_TRAFFIC_CONTROL_MOD" Label="Air Traffic Control" LabelAlias="Air Traffic Control (Sea Surface)" Category="Air/Land/Sea Surface Radar" CategoryAlias="Radar" Graphic="52061.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="BEACON_TRANSPONDER_MOD" Label="Beacon Transponder (not IFF)" LabelAlias="Beacon Transponder (not IFF) (Sea Surface)" Category="Air/Land/Sea Surface/Subsurface Radar" Graphic="52071.svg">
+    <Modifier ID="BEACON_TRANSPONDER_MOD" Label="Beacon Transponder (not IFF)" LabelAlias="Beacon Transponder (not IFF) (Sea Surface)" Category="Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar" Graphic="52071.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="CONTROLLED_APPROACH_MOD" Label="Controlled Approach" LabelAlias="Controlled Approach (Sea Surface)" Category="Land/Sea Surface Radar" Graphic="52091.svg">
+    <Modifier ID="CONTROLLED_APPROACH_MOD" Label="Controlled Approach" LabelAlias="Controlled Approach (Sea Surface)" Category="Land/Sea Surface Radar" CategoryAlias="Radar" Graphic="52091.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="CONTROLLED_INTERCEPT_MOD" Label="Controlled Intercept" LabelAlias="Controlled Intercept (Sea Surface)" Category="Air/Land/Sea Surface Radar" Graphic="52101.svg">
+    <Modifier ID="CONTROLLED_INTERCEPT_MOD" Label="Controlled Intercept" LabelAlias="Controlled Intercept (Sea Surface)" Category="Air/Land/Sea Surface Radar" CategoryAlias="Radar" Graphic="52101.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="CELLULAR_MOBILE_MOD" Label="Cellular/Mobile" LabelAlias="Cellular/Mobile (Sea Surface)" Category="Air/Land/Sea Surface/Subsurface Communications" Graphic="52111.svg">
+    <Modifier ID="CELLULAR_MOBILE_MOD" Label="Cellular/Mobile" LabelAlias="Cellular/Mobile (Sea Surface)" Category="Air/Land/Sea Surface/Subsurface Communications" CategoryAlias="Communications" Graphic="52111.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="DECOY_MIMIC_MOD" Label="Decoy/Mimic" LabelAlias="Decoy/Mimic (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" Graphic="52131.svg">
+    <Modifier ID="DECOY_MIMIC_MOD" Label="Decoy/Mimic" LabelAlias="Decoy/Mimic (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="52131.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="DATA_TRANSMISSION_MOD" Label="Data Transmission" LabelAlias="Data Transmission (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" Graphic="52141.svg">
+    <Modifier ID="DATA_TRANSMISSION_MOD" Label="Data Transmission" LabelAlias="Data Transmission (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar" Graphic="52141.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="EARLY_WARNING_MOD" Label="Early Warning" LabelAlias="Early Warning (Sea Surface)" Category="Air/Land/Sea Surface/Subsurface Radar" Graphic="52161.svg">
+    <Modifier ID="EARLY_WARNING_MOD" Label="Early Warning" LabelAlias="Early Warning (Sea Surface)" Category="Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar" Graphic="52161.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="FIRE_CONTROL_MOD" Label="Fire Control" LabelAlias="Fire Control (Sea Surface)" Category="Air/Land/Sea Surface Radar" Graphic="52171.svg">
+    <Modifier ID="FIRE_CONTROL_MOD" Label="Fire Control" LabelAlias="Fire Control (Sea Surface)" Category="Air/Land/Sea Surface Radar" CategoryAlias="Radar" Graphic="52171.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="HEIGHT_FINDING_MOD" Label="Height Finding" LabelAlias="Height Finding (Sea Surface)" Category="Land/Sea Surface Radar" Graphic="52191.svg">
+    <Modifier ID="HEIGHT_FINDING_MOD" Label="Height Finding" LabelAlias="Height Finding (Sea Surface)" Category="Land/Sea Surface Radar" CategoryAlias="Radar" Graphic="52191.svg">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="IFF_INTERROGATOR_MOD" Label="Identification Friend or Foe (Interrogator)" LabelAlias="Identification Friend or Foe (Interrogator) (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" Graphic="52211.svg">
+    <Modifier ID="IFF_INTERROGATOR_MOD" Label="Identification Friend or Foe (Interrogator)" LabelAlias="Identification Friend or Foe (Interrogator) (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar" Graphic="52211.svg">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="INSTRUMENT_LANDING_SYSTEM_MOD" Label="Instrument Landing System" LabelAlias="Instrument Landing System (Sea Surface)" Category="Land/Sea Surface Radar" Graphic="52221.svg">
+    <Modifier ID="INSTRUMENT_LANDING_SYSTEM_MOD" Label="Instrument Landing System" LabelAlias="Instrument Landing System (Sea Surface)" Category="Land/Sea Surface Radar" CategoryAlias="Radar" Graphic="52221.svg">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="IFF_TRANSPONDER_MOD" Label="Identification Friend or Foe (Transponder)" LabelAlias="Identification Friend or Foe (Transponder) (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" Graphic="52241.svg">
+    <Modifier ID="IFF_TRANSPONDER_MOD" Label="Identification Friend or Foe (Transponder)" LabelAlias="Identification Friend or Foe (Transponder) (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar" Graphic="52241.svg">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="BARRAGE_JAMMER_MOD" Label="Barrage Jammer" LabelAlias="Barrage Jammer (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" Graphic="52251.svg">
+    <Modifier ID="BARRAGE_JAMMER_MOD" Label="Barrage Jammer" LabelAlias="Barrage Jammer (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="52251.svg">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="CLICK_JAMMER_MOD" Label="Click Jammer" LabelAlias="Click Jammer (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" Graphic="52261.svg">
+    <Modifier ID="CLICK_JAMMER_MOD" Label="Click Jammer" LabelAlias="Click Jammer (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="52261.svg">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="DECEPTIVE_JAMMER_MOD" Label="Deceptive Jammer" LabelAlias="Deceptive Jammer (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" Graphic="52271.svg">
+    <Modifier ID="DECEPTIVE_JAMMER_MOD" Label="Deceptive Jammer" LabelAlias="Deceptive Jammer (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="52271.svg">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="FREQUENCY_SWEPT_JAMMER_MOD" Label="Frequency Swept Jammer" LabelAlias="Frequency Swept Jammer (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" Graphic="52281.svg">
+    <Modifier ID="FREQUENCY_SWEPT_JAMMER_MOD" Label="Frequency Swept Jammer" LabelAlias="Frequency Swept Jammer (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="52281.svg">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="JAMMER_GENERAL_MOD" Label="Jammer (General)" LabelAlias="Jammer (General) (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" Graphic="52291.svg">
+    <Modifier ID="JAMMER_GENERAL_MOD" Label="Jammer (General)" LabelAlias="Jammer (General) (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="52291.svg">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="NOISE_JAMMER_MOD" Label="Noise Jammer" LabelAlias="Noise Jammer (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" Graphic="52301.svg">
+    <Modifier ID="NOISE_JAMMER_MOD" Label="Noise Jammer" LabelAlias="Noise Jammer (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="52301.svg">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="PULSED_JAMMER_MOD" Label="Pulsed Jammer" LabelAlias="Pulsed Jammer (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" Graphic="52311.svg">
+    <Modifier ID="PULSED_JAMMER_MOD" Label="Pulsed Jammer" LabelAlias="Pulsed Jammer (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="52311.svg">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="REPEATER_JAMMER_MOD" Label="Repeater Jammer" LabelAlias="Repeater Jammer (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" Graphic="52321.svg">
+    <Modifier ID="REPEATER_JAMMER_MOD" Label="Repeater Jammer" LabelAlias="Repeater Jammer (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="52321.svg">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="SPOT_NOISE_JAMMER_MOD" Label="Spot Noise Jammer" LabelAlias="Spot Noise Jammer (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" Graphic="52331.svg">
+    <Modifier ID="SPOT_NOISE_JAMMER_MOD" Label="Spot Noise Jammer" LabelAlias="Spot Noise Jammer (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="52331.svg">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="TRANSPONDER_JAMMER_MOD" Label="Transponder Jammer" LabelAlias="Transponder Jammer (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" Graphic="52341.svg">
+    <Modifier ID="TRANSPONDER_JAMMER_MOD" Label="Transponder Jammer" LabelAlias="Transponder Jammer (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="52341.svg">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="MISSILE_ACQUISITION_MOD" Label="Missile Acquisition" LabelAlias="Missile Acquisition (Sea Surface)" Category="Air/Land/Sea Surface Radar" Graphic="52351.svg">
+    <Modifier ID="MISSILE_ACQUISITION_MOD" Label="Missile Acquisition" LabelAlias="Missile Acquisition (Sea Surface)" Category="Air/Land/Sea Surface Radar" CategoryAlias="Radar" Graphic="52351.svg">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="MISSILE_CONTROL_MOD" Label="Missile Control" LabelAlias="Missile Control (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" Graphic="52361.svg">
+    <Modifier ID="MISSILE_CONTROL_MOD" Label="Missile Control" LabelAlias="Missile Control (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="52361.svg">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="METEOROLOGICAL_MOD" Label="Meteorological" LabelAlias="Meteorological (Sea Surface)" Category="Air/Land/Sea Surface Radar" Graphic="52381.svg">
+    <Modifier ID="METEOROLOGICAL_MOD" Label="Meteorological" LabelAlias="Meteorological (Sea Surface)" Category="Air/Land/Sea Surface Radar" CategoryAlias="Radar" Graphic="52381.svg">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="MULTI_FUNCTION_MOD" Label="Multi-Function" LabelAlias="Multi-Function (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" Remarks="Two or more of EW, TA, TT, MG, TI" Graphic="52391.svg">
+    <Modifier ID="MULTI_FUNCTION_MOD" Label="Multi-Function" LabelAlias="Multi-Function (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Remarks="Two or more of EW, TA, TT, MG, TI" Graphic="52391.svg">
       <ModifierCode>
         <DigitOne>3</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="MISSILE_GUIDANCE_MOD" Label="Missile Guidance" LabelAlias="Missile Guidance (Sea Surface)" Category="Air/Land/Sea Surface Radar" Graphic="52401.svg">
+    <Modifier ID="MISSILE_GUIDANCE_MOD" Label="Missile Guidance" LabelAlias="Missile Guidance (Sea Surface)" Category="Air/Land/Sea Surface Radar" CategoryAlias="Radar" Graphic="52401.svg">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="MISSILE_TRACKING_MOD" Label="Missile Tracking" LabelAlias="Missile Tracking (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" Graphic="52421.svg">
+    <Modifier ID="MISSILE_TRACKING_MOD" Label="Missile Tracking" LabelAlias="Missile Tracking (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="52421.svg">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="NAVIGATIONAL_GENERAL_MOD" Label="Navigational/General" LabelAlias="Navigational/General (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" Graphic="52431.svg">
+    <Modifier ID="NAVIGATIONAL_GENERAL_MOD" Label="Navigational/General" LabelAlias="Navigational/General (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="52431.svg">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="NAVIGATIONAL_DISTANCE_MEASURING_EQUIPMENT_MOD" Label="Navigational/Distance Measuring Equipment" LabelAlias="Navigational/Distance Measuring Equipment (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" Graphic="52441.svg">
+    <Modifier ID="NAVIGATIONAL_DISTANCE_MEASURING_EQUIPMENT_MOD" Label="Navigational/Distance Measuring Equipment" LabelAlias="Navigational/Distance Measuring Equipment (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="52441.svg">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="NAVIGATION_TERRAIN_FOLLOWING_MOD" Label="Navigation/Terrain Following" LabelAlias="Navigation/Terrain Following (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" Graphic="52451.svg">
+    <Modifier ID="NAVIGATION_TERRAIN_FOLLOWING_MOD" Label="Navigation/Terrain Following" LabelAlias="Navigation/Terrain Following (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="52451.svg">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="NAVIGATIONAL_WEATHER_AVOIDANCE_MOD" Label="Navigational/Weather Avoidance" LabelAlias="Navigational/Weather Avoidance (Sea Surface)" Category="Air/Land/Sea Surface/Subsurface Jammer" Graphic="52461.svg">
+    <Modifier ID="NAVIGATIONAL_WEATHER_AVOIDANCE_MOD" Label="Navigational/Weather Avoidance" LabelAlias="Navigational/Weather Avoidance (Sea Surface)" Category="Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="52461.svg">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>6</DigitTwo>
@@ -247,79 +247,79 @@
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="POINT_POINT_LOS_MOD" Label="Point-to-Point Line of Sight (LOS)" LabelAlias="Point-to-Point Line of Sight (LOS) (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Communications" Graphic="52491.svg">
+    <Modifier ID="POINT_POINT_LOS_MOD" Label="Point-to-Point Line of Sight (LOS)" LabelAlias="Point-to-Point Line of Sight (LOS) (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Communications" CategoryAlias="Communications" Graphic="52491.svg">
       <ModifierCode>
         <DigitOne>4</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="INSTRUMENTATION_MOD" Label="Instrumentation" LabelAlias="Instrumentation (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" Graphic="52501.svg">
+    <Modifier ID="INSTRUMENTATION_MOD" Label="Instrumentation" LabelAlias="Instrumentation (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar" Graphic="52501.svg">
       <ModifierCode>
         <DigitOne>5</DigitOne>
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="RANGE_ONLY_MOD" Label="Range Only" LabelAlias="Range Only (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" Graphic="52511.svg">
+    <Modifier ID="RANGE_ONLY_MOD" Label="Range Only" LabelAlias="Range Only (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar" Graphic="52511.svg">
       <ModifierCode>
         <DigitOne>5</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="SONOBUOY_MOD" Label="Sonobuoy" LabelAlias="Sonobuoy (Sea Surface)" Category="Sea Surface/Subsurface Radar" Graphic="52521.svg">
+    <Modifier ID="SONOBUOY_MOD" Label="Sonobuoy" LabelAlias="Sonobuoy (Sea Surface)" Category="Sea Surface/Subsurface Radar" CategoryAlias="Radar" Graphic="52521.svg">
       <ModifierCode>
         <DigitOne>5</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="SPACE_MOD" Label="Space" LabelAlias="Space (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" Graphic="52541.svg">
+    <Modifier ID="SPACE_MOD" Label="Space" LabelAlias="Space (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar" Graphic="52541.svg">
       <ModifierCode>
         <DigitOne>5</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="SURFACE_SEARCH_MOD" Label="Surface Search" LabelAlias="Surface Search (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" Graphic="52551.svg">
+    <Modifier ID="SURFACE_SEARCH_MOD" Label="Surface Search" LabelAlias="Surface Search (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar" Graphic="52551.svg">
       <ModifierCode>
         <DigitOne>5</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="SATELLITE_UPLINK_MOD" Label="Satellite Uplink" LabelAlias="Satellite Uplink (Sea Surface)" Category="Air/Land/Sea Surface/Subsurface Communications" Graphic="52571.svg">
+    <Modifier ID="SATELLITE_UPLINK_MOD" Label="Satellite Uplink" LabelAlias="Satellite Uplink (Sea Surface)" Category="Air/Land/Sea Surface/Subsurface Communications" CategoryAlias="Communications" Graphic="52571.svg">
       <ModifierCode>
         <DigitOne>5</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="TARGET_ACQUISITION_MOD" Label="Target Acquisition" LabelAlias="Target Acquisition (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" Graphic="52581.svg">
+    <Modifier ID="TARGET_ACQUISITION_MOD" Label="Target Acquisition" LabelAlias="Target Acquisition (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="52581.svg">
       <ModifierCode>
         <DigitOne>5</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="TARGET_ILLUMINATION_MOD" Label="Target Illumination" LabelAlias="Target Illumination (Sea Surface)" Category="Air/Land/Sea Surface Radar" Graphic="52591.svg">
+    <Modifier ID="TARGET_ILLUMINATION_MOD" Label="Target Illumination" LabelAlias="Target Illumination (Sea Surface)" Category="Air/Land/Sea Surface Radar" CategoryAlias="Radar" Graphic="52591.svg">
       <ModifierCode>
         <DigitOne>5</DigitOne>
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="TARGET_TRACKING_MOD" Label="Target Tracking" LabelAlias="Target Tracking (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" Graphic="52611.svg">
+    <Modifier ID="TARGET_TRACKING_MOD" Label="Target Tracking" LabelAlias="Target Tracking (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar" Graphic="52611.svg">
       <ModifierCode>
         <DigitOne>6</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="UNKNOWN_MOD" Label="Unknown" LabelAlias="Unknown (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" Graphic="52621.svg">
+    <Modifier ID="UNKNOWN_MOD" Label="Unknown" LabelAlias="Unknown (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar" Graphic="52621.svg">
       <ModifierCode>
         <DigitOne>6</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="VIDEO_REMOTING_MOD" Label="Video Remoting" LabelAlias="Video Remoting (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" Graphic="52631.svg">
+    <Modifier ID="VIDEO_REMOTING_MOD" Label="Video Remoting" LabelAlias="Video Remoting (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar" Graphic="52631.svg">
       <ModifierCode>
         <DigitOne>6</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="EXPERIMENTAL_MOD" Label="Experimental" LabelAlias="Experimental (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" Graphic="52641.svg">
+    <Modifier ID="EXPERIMENTAL_MOD" Label="Experimental" LabelAlias="Experimental (Sea Surface)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar" Graphic="52641.svg">
       <ModifierCode>
         <DigitOne>6</DigitOne>
         <DigitTwo>4</DigitTwo>

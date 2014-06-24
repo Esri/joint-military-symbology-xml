@@ -35,7 +35,7 @@ namespace JointMilitarySymbologyLibrary
 
             //result = result + _configHelper.DomainSeparator + m.Category.Replace(',', '-') + _configHelper.DomainSeparator + m.Label.Replace(',', '-');
 
-            string result = m.Category + _configHelper.DomainSeparator + ((m.LabelAlias == "") ? m.Label : m.LabelAlias);
+            string result = ((m.CategoryAlias == "") ? m.Category : m.CategoryAlias) + _configHelper.DomainSeparator + ((m.LabelAlias == "") ? m.Label : m.LabelAlias);
             
             result = result.Replace(',', '-');
 
