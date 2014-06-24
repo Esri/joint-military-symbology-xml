@@ -1653,12 +1653,15 @@ namespace JointMilitarySymbologyLibrary {
         
         private string categoryField;
         
+        private string categoryAliasField;
+        
         private string limitUseToField;
         
         private StandardType standardField;
         
         public ModifiersTypeModifier() {
             this.labelAliasField = "";
+            this.categoryAliasField = "";
             this.standardField = StandardType.ALL;
         }
         
@@ -1747,6 +1750,18 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.categoryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string CategoryAlias {
+            get {
+                return this.categoryAliasField;
+            }
+            set {
+                this.categoryAliasField = value;
             }
         }
         
