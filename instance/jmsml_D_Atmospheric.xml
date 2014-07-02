@@ -72,13 +72,13 @@
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="COLD_FRONTOGENESIS" Label="Cold Frontogenesis" Graphic="45110203.svg" GeometryType="LINE">
+						<EntitySubType ID="COLD_FRONTOGENESIS" Label="Cold Frontogenesis" Graphic="45110303.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="COLD_FRONTOLYSIS" Label="Cold Frontolysis" Graphic="45110104.svg" GeometryType="LINE">
+						<EntitySubType ID="COLD_FRONTOLYSIS" Label="Cold Frontolysis" Graphic="45110304.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>4</DigitTwo>
@@ -426,7 +426,7 @@
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="WIND_PLOT" Label="Wind Plot" Graphic="45140200.svg">
+				<EntityType ID="WIND_PLOT" Label="Wind Plot" Graphic="45140200.3.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
@@ -685,13 +685,13 @@
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="RAIN_SNOW_SHOWERS_LIGHT" Label="Rain and Snow Showers - Light" Graphic="45160503.svg">
+						<EntitySubType ID="RAIN_SNOW_SHOWERS_LIGHT" Label="Rain and Snow Showers - Light" Graphic="45160603.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="RAIN_SNOW_SHOWERS_MODERATE_HEAVY" Label="Rain and Snow Showers - Moderate/Heavy" Graphic="45160504.svg">
+						<EntitySubType ID="RAIN_SNOW_SHOWERS_MODERATE_HEAVY" Label="Rain and Snow Showers - Moderate/Heavy" Graphic="45160604.svg">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>4</DigitTwo>
@@ -700,7 +700,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="SNOW" Label="Snow" Graphic="45160700.svg">
+				<EntityType ID="SNOW" Label="Snow" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>7</DigitTwo>

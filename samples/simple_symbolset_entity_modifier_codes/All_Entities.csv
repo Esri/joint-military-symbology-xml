@@ -905,8 +905,6 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType
 25,Maneuver Areas,Area,Enemy Suspected,,25150104,Area
 25,Maneuver Areas,Assembly Area,,,25150200,Area
 25,Maneuver Areas,Occupied Assembly Area,,,25150300,Area
-25,Maneuver Areas,Occupied Assembly Area,Occupied Assembly Area w/ Offset Unit,,25150301,Area
-25,Maneuver Areas,Occupied Assembly Area,Occupied Assembly Area w/ Offset Units,,25150302,Area
 25,Maneuver Areas,Proposed or On Order Assembly Area,,,25150400,Area
 25,Maneuver Areas,Action Area,Joint Tactical Action Area (JTAA),,25150501,Area
 25,Maneuver Areas,Action Area,Submarine Action Area (SAA),,25150502,Area
@@ -951,7 +949,6 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType
 25,Maneuver Points,Target Reference Point,,,25160300,Point
 25,Maneuver Points,Point of Departure,,,25160400,Point
 25,Airspace Control (Corridors) Areas,Air Corridor,,,25170100,Area
-25,Airspace Control (Corridors) Areas,Air Corridor,With Multiple Segments,,25170101,Area
 25,Airspace Control (Corridors) Areas,Low Level Transit Route,,,25170200,Area
 25,Airspace Control (Corridors) Areas,Minimum-Risk Route,,,25170300,Area
 25,Airspace Control (Corridors) Areas,Safe Lane,,,25170400,Area
@@ -1037,7 +1034,6 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType
 25,Maritime Control Points,Optical Fix,,,25212600,Point
 25,Maritime Control Points,Formation,,,25212700,Point
 25,Maritime Control Points,Harbor,,,25212800,Point
-25,Maritime Control Points,Harbor Entrance Point,,,25212900,Point
 25,Maritime Control Points,Harbor Entrance Point,A,,25212901,Point
 25,Maritime Control Points,Harbor Entrance Point,Q,,25212902,Point
 25,Maritime Control Points,Harbor Entrance Point,X,,25212903,Point
@@ -1131,7 +1127,6 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType
 25,Maritime Control Lines,Bearing Line,Radio Direction Finder (RDF),,25220108,Line
 25,Deception,Decoy/Dummy,,,25230100,Line
 25,Deception,Decoy/Dummy/Feint,,,25230200,Line
-25,Fires Areas,Airspace Coordination Area,,,25240100,Point
 25,Fires Areas,Airspace Coordination Area,Irregular,,25240101,Area
 25,Fires Areas,Airspace Coordination Area,Rectangular,,25240102,Area
 25,Fires Areas,Airspace Coordination Area,Circular,,25240103,Area
@@ -1507,8 +1502,6 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType
 36,Sea Mine-General,Sea Mine-Floating,,,36110300,Point
 36,Sea Mine-General,Sea Mine-Rising,,,36110400,Point
 36,Sea Mine-General,Sea Mine-Other Position,,,36110500,Point
-36,Sea Mine-General,Kingfisher,,,36110600,Point
-36,Sea Mine-General,Small Object-Mine-Like,,,36110700,Point
 36,Sea Mine-General,Exercise Mine-General,,,36110800,Point
 36,Sea Mine-General,Exercise Mine-General,Exercise Mine-Bottom,,36110801,Point
 36,Sea Mine-General,Exercise Mine-General,Exercise Mine-Moored,,36110802,Point
@@ -1524,7 +1517,6 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType
 36,Sea Mine Decoy,,,,36130000,Point
 36,Sea Mine Decoy,Sea Mine Decoy-Bottom,,,36130100,Point
 36,Sea Mine Decoy,Sea Mine Decoy-Moored,,,36130200,Point
-36,Mine-Like Contact (MILCO),,,,36140000,Point
 36,Mine-Like Contact (MILCO),MILCO - General,,,36140100,Point
 36,Mine-Like Contact (MILCO),MILCO - General,MILCO - General-Confidence-Level 1,,36140101,Point
 36,Mine-Like Contact (MILCO),MILCO - General,MILCO - General-Confidence-Level 2,,36140102,Point
@@ -1810,7 +1802,6 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType
 45,Weather Symbols,Rain and Snow Mixed,Rain or Drizzle and Snow - Moderate/Heavy,,45160602,Point
 45,Weather Symbols,Rain and Snow Mixed,Rain and Snow Showers - Light,,45160603,Point
 45,Weather Symbols,Rain and Snow Mixed,Rain and Snow Showers - Moderate/Heavy,,45160604,Point
-45,Weather Symbols,Snow,,,45160700,Point
 45,Weather Symbols,Snow,Intermittent Light,,45160701,Point
 45,Weather Symbols,Snow,Intermittent Light/Continuous Light,,45160702,Point
 45,Weather Symbols,Snow,Intermittent Moderate,,45160703,Point
@@ -1925,7 +1916,6 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType
 46,Ice Systems,Limits,Observed Ice Edge or Boundary,,46110504,Line
 46,Ice Systems,Limits,Estimated Ice Edge or Boundary,,46110505,Line
 46,Ice Systems,Limits,Ice Edge or Boundary From Radar,,46110506,Line
-46,Ice Systems,Openings in the Ice,,,46110600,Line
 46,Ice Systems,Openings in the Ice,Cracks,,46110601,Line
 46,Ice Systems,Openings in the Ice,Cracks at a Specific Location,,46110602,Line
 46,Ice Systems,Openings in the Ice,Lead,,46110603,Line
@@ -1967,7 +1957,6 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType
 46,Hydrography,Ports and Harbors,Ferry Crossing,,46120322,Point
 46,Hydrography,Ports and Harbors,Cable Ferry Crossing,,46120323,Point
 46,Hydrography,Ports and Harbors,Dolphin,,46120324,Point
-46,Hydrography,Ports and Harbors,Shoreline Protection,,46120325,Point
 46,Hydrography,Ports and Harbors,Breakwater/Groin/Jetty - Above Water,,46120326,Line
 46,Hydrography,Ports and Harbors,Breakwater/Groin/Jetty - Below Water,,46120327,Line
 46,Hydrography,Ports and Harbors,Seawall,,46120328,Line
@@ -2131,7 +2120,6 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType
 60,Device Domain,Contractor,,,60150300,Point
 60,Device Domain,Supervisory Control and Data Acquisition (SCADA),,,60150400,Point
 60,Device Domain,Non-Government,,,60150500,Point
-60,Effect,,,,60160000,Point
 60,Effect,Infection,,,60160100,Point
 60,Effect,Degradation,,,60160200,Point
 60,Effect,Data Spoofing,,,60160300,Point

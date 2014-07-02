@@ -736,18 +736,10 @@
       <LegacyStandardIdentityCode Name="2525C">F</LegacyStandardIdentityCode>
     </Affiliation>
 
-    <Affiliation ID="EXERCISE_UNKNOWN_FRIEND" ContextID="EXERCISE" DimensionID="UNKNOWN" StandardIdentityID="SI_FRIEND" Shape="NA">
-      <LegacyStandardIdentityCode Name="2525C">D</LegacyStandardIdentityCode>
-    </Affiliation>
-
     <Affiliation ID="SIMULATED_UNKNOWN_FRIEND" ContextID="SIMULATION" DimensionID="UNKNOWN" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="2_300.svg"/>
 
     <Affiliation ID="REALITY_UNKNOWN_NEUTRAL" ContextID="REALITY" DimensionID="UNKNOWN" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="0_400.svg">
       <LegacyStandardIdentityCode Name="2525C">N</LegacyStandardIdentityCode>
-    </Affiliation>
-
-    <Affiliation ID="EXERCISE_UNKNOWN_NEUTRAL" ContextID="EXERCISE" DimensionID="UNKNOWN" StandardIdentityID="SI_NEUTRAL" Shape="NA">
-      <LegacyStandardIdentityCode Name="2525C">L</LegacyStandardIdentityCode>
     </Affiliation>
 
     <Affiliation ID="SIMULATED_UNKNOWN_NEUTRAL" ContextID="SIMULATION" DimensionID="UNKNOWN" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="2_400.svg"/>
@@ -756,28 +748,16 @@
       <LegacyStandardIdentityCode Name="2525C">H</LegacyStandardIdentityCode>
     </Affiliation>
 
-    <Affiliation ID="EXERCISE_UNKNOWN_HOSTILE" ContextID="EXERCISE" DimensionID="UNKNOWN" StandardIdentityID="SI_HOSTILE_FAKER" Shape="NA">
-      <LegacyStandardIdentityCode Name="2525C">K</LegacyStandardIdentityCode>
-    </Affiliation>
-
     <Affiliation ID="SIMULATED_UNKNOWN_HOSTILE" ContextID="SIMULATION" DimensionID="UNKNOWN" StandardIdentityID="SI_HOSTILE_FAKER" Shape="DIAMOND" Graphic="2_600.svg"/>
 
     <Affiliation ID="REALITY_UNKNOWN_ASSUMED" ContextID="REALITY" DimensionID="UNKNOWN" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="0_200.svg">
       <LegacyStandardIdentityCode Name="2525C">A</LegacyStandardIdentityCode>
     </Affiliation>
 
-    <Affiliation ID="EXERCISE_UNKNOWN_ASSUMED" ContextID="EXERCISE" DimensionID="UNKNOWN" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="NA">
-      <LegacyStandardIdentityCode Name="2525C">M</LegacyStandardIdentityCode>
-    </Affiliation>
-
     <Affiliation ID="SIMULATED_UNKNOWN_ASSUMED" ContextID="SIMULATION" DimensionID="UNKNOWN" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="2_200.svg"/>
 
     <Affiliation ID="REALITY_UNKNOWN_SUSPECT" ContextID="REALITY" DimensionID="UNKNOWN" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="0_500.svg">
       <LegacyStandardIdentityCode Name="2525C">S</LegacyStandardIdentityCode>
-    </Affiliation>
-
-    <Affiliation ID="EXERCISE_UNKNOWN_SUSPECT" ContextID="EXERCISE" DimensionID="UNKNOWN" StandardIdentityID="SI_SUSPECT_JOKER" Shape="NA">
-      <LegacyStandardIdentityCode Name="2525C">J</LegacyStandardIdentityCode>
     </Affiliation>
 
     <Affiliation ID="SIMULATED_UNKNOWN_SUSPECT" ContextID="SIMULATION" DimensionID="UNKNOWN" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="2_500.svg"/>

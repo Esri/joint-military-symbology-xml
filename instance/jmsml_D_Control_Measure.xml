@@ -12,7 +12,7 @@
 				<DigitTwo>1</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="BOUNDARY" Label="Boundary" GeometryType="LINE">
+				<EntityType ID="BOUNDARY" Label="Boundary" Graphic="25110100.a.svg" GeometryType="LINE">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
@@ -261,14 +261,14 @@
 							</EntitySubTypeCode>
 						</EntitySubType>
             
-						<EntitySubType ID="FLOT_ENEMY_KNOWN" Label="Enemy Known" Graphic="25140103.svg" GeometryType="LINE">
+						<EntitySubType ID="FLOT_ENEMY_KNOWN" Label="Enemy Known" Graphic="25140103.a.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
             
-						<EntitySubType ID="FLOT_ENEMY_SUSPECTED_TEMPLATED" Label="Enemy Suspected or Templated" Graphic="25140104.svg" GeometryType="LINE">
+						<EntitySubType ID="FLOT_ENEMY_SUSPECTED_TEMPLATED" Label="Enemy Suspected or Templated" Graphic="25140104.a.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>4</DigitTwo>
@@ -496,13 +496,13 @@
 						<DigitTwo>3</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="OCCUPIED_AA_OFFSET_UNIT" Label="Occupied Assembly Area w/ Offset Unit" Graphic="25150301.svg" GeometryType="AREA">
+						<EntitySubType ID="OCCUPIED_AA_OFFSET_UNIT" Label="Occupied Assembly Area w/ Offset Unit" GeometryType="NA" Icon="NA">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="OCCUPIED_AA_OFFSET_UNITS" Label="Occupied Assembly Area w/ Offset Units" Graphic="25150302.svg" GeometryType="AREA">
+						<EntitySubType ID="OCCUPIED_AA_OFFSET_UNITS" Label="Occupied Assembly Area w/ Offset Units" GeometryType="NA" Icon="NA">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
@@ -841,23 +841,15 @@
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
 					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="WITH_MULTIPLE_SEGMENTS" Label="With Multiple Segments" Graphic="25170101.svg" GeometryType="AREA">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>1</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-
-					</EntitySubTypes>
 				</EntityType>
+        
 				<EntityType ID="LOW_LEVEL_TRANSIT_ROUTE" Label="Low Level Transit Route" Graphic="25170200.svg" GeometryType="AREA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
 					</EntityTypeCode>
-
 				</EntityType>
+        
 				<EntityType ID="MINIMUM_RISK_ROUTE" Label="Minimum-Risk Route" Graphic="25170300.svg" GeometryType="AREA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
@@ -1486,7 +1478,7 @@
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="HARBOR_ENTRANCE_POINT" Label="Harbor Entrance Point" Graphic="25212900.svg">
+				<EntityType ID="HARBOR_ENTRANCE_POINT" Label="Harbor Entrance Point" GeometryType="NA" Icon="NA">
 					<EntityTypeCode>
 						<DigitOne>2</DigitOne>
 						<DigitTwo>9</DigitTwo>
@@ -2145,7 +2137,7 @@
 				<DigitTwo>4</DigitTwo>
 			</EntityCode>
 			<EntityTypes>
-				<EntityType ID="AIRSPACE_COORDINATION_AREA" Label="Airspace Coordination Area">
+				<EntityType ID="AIRSPACE_COORDINATION_AREA" Label="Airspace Coordination Area" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>1</DigitTwo>
@@ -3660,7 +3652,7 @@
 					</EntityTypeCode>
 
 				</EntityType>
-				<EntityType ID="AMMUNITION_TRANSFER_POINT" Label="Ammunition Transfer Point" Graphic="25320310.svg">
+				<EntityType ID="AMMUNITION_TRANSFER_POINT" Label="Ammunition Transfer Point" Graphic="25320300.svg">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>3</DigitTwo>
@@ -4108,19 +4100,19 @@
 						<DigitTwo>2</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="TMT_COVER" Label="Cover" Graphic="25342201.svg" GeometryType="LINE">
+						<EntitySubType ID="TMT_COVER" Label="Cover" Graphic="25342201b.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="TMT_GUARD" Label="Guard" Graphic="25342202.svg" GeometryType="LINE">
+						<EntitySubType ID="TMT_GUARD" Label="Guard" Graphic="25342202b.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="TMT_SCREEN" Label="Screen" Graphic="25342203.svg" GeometryType="LINE">
+						<EntitySubType ID="TMT_SCREEN" Label="Screen" Graphic="25342203b.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
@@ -4129,7 +4121,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="TMT_SEIZE" Label="Seize" Graphic="25342300.svg" GeometryType="LINE">
+				<EntityType ID="TMT_SEIZE" Label="Seize" Graphic="25342300b.svg" GeometryType="LINE">
 					<EntityTypeCode>
 						<DigitOne>2</DigitOne>
 						<DigitTwo>3</DigitTwo>

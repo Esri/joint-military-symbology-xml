@@ -49,27 +49,30 @@ namespace JointMilitarySymbologyLibrary
 
             if (affiliation != null)
             {
-                graphic = affiliation.Graphic;
+                if (affiliation.Shape != ShapeType.NA)
+                {
+                    graphic = affiliation.Graphic;
 
-                if (graphic == null)
-                    _notes = _notes + "graphic is missing - frame is NA - frame is never to be drawn;";
+                    if (graphic == null)
+                        _notes = _notes + "graphic is missing - frame is NA - frame is never to be drawn;";
 
-                string itemRootedPath = _configHelper.BuildRootedPath(graphicPath, graphic);
-                string itemActualPath = _configHelper.BuildActualPath(graphicPath, graphic);
+                    string itemRootedPath = _configHelper.BuildRootedPath(graphicPath, graphic);
+                    string itemActualPath = _configHelper.BuildActualPath(graphicPath, graphic);
 
-                if (!File.Exists(itemActualPath))
-                    _notes = _notes + "image file does not exist;";
+                    if (!File.Exists(itemActualPath))
+                        _notes = _notes + "image file does not exist;";
 
-                string itemName = BuildFrameItemName(context, dimension, identity);
-                string itemCategory = "Frame";
-                string itemTags = BuildFrameItemTags(context, identity, dimension, graphicPath + "\\" + graphic, _omitSource);
+                    string itemName = BuildFrameItemName(context, dimension, identity);
+                    string itemCategory = "Frame";
+                    string itemTags = BuildFrameItemTags(context, identity, dimension, graphicPath + "\\" + graphic, _omitSource);
 
-                result = itemRootedPath + "," +
-                         Convert.ToString(_configHelper.PointSize) + "," +
-                         itemName + "," +
-                         itemCategory + "," +
-                         itemTags + "," +
-                         _notes;
+                    result = itemRootedPath + "," +
+                             Convert.ToString(_configHelper.PointSize) + "," +
+                             itemName + "," +
+                             itemCategory + "," +
+                             itemTags + "," +
+                             _notes;
+                }
             }
 
             return result;

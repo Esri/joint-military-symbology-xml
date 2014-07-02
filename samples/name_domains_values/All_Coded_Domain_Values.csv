@@ -905,8 +905,6 @@ Maneuver Areas : Area : Enemy Known or Confirmed,25150103
 Maneuver Areas : Area : Enemy Suspected,25150104
 Maneuver Areas : Assembly Area,25150200
 Maneuver Areas : Occupied Assembly Area,25150300
-Maneuver Areas : Occupied Assembly Area : Occupied Assembly Area w/ Offset Unit,25150301
-Maneuver Areas : Occupied Assembly Area : Occupied Assembly Area w/ Offset Units,25150302
 Maneuver Areas : Proposed or On Order Assembly Area,25150400
 Maneuver Areas : Action Area : Joint Tactical Action Area (JTAA),25150501
 Maneuver Areas : Action Area : Submarine Action Area (SAA),25150502
@@ -951,7 +949,6 @@ Maneuver Points : Observation Post/Outpost (Specified) : Combat Outpost,25160205
 Maneuver Points : Target Reference Point,25160300
 Maneuver Points : Point of Departure,25160400
 Air Corridors : Air Corridor,25170100
-Air Corridors : Air Corridor : With Multiple Segments,25170101
 Air Corridors : Low Level Transit Route,25170200
 Air Corridors : Minimum-Risk Route,25170300
 Air Corridors : Safe Lane,25170400
@@ -1037,7 +1034,6 @@ Maritime Points : Electromagnetic - Magnetic Anomaly Detection (MAD),25212500
 Maritime Points : Optical Fix,25212600
 Maritime Points : Formation,25212700
 Maritime Points : Harbor,25212800
-Maritime Points : Harbor Entrance Point,25212900
 Maritime Points : Harbor Entrance Point : A,25212901
 Maritime Points : Harbor Entrance Point : Q,25212902
 Maritime Points : Harbor Entrance Point : X,25212903
@@ -1131,7 +1127,6 @@ Maritime Lines : Bearing Line : Jammer,25220107
 Maritime Lines : Bearing Line : Radio Direction Finder (RDF),25220108
 Deception : Decoy/Dummy,25230100
 Deception : Decoy/Dummy/Feint,25230200
-Fires Areas : Airspace Coordination Area,25240100
 Fires Areas : Airspace Coordination Area : Irregular,25240101
 Fires Areas : Airspace Coordination Area : Rectangular,25240102
 Fires Areas : Airspace Coordination Area : Circular,25240103
@@ -1507,8 +1502,6 @@ Sea Mine-General : Sea Mine-Moored,36110200
 Sea Mine-General : Sea Mine-Floating,36110300
 Sea Mine-General : Sea Mine-Rising,36110400
 Sea Mine-General : Sea Mine-Other Position,36110500
-Sea Mine-General : Kingfisher,36110600
-Sea Mine-General : Small Object-Mine-Like,36110700
 Sea Mine-General : Exercise Mine-General,36110800
 Sea Mine-General : Exercise Mine-General : Exercise Mine-Bottom,36110801
 Sea Mine-General : Exercise Mine-General : Exercise Mine-Moored,36110802
@@ -1524,7 +1517,6 @@ Unexploded Ordnance,36120000
 Sea Mine Decoy,36130000
 Sea Mine Decoy : Sea Mine Decoy-Bottom,36130100
 Sea Mine Decoy : Sea Mine Decoy-Moored,36130200
-MILCO,36140000
 MILCO : General,36140100
 MILCO : General : General-Confidence-Level 1,36140101
 MILCO : General : General-Confidence-Level 2,36140102
@@ -1810,7 +1802,6 @@ Weather Symbols : Rain and Snow Mixed : Rain or Drizzle and Snow - Light,4516060
 Weather Symbols : Rain and Snow Mixed : Rain or Drizzle and Snow - Moderate/Heavy,45160602
 Weather Symbols : Rain and Snow Mixed : Rain and Snow Showers - Light,45160603
 Weather Symbols : Rain and Snow Mixed : Rain and Snow Showers - Moderate/Heavy,45160604
-Weather Symbols : Snow,45160700
 Weather Symbols : Snow : Intermittent Light,45160701
 Weather Symbols : Snow : Intermittent Light/Continuous Light,45160702
 Weather Symbols : Snow : Intermittent Moderate,45160703
@@ -1925,7 +1916,6 @@ Ice Systems : Limits : Limits of Radar Observation,46110503
 Ice Systems : Limits : Observed Ice Edge or Boundary,46110504
 Ice Systems : Limits : Estimated Ice Edge or Boundary,46110505
 Ice Systems : Limits : Ice Edge or Boundary From Radar,46110506
-Ice Systems : Openings in the Ice,46110600
 Ice Systems : Openings in the Ice : Cracks,46110601
 Ice Systems : Openings in the Ice : Cracks at a Specific Location,46110602
 Ice Systems : Openings in the Ice : Lead,46110603
@@ -1967,7 +1957,6 @@ Hydrography : Ports and Harbors : Landing Ring,46120321
 Hydrography : Ports and Harbors : Ferry Crossing,46120322
 Hydrography : Ports and Harbors : Cable Ferry Crossing,46120323
 Hydrography : Ports and Harbors : Dolphin,46120324
-Hydrography : Ports and Harbors : Shoreline Protection,46120325
 Hydrography : Ports and Harbors : Breakwater/Groin/Jetty - Above Water,46120326
 Hydrography : Ports and Harbors : Breakwater/Groin/Jetty - Below Water,46120327
 Hydrography : Ports and Harbors : Seawall,46120328
@@ -2131,7 +2120,6 @@ Device Domain : Government,60150200
 Device Domain : Contractor,60150300
 Device Domain : Supervisory Control and Data Acquisition (SCADA),60150400
 Device Domain : Non-Government,60150500
-Effect,60160000
 Effect : Infection,60160100
 Effect : Degradation,60160200
 Effect : Data Spoofing,60160300
@@ -2509,7 +2497,6 @@ Communications : Omni-Line of Sight (LOS) (Land),52471
 Communications : Point-to-Point Line of Sight (LOS) (Land),52491
 Radar : Instrumentation (Land),52501
 Radar : Range Only (Land),52511
-Communications : Satellite Downlink (Land),52531
 Radar : Space (Land),52541
 Radar : Surface Search (Land),52551
 Radar : Shell Tracking,52561
