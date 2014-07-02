@@ -213,7 +213,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="OPENINGS_IN_THE_ICE" Label="Openings in the Ice" GeometryType="LINE">
+				<EntityType ID="OPENINGS_IN_THE_ICE" Label="Openings in the Ice" Icon="NA" GeometryType="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>6</DigitTwo>
@@ -524,7 +524,7 @@
 								<DigitTwo>4</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="SHORELINE_PROTECTION" Label="Shoreline Protection">
+						<EntitySubType ID="SHORELINE_PROTECTION" Label="Shoreline Protection" Icon="NA" GeometryType="NA">
 							<EntitySubTypeCode>
 								<DigitOne>2</DigitOne>
 								<DigitTwo>5</DigitTwo>

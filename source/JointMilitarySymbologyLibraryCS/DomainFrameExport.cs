@@ -40,7 +40,8 @@ namespace JointMilitarySymbologyLibrary
 
             if (affiliation != null)
             {
-                result = BuildFrameItemName(context, dimension, identity) + "," + BuildFrameCode(context, identity, dimension);
+                if(affiliation.Shape != ShapeType.NA)
+                    result = BuildFrameItemName(context, dimension, identity) + "," + BuildFrameCode(context, identity, dimension);
             }
 
             return result;
