@@ -34,7 +34,7 @@ namespace JointMilitarySymbologyLibrary
             // is seperated by a DomainSeparator (usually a colon).
 
             string category = "";
-            string result = "Amplifier" + _configHelper.DomainSeparator;
+            string result = ""; //"Amplifier" + _configHelper.DomainSeparator;  //Removed because thought to be redundant
 
             switch (amplifierGroup.AmplifierGroupCode)
             {
@@ -54,7 +54,7 @@ namespace JointMilitarySymbologyLibrary
                     break;
             }
 
-            result = result + category + _configHelper.DomainSeparator;
+            //result = result + category + _configHelper.DomainSeparator; //Removed because thought to be redundant
             result = result + amplifier.Label.Replace(',', '-') + _configHelper.DomainSeparator;
             result = result + identityGroup.Label.Replace(',', '-') ;
             

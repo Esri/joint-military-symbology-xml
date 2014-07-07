@@ -43,7 +43,7 @@ namespace JointMilitarySymbologyLibrary
             // is seperated by a DomainSeparator (usually a colon).  Builds this for each group
             // of related contexts, standard identities, and symbolsets.
 
-            string result = "Frame" + _configHelper.DomainSeparator;
+            string result = "";   //"Frame" + _configHelper.DomainSeparator;   //Removed because thought to be redundant
 
             if (context.Label != "Reality")
                 result = result + context.Label.Replace(',', '-') + _configHelper.DomainSeparator;
