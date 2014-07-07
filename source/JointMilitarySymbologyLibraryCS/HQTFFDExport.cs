@@ -43,7 +43,7 @@ namespace JointMilitarySymbologyLibrary
             // is seperated by a DomainSeparator (usually a colon).  Builds this for each group
             // of related identity, dimension, and HQTFFD.
 
-            string result = "HQTFFD" + _configHelper.DomainSeparator;
+            string result = "";  //"HQTFFD" + _configHelper.DomainSeparator;  // Removed because thought to be redundant
 
             string hqTFFDLabel = (hqTFFD.LabelAlias == "") ? hqTFFD.Label : hqTFFD.LabelAlias;
             result = result + hqTFFDLabel.Replace(',', '-') + _configHelper.DomainSeparator;
