@@ -39,7 +39,9 @@ For symbol assembly purposes, the following SIDC positions are used to determine
 
 * Headquarters(HQ)/Task Force(TF)/Feint/Dummy(FD) (Folder: `HQTFFD` - Digits: 4): Uses SIDC positions 4-6 and position 8.
 
-* Status - (TBD)
+* Status/Operational Condition Amplifier (OCA) (Folder: 'OCA' - Digits: 1 or 6, depending on style): The standard allows for two styles of these.  File names vary based on which style is considered.
+	- The default version (overlaid / or X) this uses SIDC position 7.
+	- The optional version (colored bars) this Uses SIDC positions 3-7 along with an additional value of 2 at the end.
 
 ## Details
 
