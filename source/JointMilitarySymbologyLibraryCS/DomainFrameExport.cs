@@ -41,7 +41,7 @@ namespace JointMilitarySymbologyLibrary
             if (affiliation != null)
             {
                 if(affiliation.Shape != ShapeType.NA)
-                    result = BuildFrameItemName(context, dimension, identity) + "," + BuildFrameCode(context, identity, dimension);
+                    result = BuildFrameItemName(context, dimension, identity) + "," + BuildQuotedFrameCode(context, identity, dimension);
             }
 
             return result;

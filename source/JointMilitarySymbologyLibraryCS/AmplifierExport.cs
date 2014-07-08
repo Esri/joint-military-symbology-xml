@@ -26,6 +26,17 @@ namespace JointMilitarySymbologyLibrary
             return code;
         }
 
+        protected string BuildQuotedAmplifierCode(LibraryAmplifierGroup amplifierGroup,
+                                                  LibraryAmplifierGroupAmplifier amplifier,
+                                                  LibraryStandardIdentityGroup identityGroup)
+        {
+            // Creates the quoted unique idntifier code for a given amplifier.
+
+            string code = '"' + this.BuildAmplifierCode(amplifierGroup, amplifier, identityGroup) + '"';
+
+            return code;
+        }
+
         protected string BuildAmplifierItemName(LibraryAmplifierGroup amplifierGroup,
                                                 LibraryAmplifierGroupAmplifier amplifier,
                                                 LibraryStandardIdentityGroup identityGroup)

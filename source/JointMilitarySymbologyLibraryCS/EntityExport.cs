@@ -88,6 +88,20 @@ namespace JointMilitarySymbologyLibrary
             return code;
         }
 
+        protected string BuildQuotedEntityCode(LibraryStandardIdentityGroup sig,
+                                               SymbolSet ss,
+                                               SymbolSetEntity e,
+                                               SymbolSetEntityEntityType eType,
+                                               EntitySubTypeType eSubType)
+        {
+            // Constructs a quoted string containing the symbol set and entity codes for a given
+            // set of those objects.
+
+            string code = '"' + this.BuildEntityCode(sig, ss, e, eType, eSubType) + '"';
+
+            return code;
+        }
+
         protected string BuildEntityItemName(LibraryStandardIdentityGroup sig,
                                              SymbolSet ss,
                                              SymbolSetEntity e,

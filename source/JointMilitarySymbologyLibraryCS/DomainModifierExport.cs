@@ -38,9 +38,7 @@ namespace JointMilitarySymbologyLibrary
         {
             string result = BuildModifierItemName(ss, modNumber, m) + ",";
 
-            result = result + Convert.ToString(ss.SymbolSetCode.DigitOne) + Convert.ToString(ss.SymbolSetCode.DigitTwo) +
-                              Convert.ToString(m.ModifierCode.DigitOne) + Convert.ToString(m.ModifierCode.DigitTwo) +
-                              modNumber;
+            result = result + BuildQuotedModifierCode(ss, modNumber, m);
             return result;
         }
     }
