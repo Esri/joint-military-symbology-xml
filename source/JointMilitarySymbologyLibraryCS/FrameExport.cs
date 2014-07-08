@@ -37,6 +37,15 @@ namespace JointMilitarySymbologyLibrary
             return code;
         }
 
+        protected string BuildQuotedFrameCode(LibraryContext context, LibraryStandardIdentity identity, LibraryDimension dimension)
+        {
+            // Creates the unique idntifier code for a given frame, surrounded by quotes.
+
+            string code = '"' + this.BuildFrameCode(context, identity, dimension) + '"';
+
+            return code;
+        }
+
         protected string BuildFrameItemName(LibraryContext context, LibraryDimension dimension, LibraryStandardIdentity identity)
         {
             // Constructs a string containing the name of a frame, where each label value

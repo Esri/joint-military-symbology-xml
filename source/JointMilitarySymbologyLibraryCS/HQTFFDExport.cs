@@ -37,6 +37,15 @@ namespace JointMilitarySymbologyLibrary
             return code;
         }
 
+        protected string BuildQuotedHQTFFDCode(LibraryStandardIdentityGroup identityGroup, LibraryDimension dimension, LibraryHQTFDummy hqTFFD)
+        {
+            // Creates the quoted unique idntifier code for a given HQTFFD.
+
+            string code = '"' + this.BuildHQTFFDCode(identityGroup, dimension, hqTFFD) + '"';
+
+            return code;
+        }
+
         protected string BuildHQTFFDItemName(LibraryStandardIdentityGroup identityGroup, LibraryDimension dimension, LibraryHQTFDummy hqTFFD)
         {
             // Constructs a string containing the name of a HQTFFD, where each label value

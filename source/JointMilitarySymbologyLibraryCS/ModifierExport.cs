@@ -25,6 +25,16 @@ namespace JointMilitarySymbologyLibrary
             return code;
         }
 
+        protected string BuildQuotedModifierCode(SymbolSet ss, string modNumber, ModifiersTypeModifier m)
+        {
+            // Constructs a quoted string containing the symbol set and modifier codes for a given
+            // set of those objects.
+
+            string code = '"' + this.BuildModifierCode(ss, modNumber, m) + '"';
+
+            return code;
+        }
+
         protected string BuildModifierItemName(SymbolSet ss, string modNumber, ModifiersTypeModifier m)
         {
             // Constructs a string containing the name of a modifier, where each Label value

@@ -40,14 +40,14 @@ namespace JointMilitarySymbologyLibrary
                                   SymbolSetEntityEntityType eType,
                                   EntitySubTypeType eSubType)
         {
-            string code = BuildEntityCode(sig, ss, e, eType, eSubType);
+            string code = BuildQuotedEntityCode(sig, ss, e, eType, eSubType);
 
             return BuildEntityItemName(sig, ss, e, eType, eSubType) + "," + code;
         }
 
         string IEntityExport.Line(LibraryStandardIdentityGroup sig, SymbolSet ss, EntitySubTypeType eSubType)
         {
-            string code = BuildEntityCode(sig, ss, null, null, eSubType);
+            string code = BuildQuotedEntityCode(sig, ss, null, null, eSubType);
 
             return BuildEntityItemName(sig, ss, null, null, eSubType) + "," + code;
         }
