@@ -324,5 +324,16 @@ namespace JointMilitarySymbologyLibrary
 
             return result;
         }
+
+        public string BuildOriginalPath(string path, string graphic)
+        {
+            // A helper function for combining the config information for
+            // an actual base path, the path found, and an element's graphic attribute
+            // into a string. Ex: "C:\Symbols\Appendices\...\1001100000.svg"
+
+            string result = this.GraphicHome + path + "\\" + graphic;
+
+            return result;
+        }
     }
 }

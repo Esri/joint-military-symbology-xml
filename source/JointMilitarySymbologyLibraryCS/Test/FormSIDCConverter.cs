@@ -29,6 +29,7 @@ namespace Test
     {
         private Librarian _librarian;
         private Symbol _symbol;
+        private Symbol _badSymbol;
 
         public FormSIDCConverter()
         {
@@ -36,6 +37,12 @@ namespace Test
 
             _librarian = new Librarian();
             _librarian.IsLogging = true;
+
+            SvgSymbol.ImageSize = new Size(pictureBox1.Width, pictureBox1.Height);
+            
+            _badSymbol = _librarian.MakeSymbol(1001980000, 1000000000);
+            _symbol = _badSymbol;
+            updateControls();
         }
 
         private void serializer_UnknownNode(object sender, XmlNodeEventArgs e)
@@ -98,6 +105,18 @@ namespace Test
             label10.Text = _symbol.DrawNote;
         }
 
+        private void updateGraphic()
+        {
+            // Change padding for control measures
+
+            if (_symbol.SIDC.SymbolSetCode != "25")
+                pictureBox1.Padding = new Padding(40,0,0,0);
+            else
+                pictureBox1.Padding = new Padding(15,0,0,0);
+
+            pictureBox1.Image = SvgSymbol.GetBitmap(_symbol.Graphics);
+        }
+
         private void updateControls()
         {
             if (_symbol != null)
@@ -123,6 +142,7 @@ namespace Test
 
                 updateFieldList();
                 updateDrawRuleList();
+                updateGraphic();
             }
             else
             {
@@ -136,6 +156,8 @@ namespace Test
 
                 listView1.Items.Clear();
                 listView2.Items.Clear();
+
+                pictureBox1.Image = SvgSymbol.GetBitmap(_badSymbol.Graphics);
             }
         }
 
@@ -191,12 +213,6 @@ namespace Test
 
                 updateControls();
             }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            ETL etl = new ETL(_librarian);
-            etl.Export("export");
         }
     }
 }

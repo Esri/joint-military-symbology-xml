@@ -2126,5 +2126,45 @@
       <LegacyFunctionCode Name="2525C">UCDMLA</LegacyFunctionCode>
     </LegacySymbol>
     
+    <!-- TODO : A bunch of other air defense symbols here -->
+
+    <LegacySymbol ID="ARMOR_SYM" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ARMOR_ARMORED_MECHANIZED_SELF_PROPELLED_TRACKED">
+      <LegacyFunctionCode Name="2525C">UCA---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="ARMOR_TRACK_SYM" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ARMOR_ARMORED_MECHANIZED_SELF_PROPELLED_TRACKED">
+      <LegacyFunctionCode Name="2525C">UCAT--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="ARMOR_AB_SYM" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ARMOR_ARMORED_MECHANIZED_SELF_PROPELLED_TRACKED" ModifierTwoID="AIRBORNE_MOD">
+      <LegacyFunctionCode Name="2525C">UCATA-</LegacyFunctionCode>
+    </LegacySymbol>
+    
+    <!-- TODO : Fill in rest of armor, antiarmor, and aviation -->
+
+    <LegacySymbol ID="INFANTRY_SYM" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="INFANTRY">
+      <LegacyFunctionCode Name="2525C">UCI---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="INFANTRY_LIGHT_SYM" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="INFANTRY" ModifierTwoID="LIGHT_MOD">
+      <LegacyFunctionCode Name="2525C">UCIL--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="INFANTRY_MOTOR_SYM" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="INFANTRY" EntitySubTypeID="INFANTRY_MOTORIZED">
+      <LegacyFunctionCode Name="2525C">UCIM--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="INFANTRY_MTN_SYM" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="INFANTRY" ModifierTwoID="MOUNTAIN_MOD">
+      <LegacyFunctionCode Name="2525C">UCIO--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="INFANTRY_AB_SYM" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="INFANTRY" ModifierTwoID="AIRBORNE_MOD">
+      <LegacyFunctionCode Name="2525C">UCIA--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="INFANTRY_AIR_ASSLT_SYM" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="INFANTRY" ModifierOneID="AIR_MOBILE_AIR_ASSAULT_MOD">
+      <LegacyFunctionCode Name="2525C">UCIS--</LegacyFunctionCode>
+    </LegacySymbol>
+    
   </LegacySymbols>
 </SymbolSet>

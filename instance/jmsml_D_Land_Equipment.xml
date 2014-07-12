@@ -1600,4 +1600,22 @@
 			</ModifierCode>
 		</Modifier>
 	</SectorOneModifiers>
+
+  <LegacySymbols>
+    <LegacySymbol ID="AUTOMATIC_SYM" EntityID="WEAPON_SYSTEM" EntityTypeID="RIFLE">
+      <LegacyFunctionCode Name="2525C">EWR---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="RIFLE_SYM" EntityID="WEAPON_SYSTEM" EntityTypeID="RIFLE" EntitySubTypeID="SINGLE_SHOT_RIFLE">
+      <LegacyFunctionCode Name="2525C">EWRR--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="LMG_SYM" EntityID="WEAPON_SYSTEM" EntityTypeID="MACHINE_GUN" EntitySubTypeID="MG_LIGHT">
+      <LegacyFunctionCode Name="2525C">EWRL--</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="HMG_SYM" EntityID="WEAPON_SYSTEM" EntityTypeID="MACHINE_GUN" EntitySubTypeID="MG_HEAVY">
+      <LegacyFunctionCode Name="2525C">EWRH--</LegacyFunctionCode>
+    </LegacySymbol>
+  </LegacySymbols>
 </SymbolSet>

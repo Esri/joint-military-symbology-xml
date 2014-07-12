@@ -447,7 +447,7 @@ namespace JointMilitarySymbologyLibrary
             return retObj;
         }
 
-        internal LibraryDimension DimensionByLegacyCode(string code)
+        internal LibraryDimension DimensionByLegacyCode(string code, string firstLetterInFunction = "")
         {
             LibraryDimension retObj = null;
 
@@ -457,7 +457,8 @@ namespace JointMilitarySymbologyLibrary
                 {
                     foreach (LegacyLetterCodeType lObj2 in lObj.LegacyDimensionCode)
                     {
-                        if (lObj2.Value == code)
+                        if ((lObj2.Value == code && lObj2.FirstFunctionLetter == "") ||
+                            (lObj2.Value == code && lObj2.FirstFunctionLetter == firstLetterInFunction))
                         {
                             return lObj;
                         }
@@ -513,6 +514,24 @@ namespace JointMilitarySymbologyLibrary
                 if (lObj.ID == id)
                 {
                     return lObj;
+                }
+            }
+
+            return retObj;
+        }
+
+        internal LibraryStandardIdentityGroup StandardIdentityGroup(LibraryStandardIdentity standardIdentity)
+        {
+            LibraryStandardIdentityGroup retObj = null;
+
+            foreach (LibraryStandardIdentityGroup lObj in this._library.StandardIdentityGroups)
+            {
+                foreach (string id in lObj.StandardIdentityIDs.Split(' '))
+                {
+                    if (standardIdentity.ID == id)
+                    {
+                        return lObj;
+                    }
                 }
             }
 
@@ -762,7 +781,7 @@ namespace JointMilitarySymbologyLibrary
             return retObj;
         }
 
-        internal LibraryAffiliation Affiliation(string legacyStandardIdentityCode, string legacyDimensionCode)
+        internal LibraryAffiliation AffiliationByLegacyCode(string legacyStandardIdentityCode, string legacyDimensionCode, string legacyFirstLetterInFunction)
         {
             LibraryAffiliation retObj = null;
 
@@ -778,7 +797,8 @@ namespace JointMilitarySymbologyLibrary
                             
                             foreach (LegacyLetterCodeType lObj3 in lDim.LegacyDimensionCode)
                             {
-                                if(lObj3.Value == legacyDimensionCode)
+                                if((lObj3.Value == legacyDimensionCode && lObj3.FirstFunctionLetter == "") ||
+                                   (lObj3.Value == legacyDimensionCode && lObj3.FirstFunctionLetter == legacyFirstLetterInFunction))
                                     return lObj;
                             }
                         }

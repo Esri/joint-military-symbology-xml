@@ -819,10 +819,13 @@ namespace JointMilitarySymbologyLibrary {
         
         private string remarksField;
         
+        private string firstFunctionLetterField;
+        
         private string valueField;
         
         public LegacyLetterCodeType() {
             this.labelAliasField = "";
+            this.firstFunctionLetterField = "";
         }
         
         /// <remarks/>
@@ -878,6 +881,18 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.remarksField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string FirstFunctionLetter {
+            get {
+                return this.firstFunctionLetterField;
+            }
+            set {
+                this.firstFunctionLetterField = value;
             }
         }
         

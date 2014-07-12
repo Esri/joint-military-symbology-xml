@@ -42,6 +42,7 @@ In providing this schema, files of instance data, and sample C# code to navigate
 * [Requirements](#requirements)
 * [Instructions](#instructions)
 * [NLog](#nlog)
+* [Svg](#svg)
 * [Resources](#resources)
 * [Issues](#issues)
 * [Contributing](#contributing)
@@ -53,7 +54,8 @@ In providing this schema, files of instance data, and sample C# code to navigate
 * A text editor of your choice for viewing and/or editing the XML files found under the instance or schema folders.
 * To build the .NET Solution source in source\JointMilitarySymbologyLibraryCS you will also need:
     * Visual Studio 2012 or later.
-    * NLog (see below)
+    * NLog (see below).
+    * Svg (see below, if you wish to build/run the JMSML Demo project).
     * If you do not require the C# library, you may skip this requirement.
 
 ## Instructions
@@ -81,7 +83,6 @@ In providing this schema, files of instance data, and sample C# code to navigate
 	* Note that not all symbols are currently supported and not all possible 2525D codes will convert to 2525C codes, or vice versa.  
 		* Because of the component construction nature of 2525D, there are many more symbol ID combinations possible in 2525D, combinations that don't convert to 2525C.
 * DISA provides graphic files (svg) for the individual parts of MIL-STD 2525.  The JMSML schema supports referencing those files and the included C# library contains functionality that can be used to combine those referenced files into a complete image.  
-	* To utilize this functionality you will need to acquire these graphic files from DISA's Symbology Standards Management Committee (SSMC), place them in a folder, and amend the graphicPath line in the jmsml.config file to point to this folder.  Contact disa.meade.EE.mbx.symbology@mail.mil to learn more about the current availability and use of these graphic files.
 
 * Detailed API user documentation can be found at: [API User Doc](./documentation/APIUserDoc.md)
 
@@ -98,6 +99,18 @@ Binary packages are available via NuGet. The binary for NLog 2.1.0 is provided i
 If you're interested in joining NLog development efforts, go to the NLog-Development group.
 
 Visit http://nlog-project.org/ for more information.
+
+## Svg
+
+Svg is a GitHub repo located here: [https://github.com/vvvv/SVG](https://github.com/vvvv/SVG)
+
+It provides the JMSML Demo application/project with the capability to display the svg files included in this repo.
+
+The Svg Rendering Engine is licensed under the [Microsoft Public License](https://svg.codeplex.com/license).
+
+To configure JMSML to use the included svgs, edit the `jmsml.config` file found here: [jmsml.config](/source/JointMilitarySymbologyLibraryCS/jmsml.config) with a value for `GraphicHome` that points to your folder containing the svg files.  Then clean and rebuild the JMSML solution.
+
+In `jmsml.config`, The `SVGHome` attribute should point to the location of the actual 2525 svg files.  The `GraphicRoot` attribute is the string prefixed to paths in the image, name, category, tag export files. The `GraphicHome` attribute should point to the real disk location of your `GraphicRoot`. The `GraphicExtension` attribute should be the three letter file name extension for the image files you have stored in your `GraphicHome`.  These may be the original svg files or, perhaps, they are emf files if you have converted the svgs.
 
 ## Resources
 
