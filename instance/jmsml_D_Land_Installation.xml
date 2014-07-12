@@ -981,4 +981,14 @@
 			</ModifierCode>
 		</Modifier>
 	</SectorTwoModifiers>
+
+  <LegacySymbols>
+    <LegacySymbol ID="AIRCRAFT_SYM" EntityID="INSTALLATION" EntityTypeID="AIRCRAFT_PRODUCTION_ASSEMBLY">
+      <LegacyFunctionCode Name="2525C">IMA---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="SHIP_YARD_SYM" EntityID="INFRASTRUCTURE" EntityTypeID="TRANSPORTATION_INFRASTRUCTURE" EntitySubTypeID="SHIP_YARD">
+      <LegacyFunctionCode Name="2525C">IMS---</LegacyFunctionCode>
+    </LegacySymbol>
+  </LegacySymbols>
 </SymbolSet>

@@ -4100,19 +4100,19 @@
 						<DigitTwo>2</DigitTwo>
 					</EntityTypeCode>
 					<EntitySubTypes>
-						<EntitySubType ID="TMT_COVER" Label="Cover" Graphic="25342201b.svg" GeometryType="LINE">
+						<EntitySubType ID="TMT_COVER" Label="Cover" Graphic="25342201.b.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>1</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="TMT_GUARD" Label="Guard" Graphic="25342202b.svg" GeometryType="LINE">
+						<EntitySubType ID="TMT_GUARD" Label="Guard" Graphic="25342202.b.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>2</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="TMT_SCREEN" Label="Screen" Graphic="25342203b.svg" GeometryType="LINE">
+						<EntitySubType ID="TMT_SCREEN" Label="Screen" Graphic="25342203.b.svg" GeometryType="LINE">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>3</DigitTwo>
@@ -4121,7 +4121,7 @@
 
 					</EntitySubTypes>
 				</EntityType>
-				<EntityType ID="TMT_SEIZE" Label="Seize" Graphic="25342300b.svg" GeometryType="LINE">
+				<EntityType ID="TMT_SEIZE" Label="Seize" Graphic="25342300.b.svg" GeometryType="LINE">
 					<EntityTypeCode>
 						<DigitOne>2</DigitOne>
 						<DigitTwo>3</DigitTwo>
@@ -4145,4 +4145,22 @@
 			</EntityTypes>
 		</Entity>
 	</Entities>
+  
+  <LegacySymbols>
+    <LegacySymbol ID="SCREEN_TASK_SYM" EntityID="MISSION_TASKS" EntityTypeID="SECURITY" EntitySubTypeID="TMT_SCREEN">
+      <LegacyFunctionCode Name="2525C">US----</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="FIRING_POINT_SYM" EntityID="FIRES_POINTS" EntityTypeID="FIRING_POINT">
+      <LegacyFunctionCode Name="2525C">PCB---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="WPNS_FREE_ZONE_SYM" EntityID="AIRSPACE_CONTROL_CORRIDORS_AREAS" EntityTypeID="WEAPONS_FREE_ZONE">
+      <LegacyFunctionCode Name="2525C">AAW---</LegacyFunctionCode>
+    </LegacySymbol>
+
+    <LegacySymbol ID="FORTIFIED_AREA_SYM" EntityID="MANEUVER_AREAS" EntityTypeID="FORTIFIED_AREA">
+      <LegacyFunctionCode Name="2525C">GAF---</LegacyFunctionCode>
+    </LegacySymbol>
+  </LegacySymbols>
 </SymbolSet>

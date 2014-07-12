@@ -20,7 +20,6 @@ using System.Drawing.Imaging;
 using System.IO;
 using NLog;
 
-
 namespace JointMilitarySymbologyLibrary
 {
     public enum SymbolStatusEnum
@@ -55,6 +54,7 @@ namespace JointMilitarySymbologyLibrary
         private LibraryContext _context = null;
         private LibraryContextContextAmplifier _contextAmplifier = null;
         private LibraryStandardIdentity _standardIdentity = null;
+        private LibraryStandardIdentityGroup _sig = null;
         private LibraryDimension _dimension = null;
         private LibraryAffiliation _affiliation = null;
         private LibraryStatus _status = null;
@@ -79,11 +79,15 @@ namespace JointMilitarySymbologyLibrary
         private Dictionary<string, string> _drawRule = new Dictionary<string, string>();
         private string _drawNote = "";
 
+        private ConfigHelper _configHelper;
+        private List<string> _graphics = new List<string>();
+
         internal Symbol(Librarian librarian, SIDC sidc)
         {
             _librarian = librarian;
             _sidc = sidc;
             _legacySIDC = _blankLegacySIDC;
+            _configHelper = new ConfigHelper(_librarian);
 
             _UpdateFromCurrent();
 
@@ -100,12 +104,14 @@ namespace JointMilitarySymbologyLibrary
             _BuildTags();
             _BuildLabels();
             _BuildDrawRule();
+            _BuildGraphics();
         }
 
         internal Symbol(Librarian librarian, string legacyStandard, string legacySIDC)
         {
             _librarian = librarian;
             _legacySIDC = legacySIDC;
+            _configHelper = new ConfigHelper(_librarian);
 
             _UpdateFromLegacy();
 
@@ -123,6 +129,7 @@ namespace JointMilitarySymbologyLibrary
             _BuildTags();
             _BuildLabels();
             _BuildDrawRule();
+            _BuildGraphics();
         }
 
         public SymbolStatusEnum SymbolStatus
@@ -155,10 +162,12 @@ namespace JointMilitarySymbologyLibrary
             {
                 GeometryType geo = GeometryType.POINT;
 
-                if (_entity != null)
-                {
+                if (_entitySubType != null)
+                    geo = _entitySubType.GeometryType;
+                else if (_entityType != null)
+                    geo = _entityType.GeometryType;
+                else if (_entity != null)
                     geo = _entity.GeometryType;
-                }
 
                 return geo;
             }
@@ -193,6 +202,14 @@ namespace JointMilitarySymbologyLibrary
             get
             {
                 return _drawNote;
+            }
+        }
+
+        public List<string> Graphics
+        {
+            get
+            {
+                return _graphics;
             }
         }
 
@@ -271,84 +288,199 @@ namespace JointMilitarySymbologyLibrary
                 _CreateDrawRuleDictionary(id);
         }
 
-        private Image _CreateImage()
+        private void _BuildGraphics()
         {
-            Image imgFrame = null;
-            Image imgIcon = null;
+            // Creates a list of fully qualified pathnames for the svg files needed to
+            // display this particular symbol.
 
-            Image Canvas = new Bitmap(1108, 1327);
+            string path = "";
+            string graphic = "";
+
+            // Find the frame svg
 
             if (_affiliation != null)
             {
-                if (_affiliation.Graphic != "")
+                path = _configHelper.GetPath(_context.ID, FindEnum.FindFrames);
+                path = _configHelper.BuildOriginalPath(path, _affiliation.Graphic);
+                _graphics.Add(path);
+            }
+
+            // Now add a single svg for the main/central icon, starting with the entitySubType, if any
+
+            if (_symbolSet != null)
+            {
+                path = _configHelper.GetPath(_symbolSet.ID, FindEnum.FindEntities);
+                graphic = "";
+
+                if (_entitySubType != null)
                 {
-                    if (File.Exists(_librarian.Graphics + "/" + _affiliation.Graphic))
+                    if (_entitySubType.Icon == IconType.FULL_FRAME)
                     {
-                        imgFrame = Image.FromFile(_librarian.Graphics + "/" + _affiliation.Graphic);
+                        switch (_sig.ID)
+                        {
+                            case "SIG_UNKNOWN":
+                                graphic = _entitySubType.CloverGraphic;
+                                break;
+
+                            case "SIG_FRIEND":
+                                graphic = _entitySubType.RectangleGraphic;
+                                break;
+
+                            case "SIG_NEUTRAL":
+                                graphic = _entitySubType.SquareGraphic;
+                                break;
+
+                            case "SIG_HOSTILE":
+                                graphic = _entitySubType.DiamondGraphic;
+                                break;
+                        }
                     }
-                    else
+                    else if (_entitySubType.Graphic != "")
+                        graphic = _entitySubType.Graphic;
+                }
+                else if (_entityType != null)
+                {
+                    if (_entityType.Icon == IconType.FULL_FRAME)
                     {
-                        logger.Warn("Can't find graphic: " + _librarian.Graphics + "/" + _affiliation.Graphic);
+                        switch (_sig.ID)
+                        {
+                            case "SIG_UNKNOWN":
+                                graphic = _entityType.CloverGraphic;
+                                break;
+
+                            case "SIG_FRIEND":
+                                graphic = _entityType.RectangleGraphic;
+                                break;
+
+                            case "SIG_NEUTRAL":
+                                graphic = _entityType.SquareGraphic;
+                                break;
+
+                            case "SIG_HOSTILE":
+                                graphic = _entityType.DiamondGraphic;
+                                break;
+                        }
+                    }
+                    else if (_entityType.Graphic != "")
+                        graphic = _entityType.Graphic;
+                }
+                else if (_entity != null)
+                {
+                    if (_entity.Icon == IconType.FULL_FRAME)
+                    {
+                        switch (_sig.ID)
+                        {
+                            case "SIG_UNKNOWN":
+                                graphic = _entity.CloverGraphic;
+                                break;
+
+                            case "SIG_FRIEND":
+                                graphic = _entity.RectangleGraphic;
+                                break;
+
+                            case "SIG_NEUTRAL":
+                                graphic = _entity.SquareGraphic;
+                                break;
+
+                            case "SIG_HOSTILE":
+                                graphic = _entity.DiamondGraphic;
+                                break;
+                        }
+                    }
+                    else if (_entity.Graphic != "")
+                        graphic = _entity.Graphic;
+                }
+
+                if (graphic != "")
+                {
+                    path = _configHelper.BuildOriginalPath(path, graphic);
+                    _graphics.Add(path);
+                }
+            }
+
+            // Let's add the modifiers
+
+            if (_modifierOne != null)
+            {
+                path = _configHelper.GetPath(_symbolSet.ID, FindEnum.FindModifierOnes);
+                path = _configHelper.BuildOriginalPath(path, _modifierOne.Graphic);
+                _graphics.Add(path);
+            }
+
+            if (_modifierTwo != null)
+            {
+                path = _configHelper.GetPath(_symbolSet.ID, FindEnum.FindModifierTwos);
+                path = _configHelper.BuildOriginalPath(path, _modifierTwo.Graphic);
+                _graphics.Add(path);
+            }
+
+            // Amplifier?
+
+            if (_sig != null && _amplifierGroup != null && _amplifier != null)
+            {
+                if (_amplifier.Graphics != null)
+                {
+                    switch (_amplifierGroup.AmplifierGroupCode)
+                    {
+                        case 1:
+                        case 2:
+                            path = _configHelper.GetPath("", FindEnum.FindEchelons);
+                            break;
+
+                        case 3:
+                        case 4:
+                        case 5:
+                            path = _configHelper.GetPath("", FindEnum.FindMobilities);
+                            break;
+
+                        case 6:
+                            path = _configHelper.GetPath("", FindEnum.FindAuxiliaryEquipment);
+                            break;
+                    }
+
+                    graphic = "";
+
+                    foreach (LibraryAmplifierGroupAmplifierGraphic lag in _amplifier.Graphics)
+                    {
+                        if (lag.StandardIdentityGroup == _sig.ID)
+                        {
+                            graphic = lag.Graphic;
+                        }
+                    }
+
+                    if (graphic != "")
+                    {
+                        path = _configHelper.BuildOriginalPath(path, graphic);
+                        _graphics.Add(path);
                     }
                 }
             }
-            else
-            {
-                logger.Error("Affiliation not valid.");
-            }
 
-            if (_entity != null)
+            // HQTFFD?
+
+            if (_sig != null && _hqTFDummy != null)
             {
-                if (_entity.Graphic != "")
+                if (_hqTFDummy.Graphics != null)
                 {
-                    if (File.Exists(_librarian.Graphics + "/" + _entity.Graphic))
+                    path = _configHelper.GetPath("", FindEnum.FindHQTFFD);
+
+                    graphic = "";
+
+                    foreach (LibraryHQTFDummyGraphic hag in _hqTFDummy.Graphics)
                     {
-                        imgIcon = Image.FromFile(_librarian.Graphics + "/" + _entity.Graphic);
-
-                        //Frame to define the dimentions
-                        Rectangle Frame = new Rectangle(0, 0, 267, 320);
-                        Rectangle Frame2 = new Rectangle(42, 153, 1024, 1020);
-
-                        //To do drawing and stuffs
-                        Graphics Artist = Graphics.FromImage(Canvas);
-
-                        //Draw the layers on Canvas
-                        Artist.DrawImage(imgFrame, 0, 0);
-                        Artist.DrawImage(imgIcon, 0, 0);
-
-                        //Free up resources when required
-                        Artist.Dispose();
+                        if (hag.StandardIdentityGroup == _sig.ID && hag.Dimension == _dimension.ID)
+                        {
+                            graphic = hag.Graphic;
+                        }
                     }
-                    else
+
+                    if (graphic != "")
                     {
-                        logger.Warn("Can't find graphic: " + _librarian.Graphics + "/" + _entity.Graphic);
+                        path = _configHelper.BuildOriginalPath(path, graphic);
+                        _graphics.Add(path);
                     }
                 }
             }
-            else
-            {
-                logger.Error("Entity not valid.");
-            }
-
-            return Canvas;
-        }
-
-        internal Image Image
-        {
-            get
-            {
-                return _CreateImage();
-            }
-        }
-
-        internal void SaveImage(string fileName)
-        {
-            Image img = _CreateImage();
-
-            if (img != null)
-                img.Save(fileName, ImageFormat.Png);
-            else
-                logger.Warn("No image to save");
         }
 
         private void _BuildTags()
@@ -525,6 +657,7 @@ namespace JointMilitarySymbologyLibrary
             
             _context = _librarian.Context(Convert.ToUInt16(first10.Substring(2, 1)));
             _standardIdentity = _librarian.StandardIdentity(Convert.ToUInt16(first10.Substring(3, 1)));
+            _sig = _librarian.StandardIdentityGroup(_standardIdentity);
             _symbolSet = _librarian.SymbolSet(Convert.ToUInt16(first10.Substring(4, 1)), Convert.ToUInt16(first10.Substring(5, 1)));
 
             if (_symbolSet != null)
@@ -584,15 +717,16 @@ namespace JointMilitarySymbologyLibrary
 
             _version = _librarian.Version(1, 0);
 
-            _affiliation = _librarian.Affiliation(_legacySIDC.Substring(1, 1), _legacySIDC.Substring(2, 1));
+            _affiliation = _librarian.AffiliationByLegacyCode(_legacySIDC.Substring(1, 1), _legacySIDC.Substring(2, 1), _legacySIDC.Substring(4,1));
 
             if (_affiliation != null)
             {
                 _context = _librarian.Context(_affiliation.ContextID);
                 _standardIdentity = _librarian.StandardIdentity(_affiliation.StandardIdentityID);
+                _sig = _librarian.StandardIdentityGroup(_standardIdentity);
             }
             
-            _dimension = _librarian.DimensionByLegacyCode(_legacySIDC.Substring(2, 1));
+            _dimension = _librarian.DimensionByLegacyCode(_legacySIDC.Substring(2, 1), _legacySIDC.Substring(4,1));
 
             if (_dimension != null)
             {

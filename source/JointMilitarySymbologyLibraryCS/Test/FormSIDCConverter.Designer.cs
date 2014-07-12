@@ -42,7 +42,6 @@ namespace Test
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSIDCConverter));
-            this.label1 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -79,19 +78,11 @@ namespace Test
             this.text2525D_1 = new System.Windows.Forms.TextBox();
             this.label2525C = new System.Windows.Forms.Label();
             this.text2525C = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.statusStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 476);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 17);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Try the following...";
             // 
             // listBox1
             // 
@@ -105,16 +96,23 @@ namespace Test
             "SHPAT----------\tSpace Station",
             "SNAPMFKB-------\tBoom-Only Tanker",
             "SUAPMFCL-------\tLight Cargo Airlift",
+            "SNGPUCAT-------\tArmored/Tracked",
+            "SFGPUCI--------\tInfantry",
+            "SUGPEWR--------\tRifle/Automatic Weapon",
+            "SSGPIMS--------\tShip Construction (Installation)",
             "SPSPCLLLSU-----\tLittoral Combat, SUW",
+            "SHUPWT---------\tTorpedo",
             "SASACUS--------\tASW USV",
             "SFAPMFQRZ------\tRPV ES",
             "SFAP-----------\tAir",
             "EHIPF----------\tMarine Incident",
-            "OFOPYT---------\tRadio and TV Propaganda"});
-            this.listBox1.Location = new System.Drawing.Point(24, 518);
+            "OFOPYT---------\tRadio and TV Propaganda",
+            "GFTPUS---------\tScreen Task",
+            "GHGPGAF--------\tFortified Area"});
+            this.listBox1.Location = new System.Drawing.Point(21, 500);
             this.listBox1.Name = "listBox1";
             this.listBox1.ScrollAlwaysVisible = true;
-            this.listBox1.Size = new System.Drawing.Size(256, 94);
+            this.listBox1.Size = new System.Drawing.Size(339, 94);
             this.listBox1.TabIndex = 8;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -132,11 +130,16 @@ namespace Test
             "1014010000,1101040000\tFighter/Bomber (Ex Neutral)",
             "1005010000,1102000701\tHeavy Utility Helicopter",
             "1001011000,1204000000\tCivilian, Lighter than Air",
+            "1006100000,1205000000\tArmored Unit",
+            "1003150000,1201000000\tArmored Vehicle (Equipment)",
+            "1002200000,1101000000\tAircraft Production Installation",
             "1003301000,1204020000\tMinesweeper",
             "1002300000,1401040000\tCivilian Merchant, RORO",
+            "1004350000,1101000000\tSubmarine",
             "1004400000,1604001600\tVehicle Accident",
-            "1005400000,1315130000\tInternal Security Force"});
-            this.listBox2.Location = new System.Drawing.Point(318, 518);
+            "1005400000,1315130000\tInternal Security Force",
+            "1003250000,2501000000\tFiring Point"});
+            this.listBox2.Location = new System.Drawing.Point(21, 631);
             this.listBox2.Name = "listBox2";
             this.listBox2.ScrollAlwaysVisible = true;
             this.listBox2.Size = new System.Drawing.Size(339, 94);
@@ -146,27 +149,27 @@ namespace Test
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 498);
+            this.label2.Location = new System.Drawing.Point(21, 480);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(175, 17);
+            this.label2.Size = new System.Drawing.Size(239, 17);
             this.label2.TabIndex = 10;
-            this.label2.Text = "Choose a 2525C Symbol...";
+            this.label2.Text = "Choose an example 2525C Symbol...";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(315, 498);
+            this.label3.Location = new System.Drawing.Point(21, 611);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(191, 17);
+            this.label3.Size = new System.Drawing.Size(255, 17);
             this.label3.TabIndex = 11;
-            this.label3.Text = "...or choose a 2525D Symbol";
+            this.label3.Text = "...or choose an example 2525D Symbol";
             // 
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.toolStripStatusLabel2});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 697);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 807);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(682, 22);
             this.statusStrip1.TabIndex = 12;
@@ -185,7 +188,7 @@ namespace Test
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(24, 624);
+            this.label4.Location = new System.Drawing.Point(21, 742);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(633, 54);
             this.label4.TabIndex = 13;
@@ -209,7 +212,7 @@ namespace Test
             this.groupBox1.Controls.Add(this.label2525C);
             this.groupBox1.Controls.Add(this.text2525C);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.groupBox1.Location = new System.Drawing.Point(24, 12);
+            this.groupBox1.Location = new System.Drawing.Point(21, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(633, 451);
             this.groupBox1.TabIndex = 14;
@@ -420,22 +423,22 @@ namespace Test
             this.text2525C.TabIndex = 5;
             this.text2525C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text2525C_KeyPress);
             // 
-            // button1
+            // pictureBox1
             // 
-            this.button1.Location = new System.Drawing.Point(582, 470);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Export";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(376, 500);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.pictureBox1.Size = new System.Drawing.Size(262, 225);
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
             // 
             // FormSIDCConverter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(682, 719);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(682, 829);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.statusStrip1);
@@ -443,13 +446,13 @@ namespace Test
             this.Controls.Add(this.label2);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.label1);
             this.Name = "FormSIDCConverter";
             this.Text = "Joint Military Symbology XML Demo";
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -457,7 +460,6 @@ namespace Test
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.Label label2;
@@ -494,7 +496,7 @@ namespace Test
         private System.Windows.Forms.ColumnHeader colSizeShape;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

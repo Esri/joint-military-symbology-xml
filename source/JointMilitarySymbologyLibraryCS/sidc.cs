@@ -28,14 +28,14 @@ namespace JointMilitarySymbologyLibrary
         private UInt32 _second10;
 
         private static UInt32 _smallest = 1000000000;
-        private static UInt32 _specialPartA = 1000980000;
+        private static UInt32 _specialPartA = 1001980000;
         private static UInt32 _invalidPartB = 1000000000;
         private static UInt32 _retiredPartB = 1100000000;
 
         public static SIDC INVALID = new SIDC(_specialPartA, _invalidPartB);
         public static SIDC RETIRED = new SIDC(_specialPartA, _retiredPartB);
 
-        public SIDC(UInt32 partA = 1000980000, UInt32 partB = 1000000000)
+        public SIDC(UInt32 partA = 1001980000, UInt32 partB = 1000000000)
         {
             if (partA >= _smallest && partB >= _smallest)
             {
@@ -158,6 +158,14 @@ namespace JointMilitarySymbologyLibrary
                         this._second10 = _invalidPartB;
                     }
                 }
+            }
+        }
+
+        public string SymbolSetCode
+        {
+            get
+            {
+                return this._first10.ToString().Substring(4,2);
             }
         }
     }
