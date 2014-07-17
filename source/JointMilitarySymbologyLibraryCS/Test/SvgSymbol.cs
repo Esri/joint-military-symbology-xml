@@ -19,6 +19,8 @@ using Svg;
 
 namespace Test
 {
+    // SVG Class and sample usage provide from:
+    // https://github.com/csmoore/MyMiscellanea/blob/master/CSharp/Testing2525D/MilSymbolPicker/SVGSymbol.cs
     public class SvgSymbol
     {
         public static Size ImageSize { get; set; }
