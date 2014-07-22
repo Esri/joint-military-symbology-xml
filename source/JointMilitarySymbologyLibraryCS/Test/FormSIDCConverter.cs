@@ -37,8 +37,6 @@ namespace Test
 
             _librarian = new Librarian();
             _librarian.IsLogging = true;
-
-            SvgSymbol.ImageSize = new Size(pictureBox1.Width, pictureBox1.Height);
             
             _badSymbol = _librarian.MakeSymbol(1001980000, 1000000000);
             _symbol = _badSymbol;
@@ -114,7 +112,7 @@ namespace Test
             else
                 pictureBox1.Padding = new Padding(15,0,0,0);
 
-            pictureBox1.Image = SvgSymbol.GetBitmap(_symbol.Graphics);
+            pictureBox1.Image = _symbol.Bitmap(pictureBox1.Width, pictureBox1.Height);
         }
 
         private void updateControls()
@@ -157,7 +155,7 @@ namespace Test
                 listView1.Items.Clear();
                 listView2.Items.Clear();
 
-                pictureBox1.Image = SvgSymbol.GetBitmap(_badSymbol.Graphics);
+                pictureBox1.Image = _badSymbol.Bitmap(pictureBox1.Width, pictureBox1.Height);
             }
         }
 

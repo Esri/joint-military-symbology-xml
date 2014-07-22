@@ -18,7 +18,9 @@ using System.Text;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
+using System.Threading.Tasks;
 using NLog;
+using Svg;
 
 namespace JointMilitarySymbologyLibrary
 {
@@ -211,6 +213,32 @@ namespace JointMilitarySymbologyLibrary
             {
                 return _graphics;
             }
+        }
+
+        public Bitmap Bitmap(int width, int height)
+        {
+            if (_graphics.Count == 0)
+                return null;
+
+            Bitmap bm = new Bitmap(width, height);
+
+            foreach (string graphic in _graphics)
+            {
+                if(File.Exists(graphic))
+                {
+                    SvgDocument doc = SvgDocument.Open(graphic);
+                    if (doc.Height > height)
+                    {
+                        doc.Width = (int)(((double)doc.Width / (double)doc.Height) * (double)height);
+                        doc.Height = height;
+                    }
+                    doc.Draw(bm);
+                }
+                else
+                    logger.Warn(graphic + " missing.");
+            }
+
+            return bm;
         }
 
         private Dictionary<string, string> _CreateLabelDictionary(FieldListTypeField field)

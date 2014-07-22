@@ -57,9 +57,9 @@ namespace JointMilitarySymbologyLibrary
             }
 
             string itemRootedPath = _configHelper.BuildRootedPath(graphicPath, m.Graphic);
-            string itemActualPath = _configHelper.BuildActualPath(graphicPath, m.Graphic);
+            string itemOriginalPath = _configHelper.BuildOriginalPath(graphicPath, m.Graphic);
 
-            if (!File.Exists(itemActualPath))
+            if (!File.Exists(itemOriginalPath))
                 _notes = _notes + "image file does not exist;";
 
             string itemName = BuildModifierItemName(ss, modNumber, m);
