@@ -73,7 +73,7 @@ namespace UnitTests
             string partA = string.Empty;
             string partB = string.Empty;
             SIDC target = new SIDC(partA, partB);
-            Assert.AreEqual(target.PartAString, "1000980000");
+            Assert.AreEqual(target.PartAString, "1001980000");
             Assert.AreEqual(target.PartBString, "1000000000");
         }
 
@@ -86,7 +86,7 @@ namespace UnitTests
             uint partA = 0;
             uint partB = 0;
             SIDC target = new SIDC(partA, partB);
-            Assert.AreEqual(target.PartAUInt, (uint)1000980000);
+            Assert.AreEqual(target.PartAUInt, (uint)1001980000);
             Assert.AreEqual(target.PartBUInt, (uint)1000000000);
         }
 
@@ -225,7 +225,7 @@ namespace UnitTests
         public void InvalidSIDC()
         {
             SIDC target = SIDC.INVALID;
-            uint expected1 = 1000980000;
+            uint expected1 = 1001980000;
             uint expected2 = 1000000000;
             uint actual1 = target.PartAUInt;
             uint actual2 = target.PartBUInt;
@@ -240,7 +240,7 @@ namespace UnitTests
         public void RetiredSIDC()
         {
             SIDC target = SIDC.RETIRED;
-            uint expected1 = 1000980000;
+            uint expected1 = 1001980000;
             uint expected2 = 1100000000;
             uint actual1 = target.PartAUInt;
             uint actual2 = target.PartBUInt;

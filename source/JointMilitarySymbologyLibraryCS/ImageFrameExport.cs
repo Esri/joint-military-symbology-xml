@@ -57,9 +57,9 @@ namespace JointMilitarySymbologyLibrary
                         _notes = _notes + "graphic is missing - frame is NA - frame is never to be drawn;";
 
                     string itemRootedPath = _configHelper.BuildRootedPath(graphicPath, graphic);
-                    string itemActualPath = _configHelper.BuildActualPath(graphicPath, graphic);
+                    string itemOriginalPath = _configHelper.BuildOriginalPath(graphicPath, graphic);
 
-                    if (!File.Exists(itemActualPath))
+                    if (!File.Exists(itemOriginalPath))
                         _notes = _notes + "image file does not exist;";
 
                     string itemName = BuildFrameItemName(context, dimension, identity);

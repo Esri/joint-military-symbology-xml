@@ -47,9 +47,9 @@ namespace JointMilitarySymbologyLibrary
             string graphicPath = _configHelper.GetPath("", FindEnum.FindHQTFFD);
 
             string itemRootedPath = _configHelper.BuildRootedPath(graphicPath, graphic.Graphic);
-            string itemActualPath = _configHelper.BuildActualPath(graphicPath, graphic.Graphic);
+            string itemOriginalPath = _configHelper.BuildOriginalPath(graphicPath, graphic.Graphic);
 
-            if (!File.Exists(itemActualPath))
+            if (!File.Exists(itemOriginalPath))
                 _notes = _notes + "image file does not exist;";
 
             LibraryStandardIdentityGroup identityGroup = _configHelper.Librarian.StandardIdentityGroup(graphic.StandardIdentityGroup);

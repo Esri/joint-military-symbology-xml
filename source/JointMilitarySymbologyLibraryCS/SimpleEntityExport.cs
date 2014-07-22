@@ -37,6 +37,11 @@ namespace JointMilitarySymbologyLibrary
             string result = Convert.ToString(ss.SymbolSetCode.DigitOne) + Convert.ToString(ss.SymbolSetCode.DigitTwo);
             
             string code = BuildEntityCode(sig, ss, e, eType, eSubType);
+
+            // Remove the first two characters as this output does not require the symbol set code, and exclude any trailing underbar digit
+            // Note that these code will not be unique, with the substring operation in place.
+
+            code = code.Substring(2,6);
             
             result = result + ",";
 
@@ -81,6 +86,11 @@ namespace JointMilitarySymbologyLibrary
 
             string result = Convert.ToString(ss.SymbolSetCode.DigitOne) + Convert.ToString(ss.SymbolSetCode.DigitTwo);
             string code = BuildEntityCode(sig, ss, null, null, eSubType);
+
+            // Remove the first two characters as this output does not require the symbol set code, and exclude any trailing underbar digit
+            // Note that these code will not be unique, with the substring operation in place.
+
+            code = code.Substring(2, 6);
 
             result = result + "," + eSubType.EntityCode + "," + eSubType.EntityTypeCode + "," + eSubType.Label.Replace(',', '-');
             geoType = eSubType.GeometryType;

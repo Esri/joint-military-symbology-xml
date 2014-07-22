@@ -87,13 +87,13 @@ namespace JointMilitarySymbologyLibrary
 
             if (iType == IconType.NA)
                 _notes = _notes + "icon is NA - entity is never to be drawn;";
-            else
+            else if(iType != IconType.MAIN)
                 _notes = _notes + "icon is " + Convert.ToString(iType) + ";";
 
             string itemRootedPath = _configHelper.BuildRootedPath(graphicPath, graphic);
-            string itemActualPath = _configHelper.BuildActualPath(graphicPath, graphic);
+            string itemOriginalPath = _configHelper.BuildOriginalPath(graphicPath, graphic);
 
-            if (!File.Exists(itemActualPath))
+            if (!File.Exists(itemOriginalPath))
                 _notes = _notes + "image file does not exist;";
             
             string itemName = BuildEntityItemName(sig, ss, e, eType, eSubType);
