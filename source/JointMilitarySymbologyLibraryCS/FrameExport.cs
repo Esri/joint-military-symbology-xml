@@ -26,27 +26,28 @@ namespace JointMilitarySymbologyLibrary
         protected ConfigHelper _configHelper;
         protected string _notes = "";
 
-        protected string BuildFrameCode(LibraryContext context, LibraryStandardIdentity identity, LibraryDimension dimension)
+        protected string BuildFrameCode(LibraryContext context, LibraryStandardIdentity identity, LibraryDimension dimension, LibraryStatus status)
         {
             // Creates the unique idntifier code for a given frame.
 
             string code = Convert.ToString(context.ContextCode) + "_" +
                           Convert.ToString(identity.StandardIdentityCode) +
-                          Convert.ToString(dimension.DimensionCode.DigitOne) + Convert.ToString(dimension.DimensionCode.DigitTwo);
+                          Convert.ToString(dimension.DimensionCode.DigitOne) + Convert.ToString(dimension.DimensionCode.DigitTwo) + "_" +
+                          Convert.ToString((status.StatusCode == 1) ? 1 : 0);
 
             return code;
         }
 
-        protected string BuildQuotedFrameCode(LibraryContext context, LibraryStandardIdentity identity, LibraryDimension dimension)
+        protected string BuildQuotedFrameCode(LibraryContext context, LibraryStandardIdentity identity, LibraryDimension dimension, LibraryStatus status)
         {
             // Creates the unique idntifier code for a given frame, surrounded by quotes.
 
-            string code = '"' + this.BuildFrameCode(context, identity, dimension) + '"';
+            string code = '"' + this.BuildFrameCode(context, identity, dimension, status) + '"';
 
             return code;
         }
 
-        protected string BuildFrameItemName(LibraryContext context, LibraryDimension dimension, LibraryStandardIdentity identity)
+        protected string BuildFrameItemName(LibraryContext context, LibraryDimension dimension, LibraryStandardIdentity identity, LibraryStatus status)
         {
             // Constructs a string containing the name of a frame, where each label value
             // is seperated by a DomainSeparator (usually a colon).  Builds this for each group
@@ -63,7 +64,7 @@ namespace JointMilitarySymbologyLibrary
             return result;
         }
 
-        protected string BuildFrameItemTags(LibraryContext context, LibraryStandardIdentity identity, LibraryDimension dimension, string graphicPath, bool omitSource)
+        protected string BuildFrameItemTags(LibraryContext context, LibraryStandardIdentity identity, LibraryDimension dimension, LibraryStatus status, string graphicPath, bool omitSource)
         {
             // Constructs a string of semicolon delimited tags that users can utilize to search
             // for or find a given symbol.
@@ -95,8 +96,8 @@ namespace JointMilitarySymbologyLibrary
             else
                 result = result + "NotValid;";
 
-            result = result + BuildFrameItemName(context, dimension, identity) + ";";
-            result = result + BuildFrameCode(context, identity, dimension);
+            result = result + BuildFrameItemName(context, dimension, identity, status) + ";";
+            result = result + BuildFrameCode(context, identity, dimension, status);
 
             return result;
         }

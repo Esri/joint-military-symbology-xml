@@ -20,26 +20,26 @@ For symbol assembly purposes, the following SIDC positions are used to determine
 
 ![Image of SIDC](sidc.png)
  
-* Frame (Folder: `Frames` - Digits: 4): Uses SIDC positions 3-6, with an underscore between the first two digits in the name.
+* Frame (Folder: `Frames` - Characters: 7): Uses SIDC positions 3-7, with an underscore between the first two digits in the name and the last two digits in the name.
 
-* Main Icon (Folder: `Appendices\XXX` - Digits: 8): Uses SIDC positions 5-6 and 11-16.
+* Main Icon (Folder: `Appendices\XXX` - Characters: 8): Uses SIDC positions 5-6 and 11-16.
     * Note: For full-frame main icons (main icons that touch the frame), there is an additional suffix depending on the frame that the icon must touch:
     * _0 = Unknown
     * _1 = Friend
     * _2 = Neutral
     * _3 = Hostile
 
-* Modifier 1 (Folder: `Appendices\XXX\mod1` - Digits: 5): Uses SIDC positions 5-6 and 17-18 along with the number 1 at the end.
+* Modifier 1 (Folder: `Appendices\XXX\mod1` - Characters: 5): Uses SIDC positions 5-6 and 17-18 along with the number 1 at the end.
 
-* Modifier 2 (Folder: `Appendices\XXX\mod2` - Digits: 5): Uses SIDC positions 5-6 and 19-20 along with the number 2 at the end.
+* Modifier 2 (Folder: `Appendices\XXX\mod2` - Characters: 5): Uses SIDC positions 5-6 and 19-20 along with the number 2 at the end.
 
-* Echelon (Folder: `Echelon` - Digits: 3): Uses SIDC positions 4 and 9-10.
+* Echelon (Folder: `Echelon` - Characters: 3): Uses SIDC positions 4 and 9-10.
 
-* Amplifier (Mobility/Towed Array) (Folder: `Amplifier` - Digits: 3): Uses SIDC positions 4 and 9-10.
+* Amplifier (Mobility/Towed Array) (Folder: `Amplifier` - Characters: 3): Uses SIDC positions 4 and 9-10.
 
-* Headquarters(HQ)/Task Force(TF)/Feint/Dummy(FD) (Folder: `HQTFFD` - Digits: 4): Uses SIDC positions 4-6 and position 8.
+* Headquarters(HQ)/Task Force(TF)/Feint/Dummy(FD) (Folder: `HQTFFD` - Characters: 4): Uses SIDC positions 4-6 and position 8.
 
-* Status/Operational Condition Amplifier (OCA) (Folder: 'OCA' - Digits: 1 or 6, depending on style): The standard allows for two styles of these.  File names vary based on which style is considered.
+* Status/Operational Condition Amplifier (OCA) (Folder: 'OCA' - Characters: 1 or 6, depending on style): The standard allows for two styles of these.  File names vary based on which style is considered.
 	- The default version (overlaid / or X) this uses SIDC position 7.
 	- The optional version (colored bars) this Uses SIDC positions 3-7 along with an additional value of 2 at the end.
 

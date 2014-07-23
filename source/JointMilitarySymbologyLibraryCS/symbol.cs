@@ -632,7 +632,7 @@ namespace JointMilitarySymbologyLibrary
             // with this symbol.
 
             if (_symbolSet != null && _affiliation != null && _dimension != null &&
-               _status != null && _amplifierGroup != null && _amplifier != null)
+               _status != null && _amplifierGroup != null && _amplifier != null && _context.ContextCode != 2)
             {
                 
                 if (_legacySymbol != null)

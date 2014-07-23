@@ -25,6 +25,6 @@ namespace JointMilitarySymbologyLibrary
 
         string Headers { get; }
 
-        string Line(Librarian librarian, LibraryContext context, LibraryStandardIdentity identity, LibraryDimension dimension);
+        string Line(Librarian librarian, LibraryContext context, LibraryStandardIdentity identity, LibraryDimension dimension, LibraryStatus status);
     }
 }
