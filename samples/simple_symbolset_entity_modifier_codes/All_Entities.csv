@@ -254,7 +254,10 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType
 10,Fires,Survey,,,130900,Point
 10,Protection,Chemical Biological Radiological Nuclear Defense,,,140100,Point
 10,Protection,Chemical Biological Radiological Nuclear Defense,Mechanized,,140101,Point
-10,Protection,Chemical Biological Radiological Nuclear Defense,Motorized,,140102,Point
+10,Protection,Chemical Biological Radiological Nuclear Defense,Motorized,Unknown,140102,Point
+10,Protection,Chemical Biological Radiological Nuclear Defense,Motorized,Friend,140102,Point
+10,Protection,Chemical Biological Radiological Nuclear Defense,Motorized,Neutral,140102,Point
+10,Protection,Chemical Biological Radiological Nuclear Defense,Motorized,Hostile,140102,Point
 10,Protection,Chemical Biological Radiological Nuclear Defense,Reconnaissance,Unknown,140103,Point
 10,Protection,Chemical Biological Radiological Nuclear Defense,Reconnaissance,Friend,140103,Point
 10,Protection,Chemical Biological Radiological Nuclear Defense,Reconnaissance,Neutral,140103,Point
@@ -274,7 +277,10 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType
 10,Protection,Drilling,,,140600,Point
 10,Protection,Engineer,,,140700,Point
 10,Protection,Engineer,Mechanized,,140701,Point
-10,Protection,Engineer,Motorized,,140702,Point
+10,Protection,Engineer,Motorized,Unknown,140702,Point
+10,Protection,Engineer,Motorized,Friend,140702,Point
+10,Protection,Engineer,Motorized,Neutral,140702,Point
+10,Protection,Engineer,Motorized,Hostile,140702,Point
 10,Protection,Engineer,Reconnaissance,Unknown,140703,Point
 10,Protection,Engineer,Reconnaissance,Friend,140703,Point
 10,Protection,Engineer,Reconnaissance,Neutral,140703,Point
@@ -290,7 +296,10 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType
 10,Protection,Mine Laying,,,141600,Point
 10,Protection,Security,,,141700,Point
 10,Protection,Security,Mechanized,,141701,Point
-10,Protection,Security,Motorized,,141702,Point
+10,Protection,Security,Motorized,Unknown,141702,Point
+10,Protection,Security,Motorized,Friend,141702,Point
+10,Protection,Security,Motorized,Neutral,141702,Point
+10,Protection,Security,Motorized,Hostile,141702,Point
 10,Protection,Search and Rescue,,,141800,Point
 10,Protection,Security Police (Air),,,141900,Point
 10,Protection,Shore Patrol,,,142000,Point

@@ -36,7 +36,7 @@ namespace JointMilitarySymbologyLibrary
             get { return "filePath,pointSize,styleItemName,styleItemCategory,styleItemTags,notes"; }
         }
 
-        string IFrameExport.Line(Librarian librarian, LibraryContext context, LibraryStandardIdentity identity, LibraryDimension dimension)
+        string IFrameExport.Line(Librarian librarian, LibraryContext context, LibraryStandardIdentity identity, LibraryDimension dimension, LibraryStatus status)
         {
             _notes = "";
 
@@ -62,9 +62,9 @@ namespace JointMilitarySymbologyLibrary
                     if (!File.Exists(itemOriginalPath))
                         _notes = _notes + "image file does not exist;";
 
-                    string itemName = BuildFrameItemName(context, dimension, identity);
+                    string itemName = BuildFrameItemName(context, dimension, identity, status);
                     string itemCategory = "Frame";
-                    string itemTags = BuildFrameItemTags(context, identity, dimension, graphicPath + "\\" + graphic, _omitSource);
+                    string itemTags = BuildFrameItemTags(context, identity, dimension, status, graphicPath + "\\" + graphic, _omitSource);
 
                     result = itemRootedPath + "," +
                              Convert.ToString(_configHelper.PointSize) + "," +

@@ -1075,7 +1075,7 @@ namespace JointMilitarySymbologyLibrary
                                 if (dimensionExpression != "" && !System.Text.RegularExpressions.Regex.IsMatch(dimension.Label, dimensionExpression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
                                     continue;
 
-                                line = frameExporter.Line(_librarian, context, identity, dimension);
+                                line = frameExporter.Line(_librarian, context, identity, dimension, _library.Statuses[0]);
 
                                 if (line != "")
                                 {

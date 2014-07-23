@@ -32,7 +32,7 @@ namespace JointMilitarySymbologyLibrary
             get { return "Name,Value"; }
         }
 
-        string IFrameExport.Line(Librarian librarian, LibraryContext context, LibraryStandardIdentity identity, LibraryDimension dimension)
+        string IFrameExport.Line(Librarian librarian, LibraryContext context, LibraryStandardIdentity identity, LibraryDimension dimension, LibraryStatus status)
         {
             string result = "";
 
@@ -41,7 +41,7 @@ namespace JointMilitarySymbologyLibrary
             if (affiliation != null)
             {
                 if(affiliation.Shape != ShapeType.NA)
-                    result = BuildFrameItemName(context, dimension, identity) + "," + BuildQuotedFrameCode(context, identity, dimension);
+                    result = BuildFrameItemName(context, dimension, identity, status) + "," + BuildQuotedFrameCode(context, identity, dimension, status);
             }
 
             return result;
