@@ -94,6 +94,7 @@ namespace JointMilitarySymbologyLibrary
             // Dealing with a special entity sub type
 
             GeometryType geoType = GeometryType.POINT;
+            IconType icoType = IconType.FULL_FRAME;
 
             string result = Convert.ToString(ss.SymbolSetCode.DigitOne) + Convert.ToString(ss.SymbolSetCode.DigitTwo);
             string code = BuildEntityCode(sig, ss, null, null, eSubType);
@@ -105,6 +106,7 @@ namespace JointMilitarySymbologyLibrary
 
             result = result + "," + eSubType.EntityCode + "," + eSubType.EntityTypeCode + "," + eSubType.Label.Replace(',', '-');
             geoType = eSubType.GeometryType;
+            icoType = eSubType.Icon;
 
             if (sig != null)
             {
@@ -116,6 +118,8 @@ namespace JointMilitarySymbologyLibrary
             }
 
             result = result + "," + code + "," + _geometryList[(int)geoType];
+
+            result = result + "," + Convert.ToString(icoType) + "," + BuildEntityItemName(sig, ss, null, null, eSubType); 
 
             return result;
         }
