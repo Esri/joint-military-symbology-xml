@@ -1,141 +1,141 @@
-SymbolSet,ModifierNumber,Category,Name,Code
-01,2,Cargo/Transport Capacity,Heavy,01
-01,2,Cargo/Transport Capacity,Medium,02
-01,2,Cargo/Transport Capacity,Light,03
-01,2,Re-fueling Capability,Boom-Only,04
-01,2,Re-fueling Capability,Drogue-Only,05
-01,2,Re-fueling Capability,Boom and Drogue,06
-01,2,Range,Close Range,07
-01,2,Range,Short Range,08
-01,2,Range,Medium Range,09
-01,2,Range,Long Range,10
-01,2,Track Link Availability,Downlinked,11
-02,2,Missile Destination,Air,01
-02,2,Missile Destination,Surface,02
-02,2,Missile Destination,Subsurface,03
-02,2,Missile Destination,Space,04
-02,2,Missile Status,Launched,05
-02,2,Missile Status,Missile,06
-02,2,Missile Type-BMD,Patriot,07
-02,2,Missile Type-AAW,Standard Missile-2 (SM-2),08
-02,2,Missile Type-AAW,Standard Missile-6 (SM-6),09
-02,2,Missile Type-AAW,Evolved Sea Sparrow Missile (ESSM),10
-02,2,Missile Type-AAW,Rolling Airframe Missile (RAM),11
-02,2,Missile Range,Short Range,12
-02,2,Missile Range,Medium Range,13
-02,2,Missile Range,Intermediate Range,14
-02,2,Missile Range,Long Range,15
-02,2,Missile Range,Intercontinental,16
-05,2,Sensor,Optical,01
-05,2,Sensor,Infrared,02
-05,2,Sensor,Radar,03
-05,2,Sensor,Signals Intelligence (SIGINT),04
-06,2,Missile Range,Short Range,01
-06,2,Missile Range,Medium Range,02
-06,2,Missile Range,Intermediate Range,03
-06,2,Missile Range,Long Range,04
-06,2,Missile Range,Intercontinental,05
-06,2,Missile Type - BMD,Arrow,06
-06,2,Missile Type - BMD,Ground-Based Interceptor (GBI),07
-06,2,Missile Type - BMD,Patriot,08
-06,2,Missile Type - BMD,Standard Missile - Terminal Phase (SM-T),09
-06,2,Missile Type - BMD,Standard Missile - 3 (SM-3),10
-06,2,Missile Type - BMD,Terminal High-Altitude Area Defense (THAAD),11
-06,2,Launch Origin,Space,12
-10,2,Mobility,Airborne,01
-10,2,Mobility,Arctic,02
-10,2,Capability,Battle Damage Repair,03
-10,2,Mobility,Bicycle Equipped,04
-10,2,Close Range and Support,Casualty Staging,05
-10,2,Capability,Clearing,06
-10,2,Capability,Close Range,07
-10,2,Capability,Control,08
-10,2,Capability,Decontamination,09
-10,2,Capability,Demolition,10
-10,2,Capability,Dental,11
-10,2,Capability,Digital,12
-10,2,Capability,Enhanced Position Location Reporting System (EPLRS),13
-10,2,Capability,Equipment,14
-10,2,Capability,Heavy,15
-10,2,Capability,High Altitude,16
-10,2,Capability,Intermodal,17
-10,2,Capability,Intensive Care,18
-10,2,Capability,Light,19
-10,2,Capability,Laboratory,20
-10,2,Capability,Launcher,21
-10,2,Capability,Long Range,22
-10,2,Capability,Low Altitude,23
-10,2,Capability,Medium,24
-10,2,Capability,Medium Altitude,25
-10,2,Capability,Medium Range,26
-10,2,Capability,Mountain,27
-10,2,Capability,High to Medium Altitude,28
-10,2,Capability,Multi-Channel,29
-10,2,Capability,Optical (Flash),30
-10,2,Capability,Pack Animal,31
-10,2,Capability,Patient Evacuation Coordination,32
-10,2,Capability,Preventive Maintenance,33
-10,2,Capability,Psychological,34
-10,2,Capability,Radio Relay Line of Sight,35
-10,2,Mobility,Railroad,36
-10,2,Capability,Recovery (Unmanned Systems),37
-10,2,Capability,Recovery (Maintenance),38
-10,2,Capability,Rescue Coordination Center,39
-10,2,Mobility,Riverine,40
-10,2,Capability,Single Channel,41
-10,2,Mobility,Ski,42
-10,2,Capability,Short Range,43
-10,2,Capability,Strategic,44
-10,2,Capability,Support,45
-10,2,Capability,Tactical,46
-10,2,Mobility,Towed,47
-10,2,Capability,Troop,48
-10,2,Mobility,Vertical or Short Take-Off and Landing (VTOL/VSTOL),49
-10,2,Capability,Veterinary,50
-10,2,Mobility,Wheeled,51
-10,2,Capability,High to Low Altitude,52
-10,2,Capability,Medium to Low Altitude,53
-10,2,Capability,Attack,54
-10,2,Capability,Refuel,55
-10,2,Capability,Utility,56
-10,2,Capability,Combat Search and Rescue,57
-11,2,Organization,Leader or Leadership,01
-20,2,No Category Listed,Biological,01
-20,2,No Category Listed,Chemical,02
-20,2,No Category Listed,Nuclear,03
-20,2,No Category Listed,Radiological,04
-20,2,No Category Listed,Atomic Energy Reactor,05
-20,2,No Category Listed,Nuclear Material Production,06
-20,2,No Category Listed,Nuclear Material Storage,07
-20,2,No Category Listed,Weapons Grade,08
-30,2,Ship Propulsion,Nuclear Powered,01
-30,2,Ship Capacity,Heavy,02
-30,2,Ship Capacity,Light,03
-30,2,Ship Capacity,Medium,04
-30,2,Cargo Capacity,Dock,05
-30,2,Cargo Capacity,Logistics,06
-30,2,Cargo Capacity,Tank,07
-30,2,Cargo Capacity,Vehicle,08
-30,2,Ship Mobility,Fast,09
-30,2,Ship Mobility,Air-Cushioned (US),10
-30,2,Ship Mobility,Air-Cushioned (NATO),11
-30,2,Ship Mobility,Hydrofoil,12
-30,2,USV Control,Autonomous Control,13
-30,2,USV Control,Remotely Piloted,14
-30,2,USV Control,Expendable,15
-35,2,Ship Propulsion,Air Independent Propulsion,01
-35,2,Ship Propulsion,Diesel Electric General,02
-35,2,Ship Propulsion,Diesel - Type 1,03
-35,2,Ship Propulsion,Diesel - Type 2,04
-35,2,Ship Propulsion,Diesel - Type 3,05
-35,2,Ship Propulsion,Nuclear Powered General,06
-35,2,Ship Propulsion,Nuclear - Type 1,07
-35,2,Ship Propulsion,Nuclear - Type 2,08
-35,2,Ship Propulsion,Nuclear - Type 3,09
-35,2,Ship Propulsion,Nuclear - Type 4,10
-35,2,Ship Propulsion,Nuclear - Type 5,11
-35,2,Ship Propulsion,Nuclear - Type 6,12
-35,2,Ship Propulsion,Nuclear - Type 7,13
-35,2,UUV Control,Autonomous Control,14
-35,2,UUV Control,Remotely Piloted,15
-35,2,UUV Control,Expendable,16
+SymbolSet,ModifierNumber,Category,Name,Code,UniqueName
+01,2,Cargo/Transport Capacity,Heavy,01,Cargo/Transport Capacity : Heavy
+01,2,Cargo/Transport Capacity,Medium,02,Cargo/Transport Capacity : Medium
+01,2,Cargo/Transport Capacity,Light,03,Cargo/Transport Capacity : Light
+01,2,Re-fueling Capability,Boom-Only,04,Re-fueling Capability : Boom-Only
+01,2,Re-fueling Capability,Drogue-Only,05,Re-fueling Capability : Drogue-Only
+01,2,Re-fueling Capability,Boom and Drogue,06,Re-fueling Capability : Boom and Drogue
+01,2,Range,Close Range,07,Range : Close Range
+01,2,Range,Short Range,08,Range : Short Range
+01,2,Range,Medium Range,09,Range : Medium Range
+01,2,Range,Long Range,10,Range : Long Range
+01,2,Track Link Availability,Downlinked,11,Track Link Availability : Downlinked
+02,2,Missile Destination,Air,01,Missile Destination : Air
+02,2,Missile Destination,Surface,02,Missile Destination : Surface
+02,2,Missile Destination,Subsurface,03,Missile Destination : Subsurface
+02,2,Missile Destination,Space,04,Missile Destination : Space
+02,2,Missile Status,Launched,05,Missile Status : Launched
+02,2,Missile Status,Missile,06,Missile Status : Missile
+02,2,Missile Type-BMD,Patriot,07,Missile Type-BMD : Patriot
+02,2,Missile Type-AAW,Standard Missile-2 (SM-2),08,Missile Type-AAW : Standard Missile-2 (SM-2)
+02,2,Missile Type-AAW,Standard Missile-6 (SM-6),09,Missile Type-AAW : Standard Missile-6 (SM-6)
+02,2,Missile Type-AAW,Evolved Sea Sparrow Missile (ESSM),10,Missile Type-AAW : Evolved Sea Sparrow Missile (ESSM)
+02,2,Missile Type-AAW,Rolling Airframe Missile (RAM),11,Missile Type-AAW : Rolling Airframe Missile (RAM)
+02,2,Missile Range,Short Range,12,Missile Range : Short Range (Air Missile)
+02,2,Missile Range,Medium Range,13,Missile Range : Medium Range (Air Missile)
+02,2,Missile Range,Intermediate Range,14,Missile Range : Intermediate Range (Air Missile)
+02,2,Missile Range,Long Range,15,Missile Range : Long Range (Air Missile)
+02,2,Missile Range,Intercontinental,16,Missile Range : Intercontinental (Air Missile)
+05,2,Sensor,Optical,01,Sensor : Optical
+05,2,Sensor,Infrared,02,Sensor : Infrared
+05,2,Sensor,Radar,03,Sensor : Radar
+05,2,Sensor,Signals Intelligence (SIGINT),04,Sensor : Signals Intelligence (SIGINT)
+06,2,Missile Range,Short Range,01,Missile Range : Short Range (Space Missile)
+06,2,Missile Range,Medium Range,02,Missile Range : Medium Range (Space Missile)
+06,2,Missile Range,Intermediate Range,03,Missile Range : Intermediate Range (Space Missile)
+06,2,Missile Range,Long Range,04,Missile Range : Long Range (Space Missile)
+06,2,Missile Range,Intercontinental,05,Missile Range : Intercontinental (Space Missile)
+06,2,Missile Type - BMD,Arrow,06,Missile Type - BMD : Arrow
+06,2,Missile Type - BMD,Ground-Based Interceptor (GBI),07,Missile Type - BMD : Ground-Based Interceptor (GBI)
+06,2,Missile Type - BMD,Patriot,08,Missile Type - BMD : Patriot
+06,2,Missile Type - BMD,Standard Missile - Terminal Phase (SM-T),09,Missile Type - BMD : Standard Missile - Terminal Phase (SM-T)
+06,2,Missile Type - BMD,Standard Missile - 3 (SM-3),10,Missile Type - BMD : Standard Missile - 3 (SM-3)
+06,2,Missile Type - BMD,Terminal High-Altitude Area Defense (THAAD),11,Missile Type - BMD : Terminal High-Altitude Area Defense (THAAD)
+06,2,Launch Origin,Space,12,Launch Origin : Space 2
+10,2,Mobility,Airborne,01,Mobility : Airborne
+10,2,Mobility,Arctic,02,Mobility : Arctic
+10,2,Capability,Battle Damage Repair,03,Capability : Battle Damage Repair
+10,2,Mobility,Bicycle Equipped,04,Mobility : Bicycle Equipped
+10,2,Close Range and Support,Casualty Staging,05,Close Range and Support : Casualty Staging
+10,2,Capability,Clearing,06,Capability : Clearing
+10,2,Capability,Close Range,07,Capability : Close Range
+10,2,Capability,Control,08,Capability : Control
+10,2,Capability,Decontamination,09,Capability : Decontamination 2
+10,2,Capability,Demolition,10,Capability : Demolition
+10,2,Capability,Dental,11,Capability : Dental
+10,2,Capability,Digital,12,Capability : Digital
+10,2,Capability,Enhanced Position Location Reporting System (EPLRS),13,Capability : Enhanced Position Location Reporting System (EPLRS)
+10,2,Capability,Equipment,14,Capability : Equipment
+10,2,Capability,Heavy,15,Capability : Heavy
+10,2,Capability,High Altitude,16,Capability : High Altitude
+10,2,Capability,Intermodal,17,Capability : Intermodal
+10,2,Capability,Intensive Care,18,Capability : Intensive Care
+10,2,Capability,Light,19,Capability : Light
+10,2,Capability,Laboratory,20,Capability : Laboratory
+10,2,Capability,Launcher,21,Capability : Launcher
+10,2,Capability,Long Range,22,Capability : Long Range
+10,2,Capability,Low Altitude,23,Capability : Low Altitude
+10,2,Capability,Medium,24,Capability : Medium
+10,2,Capability,Medium Altitude,25,Capability : Medium Altitude
+10,2,Capability,Medium Range,26,Capability : Medium Range
+10,2,Capability,Mountain,27,Capability : Mountain
+10,2,Capability,High to Medium Altitude,28,Capability : High to Medium Altitude
+10,2,Capability,Multi-Channel,29,Capability : Multi-Channel
+10,2,Capability,Optical (Flash),30,Capability : Optical (Flash)
+10,2,Capability,Pack Animal,31,Capability : Pack Animal
+10,2,Capability,Patient Evacuation Coordination,32,Capability : Patient Evacuation Coordination
+10,2,Capability,Preventive Maintenance,33,Capability : Preventive Maintenance
+10,2,Capability,Psychological,34,Capability : Psychological
+10,2,Capability,Radio Relay Line of Sight,35,Capability : Radio Relay Line of Sight
+10,2,Mobility,Railroad,36,Mobility : Railroad
+10,2,Capability,Recovery (Unmanned Systems),37,Capability : Recovery (Unmanned Systems)
+10,2,Capability,Recovery (Maintenance),38,Capability : Recovery (Maintenance)
+10,2,Capability,Rescue Coordination Center,39,Capability : Rescue Coordination Center
+10,2,Mobility,Riverine,40,Mobility : Riverine
+10,2,Capability,Single Channel,41,Capability : Single Channel
+10,2,Mobility,Ski,42,Mobility : Ski
+10,2,Capability,Short Range,43,Capability : Short Range
+10,2,Capability,Strategic,44,Capability : Strategic
+10,2,Capability,Support,45,Capability : Support 2
+10,2,Capability,Tactical,46,Capability : Tactical
+10,2,Mobility,Towed,47,Mobility : Towed
+10,2,Capability,Troop,48,Capability : Troop
+10,2,Mobility,Vertical or Short Take-Off and Landing (VTOL/VSTOL),49,Mobility : Vertical or Short Take-Off and Landing (VTOL/VSTOL)
+10,2,Capability,Veterinary,50,Capability : Veterinary
+10,2,Mobility,Wheeled,51,Mobility : Wheeled
+10,2,Capability,High to Low Altitude,52,Capability : High to Low Altitude
+10,2,Capability,Medium to Low Altitude,53,Capability : Medium to Low Altitude
+10,2,Capability,Attack,54,Capability : Attack 2
+10,2,Capability,Refuel,55,Capability : Refuel
+10,2,Capability,Utility,56,Capability : Utility 2
+10,2,Capability,Combat Search and Rescue,57,Capability : Combat Search and Rescue
+11,2,Organization,Leader or Leadership,01,Organization : Leader or Leadership 2
+20,2,No Category Listed,Biological,01,No Category Listed : Biological
+20,2,No Category Listed,Chemical,02,No Category Listed : Chemical
+20,2,No Category Listed,Nuclear,03,No Category Listed : Nuclear
+20,2,No Category Listed,Radiological,04,No Category Listed : Radiological
+20,2,No Category Listed,Atomic Energy Reactor,05,No Category Listed : Atomic Energy Reactor
+20,2,No Category Listed,Nuclear Material Production,06,No Category Listed : Nuclear Material Production
+20,2,No Category Listed,Nuclear Material Storage,07,No Category Listed : Nuclear Material Storage
+20,2,No Category Listed,Weapons Grade,08,No Category Listed : Weapons Grade
+30,2,Ship Propulsion,Nuclear Powered,01,Ship Propulsion : Nuclear Powered
+30,2,Ship Capacity,Heavy,02,Ship Capacity : Heavy
+30,2,Ship Capacity,Light,03,Ship Capacity : Light
+30,2,Ship Capacity,Medium,04,Ship Capacity : Medium
+30,2,Cargo Capacity,Dock,05,Cargo Capacity : Dock
+30,2,Cargo Capacity,Logistics,06,Cargo Capacity : Logistics
+30,2,Cargo Capacity,Tank,07,Cargo Capacity : Tank
+30,2,Cargo Capacity,Vehicle,08,Cargo Capacity : Vehicle
+30,2,Ship Mobility,Fast,09,Ship Mobility : Fast
+30,2,Ship Mobility,Air-Cushioned (US),10,Ship Mobility : Air-Cushioned (US)
+30,2,Ship Mobility,Air-Cushioned (NATO),11,Ship Mobility : Air-Cushioned (NATO)
+30,2,Ship Mobility,Hydrofoil,12,Ship Mobility : Hydrofoil
+30,2,USV Control,Autonomous Control,13,USV Control : Autonomous Control
+30,2,USV Control,Remotely Piloted,14,USV Control : Remotely Piloted
+30,2,USV Control,Expendable,15,USV Control : Expendable
+35,2,Ship Propulsion,Air Independent Propulsion,01,Ship Propulsion : Air Independent Propulsion
+35,2,Ship Propulsion,Diesel Electric General,02,Ship Propulsion : Diesel Electric General
+35,2,Ship Propulsion,Diesel - Type 1,03,Ship Propulsion : Diesel - Type 1
+35,2,Ship Propulsion,Diesel - Type 2,04,Ship Propulsion : Diesel - Type 2
+35,2,Ship Propulsion,Diesel - Type 3,05,Ship Propulsion : Diesel - Type 3
+35,2,Ship Propulsion,Nuclear Powered General,06,Ship Propulsion : Nuclear Powered General
+35,2,Ship Propulsion,Nuclear - Type 1,07,Ship Propulsion : Nuclear - Type 1
+35,2,Ship Propulsion,Nuclear - Type 2,08,Ship Propulsion : Nuclear - Type 2
+35,2,Ship Propulsion,Nuclear - Type 3,09,Ship Propulsion : Nuclear - Type 3
+35,2,Ship Propulsion,Nuclear - Type 4,10,Ship Propulsion : Nuclear - Type 4
+35,2,Ship Propulsion,Nuclear - Type 5,11,Ship Propulsion : Nuclear - Type 5
+35,2,Ship Propulsion,Nuclear - Type 6,12,Ship Propulsion : Nuclear - Type 6
+35,2,Ship Propulsion,Nuclear - Type 7,13,Ship Propulsion : Nuclear - Type 7
+35,2,UUV Control,Autonomous Control,14,UUV Control : Autonomous Control
+35,2,UUV Control,Remotely Piloted,15,UUV Control : Remotely Piloted
+35,2,UUV Control,Expendable,16,UUV Control : Expendable

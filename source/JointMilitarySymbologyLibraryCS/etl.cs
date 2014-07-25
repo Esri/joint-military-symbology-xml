@@ -54,7 +54,7 @@ namespace JointMilitarySymbologyLibrary
             _configHelper = new ConfigHelper(_librarian);
         }
 
-        private void _exportEntities(IEntityExport exporter, string path, string symbolSetExpression = "", string expression = "", bool exportPoints = true, bool exportLines = true, bool exportAreas = true)
+        private void _exportEntities(ETLExportEnum exportType, IEntityExport exporter, string path, string symbolSetExpression = "", string expression = "", bool exportPoints = true, bool exportLines = true, bool exportAreas = true)
         {
             // Exports entity, entity types, and entity sub types to CSV, by optionally testing a 
             // regular expression against the Label attributes of the containing symbol sets
@@ -88,7 +88,7 @@ namespace JointMilitarySymbologyLibrary
                                 // If the icon is Full Frame then four lines need to be exported, to reflect the four icon shapes.
                                 // Else just write out one line for non-Full-Frame.
 
-                                if (e.Icon == IconType.FULL_FRAME)
+                                if (e.Icon == IconType.FULL_FRAME && exportType != ETLExportEnum.ETLExportSimple)
                                 {
                                     foreach (LibraryStandardIdentityGroup sig in _library.StandardIdentityGroups)
                                     {
@@ -121,7 +121,7 @@ namespace JointMilitarySymbologyLibrary
                                         // If the icon is Full Frame then four lines need to be exported, to reflect the four icon shapes.
                                         // Else just write out one line for non-Full-Frame.
 
-                                        if (eType.Icon == IconType.FULL_FRAME)
+                                        if (eType.Icon == IconType.FULL_FRAME && exportType != ETLExportEnum.ETLExportSimple)
                                         {
                                             foreach (LibraryStandardIdentityGroup sig in _library.StandardIdentityGroups)
                                             {
@@ -154,7 +154,7 @@ namespace JointMilitarySymbologyLibrary
                                                 // If the icon is Full Frame then four lines need to be exported, to reflect the four icon shapes.
                                                 // Else just write out one line for non-Full-Frame.
 
-                                                if (eSubType.Icon == IconType.FULL_FRAME)
+                                                if (eSubType.Icon == IconType.FULL_FRAME && exportType != ETLExportEnum.ETLExportSimple)
                                                 {
                                                     foreach (LibraryStandardIdentityGroup sig in _library.StandardIdentityGroups)
                                                     {
@@ -185,7 +185,7 @@ namespace JointMilitarySymbologyLibrary
                     {
                         foreach (EntitySubTypeType eSubType in s.SpecialEntitySubTypes)
                         {
-                            if (eSubType.Icon == IconType.FULL_FRAME)
+                            if (eSubType.Icon == IconType.FULL_FRAME && exportType != ETLExportEnum.ETLExportSimple)
                             {
                                 foreach (LibraryStandardIdentityGroup sig in _library.StandardIdentityGroups)
                                 {
@@ -913,8 +913,8 @@ namespace JointMilitarySymbologyLibrary
                 // appropriate helper class(es).
 
                 case ETLExportEnum.ETLExportSimple:
-                    entityExporter = new SimpleEntityExport();
-                    modifierExporter = new SimpleModifierExport();
+                    entityExporter = new SimpleEntityExport(_configHelper);
+                    modifierExporter = new SimpleModifierExport(_configHelper);
                     break;
 
                 case ETLExportEnum.ETLExportDomain:
@@ -944,7 +944,7 @@ namespace JointMilitarySymbologyLibrary
                 modifier1Path = modifier1Path + ".csv";
                 modifier2Path = modifier2Path + ".csv";
 
-                _exportEntities(entityExporter, entityPath, symbolSetExpression, expression, exportPoints, exportLines, exportAreas);
+                _exportEntities(exportType, entityExporter, entityPath, symbolSetExpression, expression, exportPoints, exportLines, exportAreas);
                 _exportModifiers(modifierExporter, modifier1Path, modifier2Path, symbolSetExpression, expression, append);
             }
         }
