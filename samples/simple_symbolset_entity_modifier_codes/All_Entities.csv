@@ -277,10 +277,10 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 10,Law Enforcement,Coast Guard,,,201100,Point,FULL_OCTAGON,Law Enforcement (Land Units) : Coast Guard
 10,Law Enforcement,US Marshals Service,,,201200,Point,FULL_OCTAGON,Law Enforcement (Land Units) : US Marshals Service
 10,Law Enforcement,Internal Security Force,,,201300,Point,MAIN,Law Enforcement (Land Units) : Internal Security Force
-10,xx,xx,Headquarters Element,,xxxx95,Point
-10,xx,xx,Division and Below Support,,xxxx96,Point
-10,xx,xx,Corps Support,,xxxx97,Point
-10,xx,xx,Theater/Echelons Above Corps Support,,xxxx98,Point
+10,xx,xx,Headquarters Element,,xxxx95,Point,FULL_FRAME,Special Entity Subtypes : Headquarters Element
+10,xx,xx,Division and Below Support,,xxxx96,Point,FULL_FRAME,Special Entity Subtypes : Division and Below Support
+10,xx,xx,Corps Support,,xxxx97,Point,FULL_FRAME,Special Entity Subtypes : Corps Support
+10,xx,xx,Theater/Echelons Above Corps Support,,xxxx98,Point,FULL_FRAME,Special Entity Subtypes : Theater/Echelons Above Corps Support
 11,Civilian,,,,110000,Point,MAIN,Civilian (Land Civilian)
 11,Civilian,Environmental Protection,,,110100,Point,MAIN,Civilian (Land Civilian) : Environmental Protection
 11,Civilian,Government Organization,,,110200,Point,MAIN,Civilian (Land Civilian) : Government Organization
