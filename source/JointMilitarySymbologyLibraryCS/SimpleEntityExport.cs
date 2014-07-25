@@ -25,14 +25,20 @@ namespace JointMilitarySymbologyLibrary
         // down each part of the hierarchical nature of the entity structure and
         // documenting the Label attributes for each element in that "equation".
 
+        public SimpleEntityExport(ConfigHelper configHelper)
+        {
+            _configHelper = configHelper;
+        }
+
         string IEntityExport.Headers
         {
-            get { return "SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType"; }
+            get { return "SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,IconType,UniqueName"; }
         }
 
         string IEntityExport.Line(LibraryStandardIdentityGroup sig, SymbolSet ss, SymbolSetEntity e, SymbolSetEntityEntityType eType, EntitySubTypeType eSubType)
         {
             GeometryType geoType = GeometryType.POINT;
+            IconType icoType = IconType.MAIN;
 
             string result = Convert.ToString(ss.SymbolSetCode.DigitOne) + Convert.ToString(ss.SymbolSetCode.DigitTwo);
             
@@ -47,6 +53,7 @@ namespace JointMilitarySymbologyLibrary
 
             result = result + e.Label.Replace(',', '-');
             geoType = e.GeometryType;
+            icoType = e.Icon;
 
             result = result + ",";
 
@@ -54,6 +61,7 @@ namespace JointMilitarySymbologyLibrary
             {
                 result = result + eType.Label.Replace(',', '-');
                 geoType = eType.GeometryType;
+                icoType = eType.Icon;
             }
 
             result = result + ",";
@@ -62,6 +70,7 @@ namespace JointMilitarySymbologyLibrary
             {
                 result = result + eSubType.Label.Replace(',', '-');
                 geoType = eSubType.GeometryType;
+                icoType = eSubType.Icon;
             }
 
             if (sig != null)
@@ -74,6 +83,8 @@ namespace JointMilitarySymbologyLibrary
             }
 
             result = result + "," + code + "," + _geometryList[(int)geoType];
+
+            result = result + "," + Convert.ToString(icoType) + "," + BuildEntityItemName(sig, ss, e, eType, eSubType); 
 
             return result;
         }

@@ -277,7 +277,7 @@
 					</EntitySubTypes>
 				</EntityType>
         
-				<EntityType ID="LINE_OF_CONTACT" Label="Line of Contact" Graphic="25140200.svg" GeometryType="LINE">
+				<EntityType ID="LINE_OF_CONTACT" Label="Line of Contact" Remarks="Line of Contact is a doctrinal term and concept for opposing and parallel Forward Lines of Own Troops.  It is not a symbol in its own right." GeometryType="NA" Icon="NA">
 					<EntityTypeCode>
 						<DigitOne>0</DigitOne>
 						<DigitTwo>2</DigitTwo>
@@ -2350,7 +2350,7 @@
 								<DigitTwo>4</DigitTwo>
 							</EntitySubTypeCode>
 						</EntitySubType>
-						<EntitySubType ID="SERIES_GROUP_TARGETS" Label="Series of Targets" Graphic="25240805.svg" GeometryType="AREA">
+						<EntitySubType ID="SERIES_GROUP_TARGETS" Label="Series of Targets" Graphic="25240805.a.svg" GeometryType="AREA">
 							<EntitySubTypeCode>
 								<DigitOne>0</DigitOne>
 								<DigitTwo>5</DigitTwo>

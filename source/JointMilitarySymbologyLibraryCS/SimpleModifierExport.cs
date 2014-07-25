@@ -25,9 +25,14 @@ namespace JointMilitarySymbologyLibrary
         // including the code for the SymbolSet and Modifier and the Label and Category
         // attributes of that Modifier.
 
+        public SimpleModifierExport(ConfigHelper configHelper)
+        {
+            _configHelper = configHelper;
+        }
+
         string IModifierExport.Headers
         {
-            get { return "SymbolSet,ModifierNumber,Category,Name,Code"; }
+            get { return "SymbolSet,ModifierNumber,Category,Name,Code,UniqueName"; }
         }
 
         string IModifierExport.Line(SymbolSet ss, string modNumber, ModifiersTypeModifier m)
@@ -39,6 +44,8 @@ namespace JointMilitarySymbologyLibrary
             result = result + m.Label.Replace(',', '-') + ",";
 
             result = result + Convert.ToString(m.ModifierCode.DigitOne) + Convert.ToString(m.ModifierCode.DigitTwo);
+
+            result = result + "," + BuildModifierItemName(ss, modNumber, m);
 
             return result;
         }
