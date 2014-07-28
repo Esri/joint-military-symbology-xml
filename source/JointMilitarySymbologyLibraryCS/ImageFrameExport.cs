@@ -49,9 +49,12 @@ namespace JointMilitarySymbologyLibrary
 
             if (affiliation != null)
             {
-                if (affiliation.Shape != ShapeType.NA)
+                if (affiliation.Shape != ShapeType.NA && (status.StatusCode == 0 || affiliation.PlannedGraphic != ""))
                 {
-                    graphic = affiliation.Graphic;
+                    if (status.StatusCode == 0)
+                        graphic = affiliation.Graphic;
+                    else
+                        graphic = affiliation.PlannedGraphic;
 
                     if (graphic == null)
                         _notes = _notes + "graphic is missing - frame is NA - frame is never to be drawn;";

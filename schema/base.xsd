@@ -192,6 +192,7 @@
                   <xs:attribute name="StandardIdentityID" type="xs:IDREF" use="required"/>
                   <xs:attribute name="DimensionID" type="xs:IDREF" use="required"/>
                   <xs:attribute name="Shape" type ="ShapeType" use="required"/>
+                  <xs:attribute name="PlannedGraphic" type="xs:anyURI" use="optional" default=""/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>

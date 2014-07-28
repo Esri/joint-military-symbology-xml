@@ -40,7 +40,7 @@ namespace JointMilitarySymbologyLibrary
 
             if (affiliation != null)
             {
-                if(affiliation.Shape != ShapeType.NA)
+                if(affiliation.Shape != ShapeType.NA && (status.StatusCode == 0 || affiliation.PlannedGraphic != ""))
                     result = BuildFrameItemName(context, dimension, identity, status) + "," + BuildQuotedFrameCode(context, identity, dimension, status);
             }
 
