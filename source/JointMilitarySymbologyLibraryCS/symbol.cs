@@ -329,7 +329,7 @@ namespace JointMilitarySymbologyLibrary
             if (_affiliation != null)
             {
                 path = _configHelper.GetPath(_context.ID, FindEnum.FindFrames);
-                path = _configHelper.BuildOriginalPath(path, _affiliation.Graphic);
+                path = _configHelper.BuildOriginalPath(path, (_status.StatusCode == 1) ? _affiliation.PlannedGraphic : _affiliation.Graphic);
                 _graphics.Add(path);
             }
 

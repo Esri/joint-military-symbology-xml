@@ -61,6 +61,9 @@ namespace JointMilitarySymbologyLibrary
             result = result + identity.Label.Replace(',', '-') + _configHelper.DomainSeparator;
             result = result + dimension.Label.Replace(',', '-');
 
+            if (status.StatusCode == 1)
+                result = result + _configHelper.DomainSeparator + ((status.LabelAlias == "") ? status.Label : status.LabelAlias);
+
             return result;
         }
 
@@ -76,6 +79,9 @@ namespace JointMilitarySymbologyLibrary
             result = result + context.Label.Replace(',', '-') + ";";
             result = result + identity.Label.Replace(',', '-') + ";";
             result = result + dimension.Label.Replace(',', '-') + ";";
+
+            if(status.StatusCode == 1)
+                result = result + ((status.LabelAlias == "") ? status.Label.Replace(',', '-') : status.LabelAlias.Replace(',', '-')) + ";";
 
             // Loop through each symbol set in the dimension and add any labels from those
 

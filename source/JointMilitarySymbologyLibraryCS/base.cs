@@ -3762,8 +3762,11 @@ namespace JointMilitarySymbologyLibrary {
         
         private ShapeType shapeField;
         
+        private string plannedGraphicField;
+        
         public LibraryAffiliation() {
             this.labelAliasField = "";
+            this.plannedGraphicField = "";
         }
         
         /// <remarks/>
@@ -3885,6 +3888,18 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.shapeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string PlannedGraphic {
+            get {
+                return this.plannedGraphicField;
+            }
+            set {
+                this.plannedGraphicField = value;
             }
         }
     }
