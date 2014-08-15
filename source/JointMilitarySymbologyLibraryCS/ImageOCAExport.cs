@@ -81,7 +81,7 @@ namespace JointMilitarySymbologyLibrary
                 _notes = _notes + "image file does not exist;";
 
             string itemName = BuildOCAItemName(null, null, status);
-            string itemCategory = "Operational Condition Amplifier";
+            string itemCategory = "Amplifier : Operational Condition";
             string itemTags = BuildOCAItemTags(null, null, status, graphicPath + "\\" + status.Graphic, _omitSource);
 
             result = itemRootedPath + "," +

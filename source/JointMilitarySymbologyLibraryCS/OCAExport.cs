@@ -85,7 +85,7 @@ namespace JointMilitarySymbologyLibrary
             // The information concatenated together for this comes from a given StandardIdentity, Dimension, and Status.
             // Information includes the Label attributes, location of the original graphic file, the code, etc.
 
-            string result = "";
+            string result = "Operational Condition;";
 
             if (identity != null && dimension != null)
             {
@@ -94,7 +94,7 @@ namespace JointMilitarySymbologyLibrary
                 result = result + identity.Label.Replace(',', '-') + ";";
             }
             else
-                result = ((status.LabelAlias != "") ? status.LabelAlias.Replace(',', '-') : status.Label.Replace(',', '-')) + ";";
+                result = result + ((status.LabelAlias != "") ? status.LabelAlias.Replace(',', '-') : status.Label.Replace(',', '-')) + ";";
 
             if (!omitSource)
                 result = result + graphicPath.Substring(1) + ";";
