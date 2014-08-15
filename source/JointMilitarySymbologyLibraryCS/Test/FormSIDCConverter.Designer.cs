@@ -79,6 +79,7 @@ namespace Test
             this.label2525C = new System.Windows.Forms.Label();
             this.text2525C = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.statusStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -433,11 +434,25 @@ namespace Test
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Checked = true;
+            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox1.Location = new System.Drawing.Point(376, 473);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(192, 21);
+            this.checkBox1.TabIndex = 16;
+            this.checkBox1.Text = "Use colored bars for OCA";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // FormSIDCConverter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(682, 829);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label4);
@@ -497,6 +512,7 @@ namespace Test
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 

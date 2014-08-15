@@ -84,10 +84,14 @@ namespace JointMilitarySymbologyLibrary
         private ConfigHelper _configHelper;
         private List<string> _graphics = new List<string>();
 
-        internal Symbol(Librarian librarian, SIDC sidc)
+        private bool _colorBarOCA = true;
+
+        internal Symbol(Librarian librarian, SIDC sidc, bool drawColorBars = true)
         {
             _librarian = librarian;
             _sidc = sidc;
+            _colorBarOCA = drawColorBars;
+
             _legacySIDC = _blankLegacySIDC;
             _configHelper = new ConfigHelper(_librarian);
 
@@ -109,7 +113,7 @@ namespace JointMilitarySymbologyLibrary
             _BuildGraphics();
         }
 
-        internal Symbol(Librarian librarian, string legacyStandard, string legacySIDC)
+        internal Symbol(Librarian librarian, string legacyStandard, string legacySIDC, bool drawColorBars = true)
         {
             _librarian = librarian;
             _legacySIDC = legacySIDC;
@@ -155,6 +159,14 @@ namespace JointMilitarySymbologyLibrary
             get
             {
                 return _legacySIDC;
+            }
+        }
+
+        public bool ColorBarOCA
+        {
+            get
+            {
+                return _colorBarOCA;
             }
         }
 
@@ -499,11 +511,45 @@ namespace JointMilitarySymbologyLibrary
                         if (hag.StandardIdentityGroup == _sig.ID && hag.Dimension == _dimension.ID)
                         {
                             graphic = hag.Graphic;
+                            break;
                         }
                     }
 
                     if (graphic != "")
                     {
+                        path = _configHelper.BuildOriginalPath(path, graphic);
+                        _graphics.Add(path);
+                    }
+                }
+            }
+
+            // OCA?
+
+            if (_status != null && _dimension != null && _standardIdentity != null)
+            {
+                if (_status.Graphics != null)
+                {
+                    graphic = "";
+
+                    if (_colorBarOCA && _status.StatusCode > 1)
+                    {
+                        foreach (LibraryStatusGraphic g in _status.Graphics)
+                        {
+                            if (g.StandardIdentity == _standardIdentity.ID && g.Dimension == _dimension.ID)
+                            {
+                                graphic = g.Graphic;
+                                break;
+                            }
+                        }
+                    }
+                    else if (_status.Graphic != null)
+                    {
+                        graphic = _status.Graphic;
+                    }
+
+                    if (graphic != "")
+                    {
+                        path = _configHelper.GetPath("", FindEnum.FindOCA);
                         path = _configHelper.BuildOriginalPath(path, graphic);
                         _graphics.Add(path);
                     }

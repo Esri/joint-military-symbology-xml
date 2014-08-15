@@ -1374,21 +1374,305 @@
     <Status Name="FULLY_CAPABLE" Label="Present/Fully Capable" LabelAlias="Fully Capable">
       <StatusCode>2</StatusCode>
       <LegacyStatusCode Name="2525C">C</LegacyStatusCode>
+      <Graphics>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="UNKNOWN" Graphic="000022.svg"/>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="AIR" Graphic="000122.svg"/>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="SPACE" Graphic="000522.svg"/>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="LAND_UNIT" Graphic="001022.svg"/>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="LAND_EQUIPMENT" Graphic="001522.svg"/>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="LAND_INSTALLATION" Graphic="002022.svg"/>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="SEA_SURFACE" Graphic="003022.svg"/>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="SEA_SUBSURFACE" Graphic="003522.svg"/>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="ACTIVITY" Graphic="004022.svg"/>
+
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="UNKNOWN" Graphic="010022.svg"/>
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="AIR" Graphic="010122.svg"/>
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="SPACE" Graphic="010522.svg"/>
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="LAND_UNIT" Graphic="011022.svg"/>
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="LAND_EQUIPMENT" Graphic="011522.svg"/>
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="LAND_INSTALLATION" Graphic="012022.svg"/>
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="SEA_SURFACE" Graphic="013022.svg"/>
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="SEA_SUBSURFACE" Graphic="013522.svg"/>
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="ACTIVITY" Graphic="014022.svg"/>
+
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="UNKNOWN" Graphic="020022.svg"/>
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="AIR" Graphic="020122.svg"/>
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="SPACE" Graphic="020522.svg"/>
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="LAND_UNIT" Graphic="021022.svg"/>
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="LAND_EQUIPMENT" Graphic="021522.svg"/>
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="LAND_INSTALLATION" Graphic="022022.svg"/>
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="SEA_SURFACE" Graphic="023022.svg"/>
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="SEA_SUBSURFACE" Graphic="023522.svg"/>
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="ACTIVITY" Graphic="024022.svg"/>
+
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="UNKNOWN" Graphic="030022.svg"/>
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="AIR" Graphic="030122.svg"/>
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="SPACE" Graphic="030522.svg"/>
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="LAND_UNIT" Graphic="031022.svg"/>
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="LAND_EQUIPMENT" Graphic="031522.svg"/>
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="LAND_INSTALLATION" Graphic="032022.svg"/>
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="SEA_SURFACE" Graphic="033022.svg"/>
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="SEA_SUBSURFACE" Graphic="033522.svg"/>
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="ACTIVITY" Graphic="034022.svg"/>
+
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="UNKNOWN" Graphic="040022.svg"/>
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="AIR" Graphic="040122.svg"/>
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="SPACE" Graphic="040522.svg"/>
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="LAND_UNIT" Graphic="041022.svg"/>
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="LAND_EQUIPMENT" Graphic="041522.svg"/>
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="LAND_INSTALLATION" Graphic="042022.svg"/>
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="SEA_SURFACE" Graphic="043022.svg"/>
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="SEA_SUBSURFACE" Graphic="043522.svg"/>
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="ACTIVITY" Graphic="044022.svg"/>
+
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="UNKNOWN" Graphic="050022.svg"/>
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="AIR" Graphic="050122.svg"/>
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="SPACE" Graphic="050522.svg"/>
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="LAND_UNIT" Graphic="051022.svg"/>
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="LAND_EQUIPMENT" Graphic="051522.svg"/>
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="LAND_INSTALLATION" Graphic="052022.svg"/>
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="SEA_SURFACE" Graphic="053022.svg"/>
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="SEA_SUBSURFACE" Graphic="053522.svg"/>
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="ACTIVITY" Graphic="054022.svg"/>
+
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="UNKNOWN" Graphic="060022.svg"/>
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="AIR" Graphic="060122.svg"/>
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="SPACE" Graphic="060522.svg"/>
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="LAND_UNIT" Graphic="061022.svg"/>
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="LAND_EQUIPMENT" Graphic="061522.svg"/>
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="LAND_INSTALLATION" Graphic="062022.svg"/>
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="SEA_SURFACE" Graphic="063022.svg"/>
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="SEA_SUBSURFACE" Graphic="063522.svg"/>
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="ACTIVITY" Graphic="064022.svg"/>
+      </Graphics>
     </Status>
 
-    <Status Name="DAMAGED" Label="Present/Damaged" LabelAlias="Damaged">
+    <Status Name="DAMAGED" Label="Present/Damaged" LabelAlias="Damaged" Graphic="3.svg">
       <StatusCode>3</StatusCode>
       <LegacyStatusCode Name="2525C">D</LegacyStatusCode>
+      <Graphics>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="UNKNOWN" Graphic="000032.svg"/>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="AIR" Graphic="000132.svg"/>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="SPACE" Graphic="000532.svg"/>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="LAND_UNIT" Graphic="001032.svg"/>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="LAND_EQUIPMENT" Graphic="001532.svg"/>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="LAND_INSTALLATION" Graphic="002032.svg"/>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="SEA_SURFACE" Graphic="003032.svg"/>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="SEA_SUBSURFACE" Graphic="003532.svg"/>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="ACTIVITY" Graphic="004032.svg"/>
+
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="UNKNOWN" Graphic="010032.svg"/>
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="AIR" Graphic="010132.svg"/>
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="SPACE" Graphic="010532.svg"/>
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="LAND_UNIT" Graphic="011032.svg"/>
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="LAND_EQUIPMENT" Graphic="011532.svg"/>
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="LAND_INSTALLATION" Graphic="012032.svg"/>
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="SEA_SURFACE" Graphic="013032.svg"/>
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="SEA_SUBSURFACE" Graphic="013532.svg"/>
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="ACTIVITY" Graphic="014032.svg"/>
+
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="UNKNOWN" Graphic="020032.svg"/>
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="AIR" Graphic="020132.svg"/>
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="SPACE" Graphic="020532.svg"/>
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="LAND_UNIT" Graphic="021032.svg"/>
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="LAND_EQUIPMENT" Graphic="021532.svg"/>
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="LAND_INSTALLATION" Graphic="022032.svg"/>
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="SEA_SURFACE" Graphic="023032.svg"/>
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="SEA_SUBSURFACE" Graphic="023532.svg"/>
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="ACTIVITY" Graphic="024032.svg"/>
+
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="UNKNOWN" Graphic="030032.svg"/>
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="AIR" Graphic="030132.svg"/>
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="SPACE" Graphic="030532.svg"/>
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="LAND_UNIT" Graphic="031032.svg"/>
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="LAND_EQUIPMENT" Graphic="031532.svg"/>
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="LAND_INSTALLATION" Graphic="032032.svg"/>
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="SEA_SURFACE" Graphic="033032.svg"/>
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="SEA_SUBSURFACE" Graphic="033532.svg"/>
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="ACTIVITY" Graphic="034032.svg"/>
+
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="UNKNOWN" Graphic="040032.svg"/>
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="AIR" Graphic="040132.svg"/>
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="SPACE" Graphic="040532.svg"/>
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="LAND_UNIT" Graphic="041032.svg"/>
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="LAND_EQUIPMENT" Graphic="041532.svg"/>
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="LAND_INSTALLATION" Graphic="042032.svg"/>
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="SEA_SURFACE" Graphic="043032.svg"/>
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="SEA_SUBSURFACE" Graphic="043532.svg"/>
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="ACTIVITY" Graphic="044032.svg"/>
+
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="UNKNOWN" Graphic="050032.svg"/>
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="AIR" Graphic="050132.svg"/>
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="SPACE" Graphic="050532.svg"/>
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="LAND_UNIT" Graphic="051032.svg"/>
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="LAND_EQUIPMENT" Graphic="051532.svg"/>
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="LAND_INSTALLATION" Graphic="052032.svg"/>
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="SEA_SURFACE" Graphic="053032.svg"/>
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="SEA_SUBSURFACE" Graphic="053532.svg"/>
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="ACTIVITY" Graphic="054032.svg"/>
+
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="UNKNOWN" Graphic="060032.svg"/>
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="AIR" Graphic="060132.svg"/>
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="SPACE" Graphic="060532.svg"/>
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="LAND_UNIT" Graphic="061032.svg"/>
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="LAND_EQUIPMENT" Graphic="061532.svg"/>
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="LAND_INSTALLATION" Graphic="062032.svg"/>
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="SEA_SURFACE" Graphic="063032.svg"/>
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="SEA_SUBSURFACE" Graphic="063532.svg"/>
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="ACTIVITY" Graphic="064032.svg"/>
+      </Graphics>
     </Status>
 
-    <Status Name="DESTROYED" Label="Present/Destroyed" LabelAlias="Destroyed">
+    <Status Name="DESTROYED" Label="Present/Destroyed" LabelAlias="Destroyed" Graphic="4.svg">
       <StatusCode>4</StatusCode>
       <LegacyStatusCode Name="2525C">X</LegacyStatusCode>
+      <Graphics>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="UNKNOWN" Graphic="000042.svg"/>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="AIR" Graphic="000142.svg"/>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="SPACE" Graphic="000542.svg"/>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="LAND_UNIT" Graphic="001042.svg"/>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="LAND_EQUIPMENT" Graphic="001542.svg"/>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="LAND_INSTALLATION" Graphic="002042.svg"/>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="SEA_SURFACE" Graphic="003042.svg"/>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="SEA_SUBSURFACE" Graphic="003542.svg"/>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="ACTIVITY" Graphic="004042.svg"/>
+
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="UNKNOWN" Graphic="010042.svg"/>
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="AIR" Graphic="010142.svg"/>
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="SPACE" Graphic="010542.svg"/>
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="LAND_UNIT" Graphic="011042.svg"/>
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="LAND_EQUIPMENT" Graphic="011542.svg"/>
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="LAND_INSTALLATION" Graphic="012042.svg"/>
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="SEA_SURFACE" Graphic="013042.svg"/>
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="SEA_SUBSURFACE" Graphic="013542.svg"/>
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="ACTIVITY" Graphic="014042.svg"/>
+
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="UNKNOWN" Graphic="020042.svg"/>
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="AIR" Graphic="020142.svg"/>
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="SPACE" Graphic="020542.svg"/>
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="LAND_UNIT" Graphic="021042.svg"/>
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="LAND_EQUIPMENT" Graphic="021542.svg"/>
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="LAND_INSTALLATION" Graphic="022042.svg"/>
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="SEA_SURFACE" Graphic="023042.svg"/>
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="SEA_SUBSURFACE" Graphic="023542.svg"/>
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="ACTIVITY" Graphic="024042.svg"/>
+
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="UNKNOWN" Graphic="030042.svg"/>
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="AIR" Graphic="030142.svg"/>
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="SPACE" Graphic="030542.svg"/>
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="LAND_UNIT" Graphic="031042.svg"/>
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="LAND_EQUIPMENT" Graphic="031542.svg"/>
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="LAND_INSTALLATION" Graphic="032042.svg"/>
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="SEA_SURFACE" Graphic="033042.svg"/>
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="SEA_SUBSURFACE" Graphic="033542.svg"/>
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="ACTIVITY" Graphic="034042.svg"/>
+
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="UNKNOWN" Graphic="040042.svg"/>
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="AIR" Graphic="040142.svg"/>
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="SPACE" Graphic="040542.svg"/>
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="LAND_UNIT" Graphic="041042.svg"/>
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="LAND_EQUIPMENT" Graphic="041542.svg"/>
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="LAND_INSTALLATION" Graphic="042042.svg"/>
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="SEA_SURFACE" Graphic="043042.svg"/>
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="SEA_SUBSURFACE" Graphic="043542.svg"/>
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="ACTIVITY" Graphic="044042.svg"/>
+
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="UNKNOWN" Graphic="050042.svg"/>
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="AIR" Graphic="050142.svg"/>
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="SPACE" Graphic="050542.svg"/>
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="LAND_UNIT" Graphic="051042.svg"/>
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="LAND_EQUIPMENT" Graphic="051542.svg"/>
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="LAND_INSTALLATION" Graphic="052042.svg"/>
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="SEA_SURFACE" Graphic="053042.svg"/>
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="SEA_SUBSURFACE" Graphic="053542.svg"/>
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="ACTIVITY" Graphic="054042.svg"/>
+
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="UNKNOWN" Graphic="060042.svg"/>
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="AIR" Graphic="060142.svg"/>
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="SPACE" Graphic="060542.svg"/>
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="LAND_UNIT" Graphic="061042.svg"/>
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="LAND_EQUIPMENT" Graphic="061542.svg"/>
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="LAND_INSTALLATION" Graphic="062042.svg"/>
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="SEA_SURFACE" Graphic="063042.svg"/>
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="SEA_SUBSURFACE" Graphic="063542.svg"/>
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="ACTIVITY" Graphic="064042.svg"/>
+      </Graphics>
     </Status>
 
     <Status Name="FULL" Label="Present/Full to Capacity" LabelAlias="Full">
       <StatusCode>5</StatusCode>
       <LegacyStatusCode Name="2525C">F</LegacyStatusCode>
+      <Graphics>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="UNKNOWN" Graphic="000052.svg"/>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="AIR" Graphic="000152.svg"/>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="SPACE" Graphic="000552.svg"/>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="LAND_UNIT" Graphic="001052.svg"/>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="LAND_EQUIPMENT" Graphic="001552.svg"/>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="LAND_INSTALLATION" Graphic="002052.svg"/>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="SEA_SURFACE" Graphic="003052.svg"/>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="SEA_SUBSURFACE" Graphic="003552.svg"/>
+        <Graphic StandardIdentity="SI_PENDING" Dimension="ACTIVITY" Graphic="004052.svg"/>
+
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="UNKNOWN" Graphic="010052.svg"/>
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="AIR" Graphic="010152.svg"/>
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="SPACE" Graphic="010552.svg"/>
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="LAND_UNIT" Graphic="011052.svg"/>
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="LAND_EQUIPMENT" Graphic="011552.svg"/>
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="LAND_INSTALLATION" Graphic="012052.svg"/>
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="SEA_SURFACE" Graphic="013052.svg"/>
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="SEA_SUBSURFACE" Graphic="013552.svg"/>
+        <Graphic StandardIdentity="SI_UNKNOWN" Dimension="ACTIVITY" Graphic="014052.svg"/>
+
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="UNKNOWN" Graphic="020052.svg"/>
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="AIR" Graphic="020152.svg"/>
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="SPACE" Graphic="020552.svg"/>
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="LAND_UNIT" Graphic="021052.svg"/>
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="LAND_EQUIPMENT" Graphic="021552.svg"/>
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="LAND_INSTALLATION" Graphic="022052.svg"/>
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="SEA_SURFACE" Graphic="023052.svg"/>
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="SEA_SUBSURFACE" Graphic="023552.svg"/>
+        <Graphic StandardIdentity="SI_ASSUMED_FRIEND" Dimension="ACTIVITY" Graphic="024052.svg"/>
+
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="UNKNOWN" Graphic="030052.svg"/>
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="AIR" Graphic="030152.svg"/>
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="SPACE" Graphic="030552.svg"/>
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="LAND_UNIT" Graphic="031052.svg"/>
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="LAND_EQUIPMENT" Graphic="031552.svg"/>
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="LAND_INSTALLATION" Graphic="032052.svg"/>
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="SEA_SURFACE" Graphic="033052.svg"/>
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="SEA_SUBSURFACE" Graphic="033552.svg"/>
+        <Graphic StandardIdentity="SI_FRIEND" Dimension="ACTIVITY" Graphic="034052.svg"/>
+
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="UNKNOWN" Graphic="040052.svg"/>
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="AIR" Graphic="040152.svg"/>
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="SPACE" Graphic="040552.svg"/>
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="LAND_UNIT" Graphic="041052.svg"/>
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="LAND_EQUIPMENT" Graphic="041552.svg"/>
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="LAND_INSTALLATION" Graphic="042052.svg"/>
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="SEA_SURFACE" Graphic="043052.svg"/>
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="SEA_SUBSURFACE" Graphic="043552.svg"/>
+        <Graphic StandardIdentity="SI_NEUTRAL" Dimension="ACTIVITY" Graphic="044052.svg"/>
+
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="UNKNOWN" Graphic="050052.svg"/>
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="AIR" Graphic="050152.svg"/>
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="SPACE" Graphic="050552.svg"/>
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="LAND_UNIT" Graphic="051052.svg"/>
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="LAND_EQUIPMENT" Graphic="051552.svg"/>
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="LAND_INSTALLATION" Graphic="052052.svg"/>
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="SEA_SURFACE" Graphic="053052.svg"/>
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="SEA_SUBSURFACE" Graphic="053552.svg"/>
+        <Graphic StandardIdentity="SI_SUSPECT_JOKER" Dimension="ACTIVITY" Graphic="054052.svg"/>
+
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="UNKNOWN" Graphic="060052.svg"/>
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="AIR" Graphic="060152.svg"/>
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="SPACE" Graphic="060552.svg"/>
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="LAND_UNIT" Graphic="061052.svg"/>
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="LAND_EQUIPMENT" Graphic="061552.svg"/>
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="LAND_INSTALLATION" Graphic="062052.svg"/>
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="SEA_SURFACE" Graphic="063052.svg"/>
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="SEA_SUBSURFACE" Graphic="063552.svg"/>
+        <Graphic StandardIdentity="SI_HOSTILE_FAKER" Dimension="ACTIVITY" Graphic="064052.svg"/>
+      </Graphics>
     </Status>
 
     <Status Name="EXTENSION" Label="Extension" Description="Details specified by extension">

@@ -19,6 +19,7 @@
     <xs:attribute name="Entities" type="xs:IDREFS" use="optional"/>
     <xs:attribute name="ModifierOnes" type="xs:IDREFS" use="optional"/>
     <xs:attribute name="ModifierTwos" type="xs:IDREFS" use="optional"/>
+    <xs:attribute name="OCA" type="xs:boolean" use="optional" default="false"/>
   </xs:complexType>
   
   <xs:element name="JMSMLConfig">

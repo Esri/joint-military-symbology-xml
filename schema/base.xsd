@@ -209,8 +209,19 @@
                   <xs:sequence>
                     <xs:element name="StatusCode" type="SingleDigitType" minOccurs="1" maxOccurs="1"/>
                     <xs:element name="LegacyStatusCode" type="LegacyLetterCodeType" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element name="Graphics" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Graphic" minOccurs="1" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:attributeGroup ref="SIDimensionGraphicAttributeGroup"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
                   </xs:sequence>
-                  <xs:attributeGroup ref="NameAttributeGroup"/>
+                  <xs:attributeGroup ref="GraphicNameAttributeGroup"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
@@ -232,7 +243,7 @@
                         <xs:sequence>
                           <xs:element name="Graphic" minOccurs="1" maxOccurs="unbounded">
                             <xs:complexType>
-                              <xs:attributeGroup ref="SIDimensionGraphicAttributeGroup"/>
+                              <xs:attributeGroup ref="SIGDimensionGraphicAttributeGroup"/>
                             </xs:complexType>
                           </xs:element>
                         </xs:sequence>
