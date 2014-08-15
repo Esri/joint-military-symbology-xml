@@ -64,8 +64,8 @@ namespace JointMilitarySymbologyLibrary
             if (identity != null && dimension != null)
             {
                 result = result + ((status.LabelAlias != "") ? status.LabelAlias.Replace(',', '-') : status.Label.Replace(',', '-')) + _configHelper.DomainSeparator;
-                result = result + identity.Label.Replace(',', '-') + _configHelper.DomainSeparator;
-                result = result + dimension.Label.Replace(',', '-');
+                result = result + dimension.Label.Replace(',', '-') + _configHelper.DomainSeparator;
+                result = result + identity.Label.Replace(',', '-');
             }
             else
                 result = (status.LabelAlias != "") ? status.LabelAlias.Replace(',', '-') : status.Label.Replace(',', '-');
@@ -90,8 +90,8 @@ namespace JointMilitarySymbologyLibrary
             if (identity != null && dimension != null)
             {
                 result = result + ((status.LabelAlias != "") ? status.LabelAlias.Replace(',', '-') : status.Label.Replace(',', '-')) + ";";
-                result = result + identity.Label.Replace(',', '-') + ";";
                 result = result + dimension.Label.Replace(',', '-') + ";";
+                result = result + identity.Label.Replace(',', '-') + ";";
             }
             else
                 result = ((status.LabelAlias != "") ? status.LabelAlias.Replace(',', '-') : status.Label.Replace(',', '-')) + ";";
