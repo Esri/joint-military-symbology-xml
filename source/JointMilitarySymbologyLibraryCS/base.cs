@@ -3916,6 +3916,8 @@ namespace JointMilitarySymbologyLibrary {
         
         private LegacyLetterCodeType[] legacyStatusCodeField;
         
+        private LibraryStatusGraphic[] graphicsField;
+        
         private string nameField;
         
         private string labelField;
@@ -3925,6 +3927,8 @@ namespace JointMilitarySymbologyLibrary {
         private string descriptionField;
         
         private string remarksField;
+        
+        private string graphicField;
         
         public LibraryStatus() {
             this.labelAliasField = "";
@@ -3948,6 +3952,17 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.legacyStatusCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("Graphic", IsNullable=false)]
+        public LibraryStatusGraphic[] Graphics {
+            get {
+                return this.graphicsField;
+            }
+            set {
+                this.graphicsField = value;
             }
         }
         
@@ -4004,6 +4019,65 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.remarksField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        public string Graphic {
+            get {
+                return this.graphicField;
+            }
+            set {
+                this.graphicField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://disa.mil/JointMilSyML.xsd")]
+    public partial class LibraryStatusGraphic {
+        
+        private string standardIdentityField;
+        
+        private string dimensionField;
+        
+        private string graphicField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="IDREF")]
+        public string StandardIdentity {
+            get {
+                return this.standardIdentityField;
+            }
+            set {
+                this.standardIdentityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="IDREF")]
+        public string Dimension {
+            get {
+                return this.dimensionField;
+            }
+            set {
+                this.dimensionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        public string Graphic {
+            get {
+                return this.graphicField;
+            }
+            set {
+                this.graphicField = value;
             }
         }
     }

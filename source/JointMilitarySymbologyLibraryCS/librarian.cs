@@ -79,6 +79,8 @@ namespace JointMilitarySymbologyLibrary
         private Symbol _invalidSymbol;
         private Symbol _retiredSymbol;
 
+        private bool _drawColoredOCABars = true;
+
         private SortedDictionary<ushort, SymbolSet> _sortedSymbolSets = new SortedDictionary<ushort,SymbolSet>();
         private List<SymbolSet> _symbolSets = new List<SymbolSet>();
         private List<string> _statusMessages = new List<string> {"Version Not Found",
@@ -1209,13 +1211,26 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
+        public bool DrawColoredOCABars
+        {
+            get
+            {
+                return _drawColoredOCABars;
+            }
+
+            set
+            {
+                _drawColoredOCABars = value;
+            }
+        }
+
         public Symbol MakeSymbol(string legacyStandard, string legacySIDC)
         {
             Symbol s = null;
 
             if (legacySIDC.Length == 15)
             {
-                s = new Symbol(this, legacyStandard, legacySIDC);
+                s = new Symbol(this, legacyStandard, legacySIDC, _drawColoredOCABars);
 
                 if (s.SymbolStatus == SymbolStatusEnum.statusEnumInvalid)
                 {
@@ -1234,7 +1249,7 @@ namespace JointMilitarySymbologyLibrary
         public Symbol MakeSymbol(UInt32 partA, UInt32 partB)
         {
             SIDC sid = new SIDC(partA, partB);
-            Symbol s = new Symbol(this, sid);
+            Symbol s = new Symbol(this, sid, _drawColoredOCABars);
 
             if (s.SymbolStatus == SymbolStatusEnum.statusEnumInvalid)
             {
@@ -1246,7 +1261,7 @@ namespace JointMilitarySymbologyLibrary
 
         public Symbol MakeSymbol(SIDC sidc)
         {
-            Symbol s = new Symbol(this, sidc);
+            Symbol s = new Symbol(this, sidc, _drawColoredOCABars);
 
             if (s.SymbolStatus == SymbolStatusEnum.statusEnumInvalid)
             {

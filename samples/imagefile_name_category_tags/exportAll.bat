@@ -19,6 +19,7 @@ jmsml.exe /xe="../../../../../samples/imagefile_name_category_tags/Military-Weat
 jmsml.exe /xf="../../../../../samples/imagefile_name_category_tags/Military-Frame-And-Amplifier-Source-Icons" /xas="IMAGE"
 jmsml.exe /xa="../../../../../samples/imagefile_name_category_tags/Military-Frame-And-Amplifier-Source-Icons" /+ /xas="IMAGE"
 jmsml.exe /xh="../../../../../samples/imagefile_name_category_tags/Military-Frame-And-Amplifier-Source-Icons" /+ /xas="IMAGE"
+jmsml.exe /xo="../../../../../samples/imagefile_name_category_tags/Military-Frame-And-Amplifier-Source-Icons" /+ /xas="IMAGE"
 
 REM *** Append all the image file information together in a single file ***
 
@@ -26,5 +27,6 @@ jmsml.exe /xe="../../../../../samples/imagefile_name_category_tags/Military-All-
 jmsml.exe /xf="../../../../../samples/imagefile_name_category_tags/Military-All-Icons" /+ /xas="IMAGE"
 jmsml.exe /xa="../../../../../samples/imagefile_name_category_tags/Military-All-Icons" /+ /xas="IMAGE"
 jmsml.exe /xh="../../../../../samples/imagefile_name_category_tags/Military-All-Icons" /+ /xas="IMAGE"
+jmsml.exe /xo="../../../../../samples/imagefile_name_category_tags/Military-All-Icons" /+ /xas="IMAGE"
 
 endlocal

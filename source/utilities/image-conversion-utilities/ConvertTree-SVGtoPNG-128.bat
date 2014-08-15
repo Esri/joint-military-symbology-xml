@@ -94,7 +94,7 @@ set original=%3
 set replacement=%4
 set source_file=%2
 set new_file=!source_file:%original%=%replacement%!
-set new_file_png=%new_file:svg=png%
+set new_file_png=%new_file:.svg=.png%
 echo "Exporting %source_file% ==> %new_file_png%"
 
 :: DEBUG:

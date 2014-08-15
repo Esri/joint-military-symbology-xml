@@ -142,6 +142,7 @@
   <xs:attributeGroup name="GraphicNameAttributeGroup">
     <xs:attribute name="Name" type="xs:token" use="required"/>
     <xs:attribute name="Label" type="xs:token" use="optional"/>
+    <xs:attribute name="LabelAlias" type="xs:token" use="optional" default=""/>
     <xs:attribute name="Description" type="xs:string" use="optional"/>
     <xs:attribute name="Remarks" type="xs:string" use="optional"/>
     <xs:attribute name="Graphic" type="xs:anyURI" use="optional"/>
@@ -152,8 +153,14 @@
     <xs:attribute name="Graphic" type="xs:anyURI" use="required"/>
   </xs:attributeGroup>
 
-  <xs:attributeGroup name="SIDimensionGraphicAttributeGroup">
+  <xs:attributeGroup name="SIGDimensionGraphicAttributeGroup">
     <xs:attribute name="StandardIdentityGroup" type="xs:IDREF" use="required"/>
+    <xs:attribute name="Dimension" type="xs:IDREF" use="required"/>
+    <xs:attribute name="Graphic" type="xs:anyURI" use="required"/>
+  </xs:attributeGroup>
+
+  <xs:attributeGroup name="SIDimensionGraphicAttributeGroup">
+    <xs:attribute name="StandardIdentity" type="xs:IDREF" use="required"/>
     <xs:attribute name="Dimension" type="xs:IDREF" use="required"/>
     <xs:attribute name="Graphic" type="xs:anyURI" use="required"/>
   </xs:attributeGroup>

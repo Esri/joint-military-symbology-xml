@@ -1156,5 +1156,72 @@ namespace JointMilitarySymbologyLibrary
                 }
             }
         }
+
+        public void ExportOCA(string path, ETLExportEnum exportType = ETLExportEnum.ETLExportSimple, bool append = false, bool omitSource = false)
+        {
+            // The public entry point for exporting operational condition amplifiers from the JMSML library
+            // into CSV format.
+
+            // Accepts a path for the output (sans file name extension).  The output may also
+            // be appended to an existing file.
+
+            IOCAExport ocaExporter = null;
+            string line = "";
+
+            switch (exportType)
+            {
+                case ETLExportEnum.ETLExportDomain:
+                    ocaExporter = new DomainOCAExport(_configHelper);
+                    break;
+
+                case ETLExportEnum.ETLExportImage:
+                    ocaExporter = new ImageOCAExport(_configHelper, omitSource);
+                    break;
+            }
+
+            if (ocaExporter != null)
+            {
+                using (var w = new StreamWriter(path + ".csv", append))
+                {
+                    if (!append)
+                    {
+                        line = string.Format("{0}", ocaExporter.Headers);
+
+                        w.WriteLine(line);
+                        w.Flush();
+                    }
+
+                    foreach (LibraryStatus status in _library.Statuses)
+                    {
+                        if (status.Graphic != null)
+                        {
+                            // Alternative graphic drawn for a given status
+
+                            line = ocaExporter.Line(status);
+
+                            if (line != "")
+                            {
+                                w.WriteLine(line);
+                                w.Flush();
+                            }
+                        }
+
+                        if (status.Graphics != null)
+                        {
+                            foreach (LibraryStatusGraphic graphic in status.Graphics)
+                            {
+                                line = ocaExporter.Line(status, graphic);
+
+                                if (line != "")
+                                {
+                                    w.WriteLine(line);
+                                    w.Flush();
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

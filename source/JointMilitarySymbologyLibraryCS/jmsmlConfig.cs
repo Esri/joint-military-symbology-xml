@@ -193,6 +193,8 @@ namespace JointMilitarySymbologyLibrary {
         
         private string modifierTwosField;
         
+        private bool oCAField;
+        
         public GraphicFolderType() {
             this.framesField = "false";
             this.echelonsField = false;
@@ -200,6 +202,7 @@ namespace JointMilitarySymbologyLibrary {
             this.hQTFFDField = false;
             this.auxiliaryEquipmentField = false;
             this.specialsField = false;
+            this.oCAField = false;
         }
         
         /// <remarks/>
@@ -326,6 +329,18 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.modifierTwosField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute(false)]
+        public bool OCA {
+            get {
+                return this.oCAField;
+            }
+            set {
+                this.oCAField = value;
             }
         }
     }

@@ -212,5 +212,10 @@ namespace Test
                 updateControls();
             }
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            _librarian.DrawColoredOCABars = checkBox1.Checked;
+        }
     }
 }

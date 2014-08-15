@@ -49,6 +49,7 @@ namespace jmsml
             string framePath = CommandLineArgs.I.argAsString("/xf");
             string amplifierPath = CommandLineArgs.I.argAsString("/xa");
             string hqTFFDPath = CommandLineArgs.I.argAsString("/xh");
+            string ocaPath = CommandLineArgs.I.argAsString("/xo");
             string exportAs = CommandLineArgs.I.argAsString("/xas").ToUpper();
 
             bool dataValidation = (CommandLineArgs.I.argAsString("/e") != "false");
@@ -78,6 +79,7 @@ namespace jmsml
                 Console.WriteLine("/xe=\"<pathname>\"\t: Export entities and modifiers.");
                 Console.WriteLine("/xf=\"<pathname>\"\t: Export frames.");
                 Console.WriteLine("/xh=\"<pathname>\"\t: Export HQ/TF/FD.");
+                Console.WriteLine("/xo=\"<pathname>\"\t: Export operational condition amplifiers.");
                 Console.WriteLine("/xas=\"<as_option>\"\t: Export as SIMPLE, DOMAIN, or IMAGE.");
                 Console.WriteLine("");
                 Console.WriteLine("<Enter> to continue.");
@@ -123,6 +125,11 @@ namespace jmsml
             if (hqTFFDPath != "")
             {
                 _etl.ExportHQTFFD(hqTFFDPath, _exportThisAs, appendFiles, omitSource);
+            }
+
+            if (ocaPath != "")
+            {
+                _etl.ExportOCA(ocaPath, _exportThisAs, appendFiles, omitSource);
             }
         }
 
