@@ -26,16 +26,18 @@ namespace JointMilitarySymbologyLibrary
         // and the tags associated with that HQTFFD.
 
         private bool _omitSource = false;
+        private bool _omitLegacy = false;
 
-        public ImageHQTFFDExport(ConfigHelper configHelper, bool omitSource)
+        public ImageHQTFFDExport(ConfigHelper configHelper, bool omitSource, bool omitLegacy)
         {
             _configHelper = configHelper;
             _omitSource = omitSource;
+            _omitLegacy = omitLegacy;
         }
 
         string IHQTFFDExport.Headers
         {
-            get { return "filePath,pointSize,styleItemName,styleItemCategory,styleItemTags,notes"; }
+            get { return "filePath,pointSize,styleItemName,styleItemCategory,styleItemTags,styleItemUniqueId,styleItemGeometryType,notes"; }
         }
 
         string IHQTFFDExport.Line(LibraryHQTFDummy hqTFFD, LibraryHQTFDummyGraphic graphic)
@@ -57,13 +59,16 @@ namespace JointMilitarySymbologyLibrary
 
             string itemName = BuildHQTFFDItemName(identityGroup, dimension, hqTFFD);
             string itemCategory = "Amplifier" + _configHelper.DomainSeparator + "HQTFFD";
-            string itemTags = BuildHQTFFDItemTags(identityGroup, dimension, hqTFFD, graphicPath + "\\" + graphic.Graphic, _omitSource);
+            string itemTags = BuildHQTFFDItemTags(identityGroup, dimension, hqTFFD, graphicPath + "\\" + graphic.Graphic, _omitSource, _omitLegacy);
+            string itemID = BuildHQTFFDCode(identityGroup, dimension, hqTFFD);
 
             result = itemRootedPath + "," +
                      Convert.ToString(_configHelper.PointSize) + "," +
                      itemName + "," +
                      itemCategory + "," +
                      itemTags + "," +
+                     itemID + "," +
+                     "Point" + "," +
                      _notes;
 
             return result;

@@ -15,11 +15,18 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using NLog;
+using NLog.Config;
+using NLog.Layouts;
+using NLog.Targets;
+using NLog.Targets.Wrappers;
 
 namespace JointMilitarySymbologyLibrary
 {
     public class EntityExport
     {
+        protected static Logger logger = LogManager.GetCurrentClassLogger();
+
         // The super class for entity export objects.  This class holds
         // properties and methods that are used by child classes.
 
@@ -44,6 +51,22 @@ namespace JointMilitarySymbologyLibrary
 
         protected string[] _geometryList = { "NotValid", "Point", "Line", "Area" };
 
+        protected string GeometryIs(SymbolSetEntity e,
+                                   SymbolSetEntityEntityType eType,
+                                   EntitySubTypeType eSubType)
+        {
+            string geometry = _geometryList[0];
+
+            if(eSubType != null)
+                geometry = _geometryList[(int)eSubType.GeometryType];
+            else if(eType != null)
+                geometry = _geometryList[(int)eType.GeometryType];
+            else if(e != null)
+                geometry = _geometryList[(int)e.GeometryType];
+
+            return geometry;
+        }
+
         protected string BuildEntityCode(LibraryStandardIdentityGroup sig,
                                          SymbolSet ss,
                                          SymbolSetEntity e,
@@ -55,7 +78,10 @@ namespace JointMilitarySymbologyLibrary
 
             string code = "";
 
-            code = code + Convert.ToString(ss.SymbolSetCode.DigitOne) + Convert.ToString(ss.SymbolSetCode.DigitTwo);
+            if (ss != null)
+            {
+                code = code + Convert.ToString(ss.SymbolSetCode.DigitOne) + Convert.ToString(ss.SymbolSetCode.DigitTwo);
+            }
 
             if (e == null && eType == null && eSubType != null)
             {
@@ -143,14 +169,18 @@ namespace JointMilitarySymbologyLibrary
             return result;
         }
 
-        protected string BuildEntityItemCategory(SymbolSet ss, IconType iconType)
+        protected string BuildEntityItemCategory(SymbolSet ss, IconType iconType, string geometry)
         {
             // Contructs the category information for a given SymbolSet and entity, including the Label 
             // attribute of the SymbolSet and the type of icon being categorized, deperated by the
             // domain separator (usually a colon).
+            string result = "";
 
-            string result =  ss.Label + _configHelper.DomainSeparator + _iconTypes[(int)iconType];
-            
+            if(ss.Geometry == GeometryType.MIXED)
+                result =  ss.Label + _configHelper.DomainSeparator + geometry;
+            else
+                result = ss.Label + _configHelper.DomainSeparator + _iconTypes[(int)iconType];
+
             return result;
         }
 
@@ -185,7 +215,8 @@ namespace JointMilitarySymbologyLibrary
                                              SymbolSetEntity e,
                                              SymbolSetEntityEntityType eType,
                                              EntitySubTypeType eSubType,
-                                             bool omitSource)
+                                             bool omitSource,
+                                             bool omitLegacy)
         {
             // Constructs a string of semicolon delimited tags that users can utilize to search
             // for or find a given symbol.
@@ -197,7 +228,7 @@ namespace JointMilitarySymbologyLibrary
             string result = ss.Label.Replace(',', '-');
             string graphic = "";
             string geometry = "";
-            string iType = "";
+            string iType = "NO_ICON";
 
             if (e == null && eType == null && eSubType != null)
             {
@@ -290,6 +321,15 @@ namespace JointMilitarySymbologyLibrary
             if(!omitSource)
                 result = result + ";" + _configHelper.GetPath(ss.ID, FindEnum.FindEntities, true) + "\\" + graphic;
 
+            // Add an equivalent 2525C SIDC tag, if one exists
+
+            if (!omitLegacy)
+            {
+                string sidcTag = BuildLegacySIDCTag(sig, ss, e, eType, eSubType);
+                if (sidcTag != "")
+                    result = result + ";" + sidcTag;
+            }
+            
             result = result + ";" + geometry;
             result = result + ";" + BuildEntityItemName(sig, ss, e, eType, eSubType);
             result = result + ";" + BuildEntityCode(sig, ss, e, eType, eSubType);
@@ -300,6 +340,68 @@ namespace JointMilitarySymbologyLibrary
                 // Human interaction will be required to resolve these on a case by case basis.
 
                 _notes = _notes + "styleItemTags > 255;";
+            }
+
+            return result;
+        }
+
+        protected string BuildLegacySIDCTag(LibraryStandardIdentityGroup sig,
+                                            SymbolSet ss,
+                                            SymbolSetEntity e,
+                                            SymbolSetEntityEntityType eType,
+                                            EntitySubTypeType eSubType)
+        {
+            string result = _configHelper.SIDCIsNA;
+
+            if(ss != null && e != null)
+            {
+                uint partA = 1000000000 + (ss.SymbolSetCode.DigitOne * (uint)100000) + (ss.SymbolSetCode.DigitTwo * (uint)10000);
+
+                if (sig != null)
+                {
+                    partA = partA + (sig.StandardIdentityGroupCode * (uint)1000000);
+                }
+                else
+                    partA = partA + 1000000;
+
+                uint partB = (e.EntityCode.DigitOne * (uint)1000000000) + (e.EntityCode.DigitTwo * (uint)100000000);
+
+                if (eType != null)
+                {
+                    partB = partB + (eType.EntityTypeCode.DigitOne * (uint)10000000) + (eType.EntityTypeCode.DigitTwo * (uint)1000000);
+                }
+
+                if (eSubType != null)
+                {
+                    partB = partB + (eSubType.EntitySubTypeCode.DigitOne * (uint)100000) + (eSubType.EntitySubTypeCode.DigitTwo * (uint)10000);
+                }
+
+                Symbol symbol = _configHelper.Librarian.MakeSymbol(new SIDC(partA, partB));
+
+                //
+                // If the symbol has a 2525C equivalent, return it
+                //
+
+                if (symbol != null)
+                {
+                    if (symbol.SymbolStatus == SymbolStatusEnum.statusEnumOld)
+                    {
+                        result = symbol.LegacySIDC;
+
+                        if (sig == null)
+                        {
+                            result = result.Substring(0, 1) + "*" + result.Substring(2, 8) + "*****";
+                        }
+                        else
+                        {
+                            result = result.Substring(0, 10) + "*****";
+                        }
+                    }
+                }
+                else
+                {
+                    logger.Warn("Symbol could not be built from: " + partA + ":" + partB);
+                }
             }
 
             return result;

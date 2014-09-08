@@ -26,16 +26,18 @@ namespace JointMilitarySymbologyLibrary
         // and the tags associated with that SymbolSet and entity.
 
         private bool _omitSource = false;
+        private bool _omitLegacy = false;
 
-        public ImageEntityExport(ConfigHelper configHelper, bool omitSource)
+        public ImageEntityExport(ConfigHelper configHelper, bool omitSource, bool omitLegacy)
         {
             _configHelper = configHelper;
             _omitSource = omitSource;
+            _omitLegacy = omitLegacy;
         }
 
         string IEntityExport.Headers
         {
-            get { return "filePath,pointSize,styleItemName,styleItemCategory,styleItemTags,notes"; }
+            get { return "filePath,pointSize,styleItemName,styleItemCategory,styleItemTags,styleItemUniqueId,styleItemGeometryType,notes"; }
         }
 
         string IEntityExport.Line(LibraryStandardIdentityGroup sig, SymbolSet ss, SymbolSetEntity e, SymbolSetEntityEntityType eType, EntitySubTypeType eSubType)
@@ -85,10 +87,12 @@ namespace JointMilitarySymbologyLibrary
                 iType = e.Icon;
             }
 
-            if (iType == IconType.NA)
-                _notes = _notes + "icon is NA - entity is never to be drawn;";
-            else if(iType != IconType.MAIN)
-                _notes = _notes + "icon is " + Convert.ToString(iType) + ";";
+            // Suppressed as considered redundant information
+
+            //if (iType == IconType.NA)
+            //    _notes = _notes + "icon is NA - entity is never to be drawn;";
+            //else if(iType != IconType.MAIN)
+            //    _notes = _notes + "icon is " + Convert.ToString(iType) + ";";
 
             string itemRootedPath = _configHelper.BuildRootedPath(graphicPath, graphic);
             string itemOriginalPath = _configHelper.BuildOriginalPath(graphicPath, graphic);
@@ -97,14 +101,18 @@ namespace JointMilitarySymbologyLibrary
                 _notes = _notes + "image file does not exist;";
             
             string itemName = BuildEntityItemName(sig, ss, e, eType, eSubType);
-            string itemCategory = BuildEntityItemCategory(ss, iType);
-            string itemTags = BuildEntityItemTags(sig, ss, e, eType, eSubType, _omitSource);
-
+            string itemTags = BuildEntityItemTags(sig, ss, e, eType, eSubType, _omitSource, _omitLegacy);
+            string itemID = BuildEntityCode(sig, ss, e, eType, eSubType);
+            string itemGeometry = GeometryIs(e, eType, eSubType);
+            string itemCategory = BuildEntityItemCategory(ss, iType, itemGeometry);
+            
             result = itemRootedPath + "," +
                      Convert.ToString(_configHelper.PointSize) + "," +
                      itemName + "," +
                      itemCategory + "," +
-                     itemTags + "," +
+                     itemTags + "," + 
+                     itemID + "," +
+                     itemGeometry + "," +
                      _notes;
 
             return result;

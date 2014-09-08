@@ -1,0 +1,26 @@
+setlocal
+cd ..\source\JointMilitarySymbologyLibraryCS\jmsml\bin\Debug
+jmsml.exe /ils="../../../../../../military-symbols-dotnet/MilitarySymbols/Data/LegacyMappingTableCtoD.csv" /ild="../../../../../instance/jmsml_D_Air.xml"
+jmsml.exe /ils="../../../../../../military-symbols-dotnet/MilitarySymbols/Data/LegacyMappingTableCtoD.csv" /ild="../../../../../instance/jmsml_D_Air_Missile.xml"
+jmsml.exe /ils="../../../../../../military-symbols-dotnet/MilitarySymbols/Data/LegacyMappingTableCtoD.csv" /ild="../../../../../instance/jmsml_D_Space.xml"
+jmsml.exe /ils="../../../../../../military-symbols-dotnet/MilitarySymbols/Data/LegacyMappingTableCtoD.csv" /ild="../../../../../instance/jmsml_D_Space_Missile.xml"
+jmsml.exe /ils="../../../../../../military-symbols-dotnet/MilitarySymbols/Data/LegacyMappingTableCtoD.csv" /ild="../../../../../instance/jmsml_D_Land_Unit.xml"
+jmsml.exe /ils="../../../../../../military-symbols-dotnet/MilitarySymbols/Data/LegacyMappingTableCtoD.csv" /ild="../../../../../instance/jmsml_D_Land_Civilian.xml"
+jmsml.exe /ils="../../../../../../military-symbols-dotnet/MilitarySymbols/Data/LegacyMappingTableCtoD.csv" /ild="../../../../../instance/jmsml_D_Land_Equipment.xml"
+jmsml.exe /ils="../../../../../../military-symbols-dotnet/MilitarySymbols/Data/LegacyMappingTableCtoD.csv" /ild="../../../../../instance/jmsml_D_Land_Installation.xml"
+jmsml.exe /ils="../../../../../../military-symbols-dotnet/MilitarySymbols/Data/LegacyMappingTableCtoD.csv" /ild="../../../../../instance/jmsml_D_Control_Measure.xml"
+jmsml.exe /ils="../../../../../../military-symbols-dotnet/MilitarySymbols/Data/LegacyMappingTableCtoD.csv" /ild="../../../../../instance/jmsml_D_Sea_Surface.xml"
+jmsml.exe /ils="../../../../../../military-symbols-dotnet/MilitarySymbols/Data/LegacyMappingTableCtoD.csv" /ild="../../../../../instance/jmsml_D_Sea_Subsurface.xml"
+jmsml.exe /ils="../../../../../../military-symbols-dotnet/MilitarySymbols/Data/LegacyMappingTableCtoD.csv" /ild="../../../../../instance/jmsml_D_Mine_Warfare.xml"
+jmsml.exe /ils="../../../../../../military-symbols-dotnet/MilitarySymbols/Data/LegacyMappingTableCtoD.csv" /ild="../../../../../instance/jmsml_D_Activity.xml"
+jmsml.exe /ils="../../../../../../military-symbols-dotnet/MilitarySymbols/Data/LegacyMappingTableCtoD.csv" /ild="../../../../../instance/jmsml_D_Atmospheric.xml"
+jmsml.exe /ils="../../../../../../military-symbols-dotnet/MilitarySymbols/Data/LegacyMappingTableCtoD.csv" /ild="../../../../../instance/jmsml_D_Oceanographic.xml"
+jmsml.exe /ils="../../../../../../military-symbols-dotnet/MilitarySymbols/Data/LegacyMappingTableCtoD.csv" /ild="../../../../../instance/jmsml_D_Meteorological_Space.xml"
+jmsml.exe /ils="../../../../../../military-symbols-dotnet/MilitarySymbols/Data/LegacyMappingTableCtoD.csv" /ild="../../../../../instance/jmsml_D_SIGINT_Space.xml"
+jmsml.exe /ils="../../../../../../military-symbols-dotnet/MilitarySymbols/Data/LegacyMappingTableCtoD.csv" /ild="../../../../../instance/jmsml_D_SIGINT_Air.xml"
+jmsml.exe /ils="../../../../../../military-symbols-dotnet/MilitarySymbols/Data/LegacyMappingTableCtoD.csv" /ild="../../../../../instance/jmsml_D_SIGINT_Land.xml"
+jmsml.exe /ils="../../../../../../military-symbols-dotnet/MilitarySymbols/Data/LegacyMappingTableCtoD.csv" /ild="../../../../../instance/jmsml_D_SIGINT_Surface.xml"
+jmsml.exe /ils="../../../../../../military-symbols-dotnet/MilitarySymbols/Data/LegacyMappingTableCtoD.csv" /ild="../../../../../instance/jmsml_D_SIGINT_Subsurface.xml"
+jmsml.exe /ils="../../../../../../military-symbols-dotnet/MilitarySymbols/Data/LegacyMappingTableCtoD.csv" /ild="../../../../../instance/jmsml_D_Cyberspace.xml"
+pause
+endlocal

@@ -1,554 +1,459 @@
-<?xml version="1.0" encoding="utf-8"?>
-<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="SS_SEA_SUBSURFACE" Label="Sea Subsurface" DimensionID="SEA_SUBSURFACE">
-	<SymbolSetCode>
-		<DigitOne>3</DigitOne>
-		<DigitTwo>5</DigitTwo>
-	</SymbolSetCode>
-  
-	<LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
-  
-	<Entities>
-		<Entity ID="MILITARY" Label="Military" LabelAlias="Military (Sea Subsurface)" Graphic="35110000.svg">
-			<EntityCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>1</DigitTwo>
-			</EntityCode>
-      
-			<EntityTypes>
-				<EntityType ID="SUBMARINE" Label="Submarine" Graphic="35110100.svg">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>1</DigitTwo>
-					</EntityTypeCode>
-          
-					<EntitySubTypes>
-						<EntitySubType ID="SUBMARINE_SURFACED" Label="Submarine-Surfaced" Graphic="35110101.svg">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>1</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-            
-						<EntitySubType ID="SUBMARINE_SNORKELING" Label="Submarine-Snorkeling" Graphic="35110102.svg">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>2</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-            
-						<EntitySubType ID="SUBMARINE_BOTTOMED" Label="Submarine-Bottomed" Graphic="35110103.svg">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>3</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-					</EntitySubTypes>
-				</EntityType>
-        
-				<EntityType ID="OTHER_SUBMERSIBLE" Label="Other Submersible" Graphic="35110200.svg">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>2</DigitTwo>
-					</EntityTypeCode>
-				</EntityType>
-
-        <EntityType ID="NONSUBMARINE" Label="Nonsubmarine" Graphic="35110300.svg">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>3</DigitTwo>
-					</EntityTypeCode>
-				</EntityType>
-
+<?xml version="1.0"?>
+<SymbolSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="SS_SEA_SUBSURFACE" Label="Sea Subsurface" DimensionID="SEA_SUBSURFACE" xmlns="http://disa.mil/JointMilSyML.xsd" Geometry="POINT">
+  <SymbolSetCode>
+    <DigitOne>3</DigitOne>
+    <DigitTwo>5</DigitTwo>
+  </SymbolSetCode>
+  <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
+  <Entities>
+    <Entity ID="MILITARY" Label="Military" LabelAlias="Military (Sea Subsurface)" Graphic="35110000.svg">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </EntityCode>
+      <EntityTypes>
+        <EntityType ID="SUBMARINE" Label="Submarine" Graphic="35110100.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+          <EntitySubTypes>
+            <EntitySubType ID="SUBMARINE_SURFACED" Label="Submarine-Surfaced" Graphic="35110101.svg">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="SUBMARINE_SNORKELING" Label="Submarine-Snorkeling" Graphic="35110102.svg">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="SUBMARINE_BOTTOMED" Label="Submarine-Bottomed" Graphic="35110103.svg">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+        <EntityType ID="OTHER_SUBMERSIBLE" Label="Other Submersible" Graphic="35110200.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="NONSUBMARINE" Label="Nonsubmarine" Icon="FULL_OCTAGON" Graphic="35110300.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
         <EntityType ID="AUV_UUV" Label="Autonomous Underwater Vehicle (AUV)/Unmanned Underwater Vehicle (UUV)" LabelAlias="Autonomous Underwater Vehicle (AUV)" Graphic="35110400.svg">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>4</DigitTwo>
-					</EntityTypeCode>
-				</EntityType>
-
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>4</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
         <EntityType ID="DIVER" Label="Diver" Graphic="35110500.svg">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>5</DigitTwo>
-					</EntityTypeCode>
-				</EntityType>
-			</EntityTypes>
-		</Entity>
-
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>5</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+      </EntityTypes>
+    </Entity>
     <Entity ID="CIVILIAN" Label="Civilian" LabelAlias="Civilian (Sea Subsurface)" Graphic="35120000.svg">
-			<EntityCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>2</DigitTwo>
-			</EntityCode>
-
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </EntityCode>
       <EntityTypes>
-				<EntityType ID="SUBMERSIBLE_CIV" Label="Submersible" Graphic="35120100.svg">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>1</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-				<EntityType ID="AUV_UUV_CIV" Label="Autonomous Underwater Vehicle (AUV)/ Underwater Vehicle (UUV)" LabelAlias="Autonomous Underwater Vehicle (AUV)" Graphic="35120200.svg">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>2</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-				<EntityType ID="DIVER_CIV" Label="Diver" Graphic="35120300.svg">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>3</DigitTwo>
-					</EntityTypeCode>
-				</EntityType>
-			</EntityTypes>
-		</Entity>
-
+        <EntityType ID="SUBMERSIBLE_CIV" Label="Submersible" Graphic="35120100.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="AUV_UUV_CIV" Label="Autonomous Underwater Vehicle (AUV)/ Underwater Vehicle (UUV)" LabelAlias="Autonomous Underwater Vehicle (AUV)" Icon="FULL_OCTAGON" Graphic="35120200.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="DIVER_CIV" Label="Diver" Graphic="35120300.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+      </EntityTypes>
+    </Entity>
     <Entity ID="WEAPON" Label="Weapon" LabelAlias="Weapon (Sea Subsurface)" Graphic="35130000.svg">
-			<EntityCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>3</DigitTwo>
-			</EntityCode>
-
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </EntityCode>
       <EntityTypes>
-				<EntityType ID="TORPEDO" Label="Torpedo" Graphic="35130100.svg">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>1</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-				<EntityType ID="IMPROVISED_EXPLOSIVE_DEVICE_IED" Label="Improvised Explosive Device (IED)" Remarks="Used with hostile standard identity only." Graphic="35130200.svg">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>2</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-				<EntityType ID="DECOY" Label="Decoy" Graphic="35130300.svg">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>3</DigitTwo>
-					</EntityTypeCode>
-				</EntityType>
-			</EntityTypes>
-		</Entity>
-
+        <EntityType ID="TORPEDO" Label="Torpedo" Graphic="35130100.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="IMPROVISED_EXPLOSIVE_DEVICE_IED" Label="Improvised Explosive Device (IED)" Remarks="Used with hostile standard identity only." Graphic="35130200.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="DECOY" Label="Decoy" Graphic="35130300.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+      </EntityTypes>
+    </Entity>
     <Entity ID="ECHO_TRACKER_CLASSIFIER_ETC_POSSIBLE_CONTACT_POSCON" Label="Echo Tracker Classifier (ETC) / Possible Contact (POSCON)" Remarks="All ETC/POSCON tracks shall have a pending standard identity frame." Graphic="35140000.svg">
-			<EntityCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>4</DigitTwo>
-			</EntityCode>
-		</Entity>
-
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </EntityCode>
+    </Entity>
     <Entity ID="FUSED_TRACK" Label="Fused Track" LabelAlias="Fused Track (Sea Subsurface)" Remarks="All fused tracks shall have a pending standard identity frame." Graphic="35150000.svg">
-			<EntityCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>5</DigitTwo>
-			</EntityCode>
-		</Entity>
-
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </EntityCode>
+    </Entity>
     <Entity ID="MANUAL_TRACK" Label="Manual Track" LabelAlias="Manual Track (Sea Subsurface)" Graphic="35160000.svg">
-			<EntityCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>6</DigitTwo>
-			</EntityCode>
-		</Entity>
-	</Entities>
-
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </EntityCode>
+    </Entity>
+  </Entities>
   <SectorOneModifiers>
-		<Modifier ID="ANTISUBMARINE_WARFARE_MOD" Label="Antisubmarine Warfare" LabelAlias="Antisubmarine Warfare (Sea Subsurface)" Category="Mission Area" Graphic="35011.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>1</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-
-    <Modifier ID="AUXILIARY_MOD" Label="Auxiliary" Category="Mission Area" LimitUseTo="SUBMARINE" Graphic="35021.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>2</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-
-    <Modifier ID="COMMAND_AND_CONTROL_MOD" Label="Command and Control" Category="Mission Area" LimitUseTo="SUBMARINE" Graphic="35031.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>3</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-
-    <Modifier ID="INTELLIGENCE_SURVEILLANCE_RECONNAISSANCE_MOD" Label="Intelligence Surveillance Reconnaissance" Category="Mission Area" Graphic="35041.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>4</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-
-    <Modifier ID="MINE_COUNTERMEASURES_MOD" Label="Mine Countermeasures" LabelAlias="Mine Countermeasures (Sea Subsurface)" Category="Mission Area" Graphic="35051.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>5</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-
-    <Modifier ID="MINE_WARFARE_MOD" Label="Mine Warfare" LabelAlias="Mine Warfare (Sea Subsurface)" Category="Mission Area" Graphic="35061.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>6</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-    
-		<Modifier ID="SURFACE_WARFARE_MOD" Label="Surface Warfare" LabelAlias="Surface Warfare (Sea Subsurface)" Category="Mission Area" Graphic="35071.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>7</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-    
-		<Modifier ID="ATTACK_MOD" Label="Attack" Category="Weapons Capability" LimitUseTo="SUBMARINE" Graphic="35081.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>8</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-    
-		<Modifier ID="BALLISTIC_MISSILE_MOD" Label="Ballistic Missile" LabelAlias="Ballistic Missile (Sea Subsurface)" Category="Weapons Capability" LimitUseTo="SUBMARINE" Graphic="35091.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>9</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-    
-		<Modifier ID="GUIDED_MISSILE_MOD" Label="Guided Missile" LabelAlias="Guided Missile (Sea Subsurface)" Category="Weapons Capability" LimitUseTo="SUBMARINE" Graphic="35101.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>0</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-    
-		<Modifier ID="OTHER_GUIDED_MISSILE_MOD" Label="Other Guided Missile" LabelAlias="Other Guided Missile (Sea Subsurface)" Category="Weapons Capability" LimitUseTo="SUBMARINE" Graphic="35111.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>1</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-    
-		<Modifier ID="SPECIAL_OPERATIONS_FORCES_SOF_MOD" Label="Special Operations Forces (SOF)" LabelAlias="SOF (Sea Subsurface)" Category="Asset Capability" LimitUseTo="SUBMARINE" Graphic="35121.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>2</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-    
-		<Modifier ID="POSSIBLE_SUBMARINE_LOW_1_MOD" Label="Possible Submarine Low 1" Category="Submarine Confidence" LimitUseTo="SUBMARINE" Graphic="35131.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>3</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-    
-		<Modifier ID="POSSIBLE_SUBMARINE_LOW_2_MOD" Label="Possible Submarine Low 2" Category="Submarine Confidence" LimitUseTo="SUBMARINE" Graphic="35141.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>4</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-    
-		<Modifier ID="POSSIBLE_SUBMARINE_HIGH_3_MOD" Label="Possible Submarine High 3" Category="Submarine Confidence" LimitUseTo="SUBMARINE" Graphic="35151.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>5</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-    
-		<Modifier ID="POSSIBLE_SUBMARINE_HIGH_4_MOD" Label="Possible Submarine High 4" Category="Submarine Confidence" LimitUseTo="SUBMARINE" Graphic="35161.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>6</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-    
-		<Modifier ID="PROBABLE_SUBMARINE_MOD" Label="Probable Submarine" Category="Submarine Confidence" LimitUseTo="SUBMARINE" Graphic="35171.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>7</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-    
-		<Modifier ID="CERTAIN_SUBMARINE_MOD" Label="Certain Submarine" Category="Submarine Confidence" LimitUseTo="SUBMARINE" Graphic="35181.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>8</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-    
-		<Modifier ID="ANTI_TORPEDO_TORPEDO_MOD" Label="Anti-torpedo Torpedo" Category="Weapons Capability" LimitUseTo="TORPEDO" Graphic="35191.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>9</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-    
-		<Modifier ID="HIJACKING_HIGHJACKED_MOD" Label="Hijacking/Highjacked" Category="Crime" Graphic="35201.svg">
-			<ModifierCode>
-				<DigitOne>2</DigitOne>
-				<DigitTwo>0</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-	</SectorOneModifiers>
-  
-	<SectorTwoModifiers>
-		<Modifier ID="AIR_INDEPENDENT_PROPULSION_MOD" Label="Air Independent Propulsion" Category="Ship Propulsion" LimitUseTo="SUBMARINE" Graphic="35012.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>1</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-    
-		<Modifier ID="DIESEL_ELECTRIC_GENERAL_MOD" Label="Diesel Electric General" Category="Ship Propulsion" LimitUseTo="SUBMARINE" Graphic="35022.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>2</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-    
-		<Modifier ID="DIESEL___TYPE_1_MOD" Label="Diesel - Type 1" Category="Ship Propulsion" LimitUseTo="SUBMARINE" Graphic="35032.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>3</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-    
-		<Modifier ID="DIESEL___TYPE_2_MOD" Label="Diesel - Type 2" Category="Ship Propulsion" LimitUseTo="SUBMARINE" Graphic="35042.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>4</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-    
-		<Modifier ID="DIESEL___TYPE_3_MOD" Label="Diesel - Type 3" Category="Ship Propulsion" LimitUseTo="SUBMARINE" Graphic="35052.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>5</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-    
-		<Modifier ID="NUCLEAR_POWERED_GENERAL_MOD" Label="Nuclear Powered General" Category="Ship Propulsion" LimitUseTo="SUBMARINE" Graphic="35062.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>6</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-    
-		<Modifier ID="NUCLEAR___TYPE_1_MOD" Label="Nuclear - Type 1" Category="Ship Propulsion" LimitUseTo="SUBMARINE" Graphic="35072.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>7</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-    
-		<Modifier ID="NUCLEAR___TYPE_2_MOD" Label="Nuclear - Type 2" Category="Ship Propulsion" LimitUseTo="SUBMARINE" Graphic="35082.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>8</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-    
-		<Modifier ID="NUCLEAR___TYPE_3_MOD" Label="Nuclear - Type 3" Category="Ship Propulsion" LimitUseTo="SUBMARINE" Graphic="35092.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>9</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-    
-		<Modifier ID="NUCLEAR___TYPE_4_MOD" Label="Nuclear - Type 4" Category="Ship Propulsion" LimitUseTo="SUBMARINE" Graphic="35102.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>0</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-    
-		<Modifier ID="NUCLEAR___TYPE_5_MOD" Label="Nuclear - Type 5" Category="Ship Propulsion" LimitUseTo="SUBMARINE" Graphic="35112.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>1</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-    
-		<Modifier ID="NUCLEAR___TYPE_6_MOD" Label="Nuclear - Type 6" Category="Ship Propulsion" LimitUseTo="SUBMARINE" Graphic="35122.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>2</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-    
-		<Modifier ID="NUCLEAR___TYPE_7_MOD" Label="Nuclear - Type 7" Category="Ship Propulsion" LimitUseTo="SUBMARINE" Graphic="35132.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>3</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-    
-		<Modifier ID="AUTONOMOUS_CONTROL_MOD" Label="Autonomous Control" Category="UUV Control" LimitUseTo="AUV_UUV" Graphic="35142.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>4</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-    
-		<Modifier ID="REMOTELY_PILOTED_MOD" Label="Remotely Piloted" Category="UUV Control" LimitUseTo="AUV_UUV" Graphic="35152.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>5</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-    
-		<Modifier ID="EXPENDABLE_MOD" Label="Expendable" Category="UUV Control" LimitUseTo="AUV_UUV" Graphic="35162.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>6</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-	</SectorTwoModifiers>
-
+    <Modifier ID="ANTISUBMARINE_WARFARE_MOD" Label="Antisubmarine Warfare" LabelAlias="Antisubmarine Warfare (Sea Subsurface)" Graphic="35011.svg" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="AUXILIARY_MOD" Label="Auxiliary" Graphic="35021.svg" Category="Mission Area" LimitUseTo="SUBMARINE">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="COMMAND_AND_CONTROL_MOD" Label="Command and Control" Graphic="35031.svg" Category="Mission Area" LimitUseTo="SUBMARINE">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="INTELLIGENCE_SURVEILLANCE_RECONNAISSANCE_MOD" Label="Intelligence Surveillance Reconnaissance" Graphic="35041.svg" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="MINE_COUNTERMEASURES_MOD" Label="Mine Countermeasures" LabelAlias="Mine Countermeasures (Sea Subsurface)" Graphic="35051.svg" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="MINE_WARFARE_MOD" Label="Mine Warfare" LabelAlias="Mine Warfare (Sea Subsurface)" Graphic="35061.svg" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="SURFACE_WARFARE_MOD" Label="Surface Warfare" LabelAlias="Surface Warfare (Sea Subsurface)" Graphic="35071.svg" Category="Mission Area">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ATTACK_MOD" Label="Attack" Graphic="35081.svg" Category="Weapons Capability" LimitUseTo="SUBMARINE">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="BALLISTIC_MISSILE_MOD" Label="Ballistic Missile" LabelAlias="Ballistic Missile (Sea Subsurface)" Graphic="35091.svg" Category="Weapons Capability" LimitUseTo="SUBMARINE">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="GUIDED_MISSILE_MOD" Label="Guided Missile" LabelAlias="Guided Missile (Sea Subsurface)" Graphic="35101.svg" Category="Weapons Capability" LimitUseTo="SUBMARINE">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OTHER_GUIDED_MISSILE_MOD" Label="Other Guided Missile" LabelAlias="Other Guided Missile (Sea Subsurface)" Graphic="35111.svg" Category="Weapons Capability" LimitUseTo="SUBMARINE">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="SPECIAL_OPERATIONS_FORCES_SOF_MOD" Label="Special Operations Forces (SOF)" LabelAlias="SOF (Sea Subsurface)" Graphic="35121.svg" Category="Asset Capability" LimitUseTo="SUBMARINE">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="POSSIBLE_SUBMARINE_LOW_1_MOD" Label="Possible Submarine Low 1" Graphic="35131.svg" Category="Submarine Confidence" LimitUseTo="SUBMARINE">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="POSSIBLE_SUBMARINE_LOW_2_MOD" Label="Possible Submarine Low 2" Graphic="35141.svg" Category="Submarine Confidence" LimitUseTo="SUBMARINE">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="POSSIBLE_SUBMARINE_HIGH_3_MOD" Label="Possible Submarine High 3" Graphic="35151.svg" Category="Submarine Confidence" LimitUseTo="SUBMARINE">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="POSSIBLE_SUBMARINE_HIGH_4_MOD" Label="Possible Submarine High 4" Graphic="35161.svg" Category="Submarine Confidence" LimitUseTo="SUBMARINE">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="PROBABLE_SUBMARINE_MOD" Label="Probable Submarine" Graphic="35171.svg" Category="Submarine Confidence" LimitUseTo="SUBMARINE">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="CERTAIN_SUBMARINE_MOD" Label="Certain Submarine" Graphic="35181.svg" Category="Submarine Confidence" LimitUseTo="SUBMARINE">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ANTI_TORPEDO_TORPEDO_MOD" Label="Anti-torpedo Torpedo" Graphic="35191.svg" Category="Weapons Capability" LimitUseTo="TORPEDO">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="HIJACKING_HIGHJACKED_MOD" Label="Hijacking/Highjacked" Graphic="35201.svg" Category="Crime">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+  </SectorOneModifiers>
+  <SectorTwoModifiers>
+    <Modifier ID="AIR_INDEPENDENT_PROPULSION_MOD" Label="Air Independent Propulsion" Graphic="35012.svg" Category="Ship Propulsion" LimitUseTo="SUBMARINE">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="DIESEL_ELECTRIC_GENERAL_MOD" Label="Diesel Electric General" Graphic="35022.svg" Category="Ship Propulsion" LimitUseTo="SUBMARINE">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="DIESEL___TYPE_1_MOD" Label="Diesel - Type 1" Graphic="35032.svg" Category="Ship Propulsion" LimitUseTo="SUBMARINE">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="DIESEL___TYPE_2_MOD" Label="Diesel - Type 2" Graphic="35042.svg" Category="Ship Propulsion" LimitUseTo="SUBMARINE">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="DIESEL___TYPE_3_MOD" Label="Diesel - Type 3" Graphic="35052.svg" Category="Ship Propulsion" LimitUseTo="SUBMARINE">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="NUCLEAR_POWERED_GENERAL_MOD" Label="Nuclear Powered General" Graphic="35062.svg" Category="Ship Propulsion" LimitUseTo="SUBMARINE">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="NUCLEAR___TYPE_1_MOD" Label="Nuclear - Type 1" Graphic="35072.svg" Category="Ship Propulsion" LimitUseTo="SUBMARINE">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="NUCLEAR___TYPE_2_MOD" Label="Nuclear - Type 2" Graphic="35082.svg" Category="Ship Propulsion" LimitUseTo="SUBMARINE">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="NUCLEAR___TYPE_3_MOD" Label="Nuclear - Type 3" Graphic="35092.svg" Category="Ship Propulsion" LimitUseTo="SUBMARINE">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="NUCLEAR___TYPE_4_MOD" Label="Nuclear - Type 4" Graphic="35102.svg" Category="Ship Propulsion" LimitUseTo="SUBMARINE">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="NUCLEAR___TYPE_5_MOD" Label="Nuclear - Type 5" Graphic="35112.svg" Category="Ship Propulsion" LimitUseTo="SUBMARINE">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="NUCLEAR___TYPE_6_MOD" Label="Nuclear - Type 6" Graphic="35122.svg" Category="Ship Propulsion" LimitUseTo="SUBMARINE">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="NUCLEAR___TYPE_7_MOD" Label="Nuclear - Type 7" Graphic="35132.svg" Category="Ship Propulsion" LimitUseTo="SUBMARINE">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="AUTONOMOUS_CONTROL_MOD" Label="Autonomous Control" Graphic="35142.svg" Category="UUV Control" LimitUseTo="AUV_UUV">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="REMOTELY_PILOTED_MOD" Label="Remotely Piloted" Graphic="35152.svg" Category="UUV Control" LimitUseTo="AUV_UUV">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="EXPENDABLE_MOD" Label="Expendable" Graphic="35162.svg" Category="UUV Control" LimitUseTo="AUV_UUV">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+  </SectorTwoModifiers>
   <LegacySymbols>
-    <LegacySymbol ID="OWNTRACK_SYM" Label="Own Track" EntityID="">
-      <LegacyFunctionCode Name="2525C">O-----</LegacyFunctionCode>
-    </LegacySymbol>
-
-    <LegacySymbol ID="SUB_SYM" Label="Submarine" EntityID="MILITARY" EntityTypeID="SUBMARINE">
+    <LegacySymbol ID="MILITARY_SUBMARINE_SYM" Label="S*UPS-----*****" EntityID="MILITARY" EntityTypeID="SUBMARINE">
       <LegacyFunctionCode Name="2525C">S-----</LegacyFunctionCode>
     </LegacySymbol>
-
-    <LegacySymbol ID="SUB_SUR_SYM" Label="Submarine - Surfaced" EntityID="MILITARY" EntityTypeID="SUBMARINE" EntitySubTypeID="SUBMARINE_SURFACED">
-      <LegacyFunctionCode Name="2525C">SF----</LegacyFunctionCode>
-    </LegacySymbol>
-
-    <LegacySymbol ID="SUB_BTM_SYM" Label="Submarine - Bottomed" EntityID="MILITARY" EntityTypeID="SUBMARINE" EntitySubTypeID="SUBMARINE_BOTTOMED">
-      <LegacyFunctionCode Name="2525C">SB----</LegacyFunctionCode>
-    </LegacySymbol>
-
-    <LegacySymbol ID="CERTSUB_SYM" Label="Certain Submarine" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="CERTAIN_SUBMARINE_MOD">
-      <LegacyFunctionCode Name="2525C">SR----</LegacyFunctionCode>
-    </LegacySymbol>
-
-    <LegacySymbol ID="NONSUB_SYM" Label="Nonsubmarine" EntityID="MILITARY" EntityTypeID="NONSUBMARINE">
-      <LegacyFunctionCode Name="2525C">SX----</LegacyFunctionCode>
-    </LegacySymbol>
-
-    <LegacySymbol ID="NUC_SUB_SYM" Label="Nuclear Propulsion" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierTwoID="NUCLEAR_POWERED_GENERAL_MOD">
-      <LegacyFunctionCode Name="2525C">SN----</LegacyFunctionCode>
-    </LegacySymbol>
-
-    <LegacySymbol ID="NUC_SUR_SYM" Label="Nuclear Propulsion - Surfaced" EntityID="MILITARY" EntityTypeID="SUBMARINE" EntitySubTypeID="SUBMARINE_SURFACED" ModifierTwoID="NUCLEAR_POWERED_GENERAL_MOD">
-      <LegacyFunctionCode Name="2525C">SNF---</LegacyFunctionCode>
-    </LegacySymbol>
-
-    <LegacySymbol ID="NUC_SSN_SYM" Label="Nuclear Propulsion - Attack" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="ATTACK_MOD" ModifierTwoID="NUCLEAR_POWERED_GENERAL_MOD" Remarks="SSN">
-      <LegacyFunctionCode Name="2525C">SNA---</LegacyFunctionCode>
-    </LegacySymbol>
-    
-    <LegacySymbol ID="NUC_M_SYM" Label="Nuclear Propulsion - Missile" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="OTHER_GUIDED_MISSILE_MOD" ModifierTwoID="NUCLEAR_POWERED_GENERAL_MOD">
-      <LegacyFunctionCode Name="2525C">SNM---</LegacyFunctionCode>
-    </LegacySymbol>
-
-    <LegacySymbol ID="NUC_SSGN_SYM" Label="Nuclear Propulsion - Guided Missile" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="GUIDED_MISSILE_MOD" ModifierTwoID="NUCLEAR_POWERED_GENERAL_MOD" Remarks="SSGN">
-      <LegacyFunctionCode Name="2525C">SNG---</LegacyFunctionCode>
-    </LegacySymbol>
-
-    <LegacySymbol ID="NUC_SSBN_SYM" Label="Nuclear Propulsion - Ballistic Missile" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="BALLISTIC_MISSILE_MOD" ModifierTwoID="NUCLEAR_POWERED_GENERAL_MOD" Remarks="SSBN">
-      <LegacyFunctionCode Name="2525C">SNB---</LegacyFunctionCode>
-    </LegacySymbol>
-
-    <LegacySymbol ID="CON_SUB_SYM" Label="Conventional Propulsion" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierTwoID="DIESEL_ELECTRIC_GENERAL_MOD">
-      <LegacyFunctionCode Name="2525C">SC----</LegacyFunctionCode>
-    </LegacySymbol>
-
-    <LegacySymbol ID="CON_SUR_SYM" Label="Conventional Propulsion - Surfaced" EntityID="MILITARY" EntityTypeID="SUBMARINE" EntitySubTypeID="SUBMARINE_SURFACED" ModifierTwoID="DIESEL_ELECTRIC_GENERAL_MOD">
-      <LegacyFunctionCode Name="2525C">SCF---</LegacyFunctionCode>
-    </LegacySymbol>
-
-    <LegacySymbol ID="CON_SS_SYM" Label="Conventional Propulsion - Attack" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="ATTACK_MOD" ModifierTwoID="DIESEL_ELECTRIC_GENERAL_MOD" Remarks="SS">
-      <LegacyFunctionCode Name="2525C">SCA---</LegacyFunctionCode>
-    </LegacySymbol>
-
-    <LegacySymbol ID="CON_M_SYM" Label="Conventional Propulsion - Missile" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="OTHER_GUIDED_MISSILE_MOD" ModifierTwoID="DIESEL_ELECTRIC_GENERAL_MOD">
-      <LegacyFunctionCode Name="2525C">SCM---</LegacyFunctionCode>
-    </LegacySymbol>
-
-    <LegacySymbol ID="CON_SSG_SYM" Label="Conventional Propulsion - Guided Missile" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="GUIDED_MISSILE_MOD" ModifierTwoID="DIESEL_ELECTRIC_GENERAL_MOD" Remarks="SSG">
-      <LegacyFunctionCode Name="2525C">SCG---</LegacyFunctionCode>
-    </LegacySymbol>
-
-    <LegacySymbol ID="CON_SSB_SYM" Label="Conventional Propulsion - Ballistic Missile" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="BALLISTIC_MISSILE_MOD" ModifierTwoID="DIESEL_ELECTRIC_GENERAL_MOD" Remarks="SSB">
-      <LegacyFunctionCode Name="2525C">SCB---</LegacyFunctionCode>
-    </LegacySymbol>
-
-    <LegacySymbol ID="OTH_SUB_SYM" Label="Other Submersible" EntityID="MILITARY" EntityTypeID="OTHER_SUBMERSIBLE">
-      <LegacyFunctionCode Name="2525C">SO----</LegacyFunctionCode>
-    </LegacySymbol>
-
-    <LegacySymbol ID="OTH_SUB_SUR_SYM" Label="Other Submersible - Surfaced" EntityID="MILITARY" EntityTypeID="OTHER_SUBMERSIBLE">
-      <LegacyFunctionCode Name="2525C">OF----</LegacyFunctionCode>
-    </LegacySymbol>
-
-    <LegacySymbol ID="UUV__SYM" Label="Unmanned Underwater Vehicle (UUV)" EntityID="MILITARY" EntityTypeID="AUV_UUV">
-      <LegacyFunctionCode Name="2525C">SU----</LegacyFunctionCode>
-    </LegacySymbol>
-
-    <LegacySymbol ID="UUV_MIW_SYM" Label="Unmanned Underwater Vehicle (UUV) - Mine Warfare" EntityID="MILITARY" EntityTypeID="AUV_UUV" ModifierOneID="MINE_WARFARE_MOD">
-      <LegacyFunctionCode Name="2525C">SUM---</LegacyFunctionCode>
-    </LegacySymbol>
-
-    <LegacySymbol ID="UUV_ASW_SYM" Label="Unmanned Underwater Vehicle (UUV) - Antisubmarine Warfare" EntityID="MILITARY" EntityTypeID="AUV_UUV" ModifierOneID="ANTISUBMARINE_WARFARE_MOD">
-      <LegacyFunctionCode Name="2525C">SUS---</LegacyFunctionCode>
-    </LegacySymbol>
-
-    <LegacySymbol ID="UUV_SUW_SYM" Label="Unmanned Underwater Vehicle (UUV) - Antisurface Warfare" EntityID="MILITARY" EntityTypeID="AUV_UUV" ModifierOneID="SURFACE_WARFARE_MOD">
-      <LegacyFunctionCode Name="2525C">SUN---</LegacyFunctionCode>
-    </LegacySymbol>
-
-    <LegacySymbol ID="POSS_SUB_1_SYM" Label="Possible Submarine - 1" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="POSSIBLE_SUBMARINE_LOW_1_MOD">
+    <LegacySymbol ID="MILITARY_SUBMARINE_POSSIBLE_SUBMARINE_LOW_1_MOD_SYM" Label="S*UPS1----*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="POSSIBLE_SUBMARINE_LOW_1_MOD">
       <LegacyFunctionCode Name="2525C">S1----</LegacyFunctionCode>
     </LegacySymbol>
-
-    <LegacySymbol ID="POSS_SUB_2_SYM" Label="Possible Submarine - 2" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="POSSIBLE_SUBMARINE_LOW_2_MOD">
+    <LegacySymbol ID="MILITARY_SUBMARINE_POSSIBLE_SUBMARINE_LOW_2_MOD_SYM" Label="S*UPS2----*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="POSSIBLE_SUBMARINE_LOW_2_MOD">
       <LegacyFunctionCode Name="2525C">S2----</LegacyFunctionCode>
     </LegacySymbol>
-
-    <LegacySymbol ID="POSS_SUB_3_SYM" Label="Possible Submarine - 3" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="POSSIBLE_SUBMARINE_HIGH_3_MOD">
+    <LegacySymbol ID="MILITARY_SUBMARINE_POSSIBLE_SUBMARINE_HIGH_3_MOD_SYM" Label="S*UPS3----*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="POSSIBLE_SUBMARINE_HIGH_3_MOD">
       <LegacyFunctionCode Name="2525C">S3----</LegacyFunctionCode>
     </LegacySymbol>
-
-    <LegacySymbol ID="POSS_SUB_4_SYM" Label="Possible Submarine - 4" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="POSSIBLE_SUBMARINE_HIGH_4_MOD">
+    <LegacySymbol ID="MILITARY_SUBMARINE_POSSIBLE_SUBMARINE_HIGH_4_MOD_SYM" Label="S*UPS4----*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="POSSIBLE_SUBMARINE_HIGH_4_MOD">
       <LegacyFunctionCode Name="2525C">S4----</LegacyFunctionCode>
     </LegacySymbol>
-
-    <LegacySymbol ID="PROB_SUB_SYM" Label="Probable Submarine" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="PROBABLE_SUBMARINE_MOD">
+    <LegacySymbol ID="MILITARY_SUBMARINE_PROBABLE_SUBMARINE_MOD_SYM" Label="S*UPSL----*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="PROBABLE_SUBMARINE_MOD">
       <LegacyFunctionCode Name="2525C">SL----</LegacyFunctionCode>
     </LegacySymbol>
-
-    <LegacySymbol ID="SUB_SNORK_SYM" Label="Submarine - Snorkeling" EntityID="MILITARY" EntityTypeID="SUBMARINE" EntitySubTypeID="SUBMARINE_SNORKELING">
-      <LegacyFunctionCode Name="2525C">SK----</LegacyFunctionCode>
+    <LegacySymbol ID="MILITARY_SUBMARINE_SUBMARINE_SURFACED_SYM" Label="S*UPSF----*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" EntitySubTypeID="SUBMARINE_SURFACED">
+      <LegacyFunctionCode Name="2525C">SF----</LegacyFunctionCode>
     </LegacySymbol>
-
-    <LegacySymbol ID="WEAPON_SYM" Label="Underwater Weapon" EntityID="WEAPON">
+    <LegacySymbol ID="MILITARY_SUBMARINE_SUBMARINE_SURFACED_CERTAIN_SUBMARINE_MOD_SYM" Label="S*UPSR----*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" EntitySubTypeID="SUBMARINE_SURFACED" ModifierOneID="CERTAIN_SUBMARINE_MOD">
+      <LegacyFunctionCode Name="2525C">SR----</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="MILITARY_SUBMARINE_SUBMARINE_BOTTOMED_SYM" Label="S*UPSB----*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" EntitySubTypeID="SUBMARINE_BOTTOMED">
+      <LegacyFunctionCode Name="2525C">SB----</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="MILITARY_OTHER_SUBMERSIBLE_SYM" Label="S*UPSO----*****" EntityID="MILITARY" EntityTypeID="OTHER_SUBMERSIBLE">
+      <LegacyFunctionCode Name="2525C">SO----</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="MILITARY_NONSUBMARINE_SYM" Label="S*UPSX----*****" EntityID="MILITARY" EntityTypeID="NONSUBMARINE">
+      <LegacyFunctionCode Name="2525C">SX----</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="MILITARY_AUV_UUV_SYM" Label="S*UPSU----*****" EntityID="MILITARY" EntityTypeID="AUV_UUV">
+      <LegacyFunctionCode Name="2525C">SU----</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="MILITARY_AUV_UUV_ANTISUBMARINE_WARFARE_MOD_SYM" Label="S*UPSUS---*****" EntityID="MILITARY" EntityTypeID="AUV_UUV" ModifierOneID="ANTISUBMARINE_WARFARE_MOD">
+      <LegacyFunctionCode Name="2525C">SUS---</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="CIVILIAN_DIVER_CIV_SYM" Label="S*UPND----*****" EntityID="CIVILIAN" EntityTypeID="DIVER_CIV">
+      <LegacyFunctionCode Name="2525C">ND----</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="WEAPON_SYM" Label="S*UPW-----*****" EntityID="WEAPON">
       <LegacyFunctionCode Name="2525C">W-----</LegacyFunctionCode>
     </LegacySymbol>
-
-    <LegacySymbol ID="TORPEDO_SYM" Label="Torpedo" EntityID="WEAPON" EntityTypeID="TORPEDO">
+    <LegacySymbol ID="WEAPON_TORPEDO_SYM" Label="S*UPWT----*****" EntityID="WEAPON" EntityTypeID="TORPEDO">
       <LegacyFunctionCode Name="2525C">WT----</LegacyFunctionCode>
     </LegacySymbol>
-
-    <LegacySymbol ID="DECOY_SYM" Label="Underwater Decoy" EntityID="WEAPON" EntityTypeID="DECOY">
-      <LegacyFunctionCode Name="2525C">ND----</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525B">WD----</LegacyFunctionCode>
+    <LegacySymbol ID="WEAPON_DECOY_SYM" Label="S*UPWD----*****" EntityID="WEAPON" EntityTypeID="DECOY">
+      <LegacyFunctionCode Name="2525C">WD----</LegacyFunctionCode>
     </LegacySymbol>
-    
-    <LegacySymbol ID="DIVER_SYM" Label="Diver" EntityID="MILITARY" EntityTypeID="DIVER">
-      <LegacyFunctionCode Name="2525C">ND----</LegacyFunctionCode>
+    <LegacySymbol ID="RETIRED_SYM" Label="S*UP------*****" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C">------</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="MILITARY_SUBMARINE_NUCLEAR_POWERED_GENERAL_MOD_SYM" Label="S*UPSN----*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierTwoID="NUCLEAR_POWERED_GENERAL_MOD">
+      <LegacyFunctionCode Name="2525C" Description="Substitute">SN----</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="MILITARY_SUBMARINE_NUCLEAR_POWERED_GENERAL_MOD_SYM" Label="S*UPSNF---*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierTwoID="NUCLEAR_POWERED_GENERAL_MOD">
+      <LegacyFunctionCode Name="2525C" Description="Substitute">SNF---</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="MILITARY_SUBMARINE_NUCLEAR_POWERED_GENERAL_MOD_SYM" Label="S*UPSNA---*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierTwoID="NUCLEAR_POWERED_GENERAL_MOD">
+      <LegacyFunctionCode Name="2525C" Description="Substitute">SNA---</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="MILITARY_SUBMARINE_NUCLEAR_POWERED_GENERAL_MOD_SYM" Label="S*UPSNM---*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierTwoID="NUCLEAR_POWERED_GENERAL_MOD">
+      <LegacyFunctionCode Name="2525C" Description="Substitute">SNM---</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="MILITARY_SUBMARINE_NUCLEAR_POWERED_GENERAL_MOD_SYM" Label="S*UPSNG---*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierTwoID="NUCLEAR_POWERED_GENERAL_MOD">
+      <LegacyFunctionCode Name="2525C" Description="Substitute">SNG---</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="MILITARY_SUBMARINE_NUCLEAR_POWERED_GENERAL_MOD_SYM" Label="S*UPSNB---*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierTwoID="NUCLEAR_POWERED_GENERAL_MOD">
+      <LegacyFunctionCode Name="2525C" Description="Substitute">SNB---</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="MILITARY_SUBMARINE_DIESEL_ELECTRIC_GENERAL_MOD_SYM" Label="S*UPSC----*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierTwoID="DIESEL_ELECTRIC_GENERAL_MOD">
+      <LegacyFunctionCode Name="2525C" Description="Substitute">SC----</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="MILITARY_SUBMARINE_DIESEL_ELECTRIC_GENERAL_MOD_SYM" Label="S*UPSCF---*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierTwoID="DIESEL_ELECTRIC_GENERAL_MOD">
+      <LegacyFunctionCode Name="2525C" Description="Substitute">SCF---</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="MILITARY_SUBMARINE_DIESEL_ELECTRIC_GENERAL_MOD_SYM" Label="S*UPSCA---*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierTwoID="DIESEL_ELECTRIC_GENERAL_MOD">
+      <LegacyFunctionCode Name="2525C" Description="Substitute">SCA---</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="MILITARY_SUBMARINE_DIESEL_ELECTRIC_GENERAL_MOD_SYM" Label="S*UPSCM---*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierTwoID="DIESEL_ELECTRIC_GENERAL_MOD">
+      <LegacyFunctionCode Name="2525C" Description="Substitute">SCM---</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="MILITARY_SUBMARINE_DIESEL_ELECTRIC_GENERAL_MOD_SYM" Label="S*UPSCG---*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierTwoID="DIESEL_ELECTRIC_GENERAL_MOD">
+      <LegacyFunctionCode Name="2525C" Description="Substitute">SCG---</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="MILITARY_SUBMARINE_DIESEL_ELECTRIC_GENERAL_MOD_SYM" Label="S*UPSCB---*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierTwoID="DIESEL_ELECTRIC_GENERAL_MOD">
+      <LegacyFunctionCode Name="2525C" Description="Substitute">SCB---</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="MILITARY_SUBMARINE_SUBMARINE_SURFACED_SYM" Label="S*UPSOF---*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" EntitySubTypeID="SUBMARINE_SURFACED">
+      <LegacyFunctionCode Name="2525C" Description="Substitute" Remarks="Deleted">SOF---</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="MILITARY_SUBMARINE_SUBMARINE_SNORKELING_SYM" Label="S*UPSK----*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" EntitySubTypeID="SUBMARINE_SNORKELING">
+      <LegacyFunctionCode Name="2525C" Description="Substitute" Remarks="Deleted ">SK----</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="MILITARY_AUV_UUV_SURFACE_WARFARE_MOD_SYM" Label="S*UPSUN--------" EntityID="MILITARY" EntityTypeID="AUV_UUV" ModifierOneID="SURFACE_WARFARE_MOD">
+      <LegacyFunctionCode Name="2525C" Description="Substitute" Remarks="Mod1-Surface Warfare(07)">SUN---</LegacyFunctionCode>
     </LegacySymbol>
   </LegacySymbols>
 </SymbolSet>

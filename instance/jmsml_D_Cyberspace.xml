@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="SS_CYBERSPACE" Label="Cyberspace" DimensionID="AIR SPACE LAND_EQUIPMENT SEA_SURFACE SEA_SUBSURFACE">
+<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="SS_CYBERSPACE" Label="Cyberspace" DimensionID="AIR SPACE LAND_EQUIPMENT SEA_SURFACE SEA_SUBSURFACE" Geometry="POINT">
 	<SymbolSetCode>
 		<DigitOne>6</DigitOne>
 		<DigitTwo>0</DigitTwo>
@@ -260,7 +260,7 @@
 				</EntityType>
 			</EntityTypes>
 		</Entity>
-		<Entity ID="EFFECT" Label="Effect" Icon="NA" GeometryType="NA">
+		<Entity ID="EFFECT" Label="Effect" Remarks="There is no symbol associated with this entity." Icon="NA" GeometryType="NA">
 			<EntityCode>
 				<DigitOne>1</DigitOne>
 				<DigitTwo>6</DigitTwo>

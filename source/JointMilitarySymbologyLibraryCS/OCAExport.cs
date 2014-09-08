@@ -36,8 +36,8 @@ namespace JointMilitarySymbologyLibrary
             if (identity != null && dimension != null)
             {
                 code = "0" + Convert.ToString(identity.StandardIdentityCode) +
-                                    Convert.ToString(dimension.DimensionCode.DigitOne) + Convert.ToString(dimension.DimensionCode.DigitTwo) +
-                                    Convert.ToString(status.StatusCode) + "2";
+                             Convert.ToString(dimension.DimensionCode.DigitOne) + Convert.ToString(dimension.DimensionCode.DigitTwo) +
+                             Convert.ToString(status.StatusCode) + "2";
             }
             else
                 code = Convert.ToString(status.StatusCode);
@@ -77,7 +77,8 @@ namespace JointMilitarySymbologyLibrary
                                           LibraryDimension dimension,
                                           LibraryStatus status,
                                           string graphicPath,
-                                          bool omitSource)
+                                          bool omitSource,
+                                          bool omitLegacy)
         {
             // Constructs a string of semicolon delimited tags that users can utilize to search
             // for or find a given OCA.
@@ -95,6 +96,9 @@ namespace JointMilitarySymbologyLibrary
             }
             else
                 result = result + ((status.LabelAlias != "") ? status.LabelAlias.Replace(',', '-') : status.Label.Replace(',', '-')) + ";";
+            
+            if(!omitLegacy)
+                result = result + _configHelper.SIDCIsNA + ";";
 
             if (!omitSource)
                 result = result + graphicPath.Substring(1) + ";";

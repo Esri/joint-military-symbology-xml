@@ -24,16 +24,18 @@ namespace JointMilitarySymbologyLibrary
         // Class designed to export Frame elements as image path, name, category, and tag information
 
         private bool _omitSource = false;
+        private bool _omitLegacy = false;
 
-        public ImageFrameExport(ConfigHelper configHelper, bool omitSource)
+        public ImageFrameExport(ConfigHelper configHelper, bool omitSource, bool omitLegacy)
         {
             _configHelper = configHelper;
             _omitSource = omitSource;
+            _omitLegacy = omitLegacy;
         }
 
         string IFrameExport.Headers
         {
-            get { return "filePath,pointSize,styleItemName,styleItemCategory,styleItemTags,notes"; }
+            get { return "filePath,pointSize,styleItemName,styleItemCategory,styleItemTags,styleItemUniqueId,styleItemGeometryType,notes"; }
         }
 
         string IFrameExport.Line(Librarian librarian, LibraryContext context, LibraryStandardIdentity identity, LibraryDimension dimension, LibraryStatus status)
@@ -67,13 +69,16 @@ namespace JointMilitarySymbologyLibrary
 
                     string itemName = BuildFrameItemName(context, dimension, identity, status);
                     string itemCategory = "Frame";
-                    string itemTags = BuildFrameItemTags(context, identity, dimension, status, graphicPath + "\\" + graphic, _omitSource);
+                    string itemTags = BuildFrameItemTags(context, identity, dimension, status, graphicPath + "\\" + graphic, _omitSource, _omitLegacy);
+                    string itemID = BuildFrameCode(context, identity, dimension, status);
 
                     result = itemRootedPath + "," +
                              Convert.ToString(_configHelper.PointSize) + "," +
                              itemName + "," +
                              itemCategory + "," +
                              itemTags + "," +
+                             itemID + "," +
+                             "Point" + "," +
                              _notes;
                 }
             }

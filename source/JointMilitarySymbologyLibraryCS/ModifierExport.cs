@@ -31,9 +31,19 @@ namespace JointMilitarySymbologyLibrary
             // Constructs a string containing the symbol set and modifier codes for a given
             // set of those objects.
 
-            string code = Convert.ToString(ss.SymbolSetCode.DigitOne) + Convert.ToString(ss.SymbolSetCode.DigitTwo);
+            string code = "";
+
+            if(ss != null)
+            {
+                code = code + Convert.ToString(ss.SymbolSetCode.DigitOne) + Convert.ToString(ss.SymbolSetCode.DigitTwo);
+            }
+
             code = code + Convert.ToString(m.ModifierCode.DigitOne) + Convert.ToString(m.ModifierCode.DigitTwo);
-            code = code + modNumber;
+
+            if (ss != null)
+            {
+                code = code + modNumber;
+            }
 
             return code;
         }
@@ -78,7 +88,11 @@ namespace JointMilitarySymbologyLibrary
             return result;
         }
 
-        protected string BuildModifierItemTags(SymbolSet ss, string modNumber, ModifiersTypeModifier m, bool omitSource)
+        protected string BuildModifierItemTags(SymbolSet ss, 
+                                               string modNumber, 
+                                               ModifiersTypeModifier m, 
+                                               bool omitSource,
+                                               bool omitLegacy)
         {
             // Constructs a string of semicolon delimited tags that users can utilize to search
             // for or find a given symbol.
@@ -88,6 +102,7 @@ namespace JointMilitarySymbologyLibrary
             // type, location of the original graphic file, the code, etc.
 
             string path = "";
+            string typ = "";
             string result = ss.Label.Replace(',', '-');
 
             result = result + ";" + "Modifier " + modNumber;
@@ -97,11 +112,16 @@ namespace JointMilitarySymbologyLibrary
             {
                 case "1":
                     path = _configHelper.GetPath(ss.ID, FindEnum.FindModifierOnes, true);
+                    typ = "MOD1";
                     break;
                 case "2":
                     path = _configHelper.GetPath(ss.ID, FindEnum.FindModifierTwos, true);
+                    typ = "MOD2";
                     break;
             }
+
+            if(!omitLegacy)
+                result = result + _configHelper.SIDCIsNA + ";";
 
             if(!omitSource)
                 result = result + ";" + path + "\\" + m.Graphic;

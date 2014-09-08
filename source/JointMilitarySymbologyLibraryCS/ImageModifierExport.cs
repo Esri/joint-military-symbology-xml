@@ -26,16 +26,18 @@ namespace JointMilitarySymbologyLibrary
         // and the tags associated with that SymbolSet and modifier.
 
         private bool _omitSource = false;
+        private bool _omitLegacy = false;
 
-        public ImageModifierExport(ConfigHelper configHelper, bool omitSource)
+        public ImageModifierExport(ConfigHelper configHelper, bool omitSource, bool omitLegacy)
         {
             _configHelper = configHelper;
             _omitSource = omitSource;
+            _omitLegacy = omitLegacy;
         }
 
         string IModifierExport.Headers
         {
-            get { return "filePath,pointSize,styleItemName,styleItemCategory,styleItemTags,notes"; }
+            get { return "filePath,pointSize,styleItemName,styleItemCategory,styleItemTags,styleItemUniqueId,styleItemGeometryType,notes"; }
         }
 
         string IModifierExport.Line(SymbolSet ss, string modNumber, ModifiersTypeModifier m)
@@ -64,13 +66,16 @@ namespace JointMilitarySymbologyLibrary
 
             string itemName = BuildModifierItemName(ss, modNumber, m);
             string itemCategory = BuildModifierItemCategory(ss, modNumber);
-            string itemTags = BuildModifierItemTags(ss, modNumber, m, _omitSource);
+            string itemTags = BuildModifierItemTags(ss, modNumber, m, _omitSource, _omitLegacy);
+            string itemID = BuildModifierCode(ss, modNumber, m);
 
             result = itemRootedPath + "," +
                      Convert.ToString(_configHelper.PointSize) + "," +
                      itemName + "," +
                      itemCategory + "," +
                      itemTags + "," +
+                     itemID + "," +
+                     "Point" + "," +
                      _notes;
 
             return result;

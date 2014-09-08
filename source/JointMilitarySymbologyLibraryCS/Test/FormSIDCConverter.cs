@@ -107,7 +107,10 @@ namespace Test
         {
             // Change padding for control measures
 
-            if (_symbol.SIDC.SymbolSetCode != "25")
+            if (_symbol.SIDC.SymbolSetCode != "25" &&
+                _symbol.SIDC.SymbolSetCode != "45" &&
+                _symbol.SIDC.SymbolSetCode != "46" &&
+                _symbol.SIDC.SymbolSetCode != "47")
                 pictureBox1.Padding = new Padding(40,0,0,0);
             else
                 pictureBox1.Padding = new Padding(15,0,0,0);

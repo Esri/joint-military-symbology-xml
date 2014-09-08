@@ -30,9 +30,19 @@ namespace JointMilitarySymbologyLibrary
         {
             // Creates the unique idntifier code for a given HQTFFD.
 
-            string code = Convert.ToString(identityGroup.StandardIdentityGroupCode) +
-                          Convert.ToString(dimension.DimensionCode.DigitOne) + Convert.ToString(dimension.DimensionCode.DigitTwo) +
-                          Convert.ToString(hqTFFD.HQTFDummyCode);
+            string code = "";
+
+            if (identityGroup != null)
+            {
+                code = Convert.ToString(identityGroup.StandardIdentityGroupCode);
+            }
+            
+            if(dimension != null)
+            {
+                code = code + Convert.ToString(dimension.DimensionCode.DigitOne) + Convert.ToString(dimension.DimensionCode.DigitTwo);
+            }      
+                    
+            code = code + Convert.ToString(hqTFFD.HQTFDummyCode);
 
             return code;
         }
@@ -55,15 +65,24 @@ namespace JointMilitarySymbologyLibrary
             string result = "";  //"HQTFFD" + _configHelper.DomainSeparator;  // Removed because thought to be redundant
 
             string hqTFFDLabel = (hqTFFD.LabelAlias == "") ? hqTFFD.Label : hqTFFD.LabelAlias;
-            result = result + hqTFFDLabel.Replace(',', '-') + _configHelper.DomainSeparator;
+            result = result + hqTFFDLabel.Replace(',', '-');
 
-            result = result + dimension.Label.Replace(',', '-') + _configHelper.DomainSeparator;
-            result = result + identityGroup.Label.Replace(',', '-');
+            if (identityGroup != null && dimension != null)
+            {
+                result = result + _configHelper.DomainSeparator;
+                result = result + dimension.Label.Replace(',', '-') + _configHelper.DomainSeparator;
+                result = result + identityGroup.Label.Replace(',', '-');
+            }
             
             return result;
         }
 
-        protected string BuildHQTFFDItemTags(LibraryStandardIdentityGroup identityGroup, LibraryDimension dimension, LibraryHQTFDummy hqTFFD, string graphicPath, bool omitSource)
+        protected string BuildHQTFFDItemTags(LibraryStandardIdentityGroup identityGroup,
+                                             LibraryDimension dimension, 
+                                             LibraryHQTFDummy hqTFFD, 
+                                             string graphicPath, 
+                                             bool omitSource,
+                                             bool omitLegacy)
         {
             // Constructs a string of semicolon delimited tags that users can utilize to search
             // for or find a given symbol.
@@ -98,6 +117,9 @@ namespace JointMilitarySymbologyLibrary
                         result = result + ssRef.Label.Replace(',', '-') + ";";
                 }
             }
+
+            if(!omitLegacy)
+                result = result + _configHelper.SIDCIsNA + ";";
 
             if (!omitSource)
                 result = result + graphicPath.Substring(1) + ";";

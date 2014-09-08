@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="SS_SPACE" Label="Space" DimensionID="SPACE">
+<?xml version="1.0"?>
+<SymbolSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="SS_SPACE" Label="Space" DimensionID="SPACE" xmlns="http://disa.mil/JointMilSyML.xsd" Geometry="POINT">
   <SymbolSetCode>
     <DigitOne>0</DigitOne>
     <DigitTwo>5</DigitTwo>
@@ -11,7 +11,6 @@
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
       </EntityCode>
-
       <EntityTypes>
         <EntityType ID="SPACE_VEHICLE" Label="Space Vehicle" Graphic="05110100.svg">
           <EntityTypeCode>
@@ -19,126 +18,108 @@
             <DigitTwo>1</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-
         <EntityType ID="RE_ENTRY_VEHICLE" Label="Re-Entry Vehicle" Graphic="05110200.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-
         <EntityType ID="PLANET_LANDER" Label="Planet Lander" Graphic="05110300.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>3</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-
         <EntityType ID="ORBITER_SHUTTLE" Label="Orbiter Shuttle" Graphic="05110400.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>4</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-
         <EntityType ID="CAPSULE" Label="Capsule" Graphic="05110500.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>5</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-
         <EntityType ID="GENERAL_SATELLITE" Label="Satellite, General" Graphic="05110600.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>6</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-
         <EntityType ID="SATELLITE" Label="Satellite" Graphic="05110700.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>7</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-
         <EntityType ID="ANTISATELLITE_WEAPON" Label="Antisatellite Weapon" Graphic="05110800.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>8</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-
         <EntityType ID="ASTRONOMICAL_SATELLITE" Label="Astronomical Satellite" Graphic="05110900.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>9</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-
         <EntityType ID="BIOSATELLITE" Label="Biosatellite" Graphic="05111000.svg">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>0</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-
         <EntityType ID="COMMUNICATIONS_SATELLITE" Label="Communications Satellite" Graphic="05111100.svg">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>1</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-
         <EntityType ID="EARTH_OBSERVATION_SATELLITE" Label="Earth Observation Satellite" Graphic="05111200.svg">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-
         <EntityType ID="MINIATURIZED_SATELLITE" Label="Miniaturized Satellite" Graphic="05111300.svg">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>3</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-
         <EntityType ID="NAVIGATIONAL_SATELLITE" Label="Navigational Satellite" Graphic="05111400.svg">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>4</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-
         <EntityType ID="RECONNAISSANCE_SATELLITE" Label="Reconnaissance Satellite" Graphic="05111500.svg">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>5</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-
         <EntityType ID="SPACE_STATION" Label="Space Station" Graphic="05111600.svg">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>6</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-
         <EntityType ID="TETHERED_SATELLITE" Label="Tethered Satellite" Graphic="05111700.svg">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>7</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-
         <EntityType ID="WEATHER_SATELLITE" Label="Weather Satellite" Graphic="05111800.svg">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>8</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-
         <EntityType ID="SPACE_LAUNCHED_VEHICLE" Label="Space Launched Vehicle (SLV)" Graphic="05111900.svg">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
@@ -147,13 +128,11 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    
-    <Entity ID ="CIVILIAN" Label="Civilian" LabelAlias="Civilian (Space)" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes." Graphic="05120000.svg">
+    <Entity ID="CIVILIAN" Label="Civilian" LabelAlias="Civilian (Space)" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes." Graphic="05120000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>2</DigitTwo>
       </EntityCode>
-
       <EntityTypes>
         <EntityType ID="CIV_ORBITER_SHUTTLE" Label="Orbiter Shuttle" Graphic="05120100.svg">
           <EntityTypeCode>
@@ -161,77 +140,66 @@
             <DigitTwo>1</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-
         <EntityType ID="CIV_CAPSULE" Label="Capsule" Graphic="05120200.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-
         <EntityType ID="CIV_SATELLITE" Label="Satellite" Graphic="05120300.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>3</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-
         <EntityType ID="CIV_ASTRONOMICAL_SATELLITE" Label="Astronomical Satellite" Graphic="05120400.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>4</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-
         <EntityType ID="CIV_BIOSATELLITE" Label="Biosatellite" Graphic="05120500.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>5</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-
         <EntityType ID="CIV_COMMUNICATIONS_SATELLITE" Label="Communications Satellite" Graphic="05120600.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>6</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-
         <EntityType ID="CIV_EARTH_OBSERVATION_SATELLITE" Label="Earth Observation Satellite" Graphic="05120700.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>7</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-
         <EntityType ID="CIV_MINIATURIZED_SATELLITE" Label="Miniaturized Satellite" Graphic="05120800.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>8</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-
         <EntityType ID="CIV_NAVIGATIONAL_SATELLITE" Label="Navigational Satellite" Graphic="05120900.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>9</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-
         <EntityType ID="CIV_SPACE_STATION" Label="Space Station" Graphic="05121000.svg">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>0</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-
         <EntityType ID="CIV_TETHERED_SATELLITE" Label="Tethered Satellite" Graphic="05121100.svg">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>1</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-
         <EntityType ID="CIV_WEATHER_SATELLITE" Label="Weather Satellite" Graphic="05121200.svg">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
@@ -240,107 +208,88 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-
-    <Entity ID ="MANUAL_TRACK" Label="Manual Track" LabelAlias="Manual Track (Space)" Graphic="05130000.svg" Icon="FULL_OCTAGON">
+    <Entity ID="MANUAL_TRACK" Label="Manual Track" LabelAlias="Manual Track (Space)" Icon="FULL_OCTAGON" Graphic="05130000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>3</DigitTwo>
       </EntityCode>
     </Entity>
   </Entities>
-
   <SectorOneModifiers>
-    <Modifier ID="LEO_MOD" Label="Low Earth Orbit (LEO)" Category="Orbit" Graphic="05011.svg">
+    <Modifier ID="LEO_MOD" Label="Low Earth Orbit (LEO)" Graphic="05011.svg" Category="Orbit">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-
-    <Modifier ID="MEO_MOD" Label="Medium Earth Orbit (MEO)" Category="Orbit" Graphic="05021.svg">
+    <Modifier ID="MEO_MOD" Label="Medium Earth Orbit (MEO)" Graphic="05021.svg" Category="Orbit">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-
-    <Modifier ID="HEO_MOD" Label="High Earth Orbit (HEO)" Category="Orbit" Graphic="05031.svg">
+    <Modifier ID="HEO_MOD" Label="High Earth Orbit (HEO)" Graphic="05031.svg" Category="Orbit">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-
-    <Modifier ID="GSO_MOD" Label="Geosynchronous Orbit (GSO)" Category="Orbit" Graphic="05041.svg">
+    <Modifier ID="GSO_MOD" Label="Geosynchronous Orbit (GSO)" Graphic="05041.svg" Category="Orbit">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-
-    <Modifier ID="GO_MOD" Label="Geostationary Orbit (GO)" Category="Orbit" Graphic="05051.svg">
+    <Modifier ID="GO_MOD" Label="Geostationary Orbit (GO)" Graphic="05051.svg" Category="Orbit">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-
-    <Modifier ID="MO_MOD" Label="Molniya Orbit (MO)" Category="Orbit" Graphic="05061.svg">
+    <Modifier ID="MO_MOD" Label="Molniya Orbit (MO)" Graphic="05061.svg" Category="Orbit">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
   </SectorOneModifiers>
-
   <SectorTwoModifiers>
-    <Modifier ID="OPTICAL_MOD" Label="Optical" Category="Sensor" LimitUseTo="GENERAL_SATELLITE SATELLITE ANTISATELLITEWEAPON ASTRONOMICAL_SATELLITE BIOSATELLITE COMMUNICATIONS_SATELLITE EARTH_OBSERVATION_SATELLITE MINIATURIZED_SATELLITE NAVIGATIONAL_SATELLITE RECONNAISSANCE_SATELLITE TETHERED_SATELLITE WEATHER_SATELLITE CIV_SATELLITE CIV_ASTRONOMICAL_SATELLITE CIV_BIOSATELLITE CIV_COMMUNICATIONS_SATELLITE CIV_EARTH_OBSERVATION_SATELLITE CIV_MINIATURIZED_SATELLITE CIV_NAVIGATIONAL_SATELLITE CIV_TETHERED_SATELLITE CIV_WEATHER_SATELLITE" Graphic="05012.svg">
+    <Modifier ID="OPTICAL_MOD" Label="Optical" Graphic="05012.svg" Category="Sensor" LimitUseTo="GENERAL_SATELLITE SATELLITE ANTISATELLITEWEAPON ASTRONOMICAL_SATELLITE BIOSATELLITE COMMUNICATIONS_SATELLITE EARTH_OBSERVATION_SATELLITE MINIATURIZED_SATELLITE NAVIGATIONAL_SATELLITE RECONNAISSANCE_SATELLITE TETHERED_SATELLITE WEATHER_SATELLITE CIV_SATELLITE CIV_ASTRONOMICAL_SATELLITE CIV_BIOSATELLITE CIV_COMMUNICATIONS_SATELLITE CIV_EARTH_OBSERVATION_SATELLITE CIV_MINIATURIZED_SATELLITE CIV_NAVIGATIONAL_SATELLITE CIV_TETHERED_SATELLITE CIV_WEATHER_SATELLITE">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-
-    <Modifier ID="INFRARED_MOD" Label="Infrared" Category="Sensor" LimitUseTo="GENERAL_SATELLITE SATELLITE ANTISATELLITEWEAPON ASTRONOMICAL_SATELLITE BIOSATELLITE COMMUNICATIONS_SATELLITE EARTH_OBSERVATION_SATELLITE MINIATURIZED_SATELLITE NAVIGATIONAL_SATELLITE RECONNAISSANCE_SATELLITE TETHERED_SATELLITE WEATHER_SATELLITE CIV_SATELLITE CIV_ASTRONOMICAL_SATELLITE CIV_BIOSATELLITE CIV_COMMUNICATIONS_SATELLITE CIV_EARTH_OBSERVATION_SATELLITE CIV_MINIATURIZED_SATELLITE CIV_NAVIGATIONAL_SATELLITE CIV_TETHERED_SATELLITE CIV_WEATHER_SATELLITE" Graphic="05022.svg">
+    <Modifier ID="INFRARED_MOD" Label="Infrared" Graphic="05022.svg" Category="Sensor" LimitUseTo="GENERAL_SATELLITE SATELLITE ANTISATELLITEWEAPON ASTRONOMICAL_SATELLITE BIOSATELLITE COMMUNICATIONS_SATELLITE EARTH_OBSERVATION_SATELLITE MINIATURIZED_SATELLITE NAVIGATIONAL_SATELLITE RECONNAISSANCE_SATELLITE TETHERED_SATELLITE WEATHER_SATELLITE CIV_SATELLITE CIV_ASTRONOMICAL_SATELLITE CIV_BIOSATELLITE CIV_COMMUNICATIONS_SATELLITE CIV_EARTH_OBSERVATION_SATELLITE CIV_MINIATURIZED_SATELLITE CIV_NAVIGATIONAL_SATELLITE CIV_TETHERED_SATELLITE CIV_WEATHER_SATELLITE">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-
-    <Modifier ID="RADAR_MOD" Label="Radar" Category="Sensor" LimitUseTo="GENERAL_SATELLITE SATELLITE ANTISATELLITEWEAPON ASTRONOMICAL_SATELLITE BIOSATELLITE COMMUNICATIONS_SATELLITE EARTH_OBSERVATION_SATELLITE MINIATURIZED_SATELLITE NAVIGATIONAL_SATELLITE RECONNAISSANCE_SATELLITE TETHERED_SATELLITE WEATHER_SATELLITE CIV_SATELLITE CIV_ASTRONOMICAL_SATELLITE CIV_BIOSATELLITE CIV_COMMUNICATIONS_SATELLITE CIV_EARTH_OBSERVATION_SATELLITE CIV_MINIATURIZED_SATELLITE CIV_NAVIGATIONAL_SATELLITE CIV_TETHERED_SATELLITE CIV_WEATHER_SATELLITE" Graphic="05032.svg">
+    <Modifier ID="RADAR_MOD" Label="Radar" Graphic="05032.svg" Category="Sensor" LimitUseTo="GENERAL_SATELLITE SATELLITE ANTISATELLITEWEAPON ASTRONOMICAL_SATELLITE BIOSATELLITE COMMUNICATIONS_SATELLITE EARTH_OBSERVATION_SATELLITE MINIATURIZED_SATELLITE NAVIGATIONAL_SATELLITE RECONNAISSANCE_SATELLITE TETHERED_SATELLITE WEATHER_SATELLITE CIV_SATELLITE CIV_ASTRONOMICAL_SATELLITE CIV_BIOSATELLITE CIV_COMMUNICATIONS_SATELLITE CIV_EARTH_OBSERVATION_SATELLITE CIV_MINIATURIZED_SATELLITE CIV_NAVIGATIONAL_SATELLITE CIV_TETHERED_SATELLITE CIV_WEATHER_SATELLITE">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-
-    <Modifier ID="SIGINT_MOD" Label="Signals Intelligence (SIGINT)" Category="Sensor" LimitUseTo="GENERAL_SATELLITE SATELLITE ANTISATELLITEWEAPON ASTRONOMICAL_SATELLITE BIOSATELLITE COMMUNICATIONS_SATELLITE EARTH_OBSERVATION_SATELLITE MINIATURIZED_SATELLITE NAVIGATIONAL_SATELLITE RECONNAISSANCE_SATELLITE TETHERED_SATELLITE WEATHER_SATELLITE CIV_SATELLITE CIV_ASTRONOMICAL_SATELLITE CIV_BIOSATELLITE CIV_COMMUNICATIONS_SATELLITE CIV_EARTH_OBSERVATION_SATELLITE CIV_MINIATURIZED_SATELLITE CIV_NAVIGATIONAL_SATELLITE CIV_TETHERED_SATELLITE CIV_WEATHER_SATELLITE" Graphic="05042.svg">
+    <Modifier ID="SIGINT_MOD" Label="Signals Intelligence (SIGINT)" Graphic="05042.svg" Category="Sensor" LimitUseTo="GENERAL_SATELLITE SATELLITE ANTISATELLITEWEAPON ASTRONOMICAL_SATELLITE BIOSATELLITE COMMUNICATIONS_SATELLITE EARTH_OBSERVATION_SATELLITE MINIATURIZED_SATELLITE NAVIGATIONAL_SATELLITE RECONNAISSANCE_SATELLITE TETHERED_SATELLITE WEATHER_SATELLITE CIV_SATELLITE CIV_ASTRONOMICAL_SATELLITE CIV_BIOSATELLITE CIV_COMMUNICATIONS_SATELLITE CIV_EARTH_OBSERVATION_SATELLITE CIV_MINIATURIZED_SATELLITE CIV_NAVIGATIONAL_SATELLITE CIV_TETHERED_SATELLITE CIV_WEATHER_SATELLITE">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
   </SectorTwoModifiers>
-
   <LegacySymbols>
-    <LegacySymbol ID="SPACE_SYM" Label="Space" Remarks="Retired">
+    <LegacySymbol ID="MILITARY_SYM" Label="S*PP------*****" EntityID="MILITARY">
       <LegacyFunctionCode Name="2525C">------</LegacyFunctionCode>
     </LegacySymbol>
-    
-    <LegacySymbol ID="SHUTTLE_SYM" Label="Crewed Space Vehicle" EntityID="MILITARY" EntityTypeID="SPACE_VEHICLE" Remarks="Retired">
-      <LegacyFunctionCode Name="2525C">V-----</LegacyFunctionCode>
-    </LegacySymbol>
-    
-    <LegacySymbol ID="SATELLITE_SYM" Label="Satellite" EntityID="MILITARY" EntityTypeID="SATELLITE">
+    <LegacySymbol ID="MILITARY_SATELLITE_SYM" Label="S*PPS-----*****" EntityID="MILITARY" EntityTypeID="SATELLITE">
       <LegacyFunctionCode Name="2525C">S-----</LegacyFunctionCode>
     </LegacySymbol>
-
-    <LegacySymbol ID="SPACE_STATION_SYM" Label="Space Station" EntityID="CIVILIAN" EntityTypeID="CIV_SPACE_STATION">
+    <LegacySymbol ID="MILITARY_SPACE_STATION_SYM" Label="S*PPT-----*****" EntityID="MILITARY" EntityTypeID="SPACE_STATION">
       <LegacyFunctionCode Name="2525C">T-----</LegacyFunctionCode>
     </LegacySymbol>
-
-    <LegacySymbol ID="SLV_SYM" Label="Space Launched Vehicle (SLV)" EntityID="MILITARY" EntityTypeID="SPACE_LAUNCHED_VEHICLE">
+    <LegacySymbol ID="MILITARY_SPACE_LAUNCHED_VEHICLE_SYM" Label="S*PPL-----*****" EntityID="MILITARY" EntityTypeID="SPACE_LAUNCHED_VEHICLE">
       <LegacyFunctionCode Name="2525C">L-----</LegacyFunctionCode>
     </LegacySymbol>
   </LegacySymbols>

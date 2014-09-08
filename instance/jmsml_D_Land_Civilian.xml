@@ -1,242 +1,294 @@
-<?xml version="1.0" encoding="utf-8"?>
-<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="SS_LAND_CIVILIAN" Label="Land Civilian" DimensionID="LAND_UNIT">
-	<SymbolSetCode>
-		<DigitOne>1</DigitOne>
-		<DigitTwo>1</DigitTwo>
-	</SymbolSetCode>
-	<LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
-	<Entities>
-		<Entity ID="CIVILIAN" Label="Civilian" LabelAlias="Civilian (Land Civilian)" Graphic="11110000.svg">
-			<EntityCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>1</DigitTwo>
-			</EntityCode>
-			<EntityTypes>
-				<EntityType ID="ENVIRONMENTAL_PROTECTION" Label="Environmental Protection" Graphic="11110100.svg">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>1</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-				<EntityType ID="GOVERNMENT_ORGANIZATION" Label="Government Organization" Graphic="11110200.svg">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>2</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-				<EntityType ID="INDIVIDUAL" Label="Individual" Graphic="11110300.svg">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>3</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-				<EntityType ID="ORGANIZATION" Label="Organization or Group" Graphic="11110400.svg">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>4</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-				<EntityType ID="KILLING_VICTIM" Label="Killing Victim" Graphic="11110500.svg">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>5</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-				<EntityType ID="KILLING_VICTIMS" Label="Killing Victims" Graphic="11110600.svg">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>6</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-				<EntityType ID="VICTIM_ATTEMPTED_CRIME" Label="Victim of an Attempted Crime" Graphic="11110700.svg">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>7</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-				<EntityType ID="SPY" Label="Spy" Graphic="11110800.svg">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>8</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-				<EntityType ID="COMPOSITE_LOSS" Label="Composite Loss" Graphic="11110900.svg">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>9</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-				<EntityType ID="EMERGENCY_MEDICAL_OPERATION" Label="Emergency Medical Operation" Graphic="11111000.svg" Icon="FULL_OCTAGON">
-					<EntityTypeCode>
-						<DigitOne>1</DigitOne>
-						<DigitTwo>0</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-			</EntityTypes>
-		</Entity>
-	</Entities>
-	<SectorOneModifiers>
-		<Modifier ID="ASSASSINATION_MOD" Label="Assassination" LabelAlias="Assassination (Land Civilian)" Category="Crime" Graphic="11011.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>1</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="EXECUTION_MOD" Label="Execution (Wrongful Killing)" LabelAlias="Execution (Wrongful Killing) (Land Civilian)" Category="Crime" Graphic="11021.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>2</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="MURDER_VICTIMS_MOD" Label="Murder Victims" Category="Crime" Graphic="11031.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>3</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="HIJACKING_MOD" Label="Hijacking" LabelAlias="Hijacking (Land Civilian)" Category="Crime" Graphic="11041.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>4</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="KIDNAPPING_MOD" Label="Kidnapping" LabelAlias="Kidnapping (Land Civilian)" Category="Crime" Graphic="11051.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>5</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="PIRACY_MOD" Label="Piracy" LabelAlias="Piracy (Land Civilian)" Category="Crime" Graphic="11061.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>6</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="RAPE_MOD" Label="Rape" LabelAlias="Rape (Land Civilian)" Category="Crime" Graphic="11071.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>7</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="CIVILIAN_MOD" Label="Civilian" LabelAlias="Civilian (Land Civilian)" Category="Organization" Graphic="11081.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>8</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="DISPLACED_MOD" Label="Displaced Person(s), Refugee(s) and Evacuee(s)" Category="Organization" Graphic="11091.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>9</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="FOREIGN_FIGHTER_MOD" Label="Foreign Fighter(s)" Category="Organization" Graphic="11101.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>0</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="GANG_MOD" Label="Gang Member or Gang" Category="Organization" Graphic="11111.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>1</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="GOVERNMENT_ORGANIZATION_MOD" Label="Government Organization" Category="Organization" Graphic="11121.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>2</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="LEADER_1_MOD" Label="Leader or Leadership" LabelAlias="Leader or Leadership 1" Category="Organization" Graphic="11131.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>3</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="NONGOVERNMENTAL_ORGANIZATION_MOD" Label="Nongovernmental Organization Member or Nongovernmental Organization" Category="Organization" Graphic="11141.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>4</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="COERCED_RECRUIT_MOD" Label="Coerced/Impressed Recruit" Category="Organization" Graphic="11151.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>5</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="WILLING_RECRUIT_MOD" Label="Willing Recruit" Category="Organization" Graphic="11161.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>6</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="RELIGIOUS_MOD" Label="Religious or Religious Organization" Category="Organization" Graphic="11171.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>7</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="TARGETED_MOD" Label="Targeted Individual or Organization" Category="Organization" Graphic="11181.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>8</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="TERRORIST_MOD" Label="Terrorist or Terrorist Organization" Category="Organization" Graphic="11191.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>9</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="SPEAKER_MOD" Label="Speaker" Category="Organization" Graphic="11201.svg">
-			<ModifierCode>
-				<DigitOne>2</DigitOne>
-				<DigitTwo>0</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="ACCIDENT_MOD" Label="Accident" LabelAlias="Accident (Land Civilian)" Category="Composite Loss" Graphic="11211.svg">
-			<ModifierCode>
-				<DigitOne>2</DigitOne>
-				<DigitTwo>1</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="COMBAT_MOD" Label="Combat" Category="Composite Loss" Graphic="11221.svg">
-			<ModifierCode>
-				<DigitOne>2</DigitOne>
-				<DigitTwo>2</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="OTHER_MOD" Label="Other" LabelAlias="Other (Land Civilian)" Category="Composite Loss" Graphic="11231.svg">
-			<ModifierCode>
-				<DigitOne>2</DigitOne>
-				<DigitTwo>3</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="LOOT_MOD" Label="Loot" Category="Crime" Graphic="11241.svg">
-			<ModifierCode>
-				<DigitOne>2</DigitOne>
-				<DigitTwo>4</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-	</SectorOneModifiers>
-	<SectorTwoModifiers>
-		<Modifier ID="LEADER_2_MOD" Label="Leader or Leadership" LabelAlias="Leader or Leadership 2" Category="Organization" Graphic="11012.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>1</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-	</SectorTwoModifiers>
+<?xml version="1.0"?>
+<SymbolSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="SS_LAND_CIVILIAN" Label="Land Civilian" DimensionID="LAND_UNIT" xmlns="http://disa.mil/JointMilSyML.xsd" Geometry="POINT">
+  <SymbolSetCode>
+    <DigitOne>1</DigitOne>
+    <DigitTwo>1</DigitTwo>
+  </SymbolSetCode>
+  <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
+  <Entities>
+    <Entity ID="CIVILIAN" Label="Civilian" LabelAlias="Civilian (Land Civilian)" Graphic="11110000.svg">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </EntityCode>
+      <EntityTypes>
+        <EntityType ID="ENVIRONMENTAL_PROTECTION" Label="Environmental Protection" Graphic="11110100.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="GOVERNMENT_ORGANIZATION" Label="Government Organization" Graphic="11110200.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="INDIVIDUAL" Label="Individual" Graphic="11110300.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="ORGANIZATION" Label="Organization or Group" Graphic="11110400.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>4</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="KILLING_VICTIM" Label="Killing Victim" Graphic="11110500.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>5</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="KILLING_VICTIMS" Label="Killing Victims" Graphic="11110600.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>6</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="VICTIM_ATTEMPTED_CRIME" Label="Victim of an Attempted Crime" Graphic="11110700.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>7</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="SPY" Label="Spy" Graphic="11110800.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>8</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="COMPOSITE_LOSS" Label="Composite Loss" Graphic="11110900.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>9</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="EMERGENCY_MEDICAL_OPERATION" Label="Emergency Medical Operation" Graphic="11111000.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>0</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+      </EntityTypes>
+    </Entity>
+  </Entities>
+  <SectorOneModifiers>
+    <Modifier ID="ASSASSINATION_MOD" Label="Assassination" LabelAlias="Assassination (Land Civilian)" Graphic="11011.svg" Category="Crime">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="EXECUTION_MOD" Label="Execution (Wrongful Killing)" LabelAlias="Execution (Wrongful Killing) (Land Civilian)" Graphic="11021.svg" Category="Crime">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="MURDER_VICTIMS_MOD" Label="Murder Victims" Graphic="11031.svg" Category="Crime">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="HIJACKING_MOD" Label="Hijacking" LabelAlias="Hijacking (Land Civilian)" Graphic="11041.svg" Category="Crime">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="KIDNAPPING_MOD" Label="Kidnapping" LabelAlias="Kidnapping (Land Civilian)" Graphic="11051.svg" Category="Crime">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="PIRACY_MOD" Label="Piracy" LabelAlias="Piracy (Land Civilian)" Graphic="11061.svg" Category="Crime">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="RAPE_MOD" Label="Rape" LabelAlias="Rape (Land Civilian)" Graphic="11071.svg" Category="Crime">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="CIVILIAN_MOD" Label="Civilian" LabelAlias="Civilian (Land Civilian)" Graphic="11081.svg" Category="Organization">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="DISPLACED_MOD" Label="Displaced Person(s), Refugee(s) and Evacuee(s)" Graphic="11091.svg" Category="Organization">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="FOREIGN_FIGHTER_MOD" Label="Foreign Fighter(s)" Graphic="11101.svg" Category="Organization">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="GANG_MOD" Label="Gang Member or Gang" Graphic="11111.svg" Category="Organization">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="GOVERNMENT_ORGANIZATION_MOD" Label="Government Organization" Graphic="11121.svg" Category="Organization">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="LEADER_1_MOD" Label="Leader or Leadership" LabelAlias="Leader or Leadership 1" Graphic="11131.svg" Category="Organization">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="NONGOVERNMENTAL_ORGANIZATION_MOD" Label="Nongovernmental Organization Member or Nongovernmental Organization" Graphic="11141.svg" Category="Organization">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="COERCED_RECRUIT_MOD" Label="Coerced/Impressed Recruit" Graphic="11151.svg" Category="Organization">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="WILLING_RECRUIT_MOD" Label="Willing Recruit" Graphic="11161.svg" Category="Organization">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="RELIGIOUS_MOD" Label="Religious or Religious Organization" Graphic="11171.svg" Category="Organization">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="TARGETED_MOD" Label="Targeted Individual or Organization" Graphic="11181.svg" Category="Organization">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="TERRORIST_MOD" Label="Terrorist or Terrorist Organization" Graphic="11191.svg" Category="Organization">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="SPEAKER_MOD" Label="Speaker" Graphic="11201.svg" Category="Organization">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ACCIDENT_MOD" Label="Accident" LabelAlias="Accident (Land Civilian)" Graphic="11211.svg" Category="Composite Loss">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="COMBAT_MOD" Label="Combat" Graphic="11221.svg" Category="Composite Loss">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OTHER_MOD" Label="Other" LabelAlias="Other (Land Civilian)" Graphic="11231.svg" Category="Composite Loss">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="LOOT_MOD" Label="Loot" Graphic="11241.svg" Category="Crime">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+  </SectorOneModifiers>
+  <SectorTwoModifiers>
+    <Modifier ID="LEADER_2_MOD" Label="Leader or Leadership" LabelAlias="Leader or Leadership 2" Graphic="11012.svg" Category="Organization">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+  </SectorTwoModifiers>
+  <LegacySymbols>
+    <LegacySymbol ID="CIVILIAN_INDIVIDUAL_SYM" Label="O*PP------*****" EntityID="CIVILIAN" EntityTypeID="INDIVIDUAL">
+      <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="P">------</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="CIVILIAN_INDIVIDUAL_KIDNAPPING_MOD_SYM" Label="O*OPK-----*****" EntityID="CIVILIAN" EntityTypeID="INDIVIDUAL" ModifierOneID="KIDNAPPING_MOD">
+      <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="O">K-----</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="CIVILIAN_INDIVIDUAL_LEADER_1_MOD_SYM" Label="O*PPA-----*****" EntityID="CIVILIAN" EntityTypeID="INDIVIDUAL" ModifierOneID="LEADER_1_MOD">
+      <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="P">A-----</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="CIVILIAN_INDIVIDUAL_RAPE_MOD_SYM" Label="O*RP------*****" EntityID="CIVILIAN" EntityTypeID="INDIVIDUAL" ModifierOneID="RAPE_MOD">
+      <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="R">------</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="CIVILIAN_INDIVIDUAL_TARGETED_MOD_SYM" Label="O*PPB-----*****" EntityID="CIVILIAN" EntityTypeID="INDIVIDUAL" ModifierOneID="TARGETED_MOD">
+      <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="P">B-----</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="CIVILIAN_INDIVIDUAL_TERRORIST_MOD_SYM" Label="O*PPC-----*****" EntityID="CIVILIAN" EntityTypeID="INDIVIDUAL" ModifierOneID="TERRORIST_MOD">
+      <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="P">C-----</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="CIVILIAN_ORGANIZATION_SYM" Label="O*GP------*****" EntityID="CIVILIAN" EntityTypeID="ORGANIZATION">
+      <LegacyFunctionCode Name="2525C" SchemaOverride="O">------</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="CIVILIAN_ORGANIZATION_DISPLACED_MOD_SYM" Label="O*GPA-----*****" EntityID="CIVILIAN" EntityTypeID="ORGANIZATION" ModifierOneID="DISPLACED_MOD">
+      <LegacyFunctionCode Name="2525C" SchemaOverride="O">A-----</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="CIVILIAN_ORGANIZATION_FOREIGN_FIGHTER_MOD_SYM" Label="O*GPE-----*****" EntityID="CIVILIAN" EntityTypeID="ORGANIZATION" ModifierOneID="FOREIGN_FIGHTER_MOD">
+      <LegacyFunctionCode Name="2525C" SchemaOverride="O">E-----</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="CIVILIAN_ORGANIZATION_GANG_MOD_SYM" Label="O*GPF-----*****" EntityID="CIVILIAN" EntityTypeID="ORGANIZATION" ModifierOneID="GANG_MOD">
+      <LegacyFunctionCode Name="2525C" SchemaOverride="O">F-----</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="CIVILIAN_ORGANIZATION_NONGOVERNMENTAL_ORGANIZATION_MOD_SYM" Label="O*GPB-----*****" EntityID="CIVILIAN" EntityTypeID="ORGANIZATION" ModifierOneID="NONGOVERNMENTAL_ORGANIZATION_MOD">
+      <LegacyFunctionCode Name="2525C" SchemaOverride="O">B-----</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="CIVILIAN_ORGANIZATION_RELIGIOUS_MOD_SYM" Label="O*GPD-----*****" EntityID="CIVILIAN" EntityTypeID="ORGANIZATION" ModifierOneID="RELIGIOUS_MOD">
+      <LegacyFunctionCode Name="2525C" SchemaOverride="O">D-----</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="CIVILIAN_ORGANIZATION_TARGETED_MOD_SYM" Label="O*GPC-----*****" EntityID="CIVILIAN" EntityTypeID="ORGANIZATION" ModifierOneID="TARGETED_MOD">
+      <LegacyFunctionCode Name="2525C" SchemaOverride="O">C-----</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="CIVILIAN_ORGANIZATION_LOOT_MOD_SYM" Label="E*IPBD----*****" EntityID="CIVILIAN" EntityTypeID="ORGANIZATION" ModifierOneID="LOOT_MOD">
+      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="I">BD----</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="CIVILIAN_COMPOSITE_LOSS_SYM" Label="O*OPC-----*****" EntityID="CIVILIAN" EntityTypeID="COMPOSITE_LOSS">
+      <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="O">C-----</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="CIVILIAN_COMPOSITE_LOSS_ACCIDENT_MOD_SYM" Label="O*OPCB----*****" EntityID="CIVILIAN" EntityTypeID="COMPOSITE_LOSS" ModifierOneID="ACCIDENT_MOD">
+      <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="O">CB----</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="CIVILIAN_COMPOSITE_LOSS_COMBAT_MOD_SYM" Label="O*OPCA----*****" EntityID="CIVILIAN" EntityTypeID="COMPOSITE_LOSS" ModifierOneID="COMBAT_MOD">
+      <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="O">CA----</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="CIVILIAN_COMPOSITE_LOSS_OTHER_MOD_SYM" Label="O*OPCC----*****" EntityID="CIVILIAN" EntityTypeID="COMPOSITE_LOSS" ModifierOneID="OTHER_MOD">
+      <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="O">CC----</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="CIVILIAN_EMERGENCY_MEDICAL_OPERATION_SYM" Label="E*OPAA----*****" EntityID="CIVILIAN" EntityTypeID="EMERGENCY_MEDICAL_OPERATION">
+      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">AA----</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="CIVILIAN_ORGANIZATION_SYM" Label="O*IPR-----*****" EntityID="CIVILIAN" EntityTypeID="ORGANIZATION">
+      <LegacyFunctionCode Name="2525C" Description="Repeat" SchemaOverride="O" DimensionOverride="I">R-----</LegacyFunctionCode>
+    </LegacySymbol>
+  </LegacySymbols>
 </SymbolSet>

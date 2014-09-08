@@ -36,13 +36,7 @@ namespace JointMilitarySymbologyLibrary
         {
             string result = "";
 
-            LibraryAffiliation affiliation = librarian.Affiliation(context.ID, dimension.ID, identity.ID);
-
-            if (affiliation != null)
-            {
-                if(affiliation.Shape != ShapeType.NA && (status.StatusCode == 0 || affiliation.PlannedGraphic != ""))
-                    result = BuildFrameItemName(context, dimension, identity, status) + "," + BuildQuotedFrameCode(context, identity, dimension, status);
-            }
+            result = BuildFrameItemName(null, null, identity, null) + "," + BuildQuotedFrameCode(null, identity, null, null);
 
             return result;
         }

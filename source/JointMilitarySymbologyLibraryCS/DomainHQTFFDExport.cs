@@ -34,10 +34,10 @@ namespace JointMilitarySymbologyLibrary
 
         string IHQTFFDExport.Line(LibraryHQTFDummy hqTFFD, LibraryHQTFDummyGraphic graphic)
         {
-            LibraryStandardIdentityGroup identityGroup = _configHelper.Librarian.StandardIdentityGroup(graphic.StandardIdentityGroup);
-            LibraryDimension dimension = _configHelper.Librarian.Dimension(graphic.Dimension);
+            //LibraryStandardIdentityGroup identityGroup = _configHelper.Librarian.StandardIdentityGroup(graphic.StandardIdentityGroup);
+            //LibraryDimension dimension = _configHelper.Librarian.Dimension(graphic.Dimension);
 
-            string result = BuildHQTFFDItemName(identityGroup, dimension, hqTFFD) + "," + BuildQuotedHQTFFDCode(identityGroup, dimension, hqTFFD);
+            string result = BuildHQTFFDItemName(null, null, hqTFFD) + "," + BuildQuotedHQTFFDCode(null, null, hqTFFD);
 
             return result;
         }

@@ -171,6 +171,7 @@
                     </xs:element>
                   </xs:sequence>
                   <xs:attributeGroup ref="IdentifierAttributeGroup"/>
+                  <xs:attribute name="Geometry" type="GeometryType" use="required"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>

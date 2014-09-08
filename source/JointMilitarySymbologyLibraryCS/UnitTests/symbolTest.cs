@@ -171,6 +171,48 @@ namespace UnitTests
         }
 
         /// <summary>
+        ///A test conversion/legacy data for METOC Atmospheric
+        ///</summary>
+        [TestMethod()]
+        public void SIDCTest_ConversionFrom2525C_METOC_Atmos()
+        {
+            Symbol target = _librarian.MakeSymbol("2525C", "WA-DPFC-FY-L---");
+            UInt32 expectedPartA = 1000450000;
+            UInt32 expectedPartB = 1103040000;
+            SIDC actual = target.SIDC;
+            Assert.AreEqual(expectedPartA, actual.PartAUInt);
+            Assert.AreEqual(expectedPartB, actual.PartBUInt);
+        }
+
+        /// <summary>
+        ///A test conversion/legacy data for METOC Oceanographic
+        ///</summary>
+        [TestMethod()]
+        public void SIDCTest_ConversionFrom2525C_METOC_Oceano()
+        {
+            Symbol target = _librarian.MakeSymbol("2525C", "WOS-IITM--P----");
+            UInt32 expectedPartA = 1000460000;
+            UInt32 expectedPartB = 1104010000;
+            SIDC actual = target.SIDC;
+            Assert.AreEqual(expectedPartA, actual.PartAUInt);
+            Assert.AreEqual(expectedPartB, actual.PartBUInt);
+        }
+
+        /// <summary>
+        ///A test conversion/legacy data for METOC Oceanographic
+        ///</summary>
+        [TestMethod()]
+        public void SIDCTest_ConversionFrom2525C_METOC_Oceano_Area()
+        {
+            Symbol target = _librarian.MakeSymbol("2525C", "WO-DHDDA----A--");
+            UInt32 expectedPartA = 1000460000;
+            UInt32 expectedPartB = 1201040000;
+            SIDC actual = target.SIDC;
+            Assert.AreEqual(expectedPartA, actual.PartAUInt);
+            Assert.AreEqual(expectedPartB, actual.PartBUInt);
+        }
+
+        /// <summary>
         ///A test for bad/invalid sidc
         ///</summary>
         [TestMethod()]

@@ -30,7 +30,7 @@ namespace jmsml
         {
             _librarian.IsLogging = true;
 
-            CommandLineArgs.I.parseArgs(args, "/e=false;/+=false;/-source=false;/xas=SIMPLE");
+            CommandLineArgs.I.parseArgs(args, "/e=false;/+=false;/-source=false;/-legacy=false;/xas=SIMPLE;/size=32");
 
             string exportPath = CommandLineArgs.I.argAsString("/xe");
             string exportDomainPath = CommandLineArgs.I.argAsString("/b");
@@ -52,9 +52,17 @@ namespace jmsml
             string ocaPath = CommandLineArgs.I.argAsString("/xo");
             string exportAs = CommandLineArgs.I.argAsString("/xas").ToUpper();
 
+            string exportLegacy = CommandLineArgs.I.argAsString("/xl");
+
+            string legacyDest = CommandLineArgs.I.argAsString("/ild");
+            string legacySrc = CommandLineArgs.I.argAsString("/ils");
+
+            long size = CommandLineArgs.I.argAsLong("/size"); 
+
             bool dataValidation = (CommandLineArgs.I.argAsString("/e") != "false");
             bool appendFiles = (CommandLineArgs.I.argAsString("/+") != "false");
             bool omitSource = (CommandLineArgs.I.argAsString("/-source") != "false");
+            bool omitLegacyTag = (CommandLineArgs.I.argAsString("/-legacy") != "false");
 
             if (help == "/?")
             {
@@ -67,18 +75,23 @@ namespace jmsml
                 Console.WriteLine("/b\t\t\t: Export all coded base domain tables to a folder.");
                 Console.WriteLine("/e\t\t\t: Add data validation when exporting domain tables.");
                 Console.WriteLine("/i\t\t\t: Import raw CSV into stubbed out symbol set XML.");
+                Console.WriteLine("/ild\t\t\t: Import raw legacy data into an existing symbol set XML.");
+                Console.WriteLine("/ils\t\t\t: The source CSV file holding legacy data to be imported.");
                 Console.WriteLine("/l\t\t\t: Export symbols with LINE geometry.");
+                Console.WriteLine("/m\t\t\t: Path to the modifier file created when importing raw CSV.");
                 Console.WriteLine("/p\t\t\t: Export symbols with POINT geometry.");
                 Console.WriteLine("/q=\"<expression>\"\t: Use regular expression to query on labels.");
                 Console.WriteLine("/qc=\"<expression>\"\t: Use regular expression to query on context.");
                 Console.WriteLine("/qd=\"<expression>\"\t: Use regular expression to query on dimension.");
                 Console.WriteLine("/qi=\"<expression>\"\t: Use regular expression to query on standard identity.");
                 Console.WriteLine("/s=\"<expression>\"\t: Use regular expression to query on symbol set labels.");
+                Console.WriteLine("/size=\"<pixels>\": Specify the size for exported image information.");
                 Console.WriteLine("");
                 Console.WriteLine("/xa=\"<pathname>\"\t: Export amplifiers.");
                 Console.WriteLine("/xe=\"<pathname>\"\t: Export entities and modifiers.");
                 Console.WriteLine("/xf=\"<pathname>\"\t: Export frames.");
                 Console.WriteLine("/xh=\"<pathname>\"\t: Export HQ/TF/FD.");
+                Console.WriteLine("/xl=\"<pathname>\"\t: Export legacy data (for testing).");
                 Console.WriteLine("/xo=\"<pathname>\"\t: Export operational condition amplifiers.");
                 Console.WriteLine("/xas=\"<as_option>\"\t: Export as SIMPLE, DOMAIN, or IMAGE.");
                 Console.WriteLine("");
@@ -92,6 +105,11 @@ namespace jmsml
 
             ETLExportEnum _exportThisAs = _exportAsLookup[exportAs];
 
+            if (exportLegacy != "")
+            {
+                _etl.ExportLegacy(exportLegacy);
+            }
+
             if (exportPath != "")
             {
                 _etl.Export(exportPath, symbolSet, query, xPoints == "/p" || xLines == "" && xAreas == "", 
@@ -99,7 +117,9 @@ namespace jmsml
                                                                 xAreas == "/a" || xPoints == "" && xLines == "",
                                                                 _exportThisAs,
                                                                 appendFiles,
-                                                                omitSource);
+                                                                omitSource,
+                                                                omitLegacyTag,
+                                                                size);
             }
 
             if (exportDomainPath != "")
@@ -114,22 +134,27 @@ namespace jmsml
 
             if (framePath != "")
             {
-                _etl.ExportFrames(framePath, contextQuery, identityQuery, dimensionQuery, _exportThisAs, appendFiles, omitSource);
+                _etl.ExportFrames(framePath, contextQuery, identityQuery, dimensionQuery, _exportThisAs, appendFiles, omitSource, omitLegacyTag, size);
             }
 
             if (amplifierPath != "")
             {
-                _etl.ExportAmplifiers(amplifierPath, _exportThisAs, appendFiles, omitSource);
+                _etl.ExportAmplifiers(amplifierPath, _exportThisAs, appendFiles, omitSource, omitLegacyTag, size);
             }
 
             if (hqTFFDPath != "")
             {
-                _etl.ExportHQTFFD(hqTFFDPath, _exportThisAs, appendFiles, omitSource);
+                _etl.ExportHQTFFD(hqTFFDPath, _exportThisAs, appendFiles, omitSource, omitLegacyTag, size);
             }
 
             if (ocaPath != "")
             {
-                _etl.ExportOCA(ocaPath, _exportThisAs, appendFiles, omitSource);
+                _etl.ExportOCA(ocaPath, _exportThisAs, appendFiles, omitSource, omitLegacyTag, size);
+            }
+
+            if (legacySrc != "" && legacyDest != "")
+            {
+                _etl.ImportLegacyData(legacySrc, legacyDest);
             }
         }
 

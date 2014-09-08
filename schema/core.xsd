@@ -55,6 +55,7 @@
       <xs:enumeration value="POINT"/>
       <xs:enumeration value="LINE"/>
       <xs:enumeration value="AREA"/>
+      <xs:enumeration value="MIXED"/>
     </xs:restriction>
   </xs:simpleType>
 
@@ -81,8 +82,13 @@
     <xs:simpleContent>
       <xs:extension base="LegacyTokenType">
         <xs:attributeGroup ref="NameAttributeGroup"/>
-        <xs:attribute name="Schema" type="xs:token" use="optional" default=""/>
-        <xs:attribute name="Dimension" type="xs:token" use="optional" default=""/>
+        <xs:attribute name="SchemaOverride" type="xs:token" use="optional" default=""/>
+        <xs:attribute name="DimensionOverride" type="xs:token" use="optional" default=""/>
+        <xs:attribute name="StandardIdentityOverride" type="xs:token" use="optional" default=""/>
+        <xs:attribute name="StatusOverride" type="xs:token" use="optional" default=""/>
+        <xs:attribute name="HQTFFDOverride" type="xs:token" use="optional" default=""/>
+        <xs:attribute name="AmplifierOverride" type="xs:token" use="optional" default=""/>
+        <xs:attribute name="TailOverride" type="xs:token" use="optional" default=""/>
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
@@ -92,6 +98,8 @@
       <xs:extension base="SingleLetterType">
         <xs:attributeGroup ref="NameAttributeGroup"/>
         <xs:attribute name="FirstFunctionLetter" type="xs:token" use="optional" default=""/>
+        <xs:attribute name="CodingSchemeLetter" type="xs:token" use="optional" default=""/>
+        <xs:attribute name="StandardIdentityOverride" type="xs:token" use="optional" default=""/>
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
