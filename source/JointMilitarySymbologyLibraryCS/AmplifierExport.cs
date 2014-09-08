@@ -32,9 +32,14 @@ namespace JointMilitarySymbologyLibrary
         {
             // Creates the unique idntifier code for a given amplifier.
 
-            string code = Convert.ToString(identityGroup.StandardIdentityGroupCode) +
-                          Convert.ToString(amplifierGroup.AmplifierGroupCode) +
-                          Convert.ToString(amplifier.AmplifierCode);
+            string code = "";
+
+            if (identityGroup != null)
+            {
+                code = Convert.ToString(identityGroup.StandardIdentityGroupCode);
+            }
+
+            code = code + Convert.ToString(amplifierGroup.AmplifierGroupCode) + Convert.ToString(amplifier.AmplifierCode);
 
             return code;
         }
@@ -79,8 +84,13 @@ namespace JointMilitarySymbologyLibrary
             }
 
             //result = result + category + _configHelper.DomainSeparator; //Removed because thought to be redundant
-            result = result + amplifier.Label.Replace(',', '-') + _configHelper.DomainSeparator;
-            result = result + identityGroup.Label.Replace(',', '-') ;
+            result = result + amplifier.Label.Replace(',', '-');
+
+            if (identityGroup != null)
+            {
+                result = result + _configHelper.DomainSeparator;
+                result = result + identityGroup.Label.Replace(',', '-');
+            }
             
             return result;
         }
@@ -89,7 +99,8 @@ namespace JointMilitarySymbologyLibrary
                                                 LibraryAmplifierGroupAmplifier amplifier,
                                                 LibraryStandardIdentityGroup identityGroup,
                                                 string graphicPath,
-                                                bool omitSource)
+                                                bool omitSource,
+                                                bool omitLegacy)
         {
             // Constructs a string of semicolon delimited tags that users can utilize to search
             // for or find a given amplifier.
@@ -133,6 +144,9 @@ namespace JointMilitarySymbologyLibrary
                         result = result + si.Label.Replace(',', '-') + ";";
                 }
             }
+
+            if(!omitLegacy)
+                result = result + _configHelper.SIDCIsNA + ";";
 
             if(!omitSource)
                 result = result + graphicPath.Substring(1) + ";";

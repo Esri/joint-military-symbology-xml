@@ -1,365 +1,412 @@
-<?xml version="1.0" encoding="utf-8"?>
-<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="SS_SIGINT_AIR" Label="Signals Intelligence - Air" DimensionID="AIR">
-	<SymbolSetCode>
-		<DigitOne>5</DigitOne>
-		<DigitTwo>1</DigitTwo>
-	</SymbolSetCode>
-	<LegacyCodingSchemeCode Name="2525C">I</LegacyCodingSchemeCode>
-	<Entities>
-		<Entity ID="SIGNAL_INTERCEPT" Label="Signal Intercept" LabelAlias="Signal Intercept (Air)" Remarks="There is no icon associated with this entity." Icon="NA" GeometryType="NA">
-			<EntityCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>1</DigitTwo>
-			</EntityCode>
-			<EntityTypes>
-				<EntityType ID="COMMUNICATIONS" Label="Communications" Graphic="51110100.svg">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>1</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-				<EntityType ID="JAMMER" Label="Jammer" Graphic="51110200.svg">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>2</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-				<EntityType ID="RADAR" Label="Radar" Graphic="51110300.svg">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>3</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-			</EntityTypes>
-		</Entity>
-	</Entities>
-	<SectorOneModifiers>
-		<Modifier ID="AIRBORNE_SEARCH_AND_BOMBING_MOD" Label="Airborne Search and Bombing" Category="Air Radar" CategoryAlias="Radar" Graphic="51021.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>2</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="AIRBORNE_INTERCEPT_MOD" Label="Airborne Intercept" Category="Air Radar" CategoryAlias="Radar" Graphic="51031.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>3</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="ALTIMETER_MOD" Label="Altimeter" Category="Air Radar" CategoryAlias="Radar" Graphic="51041.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>4</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="AIRBORNE_RECONNAISSANCE_AND_MAPPING_MOD" Label="Airborne Reconnaissance and Mapping" Category="Air Radar" CategoryAlias="Radar" Graphic="51051.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>5</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="AIR_TRAFFIC_CONTROL_MOD" Label="Air Traffic Control" LabelAlias="Air Traffic Control (Air)" Category="Air/Land/Sea Surface Radar" CategoryAlias="Radar" Graphic="51061.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>6</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="BEACON_TRANSPONDER_MOD" Label="Beacon Transponder (not IFF)" LabelAlias="Beacon Transponder (not IFF) (Air)" Category="Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar" Graphic="51071.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>7</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="BATTLEFIELD_SURVEILLANCE_MOD" Label="Battlefield Surveillance" LabelAlias="Battlefield Surveillance (Air)" Category="Air/Land Radar" CategoryAlias="Radar" Graphic="51081.svg">
-			<ModifierCode>
-				<DigitOne>0</DigitOne>
-				<DigitTwo>8</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="CONTROLLED_INTERCEPT_MOD" Label="Controlled Intercept" LabelAlias="Controlled Intercept (Air)" Category="Air/Land/Sea Surface Radar" CategoryAlias="Radar" Graphic="51101.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>0</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="CELLULAR_MOBILE_MOD" Label="Cellular/Mobile" LabelAlias="Cellular/Mobile (Air)" Category="Air/Land/Sea Surface/Subsurface Communications" CategoryAlias="Communications" Graphic="51111.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>1</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="COASTAL_SURVEILLANCE_MOD" Label="Coastal Surveillance" Category="Land Radar" CategoryAlias="Radar" Graphic="51121.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>2</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="DECOY_MIMIC_MOD" Label="Decoy/Mimic" Category="Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar" Graphic="51131.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>3</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="DATA_TRANSMISSION_MOD" Label="Data Transmission" LabelAlias="Data Transmission (Air)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar" Graphic="51141.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>4</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="EARLY_WARNING_MOD" Label="Early Warning" LabelAlias="Early Warning (Air)" Category="Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar" Graphic="51161.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>6</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="FIRE_CONTROL_MOD" Label="Fire Control" LabelAlias="Fire Control (Air)" Category="Air/Land/Sea Surface Radar" CategoryAlias="Radar" Graphic="51171.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>7</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="GROUND_MAPPING_MOD" Label="Ground Mapping" Category="Air Radar" CategoryAlias="Radar" Graphic="51181.svg">
-			<ModifierCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>8</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="IFF_INTERROGATOR_MOD" Label="Identification Friend or Foe (Interrogator)" LabelAlias="Identification Friend or Foe (Interrogator) (Air)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar" Graphic="51211.svg">
-			<ModifierCode>
-				<DigitOne>2</DigitOne>
-				<DigitTwo>1</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="IONOSPHERIC_SOUNDING_MOD" Label="Ionospheric Sounding" LabelAlias="Ionospheric Sounding (Air)" Category="Air/Land Radar" CategoryAlias="Radar" Graphic="51231.svg">
-			<ModifierCode>
-				<DigitOne>2</DigitOne>
-				<DigitTwo>3</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="IFF_TRANSPONDER_MOD" Label="Identification Friend or Foe (Transponder)" LabelAlias="Identification Friend or Foe (Transponder) (Air)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar" Graphic="51241.svg">
-			<ModifierCode>
-				<DigitOne>2</DigitOne>
-				<DigitTwo>4</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="BARRAGE_JAMMER_MOD" Label="Barrage Jammer" LabelAlias="Barrage Jammer (Air)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="51251.svg">
-			<ModifierCode>
-				<DigitOne>2</DigitOne>
-				<DigitTwo>5</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="CLICK_JAMMER_MOD" Label="Click Jammer" LabelAlias="Click Jammer (Air)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="51261.svg">
-			<ModifierCode>
-				<DigitOne>2</DigitOne>
-				<DigitTwo>6</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="DECEPTIVE_JAMMER_MOD" Label="Deceptive Jammer" LabelAlias="Deceptive Jammer (Air)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="51271.svg">
-			<ModifierCode>
-				<DigitOne>2</DigitOne>
-				<DigitTwo>7</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="FREQUENCY_SWEPT_JAMMER_MOD" Label="Frequency Swept Jammer" LabelAlias="Frequency Swept Jammer (Air)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="51281.svg">
-			<ModifierCode>
-				<DigitOne>2</DigitOne>
-				<DigitTwo>8</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="JAMMER_GENERAL_MOD" Label="Jammer (General)" LabelAlias="Jammer (General) (Air)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="51291.svg">
-			<ModifierCode>
-				<DigitOne>2</DigitOne>
-				<DigitTwo>9</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="NOISE_JAMMER_MOD" Label="Noise Jammer" LabelAlias="Noise Jammer (Air)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="51301.svg">
-			<ModifierCode>
-				<DigitOne>3</DigitOne>
-				<DigitTwo>0</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="PULSED_JAMMER_MOD" Label="Pulsed Jammer" LabelAlias="Pulsed Jammer (Air)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="51311.svg">
-			<ModifierCode>
-				<DigitOne>3</DigitOne>
-				<DigitTwo>1</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="REPEATER_JAMMER_MOD" Label="Repeater Jammer" LabelAlias="Repeater Jammer (Air)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="51321.svg">
-			<ModifierCode>
-				<DigitOne>3</DigitOne>
-				<DigitTwo>2</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="SPOT_NOISE_JAMMER_MOD" Label="Spot Noise Jammer" LabelAlias="Spot Noise Jammer (Air)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="51331.svg">
-			<ModifierCode>
-				<DigitOne>3</DigitOne>
-				<DigitTwo>3</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="TRANSPONDER_JAMMER_MOD" Label="Transponder Jammer" LabelAlias="Transponder Jammer (Air)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="51341.svg">
-			<ModifierCode>
-				<DigitOne>3</DigitOne>
-				<DigitTwo>4</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="MISSILE_ACQUISITION_MOD" Label="Missile Acquisition" LabelAlias="Missile Acquisition (Air)" Category="Air/Land/Sea Surface Radar" CategoryAlias="Radar" Graphic="51351.svg">
-			<ModifierCode>
-				<DigitOne>3</DigitOne>
-				<DigitTwo>5</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="MISSILE_CONTROL_MOD" Label="Missile Control" LabelAlias="Missile Control (Air)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar" Graphic="51361.svg">
-			<ModifierCode>
-				<DigitOne>3</DigitOne>
-				<DigitTwo>6</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="MISSILE_DOWNLINK_MOD" Label="Missile Downlink" Category="Air Radar" CategoryAlias="Radar" Graphic="51371.svg">
-			<ModifierCode>
-				<DigitOne>3</DigitOne>
-				<DigitTwo>7</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="METEOROLOGICAL_MOD" Label="Meteorological" LabelAlias="Meteorological (Air)" Category="Air/Land/Sea Surface Radar" CategoryAlias="Radar" Graphic="51381.svg">
-			<ModifierCode>
-				<DigitOne>3</DigitOne>
-				<DigitTwo>8</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="MULTI_FUNCTION_MOD" Label="Multi-Function" LabelAlias="Multi-Function (Air)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="51391.svg">
-			<ModifierCode>
-				<DigitOne>3</DigitOne>
-				<DigitTwo>9</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="MISSILE_GUIDANCE_MOD" Label="Missile Guidance" LabelAlias="Missile Guidance (Air)" Category="Air/Land/Sea Surface Radar" CategoryAlias="Radar" Graphic="51401.svg">
-			<ModifierCode>
-				<DigitOne>4</DigitOne>
-				<DigitTwo>0</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="MISSILE_HOMING_MOD" Label="Missile Homing" Category="Air Radar" CategoryAlias="Radar" Graphic="51411.svg">
-			<ModifierCode>
-				<DigitOne>4</DigitOne>
-				<DigitTwo>1</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="MISSILE_TRACKING_MOD" Label="Missile Tracking" LabelAlias="Missile Tracking (Air)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="51421.svg">
-			<ModifierCode>
-				<DigitOne>4</DigitOne>
-				<DigitTwo>2</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="NAVIGATIONAL_GENERAL_MOD" Label="Navigational/General" LabelAlias="Navigational/General (Air)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="51431.svg">
-			<ModifierCode>
-				<DigitOne>4</DigitOne>
-				<DigitTwo>3</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="NAVIGATIONAL_DISTANCE_MEASURING_EQUIPMENT_MOD" Label="Navigational/Distance Measuring Equipment" LabelAlias="Navigational/Distance Measuring Equipment (Air)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="51441.svg">
-			<ModifierCode>
-				<DigitOne>4</DigitOne>
-				<DigitTwo>4</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="NAVIGATION_TERRAIN_FOLLOWING_MOD" Label="Navigation/Terrain Following" LabelAlias="Navigation/Terrain Following (Air)" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="51451.svg">
-			<ModifierCode>
-				<DigitOne>4</DigitOne>
-				<DigitTwo>5</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="NAVIGATIONAL_WEATHER_AVOIDANCE_MOD" Label="Navigational/Weather Avoidance" LabelAlias="Navigational/Weather Avoidance (Air)" Category="Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer" Graphic="51461.svg">
-			<ModifierCode>
-				<DigitOne>4</DigitOne>
-				<DigitTwo>6</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="OMNI_LOS_MOD" Label="Omni-Line of Sight (LOS)" LabelAlias="Omni-Line of Sight (LOS) (Air)" Category="Space/Air/Land/Sea Surface/Subsurface Communications" CategoryAlias="Communications" Graphic="51471.svg">
-			<ModifierCode>
-				<DigitOne>4</DigitOne>
-				<DigitTwo>7</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="PROXIMITY_FUSE_MOD" Label="Proximity Use" Category="Air Radar" CategoryAlias="Radar" Graphic="51481.svg">
-			<ModifierCode>
-				<DigitOne>4</DigitOne>
-				<DigitTwo>8</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="POINT_POINT_LOS_MOD" Label="Point-to-Point Line of Sight (LOS)" LabelAlias="Point-to-Point Line of Sight (LOS) (Air)" Category="Space/Air/Land/Sea Surface/Subsurface Communications" CategoryAlias="Communications" Graphic="51491.svg">
-			<ModifierCode>
-				<DigitOne>4</DigitOne>
-				<DigitTwo>9</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="INSTRUMENTATION_MOD" Label="Instrumentation" LabelAlias="Instrumentation (Air)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar" Graphic="51501.svg">
-			<ModifierCode>
-				<DigitOne>5</DigitOne>
-				<DigitTwo>0</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="RANGE_ONLY_MOD" Label="Range Only" LabelAlias="Range Only (Air)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar" Graphic="51511.svg">
-			<ModifierCode>
-				<DigitOne>5</DigitOne>
-				<DigitTwo>1</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="SPACE_MOD" Label="Space" LabelAlias="Space (Air)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar" Graphic="51541.svg">
-			<ModifierCode>
-				<DigitOne>5</DigitOne>
-				<DigitTwo>4</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="SURFACE_SEARCH_MOD" Label="Surface Search" LabelAlias="Surface Search (Air)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar" Graphic="51551.svg">
-			<ModifierCode>
-				<DigitOne>5</DigitOne>
-				<DigitTwo>5</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="SATELLITE_UPLINK_MOD" Label="Satellite Uplink" Category="Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar" Graphic="51571.svg">
-			<ModifierCode>
-				<DigitOne>5</DigitOne>
-				<DigitTwo>7</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="TARGET_ACQUISITION_MOD" Label="Target Acquisition" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar" Graphic="51581.svg">
-			<ModifierCode>
-				<DigitOne>5</DigitOne>
-				<DigitTwo>8</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="TARGET_ILLUMINATION_MOD" Label="Target Illumination" LabelAlias="Target Illumination (Air)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar" Graphic="51591.svg">
-			<ModifierCode>
-				<DigitOne>5</DigitOne>
-				<DigitTwo>9</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="TARGET_TRACKING_MOD" Label="Target Tracking" LabelAlias="Target Tracking (Air)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar" Graphic="51611.svg">
-			<ModifierCode>
-				<DigitOne>6</DigitOne>
-				<DigitTwo>1</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="UNKNOWN_MOD" Label="Unknown" LabelAlias="Unknown (Air)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar" Graphic="51621.svg">
-			<ModifierCode>
-				<DigitOne>6</DigitOne>
-				<DigitTwo>2</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="VIDEO_REMOTING_MOD" Label="Video Remoting" LabelAlias="Video Remoting (Air)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar" Graphic="51631.svg">
-			<ModifierCode>
-				<DigitOne>6</DigitOne>
-				<DigitTwo>3</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-		<Modifier ID="EXPERIMENTAL_MOD" Label="Experimental" LabelAlias="Experimental (Air)" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar" Graphic="51641.svg">
-			<ModifierCode>
-				<DigitOne>6</DigitOne>
-				<DigitTwo>4</DigitTwo>
-			</ModifierCode>
-		</Modifier>
-	</SectorOneModifiers>
+<?xml version="1.0"?>
+<SymbolSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="SS_SIGINT_AIR" Label="Signals Intelligence - Air" DimensionID="AIR" xmlns="http://disa.mil/JointMilSyML.xsd" Geometry="POINT">
+  <SymbolSetCode>
+    <DigitOne>5</DigitOne>
+    <DigitTwo>1</DigitTwo>
+  </SymbolSetCode>
+  <LegacyCodingSchemeCode Name="2525C">I</LegacyCodingSchemeCode>
+  <Entities>
+    <Entity ID="SIGNAL_INTERCEPT" Label="Signal Intercept" LabelAlias="Signal Intercept (Air)" Remarks="There is no icon associated with this entity." Icon="NA" GeometryType="NA">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </EntityCode>
+      <EntityTypes>
+        <EntityType ID="COMMUNICATIONS" Label="Communications" Graphic="51110100.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="JAMMER" Label="Jammer" Graphic="51110200.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="RADAR" Label="Radar" Graphic="51110300.svg">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+      </EntityTypes>
+    </Entity>
+  </Entities>
+  <SectorOneModifiers>
+    <Modifier ID="AIRBORNE_SEARCH_AND_BOMBING_MOD" Label="Airborne Search and Bombing" Graphic="51021.svg" Category="Air Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="AIRBORNE_INTERCEPT_MOD" Label="Airborne Intercept" Graphic="51031.svg" Category="Air Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ALTIMETER_MOD" Label="Altimeter" Graphic="51041.svg" Category="Air Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="AIRBORNE_RECONNAISSANCE_AND_MAPPING_MOD" Label="Airborne Reconnaissance and Mapping" Graphic="51051.svg" Category="Air Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="AIR_TRAFFIC_CONTROL_MOD" Label="Air Traffic Control" LabelAlias="Air Traffic Control (Air)" Graphic="51061.svg" Category="Air/Land/Sea Surface Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="BEACON_TRANSPONDER_MOD" Label="Beacon Transponder (not IFF)" LabelAlias="Beacon Transponder (not IFF) (Air)" Graphic="51071.svg" Category="Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="BATTLEFIELD_SURVEILLANCE_MOD" Label="Battlefield Surveillance" LabelAlias="Battlefield Surveillance (Air)" Graphic="51081.svg" Category="Air/Land Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="CONTROLLED_INTERCEPT_MOD" Label="Controlled Intercept" LabelAlias="Controlled Intercept (Air)" Graphic="51101.svg" Category="Air/Land/Sea Surface Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="CELLULAR_MOBILE_MOD" Label="Cellular/Mobile" LabelAlias="Cellular/Mobile (Air)" Graphic="51111.svg" Category="Air/Land/Sea Surface/Subsurface Communications" CategoryAlias="Communications">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="COASTAL_SURVEILLANCE_MOD" Label="Coastal Surveillance" Graphic="51121.svg" Category="Land Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="DECOY_MIMIC_MOD" Label="Decoy/Mimic" Graphic="51131.svg" Category="Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="DATA_TRANSMISSION_MOD" Label="Data Transmission" LabelAlias="Data Transmission (Air)" Graphic="51141.svg" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="EARLY_WARNING_MOD" Label="Early Warning" LabelAlias="Early Warning (Air)" Graphic="51161.svg" Category="Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="FIRE_CONTROL_MOD" Label="Fire Control" LabelAlias="Fire Control (Air)" Graphic="51171.svg" Category="Air/Land/Sea Surface Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="GROUND_MAPPING_MOD" Label="Ground Mapping" Graphic="51181.svg" Category="Air Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="IFF_INTERROGATOR_MOD" Label="Identification Friend or Foe (Interrogator)" LabelAlias="Identification Friend or Foe (Interrogator) (Air)" Graphic="51211.svg" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="IONOSPHERIC_SOUNDING_MOD" Label="Ionospheric Sounding" LabelAlias="Ionospheric Sounding (Air)" Graphic="51231.svg" Category="Air/Land Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="IFF_TRANSPONDER_MOD" Label="Identification Friend or Foe (Transponder)" LabelAlias="Identification Friend or Foe (Transponder) (Air)" Graphic="51241.svg" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="BARRAGE_JAMMER_MOD" Label="Barrage Jammer" LabelAlias="Barrage Jammer (Air)" Graphic="51251.svg" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="CLICK_JAMMER_MOD" Label="Click Jammer" LabelAlias="Click Jammer (Air)" Graphic="51261.svg" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="DECEPTIVE_JAMMER_MOD" Label="Deceptive Jammer" LabelAlias="Deceptive Jammer (Air)" Graphic="51271.svg" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="FREQUENCY_SWEPT_JAMMER_MOD" Label="Frequency Swept Jammer" LabelAlias="Frequency Swept Jammer (Air)" Graphic="51281.svg" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="JAMMER_GENERAL_MOD" Label="Jammer (General)" LabelAlias="Jammer (General) (Air)" Graphic="51291.svg" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="NOISE_JAMMER_MOD" Label="Noise Jammer" LabelAlias="Noise Jammer (Air)" Graphic="51301.svg" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="PULSED_JAMMER_MOD" Label="Pulsed Jammer" LabelAlias="Pulsed Jammer (Air)" Graphic="51311.svg" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="REPEATER_JAMMER_MOD" Label="Repeater Jammer" LabelAlias="Repeater Jammer (Air)" Graphic="51321.svg" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="SPOT_NOISE_JAMMER_MOD" Label="Spot Noise Jammer" LabelAlias="Spot Noise Jammer (Air)" Graphic="51331.svg" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="TRANSPONDER_JAMMER_MOD" Label="Transponder Jammer" LabelAlias="Transponder Jammer (Air)" Graphic="51341.svg" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="MISSILE_ACQUISITION_MOD" Label="Missile Acquisition" LabelAlias="Missile Acquisition (Air)" Graphic="51351.svg" Category="Air/Land/Sea Surface Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="MISSILE_CONTROL_MOD" Label="Missile Control" LabelAlias="Missile Control (Air)" Graphic="51361.svg" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="MISSILE_DOWNLINK_MOD" Label="Missile Downlink" Graphic="51371.svg" Category="Air Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="METEOROLOGICAL_MOD" Label="Meteorological" LabelAlias="Meteorological (Air)" Graphic="51381.svg" Category="Air/Land/Sea Surface Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="MULTI_FUNCTION_MOD" Label="Multi-Function" LabelAlias="Multi-Function (Air)" Graphic="51391.svg" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="MISSILE_GUIDANCE_MOD" Label="Missile Guidance" LabelAlias="Missile Guidance (Air)" Graphic="51401.svg" Category="Air/Land/Sea Surface Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="MISSILE_HOMING_MOD" Label="Missile Homing" Graphic="51411.svg" Category="Air Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="MISSILE_TRACKING_MOD" Label="Missile Tracking" LabelAlias="Missile Tracking (Air)" Graphic="51421.svg" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="NAVIGATIONAL_GENERAL_MOD" Label="Navigational/General" LabelAlias="Navigational/General (Air)" Graphic="51431.svg" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="NAVIGATIONAL_DISTANCE_MEASURING_EQUIPMENT_MOD" Label="Navigational/Distance Measuring Equipment" LabelAlias="Navigational/Distance Measuring Equipment (Air)" Graphic="51441.svg" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="NAVIGATION_TERRAIN_FOLLOWING_MOD" Label="Navigation/Terrain Following" LabelAlias="Navigation/Terrain Following (Air)" Graphic="51451.svg" Category="Space/Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="NAVIGATIONAL_WEATHER_AVOIDANCE_MOD" Label="Navigational/Weather Avoidance" LabelAlias="Navigational/Weather Avoidance (Air)" Graphic="51461.svg" Category="Air/Land/Sea Surface/Subsurface Jammer" CategoryAlias="Jammer">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OMNI_LOS_MOD" Label="Omni-Line of Sight (LOS)" LabelAlias="Omni-Line of Sight (LOS) (Air)" Graphic="51471.svg" Category="Space/Air/Land/Sea Surface/Subsurface Communications" CategoryAlias="Communications">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="PROXIMITY_FUSE_MOD" Label="Proximity Use" Graphic="51481.svg" Category="Air Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="POINT_POINT_LOS_MOD" Label="Point-to-Point Line of Sight (LOS)" LabelAlias="Point-to-Point Line of Sight (LOS) (Air)" Graphic="51491.svg" Category="Space/Air/Land/Sea Surface/Subsurface Communications" CategoryAlias="Communications">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="INSTRUMENTATION_MOD" Label="Instrumentation" LabelAlias="Instrumentation (Air)" Graphic="51501.svg" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>5</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="RANGE_ONLY_MOD" Label="Range Only" LabelAlias="Range Only (Air)" Graphic="51511.svg" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>5</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="SPACE_MOD" Label="Space" LabelAlias="Space (Air)" Graphic="51541.svg" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>5</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="SURFACE_SEARCH_MOD" Label="Surface Search" LabelAlias="Surface Search (Air)" Graphic="51551.svg" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>5</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="SATELLITE_UPLINK_MOD" Label="Satellite Uplink" Graphic="51571.svg" Category="Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>5</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="TARGET_ACQUISITION_MOD" Label="Target Acquisition" Graphic="51581.svg" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>5</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="TARGET_ILLUMINATION_MOD" Label="Target Illumination" LabelAlias="Target Illumination (Air)" Graphic="51591.svg" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>5</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="TARGET_TRACKING_MOD" Label="Target Tracking" LabelAlias="Target Tracking (Air)" Graphic="51611.svg" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>6</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="UNKNOWN_MOD" Label="Unknown" LabelAlias="Unknown (Air)" Graphic="51621.svg" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>6</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="VIDEO_REMOTING_MOD" Label="Video Remoting" LabelAlias="Video Remoting (Air)" Graphic="51631.svg" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>6</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="EXPERIMENTAL_MOD" Label="Experimental" LabelAlias="Experimental (Air)" Graphic="51641.svg" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar">
+      <ModifierCode>
+        <DigitOne>6</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+  </SectorOneModifiers>
+  <LegacySymbols>
+    <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_AIRBORNE_INTERCEPT_MOD_SYM" Label="I*APSRAI----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="AIRBORNE_INTERCEPT_MOD">
+      <LegacyFunctionCode Name="2525C">SRAI--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_AIRBORNE_SEARCH_AND_BOMBING_MOD_SYM" Label="I*APSRAS----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="AIRBORNE_SEARCH_AND_BOMBING_MOD">
+      <LegacyFunctionCode Name="2525C">SRAS--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_CONTROLLED_INTERCEPT_MOD_SYM" Label="I*APSRC-----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="CONTROLLED_INTERCEPT_MOD">
+      <LegacyFunctionCode Name="2525C">SRC---</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_DATA_TRANSMISSION_MOD_SYM" Label="I*APSRD-----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="DATA_TRANSMISSION_MOD">
+      <LegacyFunctionCode Name="2525C">SRD---</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_EARLY_WARNING_MOD_SYM" Label="I*APSRE-----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="EARLY_WARNING_MOD">
+      <LegacyFunctionCode Name="2525C">SRE---</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_FIRE_CONTROL_MOD_SYM" Label="I*APSRF-----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="FIRE_CONTROL_MOD">
+      <LegacyFunctionCode Name="2525C">SRF---</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_IFF_TRANSPONDER_MOD_SYM" Label="I*APSRI-----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="IFF_TRANSPONDER_MOD">
+      <LegacyFunctionCode Name="2525C">SRI---</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_MISSILE_ACQUISITION_MOD_SYM" Label="I*APSRMA----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="MISSILE_ACQUISITION_MOD">
+      <LegacyFunctionCode Name="2525C">SRMA--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_MISSILE_DOWNLINK_MOD_SYM" Label="I*APSRMD----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="MISSILE_DOWNLINK_MOD">
+      <LegacyFunctionCode Name="2525C">SRMD--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_MISSILE_GUIDANCE_MOD_SYM" Label="I*APSRMG----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="MISSILE_GUIDANCE_MOD">
+      <LegacyFunctionCode Name="2525C">SRMG--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_MISSILE_TRACKING_MOD_SYM" Label="I*APSRMT----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="MISSILE_TRACKING_MOD">
+      <LegacyFunctionCode Name="2525C">SRMT--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_MULTI_FUNCTION_MOD_SYM" Label="I*APSRMF----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="MULTI_FUNCTION_MOD">
+      <LegacyFunctionCode Name="2525C">SRMF--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_TARGET_ILLUMINATION_MOD_SYM" Label="I*APSRTI----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="TARGET_ILLUMINATION_MOD">
+      <LegacyFunctionCode Name="2525C">SRTI--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_TARGET_ACQUISITION_MOD_SYM" Label="I*APSRTA----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="TARGET_ACQUISITION_MOD">
+      <LegacyFunctionCode Name="2525C">SRTA--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_TARGET_TRACKING_MOD_SYM" Label="I*APSRTT----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="TARGET_TRACKING_MOD">
+      <LegacyFunctionCode Name="2525C">SRTT--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_UNKNOWN_MOD_SYM" Label="I*APSRU-----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="UNKNOWN_MOD">
+      <LegacyFunctionCode Name="2525C">SRU---</LegacyFunctionCode>
+    </LegacySymbol>
+  </LegacySymbols>
 </SymbolSet>

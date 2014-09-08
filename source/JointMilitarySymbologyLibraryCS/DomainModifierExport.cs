@@ -36,9 +36,10 @@ namespace JointMilitarySymbologyLibrary
 
         string IModifierExport.Line(SymbolSet ss, string modNumber, ModifiersTypeModifier m)
         {
-            string result = BuildModifierItemName(ss, modNumber, m) + ",";
+            string result = BuildModifierItemName(null, modNumber, m) + ",";
 
-            result = result + BuildQuotedModifierCode(ss, modNumber, m);
+            result = result + BuildQuotedModifierCode(null, modNumber, m);
+
             return result;
         }
     }

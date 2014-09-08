@@ -35,10 +35,10 @@ namespace JointMilitarySymbologyLibrary
 
         string IOCAExport.Line(LibraryStatus status, LibraryStatusGraphic statusGraphic)
         {
-            LibraryDimension dimension = _configHelper.Librarian.Dimension(statusGraphic.Dimension);
-            LibraryStandardIdentity identity = _configHelper.Librarian.StandardIdentity(statusGraphic.StandardIdentity);
-
-            string result = BuildOCAItemName(identity, dimension, status) + "," + BuildQuotedOCACode(identity, dimension, status);
+            //LibraryDimension dimension = _configHelper.Librarian.Dimension(statusGraphic.Dimension);
+            //LibraryStandardIdentity identity = _configHelper.Librarian.StandardIdentity(statusGraphic.StandardIdentity);
+            
+            string result = BuildOCAItemName(null, null, status) + "," + BuildQuotedOCACode(null, null, status);
 
             return result;
         }

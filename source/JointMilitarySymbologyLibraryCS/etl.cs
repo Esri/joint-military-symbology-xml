@@ -16,6 +16,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
+using System.Xml.Serialization;
 using NLog;
 using NLog.Config;
 using NLog.Layouts;
@@ -88,7 +89,7 @@ namespace JointMilitarySymbologyLibrary
                                 // If the icon is Full Frame then four lines need to be exported, to reflect the four icon shapes.
                                 // Else just write out one line for non-Full-Frame.
 
-                                if (e.Icon == IconType.FULL_FRAME && exportType != ETLExportEnum.ETLExportSimple)
+                                if (e.Icon == IconType.FULL_FRAME && exportType == ETLExportEnum.ETLExportImage)
                                 {
                                     foreach (LibraryStandardIdentityGroup sig in _library.StandardIdentityGroups)
                                     {
@@ -121,7 +122,7 @@ namespace JointMilitarySymbologyLibrary
                                         // If the icon is Full Frame then four lines need to be exported, to reflect the four icon shapes.
                                         // Else just write out one line for non-Full-Frame.
 
-                                        if (eType.Icon == IconType.FULL_FRAME && exportType != ETLExportEnum.ETLExportSimple)
+                                        if (eType.Icon == IconType.FULL_FRAME && exportType == ETLExportEnum.ETLExportImage)
                                         {
                                             foreach (LibraryStandardIdentityGroup sig in _library.StandardIdentityGroups)
                                             {
@@ -154,7 +155,7 @@ namespace JointMilitarySymbologyLibrary
                                                 // If the icon is Full Frame then four lines need to be exported, to reflect the four icon shapes.
                                                 // Else just write out one line for non-Full-Frame.
 
-                                                if (eSubType.Icon == IconType.FULL_FRAME && exportType != ETLExportEnum.ETLExportSimple)
+                                                if (eSubType.Icon == IconType.FULL_FRAME && exportType == ETLExportEnum.ETLExportImage)
                                                 {
                                                     foreach (LibraryStandardIdentityGroup sig in _library.StandardIdentityGroups)
                                                     {
@@ -185,7 +186,7 @@ namespace JointMilitarySymbologyLibrary
                     {
                         foreach (EntitySubTypeType eSubType in s.SpecialEntitySubTypes)
                         {
-                            if (eSubType.Icon == IconType.FULL_FRAME && exportType != ETLExportEnum.ETLExportSimple)
+                            if (eSubType.Icon == IconType.FULL_FRAME && exportType == ETLExportEnum.ETLExportImage)
                             {
                                 foreach (LibraryStandardIdentityGroup sig in _library.StandardIdentityGroups)
                                 {
@@ -876,6 +877,325 @@ namespace JointMilitarySymbologyLibrary
             w.Flush();
         }
 
+        private SymbolSet _deserializeSymbolSet(string path)
+        {
+            SymbolSet ss = null;
+
+            var serializer = new XmlSerializer(typeof(SymbolSet));
+            using(FileStream reader = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+            {
+                try
+                {
+                    ss = (SymbolSet)serializer.Deserialize(reader);
+                }
+                catch(IOException ex)
+                {
+                    logger.Error(ex.Message);
+                }
+            }
+
+            return ss;
+        }
+
+        private void _serializeSymbolSet(SymbolSet ss, string path)
+        {
+            if(ss != null)
+            {
+                var serializer = new XmlSerializer(typeof(SymbolSet));
+                using (FileStream writer = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.ReadWrite))
+                {
+                    try
+                    {
+                        serializer.Serialize(writer, ss);
+                    }
+                    catch (IOException ex)
+                    {
+                        logger.Error(ex.Message);
+                    }
+                }
+            }
+        }
+
+        private void _importLegacyData(string source, string destination)
+        {
+            if (File.Exists(destination))
+            {
+                SymbolSet ss = _deserializeSymbolSet(destination);
+                LibraryDimension dimension = _librarian.Dimension(ss.DimensionID);
+
+                if (ss != null)
+                {
+                    string code = Convert.ToString(ss.SymbolSetCode.DigitOne) + Convert.ToString(ss.SymbolSetCode.DigitTwo);
+                
+                    if (code != "")
+                    {
+                        // Open the source file for read.
+
+                        if (File.Exists(source))
+                        {
+                            // Lets build a list of legacy symbols to hold the results
+
+                            List<SymbolSetLegacySymbol> legacySymbols = new List<SymbolSetLegacySymbol>();
+
+                            // Now process the input
+
+                            string line = "";
+
+                            using (StreamReader r = new StreamReader(source))
+                            {
+                                while (!r.EndOfStream)
+                                {
+                                    line = r.ReadLine();
+
+                                    string[] tokens = line.Split(',');
+                                    string ssCode = tokens[2];
+                                    string legacyCode = tokens[0];
+                                    string fullLegacyCode = tokens[1];
+
+                                    string mod1Code = tokens[4];
+                                    string mod2Code = tokens[5];
+
+                                    string status = tokens[6];
+                                    string remarks = tokens[7];
+
+                                    // Skip over all rows in the source file that don't match the symbol set code
+                                    // or where the 2525C SIDC field is blank.
+
+                                    if (ssCode == code && legacyCode != "")
+                                    {
+                                        // Extract the six character function code from the current 2525C SIDC.
+
+                                        string functionCode = legacyCode.Substring(legacyCode.Length - 6);
+                                        //string schemaCode = legacyCode.Substring(0, 1);
+                                        //string dimensionCode = legacyCode.Substring(2, 1);
+
+                                        string entityCode = tokens[3];
+
+                                        if (entityCode.Length == 6)
+                                        {
+                                            string eCode = entityCode.Substring(0, 2);
+                                            string etCode = entityCode.Substring(2, 2);
+                                            string estCode = entityCode.Substring(4, 2);
+
+                                            // Now that we have everything, let's find the pieces in the open symbol set
+
+                                            SymbolSetLegacySymbol ls = new SymbolSetLegacySymbol();
+
+                                            // Find the entity, entity type, and entity subtype for the specified SIDC.
+
+                                            SymbolSetEntity entity = _librarian.Entity(ss, Convert.ToUInt16(eCode.Substring(0, 1)), Convert.ToUInt16(eCode.Substring(1, 1)));
+
+                                            if (entity != null)
+                                            {
+                                                ls.EntityID = entity.ID;
+                                                ls.ID = entity.ID;
+
+                                                if (etCode != "00")
+                                                {
+                                                    SymbolSetEntityEntityType eType = _librarian.EntityType(entity, Convert.ToUInt16(etCode.Substring(0, 1)), Convert.ToUInt16(etCode.Substring(1, 1)));
+
+                                                    if (eType != null)
+                                                    {
+                                                        ls.EntityTypeID = eType.ID;
+                                                        ls.ID = ls.ID + "_" + eType.ID;
+
+                                                        if (estCode != "00")
+                                                        {
+                                                            EntitySubTypeType eSubType = _librarian.EntitySubType(eType, Convert.ToUInt16(estCode.Substring(0, 1)), Convert.ToUInt16(estCode.Substring(1, 1)));
+
+                                                            if (eSubType != null)
+                                                            {
+                                                                ls.EntitySubTypeID = eSubType.ID;
+                                                                ls.ID = ls.ID + "_" + eSubType.ID;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+
+                                            // No entities were found, so mark it as retired.
+
+                                            if (ls.ID == null)
+                                            {
+                                                ls.ID = "RETIRED";
+                                                ls.Remarks = "Retired";
+                                            }
+
+                                            // Find the modifier 1 and modifier 2 for the specified SIDC.
+
+                                            if (mod1Code != "" && mod1Code != "00" && mod1Code != "0")
+                                            {
+                                                if (mod1Code.Length == 2)
+                                                {
+                                                    ModifiersTypeModifier mod = _librarian.ModifierOne(ss, Convert.ToUInt16(mod1Code.Substring(0, 1)), Convert.ToUInt16(mod1Code.Substring(1, 1)));
+
+                                                    if (mod != null)
+                                                    {
+                                                        ls.ModifierOneID = mod.ID;
+                                                        ls.ID = ls.ID + "_" + mod.ID;
+                                                    }
+                                                }
+                                            }
+
+                                            if (mod2Code != "" && mod2Code != "00" && mod2Code != "0")
+                                            {
+                                                if(mod2Code.Length == 2)
+                                                {
+                                                    ModifiersTypeModifier mod = _librarian.ModifierTwo(ss, Convert.ToUInt16(mod2Code.Substring(0, 1)), Convert.ToUInt16(mod2Code.Substring(1, 1)));
+
+                                                    if (mod != null)
+                                                    {
+                                                        ls.ModifierTwoID = mod.ID;
+                                                        ls.ID = ls.ID + "_" + mod.ID;
+                                                    }
+                                                }
+                                            }
+
+                                            ls.ID = ls.ID + "_SYM";
+                                            ls.Label = fullLegacyCode;
+
+                                            // Add the legacy function code
+
+                                            LegacyFunctionCodeType lfCode = new LegacyFunctionCodeType();
+                                            lfCode.Name = "2525C";
+
+                                            if (fullLegacyCode.Substring(0, 1) != ss.LegacyCodingSchemeCode[0].Value)
+                                                lfCode.SchemaOverride = fullLegacyCode.Substring(0, 1);
+
+                                            if (fullLegacyCode.Substring(2, 1) != dimension.LegacyDimensionCode[0].Value)
+                                                lfCode.DimensionOverride = fullLegacyCode.Substring(2, 1);
+
+                                            lfCode.Value = functionCode;
+
+                                            if (status != "")
+                                                lfCode.Description = status;
+
+                                            if (remarks != "")
+                                                lfCode.Remarks = remarks;
+
+                                            ls.LegacyFunctionCode = new LegacyFunctionCodeType[] { lfCode };
+
+                                            // Add it to the current legacy symbol set
+
+                                            legacySymbols.Add(ls);
+                                        }
+                                    }
+                                }
+
+                                r.Close();
+                            }
+
+                            // Done processing the input.  If there is anything in our list then add it to the
+                            // symbol set and re-serialize it.  Remove the existing values if they exist.
+
+                            if (legacySymbols.Count > 0)
+                            {
+                                ss.LegacySymbols = legacySymbols.ToArray();
+
+                                // Serialize the symbol set
+
+                                _serializeSymbolSet(ss, destination);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        private void _exportLegacyData(string path)
+        {
+            using (StreamWriter stream = new StreamWriter(path, false))
+            {
+                long passCount = 0;
+                long failCount = 0;
+                long cerrorCount = 0;
+                long derrorCount = 0;
+                long totalCount = 0;
+
+                stream.WriteLine("2525C_In,2525D_First_10,2525D_Second_10,2525C_Out,Status");
+                stream.Flush();
+
+                foreach (SymbolSet ss in _librarian.SymbolSets)
+                {
+                    if (ss.LegacySymbols != null)
+                    {
+                        foreach (SymbolSetLegacySymbol legacy in ss.LegacySymbols)
+                        {
+                            string cSIDCIn = legacy.Label;
+                            string dFirst10 = "";
+                            string dSecond10 = "";
+                            string cSIDCOut = "";
+                            string status = "";
+
+                            totalCount++;
+
+                            // Create a proper 2525C SIDC for testing
+
+                            if (cSIDCIn.Substring(1, 1) == "*")
+                                cSIDCIn = cSIDCIn.Substring(0, 1) + "P" + cSIDCIn.Substring(2);
+
+                            cSIDCIn = cSIDCIn.Replace('*', '-');
+
+                            // Build a symbol using a 2525C SIDC
+
+                            Symbol sym = _librarian.MakeSymbol("2525C", cSIDCIn);
+
+                            if (sym != null)
+                            {
+                                dFirst10 = sym.SIDC.PartAString;
+                                dSecond10 = sym.SIDC.PartBString;
+
+                                // Build a symbol using the 2525D SIDC, to see if reverse
+                                // conversion works.
+
+                                Symbol sym2 = _librarian.MakeSymbol(sym.SIDC);
+
+                                if (sym2 != null)
+                                {
+                                    cSIDCOut = sym2.LegacySIDC;
+                                }
+                                else
+                                {
+                                    status = "Error making 2525D";
+                                    derrorCount++;
+                                }
+
+                                if (cSIDCIn == cSIDCOut)
+                                {
+                                    status = "pass";
+                                    passCount++;
+                                }
+                                else
+                                {
+                                    status = "FAIL";
+                                    failCount++;
+                                }
+                            }
+                            else
+                            {
+                                status = "Error making 2525C";
+                                cerrorCount++;
+                            }
+
+                            stream.WriteLine(cSIDCIn + "," +
+                                             dFirst10 + "," +
+                                             dSecond10 + "," +
+                                             cSIDCOut + "," +
+                                             status);
+                            stream.Flush();
+                        }
+                    }
+                }
+
+                logger.Info("----- Legacy Tests -----");
+                logger.Info("Total: " + totalCount);
+                logger.Info("Pass: " + passCount);
+                logger.Info("Fail: " + failCount);
+                logger.Info("2525C Errors: " + cerrorCount);
+                logger.Info("2525D Errors: " + derrorCount);
+            }
+        }
+
         public void Import(string path, string modPath, string symbolsetCode, string legacyCode)
         {
             // The public entry point to import a CSV file containing entities, and another containing
@@ -889,7 +1209,25 @@ namespace JointMilitarySymbologyLibrary
             _importCSV(path, modPath, symbolsetCode, legacyCode);
         }
 
-        public void Export(string path, string symbolSetExpression = "", string expression = "", bool exportPoints = true, bool exportLines = true, bool exportAreas = true, ETLExportEnum exportType = ETLExportEnum.ETLExportSimple, bool append = false, bool omitSource = false)
+        public void ImportLegacyData(string source, string destination)
+        {
+            // Import the raw legacy SIDC information from source, and append it to the end of the specified
+            // destination file.  The destination file should be an existing JMSML symbol set XML file.  
+            // The symbol set code in that file will be used to extract the relevant rows from the source CSV.
+
+            _importLegacyData(source, destination);
+        }
+
+        public void ExportLegacy(string path)
+        {
+            // Export legacy information, taking the existing 2525C code information in each Symbol Set
+            // and converting it to 2525D, then taking what should be the 2525D numeric SIDC for that and
+            // converting it back to 2525C.  Then testing to see if the results are the same.
+
+            _exportLegacyData(path);
+        }
+
+        public void Export(string path, string symbolSetExpression = "", string expression = "", bool exportPoints = true, bool exportLines = true, bool exportAreas = true, ETLExportEnum exportType = ETLExportEnum.ETLExportSimple, bool append = false, bool omitSource = false, bool omitLegacy = false, long size = 32)
         {
             // The public entry point for exporting selective contents of the JMSML library
             // into CSV format.
@@ -907,6 +1245,8 @@ namespace JointMilitarySymbologyLibrary
             string modifier1Path = path;
             string modifier2Path = path;
 
+            _configHelper.PointSize = (int)size;
+
             switch (exportType)
             {
                 // Based on the type of export, create instances of the
@@ -923,8 +1263,8 @@ namespace JointMilitarySymbologyLibrary
                     break;
 
                 case ETLExportEnum.ETLExportImage:
-                    entityExporter = new ImageEntityExport(_configHelper, omitSource);
-                    modifierExporter = new ImageModifierExport(_configHelper, omitSource);
+                    entityExporter = new ImageEntityExport(_configHelper, omitSource, omitLegacy);
+                    modifierExporter = new ImageModifierExport(_configHelper, omitSource, omitLegacy);
                     break;
             }
 
@@ -963,7 +1303,7 @@ namespace JointMilitarySymbologyLibrary
             _exportSymbolSet(path, dataValidation, append, false);
         }
 
-        public void ExportAmplifiers(string path, ETLExportEnum exportType = ETLExportEnum.ETLExportSimple, bool append = false, bool omitSource = false)
+        public void ExportAmplifiers(string path, ETLExportEnum exportType = ETLExportEnum.ETLExportSimple, bool append = false, bool omitSource = false, bool omitLegacy = false, long size = 32)
         {
             // The public entry point for exporting amplifiers from the JMSML library
             // into CSV format.  These include echelons, mobilities, and auxiliary equipment
@@ -974,6 +1314,8 @@ namespace JointMilitarySymbologyLibrary
             IAmplifierExport amplifierExporter = null;
             string line = "";
 
+            _configHelper.PointSize = (int)size;
+
             switch (exportType)
             {
                 case ETLExportEnum.ETLExportDomain:
@@ -981,7 +1323,7 @@ namespace JointMilitarySymbologyLibrary
                     break;
 
                 case ETLExportEnum.ETLExportImage:
-                    amplifierExporter = new ImageAmplifierExport(_configHelper, omitSource);
+                    amplifierExporter = new ImageAmplifierExport(_configHelper, omitSource, omitLegacy);
                     break;
             }
 
@@ -1003,7 +1345,7 @@ namespace JointMilitarySymbologyLibrary
                         {
                             foreach (LibraryAmplifierGroupAmplifier amp in lag.Amplifiers)
                             {
-                                if (amp.Graphics != null)
+                                if (amp.Graphics != null && exportType == ETLExportEnum.ETLExportImage)
                                 {
                                     foreach (LibraryAmplifierGroupAmplifierGraphic graphic in amp.Graphics)
                                     {
@@ -1016,6 +1358,16 @@ namespace JointMilitarySymbologyLibrary
                                         }
                                     }
                                 }
+                                else if(exportType == ETLExportEnum.ETLExportDomain)
+                                {
+                                    line = amplifierExporter.Line(lag, amp, null);
+
+                                    if (line != "")
+                                    {
+                                        w.WriteLine(line);
+                                        w.Flush();
+                                    }
+                                }
                             }
                         }
                     }
@@ -1025,7 +1377,7 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        public void ExportFrames(string path, string contextExpression = "", string standardIdentityExpression = "", string dimensionExpression = "", ETLExportEnum exportType = ETLExportEnum.ETLExportSimple, bool append = false, bool omitSource = false)
+        public void ExportFrames(string path, string contextExpression = "", string standardIdentityExpression = "", string dimensionExpression = "", ETLExportEnum exportType = ETLExportEnum.ETLExportSimple, bool append = false, bool omitSource = false, bool omitLegacy = false, long size = 32)
         {
             // The public entry point for exporting frames from the JMSML library
             // into CSV format.
@@ -1037,6 +1389,8 @@ namespace JointMilitarySymbologyLibrary
             IFrameExport frameExporter = null;
             string line = "";
 
+            _configHelper.PointSize = (int)size;
+
             switch (exportType)
             {
                 case ETLExportEnum.ETLExportDomain:
@@ -1044,7 +1398,7 @@ namespace JointMilitarySymbologyLibrary
                     break;
 
                 case ETLExportEnum.ETLExportImage:
-                    frameExporter = new ImageFrameExport(_configHelper, omitSource);
+                    frameExporter = new ImageFrameExport(_configHelper, omitSource, omitLegacy);
                     break;
             }
 
@@ -1060,40 +1414,59 @@ namespace JointMilitarySymbologyLibrary
                         w.Flush();
                     }
 
-                    foreach (LibraryContext context in _library.Contexts)
+                    if (exportType == ETLExportEnum.ETLExportImage)
                     {
-                        if (contextExpression != "" && !System.Text.RegularExpressions.Regex.IsMatch(context.Label, contextExpression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
-                            continue;
+                        foreach (LibraryContext context in _library.Contexts)
+                        {
+                            if (contextExpression != "" && !System.Text.RegularExpressions.Regex.IsMatch(context.Label, contextExpression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                                continue;
 
+                            foreach (LibraryStandardIdentity identity in _library.StandardIdentities)
+                            {
+                                if (standardIdentityExpression != "" && !System.Text.RegularExpressions.Regex.IsMatch(identity.Label, standardIdentityExpression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                                    continue;
+
+                                foreach (LibraryDimension dimension in _library.Dimensions)
+                                {
+                                    if (dimensionExpression != "" && !System.Text.RegularExpressions.Regex.IsMatch(dimension.Label, dimensionExpression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                                        continue;
+
+                                    // Export a frame for Status = Current
+
+                                    line = frameExporter.Line(_librarian, context, identity, dimension, _library.Statuses[0]);
+
+                                    if (line != "")
+                                    {
+                                        w.WriteLine(line);
+                                        w.Flush();
+                                    }
+
+                                    // Export the frame for Status = Planned (not every frame will have a Planned version)
+
+                                    line = frameExporter.Line(_librarian, context, identity, dimension, _library.Statuses[1]);
+
+                                    if (line != "")
+                                    {
+                                        w.WriteLine(line);
+                                        w.Flush();
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
                         foreach (LibraryStandardIdentity identity in _library.StandardIdentities)
                         {
                             if (standardIdentityExpression != "" && !System.Text.RegularExpressions.Regex.IsMatch(identity.Label, standardIdentityExpression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
                                 continue;
 
-                            foreach (LibraryDimension dimension in _library.Dimensions)
+                            line = frameExporter.Line(null, null, identity, null, null);
+
+                            if (line != "")
                             {
-                                if (dimensionExpression != "" && !System.Text.RegularExpressions.Regex.IsMatch(dimension.Label, dimensionExpression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
-                                    continue;
-
-                                // Export a frame for Status = Current
-
-                                line = frameExporter.Line(_librarian, context, identity, dimension, _library.Statuses[0]);
-
-                                if (line != "")
-                                {
-                                    w.WriteLine(line);
-                                    w.Flush();
-                                }
-
-                                // Export the frame for Status = Planned (not every frame will have a Planned version)
-
-                                line = frameExporter.Line(_librarian, context, identity, dimension, _library.Statuses[1]);
-
-                                if (line != "")
-                                {
-                                    w.WriteLine(line);
-                                    w.Flush();
-                                }
+                                w.WriteLine(line);
+                                w.Flush();
                             }
                         }
                     }
@@ -1103,7 +1476,7 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        public void ExportHQTFFD(string path, ETLExportEnum exportType = ETLExportEnum.ETLExportSimple, bool append = false, bool omitSource = false)
+        public void ExportHQTFFD(string path, ETLExportEnum exportType = ETLExportEnum.ETLExportSimple, bool append = false, bool omitSource = false, bool omitLegacy = false, long size = 32)
         {
             // The public entry point for exporting HQTFFD from the JMSML library
             // into CSV format.  These include combinations of headquarter, task force, and feint/dummy amplifiers
@@ -1114,6 +1487,8 @@ namespace JointMilitarySymbologyLibrary
             IHQTFFDExport hqTFFDExporter = null;
             string line = "";
 
+            _configHelper.PointSize = (int)size;
+
             switch (exportType)
             {
                 case ETLExportEnum.ETLExportDomain:
@@ -1121,7 +1496,7 @@ namespace JointMilitarySymbologyLibrary
                     break;
 
                 case ETLExportEnum.ETLExportImage:
-                    hqTFFDExporter = new ImageHQTFFDExport(_configHelper, omitSource);
+                    hqTFFDExporter = new ImageHQTFFDExport(_configHelper, omitSource, omitLegacy);
                     break;
             }
 
@@ -1139,7 +1514,7 @@ namespace JointMilitarySymbologyLibrary
 
                     foreach(LibraryHQTFDummy hqTFFD in _library.HQTFDummies)
                     {
-                        if (hqTFFD.Graphics != null)
+                        if (hqTFFD.Graphics != null && exportType == ETLExportEnum.ETLExportImage)
                         {
                             foreach (LibraryHQTFDummyGraphic graphic in hqTFFD.Graphics)
                             {
@@ -1152,12 +1527,22 @@ namespace JointMilitarySymbologyLibrary
                                 }
                             }
                         }
+                        else if(exportType == ETLExportEnum.ETLExportDomain)
+                        {
+                            line = hqTFFDExporter.Line(hqTFFD, null);
+
+                            if (line != "")
+                            {
+                                w.WriteLine(line);
+                                w.Flush();
+                            }
+                        }
                     }
                 }
             }
         }
 
-        public void ExportOCA(string path, ETLExportEnum exportType = ETLExportEnum.ETLExportSimple, bool append = false, bool omitSource = false)
+        public void ExportOCA(string path, ETLExportEnum exportType = ETLExportEnum.ETLExportSimple, bool append = false, bool omitSource = false, bool omitLegacy = false, long size = 32)
         {
             // The public entry point for exporting operational condition amplifiers from the JMSML library
             // into CSV format.
@@ -1168,6 +1553,8 @@ namespace JointMilitarySymbologyLibrary
             IOCAExport ocaExporter = null;
             string line = "";
 
+            _configHelper.PointSize = (int)size;
+
             switch (exportType)
             {
                 case ETLExportEnum.ETLExportDomain:
@@ -1175,7 +1562,7 @@ namespace JointMilitarySymbologyLibrary
                     break;
 
                 case ETLExportEnum.ETLExportImage:
-                    ocaExporter = new ImageOCAExport(_configHelper, omitSource);
+                    ocaExporter = new ImageOCAExport(_configHelper, omitSource, omitLegacy);
                     break;
             }
 
@@ -1193,7 +1580,7 @@ namespace JointMilitarySymbologyLibrary
 
                     foreach (LibraryStatus status in _library.Statuses)
                     {
-                        if (status.Graphic != null)
+                        if (status.Graphic != null && exportType == ETLExportEnum.ETLExportImage)
                         {
                             // Alternative graphic drawn for a given status
 
@@ -1206,7 +1593,7 @@ namespace JointMilitarySymbologyLibrary
                             }
                         }
 
-                        if (status.Graphics != null)
+                        if (status.Graphics != null && exportType == ETLExportEnum.ETLExportImage)
                         {
                             foreach (LibraryStatusGraphic graphic in status.Graphics)
                             {
@@ -1217,6 +1604,16 @@ namespace JointMilitarySymbologyLibrary
                                     w.WriteLine(line);
                                     w.Flush();
                                 }
+                            }
+                        }
+                        else
+                        {
+                            line = ocaExporter.Line(status);
+
+                            if (line != "")
+                            {
+                                w.WriteLine(line);
+                                w.Flush();
                             }
                         }
                     }

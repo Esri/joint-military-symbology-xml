@@ -23,16 +23,18 @@ namespace JointMilitarySymbologyLibrary
     public class ImageOCAExport : OCAExport, IOCAExport
     {
         private bool _omitSource = false;
+        private bool _omitLegacy = false;
 
-        public ImageOCAExport(ConfigHelper configHelper, bool omitSource)
+        public ImageOCAExport(ConfigHelper configHelper, bool omitSource, bool omitLegacy)
         {
             _configHelper = configHelper;
             _omitSource = omitSource;
+            _omitLegacy = omitLegacy;
         }
 
         string IOCAExport.Headers
         {
-            get { return "filePath,pointSize,styleItemName,styleItemCategory,styleItemTags,notes"; }
+            get { return "filePath,pointSize,styleItemName,styleItemCategory,styleItemTags,styleItemUniqueId,styleItemGeometryType,notes"; }
         }
 
         string IOCAExport.Line(LibraryStatus status, LibraryStatusGraphic statusGraphic)
@@ -54,13 +56,16 @@ namespace JointMilitarySymbologyLibrary
 
             string itemName = BuildOCAItemName(identity, dimension, status);
             string itemCategory = "Amplifier : Operational Condition";
-            string itemTags = BuildOCAItemTags(identity, dimension, status, graphicPath + "\\" + statusGraphic.Graphic, _omitSource);
+            string itemTags = BuildOCAItemTags(identity, dimension, status, graphicPath + "\\" + statusGraphic.Graphic, _omitSource, _omitLegacy);
+            string itemID = BuildOCACode(identity, dimension, status);
 
             result = itemRootedPath + "," +
                      Convert.ToString(_configHelper.PointSize) + "," +
                      itemName + "," +
                      itemCategory + "," +
                      itemTags + "," +
+                     itemID + "," +
+                     "Point" + "," +
                      _notes;
 
             return result;
@@ -82,7 +87,7 @@ namespace JointMilitarySymbologyLibrary
 
             string itemName = BuildOCAItemName(null, null, status);
             string itemCategory = "Amplifier : Operational Condition";
-            string itemTags = BuildOCAItemTags(null, null, status, graphicPath + "\\" + status.Graphic, _omitSource);
+            string itemTags = BuildOCAItemTags(null, null, status, graphicPath + "\\" + status.Graphic, _omitSource, _omitLegacy);
 
             result = itemRootedPath + "," +
                      Convert.ToString(_configHelper.PointSize) + "," +

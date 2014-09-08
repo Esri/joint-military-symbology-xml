@@ -68,7 +68,8 @@ namespace JointMilitarySymbologyLibrary
         public string SVGHome { get { return _etlConfig.SVGHome; } }
         public string GraphicExtension { get { return _etlConfig.GraphicExtension; } }
         public string DomainSeparator { get { return _etlConfig.DomainSeparator; } }
-        public int PointSize { get { return _etlConfig.PointSize; } }
+        public string SIDCIsNA { get { return "SIDC_IS_NA"; } }
+        public int PointSize { get { return _etlConfig.PointSize; } set { _etlConfig.PointSize = value; } }
 
         private bool _splitAndSearch(string listToSplit, string lookingFor)
         {
@@ -185,24 +186,24 @@ namespace JointMilitarySymbologyLibrary
 
         private void _findPath(FindEnum findThis, string forThis, Dictionary<string, string> recordItHere)
         {
-            // Look for a give path, in our configuration file, and if
+            // Look for a given path, in our configuration file, and if
             // found, set it in a path dictionary for later retrieval.
 
             string whereItIs = "";
-            bool foundIt = false;
+            //bool foundIt = false;
 
             foreach (GraphicFolderType folder in this.GraphicFolders)
             {
                 if (_findIt(findThis, forThis, folder, "", ref whereItIs))
                 {
                     recordItHere.Add(forThis, whereItIs);
-                    foundIt = true;
+                    //foundIt = true;
                     break;
                 }
             }
 
-            if(!foundIt)
-                logger.Error("Can't find the config data for " + forThis + " graphics.");
+            //if(!foundIt)
+            //    logger.Warn("Can't find the " + findThis + " config data for " + forThis + " graphics.");
         }
 
         private void _findPaths()

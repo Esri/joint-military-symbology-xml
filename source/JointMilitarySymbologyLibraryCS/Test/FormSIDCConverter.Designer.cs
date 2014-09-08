@@ -109,7 +109,10 @@ namespace Test
             "EHIPF----------\tMarine Incident",
             "OFOPYT---------\tRadio and TV Propaganda",
             "GFTPUS---------\tScreen Task",
-            "GHGPGAF--------\tFortified Area"});
+            "GHGPGAF--------\tFortified Area",
+            "WOS-IITM--P----\tIce Thickness (Observed)",
+            "WA-DPFC-FY-L---\tCold Frontolysis",
+            "WO-DHDDA----A--\tDepth Area"});
             this.listBox1.Location = new System.Drawing.Point(21, 500);
             this.listBox1.Name = "listBox1";
             this.listBox1.ScrollAlwaysVisible = true;

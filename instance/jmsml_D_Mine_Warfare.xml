@@ -1,456 +1,548 @@
-<?xml version="1.0" encoding="utf-8"?>
-<SymbolSet xmlns="http://disa.mil/JointMilSyML.xsd" ID="SS_MINE_WARFARE" Label="Mine Warfare" DimensionID="SEA_SUBSURFACE">
-	<SymbolSetCode>
-		<DigitOne>3</DigitOne>
-		<DigitTwo>6</DigitTwo>
-	</SymbolSetCode>
-	<LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
-<!--We need to incorporate support for both MEDAL and Alternative icons.-->
+<?xml version="1.0"?>
+<SymbolSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="SS_MINE_WARFARE" Label="Mine Warfare" DimensionID="SEA_SUBSURFACE" xmlns="http://disa.mil/JointMilSyML.xsd" Geometry="POINT">
+  <SymbolSetCode>
+    <DigitOne>3</DigitOne>
+    <DigitTwo>6</DigitTwo>
+  </SymbolSetCode>
+  <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
   <Entities>
-		<Entity ID="SEA_MINE_GENERAL" Label="Sea Mine-General" Graphic="36110000.svg" Icon="FULL_OCTAGON">
-			<EntityCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>1</DigitTwo>
-			</EntityCode>
-			<EntityTypes>
-				<EntityType ID="SEA_MINE_BOTTOM" Label="Sea Mine-Bottom" Graphic="36110100.svg" Icon="FULL_OCTAGON">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>1</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-				<EntityType ID="SEA_MINE_MOORED" Label="Sea Mine-Moored" Graphic="36110200.svg" Icon="FULL_OCTAGON">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>2</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-				<EntityType ID="SEA_MINE_FLOATING" Label="Sea Mine-Floating" Graphic="36110300.svg" Icon="FULL_OCTAGON">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>3</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-				<EntityType ID="SEA_MINE_RISING" Label="Sea Mine-Rising" Graphic="36110400.svg" Icon="FULL_OCTAGON">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>4</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-				<EntityType ID="SEA_MINE_OTHER_POSITION" Label="Sea Mine-Other Position" Graphic="36110500.svg" Icon="FULL_OCTAGON">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>5</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-				<EntityType ID="KINGFISHER" Label="Kingfisher" Remarks="There is no MEDAL icon associated with this symbol." Icon="NA" GeometryType="NA">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>6</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-				<EntityType ID="SMALL_OBJECT_MINE_LIKE" Label="Small Object-Mine-Like" Remarks="There is no MEDAL icon associated with this symbol." Icon="NA" GeometryType="NA">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>7</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-				<EntityType ID="EXERCISE_MINE_GENERAL" Label="Exercise Mine-General" Remarks="Used with exercise frame only" Graphic="36110800.svg" Icon="FULL_OCTAGON">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>8</DigitTwo>
-					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="EXERCISE_MINE_BOTTOM" Label="Exercise Mine-Bottom" Remarks="Used with exercise frame only" Graphic="36110801.svg" Icon="FULL_OCTAGON">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>1</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="EXERCISE_MINE_MOORED" Label="Exercise Mine-Moored" Remarks="Used with exercise frame only" Graphic="36110802.svg" Icon="FULL_OCTAGON">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>2</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="EXERCISE_MINE_FLOATING" Label="Exercise Mine-Floating" Remarks="Used with exercise frame only" Graphic="36110803.svg" Icon="FULL_OCTAGON">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>3</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="EXERCISE_MINE_RISING" Label="Exercise Mine-Rising" Remarks="Used with exercise frame only" Graphic="36110804.svg" Icon="FULL_OCTAGON">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>4</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-
-					</EntitySubTypes>
-				</EntityType>
-				<EntityType ID="NEUTRALIZED_MINE_GENERAL" Label="Neutralized Mine-General" LabelAlias="Neutralized" Graphic="36110900.svg" Icon="FULL_OCTAGON">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>9</DigitTwo>
-					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="NEUTRALIZED_MINE_BOTTOM" Label="Neutralized Mine-Bottom" Graphic="36110901.svg" Icon="FULL_OCTAGON">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>1</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="NEUTRALIZED_MINE_MOORED" Label="Neutralized Mine-Moored" Graphic="36110902.svg" Icon="FULL_OCTAGON">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>2</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="NEUTRALIZED_MINE_FLOATING" Label="Neutralized Mine-Floating" Graphic="36110903.svg" Icon="FULL_OCTAGON">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>3</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="NEUTRALIZED_MINE_RISING" Label="Neutralized Mine-Rising" Graphic="36110904.svg" Icon="FULL_OCTAGON">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>4</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="NEUTRALIZED_MINE_OTHER_POSITION" Label="Neutralized Mine-Other Position" Graphic="36110905.svg" Icon="FULL_OCTAGON">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-
-					</EntitySubTypes>
-				</EntityType>
-			</EntityTypes>
-		</Entity>
-		<Entity ID="UNEXPLODED_ORDNANCE" Label="Unexploded Ordnance" Graphic="36120000.svg" Icon="FULL_OCTAGON">
-			<EntityCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>2</DigitTwo>
-			</EntityCode>
-
-		</Entity>
-		<Entity ID="SEA_MINE_DECOY" Label="Sea Mine Decoy" Graphic="36130000.svg" Icon="FULL_OCTAGON">
-			<EntityCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>3</DigitTwo>
-			</EntityCode>
-			<EntityTypes>
-				<EntityType ID="SEA_MINE_DECOY_BOTTOM" Label="Sea Mine Decoy-Bottom" Graphic="36130100.svg" Icon="FULL_OCTAGON">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>1</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-				<EntityType ID="SEA_MINE_DECOY_MOORED" Label="Sea Mine Decoy-Moored" Graphic="36130200.svg" Icon="FULL_OCTAGON">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>2</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-			</EntityTypes>
-		</Entity>
-		<Entity ID="MINE_LIKE_CONTACT_MILCO" Label="Mine-Like Contact (MILCO)" LabelAlias="MILCO" Icon="NA" GeometryType="NA">
-			<EntityCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>4</DigitTwo>
-			</EntityCode>
-			<EntityTypes>
-				<EntityType ID="MILCO_GENERAL" Label="MILCO - General" LabelAlias="General" Graphic="36140100.svg" Icon="FULL_OCTAGON">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>1</DigitTwo>
-					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="MILCO_GENERAL_CONFIDENCE_LEVEL_1" Label="MILCO - General-Confidence-Level 1" LabelAlias="General-Confidence-Level 1" Graphic="36140101.svg" Icon="FULL_OCTAGON">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>1</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="MILCO_GENERAL_CONFIDENCE_LEVEL_2" Label="MILCO - General-Confidence-Level 2" LabelAlias="General-Confidence-Level 2" Graphic="36140102.svg" Icon="FULL_OCTAGON">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>2</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="MILCO_GENERAL_CONFIDENCE_LEVEL_3" Label="MILCO - General-Confidence-Level 3" LabelAlias="General-Confidence-Level 3" Graphic="36140103.svg" Icon="FULL_OCTAGON">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>3</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="MILCO_GENERAL_CONFIDENCE_LEVEL_4" Label="MILCO - General-Confidence-Level 4" LabelAlias="General-Confidence-Level 4" Graphic="36140104.svg" Icon="FULL_OCTAGON">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>4</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="MILCO_GENERAL_CONFIDENCE_LEVEL_5" Label="MILCO - General-Confidence-Level 5" LabelAlias="General-Confidence-Level 5" Graphic="36140105.svg" Icon="FULL_OCTAGON">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-
-					</EntitySubTypes>
-				</EntityType>
-				<EntityType ID="MILCO_BOTTOM" Label="MILCO - Bottom" LabelAlias="Bottom" Graphic="36140200.svg" Icon="FULL_OCTAGON">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>2</DigitTwo>
-					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="MILCO_BOTTOM_CONFIDENCE_LEVEL_1" Label="MILCO - Bottom-Confidence-Level 1" LabelAlias="Bottom-Confidence-Level 1" Graphic="36140201.svg" Icon="FULL_OCTAGON">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>1</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="MILCO_BOTTOM_CONFIDENCE_LEVEL_2" Label="MILCO - Bottom-Confidence-Level 2" LabelAlias="Bottom-Confidence-Level 2" Graphic="36140202.svg" Icon="FULL_OCTAGON">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>2</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="MILCO_BOTTOM_CONFIDENCE_LEVEL_3" Label="MILCO - Bottom-Confidence-Level 3" LabelAlias="Bottom-Confidence-Level 3" Graphic="36140203.svg" Icon="FULL_OCTAGON">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>3</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="MILCO_BOTTOM_CONFIDENCE_LEVEL_4" Label="MILCO - Bottom-Confidence-Level 4" LabelAlias="Bottom-Confidence-Level 4" Graphic="36140204.svg" Icon="FULL_OCTAGON">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>4</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="MILCO_BOTTOM_CONFIDENCE_LEVEL_5" Label="MILCO - Bottom-Confidence-Level 5" LabelAlias="Bottom-Confidence-Level 5" Graphic="36140205.svg" Icon="FULL_OCTAGON">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-
-					</EntitySubTypes>
-				</EntityType>
-				<EntityType ID="MILCO_MOORED" Label="MILCO - Moored" LabelAlias="Moored" Graphic="36140300.svg" Icon="FULL_OCTAGON">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>3</DigitTwo>
-					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="MILCO_MOORED_CONFIDENCE_LEVEL_1" Label="MILCO - Moored-Confidence-Level 1" LabelAlias="Moored-Confidence-Level 1" Graphic="36140301.svg" Icon="FULL_OCTAGON">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>1</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="MILCO_MOORED_CONFIDENCE_LEVEL_2" Label="MILCO - Moored-Confidence-Level 2" LabelAlias="Moored-Confidence-Level 2" Graphic="36140302.svg" Icon="FULL_OCTAGON">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>2</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="MILCO_MOORED_CONFIDENCE_LEVEL_3" Label="MILCO - Moored-Confidence-Level 3" LabelAlias="Moored-Confidence-Level 3" Graphic="36140303.svg" Icon="FULL_OCTAGON">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>3</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="MILCO_MOORED_CONFIDENCE_LEVEL_4" Label="MILCO - Moored-Confidence-Level 4" LabelAlias="Moored-Confidence-Level 4" Graphic="36140304.svg" Icon="FULL_OCTAGON">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>4</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="MILCO_MOORED_CONFIDENCE_LEVEL_5" Label="MILCO - Moored-Confidence-Level 5" LabelAlias="Moored-Confidence-Level 5" Graphic="36140305.svg" Icon="FULL_OCTAGON">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-
-					</EntitySubTypes>
-				</EntityType>
-				<EntityType ID="MILCO_FLOATING" Label="MILCO - Floating" LabelAlias="Floating" Graphic="36140400.svg" Icon="FULL_OCTAGON">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>4</DigitTwo>
-					</EntityTypeCode>
-					<EntitySubTypes>
-						<EntitySubType ID="MILCO_FLOATING_CONFIDENCE_LEVEL_1" Label="MILCO - Floating-Confidence-Level 1" LabelAlias="Floating-Confidence-Level 1" Graphic="36140401.svg" Icon="FULL_OCTAGON">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>1</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="MILCO_FLOATING_CONFIDENCE_LEVEL_2" Label="MILCO - Floating-Confidence-Level 2" LabelAlias="Floating-Confidence-Level 2" Graphic="36140402.svg" Icon="FULL_OCTAGON">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>2</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="MILCO_FLOATING_CONFIDENCE_LEVEL_3" Label="MILCO - Floating-Confidence-Level 3" LabelAlias="Floating-Confidence-Level 3" Graphic="36140403.svg" Icon="FULL_OCTAGON">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>3</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="MILCO_FLOATING_CONFIDENCE_LEVEL_4" Label="MILCO - Floating-Confidence-Level 4" LabelAlias="Floating-Confidence-Level 4" Graphic="36140404.svg" Icon="FULL_OCTAGON">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>4</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-						<EntitySubType ID="MILCO_FLOATING_CONFIDENCE_LEVEL_5" Label="MILCO - Floating-Confidence-Level 5" LabelAlias="Floating-Confidence-Level 5" Graphic="36140405.svg" Icon="FULL_OCTAGON">
-							<EntitySubTypeCode>
-								<DigitOne>0</DigitOne>
-								<DigitTwo>5</DigitTwo>
-							</EntitySubTypeCode>
-						</EntitySubType>
-
-					</EntitySubTypes>
-				</EntityType>
-			</EntityTypes>
-		</Entity>
-		<Entity ID="MINE_LIKE_ECHO_MILEC_GENERAL" Label="Mine-Like Echo (MILEC)-General" Graphic="36150000.svg" Icon="FULL_OCTAGON">
-			<EntityCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>5</DigitTwo>
-			</EntityCode>
-			<EntityTypes>
-				<EntityType ID="MINE_LIKE_ECHO_BOTTOM" Label="Mine-Like Echo-Bottom" Graphic="36150100.svg" Icon="FULL_OCTAGON">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>1</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-				<EntityType ID="MINE_LIKE_ECHO_MOORED" Label="Mine-Like Echo-Moored" Graphic="36150200.svg" Icon="FULL_OCTAGON">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>2</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-				<EntityType ID="MINE_LIKE_ECHO_FLOATING" Label="Mine-Like Echo-Floating" Graphic="36150300.svg" Icon="FULL_OCTAGON">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>3</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-			</EntityTypes>
-		</Entity>
-		<Entity ID="NEGATIVE_REACQUISITION_GENERAL" Label="Negative Reacquisition-General" Graphic="36160000.svg" Icon="FULL_OCTAGON">
-			<EntityCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>6</DigitTwo>
-			</EntityCode>
-			<EntityTypes>
-				<EntityType ID="NEGATIVE_REACQUISITION_BOTTOM" Label="Negative Reacquisition-Bottom" Graphic="36160100.svg" Icon="FULL_OCTAGON">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>1</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-				<EntityType ID="NEGATIVE_REACQUISITION_MOORED" Label="Negative Reacquisition-Moored" Graphic="36160200.svg" Icon="FULL_OCTAGON">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>2</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-				<EntityType ID="NEGATIVE_REACQUISITION_FLOATING" Label="Negative Reacquisition-Floating" Graphic="36160300.svg" Icon="FULL_OCTAGON">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>3</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-			</EntityTypes>
-		</Entity>
-		<Entity ID="OBSTRUCTOR" Label="Obstructor" Graphic="36170000.svg" Icon="FULL_OCTAGON">
-			<EntityCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>7</DigitTwo>
-			</EntityCode>
-			<EntityTypes>
-				<EntityType ID="NEUTRALIZED_OBSTRUCTOR" Label="Neutralized Obstructor" Graphic="36170100.svg" Icon="FULL_OCTAGON">
+    <Entity ID="SEA_MINE_GENERAL" Label="Sea Mine-General" Graphic="36110000.svg" Icon="FULL_OCTAGON">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </EntityCode>
+      <EntityTypes>
+        <EntityType ID="SEA_MINE_BOTTOM" Label="Sea Mine-Bottom" Graphic="36110100.svg" Icon="FULL_OCTAGON">
           <EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>1</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-			</EntityTypes>
-		</Entity>
-		<Entity ID="GENERAL_MINE_ANCHOR" Label="General Mine Anchor" Graphic="36180000.svg" Icon="FULL_OCTAGON">
-			<EntityCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>8</DigitTwo>
-			</EntityCode>
-
-		</Entity>
-		<Entity ID="NON_MINE_MINE_LIKE_NMLO_GENERAL" Label="Non-Mine Mine-Like Object (NMLO)-General" LabelAlias="NMLO-General" Graphic="36190000.svg" Icon="FULL_OCTAGON">
-			<EntityCode>
-				<DigitOne>1</DigitOne>
-				<DigitTwo>9</DigitTwo>
-			</EntityCode>
-			<EntityTypes>
-				<EntityType ID="NON_MINE_MINE_LIKE_BOTTOM" Label="Non-Mine Mine-Like Object-Bottom" Graphic="36190100.svg" Icon="FULL_OCTAGON">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>1</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-				<EntityType ID="NON_MINE_MINE_LIKE_MOORED" Label="Non-Mine Mine-Like Object-Moored" Graphic="36190200.svg" Icon="FULL_OCTAGON">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>2</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-				<EntityType ID="NON_MINE_MINE_LIKE_FLOATING" Label="Non-Mine Mine-Like Object-Floating" Graphic="36190300.svg" Icon="FULL_OCTAGON">
-					<EntityTypeCode>
-						<DigitOne>0</DigitOne>
-						<DigitTwo>3</DigitTwo>
-					</EntityTypeCode>
-
-				</EntityType>
-			</EntityTypes>
-		</Entity>
-		<Entity ID="ENVIRONMENTAL_REPORT_LOCATION" Label="Environmental Report Location" Graphic="36200000.svg" Icon="FULL_OCTAGON">
-			<EntityCode>
-				<DigitOne>2</DigitOne>
-				<DigitTwo>0</DigitTwo>
-			</EntityCode>
-
-		</Entity>
-		<Entity ID="DIVE_REPORT_LOCATION" Label="Dive Report Location" Graphic="36210000.svg" Icon="FULL_OCTAGON">
-			<EntityCode>
-				<DigitOne>2</DigitOne>
-				<DigitTwo>1</DigitTwo>
-			</EntityCode>
-
-		</Entity>
-	</Entities>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="SEA_MINE_MOORED" Label="Sea Mine-Moored" Graphic="36110200.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="SEA_MINE_FLOATING" Label="Sea Mine-Floating" Graphic="36110300.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="SEA_MINE_RISING" Label="Sea Mine-Rising" Graphic="36110400.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>4</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="SEA_MINE_OTHER_POSITION" Label="Sea Mine-Other Position" Graphic="36110500.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>5</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="KINGFISHER" Label="Kingfisher" Remarks="There is no MEDAL icon associated with this symbol." Icon="NA" GeometryType="NA">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>6</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="SMALL_OBJECT_MINE_LIKE" Label="Small Object-Mine-Like" Remarks="There is no MEDAL icon associated with this symbol." Icon="NA" GeometryType="NA">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>7</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="EXERCISE_MINE_GENERAL" Label="Exercise Mine-General" Remarks="Used with exercise frame only" Graphic="36110800.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>8</DigitTwo>
+          </EntityTypeCode>
+          <EntitySubTypes>
+            <EntitySubType ID="EXERCISE_MINE_BOTTOM" Label="Exercise Mine-Bottom" Remarks="Used with exercise frame only" Graphic="36110801.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="EXERCISE_MINE_MOORED" Label="Exercise Mine-Moored" Remarks="Used with exercise frame only" Graphic="36110802.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="EXERCISE_MINE_FLOATING" Label="Exercise Mine-Floating" Remarks="Used with exercise frame only" Graphic="36110803.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="EXERCISE_MINE_RISING" Label="Exercise Mine-Rising" Remarks="Used with exercise frame only" Graphic="36110804.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>4</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+        <EntityType ID="NEUTRALIZED_MINE_GENERAL" Label="Neutralized Mine-General" LabelAlias="Neutralized" Graphic="36110900.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>9</DigitTwo>
+          </EntityTypeCode>
+          <EntitySubTypes>
+            <EntitySubType ID="NEUTRALIZED_MINE_BOTTOM" Label="Neutralized Mine-Bottom" Graphic="36110901.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="NEUTRALIZED_MINE_MOORED" Label="Neutralized Mine-Moored" Graphic="36110902.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="NEUTRALIZED_MINE_FLOATING" Label="Neutralized Mine-Floating" Graphic="36110903.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="NEUTRALIZED_MINE_RISING" Label="Neutralized Mine-Rising" Graphic="36110904.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>4</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="NEUTRALIZED_MINE_OTHER_POSITION" Label="Neutralized Mine-Other Position" Graphic="36110905.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>5</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+      </EntityTypes>
+    </Entity>
+    <Entity ID="UNEXPLODED_ORDNANCE" Label="Unexploded Ordnance" Graphic="36120000.svg" Icon="FULL_OCTAGON">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </EntityCode>
+    </Entity>
+    <Entity ID="SEA_MINE_DECOY" Label="Sea Mine Decoy" Graphic="36130000.svg" Icon="FULL_OCTAGON">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </EntityCode>
+      <EntityTypes>
+        <EntityType ID="SEA_MINE_DECOY_BOTTOM" Label="Sea Mine Decoy-Bottom" Graphic="36130100.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="SEA_MINE_DECOY_MOORED" Label="Sea Mine Decoy-Moored" Graphic="36130200.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+      </EntityTypes>
+    </Entity>
+    <Entity ID="MINE_LIKE_CONTACT_MILCO" Label="Mine-Like Contact (MILCO)" LabelAlias="MILCO" Icon="NA" GeometryType="NA">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </EntityCode>
+      <EntityTypes>
+        <EntityType ID="MILCO_GENERAL" Label="MILCO - General" LabelAlias="General" Graphic="36140100.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+          <EntitySubTypes>
+            <EntitySubType ID="MILCO_GENERAL_CONFIDENCE_LEVEL_1" Label="MILCO - General-Confidence-Level 1" LabelAlias="General-Confidence-Level 1" Graphic="36140101.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="MILCO_GENERAL_CONFIDENCE_LEVEL_2" Label="MILCO - General-Confidence-Level 2" LabelAlias="General-Confidence-Level 2" Graphic="36140102.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="MILCO_GENERAL_CONFIDENCE_LEVEL_3" Label="MILCO - General-Confidence-Level 3" LabelAlias="General-Confidence-Level 3" Graphic="36140103.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="MILCO_GENERAL_CONFIDENCE_LEVEL_4" Label="MILCO - General-Confidence-Level 4" LabelAlias="General-Confidence-Level 4" Graphic="36140104.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>4</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="MILCO_GENERAL_CONFIDENCE_LEVEL_5" Label="MILCO - General-Confidence-Level 5" LabelAlias="General-Confidence-Level 5" Graphic="36140105.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>5</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+        <EntityType ID="MILCO_BOTTOM" Label="MILCO - Bottom" LabelAlias="Bottom" Graphic="36140200.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+          <EntitySubTypes>
+            <EntitySubType ID="MILCO_BOTTOM_CONFIDENCE_LEVEL_1" Label="MILCO - Bottom-Confidence-Level 1" LabelAlias="Bottom-Confidence-Level 1" Graphic="36140201.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="MILCO_BOTTOM_CONFIDENCE_LEVEL_2" Label="MILCO - Bottom-Confidence-Level 2" LabelAlias="Bottom-Confidence-Level 2" Graphic="36140202.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="MILCO_BOTTOM_CONFIDENCE_LEVEL_3" Label="MILCO - Bottom-Confidence-Level 3" LabelAlias="Bottom-Confidence-Level 3" Graphic="36140203.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="MILCO_BOTTOM_CONFIDENCE_LEVEL_4" Label="MILCO - Bottom-Confidence-Level 4" LabelAlias="Bottom-Confidence-Level 4" Graphic="36140204.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>4</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="MILCO_BOTTOM_CONFIDENCE_LEVEL_5" Label="MILCO - Bottom-Confidence-Level 5" LabelAlias="Bottom-Confidence-Level 5" Graphic="36140205.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>5</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+        <EntityType ID="MILCO_MOORED" Label="MILCO - Moored" LabelAlias="Moored" Graphic="36140300.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </EntityTypeCode>
+          <EntitySubTypes>
+            <EntitySubType ID="MILCO_MOORED_CONFIDENCE_LEVEL_1" Label="MILCO - Moored-Confidence-Level 1" LabelAlias="Moored-Confidence-Level 1" Graphic="36140301.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="MILCO_MOORED_CONFIDENCE_LEVEL_2" Label="MILCO - Moored-Confidence-Level 2" LabelAlias="Moored-Confidence-Level 2" Graphic="36140302.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="MILCO_MOORED_CONFIDENCE_LEVEL_3" Label="MILCO - Moored-Confidence-Level 3" LabelAlias="Moored-Confidence-Level 3" Graphic="36140303.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="MILCO_MOORED_CONFIDENCE_LEVEL_4" Label="MILCO - Moored-Confidence-Level 4" LabelAlias="Moored-Confidence-Level 4" Graphic="36140304.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>4</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="MILCO_MOORED_CONFIDENCE_LEVEL_5" Label="MILCO - Moored-Confidence-Level 5" LabelAlias="Moored-Confidence-Level 5" Graphic="36140305.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>5</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+        <EntityType ID="MILCO_FLOATING" Label="MILCO - Floating" LabelAlias="Floating" Graphic="36140400.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>4</DigitTwo>
+          </EntityTypeCode>
+          <EntitySubTypes>
+            <EntitySubType ID="MILCO_FLOATING_CONFIDENCE_LEVEL_1" Label="MILCO - Floating-Confidence-Level 1" LabelAlias="Floating-Confidence-Level 1" Graphic="36140401.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="MILCO_FLOATING_CONFIDENCE_LEVEL_2" Label="MILCO - Floating-Confidence-Level 2" LabelAlias="Floating-Confidence-Level 2" Graphic="36140402.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="MILCO_FLOATING_CONFIDENCE_LEVEL_3" Label="MILCO - Floating-Confidence-Level 3" LabelAlias="Floating-Confidence-Level 3" Graphic="36140403.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="MILCO_FLOATING_CONFIDENCE_LEVEL_4" Label="MILCO - Floating-Confidence-Level 4" LabelAlias="Floating-Confidence-Level 4" Graphic="36140404.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>4</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="MILCO_FLOATING_CONFIDENCE_LEVEL_5" Label="MILCO - Floating-Confidence-Level 5" LabelAlias="Floating-Confidence-Level 5" Graphic="36140405.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>5</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+      </EntityTypes>
+    </Entity>
+    <Entity ID="MINE_LIKE_ECHO_MILEC_GENERAL" Label="Mine-Like Echo (MILEC)-General" Graphic="36150000.svg" Icon="FULL_OCTAGON">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </EntityCode>
+      <EntityTypes>
+        <EntityType ID="MINE_LIKE_ECHO_BOTTOM" Label="Mine-Like Echo-Bottom" Graphic="36150100.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="MINE_LIKE_ECHO_MOORED" Label="Mine-Like Echo-Moored" Graphic="36150200.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="MINE_LIKE_ECHO_FLOATING" Label="Mine-Like Echo-Floating" Graphic="36150300.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+      </EntityTypes>
+    </Entity>
+    <Entity ID="NEGATIVE_REACQUISITION_GENERAL" Label="Negative Reacquisition-General" Graphic="36160000.svg" Icon="FULL_OCTAGON">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </EntityCode>
+      <EntityTypes>
+        <EntityType ID="NEGATIVE_REACQUISITION_BOTTOM" Label="Negative Reacquisition-Bottom" Graphic="36160100.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="NEGATIVE_REACQUISITION_MOORED" Label="Negative Reacquisition-Moored" Graphic="36160200.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="NEGATIVE_REACQUISITION_FLOATING" Label="Negative Reacquisition-Floating" Graphic="36160300.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+      </EntityTypes>
+    </Entity>
+    <Entity ID="OBSTRUCTOR" Label="Obstructor" Graphic="36170000.svg" Icon="FULL_OCTAGON">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </EntityCode>
+      <EntityTypes>
+        <EntityType ID="NEUTRALIZED_OBSTRUCTOR" Label="Neutralized Obstructor" Graphic="36170100.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+      </EntityTypes>
+    </Entity>
+    <Entity ID="GENERAL_MINE_ANCHOR" Label="General Mine Anchor" Graphic="36180000.svg" Icon="FULL_OCTAGON">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </EntityCode>
+    </Entity>
+    <Entity ID="NON_MINE_MINE_LIKE_NMLO_GENERAL" Label="Non-Mine Mine-Like Object (NMLO)-General" LabelAlias="NMLO-General" Graphic="36190000.svg" Icon="FULL_OCTAGON">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </EntityCode>
+      <EntityTypes>
+        <EntityType ID="NON_MINE_MINE_LIKE_BOTTOM" Label="Non-Mine Mine-Like Object-Bottom" Graphic="36190100.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="NON_MINE_MINE_LIKE_MOORED" Label="Non-Mine Mine-Like Object-Moored" Graphic="36190200.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="NON_MINE_MINE_LIKE_FLOATING" Label="Non-Mine Mine-Like Object-Floating" Graphic="36190300.svg" Icon="FULL_OCTAGON">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+      </EntityTypes>
+    </Entity>
+    <Entity ID="ENVIRONMENTAL_REPORT_LOCATION" Label="Environmental Report Location" Graphic="36200000.svg" Icon="FULL_OCTAGON">
+      <EntityCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </EntityCode>
+    </Entity>
+    <Entity ID="DIVE_REPORT_LOCATION" Label="Dive Report Location" Graphic="36210000.svg" Icon="FULL_OCTAGON">
+      <EntityCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </EntityCode>
+    </Entity>
+  </Entities>
+  <LegacySymbols>
+    <LegacySymbol ID="SEA_MINE_GENERAL_SYM" Label="S*UPWM----*****" EntityID="SEA_MINE_GENERAL">
+      <LegacyFunctionCode Name="2525C">WM----</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SEA_MINE_GENERAL_SEA_MINE_BOTTOM_SYM" Label="S*UPWMG---*****" EntityID="SEA_MINE_GENERAL" EntityTypeID="SEA_MINE_BOTTOM">
+      <LegacyFunctionCode Name="2525C">WMG---</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SEA_MINE_GENERAL_SEA_MINE_MOORED_SYM" Label="S*UPWMM---*****" EntityID="SEA_MINE_GENERAL" EntityTypeID="SEA_MINE_MOORED">
+      <LegacyFunctionCode Name="2525C">WMM---</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SEA_MINE_GENERAL_SEA_MINE_FLOATING_SYM" Label="S*UPWMF---*****" EntityID="SEA_MINE_GENERAL" EntityTypeID="SEA_MINE_FLOATING">
+      <LegacyFunctionCode Name="2525C">WMF---</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SEA_MINE_GENERAL_SEA_MINE_RISING_SYM" Label="S*UPWMS---*****" EntityID="SEA_MINE_GENERAL" EntityTypeID="SEA_MINE_RISING">
+      <LegacyFunctionCode Name="2525C">WMS---</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SEA_MINE_GENERAL_SEA_MINE_OTHER_POSITION_SYM" Label="S*UPWMO---*****" EntityID="SEA_MINE_GENERAL" EntityTypeID="SEA_MINE_OTHER_POSITION">
+      <LegacyFunctionCode Name="2525C">WMO---</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SEA_MINE_GENERAL_EXERCISE_MINE_GENERAL_SYM" Label="S*UPWMX---*****" EntityID="SEA_MINE_GENERAL" EntityTypeID="EXERCISE_MINE_GENERAL">
+      <LegacyFunctionCode Name="2525C">WMX---</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SEA_MINE_GENERAL_EXERCISE_MINE_GENERAL_EXERCISE_MINE_BOTTOM_SYM" Label="S*UPWMGX--*****" EntityID="SEA_MINE_GENERAL" EntityTypeID="EXERCISE_MINE_GENERAL" EntitySubTypeID="EXERCISE_MINE_BOTTOM">
+      <LegacyFunctionCode Name="2525C">WMGX--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SEA_MINE_GENERAL_EXERCISE_MINE_GENERAL_EXERCISE_MINE_MOORED_SYM" Label="S*UPWMMX--*****" EntityID="SEA_MINE_GENERAL" EntityTypeID="EXERCISE_MINE_GENERAL" EntitySubTypeID="EXERCISE_MINE_MOORED">
+      <LegacyFunctionCode Name="2525C">WMMX--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SEA_MINE_GENERAL_EXERCISE_MINE_GENERAL_EXERCISE_MINE_FLOATING_SYM" Label="S*UPWMFX--*****" EntityID="SEA_MINE_GENERAL" EntityTypeID="EXERCISE_MINE_GENERAL" EntitySubTypeID="EXERCISE_MINE_FLOATING">
+      <LegacyFunctionCode Name="2525C">WMFX--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SEA_MINE_GENERAL_EXERCISE_MINE_GENERAL_EXERCISE_MINE_RISING_SYM" Label="S*UPWMSX--*****" EntityID="SEA_MINE_GENERAL" EntityTypeID="EXERCISE_MINE_GENERAL" EntitySubTypeID="EXERCISE_MINE_RISING">
+      <LegacyFunctionCode Name="2525C">WMSX--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SEA_MINE_GENERAL_NEUTRALIZED_MINE_GENERAL_SYM" Label="S*UPWMD---*****" EntityID="SEA_MINE_GENERAL" EntityTypeID="NEUTRALIZED_MINE_GENERAL">
+      <LegacyFunctionCode Name="2525C">WMD---</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SEA_MINE_GENERAL_NEUTRALIZED_MINE_GENERAL_NEUTRALIZED_MINE_BOTTOM_SYM" Label="S*UPWMGD--*****" EntityID="SEA_MINE_GENERAL" EntityTypeID="NEUTRALIZED_MINE_GENERAL" EntitySubTypeID="NEUTRALIZED_MINE_BOTTOM">
+      <LegacyFunctionCode Name="2525C">WMGD--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SEA_MINE_GENERAL_NEUTRALIZED_MINE_GENERAL_NEUTRALIZED_MINE_MOORED_SYM" Label="S*UPWMMD--*****" EntityID="SEA_MINE_GENERAL" EntityTypeID="NEUTRALIZED_MINE_GENERAL" EntitySubTypeID="NEUTRALIZED_MINE_MOORED">
+      <LegacyFunctionCode Name="2525C">WMMD--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SEA_MINE_GENERAL_NEUTRALIZED_MINE_GENERAL_NEUTRALIZED_MINE_FLOATING_SYM" Label="S*UPWMFD--*****" EntityID="SEA_MINE_GENERAL" EntityTypeID="NEUTRALIZED_MINE_GENERAL" EntitySubTypeID="NEUTRALIZED_MINE_FLOATING">
+      <LegacyFunctionCode Name="2525C">WMFD--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SEA_MINE_GENERAL_NEUTRALIZED_MINE_GENERAL_NEUTRALIZED_MINE_RISING_SYM" Label="S*UPWMSD--*****" EntityID="SEA_MINE_GENERAL" EntityTypeID="NEUTRALIZED_MINE_GENERAL" EntitySubTypeID="NEUTRALIZED_MINE_RISING">
+      <LegacyFunctionCode Name="2525C">WMSD--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SEA_MINE_GENERAL_NEUTRALIZED_MINE_GENERAL_NEUTRALIZED_MINE_OTHER_POSITION_SYM" Label="S*UPWMOD--*****" EntityID="SEA_MINE_GENERAL" EntityTypeID="NEUTRALIZED_MINE_GENERAL" EntitySubTypeID="NEUTRALIZED_MINE_OTHER_POSITION">
+      <LegacyFunctionCode Name="2525C">WMOD--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="UNEXPLODED_ORDNANCE_SYM" Label="S*UPX-----*****" EntityID="UNEXPLODED_ORDNANCE">
+      <LegacyFunctionCode Name="2525C">X-----</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SEA_MINE_DECOY_SYM" Label="S*UPWDM---*****" EntityID="SEA_MINE_DECOY">
+      <LegacyFunctionCode Name="2525C">WDM---</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SEA_MINE_DECOY_SEA_MINE_DECOY_BOTTOM_SYM" Label="S*UPWDMG--*****" EntityID="SEA_MINE_DECOY" EntityTypeID="SEA_MINE_DECOY_BOTTOM">
+      <LegacyFunctionCode Name="2525C">WDMG--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SEA_MINE_DECOY_SEA_MINE_DECOY_MOORED_SYM" Label="S*UPWDMM--*****" EntityID="SEA_MINE_DECOY" EntityTypeID="SEA_MINE_DECOY_MOORED">
+      <LegacyFunctionCode Name="2525C">WDMM--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="MINE_LIKE_ECHO_MILEC_GENERAL_SYM" Label="S*UPWME---*****" EntityID="MINE_LIKE_ECHO_MILEC_GENERAL">
+      <LegacyFunctionCode Name="2525C">WME---</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="MINE_LIKE_ECHO_MILEC_GENERAL_MINE_LIKE_ECHO_BOTTOM_SYM" Label="S*UPWMGE--*****" EntityID="MINE_LIKE_ECHO_MILEC_GENERAL" EntityTypeID="MINE_LIKE_ECHO_BOTTOM">
+      <LegacyFunctionCode Name="2525C">WMGE--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="MINE_LIKE_ECHO_MILEC_GENERAL_MINE_LIKE_ECHO_MOORED_SYM" Label="S*UPWMME--*****" EntityID="MINE_LIKE_ECHO_MILEC_GENERAL" EntityTypeID="MINE_LIKE_ECHO_MOORED">
+      <LegacyFunctionCode Name="2525C">WMME--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="MINE_LIKE_ECHO_MILEC_GENERAL_MINE_LIKE_ECHO_FLOATING_SYM" Label="S*UPWMFE--*****" EntityID="MINE_LIKE_ECHO_MILEC_GENERAL" EntityTypeID="MINE_LIKE_ECHO_FLOATING">
+      <LegacyFunctionCode Name="2525C">WMFE--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="NEGATIVE_REACQUISITION_GENERAL_SYM" Label="S*UPWMR---*****" EntityID="NEGATIVE_REACQUISITION_GENERAL">
+      <LegacyFunctionCode Name="2525C">WMR---</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="NEGATIVE_REACQUISITION_GENERAL_NEGATIVE_REACQUISITION_BOTTOM_SYM" Label="S*UPWMGR--*****" EntityID="NEGATIVE_REACQUISITION_GENERAL" EntityTypeID="NEGATIVE_REACQUISITION_BOTTOM">
+      <LegacyFunctionCode Name="2525C">WMGR--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="NEGATIVE_REACQUISITION_GENERAL_NEGATIVE_REACQUISITION_MOORED_SYM" Label="S*UPWMMR--*****" EntityID="NEGATIVE_REACQUISITION_GENERAL" EntityTypeID="NEGATIVE_REACQUISITION_MOORED">
+      <LegacyFunctionCode Name="2525C">WMMR--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="NEGATIVE_REACQUISITION_GENERAL_NEGATIVE_REACQUISITION_FLOATING_SYM" Label="S*UPWMFR--*****" EntityID="NEGATIVE_REACQUISITION_GENERAL" EntityTypeID="NEGATIVE_REACQUISITION_FLOATING">
+      <LegacyFunctionCode Name="2525C">WMFR--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="OBSTRUCTOR_SYM" Label="S*UPWMB---*****" EntityID="OBSTRUCTOR">
+      <LegacyFunctionCode Name="2525C">WMB---</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="OBSTRUCTOR_NEUTRALIZED_OBSTRUCTOR_SYM" Label="S*UPWMBD--*****" EntityID="OBSTRUCTOR" EntityTypeID="NEUTRALIZED_OBSTRUCTOR">
+      <LegacyFunctionCode Name="2525C">WMBD--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="GENERAL_MINE_ANCHOR_SYM" Label="S*UPWMA---*****" EntityID="GENERAL_MINE_ANCHOR">
+      <LegacyFunctionCode Name="2525C">WMA---</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="NON_MINE_MINE_LIKE_NMLO_GENERAL_SYM" Label="S*UPWMN---*****" EntityID="NON_MINE_MINE_LIKE_NMLO_GENERAL">
+      <LegacyFunctionCode Name="2525C">WMN---</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="NON_MINE_MINE_LIKE_NMLO_GENERAL_NON_MINE_MINE_LIKE_BOTTOM_SYM" Label="S*UPWMGO--*****" EntityID="NON_MINE_MINE_LIKE_NMLO_GENERAL" EntityTypeID="NON_MINE_MINE_LIKE_BOTTOM">
+      <LegacyFunctionCode Name="2525C">WMGO--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="NON_MINE_MINE_LIKE_NMLO_GENERAL_NON_MINE_MINE_LIKE_MOORED_SYM" Label="S*UPWMMO--*****" EntityID="NON_MINE_MINE_LIKE_NMLO_GENERAL" EntityTypeID="NON_MINE_MINE_LIKE_MOORED">
+      <LegacyFunctionCode Name="2525C">WMMO--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="NON_MINE_MINE_LIKE_NMLO_GENERAL_NON_MINE_MINE_LIKE_FLOATING_SYM" Label="S*UPWMFO--*****" EntityID="NON_MINE_MINE_LIKE_NMLO_GENERAL" EntityTypeID="NON_MINE_MINE_LIKE_FLOATING">
+      <LegacyFunctionCode Name="2525C">WMFO--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="ENVIRONMENTAL_REPORT_LOCATION_SYM" Label="S*UPE-----*****" EntityID="ENVIRONMENTAL_REPORT_LOCATION">
+      <LegacyFunctionCode Name="2525C">E-----</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="DIVE_REPORT_LOCATION_SYM" Label="S*UPV-----*****" EntityID="DIVE_REPORT_LOCATION">
+      <LegacyFunctionCode Name="2525C">V-----</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SEA_MINE_GENERAL_SYM" Label="WOS-HHDMDF" EntityID="SEA_MINE_GENERAL">
+      <LegacyFunctionCode Name="2525C" Description="Substitute" Remarks="Substituted Sea Mine General (2525D) for Mine Naval (Definite) (2525C)" SchemaOverride="W" DimensionOverride="S">HHDMDF</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SEA_MINE_GENERAL_SYM" Label="WOS-HHDMDB" EntityID="SEA_MINE_GENERAL">
+      <LegacyFunctionCode Name="2525C" Description="Substitute" Remarks="Substituted Sea Mine General (2525D) for Mine Naval (Doubtful) (2525C)" SchemaOverride="W" DimensionOverride="S">HHDMDB</LegacyFunctionCode>
+    </LegacySymbol>
+  </LegacySymbols>
 </SymbolSet>

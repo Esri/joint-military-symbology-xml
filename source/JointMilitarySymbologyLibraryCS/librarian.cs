@@ -128,27 +128,44 @@ namespace JointMilitarySymbologyLibrary
 
             if (File.Exists(_configPath))
             {
-                FileStream fs = new FileStream(_configPath, FileMode.Open, FileAccess.Read);
-
-                if (fs.CanRead)
+                using(FileStream fs = new FileStream(_configPath, FileMode.Open, FileAccess.Read))
                 {
-                    _configData = (JMSMLConfig)serializer.Deserialize(fs);
-
-                    //
-                    // Deserialize the library's base xml to get the base contents of the symbology standard
-                    //
-
-                    serializer = new XmlSerializer(typeof(Library));
-
-                    string path = _configData.LibraryPath + "/" + _configData.LibraryName;
-
-                    if (File.Exists(path))
+                    if (fs.CanRead)
                     {
-                        fs = new FileStream(path, FileMode.Open, FileAccess.Read);
+                        _configData = (JMSMLConfig)serializer.Deserialize(fs);
+                    }
+                    else
+                    {
+                        logger.Error("Unreadable config file: " + _configPath);
+                    }
+                }
+            }
+            else
+            {
+                logger.Error("Config file is missing: " + _configPath);
+            }
 
-                        if (fs.CanRead)
+            //
+            // If the config data was good then...
+            //
+
+            if(_configData != null)
+            {
+                //
+                // Deserialize the library's base xml to get the base contents of the symbology standard
+                //
+
+                serializer = new XmlSerializer(typeof(Library));
+
+                string path = _configData.LibraryPath + "/" + _configData.LibraryName;
+
+                if (File.Exists(path))
+                {
+                    using (FileStream fsLibrary = new FileStream(path, FileMode.Open, FileAccess.Read))
+                    {
+                        if (fsLibrary.CanRead)
                         {
-                            this._library = (Library)serializer.Deserialize(fs);
+                            this._library = (Library)serializer.Deserialize(fsLibrary);
 
                             //
                             // Deserialize each symbolSet xml
@@ -164,22 +181,23 @@ namespace JointMilitarySymbologyLibrary
                                         path = _configData.LibraryPath + "/" + ssRef.Instance;
                                         if (File.Exists(path))
                                         {
-                                            fs = new FileStream(path, FileMode.Open, FileAccess.Read);
-
-                                            if (fs.CanRead)
+                                            using (FileStream fsSymbolSet = new FileStream(path, FileMode.Open, FileAccess.Read))
                                             {
-                                                serializer = new XmlSerializer(typeof(SymbolSet));
-                                                SymbolSet ss = (SymbolSet)serializer.Deserialize(fs);
-
-                                                if (ss != null)
+                                                if (fsSymbolSet.CanRead)
                                                 {
-                                                    _sortedSymbolSets.Add(ssCode, ss);
-                                                    _symbolSets.Add(ss);
+                                                    serializer = new XmlSerializer(typeof(SymbolSet));
+                                                    SymbolSet ss = (SymbolSet)serializer.Deserialize(fsSymbolSet);
+
+                                                    if (ss != null)
+                                                    {
+                                                        _sortedSymbolSets.Add(ssCode, ss);
+                                                        _symbolSets.Add(ss);
+                                                    }
                                                 }
-                                            }
-                                            else
-                                            {
-                                                logger.Error("Unreadable symbol set: " + path);
+                                                else
+                                                {
+                                                    logger.Error("Unreadable symbol set: " + path);
+                                                }
                                             }
                                         }
                                         else
@@ -202,19 +220,11 @@ namespace JointMilitarySymbologyLibrary
                             logger.Error("Unreadable symbol library: " + path);
                         }
                     }
-                    else
-                    {
-                        logger.Error("Specified library is missing: " + path);
-                    }
                 }
                 else
                 {
-                    logger.Error("Unreadable config file: " + _configPath);
+                    logger.Error("Specified library is missing: " + path);
                 }
-            }
-            else
-            {
-                logger.Error("Config file is missing: " + _configPath);
             }
         }
 
@@ -449,7 +459,7 @@ namespace JointMilitarySymbologyLibrary
             return retObj;
         }
 
-        internal LibraryDimension DimensionByLegacyCode(string code, string firstLetterInFunction = "")
+        internal LibraryDimension DimensionByLegacyCode(string code, string firstLetterInFunction = "", string codingSchemeLetter = "")
         {
             LibraryDimension retObj = null;
 
@@ -459,8 +469,9 @@ namespace JointMilitarySymbologyLibrary
                 {
                     foreach (LegacyLetterCodeType lObj2 in lObj.LegacyDimensionCode)
                     {
-                        if ((lObj2.Value == code && lObj2.FirstFunctionLetter == "") ||
-                            (lObj2.Value == code && lObj2.FirstFunctionLetter == firstLetterInFunction))
+                        if ((lObj2.Value == code && lObj2.FirstFunctionLetter == "" && lObj2.CodingSchemeLetter == "") ||
+                            (lObj2.Value == code && lObj2.FirstFunctionLetter == firstLetterInFunction) ||
+                            (lObj2.Value == code && lObj2.CodingSchemeLetter == codingSchemeLetter))
                         {
                             return lObj;
                         }
@@ -604,9 +615,9 @@ namespace JointMilitarySymbologyLibrary
             return retObj;
         }
 
-        internal LibraryStatus Status(string code)
+        internal LibraryStatus Status(string code, string codingScheme)
         {
-            LibraryStatus retObj = null;
+            LibraryStatus retObj = this._library.Statuses[0];
 
             foreach (LibraryStatus lObj in this._library.Statuses)
             {
@@ -614,7 +625,8 @@ namespace JointMilitarySymbologyLibrary
                 {
                     foreach (LegacyLetterCodeType lObj2 in lObj.LegacyStatusCode)
                     {
-                        if (lObj2.Value == code)
+                        if ((lObj2.Value == code && lObj2.CodingSchemeLetter == "") ||
+                            (lObj2.Value == code && lObj2.CodingSchemeLetter == codingScheme))
                         {
                             return lObj;
                         }
@@ -622,7 +634,7 @@ namespace JointMilitarySymbologyLibrary
                 }
             }
 
-            _statusFlag -= 32;
+            //_statusFlag -= 32;
 
             return retObj;
         }
@@ -737,7 +749,7 @@ namespace JointMilitarySymbologyLibrary
             return retObj;
         }
 
-        internal LibraryAmplifierGroupAmplifier Amplifier(string code)
+        internal LibraryAmplifierGroupAmplifier Amplifier(string code, string codingScheme)
         {
             LibraryAmplifierGroupAmplifier retObj = null;
 
@@ -751,7 +763,8 @@ namespace JointMilitarySymbologyLibrary
                         {
                             foreach (LegacyLetterCodeType lObj3 in lObj2.LegacyModifierCode)
                             {
-                                if (lObj3.Value == code)
+                                if ((lObj3.Value == code && lObj3.CodingSchemeLetter == "") ||
+                                    (lObj3.Value == code && lObj3.CodingSchemeLetter == codingScheme))
                                 {
                                     return lObj2;
                                 }
@@ -761,7 +774,7 @@ namespace JointMilitarySymbologyLibrary
                 }
             }
 
-            _statusFlag -= 256;
+           retObj = Amplifier("-", codingScheme);
 
             return retObj;
         }
@@ -783,24 +796,43 @@ namespace JointMilitarySymbologyLibrary
             return retObj;
         }
 
-        internal LibraryAffiliation AffiliationByLegacyCode(string legacyStandardIdentityCode, string legacyDimensionCode, string legacyFirstLetterInFunction)
+        internal LibraryAffiliation AffiliationByLegacyCode(string legacyStandardIdentityCode, string legacyDimensionCode, string legacyFirstLetterInFunction, string legacyCodingSchemeLetter)
         {
             LibraryAffiliation retObj = null;
+
+            // For each affiliation (combination of context, dimension, and standard identity)
 
             foreach(LibraryAffiliation lObj in this._library.Affiliations)
             {
                 if (lObj.LegacyStandardIdentityCode != null)
                 {
+                    // For each standard identity
+
                     foreach (LegacyLetterCodeType lObj2 in lObj.LegacyStandardIdentityCode)
                     {
+                        // If this is the standard identity we are looking for...
+
                         if (lObj2.Value == legacyStandardIdentityCode)
                         {
+                            // Grab the dimension associated with the current affiliation
+
                             LibraryDimension lDim = this.Dimension(lObj.DimensionID);
                             
+                            // For each dimension code in that dimension...
+
                             foreach (LegacyLetterCodeType lObj3 in lDim.LegacyDimensionCode)
                             {
-                                if((lObj3.Value == legacyDimensionCode && lObj3.FirstFunctionLetter == "") ||
-                                   (lObj3.Value == legacyDimensionCode && lObj3.FirstFunctionLetter == legacyFirstLetterInFunction))
+                                // Test to see if this is the dimension we are looking for by checking to see if the codes match and there is no
+                                // first function letter and coding schema letter override, or...
+                                // use the overriding first function letter to refine the test, or...
+                                // use the overriding coding scheme letter to refine the test.
+
+                                if((lObj3.Value == legacyDimensionCode && lObj3.FirstFunctionLetter == "" && lObj3.CodingSchemeLetter == "") ||
+                                   (lObj3.Value == legacyDimensionCode && lObj3.FirstFunctionLetter == legacyFirstLetterInFunction) ||
+                                   (lObj3.Value == legacyDimensionCode && lObj3.CodingSchemeLetter == legacyCodingSchemeLetter))
+
+                                    // We have a match, so return the current affiliation
+
                                     return lObj;
                             }
                         }
@@ -1077,9 +1109,9 @@ namespace JointMilitarySymbologyLibrary
                         {
                             if (lObj2.Value == functionCode)
                             {
-                                if (lObj2.Schema != "")
+                                if (lObj2.SchemaOverride != "")
                                 {
-                                    if (lObj2.Schema == schema && lObj2.Dimension == dimension)
+                                    if (lObj2.SchemaOverride == schema && lObj2.DimensionOverride == dimension)
                                         return lObj;
                                 }
                                 else

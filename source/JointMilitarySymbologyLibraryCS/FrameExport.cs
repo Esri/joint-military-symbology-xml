@@ -30,10 +30,17 @@ namespace JointMilitarySymbologyLibrary
         {
             // Creates the unique idntifier code for a given frame.
 
-            string code = Convert.ToString(context.ContextCode) + "_" +
-                          Convert.ToString(identity.StandardIdentityCode) +
-                          Convert.ToString(dimension.DimensionCode.DigitOne) + Convert.ToString(dimension.DimensionCode.DigitTwo) + "_" +
-                          Convert.ToString((status.StatusCode == 1) ? 1 : 0);
+            string code = "";
+
+            if (context != null && dimension != null && status != null)
+            {
+                code = Convert.ToString(context.ContextCode) + "_" +
+                       Convert.ToString(identity.StandardIdentityCode) +
+                       Convert.ToString(dimension.DimensionCode.DigitOne) + Convert.ToString(dimension.DimensionCode.DigitTwo) + "_" +
+                       Convert.ToString((status.StatusCode == 1) ? 1 : 0);
+            }
+            else
+                code = Convert.ToString(identity.StandardIdentityCode);
 
             return code;
         }
@@ -55,19 +62,33 @@ namespace JointMilitarySymbologyLibrary
 
             string result = "";   //"Frame" + _configHelper.DomainSeparator;   //Removed because thought to be redundant
 
-            if (context.Label != "Reality")
-                result = result + context.Label.Replace(',', '-') + _configHelper.DomainSeparator;
+            if (context != null)
+            {
+                if (context.Label != "Reality")
+                    result = result + context.Label.Replace(',', '-') + _configHelper.DomainSeparator;
+            }
 
-            result = result + identity.Label.Replace(',', '-') + _configHelper.DomainSeparator;
-            result = result + dimension.Label.Replace(',', '-');
+            result = result + identity.Label.Replace(',', '-');
 
-            if (status.StatusCode == 1)
-                result = result + _configHelper.DomainSeparator + ((status.LabelAlias == "") ? status.Label : status.LabelAlias);
+            if(dimension != null)
+                result = result + _configHelper.DomainSeparator + dimension.Label.Replace(',', '-');
+
+            if (status != null)
+            {
+                if (status.StatusCode == 1)
+                    result = result + _configHelper.DomainSeparator + ((status.LabelAlias == "") ? status.Label : status.LabelAlias);
+            }
 
             return result;
         }
 
-        protected string BuildFrameItemTags(LibraryContext context, LibraryStandardIdentity identity, LibraryDimension dimension, LibraryStatus status, string graphicPath, bool omitSource)
+        protected string BuildFrameItemTags(LibraryContext context, 
+                                            LibraryStandardIdentity identity, 
+                                            LibraryDimension dimension, 
+                                            LibraryStatus status, 
+                                            string graphicPath, 
+                                            bool omitSource, 
+                                            bool omitLegacy)
         {
             // Constructs a string of semicolon delimited tags that users can utilize to search
             // for or find a given symbol.
@@ -93,6 +114,9 @@ namespace JointMilitarySymbologyLibrary
                         result = result + ssRef.Label.Replace(',', '-') + ";";
                 }
             }
+
+            if(!omitLegacy)
+                result = result + _configHelper.SIDCIsNA + ";";
 
             if(!omitSource)
                 result = result + graphicPath.Substring(1) + ";";

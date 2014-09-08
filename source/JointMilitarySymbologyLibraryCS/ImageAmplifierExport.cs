@@ -23,16 +23,18 @@ namespace JointMilitarySymbologyLibrary
     public class ImageAmplifierExport : AmplifierExport, IAmplifierExport
     {
         private bool _omitSource = false;
+        private bool _omitLegacy = false;
 
-        public ImageAmplifierExport(ConfigHelper configHelper, bool omitSource)
+        public ImageAmplifierExport(ConfigHelper configHelper, bool omitSource, bool omitLegacy)
         {
             _configHelper = configHelper;
             _omitSource = omitSource;
+            _omitLegacy = omitLegacy;
         }
 
         string IAmplifierExport.Headers
         {
-            get { return "filePath,pointSize,styleItemName,styleItemCategory,styleItemTags,notes"; }
+            get { return "filePath,pointSize,styleItemName,styleItemCategory,styleItemTags,styleItemUniqueId,styleItemGeometryType,notes"; }
         }
 
         string IAmplifierExport.Line(LibraryAmplifierGroup amplifierGroup, LibraryAmplifierGroupAmplifier amplifier, LibraryAmplifierGroupAmplifierGraphic graphic)
@@ -77,13 +79,16 @@ namespace JointMilitarySymbologyLibrary
 
             string itemName = BuildAmplifierItemName(amplifierGroup, amplifier, identityGroup);
             string itemCategory = "Amplifier" + _configHelper.DomainSeparator + category;
-            string itemTags = BuildAmplifierItemTags(amplifierGroup, amplifier, identityGroup, graphicPath + "\\" + graphic.Graphic, _omitSource);
+            string itemTags = BuildAmplifierItemTags(amplifierGroup, amplifier, identityGroup, graphicPath + "\\" + graphic.Graphic, _omitSource, _omitLegacy);
+            string itemID = BuildAmplifierCode(amplifierGroup, amplifier, identityGroup);
 
             result = itemRootedPath + "," +
                      Convert.ToString(_configHelper.PointSize) + "," +
                      itemName + "," +
                      itemCategory + "," +
-                     itemTags + "," +
+                     itemTags + "," + 
+                     itemID + "," +
+                     "Point"+ "," +
                      _notes;
 
             return result;

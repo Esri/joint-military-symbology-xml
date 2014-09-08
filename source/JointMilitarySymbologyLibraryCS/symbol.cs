@@ -683,36 +683,59 @@ namespace JointMilitarySymbologyLibrary
                 
                 if (_legacySymbol != null)
                 {
-                    if(_legacySymbol.LegacyFunctionCode[0].Schema != "" && _legacySymbol.LegacyFunctionCode[0].Dimension != "")
-                    {
-                        _legacySIDC = _legacySymbol.LegacyFunctionCode[0].Schema +
-                                      _affiliation.LegacyStandardIdentityCode[0].Value +
-                                      _legacySymbol.LegacyFunctionCode[0].Dimension +
-                                      _status.LegacyStatusCode[0].Value;
-                    }
+                    // Schema
+                    if (_legacySymbol.LegacyFunctionCode[0].SchemaOverride != "")
+                        _legacySIDC = _legacySymbol.LegacyFunctionCode[0].SchemaOverride;
                     else
-                    {
-                        _legacySIDC = _symbolSet.LegacyCodingSchemeCode[0].Value +
-                                      _affiliation.LegacyStandardIdentityCode[0].Value +
-                                      _dimension.LegacyDimensionCode[0].Value +
-                                      _status.LegacyStatusCode[0].Value;
-                    }
+                        _legacySIDC = _symbolSet.LegacyCodingSchemeCode[0].Value;
 
+                    // Standard Identity
+                    if (_legacySymbol.LegacyFunctionCode[0].StandardIdentityOverride != "")
+                        _legacySIDC = _legacySIDC + _legacySymbol.LegacyFunctionCode[0].StandardIdentityOverride;
+                    else
+                        _legacySIDC = _legacySIDC + _affiliation.LegacyStandardIdentityCode[0].Value;
+
+                    // Dimension
+                    if (_legacySymbol.LegacyFunctionCode[0].DimensionOverride != "")
+                        _legacySIDC = _legacySIDC + _legacySymbol.LegacyFunctionCode[0].DimensionOverride;
+                    else
+                        _legacySIDC = _legacySIDC + _dimension.LegacyDimensionCode[0].Value;
+
+                    // Status
+                    if (_legacySymbol.LegacyFunctionCode[0].StatusOverride != "")
+                        _legacySIDC = _legacySIDC + _legacySymbol.LegacyFunctionCode[0].StatusOverride;
+                    else
+                        _legacySIDC = _legacySIDC + _status.LegacyStatusCode[0].Value;
+
+                    // Function
                     _legacySIDC = _legacySIDC + _legacySymbol.LegacyFunctionCode[0].Value;
                 }
                 else
                 {
                     _legacySIDC = _symbolSet.LegacyCodingSchemeCode[0].Value +
-                              _affiliation.LegacyStandardIdentityCode[0].Value +
-                              _dimension.LegacyDimensionCode[0].Value +
-                              _status.LegacyStatusCode[0].Value;
-
-                    _legacySIDC = _legacySIDC + _blankLegacyFunction;
+                                  _affiliation.LegacyStandardIdentityCode[0].Value +
+                                  _dimension.LegacyDimensionCode[0].Value +
+                                  _status.LegacyStatusCode[0].Value +
+                                  _blankLegacyFunction;
                 }
 
-                _legacySIDC = _legacySIDC + _amplifierGroup.LegacyModifierCode[0].Value +
-                                            _amplifier.LegacyModifierCode[0].Value +
-                                            _blankLegacyTail;
+                // HQTFFD
+                if (_legacySymbol.LegacyFunctionCode[0].HQTFFDOverride != "")
+                    _legacySIDC = _legacySIDC + _legacySymbol.LegacyFunctionCode[0].HQTFFDOverride;
+                else
+                    _legacySIDC = _legacySIDC + _amplifierGroup.LegacyModifierCode[0].Value;
+
+                // Amplifier
+                if (_legacySymbol.LegacyFunctionCode[0].AmplifierOverride != "")
+                    _legacySIDC = _legacySIDC + _legacySymbol.LegacyFunctionCode[0].AmplifierOverride;
+                else
+                    _legacySIDC = _legacySIDC + _amplifier.LegacyModifierCode[0].Value;
+
+                //Tail
+                if (_legacySymbol.LegacyFunctionCode[0].TailOverride != "")
+                    _legacySIDC = _legacySIDC + _legacySymbol.LegacyFunctionCode[0].TailOverride;
+                else
+                    _legacySIDC = _legacySIDC + _blankLegacyTail;
             }
         }
 
@@ -791,7 +814,7 @@ namespace JointMilitarySymbologyLibrary
 
             _version = _librarian.Version(1, 0);
 
-            _affiliation = _librarian.AffiliationByLegacyCode(_legacySIDC.Substring(1, 1), _legacySIDC.Substring(2, 1), _legacySIDC.Substring(4,1));
+            _affiliation = _librarian.AffiliationByLegacyCode(_legacySIDC.Substring(1, 1), _legacySIDC.Substring(2, 1), _legacySIDC.Substring(4,1), _legacySIDC.Substring(0,1));
 
             if (_affiliation != null)
             {
@@ -800,14 +823,14 @@ namespace JointMilitarySymbologyLibrary
                 _sig = _librarian.StandardIdentityGroup(_standardIdentity);
             }
             
-            _dimension = _librarian.DimensionByLegacyCode(_legacySIDC.Substring(2, 1), _legacySIDC.Substring(4,1));
+            _dimension = _librarian.DimensionByLegacyCode(_legacySIDC.Substring(2, 1), _legacySIDC.Substring(4,1), _legacySIDC.Substring(0,1));
 
             if (_dimension != null)
             {
                 _symbolSet = _librarian.SymbolSet(_dimension.ID, _legacySIDC.Substring(4, 6));
             }
 
-            _status = _librarian.Status(_legacySIDC.Substring(3, 1));
+            _status = _librarian.Status(_legacySIDC.Substring(3, 1), _legacySIDC.Substring(0, 1));
             _hqTFDummy = _librarian.HQTFDummy(_legacySIDC.Substring(10, 1));
 
             if (_context != null && _affiliation != null)
@@ -815,7 +838,7 @@ namespace JointMilitarySymbologyLibrary
                 _contextAmplifier = _librarian.ContextAmplifier(_context, _affiliation.Shape);
             }
 
-            _amplifier = _librarian.Amplifier(_legacySIDC.Substring(11, 1));
+            _amplifier = _librarian.Amplifier(_legacySIDC.Substring(11, 1), _legacySIDC.Substring(0,1));
 
             if (_amplifier != null)
             {

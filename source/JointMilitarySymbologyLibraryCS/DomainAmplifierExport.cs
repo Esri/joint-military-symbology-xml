@@ -34,9 +34,9 @@ namespace JointMilitarySymbologyLibrary
 
         string IAmplifierExport.Line(LibraryAmplifierGroup amplifierGroup, LibraryAmplifierGroupAmplifier amplifier, LibraryAmplifierGroupAmplifierGraphic graphic)
         {
-            LibraryStandardIdentityGroup identityGroup = _configHelper.Librarian.StandardIdentityGroup(graphic.StandardIdentityGroup);
+            //LibraryStandardIdentityGroup identityGroup = _configHelper.Librarian.StandardIdentityGroup(graphic.StandardIdentityGroup);
 
-            string result = BuildAmplifierItemName(amplifierGroup, amplifier, identityGroup) + "," + BuildQuotedAmplifierCode(amplifierGroup, amplifier, identityGroup);
+            string result = BuildAmplifierItemName(amplifierGroup, amplifier, null) + "," + BuildQuotedAmplifierCode(amplifierGroup, amplifier, null);
 
             return result;
         }
