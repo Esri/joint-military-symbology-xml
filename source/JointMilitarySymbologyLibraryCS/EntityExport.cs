@@ -318,9 +318,6 @@ namespace JointMilitarySymbologyLibrary
 
             result = result + ";" + iType;
 
-            if(!omitSource)
-                result = result + ";" + _configHelper.GetPath(ss.ID, FindEnum.FindEntities, true) + "\\" + graphic;
-
             // Add an equivalent 2525C SIDC tag, if one exists
 
             if (!omitLegacy)
@@ -329,6 +326,9 @@ namespace JointMilitarySymbologyLibrary
                 if (sidcTag != "")
                     result = result + ";" + sidcTag;
             }
+
+            if (!omitSource)
+                result = result + ";" + _configHelper.GetPath(ss.ID, FindEnum.FindEntities, true) + "\\" + graphic;
             
             result = result + ";" + geometry;
             result = result + ";" + BuildEntityItemName(sig, ss, e, eType, eSubType);

@@ -109,6 +109,7 @@ namespace JointMilitarySymbologyLibrary
             // Information includes the Label attributes, location of the original graphic file, the code, etc.
 
             string category = "";
+            string iType = "";
             string result = "Amplifier;";
 
             switch (amplifierGroup.AmplifierGroupCode)
@@ -116,16 +117,19 @@ namespace JointMilitarySymbologyLibrary
                 case 1:
                 case 2:
                     category = "Echelon;";
+                    iType = "ECHELON";
                     break;
 
                 case 3:
                 case 4:
                 case 5:
                     category = "Mobility;";
+                    iType = "MOBILITY";
                     break;
 
                 case 6:
                     category = "Auxiliary Equipment;";
+                    iType = "AUXILIARY";
                     break;
             }
 
@@ -144,6 +148,8 @@ namespace JointMilitarySymbologyLibrary
                         result = result + si.Label.Replace(',', '-') + ";";
                 }
             }
+
+            result = result + iType + ";";
 
             if(!omitLegacy)
                 result = result + _configHelper.SIDCIsNA + ";";

@@ -5,6 +5,7 @@
     <DigitTwo>0</DigitTwo>
   </SymbolSetCode>
   <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
+  <LegacyCodingSchemeCode Name="2525C">E</LegacyCodingSchemeCode>
   <Entities>
     <Entity ID="INSTALLATION" Label="Installation" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes." Graphic="20110000.svg">
       <EntityCode>
@@ -945,49 +946,49 @@
   </SectorTwoModifiers>
   <LegacySymbols>
     <LegacySymbol ID="INSTALLATION_AIRCRAFT_PRODUCTION_ASSEMBLY_SYM" Label="S*GPIMA---H****" EntityID="INSTALLATION" EntityTypeID="AIRCRAFT_PRODUCTION_ASSEMBLY">
-      <LegacyFunctionCode Name="2525C">IMA---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMA---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_AMMUNITION_EXPLOSIVES_ASSEMBLY_SYM" Label="S*GPIME---H****" EntityID="INSTALLATION" EntityTypeID="AMMUNITION_EXPLOSIVES_ASSEMBLY">
-      <LegacyFunctionCode Name="2525C">IME---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IME---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_ARMAMENT_PRODUCTION_SYM" Label="S*GPIMG---H****" EntityID="INSTALLATION" EntityTypeID="ARMAMENT_PRODUCTION">
-      <LegacyFunctionCode Name="2525C">IMG---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMG---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_BLACK_LIST_LOCATION_SYM" Label="O*LPB-----*****" EntityID="INSTALLATION" EntityTypeID="BLACK_LIST_LOCATION">
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="L">B-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_CBRN_SYM" Label="S*GPIRN---H****" EntityID="INSTALLATION" EntityTypeID="CBRN">
-      <LegacyFunctionCode Name="2525C">IRN---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IRN---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_CBRN_BIOLOGICAL_1_MOD_SYM" Label="S*GPIRNB--H****" EntityID="INSTALLATION" EntityTypeID="CBRN" ModifierOneID="BIOLOGICAL_1_MOD">
-      <LegacyFunctionCode Name="2525C">IRNB--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IRNB--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_CBRN_CHEMICAL_1_MOD_SYM" Label="S*GPIRNC--H****" EntityID="INSTALLATION" EntityTypeID="CBRN" ModifierOneID="CHEMICAL_1_MOD">
-      <LegacyFunctionCode Name="2525C">IRNC--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IRNC--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_CBRN_NUCLEAR_1_MOD_SYM" Label="S*GPIRNN--H****" EntityID="INSTALLATION" EntityTypeID="CBRN" ModifierOneID="NUCLEAR_1_MOD">
-      <LegacyFunctionCode Name="2525C">IRNN--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IRNN--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_CBRN_RADIOLOGICAL_1_MOD_SYM" Label="S*GPIPD---H****" EntityID="INSTALLATION" EntityTypeID="CBRN" ModifierOneID="RADIOLOGICAL_1_MOD">
-      <LegacyFunctionCode Name="2525C">IPD---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IPD---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_CBRN_BIOLOGICAL_2_MOD_SYM" Label="S*GPIMC---H****" EntityID="INSTALLATION" EntityTypeID="CBRN" ModifierTwoID="BIOLOGICAL_2_MOD">
-      <LegacyFunctionCode Name="2525C">IMC---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMC---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_CBRN_CHEMICAL_2_MOD_SYM" Label="S*GPIMC---H****" EntityID="INSTALLATION" EntityTypeID="CBRN" ModifierTwoID="CHEMICAL_2_MOD">
-      <LegacyFunctionCode Name="2525C">IMC---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMC---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_ENGINEERING_EQUIPMENT_PRODUCTION_SYM" Label="S*GPIMN---H****" EntityID="INSTALLATION" EntityTypeID="ENGINEERING_EQUIPMENT_PRODUCTION">
-      <LegacyFunctionCode Name="2525C">IMN---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMN---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_ENGINEERING_EQUIPMENT_PRODUCTION_BRIDGE_SYM" Label="S*GPIMNB--H****" EntityID="INSTALLATION" EntityTypeID="ENGINEERING_EQUIPMENT_PRODUCTION" EntitySubTypeID="BRIDGE">
-      <LegacyFunctionCode Name="2525C">IMNB--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMNB--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_EQUIPMENT_MANUFACTURE_SYM" Label="S*GPIE----H****" EntityID="INSTALLATION" EntityTypeID="EQUIPMENT_MANUFACTURE">
-      <LegacyFunctionCode Name="2525C">IE----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IE----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_GOVERNMENT_LEADERSHIP_SYM" Label="S*GPIG----H****" EntityID="INSTALLATION" EntityTypeID="GOVERNMENT_LEADERSHIP">
-      <LegacyFunctionCode Name="2525C">IG----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IG----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_GRAY_LIST_LOCATION_SYM" Label="O*LPG-----*****" EntityID="INSTALLATION" EntityTypeID="GRAY_LIST_LOCATION">
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="L">G-----</LegacyFunctionCode>
@@ -996,25 +997,25 @@
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="L">M-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_MINE_SYM" Label="S*GPIRM---H****" EntityID="INSTALLATION" EntityTypeID="MINE">
-      <LegacyFunctionCode Name="2525C">IRM---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IRM---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_MISSILE_SPACE_SYSTEM_PRODUCTION_SYM" Label="S*GPIMM---H****" EntityID="INSTALLATION" EntityTypeID="MISSILE_SPACE_SYSTEM_PRODUCTION">
-      <LegacyFunctionCode Name="2525C">IMM---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMM---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_NUCLEAR_DEFENSE_SYM" Label="S*GPIMF---H****" EntityID="INSTALLATION" EntityTypeID="NUCLEAR_DEFENSE">
-      <LegacyFunctionCode Name="2525C">IMF---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMF---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_NUCLEAR_DEFENSE_ATOMIC_ENERGY_REACTOR_MOD_SYM" Label="S*GPIMFA--H****" EntityID="INSTALLATION" EntityTypeID="NUCLEAR_DEFENSE" ModifierTwoID="ATOMIC_ENERGY_REACTOR_MOD">
-      <LegacyFunctionCode Name="2525C">IMFA--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMFA--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_NUCLEAR_DEFENSE_NUCLEAR_MATERIAL_PRODUCTION_MOD_SYM" Label="S*GPIMFP--H****" EntityID="INSTALLATION" EntityTypeID="NUCLEAR_DEFENSE" ModifierTwoID="NUCLEAR_MATERIAL_PRODUCTION_MOD">
-      <LegacyFunctionCode Name="2525C">IMFP--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMFP--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_NUCLEAR_DEFENSE_NUCLEAR_MATERIAL_STORAGE_MOD_SYM" Label="S*GPIMFS--H****" EntityID="INSTALLATION" EntityTypeID="NUCLEAR_DEFENSE" ModifierTwoID="NUCLEAR_MATERIAL_STORAGE_MOD">
-      <LegacyFunctionCode Name="2525C">IMFS--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMFS--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_NUCLEAR_DEFENSE_WEAPONS_GRADE_MOD_SYM" Label="S*GPIMFPW-H****" EntityID="INSTALLATION" EntityTypeID="NUCLEAR_DEFENSE" ModifierTwoID="WEAPONS_GRADE_MOD">
-      <LegacyFunctionCode Name="2525C">IMFPW-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMFPW-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_SAFE_HOUSE_SYM" Label="O*IPS-----*****" EntityID="INSTALLATION" EntityTypeID="SAFE_HOUSE">
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="I">S-----</LegacyFunctionCode>
@@ -1023,295 +1024,295 @@
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="L">W-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_LAW_ENFORCEMENT_SYM" Label="E*OPDC----H****" EntityID="INSTALLATION" EntityTypeID="LAW_ENFORCEMENT">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DC----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="O">DC----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_LAW_ENFORCEMENT_BUREAU_ATF_SYM" Label="E*OPDDC---H****" EntityID="INSTALLATION" EntityTypeID="LAW_ENFORCEMENT" EntitySubTypeID="BUREAU_ATF">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DDC---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="O">DDC---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_LAW_ENFORCEMENT_BORDER_PATROL_SYM" Label="E*OPDEC---H****" EntityID="INSTALLATION" EntityTypeID="LAW_ENFORCEMENT" EntitySubTypeID="BORDER_PATROL">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DEC---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="O">DEC---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_LAW_ENFORCEMENT_CUSTOMS_SERVICE_SYM" Label="E*OPDFC---H****" EntityID="INSTALLATION" EntityTypeID="LAW_ENFORCEMENT" EntitySubTypeID="CUSTOMS_SERVICE">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DFC---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="O">DFC---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_LAW_ENFORCEMENT_DRUG_ENFORCEMENT_ADMINISTRATION_DEA_SYM" Label="EFOPDGC---H****" EntityID="INSTALLATION" EntityTypeID="LAW_ENFORCEMENT" EntitySubTypeID="DRUG_ENFORCEMENT_ADMINISTRATION_DEA">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DGC---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="O">DGC---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_LAW_ENFORCEMENT_DEPARTMENT_JUSTICE_DOJ_SYM" Label="EFOPDHC---H****" EntityID="INSTALLATION" EntityTypeID="LAW_ENFORCEMENT" EntitySubTypeID="DEPARTMENT_JUSTICE_DOJ">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DHC---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="O">DHC---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_LAW_ENFORCEMENT_FEDERAL_BUREAU_INVESTIGATION_FBI_SYM" Label="EFOPDIC---H****" EntityID="INSTALLATION" EntityTypeID="LAW_ENFORCEMENT" EntitySubTypeID="FEDERAL_BUREAU_INVESTIGATION_FBI">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DIC---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="O">DIC---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_LAW_ENFORCEMENT_POLICE_SYM" Label="E*OPDJC---H****" EntityID="INSTALLATION" EntityTypeID="LAW_ENFORCEMENT" EntitySubTypeID="POLICE">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DJC---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="O">DJC---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_LAW_ENFORCEMENT_UNITED_STATES_SECRET_SERVICE_USSS_SYM" Label="EFOPDLC---H****" EntityID="INSTALLATION" EntityTypeID="LAW_ENFORCEMENT" EntitySubTypeID="UNITED_STATES_SECRET_SERVICE_USSS">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DLC---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="O">DLC---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_LAW_ENFORCEMENT_TRANSPORTATION_SECURITY_ADMINISTRATION_TSA_SYM" Label="EFOPDMC---H****" EntityID="INSTALLATION" EntityTypeID="LAW_ENFORCEMENT" EntitySubTypeID="TRANSPORTATION_SECURITY_ADMINISTRATION_TSA">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DMC---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="O">DMC---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_LAW_ENFORCEMENT_COAST_GUARD_SYM" Label="E*OPDNC---H****" EntityID="INSTALLATION" EntityTypeID="LAW_ENFORCEMENT" EntitySubTypeID="COAST_GUARD">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DNC---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="O">DNC---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_LAW_ENFORCEMENT_US_MARSHALS_SERVICE_SYM" Label="E*OPDOC---H****" EntityID="INSTALLATION" EntityTypeID="LAW_ENFORCEMENT" EntitySubTypeID="US_MARSHALS_SERVICE">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DOC---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="O">DOC---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_EMERGENCY_OPERATION_SYM" Label="E*OPBC----H****" EntityID="INSTALLATION" EntityTypeID="EMERGENCY_OPERATION">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">BC----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="O">BC----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_EMERGENCY_OPERATION_FIRE_STATION_SYM" Label="E*OPCE----H****" EntityID="INSTALLATION" EntityTypeID="EMERGENCY_OPERATION" EntitySubTypeID="FIRE_STATION">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">CE----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="O">CE----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_EMERGENCY_OPERATION_EMERGENCY_MEDICAL_OPERATION_SYM" Label="E*OPAC----H****" EntityID="INSTALLATION" EntityTypeID="EMERGENCY_OPERATION" EntitySubTypeID="EMERGENCY_MEDICAL_OPERATION">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">AC----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="O">AC----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_AGRICULTURE_FOOD_INFRASTRUCTURE_SYM" Label="E*FPA-----H****" EntityID="INFRASTRUCTURE" EntityTypeID="AGRICULTURE_FOOD_INFRASTRUCTURE">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">A-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">A-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_AGRICULTURE_FOOD_INFRASTRUCTURE_AGRICULTURE_LABORATORY_SYM" Label="E*FPAA----H****" EntityID="INFRASTRUCTURE" EntityTypeID="AGRICULTURE_FOOD_INFRASTRUCTURE" EntitySubTypeID="AGRICULTURE_LABORATORY">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">AA----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">AA----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_AGRICULTURE_FOOD_INFRASTRUCTURE_ANIMAL_FEEDLOT_SYM" Label="E*FPAB----H****" EntityID="INFRASTRUCTURE" EntityTypeID="AGRICULTURE_FOOD_INFRASTRUCTURE" EntitySubTypeID="ANIMAL_FEEDLOT">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">AB----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">AB----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_AGRICULTURE_FOOD_INFRASTRUCTURE_COMMERCIAL_FOOD_DISTRIBUTION_SYM" Label="E*FPAC----H****" EntityID="INFRASTRUCTURE" EntityTypeID="AGRICULTURE_FOOD_INFRASTRUCTURE" EntitySubTypeID="COMMERCIAL_FOOD_DISTRIBUTION">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">AC----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">AC----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_AGRICULTURE_FOOD_INFRASTRUCTURE_FARM_RANCH_SYM" Label="E*FPAD----H****" EntityID="INFRASTRUCTURE" EntityTypeID="AGRICULTURE_FOOD_INFRASTRUCTURE" EntitySubTypeID="FARM_RANCH">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">AD----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">AD----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_AGRICULTURE_FOOD_INFRASTRUCTURE_FOOD_DISTRIBUTION_SYM" Label="E*OPBL----H****" EntityID="INFRASTRUCTURE" EntityTypeID="AGRICULTURE_FOOD_INFRASTRUCTURE" EntitySubTypeID="FOOD_DISTRIBUTION">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">BL----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="O">BL----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_AGRICULTURE_FOOD_INFRASTRUCTURE_FOOD_PRODUCTION_CENTER_SYM" Label="E*FPAE----H****" EntityID="INFRASTRUCTURE" EntityTypeID="AGRICULTURE_FOOD_INFRASTRUCTURE" EntitySubTypeID="FOOD_PRODUCTION_CENTER">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">AE----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">AE----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_AGRICULTURE_FOOD_INFRASTRUCTURE_FOOD_RETAIL_SYM" Label="E*FPAF----H****" EntityID="INFRASTRUCTURE" EntityTypeID="AGRICULTURE_FOOD_INFRASTRUCTURE" EntitySubTypeID="FOOD_RETAIL">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">AF----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">AF----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_AGRICULTURE_FOOD_INFRASTRUCTURE_GRAIN_STORAGE_SYM" Label="E*FPAG----H****" EntityID="INFRASTRUCTURE" EntityTypeID="AGRICULTURE_FOOD_INFRASTRUCTURE" EntitySubTypeID="GRAIN_STORAGE">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">AG----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">AG----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_BANKING_INFRASTRUCTURE_SYM" Label="E*FPB-----H****" EntityID="INFRASTRUCTURE" EntityTypeID="BANKING_INFRASTRUCTURE">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">B-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">B-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_BANKING_INFRASTRUCTURE_ATM_SYM" Label="E*FPBA----*****" EntityID="INFRASTRUCTURE" EntityTypeID="BANKING_INFRASTRUCTURE" EntitySubTypeID="ATM">
       <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">BA----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_BANKING_INFRASTRUCTURE_BANK_SYM" Label="E*FPBB----H****" EntityID="INFRASTRUCTURE" EntityTypeID="BANKING_INFRASTRUCTURE" EntitySubTypeID="BANK">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">BB----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">BB----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_BANKING_INFRASTRUCTURE_BULLION_STORAGE_SYM" Label="E*FPBC----H****" EntityID="INFRASTRUCTURE" EntityTypeID="BANKING_INFRASTRUCTURE" EntitySubTypeID="BULLION_STORAGE">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">BC----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">BC----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_BANKING_INFRASTRUCTURE_FEDERAL_RESERVE_BANK_SYM" Label="E*FPBD----H****" EntityID="INFRASTRUCTURE" EntityTypeID="BANKING_INFRASTRUCTURE" EntitySubTypeID="FEDERAL_RESERVE_BANK">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">BD----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">BD----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_BANKING_INFRASTRUCTURE_FINANCIAL_EXCHANGE_SYM" Label="E*FPBE----H****" EntityID="INFRASTRUCTURE" EntityTypeID="BANKING_INFRASTRUCTURE" EntitySubTypeID="FINANCIAL_EXCHANGE">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">BE----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">BE----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_BANKING_INFRASTRUCTURE_FINANCIAL_SERVICES_OTHER_SYM" Label="E*FPBF----H****" EntityID="INFRASTRUCTURE" EntityTypeID="BANKING_INFRASTRUCTURE" EntitySubTypeID="FINANCIAL_SERVICES_OTHER">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">BF----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">BF----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_COMMERCIAL_INFRASTRUCTURE_SYM" Label="E*FPC-----H****" EntityID="INFRASTRUCTURE" EntityTypeID="COMMERCIAL_INFRASTRUCTURE">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">C-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">C-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_COMMERCIAL_INFRASTRUCTURE_CHEMICAL_PLANT_SYM" Label="E*FPCA----H****" EntityID="INFRASTRUCTURE" EntityTypeID="COMMERCIAL_INFRASTRUCTURE" EntitySubTypeID="CHEMICAL_PLANT">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">CA----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">CA----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_COMMERCIAL_INFRASTRUCTURE_FIREARMS_MANUFACTURER_SYM" Label="E*FPCB----H****" EntityID="INFRASTRUCTURE" EntityTypeID="COMMERCIAL_INFRASTRUCTURE" EntitySubTypeID="FIREARMS_MANUFACTURER">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">CB----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">CB----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_COMMERCIAL_INFRASTRUCTURE_FIREARMS_RETAILER_SYM" Label="E*FPCC----H****" EntityID="INFRASTRUCTURE" EntityTypeID="COMMERCIAL_INFRASTRUCTURE" EntitySubTypeID="FIREARMS_RETAILER">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">CC----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">CC----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_COMMERCIAL_INFRASTRUCTURE_HAZARDOUS_MATERIAL_PRODUCTION_SYM" Label="E*FPCD----H****" EntityID="INFRASTRUCTURE" EntityTypeID="COMMERCIAL_INFRASTRUCTURE" EntitySubTypeID="HAZARDOUS_MATERIAL_PRODUCTION">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">CD----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">CD----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_COMMERCIAL_INFRASTRUCTURE_HAZARDOUS_MATERIAL_STORAGE_SYM" Label="E*FPCE----H****" EntityID="INFRASTRUCTURE" EntityTypeID="COMMERCIAL_INFRASTRUCTURE" EntitySubTypeID="HAZARDOUS_MATERIAL_STORAGE">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">CE----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">CE----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_COMMERCIAL_INFRASTRUCTURE_INDUSTRIAL_SITE_SYM" Label="E*FPCF----H****" EntityID="INFRASTRUCTURE" EntityTypeID="COMMERCIAL_INFRASTRUCTURE" EntitySubTypeID="INDUSTRIAL_SITE">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">CF----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">CF----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_COMMERCIAL_INFRASTRUCTURE_LANDFILL_SYM" Label="E*FPCG----H****" EntityID="INFRASTRUCTURE" EntityTypeID="COMMERCIAL_INFRASTRUCTURE" EntitySubTypeID="LANDFILL">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">CG----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">CG----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_COMMERCIAL_INFRASTRUCTURE_PHARMACEUTICAL_MANUFACTURER_SYM" Label="E*FPCH----H****" EntityID="INFRASTRUCTURE" EntityTypeID="COMMERCIAL_INFRASTRUCTURE" EntitySubTypeID="PHARMACEUTICAL_MANUFACTURER">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">CH----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">CH----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_COMMERCIAL_INFRASTRUCTURE_CONTAMINATED_HAZARDOUS_WASTE_SITE_SYM" Label="E*FPCI----H****" EntityID="INFRASTRUCTURE" EntityTypeID="COMMERCIAL_INFRASTRUCTURE" EntitySubTypeID="CONTAMINATED_HAZARDOUS_WASTE_SITE">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">CI----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">CI----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_COMMERCIAL_INFRASTRUCTURE_TOXIC_RELEASE_INVENTORY_SYM" Label="E*FPCJ----H****" EntityID="INFRASTRUCTURE" EntityTypeID="COMMERCIAL_INFRASTRUCTURE" EntitySubTypeID="TOXIC_RELEASE_INVENTORY">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">CJ----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">CJ----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_EDUCATIONAL_FACILITIES_INFRASTRUCTURE_SYM" Label="E*FPD-----H****" EntityID="INFRASTRUCTURE" EntityTypeID="EDUCATIONAL_FACILITIES_INFRASTRUCTURE">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">D-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">D-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_EDUCATIONAL_FACILITIES_INFRASTRUCTURE_COLLEGE_UNIVERSITY_SYM" Label="E*FPDA----H****" EntityID="INFRASTRUCTURE" EntityTypeID="EDUCATIONAL_FACILITIES_INFRASTRUCTURE" EntitySubTypeID="COLLEGE_UNIVERSITY">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">DA----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">DA----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_EDUCATIONAL_FACILITIES_INFRASTRUCTURE_SCHOOL_SYM" Label="E*FPDB----H****" EntityID="INFRASTRUCTURE" EntityTypeID="EDUCATIONAL_FACILITIES_INFRASTRUCTURE" EntitySubTypeID="SCHOOL">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">DB----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">DB----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_ENERGY_FACILITY_INFRASTRUCTURE_SYM" Label="S*GPIUE---H****" EntityID="INFRASTRUCTURE" EntityTypeID="ENERGY_FACILITY_INFRASTRUCTURE">
-      <LegacyFunctionCode Name="2525C">IUE---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IUE---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_ENERGY_FACILITY_INFRASTRUCTURE_ELECTRIC_POWER_NUCLEAR_1_MOD_SYM" Label="S*GPIUEN--H****" EntityID="INFRASTRUCTURE" EntityTypeID="ENERGY_FACILITY_INFRASTRUCTURE" EntitySubTypeID="ELECTRIC_POWER" ModifierOneID="NUCLEAR_1_MOD">
-      <LegacyFunctionCode Name="2525C">IUEN--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IUEN--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_ENERGY_FACILITY_INFRASTRUCTURE_GENERATION_STATION_SYM" Label="E*FPEA----H****" EntityID="INFRASTRUCTURE" EntityTypeID="ENERGY_FACILITY_INFRASTRUCTURE" EntitySubTypeID="GENERATION_STATION">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">EA----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">EA----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_ENERGY_FACILITY_INFRASTRUCTURE_NATURAL_GAS_FACILITY_SYM" Label="E*FPEB----H****" EntityID="INFRASTRUCTURE" EntityTypeID="ENERGY_FACILITY_INFRASTRUCTURE" EntitySubTypeID="NATURAL_GAS_FACILITY">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">EB----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">EB----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_ENERGY_FACILITY_INFRASTRUCTURE_PETROLEUM_GAS_OIL_SYM" Label="S*GPIRP---H****" EntityID="INFRASTRUCTURE" EntityTypeID="ENERGY_FACILITY_INFRASTRUCTURE" EntitySubTypeID="PETROLEUM_GAS_OIL">
-      <LegacyFunctionCode Name="2525C">IRP---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IRP---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_ENERGY_FACILITY_INFRASTRUCTURE_PROPANE_FACILITY_SYM" Label="E*FPEE----H****" EntityID="INFRASTRUCTURE" EntityTypeID="ENERGY_FACILITY_INFRASTRUCTURE" EntitySubTypeID="PROPANE_FACILITY">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">EE----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">EE----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_GOVERNMENT_SITE_INFRASTRUCTURE_SYM" Label="E*FPF-----H****" EntityID="INFRASTRUCTURE" EntityTypeID="GOVERNMENT_SITE_INFRASTRUCTURE">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">F-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">F-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_MEDICAL_INFRASTRUCTURE_MEDICAL_SYM" Label="S*GPIX----H****" EntityID="INFRASTRUCTURE" EntityTypeID="MEDICAL_INFRASTRUCTURE" EntitySubTypeID="MEDICAL">
-      <LegacyFunctionCode Name="2525C">IX----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IX----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_MEDICAL_INFRASTRUCTURE_MTF_HOSPITAL_SYM" Label="S*GPIXH---H****" EntityID="INFRASTRUCTURE" EntityTypeID="MEDICAL_INFRASTRUCTURE" EntitySubTypeID="MTF_HOSPITAL">
-      <LegacyFunctionCode Name="2525C">IXH---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IXH---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_MILITARY_INFRASTRUCTURE_SYM" Label="E*FPG-----H****" EntityID="INFRASTRUCTURE" EntityTypeID="MILITARY_INFRASTRUCTURE">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">G-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">G-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_MILITARY_INFRASTRUCTURE_MILITARY_ARMORY_SYM" Label="E*FPGA----H****" EntityID="INFRASTRUCTURE" EntityTypeID="MILITARY_INFRASTRUCTURE" EntitySubTypeID="MILITARY_ARMORY">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">GA----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">GA----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_MILITARY_INFRASTRUCTURE_MILITARY_BASE_SYM" Label="S*GPIB----H****" EntityID="INFRASTRUCTURE" EntityTypeID="MILITARY_INFRASTRUCTURE" EntitySubTypeID="MILITARY_BASE">
-      <LegacyFunctionCode Name="2525C">IB----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IB----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_POSTAL_SERVICES_INFRASTRUCTURE_SYM" Label="E*FPH-----H****" EntityID="INFRASTRUCTURE" EntityTypeID="POSTAL_SERVICES_INFRASTRUCTURE">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">H-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">H-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_POSTAL_SERVICES_INFRASTRUCTURE_POSTAL_DISTRIBUTION_CENTER_SYM" Label="E*FPHA----H****" EntityID="INFRASTRUCTURE" EntityTypeID="POSTAL_SERVICES_INFRASTRUCTURE" EntitySubTypeID="POSTAL_DISTRIBUTION_CENTER">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">HA----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">HA----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_POSTAL_SERVICES_INFRASTRUCTURE_POST_OFFICE_SYM" Label="E*FPHB----H****" EntityID="INFRASTRUCTURE" EntityTypeID="POSTAL_SERVICES_INFRASTRUCTURE" EntitySubTypeID="POST_OFFICE">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">HB----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">HB----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_PUBLIC_VENUES_INFRASTRUCTURE_SYM" Label="E*FPI-----H****" EntityID="INFRASTRUCTURE" EntityTypeID="PUBLIC_VENUES_INFRASTRUCTURE">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">I-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">I-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_PUBLIC_VENUES_INFRASTRUCTURE_ENCLOSED_FACILITY_SYM" Label="E*FPIA----H****" EntityID="INFRASTRUCTURE" EntityTypeID="PUBLIC_VENUES_INFRASTRUCTURE" EntitySubTypeID="ENCLOSED_FACILITY">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">IA----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">IA----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_PUBLIC_VENUES_INFRASTRUCTURE_OPEN_FACILITY_SYM" Label="E*FPIB----H****" EntityID="INFRASTRUCTURE" EntityTypeID="PUBLIC_VENUES_INFRASTRUCTURE" EntitySubTypeID="OPEN_FACILITY">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">IB----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">IB----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_PUBLIC_VENUES_INFRASTRUCTURE_RECREATIONAL_AREA_SYM" Label="E*FPIC----H****" EntityID="INFRASTRUCTURE" EntityTypeID="PUBLIC_VENUES_INFRASTRUCTURE" EntitySubTypeID="RECREATIONAL_AREA">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">IC----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">IC----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_PUBLIC_VENUES_INFRASTRUCTURE_RELIGIOUS_INSTITUTION_SYM" Label="E*FPID----H****" EntityID="INFRASTRUCTURE" EntityTypeID="PUBLIC_VENUES_INFRASTRUCTURE" EntitySubTypeID="RELIGIOUS_INSTITUTION">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">ID----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">ID----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_SPECIAL_NEEDS_INFRASTRUCTURE_SYM" Label="E*FPJ-----H****" EntityID="INFRASTRUCTURE" EntityTypeID="SPECIAL_NEEDS_INFRASTRUCTURE">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">J-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">J-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_SPECIAL_NEEDS_INFRASTRUCTURE_ADULT_DAY_CARE_SYM" Label="E*FPJA----H****" EntityID="INFRASTRUCTURE" EntityTypeID="SPECIAL_NEEDS_INFRASTRUCTURE" EntitySubTypeID="ADULT_DAY_CARE">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">JA----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">JA----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_SPECIAL_NEEDS_INFRASTRUCTURE_CHILD_DAY_CARE_SYM" Label="E*FPJB----H****" EntityID="INFRASTRUCTURE" EntityTypeID="SPECIAL_NEEDS_INFRASTRUCTURE" EntitySubTypeID="CHILD_DAY_CARE">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">JB----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">JB----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_SPECIAL_NEEDS_INFRASTRUCTURE_ELDER_CARE_SYM" Label="E*FPJC----H****" EntityID="INFRASTRUCTURE" EntityTypeID="SPECIAL_NEEDS_INFRASTRUCTURE" EntitySubTypeID="ELDER_CARE">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">JC----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">JC----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_TELECOMMUNICATIONS_INFRASTRUCTURE_SYM" Label="E*FPK-----H****" EntityID="INFRASTRUCTURE" EntityTypeID="TELECOMMUNICATIONS_INFRASTRUCTURE">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">K-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">K-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_TELECOMMUNICATIONS_INFRASTRUCTURE_TELECOMMUNICATIONS_TOWER_SYM" Label="E*FPKB----H****" EntityID="INFRASTRUCTURE" EntityTypeID="TELECOMMUNICATIONS_INFRASTRUCTURE" EntitySubTypeID="TELECOMMUNICATIONS_TOWER">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">KB----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">KB----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_TRANSPORTATION_INFRASTRUCTURE_SYM" Label="S*GPIT----H****" EntityID="INFRASTRUCTURE" EntityTypeID="TRANSPORTATION_INFRASTRUCTURE">
-      <LegacyFunctionCode Name="2525C">IT----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IT----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_TRANSPORTATION_INFRASTRUCTURE_AIRPORT_AIR_BASE_SYM" Label="S*GPIBA---H****" EntityID="INFRASTRUCTURE" EntityTypeID="TRANSPORTATION_INFRASTRUCTURE" EntitySubTypeID="AIRPORT_AIR_BASE">
-      <LegacyFunctionCode Name="2525C">IBA---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IBA---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_TRANSPORTATION_INFRASTRUCTURE_ATC_FACILITY_SYM" Label="E*FPLA----H****" EntityID="INFRASTRUCTURE" EntityTypeID="TRANSPORTATION_INFRASTRUCTURE" EntitySubTypeID="ATC_FACILITY">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">LA----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">LA----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_TRANSPORTATION_INFRASTRUCTURE_BUS_STATION_SYM" Label="E*FPLD----H****" EntityID="INFRASTRUCTURE" EntityTypeID="TRANSPORTATION_INFRASTRUCTURE" EntitySubTypeID="BUS_STATION">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">LD----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">LD----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_TRANSPORTATION_INFRASTRUCTURE_FERRY_TERMINAL_SYM" Label="E*FPLE----H****" EntityID="INFRASTRUCTURE" EntityTypeID="TRANSPORTATION_INFRASTRUCTURE" EntitySubTypeID="FERRY_TERMINAL">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">LE----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">LE----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_TRANSPORTATION_INFRASTRUCTURE_HELICOPTER_LANDING_SITE_SYM" Label="E*FPLF----H****" EntityID="INFRASTRUCTURE" EntityTypeID="TRANSPORTATION_INFRASTRUCTURE" EntitySubTypeID="HELICOPTER_LANDING_SITE">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">LF----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">LF----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_TRANSPORTATION_INFRASTRUCTURE_MAINTENANCE_FACILITY_SYM" Label="E*FPLH----H****" EntityID="INFRASTRUCTURE" EntityTypeID="TRANSPORTATION_INFRASTRUCTURE" EntitySubTypeID="MAINTENANCE_FACILITY">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">LH----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">LH----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_TRANSPORTATION_INFRASTRUCTURE_RAILHEAD_RAILROAD_STATION_SYM" Label="E*FPLJ----H****" EntityID="INFRASTRUCTURE" EntityTypeID="TRANSPORTATION_INFRASTRUCTURE" EntitySubTypeID="RAILHEAD_RAILROAD_STATION">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">LJ----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">LJ----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_TRANSPORTATION_INFRASTRUCTURE_REST_STOP_SYM" Label="E*FPLK----H****" EntityID="INFRASTRUCTURE" EntityTypeID="TRANSPORTATION_INFRASTRUCTURE" EntitySubTypeID="REST_STOP">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">LK----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">LK----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_TRANSPORTATION_INFRASTRUCTURE_SEA_PORT_NAVAL_BASE_SYM" Label="S*GPIBN---H****" EntityID="INFRASTRUCTURE" EntityTypeID="TRANSPORTATION_INFRASTRUCTURE" EntitySubTypeID="SEA_PORT_NAVAL_BASE">
-      <LegacyFunctionCode Name="2525C">IBN---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IBN---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_TRANSPORTATION_INFRASTRUCTURE_SHIP_YARD_SYM" Label="S*GPIMS---H****" EntityID="INFRASTRUCTURE" EntityTypeID="TRANSPORTATION_INFRASTRUCTURE" EntitySubTypeID="SHIP_YARD">
-      <LegacyFunctionCode Name="2525C">IMS---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMS---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_TRANSPORTATION_INFRASTRUCTURE_TOLL_FACILITY_SYM" Label="E*FPLM----H****" EntityID="INFRASTRUCTURE" EntityTypeID="TRANSPORTATION_INFRASTRUCTURE" EntitySubTypeID="TOLL_FACILITY">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">LM----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">LM----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_TRANSPORTATION_INFRASTRUCTURE_TRAFFIC_INSPECTION_FACILITY_SYM" Label="E*FPLO----H****" EntityID="INFRASTRUCTURE" EntityTypeID="TRANSPORTATION_INFRASTRUCTURE" EntitySubTypeID="TRAFFIC_INSPECTION_FACILITY">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">LO----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">LO----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_TRANSPORTATION_INFRASTRUCTURE_TUNNEL_SYM" Label="E*FPLP----H****" EntityID="INFRASTRUCTURE" EntityTypeID="TRANSPORTATION_INFRASTRUCTURE" EntitySubTypeID="TUNNEL">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">LP----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">LP----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_WATER_SUPPLY_INFRASTRUCTURE_CONTROL_VALVE_SYM" Label="E*FPMA----*****" EntityID="INFRASTRUCTURE" EntityTypeID="WATER_SUPPLY_INFRASTRUCTURE" EntitySubTypeID="CONTROL_VALVE">
       <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">MA----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_WATER_SUPPLY_INFRASTRUCTURE_DAM_SYM" Label="E*FPMB----H****" EntityID="INFRASTRUCTURE" EntityTypeID="WATER_SUPPLY_INFRASTRUCTURE" EntitySubTypeID="DAM">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">MB----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">MB----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_WATER_SUPPLY_INFRASTRUCTURE_DISCHARGE_OUTFALL_SYM" Label="E*FPMC----*****" EntityID="INFRASTRUCTURE" EntityTypeID="WATER_SUPPLY_INFRASTRUCTURE" EntitySubTypeID="DISCHARGE_OUTFALL">
       <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">MC----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_WATER_SUPPLY_INFRASTRUCTURE_GROUND_WATER_WELL_SYM" Label="E*FPMD----H****" EntityID="INFRASTRUCTURE" EntityTypeID="WATER_SUPPLY_INFRASTRUCTURE" EntitySubTypeID="GROUND_WATER_WELL">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">MD----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">MD----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_WATER_SUPPLY_INFRASTRUCTURE_PUMPING_STATION_SYM" Label="E*FPME----H****" EntityID="INFRASTRUCTURE" EntityTypeID="WATER_SUPPLY_INFRASTRUCTURE" EntitySubTypeID="PUMPING_STATION">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">ME----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">ME----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_WATER_SUPPLY_INFRASTRUCTURE_RESERVOIR_SYM" Label="E*FPMF----H****" EntityID="INFRASTRUCTURE" EntityTypeID="WATER_SUPPLY_INFRASTRUCTURE" EntitySubTypeID="RESERVOIR">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">MF----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">MF----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_WATER_SUPPLY_INFRASTRUCTURE_STORAGE_TOWER_SYM" Label="E*FPMG----H****" EntityID="INFRASTRUCTURE" EntityTypeID="WATER_SUPPLY_INFRASTRUCTURE" EntitySubTypeID="STORAGE_TOWER">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">MG----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">MG----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_WATER_SUPPLY_INFRASTRUCTURE_SURFACE_WATER_INTAKE_SYM" Label="E*FPMH----H****" EntityID="INFRASTRUCTURE" EntityTypeID="WATER_SUPPLY_INFRASTRUCTURE" EntitySubTypeID="SURFACE_WATER_INTAKE">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">MH----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">MH----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_WATER_SUPPLY_INFRASTRUCTURE_WASTEWATER_TREATMENT_FACILITY_SYM" Label="E*FPMI----H****" EntityID="INFRASTRUCTURE" EntityTypeID="WATER_SUPPLY_INFRASTRUCTURE" EntitySubTypeID="WASTEWATER_TREATMENT_FACILITY">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="F">MI----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">MI----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_WATER_SUPPLY_INFRASTRUCTURE_WATER_SYM" Label="S*GPIUP---H****" EntityID="INFRASTRUCTURE" EntityTypeID="WATER_SUPPLY_INFRASTRUCTURE" EntitySubTypeID="WATER">
-      <LegacyFunctionCode Name="2525C">IUP---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IUP---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="RETIRED_SYM" Label="S*GPI-----H----" Remarks="Retired">
-      <LegacyFunctionCode Name="2525C">I-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">I-----</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="INFRASTRUCTURE_TRANSPORTATION_INFRASTRUCTURE_MAINTENANCE_FACILITY_SYM" Label="S*GPIMV---H****" EntityID="INFRASTRUCTURE" EntityTypeID="TRANSPORTATION_INFRASTRUCTURE" EntitySubTypeID="MAINTENANCE_FACILITY">
-      <LegacyFunctionCode Name="2525C" Description="Repeat" Remarks="Repeat of EUFPLH----H****">IMV---</LegacyFunctionCode>
+    <LegacySymbol ID="INFRASTRUCTURE_TRANSPORTATION_INFRASTRUCTURE_MAINTENANCE_FAC_SYM" Label="S*GPIMV---H****" EntityID="INFRASTRUCTURE" EntityTypeID="TRANSPORTATION_INFRASTRUCTURE" EntitySubTypeID="MAINTENANCE_FACILITY">
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" Description="Repeat" Remarks="Repeat of EUFPLH----H****">IMV---</LegacyFunctionCode>
     </LegacySymbol>
   </LegacySymbols>
 </SymbolSet>

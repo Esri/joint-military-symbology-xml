@@ -986,7 +986,7 @@ namespace JointMilitarySymbologyLibrary
             return retObj;
         }
 
-        internal EntitySubTypeType EntitySubType(SymbolSetEntityEntityType entityType, string entitySubTypeID)
+        internal EntitySubTypeType EntitySubType(SymbolSet ss, SymbolSetEntityEntityType entityType, string entitySubTypeID)
         {
             EntitySubTypeType retObj = null;
 
@@ -999,6 +999,22 @@ namespace JointMilitarySymbologyLibrary
                         if (lObj.ID == entitySubTypeID)
                         {
                             return lObj;
+                        }
+                    }
+                }
+
+                // Can't find it.  Check to see if the symbol set has special entity subtypes
+
+                if (ss != null)
+                {
+                    if (ss.SpecialEntitySubTypes != null)
+                    {
+                        foreach (EntitySubTypeType lObj in ss.SpecialEntitySubTypes)
+                        {
+                            if (lObj.ID == entitySubTypeID)
+                            {
+                                return lObj;
+                            }
                         }
                     }
                 }
@@ -1095,9 +1111,16 @@ namespace JointMilitarySymbologyLibrary
             return retObj;
         }
 
-        internal SymbolSetLegacySymbol LegacySymbol(SymbolSet symbolSet, string functionCode, string schema, string dimension)
+        internal SymbolSetLegacySymbol LegacySymbol(SymbolSet symbolSet, string legacySIDC)
         {
             SymbolSetLegacySymbol retObj = null;
+
+            string schema = legacySIDC.Substring(0, 1);
+            string functionCode = legacySIDC.Substring(4, 6);
+            string dimension = legacySIDC.Substring(2, 1);
+            string hqtffd = legacySIDC.Substring(10, 1);
+            string amplifier = legacySIDC.Substring(11, 1);
+            string tail = legacySIDC.Substring(12, 3);
 
             if (symbolSet != null)
             {
@@ -1109,13 +1132,17 @@ namespace JointMilitarySymbologyLibrary
                         {
                             if (lObj2.Value == functionCode)
                             {
-                                if (lObj2.SchemaOverride != "")
+                                //
+                                // Thanks to many exceptions in 2525C, given also that function codes are not unique, we need to check other legacy code values
+                                //
+                                if ((lObj2.SchemaOverride == "" || (lObj2.SchemaOverride != "" && lObj2.SchemaOverride == schema)) &&
+                                    (lObj2.DimensionOverride == "" || (lObj2.DimensionOverride != "" && lObj2.DimensionOverride == dimension)) &&
+                                    (lObj2.HQTFFDOverride == "" || (lObj2.HQTFFDOverride != "" && lObj2.HQTFFDOverride == hqtffd)) &&
+                                    (lObj2.AmplifierOverride == "" || (lObj2.AmplifierOverride != "" && lObj2.AmplifierOverride == amplifier)) &&
+                                    (lObj2.TailOverride == "" || (lObj2.TailOverride != "" && lObj2.TailOverride == tail)))
                                 {
-                                    if (lObj2.SchemaOverride == schema && lObj2.DimensionOverride == dimension)
-                                        return lObj;
-                                }
-                                else
                                     return lObj;
+                                }
                             }
                         }
                     }

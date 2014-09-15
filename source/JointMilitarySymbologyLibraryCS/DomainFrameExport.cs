@@ -36,7 +36,7 @@ namespace JointMilitarySymbologyLibrary
         {
             string result = "";
 
-            result = BuildFrameItemName(null, null, identity, null) + "," + BuildQuotedFrameCode(null, identity, null, null);
+            result = BuildFrameItemName(null, null, identity, null) + "," + BuildFrameCode(null, identity, null, null);
 
             return result;
         }

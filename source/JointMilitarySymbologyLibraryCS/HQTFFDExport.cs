@@ -118,6 +118,8 @@ namespace JointMilitarySymbologyLibrary
                 }
             }
 
+            result = result + "HQTFFD;";
+
             if(!omitLegacy)
                 result = result + _configHelper.SIDCIsNA + ";";
 

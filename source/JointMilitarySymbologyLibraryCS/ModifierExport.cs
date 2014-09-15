@@ -120,6 +120,8 @@ namespace JointMilitarySymbologyLibrary
                     break;
             }
 
+            result = result + ";" + typ;
+
             if(!omitLegacy)
                 result = result + _configHelper.SIDCIsNA + ";";
 

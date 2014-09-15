@@ -1311,493 +1311,493 @@
   </Entities>
   <LegacySymbols>
     <LegacySymbol ID="PRESSURE_SYSTEMS_LOW_PRESSURE_CENTER_SYM" Label="WAS-PL----P----" EntityID="PRESSURE_SYSTEMS" EntityTypeID="LOW_PRESSURE_CENTER">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">PL----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">PL----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="PRESSURE_SYSTEMS_LOW_PRESSURE_CENTER_CYCLONE_CENTER_SYM" Label="WAS-PC----P----" EntityID="PRESSURE_SYSTEMS" EntityTypeID="LOW_PRESSURE_CENTER" EntitySubTypeID="CYCLONE_CENTER">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">PC----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">PC----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="PRESSURE_SYSTEMS_LOW_PRESSURE_CENTER_TROPOPAUSE_LOW_SYM" Label="WAS-PLT---P----" EntityID="PRESSURE_SYSTEMS" EntityTypeID="LOW_PRESSURE_CENTER" EntitySubTypeID="TROPOPAUSE_LOW">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">PLT---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">PLT---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="PRESSURE_SYSTEMS_HIGH_PRESSURE_CENTER_SYM" Label="WAS-PH----P----" EntityID="PRESSURE_SYSTEMS" EntityTypeID="HIGH_PRESSURE_CENTER">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">PH----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">PH----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="PRESSURE_SYSTEMS_HIGH_PRESSURE_CENTER_ANTICYCLONE_CENTER_SYM" Label="WAS-PA----P----" EntityID="PRESSURE_SYSTEMS" EntityTypeID="HIGH_PRESSURE_CENTER" EntitySubTypeID="ANTICYCLONE_CENTER">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">PA----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">PA----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="PRESSURE_SYSTEMS_HIGH_PRESSURE_CENTER_TROPOPAUSE_HIGH_SYM" Label="WAS-PHT---P----" EntityID="PRESSURE_SYSTEMS" EntityTypeID="HIGH_PRESSURE_CENTER" EntitySubTypeID="TROPOPAUSE_HIGH">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">PHT---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">PHT---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="PRESSURE_SYSTEMS_FRONTAL_SYSTEMS_COLD_FRONT_SYM" Label="WA-DPFC----L---" EntityID="PRESSURE_SYSTEMS" EntityTypeID="FRONTAL_SYSTEMS" EntitySubTypeID="COLD_FRONT">
-      <LegacyFunctionCode Name="2525C">PFC---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">PFC---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="PRESSURE_SYSTEMS_FRONTAL_SYSTEMS_UPPER_COLD_FRONT_SYM" Label="WA-DPFCU---L---" EntityID="PRESSURE_SYSTEMS" EntityTypeID="FRONTAL_SYSTEMS" EntitySubTypeID="UPPER_COLD_FRONT">
-      <LegacyFunctionCode Name="2525C">PFCU--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">PFCU--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="PRESSURE_SYSTEMS_FRONTAL_SYSTEMS_COLD_FRONTOGENESIS_SYM" Label="WA-DPFC-FG-L---" EntityID="PRESSURE_SYSTEMS" EntityTypeID="FRONTAL_SYSTEMS" EntitySubTypeID="COLD_FRONTOGENESIS">
-      <LegacyFunctionCode Name="2525C">PFC-FG</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">PFC-FG</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="PRESSURE_SYSTEMS_FRONTAL_SYSTEMS_COLD_FRONTOLYSIS_SYM" Label="WA-DPFC-FY-L---" EntityID="PRESSURE_SYSTEMS" EntityTypeID="FRONTAL_SYSTEMS" EntitySubTypeID="COLD_FRONTOLYSIS">
-      <LegacyFunctionCode Name="2525C">PFC-FY</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">PFC-FY</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="PRESSURE_SYSTEMS_FRONTAL_SYSTEMS_WARM_FRONT_SYM" Label="WA-DPFW----L---" EntityID="PRESSURE_SYSTEMS" EntityTypeID="FRONTAL_SYSTEMS" EntitySubTypeID="WARM_FRONT">
-      <LegacyFunctionCode Name="2525C">PFW---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">PFW---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="PRESSURE_SYSTEMS_FRONTAL_SYSTEMS_UPPER_WARM_FRONT_SYM" Label="WA-DPFWU---L---" EntityID="PRESSURE_SYSTEMS" EntityTypeID="FRONTAL_SYSTEMS" EntitySubTypeID="UPPER_WARM_FRONT">
-      <LegacyFunctionCode Name="2525C">PFWU--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">PFWU--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="PRESSURE_SYSTEMS_FRONTAL_SYSTEMS_WARM_FRONTOGENESIS_SYM" Label="WA-DPFW-FG-L---" EntityID="PRESSURE_SYSTEMS" EntityTypeID="FRONTAL_SYSTEMS" EntitySubTypeID="WARM_FRONTOGENESIS">
-      <LegacyFunctionCode Name="2525C">PFW-FG</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">PFW-FG</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="PRESSURE_SYSTEMS_FRONTAL_SYSTEMS_WARM_FRONTOLYSIS_SYM" Label="WA-DPFW-FY-L---" EntityID="PRESSURE_SYSTEMS" EntityTypeID="FRONTAL_SYSTEMS" EntitySubTypeID="WARM_FRONTOLYSIS">
-      <LegacyFunctionCode Name="2525C">PFW-FY</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">PFW-FY</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="PRESSURE_SYSTEMS_FRONTAL_SYSTEMS_OCCLUDED_FRONT_SYM" Label="WA-DPFO----L---" EntityID="PRESSURE_SYSTEMS" EntityTypeID="FRONTAL_SYSTEMS" EntitySubTypeID="OCCLUDED_FRONT">
-      <LegacyFunctionCode Name="2525C">PFO---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">PFO---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="PRESSURE_SYSTEMS_FRONTAL_SYSTEMS_UPPER_OCCLUDED_FRONT_SYM" Label="WA-DPFOU---L---" EntityID="PRESSURE_SYSTEMS" EntityTypeID="FRONTAL_SYSTEMS" EntitySubTypeID="UPPER_OCCLUDED_FRONT">
-      <LegacyFunctionCode Name="2525C">PFOU--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">PFOU--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="PRESSURE_SYSTEMS_FRONTAL_SYSTEMS_OCCLUDED_FRONTOLYSIS_SYM" Label="WA-DPFO-FY-L---" EntityID="PRESSURE_SYSTEMS" EntityTypeID="FRONTAL_SYSTEMS" EntitySubTypeID="OCCLUDED_FRONTOLYSIS">
-      <LegacyFunctionCode Name="2525C">PFO-FY</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">PFO-FY</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="PRESSURE_SYSTEMS_FRONTAL_SYSTEMS_STATIONARY_FRONT_SYM" Label="WA-DPFS----L---" EntityID="PRESSURE_SYSTEMS" EntityTypeID="FRONTAL_SYSTEMS" EntitySubTypeID="STATIONARY_FRONT">
-      <LegacyFunctionCode Name="2525C">PFS---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">PFS---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="PRESSURE_SYSTEMS_FRONTAL_SYSTEMS_UPPER_STATIONARY_FRONT_SYM" Label="WA-DPFSU---L---" EntityID="PRESSURE_SYSTEMS" EntityTypeID="FRONTAL_SYSTEMS" EntitySubTypeID="UPPER_STATIONARY_FRONT">
-      <LegacyFunctionCode Name="2525C">PFSU--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">PFSU--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="PRESSURE_SYSTEMS_FRONTAL_SYSTEMS_STATIONARY_FRONTOGENESIS_SYM" Label="WA-DPFS-FG-L---" EntityID="PRESSURE_SYSTEMS" EntityTypeID="FRONTAL_SYSTEMS" EntitySubTypeID="STATIONARY_FRONTOGENESIS">
-      <LegacyFunctionCode Name="2525C">PFS-FG</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">PFS-FG</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="PRESSURE_SYSTEMS_FRONTAL_SYSTEMS_STATIONARY_FRONTOLYSIS_SYM" Label="WA-DPFS-FY-L---" EntityID="PRESSURE_SYSTEMS" EntityTypeID="FRONTAL_SYSTEMS" EntitySubTypeID="STATIONARY_FRONTOLYSIS">
-      <LegacyFunctionCode Name="2525C">PFS-FY</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">PFS-FY</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="PRESSURE_SYSTEMS_LINES_UPPER_TROUGH_AXIS_SYM" Label="WA-DPXT----L---" EntityID="PRESSURE_SYSTEMS" EntityTypeID="LINES" EntitySubTypeID="UPPER_TROUGH_AXIS">
-      <LegacyFunctionCode Name="2525C">PXT---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">PXT---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="PRESSURE_SYSTEMS_LINES_RIDGE_AXIS_SYM" Label="WA-DPXR----L---" EntityID="PRESSURE_SYSTEMS" EntityTypeID="LINES" EntitySubTypeID="RIDGE_AXIS">
-      <LegacyFunctionCode Name="2525C">PXR---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">PXR---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="PRESSURE_SYSTEMS_LINES_SEVERE_SQUALL_LINE_SYM" Label="WA-DPXSQ---L---" EntityID="PRESSURE_SYSTEMS" EntityTypeID="LINES" EntitySubTypeID="SEVERE_SQUALL_LINE">
-      <LegacyFunctionCode Name="2525C">PXSQ--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">PXSQ--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="PRESSURE_SYSTEMS_LINES_INSTABILITY_LINE_SYM" Label="WA-DPXIL---L---" EntityID="PRESSURE_SYSTEMS" EntityTypeID="LINES" EntitySubTypeID="INSTABILITY_LINE">
-      <LegacyFunctionCode Name="2525C">PXIL--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">PXIL--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="PRESSURE_SYSTEMS_LINES_SHEAR_LINE_SYM" Label="WA-DPXSH---L---" EntityID="PRESSURE_SYSTEMS" EntityTypeID="LINES" EntitySubTypeID="SHEAR_LINE">
-      <LegacyFunctionCode Name="2525C">PXSH--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">PXSH--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="PRESSURE_SYSTEMS_LINES_INTER_TROPICAL_CONVERGENCE_ZONE_SYM" Label="WA-DPXITCZ-L---" EntityID="PRESSURE_SYSTEMS" EntityTypeID="LINES" EntitySubTypeID="INTER_TROPICAL_CONVERGENCE_ZONE">
-      <LegacyFunctionCode Name="2525C">PXITCZ</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">PXITCZ</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="PRESSURE_SYSTEMS_LINES_CONVERGENCE_LINE_SYM" Label="WA-DPXCV---L---" EntityID="PRESSURE_SYSTEMS" EntityTypeID="LINES" EntitySubTypeID="CONVERGENCE_LINE">
-      <LegacyFunctionCode Name="2525C">PXCV--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">PXCV--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="PRESSURE_SYSTEMS_LINES_INTER_TROPICAL_DISCONTINUITY_SYM" Label="WA-DPXITD--L---" EntityID="PRESSURE_SYSTEMS" EntityTypeID="LINES" EntitySubTypeID="INTER_TROPICAL_DISCONTINUITY">
-      <LegacyFunctionCode Name="2525C">PXITD-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">PXITD-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="TURBULENCE_LIGHT_SYM" Label="WAS-TL----P----" EntityID="TURBULENCE" EntityTypeID="LIGHT">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">TL----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">TL----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="TURBULENCE_MODERATE_SYM" Label="WAS-TM----P----" EntityID="TURBULENCE" EntityTypeID="MODERATE">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">TM----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">TM----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="TURBULENCE_SEVERE_SYM" Label="WAS-TS----P----" EntityID="TURBULENCE" EntityTypeID="SEVERE">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">TS----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">TS----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="TURBULENCE_EXTREME_SYM" Label="WAS-TE----P----" EntityID="TURBULENCE" EntityTypeID="EXTREME">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">TE----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">TE----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="TURBULENCE_MOUNTAIN_WAVES_SYM" Label="WAS-T-MW--P----" EntityID="TURBULENCE" EntityTypeID="MOUNTAIN_WAVES">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">T-MW--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">T-MW--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="ICING_CLEAR_ICING_CLEAR_ICING_LIGHT_SYM" Label="WAS-ICL---P----" EntityID="ICING" EntityTypeID="CLEAR_ICING" EntitySubTypeID="CLEAR_ICING_LIGHT">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">ICL---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">ICL---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="ICING_CLEAR_ICING_CLEAR_ICING_MODERATE_SYM" Label="WAS-ICM---P----" EntityID="ICING" EntityTypeID="CLEAR_ICING" EntitySubTypeID="CLEAR_ICING_MODERATE">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">ICM---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">ICM---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="ICING_CLEAR_ICING_CLEAR_ICING_SEVERE_SYM" Label="WAS-ICS---P----" EntityID="ICING" EntityTypeID="CLEAR_ICING" EntitySubTypeID="CLEAR_ICING_SEVERE">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">ICS---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">ICS---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="ICING_RIME_ICING_RIME_ICING_LIGHT_SYM" Label="WAS-IRL---P----" EntityID="ICING" EntityTypeID="RIME_ICING" EntitySubTypeID="RIME_ICING_LIGHT">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">IRL---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">IRL---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="ICING_RIME_ICING_RIME_ICING_MODERATE_SYM" Label="WAS-IMM---P----" EntityID="ICING" EntityTypeID="RIME_ICING" EntitySubTypeID="RIME_ICING_MODERATE">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">IMM---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">IMM---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="ICING_RIME_ICING_RIME_ICING_SEVERE_SYM" Label="WAS-IMS---P----" EntityID="ICING" EntityTypeID="RIME_ICING" EntitySubTypeID="RIME_ICING_SEVERE">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">IMS---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">IMS---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WINDS_CALM_WINDS_SYM" Label="WAS-WC----P----" EntityID="WINDS" EntityTypeID="CALM_WINDS">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WC----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WC----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WINDS_WIND_PLOT_SYM" Label="WAS-WP----P----" EntityID="WINDS" EntityTypeID="WIND_PLOT">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WP----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WP----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WINDS_JET_STREAM_SYM" Label="WA-DWJ-----L---" EntityID="WINDS" EntityTypeID="JET_STREAM">
-      <LegacyFunctionCode Name="2525C">WJ----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">WJ----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WINDS_STREAM_LINE_SYM" Label="WA-DWS-----L---" EntityID="WINDS" EntityTypeID="STREAM_LINE">
-      <LegacyFunctionCode Name="2525C">WS----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">WS----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="CLOUD_COVER_CLOUD_COVERAGE_SYMBOLS_CLEAR_SKY_SYM" Label="WAS-CCCSCSP----" EntityID="CLOUD_COVER" EntityTypeID="CLOUD_COVERAGE_SYMBOLS" EntitySubTypeID="CLEAR_SKY">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">CCCSCS</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">CCCSCS</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="CLOUD_COVER_CLOUD_COVERAGE_SYMBOLS_FEW_COVERAGE_SYM" Label="WAS-CCCSFCP----" EntityID="CLOUD_COVER" EntityTypeID="CLOUD_COVERAGE_SYMBOLS" EntitySubTypeID="FEW_COVERAGE">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">CCCSFC</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">CCCSFC</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="CLOUD_COVER_CLOUD_COVERAGE_SYMBOLS_SCATTERED_COVERAGE_SYM" Label="WAS-CCCSSCP----" EntityID="CLOUD_COVER" EntityTypeID="CLOUD_COVERAGE_SYMBOLS" EntitySubTypeID="SCATTERED_COVERAGE">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">CCCSSC</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">CCCSSC</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="CLOUD_COVER_CLOUD_COVERAGE_SYMBOLS_BROKEN_COVERAGE_SYM" Label="WAS-CCCSBCP----" EntityID="CLOUD_COVER" EntityTypeID="CLOUD_COVERAGE_SYMBOLS" EntitySubTypeID="BROKEN_COVERAGE">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">CCCSBC</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">CCCSBC</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="CLOUD_COVER_CLOUD_COVERAGE_SYMBOLS_OVERCAST_COVERAGE_SYM" Label="WAS-CCCSOCP----" EntityID="CLOUD_COVER" EntityTypeID="CLOUD_COVERAGE_SYMBOLS" EntitySubTypeID="OVERCAST_COVERAGE">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">CCCSOC</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">CCCSOC</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="CLOUD_COVER_CLOUD_COVERAGE_SYMBOLS_SKY_TOTALLY_OR_PARTIALLY_OBSCURED_SYM" Label="WAS-CCCSOBP----" EntityID="CLOUD_COVER" EntityTypeID="CLOUD_COVERAGE_SYMBOLS" EntitySubTypeID="SKY_TOTALLY_OR_PARTIALLY_OBSCURED">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">CCCSOB</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">CCCSOB</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_RAIN_RAIN_INTERMITTENT_LIGHT_SYM" Label="WAS-WSR-LIP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="RAIN" EntitySubTypeID="RAIN_INTERMITTENT_LIGHT">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSR-LI</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSR-LI</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_RAIN_RAIN_CONTINUOUS_LIGHT_SYM" Label="WAS-WSR-LCP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="RAIN" EntitySubTypeID="RAIN_CONTINUOUS_LIGHT">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSR-LC</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSR-LC</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_RAIN_RAIN_INTERMITTENT_MODERATE_SYM" Label="WAS-WSR-MIP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="RAIN" EntitySubTypeID="RAIN_INTERMITTENT_MODERATE">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSR-MI</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSR-MI</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_RAIN_RAIN_INTERMITTENT_CONTINUOUS_MODERATE_SYM" Label="WAS-WSR-MCP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="RAIN" EntitySubTypeID="RAIN_INTERMITTENT_CONTINUOUS_MODERATE">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSR-MC</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSR-MC</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_RAIN_RAIN_INTERMITTENT_HEAVY_SYM" Label="WAS-WSR-HIP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="RAIN" EntitySubTypeID="RAIN_INTERMITTENT_HEAVY">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSR-HI</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSR-HI</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_RAIN_RAIN_INTERMITTENT_CONTINUOUS_HEAVY_SYM" Label="WAS-WSR-HCP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="RAIN" EntitySubTypeID="RAIN_INTERMITTENT_CONTINUOUS_HEAVY">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSR-HC</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSR-HC</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_FREEZING_RAIN_FREEZING_RAIN_LIGHT_SYM" Label="WAS-WSRFL-P----" EntityID="WEATHER_SYMBOLS" EntityTypeID="FREEZING_RAIN" EntitySubTypeID="FREEZING_RAIN_LIGHT">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSRFL-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSRFL-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_FREEZING_RAIN_FREEZING_RAIN_MODERATE_HEAVY_SYM" Label="WAS-WSRFMHP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="FREEZING_RAIN" EntitySubTypeID="FREEZING_RAIN_MODERATE_HEAVY">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSRFMH</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSRFMH</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_RAIN_SHOWERS_RAIN_SHOWERS_LIGHT_SYM" Label="WAS-WSRSL-P----" EntityID="WEATHER_SYMBOLS" EntityTypeID="RAIN_SHOWERS" EntitySubTypeID="RAIN_SHOWERS_LIGHT">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSRSL-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSRSL-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_RAIN_SHOWERS_RAIN_SHOWERS_MODERATE_HEAVY_SYM" Label="WAS-WSRSMHP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="RAIN_SHOWERS" EntitySubTypeID="RAIN_SHOWERS_MODERATE_HEAVY">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSRSMH</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSRSMH</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_RAIN_SHOWERS_RAIN_SHOWERS_TORRENTIAL_SYM" Label="WAS-WSRST-P----" EntityID="WEATHER_SYMBOLS" EntityTypeID="RAIN_SHOWERS" EntitySubTypeID="RAIN_SHOWERS_TORRENTIAL">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSRST-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSRST-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_DRIZZLE_DRIZZLE_INTERMITTENT_LIGHT_SYM" Label="WAS-WSD-LIP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="DRIZZLE" EntitySubTypeID="DRIZZLE_INTERMITTENT_LIGHT">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSD-LI</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSD-LI</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_DRIZZLE_DRIZZLE_INTERMITTENT_CONTINUOUS_LIGHT_SYM" Label="WAS-WSD-LCP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="DRIZZLE" EntitySubTypeID="DRIZZLE_INTERMITTENT_CONTINUOUS_LIGHT">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSD-LC</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSD-LC</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_DRIZZLE_DRIZZLE_INTERMITTENT_MODERATE_SYM" Label="WAS-WSD-MIP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="DRIZZLE" EntitySubTypeID="DRIZZLE_INTERMITTENT_MODERATE">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSD-MI</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSD-MI</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_DRIZZLE_DRIZZLE_INTERMITTENT_CONTINUOUS_MODERATE_SYM" Label="WAS-WSD-MCP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="DRIZZLE" EntitySubTypeID="DRIZZLE_INTERMITTENT_CONTINUOUS_MODERATE">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSD-MC</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSD-MC</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_DRIZZLE_DRIZZLE_INTERMITTENT_HEAVY_SYM" Label="WAS-WSD-HIP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="DRIZZLE" EntitySubTypeID="DRIZZLE_INTERMITTENT_HEAVY">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSD-HI</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSD-HI</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_DRIZZLE_DRIZZLE_INTERMITTENT_CONTINUOUS_HEAVY_SYM" Label="WAS-WSD-HCP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="DRIZZLE" EntitySubTypeID="DRIZZLE_INTERMITTENT_CONTINUOUS_HEAVY">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSD-HC</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSD-HC</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_FREEZING_DRIZZLE_FREEZING_DRIZZLE_LIGHT_SYM" Label="WAS-WSDFL-P----" EntityID="WEATHER_SYMBOLS" EntityTypeID="FREEZING_DRIZZLE" EntitySubTypeID="FREEZING_DRIZZLE_LIGHT">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSDFL-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSDFL-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_FREEZING_DRIZZLE_FREEZING_DRIZZLE_MODERATE_HEAVY_SYM" Label="WAS-WSDFMHP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="FREEZING_DRIZZLE" EntitySubTypeID="FREEZING_DRIZZLE_MODERATE_HEAVY">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSDFMH</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSDFMH</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_RAIN_SNOW_MIXED_RAIN_DRIZZLE_SNOW_LIGHT_SYM" Label="WAS-WSM-L-P----" EntityID="WEATHER_SYMBOLS" EntityTypeID="RAIN_SNOW_MIXED" EntitySubTypeID="RAIN_DRIZZLE_SNOW_LIGHT">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSM-L-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSM-L-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_RAIN_SNOW_MIXED_RAIN_DRIZZLE_SNOW_MODERATE_HEAVY_SYM" Label="WAS-WSM-MHP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="RAIN_SNOW_MIXED" EntitySubTypeID="RAIN_DRIZZLE_SNOW_MODERATE_HEAVY">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSM-MH</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSM-MH</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_RAIN_SNOW_MIXED_RAIN_SNOW_SHOWERS_LIGHT_SYM" Label="WAS-WSMSL-P----" EntityID="WEATHER_SYMBOLS" EntityTypeID="RAIN_SNOW_MIXED" EntitySubTypeID="RAIN_SNOW_SHOWERS_LIGHT">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSMSL-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSMSL-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_RAIN_SNOW_MIXED_RAIN_SNOW_SHOWERS_MODERATE_HEAVY_SYM" Label="WAS-WSMSMHP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="RAIN_SNOW_MIXED" EntitySubTypeID="RAIN_SNOW_SHOWERS_MODERATE_HEAVY">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSMSMH</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSMSMH</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_SNOW_SNOW_INTERMITTENT_LIGHT_SYM" Label="WAS-WSS-LIP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="SNOW" EntitySubTypeID="SNOW_INTERMITTENT_LIGHT">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSS-LI</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSS-LI</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_SNOW_SNOW_INTERMITTENT_CONTINUOUS_LIGHT_SYM" Label="WAS-WSS-LCP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="SNOW" EntitySubTypeID="SNOW_INTERMITTENT_CONTINUOUS_LIGHT">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSS-LC</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSS-LC</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_SNOW_SNOW_INTERMITTENT_MODERATE_SYM" Label="WAS-WSS-MIP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="SNOW" EntitySubTypeID="SNOW_INTERMITTENT_MODERATE">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSS-MI</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSS-MI</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_SNOW_SNOW_INTERMITTENT_CONTINUOUS_MODERATE_SYM" Label="WAS-WSS-MCP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="SNOW" EntitySubTypeID="SNOW_INTERMITTENT_CONTINUOUS_MODERATE">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSS-MC</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSS-MC</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_SNOW_SNOW_INTERMITTENT_HEAVY_SYM" Label="WAS-WSS-HIP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="SNOW" EntitySubTypeID="SNOW_INTERMITTENT_HEAVY">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSS-HI</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSS-HI</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_SNOW_SNOW_INTERMITTENT_CONTINUOUS_HEAVY_SYM" Label="WAS-WSS-HCP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="SNOW" EntitySubTypeID="SNOW_INTERMITTENT_CONTINUOUS_HEAVY">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSS-HC</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSS-HC</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_SNOW_BLOWING_SNOW_LIGHT_MODERATE_SYM" Label="WAS-WSSBLMP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="SNOW" EntitySubTypeID="BLOWING_SNOW_LIGHT_MODERATE">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSSBLM</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSSBLM</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_SNOW_BLOWING_SNOW_HEAVY_SYM" Label="WAS-WSSBH-P----" EntityID="WEATHER_SYMBOLS" EntityTypeID="SNOW" EntitySubTypeID="BLOWING_SNOW_HEAVY">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSSBH-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSSBH-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_SNOW_GRAINS_SYM" Label="WAS-WSSG--P----" EntityID="WEATHER_SYMBOLS" EntityTypeID="SNOW_GRAINS">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSSG--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSSG--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_SNOW_SHOWERS_SNOW_SHOWERS_LIGHT_SYM" Label="WAS-WSSSL-P----" EntityID="WEATHER_SYMBOLS" EntityTypeID="SNOW_SHOWERS" EntitySubTypeID="SNOW_SHOWERS_LIGHT">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSSSL-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSSSL-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_SNOW_SHOWERS_SNOW_SHOWERS_MODERATE_HEAVY_SYM" Label="WAS-WSSSMHP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="SNOW_SHOWERS" EntitySubTypeID="SNOW_SHOWERS_MODERATE_HEAVY">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSSSMH</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSSSMH</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_HAIL_HAIL_LIGHT_NOT_THUNDER_SYM" Label="WAS-WSGRL-P----" EntityID="WEATHER_SYMBOLS" EntityTypeID="HAIL" EntitySubTypeID="HAIL_LIGHT_NOT_THUNDER">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSGRL-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSGRL-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_HAIL_HAIL_MODERATE_HEAVY_NOT_THUNDER_SYM" Label="WAS-WSGRMHP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="HAIL" EntitySubTypeID="HAIL_MODERATE_HEAVY_NOT_THUNDER">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSGRMH</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSGRMH</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_ICE_CRYSTALS_DIAMOND_DUST_SYM" Label="WAS-WSIC--P----" EntityID="WEATHER_SYMBOLS" EntityTypeID="ICE_CRYSTALS_DIAMOND_DUST">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSIC--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSIC--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_ICE_PELLETS_SLEET_SLEET_LIGHT_SYM" Label="WAS-WSPLL-P----" EntityID="WEATHER_SYMBOLS" EntityTypeID="ICE_PELLETS_SLEET" EntitySubTypeID="SLEET_LIGHT">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSPLL-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSPLL-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_ICE_PELLETS_SLEET_SLEET_MODERATE_SYM" Label="WAS-WSPLM-P----" EntityID="WEATHER_SYMBOLS" EntityTypeID="ICE_PELLETS_SLEET" EntitySubTypeID="SLEET_MODERATE">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSPLM-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSPLM-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_ICE_PELLETS_SLEET_SLEET_HEAVY_SYM" Label="WAS-WSPLH-P----" EntityID="WEATHER_SYMBOLS" EntityTypeID="ICE_PELLETS_SLEET" EntitySubTypeID="SLEET_HEAVY">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSPLH-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSPLH-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_INVERSION_SYM" Label="E*NPBF----*****" EntityID="WEATHER_SYMBOLS" EntityTypeID="INVERSION">
       <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="N">BF----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_STORMS_THUNDERSTORM_NO_PRECIPITATION_SYM" Label="WAS-WST-NPP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="STORMS" EntitySubTypeID="THUNDERSTORM_NO_PRECIPITATION">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WST-NP</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WST-NP</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_STORMS_THUNDERSTORM_LIGHT_MODERATE_RAIN_SNOW_NO_HAIL_SYM" Label="WAS-WSTMR-P----" EntityID="WEATHER_SYMBOLS" EntityTypeID="STORMS" EntitySubTypeID="THUNDERSTORM_LIGHT_MODERATE_RAIN_SNOW_NO_HAIL">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSTMR-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSTMR-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_STORMS_THUNDERSTORM_HEAVY_RAIN_SNOW_NO_HAIL_SYM" Label="WAS-WSTHR-P----" EntityID="WEATHER_SYMBOLS" EntityTypeID="STORMS" EntitySubTypeID="THUNDERSTORM_HEAVY_RAIN_SNOW_NO_HAIL">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSTHR-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSTHR-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_STORMS_THUNDERSTORM_LIGHT_MODERATE_WITH_HAIL_SYM" Label="WAS-WSTMH-P----" EntityID="WEATHER_SYMBOLS" EntityTypeID="STORMS" EntitySubTypeID="THUNDERSTORM_LIGHT_MODERATE_WITH_HAIL">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSTMH-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSTMH-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_STORMS_THUNDERSTORM_HEAVY_WITH_HAIL_SYM" Label="WAS-WSTHH-P----" EntityID="WEATHER_SYMBOLS" EntityTypeID="STORMS" EntitySubTypeID="THUNDERSTORM_HEAVY_WITH_HAIL">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSTHH-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSTHH-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_STORMS_FUNNEL_CLOUD_TORNADO_WATERSPOUT_SYM" Label="WAS-WST-FCP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="STORMS" EntitySubTypeID="FUNNEL_CLOUD_TORNADO_WATERSPOUT">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WST-FC</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WST-FC</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_STORMS_SQUALL_SYM" Label="WAS-WST-SQP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="STORMS" EntitySubTypeID="SQUALL">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WST-SQ</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WST-SQ</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_STORMS_LIGHTNING_SYM" Label="WAS-WST-LGP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="STORMS" EntitySubTypeID="LIGHTNING">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WST-LG</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WST-LG</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_FOG_FOG_SHALLOW_PATCHES_SYM" Label="WAS-WSFGPSP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="FOG" EntitySubTypeID="FOG_SHALLOW_PATCHES">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSFGPS</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSFGPS</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_FOG_FOG_SHALLOW_CONTINUOUS_SYM" Label="WAS-WSFGCSP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="FOG" EntitySubTypeID="FOG_SHALLOW_CONTINUOUS">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSFGCS</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSFGCS</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_FOG_FOG_PATCHY_SYM" Label="WAS-WSFGP-P----" EntityID="WEATHER_SYMBOLS" EntityTypeID="FOG" EntitySubTypeID="FOG_PATCHY">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSFGP-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSFGP-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_FOG_FOG_SKY_VISIBLE_SYM" Label="WAS-WSFGSVP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="FOG" EntitySubTypeID="FOG_SKY_VISIBLE">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSFGSV</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSFGSV</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_FOG_FOG_SKY_OBSCURED_SYM" Label="WAS-WSFGSOP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="FOG" EntitySubTypeID="FOG_SKY_OBSCURED">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSFGSO</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSFGSO</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_FOG_FOG_FREEZING_SKY_VISIBLE_SYM" Label="WAS-WSFGFVP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="FOG" EntitySubTypeID="FOG_FREEZING_SKY_VISIBLE">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSFGFV</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSFGFV</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_FOG_FOG_FREEZING_SKY_OBSCURED_SYM" Label="WAS-WSFGFOP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="FOG" EntitySubTypeID="FOG_FREEZING_SKY_OBSCURED">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSFGFO</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSFGFO</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_MIST_SYM" Label="WAS-WSBR--P----" EntityID="WEATHER_SYMBOLS" EntityTypeID="MIST">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSBR--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSBR--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_SMOKE_SYM" Label="WAS-WSFU--P----" EntityID="WEATHER_SYMBOLS" EntityTypeID="SMOKE">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSFU--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSFU--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_HAZE_SYM" Label="WAS-WSHZ--P----" EntityID="WEATHER_SYMBOLS" EntityTypeID="HAZE">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSHZ--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSHZ--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_DUST_SAND_DUST_SAND_LIGHT_TO_MODERATE_SYM" Label="WAS-WSDSLMP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="DUST_SAND" EntitySubTypeID="DUST_SAND_LIGHT_TO_MODERATE">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSDSLM</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSDSLM</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_DUST_SAND_DUST_SAND_SEVERE_SYM" Label="WAS-WSDSS-P----" EntityID="WEATHER_SYMBOLS" EntityTypeID="DUST_SAND" EntitySubTypeID="DUST_SAND_SEVERE">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSDSS-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSDSS-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_DUST_SAND_DUST_DEVIL_SYM" Label="WAS-WSDD--P----" EntityID="WEATHER_SYMBOLS" EntityTypeID="DUST_SAND" EntitySubTypeID="DUST_DEVIL">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSDD--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSDD--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_DUST_SAND_BLOWING_DUST_SAND_SYM" Label="WAS-WSDB--P----" EntityID="WEATHER_SYMBOLS" EntityTypeID="DUST_SAND" EntitySubTypeID="BLOWING_DUST_SAND">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSDB--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSDB--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_TROPICAL_STORM_SYSTEMS_TROPICAL_DEPRESSION_SYM" Label="WAS-WSTSD-P----" EntityID="WEATHER_SYMBOLS" EntityTypeID="TROPICAL_STORM_SYSTEMS" EntitySubTypeID="TROPICAL_DEPRESSION">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSTSD-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSTSD-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_TROPICAL_STORM_SYSTEMS_TROPICAL_STORM_SYM" Label="WAS-WSTSS-P----" EntityID="WEATHER_SYMBOLS" EntityTypeID="TROPICAL_STORM_SYSTEMS" EntitySubTypeID="TROPICAL_STORM">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSTSS-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSTSS-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_TROPICAL_STORM_SYSTEMS_HURRICANE_TYPHOON_SYM" Label="WAS-WSTSH-P----" EntityID="WEATHER_SYMBOLS" EntityTypeID="TROPICAL_STORM_SYSTEMS" EntitySubTypeID="HURRICANE_TYPHOON">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSTSH-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSTSH-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_TROPICAL_STORM_SYSTEMS_TROPICAL_STORM_WIND_AREAS_DATE_TIME_LABELS_SYM" Label="WA-DWSTSWA--A--" EntityID="WEATHER_SYMBOLS" EntityTypeID="TROPICAL_STORM_SYSTEMS" EntitySubTypeID="TROPICAL_STORM_WIND_AREAS_DATE_TIME_LABELS">
-      <LegacyFunctionCode Name="2525C">WSTSWA</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="-" TailOverride="A--">WSTSWA</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_VOLCANIC_ERUPTION_SYM" Label="WAS-WSVE--P----" EntityID="WEATHER_SYMBOLS" EntityTypeID="VOLCANIC_ERUPTION">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSVE--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSVE--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_VOLCANIC_ERUPTION_VOLCANIC_ASH_SYM" Label="WAS-WSVA--P----" EntityID="WEATHER_SYMBOLS" EntityTypeID="VOLCANIC_ERUPTION" EntitySubTypeID="VOLCANIC_ASH">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSVA--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSVA--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_TROPOPAUSE_LEVEL_SYM" Label="WAS-WST-LVP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="TROPOPAUSE_LEVEL">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WST-LV</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WST-LV</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_FREEZING_LEVEL_SYM" Label="WAS-WSF-LVP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="FREEZING_LEVEL">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSF-LV</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSF-LV</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_PRECIPITATION_UNKNOWN_TYPE_INTENSITY_SYM" Label="WAS-WSUKP-P----" EntityID="WEATHER_SYMBOLS" EntityTypeID="PRECIPITATION_UNKNOWN_TYPE_INTENSITY">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">WSUKP-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSUKP-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="BOUNDED_AREAS_WEATHER_INSTRUMENT_FLIGHT_RULE_IFR_SYM" Label="WA-DBAIF----A--" EntityID="BOUNDED_AREAS_WEATHER" EntityTypeID="INSTRUMENT_FLIGHT_RULE_IFR">
-      <LegacyFunctionCode Name="2525C">BAIF--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="-" TailOverride="A--">BAIF--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="BOUNDED_AREAS_WEATHER_MARGINAL_VISUAL_FLIGHT_RULE_MVFR_SYM" Label="WA-DBAMV----A--" EntityID="BOUNDED_AREAS_WEATHER" EntityTypeID="MARGINAL_VISUAL_FLIGHT_RULE_MVFR">
-      <LegacyFunctionCode Name="2525C">BAMV--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="-" TailOverride="A--">BAMV--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="BOUNDED_AREAS_WEATHER_TURBULENCE_BOUNDED_SYM" Label="WA-DBATB----A--" EntityID="BOUNDED_AREAS_WEATHER" EntityTypeID="TURBULENCE_BOUNDED">
-      <LegacyFunctionCode Name="2525C">BATB--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="-" TailOverride="A--">BATB--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="BOUNDED_AREAS_WEATHER_ICING_BOUNDED_SYM" Label="WA-DBAI-----A--" EntityID="BOUNDED_AREAS_WEATHER" EntityTypeID="ICING_BOUNDED">
-      <LegacyFunctionCode Name="2525C">BAI---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="-" TailOverride="A--">BAI---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="BOUNDED_AREAS_WEATHER_LIQUID_PRECIPITATION_NON_CONVECTIVE_SYM" Label="WA-DBALPNC--A--" EntityID="BOUNDED_AREAS_WEATHER" EntityTypeID="LIQUID_PRECIPITATION_NON_CONVECTIVE">
-      <LegacyFunctionCode Name="2525C">BALPNC</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="-" TailOverride="A--">BALPNC</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="BOUNDED_AREAS_WEATHER_LIQUID_PRECIPITATION_NON_CONVECTIVE_LIQUID_PRECIPITATION_CONVECTIVE_SYM" Label="WA-DBALPC---A--" EntityID="BOUNDED_AREAS_WEATHER" EntityTypeID="LIQUID_PRECIPITATION_NON_CONVECTIVE" EntitySubTypeID="LIQUID_PRECIPITATION_CONVECTIVE">
-      <LegacyFunctionCode Name="2525C">BALPC-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="-" TailOverride="A--">BALPC-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="BOUNDED_AREAS_WEATHER_FREEZING_PRECIPITATION_SYM" Label="WA-DBAFP----A--" EntityID="BOUNDED_AREAS_WEATHER" EntityTypeID="FREEZING_PRECIPITATION">
-      <LegacyFunctionCode Name="2525C">BAFP--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="-" TailOverride="A--">BAFP--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="BOUNDED_AREAS_WEATHER_THUNDERSTORM_BOUNDED_SYM" Label="WA-DBAT-----A--" EntityID="BOUNDED_AREAS_WEATHER" EntityTypeID="THUNDERSTORM_BOUNDED">
-      <LegacyFunctionCode Name="2525C">BAT---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="-" TailOverride="A--">BAT---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="BOUNDED_AREAS_WEATHER_FOG_BOUNDED_SYM" Label="WA-DBAFG----A--" EntityID="BOUNDED_AREAS_WEATHER" EntityTypeID="FOG_BOUNDED">
-      <LegacyFunctionCode Name="2525C">BAFG--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="-" TailOverride="A--">BAFG--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="BOUNDED_AREAS_WEATHER_DUST_SAND_BOUNDED_SYM" Label="WA-DBAD-----A--" EntityID="BOUNDED_AREAS_WEATHER" EntityTypeID="DUST_SAND_BOUNDED">
-      <LegacyFunctionCode Name="2525C">BAD---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="-" TailOverride="A--">BAD---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="BOUNDED_AREAS_WEATHER_OPERATOR_DEFINED_FREEFORM_BOUNDED_SYM" Label="WA-DBAFF----A--" EntityID="BOUNDED_AREAS_WEATHER" EntityTypeID="OPERATOR_DEFINED_FREEFORM_BOUNDED">
-      <LegacyFunctionCode Name="2525C">BAFF--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="-" TailOverride="A--">BAFF--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="ISOPLETHS_ISOBAR_SURFACE_SYM" Label="WA-DIPIB---L---" EntityID="ISOPLETHS" EntityTypeID="ISOBAR_SURFACE">
-      <LegacyFunctionCode Name="2525C">IPIB--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">IPIB--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="ISOPLETHS_CONTOUR_UPPER_AIR_SYM" Label="WA-DIPCO---L---" EntityID="ISOPLETHS" EntityTypeID="CONTOUR_UPPER_AIR">
-      <LegacyFunctionCode Name="2525C">IPCO--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">IPCO--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="ISOPLETHS_ISOTHERM_SYM" Label="WA-DIPIS---L---" EntityID="ISOPLETHS" EntityTypeID="ISOTHERM">
-      <LegacyFunctionCode Name="2525C">IPIS--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">IPIS--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="ISOPLETHS_ISOTACH_SYM" Label="WA-DIPIT---L---" EntityID="ISOPLETHS" EntityTypeID="ISOTACH">
-      <LegacyFunctionCode Name="2525C">IPIT--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">IPIT--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="ISOPLETHS_ISODROSOTHERM_SYM" Label="WA-DIPID---L---" EntityID="ISOPLETHS" EntityTypeID="ISODROSOTHERM">
-      <LegacyFunctionCode Name="2525C">IPID--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">IPID--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="ISOPLETHS_THICKNESS_SYM" Label="WA-DIPTH---L---" EntityID="ISOPLETHS" EntityTypeID="THICKNESS">
-      <LegacyFunctionCode Name="2525C">IPTH--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">IPTH--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="ISOPLETHS_OPERATOR_DEFINED_FREEFORM_SYM" Label="WA-DIPFF---L---" EntityID="ISOPLETHS" EntityTypeID="OPERATOR_DEFINED_FREEFORM">
-      <LegacyFunctionCode Name="2525C">IPFF--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">IPFF--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="STATE_GROUND_WITHOUT_SNOW_MEASURABLE_ICE_COVER_SURFACE_DRY_SYM" Label="WAS-GND-NCP----" EntityID="STATE_GROUND" EntityTypeID="WITHOUT_SNOW_MEASURABLE_ICE_COVER" EntitySubTypeID="SURFACE_DRY">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">GND-NC</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">GND-NC</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="STATE_GROUND_WITHOUT_SNOW_MEASURABLE_ICE_COVER_SURFACE_MOIST_SYM" Label="WAS-GNM---P----" EntityID="STATE_GROUND" EntityTypeID="WITHOUT_SNOW_MEASURABLE_ICE_COVER" EntitySubTypeID="SURFACE_MOIST">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">GNM---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">GNM---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="STATE_GROUND_WITHOUT_SNOW_MEASURABLE_ICE_COVER_SURFACE_WET_SYM" Label="WAS-GNW-SWP----" EntityID="STATE_GROUND" EntityTypeID="WITHOUT_SNOW_MEASURABLE_ICE_COVER" EntitySubTypeID="SURFACE_WET">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">GNW-SW</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">GNW-SW</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="STATE_GROUND_WITHOUT_SNOW_MEASURABLE_ICE_COVER_SURFACE_FLOODED_SYM" Label="WAS-GNFL--P----" EntityID="STATE_GROUND" EntityTypeID="WITHOUT_SNOW_MEASURABLE_ICE_COVER" EntitySubTypeID="SURFACE_FLOODED">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">GNFL--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">GNFL--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="STATE_GROUND_WITHOUT_SNOW_MEASURABLE_ICE_COVER_SURFACE_FROZEN_SYM" Label="WAS-GNFZ--P----" EntityID="STATE_GROUND" EntityTypeID="WITHOUT_SNOW_MEASURABLE_ICE_COVER" EntitySubTypeID="SURFACE_FROZEN">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">GNFZ--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">GNFZ--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="STATE_GROUND_WITHOUT_SNOW_MEASURABLE_ICE_COVER_GLAZE_THIN_ICE_ON_GROUND_SYM" Label="WAS-GNG-TIP----" EntityID="STATE_GROUND" EntityTypeID="WITHOUT_SNOW_MEASURABLE_ICE_COVER" EntitySubTypeID="GLAZE_THIN_ICE_ON_GROUND">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">GNG-TI</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">GNG-TI</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="STATE_GROUND_WITHOUT_SNOW_MEASURABLE_ICE_COVER_LOOSE_DUST_SAND_NOT_COVERING_SYM" Label="WAS-GNLDN-P----" EntityID="STATE_GROUND" EntityTypeID="WITHOUT_SNOW_MEASURABLE_ICE_COVER" EntitySubTypeID="LOOSE_DUST_SAND_NOT_COVERING">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">GNLDN-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">GNLDN-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="STATE_GROUND_WITHOUT_SNOW_MEASURABLE_ICE_COVER_THIN_LOOSE_DUST_SAND_COVERING_SYM" Label="WAS-GNLDTCP----" EntityID="STATE_GROUND" EntityTypeID="WITHOUT_SNOW_MEASURABLE_ICE_COVER" EntitySubTypeID="THIN_LOOSE_DUST_SAND_COVERING">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">GNLDTC</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">GNLDTC</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="STATE_GROUND_WITHOUT_SNOW_MEASURABLE_ICE_COVER_MODERATE_THICK_LOOSE_DUST_SAND_COVERING_SYM" Label="WAS-GNLDMCP----" EntityID="STATE_GROUND" EntityTypeID="WITHOUT_SNOW_MEASURABLE_ICE_COVER" EntitySubTypeID="MODERATE_THICK_LOOSE_DUST_SAND_COVERING">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">GNLDMC</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">GNLDMC</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="STATE_GROUND_WITHOUT_SNOW_MEASURABLE_ICE_COVER_EXTREMELY_DRY_CRACKS_SYM" Label="WAS-GNDEWCP----" EntityID="STATE_GROUND" EntityTypeID="WITHOUT_SNOW_MEASURABLE_ICE_COVER" EntitySubTypeID="EXTREMELY_DRY_CRACKS">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">GNDEWC</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">GNDEWC</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="STATE_GROUND_WITH_SNOW_MEASURABLE_ICE_COVER_PREDOMINATELY_ICE_COVERED_SYM" Label="WAS-GSI---P----" EntityID="STATE_GROUND" EntityTypeID="WITH_SNOW_MEASURABLE_ICE_COVER" EntitySubTypeID="PREDOMINATELY_ICE_COVERED">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">GSI---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">GSI---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="STATE_GROUND_WITH_SNOW_MEASURABLE_ICE_COVER_COMPACT_WET_SNOW_COVERING_LESS_THAN_HALF_SYM" Label="WAS-GSSCL-P----" EntityID="STATE_GROUND" EntityTypeID="WITH_SNOW_MEASURABLE_ICE_COVER" EntitySubTypeID="COMPACT_WET_SNOW_COVERING_LESS_THAN_HALF">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">GSSCL-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">GSSCL-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="STATE_GROUND_WITH_SNOW_MEASURABLE_ICE_COVER_COMPACT_WET_SNOW_COVERING_HALF_SYM" Label="WAS-GSSCH-P----" EntityID="STATE_GROUND" EntityTypeID="WITH_SNOW_MEASURABLE_ICE_COVER" EntitySubTypeID="COMPACT_WET_SNOW_COVERING_HALF">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">GSSCH-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">GSSCH-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="STATE_GROUND_WITH_SNOW_MEASURABLE_ICE_COVER_EVEN_COMPACT_WET_SNOW_COVERING_SYM" Label="WAS-GSSCCEP----" EntityID="STATE_GROUND" EntityTypeID="WITH_SNOW_MEASURABLE_ICE_COVER" EntitySubTypeID="EVEN_COMPACT_WET_SNOW_COVERING">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">GSSCCE</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">GSSCCE</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="STATE_GROUND_WITH_SNOW_MEASURABLE_ICE_COVER_UNEVEN_COMPACT_WET_SNOW_COVERING_SYM" Label="WAS-GSSCCUP----" EntityID="STATE_GROUND" EntityTypeID="WITH_SNOW_MEASURABLE_ICE_COVER" EntitySubTypeID="UNEVEN_COMPACT_WET_SNOW_COVERING">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">GSSCCU</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">GSSCCU</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="STATE_GROUND_WITH_SNOW_MEASURABLE_ICE_COVER_LOOSE_DRY_SNOW_COVERING_LESS_THAN_HALF_SYM" Label="WAS-GSSLL-P----" EntityID="STATE_GROUND" EntityTypeID="WITH_SNOW_MEASURABLE_ICE_COVER" EntitySubTypeID="LOOSE_DRY_SNOW_COVERING_LESS_THAN_HALF">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">GSSLL-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">GSSLL-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="STATE_GROUND_WITH_SNOW_MEASURABLE_ICE_COVER_LOOSE_DRY_SNOW_COVERING_HALF_SYM" Label="WAS-GSSLH-P----" EntityID="STATE_GROUND" EntityTypeID="WITH_SNOW_MEASURABLE_ICE_COVER" EntitySubTypeID="LOOSE_DRY_SNOW_COVERING_HALF">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">GSSLH-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">GSSLH-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="STATE_GROUND_WITH_SNOW_MEASURABLE_ICE_COVER_EVEN_LOOSE_DRY_SNOW_COVERING_SYM" Label="WAS-GSSLCEP----" EntityID="STATE_GROUND" EntityTypeID="WITH_SNOW_MEASURABLE_ICE_COVER" EntitySubTypeID="EVEN_LOOSE_DRY_SNOW_COVERING">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">GSSLCE</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">GSSLCE</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="STATE_GROUND_WITH_SNOW_MEASURABLE_ICE_COVER_UNEVEN_LOOSE_DRY_SNOW_COVERING_SYM" Label="WAS-GSSLCUP----" EntityID="STATE_GROUND" EntityTypeID="WITH_SNOW_MEASURABLE_ICE_COVER" EntitySubTypeID="UNEVEN_LOOSE_DRY_SNOW_COVERING">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">GSSLCU</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">GSSLCU</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="STATE_GROUND_WITH_SNOW_MEASURABLE_ICE_COVER_SNOW_DEEP_DRIFTS_SYM" Label="WAS-GSSDC-P----" EntityID="STATE_GROUND" EntityTypeID="WITH_SNOW_MEASURABLE_ICE_COVER" EntitySubTypeID="SNOW_DEEP_DRIFTS">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">GSSDC-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">GSSDC-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="ICING_MIXED_ICING_MIXED_ICING_LIGHT_SYM" Label="WAS-IML---P----" EntityID="ICING" EntityTypeID="MIXED_ICING" EntitySubTypeID="MIXED_ICING_LIGHT">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">IML---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">IML---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="ICING_MIXED_ICING_MIXED_ICING_MODERATE_SYM" Label="WAS-IRM---P----" EntityID="ICING" EntityTypeID="MIXED_ICING" EntitySubTypeID="MIXED_ICING_MODERATE">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">IRM---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">IRM---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="ICING_MIXED_ICING_MIXED_ICING_SEVERE_SYM" Label="WAS-IRS---P----" EntityID="ICING" EntityTypeID="MIXED_ICING" EntitySubTypeID="MIXED_ICING_SEVERE">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="S">IRS---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">IRS---</LegacyFunctionCode>
     </LegacySymbol>
   </LegacySymbols>
 </SymbolSet>

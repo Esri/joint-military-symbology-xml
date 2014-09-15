@@ -1153,22 +1153,46 @@ namespace JointMilitarySymbologyLibrary
                                 if (sym2 != null)
                                 {
                                     cSIDCOut = sym2.LegacySIDC;
+
+                                    if (cSIDCIn == cSIDCOut)
+                                    {
+                                        status = "pass";
+                                        passCount++;
+                                    }
+                                    else if (sym2.LegacySIDCs.Count > 1)
+                                    {
+                                        bool match = false;
+
+                                        foreach (string sidc in sym2.LegacySIDCs)
+                                        {
+                                            if (cSIDCIn == sidc)
+                                            {
+                                                match = true;
+                                                break;
+                                            }
+                                        }
+
+                                        if (match)
+                                        {
+                                            status = "pass (multiple)";
+                                            passCount++;
+                                        }
+                                        else
+                                        {
+                                            status = "FAIL";
+                                            failCount++;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        status = "FAIL";
+                                        failCount++;
+                                    }
                                 }
                                 else
                                 {
                                     status = "Error making 2525D";
                                     derrorCount++;
-                                }
-
-                                if (cSIDCIn == cSIDCOut)
-                                {
-                                    status = "pass";
-                                    passCount++;
-                                }
-                                else
-                                {
-                                    status = "FAIL";
-                                    failCount++;
                                 }
                             }
                             else
@@ -1303,7 +1327,7 @@ namespace JointMilitarySymbologyLibrary
             _exportSymbolSet(path, dataValidation, append, false);
         }
 
-        public void ExportAmplifiers(string path, ETLExportEnum exportType = ETLExportEnum.ETLExportSimple, bool append = false, bool omitSource = false, bool omitLegacy = false, long size = 32)
+        public void ExportAmplifiers(string path, ETLExportEnum exportType = ETLExportEnum.ETLExportSimple, bool append = false, bool omitSource = false, bool omitLegacy = false, long size = 32, string amplifierExpression = "")
         {
             // The public entry point for exporting amplifiers from the JMSML library
             // into CSV format.  These include echelons, mobilities, and auxiliary equipment
@@ -1341,6 +1365,9 @@ namespace JointMilitarySymbologyLibrary
 
                     foreach (LibraryAmplifierGroup lag in _library.AmplifierGroups)
                     {
+                        if (amplifierExpression != "" && !System.Text.RegularExpressions.Regex.IsMatch(lag.Label, amplifierExpression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                            continue;
+
                         if (lag.Amplifiers != null)
                         {
                             foreach (LibraryAmplifierGroupAmplifier amp in lag.Amplifiers)

@@ -36,7 +36,7 @@ namespace JointMilitarySymbologyLibrary
         {
             //LibraryStandardIdentityGroup identityGroup = _configHelper.Librarian.StandardIdentityGroup(graphic.StandardIdentityGroup);
 
-            string result = BuildAmplifierItemName(amplifierGroup, amplifier, null) + "," + BuildQuotedAmplifierCode(amplifierGroup, amplifier, null);
+            string result = BuildAmplifierItemName(amplifierGroup, amplifier, null) + "," + BuildAmplifierCode(amplifierGroup, amplifier, null);
 
             return result;
         }

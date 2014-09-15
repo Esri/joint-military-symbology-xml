@@ -1571,6 +1571,7 @@
     </LegacySymbol>
     <LegacySymbol ID="WEAPON_SYSTEM_AIR_DEFENSE_MISSILE_LAUNCHER_SYM" Label="S*GPEWMA--*****" EntityID="WEAPON_SYSTEM" EntityTypeID="AIR_DEFENSE_MISSILE_LAUNCHER">
       <LegacyFunctionCode Name="2525C">EWMA--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">EWMAT-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEAPON_SYSTEM_AIR_DEFENSE_MISSILE_LAUNCHER_AIR_DEFENSE_MISSILE_LIGHT_SYM" Label="S*GPEWMAS-*****" EntityID="WEAPON_SYSTEM" EntityTypeID="AIR_DEFENSE_MISSILE_LAUNCHER" EntitySubTypeID="AIR_DEFENSE_MISSILE_LIGHT">
       <LegacyFunctionCode Name="2525C">EWMAS-</LegacyFunctionCode>
@@ -1598,9 +1599,6 @@
     </LegacySymbol>
     <LegacySymbol ID="WEAPON_SYSTEM_AIR_DEFENSE_MISSILE_LAUNCHER_AIR_DEFENSE_MISSILE_HEAVY_TELAR_SYM" Label="S*GPEWMALE*****" EntityID="WEAPON_SYSTEM" EntityTypeID="AIR_DEFENSE_MISSILE_LAUNCHER" EntitySubTypeID="AIR_DEFENSE_MISSILE_HEAVY_TELAR">
       <LegacyFunctionCode Name="2525C">EWMALE</LegacyFunctionCode>
-    </LegacySymbol>
-    <LegacySymbol ID="WEAPON_SYSTEM_AIR_DEFENSE_MISSILE_LAUNCHER_SYM" Label="S*GPEWMAT-*****" EntityID="WEAPON_SYSTEM" EntityTypeID="AIR_DEFENSE_MISSILE_LAUNCHER">
-      <LegacyFunctionCode Name="2525C">EWMAT-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEAPON_SYSTEM_ANTITANK_MISSILE_LAUNCHER_SYM" Label="S*GPEWMT--*****" EntityID="WEAPON_SYSTEM" EntityTypeID="ANTITANK_MISSILE_LAUNCHER">
       <LegacyFunctionCode Name="2525C">EWMT--</LegacyFunctionCode>
@@ -2015,6 +2013,7 @@
     </LegacySymbol>
     <LegacySymbol ID="RETIRED_SYM" Label="S*GP------*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">------</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">E-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="VEHICLE_VEHICLE_ARMORED_SYM" Label="S*GPUCAWA-*****" EntityID="VEHICLE" EntityTypeID="VEHICLE_ARMORED">
       <LegacyFunctionCode Name="2525C" Description="Substitute">UCAWA-</LegacyFunctionCode>
@@ -2039,9 +2038,6 @@
     </LegacySymbol>
     <LegacySymbol ID="VEHICLE_VEHICLE_ARMORED_SYM" Label="S*GPUCAWWR*****" EntityID="VEHICLE" EntityTypeID="VEHICLE_ARMORED">
       <LegacyFunctionCode Name="2525C" Description="Substitute">UCAWWR</LegacyFunctionCode>
-    </LegacySymbol>
-    <LegacySymbol ID="RETIRED_SYM" Label="S*GPE-----*****" Remarks="Retired">
-      <LegacyFunctionCode Name="2525C">E-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="ENGINEER_VEHICLES_EQUIPMENT_MINE_LAYING_EQUIPMENT_SYM" Label="S*GPEVEM-------" EntityID="ENGINEER_VEHICLES_EQUIPMENT" EntityTypeID="MINE_LAYING_EQUIPMENT">
       <LegacyFunctionCode Name="2525C">EVEM--</LegacyFunctionCode>

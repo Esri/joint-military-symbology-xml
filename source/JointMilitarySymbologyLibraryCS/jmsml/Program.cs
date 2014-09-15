@@ -139,7 +139,7 @@ namespace jmsml
 
             if (amplifierPath != "")
             {
-                _etl.ExportAmplifiers(amplifierPath, _exportThisAs, appendFiles, omitSource, omitLegacyTag, size);
+                _etl.ExportAmplifiers(amplifierPath, _exportThisAs, appendFiles, omitSource, omitLegacyTag, size, query);
             }
 
             if (hqTFFDPath != "")

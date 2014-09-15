@@ -1077,7 +1077,7 @@
   </SectorOneModifiers>
   <LegacySymbols>
     <LegacySymbol ID="INCIDENT_CRIMINAL_ACTIVITY_INCIDENT_SYM" Label="E*IPB-----*****" EntityID="INCIDENT" EntityTypeID="CRIMINAL_ACTIVITY_INCIDENT">
-      <LegacyFunctionCode Name="2525C">B-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">B-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INCIDENT_CRIMINAL_ACTIVITY_INCIDENT_ARREST_SYM" Label="O*OPA-----*****" EntityID="INCIDENT" EntityTypeID="CRIMINAL_ACTIVITY_INCIDENT" EntitySubTypeID="ARREST">
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="O">A-----</LegacyFunctionCode>
@@ -1101,7 +1101,7 @@
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="O">E-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INCIDENT_CRIMINAL_ACTIVITY_INCIDENT_GRAFFITI_SYM" Label="O*IPG-----*****" EntityID="INCIDENT" EntityTypeID="CRIMINAL_ACTIVITY_INCIDENT" EntitySubTypeID="GRAFFITI">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="O">G-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="I">G-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INCIDENT_CRIMINAL_ACTIVITY_INCIDENT_KILLING_SYM" Label="O*VPM-----*****" EntityID="INCIDENT" EntityTypeID="CRIMINAL_ACTIVITY_INCIDENT" EntitySubTypeID="KILLING">
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="V">M-----</LegacyFunctionCode>
@@ -1119,25 +1119,25 @@
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="V">P-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INCIDENT_CRIMINAL_ACTIVITY_INCIDENT_CIVIL_RIOTING_SYM" Label="E*IPAC----*****" EntityID="INCIDENT" EntityTypeID="CRIMINAL_ACTIVITY_INCIDENT" EntitySubTypeID="CIVIL_RIOTING">
-      <LegacyFunctionCode Name="2525C">AC----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">AC----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INCIDENT_CRIMINAL_ACTIVITY_INCIDENT_BOOBY_TRAP_SYM" Label="O*VPY-----*****" EntityID="INCIDENT" EntityTypeID="CRIMINAL_ACTIVITY_INCIDENT" EntitySubTypeID="BOOBY_TRAP">
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="V">Y-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INCIDENT_CRIMINAL_ACTIVITY_INCIDENT_VANDALISM_LOOT_RANSACK_PLUNDER_SYM" Label="O*IPV-----*****" EntityID="INCIDENT" EntityTypeID="CRIMINAL_ACTIVITY_INCIDENT" EntitySubTypeID="VANDALISM_LOOT_RANSACK_PLUNDER">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="O">V-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="I">V-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INCIDENT_BOMB_BOMBING_SYM" Label="O*VPB-----*****" EntityID="INCIDENT" EntityTypeID="BOMB_BOMBING">
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="V">B-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INCIDENT_BOMB_BOMBING_BOMB_THREAT_SYM" Label="E*IPBA----*****" EntityID="INCIDENT" EntityTypeID="BOMB_BOMBING" EntitySubTypeID="BOMB_THREAT">
-      <LegacyFunctionCode Name="2525C">BA----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">BA----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INCIDENT_IED_EVENT_IED_EXPLOSION_SYM" Label="O*VPEI----*****" EntityID="INCIDENT" EntityTypeID="IED_EVENT" EntitySubTypeID="IED_EXPLOSION">
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="V">EI----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INCIDENT_SHOOTING_SYM" Label="E*IPBF----*****" EntityID="INCIDENT" EntityTypeID="SHOOTING">
-      <LegacyFunctionCode Name="2525C">BF----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">BF----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INCIDENT_SHOOTING_SNIPING_SYM" Label="O*VPS-----*****" EntityID="INCIDENT" EntityTypeID="SHOOTING" EntitySubTypeID="SNIPING">
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="V">S-----</LegacyFunctionCode>
@@ -1146,10 +1146,10 @@
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="V">E-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INCIDENT_EXPLOSION_BOMB_EXPLOSION_SYM" Label="E*IPBC----*****" EntityID="INCIDENT" EntityTypeID="EXPLOSION" EntitySubTypeID="BOMB_EXPLOSION">
-      <LegacyFunctionCode Name="2525C">BC----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">BC----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="CIVIL_DISTURBANCE_SYM" Label="E*IPA-----*****" EntityID="CIVIL_DISTURBANCE">
-      <LegacyFunctionCode Name="2525C">A-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">A-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="CIVIL_DISTURBANCE_DEMONSTRATION_SYM" Label="O*OPD-----*****" EntityID="CIVIL_DISTURBANCE" EntityTypeID="DEMONSTRATION">
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="O">D-----</LegacyFunctionCode>
@@ -1194,43 +1194,43 @@
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="O">O-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="OPERATION_EMERGENCY_OPERATION_EMERGENCY_INCIDENT_COMMAND_CENTER_SYM" Label="E*OPBE----H****" EntityID="OPERATION" EntityTypeID="EMERGENCY_OPERATION" EntitySubTypeID="EMERGENCY_INCIDENT_COMMAND_CENTER">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="O">BE----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="O" HQTFFDOverride="H">BE----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="OPERATION_EMERGENCY_OPERATION_EMERGENCY_OPERATIONS_CENTER_SYM" Label="E*OPBF----H****" EntityID="OPERATION" EntityTypeID="EMERGENCY_OPERATION" EntitySubTypeID="EMERGENCY_OPERATIONS_CENTER">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="O">BF----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="O" HQTFFDOverride="H">BF----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="OPERATION_EMERGENCY_OPERATION_EMERGENCY_PUBLIC_INFORMATION_CENTER_SYM" Label="E*OPBG----H****" EntityID="OPERATION" EntityTypeID="EMERGENCY_OPERATION" EntitySubTypeID="EMERGENCY_PUBLIC_INFORMATION_CENTER">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="O">BG----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="O" HQTFFDOverride="H">BG----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="OPERATION_EMERGENCY_OPERATION_EMERGENCY_SHELTER_SYM" Label="E*OPBH----H****" EntityID="OPERATION" EntityTypeID="EMERGENCY_OPERATION" EntitySubTypeID="EMERGENCY_SHELTER">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="O">BH----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="O" HQTFFDOverride="H">BH----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="OPERATION_EMERGENCY_OPERATION_EMERGENCY_STAGING_AREA_SYM" Label="E*OPBI----H****" EntityID="OPERATION" EntityTypeID="EMERGENCY_OPERATION" EntitySubTypeID="EMERGENCY_STAGING_AREA">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="O">BI----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="O" HQTFFDOverride="H">BI----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="OPERATION_EMERGENCY_OPERATION_EMERGENCY_WATER_DISTRIBUTION_CENTER_SYM" Label="E*OPBK----H****" EntityID="OPERATION" EntityTypeID="EMERGENCY_OPERATION" EntitySubTypeID="EMERGENCY_WATER_DISTRIBUTION_CENTER">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="O">BK----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="O" HQTFFDOverride="H">BK----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="OPERATION_EMERGENCY_MEDICAL_OPERATION_SYM" Label="E*OPA-----*****" EntityID="OPERATION" EntityTypeID="EMERGENCY_MEDICAL_OPERATION">
       <LegacyFunctionCode Name="2525C" DimensionOverride="O">A-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="OPERATION_EMERGENCY_MEDICAL_OPERATION_EMT_STATION_LOCATION_SYM" Label="E*OPAD----H****" EntityID="OPERATION" EntityTypeID="EMERGENCY_MEDICAL_OPERATION" EntitySubTypeID="EMT_STATION_LOCATION">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="O">AD----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="O" HQTFFDOverride="H">AD----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="OPERATION_EMERGENCY_MEDICAL_OPERATION_HEALTH_DEPARTMENT_FACILITY_SYM" Label="E*OPAG----H****" EntityID="OPERATION" EntityTypeID="EMERGENCY_MEDICAL_OPERATION" EntitySubTypeID="HEALTH_DEPARTMENT_FACILITY">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="O">AG----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="O" HQTFFDOverride="H">AG----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="OPERATION_EMERGENCY_MEDICAL_OPERATION_MEDICAL_FACILITIES_OUTPATIENT_SYM" Label="E*OPAJ----H****" EntityID="OPERATION" EntityTypeID="EMERGENCY_MEDICAL_OPERATION" EntitySubTypeID="MEDICAL_FACILITIES_OUTPATIENT">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="O">AJ----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="O" HQTFFDOverride="H">AJ----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="OPERATION_EMERGENCY_MEDICAL_OPERATION_MORGUE_SYM" Label="E*OPAK----H****" EntityID="OPERATION" EntityTypeID="EMERGENCY_MEDICAL_OPERATION" EntitySubTypeID="MORGUE">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="O">AK----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="O" HQTFFDOverride="H">AK----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="OPERATION_EMERGENCY_MEDICAL_OPERATION_PHARMACY_SYM" Label="E*OPAL----H****" EntityID="OPERATION" EntityTypeID="EMERGENCY_MEDICAL_OPERATION" EntitySubTypeID="PHARMACY">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="O">AL----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="O" HQTFFDOverride="H">AL----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="OPERATION_EMERGENCY_MEDICAL_OPERATION_TRIAGE_SYM" Label="E*OPAM----H****" EntityID="OPERATION" EntityTypeID="EMERGENCY_MEDICAL_OPERATION" EntitySubTypeID="TRIAGE">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="O">AM----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="O" HQTFFDOverride="H">AM----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="OPERATION_FIRE_FIGHTING_OPERATION_FIRE_HYDRANT_SYM" Label="E*OPCC----*****" EntityID="OPERATION" EntityTypeID="FIRE_FIGHTING_OPERATION" EntitySubTypeID="FIRE_HYDRANT">
       <LegacyFunctionCode Name="2525C" DimensionOverride="O">CC----</LegacyFunctionCode>
@@ -1239,7 +1239,7 @@
       <LegacyFunctionCode Name="2525C" DimensionOverride="O">C-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="OPERATION_FIRE_FIGHTING_OPERATION_OTHER_WATER_SUPPLY_LOCATION_SYM" Label="E*OPCD----H****" EntityID="OPERATION" EntityTypeID="FIRE_FIGHTING_OPERATION" EntitySubTypeID="OTHER_WATER_SUPPLY_LOCATION">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="O">CD----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="O" HQTFFDOverride="H">CD----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="OPERATION_LAW_ENFORCEMENT_OPERATION_SYM" Label="E*OPD-----*****" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION">
       <LegacyFunctionCode Name="2525C" DimensionOverride="O">D-----</LegacyFunctionCode>
@@ -1263,7 +1263,7 @@
       <LegacyFunctionCode Name="2525C" DimensionOverride="O">DJ----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="OPERATION_LAW_ENFORCEMENT_OPERATION_PRISON_SYM" Label="E*OPDK----H****" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="PRISON">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="O">DK----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="O" HQTFFDOverride="H">DK----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="OPERATION_LAW_ENFORCEMENT_OPERATION_US_SECRET_SERVICE_USSS_SYM" Label="EFOPDL----*****" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="US_SECRET_SERVICE_USSS">
       <LegacyFunctionCode Name="2525C" DimensionOverride="O">DL----</LegacyFunctionCode>
@@ -1278,118 +1278,118 @@
       <LegacyFunctionCode Name="2525C" DimensionOverride="O">DO----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="OPERATION_LAW_ENFORCEMENT_OPERATION_INTERNAL_SECURITY_FORCE_SYM" Label="O*IPF-----*****" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="INTERNAL_SECURITY_FORCE">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="O">F-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="I">F-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="FIRE_EVENT_SYM" Label="E*IPC-----*****" EntityID="FIRE_EVENT">
-      <LegacyFunctionCode Name="2525C">C-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">C-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="FIRE_EVENT_FIRE_ORIGIN_SYM" Label="E*IPCC----*****" EntityID="FIRE_EVENT" EntityTypeID="FIRE_ORIGIN">
-      <LegacyFunctionCode Name="2525C">CC----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">CC----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="FIRE_EVENT_SMOKE_SYM" Label="E*IPCF----*****" EntityID="FIRE_EVENT" EntityTypeID="SMOKE">
-      <LegacyFunctionCode Name="2525C">CF----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">CF----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="FIRE_EVENT_HOT_SPOT_SYM" Label="E*IPCA----*****" EntityID="FIRE_EVENT" EntityTypeID="HOT_SPOT">
-      <LegacyFunctionCode Name="2525C">CA----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">CA----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="FIRE_EVENT_NON_RESIDENTIAL_FIRE_SYM" Label="E*IPCB----*****" EntityID="FIRE_EVENT" EntityTypeID="NON_RESIDENTIAL_FIRE">
-      <LegacyFunctionCode Name="2525C">CB----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">CB----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="FIRE_EVENT_RESIDENTIAL_FIRE_SYM" Label="E*IPCD----*****" EntityID="FIRE_EVENT" EntityTypeID="RESIDENTIAL_FIRE">
-      <LegacyFunctionCode Name="2525C">CD----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">CD----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="FIRE_EVENT_SCHOOL_FIRE_SYM" Label="E*IPCE----*****" EntityID="FIRE_EVENT" EntityTypeID="SCHOOL_FIRE">
-      <LegacyFunctionCode Name="2525C">CE----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">CE----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="FIRE_EVENT_SPECIAL_NEEDS_FIRE_SYM" Label="E*IPCG----*****" EntityID="FIRE_EVENT" EntityTypeID="SPECIAL_NEEDS_FIRE">
-      <LegacyFunctionCode Name="2525C">CG----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">CG----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="FIRE_EVENT_WILD_FIRE_SYM" Label="E*IPCH----*****" EntityID="FIRE_EVENT" EntityTypeID="WILD_FIRE">
-      <LegacyFunctionCode Name="2525C">CH----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">CH----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="HAZARD_MATERIALS_HAZARD_MATERIALS_INCIDENT_SYM" Label="E*IPD-----*****" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARD_MATERIALS_INCIDENT">
-      <LegacyFunctionCode Name="2525C">D-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">D-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="HAZARD_MATERIALS_HAZARD_MATERIALS_INCIDENT_CHEMICAL_AGENT_SYM" Label="E*IPDA----*****" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARD_MATERIALS_INCIDENT" EntitySubTypeID="CHEMICAL_AGENT">
-      <LegacyFunctionCode Name="2525C">DA----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">DA----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="HAZARD_MATERIALS_HAZARD_MATERIALS_INCIDENT_CORROSIVE_MATERIAL_SYM" Label="E*IPDB----*****" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARD_MATERIALS_INCIDENT" EntitySubTypeID="CORROSIVE_MATERIAL">
-      <LegacyFunctionCode Name="2525C">DB----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">DB----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="HAZARD_MATERIALS_HAZARD_MATERIALS_INCIDENT_HAZARDOUS_WHEN_WET_SYM" Label="E*IPDC----*****" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARD_MATERIALS_INCIDENT" EntitySubTypeID="HAZARDOUS_WHEN_WET">
-      <LegacyFunctionCode Name="2525C">DC----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">DC----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="HAZARD_MATERIALS_HAZARD_MATERIALS_INCIDENT_EXPLOSIVE_MATERIAL_SYM" Label="E*IPDD----*****" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARD_MATERIALS_INCIDENT" EntitySubTypeID="EXPLOSIVE_MATERIAL">
-      <LegacyFunctionCode Name="2525C">DD----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">DD----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="HAZARD_MATERIALS_HAZARD_MATERIALS_INCIDENT_FLAMMABLE_GAS_SYM" Label="E*IPDE----*****" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARD_MATERIALS_INCIDENT" EntitySubTypeID="FLAMMABLE_GAS">
-      <LegacyFunctionCode Name="2525C">DE----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">DE----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="HAZARD_MATERIALS_HAZARD_MATERIALS_INCIDENT_FLAMMABLE_LIQUID_SYM" Label="E*IPDF----*****" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARD_MATERIALS_INCIDENT" EntitySubTypeID="FLAMMABLE_LIQUID">
-      <LegacyFunctionCode Name="2525C">DF----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">DF----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="HAZARD_MATERIALS_HAZARD_MATERIALS_INCIDENT_FLAMMABLE_SOLID_SYM" Label="E*IPDG----*****" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARD_MATERIALS_INCIDENT" EntitySubTypeID="FLAMMABLE_SOLID">
-      <LegacyFunctionCode Name="2525C">DG----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">DG----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="HAZARD_MATERIALS_HAZARD_MATERIALS_INCIDENT_NON_FLAMMABLE_GAS_SYM" Label="E*IPDH----*****" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARD_MATERIALS_INCIDENT" EntitySubTypeID="NON_FLAMMABLE_GAS">
-      <LegacyFunctionCode Name="2525C">DH----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">DH----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="HAZARD_MATERIALS_HAZARD_MATERIALS_INCIDENT_ORGANIC_PEROXIDE_SYM" Label="E*IPDI----*****" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARD_MATERIALS_INCIDENT" EntitySubTypeID="ORGANIC_PEROXIDE">
-      <LegacyFunctionCode Name="2525C">DI----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">DI----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="HAZARD_MATERIALS_HAZARD_MATERIALS_INCIDENT_OXIDIZER_SYM" Label="E*IPDJ----*****" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARD_MATERIALS_INCIDENT" EntitySubTypeID="OXIDIZER">
-      <LegacyFunctionCode Name="2525C">DJ----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">DJ----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="HAZARD_MATERIALS_HAZARD_MATERIALS_INCIDENT_RADIOACTIVE_MATERIAL_SYM" Label="E*IPDK----*****" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARD_MATERIALS_INCIDENT" EntitySubTypeID="RADIOACTIVE_MATERIAL">
-      <LegacyFunctionCode Name="2525C">DK----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">DK----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="HAZARD_MATERIALS_HAZARD_MATERIALS_INCIDENT_SPONTANEOUSLY_COMBUSTIBLE_MATERIAL_SYM" Label="E*IPDL----*****" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARD_MATERIALS_INCIDENT" EntitySubTypeID="SPONTANEOUSLY_COMBUSTIBLE_MATERIAL">
-      <LegacyFunctionCode Name="2525C">DL----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">DL----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="HAZARD_MATERIALS_HAZARD_MATERIALS_INCIDENT_TOXIC_GAS_SYM" Label="E*IPDM----*****" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARD_MATERIALS_INCIDENT" EntitySubTypeID="TOXIC_GAS">
-      <LegacyFunctionCode Name="2525C">DM----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">DM----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="HAZARD_MATERIALS_HAZARD_MATERIALS_INCIDENT_TOXIC_INFECTIOUS_MATERIAL_SYM" Label="E*IPDN----*****" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARD_MATERIALS_INCIDENT" EntitySubTypeID="TOXIC_INFECTIOUS_MATERIAL">
-      <LegacyFunctionCode Name="2525C">DN----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">DN----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="HAZARD_MATERIALS_HAZARD_MATERIALS_INCIDENT_UNEXPLODED_ORDNANCE_SYM" Label="E*IPDO----*****" EntityID="HAZARD_MATERIALS" EntityTypeID="HAZARD_MATERIALS_INCIDENT" EntitySubTypeID="UNEXPLODED_ORDNANCE">
-      <LegacyFunctionCode Name="2525C">DO----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">DO----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="TRANSPORTATION_INCIDENT_AIR_ACCIDENT_MOD_SYM" Label="E*IPEA----*****" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="AIR" ModifierOneID="ACCIDENT_MOD">
-      <LegacyFunctionCode Name="2525C">EA----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">EA----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="TRANSPORTATION_INCIDENT_AIR_HIJACKING_MOD_SYM" Label="O*OPHA----*****" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="AIR" ModifierOneID="HIJACKING_MOD">
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="O">HA----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="TRANSPORTATION_INCIDENT_AIR_INCIDENT_MOD_SYM" Label="E*IPE-----*****" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="AIR" ModifierOneID="INCIDENT_MOD">
-      <LegacyFunctionCode Name="2525C">E-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">E-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="TRANSPORTATION_INCIDENT_MARINE_ACCIDENT_MOD_SYM" Label="E*IPFA----*****" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="MARINE" ModifierOneID="ACCIDENT_MOD">
-      <LegacyFunctionCode Name="2525C">FA----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">FA----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="TRANSPORTATION_INCIDENT_MARINE_HIJACKING_MOD_SYM" Label="O*OPHV----*****" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="MARINE" ModifierOneID="HIJACKING_MOD">
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="O">HV----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="TRANSPORTATION_INCIDENT_MARINE_INCIDENT_MOD_SYM" Label="E*IPF-----*****" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="MARINE" ModifierOneID="INCIDENT_MOD">
-      <LegacyFunctionCode Name="2525C">F-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">F-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="TRANSPORTATION_INCIDENT_RAIL_ACCIDENT_MOD_SYM" Label="E*IPGA----*****" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="RAIL" ModifierOneID="ACCIDENT_MOD">
-      <LegacyFunctionCode Name="2525C">GA----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">GA----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="TRANSPORTATION_INCIDENT_RAIL_HIJACKING_MOD_SYM" Label="E*IPGB----*****" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="RAIL" ModifierOneID="HIJACKING_MOD">
-      <LegacyFunctionCode Name="2525C">GB----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">GB----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="TRANSPORTATION_INCIDENT_RAIL_INCIDENT_MOD_SYM" Label="E*IPG-----*****" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="RAIL" ModifierOneID="INCIDENT_MOD">
-      <LegacyFunctionCode Name="2525C">G-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">G-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="TRANSPORTATION_INCIDENT_VEHICLE_ACCIDENT_MOD_SYM" Label="E*IPHA----*****" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="VEHICLE" ModifierOneID="ACCIDENT_MOD">
-      <LegacyFunctionCode Name="2525C">HA----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">HA----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="TRANSPORTATION_INCIDENT_VEHICLE_HIJACKING_MOD_SYM" Label="O*OPHT----*****" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="VEHICLE" ModifierOneID="HIJACKING_MOD">
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="O">HT----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="TRANSPORTATION_INCIDENT_VEHICLE_INCIDENT_MOD_SYM" Label="E*IPH-----*****" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="VEHICLE" ModifierOneID="INCIDENT_MOD">
-      <LegacyFunctionCode Name="2525C">H-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="I">H-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="NATURAL_EVENT_GEOLOGIC_AFTERSHOCK_SYM" Label="E*NPAA----*****" EntityID="NATURAL_EVENT" EntityTypeID="GEOLOGIC" EntitySubTypeID="AFTERSHOCK">
       <LegacyFunctionCode Name="2525C" DimensionOverride="N">AA----</LegacyFunctionCode>
