@@ -205,12 +205,12 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 10,Intelligence,Jamming,,,150800,Point,FULL_FRAME,Intelligence : Jamming
 10,Intelligence,Joint Intelligence Center,,,150900,Point,MAIN,Intelligence : Joint Intelligence Center
 10,Intelligence,Military Intelligence,,,151000,Point,MAIN,Intelligence : Military Intelligence
-10,Intelligence,Search,,,151100,Point,MAIN,Intelligence : Search
+10,Intelligence,Search,,,151100,Point,FULL_OCTAGON,Intelligence : Search
 10,Intelligence,Sensor,,,151200,Point,MAIN,Intelligence : Sensor
 10,Sustainment,,,,160000,Point,MAIN,Sustainment
 10,Sustainment,Administrative,,,160100,Point,MAIN,Sustainment : Administrative
 10,Sustainment,All Classes of Supply,,,160200,Point,FULL_FRAME,Sustainment : All Classes of Supply
-10,Sustainment,Airport of Debarkation/Airport of Embarkation,,,160300,Point,MAIN,Sustainment : Airport of Debarkation/Airport of Embarkation
+10,Sustainment,Airport of Debarkation/Airport of Embarkation,,,160300,Point,MAIN_1,Sustainment : Airport of Debarkation/Airport of Embarkation
 10,Sustainment,Ammunition,,,160400,Point,MAIN,Sustainment : Ammunition
 10,Sustainment,Band,,,160500,Point,MAIN,Sustainment : Band
 10,Sustainment,Combat Service Support,,,160600,Point,MAIN,Sustainment : Combat Service Support
@@ -237,10 +237,10 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 10,Sustainment,Postal,,,162700,Point,MAIN,Sustainment : Postal
 10,Sustainment,Public Affairs/Public Information,,,162800,Point,MAIN,Sustainment : Public Affairs/Public Information
 10,Sustainment,Quartermaster,,,162900,Point,MAIN,Sustainment : Quartermaster
-10,Sustainment,Railhead,,,163000,Point,MAIN,Sustainment : Railhead
+10,Sustainment,Railhead,,,163000,Point,MAIN_1,Sustainment : Railhead
 10,Sustainment,Religious Support,,,163100,Point,MAIN,Sustainment : Religious Support
 10,Sustainment,Replacement Holding Unit,,,163200,Point,MAIN,Sustainment : Replacement Holding Unit
-10,Sustainment,Sea Port of Debarkation/Sea Port of Embarkation,,,163300,Point,MAIN,Sustainment : Sea Port of Debarkation/Sea Port of Embarkation
+10,Sustainment,Sea Port of Debarkation/Sea Port of Embarkation,,,163300,Point,MAIN_1,Sustainment : Sea Port of Debarkation/Sea Port of Embarkation
 10,Sustainment,Supply,,,163400,Point,FULL_FRAME,Sustainment : Supply
 10,Sustainment,Joint Information Bureau,,,163500,Point,MAIN,Sustainment : Joint Information Bureau
 10,Sustainment,Transportation,,,163600,Point,MAIN,Sustainment : Transportation
@@ -277,10 +277,10 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 10,Law Enforcement,Coast Guard,,,201100,Point,FULL_OCTAGON,Law Enforcement (Land Units) : Coast Guard
 10,Law Enforcement,US Marshals Service,,,201200,Point,FULL_OCTAGON,Law Enforcement (Land Units) : US Marshals Service
 10,Law Enforcement,Internal Security Force,,,201300,Point,MAIN,Law Enforcement (Land Units) : Internal Security Force
-10,XX,XX,Headquarters Element,,XXXX95,Point,FULL_FRAME,Special Entity Subtypes : Headquarters Element
-10,XX,XX,Division and Below Support,,XXXX96,Point,FULL_FRAME,Special Entity Subtypes : Division and Below Support
-10,XX,XX,Corps Support,,XXXX97,Point,FULL_FRAME,Special Entity Subtypes : Corps Support
-10,XX,XX,Theater/Echelons Above Corps Support,,XXXX98,Point,FULL_FRAME,Special Entity Subtypes : Theater/Echelons Above Corps Support
+10,XX,XX,Headquarters Element,,XXXX95,Point,SPECIAL,Special Entity Subtypes : Headquarters Element
+10,XX,XX,Division and Below Support,,XXXX96,Point,SPECIAL,Special Entity Subtypes : Division and Below Support
+10,XX,XX,Corps Support,,XXXX97,Point,SPECIAL,Special Entity Subtypes : Corps Support
+10,XX,XX,Theater/Echelons Above Corps Support,,XXXX98,Point,SPECIAL,Special Entity Subtypes : Theater/Echelons Above Corps Support
 11,Civilian,,,,110000,Point,MAIN,Civilian (Land Civilian)
 11,Civilian,Environmental Protection,,,110100,Point,MAIN,Civilian (Land Civilian) : Environmental Protection
 11,Civilian,Government Organization,,,110200,Point,MAIN,Civilian (Land Civilian) : Government Organization
@@ -1262,9 +1262,9 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 30,Civilian,Leisure Craft- Motorized,Speedboat,,140502,Point,FULL_OCTAGON,Civilian (Sea Surface) : Leisure Craft- Motorized : Speedboat
 30,Civilian,Jet Ski,,,140600,Point,FULL_OCTAGON,Civilian (Sea Surface) : Jet Ski
 30,Civilian,Unmanned Surface Water Vehicle (USV),,,140700,Point,FULL_OCTAGON,Civilian (Sea Surface) : Unmanned Surface Water Vehicle (USV)
-30,Own Ship,,,,150000,Point,MAIN,Own Ship
-30,Fused Track,,,,160000,Point,MAIN,Fused Track (Sea Surface)
-30,Manual Track,,,,170000,Point,MAIN,Manual Track (Sea Surface)
+30,Own Ship,,,,150000,Point,FULL_OCTAGON,Own Ship
+30,Fused Track,,,,160000,Point,FULL_OCTAGON,Fused Track (Sea Surface)
+30,Manual Track,,,,170000,Point,FULL_OCTAGON,Manual Track (Sea Surface)
 35,Military,,,,110000,Point,MAIN,Military (Sea Subsurface)
 35,Military,Submarine,,,110100,Point,MAIN,Military (Sea Subsurface) : Submarine
 35,Military,Submarine,Submarine-Surfaced,,110101,Point,MAIN,Military (Sea Subsurface) : Submarine : Submarine-Surfaced

@@ -38,7 +38,7 @@ namespace JointMilitarySymbologyLibrary
         {
             string result = BuildModifierItemName(null, modNumber, m) + ",";
 
-            result = result + BuildQuotedModifierCode(null, modNumber, m);
+            result = result + BuildModifierCode(null, modNumber, m);
 
             return result;
         }

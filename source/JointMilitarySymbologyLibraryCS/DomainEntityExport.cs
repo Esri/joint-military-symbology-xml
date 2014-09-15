@@ -40,7 +40,7 @@ namespace JointMilitarySymbologyLibrary
                                   SymbolSetEntityEntityType eType,
                                   EntitySubTypeType eSubType)
         {
-            string code = BuildQuotedEntityCode(null, null, e, eType, eSubType);
+            string code = BuildEntityCode(null, null, e, eType, eSubType);
 
             return BuildEntityItemName(null, null, e, eType, eSubType) + "," + code;
         }
@@ -49,7 +49,7 @@ namespace JointMilitarySymbologyLibrary
                                   SymbolSet ss, 
                                   EntitySubTypeType eSubType)
         {
-            string code = BuildQuotedEntityCode(null, null, null, null, eSubType);
+            string code = BuildEntityCode(null, null, null, null, eSubType);
 
             return BuildEntityItemName(null, null, null, null, eSubType) + "," + code;
         }

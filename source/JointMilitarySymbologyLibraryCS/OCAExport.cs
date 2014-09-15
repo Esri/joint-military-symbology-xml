@@ -96,7 +96,9 @@ namespace JointMilitarySymbologyLibrary
             }
             else
                 result = result + ((status.LabelAlias != "") ? status.LabelAlias.Replace(',', '-') : status.Label.Replace(',', '-')) + ";";
-            
+
+            result = result + "OCA;";
+
             if(!omitLegacy)
                 result = result + _configHelper.SIDCIsNA + ";";
 

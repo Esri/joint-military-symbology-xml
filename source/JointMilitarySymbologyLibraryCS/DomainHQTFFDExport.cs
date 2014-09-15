@@ -37,7 +37,7 @@ namespace JointMilitarySymbologyLibrary
             //LibraryStandardIdentityGroup identityGroup = _configHelper.Librarian.StandardIdentityGroup(graphic.StandardIdentityGroup);
             //LibraryDimension dimension = _configHelper.Librarian.Dimension(graphic.Dimension);
 
-            string result = BuildHQTFFDItemName(null, null, hqTFFD) + "," + BuildQuotedHQTFFDCode(null, null, hqTFFD);
+            string result = BuildHQTFFDItemName(null, null, hqTFFD) + "," + BuildHQTFFDCode(null, null, hqTFFD);
 
             return result;
         }

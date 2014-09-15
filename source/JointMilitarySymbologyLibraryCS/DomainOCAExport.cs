@@ -38,14 +38,14 @@ namespace JointMilitarySymbologyLibrary
             //LibraryDimension dimension = _configHelper.Librarian.Dimension(statusGraphic.Dimension);
             //LibraryStandardIdentity identity = _configHelper.Librarian.StandardIdentity(statusGraphic.StandardIdentity);
             
-            string result = BuildOCAItemName(null, null, status) + "," + BuildQuotedOCACode(null, null, status);
+            string result = BuildOCAItemName(null, null, status) + "," + BuildOCACode(null, null, status);
 
             return result;
         }
 
         string IOCAExport.Line(LibraryStatus status)
         {
-            string result = BuildOCAItemName(null, null, status) + "," + BuildQuotedOCACode(null, null, status);
+            string result = BuildOCAItemName(null, null, status) + "," + BuildOCACode(null, null, status);
 
             return result;
         }

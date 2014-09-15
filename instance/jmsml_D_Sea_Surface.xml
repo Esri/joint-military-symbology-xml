@@ -574,19 +574,19 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="OWN_SHIP" Label="Own Ship" Graphic="30150000.svg">
+    <Entity ID="OWN_SHIP" Label="Own Ship" Icon="FULL_OCTAGON" Graphic="30150000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>5</DigitTwo>
       </EntityCode>
     </Entity>
-    <Entity ID="FUSED_TRACK" Label="Fused Track" LabelAlias="Fused Track (Sea Surface)" Graphic="30160000.svg">
+    <Entity ID="FUSED_TRACK" Label="Fused Track" LabelAlias="Fused Track (Sea Surface)" Icon="FULL_OCTAGON" Graphic="30160000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>6</DigitTwo>
       </EntityCode>
     </Entity>
-    <Entity ID="MANUAL_TRACK" Label="Manual Track" LabelAlias="Manual Track (Sea Surface)" Graphic="30170000.svg">
+    <Entity ID="MANUAL_TRACK" Label="Manual Track" LabelAlias="Manual Track (Sea Surface)" Icon="FULL_OCTAGON" Graphic="30170000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>7</DigitTwo>

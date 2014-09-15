@@ -250,6 +250,7 @@
     </LegacySymbol>
     <LegacySymbol ID="CIVILIAN_ORGANIZATION_SYM" Label="O*GP------*****" EntityID="CIVILIAN" EntityTypeID="ORGANIZATION">
       <LegacyFunctionCode Name="2525C" SchemaOverride="O">------</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" Description="Repeat" SchemaOverride="O" DimensionOverride="I">R-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="CIVILIAN_ORGANIZATION_DISPLACED_MOD_SYM" Label="O*GPA-----*****" EntityID="CIVILIAN" EntityTypeID="ORGANIZATION" ModifierOneID="DISPLACED_MOD">
       <LegacyFunctionCode Name="2525C" SchemaOverride="O">A-----</LegacyFunctionCode>
@@ -286,9 +287,6 @@
     </LegacySymbol>
     <LegacySymbol ID="CIVILIAN_EMERGENCY_MEDICAL_OPERATION_SYM" Label="E*OPAA----*****" EntityID="CIVILIAN" EntityTypeID="EMERGENCY_MEDICAL_OPERATION">
       <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">AA----</LegacyFunctionCode>
-    </LegacySymbol>
-    <LegacySymbol ID="CIVILIAN_ORGANIZATION_SYM" Label="O*IPR-----*****" EntityID="CIVILIAN" EntityTypeID="ORGANIZATION">
-      <LegacyFunctionCode Name="2525C" Description="Repeat" SchemaOverride="O" DimensionOverride="I">R-----</LegacyFunctionCode>
     </LegacySymbol>
   </LegacySymbols>
 </SymbolSet>

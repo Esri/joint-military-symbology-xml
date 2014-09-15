@@ -31,7 +31,9 @@ jmsml.exe /xe="../../../../../samples/name_domains_values/Coded_Domain_METOC_Atm
 jmsml.exe /xe="../../../../../samples/name_domains_values/Coded_Domain_METOC_Oceanographic_Area" /a /s="Oceanographic" /xas="DOMAIN"
 jmsml.exe /xe="../../../../../samples/name_domains_values/Coded_Domain_METOC_Space_Area" /a /s="Meteorological Space" /xas="DOMAIN"
 jmsml.exe /xf="../../../../../samples/name_domains_values/Coded_Domain_Frames" /xas="DOMAIN"
-jmsml.exe /xa="../../../../../samples/name_domains_values/Coded_Domain_Amplifiers" /xas="DOMAIN"
+jmsml.exe /xa="../../../../../samples/name_domains_values/Coded_Domain_Echelons" /xas="DOMAIN" /q="Echelon"
+jmsml.exe /xa="../../../../../samples/name_domains_values/Coded_Domain_Mobilities" /xas="DOMAIN" /q="mobility"
+jmsml.exe /xa="../../../../../samples/name_domains_values/Coded_Domain_Arrays" /xas="DOMAIN" /q="array"
 jmsml.exe /xh="../../../../../samples/name_domains_values/Coded_Domain_HQTFFD" /xas="DOMAIN"
 jmsml.exe /xo="../../../../../samples/name_domains_values/Coded_Domain_Operational_Condition_Amplifier" /xas="DOMAIN"
 

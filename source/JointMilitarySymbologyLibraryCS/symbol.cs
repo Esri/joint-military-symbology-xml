@@ -162,6 +162,30 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
+        public List<string> LegacySIDCs
+        {
+            get
+            {
+                List<string> newList = new List<string>();
+
+                if (_legacySymbol != null)
+                {
+                    if (_legacySymbol.LegacyFunctionCode != null)
+                    {
+                        foreach (LegacyFunctionCodeType functionCode in _legacySymbol.LegacyFunctionCode)
+                        {
+                            string sidc = _BuildLegacySIDC(functionCode);
+
+                            if (sidc != "")
+                                newList.Add(sidc);
+                        }
+                    }
+                }
+
+                return newList;
+            }
+        }
+
         public bool ColorBarOCA
         {
             get
@@ -328,6 +352,69 @@ namespace JointMilitarySymbologyLibrary
                 _CreateDrawRuleDictionary(id);
         }
 
+        private void _BuildEntityTypeGraphics()
+        {
+            string graphic = "";
+
+            string path = _configHelper.GetPath(_symbolSet.ID, FindEnum.FindEntities);
+
+            if (_entityType != null)
+            {
+                if (_entityType.Icon == IconType.FULL_FRAME)
+                {
+                    switch (_sig.ID)
+                    {
+                        case "SIG_UNKNOWN":
+                            graphic = _entityType.CloverGraphic;
+                            break;
+
+                        case "SIG_FRIEND":
+                            graphic = _entityType.RectangleGraphic;
+                            break;
+
+                        case "SIG_NEUTRAL":
+                            graphic = _entityType.SquareGraphic;
+                            break;
+
+                        case "SIG_HOSTILE":
+                            graphic = _entityType.DiamondGraphic;
+                            break;
+                    }
+                }
+                else if (_entityType.Graphic != "")
+                    graphic = _entityType.Graphic;
+            }
+            else if (_entity != null)
+            {
+                if (_entity.Icon == IconType.FULL_FRAME)
+                {
+                    switch (_sig.ID)
+                    {
+                        case "SIG_UNKNOWN":
+                            graphic = _entity.CloverGraphic;
+                            break;
+
+                        case "SIG_FRIEND":
+                            graphic = _entity.RectangleGraphic;
+                            break;
+
+                        case "SIG_NEUTRAL":
+                            graphic = _entity.SquareGraphic;
+                            break;
+
+                        case "SIG_HOSTILE":
+                            graphic = _entity.DiamondGraphic;
+                            break;
+                    }
+                }
+                else if (_entity.Graphic != "")
+                    graphic = _entity.Graphic;
+            }
+
+            if(graphic != null)
+                _graphics.Add(_configHelper.BuildOriginalPath(path, graphic));
+        }
+
         private void _BuildGraphics()
         {
             // Creates a list of fully qualified pathnames for the svg files needed to
@@ -349,12 +436,16 @@ namespace JointMilitarySymbologyLibrary
 
             if (_symbolSet != null)
             {
-                path = _configHelper.GetPath(_symbolSet.ID, FindEnum.FindEntities);
                 graphic = "";
 
                 if (_entitySubType != null)
                 {
-                    if (_entitySubType.Icon == IconType.FULL_FRAME)
+                    if(_entitySubType.Icon == IconType.SPECIAL)
+                        path = _configHelper.GetPath(_symbolSet.ID, FindEnum.FindSpecials);
+                    else
+                        path = _configHelper.GetPath(_symbolSet.ID, FindEnum.FindEntities);
+
+                    if (_entitySubType.Icon == IconType.FULL_FRAME || _entitySubType.Icon == IconType.SPECIAL)
                     {
                         switch (_sig.ID)
                         {
@@ -377,65 +468,14 @@ namespace JointMilitarySymbologyLibrary
                     }
                     else if (_entitySubType.Graphic != "")
                         graphic = _entitySubType.Graphic;
+
+                    _graphics.Add(_configHelper.BuildOriginalPath(path, graphic));
+
+                    if (_entitySubType.Icon == IconType.SPECIAL)
+                        _BuildEntityTypeGraphics();
                 }
-                else if (_entityType != null)
-                {
-                    if (_entityType.Icon == IconType.FULL_FRAME)
-                    {
-                        switch (_sig.ID)
-                        {
-                            case "SIG_UNKNOWN":
-                                graphic = _entityType.CloverGraphic;
-                                break;
-
-                            case "SIG_FRIEND":
-                                graphic = _entityType.RectangleGraphic;
-                                break;
-
-                            case "SIG_NEUTRAL":
-                                graphic = _entityType.SquareGraphic;
-                                break;
-
-                            case "SIG_HOSTILE":
-                                graphic = _entityType.DiamondGraphic;
-                                break;
-                        }
-                    }
-                    else if (_entityType.Graphic != "")
-                        graphic = _entityType.Graphic;
-                }
-                else if (_entity != null)
-                {
-                    if (_entity.Icon == IconType.FULL_FRAME)
-                    {
-                        switch (_sig.ID)
-                        {
-                            case "SIG_UNKNOWN":
-                                graphic = _entity.CloverGraphic;
-                                break;
-
-                            case "SIG_FRIEND":
-                                graphic = _entity.RectangleGraphic;
-                                break;
-
-                            case "SIG_NEUTRAL":
-                                graphic = _entity.SquareGraphic;
-                                break;
-
-                            case "SIG_HOSTILE":
-                                graphic = _entity.DiamondGraphic;
-                                break;
-                        }
-                    }
-                    else if (_entity.Graphic != "")
-                        graphic = _entity.Graphic;
-                }
-
-                if (graphic != "")
-                {
-                    path = _configHelper.BuildOriginalPath(path, graphic);
-                    _graphics.Add(path);
-                }
+                else
+                    _BuildEntityTypeGraphics();
             }
 
             // Let's add the modifiers
@@ -672,47 +712,46 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        private void _BuildLegacySIDC()
+        private string _BuildLegacySIDC(LegacyFunctionCodeType functionCode)
         {
-            // Builds an older/legacy SIDC (for 2525C, 2525B, etc) from the JMSML Library elements currently associated 
-            // with this symbol.
+            string result = "";
 
             if (_symbolSet != null && _affiliation != null && _dimension != null &&
                _status != null && _amplifierGroup != null && _amplifier != null && _context.ContextCode != 2)
             {
-                
+
                 if (_legacySymbol != null)
                 {
                     // Schema
-                    if (_legacySymbol.LegacyFunctionCode[0].SchemaOverride != "")
-                        _legacySIDC = _legacySymbol.LegacyFunctionCode[0].SchemaOverride;
+                    if (functionCode.SchemaOverride != "")
+                        result = functionCode.SchemaOverride;
                     else
-                        _legacySIDC = _symbolSet.LegacyCodingSchemeCode[0].Value;
+                        result = _symbolSet.LegacyCodingSchemeCode[0].Value;
 
                     // Standard Identity
-                    if (_legacySymbol.LegacyFunctionCode[0].StandardIdentityOverride != "")
-                        _legacySIDC = _legacySIDC + _legacySymbol.LegacyFunctionCode[0].StandardIdentityOverride;
+                    if (functionCode.StandardIdentityOverride != "")
+                        result = result + functionCode.StandardIdentityOverride;
                     else
-                        _legacySIDC = _legacySIDC + _affiliation.LegacyStandardIdentityCode[0].Value;
+                        result = result + _affiliation.LegacyStandardIdentityCode[0].Value;
 
                     // Dimension
-                    if (_legacySymbol.LegacyFunctionCode[0].DimensionOverride != "")
-                        _legacySIDC = _legacySIDC + _legacySymbol.LegacyFunctionCode[0].DimensionOverride;
+                    if (functionCode.DimensionOverride != "")
+                        result = result + functionCode.DimensionOverride;
                     else
-                        _legacySIDC = _legacySIDC + _dimension.LegacyDimensionCode[0].Value;
+                        result = result + _dimension.LegacyDimensionCode[0].Value;
 
                     // Status
-                    if (_legacySymbol.LegacyFunctionCode[0].StatusOverride != "")
-                        _legacySIDC = _legacySIDC + _legacySymbol.LegacyFunctionCode[0].StatusOverride;
+                    if (functionCode.StatusOverride != "")
+                        result = result + functionCode.StatusOverride;
                     else
-                        _legacySIDC = _legacySIDC + _status.LegacyStatusCode[0].Value;
+                        result = result + _status.LegacyStatusCode[0].Value;
 
                     // Function
-                    _legacySIDC = _legacySIDC + _legacySymbol.LegacyFunctionCode[0].Value;
+                    result = result + functionCode.Value;
                 }
                 else
                 {
-                    _legacySIDC = _symbolSet.LegacyCodingSchemeCode[0].Value +
+                    result = _symbolSet.LegacyCodingSchemeCode[0].Value +
                                   _affiliation.LegacyStandardIdentityCode[0].Value +
                                   _dimension.LegacyDimensionCode[0].Value +
                                   _status.LegacyStatusCode[0].Value +
@@ -720,23 +759,33 @@ namespace JointMilitarySymbologyLibrary
                 }
 
                 // HQTFFD
-                if (_legacySymbol.LegacyFunctionCode[0].HQTFFDOverride != "")
-                    _legacySIDC = _legacySIDC + _legacySymbol.LegacyFunctionCode[0].HQTFFDOverride;
+                if (functionCode.HQTFFDOverride != "")
+                    result = result + functionCode.HQTFFDOverride;
                 else
-                    _legacySIDC = _legacySIDC + _amplifierGroup.LegacyModifierCode[0].Value;
+                    result = result + _amplifierGroup.LegacyModifierCode[0].Value;
 
                 // Amplifier
-                if (_legacySymbol.LegacyFunctionCode[0].AmplifierOverride != "")
-                    _legacySIDC = _legacySIDC + _legacySymbol.LegacyFunctionCode[0].AmplifierOverride;
+                if (functionCode.AmplifierOverride != "")
+                    result = result + functionCode.AmplifierOverride;
                 else
-                    _legacySIDC = _legacySIDC + _amplifier.LegacyModifierCode[0].Value;
+                    result = result + _amplifier.LegacyModifierCode[0].Value;
 
                 //Tail
-                if (_legacySymbol.LegacyFunctionCode[0].TailOverride != "")
-                    _legacySIDC = _legacySIDC + _legacySymbol.LegacyFunctionCode[0].TailOverride;
+                if (functionCode.TailOverride != "")
+                    result = result + functionCode.TailOverride;
                 else
-                    _legacySIDC = _legacySIDC + _blankLegacyTail;
+                    result = result + _blankLegacyTail;
             }
+
+            return result;
+        }
+
+        private void _BuildLegacySIDC()
+        {
+            // Builds an older/legacy SIDC (for 2525C, 2525B, etc) from the JMSML Library elements currently associated 
+            // with this symbol.
+
+            _legacySIDC = _BuildLegacySIDC(_legacySymbol.LegacyFunctionCode[0]);
         }
 
         private void _UpdateFromCurrent()
@@ -847,14 +896,14 @@ namespace JointMilitarySymbologyLibrary
 
             if (_symbolSet != null)
             {
-                _legacySymbol = _librarian.LegacySymbol(_symbolSet, _legacySIDC.Substring(4, 6), _legacySIDC.Substring(0, 1), _legacySIDC.Substring(2, 1));
+                _legacySymbol = _librarian.LegacySymbol(_symbolSet, _legacySIDC);
             }
 
             if (_legacySymbol != null)
             {
                 _entity = _librarian.Entity(_symbolSet, _legacySymbol.EntityID);
                 _entityType = _librarian.EntityType(_entity, _legacySymbol.EntityTypeID);
-                _entitySubType = _librarian.EntitySubType(_entityType, _legacySymbol.EntitySubTypeID);
+                _entitySubType = _librarian.EntitySubType(_symbolSet, _entityType, _legacySymbol.EntitySubTypeID);
                 _modifierOne = _librarian.ModifierOne(_symbolSet, _legacySymbol.ModifierOneID);
                 _modifierTwo = _librarian.ModifierTwo(_symbolSet, _legacySymbol.ModifierTwoID);
             }

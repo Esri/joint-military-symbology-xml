@@ -115,6 +115,8 @@ namespace JointMilitarySymbologyLibrary
                 }
             }
 
+            result = result + "FRAME;";
+
             if(!omitLegacy)
                 result = result + _configHelper.SIDCIsNA + ";";
 

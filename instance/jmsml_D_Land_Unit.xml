@@ -784,7 +784,7 @@
             <DigitTwo>0</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="SEARCH" Label="Search" Graphic="10151100.svg">
+        <EntityType ID="SEARCH" Label="Search" Icon="FULL_OCTAGON" Graphic="10151100.svg">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>1</DigitTwo>
@@ -816,7 +816,7 @@
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="AIRPORT_DEBARKATION_AIRPORT_EMBARKATION_" Label="Airport of Debarkation/Airport of Embarkation" Graphic="10160300.svg">
+        <EntityType ID="AIRPORT_DEBARKATION_AIRPORT_EMBARKATION" Label="Airport of Debarkation/Airport of Embarkation" Icon="MAIN_1" Graphic="10160300.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>3</DigitTwo>
@@ -978,7 +978,7 @@
             <DigitTwo>9</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="RAILHEAD" Label="Railhead" Graphic="10163000.svg">
+        <EntityType ID="RAILHEAD" Label="Railhead" Icon="MAIN_1" Graphic="10163000.svg">
           <EntityTypeCode>
             <DigitOne>3</DigitOne>
             <DigitTwo>0</DigitTwo>
@@ -996,7 +996,7 @@
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="SEA_PORT_DEBARKATION_SEA_PORT_EMBARKATION" Label="Sea Port of Debarkation/Sea Port of Embarkation" Graphic="10163300.svg">
+        <EntityType ID="SEA_PORT_DEBARKATION_SEA_PORT_EMBARKATION" Label="Sea Port of Debarkation/Sea Port of Embarkation" Icon="MAIN_1" Graphic="10163300.svg">
           <EntityTypeCode>
             <DigitOne>3</DigitOne>
             <DigitTwo>3</DigitTwo>
@@ -1240,25 +1240,25 @@
     </Entity>
   </Entities>
   <SpecialEntitySubTypes>
-    <EntitySubType ID="HQ_ELEMENT" Label="Headquarters Element" CloverGraphic="10xxxx95_0.svg" DiamondGraphic="10xxxx95_3.svg" RectangleGraphic="10xxxx95_1.svg" SquareGraphic="10xxxx95_2.svg" Icon="FULL_FRAME" EntityCode="XX" EntityTypeCode="XX">
+    <EntitySubType ID="HQ_ELEMENT" Label="Headquarters Element" CloverGraphic="10xxxx95_0.svg" DiamondGraphic="10xxxx95_3.svg" RectangleGraphic="10xxxx95_1.svg" SquareGraphic="10xxxx95_2.svg" Icon="SPECIAL" EntityCode="XX" EntityTypeCode="XX">
       <EntitySubTypeCode>
         <DigitOne>9</DigitOne>
         <DigitTwo>5</DigitTwo>
       </EntitySubTypeCode>
     </EntitySubType>
-    <EntitySubType ID="DIVISION_AND_BELOW_SUPPORT" Label="Division and Below Support" CloverGraphic="10xxxx96_0.svg" DiamondGraphic="10xxxx96_3.svg" RectangleGraphic="10xxxx96_1.svg" SquareGraphic="10xxxx96_2.svg" Icon="FULL_FRAME" EntityCode="XX" EntityTypeCode="XX">
+    <EntitySubType ID="DIVISION_AND_BELOW_SUPPORT" Label="Division and Below Support" CloverGraphic="10xxxx96_0.svg" DiamondGraphic="10xxxx96_3.svg" RectangleGraphic="10xxxx96_1.svg" SquareGraphic="10xxxx96_2.svg" Icon="SPECIAL" EntityCode="XX" EntityTypeCode="XX">
       <EntitySubTypeCode>
         <DigitOne>9</DigitOne>
         <DigitTwo>6</DigitTwo>
       </EntitySubTypeCode>
     </EntitySubType>
-    <EntitySubType ID="CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10xxxx97_0.svg" DiamondGraphic="10xxxx97_3.svg" RectangleGraphic="10xxxx97_1.svg" SquareGraphic="10xxxx97_2.svg" Icon="FULL_FRAME" EntityCode="XX" EntityTypeCode="XX">
+    <EntitySubType ID="CORPS_SUPPORT" Label="Corps Support" CloverGraphic="10xxxx97_0.svg" DiamondGraphic="10xxxx97_3.svg" RectangleGraphic="10xxxx97_1.svg" SquareGraphic="10xxxx97_2.svg" Icon="SPECIAL" EntityCode="XX" EntityTypeCode="XX">
       <EntitySubTypeCode>
         <DigitOne>9</DigitOne>
         <DigitTwo>7</DigitTwo>
       </EntitySubTypeCode>
     </EntitySubType>
-    <EntitySubType ID="ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theater/Echelons Above Corps Support" CloverGraphic="10xxxx98_0.svg" DiamondGraphic="10xxxx98_3.svg" RectangleGraphic="10xxxx98_1.svg" SquareGraphic="10xxxx98_2.svg" Icon="FULL_FRAME" EntityCode="XX" EntityTypeCode="XX">
+    <EntitySubType ID="ECHELONS_ABOVE_CORPS_SUPPORT" Label="Theater/Echelons Above Corps Support" CloverGraphic="10xxxx98_0.svg" DiamondGraphic="10xxxx98_3.svg" RectangleGraphic="10xxxx98_1.svg" SquareGraphic="10xxxx98_2.svg" Icon="SPECIAL" EntityCode="XX" EntityTypeCode="XX">
       <EntitySubTypeCode>
         <DigitOne>9</DigitOne>
         <DigitTwo>8</DigitTwo>
@@ -2428,7 +2428,7 @@
     <LegacySymbol ID="FIRES_AIR_DEFENSE_AD_MISSILE_HEAVY_MOD_SYM" Label="S*GPUCDMH-*****" EntityID="FIRES" EntityTypeID="AIR_DEFENSE" EntitySubTypeID="AD_MISSILE" ModifierTwoID="HEAVY_MOD">
       <LegacyFunctionCode Name="2525C">UCDMH-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="FIRES_AIR_DEFENSE_SYM" Label="S*GPUCDO--*****" EntityID="FIRES" EntityTypeID="AIR_DEFENSE">
+    <LegacySymbol ID="FIRES_THEATER_AIR_DEFENSE_MISSILE_SYM" Label="S*GPUCDO--*****" EntityID="FIRES" EntityTypeID="AIR_DEFENSE" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT" ModifierOneID="MISSILE_MOD">
       <LegacyFunctionCode Name="2525C">UCDO--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_AIR_LAND_NAVAL_GUNFIRE_LIAISON_SYM" Label="S*GPUCFTA-*****" EntityID="FIRES" EntityTypeID="AIR_LAND_NAVAL_GUNFIRE_LIAISON">
@@ -2692,6 +2692,12 @@
     <LegacySymbol ID="INTELLIGENCE_ELECTRONIC_WARFARE_SYM" Label="S*GPUUMSE-*****" EntityID="INTELLIGENCE" EntityTypeID="ELECTRONIC_WARFARE">
       <LegacyFunctionCode Name="2525C">UUMSE-</LegacyFunctionCode>
     </LegacySymbol>
+    <LegacySymbol ID="INTELLIGENCE_ELECTRONIC_WARFARE_CORPS_SYM" Label="S*GPUUMSEC*****" EntityID="INTELLIGENCE" EntityTypeID="ELECTRONIC_WARFARE" EntitySubTypeID="CORPS_SUPPORT">
+      <LegacyFunctionCode Name="2525C">UUMSEC</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="INTELLIGENCE_ELECTRONIC_WARFARE_THEATER_SYM" Label="S*GPUUMSET*****" EntityID="INTELLIGENCE" EntityTypeID="ELECTRONIC_WARFARE" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
+      <LegacyFunctionCode Name="2525C">UUMSET</LegacyFunctionCode>
+    </LegacySymbol>
     <LegacySymbol ID="INTELLIGENCE_ELECTRONIC_WARFARE_EW_DIRECTION_FINDING_SYM" Label="S*GPUUMSED*****" EntityID="INTELLIGENCE" EntityTypeID="ELECTRONIC_WARFARE" EntitySubTypeID="EW_DIRECTION_FINDING">
       <LegacyFunctionCode Name="2525C">UUMSED</LegacyFunctionCode>
     </LegacySymbol>
@@ -2700,12 +2706,6 @@
     </LegacySymbol>
     <LegacySymbol ID="INTELLIGENCE_ELECTRONIC_WARFARE_EW_JAMMING_SYM" Label="S*GPUUMSEJ*****" EntityID="INTELLIGENCE" EntityTypeID="ELECTRONIC_WARFARE" EntitySubTypeID="EW_JAMMING">
       <LegacyFunctionCode Name="2525C">UUMSEJ</LegacyFunctionCode>
-    </LegacySymbol>
-    <LegacySymbol ID="INTELLIGENCE_ELECTRONIC_WARFARE_SYM" Label="S*GPUUMSEC*****" EntityID="INTELLIGENCE" EntityTypeID="ELECTRONIC_WARFARE">
-      <LegacyFunctionCode Name="2525C">UUMSEC</LegacyFunctionCode>
-    </LegacySymbol>
-    <LegacySymbol ID="INTELLIGENCE_ELECTRONIC_WARFARE_SYM" Label="S*GPUUMSET*****" EntityID="INTELLIGENCE" EntityTypeID="ELECTRONIC_WARFARE">
-      <LegacyFunctionCode Name="2525C">UUMSET</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INTELLIGENCE_INTERROGATION_SYM" Label="S*GPUUMQ--*****" EntityID="INTELLIGENCE" EntityTypeID="INTERROGATION">
       <LegacyFunctionCode Name="2525C">UUMQ--</LegacyFunctionCode>
@@ -2743,28 +2743,28 @@
     <LegacySymbol ID="INTELLIGENCE_MILITARY_INTELLIGENCE_TACTICAL_EXPLOITATION_MOD_SYM" Label="S*GPUUMT--*****" EntityID="INTELLIGENCE" EntityTypeID="MILITARY_INTELLIGENCE" ModifierOneID="TACTICAL_EXPLOITATION_MOD">
       <LegacyFunctionCode Name="2525C">UUMT--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="INTELLIGENCE_MILITARY_INTELLIGENCE_SYM" Label="S*GPUUMSET*****" EntityID="INTELLIGENCE" EntityTypeID="MILITARY_INTELLIGENCE">
+    <LegacySymbol ID="INTELLIGENCE_MILITARY_INTELLIGENCE_THEATER_SYM" Label="S*GPUUMSET*****" EntityID="INTELLIGENCE" EntityTypeID="ELECTRONIC_WARFARE" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">UUMSET</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="INTELLIGENCE_MILITARY_INTELLIGENCE_SYM" Label="S*GPUUMSEC*****" EntityID="INTELLIGENCE" EntityTypeID="MILITARY_INTELLIGENCE">
+    <LegacySymbol ID="INTELLIGENCE_MILITARY_INTELLIGENCE_CORPS_SYM" Label="S*GPUUMSEC*****" EntityID="INTELLIGENCE" EntityTypeID="ELECTRONIC_WARFARE" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">UUMSEC</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_ADMINISTRATIVE_SYM" Label="S*GPUSA---*****" EntityID="SUSTAINMENT" EntityTypeID="ADMINISTRATIVE">
       <LegacyFunctionCode Name="2525C">USA---</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_ADMINISTRATIVE_SYM" Label="S*GPUSAC--*****" EntityID="SUSTAINMENT" EntityTypeID="ADMINISTRATIVE">
+    <LegacySymbol ID="SUSTAINMENT_ADMINISTRATIVE_CORPS_SYM" Label="S*GPUSAC--*****" EntityID="SUSTAINMENT" EntityTypeID="ADMINISTRATIVE" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USAC--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_ADMINISTRATIVE_SYM" Label="S*GPUSAT--*****" EntityID="SUSTAINMENT" EntityTypeID="ADMINISTRATIVE">
+    <LegacySymbol ID="SUSTAINMENT_ADMINISTRATIVE_THEATER_SYM" Label="S*GPUSAT--*****" EntityID="SUSTAINMENT" EntityTypeID="ADMINISTRATIVE" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USAT--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_AIRPORT_DEBARKATION_AIRPORT_EMBARKATION__SYM" Label="S*GPUSTA--*****" EntityID="SUSTAINMENT" EntityTypeID="AIRPORT_DEBARKATION_AIRPORT_EMBARKATION_">
+    <LegacySymbol ID="SUSTAINMENT_AIRPORT_DEBARKATION_AIRPORT_EMBARKATION_SYM" Label="S*GPUSTA--*****" EntityID="SUSTAINMENT" EntityTypeID="AIRPORT_DEBARKATION_AIRPORT_EMBARKATION">
       <LegacyFunctionCode Name="2525C">USTA--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_AIRPORT_DEBARKATION_AIRPORT_EMBARKATION__SYM" Label="S*GPUSTAC-*****" EntityID="SUSTAINMENT" EntityTypeID="AIRPORT_DEBARKATION_AIRPORT_EMBARKATION_">
+    <LegacySymbol ID="SUSTAINMENT_AIRPORT_DEBARKATION_AIRPORT_EMBARKATION_CORPS_SYM" Label="S*GPUSTAC-*****" EntityID="SUSTAINMENT" EntityTypeID="AIRPORT_DEBARKATION_AIRPORT_EMBARKATION" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USTAC-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_AIRPORT_DEBARKATION_AIRPORT_EMBARKATION__SYM" Label="S*GPUSTAT-*****" EntityID="SUSTAINMENT" EntityTypeID="AIRPORT_DEBARKATION_AIRPORT_EMBARKATION_">
+    <LegacySymbol ID="SUSTAINMENT_AIRPORT_DEBARKATION_AIRPORT_EMBARKATION_THEATER_SYM" Label="S*GPUSTAT-*****" EntityID="SUSTAINMENT" EntityTypeID="AIRPORT_DEBARKATION_AIRPORT_EMBARKATION" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USTAT-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_COMBAT_SERVICE_SUPPORT_SYM" Label="S*GPUS----*****" EntityID="SUSTAINMENT" EntityTypeID="COMBAT_SERVICE_SUPPORT">
@@ -2773,37 +2773,37 @@
     <LegacySymbol ID="SUSTAINMENT_FINANCE_SYM" Label="S*GPUSAF--*****" EntityID="SUSTAINMENT" EntityTypeID="FINANCE">
       <LegacyFunctionCode Name="2525C">USAF--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_FINANCE_SYM" Label="S*GPUSAFC-*****" EntityID="SUSTAINMENT" EntityTypeID="FINANCE">
+    <LegacySymbol ID="SUSTAINMENT_FINANCE_CORPS_SYM" Label="S*GPUSAFC-*****" EntityID="SUSTAINMENT" EntityTypeID="FINANCE" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USAFC-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_FINANCE_SYM" Label="S*GPUSAFT-*****" EntityID="SUSTAINMENT" EntityTypeID="FINANCE">
+    <LegacySymbol ID="SUSTAINMENT_FINANCE_THEATER_SYM" Label="S*GPUSAFT-*****" EntityID="SUSTAINMENT" EntityTypeID="FINANCE" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USAFT-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_JUDGE_ADVOCATE_GENERAL_SYM" Label="S*GPUSAJ--*****" EntityID="SUSTAINMENT" EntityTypeID="JUDGE_ADVOCATE_GENERAL">
       <LegacyFunctionCode Name="2525C">USAJ--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_JUDGE_ADVOCATE_GENERAL_SYM" Label="S*GPUSAJC-*****" EntityID="SUSTAINMENT" EntityTypeID="JUDGE_ADVOCATE_GENERAL">
+    <LegacySymbol ID="SUSTAINMENT_JUDGE_ADVOCATE_GENERAL_CORPS_SYM" Label="S*GPUSAJC-*****" EntityID="SUSTAINMENT" EntityTypeID="JUDGE_ADVOCATE_GENERAL" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USAJC-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_JUDGE_ADVOCATE_GENERAL_SYM" Label="S*GPUSAJT-*****" EntityID="SUSTAINMENT" EntityTypeID="JUDGE_ADVOCATE_GENERAL">
+    <LegacySymbol ID="SUSTAINMENT_JUDGE_ADVOCATE_GENERAL_THEATER_SYM" Label="S*GPUSAJT-*****" EntityID="SUSTAINMENT" EntityTypeID="JUDGE_ADVOCATE_GENERAL" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USAJT-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_LABOR_SYM" Label="S*GPUSAL--*****" EntityID="SUSTAINMENT" EntityTypeID="LABOR">
       <LegacyFunctionCode Name="2525C">USAL--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_LABOR_SYM" Label="S*GPUSALC-*****" EntityID="SUSTAINMENT" EntityTypeID="LABOR">
+    <LegacySymbol ID="SUSTAINMENT_LABOR_CORPS_SYM" Label="S*GPUSALC-*****" EntityID="SUSTAINMENT" EntityTypeID="LABOR" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USALC-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_LABOR_SYM" Label="S*GPUSALT-*****" EntityID="SUSTAINMENT" EntityTypeID="LABOR">
+    <LegacySymbol ID="SUSTAINMENT_LABOR_THEATER_SYM" Label="S*GPUSALT-*****" EntityID="SUSTAINMENT" EntityTypeID="LABOR" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USALT-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_LAUNDRY_BATH_SYM" Label="S*GPUSSL--*****" EntityID="SUSTAINMENT" EntityTypeID="LAUNDRY_BATH">
       <LegacyFunctionCode Name="2525C">USSL--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_LAUNDRY_BATH_SYM" Label="S*GPUSSLC-*****" EntityID="SUSTAINMENT" EntityTypeID="LAUNDRY_BATH">
+    <LegacySymbol ID="SUSTAINMENT_LAUNDRY_BATH_CORPS_SYM" Label="S*GPUSSLC-*****" EntityID="SUSTAINMENT" EntityTypeID="LAUNDRY_BATH" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USSLC-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_LAUNDRY_BATH_SYM" Label="S*GPUSSLT-*****" EntityID="SUSTAINMENT" EntityTypeID="LAUNDRY_BATH">
+    <LegacySymbol ID="SUSTAINMENT_LAUNDRY_BATH_THEATER_SYM" Label="S*GPUSSLT-*****" EntityID="SUSTAINMENT" EntityTypeID="LAUNDRY_BATH" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USSLT-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_MAINTENANCE_SYM" Label="S*GPUSX---*****" EntityID="SUSTAINMENT" EntityTypeID="MAINTENANCE">
@@ -2818,28 +2818,28 @@
     <LegacySymbol ID="SUSTAINMENT_MAINTENANCE_MISSILE_MOD_SYM" Label="S*GPUSXOM-*****" EntityID="SUSTAINMENT" EntityTypeID="MAINTENANCE" ModifierOneID="MISSILE_MOD">
       <LegacyFunctionCode Name="2525C">USXOM-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_MAINTENANCE_SYM" Label="S*GPUSXC--*****" EntityID="SUSTAINMENT" EntityTypeID="MAINTENANCE">
+    <LegacySymbol ID="SUSTAINMENT_MAINTENANCE_CORPS_SYM" Label="S*GPUSXC--*****" EntityID="SUSTAINMENT" EntityTypeID="MAINTENANCE" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USXC--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_MAINTENANCE_SYM" Label="S*GPUSXT--*****" EntityID="SUSTAINMENT" EntityTypeID="MAINTENANCE">
+    <LegacySymbol ID="SUSTAINMENT_MAINTENANCE_THEATER_SYM" Label="S*GPUSXT--*****" EntityID="SUSTAINMENT" EntityTypeID="MAINTENANCE" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USXT--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_MAINTENANCE_HEAVY_MOD_SYM" Label="S*GPUSXHC-*****" EntityID="SUSTAINMENT" EntityTypeID="MAINTENANCE" ModifierTwoID="HEAVY_MOD">
+    <LegacySymbol ID="SUSTAINMENT_MAINTENANCE_HEAVY_MOD_CORPS_SYM" Label="S*GPUSXHC-*****" EntityID="SUSTAINMENT" EntityTypeID="MAINTENANCE" EntitySubTypeID="CORPS_SUPPORT" ModifierTwoID="HEAVY_MOD">
       <LegacyFunctionCode Name="2525C">USXHC-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_MAINTENANCE_HEAVY_MOD_SYM" Label="S*GPUSXHT-*****" EntityID="SUSTAINMENT" EntityTypeID="MAINTENANCE" ModifierTwoID="HEAVY_MOD">
+    <LegacySymbol ID="SUSTAINMENT_MAINTENANCE_HEAVY_MOD_THEATER_SYM" Label="S*GPUSXHT-*****" EntityID="SUSTAINMENT" EntityTypeID="MAINTENANCE" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT" ModifierTwoID="HEAVY_MOD">
       <LegacyFunctionCode Name="2525C">USXHT-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_MAINTENANCE_MISSILE_MOD_SYM" Label="S*GPUSXEC-*****" EntityID="SUSTAINMENT" EntityTypeID="MAINTENANCE" ModifierOneID="MISSILE_MOD">
+    <LegacySymbol ID="SUSTAINMENT_MAINTENANCE_ELECTRO_OPTICAL_MOD_CORPS_SYM" Label="S*GPUSXEC-*****" EntityID="SUSTAINMENT" EntityTypeID="MAINTENANCE" EntitySubTypeID="CORPS_SUPPORT" ModifierOneID="ELECTRO_OPTICAL_MOD">
       <LegacyFunctionCode Name="2525C">USXEC-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_MAINTENANCE_MISSILE_MOD_SYM" Label="S*GPUSXET-*****" EntityID="SUSTAINMENT" EntityTypeID="MAINTENANCE" ModifierOneID="MISSILE_MOD">
+    <LegacySymbol ID="SUSTAINMENT_MAINTENANCE_ELECTRO_OPTICAL_MOD_THEATER_SYM" Label="S*GPUSXET-*****" EntityID="SUSTAINMENT" EntityTypeID="MAINTENANCE" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT" ModifierOneID="ELECTRO_OPTICAL_MOD">
       <LegacyFunctionCode Name="2525C">USXET-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_MAINTENANCE_MISSILE_MOD_SYM" Label="S*GPUSXOMC*****" EntityID="SUSTAINMENT" EntityTypeID="MAINTENANCE" ModifierOneID="MISSILE_MOD">
+    <LegacySymbol ID="SUSTAINMENT_MAINTENANCE_MISSILE_MOD_CORPS_SYM" Label="S*GPUSXOMC*****" EntityID="SUSTAINMENT" EntityTypeID="MAINTENANCE" EntitySubTypeID="CORPS_SUPPORT" ModifierOneID="MISSILE_MOD">
       <LegacyFunctionCode Name="2525C">USXOMC</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_MAINTENANCE_MISSILE_MOD_SYM" Label="S*GPUSXOMT*****" EntityID="SUSTAINMENT" EntityTypeID="MAINTENANCE" ModifierOneID="MISSILE_MOD">
+    <LegacySymbol ID="SUSTAINMENT_MAINTENANCE_MISSILE_MOD_THEATER_SYM" Label="S*GPUSXOMT*****" EntityID="SUSTAINMENT" EntityTypeID="MAINTENANCE" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT" ModifierOneID="MISSILE_MOD">
       <LegacyFunctionCode Name="2525C">USXOMT</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_MEDICAL_SYM" Label="S*GPUSM---*****" EntityID="SUSTAINMENT" EntityTypeID="MEDICAL">
@@ -2854,154 +2854,154 @@
     <LegacySymbol ID="SUSTAINMENT_MEDICAL_VETERINARY_MOD_SYM" Label="S*GPUSMV--*****" EntityID="SUSTAINMENT" EntityTypeID="MEDICAL" ModifierTwoID="VETERINARY_MOD">
       <LegacyFunctionCode Name="2525C">USMV--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_MEDICAL_SYM" Label="S*GPUSMC--*****" EntityID="SUSTAINMENT" EntityTypeID="MEDICAL">
+    <LegacySymbol ID="SUSTAINMENT_MEDICAL_CORPS_SYM" Label="S*GPUSMC--*****" EntityID="SUSTAINMENT" EntityTypeID="MEDICAL" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USMC--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_MEDICAL_SYM" Label="S*GPUSMT--*****" EntityID="SUSTAINMENT" EntityTypeID="MEDICAL">
+    <LegacySymbol ID="SUSTAINMENT_MEDICAL_THEATER_SYM" Label="S*GPUSMT--*****" EntityID="SUSTAINMENT" EntityTypeID="MEDICAL" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USMT--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_MEDICAL_TREATMENT_FACILITY_DENTAL_MOD_SYM" Label="S*GPUSMDC-*****" EntityID="SUSTAINMENT" EntityTypeID="MEDICAL_TREATMENT_FACILITY" ModifierTwoID="DENTAL_MOD">
+    <LegacySymbol ID="SUSTAINMENT_MEDICAL_TREATMENT_FACILITY_DENTAL_MOD_CORPS_SYM" Label="S*GPUSMDC-*****" EntityID="SUSTAINMENT" EntityTypeID="MEDICAL_TREATMENT_FACILITY" EntitySubTypeID="CORPS_SUPPORT" ModifierTwoID="DENTAL_MOD">
       <LegacyFunctionCode Name="2525C">USMDC-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_MEDICAL_TREATMENT_FACILITY_DENTAL_MOD_SYM" Label="S*GPUSMDT-*****" EntityID="SUSTAINMENT" EntityTypeID="MEDICAL_TREATMENT_FACILITY" ModifierTwoID="DENTAL_MOD">
+    <LegacySymbol ID="SUSTAINMENT_MEDICAL_TREATMENT_FACILITY_DENTAL_MOD_THEATER_SYM" Label="S*GPUSMDT-*****" EntityID="SUSTAINMENT" EntityTypeID="MEDICAL_TREATMENT_FACILITY" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT" ModifierTwoID="DENTAL_MOD">
       <LegacyFunctionCode Name="2525C">USMDT-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_MEDICAL_TREATMENT_FACILITY_PSYCHOLOGICAL_MOD_SYM" Label="S*GPUSMPC-*****" EntityID="SUSTAINMENT" EntityTypeID="MEDICAL_TREATMENT_FACILITY" ModifierTwoID="PSYCHOLOGICAL_MOD">
+    <LegacySymbol ID="SUSTAINMENT_MEDICAL_TREATMENT_FACILITY_PSYCHOLOGICAL_MOD_CORPS_SYM" Label="S*GPUSMPC-*****" EntityID="SUSTAINMENT" EntityTypeID="MEDICAL_TREATMENT_FACILITY" EntitySubTypeID="CORPS_SUPPORT" ModifierTwoID="PSYCHOLOGICAL_MOD">
       <LegacyFunctionCode Name="2525C">USMPC-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_MEDICAL_TREATMENT_FACILITY_PSYCHOLOGICAL_MOD_SYM" Label="S*GPUSMPT-*****" EntityID="SUSTAINMENT" EntityTypeID="MEDICAL_TREATMENT_FACILITY" ModifierTwoID="PSYCHOLOGICAL_MOD">
+    <LegacySymbol ID="SUSTAINMENT_MEDICAL_TREATMENT_FACILITY_PSYCHOLOGICAL_MOD_THEATER_SYM" Label="S*GPUSMPT-*****" EntityID="SUSTAINMENT" EntityTypeID="MEDICAL_TREATMENT_FACILITY" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT" ModifierTwoID="PSYCHOLOGICAL_MOD">
       <LegacyFunctionCode Name="2525C">USMPT-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_MEDICAL_TREATMENT_FACILITY_VETERINARY_MOD_SYM" Label="S*GPUSMVC-*****" EntityID="SUSTAINMENT" EntityTypeID="MEDICAL_TREATMENT_FACILITY" ModifierTwoID="VETERINARY_MOD">
+    <LegacySymbol ID="SUSTAINMENT_MEDICAL_TREATMENT_FACILITY_VETERINARY_MOD_CORPS_SYM" Label="S*GPUSMVC-*****" EntityID="SUSTAINMENT" EntityTypeID="MEDICAL_TREATMENT_FACILITY" EntitySubTypeID="CORPS_SUPPORT" ModifierTwoID="VETERINARY_MOD">
       <LegacyFunctionCode Name="2525C">USMVC-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_MEDICAL_TREATMENT_FACILITY_VETERINARY_MOD_SYM" Label="S*GPUSMVT-*****" EntityID="SUSTAINMENT" EntityTypeID="MEDICAL_TREATMENT_FACILITY" ModifierTwoID="VETERINARY_MOD">
+    <LegacySymbol ID="SUSTAINMENT_MEDICAL_TREATMENT_FACILITY_VETERINARY_MOD_THEATER_SYM" Label="S*GPUSMVT-*****" EntityID="SUSTAINMENT" EntityTypeID="MEDICAL_TREATMENT_FACILITY" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT" ModifierTwoID="VETERINARY_MOD">
       <LegacyFunctionCode Name="2525C">USMVT-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_MEDICAL_TREATMENT_FACILITY_SYM" Label="S*GPUSMM--*****" EntityID="SUSTAINMENT" EntityTypeID="MEDICAL_TREATMENT_FACILITY">
       <LegacyFunctionCode Name="2525C">USMM--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_MEDICAL_TREATMENT_FACILITY_SYM" Label="S*GPUSMMC-*****" EntityID="SUSTAINMENT" EntityTypeID="MEDICAL_TREATMENT_FACILITY">
+    <LegacySymbol ID="SUSTAINMENT_MEDICAL_TREATMENT_FACILITY_CORPS_SYM" Label="S*GPUSMMC-*****" EntityID="SUSTAINMENT" EntityTypeID="MEDICAL_TREATMENT_FACILITY" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USMMC-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_MEDICAL_TREATMENT_FACILITY_SYM" Label="S*GPUSMMT-*****" EntityID="SUSTAINMENT" EntityTypeID="MEDICAL_TREATMENT_FACILITY">
+    <LegacySymbol ID="SUSTAINMENT_MEDICAL_TREATMENT_FACILITY_THEATER_SYM" Label="S*GPUSMMT-*****" EntityID="SUSTAINMENT" EntityTypeID="MEDICAL_TREATMENT_FACILITY" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USMMT-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_MORALE_WELFARE_AND_RECREATION_SYM" Label="S*GPUSAW--*****" EntityID="SUSTAINMENT" EntityTypeID="MORALE_WELFARE_AND_RECREATION">
       <LegacyFunctionCode Name="2525C">USAW--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_MORALE_WELFARE_AND_RECREATION_SYM" Label="S*GPUSAWC-*****" EntityID="SUSTAINMENT" EntityTypeID="MORALE_WELFARE_AND_RECREATION">
+    <LegacySymbol ID="SUSTAINMENT_MORALE_WELFARE_AND_RECREATION_CORPS_SYM" Label="S*GPUSAWC-*****" EntityID="SUSTAINMENT" EntityTypeID="MORALE_WELFARE_AND_RECREATION" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USAWC-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_MORALE_WELFARE_AND_RECREATION_SYM" Label="S*GPUSAWT-*****" EntityID="SUSTAINMENT" EntityTypeID="MORALE_WELFARE_AND_RECREATION">
+    <LegacySymbol ID="SUSTAINMENT_MORALE_WELFARE_AND_RECREATION_THEATER_SYM" Label="S*GPUSAWT-*****" EntityID="SUSTAINMENT" EntityTypeID="MORALE_WELFARE_AND_RECREATION" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USAWT-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_MORTUARY_AFFAIRS_GRAVES_REGISTRATION_SYM" Label="S*GPUSAM--*****" EntityID="SUSTAINMENT" EntityTypeID="MORTUARY_AFFAIRS_GRAVES_REGISTRATION">
       <LegacyFunctionCode Name="2525C">USAM--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_MORTUARY_AFFAIRS_GRAVES_REGISTRATION_SYM" Label="S*GPUSAMC-*****" EntityID="SUSTAINMENT" EntityTypeID="MORTUARY_AFFAIRS_GRAVES_REGISTRATION">
+    <LegacySymbol ID="SUSTAINMENT_MORTUARY_AFFAIRS_GRAVES_REGISTRATION_CORPS_SYM" Label="S*GPUSAMC-*****" EntityID="SUSTAINMENT" EntityTypeID="MORTUARY_AFFAIRS_GRAVES_REGISTRATION" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USAMC-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_MORTUARY_AFFAIRS_GRAVES_REGISTRATION_SYM" Label="S*GPUSAMT-*****" EntityID="SUSTAINMENT" EntityTypeID="MORTUARY_AFFAIRS_GRAVES_REGISTRATION">
+    <LegacySymbol ID="SUSTAINMENT_MORTUARY_AFFAIRS_GRAVES_REGISTRATION_THEATER_SYM" Label="S*GPUSAMT-*****" EntityID="SUSTAINMENT" EntityTypeID="MORTUARY_AFFAIRS_GRAVES_REGISTRATION" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USAMT-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_ORDNANCE_SYM" Label="S*GPUSXO--*****" EntityID="SUSTAINMENT" EntityTypeID="ORDNANCE">
       <LegacyFunctionCode Name="2525C">USXO--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_ORDNANCE_SYM" Label="S*GPUSXOC-*****" EntityID="SUSTAINMENT" EntityTypeID="ORDNANCE">
+    <LegacySymbol ID="SUSTAINMENT_ORDNANCE_CORPS_SYM" Label="S*GPUSXOC-*****" EntityID="SUSTAINMENT" EntityTypeID="ORDNANCE" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USXOC-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_ORDNANCE_SYM" Label="S*GPUSXOT-*****" EntityID="SUSTAINMENT" EntityTypeID="ORDNANCE">
+    <LegacySymbol ID="SUSTAINMENT_ORDNANCE_THEATER_SYM" Label="S*GPUSXOT-*****" EntityID="SUSTAINMENT" EntityTypeID="ORDNANCE" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USXOT-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_PERSONNEL_SERVICES_SYM" Label="S*GPUSAS--*****" EntityID="SUSTAINMENT" EntityTypeID="PERSONNEL_SERVICES">
       <LegacyFunctionCode Name="2525C">USAS--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_PERSONNEL_SERVICES_SYM" Label="S*GPUSASC-*****" EntityID="SUSTAINMENT" EntityTypeID="PERSONNEL_SERVICES">
+    <LegacySymbol ID="SUSTAINMENT_PERSONNEL_SERVICES_CORPS_SYM" Label="S*GPUSASC-*****" EntityID="SUSTAINMENT" EntityTypeID="PERSONNEL_SERVICES" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USASC-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_PERSONNEL_SERVICES_SYM" Label="S*GPUSAST-*****" EntityID="SUSTAINMENT" EntityTypeID="PERSONNEL_SERVICES">
+    <LegacySymbol ID="SUSTAINMENT_PERSONNEL_SERVICES_THEATER_SYM" Label="S*GPUSAST-*****" EntityID="SUSTAINMENT" EntityTypeID="PERSONNEL_SERVICES" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USAST-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_POSTAL_SYM" Label="S*GPUSAO--*****" EntityID="SUSTAINMENT" EntityTypeID="POSTAL">
       <LegacyFunctionCode Name="2525C">USAO--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_POSTAL_SYM" Label="S*GPUSAOC-*****" EntityID="SUSTAINMENT" EntityTypeID="POSTAL">
+    <LegacySymbol ID="SUSTAINMENT_POSTAL_CORPS_SYM" Label="S*GPUSAOC-*****" EntityID="SUSTAINMENT" EntityTypeID="POSTAL" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USAOC-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_POSTAL_SYM" Label="S*GPUSAOT-*****" EntityID="SUSTAINMENT" EntityTypeID="POSTAL">
+    <LegacySymbol ID="SUSTAINMENT_POSTAL_THEATER_SYM" Label="S*GPUSAOT-*****" EntityID="SUSTAINMENT" EntityTypeID="POSTAL" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USAOT-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_PUBLIC_AFFAIRS_PUBLIC_INFORMATION_SYM" Label="S*GPUSAP--*****" EntityID="SUSTAINMENT" EntityTypeID="PUBLIC_AFFAIRS_PUBLIC_INFORMATION">
       <LegacyFunctionCode Name="2525C">USAP--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_PUBLIC_AFFAIRS_PUBLIC_INFORMATION_SYM" Label="S*GPUSAPC-*****" EntityID="SUSTAINMENT" EntityTypeID="PUBLIC_AFFAIRS_PUBLIC_INFORMATION">
+    <LegacySymbol ID="SUSTAINMENT_PUBLIC_AFFAIRS_PUBLIC_INFORMATION_CORPS_SYM" Label="S*GPUSAPC-*****" EntityID="SUSTAINMENT" EntityTypeID="PUBLIC_AFFAIRS_PUBLIC_INFORMATION" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USAPC-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_PUBLIC_AFFAIRS_PUBLIC_INFORMATION_SYM" Label="S*GPUSAPT-*****" EntityID="SUSTAINMENT" EntityTypeID="PUBLIC_AFFAIRS_PUBLIC_INFORMATION">
+    <LegacySymbol ID="SUSTAINMENT_PUBLIC_AFFAIRS_PUBLIC_INFORMATION_THEATER_SYM" Label="S*GPUSAPT-*****" EntityID="SUSTAINMENT" EntityTypeID="PUBLIC_AFFAIRS_PUBLIC_INFORMATION" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USAPT-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_QUARTERMASTER_SYM" Label="S*GPUSAQ--*****" EntityID="SUSTAINMENT" EntityTypeID="QUARTERMASTER">
       <LegacyFunctionCode Name="2525C">USAQ--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_QUARTERMASTER_SYM" Label="S*GPUSAQC-*****" EntityID="SUSTAINMENT" EntityTypeID="QUARTERMASTER">
+    <LegacySymbol ID="SUSTAINMENT_QUARTERMASTER_CORPS_SYM" Label="S*GPUSAQC-*****" EntityID="SUSTAINMENT" EntityTypeID="QUARTERMASTER" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USAQC-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_QUARTERMASTER_SYM" Label="S*GPUSAQT-*****" EntityID="SUSTAINMENT" EntityTypeID="QUARTERMASTER">
+    <LegacySymbol ID="SUSTAINMENT_QUARTERMASTER_THEATER_SYM" Label="S*GPUSAQT-*****" EntityID="SUSTAINMENT" EntityTypeID="QUARTERMASTER" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USAQT-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_RAILHEAD_SYM" Label="S*GPUSTR--*****" EntityID="SUSTAINMENT" EntityTypeID="RAILHEAD">
       <LegacyFunctionCode Name="2525C">USTR--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_RAILHEAD_SYM" Label="S*GPUSTRC-*****" EntityID="SUSTAINMENT" EntityTypeID="RAILHEAD">
+    <LegacySymbol ID="SUSTAINMENT_RAILHEAD_CORPS_SYM" Label="S*GPUSTRC-*****" EntityID="SUSTAINMENT" EntityTypeID="RAILHEAD" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USTRC-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_RAILHEAD_SYM" Label="S*GPUSTRT-*****" EntityID="SUSTAINMENT" EntityTypeID="RAILHEAD">
+    <LegacySymbol ID="SUSTAINMENT_RAILHEAD_THEATER_SYM" Label="S*GPUSTRT-*****" EntityID="SUSTAINMENT" EntityTypeID="RAILHEAD" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USTRT-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_RELIGIOUS_SUPPORT_SYM" Label="S*GPUSAR--*****" EntityID="SUSTAINMENT" EntityTypeID="RELIGIOUS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USAR--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_RELIGIOUS_SUPPORT_SYM" Label="S*GPUSART-*****" EntityID="SUSTAINMENT" EntityTypeID="RELIGIOUS_SUPPORT">
+    <LegacySymbol ID="SUSTAINMENT_RELIGIOUS_SUPPORT_CORPS_SYM" Label="S*GPUSART-*****" EntityID="SUSTAINMENT" EntityTypeID="RELIGIOUS_SUPPORT" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USART-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_RELIGIOUS_SUPPORT_SYM" Label="S*GPUSARC-*****" EntityID="SUSTAINMENT" EntityTypeID="RELIGIOUS_SUPPORT">
+    <LegacySymbol ID="SUSTAINMENT_RELIGIOUS_SUPPORT_THEATER_SYM" Label="S*GPUSARC-*****" EntityID="SUSTAINMENT" EntityTypeID="RELIGIOUS_SUPPORT" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USARC-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_REPLACEMENT_HOLDING_UNIT_SYM" Label="S*GPUSAX--*****" EntityID="SUSTAINMENT" EntityTypeID="REPLACEMENT_HOLDING_UNIT">
       <LegacyFunctionCode Name="2525C">USAX--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_REPLACEMENT_HOLDING_UNIT_SYM" Label="S*GPUSAXC-*****" EntityID="SUSTAINMENT" EntityTypeID="REPLACEMENT_HOLDING_UNIT">
+    <LegacySymbol ID="SUSTAINMENT_REPLACEMENT_HOLDING_UNIT_CORPS_SYM" Label="S*GPUSAXC-*****" EntityID="SUSTAINMENT" EntityTypeID="REPLACEMENT_HOLDING_UNIT" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USAXC-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_REPLACEMENT_HOLDING_UNIT_SYM" Label="S*GPUSAXT-*****" EntityID="SUSTAINMENT" EntityTypeID="REPLACEMENT_HOLDING_UNIT">
+    <LegacySymbol ID="SUSTAINMENT_REPLACEMENT_HOLDING_UNIT_THEATER_SYM" Label="S*GPUSAXT-*****" EntityID="SUSTAINMENT" EntityTypeID="REPLACEMENT_HOLDING_UNIT" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USAXT-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_SEA_PORT_DEBARKATION_SEA_PORT_EMBARKATION_SYM" Label="S*GPUSTS--*****" EntityID="SUSTAINMENT" EntityTypeID="SEA_PORT_DEBARKATION_SEA_PORT_EMBARKATION">
       <LegacyFunctionCode Name="2525C">USTS--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_SEA_PORT_DEBARKATION_SEA_PORT_EMBARKATION_SYM" Label="S*GPUSTSC-*****" EntityID="SUSTAINMENT" EntityTypeID="SEA_PORT_DEBARKATION_SEA_PORT_EMBARKATION">
+    <LegacySymbol ID="SUSTAINMENT_SEA_PORT_DEBARKATION_SEA_PORT_EMBARKATION_CORPS_SYM" Label="S*GPUSTSC-*****" EntityID="SUSTAINMENT" EntityTypeID="SEA_PORT_DEBARKATION_SEA_PORT_EMBARKATION" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USTSC-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_SEA_PORT_DEBARKATION_SEA_PORT_EMBARKATION_SYM" Label="S*GPUSTST-*****" EntityID="SUSTAINMENT" EntityTypeID="SEA_PORT_DEBARKATION_SEA_PORT_EMBARKATION">
+    <LegacySymbol ID="SUSTAINMENT_SEA_PORT_DEBARKATION_SEA_PORT_EMBARKATION_THEATER_SYM" Label="S*GPUSTST-*****" EntityID="SUSTAINMENT" EntityTypeID="SEA_PORT_DEBARKATION_SEA_PORT_EMBARKATION" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USTST-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_SUPPLY_SYM" Label="S*GPUSS---*****" EntityID="SUSTAINMENT" EntityTypeID="SUPPLY">
       <LegacyFunctionCode Name="2525C">USS---</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_SUPPLY_SYM" Label="S*GPUSSC--*****" EntityID="SUSTAINMENT" EntityTypeID="SUPPLY">
+    <LegacySymbol ID="SUSTAINMENT_SUPPLY_CORPS_SYM" Label="S*GPUSSC--*****" EntityID="SUSTAINMENT" EntityTypeID="SUPPLY" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USSC--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_SUPPLY_SYM" Label="S*GPUSST--*****" EntityID="SUSTAINMENT" EntityTypeID="SUPPLY">
+    <LegacySymbol ID="SUSTAINMENT_SUPPLY_THEATER_SYM" Label="S*GPUSST--*****" EntityID="SUSTAINMENT" EntityTypeID="SUPPLY" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USST--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_JOINT_INFORMATION_BUREAU_SYM" Label="S*GPUSAPM-*****" EntityID="SUSTAINMENT" EntityTypeID="JOINT_INFORMATION_BUREAU">
       <LegacyFunctionCode Name="2525C">USAPM-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_JOINT_INFORMATION_BUREAU_SYM" Label="S*GPUSAPMC*****" EntityID="SUSTAINMENT" EntityTypeID="JOINT_INFORMATION_BUREAU">
+    <LegacySymbol ID="SUSTAINMENT_JOINT_INFORMATION_BUREAU_CORPS_SYM" Label="S*GPUSAPMC*****" EntityID="SUSTAINMENT" EntityTypeID="JOINT_INFORMATION_BUREAU" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USAPMC</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_JOINT_INFORMATION_BUREAU_SYM" Label="S*GPUSAPMT*****" EntityID="SUSTAINMENT" EntityTypeID="JOINT_INFORMATION_BUREAU">
+    <LegacySymbol ID="SUSTAINMENT_JOINT_INFORMATION_BUREAU_THEATER_SYM" Label="S*GPUSAPMT*****" EntityID="SUSTAINMENT" EntityTypeID="JOINT_INFORMATION_BUREAU" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USAPMT</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_TRANSPORTATION_SYM" Label="S*GPUST---*****" EntityID="SUSTAINMENT" EntityTypeID="TRANSPORTATION">
@@ -3013,40 +3013,40 @@
     <LegacySymbol ID="SUSTAINMENT_TRANSPORTATION_MOVEMENT_CONTROL_CENTER_MOD_SYM" Label="S*GPUSTM--*****" EntityID="SUSTAINMENT" EntityTypeID="TRANSPORTATION" ModifierOneID="MOVEMENT_CONTROL_CENTER_MOD">
       <LegacyFunctionCode Name="2525C">USTM--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_TRANSPORTATION_SYM" Label="S*GPUSTC--*****" EntityID="SUSTAINMENT" EntityTypeID="TRANSPORTATION">
+    <LegacySymbol ID="SUSTAINMENT_TRANSPORTATION_CORPS_SYM" Label="S*GPUSTC--*****" EntityID="SUSTAINMENT" EntityTypeID="TRANSPORTATION" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USTC--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_TRANSPORTATION_SYM" Label="S*GPUSTT--*****" EntityID="SUSTAINMENT" EntityTypeID="TRANSPORTATION">
+    <LegacySymbol ID="SUSTAINMENT_TRANSPORTATION_THEATER_SYM" Label="S*GPUSTT--*****" EntityID="SUSTAINMENT" EntityTypeID="TRANSPORTATION" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USTT--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_TRANSPORTATION_MISSILE_MOD_SYM" Label="S*GPUSTIC-*****" EntityID="SUSTAINMENT" EntityTypeID="TRANSPORTATION" ModifierOneID="MISSILE_MOD">
+    <LegacySymbol ID="SUSTAINMENT_TRANSPORTATION_MISSILE_MOD_CORPS_SYM" Label="S*GPUSTIC-*****" EntityID="SUSTAINMENT" EntityTypeID="TRANSPORTATION" EntitySubTypeID="CORPS_SUPPORT" ModifierOneID="MISSILE_MOD">
       <LegacyFunctionCode Name="2525C">USTIC-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_TRANSPORTATION_MISSILE_MOD_SYM" Label="S*GPUSTIT-*****" EntityID="SUSTAINMENT" EntityTypeID="TRANSPORTATION" ModifierOneID="MISSILE_MOD">
+    <LegacySymbol ID="SUSTAINMENT_TRANSPORTATION_MISSILE_MOD_THEATER_SYM" Label="S*GPUSTIT-*****" EntityID="SUSTAINMENT" EntityTypeID="TRANSPORTATION" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT" ModifierOneID="MISSILE_MOD">
       <LegacyFunctionCode Name="2525C">USTIT-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_TRANSPORTATION_MOVEMENT_CONTROL_CENTER_MOD_SYM" Label="S*GPUSTMC-*****" EntityID="SUSTAINMENT" EntityTypeID="TRANSPORTATION" ModifierOneID="MOVEMENT_CONTROL_CENTER_MOD">
+    <LegacySymbol ID="SUSTAINMENT_TRANSPORTATION_MOVEMENT_CONTROL_CENTER_MOD_CORPS_SYM" Label="S*GPUSTMC-*****" EntityID="SUSTAINMENT" EntityTypeID="TRANSPORTATION" EntitySubTypeID="CORPS_SUPPORT" ModifierOneID="MOVEMENT_CONTROL_CENTER_MOD">
       <LegacyFunctionCode Name="2525C">USTMC-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_TRANSPORTATION_MOVEMENT_CONTROL_CENTER_MOD_SYM" Label="S*GPUSTMT-*****" EntityID="SUSTAINMENT" EntityTypeID="TRANSPORTATION" ModifierOneID="MOVEMENT_CONTROL_CENTER_MOD">
+    <LegacySymbol ID="SUSTAINMENT_TRANSPORTATION_MOVEMENT_CONTROL_CENTER_MOD_THEATER_SYM" Label="S*GPUSTMT-*****" EntityID="SUSTAINMENT" EntityTypeID="TRANSPORTATION" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT" ModifierOneID="MOVEMENT_CONTROL_CENTER_MOD">
       <LegacyFunctionCode Name="2525C">USTMT-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_I_SYM" Label="S*GPUSS1--*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_I">
       <LegacyFunctionCode Name="2525C">USS1--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_I_SYM" Label="S*GPUSS1C-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_I">
+    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_I_CORPS_SYM" Label="S*GPUSS1C-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_I" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USS1C-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_I_SYM" Label="S*GPUSS1T-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_I">
+    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_I_THEATER_SYM" Label="S*GPUSS1T-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_I" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USS1T-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_II_SYM" Label="S*GPUSS2--*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_II">
       <LegacyFunctionCode Name="2525C">USS2--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_II_SYM" Label="S*GPUSS2C-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_II">
+    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_II_CORPS_SYM" Label="S*GPUSS2C-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_II" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USS2C-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_II_SYM" Label="S*GPUSS2T-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_II">
+    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_II_THEATER_SYM" Label="S*GPUSS2T-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_II" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USS2T-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_III_SYM" Label="S*GPUSS3--*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_III">
@@ -3055,100 +3055,100 @@
     <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_III_AVIATION_MOD_SYM" Label="S*GPUSS3A-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_III" ModifierOneID="AVIATION_MOD">
       <LegacyFunctionCode Name="2525C">USS3A-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_III_SYM" Label="S*GPUSS3C-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_III">
+    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_III_CORPS_SYM" Label="S*GPUSS3C-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_III" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USS3C-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_III_SYM" Label="S*GPUSS3T-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_III">
+    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_III_THEATER_SYM" Label="S*GPUSS3T-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_III" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USS3T-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_IV_SYM" Label="S*GPUSS4--*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_IV">
       <LegacyFunctionCode Name="2525C">USS4--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_IV_SYM" Label="S*GPUSS4C-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_IV">
+    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_IV_CORPS_SYM" Label="S*GPUSS4C-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_IV" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USS4C-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_IV_SYM" Label="S*GPUSS4T-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_IV">
+    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_IV_THEATER_SYM" Label="S*GPUSS4T-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_IV" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USS4T-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_V_SYM" Label="S*GPUSS5--*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_V">
       <LegacyFunctionCode Name="2525C">USS5--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_V_SYM" Label="S*GPUSS5C-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_V">
+    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_V_CORPS_SYM" Label="S*GPUSS5C-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_V" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USS5C-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_V_SYM" Label="S*GPUSS5T-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_V">
+    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_V_THEATER_SYM" Label="S*GPUSS5T-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_V" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USS5T-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_VI_SYM" Label="S*GPUSS6--*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_VI">
       <LegacyFunctionCode Name="2525C">USS6--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_VI_SYM" Label="S*GPUSS6C-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_VI">
+    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_VI_CORPS_SYM" Label="S*GPUSS6C-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_VI" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USS6C-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_VI_SYM" Label="S*GPUSS6T-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_VI">
+    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_VI_THEATER_SYM" Label="S*GPUSS6T-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_VI" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USS6T-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_VII_SYM" Label="S*GPUSS7--*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_VII">
       <LegacyFunctionCode Name="2525C">USS7--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_VII_SYM" Label="S*GPUSS7C-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_VII">
+    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_VII_CORPS_SYM" Label="S*GPUSS7C-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_VII" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USS7C-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_VII_SYM" Label="S*GPUSS7T-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_VII">
+    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_VII_THEATER_SYM" Label="S*GPUSS7T-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_VII" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USS7T-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_VIII_SYM" Label="S*GPUSS8--*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_VIII">
       <LegacyFunctionCode Name="2525C">USS8--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_VIII_SYM" Label="S*GPUSS8C-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_VIII">
+    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_VIII_CORPS_SYM" Label="S*GPUSS8C-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_VIII" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USS8C-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_VIII_SYM" Label="S*GPUSS8T-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_VIII">
+    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_VIII_THEATER_SYM" Label="S*GPUSS8T-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_VIII" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USS8T-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_IX_SYM" Label="S*GPUSS9--*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_IX">
       <LegacyFunctionCode Name="2525C">USS9--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_IX_SYM" Label="S*GPUSS9C-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_IX">
+    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_IX_CORPS_SYM" Label="S*GPUSS9C-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_IX" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USS9C-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_IX_SYM" Label="S*GPUSS9T-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_IX">
+    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_IX_THEATER_SYM" Label="S*GPUSS9T-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_IX" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USS9T-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_X_SYM" Label="S*GPUSSX--*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_X">
       <LegacyFunctionCode Name="2525C">USSX--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_X_SYM" Label="S*GPUSSXC-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_X">
+    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_X_CORPS_SYM" Label="S*GPUSSXC-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_X" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USSXC-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_X_SYM" Label="S*GPUSSXT-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_X">
+    <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_X_THEATER_SYM" Label="S*GPUSSXT-*****" EntityID="SUSTAINMENT" EntityTypeID="US_SUPPLY_CLASS_X" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USSXT-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_WATER_SYM" Label="S*GPUSSW--*****" EntityID="SUSTAINMENT" EntityTypeID="WATER">
       <LegacyFunctionCode Name="2525C">USSW--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_WATER_SYM" Label="S*GPUSSWC-*****" EntityID="SUSTAINMENT" EntityTypeID="WATER">
+    <LegacySymbol ID="SUSTAINMENT_WATER_CORPS_SYM" Label="S*GPUSSWC-*****" EntityID="SUSTAINMENT" EntityTypeID="WATER" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USSWC-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_WATER_SYM" Label="S*GPUSSWT-*****" EntityID="SUSTAINMENT" EntityTypeID="WATER">
+    <LegacySymbol ID="SUSTAINMENT_WATER_THEATER_SYM" Label="S*GPUSSWT-*****" EntityID="SUSTAINMENT" EntityTypeID="WATER" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USSWT-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_WATER_PURIFICATION_SYM" Label="S*GPUSSWP-*****" EntityID="SUSTAINMENT" EntityTypeID="WATER_PURIFICATION">
       <LegacyFunctionCode Name="2525C">USSWP-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_WATER_PURIFICATION_SYM" Label="S*GPUSSWPC*****" EntityID="SUSTAINMENT" EntityTypeID="WATER_PURIFICATION">
+    <LegacySymbol ID="SUSTAINMENT_WATER_PURIFICATION_CORPS_SYM" Label="S*GPUSSWPC*****" EntityID="SUSTAINMENT" EntityTypeID="WATER_PURIFICATION" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USSWPC</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_WATER_PURIFICATION_SYM" Label="S*GPUSSWPT*****" EntityID="SUSTAINMENT" EntityTypeID="WATER_PURIFICATION">
+    <LegacySymbol ID="SUSTAINMENT_WATER_PURIFICATION_THEATER_SYM" Label="S*GPUSSWPT*****" EntityID="SUSTAINMENT" EntityTypeID="WATER_PURIFICATION" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USSWPT</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_BROADCAST_SYM" Label="S*GPUSAPB-*****" EntityID="SUSTAINMENT" EntityTypeID="BROADCAST">
       <LegacyFunctionCode Name="2525C">USAPB-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_BROADCAST_SYM" Label="S*GPUSAPBC*****" EntityID="SUSTAINMENT" EntityTypeID="BROADCAST">
+    <LegacySymbol ID="SUSTAINMENT_BROADCAST_CORPS_SYM" Label="S*GPUSAPBC*****" EntityID="SUSTAINMENT" EntityTypeID="BROADCAST" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USAPBC</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SUSTAINMENT_BROADCAST_SYM" Label="S*GPUSAPBT*****" EntityID="SUSTAINMENT" EntityTypeID="BROADCAST">
+    <LegacySymbol ID="SUSTAINMENT_BROADCAST_THEATER_SYM" Label="S*GPUSAPBT*****" EntityID="SUSTAINMENT" EntityTypeID="BROADCAST" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USAPBT</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="NAVAL_NAVAL_ET_SPEC_OPS_SOF_MOD_SYM" Label="S*FPN-----*****" EntityID="NAVAL" EntityTypeID="NAVAL_ET" ModifierOneID="SPEC_OPS_SOF_MOD">
@@ -3207,8 +3207,6 @@
     </LegacySymbol>
     <LegacySymbol ID="RETIRED_SYM" Label="S*GPU-----*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">U-----</LegacyFunctionCode>
-    </LegacySymbol>
-    <LegacySymbol ID="RETIRED_SYM" Label="S*GPUH----*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C" Description="Substitute" Remarks="Set HQ/TF/FD to HQ(2)">UH----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="COMMAND_AND_CONTROL_TACTICAL_SATELLITE_SYM" Label="S*GPUCDSC-*****" EntityID="COMMAND_AND_CONTROL" EntityTypeID="TACTICAL_SATELLITE">

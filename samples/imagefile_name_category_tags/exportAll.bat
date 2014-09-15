@@ -28,5 +28,5 @@ jmsml.exe /xf="../../../../../samples/imagefile_name_category_tags/Military-All-
 jmsml.exe /xa="../../../../../samples/imagefile_name_category_tags/Military-All-Icons" /+ /xas="IMAGE" /size="64" /-source /-legacy
 jmsml.exe /xh="../../../../../samples/imagefile_name_category_tags/Military-All-Icons" /+ /xas="IMAGE" /size="64" /-source /-legacy
 jmsml.exe /xo="../../../../../samples/imagefile_name_category_tags/Military-All-Icons" /+ /xas="IMAGE" /size="64" /-source /-legacy
-pause
+
 endlocal
