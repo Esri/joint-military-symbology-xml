@@ -5,6 +5,8 @@
     <DigitTwo>0</DigitTwo>
   </SymbolSetCode>
   <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
+  <LegacyCodingSchemeCode Name="2525C">E</LegacyCodingSchemeCode>
+  <LegacyCodingSchemeCode Name="2525C">O</LegacyCodingSchemeCode>
   <Entities>
     <Entity ID="COMMAND_AND_CONTROL" Label="Command and Control" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes." Graphic="10110000.svg">
       <EntityCode>
@@ -2080,6 +2082,9 @@
     </Modifier>
   </SectorTwoModifiers>
   <LegacySymbols>
+    <LegacySymbol ID="GROUND_TRACK_SYM" Label="S*GP------*****" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C">------</LegacyFunctionCode> 
+    </LegacySymbol>
     <LegacySymbol ID="COMMAND_AND_CONTROL_CIVIL_AFFAIRS_SYM" Label="S*FPGC----*****" EntityID="COMMAND_AND_CONTROL" EntityTypeID="CIVIL_AFFAIRS">
       <LegacyFunctionCode Name="2525C" DimensionOverride="F">GC----</LegacyFunctionCode>
     </LegacySymbol>
@@ -2130,6 +2135,7 @@
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ANTITANK_ANTIARMOR_SYM" Label="S*GPUCAA--*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ANTITANK_ANTIARMOR">
       <LegacyFunctionCode Name="2525C">UCAA--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" Description="Repeat">UCAAD-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ANTITANK_ANTIARMOR_LIGHT_MOD_SYM" Label="S*GPUCAAL-*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ANTITANK_ANTIARMOR" ModifierTwoID="LIGHT_MOD">
       <LegacyFunctionCode Name="2525C">UCAAL-</LegacyFunctionCode>
@@ -2148,6 +2154,7 @@
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ANTITANK_ANTIARMOR_ARMORED_SYM" Label="S*GPUCAAA-*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ANTITANK_ANTIARMOR" EntitySubTypeID="ARMORED">
       <LegacyFunctionCode Name="2525C">UCAAA-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">UCAAAT</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ANTITANK_ANTIARMOR_ARMORED_AIR_MOBILE_AIR_ASSAULT_MOD_SYM" Label="S*GPUCAAAS*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ANTITANK_ANTIARMOR" EntitySubTypeID="ARMORED" ModifierOneID="AIR_MOBILE_AIR_ASSAULT_MOD">
       <LegacyFunctionCode Name="2525C">UCAAAS</LegacyFunctionCode>
@@ -2163,6 +2170,7 @@
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ARMOR_ARMORED_MECHANIZED_SELF_PROPELLED_TRACKED_SYM" Label="S*GPUCAT--*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ARMOR_ARMORED_MECHANIZED_SELF_PROPELLED_TRACKED">
       <LegacyFunctionCode Name="2525C">UCAT--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">UCA---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ARMOR_ARMORED_MECHANIZED_SELF_PROPELLED_TRACKED_LIGHT_MOD_SYM" Label="S*GPUCATL-*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ARMOR_ARMORED_MECHANIZED_SELF_PROPELLED_TRACKED" ModifierTwoID="LIGHT_MOD">
       <LegacyFunctionCode Name="2525C">UCATL-</LegacyFunctionCode>
@@ -2187,6 +2195,30 @@
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ARMOR_ARMORED_MECHANIZED_SELF_PROPELLED_TRACKED_ARMORED_AMPHIBIOUS_SYM" Label="S*GPUCATW-*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ARMOR_ARMORED_MECHANIZED_SELF_PROPELLED_TRACKED" EntitySubTypeID="ARMORED_AMPHIBIOUS">
       <LegacyFunctionCode Name="2525C">UCATW-</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ARMOR_ARMORED_MECHANIZED_SELF_PROPELLED_TRACKED_WHEELED_MOD" Label="S*GPUCAW--*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ARMOR_ARMORED_MECHANIZED_SELF_PROPELLED_TRACKED" ModifierTwoID="WHEELED_MOD">
+      <LegacyFunctionCode Name="2525C">UCAW--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="ARMORED_WHEELED_AIRBORNE" Label="S*GPUCAWA-*****" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C">UCAWA-</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="ARMORED_WHEELED_LIGHT" Label="S*GPUCAWL-*****" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C">UCAWL-</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="ARMORED_WHEELED_MEDIUM" Label="S*GPUCAWM-*****" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C">UCAWM-</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="ARMORED_WHEELED_HEAVY" Label="S*GPUCAWH-*****" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C">UCAWH-</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="ARMORED_WHEELED_RECOVERY" Label="S*GPUCAWR-*****" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C">UCAWR-</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="ARMORED_WHEELED_AMPHIB_RECOVERY" Label="S*GPUCAWWR*****" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C">UCAWWR</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="ARMORED_ANTIARMOR_AIR_ASSAULT" Label="S*GPUCAAAS*****" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C">UCAAAS</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ARMOR_ARMORED_MECHANIZED_SELF_PROPELLED_TRACKED_ARMORED_AMPHIBIOUS_WHEELED_MOD_SYM" Label="S*GPUCAWW-*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ARMOR_ARMORED_MECHANIZED_SELF_PROPELLED_TRACKED" EntitySubTypeID="ARMORED_AMPHIBIOUS" ModifierTwoID="WHEELED_MOD">
       <LegacyFunctionCode Name="2525C">UCAWW-</LegacyFunctionCode>
@@ -2216,7 +2248,7 @@
       <LegacyFunctionCode Name="2525C">UCSA--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ARMY_AVIATION_AVIATION_ROTARY_WING_SPEC_OPS_SOF_MOD_SYM" Label="S*FPA-----*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ARMY_AVIATION_AVIATION_ROTARY_WING" ModifierOneID="SPEC_OPS_SOF_MOD">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="F">A-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" SchemaOverride="S" DimensionOverride="F">A-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ARMY_AVIATION_AVIATION_ROTARY_WING_SPEC_OPS_SOF_MOD_ATTACK_2_MOD_SYM" Label="S*FPAHA---*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ARMY_AVIATION_AVIATION_ROTARY_WING" ModifierOneID="SPEC_OPS_SOF_MOD" ModifierTwoID="ATTACK_2_MOD">
       <LegacyFunctionCode Name="2525C" DimensionOverride="F">AHA---</LegacyFunctionCode>
@@ -2256,6 +2288,7 @@
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ARMY_AVIATION_AVIATION_ROTARY_WING_AVIATION_RECONNAISSANCE_SYM" Label="S*GPUCRVO-*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ARMY_AVIATION_AVIATION_ROTARY_WING" EntitySubTypeID="AVIATION_RECONNAISSANCE">
       <LegacyFunctionCode Name="2525C">UCRVO-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" Description="Repeat">UCVRS-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_AVIATION_COMPOSITE_SYM" Label="S*GPUCVC--*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="AVIATION_COMPOSITE">
       <LegacyFunctionCode Name="2525C">UCVC--</LegacyFunctionCode>
@@ -2270,7 +2303,7 @@
       <LegacyFunctionCode Name="2525C">UCVUF-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_AVIATION_FIXED_WING_SPEC_OPS_SOF_MOD_SYM" Label="S*FPAF----*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="AVIATION_FIXED_WING" ModifierOneID="SPEC_OPS_SOF_MOD">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="F">AF----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" SchemaOverride="S" DimensionOverride="F">AF----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_AVIATION_FIXED_WING_SPEC_OPS_SOF_MOD_ATTACK_2_MOD_SYM" Label="S*FPAFA---*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="AVIATION_FIXED_WING" ModifierOneID="SPEC_OPS_SOF_MOD" ModifierTwoID="ATTACK_2_MOD">
       <LegacyFunctionCode Name="2525C" DimensionOverride="F">AFA---</LegacyFunctionCode>
@@ -2337,6 +2370,7 @@
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_RECON_CAVALRY_SCOUT_SYM" Label="S*GPUCR---*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="RECON_CAVALRY_SCOUT">
       <LegacyFunctionCode Name="2525C">UCR---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">UCRVG-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_RECON_CAVALRY_SCOUT_ARCTIC_MOD_SYM" Label="S*GPUCRC--*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="RECON_CAVALRY_SCOUT" ModifierTwoID="ARCTIC_MOD">
       <LegacyFunctionCode Name="2525C">UCRC--</LegacyFunctionCode>
@@ -2370,6 +2404,7 @@
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_RECON_CAVALRY_SCOUT_RECON_MOTORIZED_SYM" Label="S*GPUCRVM-*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="RECON_CAVALRY_SCOUT" EntitySubTypeID="RECON_MOTORIZED">
       <LegacyFunctionCode Name="2525C">UCRVM-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">UCRV--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_SEA_AIR_LAND_SEAL_SYM" Label="S*FPNS----*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="SEA_AIR_LAND_SEAL">
       <LegacyFunctionCode Name="2525C" DimensionOverride="F">NS----</LegacyFunctionCode>
@@ -2381,13 +2416,13 @@
       <LegacyFunctionCode Name="2525C" DimensionOverride="F">------</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_SPECIAL_OPERATIONS_FORCES_SOF_ATTACK_2_MOD_SYM" Label="S*FPB-----*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="SPECIAL_OPERATIONS_FORCES_SOF" ModifierTwoID="ATTACK_2_MOD">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="F">B-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" SchemaOverride="S" DimensionOverride="F">B-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_SPECIAL_OPERATIONS_FORCES_SOF_FIXED_WING_MISO_SYM" Label="S*FPGPA---*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="SPECIAL_OPERATIONS_FORCES_SOF" EntitySubTypeID="FIXED_WING_MISO">
       <LegacyFunctionCode Name="2525C" DimensionOverride="F">GPA---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_SPECIAL_OPERATIONS_FORCES_SOF_GROUND_SYM" Label="S*FPG-----*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="SPECIAL_OPERATIONS_FORCES_SOF" EntitySubTypeID="GROUND">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="F">G-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" SchemaOverride="S" DimensionOverride="F">G-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_SPECIAL_OPERATIONS_FORCES_SOF_SPECIAL_BOAT_SYM" Label="S*FPNB----*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="SPECIAL_OPERATIONS_FORCES_SOF" EntitySubTypeID="SPECIAL_BOAT">
       <LegacyFunctionCode Name="2525C" DimensionOverride="F">NB----</LegacyFunctionCode>
@@ -2496,6 +2531,7 @@
     </LegacySymbol>
     <LegacySymbol ID="FIRES_FIELD_ARTILLERY_OBSERVER_SYM" Label="S*GPUCFTC-*****" EntityID="FIRES" EntityTypeID="FIELD_ARTILLERY_OBSERVER">
       <LegacyFunctionCode Name="2525C">UCFTC-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">UCFTCD</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_METEOROLOGICAL_SYM" Label="S*GPUCFO--*****" EntityID="FIRES" EntityTypeID="METEOROLOGICAL">
       <LegacyFunctionCode Name="2525C">UCFO--</LegacyFunctionCode>
@@ -2715,6 +2751,7 @@
     </LegacySymbol>
     <LegacySymbol ID="INTELLIGENCE_MILITARY_INTELLIGENCE_SYM" Label="S*GPUUM---*****" EntityID="INTELLIGENCE" EntityTypeID="MILITARY_INTELLIGENCE">
       <LegacyFunctionCode Name="2525C">UUM---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">UUMR--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INTELLIGENCE_MILITARY_INTELLIGENCE_AIR_MOBILE_AIR_ASSAULT_MOD_SYM" Label="S*GPUUMA--*****" EntityID="INTELLIGENCE" EntityTypeID="MILITARY_INTELLIGENCE" ModifierOneID="AIR_MOBILE_AIR_ASSAULT_MOD">
       <LegacyFunctionCode Name="2525C">UUMA--</LegacyFunctionCode>
@@ -3161,7 +3198,7 @@
       <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DA----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="LAW_ENFORCEMENT_BUREAU_ATF_SYM" Label="EFOPDDA---*****" EntityID="LAW_ENFORCEMENT" EntityTypeID="BUREAU_ATF">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DDA---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" SchemaOverride="E" StandardIdentityOverride="F" DimensionOverride="O">DDA---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="LAW_ENFORCEMENT_BORDER_PATROL_SYM" Label="E*OPDEA---*****" EntityID="LAW_ENFORCEMENT" EntityTypeID="BORDER_PATROL">
       <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DEA---</LegacyFunctionCode>
@@ -3170,28 +3207,28 @@
       <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DFA---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="LAW_ENFORCEMENT_DRUG_ENFORCEMENT_ADMINISTRATION_DEA_SYM" Label="EFOPDGA---*****" EntityID="LAW_ENFORCEMENT" EntityTypeID="DRUG_ENFORCEMENT_ADMINISTRATION_DEA">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DGA---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" SchemaOverride="E" StandardIdentityOverride="F" DimensionOverride="O">DGA---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="LAW_ENFORCEMENT_DEPARTMENT_JUSTICE_DOJ_SYM" Label="EFOPDHA---*****" EntityID="LAW_ENFORCEMENT" EntityTypeID="DEPARTMENT_JUSTICE_DOJ">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DHA---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" SchemaOverride="E" StandardIdentityOverride="F" DimensionOverride="O">DHA---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="LAW_ENFORCEMENT_FEDERAL_BUREAU_INVESTIGATION_FBI_SYM" Label="EFOPDIA---*****" EntityID="LAW_ENFORCEMENT" EntityTypeID="FEDERAL_BUREAU_INVESTIGATION_FBI">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DIA---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" SchemaOverride="E" StandardIdentityOverride="F" DimensionOverride="O">DIA---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="LAW_ENFORCEMENT_POLICE_SYM" Label="S*GPUULC--*****" EntityID="LAW_ENFORCEMENT" EntityTypeID="POLICE">
       <LegacyFunctionCode Name="2525C">UULC--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="LAW_ENFORCEMENT_UNITED_STATES_SECRET_SERVICE_USSS_SYM" Label="EFOPDLA---*****" EntityID="LAW_ENFORCEMENT" EntityTypeID="UNITED_STATES_SECRET_SERVICE_USSS">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DLA---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" SchemaOverride="E" StandardIdentityOverride="F" DimensionOverride="O">DLA---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="LAW_ENFORCEMENT_TRANSPORTATION_SECURITY_ADMINISTRATION_TSA_SYM" Label="EFOPDMA---*****" EntityID="LAW_ENFORCEMENT" EntityTypeID="TRANSPORTATION_SECURITY_ADMINISTRATION_TSA">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DMA---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" SchemaOverride="E" StandardIdentityOverride="F" DimensionOverride="O">DMA---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="LAW_ENFORCEMENT_COAST_GUARD_SYM" Label="E*OPDNA---*****" EntityID="LAW_ENFORCEMENT" EntityTypeID="COAST_GUARD">
       <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DNA---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="LAW_ENFORCEMENT_US_MARSHALS_SERVICE_SYM" Label="EFOPDOA---*****" EntityID="LAW_ENFORCEMENT" EntityTypeID="US_MARSHALS_SERVICE">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DOA---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" SchemaOverride="E" StandardIdentityOverride="F" DimensionOverride="O">DOA---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_INFANTRY_INFANTRY_FIGHTING_VEHICLE_SYM" Label="S*GPUCII-------" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="INFANTRY" EntitySubTypeID="INFANTRY_FIGHTING_VEHICLE">
       <LegacyFunctionCode Name="2525C">UCII--</LegacyFunctionCode>
@@ -3207,67 +3244,37 @@
     </LegacySymbol>
     <LegacySymbol ID="RETIRED_SYM" Label="S*GPU-----*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">U-----</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525C" Description="Substitute" Remarks="Set HQ/TF/FD to HQ(2)">UH----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">UH----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="COMMAND_AND_CONTROL_TACTICAL_SATELLITE_SYM" Label="S*GPUCDSC-*****" EntityID="COMMAND_AND_CONTROL" EntityTypeID="TACTICAL_SATELLITE">
       <LegacyFunctionCode Name="2525C" Description="Substitute">UCDSC-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="COMMAND_AND_CONTROL_TACTICAL_SATELLITE_SYM" Label="S*GPUCDSS-*****" EntityID="COMMAND_AND_CONTROL" EntityTypeID="TACTICAL_SATELLITE">
+    <LegacySymbol ID="COMMAND_AND_CONTROL_STINGER_SYM" Label="S*GPUCDSS-*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C" Description="Substitute">UCDSS-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="COMMAND_AND_CONTROL_TACTICAL_SATELLITE_SYM" Label="S*GPUCDSV-*****" EntityID="COMMAND_AND_CONTROL" EntityTypeID="TACTICAL_SATELLITE">
+    <LegacySymbol ID="COMMAND_AND_CONTROL_VULCAN_SYM" Label="S*GPUCDSV-*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C" Description="Substitute">UCDSV-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="COMMAND_AND_CONTROL_TACTICAL_SATELLITE_SYM" Label="S*GPUCDMLA*****" EntityID="COMMAND_AND_CONTROL" EntityTypeID="TACTICAL_SATELLITE">
+    <LegacySymbol ID="COMMAND_AND_CONTROL_AVENGER_SYM" Label="S*GPUCDMLA*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C" Description="Substitute">UCDMLA</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="COMMAND_AND_CONTROL_TACTICAL_SATELLITE_SYM" Label="S*GPUCDHH-*****" EntityID="COMMAND_AND_CONTROL" EntityTypeID="TACTICAL_SATELLITE">
+    <LegacySymbol ID="COMMAND_AND_CONTROL_HAWK_SYM" Label="S*GPUCDHH-*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C" Description="Substitute">UCDHH-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="COMMAND_AND_CONTROL_TACTICAL_SATELLITE_SYM" Label="S*GPUCDHP-*****" EntityID="COMMAND_AND_CONTROL" EntityTypeID="TACTICAL_SATELLITE">
+    <LegacySymbol ID="COMMAND_AND_CONTROL_PATRIOT_SYM" Label="S*GPUCDHP-*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C" Description="Substitute">UCDHP-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ARMOR_ARMORED_MECHANIZED_SELF_PROPELLED_TRACKED_SYM" Label="S*GPUCA---*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ARMOR_ARMORED_MECHANIZED_SELF_PROPELLED_TRACKED">
-      <LegacyFunctionCode Name="2525C" Description="Repeat">UCA---</LegacyFunctionCode>
-    </LegacySymbol>
-    <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ANTITANK_ANTIARMOR_ARMORED_SYM" Label="S*GPUCAAD-*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ANTITANK_ANTIARMOR" EntitySubTypeID="ARMORED">
-      <LegacyFunctionCode Name="2525C" Description="Repeat">UCAAD-</LegacyFunctionCode>
-    </LegacySymbol>
-    <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ANTITANK_ANTIARMOR_ARMORED_SYM" Label="S*GPUCAAA-*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ANTITANK_ANTIARMOR" EntitySubTypeID="ARMORED">
-      <LegacyFunctionCode Name="2525C" Description="Repeat" Remarks="Set Mobility=Tracked(33)">UCAAA-</LegacyFunctionCode>
-    </LegacySymbol>
-    <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ARMOR_ARMORED_MECHANIZED_SELF_PROPELLED_TRACKED_SYM" Label="S*GPUCAAAT*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ARMOR_ARMORED_MECHANIZED_SELF_PROPELLED_TRACKED">
-      <LegacyFunctionCode Name="2525C" Description="Repeat">UCAAAT</LegacyFunctionCode>
-    </LegacySymbol>
-    <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ARMY_AVIATION_AVIATION_ROTARY_WING_SYM" Label="S*GPUCVR--*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ARMY_AVIATION_AVIATION_ROTARY_WING">
+    <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ARMY_AVIATION_AVIATION_COMBAT_ROTARY_WING_SYM" Label="S*GPUCVR--*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C" Description="Repeat">UCVR--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ARMY_AVIATION_AVIATION_ROTARY_WING_AVIATION_RECONNAISSANCE_SYM" Label="S*GPUCVRS-*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ARMY_AVIATION_AVIATION_ROTARY_WING" EntitySubTypeID="AVIATION_RECONNAISSANCE">
-      <LegacyFunctionCode Name="2525C" Description="Repeat">UCVRS-</LegacyFunctionCode>
+    <LegacySymbol ID="FIRES_FIELD_ARTILLERY_AMPHIB_HOWITZER_SYM" Label="S*GPUCFHX-*****" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C">UCFHX-</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="FIRES_FIELD_ARTILLERY_SYM" Label="S*GPUCFHX-*****" EntityID="FIRES" EntityTypeID="FIELD_ARTILLERY">
-      <LegacyFunctionCode Name="2525C" Description="Substitute">UCFHX-</LegacyFunctionCode>
+    <LegacySymbol ID="FIRES_FIELD_ARTILLERY_ROCKET_SYM" Label="S*GPUCFR--*****" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C">UCFR--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="FIRES_FIELD_ARTILLERY_SYM" Label="S*GPUCFR--*****" EntityID="FIRES" EntityTypeID="FIELD_ARTILLERY">
-      <LegacyFunctionCode Name="2525C" Description="Substitute" Remarks="Set Mobility=Amphibious(52)">UCFR--</LegacyFunctionCode>
-    </LegacySymbol>
-    <LegacySymbol ID="FIRES_FIELD_ARTILLERY_OBSERVER_SYM" Label="S*GPUCFTCD*****" EntityID="FIRES" EntityTypeID="FIELD_ARTILLERY_OBSERVER">
-      <LegacyFunctionCode Name="2525C" Description="Repeat">UCFTCD</LegacyFunctionCode>
-    </LegacySymbol>
-    <LegacySymbol ID="FIRES_FIELD_ARTILLERY_SYM" Label="S*GPUCFML-*****" EntityID="FIRES" EntityTypeID="FIELD_ARTILLERY">
-      <LegacyFunctionCode Name="2525C" Description="Substitute" Remarks="Set Mobility=Amphibious(52)">UCFML-</LegacyFunctionCode>
-    </LegacySymbol>
-    <LegacySymbol ID="MOVEMENT_AND_MANEUVER_RECON_CAVALRY_SCOUT_RECON_MOTORIZED_SYM" Label="S*GPUCRV--*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="RECON_CAVALRY_SCOUT" EntitySubTypeID="RECON_MOTORIZED">
-      <LegacyFunctionCode Name="2525C" Description="Repeat" Remarks="Same as Recon 10-121300(SUGPUCR---)">UCRV--</LegacyFunctionCode>
-    </LegacySymbol>
-    <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ARMOR_ARMORED_MECHANIZED_SELF_PROPELLED_TRACKED_RECONNAISSANCE_CAVALRY_SCOUT_SYM" Label="S*GPUCRVA-*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ARMOR_ARMORED_MECHANIZED_SELF_PROPELLED_TRACKED" EntitySubTypeID="RECONNAISSANCE_CAVALRY_SCOUT">
-      <LegacyFunctionCode Name="2525C" Description="Repeat" Remarks="Recon tracked 10-120501">UCRVA-</LegacyFunctionCode>
-    </LegacySymbol>
-    <LegacySymbol ID="MOVEMENT_AND_MANEUVER_RECON_CAVALRY_SCOUT_SYM" Label="S*GPUCRVG-*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="RECON_CAVALRY_SCOUT">
-      <LegacyFunctionCode Name="2525C" Description="Repeat">UCRVG-</LegacyFunctionCode>
-    </LegacySymbol>
-    <LegacySymbol ID="INTELLIGENCE_MILITARY_INTELLIGENCE_SYM" Label="S*GPUUMR--*****" EntityID="INTELLIGENCE" EntityTypeID="MILITARY_INTELLIGENCE">
-      <LegacyFunctionCode Name="2525C" Description="Repeat" Remarks="Repeat of SUGPUUM---*****">UUMR--</LegacyFunctionCode>
+    <LegacySymbol ID="FIRES_FIELD_ARTILLERY_AMPHIB_MORTAR_SYM" Label="S*GPUCFML-*****" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C">UCFML-</LegacyFunctionCode>
     </LegacySymbol>
   </LegacySymbols>
 </SymbolSet>

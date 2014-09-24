@@ -50,7 +50,7 @@
             <DigitTwo>3</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="AIRFIELD_ZONE" Label="Airfield Zone" Graphic="25120400.svg">
+        <EntityType ID="AIRFIELD_ZONE" Label="Airfield Zone" Graphic="25120400.svg" GeometryType="AREA">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>4</DigitTwo>
@@ -2394,19 +2394,19 @@
             <DigitTwo>9</DigitTwo>
           </EntityTypeCode>
           <EntitySubTypes>
-            <EntitySubType ID="ZOR_IRREGULAR" Label="Irregular" Graphic="25241901.svg">
+            <EntitySubType ID="ZOR_IRREGULAR" Label="Irregular" Graphic="25241901.svg" GeometryType="AREA">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="ZOR_RECTANGULAR" Label="Rectangular" Graphic="25241902.svg">
+            <EntitySubType ID="ZOR_RECTANGULAR" Label="Rectangular" Graphic="25241902.svg" GeometryType="AREA">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>2</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="ZOR_CIRCULAR" Label="Circular" Graphic="25241903.svg">
+            <EntitySubType ID="ZOR_CIRCULAR" Label="Circular" Graphic="25241903.svg" GeometryType="AREA">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>3</DigitTwo>
@@ -4381,7 +4381,7 @@
       <LegacyFunctionCode Name="2525C" DimensionOverride="O" TailOverride="--X">SBW---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MARITIME_CONTROL_LINES_BEARING_LINE_SYM" Label="G*OPB-----****X" EntityID="MARITIME_CONTROL_LINES" EntityTypeID="BEARING_LINE">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="O" TailOverride="--X">B-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" SchemaOverride="G" DimensionOverride="O" TailOverride="--X">B-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MARITIME_CONTROL_LINES_BEARING_LINE_ELECTRONIC_SYM" Label="G*OPBE----****X" EntityID="MARITIME_CONTROL_LINES" EntityTypeID="BEARING_LINE" EntitySubTypeID="ELECTRONIC">
       <LegacyFunctionCode Name="2525C" DimensionOverride="O" TailOverride="--X">BE----</LegacyFunctionCode>
@@ -4984,7 +4984,7 @@
       <LegacyFunctionCode Name="2525C" DimensionOverride="S" TailOverride="--X">LRT---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MISSION_TASKS_TMT_BLOCK_SYM" Label="G*TPB-----****X" EntityID="MISSION_TASKS" EntityTypeID="TMT_BLOCK">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="T" TailOverride="--X">B-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" SchemaOverride="G" DimensionOverride="T" TailOverride="--X">B-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MISSION_TASKS_TMT_BREACH_SYM" Label="G*TPH-----****X" EntityID="MISSION_TASKS" EntityTypeID="TMT_BREACH">
       <LegacyFunctionCode Name="2525C" DimensionOverride="T" TailOverride="--X">H-----</LegacyFunctionCode>
@@ -5067,8 +5067,8 @@
     <LegacySymbol ID="COMMAND_CONTROL_LINES_BOUNDARY_SYM" Label="G*GPGLB---****X" EntityID="COMMAND_CONTROL_LINES" EntityTypeID="BOUNDARY">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">GLB---</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="MANEUVER_AREAS_AREA_AREA_FRIENDLY_SYM" Label="G*GPGAG--------" EntityID="MANEUVER_AREAS" EntityTypeID="AREA" EntitySubTypeID="AREA_FRIENDLY">
-      <LegacyFunctionCode Name="2525C" Description="Substitute" Remarks="Substitute with Maneuver Areas : Area" DimensionOverride="G" TailOverride="--X">GAG---</LegacyFunctionCode>
+    <LegacySymbol ID="MANEUVER_AREAS_AREA_AREA_FRIENDLY_SYM" Label="G*GPGAG---****X" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">GAG---</LegacyFunctionCode>
     </LegacySymbol>
   </LegacySymbols>
 </SymbolSet>

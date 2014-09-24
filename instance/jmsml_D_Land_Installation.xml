@@ -1192,7 +1192,7 @@
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">GA----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_MILITARY_INFRASTRUCTURE_MILITARY_BASE_SYM" Label="S*GPIB----H****" EntityID="INFRASTRUCTURE" EntityTypeID="MILITARY_INFRASTRUCTURE" EntitySubTypeID="MILITARY_BASE">
-      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IB----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="S" DimensionOverride="G">IB----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_POSTAL_SERVICES_INFRASTRUCTURE_SYM" Label="E*FPH-----H****" EntityID="INFRASTRUCTURE" EntityTypeID="POSTAL_SERVICES_INFRASTRUCTURE">
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">H-----</LegacyFunctionCode>
@@ -1256,6 +1256,7 @@
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_TRANSPORTATION_INFRASTRUCTURE_MAINTENANCE_FACILITY_SYM" Label="E*FPLH----H****" EntityID="INFRASTRUCTURE" EntityTypeID="TRANSPORTATION_INFRASTRUCTURE" EntitySubTypeID="MAINTENANCE_FACILITY">
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">LH----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="S" DimensionOverride="G">IMV---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_TRANSPORTATION_INFRASTRUCTURE_RAILHEAD_RAILROAD_STATION_SYM" Label="E*FPLJ----H****" EntityID="INFRASTRUCTURE" EntityTypeID="TRANSPORTATION_INFRASTRUCTURE" EntitySubTypeID="RAILHEAD_RAILROAD_STATION">
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">LJ----</LegacyFunctionCode>
@@ -1311,8 +1312,8 @@
     <LegacySymbol ID="RETIRED_SYM" Label="S*GPI-----H----" Remarks="Retired">
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">I-----</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="INFRASTRUCTURE_TRANSPORTATION_INFRASTRUCTURE_MAINTENANCE_FAC_SYM" Label="S*GPIMV---H****" EntityID="INFRASTRUCTURE" EntityTypeID="TRANSPORTATION_INFRASTRUCTURE" EntitySubTypeID="MAINTENANCE_FACILITY">
-      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" Description="Repeat" Remarks="Repeat of EUFPLH----H****">IMV---</LegacyFunctionCode>
+    <LegacySymbol ID="INFRASTRUCTURE_TRANSPORTATION_INFRASTRUCTURE_MAINTENANCE_FAC_SYM" Label="S*GPIMV---H****" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMV---</LegacyFunctionCode>
     </LegacySymbol>
   </LegacySymbols>
 </SymbolSet>

@@ -1077,7 +1077,7 @@
   </SectorOneModifiers>
   <LegacySymbols>
     <LegacySymbol ID="INCIDENT_CRIMINAL_ACTIVITY_INCIDENT_SYM" Label="E*IPB-----*****" EntityID="INCIDENT" EntityTypeID="CRIMINAL_ACTIVITY_INCIDENT">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="I">B-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="I">B-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INCIDENT_CRIMINAL_ACTIVITY_INCIDENT_ARREST_SYM" Label="O*OPA-----*****" EntityID="INCIDENT" EntityTypeID="CRIMINAL_ACTIVITY_INCIDENT" EntitySubTypeID="ARREST">
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="O">A-----</LegacyFunctionCode>
@@ -1109,8 +1109,8 @@
     <LegacySymbol ID="INCIDENT_CRIMINAL_ACTIVITY_INCIDENT_KILLING_ASSASSINATION_MOD_SYM" Label="O*VPMC----*****" EntityID="INCIDENT" EntityTypeID="CRIMINAL_ACTIVITY_INCIDENT" EntitySubTypeID="KILLING" ModifierOneID="ASSASSINATION_MOD">
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="V">MC----</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="INCIDENT_CRIMINAL_ACTIVITY_INCIDENT_KILLING_EXECUTION_WRONGFUL_KILLING_MOD_SYM" Label="O*VPMC----*****" EntityID="INCIDENT" EntityTypeID="CRIMINAL_ACTIVITY_INCIDENT" EntitySubTypeID="KILLING" ModifierOneID="EXECUTION_WRONGFUL_KILLING_MOD">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="V">MC----</LegacyFunctionCode>
+    <LegacySymbol ID="INCIDENT_CRIMINAL_ACTIVITY_INCIDENT_KILLING_EXECUTION_WRONGFUL_KILLING_MOD_SYM" Label="O*VPMB----*****" EntityID="INCIDENT" EntityTypeID="CRIMINAL_ACTIVITY_INCIDENT" EntitySubTypeID="KILLING" ModifierOneID="EXECUTION_WRONGFUL_KILLING_MOD">
+      <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="V">MB----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INCIDENT_CRIMINAL_ACTIVITY_INCIDENT_KILLING_MURDER_MOD_SYM" Label="O*VPMA----*****" EntityID="INCIDENT" EntityTypeID="CRIMINAL_ACTIVITY_INCIDENT" EntitySubTypeID="KILLING" ModifierOneID="MURDER_MOD">
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="V">MA----</LegacyFunctionCode>
@@ -1184,8 +1184,8 @@
     <LegacySymbol ID="OPERATION_SPY_SYM" Label="O*OPS-----*****" EntityID="OPERATION" EntityTypeID="SPY">
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="O">S-----</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="OPERATION_EMERGENCY_OPERATION_SYM" Label="E*OPB-----*****" EntityID="OPERATION" EntityTypeID="EMERGENCY_OPERATION">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="O">B-----</LegacyFunctionCode>
+    <LegacySymbol ID="OPERATION_EMERGENCY_OPERATION_SYM" Label="E*OPB-----*****" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">B-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="OPERATION_EMERGENCY_OPERATION_EMERGENCY_COLLECTION_EVACUATION_POINT_SYM" Label="E*OPBD----*****" EntityID="OPERATION" EntityTypeID="EMERGENCY_OPERATION" EntitySubTypeID="EMERGENCY_COLLECTION_EVACUATION_POINT">
       <LegacyFunctionCode Name="2525C" DimensionOverride="O">BD----</LegacyFunctionCode>
@@ -1194,7 +1194,7 @@
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="O">O-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="OPERATION_EMERGENCY_OPERATION_EMERGENCY_INCIDENT_COMMAND_CENTER_SYM" Label="E*OPBE----H****" EntityID="OPERATION" EntityTypeID="EMERGENCY_OPERATION" EntitySubTypeID="EMERGENCY_INCIDENT_COMMAND_CENTER">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="O" HQTFFDOverride="H">BE----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O" HQTFFDOverride="H">BE----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="OPERATION_EMERGENCY_OPERATION_EMERGENCY_OPERATIONS_CENTER_SYM" Label="E*OPBF----H****" EntityID="OPERATION" EntityTypeID="EMERGENCY_OPERATION" EntitySubTypeID="EMERGENCY_OPERATIONS_CENTER">
       <LegacyFunctionCode Name="2525C" DimensionOverride="O" HQTFFDOverride="H">BF----</LegacyFunctionCode>
@@ -1442,17 +1442,11 @@
     <LegacySymbol ID="OPERATION_EMERGENCY_MEDICAL_OP_SYM" Label="E*OPA-----*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C" DimensionOverride="O">A-----</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="EMERGENCY_OPERATION_SYM" Label="E*OPB-----*****" Remarks="Retired">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="O">B-----</LegacyFunctionCode>
-    </LegacySymbol>
     <LegacySymbol ID="OPERATION_EMERGENCY_OPERATION_TEAM_SYM" Label="E*OPBJ----*****" EntityID="OPERATION" EntityTypeID="EMERGENCY_OPERATION">
       <LegacyFunctionCode Name="2525C" Remarks="Needs Team echelon amplifier" DimensionOverride="O">BJ----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="FIRE_FIGHTING_OPERATION_SYM" Label="E*OPC-----*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C" DimensionOverride="O">C-----</LegacyFunctionCode>
-    </LegacySymbol>
-    <LegacySymbol ID="INCIDENT_CRIMINAL_ACTIVITY_INCIDENT_KILLING_EXECUTION_SYM" Label="O*VPMB---------" EntityID="INCIDENT" EntityTypeID="CRIMINAL_ACTIVITY_INCIDENT" EntitySubTypeID="KILLING" ModifierOneID="EXECUTION_WRONGFUL_KILLING_MOD">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="V">MB----</LegacyFunctionCode>
     </LegacySymbol>
   </LegacySymbols>
 </SymbolSet>

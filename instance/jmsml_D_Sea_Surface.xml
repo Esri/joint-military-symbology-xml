@@ -898,7 +898,7 @@
     <LegacySymbol ID="MILITARY_COMBAT_PATROL_BOAT_AUTONOMOUS_MOD_SYM" Label="S*SPCPSU--*****" EntityID="MILITARY_COMBAT" EntityTypeID="PATROL_BOAT" ModifierTwoID="AUTONOMOUS_MOD">
       <LegacyFunctionCode Name="2525C">CPSU--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="MILITARY_COMBAT_PATROL_BOAT_SYM" Label="S*SPCPSUT-*****" EntityID="MILITARY_COMBAT" EntityTypeID="PATROL_BOAT">
+    <LegacySymbol ID="MILITARY_COMBAT_PATROL_BOAT_TORPEDO_SYM" Label="S*SPCPSUT-*****" EntityID="MILITARY_COMBAT" EntityTypeID="PATROL_BOAT" ModifierOneID="TORPEDO_MOD">
       <LegacyFunctionCode Name="2525C">CPSUT-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_COMBAT_PATROL_BOAT_PATROL_CHASER_SYM" Label="S*SPCPSB--*****" EntityID="MILITARY_COMBAT" EntityTypeID="PATROL_BOAT" EntitySubTypeID="PATROL_CHASER">
@@ -1021,7 +1021,7 @@
     <LegacySymbol ID="OWN_SHIP_SYM" Label="S*SPO-----*****" EntityID="OWN_SHIP">
       <LegacyFunctionCode Name="2525C">O-----</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="CIVILIAN_CIV_MERCHANT_CIV_HOVERCRAFT_SYM" Label="S*SPNH----*****" EntityID="CIVILIAN" EntityTypeID="CIV_MERCHANT" EntitySubTypeID="CIV_HOVERCRAFT">
+    <LegacySymbol ID="CIVILIAN_CIV_MERCHANT_CIV_NONCOM_HOVERCRAFT_SYM" Label="S*SPNH----*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">NH----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="RETIRED_SYM" Label="S*SP------*****" Remarks="Retired">

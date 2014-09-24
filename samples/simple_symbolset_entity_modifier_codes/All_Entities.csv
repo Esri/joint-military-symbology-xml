@@ -639,7 +639,7 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 25,Command and Control Areas,Area of Operations,,,120100,Area,MAIN,Command and Control Areas : Area of Operations
 25,Command and Control Areas,Named Area of Interest,,,120200,Area,MAIN,Command and Control Areas : Named Area of Interest
 25,Command and Control Areas,Targeted Area of Interest,,,120300,Area,MAIN,Command and Control Areas : Targeted Area of Interest
-25,Command and Control Areas,Airfield Zone,,,120400,Point,MAIN,Command and Control Areas : Airfield Zone
+25,Command and Control Areas,Airfield Zone,,,120400,Area,MAIN,Command and Control Areas : Airfield Zone
 25,Command and Control Points,Action Point (General),,,130100,Point,MAIN,Command and Control Points : Action Point (General)
 25,Command and Control Points,Amnesty Point,,,130200,Point,MAIN,Command and Control Points : Amnesty Point
 25,Command and Control Points,Checkpoint,,,130300,Point,MAIN,Command and Control Points : Checkpoint
@@ -972,9 +972,9 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 25,Fires Areas,Target Value Area,Irregular,,241801,Area,MAIN,Fires Areas : Target Value Area : Irregular
 25,Fires Areas,Target Value Area,Rectangular,,241802,Area,MAIN,Fires Areas : Target Value Area : Rectangular
 25,Fires Areas,Target Value Area,Circular,,241803,Area,MAIN,Fires Areas : Target Value Area : Circular
-25,Fires Areas,Zone of Responsibility,Irregular,,241901,Point,MAIN,Fires Areas : Zone of Responsibility : Irregular
-25,Fires Areas,Zone of Responsibility,Rectangular,,241902,Point,MAIN,Fires Areas : Zone of Responsibility : Rectangular
-25,Fires Areas,Zone of Responsibility,Circular,,241903,Point,MAIN,Fires Areas : Zone of Responsibility : Circular
+25,Fires Areas,Zone of Responsibility,Irregular,,241901,Area,MAIN,Fires Areas : Zone of Responsibility : Irregular
+25,Fires Areas,Zone of Responsibility,Rectangular,,241902,Area,MAIN,Fires Areas : Zone of Responsibility : Rectangular
+25,Fires Areas,Zone of Responsibility,Circular,,241903,Area,MAIN,Fires Areas : Zone of Responsibility : Circular
 25,Fires Areas,Terminally Guided Munition Footprint (TGMF),,,242000,Area,MAIN,Fires Areas : Terminally Guided Munition Footprint (TGMF)
 25,Fires Areas,Weapon/Sensor Range fan-Circular,,,242100,Area,MAIN,Fires Areas : Weapon/Sensor Range fan-Circular
 25,Fires Areas,Weapon/Sensor Range fan-Sector,,,242200,Area,MAIN,Fires Areas : Weapon/Sensor Range fan-Sector

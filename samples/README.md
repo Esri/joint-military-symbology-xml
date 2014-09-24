@@ -62,3 +62,18 @@ Amplifiers (Echelon, Mobility, and Auxiliary Equipment) can be exported with the
 HQTFFD (Headquarter, Task Force, and Feint/Dummy) amplifiers can be exported with the /xh switch.  The /-source switch can be used to disable the export of source file information and the /+ switch can be used to force output to be appended to an existing export file.
 
 	jmsml.exe /xh="Military-Frame-And-Amplifier-Icons" /+ /xas="IMAGE"
+
+### Legacy Support ###
+JMSML contains legacy data that can be used to map 2525C SIDCs to their equivalent 2525D SIDCs, and conversely, 2525D SIDCs to their equivalent 2525C SIDCs, where relevant.
+
+Please note that there are far more possible 2525D symbols that can be created then there are specific 2525C symbols for them, so most symbols built with 2525D will not have corresponding 2525C symbols available.  In some cases, multiple 2525C SIDCs map to a single 2525D SIDC.
+
+Use the /xl switch to specify a file name for exporting all legacy symbols (represented by 2525C SIDCs) to their corresponding 2525D SIDCs.  A remark of "pass" indicates the given 2525C SIDC was used to create a JMSML symbol, and the 2525D SIDC that results was then used to create a second symbol, whose 2525C SIDC is equivalent to the original input.
+
+In other words, this export function takes a 2525C SIDC, converts it to 2525D, then takes that 2525D SIDC and converts it back to arrive at the original 2525C SIDC input.
+
+A remark of pass(multiple) indicates the test was successful, but that in converting 2525D to 2525C, more than one possible 2525C SIDC was the result, one of those results being equal to the original input.
+
+A remark of retired indicates the test resulted in finding that the specified 2525C SIDC has been formally retired by the SSMC, and therefore has no recommended 2525D equivalent.
+
+	jmsml.exe /xl="LegacyMappingTableCtoD"

@@ -5,6 +5,8 @@
     <DigitTwo>1</DigitTwo>
   </SymbolSetCode>
   <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
+  <LegacyCodingSchemeCode Name="2525C">O</LegacyCodingSchemeCode>
+  <LegacyCodingSchemeCode Name="2525C">E</LegacyCodingSchemeCode>
   <Entities>
     <Entity ID="CIVILIAN" Label="Civilian" LabelAlias="Civilian (Land Civilian)" Graphic="11110000.svg">
       <EntityCode>
@@ -249,26 +251,26 @@
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="P">C-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="CIVILIAN_ORGANIZATION_SYM" Label="O*GP------*****" EntityID="CIVILIAN" EntityTypeID="ORGANIZATION">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="O">------</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525C" Description="Repeat" SchemaOverride="O" DimensionOverride="I">R-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="G">------</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="I">R-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="CIVILIAN_ORGANIZATION_DISPLACED_MOD_SYM" Label="O*GPA-----*****" EntityID="CIVILIAN" EntityTypeID="ORGANIZATION" ModifierOneID="DISPLACED_MOD">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="O">A-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="G">A-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="CIVILIAN_ORGANIZATION_FOREIGN_FIGHTER_MOD_SYM" Label="O*GPE-----*****" EntityID="CIVILIAN" EntityTypeID="ORGANIZATION" ModifierOneID="FOREIGN_FIGHTER_MOD">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="O">E-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="G">E-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="CIVILIAN_ORGANIZATION_GANG_MOD_SYM" Label="O*GPF-----*****" EntityID="CIVILIAN" EntityTypeID="ORGANIZATION" ModifierOneID="GANG_MOD">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="O">F-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="G">F-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="CIVILIAN_ORGANIZATION_NONGOVERNMENTAL_ORGANIZATION_MOD_SYM" Label="O*GPB-----*****" EntityID="CIVILIAN" EntityTypeID="ORGANIZATION" ModifierOneID="NONGOVERNMENTAL_ORGANIZATION_MOD">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="O">B-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="G">B-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="CIVILIAN_ORGANIZATION_RELIGIOUS_MOD_SYM" Label="O*GPD-----*****" EntityID="CIVILIAN" EntityTypeID="ORGANIZATION" ModifierOneID="RELIGIOUS_MOD">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="O">D-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="G">D-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="CIVILIAN_ORGANIZATION_TARGETED_MOD_SYM" Label="O*GPC-----*****" EntityID="CIVILIAN" EntityTypeID="ORGANIZATION" ModifierOneID="TARGETED_MOD">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="O">C-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="G">C-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="CIVILIAN_ORGANIZATION_LOOT_MOD_SYM" Label="E*IPBD----*****" EntityID="CIVILIAN" EntityTypeID="ORGANIZATION" ModifierOneID="LOOT_MOD">
       <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="I">BD----</LegacyFunctionCode>
