@@ -361,8 +361,6 @@ namespace JointMilitarySymbologyLibrary
                 {
                     partA = partA + (sig.StandardIdentityGroupCode * (uint)1000000);
                 }
-                else
-                    partA = partA + 1000000;
 
                 uint partB = (e.EntityCode.DigitOne * (uint)1000000000) + (e.EntityCode.DigitTwo * (uint)100000000);
 
@@ -388,14 +386,22 @@ namespace JointMilitarySymbologyLibrary
                     {
                         result = symbol.LegacySIDC;
 
-                        if (sig == null)
+                        if (sig == null && result.Substring(1, 1) == "P")
                         {
-                            result = result.Substring(0, 1) + "*" + result.Substring(2, 8) + "*****";
+                            result = result.Substring(0, 1) + "*" + result.Substring(2);
                         }
-                        else
-                        {
+
+                        if (result.Substring(14, 1) == "X")
+                            result = result.Substring(0, 10) + "****X";
+
+                        else if (result.Substring(0, 1) == "W")
+                            result = result.Substring(0, 13) + "**";
+                        
+                        else if (result.Substring(10, 5) == "-----")
                             result = result.Substring(0, 10) + "*****";
-                        }
+
+                        else if (result.Substring(11, 4) == "----")
+                            result = result.Substring(0, 11) + "****";   
                     }
                 }
                 else

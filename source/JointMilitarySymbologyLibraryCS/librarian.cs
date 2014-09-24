@@ -470,8 +470,9 @@ namespace JointMilitarySymbologyLibrary
                     foreach (LegacyLetterCodeType lObj2 in lObj.LegacyDimensionCode)
                     {
                         if ((lObj2.Value == code && lObj2.FirstFunctionLetter == "" && lObj2.CodingSchemeLetter == "") ||
-                            (lObj2.Value == code && lObj2.FirstFunctionLetter == firstLetterInFunction) ||
-                            (lObj2.Value == code && lObj2.CodingSchemeLetter == codingSchemeLetter))
+                            (lObj2.Value == code && lObj2.FirstFunctionLetter == firstLetterInFunction && lObj2.CodingSchemeLetter == "") ||
+                            (lObj2.Value == code && lObj2.FirstFunctionLetter == "" && lObj2.CodingSchemeLetter == codingSchemeLetter) ||
+                            (lObj2.Value == code && lObj2.FirstFunctionLetter == firstLetterInFunction && lObj2.CodingSchemeLetter == codingSchemeLetter))
                         {
                             return lObj;
                         }
@@ -569,12 +570,34 @@ namespace JointMilitarySymbologyLibrary
             return retObj;
         }
 
-        internal SymbolSet SymbolSet(string dimensionID, string code)
+        internal SymbolSet SymbolSet(string symbolSetID)
         {
             SymbolSet retObj = null;
 
+            foreach (SymbolSet ss in _symbolSets)
+            {
+                if (ss.ID == symbolSetID)
+                {
+                    retObj = ss;
+                    break;
+                }
+            }
+
+            return retObj;
+        }
+
+        internal SymbolSet SymbolSet(string dimensionID, string legacySIDC)
+        {
+            SymbolSet retObj = null;
+
+            string code = legacySIDC.Substring(4, 6);
+            string schemaCode = legacySIDC.Substring(0, 1);
+            string dimensionCode = legacySIDC.Substring(2, 1);
+
             foreach (SymbolSet lObj in this._symbolSets)
             {
+                // TODO: Following needs to be fixed for the Cyberspace symbol set
+
                 if (lObj.DimensionID == dimensionID)
                 {
                     if (lObj.LegacySymbols != null)
@@ -583,7 +606,10 @@ namespace JointMilitarySymbologyLibrary
                         {
                             foreach (LegacyFunctionCodeType lObj3 in lObj2.LegacyFunctionCode)
                             {
-                                if (lObj3.Value == code)
+                                if ((lObj3.Value == code && lObj3.SchemaOverride == "" && lObj3.DimensionOverride == "") ||
+                                    (lObj3.Value == code && lObj3.SchemaOverride == "" && lObj3.DimensionOverride == dimensionCode) ||
+                                    (lObj3.Value == code && lObj3.SchemaOverride == schemaCode && lObj3.DimensionOverride == "") ||
+                                    (lObj3.Value == code && lObj3.SchemaOverride == schemaCode && lObj3.DimensionOverride == dimensionCode))
                                 {
                                     return lObj;
                                 }
@@ -796,6 +822,35 @@ namespace JointMilitarySymbologyLibrary
             return retObj;
         }
 
+        internal LibraryAffiliation AffiliationByLegacyCode(string legacyStandardIdentityCode, string dimensionID)
+        {
+            LibraryAffiliation retObj = null;
+
+            // For each affiliation (combination of context, dimension, and standard identity)
+
+            foreach (LibraryAffiliation lObj in this._library.Affiliations)
+            {
+                if (lObj.DimensionID == dimensionID && lObj.LegacyStandardIdentityCode != null)
+                {
+                    // For each standard identity
+
+                    foreach (LegacyLetterCodeType lObj2 in lObj.LegacyStandardIdentityCode)
+                    {
+                        // If this is the standard identity we are looking for...
+
+                        if (lObj2.Value == legacyStandardIdentityCode)
+                        {
+                            return lObj;
+                        }
+                    }
+                }
+            }
+
+            _statusFlag -= 512;
+
+            return retObj;
+        }
+
         internal LibraryAffiliation AffiliationByLegacyCode(string legacyStandardIdentityCode, string legacyDimensionCode, string legacyFirstLetterInFunction, string legacyCodingSchemeLetter)
         {
             LibraryAffiliation retObj = null;
@@ -828,8 +883,9 @@ namespace JointMilitarySymbologyLibrary
                                 // use the overriding coding scheme letter to refine the test.
 
                                 if((lObj3.Value == legacyDimensionCode && lObj3.FirstFunctionLetter == "" && lObj3.CodingSchemeLetter == "") ||
-                                   (lObj3.Value == legacyDimensionCode && lObj3.FirstFunctionLetter == legacyFirstLetterInFunction) ||
-                                   (lObj3.Value == legacyDimensionCode && lObj3.CodingSchemeLetter == legacyCodingSchemeLetter))
+                                   (lObj3.Value == legacyDimensionCode && lObj3.FirstFunctionLetter == legacyFirstLetterInFunction && lObj3.CodingSchemeLetter == "") ||
+                                   (lObj3.Value == legacyDimensionCode && lObj3.FirstFunctionLetter == ""  && lObj3.CodingSchemeLetter == legacyCodingSchemeLetter) ||
+                                   (lObj3.Value == legacyDimensionCode && lObj3.FirstFunctionLetter == legacyFirstLetterInFunction && lObj3.CodingSchemeLetter == legacyCodingSchemeLetter))
 
                                     // We have a match, so return the current affiliation
 
@@ -986,6 +1042,28 @@ namespace JointMilitarySymbologyLibrary
             return retObj;
         }
 
+        internal EntitySubTypeType EntitySubType(SymbolSet ss, ushort entitySubTypeCodeOne, ushort entitySubTypeCodeTwo)
+        {
+            EntitySubTypeType retObj = null;
+
+            if (ss != null)
+            {
+                if (ss.SpecialEntitySubTypes != null)
+                {
+                    foreach (EntitySubTypeType lObj in ss.SpecialEntitySubTypes)
+                    {
+                        if (lObj.EntitySubTypeCode.DigitOne == entitySubTypeCodeOne &&
+                            lObj.EntitySubTypeCode.DigitTwo == entitySubTypeCodeTwo)
+                        {
+                            return lObj;
+                        }
+                    }
+                }
+            }
+
+            return retObj;
+        }
+
         internal EntitySubTypeType EntitySubType(SymbolSet ss, SymbolSetEntityEntityType entityType, string entitySubTypeID)
         {
             EntitySubTypeType retObj = null;
@@ -1111,6 +1189,64 @@ namespace JointMilitarySymbologyLibrary
             return retObj;
         }
 
+        internal SymbolSetLegacySymbol LegacySymbol(string legacySIDC, ref LibraryDimension dimensionOut, ref SymbolSet ssOut)
+        {
+            SymbolSetLegacySymbol retObj = null;
+
+            dimensionOut = null;
+            ssOut = null;
+
+            string codingSchemeLetter = legacySIDC.Substring(0, 1);
+            string code = legacySIDC.Substring(2, 1);
+            string firstLetterInFunction = legacySIDC.Substring(4, 1);
+
+            foreach (LibraryDimension lObj in _library.Dimensions)
+            {
+                if (lObj.LegacyDimensionCode != null)
+                {
+                    foreach (LegacyLetterCodeType lObj2 in lObj.LegacyDimensionCode)
+                    {
+                        if ((lObj2.Value == code && lObj2.FirstFunctionLetter == "" && lObj2.CodingSchemeLetter == "") ||
+                            (lObj2.Value == code && lObj2.FirstFunctionLetter == firstLetterInFunction && lObj2.CodingSchemeLetter == "") ||
+                            (lObj2.Value == code && lObj2.FirstFunctionLetter == "" && lObj2.CodingSchemeLetter == codingSchemeLetter) ||
+                            (lObj2.Value == code && lObj2.FirstFunctionLetter == firstLetterInFunction && lObj2.CodingSchemeLetter == codingSchemeLetter))
+                        {
+                            if (lObj.SymbolSets != null)
+                            {
+                                foreach (LibraryDimensionSymbolSetRef ssRef in lObj.SymbolSets)
+                                {
+                                    SymbolSet ss = this.SymbolSet(ssRef.ID);
+
+                                    if (ss != null)
+                                    {
+                                        retObj = this.LegacySymbol(ss, legacySIDC);
+
+                                        if (retObj != null)
+                                        {
+                                            dimensionOut = lObj;
+                                            ssOut = ss;
+                                            
+                                            return retObj;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+
+            if (retObj == null)
+            {
+                _statusFlag -= 4;  // Can't find a Dimension
+                _statusFlag -= 16; // Can't find a SymbolSet
+                _statusFlag -= 65536; // Can't find a LegacySymbol
+            }
+
+            return retObj;
+        }
+
         internal SymbolSetLegacySymbol LegacySymbol(SymbolSet symbolSet, string legacySIDC)
         {
             SymbolSetLegacySymbol retObj = null;
@@ -1148,8 +1284,6 @@ namespace JointMilitarySymbologyLibrary
                     }
                 }
             }
-
-            _statusFlag -= 65536;
 
             return retObj;
         }

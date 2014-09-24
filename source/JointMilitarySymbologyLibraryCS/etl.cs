@@ -1110,9 +1110,11 @@ namespace JointMilitarySymbologyLibrary
                 long failCount = 0;
                 long cerrorCount = 0;
                 long derrorCount = 0;
+                long retiredCount = 0;
+                long passWithConditionCount = 0;
                 long totalCount = 0;
 
-                stream.WriteLine("2525C_In,2525D_First_10,2525D_Second_10,2525C_Out,Status");
+                stream.WriteLine("2525Charlie1stTen,2525Charlie,2525DeltaSymbolSet,2525DeltaEntity,2525DeltaMod1,2525DeltaMod2,DeltaToCharlie,Remarks");
                 stream.Flush();
 
                 foreach (SymbolSet ss in _librarian.SymbolSets)
@@ -1121,92 +1123,130 @@ namespace JointMilitarySymbologyLibrary
                     {
                         foreach (SymbolSetLegacySymbol legacy in ss.LegacySymbols)
                         {
+                            string cSIDC = legacy.Label;
                             string cSIDCIn = legacy.Label;
-                            string dFirst10 = "";
-                            string dSecond10 = "";
-                            string cSIDCOut = "";
-                            string status = "";
-
-                            totalCount++;
 
                             // Create a proper 2525C SIDC for testing
 
-                            if (cSIDCIn.Substring(1, 1) == "*")
-                                cSIDCIn = cSIDCIn.Substring(0, 1) + "P" + cSIDCIn.Substring(2);
-
-                            cSIDCIn = cSIDCIn.Replace('*', '-');
-
-                            // Build a symbol using a 2525C SIDC
-
-                            Symbol sym = _librarian.MakeSymbol("2525C", cSIDCIn);
-
-                            if (sym != null)
+                            if (cSIDCIn.Length == 15)
                             {
-                                dFirst10 = sym.SIDC.PartAString;
-                                dSecond10 = sym.SIDC.PartBString;
+                                if (cSIDCIn.Substring(1, 1) == "*")
+                                        cSIDCIn = cSIDCIn.Substring(0, 1) + "P" + cSIDCIn.Substring(2);
 
-                                // Build a symbol using the 2525D SIDC, to see if reverse
-                                // conversion works.
+                                cSIDCIn = cSIDCIn.Replace('*', '-');
 
-                                Symbol sym2 = _librarian.MakeSymbol(sym.SIDC);
-
-                                if (sym2 != null)
+                                foreach (LegacyFunctionCodeType fcode in legacy.LegacyFunctionCode)
                                 {
-                                    cSIDCOut = sym2.LegacySIDC;
+                                    string dFirst10 = "";
+                                    string dSecond10 = "";
+                                    string cSIDCOut = "";
+                                    string status = "";
 
-                                    if (cSIDCIn == cSIDCOut)
+                                    totalCount++;
+
+                                    cSIDC = cSIDC.Substring(0, 4) + fcode.Value + cSIDC.Substring(10);
+                                    cSIDCIn = cSIDCIn.Substring(0, 4) + fcode.Value + cSIDCIn.Substring(10);
+
+                                    if (fcode.SchemaOverride != "")
                                     {
-                                        status = "pass";
-                                        passCount++;
+                                        cSIDC = fcode.SchemaOverride + cSIDC.Substring(1);
+                                        cSIDCIn = fcode.SchemaOverride + cSIDCIn.Substring(1);
                                     }
-                                    else if (sym2.LegacySIDCs.Count > 1)
+
+                                    if (fcode.DimensionOverride != "")
                                     {
-                                        bool match = false;
+                                        cSIDC = cSIDC.Substring(0, 2) + fcode.DimensionOverride + cSIDC.Substring(3);
+                                        cSIDCIn = cSIDCIn.Substring(0, 2) + fcode.DimensionOverride + cSIDCIn.Substring(3);
+                                    }
 
-                                        foreach (string sidc in sym2.LegacySIDCs)
+                                    // Build a symbol using a 2525C SIDC
+
+                                    Symbol sym = _librarian.MakeSymbol("2525C", cSIDCIn);
+
+                                    if (sym != null)
+                                    {
+                                        if (sym.SymbolStatus == SymbolStatusEnum.statusEnumOld)
                                         {
-                                            if (cSIDCIn == sidc)
+                                            dFirst10 = sym.SIDC.PartAString;
+                                            dSecond10 = sym.SIDC.PartBString;
+
+                                            // Build a symbol using the 2525D SIDC, to see if reverse
+                                            // conversion works.
+
+                                            Symbol sym2 = _librarian.MakeSymbol(sym.SIDC);
+
+                                            if (sym2 != null)
                                             {
-                                                match = true;
-                                                break;
-                                            }
-                                        }
+                                                cSIDCOut = sym2.LegacySIDC;
 
-                                        if (match)
-                                        {
-                                            status = "pass (multiple)";
-                                            passCount++;
+                                                if (cSIDCIn == cSIDCOut)
+                                                {
+                                                    status = "pass";
+                                                    passCount++;
+                                                }
+                                                else if (sym2.LegacySIDCs.Count > 1)
+                                                {
+                                                    bool match = false;
+
+                                                    foreach (string sidc in sym2.LegacySIDCs)
+                                                    {
+                                                        if (cSIDCIn == sidc)
+                                                        {
+                                                            match = true;
+                                                            break;
+                                                        }
+                                                    }
+
+                                                    if (match)
+                                                    {
+                                                        status = "pass (multiple)";
+                                                        passWithConditionCount++;
+                                                    }
+                                                    else
+                                                    {
+                                                        status = "FAIL";
+                                                        failCount++;
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    status = "FAIL";
+                                                    failCount++;
+                                                }
+                                            }
+                                            else
+                                            {
+                                                status = "Error making 2525D";
+                                                derrorCount++;
+                                            }
                                         }
                                         else
                                         {
-                                            status = "FAIL";
-                                            failCount++;
+                                            status = "Retired";
+                                            dFirst10 = SIDC.INVALID.PartAString;
+                                            dSecond10 = SIDC.INVALID.PartBString;
+                                            retiredCount++;
                                         }
                                     }
                                     else
                                     {
-                                        status = "FAIL";
-                                        failCount++;
+                                        status = "Error making 2525C";
+                                        cerrorCount++;
                                     }
-                                }
-                                else
-                                {
-                                    status = "Error making 2525D";
-                                    derrorCount++;
+
+                                    stream.WriteLine(cSIDC.Substring(0,10) + "," + 
+                                                     cSIDCIn + "," +
+                                                     dFirst10.Substring(4,2) + "," +
+                                                     dSecond10.Substring(0,6) + "," +
+                                                     dSecond10.Substring(6,2) + "," +
+                                                     dSecond10.Substring(8,2) + "," +
+                                                     cSIDCOut + "," +
+                                                     status);
+                                    stream.Flush();
                                 }
                             }
                             else
-                            {
-                                status = "Error making 2525C";
-                                cerrorCount++;
-                            }
-
-                            stream.WriteLine(cSIDCIn + "," +
-                                             dFirst10 + "," +
-                                             dSecond10 + "," +
-                                             cSIDCOut + "," +
-                                             status);
-                            stream.Flush();
+                                    logger.Error("Bad SIDC : " + cSIDCIn);    
                         }
                     }
                 }
@@ -1214,6 +1254,8 @@ namespace JointMilitarySymbologyLibrary
                 logger.Info("----- Legacy Tests -----");
                 logger.Info("Total: " + totalCount);
                 logger.Info("Pass: " + passCount);
+                logger.Info("Pass (multiple): " + passWithConditionCount);
+                logger.Info("Retired: " + retiredCount);
                 logger.Info("Fail: " + failCount);
                 logger.Info("2525C Errors: " + cerrorCount);
                 logger.Info("2525D Errors: " + derrorCount);

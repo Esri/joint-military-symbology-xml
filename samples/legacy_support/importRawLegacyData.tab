@@ -1,5 +1,5 @@
 setlocal
-cd ..\source\JointMilitarySymbologyLibraryCS\jmsml\bin\Debug
+cd ..\..\source\JointMilitarySymbologyLibraryCS\jmsml\bin\Debug
 jmsml.exe /ils="../../../../../../military-symbols-dotnet/MilitarySymbols/Data/LegacyMappingTableCtoD.csv" /ild="../../../../../instance/jmsml_D_Air.xml"
 jmsml.exe /ils="../../../../../../military-symbols-dotnet/MilitarySymbols/Data/LegacyMappingTableCtoD.csv" /ild="../../../../../instance/jmsml_D_Air_Missile.xml"
 jmsml.exe /ils="../../../../../../military-symbols-dotnet/MilitarySymbols/Data/LegacyMappingTableCtoD.csv" /ild="../../../../../instance/jmsml_D_Space.xml"

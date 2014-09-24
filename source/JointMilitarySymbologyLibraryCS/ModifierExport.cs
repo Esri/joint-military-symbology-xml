@@ -123,7 +123,7 @@ namespace JointMilitarySymbologyLibrary
             result = result + ";" + typ;
 
             if(!omitLegacy)
-                result = result + _configHelper.SIDCIsNA + ";";
+                result = result + ";" + _configHelper.SIDCIsNA ;
 
             if(!omitSource)
                 result = result + ";" + path + "\\" + m.Graphic;

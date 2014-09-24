@@ -5,6 +5,7 @@
     <DigitTwo>5</DigitTwo>
   </SymbolSetCode>
   <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
+  <LegacyCodingSchemeCode Name="2525C">O</LegacyCodingSchemeCode>
   <Entities>
     <Entity ID="WEAPON_SYSTEM" Label="Weapon/Weapon System" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes." Graphic="15110000.svg" Icon="FULL_OCTAGON">
       <EntityCode>
@@ -2008,36 +2009,8 @@
     <LegacySymbol ID="EMERGENCY_OPERATION_FIRE_FIGHTING_FIRE_PROTECTION_SYM" Label="E*OPCB----*****" EntityID="EMERGENCY_OPERATION" EntityTypeID="FIRE_FIGHTING_FIRE_PROTECTION">
       <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">CB----</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="VEHICLE_VEHICLE_ARMORED_SYM" Label="S*GPUCAW-------" EntityID="VEHICLE" EntityTypeID="VEHICLE_ARMORED">
-      <LegacyFunctionCode Name="2525C">UCAW--</LegacyFunctionCode>
-    </LegacySymbol>
-    <LegacySymbol ID="RETIRED_SYM" Label="S*GP------*****" Remarks="Retired">
-      <LegacyFunctionCode Name="2525C">------</LegacyFunctionCode>
+    <LegacySymbol ID="EQUIPMENT_SYM" Label="S*GPE-----*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">E-----</LegacyFunctionCode>
-    </LegacySymbol>
-    <LegacySymbol ID="VEHICLE_VEHICLE_ARMORED_SYM" Label="S*GPUCAWA-*****" EntityID="VEHICLE" EntityTypeID="VEHICLE_ARMORED">
-      <LegacyFunctionCode Name="2525C" Description="Substitute">UCAWA-</LegacyFunctionCode>
-    </LegacySymbol>
-    <LegacySymbol ID="VEHICLE_VEHICLE_ARMORED_SYM" Label="S*GPUCAWL-*****" EntityID="VEHICLE" EntityTypeID="VEHICLE_ARMORED">
-      <LegacyFunctionCode Name="2525C" Description="Substitute">UCAWL-</LegacyFunctionCode>
-    </LegacySymbol>
-    <LegacySymbol ID="VEHICLE_VEHICLE_ARMORED_SYM" Label="S*GPUCAWM-*****" EntityID="VEHICLE" EntityTypeID="VEHICLE_ARMORED">
-      <LegacyFunctionCode Name="2525C" Description="Substitute">UCAWM-</LegacyFunctionCode>
-    </LegacySymbol>
-    <LegacySymbol ID="VEHICLE_VEHICLE_ARMORED_SYM" Label="S*GPUCAWH-*****" EntityID="VEHICLE" EntityTypeID="VEHICLE_ARMORED">
-      <LegacyFunctionCode Name="2525C" Description="Substitute">UCAWH-</LegacyFunctionCode>
-    </LegacySymbol>
-    <LegacySymbol ID="VEHICLE_VEHICLE_ARMORED_SYM" Label="S*GPUCAWR-*****" EntityID="VEHICLE" EntityTypeID="VEHICLE_ARMORED">
-      <LegacyFunctionCode Name="2525C" Description="Substitute">UCAWR-</LegacyFunctionCode>
-    </LegacySymbol>
-    <LegacySymbol ID="VEHICLE_VEHICLE_ARMORED_SYM" Label="S*GPUCAWWR*****" EntityID="VEHICLE" EntityTypeID="VEHICLE_ARMORED">
-      <LegacyFunctionCode Name="2525C" Description="Substitute">UCAWWR</LegacyFunctionCode>
-    </LegacySymbol>
-    <LegacySymbol ID="VEHICLE_VEHICLE_ARMORED_SYM" Label="S*GPUCAAAS*****" EntityID="VEHICLE" EntityTypeID="VEHICLE_ARMORED">
-      <LegacyFunctionCode Name="2525C" Description="Substitute">UCAAAS</LegacyFunctionCode>
-    </LegacySymbol>
-    <LegacySymbol ID="VEHICLE_VEHICLE_ARMORED_SYM" Label="S*GPUCAWWR*****" EntityID="VEHICLE" EntityTypeID="VEHICLE_ARMORED">
-      <LegacyFunctionCode Name="2525C" Description="Substitute">UCAWWR</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="ENGINEER_VEHICLES_EQUIPMENT_MINE_LAYING_EQUIPMENT_SYM" Label="S*GPEVEM-------" EntityID="ENGINEER_VEHICLES_EQUIPMENT" EntityTypeID="MINE_LAYING_EQUIPMENT">
       <LegacyFunctionCode Name="2525C">EVEM--</LegacyFunctionCode>

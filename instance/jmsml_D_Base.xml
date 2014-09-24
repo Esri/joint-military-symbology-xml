@@ -308,7 +308,9 @@
         <DigitOne>0</DigitOne>
         <DigitTwo>5</DigitTwo>
       </DimensionCode>
-      <LegacyDimensionCode Name="2525C">P</LegacyDimensionCode>
+      <LegacyDimensionCode Name="2525C" CodingSchemeLetter="S">P</LegacyDimensionCode>
+      <LegacyDimensionCode Name="2525C" CodingSchemeLetter="I">A</LegacyDimensionCode>
+      <LegacyDimensionCode Name="2525C" CodingSchemeLetter="I">P</LegacyDimensionCode>
       <Fields>
         <Field Name="AL" Label="Operational Condition" Description="Indicates operational condition." Remarks="Comprised of only one color. Ex. Satellite: Red - damaged, Green - fully capable. Ex: Missile: Red - imminent threat, Green - no threat." AmplifierID="AL" X="0" Y="-1"/>
         <Field Name="AO" Label="Engagement Bar" Description="May denote 1ocal/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
@@ -356,7 +358,16 @@
         <DigitOne>1</DigitOne>
         <DigitTwo>0</DigitTwo>
       </DimensionCode>
+      <LegacyDimensionCode Name="2525C" FirstFunctionLetter="-">G</LegacyDimensionCode>
       <LegacyDimensionCode Name="2525C" FirstFunctionLetter="U">G</LegacyDimensionCode>
+      <LegacyDimensionCode Name="2525C" CodingSchemeLetter="E">F</LegacyDimensionCode>
+      <LegacyDimensionCode Name="2525C" CodingSchemeLetter="E">I</LegacyDimensionCode>
+      <LegacyDimensionCode Name="2525C" CodingSchemeLetter="E">O</LegacyDimensionCode>
+      <LegacyDimensionCode Name="2525C" CodingSchemeLetter="O">G</LegacyDimensionCode>
+      <LegacyDimensionCode Name="2525C" CodingSchemeLetter="O" FirstFunctionLetter="R">I</LegacyDimensionCode>
+      <LegacyDimensionCode Name="2525C" CodingSchemeLetter="O">O</LegacyDimensionCode>
+      <LegacyDimensionCode Name="2525C" CodingSchemeLetter="O">P</LegacyDimensionCode>
+      <LegacyDimensionCode Name="2525C" CodingSchemeLetter="O">R</LegacyDimensionCode>
       <LegacyDimensionCode Name="2525C">F</LegacyDimensionCode>
       <Fields>
         <Field Name="AA" Label="Special C2 Headquarters" Description="A text modifier for units; indicator is contained inside the frame; contains the name of the special C2 Headquarters." AmplifierID="AA" X="0" Y="0"/>
@@ -414,6 +425,14 @@
         <DigitTwo>5</DigitTwo>
       </DimensionCode>
       <LegacyDimensionCode Name="2525C" FirstFunctionLetter="E">G</LegacyDimensionCode>
+      <LegacyDimensionCode Name="2525C" CodingSchemeLetter="E" FirstFunctionLetter="D">O</LegacyDimensionCode>
+      <LegacyDimensionCode Name="2525C" CodingSchemeLetter="E" FirstFunctionLetter="A">O</LegacyDimensionCode>
+      <LegacyDimensionCode Name="2525C" CodingSchemeLetter="E" FirstFunctionLetter="B">O</LegacyDimensionCode>
+      <LegacyDimensionCode Name="2525C" CodingSchemeLetter="E" FirstFunctionLetter="C">O</LegacyDimensionCode>
+      <LegacyDimensionCode Name="2525C" CodingSchemeLetter="E" FirstFunctionLetter="E">O</LegacyDimensionCode>
+      <LegacyDimensionCode Name="2525C" CodingSchemeLetter="I" FirstFunctionLetter="S">G</LegacyDimensionCode>
+      <LegacyDimensionCode Name="2525C" CodingSchemeLetter="O" FirstFunctionLetter="I">I</LegacyDimensionCode>
+      <LegacyDimensionCode Name="2525C" CodingSchemeLetter="O" FirstFunctionLetter="D">I</LegacyDimensionCode>
       <Fields>
         <Field Name="AA" Label="Special C2 Headquarters" Description="A text modifier for units; indicator is contained inside the frame; contains the name of the special C2 Headquarters." AmplifierID="AA" X="0" Y="0"/>
         <Field Name="AB" Label="Feint/Dummy Indicator" Description="A graphic amplifier for units, equipment and installations that identifies an offensive or defensive unit intended to draw the enemy's attention away from the area of the main attack." AmplifierID="AB" X="0" Y="1"/>
@@ -477,6 +496,10 @@
         <DigitTwo>0</DigitTwo>
       </DimensionCode>
       <LegacyDimensionCode Name="2525C" FirstFunctionLetter="I">G</LegacyDimensionCode>
+      <LegacyDimensionCode Name="2525C" CodingSchemeLetter="E">F</LegacyDimensionCode>
+      <LegacyDimensionCode Name="2525C" CodingSchemeLetter="E">O</LegacyDimensionCode>
+      <LegacyDimensionCode Name="2525C" CodingSchemeLetter="O">I</LegacyDimensionCode>
+      <LegacyDimensionCode Name="2525C" CodingSchemeLetter="O">L</LegacyDimensionCode>
       <Fields>
         <Field Name="AA" Label="Special C2 Headquarters" Description="A text modifier for units; indicator is contained inside the frame; contains the name of the special C2 Headquarters." AmplifierID="AA" X="0" Y="0"/>
         <Field Name="AB" Label="Feint/Dummy Indicator" Description="A graphic amplifier for units, equipment and installations that identifies an offensive or defensive unit intended to draw the enemy's attention away from the area of the main attack." AmplifierID="AB" X="0" Y="1"/>
@@ -526,6 +549,7 @@
         <DigitTwo>0</DigitTwo>
       </DimensionCode>
       <LegacyDimensionCode Name="2525C" CodingSchemeLetter="S">S</LegacyDimensionCode>
+      <LegacyDimensionCode Name="2525C" CodingSchemeLetter="I" FirstFunctionLetter="S">S</LegacyDimensionCode>
       <Fields>
         <Field Name="AL" Label="Operational Condition" Description="Indicates operational condition." Remarks="Comprised of only one color. Ex. Satellite: Red - damaged, Green - fully capable. Ex: Missile: Red - imminent threat, Green - no threat." AmplifierID="AL" X="0" Y="-1"/>
         <Field Name="AO" Label="Engagement Bar" Description="May denote 1ocal/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
@@ -618,6 +642,9 @@
       </DimensionCode>
       <LegacyDimensionCode Name="2525C">I</LegacyDimensionCode>
       <LegacyDimensionCode Name="2525C">O</LegacyDimensionCode>
+      <LegacyDimensionCode Name="2525C" CodingSchemeLetter="E">N</LegacyDimensionCode>
+      <LegacyDimensionCode Name="2525C" CodingSchemeLetter="O">R</LegacyDimensionCode>
+      <LegacyDimensionCode Name="2525C" CodingSchemeLetter="O">V</LegacyDimensionCode>
       <Fields>
         <Field Name="AS" Label="Country Indicator" Description="A three-letter code that indicates the country of origin of the organization (STANAG 1059)." Remarks="In stability activities, this field can be used for factions or groups." AmplifierID="AS" X="1" Y="2"/>
         <Field Name="G" Label="Staff Comments" Description="Free text." Remarks="Can be used by staff for information required by commander." AmplifierID="G" X="1" Y="1"/>
@@ -684,6 +711,7 @@
       </DimensionCode>
       <LegacyDimensionCode Name="2525C" CodingSchemeLetter="W">-</LegacyDimensionCode>
       <LegacyDimensionCode Name="2525C" CodingSchemeLetter="W">S</LegacyDimensionCode>
+      <LegacyDimensionCode Name="2525C" CodingSchemeLetter="E">N</LegacyDimensionCode>
       <Fields>
         <Field Name="G" Label="Staff Comments" Description="Free text." Remarks="Can be used by staff for information required by commander." AmplifierID="G" X="1" Y="1"/>
         <Field Name="H" Label="Additional Informartion" Description="Free text." AmplifierID="H" X="1" Y="0"/>
@@ -994,20 +1022,24 @@
 
     <Affiliation ID="REALITY_LE_PENDING" ContextID="REALITY" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="0_015_0.svg">
       <LegacyStandardIdentityCode Name="2525C" FirstFunctionLetter="E">P</LegacyStandardIdentityCode>
+      <LegacyStandardIdentityCode Name="2525C" CodingSchemeLetter="O" FirstFunctionLetter="I">P</LegacyStandardIdentityCode>
     </Affiliation>
 
     <Affiliation ID="EXERCISE_LE_PENDING" ContextID="EXERCISE" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="1_015_0.svg">
       <LegacyStandardIdentityCode Name="2525C" FirstFunctionLetter="E">G</LegacyStandardIdentityCode>
+      <LegacyStandardIdentityCode Name="2525C" CodingSchemeLetter="O" FirstFunctionLetter="I">G</LegacyStandardIdentityCode>
     </Affiliation>
 
     <Affiliation ID="SIMULATED_LE_PENDING" ContextID="SIMULATION" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="2_015_0.svg"/>
 
     <Affiliation ID="REALITY_LE_UNKNOWN" ContextID="REALITY" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="0_115_0.svg" PlannedGraphic="0_115_1.svg">
       <LegacyStandardIdentityCode Name="2525C" FirstFunctionLetter="E">U</LegacyStandardIdentityCode>
+      <LegacyStandardIdentityCode Name="2525C" CodingSchemeLetter="O" FirstFunctionLetter="I">U</LegacyStandardIdentityCode>
     </Affiliation>
 
     <Affiliation ID="EXERCISE_LE_UNKNOWN" ContextID="EXERCISE" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="1_115_0.svg" PlannedGraphic="1_115_1.svg">
       <LegacyStandardIdentityCode Name="2525C" FirstFunctionLetter="E">W</LegacyStandardIdentityCode>
+      <LegacyStandardIdentityCode Name="2525C" CodingSchemeLetter="O" FirstFunctionLetter="I">W</LegacyStandardIdentityCode>
     </Affiliation>
 
     <Affiliation ID="SIMULATED_LE_UNKNOWN" ContextID="SIMULATION" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="2_115_0.svg" PlannedGraphic="2_115_1.svg"/>
@@ -1427,74 +1459,31 @@
     <Affiliation ID="REALITY_METOC_ATMOS" ContextID="REALITY" DimensionID="METOC" StandardIdentityID="SI_PENDING" Shape="NA">
       <LegacyStandardIdentityCode Name="2525C" Description="Atmospheric">A</LegacyStandardIdentityCode>
     </Affiliation>
-    
-    <Affiliation ID="EXERCISE_METOC_ATMOS" ContextID="EXERCISE" DimensionID="METOC" StandardIdentityID="SI_PENDING" Shape="NA">
-      <LegacyStandardIdentityCode Name="2525C" Description="Atmospheric">A</LegacyStandardIdentityCode>
-    </Affiliation>
-    
-    <Affiliation ID="SIMULATED_METOC_ATMOS" ContextID="SIMULATION" DimensionID="METOC" StandardIdentityID="SI_PENDING" Shape="NA">
-      <LegacyStandardIdentityCode Name="2525C" Description="Atmospheric">A</LegacyStandardIdentityCode>
-    
-  </Affiliation>
 
     <Affiliation ID="REALITY_METOC_OCEO" ContextID="REALITY" DimensionID="METOC" StandardIdentityID="SI_PENDING" Shape="NA">
-      <LegacyStandardIdentityCode Name="2525C" Description="Oceanic">O</LegacyStandardIdentityCode>
-    </Affiliation>
-    
-    <Affiliation ID="EXERCISE_METOC_OCEO" ContextID="EXERCISE" DimensionID="METOC" StandardIdentityID="SI_PENDING" Shape="NA">
-      <LegacyStandardIdentityCode Name="2525C" Description="Oceanic">O</LegacyStandardIdentityCode>
-    </Affiliation>
-  
-    <Affiliation ID="SIMULATED_METOC_OCEO" ContextID="SIMULATION" DimensionID="METOC" StandardIdentityID="SI_PENDING" Shape="NA">
       <LegacyStandardIdentityCode Name="2525C" Description="Oceanic">O</LegacyStandardIdentityCode>
     </Affiliation>
 
     <Affiliation ID="REALITY_METOC_SPACE" ContextID="REALITY" DimensionID="METOC" StandardIdentityID="SI_PENDING" Shape="NA">
       <LegacyStandardIdentityCode Name="2525C" Description="Space">S</LegacyStandardIdentityCode>
     </Affiliation>
-  
-    <Affiliation ID="EXERCISE_METOC_SPACE" ContextID="EXERCISE" DimensionID="METOC" StandardIdentityID="SI_PENDING" Shape="NA">
-      <LegacyStandardIdentityCode Name="2525C" Description="Space">S</LegacyStandardIdentityCode>
-    </Affiliation>
-      
-    <Affiliation ID="SIMULATED_METOC_SPACE" ContextID="SIMULATION" DimensionID="METOC" StandardIdentityID="SI_PENDING" Shape="NA">
-      <LegacyStandardIdentityCode Name="2525C" Description="Space">S</LegacyStandardIdentityCode>
-    </Affiliation>
-  
-    <Affiliation ID="REALITY_METOC_ATMOS_UNK" ContextID="REALITY" DimensionID="METOC" StandardIdentityID="SI_UNKNOWN" Shape="NA">
-      <LegacyStandardIdentityCode Name="2525C" Description="Atmospheric">A</LegacyStandardIdentityCode>
-    </Affiliation>
     
-    <Affiliation ID="EXERCISE_METOC_ATMOS_UNK" ContextID="EXERCISE" DimensionID="METOC" StandardIdentityID="SI_UNKNOWN" Shape="NA">
-      <LegacyStandardIdentityCode Name="2525C" Description="Atmospheric">A</LegacyStandardIdentityCode>
-    </Affiliation>
-    
-    <Affiliation ID="SIMULATED_METOC_ATMOS_UNK" ContextID="SIMULATION" DimensionID="METOC" StandardIdentityID="SI_UNKNOWN" Shape="NA">
-      <LegacyStandardIdentityCode Name="2525C" Description="Atmospheric">A</LegacyStandardIdentityCode>
-    </Affiliation>
+    <!-- METOC Affiliations for 2525C legacy support -->
 
-    <Affiliation ID="REALITY_METOC_OCEO_UNK" ContextID="REALITY" DimensionID="METOC" StandardIdentityID="SI_UNKNOWN" Shape="NA">
-      <LegacyStandardIdentityCode Name="2525C" Description="Oceanic">O</LegacyStandardIdentityCode>
+    <Affiliation ID="METOC_PENDING" ContextID="REALITY" DimensionID="METOC" StandardIdentityID="SI_PENDING" Shape="NA">
+      <LegacyStandardIdentityCode Name="2525C" Description="Pending METOC">P</LegacyStandardIdentityCode>
     </Affiliation>
-    
-    <Affiliation ID="EXERCISE_METOC_OCEO_UNK" ContextID="EXERCISE" DimensionID="METOC" StandardIdentityID="SI_UNKNOWN" Shape="NA">
-      <LegacyStandardIdentityCode Name="2525C" Description="Oceanic">O</LegacyStandardIdentityCode>
+    <Affiliation ID="METOC_UNKNOWN" ContextID="REALITY" DimensionID="METOC" StandardIdentityID="SI_UNKNOWN" Shape="NA">
+      <LegacyStandardIdentityCode Name="2525C" Description="Unknown METOC">U</LegacyStandardIdentityCode>
     </Affiliation>
-  
-    <Affiliation ID="SIMULATED_METOC_OCEO_UNK" ContextID="SIMULATION" DimensionID="METOC" StandardIdentityID="SI_UNKNOWN" Shape="NA">
-      <LegacyStandardIdentityCode Name="2525C" Description="Oceanic">O</LegacyStandardIdentityCode>
+    <Affiliation ID="METOC_FRIEND" ContextID="REALITY" DimensionID="METOC" StandardIdentityID="SI_FRIEND" Shape="NA">
+      <LegacyStandardIdentityCode Name="2525C" Description="Friend METOC">F</LegacyStandardIdentityCode>
     </Affiliation>
-
-    <Affiliation ID="REALITY_METOC_SPACE_UNK" ContextID="REALITY" DimensionID="METOC" StandardIdentityID="SI_UNKNOWN" Shape="NA">
-      <LegacyStandardIdentityCode Name="2525C" Description="Space">S</LegacyStandardIdentityCode>
+    <Affiliation ID="METOC_NEUTRAL" ContextID="REALITY" DimensionID="METOC" StandardIdentityID="SI_NEUTRAL" Shape="NA">
+      <LegacyStandardIdentityCode Name="2525C" Description="Neutral METOC">N</LegacyStandardIdentityCode>
     </Affiliation>
-  
-    <Affiliation ID="EXERCISE_METOC_SPACE_UNK" ContextID="EXERCISE" DimensionID="METOC" StandardIdentityID="SI_UNKNOWN" Shape="NA">
-      <LegacyStandardIdentityCode Name="2525C" Description="Space">S</LegacyStandardIdentityCode>
-    </Affiliation>
-      
-      <Affiliation ID="SIMULATED_METOC_SPACE_UNK" ContextID="SIMULATION" DimensionID="METOC" StandardIdentityID="SI_UNKNOWN" Shape="NA">
-        <LegacyStandardIdentityCode Name="2525C" Description="Space">S</LegacyStandardIdentityCode>
+    <Affiliation ID="METOC_HOSTILE" ContextID="REALITY" DimensionID="METOC" StandardIdentityID="SI_HOSTILE_FAKER" Shape="NA">
+      <LegacyStandardIdentityCode Name="2525C" Description="Hostile/Faker METOC">H</LegacyStandardIdentityCode>
     </Affiliation>
   </Affiliations>
 

@@ -428,7 +428,7 @@ namespace JointMilitarySymbologyLibrary
             if (_affiliation != null)
             {
                 path = _configHelper.GetPath(_context.ID, FindEnum.FindFrames);
-                path = _configHelper.BuildOriginalPath(path, (_status.StatusCode == 1) ? _affiliation.PlannedGraphic : _affiliation.Graphic);
+                path = _configHelper.BuildOriginalPath(path, (_status.StatusCode == 1 && _affiliation.PlannedGraphic != "") ? _affiliation.PlannedGraphic : _affiliation.Graphic);
                 _graphics.Add(path);
             }
 
@@ -842,10 +842,16 @@ namespace JointMilitarySymbologyLibrary
                 if (_entityType != null)
                 {
                     _entitySubType = _librarian.EntitySubType(_entityType, Convert.ToUInt16(second10.Substring(4, 1)), Convert.ToUInt16(second10.Substring(5, 1)));
+
+                    if (_entitySubType == null)
+                    {
+                        _entitySubType = _librarian.EntitySubType(_symbolSet, Convert.ToUInt16(second10.Substring(4, 1)), Convert.ToUInt16(second10.Substring(5, 1)));
+                    }
                 }
 
                 _modifierOne = _librarian.ModifierOne(_symbolSet, Convert.ToUInt16(second10.Substring(6, 1)), Convert.ToUInt16(second10.Substring(7, 1)));
                 _modifierTwo = _librarian.ModifierTwo(_symbolSet, Convert.ToUInt16(second10.Substring(8, 1)), Convert.ToUInt16(second10.Substring(9, 1)));
+
                 _legacySymbol = _librarian.LegacySymbol(_symbolSet, _entity, _entityType, _entitySubType, _modifierOne, _modifierTwo);
             }
 
@@ -863,44 +869,34 @@ namespace JointMilitarySymbologyLibrary
 
             _version = _librarian.Version(1, 0);
 
-            _affiliation = _librarian.AffiliationByLegacyCode(_legacySIDC.Substring(1, 1), _legacySIDC.Substring(2, 1), _legacySIDC.Substring(4,1), _legacySIDC.Substring(0,1));
-
-            if (_affiliation != null)
-            {
-                _context = _librarian.Context(_affiliation.ContextID);
-                _standardIdentity = _librarian.StandardIdentity(_affiliation.StandardIdentityID);
-                _sig = _librarian.StandardIdentityGroup(_standardIdentity);
-            }
-            
-            _dimension = _librarian.DimensionByLegacyCode(_legacySIDC.Substring(2, 1), _legacySIDC.Substring(4,1), _legacySIDC.Substring(0,1));
-
-            if (_dimension != null)
-            {
-                _symbolSet = _librarian.SymbolSet(_dimension.ID, _legacySIDC.Substring(4, 6));
-            }
-
-            _status = _librarian.Status(_legacySIDC.Substring(3, 1), _legacySIDC.Substring(0, 1));
-            _hqTFDummy = _librarian.HQTFDummy(_legacySIDC.Substring(10, 1));
-
-            if (_context != null && _affiliation != null)
-            {
-                _contextAmplifier = _librarian.ContextAmplifier(_context, _affiliation.Shape);
-            }
-
-            _amplifier = _librarian.Amplifier(_legacySIDC.Substring(11, 1), _legacySIDC.Substring(0,1));
-
-            if (_amplifier != null)
-            {
-                _amplifierGroup = _librarian.AmplifierGroup(_amplifier);
-            }
-
-            if (_symbolSet != null)
-            {
-                _legacySymbol = _librarian.LegacySymbol(_symbolSet, _legacySIDC);
-            }
+            _legacySymbol = _librarian.LegacySymbol(_legacySIDC, ref _dimension, ref _symbolSet);
 
             if (_legacySymbol != null)
             {
+                _affiliation = _librarian.AffiliationByLegacyCode(_legacySIDC.Substring(1, 1), _dimension.ID);
+
+                if (_affiliation != null)
+                {
+                    _context = _librarian.Context(_affiliation.ContextID);
+                    _standardIdentity = _librarian.StandardIdentity(_affiliation.StandardIdentityID);
+                    _sig = _librarian.StandardIdentityGroup(_standardIdentity);
+                }
+
+                _status = _librarian.Status(_legacySIDC.Substring(3, 1), _legacySIDC.Substring(0, 1));
+                _hqTFDummy = _librarian.HQTFDummy(_legacySIDC.Substring(10, 1));
+
+                if (_context != null && _affiliation != null)
+                {
+                    _contextAmplifier = _librarian.ContextAmplifier(_context, _affiliation.Shape);
+                }
+
+                _amplifier = _librarian.Amplifier(_legacySIDC.Substring(11, 1), _legacySIDC.Substring(0, 1));
+
+                if (_amplifier != null)
+                {
+                    _amplifierGroup = _librarian.AmplifierGroup(_amplifier);
+                }
+
                 _entity = _librarian.Entity(_symbolSet, _legacySymbol.EntityID);
                 _entityType = _librarian.EntityType(_entity, _legacySymbol.EntityTypeID);
                 _entitySubType = _librarian.EntitySubType(_symbolSet, _entityType, _legacySymbol.EntitySubTypeID);
@@ -920,16 +916,16 @@ namespace JointMilitarySymbologyLibrary
 
             _version = _librarian.Version(1, 0);
             _context = _librarian.Context(0);
-            _dimension = _librarian.Dimension("I");
-            _standardIdentity = _librarian.StandardIdentity(0);
-            _symbolSet = _librarian.SymbolSet(8, 8);
+            _dimension = _librarian.Dimension("INTERNAL");
+            _standardIdentity = _librarian.StandardIdentity(1);
+            _symbolSet = _librarian.SymbolSet(9, 8);
             _status = _librarian.Status(0);
             _hqTFDummy = _librarian.HQTFDummy(0);
             _amplifierGroup = _librarian.AmplifierGroup(0);
             _amplifier = _librarian.Amplifier(_amplifierGroup, 0);
-            _affiliation = _librarian.Affiliation("REALITY", "INTERNAL", "SI_PENDING");
+            _affiliation = _librarian.Affiliation("REALITY", "INTERNAL", "SI_UNKNOWN");
             _contextAmplifier = _librarian.ContextAmplifier(_context, _affiliation.Shape);
-
+            _entity = _librarian.Entity(_symbolSet, "INVALID");
             _entityType = null;
             _entitySubType = null;
             _modifierOne = null;
@@ -953,8 +949,7 @@ namespace JointMilitarySymbologyLibrary
                 // Confirm retirement with Remarks check.
                 if (_legacySymbol.Remarks == "Retired")
                 {
-                    //_SetInvalidSymbolProps();
-                    _entity = _librarian.Entity(_symbolSet, 1, 1);
+                    _SetInvalidSymbolProps();
                     _symbolStat = SymbolStatusEnum.statusEnumRetired;
                 }
                 else

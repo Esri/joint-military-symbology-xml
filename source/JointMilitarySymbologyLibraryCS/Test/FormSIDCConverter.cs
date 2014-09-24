@@ -93,11 +93,14 @@ namespace Test
 
             if (rule != null)
             {
-                ListViewItem item = new ListViewItem(rule["Name"]);
-                item.SubItems.Add(rule["AnchorPoints"]);
-                item.SubItems.Add(rule["SizeShape"]);
-                item.SubItems.Add(rule["Orientation"]);
-                listView2.Items.Add(item);
+                if (rule.Count > 0)
+                {
+                    ListViewItem item = new ListViewItem(rule["Name"]);
+                    item.SubItems.Add(rule["AnchorPoints"]);
+                    item.SubItems.Add(rule["SizeShape"]);
+                    item.SubItems.Add(rule["Orientation"]);
+                    listView2.Items.Add(item);
+                }
             }
 
             label10.Text = _symbol.DrawNote;
