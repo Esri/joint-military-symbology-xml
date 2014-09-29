@@ -111,5 +111,15 @@ namespace JointMilitarySymbologyLibrary
 
             return result;
         }
+
+        public string NameIt(LibraryStandardIdentity identity, LibraryDimension dimension, LibraryStatus status)
+        {
+            string name = "";
+
+            if(status != null)
+                name = BuildOCAItemName(identity, dimension, status);
+
+            return name;
+        }
     }
 }

@@ -360,6 +360,12 @@
     </Modifier>
   </SectorOneModifiers>
   <LegacySymbols>
+    <LegacySymbol ID="SIGNAL_INTERCEPT_COMMUNICATIONS_OMNI_LOS_SYM" Label="I*APSCO-----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="COMMUNICATIONS" ModifierOneID="OMNI_LOS_MOD">
+      <LegacyFunctionCode Name="2525C" DimensionOverride="A">SCO---</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SIGNAL_INTERCEPT_COMMUNICATIONS_SATELLITE_UPLINK_SYM" Label="I*APSCS-----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="COMMUNICATIONS" ModifierOneID="SATELLITE_UPLINK_MOD">
+      <LegacyFunctionCode Name="2525C" DimensionOverride="A">SCS---</LegacyFunctionCode>
+    </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_AIRBORNE_INTERCEPT_MOD_SYM" Label="I*APSRAI----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="AIRBORNE_INTERCEPT_MOD">
       <LegacyFunctionCode Name="2525C">SRAI--</LegacyFunctionCode>
     </LegacySymbol>

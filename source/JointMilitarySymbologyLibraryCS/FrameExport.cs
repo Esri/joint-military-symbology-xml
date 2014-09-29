@@ -133,5 +133,15 @@ namespace JointMilitarySymbologyLibrary
 
             return result;
         }
+
+        public string NameIt(LibraryContext context, LibraryDimension dimension, LibraryStandardIdentity identity, LibraryStatus status)
+        {
+            string name = "";
+
+            if (identity != null)
+                name = BuildFrameItemName(context, dimension, identity, status);
+            
+            return name;
+        }
     }
 }

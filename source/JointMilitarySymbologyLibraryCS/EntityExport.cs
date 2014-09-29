@@ -316,8 +316,6 @@ namespace JointMilitarySymbologyLibrary
                 result = result + ";" + sig.Label;
             }
 
-            result = result + ";" + iType;
-
             // Add an equivalent 2525C SIDC tag, if one exists
 
             if (!omitLegacy)
@@ -327,9 +325,17 @@ namespace JointMilitarySymbologyLibrary
                     result = result + ";" + sidcTag;
             }
 
+            // Add the icon's type
+
+            result = result + ";" + iType;
+
+            // Add the svg source
+
             if (!omitSource)
                 result = result + ";" + _configHelper.GetPath(ss.ID, FindEnum.FindEntities, true) + "\\" + graphic;
             
+            // Add the three most important pieces of information
+
             result = result + ";" + geometry;
             result = result + ";" + BuildEntityItemName(sig, ss, e, eType, eSubType);
             result = result + ";" + BuildEntityCode(sig, ss, e, eType, eSubType);
@@ -351,7 +357,7 @@ namespace JointMilitarySymbologyLibrary
                                             SymbolSetEntityEntityType eType,
                                             EntitySubTypeType eSubType)
         {
-            string result = _configHelper.SIDCIsNA;
+            string result = _configHelper.SIDCIsNew;
 
             if(ss != null && e != null)
             {
@@ -411,6 +417,16 @@ namespace JointMilitarySymbologyLibrary
             }
 
             return result;
+        }
+
+        public string NameIt(LibraryStandardIdentityGroup sig, SymbolSet ss, SymbolSetEntity e, SymbolSetEntityEntityType eType, EntitySubTypeType eSubType)
+        {
+            string name = "";
+
+            if(ss != null && e != null)
+                name = BuildEntityItemName(sig, ss, e, eType, eSubType);
+
+            return name;
         }
     }
 }

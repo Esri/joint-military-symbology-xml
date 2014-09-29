@@ -163,6 +163,18 @@ namespace JointMilitarySymbologyLibrary
 
             return result;
         }
+
+        public string NameIt(LibraryAmplifierGroup amplifierGroup,
+                             LibraryAmplifierGroupAmplifier amplifier,
+                             LibraryStandardIdentityGroup identityGroup)
+        {
+            string name = "";
+
+            if (amplifierGroup != null && amplifier != null)
+                name = BuildAmplifierItemName(amplifierGroup, amplifier, identityGroup);
+
+            return name;
+        }
     }
 }
 

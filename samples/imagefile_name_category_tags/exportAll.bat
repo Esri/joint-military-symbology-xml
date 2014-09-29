@@ -16,17 +16,17 @@ jmsml.exe /xe="../../../../../samples/imagefile_name_category_tags/Military-Cont
 jmsml.exe /xe="../../../../../samples/imagefile_name_category_tags/Military-Weather-Source-Points" /p /s="Atmospheric|Oceanographic|Meteorological Space" /+ /xas="IMAGE" /size="64" /-source
 jmsml.exe /xe="../../../../../samples/imagefile_name_category_tags/Military-Weather-Source-Lines" /l /s="Atmospheric|Oceanographic|Meteorological Space" /+ /xas="IMAGE" /size="64" /-source
 jmsml.exe /xe="../../../../../samples/imagefile_name_category_tags/Military-Weather-Source-Areas" /a /s="Atmospheric|Oceanographic|Meteorological Space" /+ /xas="IMAGE" /size="64" /-source
-jmsml.exe /xf="../../../../../samples/imagefile_name_category_tags/Military-Frame-And-Amplifier-Source-Icons" /xas="IMAGE" /size="64" /-source
-jmsml.exe /xa="../../../../../samples/imagefile_name_category_tags/Military-Frame-And-Amplifier-Source-Icons" /+ /xas="IMAGE" /size="64" /-source
-jmsml.exe /xh="../../../../../samples/imagefile_name_category_tags/Military-Frame-And-Amplifier-Source-Icons" /+ /xas="IMAGE" /size="64" /-source
-jmsml.exe /xo="../../../../../samples/imagefile_name_category_tags/Military-Frame-And-Amplifier-Source-Icons" /+ /xas="IMAGE" /size="64" /-source
+jmsml.exe /xf="../../../../../samples/imagefile_name_category_tags/Military-Frame-And-Amplifier-Source-Icons" /xas="IMAGE" /size="64" /-source /-legacy
+jmsml.exe /xa="../../../../../samples/imagefile_name_category_tags/Military-Frame-And-Amplifier-Source-Icons" /+ /xas="IMAGE" /size="64" /-source /-legacy
+jmsml.exe /xh="../../../../../samples/imagefile_name_category_tags/Military-Frame-And-Amplifier-Source-Icons" /+ /xas="IMAGE" /size="64" /-source /-legacy
+jmsml.exe /xo="../../../../../samples/imagefile_name_category_tags/Military-Frame-And-Amplifier-Source-Icons" /+ /xas="IMAGE" /size="64" /-source /-legacy
 
 REM *** Append all the image file information together in a single file ***
 
 jmsml.exe /xe="../../../../../samples/imagefile_name_category_tags/Military-All-Icons" /+ /xas="IMAGE" /size="64" /-source
-jmsml.exe /xf="../../../../../samples/imagefile_name_category_tags/Military-All-Icons" /+ /xas="IMAGE" /size="64" /-source
-jmsml.exe /xa="../../../../../samples/imagefile_name_category_tags/Military-All-Icons" /+ /xas="IMAGE" /size="64" /-source
-jmsml.exe /xh="../../../../../samples/imagefile_name_category_tags/Military-All-Icons" /+ /xas="IMAGE" /size="64" /-source
-jmsml.exe /xo="../../../../../samples/imagefile_name_category_tags/Military-All-Icons" /+ /xas="IMAGE" /size="64" /-source
+jmsml.exe /xf="../../../../../samples/imagefile_name_category_tags/Military-All-Icons" /+ /xas="IMAGE" /size="64" /-source /-legacy
+jmsml.exe /xa="../../../../../samples/imagefile_name_category_tags/Military-All-Icons" /+ /xas="IMAGE" /size="64" /-source /-legacy
+jmsml.exe /xh="../../../../../samples/imagefile_name_category_tags/Military-All-Icons" /+ /xas="IMAGE" /size="64" /-source /-legacy
+jmsml.exe /xo="../../../../../samples/imagefile_name_category_tags/Military-All-Icons" /+ /xas="IMAGE" /size="64" /-source /-legacy
 
 endlocal
