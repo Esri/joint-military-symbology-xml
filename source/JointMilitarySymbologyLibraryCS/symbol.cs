@@ -76,6 +76,8 @@ namespace JointMilitarySymbologyLibrary
         private SIDC _sidc = new SIDC();
         private string _legacySIDC;
 
+        private Dictionary<string,string> _names = new Dictionary<string,string>();
+
         private string _tags = "";
         private List<Dictionary<string, string>> _labels = new List<Dictionary<string, string>>();
         private Dictionary<string, string> _drawRule = new Dictionary<string, string>();
@@ -107,6 +109,7 @@ namespace JointMilitarySymbologyLibrary
                     break;
             }
 
+            _BuildNames();
             _BuildTags();
             _BuildLabels();
             _BuildDrawRule();
@@ -132,6 +135,7 @@ namespace JointMilitarySymbologyLibrary
                     break;
             }
 
+            _BuildNames();
             _BuildTags();
             _BuildLabels();
             _BuildDrawRule();
@@ -194,6 +198,23 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
+        public IconType IconType
+        {
+            get
+            {
+                IconType icon = JointMilitarySymbologyLibrary.IconType.NA;
+
+                if (_entitySubType != null)
+                    icon = _entitySubType.Icon;
+                else if (_entityType != null)
+                    icon = _entityType.Icon;
+                else if (_entity != null)
+                    icon = _entity.Icon;
+
+                return icon;
+            }
+        }
+
         public GeometryType GeometryType
         {
             get
@@ -208,6 +229,14 @@ namespace JointMilitarySymbologyLibrary
                     geo = _entity.GeometryType;
 
                 return geo;
+            }
+        }
+
+        public Dictionary<string,string> Names
+        {
+            get
+            {
+                return _names;
             }
         }
 
@@ -595,6 +624,30 @@ namespace JointMilitarySymbologyLibrary
                     }
                 }
             }
+        }
+
+        private void _BuildNames()
+        {
+            _names.Clear();
+
+            EntityExport ee = new DomainEntityExport(_configHelper);
+            _names.Add("Entity",ee.NameIt(this.IconType == JointMilitarySymbologyLibrary.IconType.FULL_FRAME ? _sig : null, _symbolSet, _entity, _entityType, _entitySubType));
+
+            ModifierExport me = new DomainModifierExport(_configHelper);
+            _names.Add("ModifierOne", me.NameIt(_symbolSet, "1", _modifierOne));
+            _names.Add("ModifierTwo", me.NameIt(_symbolSet, "2", _modifierTwo));
+
+            FrameExport fe = new DomainFrameExport(_configHelper);
+            _names.Add("Frame", fe.NameIt(_context, _dimension, _standardIdentity, _status));
+
+            HQTFFDExport he = new DomainHQTFFDExport(_configHelper);
+            _names.Add("HQTFFD", he.NameIt(_sig, _dimension, _hqTFDummy));
+
+            AmplifierExport ae = new DomainAmplifierExport(_configHelper);
+            _names.Add("Amplifier", ae.NameIt(_amplifierGroup, _amplifier, _sig));
+
+            OCAExport oe = new DomainOCAExport(_configHelper);
+            _names.Add("OCA", oe.NameIt(_standardIdentity, _dimension, _status));
         }
 
         private void _BuildTags()

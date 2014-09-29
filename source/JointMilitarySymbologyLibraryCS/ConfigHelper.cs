@@ -69,6 +69,7 @@ namespace JointMilitarySymbologyLibrary
         public string GraphicExtension { get { return _etlConfig.GraphicExtension; } }
         public string DomainSeparator { get { return _etlConfig.DomainSeparator; } }
         public string SIDCIsNA { get { return "SIDC_IS_NA"; } }
+        public string SIDCIsNew { get { return "NEW_AT_2525D"; } }
         public int PointSize { get { return _etlConfig.PointSize; } set { _etlConfig.PointSize = value; } }
 
         private bool _splitAndSearch(string listToSplit, string lookingFor)

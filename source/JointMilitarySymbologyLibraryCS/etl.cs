@@ -1114,7 +1114,7 @@ namespace JointMilitarySymbologyLibrary
                 long passWithConditionCount = 0;
                 long totalCount = 0;
 
-                stream.WriteLine("2525Charlie1stTen,2525Charlie,2525DeltaSymbolSet,2525DeltaEntity,2525DeltaMod1,2525DeltaMod2,DeltaToCharlie,Remarks");
+                stream.WriteLine("2525Charlie1stTen,2525Charlie,2525DeltaSymbolSet,2525DeltaEntity,2525DeltaMod1,2525DeltaMod2,2525DeltaName,2525DeltaMod1Name,2525DeltaMod2Name,DeltaToCharlie,Remarks");
                 stream.Flush();
 
                 foreach (SymbolSet ss in _librarian.SymbolSets)
@@ -1141,6 +1141,10 @@ namespace JointMilitarySymbologyLibrary
                                     string dSecond10 = "";
                                     string cSIDCOut = "";
                                     string status = "";
+
+                                    string symbolName = "";
+                                    string modOneName = "";
+                                    string modTwoName = "";
 
                                     totalCount++;
 
@@ -1178,6 +1182,10 @@ namespace JointMilitarySymbologyLibrary
                                             if (sym2 != null)
                                             {
                                                 cSIDCOut = sym2.LegacySIDC;
+
+                                                symbolName = sym2.Names["Entity"];
+                                                modOneName = sym2.Names["ModifierOne"];
+                                                modTwoName = sym2.Names["ModifierTwo"];
 
                                                 if (cSIDCIn == cSIDCOut)
                                                 {
@@ -1240,6 +1248,9 @@ namespace JointMilitarySymbologyLibrary
                                                      dSecond10.Substring(0,6) + "," +
                                                      dSecond10.Substring(6,2) + "," +
                                                      dSecond10.Substring(8,2) + "," +
+                                                     symbolName + "," +
+                                                     modOneName + "," +
+                                                     modTwoName + "," +
                                                      cSIDCOut + "," +
                                                      status);
                                     stream.Flush();
@@ -1330,7 +1341,7 @@ namespace JointMilitarySymbologyLibrary
 
                 case ETLExportEnum.ETLExportImage:
                     entityExporter = new ImageEntityExport(_configHelper, omitSource, omitLegacy);
-                    modifierExporter = new ImageModifierExport(_configHelper, omitSource, omitLegacy);
+                    modifierExporter = new ImageModifierExport(_configHelper, omitSource, true); // Suppress legacy tag
                     break;
             }
 

@@ -1184,7 +1184,7 @@
     <LegacySymbol ID="OPERATION_SPY_SYM" Label="O*OPS-----*****" EntityID="OPERATION" EntityTypeID="SPY">
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="O">S-----</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="OPERATION_EMERGENCY_OPERATION_SYM" Label="E*OPB-----*****" Remarks="Retired">
+    <LegacySymbol ID="OPERATION_EMERGENCY_OPERATION_SYM" Label="E*OPB-----*****" EntityID="OPERATION" EntityTypeID="EMERGENCY_OPERATION">
       <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">B-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="OPERATION_EMERGENCY_OPERATION_EMERGENCY_COLLECTION_EVACUATION_POINT_SYM" Label="E*OPBD----*****" EntityID="OPERATION" EntityTypeID="EMERGENCY_OPERATION" EntitySubTypeID="EMERGENCY_COLLECTION_EVACUATION_POINT">

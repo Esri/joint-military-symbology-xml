@@ -748,7 +748,7 @@
                 <DigitTwo>4</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="EW_SEARCH" Label="Search" Graphic="10150505.svg">
+            <EntitySubType ID="EW_SEARCH" Label="Search" Graphic="10150505.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>5</DigitTwo>
@@ -756,7 +756,7 @@
             </EntitySubType>
           </EntitySubTypes>
         </EntityType>
-        <EntityType ID="INTERCEPT_SEARCH_RECORDING" Label="Intercept (Search and Recording)" Graphic="10150600.svg">
+        <EntityType ID="INTERCEPT_SEARCH_RECORDING" Label="Intercept (Search and Recording)" Graphic="10150600.svg" Icon="FULL_OCTAGON">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>6</DigitTwo>
@@ -2083,7 +2083,7 @@
   </SectorTwoModifiers>
   <LegacySymbols>
     <LegacySymbol ID="GROUND_TRACK_SYM" Label="S*GP------*****" Remarks="Retired">
-      <LegacyFunctionCode Name="2525C">------</LegacyFunctionCode> 
+      <LegacyFunctionCode Name="2525C" SchemaOverride="S" DimensionOverride="G">------</LegacyFunctionCode> 
     </LegacySymbol>
     <LegacySymbol ID="COMMAND_AND_CONTROL_CIVIL_AFFAIRS_SYM" Label="S*FPGC----*****" EntityID="COMMAND_AND_CONTROL" EntityTypeID="CIVIL_AFFAIRS">
       <LegacyFunctionCode Name="2525C" DimensionOverride="F">GC----</LegacyFunctionCode>
@@ -2413,7 +2413,7 @@
       <LegacyFunctionCode Name="2525C" DimensionOverride="F">GS----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_SPECIAL_OPERATIONS_FORCES_SOF_SYM" Label="S*FP------*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="SPECIAL_OPERATIONS_FORCES_SOF">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="F">------</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" SchemaOverride="S" DimensionOverride="F">------</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_SPECIAL_OPERATIONS_FORCES_SOF_ATTACK_2_MOD_SYM" Label="S*FPB-----*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="SPECIAL_OPERATIONS_FORCES_SOF" ModifierTwoID="ATTACK_2_MOD">
       <LegacyFunctionCode Name="2525C" SchemaOverride="S" DimensionOverride="F">B-----</LegacyFunctionCode>
@@ -2719,7 +2719,7 @@
     <LegacySymbol ID="PROTECTION_SHORE_PATROL_SYM" Label="S*GPUULS--*****" EntityID="PROTECTION" EntityTypeID="SHORE_PATROL">
       <LegacyFunctionCode Name="2525C">UULS--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="INTELLIGENCE_COUNTERINTELLIGENCE_SYM" Label="S*GPUUMC-------" EntityID="INTELLIGENCE" EntityTypeID="COUNTERINTELLIGENCE">
+    <LegacySymbol ID="INTELLIGENCE_COUNTERINTELLIGENCE_SYM" Label="S*GPUUMC--*****" EntityID="INTELLIGENCE" EntityTypeID="COUNTERINTELLIGENCE">
       <LegacyFunctionCode Name="2525C">UUMC--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INTELLIGENCE_ELECTRONIC_RANGING_SYM" Label="S*GPUUSX--*****" EntityID="INTELLIGENCE" EntityTypeID="ELECTRONIC_RANGING">
@@ -3230,7 +3230,7 @@
     <LegacySymbol ID="LAW_ENFORCEMENT_US_MARSHALS_SERVICE_SYM" Label="EFOPDOA---*****" EntityID="LAW_ENFORCEMENT" EntityTypeID="US_MARSHALS_SERVICE">
       <LegacyFunctionCode Name="2525C" SchemaOverride="E" StandardIdentityOverride="F" DimensionOverride="O">DOA---</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="MOVEMENT_AND_MANEUVER_INFANTRY_INFANTRY_FIGHTING_VEHICLE_SYM" Label="S*GPUCII-------" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="INFANTRY" EntitySubTypeID="INFANTRY_FIGHTING_VEHICLE">
+    <LegacySymbol ID="MOVEMENT_AND_MANEUVER_INFANTRY_INFANTRY_FIGHTING_VEHICLE_SYM" Label="S*GPUCII--*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="INFANTRY" EntitySubTypeID="INFANTRY_FIGHTING_VEHICLE">
       <LegacyFunctionCode Name="2525C">UCII--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ANTITANK_ANTIARMOR_AIR_MOBILE_AIR_ASSAULT_MOD_WHEELED_MOD_SYM" Label="S*GPUCAWS-*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ANTITANK_ANTIARMOR" ModifierOneID="AIR_MOBILE_AIR_ASSAULT_MOD" ModifierTwoID="WHEELED_MOD">
@@ -3243,7 +3243,7 @@
       <LegacyFunctionCode Name="2525C">UCFRMT</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="RETIRED_SYM" Label="S*GPU-----*****" Remarks="Retired">
-      <LegacyFunctionCode Name="2525C">U-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" SchemaOverride="S">U-----</LegacyFunctionCode>
       <LegacyFunctionCode Name="2525C">UH----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="COMMAND_AND_CONTROL_TACTICAL_SATELLITE_SYM" Label="S*GPUCDSC-*****" EntityID="COMMAND_AND_CONTROL" EntityTypeID="TACTICAL_SATELLITE">

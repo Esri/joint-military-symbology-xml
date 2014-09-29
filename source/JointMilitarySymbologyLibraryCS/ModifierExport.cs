@@ -134,5 +134,15 @@ namespace JointMilitarySymbologyLibrary
 
             return result;
         }
+
+        public string NameIt(SymbolSet ss, string modNumber, ModifiersTypeModifier m)
+        {
+            string name = "";
+
+            if(ss != null && m != null)
+                name = BuildModifierItemName(ss, modNumber, m);
+
+            return name;
+        }
     }
 }

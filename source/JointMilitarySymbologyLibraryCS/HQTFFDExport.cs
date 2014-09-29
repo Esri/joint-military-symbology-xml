@@ -132,5 +132,15 @@ namespace JointMilitarySymbologyLibrary
 
             return result;
         }
+
+        public string NameIt(LibraryStandardIdentityGroup identityGroup, LibraryDimension dimension, LibraryHQTFDummy hqTFFD)
+        {
+            string name = "";
+
+            if(dimension != null && hqTFFD != null)
+                name = BuildHQTFFDItemName(identityGroup, dimension, hqTFFD);
+
+            return name;
+        }
     }
 }
