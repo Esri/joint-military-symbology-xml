@@ -426,6 +426,7 @@ namespace Test
             this.text2525C.Size = new System.Drawing.Size(184, 30);
             this.text2525C.TabIndex = 5;
             this.text2525C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text2525C_KeyPress);
+            this.text2525C.KeyUp += new System.Windows.Forms.KeyEventHandler(this.text2525C_KeyUp);
             // 
             // pictureBox1
             // 
