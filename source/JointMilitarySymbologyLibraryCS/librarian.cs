@@ -1423,6 +1423,8 @@ namespace JointMilitarySymbologyLibrary
 
             if (legacySIDC.Length == 15)
             {
+                legacySIDC = legacySIDC.Replace('*', '-');
+
                 s = new Symbol(this, legacyStandard, legacySIDC, _drawColoredOCABars);
 
                 if (s.SymbolStatus == SymbolStatusEnum.statusEnumInvalid)

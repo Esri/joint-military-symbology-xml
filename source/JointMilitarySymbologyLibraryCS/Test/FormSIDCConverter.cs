@@ -30,6 +30,7 @@ namespace Test
         private Librarian _librarian;
         private Symbol _symbol;
         private Symbol _badSymbol;
+        private char[] _trimDash = new char[]{'-','*',' '};
 
         public FormSIDCConverter()
         {
@@ -191,11 +192,23 @@ namespace Test
 
         private void text2525C_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(e.KeyChar == (char)Keys.Return)
+            if (e.KeyChar == (char)Keys.Return)
             {
                 _symbol = _librarian.MakeSymbol("2525C", text2525C.Text);
 
                 updateControls();
+            }
+            else
+            {
+                TextBox Box = (sender as TextBox);
+                if (Box.SelectionStart < Box.TextLength && !Char.IsControl(e.KeyChar))
+                {
+                    int CacheSelectionStart = Box.SelectionStart; //Cache SelectionStart as its reset when the Text property of the TextBox is set.
+                    StringBuilder sb = new StringBuilder(Box.Text); //Create a StringBuilder as Strings are immutable
+                    sb[Box.SelectionStart] = e.KeyChar; //Add the pressed key at the right position
+                    Box.Text = sb.ToString(); //SelectionStart is reset after setting the text, so restore it
+                    Box.SelectionStart = CacheSelectionStart + 1; //Advance to the next char
+                }
             }
         }
 
@@ -222,6 +235,21 @@ namespace Test
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             _librarian.DrawColoredOCABars = checkBox1.Checked;
+        }
+
+        private void text2525C_KeyUp(object sender, KeyEventArgs e)
+        {
+            string sidc = text2525C.Text;
+            int start = text2525C.SelectionStart;
+            int length = text2525C.SelectionLength;
+
+            sidc = sidc.Replace('*', '-');
+            sidc = sidc.TrimEnd(_trimDash);
+            sidc = sidc.PadRight(15, '-');
+            
+            text2525C.Text = sidc.ToUpper();
+            text2525C.SelectionStart = start;
+            text2525C.SelectionLength = length;
         }
     }
 }
