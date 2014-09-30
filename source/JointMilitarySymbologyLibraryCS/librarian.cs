@@ -1423,7 +1423,10 @@ namespace JointMilitarySymbologyLibrary
 
             if (legacySIDC.Length == 15)
             {
+                legacyStandard = legacyStandard.ToUpper();
+
                 legacySIDC = legacySIDC.Replace('*', '-');
+                legacySIDC = legacySIDC.ToUpper();
 
                 s = new Symbol(this, legacyStandard, legacySIDC, _drawColoredOCABars);
 
