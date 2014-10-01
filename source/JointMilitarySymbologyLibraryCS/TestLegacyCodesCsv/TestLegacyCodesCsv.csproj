@@ -50,11 +50,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Data\SymbolInfo2525C.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\JointMilitarySymbologyLibrary.csproj">
       <Project>{59DCDEC3-469F-44CB-B42C-80DB1F9E1992}</Project>
       <Name>JointMilitarySymbologyLibrary</Name>
@@ -62,6 +57,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Data\Mil-2525C-Wildcards.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
