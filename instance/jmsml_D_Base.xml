@@ -375,7 +375,7 @@
         <Field Name="AC" Label="Installation" Description="A graphic amplifier for units, equipment and installations used to show a particular symbol denotes an installation." AmplifierID="AC" X="0" Y="1"/>
         <Field Name="AD" Label="Platform Type" Description="Electronic Intelligence Notation (ELNOT) or Communications Intelligence Notation (CENOT)" AmplifierID="AD" X="-1" Y="0"/>
         <Field Name="AE" Label="Equipment Teardown Time" Description="Equipment teardown time in minutes" AmplifierID="AE" X="-1" Y="0"/>
-        <Field Name="AF" Label="Common Identifier" Description="Example: 'Hawk' for Hawk SAM system" AmplifierID="AF" X="0" Y="-2"/>
+        <Field Name="AF" Label="Common Identifier" Description="Example: 'Hawk' for Hawk SAM system" AmplifierID="AF" X="1" Y="0"/>
         <Field Name="AL" Label="Operational Condition" Description="Indicates operational condition." Remarks="Comprised of only one color. Ex. Satellite: Red - damaged, Green - fully capable. Ex: Missile: Red - imminent threat, Green - no threat." AmplifierID="AL" X="0" Y="-1"/>
         <Field Name="AO" Label="Engagement Bar" Description="May denote 1ocal/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
         <Field Name="AR" Label="Special Designator" Description="Special track designators such as Non-Real Time (NRT) and Tactically Significant (SIG) tracks are denoted here." Remarks="No Location designated in MIL-STD-2525D" AmplifierID="AR" X="0" Y="0"/>
@@ -395,12 +395,12 @@
         <Field Name="Q" Label="Direction of Movement Indicator" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." AmplifierID="Q" X="0" Y="-2"/>
         <Field Name="R" Label="Mobility Indicator" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." AmplifierID="R" X="0" Y="-1"/>
         <Field Name="S" Label="Headquarters Staff Indicator/Offset Location Indicator" Description="Headquarters staff indicator: A graphic amplifier for units, equipment and installations that identifies a unit as a headquarters." Remarks="Offset location indicator: A graphic amplifier for units, equipment and installations used when placing an object away from its actual location." AmplifierID="S" X="0" Y="-2"/>        
-        <Field Name="T" Label="Unique Designation (Track Number)" Description="A text amplifier for units, equipment, and installations that uniquely identifies a particular symbol or track number." Remarks="Prefix = TN:#####  Example: TN:13579" AmplifierID="T" X="1" Y="2"/>
-        <Field Name="V" Label="Type" Description="A text amplifier for equipment that indicates types of equipment." AmplifierID="V" X="1" Y="1"/>
+        <Field Name="T" Label="Unique Designation (Track Number)" Description="A text amplifier for units, equipment, and installations that uniquely identifies a particular symbol or track number." Remarks="Prefix = TN:#####  Example: TN:13579" AmplifierID="T" X="-1" Y="-1"/>
+        <Field Name="V" Label="Type" Description="A text amplifier for equipment that indicates types of equipment." AmplifierID="V" X="-1" Y="0"/>
         <Field Name="W" Label="Date-Time Group (DTG)" Description="An alphanumeric designator for displaying a date-time group or on order." Remarks="DDHHMMSSZMONYYYY or O/O, where DD = Day, HH = Hour, MM = Minute, SS = Second, Z = Time Zone, MON = Month, YYYY = Year, O/O = On Order" AmplifierID="W" X="-1" Y="2"/>
-        <Field Name="X" Label="Altitude" Description="A text amplifier for units that displays altitude flight level." Remarks="Measurement units shall be displayed within the string. Examples: 1500MSL FL150" AmplifierID="X" X="1" Y="-1"/>
+        <Field Name="X" Label="Altitude" Description="A text amplifier for units that displays altitude flight level." Remarks="Measurement units shall be displayed within the string. Examples: 1500MSL FL150" AmplifierID="X" X="-1" Y="1"/>
         <Field Name="Y" Label="A text amplifier for units, equipment, and installations that displays a symbol's location in degrees, minutes, and decimal minutes." Remarks="Alternatively, in MGRS or other applicable display format." AmplifierID="Y" X="-1" Y="1"/>        
-        <Field Name="Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD-6040." AmplifierID="Z" X="1" Y="-1"/>
+        <Field Name="Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD-6040." AmplifierID="Z" X="-1" Y="-2"/>
       </Fields>
       <SymbolSets>
         <SymbolSetRef ID="SS_LAND_UNIT" Label="Land Units" Instance="jmsml_D_Land_Unit.xml">
