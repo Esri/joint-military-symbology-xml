@@ -603,6 +603,7 @@
         <Field Name="H" Label="Additional Information" AmplifierID="H" X="1" Y="-2"/>
         <Field Name="T" Label="Unique Designation (Track Number)" Description="A text amplifier for units, equipment, and installations that uniquely identifies a particular symbol or track number." Remarks="Prefix = TN:#####  Example: TN:13579" AmplifierID="T" X="1" Y="2"/>
         <Field Name="V" Label="Type" Description="A text amplifier for equipment that indicates types of equipment." AmplifierID="V" X="1" Y="1"/>
+        <Field Name="X" Label="Depth" Description="A text amplifier for equipment that displays depth for submerged objects." AmplifierID="X" X="1" Y="0"/>
       </Fields>
       <SymbolSets>
         <SymbolSetRef ID="SS_SEA_SUBSURFACE" Label="Sea Subsurface" Instance="jmsml_D_Sea_Subsurface.xml">
