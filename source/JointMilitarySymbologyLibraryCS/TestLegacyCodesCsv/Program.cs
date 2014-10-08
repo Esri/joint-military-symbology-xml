@@ -34,87 +34,91 @@ namespace TestLegacyCodesCsv
             DataTable symbolTable = new DataTable();
 
             // Warning: this order must match the .csv
-            symbolTable.Columns.Add("Name");
+            // Mil-2525C-Wildcards.csv format
+            // Full SIDC,SIDC By Parts,Hierarchy Code,Name,Geometry
             symbolTable.Columns.Add("SymbolId");
-            symbolTable.Columns.Add("StyleFile");
-            symbolTable.Columns.Add("Category");
-            symbolTable.Columns.Add("GeometryType");
-            symbolTable.Columns.Add("Tags");
+            symbolTable.Columns.Add("SymbolIdByParts");
+            symbolTable.Columns.Add("HierarchyCode");
+            symbolTable.Columns.Add("Name");
+            symbolTable.Columns.Add("Geometry");
 
+            string csvFileName = @"Data\Mil-2525C-Wildcards.csv";
             string basePath = AppDomain.CurrentDomain.BaseDirectory;
-            string csvFileName = @"Data\SymbolInfo2525C.csv";
             string csvFullPath = System.IO.Path.Combine(basePath, csvFileName);
 
             foreach (string line in File.ReadLines(csvFullPath))
             {
-                string[] values = line.Split(',');
-                if (values.Length >= 6)
-                {
-                    string name = values[0];
-                    string symbolId = values[1];
-                    string styleFile = values[2];
-                    string category = values[3];
-                    string geoType = values[4];
-                    string tags = values[5];
+                if (line.StartsWith("#"))
+                    continue;
 
-                    symbolTable.Rows.Add(name, symbolId, styleFile, category, geoType, tags);
+                string[] values = line.Split(',');
+                if (values.Length >= 4)
+                {
+                    string symbolId = values[0];
+                    string symbolIdByParts = values[1];
+                    string hierarchyCode = values[2];
+                    string name = values[3];
+
+                    // convention used in test data: pt, pl, pg (point, polyline, polygon)
+                    string geometry = "pt"; // not every row/entry has this so default to "pt"
+                    if (values.Length > 4)
+                        geometry = values[4];
+
+                    symbolTable.Rows.Add(symbolId, symbolIdByParts, name, geometry);
                 }
             }
 
-            List<string> styleFiles = new List<string>() {"C2 UEI Air Track.style"}; 
-            // TODO: add in the rest as they are avaliable: 
-            /* 
-            "C2 Military Operations.style", 
-            "C2 UEI Ground Track Equipment.style",
-            "C2 UEI Ground Track Installations.style", 
-            "C2 UEI Ground Track Units.style", 
-            "C2 UEI Sea Surface Track.style",
-            "C2 UEI Space Track.style",
-            "C2 UEI Special Operations Track.style",
-            "C2 UEI Subsurface Track.style",
-            "Military Emergency Management.style",
-            "Military METOC.style",
-            "Signals Intelligence.style",
-            "Stability Operations.style" 
-             */
+            System.Console.WriteLine("Check Debug/Trace Window for Output");
 
             Librarian librarian = new Librarian(string.Empty);
 
-            foreach (string styleFile in styleFiles)
+            var results = from row in symbolTable.AsEnumerable() select row;
+
+            int resultCount = results.Count();
+
+            foreach (DataRow row in results)
             {
-                var results = from myRow in symbolTable.AsEnumerable()
-                              where myRow.Field<string>("StyleFile") == styleFile
-                              select myRow;
+                string name = row["Name"] as string;
+                string symbolId = row["SymbolId"] as string;
 
-                int resultCount = results.Count();
+                StringBuilder sb = new StringBuilder(symbolId);
 
-                foreach (DataRow row in results)
+                // Replace wildcards used
+                if (symbolId[1] == '*')
+                    sb[1] = 'F';
+                if (symbolId[3] == '*')
+                    sb[3] = 'P';
+
+                // System.Diagnostics.Trace.WriteLine("Found Match: " + symbolId + ", " + name + ")");
+                symbolId = sb.ToString();
+                symbolId = symbolId.Replace("*", "-");
+
+                // TODO: Add any other code needed to test these results here
+                Symbol jmsSymbol = librarian.MakeSymbol("2525C", symbolId);
+
+                if (jmsSymbol == null)
                 {
-                    string name = row["Name"] as string;
-                    string symbolId = row["SymbolId"] as string;
+                    System.Diagnostics.Trace.WriteLine(symbolId + " ==>> 2525C: " +
+                    symbolId + " is null in 2525D.");
+                    continue;
+                }
 
-                    // System.Diagnostics.Trace.WriteLine("Found Match: " + symbolId + ", " + name + ")");
+                if ((jmsSymbol.SymbolStatus != SymbolStatusEnum.statusEnumOld) &&
+                    (jmsSymbol.SymbolStatus != SymbolStatusEnum.statusEnumRetired))
+                {
+                    System.Diagnostics.Trace.WriteLine("Unexpected Value for: " + symbolId + " ==>> (" +
+                    jmsSymbol.SIDC.PartAString + ", " + jmsSymbol.SIDC.PartBString + ")" + " : " + jmsSymbol.SymbolStatus);
+                }
 
-                    // TODO: Add any other code needed to test these results here
-                    Symbol jmsSymbol = librarian.MakeSymbol("2525C", symbolId);
+                // To see just "Retired" symbols uncomment:
+                //if (jmsSymbol.SymbolStatus == SymbolStatusEnum.statusEnumRetired)
+                //{
+                //    System.Diagnostics.Trace.WriteLine("Retired Symbol: " + symbolId + " ==>> (" +
+                //    jmsSymbol.SIDC.PartAString + ", " + jmsSymbol.SIDC.PartBString + ")" + " : " + jmsSymbol.SymbolStatus);
+                //}
 
-                    if (jmsSymbol == null)
-                    {
-                        System.Diagnostics.Trace.WriteLine(symbolId + " ==>> 2525C: " +
-                        symbolId + " is null in 2525D.");
-                        continue;
-                    }
+            } // end for each row
 
-                    if ((jmsSymbol.SymbolStatus != SymbolStatusEnum.statusEnumOld) &&  
-                        (jmsSymbol.SymbolStatus != SymbolStatusEnum.statusEnumRetired))
-                    {
-                        System.Diagnostics.Trace.WriteLine("Unexpected Value for: " + symbolId + " ==>> (" +
-                        jmsSymbol.SIDC.PartAString + ", " + jmsSymbol.SIDC.PartBString + ")" + " : " + jmsSymbol.SymbolStatus);
-                    }
-                   
-                } // end for each row
-
-            } // end for each StyleFile
-        }
-    }
-}
+        } // Main
+    } // Class 
+} //Namespace
