@@ -600,7 +600,7 @@
         <Field Name="AQ" Label="Guarded Unit" Description="During ballistic missile defense, some tracks are designated as guarded by a particular unit." Remarks="The 2-character string, BG" AmplifierID="AQ" X="-1" Y="2"/>
         <Field Name="AR" Label="Special Designator" Description="Special track designators, such as Non-Real Time (NRT) and Tactically Significant (SIG) tracks, are denoted here." Remarks="The 3-character strings, NRT or SIG" AmplifierID="AR" X="-1" Y="2"/>
         <Field Name="G" Label="Staff Comments" AmplifierID="G" X="1" Y="-1"/>
-        <Field Name="H" Label="Additional Information" AmplifierID="H" X="1" Y="-1"/>
+        <Field Name="H" Label="Additional Information" AmplifierID="H" X="1" Y="-2"/>
         <Field Name="T" Label="Unique Designation (Track Number)" Description="A text amplifier for units, equipment, and installations that uniquely identifies a particular symbol or track number." Remarks="Prefix = TN:#####  Example: TN:13579" AmplifierID="T" X="1" Y="2"/>
         <Field Name="V" Label="Type" Description="A text amplifier for equipment that indicates types of equipment." AmplifierID="V" X="1" Y="1"/>
       </Fields>
