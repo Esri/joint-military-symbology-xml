@@ -594,7 +594,7 @@ namespace JointMilitarySymbologyLibrary
 
             // OCA?
 
-            if (_status != null && _dimension != null && _standardIdentity != null)
+            if (_status != null && _dimension != null && _sig != null)
             {
                 if (_status.Graphics != null)
                 {
@@ -604,7 +604,7 @@ namespace JointMilitarySymbologyLibrary
                     {
                         foreach (LibraryStatusGraphic g in _status.Graphics)
                         {
-                            if (g.StandardIdentity == _standardIdentity.ID && g.Dimension == _dimension.ID)
+                            if (g.StandardIdentityGroup == _sig.ID && g.Dimension == _dimension.ID)
                             {
                                 graphic = g.Graphic;
                                 break;
@@ -647,7 +647,7 @@ namespace JointMilitarySymbologyLibrary
             _names.Add("Amplifier", ae.NameIt(_amplifierGroup, _amplifier, _sig));
 
             OCAExport oe = new DomainOCAExport(_configHelper);
-            _names.Add("OCA", oe.NameIt(_standardIdentity, _dimension, _status));
+            _names.Add("OCA", oe.NameIt(_sig, _dimension, _status));
         }
 
         private void _BuildTags()

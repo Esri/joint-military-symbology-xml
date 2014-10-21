@@ -52,7 +52,7 @@ namespace JointMilitarySymbologyLibrary
                 _notes = _notes + "image file does not exist;";
 
             LibraryDimension dimension = _configHelper.Librarian.Dimension(statusGraphic.Dimension);
-            LibraryStandardIdentity identity = _configHelper.Librarian.StandardIdentity(statusGraphic.StandardIdentity);
+            LibraryStandardIdentityGroup identity = _configHelper.Librarian.StandardIdentityGroup(statusGraphic.StandardIdentityGroup);
 
             string itemName = BuildOCAItemName(identity, dimension, status);
             string itemCategory = "Amplifier : Operational Condition";

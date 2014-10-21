@@ -27,7 +27,7 @@ namespace JointMilitarySymbologyLibrary
         protected ConfigHelper _configHelper;
         protected string _notes = "";
 
-        protected string BuildOCACode(LibraryStandardIdentity identity, LibraryDimension dimension, LibraryStatus status)
+        protected string BuildOCACode(LibraryStandardIdentityGroup identity, LibraryDimension dimension, LibraryStatus status)
         {
             // Creates the unique idntifier code for a given OCA.
             
@@ -35,7 +35,7 @@ namespace JointMilitarySymbologyLibrary
 
             if (identity != null && dimension != null)
             {
-                code = "0" + Convert.ToString(identity.StandardIdentityCode) +
+                code = "0" + Convert.ToString(identity.StandardIdentityGroupCode) +
                              Convert.ToString(dimension.DimensionCode.DigitOne) + Convert.ToString(dimension.DimensionCode.DigitTwo) +
                              Convert.ToString(status.StatusCode) + "2";
             }
@@ -45,7 +45,7 @@ namespace JointMilitarySymbologyLibrary
             return code;
         }
 
-        protected string BuildQuotedOCACode(LibraryStandardIdentity identity, LibraryDimension dimension, LibraryStatus status)
+        protected string BuildQuotedOCACode(LibraryStandardIdentityGroup identity, LibraryDimension dimension, LibraryStatus status)
         {
             // Creates the quoted unique idntifier code for a given OCA.
 
@@ -54,7 +54,7 @@ namespace JointMilitarySymbologyLibrary
             return code;
         }
 
-        protected string BuildOCAItemName(LibraryStandardIdentity identity, LibraryDimension dimension, LibraryStatus status)
+        protected string BuildOCAItemName(LibraryStandardIdentityGroup identity, LibraryDimension dimension, LibraryStatus status)
         {
             // Constructs a string containing the name of an OCA, where each label value
             // is seperated by a DomainSeparator (usually a colon).
@@ -73,7 +73,7 @@ namespace JointMilitarySymbologyLibrary
             return result;
         }
 
-        protected string BuildOCAItemTags(LibraryStandardIdentity identity, 
+        protected string BuildOCAItemTags(LibraryStandardIdentityGroup identity, 
                                           LibraryDimension dimension,
                                           LibraryStatus status,
                                           string graphicPath,
@@ -112,7 +112,7 @@ namespace JointMilitarySymbologyLibrary
             return result;
         }
 
-        public string NameIt(LibraryStandardIdentity identity, LibraryDimension dimension, LibraryStatus status)
+        public string NameIt(LibraryStandardIdentityGroup identity, LibraryDimension dimension, LibraryStatus status)
         {
             string name = "";
 

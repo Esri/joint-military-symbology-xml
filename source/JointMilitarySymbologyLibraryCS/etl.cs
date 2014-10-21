@@ -186,7 +186,7 @@ namespace JointMilitarySymbologyLibrary
                     {
                         foreach (EntitySubTypeType eSubType in s.SpecialEntitySubTypes)
                         {
-                            if (eSubType.Icon == IconType.FULL_FRAME && exportType == ETLExportEnum.ETLExportImage)
+                            if (eSubType.Icon == IconType.SPECIAL && exportType == ETLExportEnum.ETLExportImage)
                             {
                                 foreach (LibraryStandardIdentityGroup sig in _library.StandardIdentityGroups)
                                 {
