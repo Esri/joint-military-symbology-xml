@@ -215,7 +215,7 @@
                         <xs:sequence>
                           <xs:element name="Graphic" minOccurs="1" maxOccurs="unbounded">
                             <xs:complexType>
-                              <xs:attributeGroup ref="SIDimensionGraphicAttributeGroup"/>
+                              <xs:attributeGroup ref="SIGDimensionGraphicAttributeGroup"/>
                             </xs:complexType>
                           </xs:element>
                         </xs:sequence>
