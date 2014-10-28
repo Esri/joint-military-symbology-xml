@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Version_1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" width="400px" height="400px" viewBox="0 0 400 400" enable-background="new 0 0 400 400" xml:space="preserve">
+<pattern  x="-105.5" y="596.5" width="72" height="72" patternUnits="userSpaceOnUse" id="SVGID_2_" viewBox="20 -72 72 72" overflow="visible">
+	<g>
+		<polygon fill="none" points="20,0 92,0 92,-72 20,-72 		"/>
+		<g>
+			<polygon fill="none" points="20,-72 92,-72 92,0 20,0 			"/>
+			<g>
+				<polygon fill="none" points="20,0 20,-72 92,-72 92,0 				"/>
+				<line fill="none" stroke="#0000FF" stroke-width="1.44" x1="19.75" y1="-3.6" x2="92.25" y2="-3.6"/>
+				<line fill="none" stroke="#0000FF" stroke-width="1.44" x1="19.75" y1="-18" x2="92.25" y2="-18"/>
+				<line fill="none" stroke="#0000FF" stroke-width="1.44" x1="19.75" y1="-32.398" x2="92.25" y2="-32.398"/>
+				<line fill="none" stroke="#0000FF" stroke-width="1.44" x1="19.75" y1="-46.8" x2="92.25" y2="-46.8"/>
+				<line fill="none" stroke="#0000FF" stroke-width="1.44" x1="19.75" y1="-61.2" x2="92.25" y2="-61.2"/>
+				<line fill="none" stroke="#0000FF" stroke-width="1.44" x1="0" y1="-61.2" x2="14" y2="-61.2"/>
+				<line fill="none" stroke="#0000FF" stroke-width="1.44" x1="19.75" y1="-10.8" x2="92.25" y2="-10.8"/>
+				<line fill="none" stroke="#0000FF" stroke-width="1.44" x1="19.75" y1="-25.2" x2="92.25" y2="-25.2"/>
+				<line fill="none" stroke="#0000FF" stroke-width="1.44" x1="19.75" y1="-39.6" x2="92.25" y2="-39.6"/>
+				<line fill="none" stroke="#0000FF" stroke-width="1.44" x1="19.75" y1="-54" x2="92.25" y2="-54"/>
+				<line fill="none" stroke="#0000FF" stroke-width="1.44" x1="19.75" y1="-68.398" x2="92.25" y2="-68.398"/>
+				<line fill="none" stroke="#0000FF" stroke-width="1.44" x1="0" y1="-68.398" x2="14" y2="-68.398"/>
+			</g>
+		</g>
+	</g>
+</pattern>
+<g id="main">
+	<pattern  id="SVGID_1_" xlink:href="#SVGID_2_" patternTransform="matrix(0.7071 -0.7071 0.7071 0.7071 -784.9438 4529.0039)">
+	</pattern>
+	
+		<path fill="url(#SVGID_1_)" stroke="#000000" stroke-width="4.9263" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M138.047,62.514c-38.923,6.124-60.916,93.731-71.078,122.264c-10.162,28.514-3.393,28.514,10.162,48.894
+		c13.537,20.381,38.904,59.094,71.059,73.352c32.155,14.26,96.464,38.713,121.852,12.229
+		c25.385-26.483,52.458-128.368,30.448-171.158C278.496,105.303,176.97,56.409,138.047,62.514"/>
+	<rect x="155.408" y="107.5" fill="#FFFFFF" width="58.761" height="37.241"/>
+	<text transform="matrix(1 0 0 1 161.1631 135.2705)" font-family="sans-serif" font-size="25.157">NFA</text>
+</g>
+<g id="template" display="none">
+	<g id="varT" display="inline">
+		
+			<rect x="153.406" y="149.134" fill="#FFFFFF" stroke="#000000" stroke-width="1.7867" stroke-linecap="round" stroke-miterlimit="8" width="44.561" height="41.703"/>
+		<text transform="matrix(1 0 0 1 169.5752 179.4346)" font-family="sans-serif" font-size="23.7276">T</text>
+	</g>
+	<g id="varW" display="inline">
+		<text transform="matrix(1 0 0 1 176.4365 241.8301)" font-family="sans-serif" font-size="25.157">-</text>
+		
+			<rect x="121.406" y="210.488" fill="#FFFFFF" stroke="#000000" stroke-width="1.7867" stroke-linecap="round" stroke-miterlimit="8" width="48.366" height="46.687"/>
+		<text transform="matrix(1 0 0 1 133.835 242.9648)" font-family="sans-serif" font-size="25.157">W</text>
+	</g>
+	<g id="varW1" display="inline">
+		
+			<rect x="192.285" y="210.488" fill="#FFFFFF" stroke="#000000" stroke-width="1.7867" stroke-linecap="round" stroke-miterlimit="8" width="69.322" height="46.687"/>
+		<text transform="matrix(1 0 0 1 208.1689 241.8301)" font-family="sans-serif" font-size="25.157">W1</text>
+	</g>
+</g>
+<g id="example" display="none">
+	<rect x="96.835" y="144.741" display="inline" fill="#FFFFFF" width="195.665" height="101.759"/>
+	<text id="varWeW1e" transform="matrix(1 0 0 1 99.835 224.9648)" display="inline" font-family="sans-serif" font-size="25.157">051030-051600Z</text>
+	<text id="varTe" transform="matrix(1 0 0 1 128.1768 179.4346)" display="inline" font-family="sans-serif" font-size="23.7276">X CORPS</text>
+</g>
+</svg>
