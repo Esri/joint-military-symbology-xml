@@ -11,6 +11,20 @@
   <xs:element name="Library">
     <xs:complexType>
       <xs:sequence>
+        
+        <!-- Geometries -->
+
+        <xs:element name="Geometries" minOccurs="1" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Geometry" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attributeGroup ref="IdentifierAttributeGroup"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
 
         <!-- DrawRules -->
 

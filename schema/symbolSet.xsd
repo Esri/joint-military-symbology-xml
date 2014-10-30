@@ -19,6 +19,7 @@
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="EntityCode" type="DoubleDigitType" minOccurs="1" maxOccurs="1"/>
+                    <xs:element ref="Tags" minOccurs="0" maxOccurs="1"/>
                     <xs:element name="EntityTypes" minOccurs="0" maxOccurs="1">
                       <xs:complexType>
                         <xs:sequence>
@@ -26,6 +27,7 @@
                             <xs:complexType>
                               <xs:sequence>
                                 <xs:element name="EntityTypeCode" type="DoubleDigitType" minOccurs="1" maxOccurs="1"/>
+                                <xs:element ref="Tags" minOccurs="0" maxOccurs="1"/>
                                 <xs:element name ="EntitySubTypes" minOccurs="0" maxOccurs="1">
                                   <xs:complexType>
                                     <xs:sequence>

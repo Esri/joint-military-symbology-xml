@@ -22,224 +22,18 @@ namespace JointMilitarySymbologyLibrary {
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://disa.mil/JointMilSyML.xsd")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="http://disa.mil/JointMilSyML.xsd", IsNullable=false)]
-    public partial class SymbolSet {
+    public partial class Tags {
         
-        private DoubleDigitType symbolSetCodeField;
-        
-        private LegacyLetterCodeType[] legacyCodingSchemeCodeField;
-        
-        private SymbolSetEntity[] entitiesField;
-        
-        private EntitySubTypeType[] specialEntitySubTypesField;
-        
-        private ModifiersTypeModifier[] sectorOneModifiersField;
-        
-        private ModifiersTypeModifier[] sectorTwoModifiersField;
-        
-        private SymbolSetLegacySymbol[] legacySymbolsField;
-        
-        private string idField;
-        
-        private string labelField;
-        
-        private string descriptionField;
-        
-        private string remarksField;
-        
-        private string dimensionIDField;
-        
-        private GeometryType geometryField;
+        private string[] tagField;
         
         /// <remarks/>
-        public DoubleDigitType SymbolSetCode {
+        [System.Xml.Serialization.XmlElementAttribute("Tag", DataType="token")]
+        public string[] Tag {
             get {
-                return this.symbolSetCodeField;
+                return this.tagField;
             }
             set {
-                this.symbolSetCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("LegacyCodingSchemeCode")]
-        public LegacyLetterCodeType[] LegacyCodingSchemeCode {
-            get {
-                return this.legacyCodingSchemeCodeField;
-            }
-            set {
-                this.legacyCodingSchemeCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Entity", IsNullable=false)]
-        public SymbolSetEntity[] Entities {
-            get {
-                return this.entitiesField;
-            }
-            set {
-                this.entitiesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("EntitySubType", IsNullable=false)]
-        public EntitySubTypeType[] SpecialEntitySubTypes {
-            get {
-                return this.specialEntitySubTypesField;
-            }
-            set {
-                this.specialEntitySubTypesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Modifier", IsNullable=false)]
-        public ModifiersTypeModifier[] SectorOneModifiers {
-            get {
-                return this.sectorOneModifiersField;
-            }
-            set {
-                this.sectorOneModifiersField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Modifier", IsNullable=false)]
-        public ModifiersTypeModifier[] SectorTwoModifiers {
-            get {
-                return this.sectorTwoModifiersField;
-            }
-            set {
-                this.sectorTwoModifiersField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("LegacySymbol", IsNullable=false)]
-        public SymbolSetLegacySymbol[] LegacySymbols {
-            get {
-                return this.legacySymbolsField;
-            }
-            set {
-                this.legacySymbolsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
-        public string ID {
-            get {
-                return this.idField;
-            }
-            set {
-                this.idField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string Label {
-            get {
-                return this.labelField;
-            }
-            set {
-                this.labelField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string Description {
-            get {
-                return this.descriptionField;
-            }
-            set {
-                this.descriptionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string Remarks {
-            get {
-                return this.remarksField;
-            }
-            set {
-                this.remarksField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="IDREFS")]
-        public string DimensionID {
-            get {
-                return this.dimensionIDField;
-            }
-            set {
-                this.dimensionIDField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public GeometryType Geometry {
-            get {
-                return this.geometryField;
-            }
-            set {
-                this.geometryField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://disa.mil/JointMilSyML.xsd")]
-    public partial class DoubleDigitType {
-        
-        private ushort digitOneField;
-        
-        private ushort digitTwoField;
-        
-        private string[] textField;
-        
-        public DoubleDigitType() {
-            this.digitOneField = ((ushort)(0));
-            this.digitTwoField = ((ushort)(0));
-        }
-        
-        /// <remarks/>
-        public ushort DigitOne {
-            get {
-                return this.digitOneField;
-            }
-            set {
-                this.digitOneField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public ushort DigitTwo {
-            get {
-                return this.digitTwoField;
-            }
-            set {
-                this.digitTwoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlTextAttribute()]
-        public string[] Text {
-            get {
-                return this.textField;
-            }
-            set {
-                this.textField = value;
+                this.tagField = value;
             }
         }
     }
@@ -451,6 +245,8 @@ namespace JointMilitarySymbologyLibrary {
         
         private DoubleDigitType entitySubTypeCodeField;
         
+        private string[] tagsField;
+        
         private string idField;
         
         private string labelField;
@@ -513,7 +309,7 @@ namespace JointMilitarySymbologyLibrary {
             this.diamondGraphicField = "";
             this.rectangleGraphicField = "";
             this.squareGraphicField = "";
-            this.drawRuleIDField = "POINT2";
+            this.drawRuleIDField = "POINT_RULE";
             this.drawNoteField = "Not Applicable";
             this.standardField = StandardType.ALL;
             this.iconField = IconType.MAIN;
@@ -529,6 +325,17 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.entitySubTypeCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("Tag", DataType="token", IsNullable=false)]
+        public string[] Tags {
+            get {
+                return this.tagsField;
+            }
+            set {
+                this.tagsField = value;
             }
         }
         
@@ -677,7 +484,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="IDREF")]
-        [System.ComponentModel.DefaultValueAttribute("POINT2")]
+        [System.ComponentModel.DefaultValueAttribute("POINT_RULE")]
         public string DrawRuleID {
             get {
                 return this.drawRuleIDField;
@@ -822,6 +629,57 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.entityTypeCodeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://disa.mil/JointMilSyML.xsd")]
+    public partial class DoubleDigitType {
+        
+        private ushort digitOneField;
+        
+        private ushort digitTwoField;
+        
+        private string[] textField;
+        
+        public DoubleDigitType() {
+            this.digitOneField = ((ushort)(0));
+            this.digitTwoField = ((ushort)(0));
+        }
+        
+        /// <remarks/>
+        public ushort DigitOne {
+            get {
+                return this.digitOneField;
+            }
+            set {
+                this.digitOneField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public ushort DigitTwo {
+            get {
+                return this.digitTwoField;
+            }
+            set {
+                this.digitTwoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlTextAttribute()]
+        public string[] Text {
+            get {
+                return this.textField;
+            }
+            set {
+                this.textField = value;
             }
         }
     }
@@ -1035,9 +893,207 @@ namespace JointMilitarySymbologyLibrary {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://disa.mil/JointMilSyML.xsd")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://disa.mil/JointMilSyML.xsd", IsNullable=false)]
+    public partial class SymbolSet {
+        
+        private DoubleDigitType symbolSetCodeField;
+        
+        private LegacyLetterCodeType[] legacyCodingSchemeCodeField;
+        
+        private SymbolSetEntity[] entitiesField;
+        
+        private EntitySubTypeType[] specialEntitySubTypesField;
+        
+        private ModifiersTypeModifier[] sectorOneModifiersField;
+        
+        private ModifiersTypeModifier[] sectorTwoModifiersField;
+        
+        private SymbolSetLegacySymbol[] legacySymbolsField;
+        
+        private string idField;
+        
+        private string labelField;
+        
+        private string labelAliasField;
+        
+        private string descriptionField;
+        
+        private string remarksField;
+        
+        private string dimensionIDField;
+        
+        private GeometryType geometryField;
+        
+        public SymbolSet() {
+            this.labelAliasField = "";
+        }
+        
+        /// <remarks/>
+        public DoubleDigitType SymbolSetCode {
+            get {
+                return this.symbolSetCodeField;
+            }
+            set {
+                this.symbolSetCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("LegacyCodingSchemeCode")]
+        public LegacyLetterCodeType[] LegacyCodingSchemeCode {
+            get {
+                return this.legacyCodingSchemeCodeField;
+            }
+            set {
+                this.legacyCodingSchemeCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("Entity", IsNullable=false)]
+        public SymbolSetEntity[] Entities {
+            get {
+                return this.entitiesField;
+            }
+            set {
+                this.entitiesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("EntitySubType", IsNullable=false)]
+        public EntitySubTypeType[] SpecialEntitySubTypes {
+            get {
+                return this.specialEntitySubTypesField;
+            }
+            set {
+                this.specialEntitySubTypesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("Modifier", IsNullable=false)]
+        public ModifiersTypeModifier[] SectorOneModifiers {
+            get {
+                return this.sectorOneModifiersField;
+            }
+            set {
+                this.sectorOneModifiersField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("Modifier", IsNullable=false)]
+        public ModifiersTypeModifier[] SectorTwoModifiers {
+            get {
+                return this.sectorTwoModifiersField;
+            }
+            set {
+                this.sectorTwoModifiersField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("LegacySymbol", IsNullable=false)]
+        public SymbolSetLegacySymbol[] LegacySymbols {
+            get {
+                return this.legacySymbolsField;
+            }
+            set {
+                this.legacySymbolsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
+        public string ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string Label {
+            get {
+                return this.labelField;
+            }
+            set {
+                this.labelField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string LabelAlias {
+            get {
+                return this.labelAliasField;
+            }
+            set {
+                this.labelAliasField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Remarks {
+            get {
+                return this.remarksField;
+            }
+            set {
+                this.remarksField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="IDREFS")]
+        public string DimensionID {
+            get {
+                return this.dimensionIDField;
+            }
+            set {
+                this.dimensionIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public GeometryType Geometry {
+            get {
+                return this.geometryField;
+            }
+            set {
+                this.geometryField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://disa.mil/JointMilSyML.xsd")]
     public partial class SymbolSetEntity {
         
         private DoubleDigitType entityCodeField;
+        
+        private string[] tagsField;
         
         private SymbolSetEntityEntityType[] entityTypesField;
         
@@ -1099,7 +1155,7 @@ namespace JointMilitarySymbologyLibrary {
             this.diamondGraphicField = "";
             this.rectangleGraphicField = "";
             this.squareGraphicField = "";
-            this.drawRuleIDField = "POINT2";
+            this.drawRuleIDField = "POINT_RULE";
             this.drawNoteField = "Not Applicable";
             this.standardField = StandardType.ALL;
             this.iconField = IconType.MAIN;
@@ -1113,6 +1169,17 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.entityCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("Tag", DataType="token", IsNullable=false)]
+        public string[] Tags {
+            get {
+                return this.tagsField;
+            }
+            set {
+                this.tagsField = value;
             }
         }
         
@@ -1272,7 +1339,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="IDREF")]
-        [System.ComponentModel.DefaultValueAttribute("POINT2")]
+        [System.ComponentModel.DefaultValueAttribute("POINT_RULE")]
         public string DrawRuleID {
             get {
                 return this.drawRuleIDField;
@@ -1407,6 +1474,8 @@ namespace JointMilitarySymbologyLibrary {
         
         private DoubleDigitType entityTypeCodeField;
         
+        private string[] tagsField;
+        
         private EntitySubTypeType[] entitySubTypesField;
         
         private string idField;
@@ -1467,7 +1536,7 @@ namespace JointMilitarySymbologyLibrary {
             this.diamondGraphicField = "";
             this.rectangleGraphicField = "";
             this.squareGraphicField = "";
-            this.drawRuleIDField = "POINT2";
+            this.drawRuleIDField = "POINT_RULE";
             this.drawNoteField = "Not Applicable";
             this.standardField = StandardType.ALL;
             this.iconField = IconType.MAIN;
@@ -1481,6 +1550,17 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.entityTypeCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("Tag", DataType="token", IsNullable=false)]
+        public string[] Tags {
+            get {
+                return this.tagsField;
+            }
+            set {
+                this.tagsField = value;
             }
         }
         
@@ -1640,7 +1720,7 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="IDREF")]
-        [System.ComponentModel.DefaultValueAttribute("POINT2")]
+        [System.ComponentModel.DefaultValueAttribute("POINT_RULE")]
         public string DrawRuleID {
             get {
                 return this.drawRuleIDField;
@@ -1939,6 +2019,8 @@ namespace JointMilitarySymbologyLibrary {
         
         private string labelField;
         
+        private string labelAliasField;
+        
         private string descriptionField;
         
         private string remarksField;
@@ -1956,6 +2038,7 @@ namespace JointMilitarySymbologyLibrary {
         private StandardType standardField;
         
         public SymbolSetLegacySymbol() {
+            this.labelAliasField = "";
             this.entityIDField = "NA";
             this.entityTypeIDField = "NA";
             this.entitySubTypeIDField = "NA";
@@ -1994,6 +2077,18 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.labelField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string LabelAlias {
+            get {
+                return this.labelAliasField;
+            }
+            set {
+                this.labelAliasField = value;
             }
         }
         
@@ -2101,6 +2196,8 @@ namespace JointMilitarySymbologyLibrary {
     [System.Xml.Serialization.XmlRootAttribute(Namespace="http://disa.mil/JointMilSyML.xsd", IsNullable=false)]
     public partial class Library {
         
+        private LibraryGeometry[] geometriesField;
+        
         private LibraryDrawRule[] drawRulesField;
         
         private LibraryLabelRule[] labelRulesField;
@@ -2137,6 +2234,17 @@ namespace JointMilitarySymbologyLibrary {
         
         public Library() {
             this.labelAliasField = "";
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("Geometry", IsNullable=false)]
+        public LibraryGeometry[] Geometries {
+            get {
+                return this.geometriesField;
+            }
+            set {
+                this.geometriesField = value;
+            }
         }
         
         /// <remarks/>
@@ -2334,19 +2442,20 @@ namespace JointMilitarySymbologyLibrary {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://disa.mil/JointMilSyML.xsd")]
-    public partial class LibraryDrawRule {
+    public partial class LibraryGeometry {
         
         private string idField;
         
-        private string anchorPointsField;
+        private string labelField;
         
-        private string sizeShapeField;
+        private string labelAliasField;
         
-        private string orientationField;
+        private string descriptionField;
         
-        public LibraryDrawRule() {
-            this.sizeShapeField = "Not Applicable";
-            this.orientationField = "Not Applicable";
+        private string remarksField;
+        
+        public LibraryGeometry() {
+            this.labelAliasField = "";
         }
         
         /// <remarks/>
@@ -2361,7 +2470,103 @@ namespace JointMilitarySymbologyLibrary {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string Label {
+            get {
+                return this.labelField;
+            }
+            set {
+                this.labelField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string LabelAlias {
+            get {
+                return this.labelAliasField;
+            }
+            set {
+                this.labelAliasField = value;
+            }
+        }
+        
+        /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Remarks {
+            get {
+                return this.remarksField;
+            }
+            set {
+                this.remarksField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://disa.mil/JointMilSyML.xsd")]
+    public partial class LibraryDrawRule {
+        
+        private string idField;
+        
+        private string geometryIDField;
+        
+        private string anchorPointsField;
+        
+        private string sizeShapeField;
+        
+        private string orientationField;
+        
+        private string ornamentationField;
+        
+        public LibraryDrawRule() {
+            this.anchorPointsField = "Not Applicable";
+            this.sizeShapeField = "Not Applicable";
+            this.orientationField = "Not Applicable";
+            this.ornamentationField = "Not Applicable";
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
+        public string ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="IDREF")]
+        public string GeometryID {
+            get {
+                return this.geometryIDField;
+            }
+            set {
+                this.geometryIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute("Not Applicable")]
         public string AnchorPoints {
             get {
                 return this.anchorPointsField;
@@ -2392,6 +2597,18 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.orientationField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute("Not Applicable")]
+        public string Ornamentation {
+            get {
+                return this.ornamentationField;
+            }
+            set {
+                this.ornamentationField = value;
             }
         }
     }
@@ -2889,6 +3106,8 @@ namespace JointMilitarySymbologyLibrary {
         
         private string labelField;
         
+        private string labelAliasField;
+        
         private string descriptionField;
         
         private string remarksField;
@@ -2900,6 +3119,7 @@ namespace JointMilitarySymbologyLibrary {
         private string noteField;
         
         public LibraryAmplifier() {
+            this.labelAliasField = "";
             this.typeField = AmplifierType.TEXT;
             this.lengthField = 0;
         }
@@ -2923,6 +3143,18 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.labelField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string LabelAlias {
+            get {
+                return this.labelAliasField;
+            }
+            set {
+                this.labelAliasField = value;
             }
         }
         
@@ -3104,9 +3336,15 @@ namespace JointMilitarySymbologyLibrary {
         
         private string labelField;
         
+        private string labelAliasField;
+        
         private string descriptionField;
         
         private string remarksField;
+        
+        public LibraryContext() {
+            this.labelAliasField = "";
+        }
         
         /// <remarks/>
         public ushort ContextCode {
@@ -3148,6 +3386,18 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.labelField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string LabelAlias {
+            get {
+                return this.labelAliasField;
+            }
+            set {
+                this.labelAliasField = value;
             }
         }
         
@@ -3321,9 +3571,15 @@ namespace JointMilitarySymbologyLibrary {
         
         private string labelField;
         
+        private string labelAliasField;
+        
         private string descriptionField;
         
         private string remarksField;
+        
+        public LibraryStandardIdentity() {
+            this.labelAliasField = "";
+        }
         
         /// <remarks/>
         public ushort StandardIdentityCode {
@@ -3354,6 +3610,18 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.labelField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string LabelAlias {
+            get {
+                return this.labelAliasField;
+            }
+            set {
+                this.labelAliasField = value;
             }
         }
         
@@ -3394,6 +3662,8 @@ namespace JointMilitarySymbologyLibrary {
         
         private string labelField;
         
+        private string labelAliasField;
+        
         private string descriptionField;
         
         private string remarksField;
@@ -3401,6 +3671,10 @@ namespace JointMilitarySymbologyLibrary {
         private string standardIdentityIDsField;
         
         private string graphicSuffixField;
+        
+        public LibraryStandardIdentityGroup() {
+            this.labelAliasField = "";
+        }
         
         /// <remarks/>
         public ushort StandardIdentityGroupCode {
@@ -3431,6 +3705,18 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.labelField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string LabelAlias {
+            get {
+                return this.labelAliasField;
+            }
+            set {
+                this.labelAliasField = value;
             }
         }
         
@@ -3499,11 +3785,17 @@ namespace JointMilitarySymbologyLibrary {
         
         private string labelField;
         
+        private string labelAliasField;
+        
         private string descriptionField;
         
         private string remarksField;
         
         private GeometryType geometryField;
+        
+        public LibraryDimension() {
+            this.labelAliasField = "";
+        }
         
         /// <remarks/>
         public DoubleDigitType DimensionCode {
@@ -3567,6 +3859,18 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.labelField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string LabelAlias {
+            get {
+                return this.labelAliasField;
+            }
+            set {
+                this.labelAliasField = value;
             }
         }
         

@@ -347,5 +347,38 @@ namespace JointMilitarySymbologyLibrary
 
             return result;
         }
+
+        public string CustomExportTags(string id)
+        {
+            string result = "";
+
+            foreach(JMSMLConfigETLConfigExportTag tag in _etlConfig.ExportTags)
+            {
+                if (id == tag.ID)
+                    result = result + ";" + tag.Value;
+            }
+
+            return result;
+        }
+
+        public string AddCustomTags(string tagString, string id, string[] tags)
+        {
+            string result = tagString;
+
+            if (tags != null)
+            {
+                foreach (string tag in tags)
+                {
+                    result = result + ";" + tag;
+                }
+            }
+
+            string exportTags = CustomExportTags(id);
+
+            if (exportTags != "")
+                result = result + exportTags;
+
+            return result;
+        }
     }
 }

@@ -275,7 +275,7 @@ namespace UnitTests
         public void SIDCTest_DrawRule()
         {
             Symbol target = _librarian.MakeSymbol(1004301000, 1301040000);
-            string expected = "POINT2";
+            string expected = "POINT_RULE";
             Dictionary<string, string> actual = target.DrawRule;
             Assert.AreEqual(expected, actual["Name"]);
         }

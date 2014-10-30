@@ -129,6 +129,7 @@
   <xs:attributeGroup name="IdentifierAttributeGroup">
     <xs:attribute name="ID" type="xs:ID" use="required"/>
     <xs:attribute name="Label" type="xs:token" use="optional"/>
+    <xs:attribute name="LabelAlias" type="xs:token" use="optional" default=""/>
     <xs:attribute name="Description" type="xs:string" use="optional"/>
     <xs:attribute name="Remarks" type="xs:string" use="optional"/>
   </xs:attributeGroup>
@@ -142,9 +143,11 @@
 
   <xs:attributeGroup name="IdentifierDrawRuleGroup">
     <xs:attribute name="ID" type="xs:ID" use="required"/>
-    <xs:attribute name="AnchorPoints" type="xs:string" use="required"/>
+    <xs:attribute name="GeometryID" type="xs:IDREF" use="required"/>
+    <xs:attribute name="AnchorPoints" type="xs:string" use="optional" default="Not Applicable"/>
     <xs:attribute name="SizeShape" type="xs:string" use="optional" default="Not Applicable"/>
     <xs:attribute name="Orientation" type="xs:string" use="optional" default="Not Applicable"/>
+    <xs:attribute name="Ornamentation" type="xs:string" use="optional" default="Not Applicable"/>
   </xs:attributeGroup>
 
   <xs:attributeGroup name="GraphicNameAttributeGroup">
@@ -195,7 +198,7 @@
     <xs:attribute name="DiamondGraphic" type="xs:anyURI" use="optional" default=""/>
     <xs:attribute name="RectangleGraphic" type="xs:anyURI" use="optional" default=""/>
     <xs:attribute name="SquareGraphic" type="xs:anyURI" use="optional" default=""/>
-    <xs:attribute name="DrawRuleID" type="xs:IDREF" use="optional" default="POINT2"/>
+    <xs:attribute name="DrawRuleID" type="xs:IDREF" use="optional" default="POINT_RULE"/>
     <xs:attribute name="DrawNote" type="xs:string" use="optional" default="Not Applicable"/>
     <xs:attribute name="Standard" type="StandardType" use="optional" default="ALL"/>
     <xs:attribute name="Icon" type="IconType" use="optional" default="MAIN"/>
@@ -259,6 +262,25 @@
       </xs:element>
     </xs:sequence>
   </xs:complexType>
+
+  <xs:complexType name="EntitySubTypeType">
+    <xs:sequence>
+      <xs:element name="EntitySubTypeCode" type="DoubleDigitType" minOccurs="1" maxOccurs="1"/>
+      <xs:element ref="Tags" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="FramedGraphicIdentifierAttributeGroup"/>
+    <xs:attribute name="GeometryType" type="GeometryType" default="POINT" use="optional"/>
+    <xs:attribute name="EntityCode" type="xs:token" use="optional" default="00"/>
+    <xs:attribute name="EntityTypeCode" type="xs:token" use="optional" default="00"/>
+  </xs:complexType>
+
+  <xs:element name="Tags">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Tag" type="xs:token" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   
   <!-- Label Placement -->
   
@@ -408,14 +430,4 @@
     <xs:attribute name="Tolerance" type="xs:double" use="optional" default="0"/>
     <xs:attribute name="DistanceUnit" type="LabelUnitType" use="optional" default="Map"/>
   </xs:attributeGroup>
-
-  <xs:complexType name="EntitySubTypeType">
-    <xs:sequence>
-      <xs:element name="EntitySubTypeCode" type="DoubleDigitType" minOccurs="1" maxOccurs="1"/>
-    </xs:sequence>
-    <xs:attributeGroup ref="FramedGraphicIdentifierAttributeGroup"/>
-    <xs:attribute name="GeometryType" type="GeometryType" default="POINT" use="optional"/>
-    <xs:attribute name="EntityCode" type="xs:token" use="optional" default="00"/>
-    <xs:attribute name="EntityTypeCode" type="xs:token" use="optional" default="00"/>
-  </xs:complexType>
 </xs:schema>
