@@ -1686,7 +1686,7 @@ namespace JointMilitarySymbologyLibrary
                                 }
                             }
                         }
-                        else
+                        else if(exportType == ETLExportEnum.ETLExportDomain)
                         {
                             line = ocaExporter.Line(status);
 

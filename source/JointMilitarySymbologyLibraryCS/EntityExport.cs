@@ -230,6 +230,8 @@ namespace JointMilitarySymbologyLibrary
             string geometry = "";
             string iType = "NO_ICON";
 
+            string[] xmlTags = null;
+
             if (e == null && eType == null && eSubType != null)
             {
                 result = result + ";" + "Special Entity Subtypes";
@@ -269,6 +271,10 @@ namespace JointMilitarySymbologyLibrary
                     graphic = "";
                 else
                     graphic = eSubType.Graphic;
+
+                // Grab any custom XML tags that might exist
+
+                xmlTags = eSubType.Tags;
             }
             else if(eType != null)
             {
@@ -289,6 +295,10 @@ namespace JointMilitarySymbologyLibrary
                     graphic = "";
                 else
                     graphic = eType.Graphic;
+
+                // Grab any custom XML tags that might exist
+
+                xmlTags = eType.Tags;
             }
             else if(e != null)
             {
@@ -309,7 +319,17 @@ namespace JointMilitarySymbologyLibrary
                     graphic = "";
                 else
                     graphic = e.Graphic;
+
+                // Grab any custom XML tags that might exist
+
+                xmlTags = e.Tags;
             }
+
+            // Create the unique ID/code for this object
+
+            string code = BuildEntityCode(sig, ss, e, eType, eSubType);
+
+            // If there is a standard identity group, add it
 
             if (sig != null)
             {
@@ -325,6 +345,10 @@ namespace JointMilitarySymbologyLibrary
                     result = result + ";" + sidcTag;
             }
 
+            // Add any custom XML or export tags that might exist
+
+            result = _configHelper.AddCustomTags(result, code, xmlTags);
+
             // Add the icon's type
 
             result = result + ";" + iType;
@@ -338,7 +362,7 @@ namespace JointMilitarySymbologyLibrary
 
             result = result + ";" + geometry;
             result = result + ";" + BuildEntityItemName(sig, ss, e, eType, eSubType);
-            result = result + ";" + BuildEntityCode(sig, ss, e, eType, eSubType);
+            result = result + ";" + code;
 
             if (result.Length > 255)
             {
