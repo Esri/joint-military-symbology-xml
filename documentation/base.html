@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>JMSML Schema Reference</title>
+<meta http-equiv="Content-Type" content="text/xml; charset=iso-8859-1" />
+<style type="text/css">
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* More-configurable styles */
+
+/******** General ********/
+
+/* Document body */
+body {
+   color: Black;
+   background-color: White;
+   font-family: Arial, sans-serif;
+   font-size: 10pt;
+}
+/* Horizontal rules */
+hr {
+   color: black;
+}
+/* Document title */
+h1 {
+   font-size: 18pt;
+   letter-spacing: 2px;
+   border-bottom: 1px #ccc solid;
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+/* Main section headers */
+h2 {
+   font-size: 14pt;
+   letter-spacing: 1px;
+}
+/* Sub-section headers */
+h3, h3 a, h3 span {
+   font-size: 12pt;
+   font-weight: bold;
+   color: black;
+}
+/* Table displaying the properties of the schema components or the
+   schema document itself */
+table.properties th, table.properties th a {
+   color: black;
+   background-color: #F99; /* Pink */
+}
+table.properties td {
+   background-color: #eee; /* Gray */
+}
+
+
+/******** Table of Contents Section ********/
+
+/* Controls for switching between printing and viewing modes */
+div#printerControls {
+   color: #963; /* Orange-brown */
+}
+/* Controls that can collapse or expand all XML Instance
+   Representation and Schema Component Representation boxes */
+div#globalControls {
+   border: 2px solid #999;
+}
+
+
+/******** Schema Document Properties Section ********/
+
+/* Table displaying the namespaces declared in the schema */
+table.namespaces th {
+   background-color: #ccc;
+}
+table.namespaces td {
+   background-color: #eee;
+}
+/* Target namespace of the schema */
+span.targetNS {
+   color: #06C;
+   font-weight: bold;
+}
+
+
+/******** Schema Components' Sections ********/
+
+/* Name of schema component */
+.name {
+   color: #F93; /* Orange */
+}
+
+/* Hierarchy table */
+table.hierarchy {
+   border: 2px solid #999; /* Gray */
+}
+
+/* XML Instance Representation table */
+div.sample div.contents {
+   border: 2px dashed black;
+}
+
+/* Schema Component Representation table */
+div.schemaComponent div.contents {
+   border: 2px black solid;
+}
+
+
+/******** Glossary Section ********/
+
+/* Glossary Terms */
+.glossaryTerm {
+   color: #036; /* Blue */
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Printer-version styles */
+
+@media print {
+
+/* Ensures that controls are hidden when printing */
+div#printerControls {
+   visibility: hidden;
+}
+div#globalControls {
+   visibility: hidden;
+}
+#legend {
+   display: none;
+}
+#legendTOC {
+   display: none;
+}
+#glossary {
+   display: none;
+}
+#glossaryTOC {
+   display: none;
+}
+
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Base styles */
+
+/******** General ********/
+
+/* Unordered lists */
+ul {
+   margin-left: 1.5em;
+   margin-bottom: 0em;
+}
+/* Tables */
+table {
+   margin-top: 10px;
+   margin-bottom: 10px;
+   margin-left: 2px;
+   margin-right: 2px;
+}
+table th, table td {
+   font-size: 10pt;
+   vertical-align: top;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+table th {
+   font-weight: bold;
+   text-align: left;
+}
+/* Table displaying the properties of the schema components or the
+   schema document itself */
+table.properties {
+   width: 90%;
+}
+table.properties th {
+   width: 30%;
+}
+/* Boxes that can make its content appear and disappear*/
+div.box {
+   margin: 1em;
+}
+   /* Box caption */
+div.box span.caption {
+   font-weight: bold;
+}
+   /* Button to open and close the box */
+div.box input.control {
+   width: 1.4em;
+   height: 1.4em;
+   text-align: center;
+   vertical-align: middle;
+   font-size: 11pt;
+}
+   /* Box contents */
+div.box div.contents {
+   margin-top: 3px;
+}
+
+
+/******** Table of Contents Section ********/
+
+/* Controls for switching between printing and viewing modes */
+div#printerControls {
+   white-space: nowrap;
+   font-weight: bold;
+   padding: 5px;
+   margin: 5px;
+}
+/* Controls that can collapse or expand all XML Instance
+   Representation and Schema Component Representation boxes */
+div#globalControls {
+   padding: 10px;
+   margin: 5px;
+}
+
+
+/******** Schema Document Properties Section ********/
+
+/* Table displaying the namespaces declared in the schema */
+table.namespaces th {
+}
+table.namespaces td {
+}
+/* Target namespace of the schema */
+span.targetNS {
+}
+
+
+/******** Schema Components' Sections ********/
+
+/* Name of schema component */
+.name {
+}
+
+/* Hierarchy table */
+table.hierarchy {
+   width: 90%;
+}
+table.hierarchy th {
+   font-weight: normal;
+   font-style: italic;
+   width: 20%;
+}
+table.hierarchy th, table.hierarchy td {
+   padding: 5px;
+}
+
+/* XML Instance Representation table */
+div.sample {
+   width: 90%;
+}
+div.sample div.contents {
+   padding: 5px;
+   font-family: Courier New, sans-serif;
+   font-size: 10pt;
+}
+   /* Normal elements and attributes */
+div.sample div.contents, div.sample div.contents a {
+   color: black;
+}
+   /* Group Headers */
+div.sample div.contents .group, div.sample div.contents .group a {
+   color: #999; /* Light gray */
+}
+   /* Type Information */
+div.sample div.contents .type, div.sample div.contents .type a {
+   color: #999; /* Light gray */
+}
+   /* Occurrence Information */
+div.sample div.contents .occurs, div.sample div.contents .occurs a {
+   color: #999; /* Light gray */
+}
+   /* Fixed values */
+div.sample div.contents .fixed {
+   color: #063; /* Green */
+   font-weight: bold;
+}
+   /* Simple type constraints */
+div.sample div.contents .constraint, div.sample div.contents .constraint a {
+   color: #999; /* Light gray */
+}
+   /* Elements and attributes inherited from base type */
+div.sample div.contents .inherited, div.sample div.contents .inherited a {
+   color: #666; /* Dark gray */
+}
+   /* Elements and attributes added to or changed from base type */
+div.sample div.contents .newFields {
+   font-weight: bold;
+}
+   /* Other type of information */
+div.sample div.contents .other, div.sample div.contents .other a {
+   color: #369; /* Blue */
+   font-style: italic;
+}
+   /* Link to open up window displaying documentation */
+div.sample div.contents a.documentation {
+   text-decoration: none;
+   padding-left: 3px;
+   padding-right: 3px;
+   padding-top: 0px;
+   padding-bottom: 0px;
+   font-weight: bold;
+   font-size: 11pt;
+   background-color: #FFD;
+   color: #069;
+}
+   /* Invert colors when hovering over link to open up window 
+      displaying documentation */
+div.sample div.contents a.documentation:hover {
+   color: #FFD;
+   background-color: #069;
+}
+
+/* Schema Component Representation table */
+div.schemaComponent {
+   width: 90%;
+}
+div.schemaComponent div.contents {
+   font-family: Courier New, sans-serif;
+   font-size: 10pt;
+   padding: 5px;
+}
+   /* Syntax characters */
+div.schemaComponent div.contents {
+   color: #00f; /* blue */
+}
+   /* Element and attribute tags */
+div.schemaComponent div.contents .scTag {
+   color: #933; /* maroon */
+}
+   /* Element and attribute content */
+div.schemaComponent div.contents .scContent, div.schemaComponent div.contents .scContent a {
+   color: black;
+   font-weight: bold;
+}
+   /* Comments */
+div.schemaComponent div.contents .comment {
+   color: #999; /* Light gray */
+}
+
+/******** Legend Section ********/
+
+div#legend table, div#legend div {
+   margin-bottom: 3px;
+}
+div#legend div.hint {
+   color: #999; /* Light gray */
+   width: 90%;
+   margin-left: 1em;
+   margin-bottom: 2em;
+}
+
+
+/******** Glossary Section ********/
+
+/* Glossary Terms */
+.glossaryTerm {
+   font-weight: bold;
+}
+
+
+/******** Footer ********/
+
+.footer {
+   font-size: 8pt;
+}
+</style>
+<script type="text/javascript">
+<!--
+/* IDs of XML Instance Representation boxes */
+var xiBoxes = new Array('element_Library_xibox');
+/* IDs of Schema Component Representation boxes */
+var scBoxes = new Array('schema_scbox', 'element_Library_scbox');
+
+/**
+ * Can get the ID of the button controlling
+ * a collapseable box by concatenating
+ * this string onto the ID of the box itself.
+ */
+var B_SFIX = "_button";
+
+/**
+ * Counter of documentation windows
+ * Used to give each window a unique name
+ */
+var windowCount = 0;
+
+/**
+ * Returns an element in the current HTML document.
+ * 
+ * @param elementID Identifier of HTML element
+ * @return               HTML element object
+ */
+function getElementObject(elementID) {
+    var elemObj = null;
+    if (document.getElementById) {
+        elemObj = document.getElementById(elementID);
+    }
+    return elemObj;
+}             
+
+/**
+ * Closes a collapseable box.
+ * 
+ * @param boxObj       Collapseable box
+ * @param buttonObj Button controlling box
+ */
+function closeBox(boxObj, buttonObj) {
+  if (boxObj == null || buttonObj == null) {
+     // Box or button not found
+  } else {
+     // Change 'display' CSS property of box
+     boxObj.style.display="none";
+
+     // Change text of button 
+     if (boxObj.style.display=="none") {
+        buttonObj.value=" + ";
+     }
+  }
+}
+
+/**
+ * Opens a collapseable box.
+ * 
+ * @param boxObj       Collapseable box
+ * @param buttonObj Button controlling box
+ */
+function openBox(boxObj, buttonObj) {
+  if (boxObj == null || buttonObj == null) {
+     // Box or button not found
+  } else {
+     // Change 'display' CSS property of box
+     boxObj.style.display="block";
+
+     // Change text of button
+     if (boxObj.style.display=="block") {
+        buttonObj.value=" - ";
+     }
+  }
+}
+
+/**
+ * Sets the state of a collapseable box.
+ * 
+ * @param boxID Identifier of box
+ * @param open If true, box is "opened",
+ *             Otherwise, box is "closed".
+ */
+function setState(boxID, open) {
+  var boxObj = getElementObject(boxID);
+  var buttonObj = getElementObject(boxID+B_SFIX);
+  if (boxObj == null || buttonObj == null) {
+     // Box or button not found
+  } else if (open) {
+     openBox(boxObj, buttonObj);
+     // Make button visible
+     buttonObj.style.display="inline";
+  } else {
+     closeBox(boxObj, buttonObj);
+     // Make button visible
+     buttonObj.style.display="inline";
+  }
+}
+
+/**
+ * Switches the state of a collapseable box, e.g.
+ * if it's opened, it'll be closed, and vice versa.
+ * 
+ * @param boxID Identifier of box
+ */
+function switchState(boxID) {
+  var boxObj = getElementObject(boxID);
+  var buttonObj = getElementObject(boxID+B_SFIX);
+  if (boxObj == null || buttonObj == null) {
+     // Box or button not found
+  } else if (boxObj.style.display=="none") {
+     // Box is closed, so open it
+     openBox(boxObj, buttonObj);
+  } else if (boxObj.style.display=="block") {
+     // Box is opened, so close it
+     closeBox(boxObj, buttonObj);
+  }
+}
+
+/**
+ * Closes all boxes in a given list.
+ * 
+ * @param boxList Array of box IDs
+ */
+function collapseAll(boxList) {
+  var idx;
+  for (idx = 0; idx < boxList.length; idx++) {
+     var boxObj = getElementObject(boxList[idx]);
+     var buttonObj = getElementObject(boxList[idx]+B_SFIX);
+     closeBox(boxObj, buttonObj);
+  }
+}
+
+/**
+ * Open all boxes in a given list.
+ * 
+ * @param boxList Array of box IDs
+ */
+function expandAll(boxList) {
+  var idx;
+  for (idx = 0; idx < boxList.length; idx++) {
+     var boxObj = getElementObject(boxList[idx]);
+     var buttonObj = getElementObject(boxList[idx]+B_SFIX);
+     openBox(boxObj, buttonObj);
+  }
+}
+
+/**
+ * Makes all the control buttons of boxes appear.
+ * 
+ * @param boxList Array of box IDs
+ */
+function viewControlButtons(boxList) {
+    var idx;
+    for (idx = 0; idx < boxList.length; idx++) {
+        buttonObj = getElementObject(boxList[idx]+B_SFIX);
+        if (buttonObj != null) {
+            buttonObj.style.display = "inline";
+        }
+    }
+}
+
+/**
+ * Makes all the control buttons of boxes disappear.
+ * 
+ * @param boxList Array of box IDs
+ */
+function hideControlButtons(boxList) {
+    var idx;
+    for (idx = 0; idx < boxList.length; idx++) {
+        buttonObj = getElementObject(boxList[idx]+B_SFIX);
+        if (buttonObj != null) {
+            buttonObj.style.display = "none";
+        }
+    }
+}
+
+/**
+ * Sets the page for either printing mode
+ * or viewing mode. In printing mode, the page
+ * is made to be more readable when printing it out.
+ * In viewing mode, the page is more browsable.
+ *
+ * @param isPrinterVersion If true, display in
+ *                                 printing mode; otherwise, 
+ *                                 in viewing mode
+ */
+function displayMode(isPrinterVersion) {
+    var obj;
+    if (isPrinterVersion) {
+        // Hide global control buttons
+        obj = getElementObject("globalControls");
+        if (obj != null) {
+            obj.style.visibility = "hidden";
+        }
+        // Hide Legend
+        obj = getElementObject("legend");
+        if (obj != null) {
+            obj.style.display = "none";
+        }
+        obj = getElementObject("legendTOC");
+        if (obj != null) {
+            obj.style.display = "none";
+        }
+        // Hide Glossary
+        obj = getElementObject("glossary");
+        if (obj != null) {
+            obj.style.display = "none";
+        }
+        obj = getElementObject("glossaryTOC");
+        if (obj != null) {
+            obj.style.display = "none";
+        }
+
+        // Expand all XML Instance Representation tables
+        expandAll(xiBoxes);
+        // Expand all Schema Component Representation tables
+        expandAll(scBoxes);
+
+        // Hide Control buttons
+        hideControlButtons(xiBoxes);
+        hideControlButtons(scBoxes);
+    } else {
+        // View global control buttons
+        obj = getElementObject("globalControls");
+        if (obj != null) {
+            obj.style.visibility = "visible";
+        }
+        // View Legend
+        obj = getElementObject("legend");
+        if (obj != null) {
+            obj.style.display = "block";
+        }
+        obj = getElementObject("legendTOC");
+        if (obj != null) {
+            obj.style.display = "block";
+        }
+        // View Glossary
+        obj = getElementObject("glossary");
+        if (obj != null) {
+            obj.style.display = "block";
+        }
+        obj = getElementObject("glossaryTOC");
+        if (obj != null) {
+            obj.style.display = "block";
+        }
+
+        // Expand all XML Instance Representation tables
+        expandAll(xiBoxes);
+        // Collapse all Schema Component Representation tables
+        collapseAll(scBoxes);
+
+        // View Control buttons
+        viewControlButtons(xiBoxes);
+        viewControlButtons(scBoxes);
+    }
+}
+
+/**
+ * Opens up a window displaying the documentation
+ * of a schema component in the XML Instance
+ * Representation table.
+ * 
+ * @param compDesc      Description of schema component 
+ * @param compName      Name of schema component 
+ * @param docTextArray Array containing the paragraphs 
+ *                           of the new document
+ */
+function viewDocumentation(compDesc, compName, docTextArray) {
+  var width = 400;
+  var height = 200;
+  var locX = 100;
+  var locY = 200;
+
+  /* Generate content */
+  var actualText = "<html>";
+  actualText += "<head><title>";
+  actualText += compDesc;
+  if (compName != '') {
+     actualText += ": " + compName;
+  }
+  actualText += "</title></head>";
+  actualText += "<body bgcolor=\"#FFFFEE\">";
+  // Title
+  actualText += "<p style=\"font-family: Arial, sans-serif; font-size: 12pt; font-weight: bold; letter-spacing:1px;\">";
+  actualText += compDesc;
+  if (compName != '') {
+     actualText += ": <span style=\"color:#006699\">" + compName + "</span>";
+  }
+  actualText += "</p>";
+  // Documentation
+  var idx;
+  for (idx = 0; idx < docTextArray.length; idx++) {
+     actualText += "<p style=\"font-family: Arial, sans-serif; font-size: 10pt;\">" + docTextArray[idx] + "</p>";
+  }
+  // Link to close window
+  actualText += "<a href=\"javascript:void(0)\" onclick=\"window.close();\" style=\"font-family: Arial, sans-serif; font-size: 8pt;\">Close</a>";
+  actualText += "</body></html>";
+
+  /* Display window */
+  windowCount++;
+  var docWindow = window.open("", "documentation"+windowCount, "toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable,alwaysRaised,dependent,titlebar=no,width="+width+",height="+height+",screenX="+locX+",left="+locX+",screenY="+locY+",top="+locY);
+  docWindow.document.write(actualText);
+}
+
+// -->
+</script>
+</head>
+<body>
+<h1><a name="top">JMSML Schema Reference</a></h1>
+<div style="float: right;">
+<div id="printerControls" style="display:none;">
+<input type="checkbox" onclick="displayMode(this.checked)" />Printer-friendly Version</div>
+<script type="text/javascript">
+<!--
+
+var pc = getElementObject("printerControls");
+if (pc != null) {
+   pc.style.display="block";
+}
+               
+// -->
+</script>
+<div id="globalControls" style="display:none">
+<strong>XML Instance Representation:</strong><br />
+<span style="margin-left: 1em; white-space: nowrap">[ <a href="javascript:void(0)" onclick="expandAll(xiBoxes)">Expand All</a> | <a href="javascript:void(0)" onclick="collapseAll(xiBoxes)">Collapse All</a> ]</span><br /><br />
+<strong>Schema Component Representation:</strong><br />
+<span style="margin-left: 1em; white-space: nowrap">[ <a href="javascript:void(0)" onclick="expandAll(scBoxes)">Expand All</a> | <a href="javascript:void(0)" onclick="collapseAll(scBoxes)">Collapse All</a> ]</span>
+</div>
+<script type="text/javascript">
+<!--
+
+var gc = getElementObject("globalControls");
+if (gc != null) {
+   gc.style.display="block";
+}
+               
+// -->
+</script>
+</div>
+<h2>Table of Contents</h2>
+<ul>
+<li>
+<a href="#SchemaProperties">Schema Document Properties</a>
+</li>
+<li><a href="#SchemaDeclarations">Global Declarations</a>
+<ul>
+<li>
+<a href="#element_Library">Element: <strong>Library</strong>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<div style="text-align: right; clear: both;"><a href="#top">top</a></div>
+<hr />
+<h2><a name="SchemaProperties">Schema Document Properties</a></h2>
+<table class="properties">
+<tr>
+<th>Target Namespace</th>
+<td>
+<span class="targetNS">http://disa.mil/JointMilSyML.xsd</span>
+</td>
+</tr>
+<tr>
+<th>Element and Attribute Namespaces</th>
+<td>
+<ul>
+<li>Global element and attribute declarations belong to this schema's target namespace.</li>
+<li>By default, local element declarations belong to this schema's target namespace.</li>
+<li>By default, local attribute declarations have no namespace.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th>Schema Composition</th>
+<td>
+<ul>
+<li>This schema includes components from the following schema document(s):<ul>
+<li>
+<a title="Jump to schema documentation for 'core.xsd'." href="core.html">core.xsd</a>
+</li>
+<li>
+<a title="Jump to schema documentation for 'symbolSet.xsd'." href="symbolSet.html">symbolSet.xsd</a>
+</li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+<h3>Declared Namespaces</h3>
+<table class="namespaces">
+<tr>
+<th>Prefix</th>
+<th>Namespace</th>
+</tr>
+<tr>
+<td>
+<a name="ns_">Default namespace</a>
+</td>
+<td>
+<span class="targetNS">http://disa.mil/JointMilSyML.xsd</span>
+</td>
+</tr>
+<tr>
+<td>
+<a name="ns_xml">xml</a>
+</td>
+<td>http://www.w3.org/XML/1998/namespace</td>
+</tr>
+<tr>
+<td>
+<a name="ns_jmsml">jmsml</a>
+</td>
+<td>
+<span class="targetNS">http://disa.mil/JointMilSyML.xsd</span>
+</td>
+</tr>
+<tr>
+<td>
+<a name="ns_xs">xs</a>
+</td>
+<td>http://www.w3.org/2001/XMLSchema</td>
+</tr>
+</table>
+<div class="schemaComponent box">
+<div>
+<input type="button" id="schema_scbox_button" class="control" onclick="switchState('schema_scbox'); return false;" style="display: none" /> <span class="caption">Schema Component Representation</span>
+</div>
+<div id="schema_scbox" class="contents">
+<div style="margin-left: 0em">&lt;<span class="scTag">xs:schema</span> <span class="scTag">targetNamespace</span>="<span class="scContent">http://disa.mil/JointMilSyML.xsd</span>" <span class="scTag">elementFormDefault</span>="<span class="scContent">qualified</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:include</span> <span class="scTag">schemaLocation</span>="<span class="scContent">core.xsd</span>"/&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:include</span> <span class="scTag">schemaLocation</span>="<span class="scContent">symbolSet.xsd</span>"/&gt;</div><div class="scContent" style="margin-left: 1.5em">...</div>&lt;/<span class="scTag">xs:schema</span>&gt;</div>
+</div>
+<script type="text/javascript">
+<!--
+setState('schema_scbox', false);
+// -->
+</script>
+</div>
+<div style="text-align: right; clear: both;"><a href="#top">top</a></div>
+<hr />
+<h2><a name="SchemaDeclarations">Global Declarations</a></h2>
+<h3>Element: <a name="element_Library" class="name">Library</a>
+</h3>
+<table class="properties">
+<tr>
+<th>Name</th>
+<td>Library</td>
+</tr>
+<tr>
+<th>Type</th>
+<td>Locally-defined complex type</td>
+</tr>
+<tr>
+<th>Nillable</th>
+<td>no</td>
+</tr>
+<tr>
+<th>Abstract</th>
+<td>no</td>
+</tr>
+</table>
+<div class="sample box">
+<div>
+<input type="button" id="element_Library_xibox_button" class="control" onclick="switchState('element_Library_xibox'); return false;" style="display: none" /> <span class="caption">XML Instance Representation</span>
+</div>
+<div id="element_Library_xibox" class="contents">
+<div style="margin-left: 0em">&lt;Library<br /><span style="margin-left: 0.5em"> Name="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[1]</span>"</span><br /><span style="margin-left: 0.5em"> Label="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> LabelAlias="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Description="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Remarks="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span>&gt; <br /><div style="margin-left: 1.5em">&lt;Geometries&gt;  <span class="occurs">[1]</span> <br /><div style="margin-left: 1.5em">&lt;Geometry<br /><span style="margin-left: 0.5em"> ID="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:ID</span> <span class="occurs">[1]</span>"</span><br /><span style="margin-left: 0.5em"> Label="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> LabelAlias="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Description="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Remarks="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span>/&gt;  <span class="occurs">[1..*]</span></div>&lt;/Geometries&gt;</div><div style="margin-left: 1.5em">&lt;DrawRules&gt;  <span class="occurs">[1]</span> <br /><div style="margin-left: 1.5em">&lt;DrawRule<br /><span style="margin-left: 0.5em"> ID="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:ID</span> <span class="occurs">[1]</span>"</span><br /><span style="margin-left: 0.5em"> GeometryID="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:IDREF</span> <span class="occurs">[1]</span>"</span><br /><span style="margin-left: 0.5em"> AnchorPoints="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> SizeShape="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Orientation="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Ornamentation="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span>/&gt;  <span class="occurs">[1..*]</span></div>&lt;/DrawRules&gt;</div><div style="margin-left: 1.5em">&lt;LabelRules&gt;  <span class="occurs">[1]</span> <br /><div style="margin-left: 1.5em">&lt;LabelRule<br /><span style="margin-left: 0.5em"> ID="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:ID</span> <span class="occurs">[1]</span>"</span><br /><span style="margin-left: 0.5em"> Type="<span class="type"><a title="Jump to &quot;LabelRuleType&quot; type definition(located in external schema documentation)." href="core.html#type_LabelRuleType" class="externalLink">LabelRuleType</a></span> <span class="occurs">[1]</span>"</span><br /><span style="margin-left: 0.5em"> PointLabelMethod="<span class="type"><a title="Jump to &quot;PointLabelMethodType&quot; type definition(located in external schema documentation)." href="core.html#type_PointLabelMethodType" class="externalLink">PointLabelMethodType</a></span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> LineLabelMethod="<span class="type"><a title="Jump to &quot;LineLabelMethodType&quot; type definition(located in external schema documentation)." href="core.html#type_LineLabelMethodType" class="externalLink">LineLabelMethodType</a></span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> AreaLabelMethod="<span class="type"><a title="Jump to &quot;AreaLabelMethodType&quot; type definition(located in external schema documentation)." href="core.html#type_AreaLabelMethodType" class="externalLink">AreaLabelMethodType</a></span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> MultiPartOption="<span class="type"><a title="Jump to &quot;MultiPartOptionType&quot; type definition(located in external schema documentation)." href="core.html#type_MultiPartOptionType" class="externalLink">MultiPartOptionType</a></span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> ConstrainOffset="<span class="type"><a title="Jump to &quot;ConstrainOffsetType&quot; type definition(located in external schema documentation)." href="core.html#type_ConstrainOffsetType" class="externalLink">ConstrainOffsetType</a></span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> ExternalZone="<span class="type"><a title="Jump to &quot;LabelExternalZoneType&quot; type definition(located in external schema documentation)." href="core.html#type_LabelExternalZoneType" class="externalLink">LabelExternalZoneType</a></span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> InternalZone="<span class="type"><a title="Jump to &quot;LabelInternalZoneType&quot; type definition(located in external schema documentation)." href="core.html#type_LabelInternalZoneType" class="externalLink">LabelInternalZoneType</a></span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Offset="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:double</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> OffsetUnit="<span class="type"><a title="Jump to &quot;LabelUnitType&quot; type definition(located in external schema documentation)." href="core.html#type_LabelUnitType" class="externalLink">LabelUnitType</a></span> <span class="occurs">[0..1]</span>"</span>&gt;  <span class="occurs">[1..*]</span> <br /><div style="margin-left: 1.5em">&lt;Expression&gt; <span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> &lt;/Expression&gt; <span class="occurs">[1]</span></div><div style="margin-left: 1.5em">&lt;OffsetAlongLine&gt; <span class="type"><a title="Jump to &quot;OffsetAlongLinePlacementType&quot; type definition(located in external schema documentation)." href="core.html#type_OffsetAlongLinePlacementType" class="externalLink">OffsetAlongLinePlacementType</a></span> &lt;/OffsetAlongLine&gt; <span class="occurs">[0..1]</span></div>&lt;/LabelRule&gt;</div>&lt;/LabelRules&gt;</div><div style="margin-left: 1.5em">&lt;Amplifiers&gt;  <span class="occurs">[1]</span> <br /><div style="margin-left: 1.5em">&lt;Amplifier<br /><span style="margin-left: 0.5em"> ID="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:ID</span> <span class="occurs">[1]</span>"</span><br /><span style="margin-left: 0.5em"> Label="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> LabelAlias="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Description="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Remarks="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Type="<span class="type"><a title="Jump to &quot;AmplifierType&quot; type definition(located in external schema documentation)." href="core.html#type_AmplifierType" class="externalLink">AmplifierType</a></span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Length="<span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:int</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Note="<span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span>/&gt;  <span class="occurs">[1..*]</span></div>&lt;/Amplifiers&gt;</div><div style="margin-left: 1.5em">&lt;Versions&gt;  <span class="occurs">[1]</span> <br /><div style="margin-left: 1.5em">&lt;Version<br /><span style="margin-left: 0.5em"> Name="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[1]</span>"</span><br /><span style="margin-left: 0.5em"> Label="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> LabelAlias="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Description="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Remarks="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span>&gt;  <span class="occurs">[1..39]</span> <br /><div style="margin-left: 1.5em">&lt;VersionCode&gt; <span class="type"><a title="Jump to &quot;DoubleDigitType&quot; type definition(located in external schema documentation)." href="core.html#type_DoubleDigitType" class="externalLink">DoubleDigitType</a></span> &lt;/VersionCode&gt; <span class="occurs">[1]</span></div>&lt;/Version&gt;</div>&lt;/Versions&gt;</div><div style="margin-left: 1.5em">&lt;Contexts&gt;  <span class="occurs">[1]</span> <br /><div style="margin-left: 1.5em">&lt;Context<br /><span style="margin-left: 0.5em"> ID="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:ID</span> <span class="occurs">[1]</span>"</span><br /><span style="margin-left: 0.5em"> Label="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> LabelAlias="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Description="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Remarks="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span>&gt;  <span class="occurs">[1..10]</span> <br /><div style="margin-left: 1.5em">&lt;ContextCode&gt; <span class="type"><a title="Jump to &quot;SingleDigitType&quot; type definition(located in external schema documentation)." href="core.html#type_SingleDigitType" class="externalLink">SingleDigitType</a></span> &lt;/ContextCode&gt; <span class="occurs">[1]</span></div><div style="margin-left: 1.5em">&lt;ContextAmplifiers&gt;  <span class="occurs">[1]</span> <br /><div style="margin-left: 1.5em">&lt;ContextAmplifier<br /><span style="margin-left: 0.5em"> ID="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:ID</span> <span class="occurs">[1]</span>"</span><br /><span style="margin-left: 0.5em"> Label="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> LabelAlias="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Description="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Remarks="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Graphic="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:anyURI</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Shape="<span class="type"><a title="Jump to &quot;ShapeType&quot; type definition(located in external schema documentation)." href="core.html#type_ShapeType" class="externalLink">ShapeType</a></span> <span class="occurs">[1]</span>"</span>/&gt;  <span class="occurs">[1..*]</span></div>&lt;/ContextAmplifiers&gt;</div>&lt;/Context&gt;</div>&lt;/Contexts&gt;</div><div style="margin-left: 1.5em">&lt;StandardIdentities&gt;  <span class="occurs">[1]</span> <br /><div style="margin-left: 1.5em">&lt;StandardIdentity<br /><span style="margin-left: 0.5em"> ID="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:ID</span> <span class="occurs">[1]</span>"</span><br /><span style="margin-left: 0.5em"> Label="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> LabelAlias="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Description="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Remarks="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span>&gt;  <span class="occurs">[1..10]</span> <br /><div style="margin-left: 1.5em">&lt;StandardIdentityCode&gt; <span class="type"><a title="Jump to &quot;SingleDigitType&quot; type definition(located in external schema documentation)." href="core.html#type_SingleDigitType" class="externalLink">SingleDigitType</a></span> &lt;/StandardIdentityCode&gt; <span class="occurs">[1]</span></div>&lt;/StandardIdentity&gt;</div>&lt;/StandardIdentities&gt;</div><div style="margin-left: 1.5em">&lt;StandardIdentityGroups&gt;  <span class="occurs">[1]</span> <br /><div style="margin-left: 1.5em">&lt;StandardIdentityGroup<br /><span style="margin-left: 0.5em"> ID="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:ID</span> <span class="occurs">[1]</span>"</span><br /><span style="margin-left: 0.5em"> Label="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> LabelAlias="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Description="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Remarks="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> StandardIdentityIDs="<span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:IDREFS</span> <span class="occurs">[1]</span>"</span><br /><span style="margin-left: 0.5em"> GraphicSuffix="<span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[1]</span>"</span>&gt;  <span class="occurs">[1..4]</span> <br /><div style="margin-left: 1.5em">&lt;StandardIdentityGroupCode&gt; <span class="type"><a title="Jump to &quot;SingleDigitType&quot; type definition(located in external schema documentation)." href="core.html#type_SingleDigitType" class="externalLink">SingleDigitType</a></span> &lt;/StandardIdentityGroupCode&gt; <span class="occurs">[1]</span></div>&lt;/StandardIdentityGroup&gt;</div>&lt;/StandardIdentityGroups&gt;</div><div style="margin-left: 1.5em">&lt;Dimensions&gt;  <span class="occurs">[1]</span> <br /><div style="margin-left: 1.5em">&lt;Dimension<br /><span style="margin-left: 0.5em"> ID="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:ID</span> <span class="occurs">[1]</span>"</span><br /><span style="margin-left: 0.5em"> Label="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> LabelAlias="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Description="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Remarks="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Geometry="<span class="type"><a title="Jump to &quot;GeometryType&quot; type definition(located in external schema documentation)." href="core.html#type_GeometryType" class="externalLink">GeometryType</a></span> <span class="occurs">[1]</span>"</span>&gt;  <span class="occurs">[1..*]</span> <br /><div style="margin-left: 1.5em">&lt;DimensionCode&gt; <span class="type"><a title="Jump to &quot;DoubleDigitType&quot; type definition(located in external schema documentation)." href="core.html#type_DoubleDigitType" class="externalLink">DoubleDigitType</a></span> &lt;/DimensionCode&gt; <span class="occurs">[1]</span></div><div style="margin-left: 1.5em">&lt;LegacyDimensionCode&gt; <span class="type"><a title="Jump to &quot;LegacyLetterCodeType&quot; type definition(located in external schema documentation)." href="core.html#type_LegacyLetterCodeType" class="externalLink">LegacyLetterCodeType</a></span> &lt;/LegacyDimensionCode&gt; <span class="occurs">[0..*]</span></div><div style="margin-left: 1.5em">&lt;Fields&gt; <span class="type"><a title="Jump to &quot;FieldListType&quot; type definition(located in external schema documentation)." href="core.html#type_FieldListType" class="externalLink">FieldListType</a></span> &lt;/Fields&gt; <span class="occurs">[1]</span></div><div style="margin-left: 1.5em">&lt;SymbolSets&gt;  <span class="occurs">[1]</span> <br /><div style="margin-left: 1.5em">&lt;SymbolSetRef<br /><span style="margin-left: 0.5em"> ID="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:IDREF</span> <span class="occurs">[1]</span>"</span><br /><span style="margin-left: 0.5em"> Label="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Description="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Remarks="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Instance="<span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:anyURI</span> <span class="occurs">[0..1]</span>"</span>&gt;  <span class="occurs">[0..*]</span> <br /><div style="margin-left: 1.5em">&lt;SymbolSetCode&gt; <span class="type"><a title="Jump to &quot;DoubleDigitType&quot; type definition(located in external schema documentation)." href="core.html#type_DoubleDigitType" class="externalLink">DoubleDigitType</a></span> &lt;/SymbolSetCode&gt; <span class="occurs">[1]</span></div>&lt;/SymbolSetRef&gt;</div>&lt;/SymbolSets&gt;</div>&lt;/Dimension&gt;</div>&lt;/Dimensions&gt;</div><div style="margin-left: 1.5em">&lt;Affiliations&gt;  <span class="occurs">[1]</span> <br /><div style="margin-left: 1.5em">&lt;Affiliation<br /><span style="margin-left: 0.5em"> ID="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:ID</span> <span class="occurs">[1]</span>"</span><br /><span style="margin-left: 0.5em"> Label="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> LabelAlias="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Description="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Remarks="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Graphic="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:anyURI</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> ContextID="<span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:IDREF</span> <span class="occurs">[1]</span>"</span><br /><span style="margin-left: 0.5em"> StandardIdentityID="<span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:IDREF</span> <span class="occurs">[1]</span>"</span><br /><span style="margin-left: 0.5em"> DimensionID="<span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:IDREF</span> <span class="occurs">[1]</span>"</span><br /><span style="margin-left: 0.5em"> Shape="<span class="type"><a title="Jump to &quot;ShapeType&quot; type definition(located in external schema documentation)." href="core.html#type_ShapeType" class="externalLink">ShapeType</a></span> <span class="occurs">[1]</span>"</span><br /><span style="margin-left: 0.5em"> PlannedGraphic="<span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:anyURI</span> <span class="occurs">[0..1]</span>"</span>&gt;  <span class="occurs">[1..*]</span> <br /><div style="margin-left: 1.5em">&lt;LegacyStandardIdentityCode&gt; <span class="type"><a title="Jump to &quot;LegacyLetterCodeType&quot; type definition(located in external schema documentation)." href="core.html#type_LegacyLetterCodeType" class="externalLink">LegacyLetterCodeType</a></span> &lt;/LegacyStandardIdentityCode&gt; <span class="occurs">[0..*]</span></div>&lt;/Affiliation&gt;</div>&lt;/Affiliations&gt;</div><div style="margin-left: 1.5em">&lt;Statuses&gt;  <span class="occurs">[1]</span> <br /><div style="margin-left: 1.5em">&lt;Status<br /><span style="margin-left: 0.5em"> Name="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[1]</span>"</span><br /><span style="margin-left: 0.5em"> Label="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> LabelAlias="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Description="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Remarks="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Graphic="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:anyURI</span> <span class="occurs">[0..1]</span>"</span>&gt;  <span class="occurs">[1..10]</span> <br /><div style="margin-left: 1.5em">&lt;StatusCode&gt; <span class="type"><a title="Jump to &quot;SingleDigitType&quot; type definition(located in external schema documentation)." href="core.html#type_SingleDigitType" class="externalLink">SingleDigitType</a></span> &lt;/StatusCode&gt; <span class="occurs">[1]</span></div><div style="margin-left: 1.5em">&lt;LegacyStatusCode&gt; <span class="type"><a title="Jump to &quot;LegacyLetterCodeType&quot; type definition(located in external schema documentation)." href="core.html#type_LegacyLetterCodeType" class="externalLink">LegacyLetterCodeType</a></span> &lt;/LegacyStatusCode&gt; <span class="occurs">[0..*]</span></div><div style="margin-left: 1.5em">&lt;Graphics&gt;  <span class="occurs">[0..1]</span> <br /><div style="margin-left: 1.5em">&lt;Graphic<br /><span style="margin-left: 0.5em"> StandardIdentityGroup="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:IDREF</span> <span class="occurs">[1]</span>"</span><br /><span style="margin-left: 0.5em"> Dimension="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:IDREF</span> <span class="occurs">[1]</span>"</span><br /><span style="margin-left: 0.5em"> Graphic="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:anyURI</span> <span class="occurs">[1]</span>"</span>/&gt;  <span class="occurs">[1..*]</span></div>&lt;/Graphics&gt;</div>&lt;/Status&gt;</div>&lt;/Statuses&gt;</div><div style="margin-left: 1.5em">&lt;HQTFDummies&gt;  <span class="occurs">[1]</span> <br /><div style="margin-left: 1.5em">&lt;HQTFDummy<br /><span style="margin-left: 0.5em"> Name="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[1]</span>"</span><br /><span style="margin-left: 0.5em"> Label="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> LabelAlias="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Description="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Remarks="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span>&gt;  <span class="occurs">[1..10]</span> <br /><div style="margin-left: 1.5em">&lt;HQTFDummyCode&gt; <span class="type"><a title="Jump to &quot;SingleDigitType&quot; type definition(located in external schema documentation)." href="core.html#type_SingleDigitType" class="externalLink">SingleDigitType</a></span> &lt;/HQTFDummyCode&gt; <span class="occurs">[1]</span></div><div style="margin-left: 1.5em">&lt;LegacyHQTFDummyCode&gt; <span class="type"><a title="Jump to &quot;LegacyLetterCodeType&quot; type definition(located in external schema documentation)." href="core.html#type_LegacyLetterCodeType" class="externalLink">LegacyLetterCodeType</a></span> &lt;/LegacyHQTFDummyCode&gt; <span class="occurs">[0..*]</span></div><div style="margin-left: 1.5em">&lt;Graphics&gt;  <span class="occurs">[0..1]</span> <br /><div style="margin-left: 1.5em">&lt;Graphic<br /><span style="margin-left: 0.5em"> StandardIdentityGroup="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:IDREF</span> <span class="occurs">[1]</span>"</span><br /><span style="margin-left: 0.5em"> Dimension="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:IDREF</span> <span class="occurs">[1]</span>"</span><br /><span style="margin-left: 0.5em"> Graphic="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:anyURI</span> <span class="occurs">[1]</span>"</span>/&gt;  <span class="occurs">[1..*]</span></div>&lt;/Graphics&gt;</div>&lt;/HQTFDummy&gt;</div>&lt;/HQTFDummies&gt;</div><div style="margin-left: 1.5em">&lt;AmplifierGroups&gt;  <span class="occurs">[1]</span> <br /><div style="margin-left: 1.5em">&lt;AmplifierGroup<br /><span style="margin-left: 0.5em"> Name="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[1]</span>"</span><br /><span style="margin-left: 0.5em"> Label="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> LabelAlias="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Description="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Remarks="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> CompatibleSymbolSetIDs="<span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:IDREFS</span> <span class="occurs">[0..1]</span>"</span>&gt;  <span class="occurs">[1..10]</span> <br /><div style="margin-left: 1.5em">&lt;AmplifierGroupCode&gt; <span class="type"><a title="Jump to &quot;SingleDigitType&quot; type definition(located in external schema documentation)." href="core.html#type_SingleDigitType" class="externalLink">SingleDigitType</a></span> &lt;/AmplifierGroupCode&gt; <span class="occurs">[1]</span></div><div style="margin-left: 1.5em">&lt;LegacyModifierCode&gt; <span class="type"><a title="Jump to &quot;LegacyLetterCodeType&quot; type definition(located in external schema documentation)." href="core.html#type_LegacyLetterCodeType" class="externalLink">LegacyLetterCodeType</a></span> &lt;/LegacyModifierCode&gt; <span class="occurs">[0..*]</span></div><div style="margin-left: 1.5em">&lt;Amplifiers&gt;  <span class="occurs">[1]</span> <br /><div style="margin-left: 1.5em">&lt;Amplifier<br /><span style="margin-left: 0.5em"> Name="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[1]</span>"</span><br /><span style="margin-left: 0.5em"> Label="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> LabelAlias="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Description="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span><br /><span style="margin-left: 0.5em"> Remarks="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span> <span class="occurs">[0..1]</span>"</span>&gt;  <span class="occurs">[1..10]</span> <br /><div style="margin-left: 1.5em">&lt;AmplifierCode&gt; <span class="type"><a title="Jump to &quot;SingleDigitType&quot; type definition(located in external schema documentation)." href="core.html#type_SingleDigitType" class="externalLink">SingleDigitType</a></span> &lt;/AmplifierCode&gt; <span class="occurs">[1]</span></div><div style="margin-left: 1.5em">&lt;LegacyModifierCode&gt; <span class="type"><a title="Jump to &quot;LegacyLetterCodeType&quot; type definition(located in external schema documentation)." href="core.html#type_LegacyLetterCodeType" class="externalLink">LegacyLetterCodeType</a></span> &lt;/LegacyModifierCode&gt; <span class="occurs">[0..*]</span></div><div style="margin-left: 1.5em">&lt;Graphics&gt;  <span class="occurs">[0..1]</span> <br /><div style="margin-left: 1.5em">&lt;Graphic<br /><span style="margin-left: 0.5em"> StandardIdentityGroup="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:IDREF</span> <span class="occurs">[1]</span>"</span><br /><span style="margin-left: 0.5em"> Graphic="<span class="type"><a href="core.html#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:anyURI</span> <span class="occurs">[1]</span>"</span>/&gt;  <span class="occurs">[1..*]</span></div>&lt;/Graphics&gt;</div>&lt;/Amplifier&gt;</div>&lt;/Amplifiers&gt;</div>&lt;/AmplifierGroup&gt;</div>&lt;/AmplifierGroups&gt;</div>&lt;/Library&gt;</div>
+</div>
+<script type="text/javascript">
+<!--
+setState('element_Library_xibox', true);
+// -->
+</script>
+</div>
+<div class="schemaComponent box">
+<div>
+<input type="button" id="element_Library_scbox_button" class="control" onclick="switchState('element_Library_scbox'); return false;" style="display: none" /> <span class="caption">Schema Component Representation</span>
+</div>
+<div id="element_Library_scbox" class="contents">
+<div style="margin-left: 0em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">Library</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div class="comment" style="margin-left: 1.5em">&lt;-- Geometries --&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">Geometries</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">Geometry</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">unbounded</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attributeGroup</span> <span class="scTag">ref</span>="<span class="scContent"><a title="Jump to &quot;IdentifierAttributeGroup&quot; attribute group definition(located in external schema documentation)." href="core.html#attributeGroup_IdentifierAttributeGroup" class="externalLink">IdentifierAttributeGroup</a></span>"/&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div><div class="comment" style="margin-left: 1.5em">&lt;-- DrawRules --&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">DrawRules</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">DrawRule</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">unbounded</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attributeGroup</span> <span class="scTag">ref</span>="<span class="scContent"><a title="Jump to &quot;IdentifierDrawRuleGroup&quot; attribute group definition(located in external schema documentation)." href="core.html#attributeGroup_IdentifierDrawRuleGroup" class="externalLink">IdentifierDrawRuleGroup</a></span>"/&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div><div class="comment" style="margin-left: 1.5em">&lt;-- LabelPlacementRules--&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">LabelRules</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">LabelRule</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">unbounded</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">Expression</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span></span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"/&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">OffsetAlongLine</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a title="Jump to &quot;OffsetAlongLinePlacementType&quot; type definition(located in external schema documentation)." href="core.html#type_OffsetAlongLinePlacementType" class="externalLink">OffsetAlongLinePlacementType</a></span></span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"/&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attributeGroup</span> <span class="scTag">ref</span>="<span class="scContent"><a title="Jump to &quot;LabelRuleAttributeGroup&quot; attribute group definition(located in external schema documentation)." href="core.html#attributeGroup_LabelRuleAttributeGroup" class="externalLink">LabelRuleAttributeGroup</a></span>"/&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div><div class="comment" style="margin-left: 1.5em">&lt;-- Amplifier --&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">Amplifiers</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">Amplifier</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">unbounded</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attributeGroup</span> <span class="scTag">ref</span>="<span class="scContent"><a title="Jump to &quot;IdentifierAttributeGroup&quot; attribute group definition(located in external schema documentation)." href="core.html#attributeGroup_IdentifierAttributeGroup" class="externalLink">IdentifierAttributeGroup</a></span>"/&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attribute</span> <span class="scTag">name</span>="<span class="scContent">Type</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a title="Jump to &quot;AmplifierType&quot; type definition(located in external schema documentation)." href="core.html#type_AmplifierType" class="externalLink">AmplifierType</a></span></span>" <span class="scTag">default</span>="<span class="scContent">TEXT</span>" <span class="scTag">use</span>="<span class="scContent">optional</span>"/&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attribute</span> <span class="scTag">name</span>="<span class="scContent">Length</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:int</span></span>" <span class="scTag">default</span>="<span class="scContent">0</span>" <span class="scTag">use</span>="<span class="scContent">optional</span>"/&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attribute</span> <span class="scTag">name</span>="<span class="scContent">Note</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:string</span></span>" <span class="scTag">use</span>="<span class="scContent">optional</span>"/&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div><div class="comment" style="margin-left: 1.5em">&lt;--Version--&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">Versions</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">Version</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">39</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">VersionCode</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a title="Jump to &quot;DoubleDigitType&quot; type definition(located in external schema documentation)." href="core.html#type_DoubleDigitType" class="externalLink">DoubleDigitType</a></span></span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"/&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attributeGroup</span> <span class="scTag">ref</span>="<span class="scContent"><a title="Jump to &quot;NameAttributeGroup&quot; attribute group definition(located in external schema documentation)." href="core.html#attributeGroup_NameAttributeGroup" class="externalLink">NameAttributeGroup</a></span>"/&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div><div class="comment" style="margin-left: 1.5em">&lt;--Context--&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">Contexts</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">Context</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">10</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">ContextCode</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a title="Jump to &quot;SingleDigitType&quot; type definition(located in external schema documentation)." href="core.html#type_SingleDigitType" class="externalLink">SingleDigitType</a></span></span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"/&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">ContextAmplifiers</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">ContextAmplifier</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">unbounded</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attributeGroup</span> <span class="scTag">ref</span>="<span class="scContent"><a title="Jump to &quot;GraphicIdentifierAttributeGroup&quot; attribute group definition(located in external schema documentation)." href="core.html#attributeGroup_GraphicIdentifierAttributeGroup" class="externalLink">GraphicIdentifierAttributeGroup</a></span>"/&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attribute</span> <span class="scTag">name</span>="<span class="scContent">Shape</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a title="Jump to &quot;ShapeType&quot; type definition(located in external schema documentation)." href="core.html#type_ShapeType" class="externalLink">ShapeType</a></span></span>" <span class="scTag">use</span>="<span class="scContent">required</span>"/&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attributeGroup</span> <span class="scTag">ref</span>="<span class="scContent"><a title="Jump to &quot;IdentifierAttributeGroup&quot; attribute group definition(located in external schema documentation)." href="core.html#attributeGroup_IdentifierAttributeGroup" class="externalLink">IdentifierAttributeGroup</a></span>"/&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div><div class="comment" style="margin-left: 1.5em">&lt;-- Standard Identity --&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">StandardIdentities</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">StandardIdentity</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">10</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">StandardIdentityCode</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a title="Jump to &quot;SingleDigitType&quot; type definition(located in external schema documentation)." href="core.html#type_SingleDigitType" class="externalLink">SingleDigitType</a></span></span>"/&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attributeGroup</span> <span class="scTag">ref</span>="<span class="scContent"><a title="Jump to &quot;IdentifierAttributeGroup&quot; attribute group definition(located in external schema documentation)." href="core.html#attributeGroup_IdentifierAttributeGroup" class="externalLink">IdentifierAttributeGroup</a></span>"/&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div><div class="comment" style="margin-left: 1.5em">&lt;-- Standard Identity Group --&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">StandardIdentityGroups</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">StandardIdentityGroup</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">4</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">StandardIdentityGroupCode</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a title="Jump to &quot;SingleDigitType&quot; type definition(located in external schema documentation)." href="core.html#type_SingleDigitType" class="externalLink">SingleDigitType</a></span></span>"/&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attributeGroup</span> <span class="scTag">ref</span>="<span class="scContent"><a title="Jump to &quot;IdentifierAttributeGroup&quot; attribute group definition(located in external schema documentation)." href="core.html#attributeGroup_IdentifierAttributeGroup" class="externalLink">IdentifierAttributeGroup</a></span>"/&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attribute</span> <span class="scTag">name</span>="<span class="scContent">StandardIdentityIDs</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:IDREFS</span></span>" <span class="scTag">use</span>="<span class="scContent">required</span>"/&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attribute</span> <span class="scTag">name</span>="<span class="scContent">GraphicSuffix</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:token</span></span>" <span class="scTag">use</span>="<span class="scContent">required</span>"/&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div><div class="comment" style="margin-left: 1.5em">&lt;-- Dimension --&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">Dimensions</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">Dimension</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">unbounded</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">DimensionCode</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a title="Jump to &quot;DoubleDigitType&quot; type definition(located in external schema documentation)." href="core.html#type_DoubleDigitType" class="externalLink">DoubleDigitType</a></span></span>"/&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">LegacyDimensionCode</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a title="Jump to &quot;LegacyLetterCodeType&quot; type definition(located in external schema documentation)." href="core.html#type_LegacyLetterCodeType" class="externalLink">LegacyLetterCodeType</a></span></span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">unbounded</span>"/&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">Fields</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a title="Jump to &quot;FieldListType&quot; type definition(located in external schema documentation)." href="core.html#type_FieldListType" class="externalLink">FieldListType</a></span></span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"/&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">SymbolSets</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">SymbolSetRef</span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">unbounded</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">SymbolSetCode</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a title="Jump to &quot;DoubleDigitType&quot; type definition(located in external schema documentation)." href="core.html#type_DoubleDigitType" class="externalLink">DoubleDigitType</a></span></span>"/&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attributeGroup</span> <span class="scTag">ref</span>="<span class="scContent"><a title="Jump to &quot;IdentifierAttributeGroup2&quot; attribute group definition(located in external schema documentation)." href="core.html#attributeGroup_IdentifierAttributeGroup2" class="externalLink">IdentifierAttributeGroup2</a></span>"/&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attribute</span> <span class="scTag">name</span>="<span class="scContent">Instance</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:anyURI</span></span>" <span class="scTag">use</span>="<span class="scContent">optional</span>"/&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attributeGroup</span> <span class="scTag">ref</span>="<span class="scContent"><a title="Jump to &quot;IdentifierAttributeGroup&quot; attribute group definition(located in external schema documentation)." href="core.html#attributeGroup_IdentifierAttributeGroup" class="externalLink">IdentifierAttributeGroup</a></span>"/&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attribute</span> <span class="scTag">name</span>="<span class="scContent">Geometry</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a title="Jump to &quot;GeometryType&quot; type definition(located in external schema documentation)." href="core.html#type_GeometryType" class="externalLink">GeometryType</a></span></span>" <span class="scTag">use</span>="<span class="scContent">required</span>"/&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div><div class="comment" style="margin-left: 1.5em">&lt;-- Affiliation --&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">Affiliations</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">Affiliation</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">unbounded</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">LegacyStandardIdentityCode</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a title="Jump to &quot;LegacyLetterCodeType&quot; type definition(located in external schema documentation)." href="core.html#type_LegacyLetterCodeType" class="externalLink">LegacyLetterCodeType</a></span></span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">unbounded</span>"/&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attributeGroup</span> <span class="scTag">ref</span>="<span class="scContent"><a title="Jump to &quot;GraphicIdentifierAttributeGroup&quot; attribute group definition(located in external schema documentation)." href="core.html#attributeGroup_GraphicIdentifierAttributeGroup" class="externalLink">GraphicIdentifierAttributeGroup</a></span>"/&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attribute</span> <span class="scTag">name</span>="<span class="scContent">ContextID</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:IDREF</span></span>" <span class="scTag">use</span>="<span class="scContent">required</span>"/&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attribute</span> <span class="scTag">name</span>="<span class="scContent">StandardIdentityID</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:IDREF</span></span>" <span class="scTag">use</span>="<span class="scContent">required</span>"/&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attribute</span> <span class="scTag">name</span>="<span class="scContent">DimensionID</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:IDREF</span></span>" <span class="scTag">use</span>="<span class="scContent">required</span>"/&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attribute</span> <span class="scTag">name</span>="<span class="scContent">Shape</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a title="Jump to &quot;ShapeType&quot; type definition(located in external schema documentation)." href="core.html#type_ShapeType" class="externalLink">ShapeType</a></span></span>" <span class="scTag">use</span>="<span class="scContent">required</span>"/&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attribute</span> <span class="scTag">name</span>="<span class="scContent">PlannedGraphic</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:anyURI</span></span>" <span class="scTag">use</span>="<span class="scContent">optional</span>" <span class="scTag">default</span>=""/&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div><div class="comment" style="margin-left: 1.5em">&lt;-- Status --&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">Statuses</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">Status</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">10</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">StatusCode</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a title="Jump to &quot;SingleDigitType&quot; type definition(located in external schema documentation)." href="core.html#type_SingleDigitType" class="externalLink">SingleDigitType</a></span></span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"/&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">LegacyStatusCode</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a title="Jump to &quot;LegacyLetterCodeType&quot; type definition(located in external schema documentation)." href="core.html#type_LegacyLetterCodeType" class="externalLink">LegacyLetterCodeType</a></span></span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">unbounded</span>"/&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">Graphics</span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">Graphic</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">unbounded</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attributeGroup</span> <span class="scTag">ref</span>="<span class="scContent"><a title="Jump to &quot;SIGDimensionGraphicAttributeGroup&quot; attribute group definition(located in external schema documentation)." href="core.html#attributeGroup_SIGDimensionGraphicAttributeGroup" class="externalLink">SIGDimensionGraphicAttributeGroup</a></span>"/&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attributeGroup</span> <span class="scTag">ref</span>="<span class="scContent"><a title="Jump to &quot;GraphicNameAttributeGroup&quot; attribute group definition(located in external schema documentation)." href="core.html#attributeGroup_GraphicNameAttributeGroup" class="externalLink">GraphicNameAttributeGroup</a></span>"/&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div><div class="comment" style="margin-left: 1.5em">&lt;-- HQ/TF/Dummy --&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">HQTFDummies</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">HQTFDummy</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">10</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">HQTFDummyCode</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a title="Jump to &quot;SingleDigitType&quot; type definition(located in external schema documentation)." href="core.html#type_SingleDigitType" class="externalLink">SingleDigitType</a></span></span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"/&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">LegacyHQTFDummyCode</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a title="Jump to &quot;LegacyLetterCodeType&quot; type definition(located in external schema documentation)." href="core.html#type_LegacyLetterCodeType" class="externalLink">LegacyLetterCodeType</a></span></span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">unbounded</span>"/&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">Graphics</span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">Graphic</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">unbounded</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attributeGroup</span> <span class="scTag">ref</span>="<span class="scContent"><a title="Jump to &quot;SIGDimensionGraphicAttributeGroup&quot; attribute group definition(located in external schema documentation)." href="core.html#attributeGroup_SIGDimensionGraphicAttributeGroup" class="externalLink">SIGDimensionGraphicAttributeGroup</a></span>"/&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attributeGroup</span> <span class="scTag">ref</span>="<span class="scContent"><a title="Jump to &quot;NameAttributeGroup&quot; attribute group definition(located in external schema documentation)." href="core.html#attributeGroup_NameAttributeGroup" class="externalLink">NameAttributeGroup</a></span>"/&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div><div class="comment" style="margin-left: 1.5em">&lt;-- Amplifier --&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">AmplifierGroups</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">AmplifierGroup</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">10</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">AmplifierGroupCode</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a title="Jump to &quot;SingleDigitType&quot; type definition(located in external schema documentation)." href="core.html#type_SingleDigitType" class="externalLink">SingleDigitType</a></span></span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"/&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">LegacyModifierCode</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a title="Jump to &quot;LegacyLetterCodeType&quot; type definition(located in external schema documentation)." href="core.html#type_LegacyLetterCodeType" class="externalLink">LegacyLetterCodeType</a></span></span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">unbounded</span>"/&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">Amplifiers</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">Amplifier</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">10</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">AmplifierCode</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a title="Jump to &quot;SingleDigitType&quot; type definition(located in external schema documentation)." href="core.html#type_SingleDigitType" class="externalLink">SingleDigitType</a></span></span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"/&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">LegacyModifierCode</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a title="Jump to &quot;LegacyLetterCodeType&quot; type definition(located in external schema documentation)." href="core.html#type_LegacyLetterCodeType" class="externalLink">LegacyLetterCodeType</a></span></span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">unbounded</span>"/&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">Graphics</span>" <span class="scTag">minOccurs</span>="<span class="scContent">0</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">1</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:sequence</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:element</span> <span class="scTag">name</span>="<span class="scContent">Graphic</span>" <span class="scTag">minOccurs</span>="<span class="scContent">1</span>" <span class="scTag">maxOccurs</span>="<span class="scContent">unbounded</span>"&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:complexType</span>&gt;<div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attributeGroup</span> <span class="scTag">ref</span>="<span class="scContent"><a title="Jump to &quot;SIGraphicAttributeGroup&quot; attribute group definition(located in external schema documentation)." href="core.html#attributeGroup_SIGraphicAttributeGroup" class="externalLink">SIGraphicAttributeGroup</a></span>"/&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attributeGroup</span> <span class="scTag">ref</span>="<span class="scContent"><a title="Jump to &quot;NameAttributeGroup&quot; attribute group definition(located in external schema documentation)." href="core.html#attributeGroup_NameAttributeGroup" class="externalLink">NameAttributeGroup</a></span>"/&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attributeGroup</span> <span class="scTag">ref</span>="<span class="scContent"><a title="Jump to &quot;NameAttributeGroup&quot; attribute group definition(located in external schema documentation)." href="core.html#attributeGroup_NameAttributeGroup" class="externalLink">NameAttributeGroup</a></span>"/&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attribute</span> <span class="scTag">name</span>="<span class="scContent">CompatibleSymbolSetIDs</span>" <span class="scTag">type</span>="<span class="scContent"><span class="type"><a href="#ns_xs" title="Find out namespace of 'xs' prefix">xs</a>:IDREFS</span></span>" <span class="scTag">use</span>="<span class="scContent">optional</span>"/&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div>&lt;/<span class="scTag">xs:sequence</span>&gt;</div><div style="margin-left: 1.5em">&lt;<span class="scTag">xs:attributeGroup</span> <span class="scTag">ref</span>="<span class="scContent"><a title="Jump to &quot;NameAttributeGroup&quot; attribute group definition(located in external schema documentation)." href="core.html#attributeGroup_NameAttributeGroup" class="externalLink">NameAttributeGroup</a></span>"/&gt;</div>&lt;/<span class="scTag">xs:complexType</span>&gt;</div>&lt;/<span class="scTag">xs:element</span>&gt;</div>
+</div>
+<script type="text/javascript">
+<!--
+setState('element_Library_scbox', false);
+// -->
+</script>
+</div>
+<div style="text-align: right; clear: both;"><a href="#top">top</a></div>
+<hr />
+<p class="footer">Generated by <a href="http://xml.fiforms.org/xs3p/">xs3p</a> (<a href="http://titanium.dstc.edu.au/xml/xs3p">old link</a>)
+               . Last modified: <script type="text/javascript">
+<!--
+document.write(document.lastModified);
+// -->
+</script>
+</p>
+</body>
+</html>

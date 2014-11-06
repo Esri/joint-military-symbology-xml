@@ -266,7 +266,11 @@
   <xs:complexType name="EntitySubTypeType">
     <xs:sequence>
       <xs:element name="EntitySubTypeCode" type="DoubleDigitType" minOccurs="1" maxOccurs="1"/>
-      <xs:element ref="Tags" minOccurs="0" maxOccurs="1"/>
+      <xs:element ref="Tags" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Custom tags, often used for searching information in user interfaces.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
     </xs:sequence>
     <xs:attributeGroup ref="FramedGraphicIdentifierAttributeGroup"/>
     <xs:attribute name="GeometryType" type="GeometryType" default="POINT" use="optional"/>
@@ -275,6 +279,9 @@
   </xs:complexType>
 
   <xs:element name="Tags">
+    <xs:annotation>
+      <xs:documentation>One or more Tag elements that can be used by systems to store custom information on other elements.</xs:documentation>
+    </xs:annotation>
     <xs:complexType>
       <xs:sequence>
         <xs:element name="Tag" type="xs:token" minOccurs="1" maxOccurs="unbounded"/>
