@@ -5,8 +5,8 @@
     xmlns:jmsml="http://disa.mil/JointMilSyML.xsd"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
 >
-  <xs:include schemaLocation="core.xsd"/>
-  <xs:include schemaLocation="symbolSet.xsd"/>
+<xs:include schemaLocation="core.xsd"/>
+<xs:include schemaLocation="symbolSet.xsd"/>
 
   <xs:element name="Library">
     <xs:complexType>
