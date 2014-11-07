@@ -54,7 +54,6 @@ namespace JointMilitarySymbologyLibrary
         private Librarian _librarian = null;
         private LibraryVersion _version = null;
         private LibraryContext _context = null;
-        private LibraryContextContextAmplifier _contextAmplifier = null;
         private LibraryStandardIdentity _standardIdentity = null;
         private LibraryStandardIdentityGroup _sig = null;
         private LibraryDimension _dimension = null;
@@ -878,11 +877,6 @@ namespace JointMilitarySymbologyLibrary
                 _amplifier = _librarian.Amplifier(_amplifierGroup, Convert.ToUInt16(first10.Substring(9, 1)));
             }
 
-            if (_context != null && _affiliation != null)
-            {
-                _contextAmplifier = _librarian.ContextAmplifier(_context, _affiliation.Shape);
-            }
-
             if (_symbolSet != null)
             {
                 _entity = _librarian.Entity(_symbolSet, Convert.ToUInt16(second10.Substring(0, 1)), Convert.ToUInt16(second10.Substring(1, 1)));
@@ -938,11 +932,6 @@ namespace JointMilitarySymbologyLibrary
                 _status = _librarian.Status(_legacySIDC.Substring(3, 1), _legacySIDC.Substring(0, 1));
                 _hqTFDummy = _librarian.HQTFDummy(_legacySIDC.Substring(10, 1));
 
-                if (_context != null && _affiliation != null)
-                {
-                    _contextAmplifier = _librarian.ContextAmplifier(_context, _affiliation.Shape);
-                }
-
                 _amplifier = _librarian.Amplifier(_legacySIDC.Substring(11, 1), _legacySIDC.Substring(0, 1));
 
                 if (_amplifier != null)
@@ -977,7 +966,6 @@ namespace JointMilitarySymbologyLibrary
             _amplifierGroup = _librarian.AmplifierGroup(0);
             _amplifier = _librarian.Amplifier(_amplifierGroup, 0);
             _affiliation = _librarian.Affiliation("REALITY", "INTERNAL", "SI_UNKNOWN");
-            _contextAmplifier = _librarian.ContextAmplifier(_context, _affiliation.Shape);
             _entity = _librarian.Entity(_symbolSet, "INVALID");
             _entityType = null;
             _entitySubType = null;

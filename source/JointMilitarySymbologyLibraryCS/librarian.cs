@@ -901,29 +901,6 @@ namespace JointMilitarySymbologyLibrary
             return retObj;
         }
 
-        internal LibraryContextContextAmplifier ContextAmplifier(LibraryContext context, ShapeType shape)
-        {
-            LibraryContextContextAmplifier retObj = null;
-
-            if (context != null)
-            {
-                if (context.ContextAmplifiers != null)
-                {
-                    foreach (LibraryContextContextAmplifier lObj in context.ContextAmplifiers)
-                    {
-                        if (lObj.Shape == shape)
-                        {
-                            return lObj;
-                        }
-                    }
-                }
-            }
-
-            _statusFlag -= 1024;
-
-            return retObj;
-        }
-
         internal SymbolSetEntity Entity(SymbolSet symbolSet, ushort entityCodeOne, ushort entityCodeTwo)
         {
             SymbolSetEntity retObj = null;

@@ -78,50 +78,15 @@
   <Contexts>
     <Context ID="REALITY" Label="Reality">
       <ContextCode>0</ContextCode>
-      <ContextAmplifiers>
-        <ContextAmplifier ID="REALITY_NA_AMP" Description="For use when GA is not applicable" Shape="NA"/>
-        <ContextAmplifier ID="REALITY_CLOVER_AMP" Description="No reality Graphic Amplifier exists" Shape="CLOVER"/>
-        <ContextAmplifier ID="REALITY_CURVE_AMP" Description="No reality Graphic Amplifier exists" Shape="CURVE"/>
-        <ContextAmplifier ID="REALITY_RECT_AMP" Description="No reality Graphic Amplifier exists" Shape="RECTANGLE"/>
-        <ContextAmplifier ID="REALITY_SQUARE_AMP" Description="No reality Graphic Amplifier exists" Shape="SQUARE"/>
-        <ContextAmplifier ID="REALITY_DIAMOND_AMP" Description="No reality Graphic Amplifier exists" Shape="DIAMOND"/>
-        <ContextAmplifier ID="REALITY_CIRCLE_AMP" Description="No reality Graphic Amplifier exists" Shape="CIRCLE"/>
-      </ContextAmplifiers>
     </Context>
     <Context ID="EXERCISE" Label="Exercise">
       <ContextCode>1</ContextCode>
-      <ContextAmplifiers>
-        <ContextAmplifier ID="EX_NA_AMP" Description="For use when GA is not applicable" Shape="NA"/>
-        <ContextAmplifier ID="EX_CLOVER_AMP" Graphic="ecloveramp.svg" Shape="CLOVER"/>
-        <ContextAmplifier ID="EX_CURVE_AMP" Graphic="ecurveamp.svg" Shape="CURVE"/>
-        <ContextAmplifier ID="EX_RECT_AMP" Graphic="erectamp.svg" Shape="RECTANGLE"/>
-        <ContextAmplifier ID="EX_SQUARE_AMP" Graphic="esquareamp.svg" Shape="SQUARE"/>
-        <ContextAmplifier ID="EX_CIRCLE_AMP" Graphic="ecircleamp.svg" Shape="CIRCLE"/>
-        <ContextAmplifier ID="JOKER_CURVE_AMP" Graphic="jcurveamp.svg" Shape="CURVE"/>
-        <ContextAmplifier ID="JOKER_CIRCLE_AMP" Graphic="jcircleamp.svg" Shape="CIRCLE"/>
-        <ContextAmplifier ID="JOKER_RECT_AMP" Graphic="jrectamp.svg" Shape="RECTANGLE"/>
-        <ContextAmplifier ID="FAKER_CURVE_AMP" Graphic="fcurveamp.svg" Shape="CURVE"/>
-        <ContextAmplifier ID="FAKER_CIRCLE_AMP" Graphic="fcircleamp.svg" Shape="CIRCLE"/>
-        <ContextAmplifier ID="FAKER_RECT_AMP" Graphic="frectamp.svg" Shape="RECTANGLE"/>
-      </ContextAmplifiers>
     </Context>
     <Context ID="SIMULATION" Label="Simulation">
       <ContextCode>2</ContextCode>
-      <ContextAmplifiers>
-        <ContextAmplifier ID="SIM_NA_AMP" Description="For use when GA is not applicable" Shape="NA"/>
-        <ContextAmplifier ID="SIM_CLOVER_AMP" Graphic="scloveramp.svg" Shape="CLOVER"/>
-        <ContextAmplifier ID="SIM_CURVE_AMP" Graphic="scurveamp.svg" Shape="CURVE"/>
-        <ContextAmplifier ID="SIM_RECT_AMP" Graphic="srectamp.svg" Shape="RECTANGLE"/>
-        <ContextAmplifier ID="SIM_SQUARE_AMP" Graphic="ssquareamp.svg" Shape="SQUARE"/>
-        <ContextAmplifier ID="SIM_DIAMOND_AMP" Graphic="sdiamondamp.svg" Shape="DIAMOND"/>
-        <ContextAmplifier ID="SIM_CIRCLE_AMP" Graphic="scircleamp.svg" Shape="CIRCLE"/>
-      </ContextAmplifiers>
     </Context>
     <Context ID="EXTENSION" Label="Extension" Description="Details specified by extension">
       <ContextCode>9</ContextCode>
-      <ContextAmplifiers>
-        <ContextAmplifier ID="EXTENSION_AMP" Description="Graphic Amplifier may be specified by extension" Shape="NA"/>
-      </ContextAmplifiers>
     </Context>
   </Contexts>
 
