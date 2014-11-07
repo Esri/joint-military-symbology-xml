@@ -6,6 +6,8 @@ This folder contains a zip file with all of the SVG files supplied by DISA, for 
 
 When unzipping these files for use with the included image conversion utility, please refer to its instructions [here](../source/utilities/image-conversion-utilities/README.md).
 
+Known issues are documented and tracked [here](KNOWN_ISSUES.md).
+
 ## Sections
 
 * [Naming Conventions](#naming)

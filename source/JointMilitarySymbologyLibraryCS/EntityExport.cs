@@ -345,10 +345,6 @@ namespace JointMilitarySymbologyLibrary
                     result = result + ";" + sidcTag;
             }
 
-            // Add any custom XML or export tags that might exist
-
-            result = _configHelper.AddCustomTags(result, code, xmlTags);
-
             // Add the icon's type
 
             result = result + ";" + iType;
@@ -357,6 +353,10 @@ namespace JointMilitarySymbologyLibrary
 
             if (!omitSource)
                 result = result + ";" + _configHelper.GetPath(ss.ID, FindEnum.FindEntities, true) + "\\" + graphic;
+
+            // Add any custom XML or export tags that might exist
+
+            result = _configHelper.AddCustomTags(result, code, xmlTags);
             
             // Add the three most important pieces of information
 

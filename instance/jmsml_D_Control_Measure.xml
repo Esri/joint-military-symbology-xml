@@ -762,43 +762,43 @@
         <DigitTwo>7</DigitTwo>
       </EntityCode>
       <EntityTypes>
-        <EntityType ID="AIR_CORRIDOR" Label="Air Corridor" Graphic="25170100.svg" GeometryType="AREA">
+        <EntityType ID="AIR_CORRIDOR" Label="Air Corridor" Graphic="25170100.svg" GeometryType="LINE">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>1</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="LOW_LEVEL_TRANSIT_ROUTE" Label="Low Level Transit Route" Graphic="25170200.svg" GeometryType="AREA">
+        <EntityType ID="LOW_LEVEL_TRANSIT_ROUTE" Label="Low Level Transit Route" Graphic="25170200.svg" GeometryType="LINE">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="MINIMUM_RISK_ROUTE" Label="Minimum-Risk Route" Graphic="25170300.svg" GeometryType="AREA">
+        <EntityType ID="MINIMUM_RISK_ROUTE" Label="Minimum-Risk Route" Graphic="25170300.svg" GeometryType="LINE">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>3</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="SAFE_LANE" Label="Safe Lane" Graphic="25170400.svg" GeometryType="AREA">
+        <EntityType ID="SAFE_LANE" Label="Safe Lane" Graphic="25170400.svg" GeometryType="LINE">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>4</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="STANDARD_USE_ARMY_AIRCRAFT_FLIGHT_ROUTE" Label="Standard Use Army Aircraft Flight Route" Graphic="25170500.svg" GeometryType="AREA">
+        <EntityType ID="STANDARD_USE_ARMY_AIRCRAFT_FLIGHT_ROUTE" Label="Standard Use Army Aircraft Flight Route" Graphic="25170500.svg" GeometryType="LINE">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>5</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="TRANSIT_CORRIDOR" Label="Transit Corridor" Graphic="25170600.svg" GeometryType="AREA">
+        <EntityType ID="TRANSIT_CORRIDOR" Label="Transit Corridor" Graphic="25170600.svg" GeometryType="LINE">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>6</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="UA_ROUTE" Label="Unmanned Aircraft (UA) Route" Graphic="25170700.svg" GeometryType="AREA">
+        <EntityType ID="UA_ROUTE" Label="Unmanned Aircraft (UA) Route" Graphic="25170700.svg" GeometryType="LINE">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>7</DigitTwo>

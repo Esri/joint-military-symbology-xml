@@ -101,18 +101,6 @@
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="ContextCode" type="SingleDigitType" minOccurs="1" maxOccurs="1"/>
-                    <xs:element name="ContextAmplifiers" minOccurs="1" maxOccurs="1">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element name="ContextAmplifier" minOccurs="1" maxOccurs="unbounded">
-                            <xs:complexType>
-                              <xs:attributeGroup ref="GraphicIdentifierAttributeGroup"/>
-                              <xs:attribute name="Shape" type="ShapeType" use="required"/>
-                            </xs:complexType>
-                          </xs:element>
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
                   </xs:sequence>
                   <xs:attributeGroup ref="IdentifierAttributeGroup"/>
                 </xs:complexType>
