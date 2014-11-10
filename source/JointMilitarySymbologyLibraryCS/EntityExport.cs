@@ -336,6 +336,10 @@ namespace JointMilitarySymbologyLibrary
                 result = result + ";" + sig.Label;
             }
 
+            // Add any custom XML or export tags that might exist
+
+            result = _configHelper.AddCustomTags(result, code, xmlTags);
+
             // Add an equivalent 2525C SIDC tag, if one exists
 
             if (!omitLegacy)
@@ -353,10 +357,6 @@ namespace JointMilitarySymbologyLibrary
 
             if (!omitSource)
                 result = result + ";" + _configHelper.GetPath(ss.ID, FindEnum.FindEntities, true) + "\\" + graphic;
-
-            // Add any custom XML or export tags that might exist
-
-            result = _configHelper.AddCustomTags(result, code, xmlTags);
             
             // Add the three most important pieces of information
 
