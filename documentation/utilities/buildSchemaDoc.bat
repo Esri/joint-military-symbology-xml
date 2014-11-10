@@ -16,5 +16,4 @@ cscript %BASE_DIR%\applyXSLT6.js ..\..\schema\symbolSet.xsd ..\symbolSet.html xs
 cscript %BASE_DIR%\applyXSLT6.js ..\..\schema\base.xsd ..\base.html xs3p.xsl
 del core.xsd
 del symbolSet.xsd
-pause
 ENDLOCAL

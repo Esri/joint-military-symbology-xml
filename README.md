@@ -43,6 +43,7 @@ In providing this schema, files of instance data, and sample C# code to navigate
 * [Instructions](#instructions)
 * [NLog](#nlog)
 * [Svg](#svg)
+* [Documentation](#documentation)
 * [Resources](#resources)
 * [Issues](#issues)
 * [Contributing](#contributing)
@@ -111,6 +112,16 @@ The Svg Rendering Engine is licensed under the [Microsoft Public License](https:
 To configure JMSML to use the included svgs, edit the `jmsml.config` file found here: [jmsml.config](/source/JointMilitarySymbologyLibraryCS/jmsml.config) with a value for `GraphicHome` that points to your folder containing the svg files.  Then clean and rebuild the JMSML solution.
 
 In `jmsml.config`, The `SVGHome` attribute should point to the location of the actual 2525 svg files.  The `GraphicRoot` attribute is the string prefixed to paths in the image, name, category, tag export files. The `GraphicHome` attribute should point to the real disk location of your `GraphicRoot`. The `GraphicExtension` attribute should be the three letter file name extension for the image files you have stored in your `GraphicHome`.  These may be the original svg files or, perhaps, they are emf files if you have converted the svgs.
+
+## Documenation
+
+This repo's documentation includes HTML pages generated with a pair of third party tools, re-distributed here in the Documentation folder's Utilities sub-folder.
+
+The tools include xs3p, which is a schema documentation generator in the form of an XSLT.  xs3p was developed by Australia's Distributed Systems Technology Centre (DSTC), a Cooperative Research Center, which folded in 2006.  The DSTC started and hosted the Australian W3C Office.  Since its abandonment, xs3p has been hosted by FiForms Solutions on SourceForge.
+
+More information about xs3p can be found [here](http://xml.fiforms.org/xs3p/).  The DSTC Public License information can be found included [here](http://htmlpreview.github.com/?https://github.com/Esri/joint-military-symbology-xml/documentation/utilities/LICENSE.html), and was used by the DSTC to make its work available to software developers.
+
+These utilities also include a batch file and JS script that exercise MSXML6 as a command line utility.  More information can be found [here](https://code.google.com/p/xml-transformation-tool/).  With its license information found [here](http://opensource.org/licenses/BSD-3-Clause).
 
 ## Resources
 
