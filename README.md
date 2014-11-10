@@ -113,7 +113,7 @@ To configure JMSML to use the included svgs, edit the `jmsml.config` file found 
 
 In `jmsml.config`, The `SVGHome` attribute should point to the location of the actual 2525 svg files.  The `GraphicRoot` attribute is the string prefixed to paths in the image, name, category, tag export files. The `GraphicHome` attribute should point to the real disk location of your `GraphicRoot`. The `GraphicExtension` attribute should be the three letter file name extension for the image files you have stored in your `GraphicHome`.  These may be the original svg files or, perhaps, they are emf files if you have converted the svgs.
 
-## Documenation
+## Documentation
 
 This repo's documentation includes HTML pages generated with a pair of third party tools, re-distributed here in the Documentation folder's Utilities sub-folder.
 
