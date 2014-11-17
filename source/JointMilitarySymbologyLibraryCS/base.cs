@@ -279,6 +279,8 @@ namespace JointMilitarySymbologyLibrary {
         
         private IconType iconField;
         
+        private bool isCivilianField;
+        
         private GeometryType geometryTypeField;
         
         private string entityCodeField;
@@ -301,6 +303,7 @@ namespace JointMilitarySymbologyLibrary {
             this.drawNoteField = "Not Applicable";
             this.standardField = StandardType.ALL;
             this.iconField = IconType.MAIN;
+            this.isCivilianField = false;
             this.geometryTypeField = GeometryType.POINT;
             this.entityCodeField = "00";
             this.entityTypeCodeField = "00";
@@ -515,6 +518,18 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.iconField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute(false)]
+        public bool IsCivilian {
+            get {
+                return this.isCivilianField;
+            }
+            set {
+                this.isCivilianField = value;
             }
         }
         
@@ -1051,6 +1066,8 @@ namespace JointMilitarySymbologyLibrary {
         
         private IconType iconField;
         
+        private bool isCivilianField;
+        
         private GeometryType geometryTypeField;
         
         public SymbolSetEntity() {
@@ -1069,6 +1086,7 @@ namespace JointMilitarySymbologyLibrary {
             this.drawNoteField = "Not Applicable";
             this.standardField = StandardType.ALL;
             this.iconField = IconType.MAIN;
+            this.isCivilianField = false;
             this.geometryTypeField = GeometryType.POINT;
         }
         
@@ -1297,6 +1315,18 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute(false)]
+        public bool IsCivilian {
+            get {
+                return this.isCivilianField;
+            }
+            set {
+                this.isCivilianField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
         [System.ComponentModel.DefaultValueAttribute(GeometryType.POINT)]
         public GeometryType GeometryType {
             get {
@@ -1354,6 +1384,8 @@ namespace JointMilitarySymbologyLibrary {
         
         private IconType iconField;
         
+        private bool isCivilianField;
+        
         private GeometryType geometryTypeField;
         
         public SymbolSetEntityEntityType() {
@@ -1372,6 +1404,7 @@ namespace JointMilitarySymbologyLibrary {
             this.drawNoteField = "Not Applicable";
             this.standardField = StandardType.ALL;
             this.iconField = IconType.MAIN;
+            this.isCivilianField = false;
             this.geometryTypeField = GeometryType.POINT;
         }
         
@@ -1595,6 +1628,18 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.iconField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute(false)]
+        public bool IsCivilian {
+            get {
+                return this.isCivilianField;
+            }
+            set {
+                this.isCivilianField = value;
             }
         }
         
@@ -3822,9 +3867,15 @@ namespace JointMilitarySymbologyLibrary {
         
         private string plannedGraphicField;
         
+        private string civilianGraphicField;
+        
+        private string plannedCivilianGraphicField;
+        
         public LibraryAffiliation() {
             this.labelAliasField = "";
             this.plannedGraphicField = "";
+            this.civilianGraphicField = "";
+            this.plannedCivilianGraphicField = "";
         }
         
         /// <remarks/>
@@ -3958,6 +4009,30 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.plannedGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string CivilianGraphic {
+            get {
+                return this.civilianGraphicField;
+            }
+            set {
+                this.civilianGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string PlannedCivilianGraphic {
+            get {
+                return this.plannedCivilianGraphicField;
+            }
+            set {
+                this.plannedCivilianGraphicField = value;
             }
         }
     }

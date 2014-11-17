@@ -36,6 +36,7 @@ Maneuver Areas : Axis of Advance : Supporting Attack Planned or On Order,151405
 Maneuver Areas : Axis of Advance : Feint,151406
 Maneuver Areas : Axis of Advance : Enemy Confirmed,151407
 Maneuver Areas : Axis of Advance : Enemy Templated or Suspected,151408
+Maneuver Areas : Attack by Fire Position,152000
 Maneuver Areas : Support by Fire,152100
 Maneuver Areas : Search Area/Reconnaissance Area,152200
 Air Corridors : Air Corridor,170100
@@ -75,9 +76,11 @@ Protection Areas : Obstacle Effects : Turn,270504
 Protection Areas : Obstacle Bypass : Easy,270601
 Protection Areas : Obstacle Bypass : Difficult,270602
 Protection Areas : Obstacle Bypass : Impossible,270603
+Protection Areas : Bridge or Gap,271100
 Protection Areas : Roadblocks- Craters and Blown Bridges : Planned,271201
 Protection Areas : Roadblocks- Craters and Blown Bridges : Explosives-State of Readiness 1 (Safe),271202
 Protection Areas : Roadblocks- Craters and Blown Bridges : Explosives-State of Readiness 2 (armed but passable),271203
+Protection Areas : Roadblocks- Craters and Blown Bridges : Roadblock Complete (Executed),271204
 Protection Areas : Bridge,271400
 Protection Areas : Ford Easy,271500
 Protection Areas : Ford Difficult,271600
@@ -123,12 +126,10 @@ Mission Tasks : Clear,340500
 Mission Tasks : Counterattack,340600
 Mission Tasks : Counterattack by Fire,340700
 Mission Tasks : Delay,340800
-Mission Tasks : Destroy,340900
 Mission Tasks : Disrupt,341000
 Mission Tasks : Fix,341100
 Mission Tasks : Follow and Assume,341200
 Mission Tasks : Follow and Support,341300
-Mission Tasks : Interdict,341400
 Mission Tasks : Isolate,341500
 Mission Tasks : Occupy,341700
 Mission Tasks : Penetrate,341800

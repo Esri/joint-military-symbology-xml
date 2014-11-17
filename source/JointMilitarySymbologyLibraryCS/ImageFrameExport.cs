@@ -38,7 +38,7 @@ namespace JointMilitarySymbologyLibrary
             get { return "filePath,pointSize,styleItemName,styleItemCategory,styleItemTags,styleItemUniqueId,styleItemGeometryType,notes"; }
         }
 
-        string IFrameExport.Line(Librarian librarian, LibraryContext context, LibraryStandardIdentity identity, LibraryDimension dimension, LibraryStatus status)
+        string IFrameExport.Line(Librarian librarian, LibraryContext context, LibraryStandardIdentity identity, LibraryDimension dimension, LibraryStatus status, bool asCivilian, bool asPlannedCivilian)
         {
             _notes = "";
 
@@ -54,9 +54,15 @@ namespace JointMilitarySymbologyLibrary
                 if (affiliation.Shape != ShapeType.NA && (status.StatusCode == 0 || affiliation.PlannedGraphic != ""))
                 {
                     if (status.StatusCode == 0)
-                        graphic = affiliation.Graphic;
+                        if (asCivilian && affiliation.CivilianGraphic != "")
+                            graphic = affiliation.CivilianGraphic;
+                        else
+                            graphic = affiliation.Graphic;
                     else
-                        graphic = affiliation.PlannedGraphic;
+                        if (asPlannedCivilian && affiliation.PlannedCivilianGraphic != "")
+                            graphic = affiliation.PlannedCivilianGraphic;
+                        else
+                            graphic = affiliation.PlannedGraphic;
 
                     if (graphic == null)
                         _notes = _notes + "graphic is missing - frame is NA - frame is never to be drawn;";
@@ -67,10 +73,10 @@ namespace JointMilitarySymbologyLibrary
                     if (!File.Exists(itemOriginalPath))
                         _notes = _notes + "image file does not exist;";
 
-                    string itemName = BuildFrameItemName(context, dimension, identity, status);
+                    string itemName = BuildFrameItemName(context, dimension, identity, status, asCivilian || asPlannedCivilian);
                     string itemCategory = "Frame";
-                    string itemTags = BuildFrameItemTags(context, identity, dimension, status, graphicPath + "\\" + graphic, _omitSource, _omitLegacy);
-                    string itemID = BuildFrameCode(context, identity, dimension, status);
+                    string itemTags = BuildFrameItemTags(context, identity, dimension, status, graphicPath + "\\" + graphic, _omitSource, _omitLegacy, asCivilian || asPlannedCivilian);
+                    string itemID = BuildFrameCode(context, identity, dimension, status, asCivilian || asPlannedCivilian);
 
                     result = itemRootedPath + "," +
                              Convert.ToString(_configHelper.PointSize) + "," +

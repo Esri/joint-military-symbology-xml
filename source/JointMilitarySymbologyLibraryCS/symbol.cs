@@ -86,12 +86,14 @@ namespace JointMilitarySymbologyLibrary
         private List<string> _graphics = new List<string>();
 
         private bool _colorBarOCA = true;
+        private bool _useCivilianFrame = false;
 
-        internal Symbol(Librarian librarian, SIDC sidc, bool drawColorBars = true)
+        internal Symbol(Librarian librarian, SIDC sidc, bool drawColorBars = true, bool drawCivilianFrame = false)
         {
             _librarian = librarian;
             _sidc = sidc;
             _colorBarOCA = drawColorBars;
+            _useCivilianFrame = drawCivilianFrame;
 
             _legacySIDC = _blankLegacySIDC;
             _configHelper = new ConfigHelper(_librarian);
@@ -115,10 +117,13 @@ namespace JointMilitarySymbologyLibrary
             _BuildGraphics();
         }
 
-        internal Symbol(Librarian librarian, string legacyStandard, string legacySIDC, bool drawColorBars = true)
+        internal Symbol(Librarian librarian, string legacyStandard, string legacySIDC, bool drawColorBars = true, bool drawCivilianFrame = false)
         {
             _librarian = librarian;
             _legacySIDC = legacySIDC;
+            _colorBarOCA = drawColorBars;
+            _useCivilianFrame = drawCivilianFrame;
+
             _configHelper = new ConfigHelper(_librarian);
 
             _UpdateFromLegacy();
@@ -194,6 +199,14 @@ namespace JointMilitarySymbologyLibrary
             get
             {
                 return _colorBarOCA;
+            }
+        }
+
+        public bool UseCivilianFrames
+        {
+            get
+            {
+                return _useCivilianFrame;
             }
         }
 
@@ -456,7 +469,12 @@ namespace JointMilitarySymbologyLibrary
             if (_affiliation != null)
             {
                 path = _configHelper.GetPath(_context.ID, FindEnum.FindFrames);
-                path = _configHelper.BuildOriginalPath(path, (_status.StatusCode == 1 && _affiliation.PlannedGraphic != "") ? _affiliation.PlannedGraphic : _affiliation.Graphic);
+                
+                if(_useCivilianFrame && _affiliation.CivilianGraphic != "")
+                    path = _configHelper.BuildOriginalPath(path, (_status.StatusCode == 1 && _affiliation.PlannedCivilianGraphic != "") ? _affiliation.PlannedCivilianGraphic : _affiliation.CivilianGraphic);
+                else
+                    path = _configHelper.BuildOriginalPath(path, (_status.StatusCode == 1 && _affiliation.PlannedGraphic != "") ? _affiliation.PlannedGraphic : _affiliation.Graphic);
+                
                 _graphics.Add(path);
             }
 
@@ -637,7 +655,10 @@ namespace JointMilitarySymbologyLibrary
             _names.Add("ModifierTwo", me.NameIt(_symbolSet, "2", _modifierTwo));
 
             FrameExport fe = new DomainFrameExport(_configHelper);
-            _names.Add("Frame", fe.NameIt(_context, _dimension, _standardIdentity, _status));
+            if(_affiliation != null)
+                _names.Add("Frame", fe.NameIt(_context, _dimension, _standardIdentity, _status, _affiliation.CivilianGraphic != "" || _affiliation.PlannedCivilianGraphic != ""));
+            else
+                _names.Add("Frame", fe.NameIt(_context, _dimension, _standardIdentity, _status, false));
 
             HQTFFDExport he = new DomainHQTFFDExport(_configHelper);
             _names.Add("HQTFFD", he.NameIt(_sig, _dimension, _hqTFDummy));

@@ -202,6 +202,7 @@
     <xs:attribute name="DrawNote" type="xs:string" use="optional" default="Not Applicable"/>
     <xs:attribute name="Standard" type="StandardType" use="optional" default="ALL"/>
     <xs:attribute name="Icon" type="IconType" use="optional" default="MAIN"/>
+    <xs:attribute name="IsCivilian" type="xs:boolean" use="optional" default="false"/>
   </xs:attributeGroup>
 
   <xs:attributeGroup name="FramedGraphicNameAttributeGroup">

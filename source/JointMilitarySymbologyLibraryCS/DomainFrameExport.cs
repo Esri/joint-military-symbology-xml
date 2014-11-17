@@ -32,11 +32,11 @@ namespace JointMilitarySymbologyLibrary
             get { return "Name,Value"; }
         }
 
-        string IFrameExport.Line(Librarian librarian, LibraryContext context, LibraryStandardIdentity identity, LibraryDimension dimension, LibraryStatus status)
+        string IFrameExport.Line(Librarian librarian, LibraryContext context, LibraryStandardIdentity identity, LibraryDimension dimension, LibraryStatus status, bool asCivilian, bool asPlannedCivilian)
         {
             string result = "";
 
-            result = BuildFrameItemName(null, null, identity, null) + "," + BuildFrameCode(null, identity, null, null);
+            result = BuildFrameItemName(null, null, identity, null, false) + "," + BuildFrameCode(null, identity, null, null, false);
 
             return result;
         }

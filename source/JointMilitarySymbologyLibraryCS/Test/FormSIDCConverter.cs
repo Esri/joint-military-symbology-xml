@@ -237,6 +237,11 @@ namespace Test
             _librarian.DrawColoredOCABars = checkBox1.Checked;
         }
 
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            _librarian.DrawCivilianFrames = checkBox2.Checked;
+        }
+
         private void text2525C_KeyUp(object sender, KeyEventArgs e)
         {
             string sidc = text2525C.Text;
