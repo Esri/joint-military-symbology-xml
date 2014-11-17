@@ -3,23 +3,27 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Version_1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
 	 y="0px" width="612px" height="792px" viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
-<rect x="147.681" y="282.382" display="none" fill="#474747" width="315.279" height="228.118"/>
+<rect id="example2" x="136.681" y="256.588" display="none" fill="#474747" width="315.279" height="228.118"/>
 <g id="main">
-	<path fill="none" stroke="#338888" stroke-width="7.0312" stroke-linejoin="round" stroke-miterlimit="10" d="M189.898,402
-		c48.287,0,93.011,11.428,118.778,29.797v-0.439l130.2-50.167l0.877,0.299c-60.922-50.379-160.555-81.82-272.368-84.596l0,0
-		L192.75,403.5"/>
+	
+		<path fill="#338888" fill-opacity="0.25" stroke="#338888" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M191.906,402.313c48.287,0,90.514,11.418,116.279,29.786l131.077-50.307c-60.922-50.379-160.555-81.82-272.368-84.596l0,0
+		L191.906,402.313"/>
 </g>
 <g id="template" display="none">
 	<g id="varT" display="inline">
 		
-			<rect x="230.155" y="324.711" fill="none" stroke="#000000" stroke-width="1.7578" stroke-linecap="round" stroke-miterlimit="8" width="56.249" height="42.187"/>
-		<polygon fill="#FFFFFF" points="230.155,324.711 230.155,366.898 286.404,366.898 286.404,324.711 		"/>
+			<rect x="238.167" y="324.711" fill="#FFFFFF" stroke="#000000" stroke-linecap="round" stroke-miterlimit="8" width="42.167" height="38.384"/>
 		<text transform="matrix(1 0 0 1 247.9697 357.9082)" font-family="sans-serif" font-size="36">T</text>
 	</g>
-	<text transform="matrix(1 0 0 1 189.8984 491.373)" display="inline" fill="#FFFF00" font-family="'ArialMT'" font-size="24">POINT</text>
-	<text transform="matrix(1 0 0 1 189.8984 467.0195)" display="inline" fill="#FFFF00" font-family="'ArialMT'" font-size="24">CENTER</text>
-	<path display="inline" fill="#FFFF00" stroke="#FFFF00" stroke-width="0.2812" stroke-linejoin="bevel" stroke-miterlimit="10" d="
-		M226.694,440.902l56.145-65.851c0.421-0.492,1.159-0.545,1.651-0.123c0.493,0.421,0.563,1.16,0.141,1.652l-56.145,65.851
+	<text transform="matrix(1 0 0 1 189.8984 491.373)" display="inline" fill="#231F20" font-family="sans-serif" font-size="24">POINT</text>
+	
+		<text transform="matrix(1 0 0 1 189.8984 491.373)" display="inline" fill="none" stroke="#231F20" stroke-miterlimit="10" font-family="sans-serif" font-size="24">POINT</text>
+	<text transform="matrix(1 0 0 1 189.8984 467.0195)" display="inline" fill="#231F20" font-family="sans-serif" font-size="24">CENTER</text>
+	
+		<text transform="matrix(1 0 0 1 189.8984 467.0195)" display="inline" fill="none" stroke="#231F20" stroke-miterlimit="10" font-family="sans-serif" font-size="24">CENTER</text>
+	<path display="inline" fill="#231F20" stroke="#231F20" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" d="
+		M226.694,440.902l56.145-65.853c0.421-0.492,1.159-0.545,1.651-0.123c0.493,0.421,0.563,1.16,0.141,1.652l-56.145,65.851
 		c-0.421,0.489-1.159,0.543-1.651,0.12C226.342,442.131,226.272,441.395,226.694,440.902L226.694,440.902z M276.861,373.033
 		l14.467-6.135l-3.762,15.257L276.861,373.033z"/>
 </g>
