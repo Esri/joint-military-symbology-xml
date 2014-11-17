@@ -80,6 +80,7 @@ namespace JointMilitarySymbologyLibrary
         private Symbol _retiredSymbol;
 
         private bool _drawColoredOCABars = true;
+        private bool _drawCivilianFrames = false;
 
         private SortedDictionary<ushort, SymbolSet> _sortedSymbolSets = new SortedDictionary<ushort,SymbolSet>();
         private List<SymbolSet> _symbolSets = new List<SymbolSet>();
@@ -1394,6 +1395,19 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
+        public bool DrawCivilianFrames
+        {
+            get
+            {
+                return _drawCivilianFrames;
+            }
+
+            set
+            {
+                _drawCivilianFrames = value;
+            }
+        }
+
         public Symbol MakeSymbol(string legacyStandard, string legacySIDC)
         {
             Symbol s = null;
@@ -1405,7 +1419,7 @@ namespace JointMilitarySymbologyLibrary
                 legacySIDC = legacySIDC.Replace('*', '-');
                 legacySIDC = legacySIDC.ToUpper();
 
-                s = new Symbol(this, legacyStandard, legacySIDC, _drawColoredOCABars);
+                s = new Symbol(this, legacyStandard, legacySIDC, _drawColoredOCABars, _drawCivilianFrames);
 
                 if (s.SymbolStatus == SymbolStatusEnum.statusEnumInvalid)
                 {
@@ -1424,7 +1438,7 @@ namespace JointMilitarySymbologyLibrary
         public Symbol MakeSymbol(UInt32 partA, UInt32 partB)
         {
             SIDC sid = new SIDC(partA, partB);
-            Symbol s = new Symbol(this, sid, _drawColoredOCABars);
+            Symbol s = new Symbol(this, sid, _drawColoredOCABars, _drawCivilianFrames);
 
             if (s.SymbolStatus == SymbolStatusEnum.statusEnumInvalid)
             {
@@ -1436,7 +1450,7 @@ namespace JointMilitarySymbologyLibrary
 
         public Symbol MakeSymbol(SIDC sidc)
         {
-            Symbol s = new Symbol(this, sidc, _drawColoredOCABars);
+            Symbol s = new Symbol(this, sidc, _drawColoredOCABars, _drawCivilianFrames);
 
             if (s.SymbolStatus == SymbolStatusEnum.statusEnumInvalid)
             {

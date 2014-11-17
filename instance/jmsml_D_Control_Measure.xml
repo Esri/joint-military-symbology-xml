@@ -672,7 +672,7 @@
             <DigitTwo>9</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="ATTACK_BY_FIRE_POSITION" Label="Attack by Fire Position" Graphic="25152000.svg" GeometryType="AREA">
+        <EntityType ID="ATTACK_BY_FIRE_POSITION" Label="Attack by Fire Position" Graphic="25152000.svg" GeometryType="LINE">
           <EntityTypeCode>
             <DigitOne>2</DigitOne>
             <DigitTwo>0</DigitTwo>
@@ -2724,7 +2724,7 @@
             <DigitTwo>0</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="BRIDGE_OR_GAP" Label="Bridge or Gap" Graphic="25271100.svg" GeometryType="AREA">
+        <EntityType ID="BRIDGE_OR_GAP" Label="Bridge or Gap" Graphic="25271100.svg" GeometryType="LINE">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>1</DigitTwo>
@@ -2754,7 +2754,7 @@
                 <DigitTwo>3</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="ROADBLOCK_COMPLETE_EXECUTED" Label="Roadblock Complete (Executed)" Graphic="25271204.svg" GeometryType="AREA">
+            <EntitySubType ID="ROADBLOCK_COMPLETE_EXECUTED" Label="Roadblock Complete (Executed)" Graphic="25271204.svg" GeometryType="LINE">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>4</DigitTwo>
@@ -3658,7 +3658,7 @@
             <DigitTwo>8</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="TMT_DESTROY" Label="Destroy" Graphic="25340900.svg" GeometryType="LINE">
+        <EntityType ID="TMT_DESTROY" Label="Destroy" Graphic="25340900.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>9</DigitTwo>
@@ -3688,7 +3688,7 @@
             <DigitTwo>3</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="TMT_INTERDICT" Label="Interdict" Graphic="25341400.svg" GeometryType="LINE">
+        <EntityType ID="TMT_INTERDICT" Label="Interdict" Graphic="25341400.svg">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>4</DigitTwo>

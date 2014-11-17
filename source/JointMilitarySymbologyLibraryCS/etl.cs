@@ -1513,7 +1513,7 @@ namespace JointMilitarySymbologyLibrary
 
                                     // Export a frame for Status = Current
 
-                                    line = frameExporter.Line(_librarian, context, identity, dimension, _library.Statuses[0]);
+                                    line = frameExporter.Line(_librarian, context, identity, dimension, _library.Statuses[0], false, false);
 
                                     if (line != "")
                                     {
@@ -1523,7 +1523,27 @@ namespace JointMilitarySymbologyLibrary
 
                                     // Export the frame for Status = Planned (not every frame will have a Planned version)
 
-                                    line = frameExporter.Line(_librarian, context, identity, dimension, _library.Statuses[1]);
+                                    line = frameExporter.Line(_librarian, context, identity, dimension, _library.Statuses[1], false, false);
+
+                                    if (line != "")
+                                    {
+                                        w.WriteLine(line);
+                                        w.Flush();
+                                    }
+
+                                    // Export the frame for the Civilian option (not every frame has one)
+
+                                    line = frameExporter.Line(_librarian, context, identity, dimension, _library.Statuses[0], true, false);
+
+                                    if (line != "")
+                                    {
+                                        w.WriteLine(line);
+                                        w.Flush();
+                                    }
+
+                                    // Export the frame for the Planned Civilian option (not every frame has one)
+
+                                    line = frameExporter.Line(_librarian, context, identity, dimension, _library.Statuses[1], false, true);
 
                                     if (line != "")
                                     {
@@ -1541,7 +1561,7 @@ namespace JointMilitarySymbologyLibrary
                             if (standardIdentityExpression != "" && !System.Text.RegularExpressions.Regex.IsMatch(identity.Label, standardIdentityExpression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
                                 continue;
 
-                            line = frameExporter.Line(null, null, identity, null, null);
+                            line = frameExporter.Line(null, null, identity, null, null, false, false);
 
                             if (line != "")
                             {

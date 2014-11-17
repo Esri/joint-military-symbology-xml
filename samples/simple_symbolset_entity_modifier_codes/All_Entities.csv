@@ -725,7 +725,7 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 25,Maneuver Areas,Encirclement,Friendly,,151801,Area,MAIN,Maneuver Areas : Encirclement : Friendly
 25,Maneuver Areas,Encirclement,Enemy,,151802,Area,MAIN,Maneuver Areas : Encirclement : Enemy
 25,Maneuver Areas,Penetration Box,,,151900,Area,MAIN,Maneuver Areas : Penetration Box
-25,Maneuver Areas,Attack by Fire Position,,,152000,Area,MAIN,Maneuver Areas : Attack by Fire Position
+25,Maneuver Areas,Attack by Fire Position,,,152000,Line,MAIN,Maneuver Areas : Attack by Fire Position
 25,Maneuver Areas,Support by Fire,,,152100,Line,MAIN,Maneuver Areas : Support by Fire
 25,Maneuver Areas,Search Area/Reconnaissance Area,,,152200,Line,MAIN,Maneuver Areas : Search Area/Reconnaissance Area
 25,Maneuver Points,Observation Post/Outpost (Unspecified),,,160100,Point,MAIN,Maneuver Points : Observation Post/Outpost (Unspecified)
@@ -1017,11 +1017,11 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 25,Protection Areas,Decoy Mined Area,,,270900,Area,MAIN,Protection Areas : Decoy Mined Area
 25,Protection Areas,Decoy Mined Area,Fenced,,270901,Area,MAIN,Protection Areas : Decoy Mined Area : Fenced
 25,Protection Areas,Unexploded Explosive Ordnance (UXO) Area,,,271000,Area,MAIN,Protection Areas : Unexploded Explosive Ordnance (UXO) Area
-25,Protection Areas,Bridge or Gap,,,271100,Area,MAIN,Protection Areas : Bridge or Gap
+25,Protection Areas,Bridge or Gap,,,271100,Line,MAIN,Protection Areas : Bridge or Gap
 25,Protection Areas,Roadblocks- Craters and Blown Bridges,Planned,,271201,Line,MAIN,Protection Areas : Roadblocks- Craters and Blown Bridges : Planned
 25,Protection Areas,Roadblocks- Craters and Blown Bridges,Explosives-State of Readiness 1 (Safe),,271202,Line,MAIN,Protection Areas : Roadblocks- Craters and Blown Bridges : Explosives-State of Readiness 1 (Safe)
 25,Protection Areas,Roadblocks- Craters and Blown Bridges,Explosives-State of Readiness 2 (armed but passable),,271203,Line,MAIN,Protection Areas : Roadblocks- Craters and Blown Bridges : Explosives-State of Readiness 2 (armed but passable)
-25,Protection Areas,Roadblocks- Craters and Blown Bridges,Roadblock Complete (Executed),,271204,Area,MAIN,Protection Areas : Roadblocks- Craters and Blown Bridges : Roadblock Complete (Executed)
+25,Protection Areas,Roadblocks- Craters and Blown Bridges,Roadblock Complete (Executed),,271204,Line,MAIN,Protection Areas : Roadblocks- Craters and Blown Bridges : Roadblock Complete (Executed)
 25,Protection Areas,Assault Crossing,,,271300,Area,MAIN,Protection Areas : Assault Crossing
 25,Protection Areas,Bridge,,,271400,Line,MAIN,Protection Areas : Bridge
 25,Protection Areas,Ford Easy,,,271500,Line,MAIN,Protection Areas : Ford Easy
@@ -1153,12 +1153,12 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 25,Mission Tasks,Counterattack,,,340600,Line,MAIN,Mission Tasks : Counterattack
 25,Mission Tasks,Counterattack by Fire,,,340700,Line,MAIN,Mission Tasks : Counterattack by Fire
 25,Mission Tasks,Delay,,,340800,Line,MAIN,Mission Tasks : Delay
-25,Mission Tasks,Destroy,,,340900,Line,MAIN,Mission Tasks : Destroy
+25,Mission Tasks,Destroy,,,340900,Point,MAIN,Mission Tasks : Destroy
 25,Mission Tasks,Disrupt,,,341000,Line,MAIN,Mission Tasks : Disrupt
 25,Mission Tasks,Fix,,,341100,Line,MAIN,Mission Tasks : Fix
 25,Mission Tasks,Follow and Assume,,,341200,Line,MAIN,Mission Tasks : Follow and Assume
 25,Mission Tasks,Follow and Support,,,341300,Line,MAIN,Mission Tasks : Follow and Support
-25,Mission Tasks,Interdict,,,341400,Line,MAIN,Mission Tasks : Interdict
+25,Mission Tasks,Interdict,,,341400,Point,MAIN,Mission Tasks : Interdict
 25,Mission Tasks,Isolate,,,341500,Line,MAIN,Mission Tasks : Isolate
 25,Mission Tasks,Neutralize,,,341600,Point,MAIN,Mission Tasks : Neutralize
 25,Mission Tasks,Occupy,,,341700,Line,MAIN,Mission Tasks : Occupy
