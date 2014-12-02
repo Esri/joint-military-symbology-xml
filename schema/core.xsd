@@ -192,6 +192,7 @@
     <xs:attribute name="Description" type="xs:string" use="optional" default=""/>
     <xs:attribute name="Remarks" type="xs:string" use="optional" default=""/>
     <xs:attribute name="Graphic" type="xs:anyURI" use="optional" default=""/>
+    <xs:attribute name="AlternativeGraphic" type="xs:anyURI" use="optional" default=""/>
     <xs:attribute name="CircleGraphic" type="xs:anyURI" use="optional" default=""/>
     <xs:attribute name="CloverGraphic" type="xs:anyURI" use="optional" default=""/>
     <xs:attribute name="CurveGraphic" type="xs:anyURI" use="optional" default=""/>
