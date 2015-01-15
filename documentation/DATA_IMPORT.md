@@ -8,7 +8,51 @@ While it may be useful for some users to understand how this raw data can be imp
 
 ## Prerequisites ##
 
-The following procedure is dependent on the existence of manually generated CSV input data. Specifically, SampleEntityTable.csv and SampleModifierTable.csv. These files are built from the tables in Appendix A of 2525 and instructions for creating them are here: [Creating CSV Entity and Modifier files from the Standard](onenote:http://devinfo/SiteDirectory/DefenseAndIntelligence/Operations%20Team/Notebook/Operations%20Team/Symbology.one#Creating%20XML%20Source%20Data%20for%20Andy's%20Repo§ion-id=%7B84D7F293-6815-482C-AF0F-45D575C49983%7D&page-id=%7B3A2775C0-4259-43DC-A5A3-6BE8AA7939BA%7D&object-id=%7BABAC29F7-520C-0E0F-3C2B-0413F84D05E9%7D&4E).
+The following procedure is dependent on the existence of manually generated CSV input data. Specifically, SampleEntityTable.csv and SampleModifierTable.csv. These files are built from the tables in Appendix A of 2525 and instructions for creating them follow.
+
+Appendix A of 2525D has tables for each symbol set, entity, and modifier.  The procedure to build csv files for import into JMSML, from this Appendix A information, is:
+
+- [ ] 1. Create an excel spreadsheet
+- [ ] 2. Copy and paste the contents of the Appendix A Entity and Modifier tables into Excel
+- [ ] 3. Add/populate:  SymbolSet, GeometryType, and modifier columns (as needed)
+- [ ] 4. Copy/"flatten" the missing parent fields (See below)
+- [ ] 5. Change “,”(commas) to “-“ (dashes) - because of CSV format
+- [ ] 6. Fix any non-ASCII special characters that will also be messed up in the csv 
+- [ ] 7. Save the Excel File as a .csv
+
+
+**Format From Standard:**
+
+Military (110000)
+ 	Fixed Wing (110100)
+ 	 	Medical Evacuation (MEDEVAC) (110101)
+ 	 	Attack/Strike (110102)
+ 	 	Bomber (110103)
+ 	 	Fighter (110104)
+ 
+**Excel Format (Entities):**
+
+
+SymbolSet	|Entity		|EntityType		|EntitySubType					|Code	|GeometryType
+---------	|-------	|-------		|-------						|-------|-------
+01			|Military	|				|								|110000	|Point
+01			|Military	|Fixed Wing		| 								|110100	|Point
+01			|Military	|Fixed Wing		|Medical Evacuation (MEDEVAC)	|110101	|Point
+01			|Military	|Fixed Wing		|Attack/Strike					|110102	|Point
+01			|Military	|Fixed Wing		|Bomber							|110103	|Point
+01			|Military	|Fixed Wing		|Fighter						|110104	|Point
+
+
+**Excel Format (Modifiers):**
+
+Name			|SymbolSet	|ModifierNumber	|Category				|Code
+-------			|------		|--------		|----------				|----------
+Not Applicable	|01			|1				|None					|00
+Attack/Strike	|01			|1				|Military Aircraft Type	|01
+Bomber			|01			|1				|Military Aircraft Type	|02
+Cargo			|01			|1				|Aircraft Type			|03
+Fighter			|01			|1				|Military Aircraft Type	|04
+
 
 The following import procedure should deal with replacing characters that XML doesn't like, but if they MUST be there, surround those characters/phrases with ![CDATA[XXXXX]]. Characters to avoid inside 2525 and APP-6 text data are:  ' (apostrophe or single quote), & (ampersand), < (less than), > (greater than), and " (double quote).
 
