@@ -885,15 +885,15 @@
 
     <Affiliation ID="SIMULATED_LU_UNKNOWN" ContextID="SIMULATION" DimensionID="LAND_UNIT" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="2_110_0.svg" PlannedGraphic="2_110_1.svg" CivilianGraphic="2_110_0c.svg" PlannedCivilianGraphic="2_110_1c.svg"/>
 
-    <Affiliation ID="REALITY_LU_FRIEND" ContextID="REALITY" DimensionID="LAND_UNIT" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="0_310_0.svg" PlannedGraphic="0_310_1.svg" CivilianGraphic="0_310_0c.svg" PlannedCivilianGraphic="0_310_1c.svg">
+    <Affiliation ID="REALITY_LU_FRIEND" ContextID="REALITY" DimensionID="LAND_UNIT" StandardIdentityID="SI_FRIEND" Shape="RECTANGLE" Graphic="0_310_0.svg" PlannedGraphic="0_310_1.svg" CivilianGraphic="0_310_0c.svg" PlannedCivilianGraphic="0_310_1c.svg">
       <LegacyStandardIdentityCode Name="2525C" FirstFunctionLetter="U">F</LegacyStandardIdentityCode>
     </Affiliation>
 
-    <Affiliation ID="EXERCISE_LU_FRIEND" ContextID="EXERCISE" DimensionID="LAND_UNIT" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="1_310_0.svg" PlannedGraphic="1_310_1.svg" CivilianGraphic="1_310_0c.svg" PlannedCivilianGraphic="1_310_1c.svg">
+    <Affiliation ID="EXERCISE_LU_FRIEND" ContextID="EXERCISE" DimensionID="LAND_UNIT" StandardIdentityID="SI_FRIEND" Shape="RECTANGLE" Graphic="1_310_0.svg" PlannedGraphic="1_310_1.svg" CivilianGraphic="1_310_0c.svg" PlannedCivilianGraphic="1_310_1c.svg">
       <LegacyStandardIdentityCode Name="2525C" FirstFunctionLetter="U">D</LegacyStandardIdentityCode>
     </Affiliation>
 
-    <Affiliation ID="SIMULATED_LU_FRIEND" ContextID="SIMULATION" DimensionID="LAND_UNIT" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="2_310_0.svg" PlannedGraphic="2_310_1.svg" CivilianGraphic="2_310_0c.svg" PlannedCivilianGraphic="2_310_1c.svg"/>
+    <Affiliation ID="SIMULATED_LU_FRIEND" ContextID="SIMULATION" DimensionID="LAND_UNIT" StandardIdentityID="SI_FRIEND" Shape="RECTANGLE" Graphic="2_310_0.svg" PlannedGraphic="2_310_1.svg" CivilianGraphic="2_310_0c.svg" PlannedCivilianGraphic="2_310_1c.svg"/>
 
     <Affiliation ID="REALITY_LU_NEUTRAL" ContextID="REALITY" DimensionID="LAND_UNIT" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="0_410_0.svg" PlannedGraphic="0_410_1.svg" CivilianGraphic="0_410_0c.svg" PlannedCivilianGraphic="0_410_1c.svg">
       <LegacyStandardIdentityCode Name="2525C" FirstFunctionLetter="U">N</LegacyStandardIdentityCode>
