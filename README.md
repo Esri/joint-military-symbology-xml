@@ -22,12 +22,7 @@ In providing this schema, files of instance data, and sample C# code to navigate
 
 * Instance (xml) files for:
   * The base portion of the two standards.
-  * Each symbol set, including all legacy symbols from 2525C and APP-6(B).  This includes:
-    * Air symbols
-    * Air Missile symbols
-    * Space symbols
-    * Space Missile symbols
-    * Sea Surface symbols
+  * Each symbol set, including all legacy symbols from 2525C and APP-6(B), for all relevant appendices/chapters.
 
 * SVG files for all of the frames, entities, modifiers, and other graphic amplifiers needed to implement military symbology.
 
@@ -66,7 +61,7 @@ In providing this schema, files of instance data, and sample C# code to navigate
 [New to Github? Get started here.](http://htmlpreview.github.com/?https://github.com/Esri/esri.github.com/blob/master/help/esri-getting-to-know-github.html)
 
 ### Getting Started with the solution
-* Unzip the SVG zip file found in the SVG folder.  If you intend to use these SVG files with the image conversion utilities found under the Utilities source folder, please consult its instructions [here](./source/utilities/image-conversion-utilities/README.md).
+* If you intend to use the SVG files with the image conversion utilities found under the Utilities source folder, please consult its instructions [here](./source/utilities/image-conversion-utilities/README.md).
 * Open and build the Visual Studio Solution at joint-military-symbology-xml\source\JointMilitarySymbologyLibraryCS
     * To use MSBuild to build the solution
         * Open a Visual Studio Command Prompt: Start Menu | Microsoft Visual Studio 2012 | Visual Studio Tools | Developer Command Prompt for VS 2012
@@ -82,11 +77,9 @@ In providing this schema, files of instance data, and sample C# code to navigate
         * `MSTest /testmetadata:JointMilitarySymbologyLibrary.vsmdi /testlist:"JMSML Tests"`
 * Run the Test project to see a form appear, which you can use to manually test the SIDC conversion.
 	* Select from either of the two lists of symbols (2525C or 2525D) and the application will use the underlying C# library to convert the selected symbol ID code (SIDC) from one standard to the other.
-	* Note that not all symbols are currently supported and not all possible 2525D codes will convert to 2525C codes, or vice versa.  
+	* Note that not all possible 2525D codes will convert to 2525C codes, or vice versa.  
 		* Because of the component construction nature of 2525D, there are many more symbol ID combinations possible in 2525D, combinations that don't convert to 2525C.
-* DISA provides graphic files (svg) for the individual parts of MIL-STD 2525.  The JMSML schema supports referencing those files and the included C# library contains functionality that can be used to combine those referenced files into a complete image.  
-
-* Detailed API user documentation can be found at: [API User Doc](./documentation/APIUserDoc.md)
+* DISA provides graphic files (svg) for the individual parts of MIL-STD 2525 (included herein).  The JMSML schema supports referencing those files and the included C# library contains functionality that can be used to combine those referenced files into a complete image.
 
 ## NLog
 
@@ -116,6 +109,13 @@ In `jmsml.config`, The `SVGHome` attribute should point to the location of the a
 
 ## Documentation
 
+- To learn more about the design of this project, please see [here](documentation/DESIGN_DOC.md).
+- To get a high level overview of the XML schema, please see [here](documentation/SCHEMA_OVERVIEW_DOC.md).
+- To learn more about importing raw data into the symbol library, please see [here.](documentation/DATA_IMPORT_DOC.md)
+- To learn more about exporting data from the symbol library, please see [here](samples/README.md).
+- To learn more about the naming conventions used for the svg files, please see [here](svg/README.md).
+- To learn more about the status of various svg issues, please see [here](svg/KNOWN_ISSUES.md).
+
 This repo's documentation includes HTML pages generated with a pair of third party tools, re-distributed here in the Documentation folder's Utilities sub-folder.
 
 The tools include xs3p, which is a schema documentation generator in the form of an XSLT.  xs3p was developed by Australia's Distributed Systems Technology Centre (DSTC), a Cooperative Research Center, which folded in 2006.  The DSTC started and hosted the Australian W3C Office.  Since its abandonment, xs3p has been hosted by FiForms Solutions on SourceForge.
@@ -130,8 +130,7 @@ These utilities also include a batch file and JS script that exercise MSXML6 as 
 
 ## Issues
 
-* Not all of the symbols in MIL-STD 2525D or NATO APP-6(C) are included in this initial release, as not all of the appendices/chapters have been instantiated as XML data.
-* The image resources (svg/png) provided by DISA, used to display the individual elements of a complete symbol, are not supplied with this repo.  They are still a work in progress at DISA and many are not currently "wired" in to the XML instance data, at this time.  We will provide sample code in the future that includes and uses some of these available graphic files.
+Several parts of the provided schema have been defined (DrawingRules, LabelRules, Geometries, etc.) but are otherwise empty of full instance data.  Work continues on this project, as it evolves to provide more content for use by implementers, and some of that work will fill in the aforementioned missing data.
 
 Find a bug or want to request a new feature?  Please let us know by submitting an issue.
 
