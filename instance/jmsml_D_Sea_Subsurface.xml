@@ -44,7 +44,7 @@
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="NONSUBMARINE" Label="Nonsubmarine" Icon="FULL_OCTAGON" Graphic="35110300.svg">
+        <EntityType ID="NONSUBMARINE" Label="Nonsubmarine" Graphic="35110300.svg" Icon="FULL_OCTAGON" >
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>3</DigitTwo>
@@ -76,7 +76,7 @@
             <DigitTwo>1</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="AUV_UUV_CIV" Label="Autonomous Underwater Vehicle (AUV)/ Underwater Vehicle (UUV)" LabelAlias="Autonomous Underwater Vehicle (AUV)" Icon="FULL_OCTAGON" Graphic="35120200.svg">
+        <EntityType ID="AUV_UUV_CIV" Label="Autonomous Underwater Vehicle (AUV)/ Underwater Vehicle (UUV)" LabelAlias="Autonomous Underwater Vehicle (AUV)" Graphic="35120200.svg" Icon="FULL_OCTAGON">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>2</DigitTwo>
@@ -116,19 +116,19 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="ECHO_TRACKER_CLASSIFIER_ETC_POSSIBLE_CONTACT_POSCON" Label="Echo Tracker Classifier (ETC) / Possible Contact (POSCON)" Remarks="All ETC/POSCON tracks shall have a pending standard identity frame." Graphic="35140000.svg">
+    <Entity ID="ECHO_TRACKER_CLASSIFIER_ETC_POSSIBLE_CONTACT_POSCON" Label="Echo Tracker Classifier (ETC) / Possible Contact (POSCON)" Remarks="All ETC/POSCON tracks shall have a pending standard identity frame." Graphic="35140000.svg" Icon="FULL_OCTAGON">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>4</DigitTwo>
       </EntityCode>
     </Entity>
-    <Entity ID="FUSED_TRACK" Label="Fused Track" LabelAlias="Fused Track (Sea Subsurface)" Remarks="All fused tracks shall have a pending standard identity frame." Graphic="35150000.svg">
+    <Entity ID="FUSED_TRACK" Label="Fused Track" LabelAlias="Fused Track (Sea Subsurface)" Remarks="All fused tracks shall have a pending standard identity frame." Graphic="35150000.svg" Icon="FULL_OCTAGON">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>5</DigitTwo>
       </EntityCode>
     </Entity>
-    <Entity ID="MANUAL_TRACK" Label="Manual Track" LabelAlias="Manual Track (Sea Subsurface)" Graphic="35160000.svg">
+    <Entity ID="MANUAL_TRACK" Label="Manual Track" LabelAlias="Manual Track (Sea Subsurface)" Graphic="35160000.svg" Icon="FULL_OCTAGON">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>6</DigitTwo>

@@ -491,7 +491,7 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="VEHICLE" Label="Vehicle" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes." Graphic="15120000.svg" Icon="NA">
+    <Entity ID="VEHICLE" Label="Vehicle" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes." Graphic="15120000.svg" Icon="FULL_OCTAGON">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>2</DigitTwo>
@@ -1301,7 +1301,7 @@
             <DigitTwo>0</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="MILITARY_INFORMATION_SUPPORT_OPERATIONS_MISO" Label="Military Information Support Operations (MISO)" Graphic="15201100.svg">
+        <EntityType ID="MILITARY_INFORMATION_SUPPORT_OPERATIONS_MISO" Label="Military Information Support Operations (MISO)" Graphic="15201100.svg" Icon="FULL_OCTAGON">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>1</DigitTwo>

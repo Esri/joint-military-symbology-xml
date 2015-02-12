@@ -398,103 +398,103 @@
         <DigitTwo>4</DigitTwo>
       </EntityCode>
       <EntityTypes>
-        <EntityType ID="CIV_MERCHANT" Label="Merchant Ship" Icon="FULL_OCTAGON" Graphic="30140100.svg">
+        <EntityType ID="CIV_MERCHANT" Label="Merchant Ship" Graphic="30140100.svg" Icon="FULL_OCTAGON">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>1</DigitTwo>
           </EntityTypeCode>
           <EntitySubTypes>
-            <EntitySubType ID="CIV_CARGO" Label="Cargo, General" Icon="FULL_OCTAGON" Graphic="30140101.svg">
+            <EntitySubType ID="CIV_CARGO" Label="Cargo, General" Graphic="30140101.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="CIV_CONTAINER" Label="Container Ship" Icon="FULL_OCTAGON" Graphic="30140102.svg">
+            <EntitySubType ID="CIV_CONTAINER" Label="Container Ship" Graphic="30140102.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>2</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="CIV_DREDGE" Label="Dredge" Icon="FULL_OCTAGON" Graphic="30140103.svg">
+            <EntitySubType ID="CIV_DREDGE" Label="Dredge" Graphic="30140103.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>3</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="CIV_RORO" Label="Roll On/Roll Off" Icon="FULL_OCTAGON" Graphic="30140104.svg">
+            <EntitySubType ID="CIV_RORO" Label="Roll On/Roll Off" Graphic="30140104.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>4</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="CIV_FERRY" Label="Ferry" Icon="FULL_OCTAGON" Graphic="30140105.svg">
+            <EntitySubType ID="CIV_FERRY" Label="Ferry" Graphic="30140105.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>5</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="CIV_HEAVY_LIFT" Label="Heavy Lift" Icon="FULL_OCTAGON" Graphic="30140106.svg">
+            <EntitySubType ID="CIV_HEAVY_LIFT" Label="Heavy Lift" Graphic="30140106.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>6</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="CIV_HOVERCRAFT" Label="Hovercraft" Icon="FULL_OCTAGON" Graphic="30140107.svg">
+            <EntitySubType ID="CIV_HOVERCRAFT" Label="Hovercraft" Graphic="30140107.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>7</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="CIV_LASH_CARRIER" Label="Lash Carrier (with Barges)" Icon="FULL_OCTAGON" Graphic="30140108.svg">
+            <EntitySubType ID="CIV_LASH_CARRIER" Label="Lash Carrier (with Barges)" Graphic="30140108.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>8</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="CIV_OILER_TANKER" Label="Oiler/Tanker" Icon="FULL_OCTAGON" Graphic="30140109.svg">
+            <EntitySubType ID="CIV_OILER_TANKER" Label="Oiler/Tanker" Graphic="30140109.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>9</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="CIV_PASSENGER" Label="Passenger" Icon="FULL_OCTAGON" Graphic="30140110.svg">
+            <EntitySubType ID="CIV_PASSENGER" Label="Passenger" Graphic="30140110.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
                 <DigitTwo>0</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="CIV_TUG" Label="Tug, Ocean Going" Icon="FULL_OCTAGON" Graphic="30140111.svg">
+            <EntitySubType ID="CIV_TUG" Label="Tug, Ocean Going" Graphic="30140111.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="CIV_TOW" Label="Tow" Icon="FULL_OCTAGON" Graphic="30140112.svg">
+            <EntitySubType ID="CIV_TOW" Label="Tow" Graphic="30140112.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
                 <DigitTwo>2</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="CIV_HAZMAT" Label="Transport Ship, Hazardous Material" Icon="FULL_OCTAGON" Graphic="30140113.svg">
+            <EntitySubType ID="CIV_HAZMAT" Label="Transport Ship, Hazardous Material" Graphic="30140113.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
                 <DigitTwo>3</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="CIV_JUNK" Label="Junk/Dhow" Icon="FULL_OCTAGON" Graphic="30140114.svg">
+            <EntitySubType ID="CIV_JUNK" Label="Junk/Dhow" Graphic="30140114.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
                 <DigitTwo>4</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="CIV_BARGE" Label="Barge, Not Self-Propelled" Icon="FULL_OCTAGON" Graphic="30140115.svg">
+            <EntitySubType ID="CIV_BARGE" Label="Barge, Not Self-Propelled" Graphic="30140115.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
                 <DigitTwo>5</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="CIV_HOSPITAL" Label="Hospital Ship" Icon="FULL_OCTAGON" Graphic="30140116.svg">
+            <EntitySubType ID="CIV_HOSPITAL" Label="Hospital Ship" Graphic="30140116.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>1</DigitOne>
                 <DigitTwo>6</DigitTwo>
@@ -502,25 +502,25 @@
             </EntitySubType>
           </EntitySubTypes>
         </EntityType>
-        <EntityType ID="CIV_FISHING" Label="Fishing Vessel" Icon="FULL_OCTAGON" Graphic="30140200.svg">
+        <EntityType ID="CIV_FISHING" Label="Fishing Vessel" Graphic="30140200.svg" Icon="FULL_OCTAGON">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
           <EntitySubTypes>
-            <EntitySubType ID="CIV_DRIFTER" Label="Drifter" Icon="FULL_OCTAGON" Graphic="30140201.svg">
+            <EntitySubType ID="CIV_DRIFTER" Label="Drifter" Graphic="30140201.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="CIV_TRAWLER" Label="Trawler" Icon="FULL_OCTAGON" Graphic="30140202.svg">
+            <EntitySubType ID="CIV_TRAWLER" Label="Trawler"  Graphic="30140202.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>2</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="CIV_DREDGER" Label="Dredger" Icon="FULL_OCTAGON" Graphic="30140203.svg">
+            <EntitySubType ID="CIV_DREDGER" Label="Dredger" Graphic="30140203.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>3</DigitTwo>
@@ -528,31 +528,31 @@
             </EntitySubType>
           </EntitySubTypes>
         </EntityType>
-        <EntityType ID="CIV_LAW" Label="Law Enforcement Vessel" Icon="FULL_OCTAGON" Graphic="30140300.svg">
+        <EntityType ID="CIV_LAW" Label="Law Enforcement Vessel" Graphic="30140300.svg" Icon="FULL_OCTAGON">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>3</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="CIV_LEISURE_SAIL" Label="Leisure Craft, Sailing" Icon="FULL_OCTAGON" Graphic="30140400.svg">
+        <EntityType ID="CIV_LEISURE_SAIL" Label="Leisure Craft, Sailing" Graphic="30140400.svg" Icon="FULL_OCTAGON">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>4</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="CIV_LEISURE_MOTOR" Label="Leisure Craft, Motorized" Icon="FULL_OCTAGON" Graphic="30140500.svg">
+        <EntityType ID="CIV_LEISURE_MOTOR" Label="Leisure Craft, Motorized" Graphic="30140500.svg" Icon="FULL_OCTAGON">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>5</DigitTwo>
           </EntityTypeCode>
           <EntitySubTypes>
-            <EntitySubType ID="CIV_RHIB" Label="Rigid-Hull Inflatable Boat (RHIB)" LabelAlias="Rigid-Hull Inflatable Boat" Icon="FULL_OCTAGON" Graphic="30140501.svg">
+            <EntitySubType ID="CIV_RHIB" Label="Rigid-Hull Inflatable Boat (RHIB)" LabelAlias="Rigid-Hull Inflatable Boat" Graphic="30140501.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="CIV_SPEED" Label="Speedboat" Icon="FULL_OCTAGON" Graphic="30140502.svg">
+            <EntitySubType ID="CIV_SPEED" Label="Speedboat" Graphic="30140502.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>2</DigitTwo>
@@ -560,13 +560,13 @@
             </EntitySubType>
           </EntitySubTypes>
         </EntityType>
-        <EntityType ID="CIV_JET_SKI" Label="Jet Ski" Icon="FULL_OCTAGON" Graphic="30140600.svg">
+        <EntityType ID="CIV_JET_SKI" Label="Jet Ski" Graphic="30140600.svg" Icon="FULL_OCTAGON">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>6</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="CIV_USV" Label="Unmanned Surface Water Vehicle (USV)" Icon="FULL_OCTAGON" Graphic="30140700.svg">
+        <EntityType ID="CIV_USV" Label="Unmanned Surface Water Vehicle (USV)" Graphic="30140700.svg" Icon="FULL_OCTAGON">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>7</DigitTwo>
@@ -574,19 +574,19 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="OWN_SHIP" Label="Own Ship" Icon="FULL_OCTAGON" Graphic="30150000.svg">
+    <Entity ID="OWN_SHIP" Label="Own Ship" Graphic="30150000.svg" Icon="FULL_OCTAGON">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>5</DigitTwo>
       </EntityCode>
     </Entity>
-    <Entity ID="FUSED_TRACK" Label="Fused Track" LabelAlias="Fused Track (Sea Surface)" Icon="FULL_OCTAGON" Graphic="30160000.svg">
+    <Entity ID="FUSED_TRACK" Label="Fused Track" LabelAlias="Fused Track (Sea Surface)" Graphic="30160000.svg" Icon="FULL_OCTAGON">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>6</DigitTwo>
       </EntityCode>
     </Entity>
-    <Entity ID="MANUAL_TRACK" Label="Manual Track" LabelAlias="Manual Track (Sea Surface)" Icon="FULL_OCTAGON" Graphic="30170000.svg">
+    <Entity ID="MANUAL_TRACK" Label="Manual Track" LabelAlias="Manual Track (Sea Surface)" Graphic="30170000.svg" Icon="FULL_OCTAGON">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>7</DigitTwo>

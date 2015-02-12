@@ -506,7 +506,7 @@
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="CBRN_MOTORIZED" Label="Motorized" CloverGraphic="10140102_0.svg" DiamondGraphic="10140102_3.svg" RectangleGraphic="10140102_1.svg" SquareGraphic="10140102_2.svg" Icon="FULL_FRAME">
+            <EntitySubType ID="CBRN_MOTORIZED" Label="Motorized" Remarks="DISA changed this to full frame as a result of a telecon discussion with the Army, but not reflected that way in the final PDF." CloverGraphic="10140102_0.svg" DiamondGraphic="10140102_3.svg" RectangleGraphic="10140102_1.svg" SquareGraphic="10140102_2.svg" Icon="FULL_FRAME">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>2</DigitTwo>
@@ -574,7 +574,7 @@
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="ENG_MOTORIZED" Label="Motorized" CloverGraphic="10140702_0.svg" DiamondGraphic="10140702_3.svg" RectangleGraphic="10140702_1.svg" SquareGraphic="10140702_2.svg" Icon="FULL_FRAME">
+            <EntitySubType ID="ENG_MOTORIZED" Label="Motorized" Remarks="DISA changed this to full frame as a result of a telecon discussion with the Army, but not reflected that way in the final PDF." CloverGraphic="10140702_0.svg" DiamondGraphic="10140702_3.svg" RectangleGraphic="10140702_1.svg" SquareGraphic="10140702_2.svg" Icon="FULL_FRAME">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>2</DigitTwo>
@@ -654,7 +654,7 @@
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="SEC_MOTORIZED" Label="Motorized" CloverGraphic="10141702_0.svg" DiamondGraphic="10141702_3.svg" RectangleGraphic="10141702_1.svg" SquareGraphic="10141702_2.svg" Icon="FULL_FRAME">
+            <EntitySubType ID="SEC_MOTORIZED" Label="Motorized" Remarks="DISA changed this to full frame as a result of a telecon discussion with the Army, but not reflected that way in the final PDF." CloverGraphic="10141702_0.svg" DiamondGraphic="10141702_3.svg" RectangleGraphic="10141702_1.svg" SquareGraphic="10141702_2.svg" Icon="FULL_FRAME">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>2</DigitTwo>
@@ -730,13 +730,13 @@
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="EW_DIRECTION_FINDING" Label="Direction Finding" Graphic="10150502.svg">
+            <EntitySubType ID="EW_DIRECTION_FINDING" Label="Direction Finding" Graphic="10150502.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>2</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="EW_INTERCEPT" Label="Intercept" Graphic="10150503.svg">
+            <EntitySubType ID="EW_INTERCEPT" Label="Intercept" Graphic="10150503.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>3</DigitTwo>
@@ -786,7 +786,7 @@
             <DigitTwo>0</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="SEARCH" Label="Search" Icon="FULL_OCTAGON" Graphic="10151100.svg">
+        <EntityType ID="SEARCH" Label="Search" Graphic="10151100.svg" Icon="FULL_OCTAGON">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>1</DigitTwo>
@@ -818,7 +818,7 @@
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="AIRPORT_DEBARKATION_AIRPORT_EMBARKATION" Label="Airport of Debarkation/Airport of Embarkation" Icon="MAIN_1" Graphic="10160300.svg">
+        <EntityType ID="AIRPORT_DEBARKATION_AIRPORT_EMBARKATION" Label="Airport of Debarkation/Airport of Embarkation" Graphic="10160300.svg" Icon="MAIN_1">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>3</DigitTwo>
@@ -980,7 +980,7 @@
             <DigitTwo>9</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="RAILHEAD" Label="Railhead" Icon="MAIN_1" Graphic="10163000.svg">
+        <EntityType ID="RAILHEAD" Label="Railhead" Graphic="10163000.svg" Icon="MAIN_1">
           <EntityTypeCode>
             <DigitOne>3</DigitOne>
             <DigitTwo>0</DigitTwo>
@@ -998,7 +998,7 @@
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="SEA_PORT_DEBARKATION_SEA_PORT_EMBARKATION" Label="Sea Port of Debarkation/Sea Port of Embarkation" Icon="MAIN_1" Graphic="10163300.svg">
+        <EntityType ID="SEA_PORT_DEBARKATION_SEA_PORT_EMBARKATION" Label="Sea Port of Debarkation/Sea Port of Embarkation" Graphic="10163300.svg" Icon="MAIN_1">
           <EntityTypeCode>
             <DigitOne>3</DigitOne>
             <DigitTwo>3</DigitTwo>
