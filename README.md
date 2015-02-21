@@ -115,6 +115,7 @@ In `jmsml.config`, The `SVGHome` attribute should point to the location of the a
 - To learn more about exporting data from the symbol library, please see [here](samples/README.md).
 - To learn more about the naming conventions used for the svg files, please see [here](svg/README.md).
 - To learn more about the status of various svg issues, please see [here](svg/KNOWN_ISSUES.md).
+- To follow the progress of Esri-authored change proposals, please see [here](documentation/change_proposals/README.md). 
 
 This repo's documentation includes HTML pages generated with a pair of third party tools, re-distributed here in the Documentation folder's Utilities sub-folder.
 
