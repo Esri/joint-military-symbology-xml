@@ -6,6 +6,7 @@ The status of those CPs, as they are processed through the DISA DoD CP process, 
 
 Esri Reference 		| DISA Reference | Title|Status	|
 -------	|-------	|--------|----------
+[022415-1](CP_Esri_022415-1.doc)|TBD|Fix Various Administrative Errors Found in the Final 2525D PDF|Submitted
 [021715-1](CP_Esri_021715-1.doc)|TBD|Add Usage Guidance to Appendix A/Annex A|Submitted
 [021115-1](CP_Esri_021115-1.doc)		|	15-022-DS 	|Remove Redundant Control Measures|Submitted
 |[061314-1](CP_Esri_061314-1.doc)|14-006-DS|Additional Information Columns in Appendix A Tables|Resubmitted with additional examples
