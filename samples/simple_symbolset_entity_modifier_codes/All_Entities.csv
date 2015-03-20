@@ -196,8 +196,8 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 10,Intelligence,Electronic Ranging,,,150400,Point,MAIN,Intelligence : Electronic Ranging
 10,Intelligence,Electronic Warfare,,,150500,Point,MAIN,Intelligence : Electronic Warfare
 10,Intelligence,Electronic Warfare,Analysis,,150501,Point,FULL_OCTAGON,Intelligence : Electronic Warfare : Analysis
-10,Intelligence,Electronic Warfare,Direction Finding,,150502,Point,MAIN,Intelligence : Electronic Warfare : Direction Finding
-10,Intelligence,Electronic Warfare,Intercept,,150503,Point,MAIN,Intelligence : Electronic Warfare : Intercept
+10,Intelligence,Electronic Warfare,Direction Finding,,150502,Point,FULL_OCTAGON,Intelligence : Electronic Warfare : Direction Finding
+10,Intelligence,Electronic Warfare,Intercept,,150503,Point,FULL_OCTAGON,Intelligence : Electronic Warfare : Intercept
 10,Intelligence,Electronic Warfare,Jamming,,150504,Point,FULL_FRAME,Intelligence : Electronic Warfare : Jamming
 10,Intelligence,Electronic Warfare,Search,,150505,Point,FULL_OCTAGON,Intelligence : Electronic Warfare : Search
 10,Intelligence,Intercept (Search and Recording),,,150600,Point,FULL_OCTAGON,Intelligence : Intercept (Search and Recording)
@@ -367,7 +367,7 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 15,Weapon/Weapon System,Nonlethal Weapon,,,111800,Point,FULL_OCTAGON,Weapon/Weapon System : Nonlethal Weapon
 15,Weapon/Weapon System,Taser,,,111900,Point,FULL_OCTAGON,Weapon/Weapon System : Taser
 15,Weapon/Weapon System,Water Cannon,,,112000,Point,FULL_OCTAGON,Weapon/Weapon System : Water Cannon
-15,Vehicle,,,,120000,Point,NA,Vehicle
+15,Vehicle,,,,120000,Point,FULL_OCTAGON,Vehicle
 15,Vehicle,Armored Vehicle,,,120100,Point,FULL_OCTAGON,Vehicle : Armored Vehicle
 15,Vehicle,Armored Vehicle,Armored Fighting Vehicle,,120101,Point,FULL_OCTAGON,Vehicle : Armored Vehicle : Armored Fighting Vehicle
 15,Vehicle,Armored Vehicle,Armored Fighting Vehicle Command and Control,,120102,Point,FULL_OCTAGON,Vehicle : Armored Vehicle : Armored Fighting Vehicle C2
@@ -490,7 +490,7 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 15,Other Equipment,Ground-based Midcourse Defense (GMD) Fire Control (GFC) Center,,,200800,Point,MAIN,Other Equipment : Ground-based Midcourse Defense (GMD) Fire Control (GFC) Center
 15,Other Equipment,In-Flight Interceptor Communications System (IFICS) Data Terminal (IDT),,,200900,Point,MAIN,Other Equipment : In-Flight Interceptor Communications System (IFICS) Data Terminal (IDT)
 15,Other Equipment,Laser,,,201000,Point,FULL_OCTAGON,Other Equipment : Laser
-15,Other Equipment,Military Information Support Operations (MISO),,,201100,Point,MAIN,Other Equipment : Military Information Support Operations (MISO)
+15,Other Equipment,Military Information Support Operations (MISO),,,201100,Point,FULL_OCTAGON,Other Equipment : Military Information Support Operations (MISO)
 15,Other Equipment,Sustainment Shipments,,,201200,Point,MAIN,Other Equipment : Sustainment Shipments
 15,Other Equipment,Tent,,,201300,Point,FULL_OCTAGON,Other Equipment : Tent
 15,Other Equipment,Unit Deployment Shipments,,,201400,Point,MAIN,Other Equipment : Unit Deployment Shipments
@@ -1282,9 +1282,9 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 35,Weapon,Torpedo,,,130100,Point,MAIN,Weapon (Sea Subsurface) : Torpedo
 35,Weapon,Improvised Explosive Device (IED),,,130200,Point,MAIN,Weapon (Sea Subsurface) : Improvised Explosive Device (IED)
 35,Weapon,Decoy,,,130300,Point,MAIN,Weapon (Sea Subsurface) : Decoy
-35,Echo Tracker Classifier (ETC) / Possible Contact (POSCON),,,,140000,Point,MAIN,Echo Tracker Classifier (ETC) / Possible Contact (POSCON)
-35,Fused Track,,,,150000,Point,MAIN,Fused Track (Sea Subsurface)
-35,Manual Track,,,,160000,Point,MAIN,Manual Track (Sea Subsurface)
+35,Echo Tracker Classifier (ETC) / Possible Contact (POSCON),,,,140000,Point,FULL_OCTAGON,Echo Tracker Classifier (ETC) / Possible Contact (POSCON)
+35,Fused Track,,,,150000,Point,FULL_OCTAGON,Fused Track (Sea Subsurface)
+35,Manual Track,,,,160000,Point,FULL_OCTAGON,Manual Track (Sea Subsurface)
 36,Sea Mine-General,,,,110000,Point,FULL_OCTAGON,Sea Mine-General
 36,Sea Mine-General,Sea Mine-Bottom,,,110100,Point,FULL_OCTAGON,Sea Mine-General : Sea Mine-Bottom
 36,Sea Mine-General,Sea Mine-Moored,,,110200,Point,FULL_OCTAGON,Sea Mine-General : Sea Mine-Moored
