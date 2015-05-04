@@ -1112,7 +1112,7 @@ namespace JointMilitarySymbologyLibrary
                 {
                     foreach (ModifiersTypeModifier lObj in symbolSet.SectorOneModifiers)
                     {
-                        if (lObj.ID == modifierID)
+                        if (lObj.ID == modifierID || modifierID == "NA" && lObj.ModifierCode.DigitOne == 0 && lObj.ModifierCode.DigitTwo == 0)
                         {
                             return lObj;
                         }
@@ -1155,7 +1155,7 @@ namespace JointMilitarySymbologyLibrary
                 {
                     foreach (ModifiersTypeModifier lObj in symbolSet.SectorTwoModifiers)
                     {
-                        if (lObj.ID == modifierID)
+                        if (lObj.ID == modifierID || modifierID == "NA" && lObj.ModifierCode.DigitOne == 0 && lObj.ModifierCode.DigitTwo == 0)
                         {
                             return lObj;
                         }
@@ -1274,6 +1274,26 @@ namespace JointMilitarySymbologyLibrary
                                                   ModifiersTypeModifier modifierTwo)
         {
             SymbolSetLegacySymbol retObj = null;
+
+            // Account now for non-null modifiers that are effectively treated like null (00)
+
+            if (modifierOne != null)
+            {
+                if (modifierOne.ModifierCode.DigitOne == 0 &&
+                    modifierOne.ModifierCode.DigitTwo == 0)
+
+                    modifierOne = null;
+            }
+
+            if (modifierTwo != null)
+            {
+                if (modifierTwo.ModifierCode.DigitOne == 0 &&
+                    modifierTwo.ModifierCode.DigitTwo == 0)
+
+                    modifierTwo = null;
+            }
+
+            // Now build a legacy 15 character SIDC from the 2525D symbol objects
 
             if (symbolSet != null)
             {

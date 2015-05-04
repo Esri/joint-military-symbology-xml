@@ -1605,7 +1605,7 @@
   </Statuses>
 
   <HQTFDummies>
-    <HQTFDummy Name="NA" Label="Not Applicable">
+    <HQTFDummy Name="NA" Label="Unknown">
       <HQTFDummyCode>0</HQTFDummyCode>
       <LegacyHQTFDummyCode Name="2525C">-</LegacyHQTFDummyCode>
       <LegacyHQTFDummyCode Name="2525C">P</LegacyHQTFDummyCode>
@@ -1862,12 +1862,12 @@
   </HQTFDummies>
 
   <AmplifierGroups>
-    <AmplifierGroup Name="NA" Label="Not Applicable">
+    <AmplifierGroup Name="NA" Label="Unknown">
       <AmplifierGroupCode>0</AmplifierGroupCode>
       <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC">-</LegacyModifierCode>
       
       <Amplifiers>
-        <Amplifier Name="NA" Label="Not Applicable">
+        <Amplifier Name="NA" Label="Unknown">
           <AmplifierCode>0</AmplifierCode>
           <LegacyModifierCode Name="2525C">-</LegacyModifierCode>
         </Amplifier>

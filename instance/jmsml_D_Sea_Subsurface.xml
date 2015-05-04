@@ -136,6 +136,12 @@
     </Entity>
   </Entities>
   <SectorOneModifiers>
+    <Modifier ID="UNSPECIFIED_MOD" Label="Unspecified">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
     <Modifier ID="ANTISUBMARINE_WARFARE_MOD" Label="Antisubmarine Warfare" LabelAlias="Antisubmarine Warfare (Sea Subsurface)" Graphic="35011.svg" Category="Mission Area">
       <ModifierCode>
         <DigitOne>0</DigitOne>
@@ -258,6 +264,12 @@
     </Modifier>
   </SectorOneModifiers>
   <SectorTwoModifiers>
+    <Modifier ID="UNSPECIFIED_2_MOD" Label="Unspecified">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
     <Modifier ID="AIR_INDEPENDENT_PROPULSION_MOD" Label="Air Independent Propulsion" Graphic="35012.svg" Category="Ship Propulsion" LimitUseTo="SUBMARINE">
       <ModifierCode>
         <DigitOne>0</DigitOne>

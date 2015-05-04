@@ -1,4 +1,5 @@
 Name,Value
+Not Applicable,00
 Cargo/Transport Capacity : Heavy,01
 Cargo/Transport Capacity : Medium,02
 Cargo/Transport Capacity : Light,03
@@ -10,6 +11,7 @@ Range : Short Range,08
 Range : Medium Range,09
 Range : Long Range,10
 Track Link Availability : Downlinked,11
+Unspecified,00
 Missile Destination : Air,01
 Missile Destination : Surface,02
 Missile Destination : Subsurface,03
@@ -26,10 +28,12 @@ Missile Range : Medium Range (Air Missile),13
 Missile Range : Intermediate Range (Air Missile),14
 Missile Range : Long Range (Air Missile),15
 Missile Range : Intercontinental (Air Missile),16
+Unspecified,00
 Sensor : Optical,01
 Sensor : Infrared,02
 Sensor : Radar,03
 Sensor : Signals Intelligence (SIGINT),04
+Unspecified,00
 Missile Range : Short Range (Space Missile),01
 Missile Range : Medium Range (Space Missile),02
 Missile Range : Intermediate Range (Space Missile),03
@@ -42,6 +46,7 @@ Missile Type - BMD : Standard Missile - Terminal Phase (SM-T),09
 Missile Type - BMD : Standard Missile - 3 (SM-3),10
 Missile Type - BMD : Terminal High-Altitude Area Defense (THAAD),11
 Launch Origin : Space 2,12
+Unspecified,00
 Mobility : Airborne,01
 Mobility : Arctic,02
 Capability : Battle Damage Repair,03
@@ -99,7 +104,9 @@ Capability : Attack 2,54
 Capability : Refuel,55
 Capability : Utility 2,56
 Capability : Combat Search and Rescue,57
+Unspecified,00
 Organization : Leader or Leadership 2,01
+Unspecified,00
 No Category Listed : Biological,01
 No Category Listed : Chemical,02
 No Category Listed : Nuclear,03
@@ -108,6 +115,7 @@ No Category Listed : Atomic Energy Reactor,05
 No Category Listed : Nuclear Material Production,06
 No Category Listed : Nuclear Material Storage,07
 No Category Listed : Weapons Grade,08
+Unspecified,00
 Ship Propulsion : Nuclear Powered,01
 Ship Capacity : Heavy,02
 Ship Capacity : Light,03
@@ -123,6 +131,7 @@ Ship Mobility : Hydrofoil,12
 USV Control : Autonomous Control,13
 USV Control : Remotely Piloted,14
 USV Control : Expendable,15
+Unspecified,00
 Ship Propulsion : Air Independent Propulsion,01
 Ship Propulsion : Diesel Electric General,02
 Ship Propulsion : Diesel - Type 1,03

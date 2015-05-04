@@ -800,7 +800,7 @@ Maritime Points : Aim Point,210200
 Maritime Points : Defended Asset,210300
 Maritime Points : Drop Point,210400
 Maritime Points : Entry Point,210500
-Maritime Points : Air  Detonation,210600
+Maritime Points : Air Detonation,210600
 Maritime Points : Ground Zero,210700
 Maritime Points : Impact Point,210800
 Maritime Points : Predicted Impact Point,210900
@@ -1907,6 +1907,7 @@ Effect : Network Outage,160700
 Effect : Service Outage,160800
 Effect : Device Outage,160900
 Invalid Symbol,100000
+Not Applicable,00
 Military Aircraft Type : Attack/Strike,01
 Military Aircraft Type : Bomber,02
 Aircraft Type : Cargo,03
@@ -1946,6 +1947,7 @@ Mission Area : Multimission,36
 Crime : Hijacking (Air),37
 Mission Area : ASW Helo - LAMPS,38
 Mission Area : ASW Helo - SH-60R,39
+Unspecified,00
 Launch Origin : Air,01
 Launch Origin : Surface,02
 Launch Origin : Subsurface,03
@@ -1954,15 +1956,18 @@ Missile Class : Anti-Ballistic,05
 Missile Class : Ballistic (Air Missile),06
 Missile Class : Cruise,07
 Missile Class : Interceptor (Air Missile),08
+Unspecified,00
 Orbit : Low Earth Orbit (LEO),01
 Orbit : Medium Earth Orbit (MEO),02
 Orbit : High Earth Orbit (HEO),03
 Orbit : Geosynchronous Orbit (GSO),04
 Orbit : Geostationary Orbit (GO),05
 Orbit : Molniya Orbit (MO),06
+Unspecified,00
 Missile Class : Ballistic (Space Missile),01
 Launch Origin : Space 1,02
 Missile Class : Interceptor (Space Missile),03
+Unspecified,00
 Mobility : Air Mobile/Air Assault (US Only),01
 Capability : Area,02
 Capability : Attack 1,03
@@ -2041,6 +2046,7 @@ Capability : Medevac,75
 Capability : Ranger,76
 Capability : Support 1,77
 Capability : Aviation,78
+Unspecified,00
 Crime : Assassination (Land Civilian),01
 Crime : Execution (Wrongful Killing) (Land Civilian),02
 Crime : Murder Victims,03
@@ -2065,6 +2071,7 @@ Composite Loss : Accident (Land Civilian),21
 Composite Loss : Combat,22
 Composite Loss : Other (Land Civilian),23
 Crime : Loot,24
+Unspecified,00
 Sensor Type : Biological,01
 Sensor Type : Chemical,02
 Sensor Type : Early Warning Radar,03
@@ -2074,6 +2081,7 @@ Sensor Type : Radiological,06
 Sensor Type : Upgraded Early Warning Radar,07
 Crime : Hijacking (Land Equipment),08
 Organization : Civilian (Land Equipment),09
+Unspecified,00
 CBRN Type : Biological,01
 CBRN Type : Chemical,02
 CBRN Type : Nuclear,03
@@ -2087,6 +2095,7 @@ Electric Power Type : Petroleum,10
 Operation : Civilian (Land Installation),11
 Civilian Telecommunications Type : Civilian Telephone,12
 Civilian Telecommunications Type : Civilian Television,13
+Unspecified,00
 Mission Area : Own Ship,01
 Mission Area : Antiair Warfare,02
 Mission Area : Antisubmarine Warfare (Sea Surface),03
@@ -2110,6 +2119,7 @@ Mission Area : Ballistic Missile Defense- Shooter,20
 Mission Area : Ballistic Missile Defense- Long-Range Surveillance and Track (LRST),21
 Mission Area : Sea-Base X-Band,22
 Crime : Hijacking/Hijacked (Sea Surface),23
+Unspecified,00
 Mission Area : Antisubmarine Warfare (Sea Subsurface),01
 Mission Area : Auxiliary,02
 Mission Area : Command and Control,03
@@ -2130,6 +2140,7 @@ Submarine Confidence : Probable Submarine,17
 Submarine Confidence : Certain Submarine,18
 Weapons Capability : Anti-torpedo Torpedo,19
 Crime : Hijacking/Highjacked,20
+Unspecified,00
 Crime : Assasination (Activities),01
 Crime : Execution (Wrongful Killing) (Activities),02
 Crime : Hijacking/Hijacked (Activities),03
@@ -2148,6 +2159,7 @@ Incident Qualifier : Attempted,15
 Incident Qualifier : Accident,16
 Incident Qualifier : Incident,17
 Crime : Theft,18
+Unspecified,00
 Radar : Data Transmission (Space),14
 Radar : Earth Surveillance,15
 Radar : Identification Friend or Foe (Interrogator) (Space),21
@@ -2179,6 +2191,7 @@ Radar : Target Tracking (Space),61
 Radar : Unknown (Space),62
 Radar : Video Remoting (Space),63
 Radar : Experimental (Space),64
+Unspecified,00
 Radar : Airborne Search and Bombing,02
 Radar : Airborne Intercept,03
 Radar : Altimeter,04
@@ -2233,6 +2246,7 @@ Radar : Target Tracking (Air),61
 Radar : Unknown (Air),62
 Radar : Video Remoting (Air),63
 Radar : Experimental (Air),64
+Unspecified,00
 Radar : Anti-Aircraft Fire Control (Land),01
 Radar : Air Traffic Control (Land),06
 Radar : Beacon Transponder (not IFF) (Land),07
@@ -2285,6 +2299,7 @@ Radar : Target Tracking (Land),61
 Radar : Unknown (Land),62
 Radar : Video Remoting (Land),63
 Radar : Experimental (Land),64
+Unspecified,00
 Radar : Anti-Aircraft Fire Control (Sea Surface),01
 Radar : Air Traffic Control (Sea Surface),06
 Radar : Beacon Transponder (not IFF) (Sea Surface),07
@@ -2333,6 +2348,7 @@ Radar : Target Tracking (Sea Surface),61
 Radar : Unknown (Sea Surface),62
 Radar : Video Remoting (Sea Surface),63
 Radar : Experimental (Sea Surface),64
+Unspecified,00
 Radar : Beacon Transponder (not IFF) (Sea Subsurface),07
 Communications : Cellular/Mobile (Sea Subsurface),11
 Jammer : Decoy/Mimic (Sea Subsurface),13
@@ -2370,6 +2386,7 @@ Radar : Target Tracking (Sea Subsurface),61
 Radar : Unknown (Sea Subsurface),62
 Radar : Video Remoting (Sea Subsurface),63
 Radar : Experimental (Sea Subsurface),64
+Not Applicable,00
 Cargo/Transport Capacity : Heavy,01
 Cargo/Transport Capacity : Medium,02
 Cargo/Transport Capacity : Light,03
@@ -2381,6 +2398,7 @@ Range : Short Range,08
 Range : Medium Range,09
 Range : Long Range,10
 Track Link Availability : Downlinked,11
+Unspecified,00
 Missile Destination : Air,01
 Missile Destination : Surface,02
 Missile Destination : Subsurface,03
@@ -2397,10 +2415,12 @@ Missile Range : Medium Range (Air Missile),13
 Missile Range : Intermediate Range (Air Missile),14
 Missile Range : Long Range (Air Missile),15
 Missile Range : Intercontinental (Air Missile),16
+Unspecified,00
 Sensor : Optical,01
 Sensor : Infrared,02
 Sensor : Radar,03
 Sensor : Signals Intelligence (SIGINT),04
+Unspecified,00
 Missile Range : Short Range (Space Missile),01
 Missile Range : Medium Range (Space Missile),02
 Missile Range : Intermediate Range (Space Missile),03
@@ -2413,6 +2433,7 @@ Missile Type - BMD : Standard Missile - Terminal Phase (SM-T),09
 Missile Type - BMD : Standard Missile - 3 (SM-3),10
 Missile Type - BMD : Terminal High-Altitude Area Defense (THAAD),11
 Launch Origin : Space 2,12
+Unspecified,00
 Mobility : Airborne,01
 Mobility : Arctic,02
 Capability : Battle Damage Repair,03
@@ -2470,7 +2491,9 @@ Capability : Attack 2,54
 Capability : Refuel,55
 Capability : Utility 2,56
 Capability : Combat Search and Rescue,57
+Unspecified,00
 Organization : Leader or Leadership 2,01
+Unspecified,00
 No Category Listed : Biological,01
 No Category Listed : Chemical,02
 No Category Listed : Nuclear,03
@@ -2479,6 +2502,7 @@ No Category Listed : Atomic Energy Reactor,05
 No Category Listed : Nuclear Material Production,06
 No Category Listed : Nuclear Material Storage,07
 No Category Listed : Weapons Grade,08
+Unspecified,00
 Ship Propulsion : Nuclear Powered,01
 Ship Capacity : Heavy,02
 Ship Capacity : Light,03
@@ -2494,6 +2518,7 @@ Ship Mobility : Hydrofoil,12
 USV Control : Autonomous Control,13
 USV Control : Remotely Piloted,14
 USV Control : Expendable,15
+Unspecified,00
 Ship Propulsion : Air Independent Propulsion,01
 Ship Propulsion : Diesel Electric General,02
 Ship Propulsion : Diesel - Type 1,03

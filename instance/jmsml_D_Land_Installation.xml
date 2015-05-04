@@ -815,6 +815,12 @@
     </Entity>
   </Entities>
   <SectorOneModifiers>
+    <Modifier ID="UNSPECIFIED_MOD" Label="Unspecified">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
     <Modifier ID="BIOLOGICAL_1_MOD" Label="Biological" Graphic="20011.svg" Category="CBRN Type">
       <ModifierCode>
         <DigitOne>0</DigitOne>
@@ -895,6 +901,12 @@
     </Modifier>
   </SectorOneModifiers>
   <SectorTwoModifiers>
+    <Modifier ID="UNSPECIFIED_2_MOD" Label="Unspecified">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
     <Modifier ID="BIOLOGICAL_2_MOD" Label="Biological" Graphic="20012.svg" Category="No Category Listed">
       <ModifierCode>
         <DigitOne>0</DigitOne>

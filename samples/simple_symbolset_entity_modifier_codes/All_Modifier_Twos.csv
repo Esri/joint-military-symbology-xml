@@ -1,4 +1,5 @@
 SymbolSet,ModifierNumber,Category,Name,Code,UniqueName
+01,2,,Not Applicable,00,Not Applicable
 01,2,Cargo/Transport Capacity,Heavy,01,Cargo/Transport Capacity : Heavy
 01,2,Cargo/Transport Capacity,Medium,02,Cargo/Transport Capacity : Medium
 01,2,Cargo/Transport Capacity,Light,03,Cargo/Transport Capacity : Light
@@ -10,6 +11,7 @@ SymbolSet,ModifierNumber,Category,Name,Code,UniqueName
 01,2,Range,Medium Range,09,Range : Medium Range
 01,2,Range,Long Range,10,Range : Long Range
 01,2,Track Link Availability,Downlinked,11,Track Link Availability : Downlinked
+02,2,,Unspecified,00,Unspecified
 02,2,Missile Destination,Air,01,Missile Destination : Air
 02,2,Missile Destination,Surface,02,Missile Destination : Surface
 02,2,Missile Destination,Subsurface,03,Missile Destination : Subsurface
@@ -26,10 +28,12 @@ SymbolSet,ModifierNumber,Category,Name,Code,UniqueName
 02,2,Missile Range,Intermediate Range,14,Missile Range : Intermediate Range (Air Missile)
 02,2,Missile Range,Long Range,15,Missile Range : Long Range (Air Missile)
 02,2,Missile Range,Intercontinental,16,Missile Range : Intercontinental (Air Missile)
+05,2,,Unspecified,00,Unspecified
 05,2,Sensor,Optical,01,Sensor : Optical
 05,2,Sensor,Infrared,02,Sensor : Infrared
 05,2,Sensor,Radar,03,Sensor : Radar
 05,2,Sensor,Signals Intelligence (SIGINT),04,Sensor : Signals Intelligence (SIGINT)
+06,2,,Unspecified,00,Unspecified
 06,2,Missile Range,Short Range,01,Missile Range : Short Range (Space Missile)
 06,2,Missile Range,Medium Range,02,Missile Range : Medium Range (Space Missile)
 06,2,Missile Range,Intermediate Range,03,Missile Range : Intermediate Range (Space Missile)
@@ -42,6 +46,7 @@ SymbolSet,ModifierNumber,Category,Name,Code,UniqueName
 06,2,Missile Type - BMD,Standard Missile - 3 (SM-3),10,Missile Type - BMD : Standard Missile - 3 (SM-3)
 06,2,Missile Type - BMD,Terminal High-Altitude Area Defense (THAAD),11,Missile Type - BMD : Terminal High-Altitude Area Defense (THAAD)
 06,2,Launch Origin,Space,12,Launch Origin : Space 2
+10,2,,Unspecified,00,Unspecified
 10,2,Mobility,Airborne,01,Mobility : Airborne
 10,2,Mobility,Arctic,02,Mobility : Arctic
 10,2,Capability,Battle Damage Repair,03,Capability : Battle Damage Repair
@@ -99,7 +104,9 @@ SymbolSet,ModifierNumber,Category,Name,Code,UniqueName
 10,2,Capability,Refuel,55,Capability : Refuel
 10,2,Capability,Utility,56,Capability : Utility 2
 10,2,Capability,Combat Search and Rescue,57,Capability : Combat Search and Rescue
+11,2,,Unspecified,00,Unspecified
 11,2,Organization,Leader or Leadership,01,Organization : Leader or Leadership 2
+20,2,,Unspecified,00,Unspecified
 20,2,No Category Listed,Biological,01,No Category Listed : Biological
 20,2,No Category Listed,Chemical,02,No Category Listed : Chemical
 20,2,No Category Listed,Nuclear,03,No Category Listed : Nuclear
@@ -108,6 +115,7 @@ SymbolSet,ModifierNumber,Category,Name,Code,UniqueName
 20,2,No Category Listed,Nuclear Material Production,06,No Category Listed : Nuclear Material Production
 20,2,No Category Listed,Nuclear Material Storage,07,No Category Listed : Nuclear Material Storage
 20,2,No Category Listed,Weapons Grade,08,No Category Listed : Weapons Grade
+30,2,,Unspecified,00,Unspecified
 30,2,Ship Propulsion,Nuclear Powered,01,Ship Propulsion : Nuclear Powered
 30,2,Ship Capacity,Heavy,02,Ship Capacity : Heavy
 30,2,Ship Capacity,Light,03,Ship Capacity : Light
@@ -123,6 +131,7 @@ SymbolSet,ModifierNumber,Category,Name,Code,UniqueName
 30,2,USV Control,Autonomous Control,13,USV Control : Autonomous Control
 30,2,USV Control,Remotely Piloted,14,USV Control : Remotely Piloted
 30,2,USV Control,Expendable,15,USV Control : Expendable
+35,2,,Unspecified,00,Unspecified
 35,2,Ship Propulsion,Air Independent Propulsion,01,Ship Propulsion : Air Independent Propulsion
 35,2,Ship Propulsion,Diesel Electric General,02,Ship Propulsion : Diesel Electric General
 35,2,Ship Propulsion,Diesel - Type 1,03,Ship Propulsion : Diesel - Type 1
