@@ -574,13 +574,13 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="OWN_SHIP" Label="Own Ship" Graphic="30150000.svg" Icon="FULL_OCTAGON">
+    <Entity ID="OWN_SHIP" Label="Own Ship" Remarks="The diameter of the icon shall be 1L. This icon shall be used with a friend standard identity only." Graphic="30150000.svg" Icon="FULL_OCTAGON">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>5</DigitTwo>
       </EntityCode>
     </Entity>
-    <Entity ID="FUSED_TRACK" Label="Fused Track" LabelAlias="Fused Track (Sea Surface)" Graphic="30160000.svg" Icon="FULL_OCTAGON">
+    <Entity ID="FUSED_TRACK" Label="Fused Track" Remarks="All fused tracks shall have a pending standard identity frame." LabelAlias="Fused Track (Sea Surface)" Graphic="30160000.svg" Icon="FULL_OCTAGON">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>6</DigitTwo>
