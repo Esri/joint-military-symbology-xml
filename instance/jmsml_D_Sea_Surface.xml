@@ -6,13 +6,13 @@
   </SymbolSetCode>
   <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
   <Entities>
-    <Entity ID="MILITARY" Label="Military" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes." LabelAlias="Military (Sea Surface)" Graphic="30110000.svg">
+    <Entity ID="MILITARY" Label="Military" LabelAlias="Military (Sea Surface)" Graphic="30110000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
       </EntityCode>
     </Entity>
-    <Entity ID="MILITARY_COMBAT" Label="Military Combatant" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes." Graphic="30120000.svg">
+    <Entity ID="MILITARY_COMBAT" Label="Military Combatant" Graphic="30120000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>2</DigitTwo>
@@ -266,7 +266,7 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="MILITARY_NON_COMBAT" Label="Military Noncombatant" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes." Graphic="30130000.svg">
+    <Entity ID="MILITARY_NON_COMBAT" Label="Military Noncombatant" Graphic="30130000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>3</DigitTwo>
@@ -574,13 +574,13 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="OWN_SHIP" Label="Own Ship" Remarks="The diameter of the icon shall be 1L. This icon shall be used with a friend standard identity only." Graphic="30150000.svg" Icon="FULL_OCTAGON">
+    <Entity ID="OWN_SHIP" Label="Own Ship" Graphic="30150000.svg" Icon="FULL_OCTAGON">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>5</DigitTwo>
       </EntityCode>
     </Entity>
-    <Entity ID="FUSED_TRACK" Label="Fused Track" Remarks="All fused tracks shall have a pending standard identity frame." LabelAlias="Fused Track (Sea Surface)" Graphic="30160000.svg" Icon="FULL_OCTAGON">
+    <Entity ID="FUSED_TRACK" Label="Fused Track" LabelAlias="Fused Track (Sea Surface)" Graphic="30160000.svg" Icon="FULL_OCTAGON">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>6</DigitTwo>
