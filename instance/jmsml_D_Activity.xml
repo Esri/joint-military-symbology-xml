@@ -966,6 +966,12 @@
     </Entity>
   </Entities>
   <SectorOneModifiers>
+    <Modifier ID="UNSPECIFIED_MOD" Label="Unspecified">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
     <Modifier ID="ASSASSINATION_MOD" Label="Assassination" LabelAlias="Assasination (Activities)" Graphic="40011.svg" Category="Crime">
       <ModifierCode>
         <DigitOne>0</DigitOne>

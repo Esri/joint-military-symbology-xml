@@ -34,6 +34,12 @@
     </Entity>
   </Entities>
   <SectorOneModifiers>
+    <Modifier ID="UNSPECIFIED_MOD" Label="Unspecified">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
     <Modifier ID="AIRBORNE_SEARCH_AND_BOMBING_MOD" Label="Airborne Search and Bombing" Graphic="51021.svg" Category="Air Radar" CategoryAlias="Radar">
       <ModifierCode>
         <DigitOne>0</DigitOne>

@@ -1433,6 +1433,12 @@
     </Entity>
   </Entities>
   <SectorOneModifiers>
+    <Modifier ID="UNSPECIFIED_MOD" Label="Unspecified">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
     <Modifier ID="BIOLOGICAL_MOD" Label="Biological" Graphic="15011.svg" Category="Sensor Type">
       <ModifierCode>
         <DigitOne>0</DigitOne>

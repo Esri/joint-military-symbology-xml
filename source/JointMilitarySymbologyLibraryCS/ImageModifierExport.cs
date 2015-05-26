@@ -16,6 +16,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
+using NLog;
 
 namespace JointMilitarySymbologyLibrary
 {
@@ -27,6 +28,8 @@ namespace JointMilitarySymbologyLibrary
 
         private bool _omitSource = false;
         private bool _omitLegacy = false;
+
+        protected static Logger logger = LogManager.GetCurrentClassLogger();
 
         public ImageModifierExport(ConfigHelper configHelper, bool omitSource, bool omitLegacy)
         {
@@ -62,7 +65,10 @@ namespace JointMilitarySymbologyLibrary
             string itemOriginalPath = _configHelper.BuildOriginalPath(graphicPath, m.Graphic);
 
             if (!File.Exists(itemOriginalPath))
+            { 
                 _notes = _notes + "image file does not exist;";
+                logger.Warn("Image File Missing: " + itemOriginalPath);
+            }
 
             string itemName = BuildModifierItemName(ss, modNumber, m);
             string itemCategory = BuildModifierItemCategory(ss, modNumber);

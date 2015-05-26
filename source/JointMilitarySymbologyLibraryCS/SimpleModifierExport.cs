@@ -40,7 +40,12 @@ namespace JointMilitarySymbologyLibrary
             string result = Convert.ToString(ss.SymbolSetCode.DigitOne) + Convert.ToString(ss.SymbolSetCode.DigitTwo);
 
             result = result + "," + modNumber + ",";
-            result = result + m.Category.Replace(',', '-') + ",";
+
+            if (m.Category != null)
+                result = result + m.Category.Replace(',', '-') + ",";
+            else
+                result = result + ",";
+
             result = result + m.Label.Replace(',', '-') + ",";
 
             result = result + Convert.ToString(m.ModifierCode.DigitOne) + Convert.ToString(m.ModifierCode.DigitTwo);

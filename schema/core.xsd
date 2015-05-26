@@ -236,7 +236,7 @@
             <xs:element name="ModifierCode" type="DoubleDigitType"/>
           </xs:sequence>
           <xs:attributeGroup ref="GraphicIdentifierAttributeGroup"/>
-          <xs:attribute name="Category" type="xs:token" use="required"/>
+          <xs:attribute name="Category" type="xs:token" use="optional" default=""/>
           <xs:attribute name="CategoryAlias" type="xs:token" use="optional" default=""/>
           <xs:attribute name="LimitUseTo" type="xs:IDREFS" use="optional"/>
           <xs:attribute name="Standard" type="StandardType" use="optional" default="ALL"/>

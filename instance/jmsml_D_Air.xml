@@ -322,6 +322,12 @@
     </Entity>
   </Entities>
   <SectorOneModifiers>
+    <Modifier ID="NOT_APPLICABLE_MOD" Label="Not Applicable">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
     <Modifier ID="ATTACK_STRIKE_MOD" Label="Attack/Strike" Graphic="01011.svg" Category="Military Aircraft Type">
       <ModifierCode>
         <DigitOne>0</DigitOne>
@@ -558,6 +564,12 @@
     </Modifier>
   </SectorOneModifiers>
   <SectorTwoModifiers>
+    <Modifier ID="NOT_APPLICABLE_2_MOD" Label="Not Applicable">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
     <Modifier ID="HVY_MOD" Label="Heavy" Graphic="01012.svg" Category="Cargo/Transport Capacity">
       <ModifierCode>
         <DigitOne>0</DigitOne>

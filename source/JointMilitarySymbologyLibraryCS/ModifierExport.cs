@@ -68,8 +68,17 @@ namespace JointMilitarySymbologyLibrary
 
             //result = result + _configHelper.DomainSeparator + m.Category.Replace(',', '-') + _configHelper.DomainSeparator + m.Label.Replace(',', '-');
 
-            string result = ((m.CategoryAlias == "") ? m.Category : m.CategoryAlias) + _configHelper.DomainSeparator + ((m.LabelAlias == "") ? m.Label : m.LabelAlias);
-            
+            string result;
+
+            if (m.Category != null)
+            {
+                result = ((m.CategoryAlias == "") ? m.Category : m.CategoryAlias) + _configHelper.DomainSeparator + ((m.LabelAlias == "") ? m.Label : m.LabelAlias);
+            }
+            else
+            {
+                result = m.LabelAlias == "" ? m.Label : m.LabelAlias;
+            }
+
             result = result.Replace(',', '-');
 
             return result;

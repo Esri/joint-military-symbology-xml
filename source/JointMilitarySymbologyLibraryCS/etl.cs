@@ -211,6 +211,33 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
+        private void _exportMod(StreamWriter w, SymbolSet s, ModifiersTypeModifier mod, string modNumber, IModifierExport exporter, string expression)
+        {
+            string line;
+
+            if (!(exporter is ImageModifierExport) || mod.ModifierCode.DigitOne != 0 || mod.ModifierCode.DigitTwo != 0)
+            {
+                if (expression == "" ||
+                    System.Text.RegularExpressions.Regex.IsMatch(mod.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                {
+                    line = string.Format("{0}", exporter.Line(s, modNumber, mod));
+
+                    w.WriteLine(line);
+                    w.Flush();
+                }
+                else if (mod.Category != null)
+                {
+                    if (System.Text.RegularExpressions.Regex.IsMatch(mod.Category, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                    {
+                        line = string.Format("{0}", exporter.Line(s, modNumber, mod));
+
+                        w.WriteLine(line);
+                        w.Flush();
+                    }
+                }
+            }
+        }
+
         private void _exportModifier2(IModifierExport exporter, string path, string symbolSetExpression = "", string expression = "", bool append = false)
         {
             using (var w = new StreamWriter(path, append))
@@ -240,15 +267,7 @@ namespace JointMilitarySymbologyLibrary
 
                         foreach (ModifiersTypeModifier mod in s.SectorTwoModifiers)
                         {
-                            if (expression == "" ||
-                                System.Text.RegularExpressions.Regex.IsMatch(mod.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase) ||
-                                System.Text.RegularExpressions.Regex.IsMatch(mod.Category, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
-                            {
-                                line = string.Format("{0}", exporter.Line(s, "2", mod));
-
-                                w.WriteLine(line);
-                                w.Flush();
-                            }
+                            _exportMod(w, s, mod, "2", exporter, expression);
                         }
                     }
                 }
@@ -289,15 +308,7 @@ namespace JointMilitarySymbologyLibrary
 
                         foreach (ModifiersTypeModifier mod in s.SectorOneModifiers)
                         {
-                            if (expression == "" ||
-                                System.Text.RegularExpressions.Regex.IsMatch(mod.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase) ||
-                                System.Text.RegularExpressions.Regex.IsMatch(mod.Category, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
-                            {
-                                line = string.Format("{0}", exporter.Line(s, "1", mod));
-
-                                w.WriteLine(line);
-                                w.Flush();
-                            }
+                            _exportMod(w, s, mod, "1", exporter, expression);
                         }
                     }
                 }

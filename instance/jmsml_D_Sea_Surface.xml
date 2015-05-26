@@ -594,6 +594,12 @@
     </Entity>
   </Entities>
   <SectorOneModifiers>
+    <Modifier ID="UNSPECIFIED_MOD" Label="Unspecified">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
     <Modifier ID="OWN_MOD" Label="Own Ship" Graphic="30011.svg" Category="Mission Area">
       <ModifierCode>
         <DigitOne>0</DigitOne>
@@ -734,6 +740,12 @@
     </Modifier>
   </SectorOneModifiers>
   <SectorTwoModifiers>
+    <Modifier ID="UNSPECIFIED_2_MOD" Label="Unspecified">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
     <Modifier ID="NUCLEAR_MOD" Label="Nuclear Powered" Graphic="30012.svg" Category="Ship Propulsion">
       <ModifierCode>
         <DigitOne>0</DigitOne>
