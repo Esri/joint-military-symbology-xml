@@ -272,7 +272,7 @@
             </EntitySubType>
           </EntitySubTypes>
         </EntityType>
-        <EntityType ID="PRINCIPLE_DIRECTION_OF_FIRE" Label="Principle Direction of Fire" Graphic="25140500.svg" GeometryType="LINE">
+        <EntityType ID="PRINCIPAL_DIRECTION_OF_FIRE" Label="Principal Direction of Fire" Graphic="25140500.svg" GeometryType="LINE">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>5</DigitTwo>
@@ -3857,7 +3857,7 @@
     <LegacySymbol ID="MANEUVER_LINES_FORWARD_EDGE_BATTLE_AREA_SYM" Label="G*GPDLF---****X" EntityID="MANEUVER_LINES" EntityTypeID="FORWARD_EDGE_BATTLE_AREA">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">DLF---</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="MANEUVER_LINES_PRINCIPLE_DIRECTION_OF_FIRE_SYM" Label="G*GPDLP---****X" EntityID="MANEUVER_LINES" EntityTypeID="PRINCIPLE_DIRECTION_OF_FIRE">
+    <LegacySymbol ID="MANEUVER_LINES_PRINCIPAL_DIRECTION_OF_FIRE_SYM" Label="G*GPDLP---****X" EntityID="MANEUVER_LINES" EntityTypeID="PRINCIPAL_DIRECTION_OF_FIRE">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">DLP---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MANEUVER_LINES_DIRECTION_OF_ATTACK_FRIENDLY_AVIATION_SYM" Label="G*GPOLKA--****X" EntityID="MANEUVER_LINES" EntityTypeID="DIRECTION_OF_ATTACK" EntitySubTypeID="FRIENDLY_AVIATION">
