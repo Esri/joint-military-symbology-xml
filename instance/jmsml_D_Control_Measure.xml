@@ -1108,7 +1108,7 @@
             <DigitTwo>3</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="SHIP_AREA_OF_INTEREST" Label="Ship Area of Interest" Graphic="25200400.svg" GeometryType="AREA">
+        <EntityType ID="SHIP_AREA_OF_INTEREST" Label="Ship Area of Interest" Graphic="25200400.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>4</DigitTwo>
@@ -1128,19 +1128,19 @@
             </EntitySubType>
           </EntitySubTypes>
         </EntityType>
-        <EntityType ID="ACTIVE_MANEUVER_AREA" Label="Active Maneuver Area" Graphic="25200500.svg" GeometryType="AREA">
+        <EntityType ID="ACTIVE_MANEUVER_AREA" Label="Active Maneuver Area" Graphic="25200500.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>5</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="CUED_ACQUISITION_DOCTRINE" Label="Cued Acquisition Doctrine" Graphic="25200600.svg" GeometryType="AREA">
+        <EntityType ID="CUED_ACQUISITION_DOCTRINE" Label="Cued Acquisition Doctrine" Graphic="25200600.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>6</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="RADAR_SEARCH_DOCTRINE" Label="Radar Search Doctrine" Graphic="25200700.svg" GeometryType="AREA">
+        <EntityType ID="RADAR_SEARCH_DOCTRINE" Label="Radar Search Doctrine" Graphic="25200700.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>7</DigitTwo>
@@ -2206,7 +2206,7 @@
             </EntitySubType>
           </EntitySubTypes>
         </EntityType>
-        <EntityType ID="CALL_FOR_FIRE_AREA" Label="Call for Fire Area" Icon="NA" GeometryType="NA">
+        <EntityType ID="CALL_FOR_FIRE_AREA" Label="Call for Fire Zone (CFFZ)" Icon="NA" GeometryType="NA">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>2</DigitTwo>
@@ -2678,7 +2678,7 @@
                 <DigitTwo>4</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="MINEFIELD_DUMMY" Label="Dummy" Graphic="25270705.svg" GeometryType="AREA">
+            <EntitySubType ID="MINEFIELD_DUMMY" Label="Dummy" Graphic="25270705.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>5</DigitTwo>
@@ -4058,7 +4058,7 @@
     <LegacySymbol ID="AIRSPACE_CONTROL_POINTS_COMMUNICATIONS_CHECKPOINT_SYM" Label="G*GPAPC---****X" EntityID="AIRSPACE_CONTROL_POINTS" EntityTypeID="COMMUNICATIONS_CHECKPOINT">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">APC---</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="AIRSPACE_CONTROL_POINTS_DOWNED_AIRCRAFT_PICK_UP_POINT_SYM" Label="G*GPAPD---****X" EntityID="AIRSPACE_CONTROL_POINTS" EntityTypeID="DOWNED_AIRCRAFT_PICK_UP_POINT">
+    <LegacySymbol ID="AIRSPACE_CONTROL_POINTS_DOWNED_AIRCREW_PICK_UP_POINT_SYM" Label="G*GPAPD---****X" EntityID="AIRSPACE_CONTROL_POINTS" EntityTypeID="DOWNED_AIRCREW_PICK_UP_POINT">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">APD---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="AIRSPACE_CONTROL_POINTS_POP_UP_POINT_SYM" Label="G*GPAPU---****X" EntityID="AIRSPACE_CONTROL_POINTS" EntityTypeID="POP_UP_POINT">
