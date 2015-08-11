@@ -80,97 +80,101 @@ namespace JointMilitarySymbologyLibrary
 
                     foreach (SymbolSetEntity e in s.Entities)
                     {
-                        if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(e.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                        if (!(exporter is ImageEntityExport) || e.EntityCode.DigitOne != 0 || e.EntityCode.DigitTwo != 0)
                         {
-                            if (exportPoints && e.GeometryType == GeometryType.POINT ||
-                                exportLines && e.GeometryType == GeometryType.LINE ||
-                                exportAreas && e.GeometryType == GeometryType.AREA)
+                            if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(e.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
                             {
-                                // If the icon is Full Frame then four lines need to be exported, to reflect the four icon shapes.
-                                // Else just write out one line for non-Full-Frame.
-
-                                if (e.Icon == IconType.FULL_FRAME && exportType == ETLExportEnum.ETLExportImage)
+                                if (exportPoints && e.GeometryType == GeometryType.POINT ||
+                                    exportLines && e.GeometryType == GeometryType.LINE ||
+                                    exportAreas && e.GeometryType == GeometryType.AREA ||
+                                    (e.EntityCode.DigitOne == 0 && e.EntityCode.DigitTwo == 0))
                                 {
-                                    foreach (LibraryStandardIdentityGroup sig in _library.StandardIdentityGroups)
+                                    // If the icon is Full Frame then four lines need to be exported, to reflect the four icon shapes.
+                                    // Else just write out one line for non-Full-Frame.
+
+                                    if (e.Icon == IconType.FULL_FRAME && exportType == ETLExportEnum.ETLExportImage)
                                     {
-                                        line = string.Format("{0}", exporter.Line(sig, s, e, null, null));
-
-                                        w.WriteLine(line);
-                                        w.Flush();
-                                    }
-                                }
-                                else
-                                {
-                                    line = string.Format("{0}", exporter.Line(null, s, e, null, null));
-
-                                    w.WriteLine(line);
-                                    w.Flush();
-                                }
-                            }
-                        }
-
-                        if (e.EntityTypes != null)
-                        {
-                            foreach (SymbolSetEntityEntityType eType in e.EntityTypes)
-                            {
-                                if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(eType.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
-                                {
-                                    if (exportPoints && eType.GeometryType == GeometryType.POINT ||
-                                        exportLines && eType.GeometryType == GeometryType.LINE ||
-                                        exportAreas && eType.GeometryType == GeometryType.AREA)
-                                    {
-                                        // If the icon is Full Frame then four lines need to be exported, to reflect the four icon shapes.
-                                        // Else just write out one line for non-Full-Frame.
-
-                                        if (eType.Icon == IconType.FULL_FRAME && exportType == ETLExportEnum.ETLExportImage)
+                                        foreach (LibraryStandardIdentityGroup sig in _library.StandardIdentityGroups)
                                         {
-                                            foreach (LibraryStandardIdentityGroup sig in _library.StandardIdentityGroups)
-                                            {
-                                                line = string.Format("{0}", exporter.Line(sig, s, e, eType, null));
-
-                                                w.WriteLine(line);
-                                                w.Flush();
-                                            }
-                                        }
-                                        else
-                                        {
-                                            line = string.Format("{0}", exporter.Line(null, s, e, eType, null));
+                                            line = string.Format("{0}", exporter.Line(sig, s, e, null, null));
 
                                             w.WriteLine(line);
                                             w.Flush();
                                         }
                                     }
-                                }
-
-                                if (eType.EntitySubTypes != null)
-                                {
-                                    foreach (EntitySubTypeType eSubType in eType.EntitySubTypes)
+                                    else
                                     {
-                                        if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(eSubType.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
-                                        {
-                                            if (exportPoints && eSubType.GeometryType == GeometryType.POINT ||
-                                                exportLines && eSubType.GeometryType == GeometryType.LINE ||
-                                                exportAreas && eSubType.GeometryType == GeometryType.AREA)
-                                            {
-                                                // If the icon is Full Frame then four lines need to be exported, to reflect the four icon shapes.
-                                                // Else just write out one line for non-Full-Frame.
+                                        line = string.Format("{0}", exporter.Line(null, s, e, null, null));
 
-                                                if (eSubType.Icon == IconType.FULL_FRAME && exportType == ETLExportEnum.ETLExportImage)
+                                        w.WriteLine(line);
+                                        w.Flush();
+                                    }
+                                }
+                            }
+
+                            if (e.EntityTypes != null)
+                            {
+                                foreach (SymbolSetEntityEntityType eType in e.EntityTypes)
+                                {
+                                    if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(eType.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                                    {
+                                        if (exportPoints && eType.GeometryType == GeometryType.POINT ||
+                                            exportLines && eType.GeometryType == GeometryType.LINE ||
+                                            exportAreas && eType.GeometryType == GeometryType.AREA)
+                                        {
+                                            // If the icon is Full Frame then four lines need to be exported, to reflect the four icon shapes.
+                                            // Else just write out one line for non-Full-Frame.
+
+                                            if (eType.Icon == IconType.FULL_FRAME && exportType == ETLExportEnum.ETLExportImage)
+                                            {
+                                                foreach (LibraryStandardIdentityGroup sig in _library.StandardIdentityGroups)
                                                 {
-                                                    foreach (LibraryStandardIdentityGroup sig in _library.StandardIdentityGroups)
+                                                    line = string.Format("{0}", exporter.Line(sig, s, e, eType, null));
+
+                                                    w.WriteLine(line);
+                                                    w.Flush();
+                                                }
+                                            }
+                                            else
+                                            {
+                                                line = string.Format("{0}", exporter.Line(null, s, e, eType, null));
+
+                                                w.WriteLine(line);
+                                                w.Flush();
+                                            }
+                                        }
+                                    }
+
+                                    if (eType.EntitySubTypes != null)
+                                    {
+                                        foreach (EntitySubTypeType eSubType in eType.EntitySubTypes)
+                                        {
+                                            if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(eSubType.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                                            {
+                                                if (exportPoints && eSubType.GeometryType == GeometryType.POINT ||
+                                                    exportLines && eSubType.GeometryType == GeometryType.LINE ||
+                                                    exportAreas && eSubType.GeometryType == GeometryType.AREA)
+                                                {
+                                                    // If the icon is Full Frame then four lines need to be exported, to reflect the four icon shapes.
+                                                    // Else just write out one line for non-Full-Frame.
+
+                                                    if (eSubType.Icon == IconType.FULL_FRAME && exportType == ETLExportEnum.ETLExportImage)
                                                     {
-                                                        line = string.Format("{0}", exporter.Line(sig, s, e, eType, eSubType));
+                                                        foreach (LibraryStandardIdentityGroup sig in _library.StandardIdentityGroups)
+                                                        {
+                                                            line = string.Format("{0}", exporter.Line(sig, s, e, eType, eSubType));
+
+                                                            w.WriteLine(line);
+                                                            w.Flush();
+                                                        }
+                                                    }
+                                                    else
+                                                    {
+                                                        line = string.Format("{0}", exporter.Line(null, s, e, eType, eSubType));
 
                                                         w.WriteLine(line);
                                                         w.Flush();
                                                     }
-                                                }
-                                                else
-                                                {
-                                                    line = string.Format("{0}", exporter.Line(null, s, e, eType, eSubType));
-
-                                                    w.WriteLine(line);
-                                                    w.Flush();
                                                 }
                                             }
                                         }

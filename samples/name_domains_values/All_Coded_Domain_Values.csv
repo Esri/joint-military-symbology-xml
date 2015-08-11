@@ -1,4 +1,5 @@
 Name,Value
+Unspecified,000000
 Military (Air),110000
 Military (Air) : Fixed-Wing,110100
 Military (Air) : Fixed-Wing : Medical Evacuation (MEDEVAC),110101
@@ -50,7 +51,9 @@ Weapon (Air),130000
 Weapon (Air) : Bomb,130100
 Weapon (Air) : Decoy,130200
 Manual Track (Air),140000
+Unspecified,000000
 Missile (Air Missile),110000
+Unspecified,000000
 Military (Space),110000
 Military (Space) : Space Vehicle,110100
 Military (Space) : Re-Entry Vehicle,110200
@@ -85,7 +88,9 @@ Civilian (Space) : Space Station,121000
 Civilian (Space) : Tethered Satellite,121100
 Civilian (Space) : Weather Satellite,121200
 Manual Track (Space),130000
+Unspecified,000000
 Missile (Space Missile),110000
+Unspecified,000000
 Command and Control,110000
 Command and Control : Broadcast Transmitter Antennae,110100
 Command and Control : Civil Affairs,110200
@@ -281,6 +286,7 @@ Special Entity Subtypes : Headquarters Element,XXXX95
 Special Entity Subtypes : Division and Below Support,XXXX96
 Special Entity Subtypes : Corps Support,XXXX97
 Special Entity Subtypes : Theater/Echelons Above Corps Support,XXXX98
+Unspecified,000000
 Civilian (Land Civilian),110000
 Civilian (Land Civilian) : Environmental Protection,110100
 Civilian (Land Civilian) : Government Organization,110200
@@ -292,6 +298,7 @@ Civilian (Land Civilian) : Victim of an Attempted Crime,110700
 Civilian (Land Civilian) : Spy,110800
 Civilian (Land Civilian) : Composite Loss,110900
 Civilian (Land Civilian) : Emergency Medical Operation,111000
+Unspecified,000000
 Weapon/Weapon System,110000
 Weapon/Weapon System : Rifle,110100
 Weapon/Weapon System : Rifle : Single Shot Rifle,110101
@@ -508,6 +515,7 @@ Emergency Operation (Land Equipment),230000
 Emergency Operation (Land Equipment) : Ambulance,230100
 Emergency Operation (Land Equipment) : Fire Fighting/Fire Protection,230200
 Manual Track (Land Equipment),240000
+Unspecified,000000
 Installation,110000
 Installation : Aircraft Production/Assembly,110100
 Installation : Ammunition and Explosives/Assembly,110200
@@ -634,6 +642,7 @@ Infrastructure : Water Supply : Surface Water Intake,121408
 Infrastructure : Water Supply : Wastewater Treatment Facility,121409
 Infrastructure : Water Supply : Water,121410
 Infrastructure : Water Supply : Water Treatment,121411
+Unspecified,000000
 Command and Control Lines : Boundary,110100
 Command and Control Lines : Light Line,110200
 Command and Control Areas : Area of Operations,120100
@@ -669,7 +678,7 @@ Maneuver Lines : Forward Line of Troops : Enemy Suspected or Templated,140104
 Maneuver Lines : Phase Line,140300
 Maneuver Lines : Forward Edge of the Battle Area,140400
 Maneuver Lines : Forward Edge of the Battle Area : Proposed or On Order,140401
-Maneuver Lines : Principle Direction of Fire,140500
+Maneuver Lines : Principal Direction of Fire,140500
 Maneuver Lines : Direction of Attack : Friendly Aviation,140601
 Maneuver Lines : Direction of Attack : Friendly Direction of Main Attack,140602
 Maneuver Lines : Direction of Attack : Friendly Direction of Supporting Attack,140603
@@ -760,7 +769,7 @@ Air Corridors : Weapons Free Zone,172000
 Airspace Control Points,180000
 Airspace Control Points : Air Control Point,180100
 Airspace Control Points : Communications Checkpoint,180200
-Airspace Control Points : Downed Aircraft Pick-up Point,180300
+Airspace Control Points : Downed Aircrew Pick-Up Point,180300
 Airspace Control Points : Pop-up Point,180400
 Airspace Control Points : Air Control Rendezvous,180500
 Airspace Control Points : TACAN,180600
@@ -951,9 +960,9 @@ Fires Areas : Fire Support Area : Circular,241003
 Fires Areas : Artillery Target Intelligence Zone : Irregular,241101
 Fires Areas : Artillery Target Intelligence Zone : Rectangular,241102
 Fires Areas : Artillery Target Intelligence Zone : Circular,241103
-Fires Areas : Call for Fire Area : Irregular,241201
-Fires Areas : Call for Fire Area : Rectangular,241202
-Fires Areas : Call for Fire Area : Circular,241203
+Fires Areas : Call for Fire Zone (CFFZ) : Irregular,241201
+Fires Areas : Call for Fire Zone (CFFZ) : Rectangular,241202
+Fires Areas : Call for Fire Zone (CFFZ) : Circular,241203
 Fires Areas : Censor Zone : Irregular,241301
 Fires Areas : Censor Zone : Rectangular,241302
 Fires Areas : Censor Zone : Circular,241303
@@ -1172,6 +1181,7 @@ Mission Tasks : Security : Screen,342203
 Mission Tasks : Seize,342300
 Mission Tasks : Withdraw,342400
 Mission Tasks : Withdraw Under Pressure,342500
+Unspecified,000000
 Military (Sea Surface),110000
 Military Combatant,120000
 Military Combatant : Carrier,120100
@@ -1265,6 +1275,7 @@ Civilian (Sea Surface) : Unmanned Surface Water Vehicle (USV),140700
 Own Ship,150000
 Fused Track (Sea Surface),160000
 Manual Track (Sea Surface),170000
+Unspecified,000000
 Military (Sea Subsurface),110000
 Military (Sea Subsurface) : Submarine,110100
 Military (Sea Subsurface) : Submarine : Submarine-Surfaced,110101
@@ -1285,6 +1296,7 @@ Weapon (Sea Subsurface) : Decoy,130300
 Echo Tracker Classifier (ETC) / Possible Contact (POSCON),140000
 Fused Track (Sea Subsurface),150000
 Manual Track (Sea Subsurface),160000
+Unspecified,000000
 Sea Mine-General,110000
 Sea Mine-General : Sea Mine-Bottom,110100
 Sea Mine-General : Sea Mine-Moored,110200
@@ -1347,6 +1359,7 @@ NMLO-General : Non-Mine Mine-Like Object-Moored,190200
 NMLO-General : Non-Mine Mine-Like Object-Floating,190300
 Environmental Report Location,200000
 Dive Report Location,210000
+Unspecified,000000
 Incident : Criminal Activity Incident,110100
 Incident : Criminal Activity Incident : Arrest,110101
 Incident : Criminal Activity Incident : Arson,110102
@@ -1493,6 +1506,7 @@ Natural Event : Infestation : Reptile,170304
 Natural Event : Infestation : Rodent,170305
 Individual : Religious Leader,180100
 Individual : Speaker,180200
+Unspecified,000000
 Pressure Systems : Low Pressure Center,110100
 Pressure Systems : Low Pressure Center : Cyclone Center,110101
 Pressure Systems : Low Pressure Center : Tropopause Low,110102
@@ -1666,6 +1680,7 @@ State of the Ground : With Snow or Measurable Ice Cover : Loose Dry Snow Coverin
 State of the Ground : With Snow or Measurable Ice Cover : Even Layer of Loose Dry Snow Covering Ground Completely,190208
 State of the Ground : With Snow or Measurable Ice Cover : Uneven Layer of Loose Dry Snow Covering Ground Completely,190209
 State of the Ground : With Snow or Measurable Ice Cover : Snow Covering Ground Completely-Deep Drifts,190210
+Unspecified,000000
 Ice Systems : Icebergs : Many Icebergs,110101
 Ice Systems : Icebergs : Belts and Strips,110102
 Ice Systems : Icebergs : General,110103
@@ -1847,21 +1862,28 @@ Man-Made Structures : Oil/Gas Rig,160600
 Man-Made Structures : Oil/Gas Rig Field,160700
 Man-Made Structures : Pipelines/Pipe,160800
 Man-Made Structures : Pile/Piling/Post,160900
+Unspecified,000000
+Unspecified,000000
 Signal Intercept (Space) : Communications,110100
 Signal Intercept (Space) : Jammer,110200
 Signal Intercept (Space) : Radar,110300
+Unspecified,000000
 Signal Intercept (Air) : Communications,110100
 Signal Intercept (Air) : Jammer,110200
 Signal Intercept (Air) : Radar,110300
+Unspecified,000000
 Signal Intercept (Land) : Communications,110100
 Signal Intercept (Land) : Jammer,110200
 Signal Intercept (Land) : Radar,110300
+Unspecified,000000
 Signal Intercept (Sea Surface) : Communications,110100
 Signal Intercept (Sea Surface) : Jammer,110200
 Signal Intercept (Sea Surface) : Radar,110300
+Unspecified,000000
 Signal Intercept (Sea Subsurface) : Communications,110100
 Signal Intercept (Sea Subsurface) : Jammer,110200
 Signal Intercept (Sea Subsurface) : Radar,110300
+Unspecified,000000
 Botnet : Command and Control (C2),110100
 Botnet : Herder,110200
 Botnet : Callback Domain,110300
@@ -1906,6 +1928,7 @@ Effect : Power Outage,160600
 Effect : Network Outage,160700
 Effect : Service Outage,160800
 Effect : Device Outage,160900
+Unspecified,000000
 Invalid Symbol,100000
 Not Applicable,00
 Military Aircraft Type : Attack/Strike,01

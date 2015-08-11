@@ -6,6 +6,12 @@
   </SymbolSetCode>
   <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
   <Entities>
+    <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
+      <EntityCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </EntityCode>
+    </Entity>
     <Entity ID="MISSILE" Label="Missile" LabelAlias="Missile (Air Missile)" Graphic="02110000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>

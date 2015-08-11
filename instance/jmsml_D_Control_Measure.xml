@@ -6,6 +6,12 @@
   </SymbolSetCode>
   <LegacyCodingSchemeCode Name="2525C">G</LegacyCodingSchemeCode>
   <Entities>
+    <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
+      <EntityCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </EntityCode>
+    </Entity>
     <Entity ID="COMMAND_CONTROL_LINES" Label="Command and Control Lines" Icon="NA" GeometryType="NA">
       <EntityCode>
         <DigitOne>1</DigitOne>
@@ -902,7 +908,7 @@
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="DOWNED_AIRCREW_PICK_UP_POINT" Label="Downed Aircrew Pick-up Point" Graphic="25180300.svg">
+        <EntityType ID="DOWNED_AIRCREW_PICK_UP_POINT" Label="Downed Aircrew Pick-Up Point" Graphic="25180300.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>3</DigitTwo>

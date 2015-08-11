@@ -6,6 +6,12 @@
   </SymbolSetCode>
   <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
   <Entities>
+    <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
+      <EntityCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </EntityCode>
+    </Entity>
     <Entity ID="MILITARY" Label="Military" LabelAlias="Military (Sea Surface)" Graphic="30110000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
@@ -1036,7 +1042,7 @@
     <LegacySymbol ID="CIVILIAN_CIV_MERCHANT_CIV_NONCOM_HOVERCRAFT_SYM" Label="S*SPNH----*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">NH----</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="RETIRED_SYM" Label="S*SP------*****" Remarks="Retired">
+    <LegacySymbol ID="SEA_SURFACE_SYM" Label="S*SP------*****" EntityID="UNSPECIFIED">
       <LegacyFunctionCode Name="2525C">------</LegacyFunctionCode>
     </LegacySymbol>
   </LegacySymbols>

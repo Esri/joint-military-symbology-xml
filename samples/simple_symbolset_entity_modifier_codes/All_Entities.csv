@@ -1,4 +1,5 @@
 SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,IconType,UniqueName
+01,Unspecified,,,,000000,NotValid,NA,Unspecified
 01,Military,,,,110000,Point,MAIN,Military (Air)
 01,Military,Fixed-Wing,,,110100,Point,MAIN,Military (Air) : Fixed-Wing
 01,Military,Fixed-Wing,Medical Evacuation (MEDEVAC),,110101,Point,MAIN,Military (Air) : Fixed-Wing : Medical Evacuation (MEDEVAC)
@@ -50,7 +51,9 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 01,Weapon,Bomb,,,130100,Point,MAIN,Weapon (Air) : Bomb
 01,Weapon,Decoy,,,130200,Point,MAIN,Weapon (Air) : Decoy
 01,Manual Track,,,,140000,Point,FULL_OCTAGON,Manual Track (Air)
+02,Unspecified,,,,000000,NotValid,NA,Unspecified
 02,Missile,,,,110000,Point,MAIN,Missile (Air Missile)
+05,Unspecified,,,,000000,NotValid,NA,Unspecified
 05,Military,,,,110000,Point,MAIN,Military (Space)
 05,Military,Space Vehicle,,,110100,Point,MAIN,Military (Space) : Space Vehicle
 05,Military,Re-Entry Vehicle,,,110200,Point,MAIN,Military (Space) : Re-Entry Vehicle
@@ -85,7 +88,9 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 05,Civilian,Tethered Satellite,,,121100,Point,MAIN,Civilian (Space) : Tethered Satellite
 05,Civilian,Weather Satellite,,,121200,Point,MAIN,Civilian (Space) : Weather Satellite
 05,Manual Track,,,,130000,Point,FULL_OCTAGON,Manual Track (Space)
+06,Unspecified,,,,000000,NotValid,NA,Unspecified
 06,Missile,,,,110000,Point,MAIN,Missile (Space Missile)
+10,Unspecified,,,,000000,NotValid,NA,Unspecified
 10,Command and Control,,,,110000,Point,MAIN,Command and Control
 10,Command and Control,Broadcast Transmitter Antennae,,,110100,Point,FULL_OCTAGON,Command and Control : Broadcast Transmitter Antennae
 10,Command and Control,Civil Affairs,,,110200,Point,MAIN,Command and Control : Civil Affairs
@@ -281,6 +286,7 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 10,XX,XX,Division and Below Support,,XXXX96,Point,SPECIAL,Special Entity Subtypes : Division and Below Support
 10,XX,XX,Corps Support,,XXXX97,Point,SPECIAL,Special Entity Subtypes : Corps Support
 10,XX,XX,Theater/Echelons Above Corps Support,,XXXX98,Point,SPECIAL,Special Entity Subtypes : Theater/Echelons Above Corps Support
+11,Unspecified,,,,000000,NotValid,NA,Unspecified
 11,Civilian,,,,110000,Point,MAIN,Civilian (Land Civilian)
 11,Civilian,Environmental Protection,,,110100,Point,MAIN,Civilian (Land Civilian) : Environmental Protection
 11,Civilian,Government Organization,,,110200,Point,MAIN,Civilian (Land Civilian) : Government Organization
@@ -292,6 +298,7 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 11,Civilian,Spy,,,110800,Point,MAIN,Civilian (Land Civilian) : Spy
 11,Civilian,Composite Loss,,,110900,Point,MAIN,Civilian (Land Civilian) : Composite Loss
 11,Civilian,Emergency Medical Operation,,,111000,Point,FULL_OCTAGON,Civilian (Land Civilian) : Emergency Medical Operation
+15,Unspecified,,,,000000,NotValid,NA,Unspecified
 15,Weapon/Weapon System,,,,110000,Point,FULL_OCTAGON,Weapon/Weapon System
 15,Weapon/Weapon System,Rifle,,,110100,Point,FULL_OCTAGON,Weapon/Weapon System : Rifle
 15,Weapon/Weapon System,Rifle,Single Shot Rifle,,110101,Point,FULL_OCTAGON,Weapon/Weapon System : Rifle : Single Shot Rifle
@@ -508,6 +515,7 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 15,Emergency Operation,Ambulance,,,230100,Point,FULL_OCTAGON,Emergency Operation (Land Equipment) : Ambulance
 15,Emergency Operation,Fire Fighting/Fire Protection,,,230200,Point,MAIN,Emergency Operation (Land Equipment) : Fire Fighting/Fire Protection
 15,Manual Track,,,,240000,Point,FULL_OCTAGON,Manual Track (Land Equipment)
+20,Unspecified,,,,000000,NotValid,NA,Unspecified
 20,Installation,,,,110000,Point,MAIN,Installation
 20,Installation,Aircraft Production/Assembly,,,110100,Point,MAIN,Installation : Aircraft Production/Assembly
 20,Installation,Ammunition and Explosives/Assembly,,,110200,Point,FULL_OCTAGON,Installation : Ammunition and Explosives/Assembly
@@ -634,6 +642,7 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 20,Infrastructure,Water Supply Infrastructure,Wastewater Treatment Facility,,121409,Point,FULL_OCTAGON,Infrastructure : Water Supply : Wastewater Treatment Facility
 20,Infrastructure,Water Supply Infrastructure,Water,,121410,Point,MAIN,Infrastructure : Water Supply : Water
 20,Infrastructure,Water Supply Infrastructure,Water Treatment,,121411,Point,MAIN,Infrastructure : Water Supply : Water Treatment
+25,Unspecified,,,,000000,NotValid,NA,Unspecified
 25,Command and Control Lines,Boundary,,,110100,Line,MAIN,Command and Control Lines : Boundary
 25,Command and Control Lines,Light Line,,,110200,Line,MAIN,Command and Control Lines : Light Line
 25,Command and Control Areas,Area of Operations,,,120100,Area,MAIN,Command and Control Areas : Area of Operations
@@ -669,7 +678,7 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 25,Maneuver Lines,Phase Line,,,140300,Line,MAIN,Maneuver Lines : Phase Line
 25,Maneuver Lines,Forward Edge of the Battle Area,,,140400,Line,MAIN,Maneuver Lines : Forward Edge of the Battle Area
 25,Maneuver Lines,Forward Edge of the Battle Area,Proposed or On Order,,140401,Line,MAIN,Maneuver Lines : Forward Edge of the Battle Area : Proposed or On Order
-25,Maneuver Lines,Principle Direction of Fire,,,140500,Line,MAIN,Maneuver Lines : Principle Direction of Fire
+25,Maneuver Lines,Principal Direction of Fire,,,140500,Line,MAIN,Maneuver Lines : Principal Direction of Fire
 25,Maneuver Lines,Direction of Attack,Friendly Aviation,,140601,Line,MAIN,Maneuver Lines : Direction of Attack : Friendly Aviation
 25,Maneuver Lines,Direction of Attack,Friendly Direction of Main Attack,,140602,Line,MAIN,Maneuver Lines : Direction of Attack : Friendly Direction of Main Attack
 25,Maneuver Lines,Direction of Attack,Friendly Direction of Supporting Attack,,140603,Line,MAIN,Maneuver Lines : Direction of Attack : Friendly Direction of Supporting Attack
@@ -760,7 +769,7 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 25,Airspace Control Points,,,,180000,Point,MAIN,Airspace Control Points
 25,Airspace Control Points,Air Control Point,,,180100,Point,MAIN,Airspace Control Points : Air Control Point
 25,Airspace Control Points,Communications Checkpoint,,,180200,Point,MAIN,Airspace Control Points : Communications Checkpoint
-25,Airspace Control Points,Downed Aircraft Pick-up Point,,,180300,Point,MAIN,Airspace Control Points : Downed Aircraft Pick-up Point
+25,Airspace Control Points,Downed Aircrew Pick-Up Point,,,180300,Point,MAIN,Airspace Control Points : Downed Aircrew Pick-Up Point
 25,Airspace Control Points,Pop-up Point,,,180400,Point,MAIN,Airspace Control Points : Pop-up Point
 25,Airspace Control Points,Air Control Rendezvous,,,180500,Point,MAIN,Airspace Control Points : Air Control Rendezvous
 25,Airspace Control Points,TACAN,,,180600,Point,MAIN,Airspace Control Points : TACAN
@@ -789,12 +798,12 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 25,Maritime Control Areas,Defended Area,Ellipse/Circle,,200201,Area,MAIN,Maritime Areas : Defended Area : Ellipse/Circle
 25,Maritime Control Areas,Defended Area,Rectangle,,200202,Area,MAIN,Maritime Areas : Defended Area : Rectangle
 25,Maritime Control Areas,No Attack (NOTACK) Zone,,,200300,Area,MAIN,Maritime Areas : No Attack (NOTACK) Zone
-25,Maritime Control Areas,Ship Area of Interest,,,200400,Area,MAIN,Maritime Areas : Ship Area of Interest
+25,Maritime Control Areas,Ship Area of Interest,,,200400,Point,MAIN,Maritime Areas : Ship Area of Interest
 25,Maritime Control Areas,Ship Area of Interest,Ellipse/Circle,,200401,Area,MAIN,Maritime Areas : Ship Area of Interest : Ellipse/Circle
 25,Maritime Control Areas,Ship Area of Interest,Rectangle,,200402,Area,MAIN,Maritime Areas : Ship Area of Interest : Rectangle
-25,Maritime Control Areas,Active Maneuver Area,,,200500,Area,MAIN,Maritime Areas : Active Maneuver Area
-25,Maritime Control Areas,Cued Acquisition Doctrine,,,200600,Area,MAIN,Maritime Areas : Cued Acquisition Doctrine
-25,Maritime Control Areas,Radar Search Doctrine,,,200700,Area,MAIN,Maritime Areas : Radar Search Doctrine
+25,Maritime Control Areas,Active Maneuver Area,,,200500,Point,MAIN,Maritime Areas : Active Maneuver Area
+25,Maritime Control Areas,Cued Acquisition Doctrine,,,200600,Point,MAIN,Maritime Areas : Cued Acquisition Doctrine
+25,Maritime Control Areas,Radar Search Doctrine,,,200700,Point,MAIN,Maritime Areas : Radar Search Doctrine
 25,Maritime Control Points,Plan Ship,,,210100,Point,MAIN,Maritime Points : Plan Ship
 25,Maritime Control Points,Aim Point,,,210200,Point,MAIN,Maritime Points : Aim Point
 25,Maritime Control Points,Defended Asset,,,210300,Point,MAIN,Maritime Points : Defended Asset
@@ -951,9 +960,9 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 25,Fires Areas,Artillery Target Intelligence Zone,Irregular,,241101,Area,MAIN,Fires Areas : Artillery Target Intelligence Zone : Irregular
 25,Fires Areas,Artillery Target Intelligence Zone,Rectangular,,241102,Area,MAIN,Fires Areas : Artillery Target Intelligence Zone : Rectangular
 25,Fires Areas,Artillery Target Intelligence Zone,Circular,,241103,Area,MAIN,Fires Areas : Artillery Target Intelligence Zone : Circular
-25,Fires Areas,Call for Fire Area,Irregular,,241201,Area,MAIN,Fires Areas : Call for Fire Area : Irregular
-25,Fires Areas,Call for Fire Area,Rectangular,,241202,Area,MAIN,Fires Areas : Call for Fire Area : Rectangular
-25,Fires Areas,Call for Fire Area,Circular,,241203,Area,MAIN,Fires Areas : Call for Fire Area : Circular
+25,Fires Areas,Call for Fire Zone (CFFZ),Irregular,,241201,Area,MAIN,Fires Areas : Call for Fire Zone (CFFZ) : Irregular
+25,Fires Areas,Call for Fire Zone (CFFZ),Rectangular,,241202,Area,MAIN,Fires Areas : Call for Fire Zone (CFFZ) : Rectangular
+25,Fires Areas,Call for Fire Zone (CFFZ),Circular,,241203,Area,MAIN,Fires Areas : Call for Fire Zone (CFFZ) : Circular
 25,Fires Areas,Censor Zone,Irregular,,241301,Area,MAIN,Fires Areas : Censor Zone : Irregular
 25,Fires Areas,Censor Zone,Rectangular,,241302,Area,MAIN,Fires Areas : Censor Zone : Rectangular
 25,Fires Areas,Censor Zone,Circular,,241303,Area,MAIN,Fires Areas : Censor Zone : Circular
@@ -1010,7 +1019,7 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 25,Protection Areas,Minefield,Planned,,270702,Area,MAIN,Protection Areas : Minefield : Planned
 25,Protection Areas,Minefield,Known Enemy,,270703,Area,MAIN,Protection Areas : Minefield : Known Enemy
 25,Protection Areas,Minefield,Suspected or Templated Enemy,,270704,Area,MAIN,Protection Areas : Minefield : Suspected or Templated Enemy
-25,Protection Areas,Minefield,Dummy,,270705,Area,MAIN,Protection Areas : Minefield : Dummy
+25,Protection Areas,Minefield,Dummy,,270705,Point,MAIN,Protection Areas : Minefield : Dummy
 25,Protection Areas,Minefield,Dummy Minefield- Dymanic,,270706,Area,MAIN,Protection Areas : Minefield : Dummy Minefield- Dymanic
 25,Protection Areas,Minefield,Dynamic Depiction,,270707,Area,MAIN,Protection Areas : Minefield : Dynamic Depiction
 25,Protection Areas,Mined Area,,,270800,Area,MAIN,Protection Areas : Mined Area
@@ -1172,6 +1181,7 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 25,Mission Tasks,Seize,,,342300,Line,MAIN,Mission Tasks : Seize
 25,Mission Tasks,Withdraw,,,342400,Line,MAIN,Mission Tasks : Withdraw
 25,Mission Tasks,Withdraw Under Pressure,,,342500,Line,MAIN,Mission Tasks : Withdraw Under Pressure
+30,Unspecified,,,,000000,NotValid,NA,Unspecified
 30,Military,,,,110000,Point,MAIN,Military (Sea Surface)
 30,Military Combatant,,,,120000,Point,MAIN,Military Combatant
 30,Military Combatant,Carrier,,,120100,Point,MAIN,Military Combatant : Carrier
@@ -1265,6 +1275,7 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 30,Own Ship,,,,150000,Point,FULL_OCTAGON,Own Ship
 30,Fused Track,,,,160000,Point,FULL_OCTAGON,Fused Track (Sea Surface)
 30,Manual Track,,,,170000,Point,FULL_OCTAGON,Manual Track (Sea Surface)
+35,Unspecified,,,,000000,NotValid,NA,Unspecified
 35,Military,,,,110000,Point,MAIN,Military (Sea Subsurface)
 35,Military,Submarine,,,110100,Point,MAIN,Military (Sea Subsurface) : Submarine
 35,Military,Submarine,Submarine-Surfaced,,110101,Point,MAIN,Military (Sea Subsurface) : Submarine : Submarine-Surfaced
@@ -1285,6 +1296,7 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 35,Echo Tracker Classifier (ETC) / Possible Contact (POSCON),,,,140000,Point,FULL_OCTAGON,Echo Tracker Classifier (ETC) / Possible Contact (POSCON)
 35,Fused Track,,,,150000,Point,FULL_OCTAGON,Fused Track (Sea Subsurface)
 35,Manual Track,,,,160000,Point,FULL_OCTAGON,Manual Track (Sea Subsurface)
+36,Unspecified,,,,000000,NotValid,NA,Unspecified
 36,Sea Mine-General,,,,110000,Point,FULL_OCTAGON,Sea Mine-General
 36,Sea Mine-General,Sea Mine-Bottom,,,110100,Point,FULL_OCTAGON,Sea Mine-General : Sea Mine-Bottom
 36,Sea Mine-General,Sea Mine-Moored,,,110200,Point,FULL_OCTAGON,Sea Mine-General : Sea Mine-Moored
@@ -1347,6 +1359,7 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 36,Non-Mine Mine-Like Object (NMLO)-General,Non-Mine Mine-Like Object-Floating,,,190300,Point,FULL_OCTAGON,NMLO-General : Non-Mine Mine-Like Object-Floating
 36,Environmental Report Location,,,,200000,Point,FULL_OCTAGON,Environmental Report Location
 36,Dive Report Location,,,,210000,Point,FULL_OCTAGON,Dive Report Location
+40,Unspecified,,,,000000,NotValid,NA,Unspecified
 40,Incident,Criminal Activity Incident,,,110100,Point,FULL_OCTAGON,Incident : Criminal Activity Incident
 40,Incident,Criminal Activity Incident,Arrest,,110101,Point,FULL_OCTAGON,Incident : Criminal Activity Incident : Arrest
 40,Incident,Criminal Activity Incident,Arson,,110102,Point,FULL_OCTAGON,Incident : Criminal Activity Incident : Arson
@@ -1493,6 +1506,7 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 40,Natural Event,Infestation,Rodent,,170305,Point,FULL_OCTAGON,Natural Event : Infestation : Rodent
 40,Individual,Religious Leader,,,180100,Point,FULL_OCTAGON,Individual : Religious Leader
 40,Individual,Speaker,,,180200,Point,FULL_OCTAGON,Individual : Speaker
+45,Unspecified,,,,000000,NotValid,NA,Unspecified
 45,Pressure Systems,Low Pressure Center,,,110100,Point,MAIN,Pressure Systems : Low Pressure Center
 45,Pressure Systems,Low Pressure Center,Cyclone Center,,110101,Point,MAIN,Pressure Systems : Low Pressure Center : Cyclone Center
 45,Pressure Systems,Low Pressure Center,Tropopause Low,,110102,Point,MAIN,Pressure Systems : Low Pressure Center : Tropopause Low
@@ -1666,6 +1680,7 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 45,State of the Ground,With Snow or Measurable Ice Cover,Even Layer of Loose Dry Snow Covering Ground Completely,,190208,Point,MAIN,State of the Ground : With Snow or Measurable Ice Cover : Even Layer of Loose Dry Snow Covering Ground Completely
 45,State of the Ground,With Snow or Measurable Ice Cover,Uneven Layer of Loose Dry Snow Covering Ground Completely,,190209,Point,MAIN,State of the Ground : With Snow or Measurable Ice Cover : Uneven Layer of Loose Dry Snow Covering Ground Completely
 45,State of the Ground,With Snow or Measurable Ice Cover,Snow Covering Ground Completely-Deep Drifts,,190210,Point,MAIN,State of the Ground : With Snow or Measurable Ice Cover : Snow Covering Ground Completely-Deep Drifts
+46,Unspecified,,,,000000,NotValid,NA,Unspecified
 46,Ice Systems,Icebergs,Many Icebergs,,110101,Point,MAIN,Ice Systems : Icebergs : Many Icebergs
 46,Ice Systems,Icebergs,Belts and Strips,,110102,Point,MAIN,Ice Systems : Icebergs : Belts and Strips
 46,Ice Systems,Icebergs,General,,110103,Point,MAIN,Ice Systems : Icebergs : General
@@ -1847,21 +1862,28 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 46,Man-Made Structures,Oil/Gas Rig Field,,,160700,Area,MAIN,Man-Made Structures : Oil/Gas Rig Field
 46,Man-Made Structures,Pipelines/Pipe,,,160800,Line,MAIN,Man-Made Structures : Pipelines/Pipe
 46,Man-Made Structures,Pile/Piling/Post,,,160900,Point,MAIN,Man-Made Structures : Pile/Piling/Post
+47,Unspecified,,,,000000,NotValid,NA,Unspecified
+50,Unspecified,,,,000000,NotValid,NA,Unspecified
 50,Signal Intercept,Communications,,,110100,Point,MAIN,Signal Intercept (Space) : Communications
 50,Signal Intercept,Jammer,,,110200,Point,MAIN,Signal Intercept (Space) : Jammer
 50,Signal Intercept,Radar,,,110300,Point,MAIN,Signal Intercept (Space) : Radar
+51,Unspecified,,,,000000,NotValid,NA,Unspecified
 51,Signal Intercept,Communications,,,110100,Point,MAIN,Signal Intercept (Air) : Communications
 51,Signal Intercept,Jammer,,,110200,Point,MAIN,Signal Intercept (Air) : Jammer
 51,Signal Intercept,Radar,,,110300,Point,MAIN,Signal Intercept (Air) : Radar
+52,Unspecified,,,,000000,NotValid,NA,Unspecified
 52,Signal Intercept,Communications,,,110100,Point,MAIN,Signal Intercept (Land) : Communications
 52,Signal Intercept,Jammer,,,110200,Point,MAIN,Signal Intercept (Land) : Jammer
 52,Signal Intercept,Radar,,,110300,Point,MAIN,Signal Intercept (Land) : Radar
+53,Unspecified,,,,000000,NotValid,NA,Unspecified
 53,Signal Intercept,Communications,,,110100,Point,MAIN,Signal Intercept (Sea Surface) : Communications
 53,Signal Intercept,Jammer,,,110200,Point,MAIN,Signal Intercept (Sea Surface) : Jammer
 53,Signal Intercept,Radar,,,110300,Point,MAIN,Signal Intercept (Sea Surface) : Radar
+54,Unspecified,,,,000000,NotValid,NA,Unspecified
 54,Signal Intercept,Communications,,,110100,Point,MAIN,Signal Intercept (Sea Subsurface) : Communications
 54,Signal Intercept,Jammer,,,110200,Point,MAIN,Signal Intercept (Sea Subsurface) : Jammer
 54,Signal Intercept,Radar,,,110300,Point,MAIN,Signal Intercept (Sea Subsurface) : Radar
+60,Unspecified,,,,000000,NotValid,NA,Unspecified
 60,Botnet,Command and Control (C2),,,110100,Point,MAIN,Botnet : Command and Control (C2)
 60,Botnet,Herder,,,110200,Point,MAIN,Botnet : Herder
 60,Botnet,Callback Domain,,,110300,Point,MAIN,Botnet : Callback Domain
@@ -1906,4 +1928,5 @@ SymbolSet,Entity,EntityType,EntitySubType,StandardIdentity,Code,GeometryType,Ico
 60,Effect,Network Outage,,,160700,Point,MAIN,Effect : Network Outage
 60,Effect,Service Outage,,,160800,Point,MAIN,Effect : Service Outage
 60,Effect,Device Outage,,,160900,Point,MAIN,Effect : Device Outage
+98,Unspecified,,,,000000,NotValid,NA,Unspecified
 98,Invalid Symbol,,,,100000,Point,FULL_OCTAGON,Invalid Symbol
