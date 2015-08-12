@@ -70,7 +70,7 @@ namespace JointMilitarySymbologyLibrary
 
             string result;
 
-            if (m.Category != null)
+            if (m.Category != null && m.Category != "")
             {
                 result = ((m.CategoryAlias == "") ? m.Category : m.CategoryAlias) + _configHelper.DomainSeparator + ((m.LabelAlias == "") ? m.Label : m.LabelAlias);
             }

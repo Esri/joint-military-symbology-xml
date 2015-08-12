@@ -103,6 +103,7 @@
                     <xs:element name="ContextCode" type="SingleDigitType" minOccurs="1" maxOccurs="1"/>
                   </xs:sequence>
                   <xs:attributeGroup ref="IdentifierAttributeGroup"/>
+                  <xs:attribute name="IsExtension" type="xs:boolean" use="optional" default="false"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
@@ -120,6 +121,7 @@
                       <xs:element name="StandardIdentityCode" type="SingleDigitType"/>
                     </xs:sequence>
                     <xs:attributeGroup ref="IdentifierAttributeGroup"/>
+                    <xs:attribute name="IsExtension" type="xs:boolean" use="optional" default="false"/>
                   </xs:complexType>
                 </xs:element>
             </xs:sequence>
@@ -227,6 +229,7 @@
                     </xs:element>
                   </xs:sequence>
                   <xs:attributeGroup ref="GraphicNameAttributeGroup"/>
+                  <xs:attribute name="IsExtension" type="xs:boolean" use="optional" default="false"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
@@ -256,6 +259,7 @@
                     </xs:element>
                   </xs:sequence>
                   <xs:attributeGroup ref="NameAttributeGroup"/>
+                  <xs:attribute name="IsExtension" type="xs:boolean" use="optional" default="false"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
@@ -293,6 +297,7 @@
                                 </xs:element>
                               </xs:sequence>
                               <xs:attributeGroup ref="NameAttributeGroup"/>
+                              <xs:attribute name="IsExtension" type="xs:boolean" use="optional" default="false"/>
                             </xs:complexType>
                           </xs:element>
                         </xs:sequence>
@@ -301,6 +306,7 @@
                   </xs:sequence>
                   <xs:attributeGroup ref="NameAttributeGroup"/>
                   <xs:attribute name="CompatibleSymbolSetIDs" type="xs:IDREFS" use="optional"/>
+                  <xs:attribute name="IsExtension" type="xs:boolean" use="optional" default="false"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
