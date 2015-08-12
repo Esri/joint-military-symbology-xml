@@ -7,7 +7,13 @@
   <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
   <LegacyCodingSchemeCode Name="2525C">O</LegacyCodingSchemeCode>
   <Entities>
-    <Entity ID="WEAPON_SYSTEM" Label="Weapon/Weapon System" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes." Graphic="15110000.svg" Icon="FULL_OCTAGON">
+    <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
+      <EntityCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </EntityCode>
+    </Entity>
+    <Entity ID="WEAPON_SYSTEM" Label="Weapon/Weapon System" Graphic="15110000.svg" Icon="FULL_OCTAGON">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
@@ -491,7 +497,7 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="VEHICLE" Label="Vehicle" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes." Graphic="15120000.svg" Icon="FULL_OCTAGON">
+    <Entity ID="VEHICLE" Label="Vehicle" Graphic="15120000.svg" Icon="FULL_OCTAGON">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>2</DigitTwo>
@@ -2015,7 +2021,7 @@
     <LegacySymbol ID="EMERGENCY_OPERATION_FIRE_FIGHTING_FIRE_PROTECTION_SYM" Label="E*OPCB----*****" EntityID="EMERGENCY_OPERATION" EntityTypeID="FIRE_FIGHTING_FIRE_PROTECTION">
       <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">CB----</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="EQUIPMENT_SYM" Label="S*GPE-----*****" Remarks="Retired">
+    <LegacySymbol ID="EQUIPMENT_SYM" Label="S*GPE-----*****" EntityID="UNSPECIFIED">
       <LegacyFunctionCode Name="2525C">E-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="ENGINEER_VEHICLES_EQUIPMENT_MINE_LAYING_EQUIPMENT_SYM" Label="S*GPEVEM-------" EntityID="ENGINEER_VEHICLES_EQUIPMENT" EntityTypeID="MINE_LAYING_EQUIPMENT">

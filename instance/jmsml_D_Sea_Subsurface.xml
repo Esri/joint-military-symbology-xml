@@ -6,6 +6,12 @@
   </SymbolSetCode>
   <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
   <Entities>
+    <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
+      <EntityCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </EntityCode>
+    </Entity>
     <Entity ID="MILITARY" Label="Military" LabelAlias="Military (Sea Subsurface)" Graphic="35110000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
@@ -419,7 +425,7 @@
     <LegacySymbol ID="WEAPON_DECOY_SYM" Label="S*UPWD----*****" EntityID="WEAPON" EntityTypeID="DECOY">
       <LegacyFunctionCode Name="2525C">WD----</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="RETIRED_SYM" Label="S*UP------*****" Remarks="Retired">
+    <LegacySymbol ID="SEA_SUBSURFACE_SYM" Label="S*UP------*****" EntityID="UNSPECIFIED">
       <LegacyFunctionCode Name="2525C">------</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_SUBMARINE_NUCLEAR_POWERED_GENERAL_MOD_SYM" Label="S*UPSN----*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierTwoID="NUCLEAR_POWERED_GENERAL_MOD">

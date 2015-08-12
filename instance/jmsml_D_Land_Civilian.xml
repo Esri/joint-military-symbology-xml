@@ -8,6 +8,12 @@
   <LegacyCodingSchemeCode Name="2525C">O</LegacyCodingSchemeCode>
   <LegacyCodingSchemeCode Name="2525C">E</LegacyCodingSchemeCode>
   <Entities>
+    <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
+      <EntityCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </EntityCode>
+    </Entity>
     <Entity ID="CIVILIAN" Label="Civilian" LabelAlias="Civilian (Land Civilian)" Graphic="11110000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>

@@ -86,7 +86,7 @@ S*APCL----,SPAPCL---------,01,120400,00,00,Civilian (Air) : Lighter Than Air,Not
 S*APW-----,SPAPW----------,01,130000,00,00,Weapon (Air),Not Applicable,Not Applicable,SPAPW----------,pass
 S*APWB----,SPAPWB---------,01,130100,00,00,Weapon (Air) : Bomb,Not Applicable,Not Applicable,SPAPWB---------,pass
 S*APWD----,SPAPWD---------,01,130200,00,00,Weapon (Air) : Decoy,Not Applicable,Not Applicable,SPAPWD---------,pass
-S*AP------,SPAP-----------,98,100000,00,00,,,,,Retired
+S*AP------,SPAP-----------,01,000000,00,00,Unspecified,Not Applicable,Not Applicable,SPAP-----------,pass
 S*APWM----,SPAPWM---------,02,110000,00,00,Missile (Air Missile),Unspecified,Unspecified,SPAPWM---------,pass
 S*APWM----,SPAPWM---------,02,110000,00,00,Missile (Air Missile),Unspecified,Unspecified,SPAPWM---------,pass
 S*APWMS---,SPAPWMS--------,02,110000,02,05,Missile (Air Missile),Launch Origin : Surface,Missile Status : Launched,SPAPWMS--------,pass
@@ -101,12 +101,12 @@ S*APWMAP--,SPAPWMAP-------,02,110000,01,04,Missile (Air Missile),Launch Origin :
 S*APWMU---,SPAPWMU--------,02,110000,03,02,Missile (Air Missile),Launch Origin : Subsurface,Missile Destination : Surface,SPAPWMU--------,pass
 S*APWMCM--,SPAPWMCM-------,02,110000,07,06,Missile (Air Missile),Missile Class : Cruise,Missile Status : Missile,SPAPWMCM-------,pass
 S*APWMB---,SPAPWMB--------,02,110000,06,06,Missile (Air Missile),Missile Class : Ballistic (Air Missile),Missile Status : Missile,SPAPWMB--------,pass
-S*PP------,SPPP-----------,05,110000,00,00,Military (Space),Unspecified,Unspecified,SPPP-----------,pass
+S*PP------,SPPP-----------,05,000000,00,00,Unspecified,Unspecified,Unspecified,SPPP-----------,pass
 S*PPS-----,SPPPS----------,05,110700,00,00,Military (Space) : Satellite,Unspecified,Unspecified,SPPPS----------,pass
 S*PPT-----,SPPPT----------,05,111600,00,00,Military (Space) : Space Station,Unspecified,Unspecified,SPPPT----------,pass
 S*PPL-----,SPPPL----------,05,111900,00,00,Military (Space) : Space Launched Vehicle (SLV),Unspecified,Unspecified,SPPPL----------,pass
 S*PPV-----,SPPPV----------,98,100000,00,00,,,,,Retired
-S*GP------,SPGP-----------,98,100000,00,00,,,,,Retired
+S*GP------,SPGP-----------,10,000000,00,00,Unspecified,Unspecified,Unspecified,SPGP-----------,pass
 S*FPGC----,SPFPGC---------,10,110200,00,00,Command and Control : Civil Affairs,Unspecified,Unspecified,SPFPGC---------,pass
 S*FPGP----,SPFPGP---------,10,110600,00,00,Command and Control : Military Information Support (MISO),Unspecified,Unspecified,SPFPGP---------,pass
 S*GPUUS---,SPGPUUS--------,10,111000,00,00,Command and Control : Signal : Unknown,Unspecified,Unspecified,SPGPUUS--------,pass
@@ -498,7 +498,7 @@ S*GPUCII--,SPGPUCII-------,10,121105,00,00,Movement and Maneuver : Infantry : In
 S*GPUCAWS-,SPGPUCAWS------,10,120400,01,51,Movement and Maneuver : Antitank/Antiarmor : Unknown,Mobility : Air Mobile/Air Assault (US Only),Mobility : Wheeled,SPGPUCAWS------,pass
 S*GPUCFRMR,SPGPUCFRMR-----,10,130301,41,51,Fires : Field Artillery : Self-propelled,Capability : Multiple Rocket Launcher,Mobility : Wheeled,SPGPUCFRMR-----,pass
 S*GPUCFRMT,SPGPUCFRMT-----,10,130302,41,47,Fires : Field Artillery : Target Acquisition : Unknown,Capability : Multiple Rocket Launcher,Mobility : Towed,SPGPUCFRMT-----,pass
-S*GPU-----,SPGPU----------,98,100000,00,00,,,,,Retired
+S*GPU-----,SPGPU----------,10,000000,00,00,Unspecified,Unspecified,Unspecified,SPGP-----------,FAIL
 S*GPUH----,SPGPUH---------,98,100000,00,00,,,,,Retired
 S*GPUCDSC-,SPGPUCDSC------,10,111100,00,00,Command and Control : Tactical Satellite,Unspecified,Unspecified,SPGPUCDSC------,pass
 S*GPUCDSS-,SPGPUCDSS------,98,100000,00,00,,,,,Retired
@@ -704,7 +704,7 @@ S*GPESR---,SPGPESR--------,15,220300,00,00,Sensors : Radar,Unspecified,,SPGPESR-
 E*OPBB----,EPOPBB---------,15,230000,00,00,Emergency Operation (Land Equipment),Unspecified,,EPOPBB---------,pass
 E*OPAE----,EPOPAE---------,15,230100,00,00,Emergency Operation (Land Equipment) : Ambulance,Unspecified,,EPOPAE---------,pass
 E*OPCB----,EPOPCB---------,15,230200,00,00,Emergency Operation (Land Equipment) : Fire Fighting/Fire Protection,Unspecified,,EPOPCB---------,pass
-S*GPE-----,SPGPE----------,98,100000,00,00,,,,,Retired
+S*GPE-----,SPGPE----------,15,000000,00,00,Unspecified,Unspecified,,SPGPE----------,pass
 S*GPEVEM--,SPGPEVEM-------,15,131000,00,00,Engineer Equipment : Mine Laying Equipment,Unspecified,,SPGPEVEM-------,pass
 S*GPIMA---,SPGPIMA---H----,20,110100,00,00,Installation : Aircraft Production/Assembly,Unspecified,Unspecified,SPGPIMA---H----,pass
 S*GPIME---,SPGPIME---H----,20,110200,00,00,Installation : Ammunition and Explosives/Assembly,Unspecified,Unspecified,SPGPIME---H----,pass
@@ -828,7 +828,7 @@ E*FPMG----,EPFPMG----H----,20,121407,00,00,Infrastructure : Water Supply : Stora
 E*FPMH----,EPFPMH----H----,20,121408,00,00,Infrastructure : Water Supply : Surface Water Intake,Unspecified,Unspecified,EPFPMH----H----,pass
 E*FPMI----,EPFPMI----H----,20,121409,00,00,Infrastructure : Water Supply : Wastewater Treatment Facility,Unspecified,Unspecified,EPFPMI----H----,pass
 S*GPIUP---,SPGPIUP---H----,20,121410,00,00,Infrastructure : Water Supply : Water,Unspecified,Unspecified,SPGPIUP---H----,pass
-S*GPI-----,SPGPI-----H----,98,100000,00,00,,,,,Retired
+S*GPI-----,SPGPI-----H----,20,000000,00,00,Unspecified,Unspecified,Unspecified,SPGPI-----H----,pass
 S*GPIMV---,SPGPIMV---H----,20,121306,00,00,Infrastructure : Transportation : Maintenance Facility,Unspecified,Unspecified,EPFPLH----H----,pass (multiple)
 G*GPGLL---,GPGPGLL-------X,25,110200,00,00,Command and Control Lines : Light Line,,,GPGPGLL-------X,pass
 G*GPSAO---,GPGPSAO-------X,25,120100,00,00,Command and Control Areas : Area of Operations,,,GPGPSAO-------X,pass
@@ -855,7 +855,7 @@ GHGPGLC---,GHGPGLC-------X,25,140103,00,00,Maneuver Lines : Forward Line of Troo
 GHGAGLF---,GHGAGLF-------X,25,140101,00,00,Maneuver Lines : Forward Line of Troops : Friendly Present,,,GHGAGLF-------X,pass
 G*GPGLP---,GPGPGLP-------X,25,140300,00,00,Maneuver Lines : Phase Line,,,GPGPGLP-------X,pass
 G*GPDLF---,GPGPDLF-------X,25,140400,00,00,Maneuver Lines : Forward Edge of the Battle Area,,,GPGPDLF-------X,pass
-G*GPDLP---,GPGPDLP-------X,25,140500,00,00,Maneuver Lines : Principle Direction of Fire,,,GPGPDLP-------X,pass
+G*GPDLP---,GPGPDLP-------X,25,140500,00,00,Maneuver Lines : Principal Direction of Fire,,,GPGPDLP-------X,pass
 G*GPOLKA--,GPGPOLKA------X,25,140601,00,00,Maneuver Lines : Direction of Attack : Friendly Aviation,,,GPGPOLKA------X,pass
 G*GPOLKGM-,GPGPOLKGM-----X,25,140602,00,00,Maneuver Lines : Direction of Attack : Friendly Direction of Main Attack,,,GPGPOLKGM-----X,pass
 G*GPOLKGS-,GPGPOLKGS-----X,25,140603,00,00,Maneuver Lines : Direction of Attack : Friendly Direction of Supporting Attack,,,GPGPOLKGS-----X,pass
@@ -924,7 +924,7 @@ G*GPAAW---,GPGPAAW-------X,25,172000,00,00,Air Corridors : Weapons Free Zone,,,G
 G*GPGPA---,GPGPGPA-------X,25,180000,00,00,Airspace Control Points,,,GPGPGPA-------X,pass
 G*GPAPP---,GPGPAPP-------X,25,180100,00,00,Airspace Control Points : Air Control Point,,,GPGPAPP-------X,pass
 G*GPAPC---,GPGPAPC-------X,25,180200,00,00,Airspace Control Points : Communications Checkpoint,,,GPGPAPC-------X,pass
-G*GPAPD---,GPGPAPD-------X,25,180300,00,00,Airspace Control Points : Downed Aircraft Pick-up Point,,,GPGPAPD-------X,pass
+G*GPAPD---,GPGPAPD-------X,25,180300,00,00,Airspace Control Points : Downed Aircrew Pick-Up Point,,,GPGPAPD-------X,pass
 G*GPAPU---,GPGPAPU-------X,25,180400,00,00,Airspace Control Points : Pop-up Point,,,GPGPAPU-------X,pass
 G*GPGPAT--,GPGPGPAT------X,25,180600,00,00,Airspace Control Points : TACAN,,,GPGPGPAT------X,pass
 G*GPGPAP--,GPGPGPAP------X,25,180700,00,00,Airspace Control Points : CAP Station,,,GPGPGPAP------X,pass
@@ -1069,8 +1069,8 @@ G*FPACSR--,GPFPACSR------X,25,241002,00,00,Fires Areas : Fire Support Area : Rec
 G*FPACSC--,GPFPACSC------X,25,241003,00,00,Fires Areas : Fire Support Area : Circular,,,GPFPACSC------X,pass
 G*FPAZII--,GPFPAZII------X,25,241101,00,00,Fires Areas : Artillery Target Intelligence Zone : Irregular,,,GPFPAZII------X,pass
 G*FPAZIR--,GPFPAZIR------X,25,241102,00,00,Fires Areas : Artillery Target Intelligence Zone : Rectangular,,,GPFPAZIR------X,pass
-G*FPAZXI--,GPFPAZXI------X,25,241201,00,00,Fires Areas : Call for Fire Area : Irregular,,,GPFPAZXI------X,pass
-G*FPAZXR--,GPFPAZXR------X,25,241202,00,00,Fires Areas : Call for Fire Area : Rectangular,,,GPFPAZXR------X,pass
+G*FPAZXI--,GPFPAZXI------X,25,241201,00,00,Fires Areas : Call for Fire Zone (CFFZ) : Irregular,,,GPFPAZXI------X,pass
+G*FPAZXR--,GPFPAZXR------X,25,241202,00,00,Fires Areas : Call for Fire Zone (CFFZ) : Rectangular,,,GPFPAZXR------X,pass
 G*FPAZCI--,GPFPAZCI------X,25,241301,00,00,Fires Areas : Censor Zone : Irregular,,,GPFPAZCI------X,pass
 G*FPAZCR--,GPFPAZCR------X,25,241302,00,00,Fires Areas : Censor Zone : Rectangular,,,GPFPAZCR------X,pass
 G*FPAZFI--,GPFPAZFI------X,25,241401,00,00,Fires Areas : Critical Friendly Zone : Irregular,,,GPFPAZFI------X,pass
@@ -1328,7 +1328,7 @@ S*SPXAS---,SPSPXAS--------,30,140502,00,00,Civilian (Sea Surface) : Leisure Craf
 S*SPXP----,SPSPXP---------,30,140600,00,00,Civilian (Sea Surface) : Jet Ski,Unspecified,Unspecified,SPSPXP---------,pass
 S*SPO-----,SPSPO----------,30,150000,00,00,Own Ship,Unspecified,Unspecified,SPSPO----------,pass
 S*SPNH----,SPSPNH---------,98,100000,00,00,,,,,Retired
-S*SP------,SPSP-----------,98,100000,00,00,,,,,Retired
+S*SP------,SPSP-----------,30,000000,00,00,Unspecified,Unspecified,Unspecified,SPSP-----------,pass
 S*UPS-----,SPUPS----------,35,110100,00,00,Military (Sea Subsurface) : Submarine,Unspecified,Unspecified,SPUPS----------,pass
 S*UPS1----,SPUPS1---------,35,110100,13,00,Military (Sea Subsurface) : Submarine,Submarine Confidence : Possible Submarine Low 1,Unspecified,SPUPS1---------,pass
 S*UPS2----,SPUPS2---------,35,110100,14,00,Military (Sea Subsurface) : Submarine,Submarine Confidence : Possible Submarine Low 2,Unspecified,SPUPS2---------,pass
@@ -1346,7 +1346,7 @@ S*UPND----,SPUPND---------,35,120300,00,00,Civilian (Sea Subsurface) : Diver,Uns
 S*UPW-----,SPUPW----------,35,130000,00,00,Weapon (Sea Subsurface),Unspecified,Unspecified,SPUPW----------,pass
 S*UPWT----,SPUPWT---------,35,130100,00,00,Weapon (Sea Subsurface) : Torpedo,Unspecified,Unspecified,SPUPWT---------,pass
 S*UPWD----,SPUPWD---------,35,130300,00,00,Weapon (Sea Subsurface) : Decoy,Unspecified,Unspecified,SPUPWD---------,pass
-S*UP------,SPUP-----------,98,100000,00,00,,,,,Retired
+S*UP------,SPUP-----------,35,000000,00,00,Unspecified,Unspecified,Unspecified,SPUP-----------,pass
 S*UPSN----,SPUPSN---------,35,110100,00,06,Military (Sea Subsurface) : Submarine,Unspecified,Ship Propulsion : Nuclear Powered General,SPUPSN---------,pass
 S*UPSNF---,SPUPSNF--------,35,110101,00,06,Military (Sea Subsurface) : Submarine : Submarine-Surfaced,Unspecified,Ship Propulsion : Nuclear Powered General,SPUPSNF--------,pass
 S*UPSNA---,SPUPSNA--------,35,110100,08,06,Military (Sea Subsurface) : Submarine,Weapons Capability : Attack,Ship Propulsion : Nuclear Powered General,SPUPSNA--------,pass
@@ -1406,7 +1406,7 @@ O*VPA-----,OPVPA----------,40,110102,00,00,Incident : Criminal Activity Incident
 O*OPKA----,OPOPKA---------,40,110103,05,00,Incident : Criminal Activity Incident : Attempted Criminal Activity,Crime : Kidnapping (Activities),,OPOPKA---------,pass
 O*RPA-----,OPRPA----------,40,110103,08,00,Incident : Criminal Activity Incident : Attempted Criminal Activity,Crime : Rape (Activities),,OPRPA----------,pass
 O*VPD-----,OPVPD----------,40,110104,00,00,Incident : Criminal Activity Incident : Drive-by Shooting,Unspecified,,OPVPD----------,pass
-O*OPU-----,OPOPU----------,40,110105,00,00,Incident : Criminal Activity Incident : Drug Related,Unspecified,,OPOPU----------,pass
+O*OPU-----,OPOPU----------,10,000000,00,00,Unspecified,Unspecified,Unspecified,SPGP-----------,FAIL
 O*OPE-----,OPOPE----------,40,110106,00,00,Incident : Criminal Activity Incident : Extortion,Unspecified,,OPOPE----------,pass
 O*IPG-----,OPIPG----------,40,110107,00,00,Incident : Criminal Activity Incident : Graffiti,Unspecified,,OPIPG----------,pass
 O*VPM-----,OPVPM----------,40,110108,00,00,Incident : Criminal Activity Incident : Killing,Unspecified,,OPVPM----------,pass

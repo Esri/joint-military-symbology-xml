@@ -1,4 +1,5 @@
 Name,Value
+Unspecified,000000
 Command and Control Areas : Area of Operations,120100
 Command and Control Areas : Named Area of Interest,120200
 Command and Control Areas : Targeted Area of Interest,120300
@@ -48,12 +49,8 @@ Maritime Areas : Launch Area : Ellipse/Circle,200101
 Maritime Areas : Defended Area : Ellipse/Circle,200201
 Maritime Areas : Defended Area : Rectangle,200202
 Maritime Areas : No Attack (NOTACK) Zone,200300
-Maritime Areas : Ship Area of Interest,200400
 Maritime Areas : Ship Area of Interest : Ellipse/Circle,200401
 Maritime Areas : Ship Area of Interest : Rectangle,200402
-Maritime Areas : Active Maneuver Area,200500
-Maritime Areas : Cued Acquisition Doctrine,200600
-Maritime Areas : Radar Search Doctrine,200700
 Fires Areas : Airspace Coordination Area : Irregular,240101
 Fires Areas : Airspace Coordination Area : Rectangular,240102
 Fires Areas : Airspace Coordination Area : Circular,240103
@@ -82,9 +79,9 @@ Fires Areas : Fire Support Area : Circular,241003
 Fires Areas : Artillery Target Intelligence Zone : Irregular,241101
 Fires Areas : Artillery Target Intelligence Zone : Rectangular,241102
 Fires Areas : Artillery Target Intelligence Zone : Circular,241103
-Fires Areas : Call for Fire Area : Irregular,241201
-Fires Areas : Call for Fire Area : Rectangular,241202
-Fires Areas : Call for Fire Area : Circular,241203
+Fires Areas : Call for Fire Zone (CFFZ) : Irregular,241201
+Fires Areas : Call for Fire Zone (CFFZ) : Rectangular,241202
+Fires Areas : Call for Fire Zone (CFFZ) : Circular,241203
 Fires Areas : Censor Zone : Irregular,241301
 Fires Areas : Censor Zone : Rectangular,241302
 Fires Areas : Censor Zone : Circular,241303
@@ -123,7 +120,6 @@ Protection Areas : Minefield : Completed,270701
 Protection Areas : Minefield : Planned,270702
 Protection Areas : Minefield : Known Enemy,270703
 Protection Areas : Minefield : Suspected or Templated Enemy,270704
-Protection Areas : Minefield : Dummy,270705
 Protection Areas : Minefield : Dummy Minefield- Dymanic,270706
 Protection Areas : Minefield : Dynamic Depiction,270707
 Protection Areas : Mined Area,270800

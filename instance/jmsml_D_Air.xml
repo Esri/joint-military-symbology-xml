@@ -6,7 +6,13 @@
   </SymbolSetCode>
   <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
   <Entities>
-    <Entity ID="MILITARY" Label="Military" LabelAlias="Military (Air)" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes." Graphic="01110000.svg">
+    <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
+      <EntityCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </EntityCode>
+    </Entity>
+    <Entity ID="MILITARY" Label="Military" LabelAlias="Military (Air)" Remarks="Reserved for hiearchical purposes." Graphic="01110000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
@@ -250,7 +256,7 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="CIVILIAN" Label="Civilian" LabelAlias="Civilian (Air)" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes." Graphic="01120000.svg">
+    <Entity ID="CIVILIAN" Label="Civilian" LabelAlias="Civilian (Air)" Remarks="Reserved for hiearchical purposes." Graphic="01120000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>2</DigitTwo>
@@ -294,7 +300,7 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="WEAPON" Label="Weapon" LabelAlias="Weapon (Air)" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes." Graphic="01130000.svg">
+    <Entity ID="WEAPON" Label="Weapon" LabelAlias="Weapon (Air)" Remarks="Reserved for hiearchical purposes." Graphic="01130000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>3</DigitTwo>
@@ -899,7 +905,7 @@
     <LegacySymbol ID="WEAPON_DECOY_SYM" Label="S*APWD----*****" EntityID="WEAPON" EntityTypeID="DECOY">
       <LegacyFunctionCode Name="2525C">WD----</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="RETIRED_SYM" Label="S*AP------*****" Remarks="Retired">
+    <LegacySymbol ID="AIR_TRACK_SYM" Label="S*AP------*****" EntityID="UNSPECIFIED">
       <LegacyFunctionCode Name="2525C">------</LegacyFunctionCode>
     </LegacySymbol>
   </LegacySymbols>
