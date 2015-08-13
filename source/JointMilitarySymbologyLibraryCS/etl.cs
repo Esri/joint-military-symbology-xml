@@ -364,12 +364,15 @@ namespace JointMilitarySymbologyLibrary
 
                 foreach (LibraryContext obj in _library.Contexts)
                 {
-                    if(append)
-                        w.WriteLine("Context," + Convert.ToString(obj.ContextCode) + ',' + obj.Label.Replace(',', '-'));
-                    else
-                        w.WriteLine(Convert.ToString(obj.ContextCode) + ',' + obj.Label.Replace(',', '-'));
+                    if (!obj.IsExtension)
+                    {
+                        if (append)
+                            w.WriteLine("Context," + Convert.ToString(obj.ContextCode) + ',' + obj.Label.Replace(',', '-'));
+                        else
+                            w.WriteLine(Convert.ToString(obj.ContextCode) + ',' + obj.Label.Replace(',', '-'));
 
-                    w.Flush();
+                        w.Flush();
+                    }
                 }
 
                 if (dataValidation)
@@ -411,12 +414,15 @@ namespace JointMilitarySymbologyLibrary
 
                 foreach (LibraryStandardIdentity obj in _library.StandardIdentities)
                 {
-                    if(append)
-                        w.WriteLine("Identity," + Convert.ToString(obj.StandardIdentityCode) + ',' + obj.Label.Replace(',', '-'));
-                    else
-                        w.WriteLine(Convert.ToString(obj.StandardIdentityCode) + ',' + obj.Label.Replace(',', '-'));
+                    if (!obj.IsExtension)
+                    {
+                        if (append)
+                            w.WriteLine("Identity," + Convert.ToString(obj.StandardIdentityCode) + ',' + obj.Label.Replace(',', '-'));
+                        else
+                            w.WriteLine(Convert.ToString(obj.StandardIdentityCode) + ',' + obj.Label.Replace(',', '-'));
 
-                    w.Flush();
+                        w.Flush();
+                    }
                 }
 
                 if (dataValidation)
@@ -505,12 +511,15 @@ namespace JointMilitarySymbologyLibrary
 
                 foreach (LibraryStatus obj in _library.Statuses)
                 {
-                    if(append)
-                        w.WriteLine("Status," + Convert.ToString(obj.StatusCode) + ',' + obj.Label.Replace(',', '-'));
-                    else
-                        w.WriteLine(Convert.ToString(obj.StatusCode) + ',' + obj.Label.Replace(',', '-'));
+                    if (!obj.IsExtension)
+                    {
+                        if (append)
+                            w.WriteLine("Status," + Convert.ToString(obj.StatusCode) + ',' + obj.Label.Replace(',', '-'));
+                        else
+                            w.WriteLine(Convert.ToString(obj.StatusCode) + ',' + obj.Label.Replace(',', '-'));
 
-                    w.Flush();
+                        w.Flush();
+                    }
                 }
 
                 if (dataValidation)
@@ -552,12 +561,15 @@ namespace JointMilitarySymbologyLibrary
 
                 foreach (LibraryHQTFDummy obj in _library.HQTFDummies)
                 {
-                    if(append)
-                        w.WriteLine("HQ_TF_FD," + Convert.ToString(obj.HQTFDummyCode) + ',' + obj.Label.Replace(',', '-'));
-                    else
-                        w.WriteLine(Convert.ToString(obj.HQTFDummyCode) + ',' + obj.Label.Replace(',', '-'));
+                    if (!obj.IsExtension)
+                    {
+                        if (append)
+                            w.WriteLine("HQ_TF_FD," + Convert.ToString(obj.HQTFDummyCode) + ',' + obj.Label.Replace(',', '-'));
+                        else
+                            w.WriteLine(Convert.ToString(obj.HQTFDummyCode) + ',' + obj.Label.Replace(',', '-'));
 
-                    w.Flush();
+                        w.Flush();
+                    }
                 }
 
                 if (dataValidation)
@@ -603,12 +615,15 @@ namespace JointMilitarySymbologyLibrary
                     {
                         foreach (LibraryAmplifierGroupAmplifier obj in descript.Amplifiers)
                         {
-                            if(append)
-                                w.WriteLine("Amplifier," + Convert.ToString(descript.AmplifierGroupCode) + Convert.ToString(obj.AmplifierCode) + ',' + obj.Label.Replace(',', '-'));
-                            else
-                                w.WriteLine(Convert.ToString(descript.AmplifierGroupCode) + Convert.ToString(obj.AmplifierCode) + ',' + obj.Label.Replace(',', '-'));
+                            if (!obj.IsExtension)
+                            {
+                                if (append)
+                                    w.WriteLine("Amplifier," + Convert.ToString(descript.AmplifierGroupCode) + Convert.ToString(obj.AmplifierCode) + ',' + obj.Label.Replace(',', '-'));
+                                else
+                                    w.WriteLine(Convert.ToString(descript.AmplifierGroupCode) + Convert.ToString(obj.AmplifierCode) + ',' + obj.Label.Replace(',', '-'));
 
-                            w.Flush();
+                                w.Flush();
+                            }
                         }
                     }
                 }
@@ -1455,12 +1470,15 @@ namespace JointMilitarySymbologyLibrary
                                 }
                                 else if(exportType == ETLExportEnum.ETLExportDomain)
                                 {
-                                    line = amplifierExporter.Line(lag, amp, null);
-
-                                    if (line != "")
+                                    if (!amp.IsExtension)
                                     {
-                                        w.WriteLine(line);
-                                        w.Flush();
+                                        line = amplifierExporter.Line(lag, amp, null);
+
+                                        if (line != "")
+                                        {
+                                            w.WriteLine(line);
+                                            w.Flush();
+                                        }
                                     }
                                 }
                             }
@@ -1578,10 +1596,13 @@ namespace JointMilitarySymbologyLibrary
 
                             line = frameExporter.Line(null, null, identity, null, null, false, false);
 
-                            if (line != "")
+                            if (!identity.IsExtension)
                             {
-                                w.WriteLine(line);
-                                w.Flush();
+                                if (line != "")
+                                {
+                                    w.WriteLine(line);
+                                    w.Flush();
+                                }
                             }
                         }
                     }
@@ -1644,12 +1665,15 @@ namespace JointMilitarySymbologyLibrary
                         }
                         else if(exportType == ETLExportEnum.ETLExportDomain)
                         {
-                            line = hqTFFDExporter.Line(hqTFFD, null);
-
-                            if (line != "")
+                            if (!hqTFFD.IsExtension)
                             {
-                                w.WriteLine(line);
-                                w.Flush();
+                                line = hqTFFDExporter.Line(hqTFFD, null);
+
+                                if (line != "")
+                                {
+                                    w.WriteLine(line);
+                                    w.Flush();
+                                }
                             }
                         }
                     }
@@ -1723,12 +1747,15 @@ namespace JointMilitarySymbologyLibrary
                         }
                         else if(exportType == ETLExportEnum.ETLExportDomain)
                         {
-                            line = ocaExporter.Line(status);
-
-                            if (line != "")
+                            if (!status.IsExtension)
                             {
-                                w.WriteLine(line);
-                                w.Flush();
+                                line = ocaExporter.Line(status);
+
+                                if (line != "")
+                                {
+                                    w.WriteLine(line);
+                                    w.Flush();
+                                }
                             }
                         }
                     }

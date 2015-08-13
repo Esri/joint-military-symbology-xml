@@ -85,7 +85,7 @@
     <Context ID="SIMULATION" Label="Simulation">
       <ContextCode>2</ContextCode>
     </Context>
-    <Context ID="EXTENSION" Label="Extension" Description="Details specified by extension">
+    <Context ID="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
       <ContextCode>9</ContextCode>
     </Context>
   </Contexts>
@@ -119,7 +119,7 @@
       <StandardIdentityCode>6</StandardIdentityCode>
     </StandardIdentity>
 
-    <StandardIdentity ID="SI_EXTENSION" Label="Extension" Description="Details specified by extension">
+    <StandardIdentity ID="SI_EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
       <StandardIdentityCode>9</StandardIdentityCode>
     </StandardIdentity>
   </StandardIdentities>
@@ -1599,7 +1599,7 @@
       </Graphics>
     </Status>
 
-    <Status Name="EXTENSION" Label="Extension" Description="Details specified by extension">
+    <Status Name="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
       <StatusCode>9</StatusCode>
     </Status>
   </Statuses>
@@ -1856,7 +1856,7 @@
       </Graphics>
     </HQTFDummy>
 
-    <HQTFDummy Name="EXTENSION" Label="Extension" Description="Details specified by extension">
+    <HQTFDummy Name="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
       <HQTFDummyCode>9</HQTFDummyCode>
     </HQTFDummy>
   </HQTFDummies>
@@ -1967,7 +1967,7 @@
           </Graphics>
         </Amplifier>
 
-        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension">
+        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
           <AmplifierCode>9</AmplifierCode>
         </Amplifier>
       </Amplifiers>
@@ -2044,7 +2044,7 @@
           </Graphics>
         </Amplifier>
 
-        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension">
+        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
           <AmplifierCode>9</AmplifierCode>
         </Amplifier>
       </Amplifiers>
@@ -2132,7 +2132,7 @@
           </Graphics>
         </Amplifier>
 
-        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension">
+        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
           <AmplifierCode>9</AmplifierCode>
         </Amplifier>
       </Amplifiers>
@@ -2165,7 +2165,7 @@
           </Graphics>
         </Amplifier>
 
-        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension">
+        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
           <AmplifierCode>9</AmplifierCode>
         </Amplifier>
       </Amplifiers>
@@ -2198,7 +2198,7 @@
           </Graphics>
         </Amplifier>
 
-        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension">
+        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
           <AmplifierCode>9</AmplifierCode>
         </Amplifier>
       </Amplifiers>
@@ -2231,16 +2231,16 @@
           </Graphics>
         </Amplifier>
 
-        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension">
+        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
           <AmplifierCode>9</AmplifierCode>
         </Amplifier>
       </Amplifiers>
     </AmplifierGroup>
 
-    <AmplifierGroup Name="EXTENSION" Label="Extension" Description="Details specified by extension">
+    <AmplifierGroup Name="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
       <AmplifierGroupCode>9</AmplifierGroupCode>
       <Amplifiers>
-        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension">
+        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
           <AmplifierCode>9</AmplifierCode>
         </Amplifier>
       </Amplifiers>
