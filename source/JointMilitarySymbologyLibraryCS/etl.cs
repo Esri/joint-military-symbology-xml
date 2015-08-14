@@ -186,7 +186,7 @@ namespace JointMilitarySymbologyLibrary
 
                     // Now process through any special entity sub types that might exist in a symbol set
 
-                    if (s.SpecialEntitySubTypes != null)
+                    if (s.SpecialEntitySubTypes != null && !(exporter is DomainEntityExport))
                     {
                         foreach (EntitySubTypeType eSubType in s.SpecialEntitySubTypes)
                         {
