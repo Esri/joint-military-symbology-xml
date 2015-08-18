@@ -48,6 +48,7 @@ namespace jmsml
             string modPath = CommandLineArgs.I.argAsString("/m");
             string framePath = CommandLineArgs.I.argAsString("/xf");
             string amplifierPath = CommandLineArgs.I.argAsString("/xa");
+            string contextPath = CommandLineArgs.I.argAsString("/xc");
             string hqTFFDPath = CommandLineArgs.I.argAsString("/xh");
             string ocaPath = CommandLineArgs.I.argAsString("/xo");
             string exportAs = CommandLineArgs.I.argAsString("/xas").ToUpper();
@@ -86,6 +87,7 @@ namespace jmsml
                 Console.WriteLine("/s=\"<expression>\"\t: Use regular expression to query on symbol set labels.");
                 Console.WriteLine("");
                 Console.WriteLine("/xa=\"<pathname>\"\t: Export amplifiers.");
+                Console.WriteLine("/xc=\"<pathname>\"\t: Export contexts.");
                 Console.WriteLine("/xe=\"<pathname>\"\t: Export entities and modifiers.");
                 Console.WriteLine("/xf=\"<pathname>\"\t: Export frames.");
                 Console.WriteLine("/xh=\"<pathname>\"\t: Export HQ/TF/FD.");
@@ -146,6 +148,11 @@ namespace jmsml
             if (amplifierPath != "")
             {
                 _etl.ExportAmplifiers(amplifierPath, _exportThisAs, appendFiles, omitSource, omitLegacyTag, size, query);
+            }
+
+            if (contextPath != "")
+            {
+                _etl.ExportContext(contextPath, dataValidation, appendFiles);
             }
 
             if (hqTFFDPath != "")
