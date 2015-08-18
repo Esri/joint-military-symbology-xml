@@ -36,6 +36,7 @@ jmsml.exe /xa="../../../../../samples/name_domains_values/Coded_Domain_Mobilitie
 jmsml.exe /xa="../../../../../samples/name_domains_values/Coded_Domain_Arrays" /xas="DOMAIN" /q="array"
 jmsml.exe /xh="../../../../../samples/name_domains_values/Coded_Domain_HQTFFD" /xas="DOMAIN"
 jmsml.exe /xo="../../../../../samples/name_domains_values/Coded_Domain_Operational_Condition_Amplifier" /xas="DOMAIN"
+jmsml.exe /xc="../../../../../samples/name_domains_values/Coded_Domain_Context"
 
 REM *** Append all coded domain values together in a single file ***
 

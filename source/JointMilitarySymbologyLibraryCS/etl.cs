@@ -339,25 +339,9 @@ namespace JointMilitarySymbologyLibrary
             _exportModifier2(exporter, path2, symbolSetExpression, expression, append);
         }
 
-        private void _exportContext(string path, bool dataValidation, bool append = false, bool isFirst = false)
+        private void _exportContextDetails(string headers, string path, bool dataValidation = false, bool append = false, bool isFirst = false)
         {
-            // Export the Context elements in the library as a coded domain CSV.
-
-            string headers;
-            string filePath;
-
-            if (append)
-            {
-                filePath = path;
-                headers = "Type,Code,Value";
-            }
-            else
-            {
-                filePath = path + "\\jmsml_Context.csv";
-                headers = "Code,Value";
-            }
-
-            using (var w = new StreamWriter(filePath, (append && !isFirst)))
+            using (var w = new StreamWriter(path + ".csv", (append && !isFirst)))
             {
                 if (isFirst || !append)
                     w.WriteLine(headers);
@@ -377,7 +361,7 @@ namespace JointMilitarySymbologyLibrary
 
                 if (dataValidation)
                 {
-                    if(append)
+                    if (append)
                         w.WriteLine("Context,-1,NotSet");
                     else
                         w.WriteLine("-1,NotSet");
@@ -387,6 +371,31 @@ namespace JointMilitarySymbologyLibrary
 
                 w.Close();
             }
+        }
+
+        private void _exportContext(string path, bool dataValidation = false, bool append = false, bool isFirst = false, bool appendFileName = true)
+        {
+            // Export the Context elements in the library as a coded domain CSV.
+
+            string headers;
+            string filePath;
+
+            if (append)
+            {
+                filePath = path;
+                headers = "Type,Code,Value";
+            }
+            else
+            {
+                if (appendFileName)
+                    filePath = path + "\\jmsml_Context";
+                else
+                    filePath = path;
+
+                headers = "Code,Value";
+            }
+
+            _exportContextDetails(headers, filePath, dataValidation, append, isFirst);
         }
 
         private void _exportStandardIdentity(string path, bool dataValidation, bool append = false, bool isFirst = false)
@@ -403,11 +412,11 @@ namespace JointMilitarySymbologyLibrary
             }
             else
             {
-                filePath = path + "\\jmsml_StandardIdentity.csv";
+                filePath = path + "\\jmsml_StandardIdentity";
                 headers = "Code,Value";
             }
 
-            using (var w = new StreamWriter(filePath, (append && !isFirst)))
+            using (var w = new StreamWriter(filePath + ".csv", (append && !isFirst)))
             {
                 if (isFirst || !append)
                     w.WriteLine(headers);
@@ -453,11 +462,11 @@ namespace JointMilitarySymbologyLibrary
             }
             else
             {
-                filePath = path + "\\jmsml_SymbolSet.csv";
+                filePath = path + "\\jmsml_SymbolSet";
                 headers = "Code,Value";
             }
 
-            using (var w = new StreamWriter(filePath, (append && !isFirst)))
+            using (var w = new StreamWriter(filePath + ".csv", (append && !isFirst)))
             {
                 if (isFirst || !append)
                     w.WriteLine(headers);
@@ -500,11 +509,11 @@ namespace JointMilitarySymbologyLibrary
             }
             else
             {
-                filePath = path + "\\jmsml_Status.csv";
+                filePath = path + "\\jmsml_Status";
                 headers = "Code,Value";
             }
 
-            using (var w = new StreamWriter(filePath, (append && !isFirst)))
+            using (var w = new StreamWriter(filePath + ".csv", (append && !isFirst)))
             {
                 if (isFirst || !append)
                     w.WriteLine(headers);
@@ -550,11 +559,11 @@ namespace JointMilitarySymbologyLibrary
             }
             else
             {
-                filePath = path + "\\jmsml_HQTFDummy.csv";
+                filePath = path + "\\jmsml_HQTFDummy";
                 headers = "Code,Value";
             }
 
-            using (var w = new StreamWriter(filePath, (append && !isFirst)))
+            using (var w = new StreamWriter(filePath + ".csv", (append && !isFirst)))
             {
                 if (isFirst || !append)
                     w.WriteLine(headers);
@@ -600,11 +609,11 @@ namespace JointMilitarySymbologyLibrary
             }
             else
             {
-                filePath = path + "\\jmsml_Amplifier.csv";
+                filePath = path + "\\jmsml_Amplifier";
                 headers = "Code,Value";
             }
 
-            using (var w = new StreamWriter(filePath, (append && !isFirst)))
+            using (var w = new StreamWriter(filePath + ".csv", (append && !isFirst)))
             {
                 if (isFirst || !append)
                     w.WriteLine(headers);
@@ -1761,6 +1770,11 @@ namespace JointMilitarySymbologyLibrary
                     }
                 }
             }
+        }
+
+        public void ExportContext(string path, bool dataValidation = false, bool append = false)
+        {
+            _exportContext(path, dataValidation, append, true, false);
         }
     }
 }
