@@ -123,5 +123,10 @@ namespace JointMilitarySymbologyLibrary
 
             return result;
         }
+
+        string IEntityExport.Line(EntitySubTypeType eSubType)
+        {
+            return "";
+        }
     }
 }

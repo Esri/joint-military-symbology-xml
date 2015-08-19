@@ -55,7 +55,39 @@ namespace JointMilitarySymbologyLibrary
             _configHelper = new ConfigHelper(_librarian);
         }
 
-        private void _exportEntities(ETLExportEnum exportType, IEntityExport exporter, string path, string symbolSetExpression = "", string expression = "", bool exportPoints = true, bool exportLines = true, bool exportAreas = true)
+        private void _exportSpecialEntities(ETLExportEnum exportType, IEntityExport exporter, SymbolSet s, StreamWriter w, EntitySubTypeType[] array)
+        {
+            string line = "";
+
+            if (array != null)
+            {
+                foreach (EntitySubTypeType eSubType in array)
+                {
+                    if (eSubType.Icon == IconType.SPECIAL && exportType == ETLExportEnum.ETLExportImage)
+                    {
+                        foreach (LibraryStandardIdentityGroup sig in _library.StandardIdentityGroups)
+                        {
+                            line = string.Format("{0}", exporter.Line(sig, s, eSubType));
+
+                            w.WriteLine(line);
+                            w.Flush();
+                        }
+                    }
+                    else
+                    {
+                        if(exportType == ETLExportEnum.ETLExportDomain)
+                            line = string.Format("{0}", exporter.Line(eSubType));
+                        else
+                            line = string.Format("{0}", exporter.Line(null, s, eSubType));
+
+                        w.WriteLine(line);
+                        w.Flush();
+                    }
+                }
+            }
+        }
+
+        private void _exportEntities(ETLExportEnum exportType, IEntityExport exporter, string path, string specialPath, string symbolSetExpression = "", string expression = "", bool exportPoints = true, bool exportLines = true, bool exportAreas = true, bool append = false)
         {
             // Exports entity, entity types, and entity sub types to CSV, by optionally testing a 
             // regular expression against the Label attributes of the containing symbol sets
@@ -208,6 +240,24 @@ namespace JointMilitarySymbologyLibrary
                                 w.Flush();
                             }
                         }
+                    }
+                    else if (s.SpecialEntitySubTypes != null)
+                    {
+                        if (!append)
+                        {
+                            StreamWriter ws = new StreamWriter(specialPath);
+
+                            line = string.Format("{0}", exporter.Headers);
+
+                            ws.WriteLine(line);
+                            ws.Flush();
+
+                            _exportSpecialEntities(exportType, exporter, s, ws, s.SpecialEntitySubTypes);
+
+                            ws.Close();
+                        }
+                        else
+                            _exportSpecialEntities(exportType, exporter, s, w, s.SpecialEntitySubTypes);
                     }
                 }
 
@@ -1360,6 +1410,7 @@ namespace JointMilitarySymbologyLibrary
             string entityPath = path;
             string modifier1Path = path;
             string modifier2Path = path;
+            string specialPath = path;
 
             _configHelper.PointSize = (int)size;
 
@@ -1391,16 +1442,18 @@ namespace JointMilitarySymbologyLibrary
                     // If we're not appending the modifiers to the entities
                     // then add a string to the file name to make them unique.
 
+                    specialPath = entityPath + "_SpecialEntities";
                     entityPath = entityPath + "_Entities";
                     modifier1Path = modifier1Path + "_Modifier_Ones";
                     modifier2Path = modifier2Path + "_Modifier_Twos";
                 }
 
                 entityPath = entityPath + ".csv";
+                specialPath = specialPath + ".csv";
                 modifier1Path = modifier1Path + ".csv";
                 modifier2Path = modifier2Path + ".csv";
 
-                _exportEntities(exportType, entityExporter, entityPath, symbolSetExpression, expression, exportPoints, exportLines, exportAreas);
+                _exportEntities(exportType, entityExporter, entityPath, specialPath, symbolSetExpression, expression, exportPoints, exportLines, exportAreas, append);
                 _exportModifiers(modifierExporter, modifier1Path, modifier2Path, symbolSetExpression, expression, append);
             }
         }

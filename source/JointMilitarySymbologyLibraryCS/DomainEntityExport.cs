@@ -53,5 +53,12 @@ namespace JointMilitarySymbologyLibrary
 
             return BuildEntityItemName(null, null, null, null, eSubType) + "," + code;
         }
+
+        string IEntityExport.Line(EntitySubTypeType eSubType)
+        {
+            string code = Convert.ToString(eSubType.EntitySubTypeCode.DigitOne) + Convert.ToString(eSubType.EntitySubTypeCode.DigitTwo);
+            
+            return eSubType.Label.Replace(',', '-') + "," + code;
+        }
     }
 }

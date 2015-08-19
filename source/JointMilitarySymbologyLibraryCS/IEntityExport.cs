@@ -34,5 +34,7 @@ namespace JointMilitarySymbologyLibrary
         string Line(LibraryStandardIdentityGroup sig,
                     SymbolSet ss,
                     EntitySubTypeType eSubType);
+
+        string Line(EntitySubTypeType eSubType);
     }
 }
