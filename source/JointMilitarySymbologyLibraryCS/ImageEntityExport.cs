@@ -123,5 +123,10 @@ namespace JointMilitarySymbologyLibrary
             IEntityExport iEx = this;
             return iEx.Line(sig, ss, null, null, eSubType);
         }
+
+        string IEntityExport.Line(EntitySubTypeType eSubType)
+        {
+            return "";
+        }
     }
 }
