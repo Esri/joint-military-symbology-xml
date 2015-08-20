@@ -92,7 +92,7 @@ namespace jmsml
                 Console.WriteLine("/xf=\"<pathname>\"\t: Export frames.");
                 Console.WriteLine("/xh=\"<pathname>\"\t: Export HQ/TF/FD.");
                 Console.WriteLine("/xl=\"<pathname>\"\t: Export legacy data (for testing).");
-                Console.WriteLine("/xo=\"<pathname>\"\t: Export operational condition amplifiers.");
+                Console.WriteLine("/xo=\"<pathname>\"\t: Export operational condition amplifiers.*");
                 Console.WriteLine("/xas=\"<as_option>\"\t: Export as SIMPLE, DOMAIN, or IMAGE.");
                 Console.WriteLine("");
                 Console.WriteLine("/+\t\t\t: Append multiple e(x)port files together.");
@@ -102,6 +102,8 @@ namespace jmsml
                 Console.WriteLine("/a\t\t\t: Export symbols with AREA geometry.");
                 Console.WriteLine("/l\t\t\t: Export symbols with LINE geometry.");
                 Console.WriteLine("/p\t\t\t: Export symbols with POINT geometry.");
+                Console.WriteLine("");
+                Console.WriteLine("* - <pathname> argument has two comma seperated values.");
                 Console.WriteLine("");
                 Console.WriteLine("<Enter> to continue.");
                 Console.ReadLine();
@@ -162,7 +164,16 @@ namespace jmsml
 
             if (ocaPath != "")
             {
-                _etl.ExportOCA(ocaPath, _exportThisAs, appendFiles, omitSource, omitLegacyTag, size);
+                string[] paths = ocaPath.Split(',');
+
+                if (paths.Count() == 2)
+                {
+                    _etl.ExportOCA(paths[0], paths[1], _exportThisAs, appendFiles, omitSource, omitLegacyTag, size);
+                }
+                else
+                {
+                    _etl.ExportOCA(ocaPath, "", _exportThisAs, appendFiles, omitSource, omitLegacyTag, size);
+                }
             }
 
             if (legacySrc != "" && legacyDest != "")

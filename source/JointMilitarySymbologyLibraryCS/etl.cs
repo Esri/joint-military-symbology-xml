@@ -220,26 +220,7 @@ namespace JointMilitarySymbologyLibrary
 
                     if (s.SpecialEntitySubTypes != null && !(exporter is DomainEntityExport))
                     {
-                        foreach (EntitySubTypeType eSubType in s.SpecialEntitySubTypes)
-                        {
-                            if (eSubType.Icon == IconType.SPECIAL && exportType == ETLExportEnum.ETLExportImage)
-                            {
-                                foreach (LibraryStandardIdentityGroup sig in _library.StandardIdentityGroups)
-                                {
-                                    line = string.Format("{0}", exporter.Line(sig, s, eSubType));
-
-                                    w.WriteLine(line);
-                                    w.Flush();
-                                }
-                            }
-                            else
-                            {
-                                line = string.Format("{0}", exporter.Line(null, s, eSubType));
-
-                                w.WriteLine(line);
-                                w.Flush();
-                            }
-                        }
+                        _exportSpecialEntities(exportType, exporter, s, w, s.SpecialEntitySubTypes);
                     }
                     else if (s.SpecialEntitySubTypes != null)
                     {
@@ -442,7 +423,7 @@ namespace JointMilitarySymbologyLibrary
                 else
                     filePath = path;
 
-                headers = "Code,Value";
+                headers = "Name,Value";
             }
 
             _exportContextDetails(headers, filePath, dataValidation, append, isFirst);
@@ -1442,7 +1423,7 @@ namespace JointMilitarySymbologyLibrary
                     // If we're not appending the modifiers to the entities
                     // then add a string to the file name to make them unique.
 
-                    specialPath = entityPath + "_SpecialEntities";
+                    specialPath = entityPath + "_Special_Entity_Subtype";
                     entityPath = entityPath + "_Entities";
                     modifier1Path = modifier1Path + "_Modifier_Ones";
                     modifier2Path = modifier2Path + "_Modifier_Twos";
@@ -1743,13 +1724,13 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        public void ExportOCA(string path, ETLExportEnum exportType = ETLExportEnum.ETLExportSimple, bool append = false, bool omitSource = false, bool omitLegacy = false, long size = 32)
+        public void ExportOCA(string path, string statusPath, ETLExportEnum exportType = ETLExportEnum.ETLExportSimple, bool append = false, bool omitSource = false, bool omitLegacy = false, long size = 32)
         {
             // The public entry point for exporting operational condition amplifiers from the JMSML library
             // into CSV format.
 
             // Accepts a path for the output (sans file name extension).  The output may also
-            // be appended to an existing file.
+            // be appended to an existing file.  Splits out the Status codes alone to a second file.
 
             IOCAExport ocaExporter = null;
             string line = "";
@@ -1771,12 +1752,22 @@ namespace JointMilitarySymbologyLibrary
             {
                 using (var w = new StreamWriter(path + ".csv", append))
                 {
+                    // Create a second stream writer for status alone
+
+                    StreamWriter ws = new StreamWriter(statusPath + ".csv");
+
                     if (!append)
                     {
                         line = string.Format("{0}", ocaExporter.Headers);
 
                         w.WriteLine(line);
                         w.Flush();
+
+                        if (exportType == ETLExportEnum.ETLExportDomain)
+                        {
+                            ws.WriteLine(line);
+                            ws.Flush();
+                        }
                     }
 
                     foreach (LibraryStatus status in _library.Statuses)
@@ -1817,10 +1808,18 @@ namespace JointMilitarySymbologyLibrary
                                 {
                                     w.WriteLine(line);
                                     w.Flush();
+
+                                    if (status.StatusCode <= 1)
+                                    {
+                                        ws.WriteLine(line);
+                                        ws.Flush();
+                                    }
                                 }
                             }
                         }
                     }
+
+                    ws.Close();
                 }
             }
         }
