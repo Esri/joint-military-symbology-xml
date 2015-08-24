@@ -65,6 +65,20 @@
             <xs:sequence>
               <xs:element name="Amplifier" minOccurs="1" maxOccurs="unbounded">
                 <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Values" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" minOccurs="1" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:attributeGroup ref="IdentifierAttributeGroup"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attributeGroup ref="IdentifierAttributeGroup"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
                   <xs:attributeGroup ref="IdentifierAttributeGroup"/>
                   <xs:attribute name="Type" type="AmplifierType" default="TEXT" use="optional"/>
                   <xs:attribute name="Length" type="xs:int" default="0" use="optional"/>

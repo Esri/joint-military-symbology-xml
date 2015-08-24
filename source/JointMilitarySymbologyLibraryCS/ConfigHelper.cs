@@ -380,5 +380,25 @@ namespace JointMilitarySymbologyLibrary
 
             return result;
         }
+
+        public string AmplifierLabelValue(LibraryAmplifierValuesValue value)
+        {
+            // Creates and returns a line of text to be exported for a given amplifier value.
+
+            // Uses overrides in the jmsml configuration file to deliver custom output.
+
+            string result = value.Label + "," + value.LabelAlias;
+
+            foreach (JMSMLConfigETLConfigAmplifierValue v in _etlConfig.AmplifierValues)
+            {
+                if (value.ID == v.ID)
+                {
+                    result = v.Label + "," + v.Value;
+                    break;
+                }
+            }
+
+            return result;
+        }
     }
 }

@@ -2960,6 +2960,8 @@ namespace JointMilitarySymbologyLibrary {
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://disa.mil/JointMilSyML.xsd")]
     public partial class LibraryAmplifier {
         
+        private LibraryAmplifierValues[] valuesField;
+        
         private string idField;
         
         private string labelField;
@@ -2980,6 +2982,17 @@ namespace JointMilitarySymbologyLibrary {
             this.labelAliasField = "";
             this.typeField = AmplifierType.TEXT;
             this.lengthField = 0;
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Values")]
+        public LibraryAmplifierValues[] Values {
+            get {
+                return this.valuesField;
+            }
+            set {
+                this.valuesField = value;
+            }
         }
         
         /// <remarks/>
@@ -3070,6 +3083,177 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.noteField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://disa.mil/JointMilSyML.xsd")]
+    public partial class LibraryAmplifierValues {
+        
+        private LibraryAmplifierValuesValue[] valueField;
+        
+        private string idField;
+        
+        private string labelField;
+        
+        private string labelAliasField;
+        
+        private string descriptionField;
+        
+        private string remarksField;
+        
+        public LibraryAmplifierValues() {
+            this.labelAliasField = "";
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Value")]
+        public LibraryAmplifierValuesValue[] Value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
+        public string ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string Label {
+            get {
+                return this.labelField;
+            }
+            set {
+                this.labelField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string LabelAlias {
+            get {
+                return this.labelAliasField;
+            }
+            set {
+                this.labelAliasField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Remarks {
+            get {
+                return this.remarksField;
+            }
+            set {
+                this.remarksField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://disa.mil/JointMilSyML.xsd")]
+    public partial class LibraryAmplifierValuesValue {
+        
+        private string idField;
+        
+        private string labelField;
+        
+        private string labelAliasField;
+        
+        private string descriptionField;
+        
+        private string remarksField;
+        
+        public LibraryAmplifierValuesValue() {
+            this.labelAliasField = "";
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
+        public string ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string Label {
+            get {
+                return this.labelField;
+            }
+            set {
+                this.labelField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string LabelAlias {
+            get {
+                return this.labelAliasField;
+            }
+            set {
+                this.labelAliasField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Remarks {
+            get {
+                return this.remarksField;
+            }
+            set {
+                this.remarksField = value;
             }
         }
     }

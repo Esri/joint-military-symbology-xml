@@ -45,18 +45,59 @@
     <Amplifier ID="C" Label="Quantity" Description="A text amplifier in an equipment symbol that identifies the number of items present." Type="TEXT" Length="9"/>
     <Amplifier ID="D" Label="Task Force Indicator" Description="A graphic amplifier that identifies a unit or stability operations symbol as a task force." Type="GRAPHIC"/>
     <Amplifier ID="E" Label="Frame Shape Modifier" Description="A graphic modifier that displays affiliation, battle dimension, or exercise amplifying descriptors of an object." Type="GRAPHIC"/>
-    <Amplifier ID="F" Label="Reinforced or Reduced" Description="A text amplifier in a unit symbol that dispays (+) for reinforced, (-) for reduced, (±) for reinforced and reduced." Type="TEXT" Length="3"/>
+    <Amplifier ID="F" Label="Reinforced or Reduced" Description="A text amplifier in a unit symbol that dispays (+) for reinforced, (-) for reduced, (±) for reinforced and reduced." Type="TEXT" Length="3">
+      <Values ID="F_VALUES" Label="Reinforced or Reduced Values" LabelAlias="Reinforced">
+        <Value ID="REINFORCED" Label="Reinforced" LabelAlias="+"/>
+        <Value ID="REDUCED" Label="Reduced" LabelAlias="-"/>
+        <Value ID="REINFORCED_REDUCED" Label="Reinforced and Reduced" LabelAlias="+/-"/>
+      </Values>
+    </Amplifier>
     <Amplifier ID="G" Label="Staff Comments" Description="A text amplifier for units, equipment, and installations." Remarks="Content is implementation specific." Type="TEXT" Length="20"/>
     <Amplifier ID="H" Label="Additional Information" Description="A text amplifier for units, equipment, and installations." Remarks="Content is implementation specific." Type="TEXT" Length="20"/>
-    <Amplifier ID="J" Label="Evaluation Rating" Description="A text amplifier for units, equipment and installations that consists of a one-letter reliability rating and a one-number credibility rating." Remarks="Reliability: A-F and Credibility: 1-6" Type="TEXT" Length="2"/>
-    <Amplifier ID="K" Label="Combat Effectiveness" Description="A text amplifier for units and installations that indicates unit effectiveness or installation capability." Type="TEXT" Length="5"/>
+    <Amplifier ID="J" Label="Evaluation Rating" Description="A text amplifier for units, equipment and installations that consists of a one-letter reliability rating and a one-number credibility rating." Remarks="Reliability: A-F and Credibility: 1-6" Type="TEXT" Length="2">
+      <Values ID="RELIABILITY_RATINGS" Label="Reliability Rating" LabelAlias="Reliability">
+        <Value ID="COMPLETELY" Label="Completely Reliable" LabelAlias="A"/>
+        <Value ID="USUALLY" Label="Usually Reliable" LabelAlias="B"/>
+        <Value ID="FAIRLY" Label="Fairly Reliable" LabelAlias="C"/>
+        <Value ID="NOT_USUALLY" Label="Not Usually Reliable" LabelAlias="D"/>
+        <Value ID="UNRELIABLE" Label="Unreliable" LabelAlias="E"/>
+        <Value ID="REL_CANNOT_BE_JUDGED" Label="Reliability Cannot Be Judged" LabelAlias="F"/>
+      </Values>
+      <Values ID="CREDIBILITY_RATINGS" Label="Credibility Rating" LabelAlias="Credibility">
+        <Value ID="CONFIRMED" Label="Confirmed by Other Sources" LabelAlias="1"/>
+        <Value ID="PROBABLY" Label="Probably True" LabelAlias="2"/>
+        <Value ID="POSSIBLY" Label="Possibly True" LabelAlias="3"/>
+        <Value ID="DOUBTFULLY" Label="Doubtfully True" LabelAlias="4"/>
+        <Value ID="IMPROBABLE" Label="Improbable" LabelAlias="5"/>
+        <Value ID="CRED_CANNOT_BE_JUDGED" Label="Truth Cannot Be Judged" LabelAlias="6"/>
+      </Values>
+    </Amplifier>
+    <Amplifier ID="K" Label="Combat Effectiveness" Description="A text amplifier for units and installations that indicates unit effectiveness or installation capability." Type="TEXT" Length="5">
+      <Values ID="K_VALUES" Label="Combat Effectiveness Values" LabelAlias="CombatEffectiveness">
+        <Value ID="FULLY_OPERATIONAL" Label="Fully Operational" LabelAlias="FO"/>
+        <Value ID="SUBSTANTIALLY_OPERATIONAL" Label="Substantially Operational" LabelAlias="SO"/>
+        <Value ID="MARGINALLY_OPERATIONAL" Label="Marginally Operational" LabelAlias="MO"/>
+        <Value ID="NOT_OPERATIONAL" Label="Not Operational" LabelAlias="NO"/>
+        <Value ID="UNKNOWN_EFFECTIVENESS" Label="Unknown" LabelAlias="UNK"/>
+      </Values>
+    </Amplifier>
     <Amplifier ID="L" Label="Signature Equipment" Description="A text amplifier for hostile equipment, '!' indicates detectable electronic signatures." Type="TEXT" Length="1"/>
     <Amplifier ID="M" Label="Higher Formation" Description="A text amplifier for units that indicates number or title of higher echelon command (corps are designated by Roman numerals)." Type="TEXT" Length="21"/>
-    <Amplifier ID="N" Label="Hostile (Enemy)" Description="A text amplifier for equipment, letters 'ENY' denote hostile symbols." Type="TEXT" Length="3"/>
+    <Amplifier ID="N" Label="Hostile (Enemy)" Description="A text amplifier for equipment, letters 'ENY' denote hostile symbols." Type="TEXT" Length="3">
+      <Values ID="N_VALUES" Label="Hostile (Enemy) Values" LabelAlias="HostileOrEnemy">
+        <Value ID="N_VALUE" Label="Hostile (Enemy)" LabelAlias="ENY"/>
+      </Values>
+    </Amplifier>
     <Amplifier ID="P" Label="IFF/SIF/AIS" Description="A text amplifier displaying IFF/SIF/AIS identification modes and codes." Type="TEXT" Length="15"/>
     <Amplifier ID="Q" Label="Direction of Movement Indicator" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." Type="GRAPHIC"/>
     <Amplifier ID="R" Label="Mobility Indicator" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." Type="GRAPHIC"/>
-    <Amplifier ID="R2" Label="SIGINT Mobility Indicator" Description="M=Mobile, S=Static, or U=Uncertain" Type="TEXT" Length="1"/>
+    <Amplifier ID="R2" Label="SIGINT Mobility Indicator" Description="M=Mobile, S=Static, or U=Uncertain" Type="TEXT" Length="1">
+      <Values ID="R2_VALUES" Label="SIGINT Mobility Indicator Values" LabelAlias="SIGINTMobility">
+        <Value ID="MOBILE_INDICATOR" Label="Mobile" LabelAlias="M"/>
+        <Value ID="STATIC_INDICATOR" Label="Static" LabelAlias="S"/>
+        <Value ID="UNCERTAIN_INDICATOR" Label="Uncertain" LabelAlias="U"/>
+      </Values>
+    </Amplifier>
     <Amplifier ID="S" Label="Headquarters Staff Indicator/Offset Location Indicator" Description="Headquarters staff indicator: A graphic amplifier for units, equipment and installations that identifies a unit as a headquarters." Remarks="Offset location indicator: A graphic amplifier for units, equipment and installations used when placing an object away from its actual location." Type="GRAPHIC"/>
     <Amplifier ID="T" Label="Unique Designation" Description="A text amplifier for units, equipment and installations that uniquely identifies a particular symbol or track number." Remarks="Identifies acquisition number when used with SIGINT symbology." Type="TEXT" Length="30"/>
     <Amplifier ID="V" Label="Type" Description="A text amplifier for equipment that indicates types of equipment." Type="TEXT" Length="24"/>

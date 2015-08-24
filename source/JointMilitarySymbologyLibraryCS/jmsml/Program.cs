@@ -52,6 +52,7 @@ namespace jmsml
             string hqTFFDPath = CommandLineArgs.I.argAsString("/xh");
             string ocaPath = CommandLineArgs.I.argAsString("/xo");
             string exportAs = CommandLineArgs.I.argAsString("/xas").ToUpper();
+            string exportAVDPath = CommandLineArgs.I.argAsString("/xavd");
 
             string exportLegacy = CommandLineArgs.I.argAsString("/xl");
 
@@ -94,6 +95,8 @@ namespace jmsml
                 Console.WriteLine("/xl=\"<pathname>\"\t: Export legacy data (for testing).");
                 Console.WriteLine("/xo=\"<pathname>\"\t: Export operational condition amplifiers.*");
                 Console.WriteLine("/xas=\"<as_option>\"\t: Export as SIMPLE, DOMAIN, or IMAGE.");
+                Console.WriteLine("");
+                Console.WriteLine("/xavd=\"<pathname>\"t: Export amplifier value domains.");
                 Console.WriteLine("");
                 Console.WriteLine("/+\t\t\t: Append multiple e(x)port files together.");
                 Console.WriteLine("/-source\t\t: Leave source file out of exported tags.");
@@ -179,6 +182,11 @@ namespace jmsml
             if (legacySrc != "" && legacyDest != "")
             {
                 _etl.ImportLegacyData(legacySrc, legacyDest);
+            }
+
+            if (exportAVDPath != "")
+            {
+                _etl.ExportAmplifierValueDomains(exportAVDPath, appendFiles);
             }
         }
 

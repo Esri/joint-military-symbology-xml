@@ -55,8 +55,74 @@ namespace JointMilitarySymbologyLibrary
             _configHelper = new ConfigHelper(_librarian);
         }
 
+        private void _exportAmplifierValues(string path, LibraryAmplifierValues values, bool append, bool isFirst)
+        {
+            // Exports a single list of amplifier values into a single CSV.  Appends those to one CSV
+            // if that option is selected.
+
+            string line;
+
+            if (append)
+            {
+                path = path + ".csv";
+                line = "Type,Name,Value";
+            }
+            else
+            {
+                path = path + "_" + values.LabelAlias + ".csv";
+                line = "Name,Value";
+            }
+
+            using (var w = new StreamWriter(path, append))
+            {
+                if (!append || isFirst)
+                {
+                    w.WriteLine(line);
+                    w.Flush();
+                }
+
+                foreach (LibraryAmplifierValuesValue value in values.Value)
+                {
+                    line = "";
+
+                    if (append)
+                        line = values.LabelAlias + ",";
+
+                    line = _configHelper.AmplifierLabelValue(value);
+
+                    w.WriteLine(line);
+                    w.Flush();
+                }
+            }
+
+        }
+
+        private void _exportAmplifierValueDomains(string path, bool append = false)
+        {
+            // Exports each of the lists of values associated with amplifiers in a library
+            // into its own CSV file, for use in establishing domain ranges in a system.
+           
+            bool isFirst = true;
+
+            foreach (LibraryAmplifier amplifier in _library.Amplifiers)
+            {
+                if (amplifier.Values != null)
+                {
+                    foreach (LibraryAmplifierValues values in amplifier.Values)
+                    {
+                        _exportAmplifierValues(path, values, append, isFirst);
+
+                        isFirst = false;
+                    }
+                }
+            }
+            
+        }
+
         private void _exportSpecialEntities(ETLExportEnum exportType, IEntityExport exporter, SymbolSet s, StreamWriter w, EntitySubTypeType[] array)
         {
+            // Exports special entities to a CSV file
+
             string line = "";
 
             if (array != null)
@@ -1826,7 +1892,23 @@ namespace JointMilitarySymbologyLibrary
 
         public void ExportContext(string path, bool dataValidation = false, bool append = false)
         {
+            // The public entry for exporting context information as a domain range, in CSV format
+
+            // Accepts a path for the output (sans file name extension).  The output may also
+            // be appended to an existing file.
+
             _exportContext(path, dataValidation, append, true, false);
+        }
+
+        public void ExportAmplifierValueDomains(string path, bool append = false)
+        {
+            // The public entry for exporting the allowable values that are associated with
+            // some text amplifiers.  The export format is compatible with other domain export
+            // files created by this application.
+
+            // Accepts a path for the output folder or a file, appending to that file if required.
+
+            _exportAmplifierValueDomains(path, append);
         }
     }
 }
