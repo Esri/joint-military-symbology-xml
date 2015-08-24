@@ -45,6 +45,23 @@
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
+              <xs:element name="AmplifierValues" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="AmplifierValue" minOccurs="1" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:token">
+                            <xs:attribute name="ID" type="xs:token" use="required"/>
+                            <xs:attribute name="Label" type="xs:token" use="required"/>
+                            <xs:attribute name="Description" type="xs:token" use="optional" default=""/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
             </xs:sequence>
             <xs:attribute name="DomainSeparator" type="xs:string" use="required"/>
             <xs:attribute name="PointSize" type="xs:int" use="required"/>

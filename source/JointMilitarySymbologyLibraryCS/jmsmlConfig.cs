@@ -75,6 +75,8 @@ namespace JointMilitarySymbologyLibrary {
         
         private JMSMLConfigETLConfigExportTag[] exportTagsField;
         
+        private JMSMLConfigETLConfigAmplifierValue[] amplifierValuesField;
+        
         private string domainSeparatorField;
         
         private int pointSizeField;
@@ -106,6 +108,17 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.exportTagsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("AmplifierValue", IsNullable=false)]
+        public JMSMLConfigETLConfigAmplifierValue[] AmplifierValues {
+            get {
+                return this.amplifierValuesField;
+            }
+            set {
+                this.amplifierValuesField = value;
             }
         }
         
@@ -384,6 +397,72 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlTextAttribute(DataType="token")]
+        public string Value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://esri.com/jmsmlConfig.xsd")]
+    public partial class JMSMLConfigETLConfigAmplifierValue {
+        
+        private string idField;
+        
+        private string labelField;
+        
+        private string descriptionField;
+        
+        private string valueField;
+        
+        public JMSMLConfigETLConfigAmplifierValue() {
+            this.descriptionField = "";
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string Label {
+            get {
+                return this.labelField;
+            }
+            set {
+                this.labelField = value;
             }
         }
         
