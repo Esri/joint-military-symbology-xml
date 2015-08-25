@@ -15,16 +15,17 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace JointMilitarySymbologyLibrary
 {
-    public interface IAmplifierExport
+    public interface IContextExport
     {
         // Interface shared by those classes designed to implement the
-        // export of amplifiers.
+        // export of contexts.
 
         string Headers { get; }
 
-        string Line(LibraryAmplifierGroup amplifierGroup, LibraryAmplifierGroupAmplifier amplifier, LibraryAmplifierGroupAmplifierGraphic graphic);
+        string Line(LibraryContext context);
     }
 }
