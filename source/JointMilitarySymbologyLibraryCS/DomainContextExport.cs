@@ -15,16 +15,24 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace JointMilitarySymbologyLibrary
 {
-    public interface IAmplifierExport
+    public class DomainContextExport : IContextExport
     {
-        // Interface shared by those classes designed to implement the
-        // export of amplifiers.
+        // Class designed to export Context elements as name and value information
 
-        string Headers { get; }
+        string IContextExport.Headers
+        {
+            get { return "Name,Value"; }
+        }
 
-        string Line(LibraryAmplifierGroup amplifierGroup, LibraryAmplifierGroupAmplifier amplifier, LibraryAmplifierGroupAmplifierGraphic graphic);
+        string IContextExport.Line(LibraryContext context)
+        { 
+            string result = context.Label.Replace(',', '-') + "," + Convert.ToString(context.ContextCode);
+
+            return result;
+        }
     }
 }

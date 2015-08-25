@@ -1,4 +1,4 @@
-﻿/* Copyright 2014 Esri
+﻿/* Copyright 2014 - 2015 Esri
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -489,7 +489,7 @@ namespace JointMilitarySymbologyLibrary
                 else
                     filePath = path;
 
-                headers = "Name,Value";
+                headers = "Code,Value";
             }
 
             _exportContextDetails(headers, filePath, dataValidation, append, isFirst);
@@ -1897,7 +1897,31 @@ namespace JointMilitarySymbologyLibrary
             // Accepts a path for the output (sans file name extension).  The output may also
             // be appended to an existing file.
 
-            _exportContext(path, dataValidation, append, true, false);
+            string line;
+
+            IContextExport iCE = new DomainContextExport();
+
+            using (var w = new StreamWriter(path + ".csv", append))
+            {
+                if (!append)
+                {
+                    line = string.Format("{0}", iCE.Headers);
+
+                    w.WriteLine(line);
+                    w.Flush();
+                }
+
+                foreach (LibraryContext context in _library.Contexts)
+                {
+                    if (!context.IsExtension)
+                    {
+                        line = string.Format("{0}", iCE.Line(context));
+
+                        w.WriteLine(line);
+                        w.Flush();
+                    }
+                }
+            } 
         }
 
         public void ExportAmplifierValueDomains(string path, bool append = false)
