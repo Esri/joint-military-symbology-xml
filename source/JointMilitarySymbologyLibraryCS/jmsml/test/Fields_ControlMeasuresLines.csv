@@ -1,0 +1,26 @@
+field_name,field_type,field_length,field_alias,nullability,field_domain
+identity,Integer,4,Standard Identity,NON_NULLABLE,Identity
+symbolset,SmallInteger,2,Symbol Set,NON_NULLABLE,
+entity,Integer,4,Control Measures Line,NULLABLE,Control_Measure_Line_Entities
+echelon,Integer,4,Echelon,NULLABLE,Echelons
+uniquedesignation,String,50,Unique Designation,NULLABLE,
+uniquedesignation2,String,50,Unique Designation 2,NULLABLE,
+additionalinformation,String,50,Additional Information,NULLABLE,
+hostile,String,3,Hostile (ENY),NULLABLE,
+type,String,20,Type of Equipment,NULLABLE,
+distance,Double,8,Distance (meters),NULLABLE,
+azimuth,SmallInteger,2,Azimuth (degrees),NULLABLE,
+targetdesignator,String,6,Target Designator,NULLABLE,
+x,Double,8,X Location,NULLABLE,
+y,Double,8,Y Location,NULLABLE,
+z,Double,8,Altitude/Depth,NULLABLE,
+z2,Double,8,Altitude/Depth 2,NULLABLE,
+countrycode,String,3,Country Code,NULLABLE,
+length,Double,8,Length,NULLABLE,
+width,Double,8,Width,NULLABLE,
+datetimevalid,Date,8,Date Time Valid,NULLABLE,
+datetimeexpired,Date,8,Date Time Expired,NULLABLE,
+createdby,String,50,Created By,NULLABLE,
+createdtime,Date,8,Created Time,NULLABLE,
+editedby,String,50,Edited By,NULLABLE,
+editedtime,Date,8,Edited Time,NULLABLE,

@@ -1,0 +1,28 @@
+field_name,field_type,field_length,field_alias,nullability,field_domain,field_default,field_notes,field_comparison_result
+identity,Integer,4,Standard Identity,NULLABLE,Identity,,,OK
+context,SmallInteger,2,Context,NULLABLE,Context,,,OK
+symbolset,SmallInteger,2,Symbol Set,NON_NULLABLE,Space,5,,Space ; 5
+entity,Integer,4,Space Vehicle Icon,NULLABLE,Space_Entities,,,Space_Entities
+modifier1,Integer,4,Modifier 1,NULLABLE,Space_Modifier_Ones,,,Space_Modifier_Ones
+modifier2,Integer,4,Modifier 2,NULLABLE,Space_Modifier_Twos,,,Space_Modifier_Twos
+indicator,Integer,4,"HQ, Task Force, Feint/Dummy",NULLABLE,HQTFFD,,,OK
+operationalcondition,Integer,4,Operational Condition,NULLABLE,Operational_Condition_Amplifier,,,OK
+uniquedesignation,String,30,Unique Designation,NULLABLE,,,,21
+additionalinformation,String,50,Additional Information,NULLABLE,,,,500
+staffcomment,String,50,Staff Comments,NULLABLE,,,,500
+type,String,24,Type of Equipment,NULLABLE,,,,50
+direction,SmallInteger,2,Direction,NULLABLE,Direction,0,,0
+speed,SmallInteger,2,Speed,NULLABLE,,,,OK
+speedunit,String,3,Speed Unit,NULLABLE,SpeedUnits,,,speedunit ; String ; 3 ; Speed Unit ; SpeedUnits
+x,Double,8,X Location,NULLABLE,,,,size ; SmallInteger ; 2 ; Symbol Size
+y,Double,8,Y Location,NULLABLE,,,,rotation ; SmallInteger ; 2 ; Symbol Rotation
+z,Double,8,Altitude/Depth,NULLABLE,,,,countrycode ; String ; 3 ; Country Code
+size,SmallInteger,2,Symbol Size,NULLABLE,,,,datetimevalid ; Date ; 8 ; Date Time Valid
+rotation,SmallInteger,2,Symbol Rotation,NULLABLE,,,,datetimeexpired ; Date ; 8 ; Date Time Expired
+countrycode,String,3,Country Code,NULLABLE,,,,createdby ; 50 ; Created By
+datetimevalid,Date,8,Date Time Valid,NULLABLE,,,,createdtime ; Created Time
+datetimeexpired,Date,8,Date Time Expired,NULLABLE,,,,editedby ; String ; 50 ; Edited By
+createdby,String,50,Created By,NULLABLE,,,,editedtime ; Date ; 8 ; Edited Time
+createdtime,Date,8,Created Time,NULLABLE,,,,Additional line
+editedby,String,50,Edited By,NULLABLE,,,,Additional line
+editedtime,Date,8,Edited Time,NULLABLE,,,,Additional line

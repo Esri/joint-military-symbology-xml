@@ -1,0 +1,36 @@
+field_name,field_type,field_length,field_alias,nullability,field_domain,field_default,field_notes,field_comparison_result
+identity,Integer,4,Standard Identity,NULLABLE,Identity,,,OK
+context,SmallInteger,2,Context,NULLABLE,Context,,,OK
+symbolset,SmallInteger,2,Symbol Set,NULLABLE,SIGINT,50,,SIGINT ; 50
+entity,Integer,4,SIGINT Entities,NULLABLE,SIGINT_Entities,,,SIGINT_Entities
+modifier1,Integer,4,Modifier 1,NULLABLE,SIGINT_Modifier_Ones,,,SIGINT_Modifier_Ones
+sigintmobility,String,1,SIGINT Mobility,NULLABLE,SIGINTMobility,,,OK
+uniquedesignation,String,30,Unique Designation,NULLABLE,,,,OK
+additionalinformation,String,50,Additional Information,NULLABLE,,,,OK
+staffcomment,String,50,Staff Comments,NULLABLE,,,,OK
+higherformation,String,21,Higher Formation,NULLABLE,,,,50
+platformtype,String,5,Platform Type (ELNOT or CENOT),NULLABLE,,,,credibility ; SmallInteger ; 2 ; Credibility
+equipmentteardown,SmallInteger,2,Equipment Teardown Time (min),NULLABLE,,,,reliability ; String ; Reliability
+commonidentifier,String,12,Common Identifier,NULLABLE,,,,signatureequipment ; 1 ; Signature Equipment (hostile)
+credibility,SmallInteger,2,Credibility,NULLABLE,Credibility,,,specialdesignator ; String ; 3 ; Special Track Designators
+reliability,String,2,Reliability,NULLABLE,Reliability,,,guardedunit ; Guarded Unit
+signatureequipment,String,1,Signature Equipment (hostile),NULLABLE,,,,type ; 50 ; Type of Equipment
+type,String,24,Type of Equipment,NULLABLE,,,,quantity ; SmallInteger ; 2 ; Quantity
+quantity,SmallInteger,2,Quantity,NULLABLE,,,,platformtype ; String ; 5 ; Platform Type (ELNOT or CENOT)
+specialdesignator,String,3,Special Track Designator,NULLABLE,,,,equipmentteardown ; SmallInteger ; 2 ; Equipment Teardown Time (min)
+guardedunit,String,2,Guarded Unit,NULLABLE,,,,commonidentifier ; 12 ; Common Identifier
+direction,SmallInteger,2,Direction,NULLABLE,Direction,0,,0
+speed,SmallInteger,2,Speed,NULLABLE,,,,x ; Double ; 8 ; X Location
+speedunit,String,3,Speed Unit,NULLABLE,SpeedUnits,,,speedunit ; String ; 3 ; Speed Unit ; SpeedUnits
+x,Double,8,X Location,NULLABLE,,,,z ; Altitude/Depth or Height of Equipment or structures
+y,Double,8,Y Location,NULLABLE,,,,size ; SmallInteger ; 2 ; Symbol Size
+z,Double,8,Altitude/Depth,NULLABLE,,,,rotation ; SmallInteger ; 2 ; Symbol Rotation
+size,SmallInteger,2,Symbol Size,NULLABLE,,,,countrycode ; String ; 3 ; Country Code
+rotation,SmallInteger,2,Symbol Rotation,NULLABLE,,,,datetimevalid ; Date ; 8 ; Date Time Valid
+countrycode,String,3,Country Code,NULLABLE,,,,datetimeexpired ; Date ; 8 ; Date Time Expired
+datetimevalid,Date,8,Date Time Valid,NULLABLE,,,,createdby ; String ; 50 ; Created By
+datetimeexpired,Date,8,Date Time Expired,NULLABLE,,,,createdtime ; Created Time
+createdby,String,50,Created By,NULLABLE,,,,editedby ; Edited By
+createdtime,Date,8,Created Time,NULLABLE,,,,editedtime ; Edited Time
+editedby,String,50,Edited By,NULLABLE,,,,Additional line
+editedtime,Date,8,Edited Time,NULLABLE,,,,Additional line

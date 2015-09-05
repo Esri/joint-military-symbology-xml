@@ -97,6 +97,45 @@ namespace JointMilitarySymbologyLibrary
 
         }
 
+        private void _exportSymbolSetCodes(string path)
+        {
+            // Exports a single list of symbol set code values used in a given schema, into a single domain range CSV file.
+
+            string line;
+            string outPath;
+
+            JMSMLConfigETLConfigSchema[] schemas = _configHelper.MakeSchemaETL().ETLConfig.Schemas;
+
+            foreach (JMSMLConfigETLConfigSchema schema in schemas)
+            {
+                outPath = path + "_" + schema.Label + ".csv";
+                line = "Name,Value";
+
+                using (var w = new StreamWriter(outPath))
+                {
+                    w.WriteLine(line);
+                    w.Flush();
+
+                    string[] ss = schema.SymbolSetIDs.Split(' ');
+
+                    foreach (string symSetID in ss)
+                    {
+                        line = "";
+
+                        SymbolSet symbolSet = _librarian.SymbolSet(symSetID);
+
+                        if (symbolSet != null)
+                        {
+                            line = symbolSet.Label + "," + Convert.ToString(symbolSet.SymbolSetCode.DigitOne) + Convert.ToString(symbolSet.SymbolSetCode.DigitTwo);
+
+                            w.WriteLine(line);
+                            w.Flush();
+                        }
+                    }
+                }
+            }
+        }
+
         private void _exportAmplifierValueDomains(string path, bool append = false)
         {
             // Exports each of the lists of values associated with amplifiers in a library
@@ -1933,6 +1972,15 @@ namespace JointMilitarySymbologyLibrary
             // Accepts a path for the output folder or a file, appending to that file if required.
 
             _exportAmplifierValueDomains(path, append);
+            _exportSymbolSetCodes(path);
+        }
+
+        public void ExportSchemas(string path)
+        {
+            // Public entry for exporting military feature class schemas from the contents
+            // of the JMSML config file and the JMSML XML data.
+
+            _configHelper.MakeSchemaETL().ExportSchemas(path);
         }
     }
 }

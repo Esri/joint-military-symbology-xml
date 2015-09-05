@@ -1,0 +1,28 @@
+field_name,field_type,field_length,field_alias,nullability,field_domain,field_default,field_notes,field_comparison_result
+identity,Integer,4,Standard Identity,NULLABLE,Identity,,,OK
+symbolset,SmallInteger,2,Symbol Set,NULLABLE,ControlMeasuresPoints,25,,ControlMeasuresPoints ; 25
+entity,Integer,4,Control Measures Point,NULLABLE,Control_Measure_Point_Entities,,,OK
+uniquedesignation,String,30,Unique Designation,NULLABLE,,,,OK
+uniquedesignation2,String,30,Unique Designation 2,NULLABLE,,,,OK
+additionalinformation,String,50,Additional Information,NULLABLE,,,,OK
+additionalinformation2,String,50,Additional Information 2,NULLABLE,,,,OK
+distance,Double,8,Distance (meters),NULLABLE,,,,hostile ; String ; 3 ; Hostile (ENY)
+azimuth,SmallInteger,2,Azimuth (degrees),NULLABLE,,,,type ; String ; 50 ; Type of Equipment
+targetdesignator,String,6,Target Designator,NULLABLE,,,,distance ; Double ; 8 ; Distance (meters)
+hostile,String,3,Hostile (ENY),NULLABLE,,,,azimuth ; SmallInteger ; 2 ; Azimuth (degrees)
+type,String,24,Type of Equipment,NULLABLE,,,,direction ; SmallInteger ; 2 ; Direction
+quantity,SmallInteger,2,Quantity,NULLABLE,,,,targetdesignator ; String ; 6 ; Target Designator
+direction,SmallInteger,2,Direction,NULLABLE,Direction,0,,direction ; Direction ; 0
+speed,SmallInteger,2,Speed,NULLABLE,,,,x ; Double ; 8 ; X Location
+speedunit,String,3,Speed Unit,NULLABLE,SpeedUnits,,,speedunit ; String ; 3 ; Speed Unit ; SpeedUnits
+x,Double,8,X Location,NULLABLE,,,,z ; Altitude/Depth
+y,Double,8,Y Location,NULLABLE,,,,size ; SmallInteger ; 2 ; Symbol Size
+z,Double,8,Altitude/Depth,NULLABLE,,,,rotation ; SmallInteger ; 2 ; Symbol Rotation
+size,SmallInteger,2,Symbol Size,NULLABLE,,,,datetimevalid ; Date ; 8 ; Date Time Valid
+rotation,SmallInteger,2,Symbol Rotation,NULLABLE,,,,datetimeexpired ; Date ; 8 ; Date Time Expired
+datetimevalid,Date,8,Date Time Valid,NULLABLE,,,,createdby ; String ; 50 ; Created By
+datetimeexpired,Date,8,Date Time Expired,NULLABLE,,,,createdtime ; Created Time
+createdby,String,50,Created By,NULLABLE,,,,editedby ; Edited By
+createdtime,Date,8,Created Time,NULLABLE,,,,editedtime ; Edited Time
+editedby,String,50,Edited By,NULLABLE,,,,Additional line
+editedtime,Date,8,Edited Time,NULLABLE,,,,Additional line

@@ -53,6 +53,7 @@ namespace jmsml
             string ocaPath = CommandLineArgs.I.argAsString("/xo");
             string exportAs = CommandLineArgs.I.argAsString("/xas").ToUpper();
             string exportAVDPath = CommandLineArgs.I.argAsString("/xavd");
+            string exportSchemas = CommandLineArgs.I.argAsString("/xschemas");
 
             string exportLegacy = CommandLineArgs.I.argAsString("/xl");
 
@@ -97,6 +98,8 @@ namespace jmsml
                 Console.WriteLine("/xas=\"<as_option>\"\t: Export as SIMPLE, DOMAIN, or IMAGE.");
                 Console.WriteLine("");
                 Console.WriteLine("/xavd=\"<pathname>\"t: Export amplifier value domains.");
+                Console.WriteLine("");
+                Console.WriteLine("/xschemas=\"<pathname>\"t: Export all schemas.");
                 Console.WriteLine("");
                 Console.WriteLine("/+\t\t\t: Append multiple e(x)port files together.");
                 Console.WriteLine("/-source\t\t: Leave source file out of exported tags.");
@@ -187,6 +190,11 @@ namespace jmsml
             if (exportAVDPath != "")
             {
                 _etl.ExportAmplifierValueDomains(exportAVDPath, appendFiles);
+            }
+
+            if (exportSchemas != "")
+            {
+                _etl.ExportSchemas(exportSchemas);
             }
         }
 

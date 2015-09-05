@@ -354,7 +354,7 @@ namespace JointMilitarySymbologyLibrary
 
             foreach(JMSMLConfigETLConfigExportTag tag in _etlConfig.ExportTags)
             {
-                if (id == tag.ID)
+                if (id == tag.Name)
                     result = result + ";" + tag.Value;
             }
 
@@ -399,6 +399,13 @@ namespace JointMilitarySymbologyLibrary
             }
 
             return result;
+        }
+
+        public SchemaETL MakeSchemaETL()
+        {
+            // Create an instance of a light weight SchemaETL object and return it, reusing the one ETLConfig object in memory.
+
+            return new SchemaETL(_etlConfig);
         }
     }
 }
