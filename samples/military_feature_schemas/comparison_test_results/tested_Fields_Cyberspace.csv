@@ -20,7 +20,7 @@ type,String,24,Type of Equipment,NULLABLE,,,,50
 quantity,SmallInteger,2,Quantity,NULLABLE,,,,OK
 specialdesignator,String,3,Special Track Designator,NULLABLE,,,,guardedunit ; 2 ; Guarded Unit
 guardedunit,String,2,Guarded Unit,NULLABLE,,,,specialdesignator ; 3 ; Special Track Designators
-direction,SmallInteger,2,Direction,NULLABLE,Direction,0,,0
+direction,SmallInteger,2,Direction,NULLABLE,Direction,,,OK
 speed,SmallInteger,2,Speed,NULLABLE,,,,OK
 speedunit,String,3,Speed Unit,NULLABLE,SpeedUnits,,,speedunit ; String ; 3 ; Speed Unit ; SpeedUnits
 x,Double,8,X Location,NULLABLE,,,,y ; Y Location

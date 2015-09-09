@@ -19,7 +19,7 @@ signatureequipment,String,1,Signature Equipment (hostile),NULLABLE,,,,OK
 type,String,24,Type of Equipment,NULLABLE,,,,specialdesignator ; 3 ; Special Track Designators
 specialheadquarters,String,10,Special C2 Headquarters,NULLABLE,,,,type ; 50 ; Type of Equipment
 quantity,SmallInteger,2,Quantity,NULLABLE,,,,OK
-direction,SmallInteger,2,Direction,NULLABLE,Direction,0,,0
+direction,SmallInteger,2,Direction,NULLABLE,Direction,,,OK
 speed,SmallInteger,2,Speed,NULLABLE,,,,OK
 speedunit,String,3,Speed Unit,NULLABLE,SpeedUnits,,,speedunit ; String ; 3 ; Speed Unit ; SpeedUnits
 x,Double,8,X Location,NULLABLE,,,,y ; Y Location
