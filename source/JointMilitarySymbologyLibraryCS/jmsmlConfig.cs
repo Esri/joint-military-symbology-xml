@@ -77,6 +77,10 @@ namespace JointMilitarySymbologyLibrary {
         
         private JMSMLConfigETLConfigAmplifierValue[] amplifierValuesField;
         
+        private JMSMLConfigETLConfigSchemaType[] schemaTypesField;
+        
+        private JMSMLConfigETLConfigSchema[] schemasField;
+        
         private string domainSeparatorField;
         
         private int pointSizeField;
@@ -119,6 +123,28 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.amplifierValuesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("SchemaType", IsNullable=false)]
+        public JMSMLConfigETLConfigSchemaType[] SchemaTypes {
+            get {
+                return this.schemaTypesField;
+            }
+            set {
+                this.schemaTypesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("Schema", IsNullable=false)]
+        public JMSMLConfigETLConfigSchema[] Schemas {
+            get {
+                return this.schemasField;
+            }
+            set {
+                this.schemasField = value;
             }
         }
         
@@ -376,10 +402,171 @@ namespace JointMilitarySymbologyLibrary {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://esri.com/jmsmlConfig.xsd")]
+    public partial class FieldType {
+        
+        private string idField;
+        
+        private string aliasField;
+        
+        private FieldTypeEnum typeField;
+        
+        private string lengthField;
+        
+        private string defaultField;
+        
+        private bool isNullableField;
+        
+        private string domainField;
+        
+        private string orderField;
+        
+        private string notesField;
+        
+        private string valueField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
+        public string ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string Alias {
+            get {
+                return this.aliasField;
+            }
+            set {
+                this.aliasField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public FieldTypeEnum Type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="positiveInteger")]
+        public string Length {
+            get {
+                return this.lengthField;
+            }
+            set {
+                this.lengthField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string Default {
+            get {
+                return this.defaultField;
+            }
+            set {
+                this.defaultField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public bool IsNullable {
+            get {
+                return this.isNullableField;
+            }
+            set {
+                this.isNullableField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string Domain {
+            get {
+                return this.domainField;
+            }
+            set {
+                this.domainField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="integer")]
+        public string Order {
+            get {
+                return this.orderField;
+            }
+            set {
+                this.orderField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Notes {
+            get {
+                return this.notesField;
+            }
+            set {
+                this.notesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlTextAttribute(DataType="token")]
+        public string Value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://esri.com/jmsmlConfig.xsd")]
+    public enum FieldTypeEnum {
+        
+        /// <remarks/>
+        Date,
+        
+        /// <remarks/>
+        Double,
+        
+        /// <remarks/>
+        Integer,
+        
+        /// <remarks/>
+        SmallInteger,
+        
+        /// <remarks/>
+        String,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://esri.com/jmsmlConfig.xsd")]
     public partial class JMSMLConfigETLConfigExportTag {
         
-        private string idField;
+        private string nameField;
         
         private string descriptionField;
         
@@ -391,12 +578,12 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string ID {
+        public string Name {
             get {
-                return this.idField;
+                return this.nameField;
             }
             set {
-                this.idField = value;
+                this.nameField = value;
             }
         }
         
@@ -445,7 +632,7 @@ namespace JointMilitarySymbologyLibrary {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
         public string ID {
             get {
                 return this.idField;
@@ -486,6 +673,115 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.valueField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://esri.com/jmsmlConfig.xsd")]
+    public partial class JMSMLConfigETLConfigSchemaType {
+        
+        private FieldType[] fieldsField;
+        
+        private string idField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("Field", IsNullable=false)]
+        public FieldType[] Fields {
+            get {
+                return this.fieldsField;
+            }
+            set {
+                this.fieldsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
+        public string ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://esri.com/jmsmlConfig.xsd")]
+    public partial class JMSMLConfigETLConfigSchema {
+        
+        private FieldType[] fieldsField;
+        
+        private string idField;
+        
+        private string schemaTypeIDsField;
+        
+        private string symbolSetIDsField;
+        
+        private string labelField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("Field", IsNullable=false)]
+        public FieldType[] Fields {
+            get {
+                return this.fieldsField;
+            }
+            set {
+                this.fieldsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
+        public string ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="IDREFS")]
+        public string SchemaTypeIDs {
+            get {
+                return this.schemaTypeIDsField;
+            }
+            set {
+                this.schemaTypeIDsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="IDREFS")]
+        public string SymbolSetIDs {
+            get {
+                return this.symbolSetIDsField;
+            }
+            set {
+                this.symbolSetIDsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string Label {
+            get {
+                return this.labelField;
+            }
+            set {
+                this.labelField = value;
             }
         }
     }

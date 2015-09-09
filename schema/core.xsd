@@ -249,7 +249,7 @@
     <xs:sequence>
       <xs:element name="Field" minOccurs="0" maxOccurs="unbounded">
         <xs:complexType>
-          <xs:attributeGroup ref="NameAttributeGroup"/>
+          <xs:attributeGroup ref="IdentifierAttributeGroup"/>
           <xs:attribute name="Type" type="AttributeTypeType"/>
           <xs:attribute name="AmplifierID" type="xs:IDREF" use="required"/>
           <xs:attribute name="X" type="xs:int" use="optional" default="0"/>

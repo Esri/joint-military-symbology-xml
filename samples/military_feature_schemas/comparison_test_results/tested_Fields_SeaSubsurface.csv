@@ -1,0 +1,36 @@
+field_name,field_type,field_length,field_alias,nullability,field_domain,field_default,field_notes,field_comparison_result
+identity,Integer,4,Standard Identity,NULLABLE,Identity,,,NON_NULLABLE
+context,SmallInteger,2,Context,NULLABLE,Context,,,OK
+symbolset,SmallInteger,2,Symbol Set,NULLABLE,SeaSubSurface,35,,SeaSubSurface ; 35
+entity,Integer,4,Sub/Sub Type Icon,NON_NULLABLE,Sea_Subsurface_Entities,,,OK
+modifier1,Integer,4,Modifier 1,NULLABLE,Sea_Subsurface_Modifier_Ones,,,Sea_Subsurface_Modifier_Ones
+modifier2,Integer,4,Modifier 2,NULLABLE,Sea_Subsurface_Modifier_Twos,,,Sea_Subsurface_Modifier_Twos
+array,Integer,4,Auxiliary Equipment Indicator,NULLABLE,Arrays,,,OK
+indicator,Integer,4,"HQ, Task Force, Feint/Dummy",NULLABLE,HQTFFD,,,OK
+operationalcondition,Integer,4,Operational Condition,NULLABLE,Operational_Condition_Amplifier,,,OK
+uniquedesignation,String,30,Unique Designation,NULLABLE,,,,OK
+additionalinformation,String,50,Additional Information,NULLABLE,,,,OK
+staffcomment,String,50,Staff Comments,NULLABLE,,,,hostile ; 3 ; Hostile (ENY)
+credibility,SmallInteger,2,Credibility,NULLABLE,Credibility,,,staffcomment ; String ; 50 ; Staff Comments
+reliability,String,2,Reliability,NULLABLE,Reliability,,,credibility ; SmallInteger ; Credibility
+idmode,String,15,IFF/SIF/AIS,NULLABLE,,,,reliability ; 2 ; Reliability
+hostile,String,3,Hostile (ENY),NULLABLE,,,,idmode ; 15 ; Automatic Identification System
+signatureequipment,String,1,Signature Equipment (hostile),NULLABLE,,,,OK
+type,String,24,Type of Equipment,NULLABLE,,,,specialdesignator ; 3 ; Special Track Designators
+specialheadquarters,String,10,Special C2 Headquarters,NULLABLE,,,,type ; 50 ; Type of Equipment
+quantity,SmallInteger,2,Quantity,NULLABLE,,,,OK
+direction,SmallInteger,2,Direction,NULLABLE,Direction,0,,0
+speed,SmallInteger,2,Speed,NULLABLE,,,,OK
+speedunit,String,3,Speed Unit,NULLABLE,SpeedUnits,,,speedunit ; String ; 3 ; Speed Unit ; SpeedUnits
+x,Double,8,X Location,NULLABLE,,,,y ; Y Location
+y,Double,8,Y Location,NULLABLE,,,,z ; Depth
+z,Double,8,Altitude/Depth,NULLABLE,,,,size ; SmallInteger ; 2 ; Symbol Size
+size,SmallInteger,2,Symbol Size,NULLABLE,,,,rotation ; Symbol Rotation
+rotation,SmallInteger,2,Symbol Rotation,NULLABLE,,,,countrycode ; String ; 3 ; Country Code
+countrycode,String,3,Country Code,NULLABLE,,,,datetimevalid ; Date ; 8 ; Date Time Valid
+datetimevalid,Date,8,Date Time Valid,NULLABLE,,,,datetimeexpired ; Date Time Expired
+datetimeexpired,Date,8,Date Time Expired,NULLABLE,,,,createdby ; String ; 50 ; Created By
+createdby,String,50,Created By,NULLABLE,,,,createdtime ; Date ; 8 ; Created Time
+createdtime,Date,8,Created Time,NULLABLE,,,,editedby ; String ; 50 ; Edited By
+editedby,String,50,Edited By,NULLABLE,,,,editedtime ; Date ; 8 ; Edited Time
+editedtime,Date,8,Edited Time,NULLABLE,,,,specialheadquarters ; String ; 10 ; Special C2 Headquarters

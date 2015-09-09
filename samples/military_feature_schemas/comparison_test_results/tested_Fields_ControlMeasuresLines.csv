@@ -1,0 +1,26 @@
+field_name,field_type,field_length,field_alias,nullability,field_domain,field_default,field_notes,field_comparison_result
+identity,Integer,4,Standard Identity,NULLABLE,Identity,,,NON_NULLABLE
+symbolset,SmallInteger,2,Symbol Set,NON_NULLABLE,ControlMeasuresLines,25,,ControlMeasuresLines ; 25
+entity,Integer,4,Control Measures Line,NULLABLE,Control_Measure_Line_Entities,,,OK
+echelon,Integer,4,Echelon,NULLABLE,Echelons,,,OK
+uniquedesignation,String,30,Unique Designation,NULLABLE,,,,50
+uniquedesignation2,String,30,Unique Designation 2,NULLABLE,,,,50
+additionalinformation,String,50,Additional Information,NULLABLE,,,,OK
+distance,Double,8,Distance (meters),NULLABLE,,,,hostile ; String ; 3 ; Hostile (ENY)
+azimuth,SmallInteger,2,Azimuth (degrees),NULLABLE,,,,type ; String ; 20 ; Type of Equipment
+targetdesignator,String,6,Target Designator,NULLABLE,,,,distance ; Double ; 8 ; Distance (meters)
+length,Double,8,Length,NULLABLE,,,,azimuth ; SmallInteger ; 2 ; Azimuth (degrees)
+width,Double,8,Width,NULLABLE,,,,targetdesignator ; String ; 6 ; Target Designator
+hostile,String,3,Hostile (ENY),NULLABLE,,,,x ; Double ; 8 ; X Location
+type,String,24,Type of Equipment,NULLABLE,,,,y ; Double ; 8 ; Y Location
+x,Double,8,X Location,NULLABLE,,,,z ; Altitude/Depth
+y,Double,8,Y Location,NULLABLE,,,,z2 ; Altitude/Depth 2
+z,Double,8,Altitude/Depth,NULLABLE,,,,countrycode ; String ; 3 ; Country Code
+z2,Double,8,Altitude/Depth 2,NULLABLE,,,,length ; Length
+countrycode,String,3,Country Code,NULLABLE,,,,width ; Double ; 8 ; Width
+datetimevalid,Date,8,Date Time Valid,NULLABLE,,,,OK
+datetimeexpired,Date,8,Date Time Expired,NULLABLE,,,,OK
+createdby,String,50,Created By,NULLABLE,,,,OK
+createdtime,Date,8,Created Time,NULLABLE,,,,OK
+editedby,String,50,Edited By,NULLABLE,,,,OK
+editedtime,Date,8,Edited Time,NULLABLE,,,,OK
