@@ -19,7 +19,7 @@ type,String,24,Type of Equipment,NULLABLE,,,,quantity ; SmallInteger ; 2 ; Quant
 quantity,SmallInteger,2,Quantity,NULLABLE,,,,platformtype ; String ; 5 ; Platform Type (ELNOT or CENOT)
 specialdesignator,String,3,Special Track Designator,NULLABLE,,,,equipmentteardown ; SmallInteger ; 2 ; Equipment Teardown Time (min)
 guardedunit,String,2,Guarded Unit,NULLABLE,,,,commonidentifier ; 12 ; Common Identifier
-direction,SmallInteger,2,Direction,NULLABLE,Direction,0,,0
+direction,SmallInteger,2,Direction,NULLABLE,Direction,,,OK
 speed,SmallInteger,2,Speed,NULLABLE,,,,x ; Double ; 8 ; X Location
 speedunit,String,3,Speed Unit,NULLABLE,SpeedUnits,,,speedunit ; String ; 3 ; Speed Unit ; SpeedUnits
 x,Double,8,X Location,NULLABLE,,,,z ; Altitude/Depth or Height of Equipment or structures

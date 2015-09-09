@@ -18,7 +18,7 @@ credibility,SmallInteger,2,Credibility,NULLABLE,Credibility,,,reliability ; Stri
 reliability,String,2,Reliability,NULLABLE,Reliability,,,idmode ; 15 ; IFF/SIF
 idmode,String,15,IFF/SIF/AIS,NULLABLE,,,,direction ; SmallInteger ; 2 ; Direction
 specialheadquarters,String,10,Special C2 Headquarters,NULLABLE,,,,speed ; SmallInteger ; 2 ; Speed
-direction,SmallInteger,2,Direction,NULLABLE,Direction,0,,direction ; SmallInteger ; 2 ; Direction ; 0
+direction,SmallInteger,2,Direction,NULLABLE,Direction,,,x ; Double ; 8 ; X Location
 speed,SmallInteger,2,Speed,NULLABLE,,,,y ; Double ; 8 ; Y Location
 speedunit,String,3,Speed Unit,NULLABLE,SpeedUnits,,,speedunit ; String ; 3 ; Speed Unit ; SpeedUnits
 x,Double,8,X Location,NULLABLE,,,,size ; SmallInteger ; 2 ; Symbol Size

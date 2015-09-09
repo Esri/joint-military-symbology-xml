@@ -14,7 +14,7 @@ credibility,SmallInteger,2,Credibility,NULLABLE,Credibility,,,OK
 reliability,String,2,Reliability,NULLABLE,Reliability,,,OK
 idmode,String,15,IFF/SIF/AIS,NULLABLE,,,,IFF/SIF
 type,String,24,Type of Equipment,NULLABLE,,,,255
-direction,SmallInteger,2,Direction,NULLABLE,Direction,0,,0
+direction,SmallInteger,2,Direction,NULLABLE,Direction,,,OK
 speed,SmallInteger,2,Speed,NULLABLE,,,,OK
 speedunit,String,3,Speed Unit,NULLABLE,SpeedUnits,,,speedunit ; String ; 3 ; Speed Unit ; SpeedUnits
 x,Double,8,X Location,NULLABLE,,,,y ; Y Location

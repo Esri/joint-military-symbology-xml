@@ -12,7 +12,7 @@ targetdesignator,String,6,Target Designator,NULLABLE,,,,distance ; Double ; 8 ; 
 hostile,String,3,Hostile (ENY),NULLABLE,,,,azimuth ; SmallInteger ; 2 ; Azimuth (degrees)
 type,String,24,Type of Equipment,NULLABLE,,,,direction ; SmallInteger ; 2 ; Direction
 quantity,SmallInteger,2,Quantity,NULLABLE,,,,targetdesignator ; String ; 6 ; Target Designator
-direction,SmallInteger,2,Direction,NULLABLE,Direction,0,,direction ; Direction ; 0
+direction,SmallInteger,2,Direction,NULLABLE,Direction,,,quantity ; Quantity
 speed,SmallInteger,2,Speed,NULLABLE,,,,x ; Double ; 8 ; X Location
 speedunit,String,3,Speed Unit,NULLABLE,SpeedUnits,,,speedunit ; String ; 3 ; Speed Unit ; SpeedUnits
 x,Double,8,X Location,NULLABLE,,,,z ; Altitude/Depth

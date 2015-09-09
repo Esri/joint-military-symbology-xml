@@ -11,7 +11,7 @@ uniquedesignation,String,30,Unique Designation,NULLABLE,,,,21
 additionalinformation,String,50,Additional Information,NULLABLE,,,,500
 staffcomment,String,50,Staff Comments,NULLABLE,,,,500
 type,String,24,Type of Equipment,NULLABLE,,,,50
-direction,SmallInteger,2,Direction,NULLABLE,Direction,0,,0
+direction,SmallInteger,2,Direction,NULLABLE,Direction,,,OK
 speed,SmallInteger,2,Speed,NULLABLE,,,,OK
 speedunit,String,3,Speed Unit,NULLABLE,SpeedUnits,,,speedunit ; String ; 3 ; Speed Unit ; SpeedUnits
 x,Double,8,X Location,NULLABLE,,,,size ; SmallInteger ; 2 ; Symbol Size
