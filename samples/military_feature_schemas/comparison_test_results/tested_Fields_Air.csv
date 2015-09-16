@@ -1,15 +1,15 @@
 field_name,field_type,field_length,field_alias,nullability,field_domain,field_default,field_notes,field_comparison_result
 identity,Integer,4,Standard Identity,NULLABLE,Identity,,,OK
 context,SmallInteger,2,Context,NULLABLE,Context,,,OK
-symbolset,SmallInteger,2,Symbol Set,NULLABLE,Air,1,,Air ; 1
-entity,Integer,4,Air Vehicle Type Icon,NULLABLE,Air_Entities,,,OK
-modifier1,Integer,4,Modifier 1,NULLABLE,Air_Modifier_Ones,,,OK
-modifier2,Integer,4,Modifier 2,NULLABLE,Air_Modifier_Twos,,,OK
+symbolset,SmallInteger,2,Symbol Set,NULLABLE,,,,OK
+entity,Integer,4,Air Entity,NULLABLE,,,,Air Vehicle Type Icon ; Air_Entities
+modifier1,Integer,4,Modifier 1,NULLABLE,,,,Air_Modifier_Ones
+modifier2,Integer,4,Modifier 2,NULLABLE,,,,Air_Modifier_Twos
 indicator,Integer,4,"HQ, Task Force, Feint/Dummy",NULLABLE,HQTFFD,,,OK
 operationalcondition,Integer,4,Operational Condition,NULLABLE,Operational_Condition_Amplifier,,,OK
 uniquedesignation,String,30,Unique Designation,NULLABLE,,,,Unique Designation or Track Number
-additionalinformation,String,50,Additional Information,NULLABLE,,,,200 ; AdditionaI Information
-staffcomment,String,50,Staff Comments,NULLABLE,,,,200
+additionalinformation,String,20,Additional Information,NULLABLE,,,,200 ; AdditionaI Information
+staffcomment,String,20,Staff Comments,NULLABLE,,,,200
 credibility,SmallInteger,2,Credibility,NULLABLE,Credibility,,,OK
 reliability,String,2,Reliability,NULLABLE,Reliability,,,OK
 idmode,String,15,IFF/SIF/AIS,NULLABLE,,,,IFF/SIF

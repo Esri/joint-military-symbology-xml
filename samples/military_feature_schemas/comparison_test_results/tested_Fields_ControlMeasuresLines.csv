@@ -1,11 +1,11 @@
 field_name,field_type,field_length,field_alias,nullability,field_domain,field_default,field_notes,field_comparison_result
 identity,Integer,4,Standard Identity,NULLABLE,Identity,,,NON_NULLABLE
-symbolset,SmallInteger,2,Symbol Set,NON_NULLABLE,ControlMeasuresLines,25,,ControlMeasuresLines ; 25
-entity,Integer,4,Control Measures Line,NULLABLE,Control_Measure_Line_Entities,,,OK
+symbolset,SmallInteger,2,Symbol Set,NON_NULLABLE,,25,,25
+entity,Integer,4,Line Entity,NULLABLE,Control_Measure_Line_Entities,,,Control Measures Line
 echelon,Integer,4,Echelon,NULLABLE,Echelons,,,OK
 uniquedesignation,String,30,Unique Designation,NULLABLE,,,,50
 uniquedesignation2,String,30,Unique Designation 2,NULLABLE,,,,50
-additionalinformation,String,50,Additional Information,NULLABLE,,,,OK
+additionalinformation,String,20,Additional Information,NULLABLE,,,,50
 distance,Double,8,Distance (meters),NULLABLE,,,,hostile ; String ; 3 ; Hostile (ENY)
 azimuth,SmallInteger,2,Azimuth (degrees),NULLABLE,,,,type ; String ; 20 ; Type of Equipment
 targetdesignator,String,6,Target Designator,NULLABLE,,,,distance ; Double ; 8 ; Distance (meters)
