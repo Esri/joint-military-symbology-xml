@@ -1,13 +1,13 @@
 field_name,field_type,field_length,field_alias,nullability,field_domain,field_default,field_notes,field_comparison_result
 identity,Integer,4,Standard Identity,NULLABLE,Identity,,,OK
 context,SmallInteger,2,Context,NULLABLE,Context,,,OK
-symbolset,SmallInteger,2,Symbol Set,NON_NULLABLE,Cyberspace,50,,Cyberspace ; 50
-entity,Integer,4,Cyberspace Symbol,NON_NULLABLE,Cyberspace_Entities,,,OK
+symbolset,SmallInteger,2,Symbol Set,NON_NULLABLE,,,,OK
+entity,Integer,4,Cyberspace Entity,NON_NULLABLE,Cyberspace_Entities,,,Cyberspace Symbol
 indicator,Integer,4,"HQ, Task Force, Feint/Dummy",NULLABLE,HQTFFD,,,OK
 operationalcondition,Integer,4,Operational Condition,NULLABLE,Operational_Condition_Amplifier,,,OK
 uniquedesignation,String,30,Unique Designation,NULLABLE,,,,OK
-additionalinformation,String,50,Additional Information,NULLABLE,,,,OK
-staffcomment,String,50,Staff Comments,NULLABLE,,,,OK
+additionalinformation,String,20,Additional Information,NULLABLE,,,,50
+staffcomment,String,20,Staff Comments,NULLABLE,,,,50
 higherformation,String,21,Higher Formation,NULLABLE,,,,OK
 reinforced,SmallInteger,2,Reinforced or Reduced,NULLABLE,Reinforced,,,OK
 combateffectiveness,String,5,Combat Effectiveness,NULLABLE,CombatEffectiveness,,,CombatEffectiveness
