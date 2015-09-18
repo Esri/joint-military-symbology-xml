@@ -5,6 +5,14 @@
     xmlns:mstns="http://esri.com/jmsmlConfig.xsd"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
 >
+  <xs:simpleType name="GeometryTypeEnum">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="Point"/>
+      <xs:enumeration value="Line"/>
+      <xs:enumeration value="Area"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
   <xs:simpleType name="FieldTypeEnum">
     <xs:restriction base="xs:token">
       <xs:enumeration value="Date"/>
@@ -36,6 +44,8 @@
     <xs:attribute name="SchemaTypeIDs" type="xs:IDREFS" use="required"/>
     <xs:attribute name="SymbolSetIDs" type="xs:IDREFS" use="required"/>
     <xs:attribute name="Label" type="xs:token" use="required"/>
+    <xs:attribute name="LabelAlias" type="xs:token" use="required"/>
+    <xs:attribute name="GeometryType" type="GeometryTypeEnum" use="required"/>
   </xs:attributeGroup>
 
   <xs:attributeGroup name="AmplifierValueAttributeGroup">
@@ -83,6 +93,30 @@
     <xs:attribute name="LibraryPath" type="xs:anyURI" use="required"/>
     <xs:attribute name="LibraryName" type="xs:token" use="required"/>
   </xs:attributeGroup>
+
+  <xs:complexType name="MetadataType">
+    <xs:sequence>
+      <xs:element name="Label" type="xs:token" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Thumbnail" type="xs:token" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Tags" type="xs:token" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Summary" type="xs:token" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Description" type="xs:token" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Credits" type="xs:token" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Use" type="xs:token" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Extent" minOccurs="0" maxOccurs="1">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="East" type="xs:double" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="West" type="xs:double" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="North" type="xs:double" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="South" type="xs:double" minOccurs="1" maxOccurs="1"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="MaximumScale" type="xs:long" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="MinimumScale" type="xs:long" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
   
   <xs:element name="JMSMLConfig">
     <xs:complexType>
@@ -147,6 +181,7 @@
                     <xs:element name="Schema" minOccurs="1" maxOccurs="unbounded">
                       <xs:complexType>
                         <xs:sequence>
+                          <xs:element name="Metadata" type="MetadataType" minOccurs="1" maxOccurs="1"/>
                           <xs:element name="Fields" minOccurs="1" maxOccurs="1">
                             <xs:complexType>
                               <xs:sequence>

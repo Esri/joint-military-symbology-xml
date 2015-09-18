@@ -92,8 +92,10 @@ A remark of retired indicates the test resulted in finding that the specified 25
 
 ### Schemas ###
 
-Military feature attribute schemas, which consist of Fields and Subtypes, can be exported from JMMSL data.  These export files are then used with tools in the military features data repository to automatically build a military feature template geodatabase.
+Military feature attribute Schemas, which consist of Fields and Subtypes, can be exported from JMMSL data.  These export files are then used with tools in the military features data repository to automatically build a military feature template geodatabase.
 
     jmsml.exe /xschemas="./military_feature_schemas/"
 
-The test folder [here](../source/JointMilitarySymbologyLibraryCS/jmsml/test) contains the current baseline for these tables.  The export function performs a line by line comparison test between each line of each newly created csv file and each line of the corresponding current baseline file, and creates an annotated version of each file [here](./military_feature_schemas/comparison_test_results/), highlighting any differences.  A product engineer can use these test results to identify deltas in the output and ascertain if those deltas are legitimate and intended differences in versions of that output.
+The test folder [here](../source/JointMilitarySymbologyLibraryCS/jmsml/test) contains the current baseline for these tables.  For fields and subtypes, the export function performs a line by line comparison test between each line of each newly created csv file and each line of the corresponding current baseline file, and creates an annotated version of each file [here](./military_feature_schemas/comparison_test_results/), highlighting any differences.  A product engineer can use these test results to identify deltas in the output and ascertain if those deltas are legitimate and intended differences in versions of that output.
+
+The Schemas.csv file contains information, including metadata, about each supported Schema.

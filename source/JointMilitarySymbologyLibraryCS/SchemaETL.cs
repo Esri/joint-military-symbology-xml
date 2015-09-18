@@ -11,7 +11,9 @@ namespace JointMilitarySymbologyLibrary
     public class SchemaETL
     {
         private const string _headers = "field_name,field_type,field_length,field_alias,nullability,field_domain,field_default,field_notes";
+        private const string _schemaHeaders = "schema_name,schema_type,schema_alias,schema_label,schema_thumb,schema_tags,schema_summary,schema_description,schema_credits,schema_use,schema_east,schema_west,schema_north,schema_south,schema_maxscale,schema_minscale";
         private const string _filePrefix = "Fields_";
+        private const string _schemaListFile = "Schemas.csv";
         private const string _testedFilePrefix = "tested_";
         private const string _testFolder = "..\\..\\test";
         private const string _outputFolder = "\\comparison_test_results";
@@ -103,7 +105,7 @@ namespace JointMilitarySymbologyLibrary
             return fields;
         }
 
-        private void _exportSchema(string path, JMSMLConfigETLConfigSchema schema)
+        private void _exportFieldSchema(string path, JMSMLConfigETLConfigSchema schema)
         {
             // Export a single schema to the given path.
 
@@ -118,6 +120,45 @@ namespace JointMilitarySymbologyLibrary
                     _writeField(w, field);
                 }
             }
+        }
+
+        private bool _exportSchema(string path, JMSMLConfigETLConfigSchema schema, bool isFirst)
+        {
+            // Export the base definition of a schema to a list of schemas
+
+            bool firstTime = isFirst;
+
+            using (var w = new StreamWriter(path + "\\" + _schemaListFile, !firstTime))
+            {
+                if (firstTime)
+                {
+                    w.WriteLine(_schemaHeaders);
+                    w.Flush();
+
+                    firstTime = false;
+                }
+
+                string line = string.Format("{0}",  schema.Label + "," +
+                                                    schema.GeometryType + "," +
+                                                    '"' + schema.LabelAlias + '"' + "," +
+                                                    '"' + schema.Metadata.Label + '"' + "," +
+                                                    schema.Metadata.Thumbnail + "," +
+                                                    schema.Metadata.Tags + "," +
+                                                    '"' + schema.Metadata.Summary + '"' + "," +
+                                                    '"' + schema.Metadata.Description + '"' + "," +
+                                                    (schema.Metadata.Credits != null ? '"' + schema.Metadata.Credits + '"' : "") + "," +
+                                                    '"' + schema.Metadata.Use + '"' + "," +
+                                                    (schema.Metadata.Extent != null ? Convert.ToString(schema.Metadata.Extent.East) : "") + "," +
+                                                    (schema.Metadata.Extent != null ? Convert.ToString(schema.Metadata.Extent.West) : "") + "," +
+                                                    (schema.Metadata.Extent != null ? Convert.ToString(schema.Metadata.Extent.North) : "") + "," +
+                                                    (schema.Metadata.Extent != null ? Convert.ToString(schema.Metadata.Extent.South) : "") + "," +
+                                                    schema.Metadata.MaximumScale + "," +
+                                                    schema.Metadata.MinimumScale);
+                w.WriteLine(line);
+                w.Flush();
+            }
+
+            return firstTime;
         }
 
         private string _compareLines(string line1, string line2)
@@ -194,11 +235,6 @@ namespace JointMilitarySymbologyLibrary
 
             r.Close();
             w.Close();
-
-            // Now replace the exported file with the test annotated file.
-            // Backup the original exported file.
-
-            //File.Replace(scratchPath, path, path + ".original.csv");
         }
 
         private void _testSchemas(string folder)
@@ -247,14 +283,21 @@ namespace JointMilitarySymbologyLibrary
         {
             // Export each schema as a separate csv file.
 
+            bool isFirst = true;
+            string forPath = new FileInfo(path).FullName;
+
             foreach (JMSMLConfigETLConfigSchema schema in _etlConfig.Schemas)
             {
-                _exportSchema(new FileInfo(path).FullName, schema);
+                _exportFieldSchema(forPath, schema);
+
+                // Add this schema to the master list of schemas
+
+                isFirst = _exportSchema(forPath, schema, isFirst);
             }
 
             // Now test the results against a known set of files
 
-            _testSchemas(new FileInfo(path).FullName);
+            _testSchemas(forPath);
         }
     }
 }
