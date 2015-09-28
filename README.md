@@ -1,7 +1,13 @@
 # joint-military-symbology-xml
 Joint Military Symbology XML (JointMilSyML or JMSML) is an XML schema, and associated instance data, designed to definitively document the contents of MIL-STD 2525D and NATO STANAG APP-6(C).
 
-___Check out this [Symbology Explorer](http://kjellmf.github.io/military-symbology-explorer/#/home) written by @kjellmf . It's a perfect example of how open source development of the JMSML benefits everyone!___
+## Projects using this Repo
+
+|Project|Repository|Website|
+|---|---|---|
+|ArcGIS Pro/Runtime/Server|https://github.com/Esri/military-features-data||
+||https://github.com/kjellmf/military-symbology-explorer|http://kjellmf.github.io/military-symbology-explorer|
+||https://github.com/spatialillusions/milsymbol|http://spatialillusions.com/milsymbol/docs/milsymbol-2525d.html|
 
 The purpose of defining this schema and populating its associated instance data is four-fold:
   * To aid in the configuration management (CM) of these standards.
