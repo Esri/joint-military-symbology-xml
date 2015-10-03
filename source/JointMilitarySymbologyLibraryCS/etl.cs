@@ -104,32 +104,36 @@ namespace JointMilitarySymbologyLibrary
             string line;
             string outPath;
 
-            JMSMLConfigETLConfigSchema[] schemas = _configHelper.MakeSchemaETL().ETLConfig.Schemas;
+            JMSMLConfigETLConfigSchemaContainer container = _configHelper.MakeSchemaETL().ETLConfig.SchemaContainer;
+            JMSMLConfigETLConfigSchemaContainerSchemas[] schemas = container.Schemas;
 
-            foreach (JMSMLConfigETLConfigSchema schema in schemas)
+            foreach (JMSMLConfigETLConfigSchemaContainerSchemas schemasInstance in schemas)
             {
-                outPath = path + "_" + schema.Label + ".csv";
-                line = "Name,Value";
-
-                using (var w = new StreamWriter(outPath))
+                foreach (JMSMLConfigETLConfigSchemaContainerSchemasSchema schema in schemasInstance.Schema)
                 {
-                    w.WriteLine(line);
-                    w.Flush();
+                    outPath = path + "_" + schema.Label + ".csv";
+                    line = "Name,Value";
 
-                    string[] ss = schema.SymbolSetIDs.Split(' ');
-
-                    foreach (string symSetID in ss)
+                    using (var w = new StreamWriter(outPath))
                     {
-                        line = "";
+                        w.WriteLine(line);
+                        w.Flush();
 
-                        SymbolSet symbolSet = _librarian.SymbolSet(symSetID);
+                        string[] ss = schema.SymbolSetIDs.Split(' ');
 
-                        if (symbolSet != null)
+                        foreach (string symSetID in ss)
                         {
-                            line = symbolSet.Label + "," + Convert.ToString(symbolSet.SymbolSetCode.DigitOne) + Convert.ToString(symbolSet.SymbolSetCode.DigitTwo);
+                            line = "";
 
-                            w.WriteLine(line);
-                            w.Flush();
+                            SymbolSet symbolSet = _librarian.SymbolSet(symSetID);
+
+                            if (symbolSet != null)
+                            {
+                                line = symbolSet.Label + "," + Convert.ToString(symbolSet.SymbolSetCode.DigitOne) + Convert.ToString(symbolSet.SymbolSetCode.DigitTwo);
+
+                                w.WriteLine(line);
+                                w.Flush();
+                            }
                         }
                     }
                 }

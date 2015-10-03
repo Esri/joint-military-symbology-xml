@@ -48,6 +48,12 @@
     <xs:attribute name="GeometryType" type="GeometryTypeEnum" use="required"/>
   </xs:attributeGroup>
 
+  <xs:attributeGroup name="SchemaContainerAttributeGroup">
+    <xs:attribute name="ID" type="xs:ID" use="required"/>
+    <xs:attribute name="Label" type="xs:token" use="required"/>
+    <xs:attribute name="LabelAlias" type="xs:token" use="required"/>
+  </xs:attributeGroup>
+
   <xs:attributeGroup name="AmplifierValueAttributeGroup">
     <xs:attribute name="ID" type="xs:ID" use="required"/>
     <xs:attribute name="Label" type="xs:token" use="required"/>
@@ -175,25 +181,37 @@
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
-              <xs:element name="Schemas" minOccurs="0" maxOccurs="1">
+              <xs:element name="SchemaContainer" minOccurs="1" maxOccurs="1">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="Schema" minOccurs="1" maxOccurs="unbounded">
+                    <xs:element name="Metadata" type="MetadataType" minOccurs="1" maxOccurs="1"/>
+                    <xs:element name="Schemas" minOccurs="1" maxOccurs="unbounded">
                       <xs:complexType>
                         <xs:sequence>
                           <xs:element name="Metadata" type="MetadataType" minOccurs="1" maxOccurs="1"/>
-                          <xs:element name="Fields" minOccurs="1" maxOccurs="1">
+                          <xs:element name="Schema" minOccurs="1" maxOccurs="unbounded">
                             <xs:complexType>
                               <xs:sequence>
-                                <xs:element name="Field" type="FieldType" minOccurs="1" maxOccurs="unbounded"/>
+                                <xs:element name="Metadata" type="MetadataType" minOccurs="1" maxOccurs="1"/>
+                                <xs:element name="Fields" minOccurs="1" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Field" type="FieldType" minOccurs="1" maxOccurs="unbounded"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
                               </xs:sequence>
+                              <xs:attributeGroup ref="SchemaAttributeGroup"/>
+                              <xs:attribute name="SpatialReference" type="xs:token" use="optional" default=""/>
                             </xs:complexType>
                           </xs:element>
                         </xs:sequence>
-                        <xs:attributeGroup ref="SchemaAttributeGroup"/>
+                        <xs:attributeGroup ref="SchemaContainerAttributeGroup"/>
+                        <xs:attribute name="SpatialReference" type="xs:token" use="required"/>
                       </xs:complexType>
                     </xs:element>
                   </xs:sequence>
+                  <xs:attributeGroup ref="SchemaContainerAttributeGroup"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
