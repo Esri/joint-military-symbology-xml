@@ -11,7 +11,7 @@ namespace JointMilitarySymbologyLibrary
     public class SchemaETL
     {
         private const string _headers = "field_name,field_type,field_length,field_alias,nullability,field_domain,field_default,field_notes";
-        private const string _schemaHeaders = "schema_name,schema_type,schema_alias,schema_label,schema_thumb,schema_tags,schema_summary,schema_description,schema_credits,schema_use,schema_east,schema_west,schema_north,schema_south,schema_maxscale,schema_minscale";
+        private const string _schemaHeaders = "schema_class,schema_name,schema_geometry,schema_alias,schema_label,schema_thumb,schema_tags,schema_summary,schema_description,schema_credits,schema_use,schema_east,schema_west,schema_north,schema_south,schema_maxscale,schema_minscale,schema_spatial_reference";
         private const string _filePrefix = "Fields_";
         private const string _schemaListFile = "Schemas.csv";
         private const string _testedFilePrefix = "tested_";
@@ -75,7 +75,7 @@ namespace JointMilitarySymbologyLibrary
             return result;
         }
 
-        private FieldType[] _buildFieldArray(JMSMLConfigETLConfigSchema schema)
+        private FieldType[] _buildFieldArray(JMSMLConfigETLConfigSchemaContainerSchemasSchema schema)
         {
             // Build an order-sorted array of fields for the given schema.
 
@@ -105,7 +105,7 @@ namespace JointMilitarySymbologyLibrary
             return fields;
         }
 
-        private void _exportFieldSchema(string path, JMSMLConfigETLConfigSchema schema)
+        private void _exportFieldSchema(string path, JMSMLConfigETLConfigSchemaContainerSchemasSchema schema)
         {
             // Export a single schema to the given path.
 
@@ -122,7 +122,89 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        private bool _exportSchema(string path, JMSMLConfigETLConfigSchema schema, bool isFirst)
+        private bool _exportSchemaContainer(string path, JMSMLConfigETLConfigSchemaContainer container, bool isFirst)
+        {
+            // Export the information needed to create a container to hold schemas
+
+            bool firstTime = isFirst;
+
+            using (var w = new StreamWriter(path + "\\" + _schemaListFile, !firstTime))
+            {
+                if (firstTime)
+                {
+                    w.WriteLine(_schemaHeaders);
+                    w.Flush();
+
+                    firstTime = false;
+                }
+
+                string line = string.Format("{0}", "SchemaContainer," +
+                                                    container.Label + "," +
+                                                    "Mixed" + "," +
+                                                    '"' + container.LabelAlias + '"' + "," +
+                                                    '"' + container.Metadata.Label + '"' + "," +
+                                                    container.Metadata.Thumbnail + "," +
+                                                    container.Metadata.Tags + "," +
+                                                    '"' + container.Metadata.Summary + '"' + "," +
+                                                    '"' + container.Metadata.Description + '"' + "," +
+                                                    (container.Metadata.Credits != null ? '"' + container.Metadata.Credits + '"' : "") + "," +
+                                                    '"' + container.Metadata.Use + '"' + "," +
+                                                    (container.Metadata.Extent != null ? Convert.ToString(container.Metadata.Extent.East) : "") + "," +
+                                                    (container.Metadata.Extent != null ? Convert.ToString(container.Metadata.Extent.West) : "") + "," +
+                                                    (container.Metadata.Extent != null ? Convert.ToString(container.Metadata.Extent.North) : "") + "," +
+                                                    (container.Metadata.Extent != null ? Convert.ToString(container.Metadata.Extent.South) : "") + "," +
+                                                    container.Metadata.MaximumScale + "," +
+                                                    container.Metadata.MinimumScale + "," +
+                                                    "");
+                w.WriteLine(line);
+                w.Flush();
+            }
+
+            return firstTime;
+        }
+
+        private bool _exportSchemaSet(string path, JMSMLConfigETLConfigSchemaContainerSchemas schemas, bool isFirst)
+        {
+            // Export the information needed to create a set of related schemas within the schema container
+
+            bool firstTime = isFirst;
+
+            using (var w = new StreamWriter(path + "\\" + _schemaListFile, !firstTime))
+            {
+                if (firstTime)
+                {
+                    w.WriteLine(_schemaHeaders);
+                    w.Flush();
+
+                    firstTime = false;
+                }
+
+                string line = string.Format("{0}", "SchemaSet," +
+                                                    schemas.Label + "," +
+                                                    "Mixed" + "," +
+                                                    '"' + schemas.LabelAlias + '"' + "," +
+                                                    '"' + schemas.Metadata.Label + '"' + "," +
+                                                    schemas.Metadata.Thumbnail + "," +
+                                                    schemas.Metadata.Tags + "," +
+                                                    '"' + schemas.Metadata.Summary + '"' + "," +
+                                                    '"' + schemas.Metadata.Description + '"' + "," +
+                                                    (schemas.Metadata.Credits != null ? '"' + schemas.Metadata.Credits + '"' : "") + "," +
+                                                    '"' + schemas.Metadata.Use + '"' + "," +
+                                                    (schemas.Metadata.Extent != null ? Convert.ToString(schemas.Metadata.Extent.East) : "") + "," +
+                                                    (schemas.Metadata.Extent != null ? Convert.ToString(schemas.Metadata.Extent.West) : "") + "," +
+                                                    (schemas.Metadata.Extent != null ? Convert.ToString(schemas.Metadata.Extent.North) : "") + "," +
+                                                    (schemas.Metadata.Extent != null ? Convert.ToString(schemas.Metadata.Extent.South) : "") + "," +
+                                                    schemas.Metadata.MaximumScale + "," +
+                                                    schemas.Metadata.MinimumScale + "," +
+                                                    schemas.SpatialReference);
+                w.WriteLine(line);
+                w.Flush();
+            }
+
+            return firstTime;
+        }
+
+        private bool _exportSchema(string path, JMSMLConfigETLConfigSchemaContainerSchemasSchema schema, bool isFirst)
         {
             // Export the base definition of a schema to a list of schemas
 
@@ -138,7 +220,8 @@ namespace JointMilitarySymbologyLibrary
                     firstTime = false;
                 }
 
-                string line = string.Format("{0}",  schema.Label + "," +
+                string line = string.Format("{0}",  "Schema," + 
+                                                    schema.Label + "," +
                                                     schema.GeometryType + "," +
                                                     '"' + schema.LabelAlias + '"' + "," +
                                                     '"' + schema.Metadata.Label + '"' + "," +
@@ -153,7 +236,8 @@ namespace JointMilitarySymbologyLibrary
                                                     (schema.Metadata.Extent != null ? Convert.ToString(schema.Metadata.Extent.North) : "") + "," +
                                                     (schema.Metadata.Extent != null ? Convert.ToString(schema.Metadata.Extent.South) : "") + "," +
                                                     schema.Metadata.MaximumScale + "," +
-                                                    schema.Metadata.MinimumScale);
+                                                    schema.Metadata.MinimumScale + "," +
+                                                    schema.SpatialReference);
                 w.WriteLine(line);
                 w.Flush();
             }
@@ -286,18 +370,32 @@ namespace JointMilitarySymbologyLibrary
             bool isFirst = true;
             string forPath = new FileInfo(path).FullName;
 
-            foreach (JMSMLConfigETLConfigSchema schema in _etlConfig.Schemas)
+            JMSMLConfigETLConfigSchemaContainer container = _etlConfig.SchemaContainer;
+            JMSMLConfigETLConfigSchemaContainerSchemas[] schemas = container.Schemas;
+
+            // Export the container information
+
+            isFirst = _exportSchemaContainer(forPath, container, isFirst);
+
+            foreach (JMSMLConfigETLConfigSchemaContainerSchemas schemasInstance in schemas)
             {
-                _exportFieldSchema(forPath, schema);
+                // Export the schema set information
 
-                // Add this schema to the master list of schemas
+                isFirst = _exportSchemaSet(forPath, schemasInstance, isFirst);
 
-                isFirst = _exportSchema(forPath, schema, isFirst);
+                foreach (JMSMLConfigETLConfigSchemaContainerSchemasSchema schema in schemasInstance.Schema)
+                {
+                    _exportFieldSchema(forPath, schema);
+
+                    // Add this schema to the master list of schemas
+
+                    isFirst = _exportSchema(forPath, schema, isFirst);
+                }
             }
 
             // Now test the results against a known set of files
 
-            _testSchemas(forPath);
+            //_testSchemas(forPath);
         }
     }
 }

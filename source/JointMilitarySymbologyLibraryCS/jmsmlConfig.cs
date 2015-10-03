@@ -79,7 +79,7 @@ namespace JointMilitarySymbologyLibrary {
         
         private JMSMLConfigETLConfigSchemaType[] schemaTypesField;
         
-        private JMSMLConfigETLConfigSchema[] schemasField;
+        private JMSMLConfigETLConfigSchemaContainer schemaContainerField;
         
         private string domainSeparatorField;
         
@@ -138,13 +138,12 @@ namespace JointMilitarySymbologyLibrary {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Schema", IsNullable=false)]
-        public JMSMLConfigETLConfigSchema[] Schemas {
+        public JMSMLConfigETLConfigSchemaContainer SchemaContainer {
             get {
-                return this.schemasField;
+                return this.schemaContainerField;
             }
             set {
-                this.schemasField = value;
+                this.schemaContainerField = value;
             }
         }
         
@@ -911,7 +910,166 @@ namespace JointMilitarySymbologyLibrary {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://esri.com/jmsmlConfig.xsd")]
-    public partial class JMSMLConfigETLConfigSchema {
+    public partial class JMSMLConfigETLConfigSchemaContainer {
+        
+        private MetadataType metadataField;
+        
+        private JMSMLConfigETLConfigSchemaContainerSchemas[] schemasField;
+        
+        private string idField;
+        
+        private string labelField;
+        
+        private string labelAliasField;
+        
+        /// <remarks/>
+        public MetadataType Metadata {
+            get {
+                return this.metadataField;
+            }
+            set {
+                this.metadataField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Schemas")]
+        public JMSMLConfigETLConfigSchemaContainerSchemas[] Schemas {
+            get {
+                return this.schemasField;
+            }
+            set {
+                this.schemasField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
+        public string ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string Label {
+            get {
+                return this.labelField;
+            }
+            set {
+                this.labelField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string LabelAlias {
+            get {
+                return this.labelAliasField;
+            }
+            set {
+                this.labelAliasField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://esri.com/jmsmlConfig.xsd")]
+    public partial class JMSMLConfigETLConfigSchemaContainerSchemas {
+        
+        private MetadataType metadataField;
+        
+        private JMSMLConfigETLConfigSchemaContainerSchemasSchema[] schemaField;
+        
+        private string idField;
+        
+        private string labelField;
+        
+        private string labelAliasField;
+        
+        private string spatialReferenceField;
+        
+        /// <remarks/>
+        public MetadataType Metadata {
+            get {
+                return this.metadataField;
+            }
+            set {
+                this.metadataField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Schema")]
+        public JMSMLConfigETLConfigSchemaContainerSchemasSchema[] Schema {
+            get {
+                return this.schemaField;
+            }
+            set {
+                this.schemaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
+        public string ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string Label {
+            get {
+                return this.labelField;
+            }
+            set {
+                this.labelField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string LabelAlias {
+            get {
+                return this.labelAliasField;
+            }
+            set {
+                this.labelAliasField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string SpatialReference {
+            get {
+                return this.spatialReferenceField;
+            }
+            set {
+                this.spatialReferenceField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://esri.com/jmsmlConfig.xsd")]
+    public partial class JMSMLConfigETLConfigSchemaContainerSchemasSchema {
         
         private MetadataType metadataField;
         
@@ -928,6 +1086,12 @@ namespace JointMilitarySymbologyLibrary {
         private string labelAliasField;
         
         private GeometryTypeEnum geometryTypeField;
+        
+        private string spatialReferenceField;
+        
+        public JMSMLConfigETLConfigSchemaContainerSchemasSchema() {
+            this.spatialReferenceField = "";
+        }
         
         /// <remarks/>
         public MetadataType Metadata {
@@ -1013,6 +1177,18 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.geometryTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string SpatialReference {
+            get {
+                return this.spatialReferenceField;
+            }
+            set {
+                this.spatialReferenceField = value;
             }
         }
     }
