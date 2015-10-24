@@ -96,6 +96,12 @@ Military feature attribute Schemas, which consist of Fields and Subtypes, can be
 
     jmsml.exe /xschemas="./military_feature_schemas/"
 
-The test folder [here](../source/JointMilitarySymbologyLibraryCS/jmsml/test) contains the current baseline for these tables.  For fields and subtypes, the export function performs a line by line comparison test between each line of each newly created csv file and each line of the corresponding current baseline file, and creates an annotated version of each file [here](./military_feature_schemas/comparison_test_results/), highlighting any differences.  A product engineer can use these test results to identify deltas in the output and ascertain if those deltas are legitimate and intended differences in versions of that output.
+The test folder [here](../source/JointMilitarySymbologyLibraryCS/jmsml/test) contains the current baseline for these tables.
 
-The Schemas.csv file contains information, including metadata, about each supported Schema.
+The Schemas.csv file that is also generated contains information, including metadata, about each supported Schema, and the containers holding those Schemas.  This file contains three types of rows.  The type for a given row is identified by the `schema_class` field value at the beginning of that row.   
+
+- The first row, the `SchemaContainer`, holds a `SchemaSet`.  The `SchemaContainer` is equivalent to an ArcGIS geodatabase.
+- The second row, the `SchemaSet`, holds a collection of `Schema` entries.  The `SchemaSet` is equivalent to an ArcGIS feature dataset.
+- Subsequent rows in the file each represent one `Schema` within the `SchemaSet`.  `Schemas` are equivalent to ArcGIS feature classes.
+
+Schema rows in this file can be reordered by hand, as desired, but the SchemaContainer should always be the first data row in the CSV file and the SchemaSet should always be the second data row in the CSV file.  This arrangement mirrors, in a flat CSV file, the hierarchical relationship between these objects, as they are currently represented within the JMSML XML.
