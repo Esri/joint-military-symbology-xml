@@ -214,6 +214,9 @@ namespace JointMilitarySymbologyLibrary
                 w.WriteLine(line);
                 w.Flush();
 
+                // Initialize a counter to track lines written out
+                int rowCount = 0;
+
                 foreach (SymbolSet s in _symbolSets)
                 {
                     if (symbolSetExpression != "" && !System.Text.RegularExpressions.Regex.IsMatch(s.Label, symbolSetExpression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
@@ -241,6 +244,8 @@ namespace JointMilitarySymbologyLibrary
 
                                             w.WriteLine(line);
                                             w.Flush();
+
+                                            rowCount++;
                                         }
                                     }
                                     else
@@ -249,6 +254,8 @@ namespace JointMilitarySymbologyLibrary
 
                                         w.WriteLine(line);
                                         w.Flush();
+
+                                        rowCount++;
                                     }
                                 }
                             }
@@ -274,6 +281,8 @@ namespace JointMilitarySymbologyLibrary
 
                                                     w.WriteLine(line);
                                                     w.Flush();
+
+                                                    rowCount++;
                                                 }
                                             }
                                             else
@@ -282,6 +291,8 @@ namespace JointMilitarySymbologyLibrary
 
                                                 w.WriteLine(line);
                                                 w.Flush();
+
+                                                rowCount++;
                                             }
                                         }
                                     }
@@ -307,6 +318,8 @@ namespace JointMilitarySymbologyLibrary
 
                                                             w.WriteLine(line);
                                                             w.Flush();
+
+                                                            rowCount++;
                                                         }
                                                     }
                                                     else
@@ -315,6 +328,8 @@ namespace JointMilitarySymbologyLibrary
 
                                                         w.WriteLine(line);
                                                         w.Flush();
+
+                                                        rowCount++;
                                                     }
                                                 }
                                             }
@@ -352,6 +367,13 @@ namespace JointMilitarySymbologyLibrary
                 }
 
                 w.Close();
+
+                if (rowCount == 0)
+                {
+                    // Empty file so delete it
+                    logger.Warn("Empty " + path + ". Deleting file...");
+                    File.Delete(path);
+                }
             }
         }
 
