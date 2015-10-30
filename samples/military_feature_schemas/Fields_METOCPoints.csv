@@ -1,6 +1,6 @@
 field_name,field_type,field_length,field_alias,nullability,field_domain,field_default,field_notes
 symbolset,SmallInteger,2,Symbol Set,NULLABLE,METOCPoints,,
-entity,Integer,4,METOC Point Entity,NULLABLE,,,
+symbolentity,Integer,4,METOC Point Entity,NULLABLE,,,
 additionalinformation,String,20,Additional Information,NULLABLE,,,
 size,SmallInteger,2,Symbol Size,NULLABLE,,,
 rotation,SmallInteger,2,Symbol Rotation,NULLABLE,,,
