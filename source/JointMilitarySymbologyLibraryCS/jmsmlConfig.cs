@@ -402,6 +402,207 @@ namespace JointMilitarySymbologyLibrary {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://esri.com/jmsmlConfig.xsd")]
+    public partial class SubtypeType {
+        
+        private string idField;
+        
+        private long codeField;
+        
+        private string valueField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
+        public string ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public long Code {
+            get {
+                return this.codeField;
+            }
+            set {
+                this.codeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlTextAttribute(DataType="token")]
+        public string Value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://esri.com/jmsmlConfig.xsd")]
+    public partial class RangeDomainType {
+        
+        private string labelField;
+        
+        private FieldTypeEnum typeField;
+        
+        private int minValueField;
+        
+        private int maxValueField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string Label {
+            get {
+                return this.labelField;
+            }
+            set {
+                this.labelField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public FieldTypeEnum Type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public int MinValue {
+            get {
+                return this.minValueField;
+            }
+            set {
+                this.minValueField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public int MaxValue {
+            get {
+                return this.maxValueField;
+            }
+            set {
+                this.maxValueField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://esri.com/jmsmlConfig.xsd")]
+    public enum FieldTypeEnum {
+        
+        /// <remarks/>
+        Date,
+        
+        /// <remarks/>
+        Double,
+        
+        /// <remarks/>
+        Integer,
+        
+        /// <remarks/>
+        SmallInteger,
+        
+        /// <remarks/>
+        String,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://esri.com/jmsmlConfig.xsd")]
+    public partial class NameValueType {
+        
+        private string nameField;
+        
+        private string valueField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string Name {
+            get {
+                return this.nameField;
+            }
+            set {
+                this.nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string Value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://esri.com/jmsmlConfig.xsd")]
+    public partial class CodedDomainType {
+        
+        private NameValueType[] nameValueField;
+        
+        private string labelField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("NameValue")]
+        public NameValueType[] NameValue {
+            get {
+                return this.nameValueField;
+            }
+            set {
+                this.nameValueField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Label {
+            get {
+                return this.labelField;
+            }
+            set {
+                this.labelField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://esri.com/jmsmlConfig.xsd")]
     public partial class MetadataType {
         
         private string labelField;
@@ -597,13 +798,19 @@ namespace JointMilitarySymbologyLibrary {
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://esri.com/jmsmlConfig.xsd")]
     public partial class FieldType {
         
+        private FieldTypeSubtype[] subtypesField;
+        
         private string idField;
+        
+        private string nameField;
         
         private string aliasField;
         
         private FieldTypeEnum typeField;
         
         private string lengthField;
+        
+        private bool setsSubtypeField;
         
         private string defaultField;
         
@@ -615,7 +822,20 @@ namespace JointMilitarySymbologyLibrary {
         
         private string notesField;
         
-        private string valueField;
+        public FieldType() {
+            this.setsSubtypeField = false;
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("Subtype", IsNullable=false)]
+        public FieldTypeSubtype[] Subtypes {
+            get {
+                return this.subtypesField;
+            }
+            set {
+                this.subtypesField = value;
+            }
+        }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
@@ -625,6 +845,17 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string Name {
+            get {
+                return this.nameField;
+            }
+            set {
+                this.nameField = value;
             }
         }
         
@@ -658,6 +889,18 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.lengthField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute(false)]
+        public bool SetsSubtype {
+            get {
+                return this.setsSubtypeField;
+            }
+            set {
+                this.setsSubtypeField = value;
             }
         }
         
@@ -715,39 +958,54 @@ namespace JointMilitarySymbologyLibrary {
                 this.notesField = value;
             }
         }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlTextAttribute(DataType="token")]
-        public string Value {
-            get {
-                return this.valueField;
-            }
-            set {
-                this.valueField = value;
-            }
-        }
     }
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://esri.com/jmsmlConfig.xsd")]
-    public enum FieldTypeEnum {
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://esri.com/jmsmlConfig.xsd")]
+    public partial class FieldTypeSubtype {
+        
+        private long codeField;
+        
+        private string domainField;
+        
+        private string defaultField;
         
         /// <remarks/>
-        Date,
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public long Code {
+            get {
+                return this.codeField;
+            }
+            set {
+                this.codeField = value;
+            }
+        }
         
         /// <remarks/>
-        Double,
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string Domain {
+            get {
+                return this.domainField;
+            }
+            set {
+                this.domainField = value;
+            }
+        }
         
         /// <remarks/>
-        Integer,
-        
-        /// <remarks/>
-        SmallInteger,
-        
-        /// <remarks/>
-        String,
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string Default {
+            get {
+                return this.defaultField;
+            }
+            set {
+                this.defaultField = value;
+            }
+        }
     }
     
     /// <remarks/>
@@ -914,6 +1172,8 @@ namespace JointMilitarySymbologyLibrary {
         
         private MetadataType metadataField;
         
+        private JMSMLConfigETLConfigSchemaContainerDomains domainsField;
+        
         private JMSMLConfigETLConfigSchemaContainerSchemas[] schemasField;
         
         private string idField;
@@ -929,6 +1189,16 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.metadataField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public JMSMLConfigETLConfigSchemaContainerDomains Domains {
+            get {
+                return this.domainsField;
+            }
+            set {
+                this.domainsField = value;
             }
         }
         
@@ -973,6 +1243,41 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.labelAliasField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://esri.com/jmsmlConfig.xsd")]
+    public partial class JMSMLConfigETLConfigSchemaContainerDomains {
+        
+        private CodedDomainType[] codedDomainField;
+        
+        private RangeDomainType[] rangeDomainField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("CodedDomain")]
+        public CodedDomainType[] CodedDomain {
+            get {
+                return this.codedDomainField;
+            }
+            set {
+                this.codedDomainField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("RangeDomain")]
+        public RangeDomainType[] RangeDomain {
+            get {
+                return this.rangeDomainField;
+            }
+            set {
+                this.rangeDomainField = value;
             }
         }
     }
@@ -1073,6 +1378,8 @@ namespace JointMilitarySymbologyLibrary {
         
         private MetadataType metadataField;
         
+        private SubtypeType[] subtypesField;
+        
         private FieldType[] fieldsField;
         
         private string idField;
@@ -1100,6 +1407,17 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.metadataField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("Subtype", IsNullable=false)]
+        public SubtypeType[] Subtypes {
+            get {
+                return this.subtypesField;
+            }
+            set {
+                this.subtypesField = value;
             }
         }
         

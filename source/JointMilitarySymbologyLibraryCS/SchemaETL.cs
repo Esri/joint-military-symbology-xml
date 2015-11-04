@@ -10,9 +10,13 @@ namespace JointMilitarySymbologyLibrary
 {
     public class SchemaETL
     {
-        private const string _headers = "field_name,field_type,field_length,field_alias,nullability,field_domain,field_default,field_notes";
+        private const string _headers = "field_name,field_type,field_length,field_alias,nullability,field_domain,field_default,field_setsubtypes, field_subtype, field_notes";
         private const string _schemaHeaders = "schema_class,schema_name,schema_geometry,schema_alias,schema_label,schema_thumb,schema_tags,schema_summary,schema_description,schema_credits,schema_use,schema_east,schema_west,schema_north,schema_south,schema_maxscale,schema_minscale,schema_spatial_reference";
+        private const string _subtypeHeaders = "subtype_code,subtype_description";
+        private const string _rangeDomainHeaders = "Type,Min,Max";
+        private const string _codedDomainHeaders = "Name,Value";
         private const string _filePrefix = "Fields_";
+        private const string _schemaFilePrefix = "Subtypes_";
         private const string _schemaListFile = "Schemas.csv";
         private const string _testedFilePrefix = "tested_";
         private const string _testFolder = "..\\..\\test";
@@ -28,28 +32,53 @@ namespace JointMilitarySymbologyLibrary
         
         private JMSMLConfigETLConfig _etlConfig;
         
-
         public SchemaETL(JMSMLConfigETLConfig config)
         {
             _etlConfig = config;
         }
 
-        private void _writeHeaders(StreamWriter w)
+        private void _writeHeaders(StreamWriter w, string headers)
         {
-            w.WriteLine(_headers);
+            w.WriteLine(headers);
             w.Flush();
         }
 
         private void _writeField(StreamWriter w, FieldType field)
         {
-            string line = string.Format("{0}", field.Value + "," +
+            string line = string.Format("{0}", field.Name + "," +
                                                field.Type + "," +
                                                field.Length + "," +
                                                field.Alias + "," +
                                                (field.IsNullable ? _nullable : _nonnullable) + "," +
                                                field.Domain + "," +
                                                field.Default + "," +
+                                               field.SetsSubtype + "," +
+                                               "," +
                                                field.Notes);
+            w.WriteLine(line);
+            w.Flush();
+        }
+
+        private void _writeSubtypedField(StreamWriter w, FieldType field, FieldTypeSubtype subtype)
+        {
+            string line = string.Format("{0}", field.Name + "," +
+                                               field.Type + "," +
+                                               field.Length + "," +
+                                               field.Alias + "," +
+                                               (field.IsNullable ? _nullable : _nonnullable) + "," +
+                                               subtype.Domain + "," +
+                                               subtype.Default + "," +
+                                               field.SetsSubtype + "," +
+                                               subtype.Code + "," +
+                                               field.Notes);
+            w.WriteLine(line);
+            w.Flush();
+        }
+
+        private void _writeSubtype(StreamWriter w, SubtypeType subtype)
+        {
+            string line = string.Format("{0}", subtype.Code.ToString() + "," + subtype.Value);
+
             w.WriteLine(line);
             w.Flush();
         }
@@ -105,20 +134,90 @@ namespace JointMilitarySymbologyLibrary
             return fields;
         }
 
-        private void _exportFieldSchema(string path, JMSMLConfigETLConfigSchemaContainerSchemasSchema schema)
+        private void _exportFieldSchema(string path, JMSMLConfigETLConfigSchemaContainerSchemasSchema schema, bool isSubTyped)
         {
-            // Export a single schema to the given path.
+            // Export a single field schema to the given path.
 
             using (var w = new StreamWriter(path + "\\" + _filePrefix + schema.Label + ".csv"))
             {
-                _writeHeaders(w);
+                _writeHeaders(w, _headers);
 
                 FieldType[] fields = _buildFieldArray(schema);
 
                 foreach (FieldType field in fields)
                 {
-                    _writeField(w, field);
+                    if (isSubTyped)
+                    {
+                        // If this schema is subtyped we need to check to see if this is one of the fields that is subtyped and treat it special if it is.
+
+                        if (field.Subtypes != null)
+                        {
+                            foreach (FieldTypeSubtype subtype in field.Subtypes)
+                            {
+                                _writeSubtypedField(w, field, subtype);
+                            }
+                        }
+                        else
+                        {
+                            _writeField(w, field);
+                        }
+                    }
+                    else 
+                    {
+                        _writeField(w, field);
+                    }
                 }
+            }
+        }
+
+        private bool _exportSubtypeSchema(string path, JMSMLConfigETLConfigSchemaContainerSchemasSchema schema)
+        {
+            // Export a single subtype schema to the given path.
+
+            bool isSubtyped = false;
+
+            if (schema.Subtypes != null)
+            {
+                isSubtyped = true;
+
+                using(var w = new StreamWriter(path + "\\" + _schemaFilePrefix + schema.Label + ".csv"))
+                {
+                    _writeHeaders(w, _subtypeHeaders);
+
+                    foreach (SubtypeType subtype in schema.Subtypes)
+                    {
+                        _writeSubtype(w, subtype);
+                    }
+                }
+            }
+
+            return isSubtyped;
+        }
+
+        private void _exportSchemaCodedDomain(string path, CodedDomainType codedDomain)
+        {
+            using (var w = new StreamWriter(path + "\\" + "Coded_Domain_" + codedDomain.Label + ".csv", false))
+            {
+                w.WriteLine(_codedDomainHeaders);
+                w.Flush();
+
+                foreach (NameValueType nameValuePair in codedDomain.NameValue)
+                {
+                    w.WriteLine(nameValuePair.Name + "," + nameValuePair.Value);
+                    w.Flush();
+                }
+            }
+        }
+
+        private void _exportSchemaRangeDomain(string path, RangeDomainType rangeDomain)
+        {
+            using (var w = new StreamWriter(path + "\\" + "Range_Domain_" + rangeDomain.Label + ".csv", false))
+            {
+                w.WriteLine(_rangeDomainHeaders);
+                w.Flush();
+
+                w.WriteLine(rangeDomain.Type + "," + rangeDomain.MinValue + "," + rangeDomain.MaxValue);
+                w.Flush();
             }
         }
 
@@ -132,8 +231,7 @@ namespace JointMilitarySymbologyLibrary
             {
                 if (firstTime)
                 {
-                    w.WriteLine(_schemaHeaders);
-                    w.Flush();
+                    _writeHeaders(w, _schemaHeaders);
 
                     firstTime = false;
                 }
@@ -160,6 +258,26 @@ namespace JointMilitarySymbologyLibrary
                 w.Flush();
             }
 
+            // Export any domains found in the SchemaContainer
+
+            if (container.Domains != null)
+            {
+                // Use the coded domain output folder, so these end up in the right location
+
+                path = path + "..\\name_domains_values";
+                path = new FileInfo(path).FullName;
+
+                foreach (CodedDomainType codedDomain in container.Domains.CodedDomain)
+                {
+                    _exportSchemaCodedDomain(path, codedDomain);
+                }
+
+                foreach (RangeDomainType rangeDomain in container.Domains.RangeDomain)
+                {
+                    _exportSchemaRangeDomain(path, rangeDomain);
+                }
+            }
+
             return firstTime;
         }
 
@@ -173,8 +291,7 @@ namespace JointMilitarySymbologyLibrary
             {
                 if (firstTime)
                 {
-                    w.WriteLine(_schemaHeaders);
-                    w.Flush();
+                    _writeHeaders(w, _schemaHeaders);
 
                     firstTime = false;
                 }
@@ -214,8 +331,7 @@ namespace JointMilitarySymbologyLibrary
             {
                 if (firstTime)
                 {
-                    w.WriteLine(_schemaHeaders);
-                    w.Flush();
+                    _writeHeaders(w, _schemaHeaders);
 
                     firstTime = false;
                 }
@@ -385,7 +501,9 @@ namespace JointMilitarySymbologyLibrary
 
                 foreach (JMSMLConfigETLConfigSchemaContainerSchemasSchema schema in schemasInstance.Schema)
                 {
-                    _exportFieldSchema(forPath, schema);
+                    bool isSubtyped = _exportSubtypeSchema(forPath, schema);
+
+                    _exportFieldSchema(forPath, schema, isSubtyped);
 
                     // Add this schema to the master list of schemas
 
