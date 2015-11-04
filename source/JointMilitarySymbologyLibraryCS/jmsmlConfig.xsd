@@ -23,20 +23,65 @@
     </xs:restriction>
   </xs:simpleType>
 
-  <xs:complexType name="FieldType">
+  <xs:complexType name="NameValueType">
+    <xs:attribute name="Name" type="xs:token" use="required"/>
+    <xs:attribute name="Value" type="xs:token" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="RangeDomainType">
+    <xs:attribute name="Label" type="xs:token" use="required"/>
+    <xs:attribute name="Type" type="FieldTypeEnum" use="required"/>
+    <xs:attribute name="MinValue" type="xs:int" use="required"/>
+    <xs:attribute name="MaxValue" type="xs:int" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="CodedDomainType">
+    <xs:sequence>
+      <xs:element name="NameValue" type="NameValueType" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="Label" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="SubtypeType">
     <xs:simpleContent>
       <xs:extension base="xs:token">
         <xs:attribute name="ID" type="xs:ID" use="required"/>
-        <xs:attribute name="Alias" type="xs:token" use="required"/>
-        <xs:attribute name="Type" type="FieldTypeEnum" use="required"/>
-        <xs:attribute name="Length" type="xs:positiveInteger" use="required"/>
-        <xs:attribute name="Default" type="xs:token" use="optional"/>
-        <xs:attribute name="IsNullable" type="xs:boolean" use="required"/>
-        <xs:attribute name="Domain" type="xs:token" use="optional"/>
-        <xs:attribute name="Order" type="xs:integer" use="required"/>
-        <xs:attribute name="Notes" type="xs:string" use="optional"/>
+        <xs:attribute name="Code" type="xs:long" use="required"/>
       </xs:extension>
     </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:attributeGroup name="FieldAttributeGroup">
+    <xs:attribute name="ID" type="xs:ID" use="required"/>
+    <xs:attribute name="Name" type="xs:token" use="required"/>
+    <xs:attribute name="Alias" type="xs:token" use="required"/>
+    <xs:attribute name="Type" type="FieldTypeEnum" use="required"/>
+    <xs:attribute name="Length" type="xs:positiveInteger" use="required"/>
+    <xs:attribute name="SetsSubtype" type="xs:boolean" use="optional" default="false"/>
+    <xs:attribute name="Default" type="xs:token" use="optional"/>
+    <xs:attribute name="IsNullable" type="xs:boolean" use="required"/>
+    <xs:attribute name="Domain" type="xs:token" use="optional"/>
+    <xs:attribute name="Order" type="xs:integer" use="required"/>
+    <xs:attribute name="Notes" type="xs:string" use="optional"/>
+  </xs:attributeGroup>
+
+  <xs:complexType name="FieldType">
+    <xs:sequence>
+      <xs:element name="Subtypes" minOccurs="0" maxOccurs="1">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Subtype" minOccurs="1" maxOccurs="unbounded">
+              <xs:complexType>
+                <xs:attribute name="Code" type="xs:long" use="required"/>
+                <xs:attribute name="Domain" type="xs:token" use="optional"/>
+                <xs:attribute name="Default" type="xs:token" use="optional"/>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attributeGroup ref="FieldAttributeGroup"/>
   </xs:complexType>
 
   <xs:attributeGroup name="SchemaAttributeGroup">
@@ -185,6 +230,14 @@
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="Metadata" type="MetadataType" minOccurs="1" maxOccurs="1"/>
+                    <xs:element name="Domains" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CodedDomain" type="CodedDomainType" minOccurs="0" maxOccurs="unbounded"/>
+                          <xs:element name="RangeDomain" type="RangeDomainType" minOccurs="1" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
                     <xs:element name="Schemas" minOccurs="1" maxOccurs="unbounded">
                       <xs:complexType>
                         <xs:sequence>
@@ -193,6 +246,13 @@
                             <xs:complexType>
                               <xs:sequence>
                                 <xs:element name="Metadata" type="MetadataType" minOccurs="1" maxOccurs="1"/>
+                                <xs:element name="Subtypes" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Subtype" type="SubtypeType" minOccurs="1" maxOccurs="unbounded"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
                                 <xs:element name="Fields" minOccurs="1" maxOccurs="1">
                                   <xs:complexType>
                                     <xs:sequence>
