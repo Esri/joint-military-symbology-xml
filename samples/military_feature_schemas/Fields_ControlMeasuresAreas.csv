@@ -1,6 +1,6 @@
 field_name,field_type,field_length,field_alias,nullability,field_domain,field_default,field_notes
 identity,Integer,4,Standard Identity,NULLABLE,Identity,,
-symbolset,SmallInteger,2,Symbol Set,NULLABLE,,25,
+symbolset,SmallInteger,2,Symbol Set,NULLABLE,ControlMeasuresAreas,25,
 symbolentity,Integer,4,Area Entity,NULLABLE,Control_Measure_Area_Entities,,
 echelon,Integer,4,Echelon,NULLABLE,Echelons,,
 status,SmallInteger,2,Status,NULLABLE,Statuses,,
