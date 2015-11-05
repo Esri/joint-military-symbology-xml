@@ -39,7 +39,14 @@
     <Amplifier ID="AP" Label="Target Designator" Description="A six character text modifier used in Fire Support operations to uniquely designate targets in accordance with STANAG 2147, where characters 1 and 2 are alphabetic, and characters 3-6 are numeric: AANNNN" Type="TEXT" Length="6"/>
     <Amplifier ID="AQ" Label="Guarded Unit" Description="During ballistic missile defense, some tracks are designated as guarded by a particular unit." Type="TEXT" Length="2"/>
     <Amplifier ID="AR" Label="Special Designator" Description="Special track designators such as Non-Real Time (NRT) and Tactically Significant (SIG) tracks are denoted here." Type="TEXT" Length="3"/>
-    <Amplifier ID="AS" Label="Country" Description="Identifies the country of the organization being shown." Remarks="Uses the GENC Standard." Type="TEXT" Length="3"/>
+    <Amplifier ID="AS" Label="Country" Description="Identifies the country of the organization being shown." Remarks="Uses the GENC Standard." Type="TEXT" Length="3">
+      <Values ID="AS_VALUES" Label="Country Codes" LabelAlias="CountryCodes">
+        <Value ID="ARUBA" Label="Aruba" LabelAlias="ABW"/>
+        <Value ID="ASIA" Label="Asia" LabelAlias="ABB"/>
+        <Value ID="ANTIGUA_AND_BARBUDA" Label="Antigua and Barbuda" LabelAlias="ATG"/>
+        <!-- TODO - Finish adding the GENC codes here -->
+      </Values>
+    </Amplifier>
     <Amplifier ID="A" Label="Symbol Icon" Description="The innermost part of a symbol that represents a joint military object." Type="GRAPHIC"/>
     <Amplifier ID="B" Label="Echelon" Description="A graphic amplifier in a unit symbol that identifies command level." Type="GRAPHIC"/>
     <Amplifier ID="C" Label="Quantity" Description="A text amplifier in an equipment symbol that identifies the number of items present." Type="TEXT" Length="9"/>
