@@ -38,6 +38,7 @@ In providing this schema, files of instance data, and sample C# code to navigate
 * [NLog](#nlog)
 * [Svg](#svg)
 * [Documentation](#documentation)
+* [Versioning](#versioning)
 * [Resources](#resources)
 * [Issues](#issues)
 * [Contributing](#contributing)
@@ -123,6 +124,22 @@ More information about xs3p can be found [here](http://xml.fiforms.org/xs3p/).  
 
 These utilities also include a batch file and JS script that exercise MSXML6 as a command line utility.  More information can be found [here](https://code.google.com/p/xml-transformation-tool/).  With its license information found [here](http://opensource.org/licenses/BSD-3-Clause).
 
+## Versioning
+
+JMSML models an XML representation of the contents of MIL-STD-2525D.  As such, the versioning of JMSML releases will be closely coupled to various "versions" of 2525D.
+
+JMSML Version | 2525D Version | Notes
+---|---|---
+1.0.0 | 2525D-0.0 | 2525D, as published
+1.0.1 | 2525D-0.1 | 2525D + some Change 1 CPs
+1.0.2 | 2525D-0.2 | 2525D + additional Change 1 CPs
+1.1.0 | 2525D-1.0 | 2525D Change 1, as published
+etc. | etc. | etc.
+
+Each JMSML version will also include bug fixes and other enhancements or content improvements deemed necessary to better meet our goal of providing military symbology implementers with a quality resource.  
+
+Implemented change proposals (CPs) and other major enhancements will be identified/listed in each version's release notes.
+ 
 ## Resources
 
 * Learn more about Esri's [ArcGIS for Defense maps and apps](http://resources.arcgis.com/en/communities/defense-and-intelligence/).
@@ -134,6 +151,10 @@ __Projects using this Repo__
 |ArcGIS Pro/Runtime/Server|https://github.com/Esri/military-features-data||
 |Joint military symbology explorer|https://github.com/kjellmf/military-symbology-explorer|http://kjellmf.github.io/military-symbology-explorer|
 |milsymbol 2525D Implementation|https://github.com/spatialillusions/milsymbol|http://spatialillusions.com/milsymbol/docs/milsymbol-2525d.html|
+
+__Other Standards Referenced by this Repo__
+
+JMSML utilizes NGA's Geopolitical Entities, Names, and Codes ([GENC](https://nsgreg.nga.mil/genc/discovery)).   standard for the three-character country codes used in the base XML file.  Edition 3, Update 1, dated September 30, 2015, is the current version in use herein.
 
 ## Issues
 

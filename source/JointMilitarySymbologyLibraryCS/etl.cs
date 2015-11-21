@@ -114,6 +114,8 @@ namespace JointMilitarySymbologyLibrary
                     outPath = path + "_" + schema.Label + ".csv";
                     line = "Name,Value";
 
+                    bool deleteIt = false;
+
                     using (var w = new StreamWriter(outPath))
                     {
                         w.WriteLine(line);
@@ -121,21 +123,29 @@ namespace JointMilitarySymbologyLibrary
 
                         string[] ss = schema.SymbolSetIDs.Split(' ');
 
-                        foreach (string symSetID in ss)
+                        if (ss.Length > 1)
                         {
-                            line = "";
-
-                            SymbolSet symbolSet = _librarian.SymbolSet(symSetID);
-
-                            if (symbolSet != null)
+                            foreach (string symSetID in ss)
                             {
-                                line = symbolSet.Label + "," + Convert.ToString(symbolSet.SymbolSetCode.DigitOne) + Convert.ToString(symbolSet.SymbolSetCode.DigitTwo);
+                                line = "";
 
-                                w.WriteLine(line);
-                                w.Flush();
+                                SymbolSet symbolSet = _librarian.SymbolSet(symSetID);
+
+                                if (symbolSet != null)
+                                {
+                                    line = symbolSet.Label + "," + Convert.ToString(symbolSet.SymbolSetCode.DigitOne) + Convert.ToString(symbolSet.SymbolSetCode.DigitTwo);
+
+                                    w.WriteLine(line);
+                                    w.Flush();
+                                }
                             }
                         }
+                        else
+                            deleteIt = true;
                     }
+
+                    if (deleteIt)
+                        File.Delete(outPath);
                 }
             }
         }

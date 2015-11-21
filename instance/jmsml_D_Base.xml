@@ -41,10 +41,286 @@
     <Amplifier ID="AR" Label="Special Designator" Description="Special track designators such as Non-Real Time (NRT) and Tactically Significant (SIG) tracks are denoted here." Type="TEXT" Length="3"/>
     <Amplifier ID="AS" Label="Country" Description="Identifies the country of the organization being shown." Remarks="Uses the GENC Standard." Type="TEXT" Length="3">
       <Values ID="AS_VALUES" Label="Country Codes" LabelAlias="CountryCodes">
-        <Value ID="ARUBA" Label="Aruba" LabelAlias="ABW"/>
-        <Value ID="ASIA" Label="Asia" LabelAlias="ABB"/>
-        <Value ID="ANTIGUA_AND_BARBUDA" Label="Antigua and Barbuda" LabelAlias="ATG"/>
-        <!-- TODO - Finish adding the GENC codes here -->
+        <Value Name="AF" Label="Afghanistan" LabelAlias="AFG"/>
+        <Value Name="QZ" Label="Akrotiri" LabelAlias="XQZ"/>
+        <Value Name="AL" Label="Albania" LabelAlias="ALB"/>
+        <Value Name="DZ" Label="Algeria" LabelAlias="DZA"/>
+        <Value Name="AS" Label="American Samoa" LabelAlias="ASM"/>
+        <Value Name="AD" Label="Andorra" LabelAlias="AND"/>
+        <Value Name="AO" Label="Angola" LabelAlias="AGO"/>
+        <Value Name="AI" Label="Anguilla" LabelAlias="AIA"/>
+        <Value Name="AQ" Label="Antarctica" LabelAlias="ATA"/>
+        <Value Name="AG" Label="Antigua and Barbuda" LabelAlias="ATG"/>
+        <Value Name="AR" Label="Argentina" LabelAlias="ARG"/>
+        <Value Name="AM" Label="Armenia" LabelAlias="ARM"/>
+        <Value Name="AW" Label="Aruba" LabelAlias="ABW"/>
+        <Value Name="XA" Label="Ashmore and Cartier Islands" LabelAlias="XAC"/>
+        <Value Name="AU" Label="Australia" LabelAlias="AUS"/>
+        <Value Name="AT" Label="Austria" LabelAlias="AUT"/>
+        <Value Name="AZ" Label="Azerbaijan" LabelAlias="AZE"/>
+        <Value Name="BS" Label="Bahamas, The" LabelAlias="BHS"/>
+        <Value Name="BH" Label="Bahrain" LabelAlias="BHR"/>
+        <Value Name="XB" Label="Baker Island" LabelAlias="XBK"/>
+        <Value Name="BD" Label="Bangladesh" LabelAlias="BGD"/>
+        <Value Name="BB" Label="Barbados" LabelAlias="BRB"/>
+        <Value Name="QS" Label="Bassas Da India" LabelAlias="XBI"/>
+        <Value Name="BY" Label="Belarus" LabelAlias="BLR"/>
+        <Value Name="BE" Label="Belgium" LabelAlias="BEL"/>
+        <Value Name="BZ" Label="Belize" LabelAlias="BLZ"/>
+        <Value Name="BJ" Label="Benin" LabelAlias="BEN"/>
+        <Value Name="BM" Label="Bermuda" LabelAlias="BMU"/>
+        <Value Name="BT" Label="Bhutan" LabelAlias="BTN"/>
+        <Value Name="BO" Label="Bolivia" LabelAlias="BOL"/>
+        <Value Name="BQ" Label="Bonaire, Sint Eustatius, and Saba" LabelAlias="BES"/>
+        <Value Name="BA" Label="Bosnia and Herzegovina" LabelAlias="BIH"/>
+        <Value Name="BW" Label="Botswana" LabelAlias="BWA"/>
+        <Value Name="BV" Label="Bouvet Island" LabelAlias="BVT"/>
+        <Value Name="BR" Label="Brazil" LabelAlias="BRA"/>
+        <Value Name="IO" Label="British Indian Ocean Territory" LabelAlias="IOT"/>
+        <Value Name="BN" Label="Brunei" LabelAlias="BRN"/>
+        <Value Name="BG" Label="Bulgaria" LabelAlias="BGR"/>
+        <Value Name="BF" Label="Burkina Faso" LabelAlias="BFA"/>
+        <Value Name="MM" Label="Burma" LabelAlias="MMR"/>
+        <Value Name="BI" Label="Burundi" LabelAlias="BDI"/>
+        <Value Name="CV" Label="Cabo Verde" LabelAlias="CPV"/>
+        <Value Name="KH" Label="Cambodia" LabelAlias="KHM"/>
+        <Value Name="CM" Label="Cameroon" LabelAlias="CMR"/>
+        <Value Name="CA" Label="Canada" LabelAlias="CAN"/>
+        <Value Name="KY" Label="Cayman Islands" LabelAlias="CYM"/>
+        <Value Name="CF" Label="Central African Republic" LabelAlias="CAF"/>
+        <Value Name="TD" Label="Chad" LabelAlias="TCD"/>
+        <Value Name="CL" Label="Chile" LabelAlias="CHL"/>
+        <Value Name="CN" Label="China" LabelAlias="CHN"/>
+        <Value Name="CX" Label="Christmas Island" LabelAlias="CXR"/>
+        <Value Name="CP" Label="Clipperton Island" LabelAlias="CPT"/>
+        <Value Name="CC" Label="Cocos (Keeling) Islands" LabelAlias="CCK"/>
+        <Value Name="CO" Label="Colombia" LabelAlias="COL"/>
+        <Value Name="KM" Label="Comoros" LabelAlias="COM"/>
+        <Value Name="CG" Label="Congo (Brazzaville)" LabelAlias="COG"/>
+        <Value Name="CD" Label="Congo (Kinshasa)" LabelAlias="COD"/>
+        <Value Name="CK" Label="Cook Islands" LabelAlias="COK"/>
+        <Value Name="XC" Label="Coral Sea Islands" LabelAlias="XCS"/>
+        <Value Name="CR" Label="Costa Rica" LabelAlias="CRI"/>
+        <Value Name="CI" Label="Côte d’Ivoire" LabelAlias="CIV"/>
+        <Value Name="HR" Label="Croatia" LabelAlias="HRV"/>
+        <Value Name="CU" Label="Cuba" LabelAlias="CUB"/>
+        <Value Name="CW" Label="Curaçao" LabelAlias="CUW"/>
+        <Value Name="CY" Label="Cyprus" LabelAlias="CYP"/>
+        <Value Name="CZ" Label="Czech Republic" LabelAlias="CZE"/>
+        <Value Name="DK" Label="Denmark" LabelAlias="DNK"/>
+        <Value Name="XD" Label="Dhekelia" LabelAlias="XXD"/>
+        <Value Name="DG" Label="Diego Garcia" LabelAlias="DGA"/>
+        <Value Name="DJ" Label="Djibouti" LabelAlias="DJI"/>
+        <Value Name="DM" Label="Dominica" LabelAlias="DMA"/>
+        <Value Name="DO" Label="Dominican Republic" LabelAlias="DOM"/>
+        <Value Name="EC" Label="Ecuador" LabelAlias="ECU"/>
+        <Value Name="EG" Label="Egypt" LabelAlias="EGY"/>
+        <Value Name="SV" Label="El Salvador" LabelAlias="SLV"/>
+        <Value Name="X1" Label="Entity 1" LabelAlias="XAZ"/>
+        <Value Name="X2" Label="Entity 2" LabelAlias="XCR"/>
+        <Value Name="X3" Label="Entity 3" LabelAlias="XCY"/>
+        <Value Name="X4" Label="Entity 4" LabelAlias="XKM"/>
+        <Value Name="X5" Label="Entity 5" LabelAlias="XKN"/>
+        <Value Name="A3" Label="Entity 6" LabelAlias="AX3"/>
+        <Value Name="GQ" Label="Equatorial Guinea" LabelAlias="GNQ"/>
+        <Value Name="ER" Label="Eritrea" LabelAlias="ERI"/>
+        <Value Name="EE" Label="Estonia" LabelAlias="EST"/>
+        <Value Name="ET" Label="Ethiopia" LabelAlias="ETH"/>
+        <Value Name="XE" Label="Europa Island" LabelAlias="XEU"/>
+        <Value Name="FK" Label="Falkland Islands (Islas Malvinas)" LabelAlias="FLK"/>
+        <Value Name="FO" Label="Faroe Islands" LabelAlias="FRO"/>
+        <Value Name="FJ" Label="Fiji" LabelAlias="FJI"/>
+        <Value Name="FI" Label="Finland" LabelAlias="FIN"/>
+        <Value Name="FR" Label="France" LabelAlias="FRA"/>
+        <Value Name="GF" Label="French Guiana" LabelAlias="GUF"/>
+        <Value Name="PF" Label="French Polynesia" LabelAlias="PYF"/>
+        <Value Name="TF" Label="French Southern and Antarctic Lands" LabelAlias="ATF"/>
+        <Value Name="GA" Label="Gabon" LabelAlias="GAB"/>
+        <Value Name="GM" Label="Gambia, The" LabelAlias="GMB"/>
+        <Value Name="XG" Label="Gaza Strip" LabelAlias="XGZ"/>
+        <Value Name="GE" Label="Georgia" LabelAlias="GEO"/>
+        <Value Name="DE" Label="Germany" LabelAlias="DEU"/>
+        <Value Name="GH" Label="Ghana" LabelAlias="GHA"/>
+        <Value Name="GI" Label="Gibraltar" LabelAlias="GIB"/>
+        <Value Name="QX" Label="Glorioso Islands" LabelAlias="XGL"/>
+        <Value Name="GR" Label="Greece" LabelAlias="GRC"/>
+        <Value Name="GL" Label="Greenland" LabelAlias="GRL"/>
+        <Value Name="GD" Label="Grenada" LabelAlias="GRD"/>
+        <Value Name="GP" Label="Guadeloupe" LabelAlias="GLP"/>
+        <Value Name="GU" Label="Guam" LabelAlias="GUM"/>
+        <Value Name="A2" Label="Guantanamo Bay Naval Base" LabelAlias="AX2"/>
+        <Value Name="GT" Label="Guatemala" LabelAlias="GTM"/>
+        <Value Name="GG" Label="Guernsey" LabelAlias="GGY"/>
+        <Value Name="GN" Label="Guinea" LabelAlias="GIN"/>
+        <Value Name="GW" Label="Guinea-Bissau" LabelAlias="GNB"/>
+        <Value Name="GY" Label="Guyana" LabelAlias="GUY"/>
+        <Value Name="HT" Label="Haiti" LabelAlias="HTI"/>
+        <Value Name="HM" Label="Heard Island and Mcdonald Islands" LabelAlias="HMD"/>
+        <Value Name="HN" Label="Honduras" LabelAlias="HND"/>
+        <Value Name="HK" Label="Hong Kong" LabelAlias="HKG"/>
+        <Value Name="XH" Label="Howland Island" LabelAlias="XHO"/>
+        <Value Name="HU" Label="Hungary" LabelAlias="HUN"/>
+        <Value Name="IS" Label="Iceland" LabelAlias="ISL"/>
+        <Value Name="IN" Label="India" LabelAlias="IND"/>
+        <Value Name="ID" Label="Indonesia" LabelAlias="IDN"/>
+        <Value Name="IR" Label="Iran" LabelAlias="IRN"/>
+        <Value Name="IQ" Label="Iraq" LabelAlias="IRQ"/>
+        <Value Name="IE" Label="Ireland" LabelAlias="IRL"/>
+        <Value Name="IM" Label="Isle Of Man" LabelAlias="IMN"/>
+        <Value Name="IL" Label="Israel" LabelAlias="ISR"/>
+        <Value Name="IT" Label="Italy" LabelAlias="ITA"/>
+        <Value Name="JM" Label="Jamaica" LabelAlias="JAM"/>
+        <Value Name="XJ" Label="Jan Mayen" LabelAlias="XJM"/>
+        <Value Name="JP" Label="Japan" LabelAlias="JPN"/>
+        <Value Name="XQ" Label="Jarvis Island" LabelAlias="XJV"/>
+        <Value Name="JE" Label="Jersey" LabelAlias="JEY"/>
+        <Value Name="XU" Label="Johnston Atoll" LabelAlias="XJA"/>
+        <Value Name="JO" Label="Jordan" LabelAlias="JOR"/>
+        <Value Name="QU" Label="Juan De Nova Island" LabelAlias="XJN"/>
+        <Value Name="KZ" Label="Kazakhstan" LabelAlias="KAZ"/>
+        <Value Name="KE" Label="Kenya" LabelAlias="KEN"/>
+        <Value Name="XM" Label="Kingman Reef" LabelAlias="XKR"/>
+        <Value Name="KI" Label="Kiribati" LabelAlias="KIR"/>
+        <Value Name="KP" Label="Korea, North" LabelAlias="PRK"/>
+        <Value Name="KR" Label="Korea, South" LabelAlias="KOR"/>
+        <Value Name="XK" Label="Kosovo" LabelAlias="XKS"/>
+        <Value Name="KW" Label="Kuwait" LabelAlias="KWT"/>
+        <Value Name="KG" Label="Kyrgyzstan" LabelAlias="KGZ"/>
+        <Value Name="LA" Label="Laos" LabelAlias="LAO"/>
+        <Value Name="LV" Label="Latvia" LabelAlias="LVA"/>
+        <Value Name="LB" Label="Lebanon" LabelAlias="LBN"/>
+        <Value Name="LS" Label="Lesotho" LabelAlias="LSO"/>
+        <Value Name="LR" Label="Liberia" LabelAlias="LBR"/>
+        <Value Name="LY" Label="Libya" LabelAlias="LBY"/>
+        <Value Name="LI" Label="Liechtenstein" LabelAlias="LIE"/>
+        <Value Name="LT" Label="Lithuania" LabelAlias="LTU"/>
+        <Value Name="LU" Label="Luxembourg" LabelAlias="LUX"/>
+        <Value Name="MO" Label="Macau" LabelAlias="MAC"/>
+        <Value Name="MK" Label="Macedonia" LabelAlias="MKD"/>
+        <Value Name="MG" Label="Madagascar" LabelAlias="MDG"/>
+        <Value Name="MW" Label="Malawi" LabelAlias="MWI"/>
+        <Value Name="MY" Label="Malaysia" LabelAlias="MYS"/>
+        <Value Name="MV" Label="Maldives" LabelAlias="MDV"/>
+        <Value Name="ML" Label="Mali" LabelAlias="MLI"/>
+        <Value Name="MT" Label="Malta" LabelAlias="MLT"/>
+        <Value Name="MH" Label="Marshall Islands" LabelAlias="MHL"/>
+        <Value Name="MQ" Label="Martinique" LabelAlias="MTQ"/>
+        <Value Name="MR" Label="Mauritania" LabelAlias="MRT"/>
+        <Value Name="MU" Label="Mauritius" LabelAlias="MUS"/>
+        <Value Name="YT" Label="Mayotte" LabelAlias="MYT"/>
+        <Value Name="MX" Label="Mexico" LabelAlias="MEX"/>
+        <Value Name="FM" Label="Micronesia, Federated States Of" LabelAlias="FSM"/>
+        <Value Name="QM" Label="Midway Islands" LabelAlias="XMW"/>
+        <Value Name="MD" Label="Moldova" LabelAlias="MDA"/>
+        <Value Name="MC" Label="Monaco" LabelAlias="MCO"/>
+        <Value Name="MN" Label="Mongolia" LabelAlias="MNG"/>
+        <Value Name="ME" Label="Montenegro" LabelAlias="MNE"/>
+        <Value Name="MS" Label="Montserrat" LabelAlias="MSR"/>
+        <Value Name="MA" Label="Morocco" LabelAlias="MAR"/>
+        <Value Name="MZ" Label="Mozambique" LabelAlias="MOZ"/>
+        <Value Name="NA" Label="Namibia" LabelAlias="NAM"/>
+        <Value Name="NR" Label="Nauru" LabelAlias="NRU"/>
+        <Value Name="XV" Label="Navassa Island" LabelAlias="XNV"/>
+        <Value Name="NP" Label="Nepal" LabelAlias="NPL"/>
+        <Value Name="NL" Label="Netherlands" LabelAlias="NLD"/>
+        <Value Name="NC" Label="New Caledonia" LabelAlias="NCL"/>
+        <Value Name="NZ" Label="New Zealand" LabelAlias="NZL"/>
+        <Value Name="NI" Label="Nicaragua" LabelAlias="NIC"/>
+        <Value Name="NE" Label="Niger" LabelAlias="NER"/>
+        <Value Name="NG" Label="Nigeria" LabelAlias="NGA"/>
+        <Value Name="NU" Label="Niue" LabelAlias="NIU"/>
+        <Value Name="NF" Label="Norfolk Island" LabelAlias="NFK"/>
+        <Value Name="MP" Label="Northern Mariana Islands" LabelAlias="MNP"/>
+        <Value Name="NO" Label="Norway" LabelAlias="NOR"/>
+        <Value Name="OM" Label="Oman" LabelAlias="OMN"/>
+        <Value Name="PK" Label="Pakistan" LabelAlias="PAK"/>
+        <Value Name="PW" Label="Palau" LabelAlias="PLW"/>
+        <Value Name="XL" Label="Palmyra Atoll" LabelAlias="XPL"/>
+        <Value Name="PA" Label="Panama" LabelAlias="PAN"/>
+        <Value Name="PG" Label="Papua New Guinea" LabelAlias="PNG"/>
+        <Value Name="XP" Label="Paracel Islands" LabelAlias="XPR"/>
+        <Value Name="PY" Label="Paraguay" LabelAlias="PRY"/>
+        <Value Name="PE" Label="Peru" LabelAlias="PER"/>
+        <Value Name="PH" Label="Philippines" LabelAlias="PHL"/>
+        <Value Name="PN" Label="Pitcairn Islands" LabelAlias="PCN"/>
+        <Value Name="PL" Label="Poland" LabelAlias="POL"/>
+        <Value Name="PT" Label="Portugal" LabelAlias="PRT"/>
+        <Value Name="PR" Label="Puerto Rico" LabelAlias="PRI"/>
+        <Value Name="QA" Label="Qatar" LabelAlias="QAT"/>
+        <Value Name="RE" Label="Reunion" LabelAlias="REU"/>
+        <Value Name="RO" Label="Romania" LabelAlias="ROU"/>
+        <Value Name="RU" Label="Russia" LabelAlias="RUS"/>
+        <Value Name="RW" Label="Rwanda" LabelAlias="RWA"/>
+        <Value Name="BL" Label="Saint Barthelemy" LabelAlias="BLM"/>
+        <Value Name="SH" Label="Saint Helena, Ascension, and Tristan Da Cunha" LabelAlias="SHN"/>
+        <Value Name="KN" Label="Saint Kitts and Nevis" LabelAlias="KNA"/>
+        <Value Name="LC" Label="Saint Lucia" LabelAlias="LCA"/>
+        <Value Name="MF" Label="Saint Martin" LabelAlias="MAF"/>
+        <Value Name="PM" Label="Saint Pierre and Miquelon" LabelAlias="SPM"/>
+        <Value Name="VC" Label="Saint Vincent and The Grenadines" LabelAlias="VCT"/>
+        <Value Name="WS" Label="Samoa" LabelAlias="WSM"/>
+        <Value Name="SM" Label="San Marino" LabelAlias="SMR"/>
+        <Value Name="ST" Label="Sao Tome and Principe" LabelAlias="STP"/>
+        <Value Name="SA" Label="Saudi Arabia" LabelAlias="SAU"/>
+        <Value Name="SN" Label="Senegal" LabelAlias="SEN"/>
+        <Value Name="RS" Label="Serbia" LabelAlias="SRB"/>
+        <Value Name="SC" Label="Seychelles" LabelAlias="SYC"/>
+        <Value Name="SL" Label="Sierra Leone" LabelAlias="SLE"/>
+        <Value Name="SG" Label="Singapore" LabelAlias="SGP"/>
+        <Value Name="SX" Label="Sint Maarten" LabelAlias="SXM"/>
+        <Value Name="SK" Label="Slovakia" LabelAlias="SVK"/>
+        <Value Name="SI" Label="Slovenia" LabelAlias="SVN"/>
+        <Value Name="SB" Label="Solomon Islands" LabelAlias="SLB"/>
+        <Value Name="SO" Label="Somalia" LabelAlias="SOM"/>
+        <Value Name="ZA" Label="South Africa" LabelAlias="ZAF"/>
+        <Value Name="GS" Label="South Georgia and South Sandwich Islands" LabelAlias="SGS"/>
+        <Value Name="SS" Label="South Sudan" LabelAlias="SSD"/>
+        <Value Name="ES" Label="Spain" LabelAlias="ESP"/>
+        <Value Name="XS" Label="Spratly Islands" LabelAlias="XSP"/>
+        <Value Name="LK" Label="Sri Lanka" LabelAlias="LKA"/>
+        <Value Name="SD" Label="Sudan" LabelAlias="SDN"/>
+        <Value Name="SR" Label="Suriname" LabelAlias="SUR"/>
+        <Value Name="XR" Label="Svalbard" LabelAlias="XSV"/>
+        <Value Name="SZ" Label="Swaziland" LabelAlias="SWZ"/>
+        <Value Name="SE" Label="Sweden" LabelAlias="SWE"/>
+        <Value Name="CH" Label="Switzerland" LabelAlias="CHE"/>
+        <Value Name="SY" Label="Syria" LabelAlias="SYR"/>
+        <Value Name="TW" Label="Taiwan" LabelAlias="TWN"/>
+        <Value Name="TJ" Label="Tajikistan" LabelAlias="TJK"/>
+        <Value Name="TZ" Label="Tanzania" LabelAlias="TZA"/>
+        <Value Name="TH" Label="Thailand" LabelAlias="THA"/>
+        <Value Name="TL" Label="Timor-Leste" LabelAlias="TLS"/>
+        <Value Name="TG" Label="Togo" LabelAlias="TGO"/>
+        <Value Name="TK" Label="Tokelau" LabelAlias="TKL"/>
+        <Value Name="TO" Label="Tonga" LabelAlias="TON"/>
+        <Value Name="TT" Label="Trinidad and Tobago" LabelAlias="TTO"/>
+        <Value Name="XT" Label="Tromelin Island" LabelAlias="XTR"/>
+        <Value Name="TN" Label="Tunisia" LabelAlias="TUN"/>
+        <Value Name="TR" Label="Turkey" LabelAlias="TUR"/>
+        <Value Name="TM" Label="Turkmenistan" LabelAlias="TKM"/>
+        <Value Name="TC" Label="Turks and Caicos Islands" LabelAlias="TCA"/>
+        <Value Name="TV" Label="Tuvalu" LabelAlias="TUV"/>
+        <Value Name="UG" Label="Uganda" LabelAlias="UGA"/>
+        <Value Name="UA" Label="Ukraine" LabelAlias="UKR"/>
+        <Value Name="AE" Label="United Arab Emirates" LabelAlias="ARE"/>
+        <Value Name="GB" Label="United Kingdom" LabelAlias="GBR"/>
+        <Value Name="US" Label="United States" LabelAlias="USA"/>
+        <Value Name="A1" Label="Unknown" LabelAlias="AX1"/>
+        <Value Name="UY" Label="Uruguay" LabelAlias="URY"/>
+        <Value Name="UZ" Label="Uzbekistan" LabelAlias="UZB"/>
+        <Value Name="VU" Label="Vanuatu" LabelAlias="VUT"/>
+        <Value Name="VA" Label="Vatican City" LabelAlias="VAT"/>
+        <Value Name="VE" Label="Venezuela" LabelAlias="VEN"/>
+        <Value Name="VN" Label="Vietnam" LabelAlias="VNM"/>
+        <Value Name="VG" Label="Virgin Islands, British" LabelAlias="VGB"/>
+        <Value Name="VI" Label="Virgin Islands, U.S." LabelAlias="VIR"/>
+        <Value Name="QW" Label="Wake Island" LabelAlias="XWK"/>
+        <Value Name="WF" Label="Wallis and Futuna" LabelAlias="WLF"/>
+        <Value Name="XW" Label="West Bank" LabelAlias="XWB"/>
+        <Value Name="EH" Label="Western Sahara" LabelAlias="ESH"/>
+        <Value Name="YE" Label="Yemen" LabelAlias="YEM"/>
+        <Value Name="ZM" Label="Zambia" LabelAlias="ZMB"/>
+        <Value Name="ZW" Label="Zimbabwe" LabelAlias="ZWE"/>
       </Values>
     </Amplifier>
     <Amplifier ID="A" Label="Symbol Icon" Description="The innermost part of a symbol that represents a joint military object." Type="GRAPHIC"/>
@@ -54,55 +330,51 @@
     <Amplifier ID="E" Label="Frame Shape Modifier" Description="A graphic modifier that displays affiliation, battle dimension, or exercise amplifying descriptors of an object." Type="GRAPHIC"/>
     <Amplifier ID="F" Label="Reinforced or Reduced" Description="A text amplifier in a unit symbol that dispays (+) for reinforced, (-) for reduced, (±) for reinforced and reduced." Type="TEXT" Length="3">
       <Values ID="F_VALUES" Label="Reinforced or Reduced Values" LabelAlias="Reinforced">
-        <Value ID="REINFORCED" Label="Reinforced" LabelAlias="+"/>
-        <Value ID="REDUCED" Label="Reduced" LabelAlias="-"/>
-        <Value ID="REINFORCED_REDUCED" Label="Reinforced and Reduced" LabelAlias="+/-"/>
+        <Value Name="REINFORCED" Label="Reinforced" LabelAlias="+"/>
+        <Value Name="REDUCED" Label="Reduced" LabelAlias="-"/>
+        <Value Name="REINFORCED_REDUCED" Label="Reinforced and Reduced" LabelAlias="+/-"/>
       </Values>
     </Amplifier>
     <Amplifier ID="G" Label="Staff Comments" Description="A text amplifier for units, equipment, and installations." Remarks="Content is implementation specific." Type="TEXT" Length="20"/>
     <Amplifier ID="H" Label="Additional Information" Description="A text amplifier for units, equipment, and installations." Remarks="Content is implementation specific." Type="TEXT" Length="20"/>
     <Amplifier ID="J" Label="Evaluation Rating" Description="A text amplifier for units, equipment and installations that consists of a one-letter reliability rating and a one-number credibility rating." Remarks="Reliability: A-F and Credibility: 1-6" Type="TEXT" Length="2">
       <Values ID="RELIABILITY_RATINGS" Label="Reliability Rating" LabelAlias="Reliability">
-        <Value ID="COMPLETELY" Label="Completely Reliable" LabelAlias="A"/>
-        <Value ID="USUALLY" Label="Usually Reliable" LabelAlias="B"/>
-        <Value ID="FAIRLY" Label="Fairly Reliable" LabelAlias="C"/>
-        <Value ID="NOT_USUALLY" Label="Not Usually Reliable" LabelAlias="D"/>
-        <Value ID="UNRELIABLE" Label="Unreliable" LabelAlias="E"/>
-        <Value ID="REL_CANNOT_BE_JUDGED" Label="Reliability Cannot Be Judged" LabelAlias="F"/>
+        <Value Name="COMPLETELY" Label="Completely Reliable" LabelAlias="A"/>
+        <Value Name="USUALLY" Label="Usually Reliable" LabelAlias="B"/>
+        <Value Name="FAIRLY" Label="Fairly Reliable" LabelAlias="C"/>
+        <Value Name="NOT_USUALLY" Label="Not Usually Reliable" LabelAlias="D"/>
+        <Value Name="UNRELIABLE" Label="Unreliable" LabelAlias="E"/>
+        <Value Name="REL_CANNOT_BE_JUDGED" Label="Reliability Cannot Be Judged" LabelAlias="F"/>
       </Values>
       <Values ID="CREDIBILITY_RATINGS" Label="Credibility Rating" LabelAlias="Credibility">
-        <Value ID="CONFIRMED" Label="Confirmed by Other Sources" LabelAlias="1"/>
-        <Value ID="PROBABLY" Label="Probably True" LabelAlias="2"/>
-        <Value ID="POSSIBLY" Label="Possibly True" LabelAlias="3"/>
-        <Value ID="DOUBTFULLY" Label="Doubtfully True" LabelAlias="4"/>
-        <Value ID="IMPROBABLE" Label="Improbable" LabelAlias="5"/>
-        <Value ID="CRED_CANNOT_BE_JUDGED" Label="Truth Cannot Be Judged" LabelAlias="6"/>
+        <Value Name="CONFIRMED" Label="Confirmed by Other Sources" LabelAlias="1"/>
+        <Value Name="PROBABLY" Label="Probably True" LabelAlias="2"/>
+        <Value Name="POSSIBLY" Label="Possibly True" LabelAlias="3"/>
+        <Value Name="DOUBTFULLY" Label="Doubtfully True" LabelAlias="4"/>
+        <Value Name="IMPROBABLE" Label="Improbable" LabelAlias="5"/>
+        <Value Name="CRED_CANNOT_BE_JUDGED" Label="Truth Cannot Be Judged" LabelAlias="6"/>
       </Values>
     </Amplifier>
     <Amplifier ID="K" Label="Combat Effectiveness" Description="A text amplifier for units and installations that indicates unit effectiveness or installation capability." Type="TEXT" Length="5">
       <Values ID="K_VALUES" Label="Combat Effectiveness Values" LabelAlias="CombatEffectiveness">
-        <Value ID="FULLY_OPERATIONAL" Label="Fully Operational" LabelAlias="FO"/>
-        <Value ID="SUBSTANTIALLY_OPERATIONAL" Label="Substantially Operational" LabelAlias="SO"/>
-        <Value ID="MARGINALLY_OPERATIONAL" Label="Marginally Operational" LabelAlias="MO"/>
-        <Value ID="NOT_OPERATIONAL" Label="Not Operational" LabelAlias="NO"/>
-        <Value ID="UNKNOWN_EFFECTIVENESS" Label="Unknown" LabelAlias="UNK"/>
+        <Value Name="FULLY_OPERATIONAL" Label="Fully Operational" LabelAlias="FO"/>
+        <Value Name="SUBSTANTIALLY_OPERATIONAL" Label="Substantially Operational" LabelAlias="SO"/>
+        <Value Name="MARGINALLY_OPERATIONAL" Label="Marginally Operational" LabelAlias="MO"/>
+        <Value Name="NOT_OPERATIONAL" Label="Not Operational" LabelAlias="NO"/>
+        <Value Name="UNKNOWN_EFFECTIVENESS" Label="Unknown" LabelAlias="UNK"/>
       </Values>
     </Amplifier>
     <Amplifier ID="L" Label="Signature Equipment" Description="A text amplifier for hostile equipment, '!' indicates detectable electronic signatures." Type="TEXT" Length="1"/>
     <Amplifier ID="M" Label="Higher Formation" Description="A text amplifier for units that indicates number or title of higher echelon command (corps are designated by Roman numerals)." Type="TEXT" Length="21"/>
-    <Amplifier ID="N" Label="Hostile (Enemy)" Description="A text amplifier for equipment, letters 'ENY' denote hostile symbols." Type="TEXT" Length="3">
-      <Values ID="N_VALUES" Label="Hostile (Enemy) Values" LabelAlias="HostileOrEnemy">
-        <Value ID="N_VALUE" Label="Hostile (Enemy)" LabelAlias="ENY"/>
-      </Values>
-    </Amplifier>
+    <Amplifier ID="N" Label="Hostile (Enemy)" Description="A text amplifier for equipment, letters 'ENY' denote hostile symbols." Type="TEXT" Length="3"/>
     <Amplifier ID="P" Label="IFF/SIF/AIS" Description="A text amplifier displaying IFF/SIF/AIS identification modes and codes." Type="TEXT" Length="15"/>
     <Amplifier ID="Q" Label="Direction of Movement Indicator" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." Type="GRAPHIC"/>
     <Amplifier ID="R" Label="Mobility Indicator" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." Type="GRAPHIC"/>
     <Amplifier ID="R2" Label="SIGINT Mobility Indicator" Description="M=Mobile, S=Static, or U=Uncertain" Type="TEXT" Length="1">
       <Values ID="R2_VALUES" Label="SIGINT Mobility Indicator Values" LabelAlias="SIGINTMobility">
-        <Value ID="MOBILE_INDICATOR" Label="Mobile" LabelAlias="M"/>
-        <Value ID="STATIC_INDICATOR" Label="Static" LabelAlias="S"/>
-        <Value ID="UNCERTAIN_INDICATOR" Label="Uncertain" LabelAlias="U"/>
+        <Value Name="MOBILE_INDICATOR" Label="Mobile" LabelAlias="M"/>
+        <Value Name="STATIC_INDICATOR" Label="Static" LabelAlias="S"/>
+        <Value Name="UNCERTAIN_INDICATOR" Label="Uncertain" LabelAlias="U"/>
       </Values>
     </Amplifier>
     <Amplifier ID="S" Label="Headquarters Staff Indicator/Offset Location Indicator" Description="Headquarters staff indicator: A graphic amplifier for units, equipment and installations that identifies a unit as a headquarters." Remarks="Offset location indicator: A graphic amplifier for units, equipment and installations used when placing an object away from its actual location." Type="GRAPHIC"/>
@@ -113,10 +385,10 @@
     <Amplifier ID="Y" Label="Location" Description="A text amplifier for units, equipment, and installations that displays a symbol's location in degrees, minutes, and decimal minutes." Remarks="Alternatively, in MGRS or other applicable display format." Type="TEXT" Length="19" Note="To support homeland security and homeland defense, the federal Geographic Data Committee (FGDC) US National Grid (USNG) standard when referenced to North American Datum 1983 (NAD83) is operationally equivalent to and is an accepted substitute for MGRS coordinates referenced to WGS 84. Note that at mapping scales of 1:5000 and smaller, NAD83 and WGS 84 are considered equivalent."/>
     <Amplifier ID="Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD 6040." Type="TEXT" Length="8">
       <Values ID="SPEED_VALUES" Label="Units of Speed" LabelAlias="SpeedUnits">
-        <Value ID="KPH" Label="Kilometers Per Hour" LabelAlias="KPH"/>
-        <Value ID="MPS" Label="Meters Per Second" LabelAlias="MPS"/>
-        <Value ID="KTS" Label="Nautical Miles Per Hour (Knots)" LabelAlias="KTS"/>
-        <Value ID="MPH" Label="Statute Miles Per Hour" LabelAlias="MPH"/>
+        <Value Name="KPH" Label="Kilometers Per Hour" LabelAlias="KPH"/>
+        <Value Name="MPS" Label="Meters Per Second" LabelAlias="MPS"/>
+        <Value Name="KTS" Label="Nautical Miles Per Hour (Knots)" LabelAlias="KTS"/>
+        <Value Name="MPH" Label="Statute Miles Per Hour" LabelAlias="MPH"/>
       </Values>
     </Amplifier>
   </Amplifiers>

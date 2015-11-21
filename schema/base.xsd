@@ -71,7 +71,7 @@
                         <xs:sequence>
                           <xs:element name="Value" minOccurs="1" maxOccurs="unbounded">
                             <xs:complexType>
-                              <xs:attributeGroup ref="IdentifierAttributeGroup"/>
+                              <xs:attributeGroup ref="NameAttributeGroup"/>
                             </xs:complexType>
                           </xs:element>
                         </xs:sequence>
