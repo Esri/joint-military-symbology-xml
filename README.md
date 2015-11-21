@@ -126,15 +126,27 @@ These utilities also include a batch file and JS script that exercise MSXML6 as 
 
 ## Versioning
 
-JMSML models an XML representation of the contents of MIL-STD-2525D.  As such, the versioning of JMSML releases will be closely coupled to various "versions" of 2525D.
+JMSML models an XML representation of the contents of MIL-STD-2525D.  One of the stated goals for JMSML is to facilitate the delivery of approved, and subsequently implemented, Change Proposals (CPs) to fielded systems.
 
-JMSML Version | 2525D Version | Notes
----|---|---
-1.0.0 | 2525D-0.0 | 2525D, as published
-1.0.1 | 2525D-0.1 | 2525D + some Change 1 CPs
-1.0.2 | 2525D-0.2 | 2525D + additional Change 1 CPs
-1.1.0 | 2525D-1.0 | 2525D Change 1, as published
-etc. | etc. | etc.
+JMSML versioning facilitates the tracking of CP implementation between major published releases of 2525D.
+
+__JMSML Versioning__
+
+JMSML Version | Notes
+---|---
+1.0.0 | 2525D, as published
+1.0.1 | May include approved and implemented Change 1 CPs
+1.0.2 | May include more approved and implemented Change 1 CPs
+'' | ''
+1.1.0 | 2525D Change 1, as published
+'' | ''
+
+__2525D Versioning__
+
+2525D Version | Notes
+---|---
+2525D-0 | 2525D, as published
+2525D-1 | 2525D Change 1, as published
 
 Each JMSML version will also include bug fixes and other enhancements or content improvements deemed necessary to better meet our goal of providing military symbology implementers with a quality resource.  
 
