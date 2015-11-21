@@ -35,7 +35,7 @@ jmsml.exe /xa="../../../../../samples/name_domains_values/Coded_Domain_Echelons"
 jmsml.exe /xa="../../../../../samples/name_domains_values/Coded_Domain_Mobilities" /xas="DOMAIN" /q="mobility"
 jmsml.exe /xa="../../../../../samples/name_domains_values/Coded_Domain_Arrays" /xas="DOMAIN" /q="array"
 jmsml.exe /xh="../../../../../samples/name_domains_values/Coded_Domain_HQTFFD" /xas="DOMAIN"
-jmsml.exe /xo="../../../../../samples/name_domains_values/Coded_Domain_Operational_Condition_Amplifier,../../../../../samples/name_domains_values/Coded_Domain_Status" /xas="DOMAIN"
+jmsml.exe /xo="../../../../../samples/name_domains_values/Coded_Domain_Operational_Condition_Amplifier,../../../../../samples/name_domains_values/Coded_Domain_Statuses" /xas="DOMAIN"
 jmsml.exe /xc="../../../../../samples/name_domains_values/Coded_Domain_Context"
 jmsml.exe /xavd="../../../../../samples/name_domains_values/Coded_Domain"
 

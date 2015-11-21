@@ -387,11 +387,11 @@ namespace JointMilitarySymbologyLibrary
 
             // Uses overrides in the jmsml configuration file to deliver custom output.
 
-            string result = value.Label + "," + value.LabelAlias;
+            string result = "\"" + value.Label + "\"" + "," + value.LabelAlias;
 
             foreach (JMSMLConfigETLConfigAmplifierValue v in _etlConfig.AmplifierValues)
             {
-                if (value.ID == v.ID)
+                if (value.Name == v.ID)
                 {
                     result = v.Label + "," + v.Value;
                     break;

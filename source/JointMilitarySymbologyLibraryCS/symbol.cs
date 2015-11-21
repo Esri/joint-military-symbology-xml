@@ -322,7 +322,7 @@ namespace JointMilitarySymbologyLibrary
         {
             Dictionary<string, string> label = new Dictionary<string, string>();
 
-            label.Add("Name", field.Name);
+            label.Add("Name", field.ID);
             label.Add("Label", field.Label);
             label.Add("Description", field.Description);
             label.Add("Remarks", field.Remarks);

@@ -3187,7 +3187,7 @@ namespace JointMilitarySymbologyLibrary {
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://disa.mil/JointMilSyML.xsd")]
     public partial class LibraryAmplifierValuesValue {
         
-        private string idField;
+        private string nameField;
         
         private string labelField;
         
@@ -3202,13 +3202,13 @@ namespace JointMilitarySymbologyLibrary {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
-        public string ID {
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string Name {
             get {
-                return this.idField;
+                return this.nameField;
             }
             set {
-                this.idField = value;
+                this.nameField = value;
             }
         }
         
@@ -3842,7 +3842,7 @@ namespace JointMilitarySymbologyLibrary {
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://disa.mil/JointMilSyML.xsd")]
     public partial class FieldListTypeField {
         
-        private string nameField;
+        private string idField;
         
         private string labelField;
         
@@ -3869,13 +3869,13 @@ namespace JointMilitarySymbologyLibrary {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string Name {
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
+        public string ID {
             get {
-                return this.nameField;
+                return this.idField;
             }
             set {
-                this.nameField = value;
+                this.idField = value;
             }
         }
         
