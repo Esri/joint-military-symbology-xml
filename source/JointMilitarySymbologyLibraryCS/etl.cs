@@ -123,7 +123,10 @@ namespace JointMilitarySymbologyLibrary
 
                         string[] ss = schema.SymbolSetIDs.Split(' ');
 
-                        if (ss.Length > 1)
+                        // NOTE: We decided to keep the domains with only one value.  Should that decision ever change then the
+                        // next line needs to be edited so that the 0 becomes a 1.
+
+                        if (ss.Length > 0)
                         {
                             foreach (string symSetID in ss)
                             {

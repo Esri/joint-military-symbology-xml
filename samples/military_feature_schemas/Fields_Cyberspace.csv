@@ -1,7 +1,7 @@
 field_name,field_type,field_length,field_alias,nullability,field_domain,field_default,field_setsubtypes, field_subtype, field_notes
 identity,Integer,4,Standard Identity,NULLABLE,Identity,,False,,
 context,SmallInteger,2,Context,NULLABLE,Context,,False,,
-symbolset,SmallInteger,2,Symbol Set,NON_NULLABLE,,60,False,,
+symbolset,SmallInteger,2,Symbol Set,NON_NULLABLE,Cyberspace,60,False,,
 symbolentity,Integer,4,Cyberspace Entity,NON_NULLABLE,Cyberspace_Entities,,False,,
 status,SmallInteger,2,Status,NULLABLE,Statuses,,False,,
 indicator,Integer,4,"HQ, Task Force, Feint/Dummy",NULLABLE,HQTFFD,,False,,

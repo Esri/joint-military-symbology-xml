@@ -1,6 +1,6 @@
 field_name,field_type,field_length,field_alias,nullability,field_domain,field_default,field_setsubtypes, field_subtype, field_notes
 identity,Integer,4,Standard Identity,NULLABLE,Identity,,False,,
-symbolset,SmallInteger,2,Symbol Set,NULLABLE,,25,False,,
+symbolset,SmallInteger,2,Symbol Set,NULLABLE,ControlMeasuresPoints,25,False,,
 symbolentity,Integer,4,Point Entity,NULLABLE,Control_Measure_Point_Entities,,False,,
 status,SmallInteger,2,Status,NULLABLE,Statuses,,False,,
 uniquedesignation,String,30,Unique Designation,NULLABLE,,,False,,
