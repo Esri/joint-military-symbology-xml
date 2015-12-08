@@ -1394,6 +1394,8 @@ namespace JointMilitarySymbologyLibrary {
         
         private GeometryTypeEnum geometryTypeField;
         
+        private string domainNameField;
+        
         private string spatialReferenceField;
         
         public JMSMLConfigETLConfigSchemaContainerSchemasSchema() {
@@ -1495,6 +1497,17 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.geometryTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string DomainName {
+            get {
+                return this.domainNameField;
+            }
+            set {
+                this.domainNameField = value;
             }
         }
         
