@@ -111,7 +111,7 @@ namespace JointMilitarySymbologyLibrary
             {
                 foreach (JMSMLConfigETLConfigSchemaContainerSchemasSchema schema in schemasInstance.Schema)
                 {
-                    outPath = path + "_" + schema.Label + ".csv";
+                    outPath = path + "_" + schema.DomainName + ".csv";
                     line = "Name,Value";
 
                     bool deleteIt = false;

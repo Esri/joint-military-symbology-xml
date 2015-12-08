@@ -91,6 +91,7 @@
     <xs:attribute name="Label" type="xs:token" use="required"/>
     <xs:attribute name="LabelAlias" type="xs:token" use="required"/>
     <xs:attribute name="GeometryType" type="GeometryTypeEnum" use="required"/>
+    <xs:attribute name="DomainName" type="xs:token" use="required"/>
   </xs:attributeGroup>
 
   <xs:attributeGroup name="SchemaContainerAttributeGroup">
