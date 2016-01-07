@@ -6,6 +6,12 @@
   </SymbolSetCode>
   <LegacyCodingSchemeCode Name="2525C">G</LegacyCodingSchemeCode>
   <Entities>
+    <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
+      <EntityCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </EntityCode>
+    </Entity>
     <Entity ID="COMMAND_CONTROL_LINES" Label="Command and Control Lines" Icon="NA" GeometryType="NA">
       <EntityCode>
         <DigitOne>1</DigitOne>
@@ -272,7 +278,7 @@
             </EntitySubType>
           </EntitySubTypes>
         </EntityType>
-        <EntityType ID="PRINCIPLE_DIRECTION_OF_FIRE" Label="Principle Direction of Fire" Graphic="25140500.svg" GeometryType="LINE">
+        <EntityType ID="PRINCIPAL_DIRECTION_OF_FIRE" Label="Principal Direction of Fire" Graphic="25140500.svg" GeometryType="LINE">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>5</DigitTwo>
@@ -672,7 +678,7 @@
             <DigitTwo>9</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="ATTACK_BY_FIRE_POSITION" Label="Attack by Fire Position" Graphic="25152000.svg" GeometryType="AREA">
+        <EntityType ID="ATTACK_BY_FIRE_POSITION" Label="Attack by Fire Position" Graphic="25152000.svg" GeometryType="LINE">
           <EntityTypeCode>
             <DigitOne>2</DigitOne>
             <DigitTwo>0</DigitTwo>
@@ -762,43 +768,43 @@
         <DigitTwo>7</DigitTwo>
       </EntityCode>
       <EntityTypes>
-        <EntityType ID="AIR_CORRIDOR" Label="Air Corridor" Graphic="25170100.svg" GeometryType="AREA">
+        <EntityType ID="AIR_CORRIDOR" Label="Air Corridor" Graphic="25170100.svg" GeometryType="LINE">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>1</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="LOW_LEVEL_TRANSIT_ROUTE" Label="Low Level Transit Route" Graphic="25170200.svg" GeometryType="AREA">
+        <EntityType ID="LOW_LEVEL_TRANSIT_ROUTE" Label="Low Level Transit Route" Graphic="25170200.svg" GeometryType="LINE">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="MINIMUM_RISK_ROUTE" Label="Minimum-Risk Route" Graphic="25170300.svg" GeometryType="AREA">
+        <EntityType ID="MINIMUM_RISK_ROUTE" Label="Minimum-Risk Route" Graphic="25170300.svg" GeometryType="LINE">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>3</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="SAFE_LANE" Label="Safe Lane" Graphic="25170400.svg" GeometryType="AREA">
+        <EntityType ID="SAFE_LANE" Label="Safe Lane" Graphic="25170400.svg" GeometryType="LINE">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>4</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="STANDARD_USE_ARMY_AIRCRAFT_FLIGHT_ROUTE" Label="Standard Use Army Aircraft Flight Route" Graphic="25170500.svg" GeometryType="AREA">
+        <EntityType ID="STANDARD_USE_ARMY_AIRCRAFT_FLIGHT_ROUTE" Label="Standard Use Army Aircraft Flight Route" Graphic="25170500.svg" GeometryType="LINE">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>5</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="TRANSIT_CORRIDOR" Label="Transit Corridor" Graphic="25170600.svg" GeometryType="AREA">
+        <EntityType ID="TRANSIT_CORRIDOR" Label="Transit Corridor" Graphic="25170600.svg" GeometryType="LINE">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>6</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="UA_ROUTE" Label="Unmanned Aircraft (UA) Route" Graphic="25170700.svg" GeometryType="AREA">
+        <EntityType ID="UA_ROUTE" Label="Unmanned Aircraft (UA) Route" Graphic="25170700.svg" GeometryType="LINE">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>7</DigitTwo>
@@ -902,7 +908,7 @@
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="DOWNED_AIRCRAFT_PICK_UP_POINT" Label="Downed Aircraft Pick-up Point" Graphic="25180300.svg">
+        <EntityType ID="DOWNED_AIRCREW_PICK_UP_POINT" Label="Downed Aircrew Pick-Up Point" Graphic="25180300.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>3</DigitTwo>
@@ -1108,7 +1114,7 @@
             <DigitTwo>3</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="SHIP_AREA_OF_INTEREST" Label="Ship Area of Interest" Graphic="25200400.svg" GeometryType="AREA">
+        <EntityType ID="SHIP_AREA_OF_INTEREST" Label="Ship Area of Interest" Graphic="25200400.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>4</DigitTwo>
@@ -1128,19 +1134,19 @@
             </EntitySubType>
           </EntitySubTypes>
         </EntityType>
-        <EntityType ID="ACTIVE_MANEUVER_AREA" Label="Active Maneuver Area" Graphic="25200500.svg" GeometryType="AREA">
+        <EntityType ID="ACTIVE_MANEUVER_AREA" Label="Active Maneuver Area" Graphic="25200500.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>5</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="CUED_ACQUISITION_DOCTRINE" Label="Cued Acquisition Doctrine" Graphic="25200600.svg" GeometryType="AREA">
+        <EntityType ID="CUED_ACQUISITION_DOCTRINE" Label="Cued Acquisition Doctrine" Graphic="25200600.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>6</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="RADAR_SEARCH_DOCTRINE" Label="Radar Search Doctrine" Graphic="25200700.svg" GeometryType="AREA">
+        <EntityType ID="RADAR_SEARCH_DOCTRINE" Label="Radar Search Doctrine" Graphic="25200700.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>7</DigitTwo>
@@ -1184,7 +1190,7 @@
             <DigitTwo>5</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="AIR_DETONATION" Label="Air  Detonation" Graphic="25210600.svg">
+        <EntityType ID="AIR_DETONATION" Label="Air Detonation" Graphic="25210600.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>6</DigitTwo>
@@ -2206,7 +2212,7 @@
             </EntitySubType>
           </EntitySubTypes>
         </EntityType>
-        <EntityType ID="CALL_FOR_FIRE_AREA" Label="Call for Fire Area" Icon="NA" GeometryType="NA">
+        <EntityType ID="CALL_FOR_FIRE_AREA" Label="Call for Fire Zone (CFFZ)" Icon="NA" GeometryType="NA">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>2</DigitTwo>
@@ -2678,7 +2684,7 @@
                 <DigitTwo>4</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="MINEFIELD_DUMMY" Label="Dummy" Graphic="25270705.svg" GeometryType="AREA">
+            <EntitySubType ID="MINEFIELD_DUMMY" Label="Dummy" Graphic="25270705.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>5</DigitTwo>
@@ -2724,7 +2730,7 @@
             <DigitTwo>0</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="BRIDGE_OR_GAP" Label="Bridge or Gap" Graphic="25271100.svg" GeometryType="AREA">
+        <EntityType ID="BRIDGE_OR_GAP" Label="Bridge or Gap" Graphic="25271100.svg" GeometryType="LINE">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>1</DigitTwo>
@@ -2754,7 +2760,7 @@
                 <DigitTwo>3</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="ROADBLOCK_COMPLETE_EXECUTED" Label="Roadblock Complete (Executed)" Graphic="25271204.svg" GeometryType="AREA">
+            <EntitySubType ID="ROADBLOCK_COMPLETE_EXECUTED" Label="Roadblock Complete (Executed)" Graphic="25271204.svg" GeometryType="LINE">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>4</DigitTwo>
@@ -3658,7 +3664,7 @@
             <DigitTwo>8</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="TMT_DESTROY" Label="Destroy" Graphic="25340900.svg" GeometryType="LINE">
+        <EntityType ID="TMT_DESTROY" Label="Destroy" Graphic="25340900.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>9</DigitTwo>
@@ -3688,7 +3694,7 @@
             <DigitTwo>3</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="TMT_INTERDICT" Label="Interdict" Graphic="25341400.svg" GeometryType="LINE">
+        <EntityType ID="TMT_INTERDICT" Label="Interdict" Graphic="25341400.svg">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>4</DigitTwo>
@@ -3857,7 +3863,7 @@
     <LegacySymbol ID="MANEUVER_LINES_FORWARD_EDGE_BATTLE_AREA_SYM" Label="G*GPDLF---****X" EntityID="MANEUVER_LINES" EntityTypeID="FORWARD_EDGE_BATTLE_AREA">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">DLF---</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="MANEUVER_LINES_PRINCIPLE_DIRECTION_OF_FIRE_SYM" Label="G*GPDLP---****X" EntityID="MANEUVER_LINES" EntityTypeID="PRINCIPLE_DIRECTION_OF_FIRE">
+    <LegacySymbol ID="MANEUVER_LINES_PRINCIPAL_DIRECTION_OF_FIRE_SYM" Label="G*GPDLP---****X" EntityID="MANEUVER_LINES" EntityTypeID="PRINCIPAL_DIRECTION_OF_FIRE">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">DLP---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MANEUVER_LINES_DIRECTION_OF_ATTACK_FRIENDLY_AVIATION_SYM" Label="G*GPOLKA--****X" EntityID="MANEUVER_LINES" EntityTypeID="DIRECTION_OF_ATTACK" EntitySubTypeID="FRIENDLY_AVIATION">
@@ -4058,7 +4064,7 @@
     <LegacySymbol ID="AIRSPACE_CONTROL_POINTS_COMMUNICATIONS_CHECKPOINT_SYM" Label="G*GPAPC---****X" EntityID="AIRSPACE_CONTROL_POINTS" EntityTypeID="COMMUNICATIONS_CHECKPOINT">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">APC---</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="AIRSPACE_CONTROL_POINTS_DOWNED_AIRCRAFT_PICK_UP_POINT_SYM" Label="G*GPAPD---****X" EntityID="AIRSPACE_CONTROL_POINTS" EntityTypeID="DOWNED_AIRCRAFT_PICK_UP_POINT">
+    <LegacySymbol ID="AIRSPACE_CONTROL_POINTS_DOWNED_AIRCREW_PICK_UP_POINT_SYM" Label="G*GPAPD---****X" EntityID="AIRSPACE_CONTROL_POINTS" EntityTypeID="DOWNED_AIRCREW_PICK_UP_POINT">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">APD---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="AIRSPACE_CONTROL_POINTS_POP_UP_POINT_SYM" Label="G*GPAPU---****X" EntityID="AIRSPACE_CONTROL_POINTS" EntityTypeID="POP_UP_POINT">

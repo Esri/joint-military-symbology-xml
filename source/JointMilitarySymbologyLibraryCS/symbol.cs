@@ -1,4 +1,4 @@
-﻿/* Copyright 2014 Esri
+﻿/* Copyright 2014 - 2015 Esri
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -54,7 +54,6 @@ namespace JointMilitarySymbologyLibrary
         private Librarian _librarian = null;
         private LibraryVersion _version = null;
         private LibraryContext _context = null;
-        private LibraryContextContextAmplifier _contextAmplifier = null;
         private LibraryStandardIdentity _standardIdentity = null;
         private LibraryStandardIdentityGroup _sig = null;
         private LibraryDimension _dimension = null;
@@ -87,12 +86,14 @@ namespace JointMilitarySymbologyLibrary
         private List<string> _graphics = new List<string>();
 
         private bool _colorBarOCA = true;
+        private bool _useCivilianFrame = false;
 
-        internal Symbol(Librarian librarian, SIDC sidc, bool drawColorBars = true)
+        internal Symbol(Librarian librarian, SIDC sidc, bool drawColorBars = true, bool drawCivilianFrame = false)
         {
             _librarian = librarian;
             _sidc = sidc;
             _colorBarOCA = drawColorBars;
+            _useCivilianFrame = drawCivilianFrame;
 
             _legacySIDC = _blankLegacySIDC;
             _configHelper = new ConfigHelper(_librarian);
@@ -116,10 +117,13 @@ namespace JointMilitarySymbologyLibrary
             _BuildGraphics();
         }
 
-        internal Symbol(Librarian librarian, string legacyStandard, string legacySIDC, bool drawColorBars = true)
+        internal Symbol(Librarian librarian, string legacyStandard, string legacySIDC, bool drawColorBars = true, bool drawCivilianFrame = false)
         {
             _librarian = librarian;
             _legacySIDC = legacySIDC;
+            _colorBarOCA = drawColorBars;
+            _useCivilianFrame = drawCivilianFrame;
+
             _configHelper = new ConfigHelper(_librarian);
 
             _UpdateFromLegacy();
@@ -195,6 +199,14 @@ namespace JointMilitarySymbologyLibrary
             get
             {
                 return _colorBarOCA;
+            }
+        }
+
+        public bool UseCivilianFrames
+        {
+            get
+            {
+                return _useCivilianFrame;
             }
         }
 
@@ -310,7 +322,7 @@ namespace JointMilitarySymbologyLibrary
         {
             Dictionary<string, string> label = new Dictionary<string, string>();
 
-            label.Add("Name", field.Name);
+            label.Add("Name", field.ID);
             label.Add("Label", field.Label);
             label.Add("Description", field.Description);
             label.Add("Remarks", field.Remarks);
@@ -457,7 +469,12 @@ namespace JointMilitarySymbologyLibrary
             if (_affiliation != null)
             {
                 path = _configHelper.GetPath(_context.ID, FindEnum.FindFrames);
-                path = _configHelper.BuildOriginalPath(path, (_status.StatusCode == 1 && _affiliation.PlannedGraphic != "") ? _affiliation.PlannedGraphic : _affiliation.Graphic);
+                
+                if(_useCivilianFrame && _affiliation.CivilianGraphic != "")
+                    path = _configHelper.BuildOriginalPath(path, (_status.StatusCode == 1 && _affiliation.PlannedCivilianGraphic != "") ? _affiliation.PlannedCivilianGraphic : _affiliation.CivilianGraphic);
+                else
+                    path = _configHelper.BuildOriginalPath(path, (_status.StatusCode == 1 && _affiliation.PlannedGraphic != "") ? _affiliation.PlannedGraphic : _affiliation.Graphic);
+                
                 _graphics.Add(path);
             }
 
@@ -638,7 +655,10 @@ namespace JointMilitarySymbologyLibrary
             _names.Add("ModifierTwo", me.NameIt(_symbolSet, "2", _modifierTwo));
 
             FrameExport fe = new DomainFrameExport(_configHelper);
-            _names.Add("Frame", fe.NameIt(_context, _dimension, _standardIdentity, _status));
+            if(_affiliation != null)
+                _names.Add("Frame", fe.NameIt(_context, _dimension, _standardIdentity, _status, _affiliation.CivilianGraphic != "" || _affiliation.PlannedCivilianGraphic != ""));
+            else
+                _names.Add("Frame", fe.NameIt(_context, _dimension, _standardIdentity, _status, false));
 
             HQTFFDExport he = new DomainHQTFFDExport(_configHelper);
             _names.Add("HQTFFD", he.NameIt(_sig, _dimension, _hqTFDummy));
@@ -878,11 +898,6 @@ namespace JointMilitarySymbologyLibrary
                 _amplifier = _librarian.Amplifier(_amplifierGroup, Convert.ToUInt16(first10.Substring(9, 1)));
             }
 
-            if (_context != null && _affiliation != null)
-            {
-                _contextAmplifier = _librarian.ContextAmplifier(_context, _affiliation.Shape);
-            }
-
             if (_symbolSet != null)
             {
                 _entity = _librarian.Entity(_symbolSet, Convert.ToUInt16(second10.Substring(0, 1)), Convert.ToUInt16(second10.Substring(1, 1)));
@@ -938,11 +953,6 @@ namespace JointMilitarySymbologyLibrary
                 _status = _librarian.Status(_legacySIDC.Substring(3, 1), _legacySIDC.Substring(0, 1));
                 _hqTFDummy = _librarian.HQTFDummy(_legacySIDC.Substring(10, 1));
 
-                if (_context != null && _affiliation != null)
-                {
-                    _contextAmplifier = _librarian.ContextAmplifier(_context, _affiliation.Shape);
-                }
-
                 _amplifier = _librarian.Amplifier(_legacySIDC.Substring(11, 1), _legacySIDC.Substring(0, 1));
 
                 if (_amplifier != null)
@@ -977,7 +987,6 @@ namespace JointMilitarySymbologyLibrary
             _amplifierGroup = _librarian.AmplifierGroup(0);
             _amplifier = _librarian.Amplifier(_amplifierGroup, 0);
             _affiliation = _librarian.Affiliation("REALITY", "INTERNAL", "SI_UNKNOWN");
-            _contextAmplifier = _librarian.ContextAmplifier(_context, _affiliation.Shape);
             _entity = _librarian.Entity(_symbolSet, "INVALID");
             _entityType = null;
             _entitySubType = null;

@@ -1,4 +1,4 @@
-﻿/* Copyright 2014 Esri
+﻿/* Copyright 2014 - 2015 Esri
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -32,11 +32,11 @@ namespace JointMilitarySymbologyLibrary
             get { return "Name,Value"; }
         }
 
-        string IFrameExport.Line(Librarian librarian, LibraryContext context, LibraryStandardIdentity identity, LibraryDimension dimension, LibraryStatus status)
+        string IFrameExport.Line(Librarian librarian, LibraryContext context, LibraryStandardIdentity identity, LibraryDimension dimension, LibraryStatus status, bool asCivilian, bool asPlannedCivilian)
         {
             string result = "";
 
-            result = BuildFrameItemName(null, null, identity, null) + "," + BuildFrameCode(null, identity, null, null);
+            result = BuildFrameItemName(null, null, identity, null, false) + "," + BuildFrameCode(null, identity, null, null, false);
 
             return result;
         }

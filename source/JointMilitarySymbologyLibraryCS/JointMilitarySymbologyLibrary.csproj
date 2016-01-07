@@ -53,6 +53,8 @@
     <Compile Include="AmplifierExport.cs" />
     <Compile Include="base.cs" />
     <Compile Include="ConfigHelper.cs" />
+    <Compile Include="IContextExport.cs" />
+    <Compile Include="DomainContextExport.cs" />
     <Compile Include="DomainAmplifierExport.cs" />
     <Compile Include="DomainEntityExport.cs" />
     <Compile Include="DomainFrameExport.cs" />
@@ -77,6 +79,7 @@
     <Compile Include="IOCAExport.cs" />
     <Compile Include="ModifierExport.cs" />
     <Compile Include="OCAExport.cs" />
+    <Compile Include="SchemaETL.cs" />
     <Compile Include="SIDC.cs" />
     <Compile Include="SimpleEntityExport.cs" />
     <Compile Include="SimpleModifierExport.cs" />

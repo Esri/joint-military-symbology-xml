@@ -6,6 +6,12 @@
   </SymbolSetCode>
   <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
   <Entities>
+    <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
+      <EntityCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </EntityCode>
+    </Entity>
     <Entity ID="MISSILE" Label="Missile" LabelAlias="Missile (Air Missile)" Graphic="02110000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
@@ -14,6 +20,12 @@
     </Entity>
   </Entities>
   <SectorOneModifiers>
+    <Modifier ID="UNSPECIFIED_MOD" Label="Unspecified">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
     <Modifier ID="AIR_MOD" Label="Air" Graphic="02011.svg" Category="Launch Origin">
       <ModifierCode>
         <DigitOne>0</DigitOne>
@@ -64,6 +76,12 @@
     </Modifier>
   </SectorOneModifiers>
   <SectorTwoModifiers>
+    <Modifier ID="UNSPECIFIED_2_MOD" Label="Unspecified">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
     <Modifier ID="AIR_DEST_MOD" Label="Air" Graphic="02012.svg" Category="Missile Destination">
       <ModifierCode>
         <DigitOne>0</DigitOne>

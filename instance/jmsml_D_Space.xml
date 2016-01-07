@@ -6,6 +6,12 @@
   </SymbolSetCode>
   <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
   <Entities>
+    <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
+      <EntityCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </EntityCode>
+    </Entity>
     <Entity ID="MILITARY" Label="Military" LabelAlias="Military (Space)" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes." Graphic="05110000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
@@ -208,7 +214,7 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="MANUAL_TRACK" Label="Manual Track" LabelAlias="Manual Track (Space)" Icon="FULL_OCTAGON" Graphic="05130000.svg">
+    <Entity ID="MANUAL_TRACK" Label="Manual Track" LabelAlias="Manual Track (Space)" Graphic="05130000.svg" Icon="FULL_OCTAGON">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>3</DigitTwo>
@@ -216,6 +222,12 @@
     </Entity>
   </Entities>
   <SectorOneModifiers>
+    <Modifier ID="UNSPECIFIED_MOD" Label="Unspecified">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
     <Modifier ID="LEO_MOD" Label="Low Earth Orbit (LEO)" Graphic="05011.svg" Category="Orbit">
       <ModifierCode>
         <DigitOne>0</DigitOne>
@@ -254,6 +266,12 @@
     </Modifier>
   </SectorOneModifiers>
   <SectorTwoModifiers>
+    <Modifier ID="UNSPECIFIED_2_MOD" Label="Unspecified">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
     <Modifier ID="OPTICAL_MOD" Label="Optical" Graphic="05012.svg" Category="Sensor" LimitUseTo="GENERAL_SATELLITE SATELLITE ANTISATELLITEWEAPON ASTRONOMICAL_SATELLITE BIOSATELLITE COMMUNICATIONS_SATELLITE EARTH_OBSERVATION_SATELLITE MINIATURIZED_SATELLITE NAVIGATIONAL_SATELLITE RECONNAISSANCE_SATELLITE TETHERED_SATELLITE WEATHER_SATELLITE CIV_SATELLITE CIV_ASTRONOMICAL_SATELLITE CIV_BIOSATELLITE CIV_COMMUNICATIONS_SATELLITE CIV_EARTH_OBSERVATION_SATELLITE CIV_MINIATURIZED_SATELLITE CIV_NAVIGATIONAL_SATELLITE CIV_TETHERED_SATELLITE CIV_WEATHER_SATELLITE">
       <ModifierCode>
         <DigitOne>0</DigitOne>
@@ -280,7 +298,7 @@
     </Modifier>
   </SectorTwoModifiers>
   <LegacySymbols>
-    <LegacySymbol ID="MILITARY_SYM" Label="S*PP------*****" EntityID="MILITARY">
+    <LegacySymbol ID="SPACE_TRACK_SYM" Label="S*PP------*****" EntityID="UNSPECIFIED">
       <LegacyFunctionCode Name="2525C">------</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_SATELLITE_SYM" Label="S*PPS-----*****" EntityID="MILITARY" EntityTypeID="SATELLITE">

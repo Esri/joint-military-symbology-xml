@@ -5,8 +5,8 @@
     xmlns:jmsml="http://disa.mil/JointMilSyML.xsd"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
 >
-  <xs:include schemaLocation="core.xsd"/>
-  <xs:include schemaLocation="symbolSet.xsd"/>
+<xs:include schemaLocation="core.xsd"/>
+<xs:include schemaLocation="symbolSet.xsd"/>
 
   <xs:element name="Library">
     <xs:complexType>
@@ -65,6 +65,20 @@
             <xs:sequence>
               <xs:element name="Amplifier" minOccurs="1" maxOccurs="unbounded">
                 <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Values" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Value" minOccurs="1" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:attributeGroup ref="NameAttributeGroup"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attributeGroup ref="IdentifierAttributeGroup"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
                   <xs:attributeGroup ref="IdentifierAttributeGroup"/>
                   <xs:attribute name="Type" type="AmplifierType" default="TEXT" use="optional"/>
                   <xs:attribute name="Length" type="xs:int" default="0" use="optional"/>
@@ -101,20 +115,9 @@
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="ContextCode" type="SingleDigitType" minOccurs="1" maxOccurs="1"/>
-                    <xs:element name="ContextAmplifiers" minOccurs="1" maxOccurs="1">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element name="ContextAmplifier" minOccurs="1" maxOccurs="unbounded">
-                            <xs:complexType>
-                              <xs:attributeGroup ref="GraphicIdentifierAttributeGroup"/>
-                              <xs:attribute name="Shape" type="ShapeType" use="required"/>
-                            </xs:complexType>
-                          </xs:element>
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
                   </xs:sequence>
                   <xs:attributeGroup ref="IdentifierAttributeGroup"/>
+                  <xs:attribute name="IsExtension" type="xs:boolean" use="optional" default="false"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
@@ -132,6 +135,7 @@
                       <xs:element name="StandardIdentityCode" type="SingleDigitType"/>
                     </xs:sequence>
                     <xs:attributeGroup ref="IdentifierAttributeGroup"/>
+                    <xs:attribute name="IsExtension" type="xs:boolean" use="optional" default="false"/>
                   </xs:complexType>
                 </xs:element>
             </xs:sequence>
@@ -208,6 +212,8 @@
                   <xs:attribute name="DimensionID" type="xs:IDREF" use="required"/>
                   <xs:attribute name="Shape" type ="ShapeType" use="required"/>
                   <xs:attribute name="PlannedGraphic" type="xs:anyURI" use="optional" default=""/>
+                  <xs:attribute name="CivilianGraphic" type="xs:anyURI" use="optional" default=""/>
+                  <xs:attribute name="PlannedCivilianGraphic" type="xs:anyURI" use="optional" default=""/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
@@ -237,6 +243,7 @@
                     </xs:element>
                   </xs:sequence>
                   <xs:attributeGroup ref="GraphicNameAttributeGroup"/>
+                  <xs:attribute name="IsExtension" type="xs:boolean" use="optional" default="false"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
@@ -266,6 +273,7 @@
                     </xs:element>
                   </xs:sequence>
                   <xs:attributeGroup ref="NameAttributeGroup"/>
+                  <xs:attribute name="IsExtension" type="xs:boolean" use="optional" default="false"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
@@ -303,6 +311,7 @@
                                 </xs:element>
                               </xs:sequence>
                               <xs:attributeGroup ref="NameAttributeGroup"/>
+                              <xs:attribute name="IsExtension" type="xs:boolean" use="optional" default="false"/>
                             </xs:complexType>
                           </xs:element>
                         </xs:sequence>
@@ -311,6 +320,7 @@
                   </xs:sequence>
                   <xs:attributeGroup ref="NameAttributeGroup"/>
                   <xs:attribute name="CompatibleSymbolSetIDs" type="xs:IDREFS" use="optional"/>
+                  <xs:attribute name="IsExtension" type="xs:boolean" use="optional" default="false"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>

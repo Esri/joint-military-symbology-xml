@@ -6,6 +6,12 @@
   </SymbolSetCode>
   <LegacyCodingSchemeCode Name="2525C">I</LegacyCodingSchemeCode>
   <Entities>
+    <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
+      <EntityCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </EntityCode>
+    </Entity>
     <Entity ID="SIGNAL_INTERCEPT" Label="Signal Intercept" LabelAlias="Signal Intercept (Space)" Remarks="There is no icon associated with this entity." Icon="NA" GeometryType="NA">
       <EntityCode>
         <DigitOne>1</DigitOne>
@@ -34,6 +40,12 @@
     </Entity>
   </Entities>
   <SectorOneModifiers>
+    <Modifier ID="UNSPECIFIED_MOD" Label="Unspecified">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
     <Modifier ID="DATA_TRANSMISSION_MOD" Label="Data Transmission" LabelAlias="Data Transmission (Space)" Graphic="50141.svg" Category="Space/Air/Land/Sea Surface/Subsurface Radar" CategoryAlias="Radar">
       <ModifierCode>
         <DigitOne>1</DigitOne>

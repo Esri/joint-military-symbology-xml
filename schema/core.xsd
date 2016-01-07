@@ -192,6 +192,7 @@
     <xs:attribute name="Description" type="xs:string" use="optional" default=""/>
     <xs:attribute name="Remarks" type="xs:string" use="optional" default=""/>
     <xs:attribute name="Graphic" type="xs:anyURI" use="optional" default=""/>
+    <xs:attribute name="AlternativeGraphic" type="xs:anyURI" use="optional" default=""/>
     <xs:attribute name="CircleGraphic" type="xs:anyURI" use="optional" default=""/>
     <xs:attribute name="CloverGraphic" type="xs:anyURI" use="optional" default=""/>
     <xs:attribute name="CurveGraphic" type="xs:anyURI" use="optional" default=""/>
@@ -202,12 +203,7 @@
     <xs:attribute name="DrawNote" type="xs:string" use="optional" default="Not Applicable"/>
     <xs:attribute name="Standard" type="StandardType" use="optional" default="ALL"/>
     <xs:attribute name="Icon" type="IconType" use="optional" default="MAIN"/>
-    <xs:attribute name="SpecialCircleGraphic" type="xs:anyURI" use="optional"/>
-    <xs:attribute name="SpecialCloverGraphic" type="xs:anyURI" use="optional"/>
-    <xs:attribute name="SpecialCurveGraphic" type="xs:anyURI" use="optional"/>
-    <xs:attribute name="SpecialDiamondGraphic" type="xs:anyURI" use="optional"/>
-    <xs:attribute name="SpecialRectangleGraphic" type="xs:anyURI" use="optional"/>
-    <xs:attribute name="SpecialSquareGraphic" type="xs:anyURI" use="optional"/>
+    <xs:attribute name="IsCivilian" type="xs:boolean" use="optional" default="false"/>
   </xs:attributeGroup>
 
   <xs:attributeGroup name="FramedGraphicNameAttributeGroup">
@@ -240,7 +236,7 @@
             <xs:element name="ModifierCode" type="DoubleDigitType"/>
           </xs:sequence>
           <xs:attributeGroup ref="GraphicIdentifierAttributeGroup"/>
-          <xs:attribute name="Category" type="xs:token" use="required"/>
+          <xs:attribute name="Category" type="xs:token" use="optional" default=""/>
           <xs:attribute name="CategoryAlias" type="xs:token" use="optional" default=""/>
           <xs:attribute name="LimitUseTo" type="xs:IDREFS" use="optional"/>
           <xs:attribute name="Standard" type="StandardType" use="optional" default="ALL"/>
@@ -253,7 +249,7 @@
     <xs:sequence>
       <xs:element name="Field" minOccurs="0" maxOccurs="unbounded">
         <xs:complexType>
-          <xs:attributeGroup ref="NameAttributeGroup"/>
+          <xs:attributeGroup ref="IdentifierAttributeGroup"/>
           <xs:attribute name="Type" type="AttributeTypeType"/>
           <xs:attribute name="AmplifierID" type="xs:IDREF" use="required"/>
           <xs:attribute name="X" type="xs:int" use="optional" default="0"/>
@@ -266,7 +262,11 @@
   <xs:complexType name="EntitySubTypeType">
     <xs:sequence>
       <xs:element name="EntitySubTypeCode" type="DoubleDigitType" minOccurs="1" maxOccurs="1"/>
-      <xs:element ref="Tags" minOccurs="0" maxOccurs="1"/>
+      <xs:element ref="Tags" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Custom tags, often used for searching information in user interfaces.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
     </xs:sequence>
     <xs:attributeGroup ref="FramedGraphicIdentifierAttributeGroup"/>
     <xs:attribute name="GeometryType" type="GeometryType" default="POINT" use="optional"/>
@@ -275,6 +275,9 @@
   </xs:complexType>
 
   <xs:element name="Tags">
+    <xs:annotation>
+      <xs:documentation>One or more Tag elements that can be used by systems to store custom information on other elements.</xs:documentation>
+    </xs:annotation>
     <xs:complexType>
       <xs:sequence>
         <xs:element name="Tag" type="xs:token" minOccurs="1" maxOccurs="unbounded"/>

@@ -7,7 +7,13 @@
   <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
   <LegacyCodingSchemeCode Name="2525C">E</LegacyCodingSchemeCode>
   <Entities>
-    <Entity ID="INSTALLATION" Label="Installation" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes." Graphic="20110000.svg">
+    <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
+      <EntityCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </EntityCode>
+    </Entity>
+    <Entity ID="INSTALLATION" Label="Installation" Graphic="20110000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
@@ -257,7 +263,7 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="INFRASTRUCTURE" Label="Infrastructure" Remarks="No icon is associated with this entity. It is for hierarchal purposes only." Icon="NA" GeometryType="NA">
+    <Entity ID="INFRASTRUCTURE" Label="Infrastructure" Remarks="Reserved for hiearchical purposes." Icon="NA" GeometryType="NA">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>2</DigitTwo>
@@ -815,6 +821,12 @@
     </Entity>
   </Entities>
   <SectorOneModifiers>
+    <Modifier ID="UNSPECIFIED_MOD" Label="Unspecified">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
     <Modifier ID="BIOLOGICAL_1_MOD" Label="Biological" Graphic="20011.svg" Category="CBRN Type">
       <ModifierCode>
         <DigitOne>0</DigitOne>
@@ -895,6 +907,12 @@
     </Modifier>
   </SectorOneModifiers>
   <SectorTwoModifiers>
+    <Modifier ID="UNSPECIFIED_2_MOD" Label="Unspecified">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
     <Modifier ID="BIOLOGICAL_2_MOD" Label="Biological" Graphic="20012.svg" Category="No Category Listed">
       <ModifierCode>
         <DigitOne>0</DigitOne>
@@ -1309,7 +1327,7 @@
     <LegacySymbol ID="INFRASTRUCTURE_WATER_SUPPLY_INFRASTRUCTURE_WATER_SYM" Label="S*GPIUP---H****" EntityID="INFRASTRUCTURE" EntityTypeID="WATER_SUPPLY_INFRASTRUCTURE" EntitySubTypeID="WATER">
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IUP---</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="RETIRED_SYM" Label="S*GPI-----H----" Remarks="Retired">
+    <LegacySymbol ID="GROUND_INSTALLATION_SYM" Label="S*GPI-----H----" EntityID="UNSPECIFIED">
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">I-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_TRANSPORTATION_INFRASTRUCTURE_MAINTENANCE_FAC_SYM" Label="S*GPIMV---H****" Remarks="Retired">

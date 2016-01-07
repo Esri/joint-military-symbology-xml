@@ -8,7 +8,13 @@
   <LegacyCodingSchemeCode Name="2525C">O</LegacyCodingSchemeCode>
   <LegacyCodingSchemeCode Name="2525C">W</LegacyCodingSchemeCode>
   <Entities>
-    <Entity ID="INCIDENT" Label="Incident" Remarks="No icon is associated with this entity. It is for hierarchal purposes only." Icon="NA" GeometryType="NA">
+    <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
+      <EntityCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </EntityCode>
+    </Entity>
+    <Entity ID="INCIDENT" Label="Incident" Remarks="Reserved for hiearchical purposes." Icon="NA" GeometryType="NA">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
@@ -300,7 +306,7 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="OPERATION" Label="Operation" Remarks="No icon is associated with this entity. It is for hierarchal purposes only." Icon="NA" GeometryType="NA">
+    <Entity ID="OPERATION" Label="Operation" Remarks="Reserved for hiearchical purposes." Icon="NA" GeometryType="NA">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>3</DigitTwo>
@@ -332,7 +338,7 @@
             <DigitTwo>3</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="RECRUITMENT" Label="Recruitment" Remarks="No icon is associated with this entity. It is for hierarchal purposes only." Icon="NA" GeometryType="NA">
+        <EntityType ID="RECRUITMENT" Label="Recruitment" Remarks="Reserved for hiearchical purposes." Icon="NA" GeometryType="NA">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>4</DigitTwo>
@@ -672,7 +678,7 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="HAZARD_MATERIALS" Label="Hazard Materials" Remarks="No icon is associated with this entity. It is for hierarchal purposes only." Icon="NA" GeometryType="NA">
+    <Entity ID="HAZARD_MATERIALS" Label="Hazard Materials" Remarks="Reserved for hiearchical purposes." Icon="NA" GeometryType="NA">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>5</DigitTwo>
@@ -778,7 +784,7 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="TRANSPORTATION_INCIDENT" Label="Transportation Incident" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes." Icon="FULL_OCTAGON" Graphic="40160000.svg">
+    <Entity ID="TRANSPORTATION_INCIDENT" Label="Transportation Incident" Icon="FULL_OCTAGON" Graphic="40160000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>6</DigitTwo>
@@ -816,13 +822,13 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="NATURAL_EVENT" Label="Natural Event" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes." Graphic="40170000.svg">
+    <Entity ID="NATURAL_EVENT" Label="Natural Event" Graphic="40170000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>7</DigitTwo>
       </EntityCode>
       <EntityTypes>
-        <EntityType ID="GEOLOGIC" Label="Geologic" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes." Graphic="40170100.svg">
+        <EntityType ID="GEOLOGIC" Label="Geologic" Graphic="40170100.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>1</DigitTwo>
@@ -878,7 +884,7 @@
             </EntitySubType>
           </EntitySubTypes>
         </EntityType>
-        <EntityType ID="HYDRO_METEOROLOGICAL" Label="Hydro-Meteorological" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes." Graphic="40170200.svg">
+        <EntityType ID="HYDRO_METEOROLOGICAL" Label="Hydro-Meteorological" Graphic="40170200.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>2</DigitTwo>
@@ -904,7 +910,7 @@
             </EntitySubType>
           </EntitySubTypes>
         </EntityType>
-        <EntityType ID="INFESTATION" Label="Infestation" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchal explanation purposes." Graphic="40170300.svg">
+        <EntityType ID="INFESTATION" Label="Infestation" Graphic="40170300.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>3</DigitTwo>
@@ -944,7 +950,7 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="INDIVIDUAL" Label="Individual" Remarks="No icon is associated with this entity. It is for hierarchal purposes only." Icon="NA" GeometryType="NA">
+    <Entity ID="INDIVIDUAL" Label="Individual" Remarks="Reserved for hiearchical purposes." Icon="NA" GeometryType="NA">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>8</DigitTwo>
@@ -966,7 +972,13 @@
     </Entity>
   </Entities>
   <SectorOneModifiers>
-    <Modifier ID="ASSASSINATION_MOD" Label="Assassination" LabelAlias="Assasination (Activities)" Graphic="40011.svg" Category="Crime">
+    <Modifier ID="UNSPECIFIED_MOD" Label="Unspecified">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ASSASSINATION_MOD" Label="Assassination" LabelAlias="Assassination (Activities)" Graphic="40011.svg" Category="Crime">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>1</DigitTwo>

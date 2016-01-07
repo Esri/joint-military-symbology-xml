@@ -1,4 +1,4 @@
-﻿/* Copyright 2014 Esri
+﻿/* Copyright 2014 - 2015 Esri
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -88,12 +88,15 @@ namespace JointMilitarySymbologyLibrary
             string itemName = BuildOCAItemName(null, null, status);
             string itemCategory = "Amplifier : Operational Condition";
             string itemTags = BuildOCAItemTags(null, null, status, graphicPath + "\\" + status.Graphic, _omitSource, _omitLegacy);
+            string itemID = BuildOCACode(null, null, status);
 
             result = itemRootedPath + "," +
                      Convert.ToString(_configHelper.PointSize) + "," +
                      itemName + "," +
                      itemCategory + "," +
                      itemTags + "," +
+                     itemID + "," +
+                     "Point" + "," +
                      _notes;
 
             return result;

@@ -1,0 +1,18 @@
+xs3p was originally developed by DSTC and was availabe
+through their website at http://titanium.dstc.edu.au/xml/xs3p/
+
+Since the demise of this organization, we at FiForms Solutions
+have decided to host xs3p, since we have been using it in
+documenting the XML used in FiForms. The stylesheet has been
+modified to point to the new xs3p home here at FiForms, while
+still retaining the old (dead) link to the dstc website. The
+xs3p home is http://xml.fiforms.org/xs3p/
+
+Version 1.1.4
+Moved the README.txt documentation online
+Added xs3p_links.xsl file
+
+Version 1.1.5
+Fixed a bug in xs3p's handling of recursive groups
+Thanks to Martin Beran from Trusted Network Solutions 
+for submitting the patch.

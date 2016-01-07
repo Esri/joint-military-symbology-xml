@@ -1,4 +1,4 @@
-﻿/* Copyright 2014 Esri
+﻿/* Copyright 2014 - 2015 Esri
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -40,7 +40,12 @@ namespace JointMilitarySymbologyLibrary
             string result = Convert.ToString(ss.SymbolSetCode.DigitOne) + Convert.ToString(ss.SymbolSetCode.DigitTwo);
 
             result = result + "," + modNumber + ",";
-            result = result + m.Category.Replace(',', '-') + ",";
+
+            if (m.Category != null)
+                result = result + m.Category.Replace(',', '-') + ",";
+            else
+                result = result + ",";
+
             result = result + m.Label.Replace(',', '-') + ",";
 
             result = result + Convert.ToString(m.ModifierCode.DigitOne) + Convert.ToString(m.ModifierCode.DigitTwo);

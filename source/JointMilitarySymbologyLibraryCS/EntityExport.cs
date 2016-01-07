@@ -1,4 +1,4 @@
-﻿/* Copyright 2014 Esri
+﻿/* Copyright 2014 - 2015 Esri
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -336,6 +336,10 @@ namespace JointMilitarySymbologyLibrary
                 result = result + ";" + sig.Label;
             }
 
+            // Add any custom XML or export tags that might exist
+
+            result = _configHelper.AddCustomTags(result, code, xmlTags);
+
             // Add an equivalent 2525C SIDC tag, if one exists
 
             if (!omitLegacy)
@@ -344,10 +348,6 @@ namespace JointMilitarySymbologyLibrary
                 if (sidcTag != "")
                     result = result + ";" + sidcTag;
             }
-
-            // Add any custom XML or export tags that might exist
-
-            result = _configHelper.AddCustomTags(result, code, xmlTags);
 
             // Add the icon's type
 

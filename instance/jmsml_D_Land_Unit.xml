@@ -8,7 +8,13 @@
   <LegacyCodingSchemeCode Name="2525C">E</LegacyCodingSchemeCode>
   <LegacyCodingSchemeCode Name="2525C">O</LegacyCodingSchemeCode>
   <Entities>
-    <Entity ID="COMMAND_AND_CONTROL" Label="Command and Control" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes." Graphic="10110000.svg">
+    <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
+      <EntityCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </EntityCode>
+    </Entity>
+    <Entity ID="COMMAND_AND_CONTROL" Label="Command and Control" Graphic="10110000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
@@ -128,7 +134,7 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="MOVEMENT_AND_MANEUVER" Label="Movement and Maneuver" Remarks="No icon is associated with this entity. It is for hiearchical purposes only." Icon="NA" GeometryType="NA">
+    <Entity ID="MOVEMENT_AND_MANEUVER" Label="Movement and Maneuver" Remarks="Reserved for hiearchical purposes." Icon="NA" GeometryType="NA">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>2</DigitTwo>
@@ -378,7 +384,7 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="FIRES" Label="Fires" Remarks="No icon is associated with this entity. It is for hiearchical purposes only." Icon="NA" GeometryType="NA">
+    <Entity ID="FIRES" Label="Fires" Remarks="Reserved for hiearchical purposes." Icon="NA" GeometryType="NA">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>3</DigitTwo>
@@ -488,7 +494,7 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="PROTECTION" Label="Protection" Remarks="No icon is associated with this entity. It is for hierarchical purposes only." Icon="NA" GeometryType="NA">
+    <Entity ID="PROTECTION" Label="Protection" Remarks="Reserved for hiearchical purposes." Icon="NA" GeometryType="NA">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>4</DigitTwo>
@@ -506,7 +512,7 @@
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="CBRN_MOTORIZED" Label="Motorized" CloverGraphic="10140102_0.svg" DiamondGraphic="10140102_3.svg" RectangleGraphic="10140102_1.svg" SquareGraphic="10140102_2.svg" Icon="FULL_FRAME">
+            <EntitySubType ID="CBRN_MOTORIZED" Label="Motorized" Remarks="DISA changed this to full frame as a result of a telecon discussion with the Army, but not reflected that way in the final PDF." CloverGraphic="10140102_0.svg" DiamondGraphic="10140102_3.svg" RectangleGraphic="10140102_1.svg" SquareGraphic="10140102_2.svg" Icon="FULL_FRAME">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>2</DigitTwo>
@@ -574,7 +580,7 @@
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="ENG_MOTORIZED" Label="Motorized" CloverGraphic="10140702_0.svg" DiamondGraphic="10140702_3.svg" RectangleGraphic="10140702_1.svg" SquareGraphic="10140702_2.svg" Icon="FULL_FRAME">
+            <EntitySubType ID="ENG_MOTORIZED" Label="Motorized" Remarks="DISA changed this to full frame as a result of a telecon discussion with the Army, but not reflected that way in the final PDF." CloverGraphic="10140702_0.svg" DiamondGraphic="10140702_3.svg" RectangleGraphic="10140702_1.svg" SquareGraphic="10140702_2.svg" Icon="FULL_FRAME">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>2</DigitTwo>
@@ -654,7 +660,7 @@
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="SEC_MOTORIZED" Label="Motorized" CloverGraphic="10141702_0.svg" DiamondGraphic="10141702_3.svg" RectangleGraphic="10141702_1.svg" SquareGraphic="10141702_2.svg" Icon="FULL_FRAME">
+            <EntitySubType ID="SEC_MOTORIZED" Label="Motorized" Remarks="DISA changed this to full frame as a result of a telecon discussion with the Army, but not reflected that way in the final PDF." CloverGraphic="10141702_0.svg" DiamondGraphic="10141702_3.svg" RectangleGraphic="10141702_1.svg" SquareGraphic="10141702_2.svg" Icon="FULL_FRAME">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>2</DigitTwo>
@@ -688,7 +694,7 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="INTELLIGENCE" Label="Intelligence" Remarks="No icon is associated with this entity. It is for hierarchical purposes only." Icon="NA" GeometryType="NA">
+    <Entity ID="INTELLIGENCE" Label="Intelligence" Remarks="Reserved for hiearchical purposes." Icon="NA" GeometryType="NA">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>5</DigitTwo>
@@ -730,13 +736,13 @@
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="EW_DIRECTION_FINDING" Label="Direction Finding" Graphic="10150502.svg">
+            <EntitySubType ID="EW_DIRECTION_FINDING" Label="Direction Finding" Graphic="10150502.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>2</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="EW_INTERCEPT" Label="Intercept" Graphic="10150503.svg">
+            <EntitySubType ID="EW_INTERCEPT" Label="Intercept" Graphic="10150503.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>3</DigitTwo>
@@ -786,7 +792,7 @@
             <DigitTwo>0</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="SEARCH" Label="Search" Icon="FULL_OCTAGON" Graphic="10151100.svg">
+        <EntityType ID="SEARCH" Label="Search" Graphic="10151100.svg" Icon="FULL_OCTAGON">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>1</DigitTwo>
@@ -818,7 +824,7 @@
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="AIRPORT_DEBARKATION_AIRPORT_EMBARKATION" Label="Airport of Debarkation/Airport of Embarkation" Icon="MAIN_1" Graphic="10160300.svg">
+        <EntityType ID="AIRPORT_DEBARKATION_AIRPORT_EMBARKATION" Label="Airport of Debarkation/Airport of Embarkation" Graphic="10160300.svg" Icon="MAIN_1">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>3</DigitTwo>
@@ -980,7 +986,7 @@
             <DigitTwo>9</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="RAILHEAD" Label="Railhead" Icon="MAIN_1" Graphic="10163000.svg">
+        <EntityType ID="RAILHEAD" Label="Railhead" Graphic="10163000.svg" Icon="MAIN_1">
           <EntityTypeCode>
             <DigitOne>3</DigitOne>
             <DigitTwo>0</DigitTwo>
@@ -998,7 +1004,7 @@
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="SEA_PORT_DEBARKATION_SEA_PORT_EMBARKATION" Label="Sea Port of Debarkation/Sea Port of Embarkation" Icon="MAIN_1" Graphic="10163300.svg">
+        <EntityType ID="SEA_PORT_DEBARKATION_SEA_PORT_EMBARKATION" Label="Sea Port of Debarkation/Sea Port of Embarkation" Graphic="10163300.svg" Icon="MAIN_1">
           <EntityTypeCode>
             <DigitOne>3</DigitOne>
             <DigitTwo>3</DigitTwo>
@@ -1102,7 +1108,7 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="NAVAL" Label="Naval" Remarks="No icon is associated with this entity. It is for hierarchical purposes only." Icon="NA" GeometryType="NA">
+    <Entity ID="NAVAL" Label="Naval" Remarks="Reserved for hiearchical purposes." Icon="NA" GeometryType="NA">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>7</DigitTwo>
@@ -1116,7 +1122,7 @@
         </EntityType>
       </EntityTypes>
     </Entity>
-    <Entity ID="NAMED_HEADQUARTERS" Label="Named Headquarters" Remarks="No icon is associated with this entity. It is for hierarchical purposes only." Icon="NA" GeometryType="NA">
+    <Entity ID="NAMED_HEADQUARTERS" Label="Named Headquarters" Remarks="Reserved for hiearchical purposes." Icon="NA" GeometryType="NA">
       <EntityCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>8</DigitTwo>
@@ -1268,6 +1274,12 @@
     </EntitySubType>
   </SpecialEntitySubTypes>
   <SectorOneModifiers>
+    <Modifier ID="UNSPECIFIED_MOD" Label="Unspecified">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
     <Modifier ID="AIR_MOBILE_AIR_ASSAULT_MOD" Label="Air Mobile/Air Assault (US Only)" Graphic="10011.svg" Category="Mobility" Standard="MILSTD_2525">
       <ModifierCode>
         <DigitOne>0</DigitOne>
@@ -1738,6 +1750,12 @@
     </Modifier>
   </SectorOneModifiers>
   <SectorTwoModifiers>
+    <Modifier ID="UNSPECIFIED_2_MOD" Label="Unspecified">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
     <Modifier ID="AIRBORNE_MOD" Label="Airborne" Graphic="10012.svg" Category="Mobility">
       <ModifierCode>
         <DigitOne>0</DigitOne>
@@ -2082,7 +2100,7 @@
     </Modifier>
   </SectorTwoModifiers>
   <LegacySymbols>
-    <LegacySymbol ID="GROUND_TRACK_SYM" Label="S*GP------*****" Remarks="Retired">
+    <LegacySymbol ID="GROUND_TRACK_SYM" Label="S*GP------*****" EntityID="UNSPECIFIED">
       <LegacyFunctionCode Name="2525C" SchemaOverride="S" DimensionOverride="G">------</LegacyFunctionCode> 
     </LegacySymbol>
     <LegacySymbol ID="COMMAND_AND_CONTROL_CIVIL_AFFAIRS_SYM" Label="S*FPGC----*****" EntityID="COMMAND_AND_CONTROL" EntityTypeID="CIVIL_AFFAIRS">
@@ -3242,8 +3260,10 @@
     <LegacySymbol ID="FIRES_FIELD_ARTILLERY_FA_TARGET_ACQUISITION_MULTIPLE_ROCKET_LAUNCHER_MOD_TOWED_MOD_SYM" Label="S*GPUCFRMT*****" EntityID="FIRES" EntityTypeID="FIELD_ARTILLERY" EntitySubTypeID="FA_TARGET_ACQUISITION" ModifierOneID="MULTIPLE_ROCKET_LAUNCHER_MOD" ModifierTwoID="TOWED_MOD">
       <LegacyFunctionCode Name="2525C">UCFRMT</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="RETIRED_SYM" Label="S*GPU-----*****" Remarks="Retired">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="S">U-----</LegacyFunctionCode>
+    <LegacySymbol ID="UNIT_SYM" Label="S*GPU-----*****" EntityID="UNSPECIFIED">
+      <LegacyFunctionCode Name="2525C">U-----</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="C2_HQ_SYM" Label="S*GPUH----*****" Description="Use HQ staff amplifier to represent." Remarks="Retired">
       <LegacyFunctionCode Name="2525C">UH----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="COMMAND_AND_CONTROL_TACTICAL_SATELLITE_SYM" Label="S*GPUCDSC-*****" EntityID="COMMAND_AND_CONTROL" EntityTypeID="TACTICAL_SATELLITE">

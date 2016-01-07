@@ -1,4 +1,4 @@
-﻿/* Copyright 2014 Esri
+﻿/* Copyright 2014 - 2015 Esri
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -48,9 +48,12 @@ namespace jmsml
             string modPath = CommandLineArgs.I.argAsString("/m");
             string framePath = CommandLineArgs.I.argAsString("/xf");
             string amplifierPath = CommandLineArgs.I.argAsString("/xa");
+            string contextPath = CommandLineArgs.I.argAsString("/xc");
             string hqTFFDPath = CommandLineArgs.I.argAsString("/xh");
             string ocaPath = CommandLineArgs.I.argAsString("/xo");
             string exportAs = CommandLineArgs.I.argAsString("/xas").ToUpper();
+            string exportAVDPath = CommandLineArgs.I.argAsString("/xavd");
+            string exportSchemas = CommandLineArgs.I.argAsString("/xschemas");
 
             string exportLegacy = CommandLineArgs.I.argAsString("/xl");
 
@@ -86,12 +89,17 @@ namespace jmsml
                 Console.WriteLine("/s=\"<expression>\"\t: Use regular expression to query on symbol set labels.");
                 Console.WriteLine("");
                 Console.WriteLine("/xa=\"<pathname>\"\t: Export amplifiers.");
+                Console.WriteLine("/xc=\"<pathname>\"\t: Export contexts.");
                 Console.WriteLine("/xe=\"<pathname>\"\t: Export entities and modifiers.");
                 Console.WriteLine("/xf=\"<pathname>\"\t: Export frames.");
                 Console.WriteLine("/xh=\"<pathname>\"\t: Export HQ/TF/FD.");
                 Console.WriteLine("/xl=\"<pathname>\"\t: Export legacy data (for testing).");
-                Console.WriteLine("/xo=\"<pathname>\"\t: Export operational condition amplifiers.");
+                Console.WriteLine("/xo=\"<pathname>\"\t: Export operational condition amplifiers.*");
                 Console.WriteLine("/xas=\"<as_option>\"\t: Export as SIMPLE, DOMAIN, or IMAGE.");
+                Console.WriteLine("");
+                Console.WriteLine("/xavd=\"<pathname>\"t: Export amplifier value domains.");
+                Console.WriteLine("");
+                Console.WriteLine("/xschemas=\"<pathname>\"t: Export all schemas.");
                 Console.WriteLine("");
                 Console.WriteLine("/+\t\t\t: Append multiple e(x)port files together.");
                 Console.WriteLine("/-source\t\t: Leave source file out of exported tags.");
@@ -100,6 +108,8 @@ namespace jmsml
                 Console.WriteLine("/a\t\t\t: Export symbols with AREA geometry.");
                 Console.WriteLine("/l\t\t\t: Export symbols with LINE geometry.");
                 Console.WriteLine("/p\t\t\t: Export symbols with POINT geometry.");
+                Console.WriteLine("");
+                Console.WriteLine("* - <pathname> argument has two comma seperated values.");
                 Console.WriteLine("");
                 Console.WriteLine("<Enter> to continue.");
                 Console.ReadLine();
@@ -148,6 +158,11 @@ namespace jmsml
                 _etl.ExportAmplifiers(amplifierPath, _exportThisAs, appendFiles, omitSource, omitLegacyTag, size, query);
             }
 
+            if (contextPath != "")
+            {
+                _etl.ExportContext(contextPath, dataValidation, appendFiles);
+            }
+
             if (hqTFFDPath != "")
             {
                 _etl.ExportHQTFFD(hqTFFDPath, _exportThisAs, appendFiles, omitSource, omitLegacyTag, size);
@@ -155,12 +170,31 @@ namespace jmsml
 
             if (ocaPath != "")
             {
-                _etl.ExportOCA(ocaPath, _exportThisAs, appendFiles, omitSource, omitLegacyTag, size);
+                string[] paths = ocaPath.Split(',');
+
+                if (paths.Count() == 2)
+                {
+                    _etl.ExportOCA(paths[0], paths[1], _exportThisAs, appendFiles, omitSource, omitLegacyTag, size);
+                }
+                else
+                {
+                    _etl.ExportOCA(ocaPath, "", _exportThisAs, appendFiles, omitSource, omitLegacyTag, size);
+                }
             }
 
             if (legacySrc != "" && legacyDest != "")
             {
                 _etl.ImportLegacyData(legacySrc, legacyDest);
+            }
+
+            if (exportAVDPath != "")
+            {
+                _etl.ExportAmplifierValueDomains(exportAVDPath, appendFiles);
+            }
+
+            if (exportSchemas != "")
+            {
+                _etl.ExportSchemas(exportSchemas);
             }
         }
 

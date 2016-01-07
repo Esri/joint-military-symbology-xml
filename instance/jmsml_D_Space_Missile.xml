@@ -6,6 +6,12 @@
   </SymbolSetCode>
   <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
   <Entities>
+    <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
+      <EntityCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </EntityCode>
+    </Entity>
     <Entity ID="MISSILE" Label="Missile" LabelAlias="Missile (Space Missile)" Graphic="06110000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
@@ -15,6 +21,13 @@
   </Entities>
 
   <SectorOneModifiers>
+    <Modifier ID="UNSPECIFIED_MOD" Label="Unspecified">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    
     <Modifier ID="BALLISTIC_MOD" Label="Ballistic" LabelAlias="Ballistic (Space Missile)" Category="Missile Class" Graphic="06011.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>
@@ -38,6 +51,13 @@
   </SectorOneModifiers>
 
   <SectorTwoModifiers>
+    <Modifier ID="UNSPECIFIED_2_MOD" Label="Unspecified">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    
     <Modifier ID="SHORT_MOD" Label="Short Range" LabelAlias="Short Range (Space Missile)" Category="Missile Range" Remarks="1000km or less" Graphic="06012.svg">
       <ModifierCode>
         <DigitOne>0</DigitOne>

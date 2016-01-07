@@ -1,6 +1,5 @@
 # joint-military-symbology-xml
-
-Joint Military Symbology XML (JointMilSyML or JMSML) is an XML schema, and associated instance data, designed to definitively document the contents of MIL-STD 2525D and NATO STANAG APP-6(C).  
+Joint Military Symbology XML (JointMilSyML or JMSML) is an XML schema, and associated instance data, designed to definitively document the contents of MIL-STD 2525D and NATO STANAG APP-6(C).
 
 The purpose of defining this schema and populating its associated instance data is four-fold:
   * To aid in the configuration management (CM) of these standards.
@@ -21,12 +20,7 @@ In providing this schema, files of instance data, and sample C# code to navigate
 
 * Instance (xml) files for:
   * The base portion of the two standards.
-  * Each symbol set, including all legacy symbols from 2525C and APP-6(B).  This includes:
-    * Air symbols
-    * Air Missile symbols
-    * Space symbols
-    * Space Missile symbols
-    * Sea Surface symbols
+  * Each symbol set, including all legacy symbols from 2525C and APP-6(B), for all relevant appendices/chapters.
 
 * SVG files for all of the frames, entities, modifiers, and other graphic amplifiers needed to implement military symbology.
 
@@ -43,6 +37,8 @@ In providing this schema, files of instance data, and sample C# code to navigate
 * [Instructions](#instructions)
 * [NLog](#nlog)
 * [Svg](#svg)
+* [Documentation](#documentation)
+* [Versioning](#versioning)
 * [Resources](#resources)
 * [Issues](#issues)
 * [Contributing](#contributing)
@@ -64,7 +60,7 @@ In providing this schema, files of instance data, and sample C# code to navigate
 [New to Github? Get started here.](http://htmlpreview.github.com/?https://github.com/Esri/esri.github.com/blob/master/help/esri-getting-to-know-github.html)
 
 ### Getting Started with the solution
-* Unzip the SVG zip file found in the SVG folder.  If you intend to use these SVG files with the image conversion utilities found under the Utilities source folder, please consult its instructions [here](./source/utilities/image-conversion-utilities/README.md).
+* If you intend to use the SVG files with the image conversion utilities found under the Utilities source folder, please consult its instructions [here](./source/utilities/image-conversion-utilities/README.md).
 * Open and build the Visual Studio Solution at joint-military-symbology-xml\source\JointMilitarySymbologyLibraryCS
     * To use MSBuild to build the solution
         * Open a Visual Studio Command Prompt: Start Menu | Microsoft Visual Studio 2012 | Visual Studio Tools | Developer Command Prompt for VS 2012
@@ -80,11 +76,9 @@ In providing this schema, files of instance data, and sample C# code to navigate
         * `MSTest /testmetadata:JointMilitarySymbologyLibrary.vsmdi /testlist:"JMSML Tests"`
 * Run the Test project to see a form appear, which you can use to manually test the SIDC conversion.
 	* Select from either of the two lists of symbols (2525C or 2525D) and the application will use the underlying C# library to convert the selected symbol ID code (SIDC) from one standard to the other.
-	* Note that not all symbols are currently supported and not all possible 2525D codes will convert to 2525C codes, or vice versa.  
+	* Note that not all possible 2525D codes will convert to 2525C codes, or vice versa.  
 		* Because of the component construction nature of 2525D, there are many more symbol ID combinations possible in 2525D, combinations that don't convert to 2525C.
-* DISA provides graphic files (svg) for the individual parts of MIL-STD 2525.  The JMSML schema supports referencing those files and the included C# library contains functionality that can be used to combine those referenced files into a complete image.  
-
-* Detailed API user documentation can be found at: [API User Doc](./documentation/APIUserDoc.md)
+* DISA provides graphic files (svg) for the individual parts of MIL-STD 2525 (included herein).  The JMSML schema supports referencing those files and the included C# library contains functionality that can be used to combine those referenced files into a complete image.
 
 ## NLog
 
@@ -112,14 +106,71 @@ To configure JMSML to use the included svgs, edit the `jmsml.config` file found 
 
 In `jmsml.config`, The `SVGHome` attribute should point to the location of the actual 2525 svg files.  The `GraphicRoot` attribute is the string prefixed to paths in the image, name, category, tag export files. The `GraphicHome` attribute should point to the real disk location of your `GraphicRoot`. The `GraphicExtension` attribute should be the three letter file name extension for the image files you have stored in your `GraphicHome`.  These may be the original svg files or, perhaps, they are emf files if you have converted the svgs.
 
+## Documentation
+
+- To learn more about the design of this project, please see [here](documentation/DESIGN_DOC.md).
+- To get a high level overview of the XML schema, please see [here](documentation/SCHEMA_OVERVIEW_DOC.md).
+- To learn more about importing raw data into the symbol library, please see [here.](documentation/DATA_IMPORT_DOC.md)
+- To learn more about exporting data from the symbol library, please see [here](samples/README.md).
+- To learn more about the naming conventions used for the svg files, please see [here](svg/README.md).
+- To learn more about the status of various svg issues, please see [here](svg/KNOWN_ISSUES.md).
+- To follow the progress of Esri-authored change proposals, please see [here](documentation/change_proposals/README.md). 
+
+This repo's documentation includes HTML pages generated with a pair of third party tools, re-distributed here in the Documentation folder's Utilities sub-folder.
+
+The tools include xs3p, which is a schema documentation generator in the form of an XSLT.  xs3p was developed by Australia's Distributed Systems Technology Centre (DSTC), a Cooperative Research Center, which folded in 2006.  The DSTC started and hosted the Australian W3C Office.  Since its abandonment, xs3p has been hosted by FiForms Solutions on SourceForge.
+
+More information about xs3p can be found [here](http://xml.fiforms.org/xs3p/).  The DSTC Public License information can be found included [here](http://htmlpreview.github.com/?https://github.com/Esri/joint-military-symbology-xml/documentation/utilities/LICENSE.html), and was used by the DSTC to make its work available to software developers.
+
+These utilities also include a batch file and JS script that exercise MSXML6 as a command line utility.  More information can be found [here](https://code.google.com/p/xml-transformation-tool/).  With its license information found [here](http://opensource.org/licenses/BSD-3-Clause).
+
+## Versioning
+
+JMSML models an XML representation of the contents of MIL-STD-2525D.  One of the stated goals for JMSML is to facilitate the delivery of approved, and subsequently implemented, Change Proposals (CPs) to fielded systems.
+
+JMSML versioning facilitates the tracking of CP implementation between major published releases of 2525D.
+
+__JMSML Versioning__
+
+JMSML Version | Notes
+---|---
+1.0.0 | 2525D, as published
+1.0.1 | May include approved and implemented Change 1 CPs
+1.0.2 | May include more approved and implemented Change 1 CPs
+'' | ''
+1.1.0 | 2525D Change 1, as published
+'' | ''
+
+__2525D Versioning__
+
+2525D Version | Notes
+---|---
+2525D-0 | 2525D, as published
+2525D-1 | 2525D Change 1, as published
+
+Each JMSML version will also include bug fixes and other enhancements or content improvements deemed necessary to better meet our goal of providing military symbology implementers with a quality resource.  
+
+Implemented change proposals (CPs) and other major enhancements will be identified/listed in each version's release notes.
+ 
 ## Resources
 
 * Learn more about Esri's [ArcGIS for Defense maps and apps](http://resources.arcgis.com/en/communities/defense-and-intelligence/).
 
+__Projects using this Repo__
+
+|Project|Repository|Website|
+|---|---|---|
+|ArcGIS Pro/Runtime/Server|https://github.com/Esri/military-features-data||
+|Joint military symbology explorer|https://github.com/kjellmf/military-symbology-explorer|http://kjellmf.github.io/military-symbology-explorer|
+|milsymbol 2525D Implementation|https://github.com/spatialillusions/milsymbol|http://spatialillusions.com/milsymbol/docs/milsymbol-2525d.html|
+
+__Other Standards Referenced by this Repo__
+
+JMSML utilizes NGA's Geopolitical Entities, Names, and Codes ([GENC](https://nsgreg.nga.mil/genc/discovery)).   standard for the three-character country codes used in the base XML file.  Edition 3, Update 1, dated September 30, 2015, is the current version in use herein.
+
 ## Issues
 
-* Not all of the symbols in MIL-STD 2525D or NATO APP-6(C) are included in this initial release, as not all of the appendices/chapters have been instantiated as XML data.
-* The image resources (svg/png) provided by DISA, used to display the individual elements of a complete symbol, are not supplied with this repo.  They are still a work in progress at DISA and many are not currently "wired" in to the XML instance data, at this time.  We will provide sample code in the future that includes and uses some of these available graphic files.
+Several parts of the provided schema have been defined (DrawingRules, LabelRules, Geometries, etc.) but are otherwise empty of full instance data.  Work continues on this project, as it evolves to provide more content for use by implementers, and some of that work will fill in the aforementioned missing data.
 
 Find a bug or want to request a new feature?  Please let us know by submitting an issue.
 

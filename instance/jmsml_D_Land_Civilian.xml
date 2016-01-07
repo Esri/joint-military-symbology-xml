@@ -8,6 +8,12 @@
   <LegacyCodingSchemeCode Name="2525C">O</LegacyCodingSchemeCode>
   <LegacyCodingSchemeCode Name="2525C">E</LegacyCodingSchemeCode>
   <Entities>
+    <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
+      <EntityCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </EntityCode>
+    </Entity>
     <Entity ID="CIVILIAN" Label="Civilian" LabelAlias="Civilian (Land Civilian)" Graphic="11110000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
@@ -78,6 +84,12 @@
     </Entity>
   </Entities>
   <SectorOneModifiers>
+    <Modifier ID="UNSPECIFIED_MOD" Label="Unspecified">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
     <Modifier ID="ASSASSINATION_MOD" Label="Assassination" LabelAlias="Assassination (Land Civilian)" Graphic="11011.svg" Category="Crime">
       <ModifierCode>
         <DigitOne>0</DigitOne>
@@ -224,6 +236,12 @@
     </Modifier>
   </SectorOneModifiers>
   <SectorTwoModifiers>
+    <Modifier ID="UNSPECIFIED_2_MOD" Label="Unspecified">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
     <Modifier ID="LEADER_2_MOD" Label="Leader or Leadership" LabelAlias="Leader or Leadership 2" Graphic="11012.svg" Category="Organization">
       <ModifierCode>
         <DigitOne>0</DigitOne>

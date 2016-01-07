@@ -1,4 +1,4 @@
-﻿/* Copyright 2014 Esri
+﻿/* Copyright 2014 - 2015 Esri
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -26,7 +26,7 @@ namespace JointMilitarySymbologyLibrary
         protected ConfigHelper _configHelper;
         protected string _notes = "";
 
-        protected string BuildFrameCode(LibraryContext context, LibraryStandardIdentity identity, LibraryDimension dimension, LibraryStatus status)
+        protected string BuildFrameCode(LibraryContext context, LibraryStandardIdentity identity, LibraryDimension dimension, LibraryStatus status, bool asAnyCivilian)
         {
             // Creates the unique idntifier code for a given frame.
 
@@ -38,6 +38,9 @@ namespace JointMilitarySymbologyLibrary
                        Convert.ToString(identity.StandardIdentityCode) +
                        Convert.ToString(dimension.DimensionCode.DigitOne) + Convert.ToString(dimension.DimensionCode.DigitTwo) + "_" +
                        Convert.ToString((status.StatusCode == 1) ? 1 : 0);
+
+                if (asAnyCivilian)
+                    code = code + "c";
             }
             else
                 code = Convert.ToString(identity.StandardIdentityCode);
@@ -45,16 +48,16 @@ namespace JointMilitarySymbologyLibrary
             return code;
         }
 
-        protected string BuildQuotedFrameCode(LibraryContext context, LibraryStandardIdentity identity, LibraryDimension dimension, LibraryStatus status)
+        protected string BuildQuotedFrameCode(LibraryContext context, LibraryStandardIdentity identity, LibraryDimension dimension, LibraryStatus status, bool asAnyCivilian)
         {
             // Creates the unique idntifier code for a given frame, surrounded by quotes.
 
-            string code = '"' + this.BuildFrameCode(context, identity, dimension, status) + '"';
+            string code = '"' + this.BuildFrameCode(context, identity, dimension, status, asAnyCivilian) + '"';
 
             return code;
         }
 
-        protected string BuildFrameItemName(LibraryContext context, LibraryDimension dimension, LibraryStandardIdentity identity, LibraryStatus status)
+        protected string BuildFrameItemName(LibraryContext context, LibraryDimension dimension, LibraryStandardIdentity identity, LibraryStatus status, bool asAnyCivilian)
         {
             // Constructs a string containing the name of a frame, where each label value
             // is seperated by a DomainSeparator (usually a colon).  Builds this for each group
@@ -79,6 +82,11 @@ namespace JointMilitarySymbologyLibrary
                     result = result + _configHelper.DomainSeparator + ((status.LabelAlias == "") ? status.Label : status.LabelAlias);
             }
 
+            if (asAnyCivilian)
+            {
+                result = result + _configHelper.DomainSeparator + "Civilian";
+            }
+
             return result;
         }
 
@@ -88,7 +96,8 @@ namespace JointMilitarySymbologyLibrary
                                             LibraryStatus status, 
                                             string graphicPath, 
                                             bool omitSource, 
-                                            bool omitLegacy)
+                                            bool omitLegacy,
+                                            bool asAnyCivilian)
         {
             // Constructs a string of semicolon delimited tags that users can utilize to search
             // for or find a given symbol.
@@ -103,6 +112,9 @@ namespace JointMilitarySymbologyLibrary
 
             if(status.StatusCode == 1)
                 result = result + ((status.LabelAlias == "") ? status.Label.Replace(',', '-') : status.LabelAlias.Replace(',', '-')) + ";";
+
+            if (asAnyCivilian)
+                result = result + "Civilian;";
 
             // Loop through each symbol set in the dimension and add any labels from those
 
@@ -128,18 +140,18 @@ namespace JointMilitarySymbologyLibrary
             else
                 result = result + "NotValid;";
 
-            result = result + BuildFrameItemName(context, dimension, identity, status) + ";";
-            result = result + BuildFrameCode(context, identity, dimension, status);
+            result = result + BuildFrameItemName(context, dimension, identity, status, asAnyCivilian) + ";";
+            result = result + BuildFrameCode(context, identity, dimension, status, asAnyCivilian);
 
             return result;
         }
 
-        public string NameIt(LibraryContext context, LibraryDimension dimension, LibraryStandardIdentity identity, LibraryStatus status)
+        public string NameIt(LibraryContext context, LibraryDimension dimension, LibraryStandardIdentity identity, LibraryStatus status, bool asAnyCivilian)
         {
             string name = "";
 
             if (identity != null)
-                name = BuildFrameItemName(context, dimension, identity, status);
+                name = BuildFrameItemName(context, dimension, identity, status, asAnyCivilian);
             
             return name;
         }

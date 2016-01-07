@@ -1,4 +1,4 @@
-﻿/* Copyright 2014 Esri
+﻿/* Copyright 2014 - 2015 Esri
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -80,6 +80,7 @@ namespace JointMilitarySymbologyLibrary
         private Symbol _retiredSymbol;
 
         private bool _drawColoredOCABars = true;
+        private bool _drawCivilianFrames = false;
 
         private SortedDictionary<ushort, SymbolSet> _sortedSymbolSets = new SortedDictionary<ushort,SymbolSet>();
         private List<SymbolSet> _symbolSets = new List<SymbolSet>();
@@ -901,29 +902,6 @@ namespace JointMilitarySymbologyLibrary
             return retObj;
         }
 
-        internal LibraryContextContextAmplifier ContextAmplifier(LibraryContext context, ShapeType shape)
-        {
-            LibraryContextContextAmplifier retObj = null;
-
-            if (context != null)
-            {
-                if (context.ContextAmplifiers != null)
-                {
-                    foreach (LibraryContextContextAmplifier lObj in context.ContextAmplifiers)
-                    {
-                        if (lObj.Shape == shape)
-                        {
-                            return lObj;
-                        }
-                    }
-                }
-            }
-
-            _statusFlag -= 1024;
-
-            return retObj;
-        }
-
         internal SymbolSetEntity Entity(SymbolSet symbolSet, ushort entityCodeOne, ushort entityCodeTwo)
         {
             SymbolSetEntity retObj = null;
@@ -1134,7 +1112,7 @@ namespace JointMilitarySymbologyLibrary
                 {
                     foreach (ModifiersTypeModifier lObj in symbolSet.SectorOneModifiers)
                     {
-                        if (lObj.ID == modifierID)
+                        if (lObj.ID == modifierID || modifierID == "NA" && lObj.ModifierCode.DigitOne == 0 && lObj.ModifierCode.DigitTwo == 0)
                         {
                             return lObj;
                         }
@@ -1177,7 +1155,7 @@ namespace JointMilitarySymbologyLibrary
                 {
                     foreach (ModifiersTypeModifier lObj in symbolSet.SectorTwoModifiers)
                     {
-                        if (lObj.ID == modifierID)
+                        if (lObj.ID == modifierID || modifierID == "NA" && lObj.ModifierCode.DigitOne == 0 && lObj.ModifierCode.DigitTwo == 0)
                         {
                             return lObj;
                         }
@@ -1296,6 +1274,26 @@ namespace JointMilitarySymbologyLibrary
                                                   ModifiersTypeModifier modifierTwo)
         {
             SymbolSetLegacySymbol retObj = null;
+
+            // Account now for non-null modifiers that are effectively treated like null (00)
+
+            if (modifierOne != null)
+            {
+                if (modifierOne.ModifierCode.DigitOne == 0 &&
+                    modifierOne.ModifierCode.DigitTwo == 0)
+
+                    modifierOne = null;
+            }
+
+            if (modifierTwo != null)
+            {
+                if (modifierTwo.ModifierCode.DigitOne == 0 &&
+                    modifierTwo.ModifierCode.DigitTwo == 0)
+
+                    modifierTwo = null;
+            }
+
+            // Now build a legacy 15 character SIDC from the 2525D symbol objects
 
             if (symbolSet != null)
             {
@@ -1417,6 +1415,19 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
+        public bool DrawCivilianFrames
+        {
+            get
+            {
+                return _drawCivilianFrames;
+            }
+
+            set
+            {
+                _drawCivilianFrames = value;
+            }
+        }
+
         public Symbol MakeSymbol(string legacyStandard, string legacySIDC)
         {
             Symbol s = null;
@@ -1428,7 +1439,7 @@ namespace JointMilitarySymbologyLibrary
                 legacySIDC = legacySIDC.Replace('*', '-');
                 legacySIDC = legacySIDC.ToUpper();
 
-                s = new Symbol(this, legacyStandard, legacySIDC, _drawColoredOCABars);
+                s = new Symbol(this, legacyStandard, legacySIDC, _drawColoredOCABars, _drawCivilianFrames);
 
                 if (s.SymbolStatus == SymbolStatusEnum.statusEnumInvalid)
                 {
@@ -1447,7 +1458,7 @@ namespace JointMilitarySymbologyLibrary
         public Symbol MakeSymbol(UInt32 partA, UInt32 partB)
         {
             SIDC sid = new SIDC(partA, partB);
-            Symbol s = new Symbol(this, sid, _drawColoredOCABars);
+            Symbol s = new Symbol(this, sid, _drawColoredOCABars, _drawCivilianFrames);
 
             if (s.SymbolStatus == SymbolStatusEnum.statusEnumInvalid)
             {
@@ -1459,7 +1470,7 @@ namespace JointMilitarySymbologyLibrary
 
         public Symbol MakeSymbol(SIDC sidc)
         {
-            Symbol s = new Symbol(this, sidc, _drawColoredOCABars);
+            Symbol s = new Symbol(this, sidc, _drawColoredOCABars, _drawCivilianFrames);
 
             if (s.SymbolStatus == SymbolStatusEnum.statusEnumInvalid)
             {

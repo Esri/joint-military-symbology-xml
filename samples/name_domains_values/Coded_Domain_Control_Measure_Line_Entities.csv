@@ -1,4 +1,5 @@
 Name,Value
+Unspecified,000000
 Command and Control Lines : Boundary,110100
 Command and Control Lines : Light Line,110200
 Maneuver Lines : Forward Line of Troops : Friendly Present,140101
@@ -8,7 +9,7 @@ Maneuver Lines : Forward Line of Troops : Enemy Suspected or Templated,140104
 Maneuver Lines : Phase Line,140300
 Maneuver Lines : Forward Edge of the Battle Area,140400
 Maneuver Lines : Forward Edge of the Battle Area : Proposed or On Order,140401
-Maneuver Lines : Principle Direction of Fire,140500
+Maneuver Lines : Principal Direction of Fire,140500
 Maneuver Lines : Direction of Attack : Friendly Aviation,140601
 Maneuver Lines : Direction of Attack : Friendly Direction of Main Attack,140602
 Maneuver Lines : Direction of Attack : Friendly Direction of Supporting Attack,140603
@@ -36,8 +37,16 @@ Maneuver Areas : Axis of Advance : Supporting Attack Planned or On Order,151405
 Maneuver Areas : Axis of Advance : Feint,151406
 Maneuver Areas : Axis of Advance : Enemy Confirmed,151407
 Maneuver Areas : Axis of Advance : Enemy Templated or Suspected,151408
+Maneuver Areas : Attack by Fire Position,152000
 Maneuver Areas : Support by Fire,152100
 Maneuver Areas : Search Area/Reconnaissance Area,152200
+Air Corridors : Air Corridor,170100
+Air Corridors : Low Level Transit Route,170200
+Air Corridors : Minimum-Risk Route,170300
+Air Corridors : Safe Lane,170400
+Air Corridors : Standard Use Army Aircraft Flight Route,170500
+Air Corridors : Transit Corridor,170600
+Air Corridors : Unmanned Aircraft (UA) Route,170700
 Airspace Control Lines : Identification Friend or Foe Off Line,190100
 Airspace Control Lines : Identification Friend or Foe On Line,190200
 Maritime Points : Navigational,218400
@@ -68,9 +77,11 @@ Protection Areas : Obstacle Effects : Turn,270504
 Protection Areas : Obstacle Bypass : Easy,270601
 Protection Areas : Obstacle Bypass : Difficult,270602
 Protection Areas : Obstacle Bypass : Impossible,270603
+Protection Areas : Bridge or Gap,271100
 Protection Areas : Roadblocks- Craters and Blown Bridges : Planned,271201
 Protection Areas : Roadblocks- Craters and Blown Bridges : Explosives-State of Readiness 1 (Safe),271202
 Protection Areas : Roadblocks- Craters and Blown Bridges : Explosives-State of Readiness 2 (armed but passable),271203
+Protection Areas : Roadblocks- Craters and Blown Bridges : Roadblock Complete (Executed),271204
 Protection Areas : Bridge,271400
 Protection Areas : Ford Easy,271500
 Protection Areas : Ford Difficult,271600
@@ -116,12 +127,10 @@ Mission Tasks : Clear,340500
 Mission Tasks : Counterattack,340600
 Mission Tasks : Counterattack by Fire,340700
 Mission Tasks : Delay,340800
-Mission Tasks : Destroy,340900
 Mission Tasks : Disrupt,341000
 Mission Tasks : Fix,341100
 Mission Tasks : Follow and Assume,341200
 Mission Tasks : Follow and Support,341300
-Mission Tasks : Interdict,341400
 Mission Tasks : Isolate,341500
 Mission Tasks : Occupy,341700
 Mission Tasks : Penetrate,341800

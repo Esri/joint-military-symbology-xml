@@ -1,4 +1,4 @@
-﻿/* Copyright 2014 Esri
+﻿/* Copyright 2014 - 2015 Esri
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -235,6 +235,11 @@ namespace Test
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             _librarian.DrawColoredOCABars = checkBox1.Checked;
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            _librarian.DrawCivilianFrames = checkBox2.Checked;
         }
 
         private void text2525C_KeyUp(object sender, KeyEventArgs e)
