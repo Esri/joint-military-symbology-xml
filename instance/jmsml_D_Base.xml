@@ -39,31 +39,358 @@
     <Amplifier ID="AP" Label="Target Designator" Description="A six character text modifier used in Fire Support operations to uniquely designate targets in accordance with STANAG 2147, where characters 1 and 2 are alphabetic, and characters 3-6 are numeric: AANNNN" Type="TEXT" Length="6"/>
     <Amplifier ID="AQ" Label="Guarded Unit" Description="During ballistic missile defense, some tracks are designated as guarded by a particular unit." Type="TEXT" Length="2"/>
     <Amplifier ID="AR" Label="Special Designator" Description="Special track designators such as Non-Real Time (NRT) and Tactically Significant (SIG) tracks are denoted here." Type="TEXT" Length="3"/>
-    <Amplifier ID="AS" Label="Country" Description="Identifies the country of the organization being shown." Remarks="Uses the GENC Standard." Type="TEXT" Length="3"/>
+    <Amplifier ID="AS" Label="Country" Description="Identifies the country of the organization being shown." Remarks="Uses the GENC Standard." Type="TEXT" Length="3">
+      <Values ID="AS_VALUES" Label="Country Codes" LabelAlias="CountryCodes">
+        <Value Name="AF" Label="Afghanistan" LabelAlias="AFG"/>
+        <Value Name="QZ" Label="Akrotiri" LabelAlias="XQZ"/>
+        <Value Name="AL" Label="Albania" LabelAlias="ALB"/>
+        <Value Name="DZ" Label="Algeria" LabelAlias="DZA"/>
+        <Value Name="AS" Label="American Samoa" LabelAlias="ASM"/>
+        <Value Name="AD" Label="Andorra" LabelAlias="AND"/>
+        <Value Name="AO" Label="Angola" LabelAlias="AGO"/>
+        <Value Name="AI" Label="Anguilla" LabelAlias="AIA"/>
+        <Value Name="AQ" Label="Antarctica" LabelAlias="ATA"/>
+        <Value Name="AG" Label="Antigua and Barbuda" LabelAlias="ATG"/>
+        <Value Name="AR" Label="Argentina" LabelAlias="ARG"/>
+        <Value Name="AM" Label="Armenia" LabelAlias="ARM"/>
+        <Value Name="AW" Label="Aruba" LabelAlias="ABW"/>
+        <Value Name="XA" Label="Ashmore and Cartier Islands" LabelAlias="XAC"/>
+        <Value Name="AU" Label="Australia" LabelAlias="AUS"/>
+        <Value Name="AT" Label="Austria" LabelAlias="AUT"/>
+        <Value Name="AZ" Label="Azerbaijan" LabelAlias="AZE"/>
+        <Value Name="BS" Label="Bahamas, The" LabelAlias="BHS"/>
+        <Value Name="BH" Label="Bahrain" LabelAlias="BHR"/>
+        <Value Name="XB" Label="Baker Island" LabelAlias="XBK"/>
+        <Value Name="BD" Label="Bangladesh" LabelAlias="BGD"/>
+        <Value Name="BB" Label="Barbados" LabelAlias="BRB"/>
+        <Value Name="QS" Label="Bassas Da India" LabelAlias="XBI"/>
+        <Value Name="BY" Label="Belarus" LabelAlias="BLR"/>
+        <Value Name="BE" Label="Belgium" LabelAlias="BEL"/>
+        <Value Name="BZ" Label="Belize" LabelAlias="BLZ"/>
+        <Value Name="BJ" Label="Benin" LabelAlias="BEN"/>
+        <Value Name="BM" Label="Bermuda" LabelAlias="BMU"/>
+        <Value Name="BT" Label="Bhutan" LabelAlias="BTN"/>
+        <Value Name="BO" Label="Bolivia" LabelAlias="BOL"/>
+        <Value Name="BQ" Label="Bonaire, Sint Eustatius, and Saba" LabelAlias="BES"/>
+        <Value Name="BA" Label="Bosnia and Herzegovina" LabelAlias="BIH"/>
+        <Value Name="BW" Label="Botswana" LabelAlias="BWA"/>
+        <Value Name="BV" Label="Bouvet Island" LabelAlias="BVT"/>
+        <Value Name="BR" Label="Brazil" LabelAlias="BRA"/>
+        <Value Name="IO" Label="British Indian Ocean Territory" LabelAlias="IOT"/>
+        <Value Name="BN" Label="Brunei" LabelAlias="BRN"/>
+        <Value Name="BG" Label="Bulgaria" LabelAlias="BGR"/>
+        <Value Name="BF" Label="Burkina Faso" LabelAlias="BFA"/>
+        <Value Name="MM" Label="Burma" LabelAlias="MMR"/>
+        <Value Name="BI" Label="Burundi" LabelAlias="BDI"/>
+        <Value Name="CV" Label="Cabo Verde" LabelAlias="CPV"/>
+        <Value Name="KH" Label="Cambodia" LabelAlias="KHM"/>
+        <Value Name="CM" Label="Cameroon" LabelAlias="CMR"/>
+        <Value Name="CA" Label="Canada" LabelAlias="CAN"/>
+        <Value Name="KY" Label="Cayman Islands" LabelAlias="CYM"/>
+        <Value Name="CF" Label="Central African Republic" LabelAlias="CAF"/>
+        <Value Name="TD" Label="Chad" LabelAlias="TCD"/>
+        <Value Name="CL" Label="Chile" LabelAlias="CHL"/>
+        <Value Name="CN" Label="China" LabelAlias="CHN"/>
+        <Value Name="CX" Label="Christmas Island" LabelAlias="CXR"/>
+        <Value Name="CP" Label="Clipperton Island" LabelAlias="CPT"/>
+        <Value Name="CC" Label="Cocos (Keeling) Islands" LabelAlias="CCK"/>
+        <Value Name="CO" Label="Colombia" LabelAlias="COL"/>
+        <Value Name="KM" Label="Comoros" LabelAlias="COM"/>
+        <Value Name="CG" Label="Congo (Brazzaville)" LabelAlias="COG"/>
+        <Value Name="CD" Label="Congo (Kinshasa)" LabelAlias="COD"/>
+        <Value Name="CK" Label="Cook Islands" LabelAlias="COK"/>
+        <Value Name="XC" Label="Coral Sea Islands" LabelAlias="XCS"/>
+        <Value Name="CR" Label="Costa Rica" LabelAlias="CRI"/>
+        <Value Name="CI" Label="Côte d’Ivoire" LabelAlias="CIV"/>
+        <Value Name="HR" Label="Croatia" LabelAlias="HRV"/>
+        <Value Name="CU" Label="Cuba" LabelAlias="CUB"/>
+        <Value Name="CW" Label="Curaçao" LabelAlias="CUW"/>
+        <Value Name="CY" Label="Cyprus" LabelAlias="CYP"/>
+        <Value Name="CZ" Label="Czech Republic" LabelAlias="CZE"/>
+        <Value Name="DK" Label="Denmark" LabelAlias="DNK"/>
+        <Value Name="XD" Label="Dhekelia" LabelAlias="XXD"/>
+        <Value Name="DG" Label="Diego Garcia" LabelAlias="DGA"/>
+        <Value Name="DJ" Label="Djibouti" LabelAlias="DJI"/>
+        <Value Name="DM" Label="Dominica" LabelAlias="DMA"/>
+        <Value Name="DO" Label="Dominican Republic" LabelAlias="DOM"/>
+        <Value Name="EC" Label="Ecuador" LabelAlias="ECU"/>
+        <Value Name="EG" Label="Egypt" LabelAlias="EGY"/>
+        <Value Name="SV" Label="El Salvador" LabelAlias="SLV"/>
+        <Value Name="X1" Label="Entity 1" LabelAlias="XAZ"/>
+        <Value Name="X2" Label="Entity 2" LabelAlias="XCR"/>
+        <Value Name="X3" Label="Entity 3" LabelAlias="XCY"/>
+        <Value Name="X4" Label="Entity 4" LabelAlias="XKM"/>
+        <Value Name="X5" Label="Entity 5" LabelAlias="XKN"/>
+        <Value Name="A3" Label="Entity 6" LabelAlias="AX3"/>
+        <Value Name="GQ" Label="Equatorial Guinea" LabelAlias="GNQ"/>
+        <Value Name="ER" Label="Eritrea" LabelAlias="ERI"/>
+        <Value Name="EE" Label="Estonia" LabelAlias="EST"/>
+        <Value Name="ET" Label="Ethiopia" LabelAlias="ETH"/>
+        <Value Name="XE" Label="Europa Island" LabelAlias="XEU"/>
+        <Value Name="FK" Label="Falkland Islands (Islas Malvinas)" LabelAlias="FLK"/>
+        <Value Name="FO" Label="Faroe Islands" LabelAlias="FRO"/>
+        <Value Name="FJ" Label="Fiji" LabelAlias="FJI"/>
+        <Value Name="FI" Label="Finland" LabelAlias="FIN"/>
+        <Value Name="FR" Label="France" LabelAlias="FRA"/>
+        <Value Name="GF" Label="French Guiana" LabelAlias="GUF"/>
+        <Value Name="PF" Label="French Polynesia" LabelAlias="PYF"/>
+        <Value Name="TF" Label="French Southern and Antarctic Lands" LabelAlias="ATF"/>
+        <Value Name="GA" Label="Gabon" LabelAlias="GAB"/>
+        <Value Name="GM" Label="Gambia, The" LabelAlias="GMB"/>
+        <Value Name="XG" Label="Gaza Strip" LabelAlias="XGZ"/>
+        <Value Name="GE" Label="Georgia" LabelAlias="GEO"/>
+        <Value Name="DE" Label="Germany" LabelAlias="DEU"/>
+        <Value Name="GH" Label="Ghana" LabelAlias="GHA"/>
+        <Value Name="GI" Label="Gibraltar" LabelAlias="GIB"/>
+        <Value Name="QX" Label="Glorioso Islands" LabelAlias="XGL"/>
+        <Value Name="GR" Label="Greece" LabelAlias="GRC"/>
+        <Value Name="GL" Label="Greenland" LabelAlias="GRL"/>
+        <Value Name="GD" Label="Grenada" LabelAlias="GRD"/>
+        <Value Name="GP" Label="Guadeloupe" LabelAlias="GLP"/>
+        <Value Name="GU" Label="Guam" LabelAlias="GUM"/>
+        <Value Name="A2" Label="Guantanamo Bay Naval Base" LabelAlias="AX2"/>
+        <Value Name="GT" Label="Guatemala" LabelAlias="GTM"/>
+        <Value Name="GG" Label="Guernsey" LabelAlias="GGY"/>
+        <Value Name="GN" Label="Guinea" LabelAlias="GIN"/>
+        <Value Name="GW" Label="Guinea-Bissau" LabelAlias="GNB"/>
+        <Value Name="GY" Label="Guyana" LabelAlias="GUY"/>
+        <Value Name="HT" Label="Haiti" LabelAlias="HTI"/>
+        <Value Name="HM" Label="Heard Island and Mcdonald Islands" LabelAlias="HMD"/>
+        <Value Name="HN" Label="Honduras" LabelAlias="HND"/>
+        <Value Name="HK" Label="Hong Kong" LabelAlias="HKG"/>
+        <Value Name="XH" Label="Howland Island" LabelAlias="XHO"/>
+        <Value Name="HU" Label="Hungary" LabelAlias="HUN"/>
+        <Value Name="IS" Label="Iceland" LabelAlias="ISL"/>
+        <Value Name="IN" Label="India" LabelAlias="IND"/>
+        <Value Name="ID" Label="Indonesia" LabelAlias="IDN"/>
+        <Value Name="IR" Label="Iran" LabelAlias="IRN"/>
+        <Value Name="IQ" Label="Iraq" LabelAlias="IRQ"/>
+        <Value Name="IE" Label="Ireland" LabelAlias="IRL"/>
+        <Value Name="IM" Label="Isle Of Man" LabelAlias="IMN"/>
+        <Value Name="IL" Label="Israel" LabelAlias="ISR"/>
+        <Value Name="IT" Label="Italy" LabelAlias="ITA"/>
+        <Value Name="JM" Label="Jamaica" LabelAlias="JAM"/>
+        <Value Name="XJ" Label="Jan Mayen" LabelAlias="XJM"/>
+        <Value Name="JP" Label="Japan" LabelAlias="JPN"/>
+        <Value Name="XQ" Label="Jarvis Island" LabelAlias="XJV"/>
+        <Value Name="JE" Label="Jersey" LabelAlias="JEY"/>
+        <Value Name="XU" Label="Johnston Atoll" LabelAlias="XJA"/>
+        <Value Name="JO" Label="Jordan" LabelAlias="JOR"/>
+        <Value Name="QU" Label="Juan De Nova Island" LabelAlias="XJN"/>
+        <Value Name="KZ" Label="Kazakhstan" LabelAlias="KAZ"/>
+        <Value Name="KE" Label="Kenya" LabelAlias="KEN"/>
+        <Value Name="XM" Label="Kingman Reef" LabelAlias="XKR"/>
+        <Value Name="KI" Label="Kiribati" LabelAlias="KIR"/>
+        <Value Name="KP" Label="Korea, North" LabelAlias="PRK"/>
+        <Value Name="KR" Label="Korea, South" LabelAlias="KOR"/>
+        <Value Name="XK" Label="Kosovo" LabelAlias="XKS"/>
+        <Value Name="KW" Label="Kuwait" LabelAlias="KWT"/>
+        <Value Name="KG" Label="Kyrgyzstan" LabelAlias="KGZ"/>
+        <Value Name="LA" Label="Laos" LabelAlias="LAO"/>
+        <Value Name="LV" Label="Latvia" LabelAlias="LVA"/>
+        <Value Name="LB" Label="Lebanon" LabelAlias="LBN"/>
+        <Value Name="LS" Label="Lesotho" LabelAlias="LSO"/>
+        <Value Name="LR" Label="Liberia" LabelAlias="LBR"/>
+        <Value Name="LY" Label="Libya" LabelAlias="LBY"/>
+        <Value Name="LI" Label="Liechtenstein" LabelAlias="LIE"/>
+        <Value Name="LT" Label="Lithuania" LabelAlias="LTU"/>
+        <Value Name="LU" Label="Luxembourg" LabelAlias="LUX"/>
+        <Value Name="MO" Label="Macau" LabelAlias="MAC"/>
+        <Value Name="MK" Label="Macedonia" LabelAlias="MKD"/>
+        <Value Name="MG" Label="Madagascar" LabelAlias="MDG"/>
+        <Value Name="MW" Label="Malawi" LabelAlias="MWI"/>
+        <Value Name="MY" Label="Malaysia" LabelAlias="MYS"/>
+        <Value Name="MV" Label="Maldives" LabelAlias="MDV"/>
+        <Value Name="ML" Label="Mali" LabelAlias="MLI"/>
+        <Value Name="MT" Label="Malta" LabelAlias="MLT"/>
+        <Value Name="MH" Label="Marshall Islands" LabelAlias="MHL"/>
+        <Value Name="MQ" Label="Martinique" LabelAlias="MTQ"/>
+        <Value Name="MR" Label="Mauritania" LabelAlias="MRT"/>
+        <Value Name="MU" Label="Mauritius" LabelAlias="MUS"/>
+        <Value Name="YT" Label="Mayotte" LabelAlias="MYT"/>
+        <Value Name="MX" Label="Mexico" LabelAlias="MEX"/>
+        <Value Name="FM" Label="Micronesia, Federated States Of" LabelAlias="FSM"/>
+        <Value Name="QM" Label="Midway Islands" LabelAlias="XMW"/>
+        <Value Name="MD" Label="Moldova" LabelAlias="MDA"/>
+        <Value Name="MC" Label="Monaco" LabelAlias="MCO"/>
+        <Value Name="MN" Label="Mongolia" LabelAlias="MNG"/>
+        <Value Name="ME" Label="Montenegro" LabelAlias="MNE"/>
+        <Value Name="MS" Label="Montserrat" LabelAlias="MSR"/>
+        <Value Name="MA" Label="Morocco" LabelAlias="MAR"/>
+        <Value Name="MZ" Label="Mozambique" LabelAlias="MOZ"/>
+        <Value Name="NA" Label="Namibia" LabelAlias="NAM"/>
+        <Value Name="NR" Label="Nauru" LabelAlias="NRU"/>
+        <Value Name="XV" Label="Navassa Island" LabelAlias="XNV"/>
+        <Value Name="NP" Label="Nepal" LabelAlias="NPL"/>
+        <Value Name="NL" Label="Netherlands" LabelAlias="NLD"/>
+        <Value Name="NC" Label="New Caledonia" LabelAlias="NCL"/>
+        <Value Name="NZ" Label="New Zealand" LabelAlias="NZL"/>
+        <Value Name="NI" Label="Nicaragua" LabelAlias="NIC"/>
+        <Value Name="NE" Label="Niger" LabelAlias="NER"/>
+        <Value Name="NG" Label="Nigeria" LabelAlias="NGA"/>
+        <Value Name="NU" Label="Niue" LabelAlias="NIU"/>
+        <Value Name="NF" Label="Norfolk Island" LabelAlias="NFK"/>
+        <Value Name="MP" Label="Northern Mariana Islands" LabelAlias="MNP"/>
+        <Value Name="NO" Label="Norway" LabelAlias="NOR"/>
+        <Value Name="OM" Label="Oman" LabelAlias="OMN"/>
+        <Value Name="PK" Label="Pakistan" LabelAlias="PAK"/>
+        <Value Name="PW" Label="Palau" LabelAlias="PLW"/>
+        <Value Name="XL" Label="Palmyra Atoll" LabelAlias="XPL"/>
+        <Value Name="PA" Label="Panama" LabelAlias="PAN"/>
+        <Value Name="PG" Label="Papua New Guinea" LabelAlias="PNG"/>
+        <Value Name="XP" Label="Paracel Islands" LabelAlias="XPR"/>
+        <Value Name="PY" Label="Paraguay" LabelAlias="PRY"/>
+        <Value Name="PE" Label="Peru" LabelAlias="PER"/>
+        <Value Name="PH" Label="Philippines" LabelAlias="PHL"/>
+        <Value Name="PN" Label="Pitcairn Islands" LabelAlias="PCN"/>
+        <Value Name="PL" Label="Poland" LabelAlias="POL"/>
+        <Value Name="PT" Label="Portugal" LabelAlias="PRT"/>
+        <Value Name="PR" Label="Puerto Rico" LabelAlias="PRI"/>
+        <Value Name="QA" Label="Qatar" LabelAlias="QAT"/>
+        <Value Name="RE" Label="Reunion" LabelAlias="REU"/>
+        <Value Name="RO" Label="Romania" LabelAlias="ROU"/>
+        <Value Name="RU" Label="Russia" LabelAlias="RUS"/>
+        <Value Name="RW" Label="Rwanda" LabelAlias="RWA"/>
+        <Value Name="BL" Label="Saint Barthelemy" LabelAlias="BLM"/>
+        <Value Name="SH" Label="Saint Helena, Ascension, and Tristan Da Cunha" LabelAlias="SHN"/>
+        <Value Name="KN" Label="Saint Kitts and Nevis" LabelAlias="KNA"/>
+        <Value Name="LC" Label="Saint Lucia" LabelAlias="LCA"/>
+        <Value Name="MF" Label="Saint Martin" LabelAlias="MAF"/>
+        <Value Name="PM" Label="Saint Pierre and Miquelon" LabelAlias="SPM"/>
+        <Value Name="VC" Label="Saint Vincent and The Grenadines" LabelAlias="VCT"/>
+        <Value Name="WS" Label="Samoa" LabelAlias="WSM"/>
+        <Value Name="SM" Label="San Marino" LabelAlias="SMR"/>
+        <Value Name="ST" Label="Sao Tome and Principe" LabelAlias="STP"/>
+        <Value Name="SA" Label="Saudi Arabia" LabelAlias="SAU"/>
+        <Value Name="SN" Label="Senegal" LabelAlias="SEN"/>
+        <Value Name="RS" Label="Serbia" LabelAlias="SRB"/>
+        <Value Name="SC" Label="Seychelles" LabelAlias="SYC"/>
+        <Value Name="SL" Label="Sierra Leone" LabelAlias="SLE"/>
+        <Value Name="SG" Label="Singapore" LabelAlias="SGP"/>
+        <Value Name="SX" Label="Sint Maarten" LabelAlias="SXM"/>
+        <Value Name="SK" Label="Slovakia" LabelAlias="SVK"/>
+        <Value Name="SI" Label="Slovenia" LabelAlias="SVN"/>
+        <Value Name="SB" Label="Solomon Islands" LabelAlias="SLB"/>
+        <Value Name="SO" Label="Somalia" LabelAlias="SOM"/>
+        <Value Name="ZA" Label="South Africa" LabelAlias="ZAF"/>
+        <Value Name="GS" Label="South Georgia and South Sandwich Islands" LabelAlias="SGS"/>
+        <Value Name="SS" Label="South Sudan" LabelAlias="SSD"/>
+        <Value Name="ES" Label="Spain" LabelAlias="ESP"/>
+        <Value Name="XS" Label="Spratly Islands" LabelAlias="XSP"/>
+        <Value Name="LK" Label="Sri Lanka" LabelAlias="LKA"/>
+        <Value Name="SD" Label="Sudan" LabelAlias="SDN"/>
+        <Value Name="SR" Label="Suriname" LabelAlias="SUR"/>
+        <Value Name="XR" Label="Svalbard" LabelAlias="XSV"/>
+        <Value Name="SZ" Label="Swaziland" LabelAlias="SWZ"/>
+        <Value Name="SE" Label="Sweden" LabelAlias="SWE"/>
+        <Value Name="CH" Label="Switzerland" LabelAlias="CHE"/>
+        <Value Name="SY" Label="Syria" LabelAlias="SYR"/>
+        <Value Name="TW" Label="Taiwan" LabelAlias="TWN"/>
+        <Value Name="TJ" Label="Tajikistan" LabelAlias="TJK"/>
+        <Value Name="TZ" Label="Tanzania" LabelAlias="TZA"/>
+        <Value Name="TH" Label="Thailand" LabelAlias="THA"/>
+        <Value Name="TL" Label="Timor-Leste" LabelAlias="TLS"/>
+        <Value Name="TG" Label="Togo" LabelAlias="TGO"/>
+        <Value Name="TK" Label="Tokelau" LabelAlias="TKL"/>
+        <Value Name="TO" Label="Tonga" LabelAlias="TON"/>
+        <Value Name="TT" Label="Trinidad and Tobago" LabelAlias="TTO"/>
+        <Value Name="XT" Label="Tromelin Island" LabelAlias="XTR"/>
+        <Value Name="TN" Label="Tunisia" LabelAlias="TUN"/>
+        <Value Name="TR" Label="Turkey" LabelAlias="TUR"/>
+        <Value Name="TM" Label="Turkmenistan" LabelAlias="TKM"/>
+        <Value Name="TC" Label="Turks and Caicos Islands" LabelAlias="TCA"/>
+        <Value Name="TV" Label="Tuvalu" LabelAlias="TUV"/>
+        <Value Name="UG" Label="Uganda" LabelAlias="UGA"/>
+        <Value Name="UA" Label="Ukraine" LabelAlias="UKR"/>
+        <Value Name="AE" Label="United Arab Emirates" LabelAlias="ARE"/>
+        <Value Name="GB" Label="United Kingdom" LabelAlias="GBR"/>
+        <Value Name="US" Label="United States" LabelAlias="USA"/>
+        <Value Name="A1" Label="Unknown" LabelAlias="AX1"/>
+        <Value Name="UY" Label="Uruguay" LabelAlias="URY"/>
+        <Value Name="UZ" Label="Uzbekistan" LabelAlias="UZB"/>
+        <Value Name="VU" Label="Vanuatu" LabelAlias="VUT"/>
+        <Value Name="VA" Label="Vatican City" LabelAlias="VAT"/>
+        <Value Name="VE" Label="Venezuela" LabelAlias="VEN"/>
+        <Value Name="VN" Label="Vietnam" LabelAlias="VNM"/>
+        <Value Name="VG" Label="Virgin Islands, British" LabelAlias="VGB"/>
+        <Value Name="VI" Label="Virgin Islands, U.S." LabelAlias="VIR"/>
+        <Value Name="QW" Label="Wake Island" LabelAlias="XWK"/>
+        <Value Name="WF" Label="Wallis and Futuna" LabelAlias="WLF"/>
+        <Value Name="XW" Label="West Bank" LabelAlias="XWB"/>
+        <Value Name="EH" Label="Western Sahara" LabelAlias="ESH"/>
+        <Value Name="YE" Label="Yemen" LabelAlias="YEM"/>
+        <Value Name="ZM" Label="Zambia" LabelAlias="ZMB"/>
+        <Value Name="ZW" Label="Zimbabwe" LabelAlias="ZWE"/>
+      </Values>
+    </Amplifier>
     <Amplifier ID="A" Label="Symbol Icon" Description="The innermost part of a symbol that represents a joint military object." Type="GRAPHIC"/>
     <Amplifier ID="B" Label="Echelon" Description="A graphic amplifier in a unit symbol that identifies command level." Type="GRAPHIC"/>
     <Amplifier ID="C" Label="Quantity" Description="A text amplifier in an equipment symbol that identifies the number of items present." Type="TEXT" Length="9"/>
     <Amplifier ID="D" Label="Task Force Indicator" Description="A graphic amplifier that identifies a unit or stability operations symbol as a task force." Type="GRAPHIC"/>
     <Amplifier ID="E" Label="Frame Shape Modifier" Description="A graphic modifier that displays affiliation, battle dimension, or exercise amplifying descriptors of an object." Type="GRAPHIC"/>
-    <Amplifier ID="F" Label="Reinforced or Reduced" Description="A text amplifier in a unit symbol that dispays (+) for reinforced, (-) for reduced, (±) for reinforced and reduced." Type="TEXT" Length="3"/>
+    <Amplifier ID="F" Label="Reinforced or Reduced" Description="A text amplifier in a unit symbol that dispays (+) for reinforced, (-) for reduced, (±) for reinforced and reduced." Type="TEXT" Length="3">
+      <Values ID="F_VALUES" Label="Reinforced or Reduced Values" LabelAlias="Reinforced">
+        <Value Name="REINFORCED" Label="Reinforced" LabelAlias="+"/>
+        <Value Name="REDUCED" Label="Reduced" LabelAlias="-"/>
+        <Value Name="REINFORCED_REDUCED" Label="Reinforced and Reduced" LabelAlias="+/-"/>
+      </Values>
+    </Amplifier>
     <Amplifier ID="G" Label="Staff Comments" Description="A text amplifier for units, equipment, and installations." Remarks="Content is implementation specific." Type="TEXT" Length="20"/>
     <Amplifier ID="H" Label="Additional Information" Description="A text amplifier for units, equipment, and installations." Remarks="Content is implementation specific." Type="TEXT" Length="20"/>
-    <Amplifier ID="J" Label="Evaluation Rating" Description="A text amplifier for units, equipment and installations that consists of a one-letter reliability rating and a one-number credibility rating." Remarks="Reliability: A-F and Credibility: 1-6" Type="TEXT" Length="2"/>
-    <Amplifier ID="K" Label="Combat Effectiveness" Description="A text amplifier for units and installations that indicates unit effectiveness or installation capability." Type="TEXT" Length="5"/>
+    <Amplifier ID="J" Label="Evaluation Rating" Description="A text amplifier for units, equipment and installations that consists of a one-letter reliability rating and a one-number credibility rating." Remarks="Reliability: A-F and Credibility: 1-6" Type="TEXT" Length="2">
+      <Values ID="RELIABILITY_RATINGS" Label="Reliability Rating" LabelAlias="Reliability">
+        <Value Name="COMPLETELY" Label="Completely Reliable" LabelAlias="A"/>
+        <Value Name="USUALLY" Label="Usually Reliable" LabelAlias="B"/>
+        <Value Name="FAIRLY" Label="Fairly Reliable" LabelAlias="C"/>
+        <Value Name="NOT_USUALLY" Label="Not Usually Reliable" LabelAlias="D"/>
+        <Value Name="UNRELIABLE" Label="Unreliable" LabelAlias="E"/>
+        <Value Name="REL_CANNOT_BE_JUDGED" Label="Reliability Cannot Be Judged" LabelAlias="F"/>
+      </Values>
+      <Values ID="CREDIBILITY_RATINGS" Label="Credibility Rating" LabelAlias="Credibility">
+        <Value Name="CONFIRMED" Label="Confirmed by Other Sources" LabelAlias="1"/>
+        <Value Name="PROBABLY" Label="Probably True" LabelAlias="2"/>
+        <Value Name="POSSIBLY" Label="Possibly True" LabelAlias="3"/>
+        <Value Name="DOUBTFULLY" Label="Doubtfully True" LabelAlias="4"/>
+        <Value Name="IMPROBABLE" Label="Improbable" LabelAlias="5"/>
+        <Value Name="CRED_CANNOT_BE_JUDGED" Label="Truth Cannot Be Judged" LabelAlias="6"/>
+      </Values>
+    </Amplifier>
+    <Amplifier ID="K" Label="Combat Effectiveness" Description="A text amplifier for units and installations that indicates unit effectiveness or installation capability." Type="TEXT" Length="5">
+      <Values ID="K_VALUES" Label="Combat Effectiveness Values" LabelAlias="CombatEffectiveness">
+        <Value Name="FULLY_OPERATIONAL" Label="Fully Operational" LabelAlias="FO"/>
+        <Value Name="SUBSTANTIALLY_OPERATIONAL" Label="Substantially Operational" LabelAlias="SO"/>
+        <Value Name="MARGINALLY_OPERATIONAL" Label="Marginally Operational" LabelAlias="MO"/>
+        <Value Name="NOT_OPERATIONAL" Label="Not Operational" LabelAlias="NO"/>
+        <Value Name="UNKNOWN_EFFECTIVENESS" Label="Unknown" LabelAlias="UNK"/>
+      </Values>
+    </Amplifier>
     <Amplifier ID="L" Label="Signature Equipment" Description="A text amplifier for hostile equipment, '!' indicates detectable electronic signatures." Type="TEXT" Length="1"/>
     <Amplifier ID="M" Label="Higher Formation" Description="A text amplifier for units that indicates number or title of higher echelon command (corps are designated by Roman numerals)." Type="TEXT" Length="21"/>
     <Amplifier ID="N" Label="Hostile (Enemy)" Description="A text amplifier for equipment, letters 'ENY' denote hostile symbols." Type="TEXT" Length="3"/>
     <Amplifier ID="P" Label="IFF/SIF/AIS" Description="A text amplifier displaying IFF/SIF/AIS identification modes and codes." Type="TEXT" Length="15"/>
     <Amplifier ID="Q" Label="Direction of Movement Indicator" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." Type="GRAPHIC"/>
     <Amplifier ID="R" Label="Mobility Indicator" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." Type="GRAPHIC"/>
-    <Amplifier ID="R2" Label="SIGINT Mobility Indicator" Description="M=Mobile, S=Static, or U=Uncertain" Type="TEXT" Length="1"/>
+    <Amplifier ID="R2" Label="SIGINT Mobility Indicator" Description="M=Mobile, S=Static, or U=Uncertain" Type="TEXT" Length="1">
+      <Values ID="R2_VALUES" Label="SIGINT Mobility Indicator Values" LabelAlias="SIGINTMobility">
+        <Value Name="MOBILE_INDICATOR" Label="Mobile" LabelAlias="M"/>
+        <Value Name="STATIC_INDICATOR" Label="Static" LabelAlias="S"/>
+        <Value Name="UNCERTAIN_INDICATOR" Label="Uncertain" LabelAlias="U"/>
+      </Values>
+    </Amplifier>
     <Amplifier ID="S" Label="Headquarters Staff Indicator/Offset Location Indicator" Description="Headquarters staff indicator: A graphic amplifier for units, equipment and installations that identifies a unit as a headquarters." Remarks="Offset location indicator: A graphic amplifier for units, equipment and installations used when placing an object away from its actual location." Type="GRAPHIC"/>
     <Amplifier ID="T" Label="Unique Designation" Description="A text amplifier for units, equipment and installations that uniquely identifies a particular symbol or track number." Remarks="Identifies acquisition number when used with SIGINT symbology." Type="TEXT" Length="30"/>
     <Amplifier ID="V" Label="Type" Description="A text amplifier for equipment that indicates types of equipment." Type="TEXT" Length="24"/>
     <Amplifier ID="W" Label="Date/Time Group (DTG)" Description="An alphanumeric designator for displaying a date-time group (DDHHMMSSZMONYYYY) or O/O for on order." Remarks="The date-time group is composed of a group of six numeric digits with a time zone suffix and the standardized three-letter abbreviation for the month followed by four digits representing the year." Type="TEXT" Length="16"/>
     <Amplifier ID="X" Label="Altitude/Depth" Description="A text amplifier for units, equipment, and installations that displays either altitude, flight level, depth for submerged objects." Remarks="Alternatively, used to indicate the height of equipment or structures on the ground." Type="TEXT" Length="14"/>
     <Amplifier ID="Y" Label="Location" Description="A text amplifier for units, equipment, and installations that displays a symbol's location in degrees, minutes, and decimal minutes." Remarks="Alternatively, in MGRS or other applicable display format." Type="TEXT" Length="19" Note="To support homeland security and homeland defense, the federal Geographic Data Committee (FGDC) US National Grid (USNG) standard when referenced to North American Datum 1983 (NAD83) is operationally equivalent to and is an accepted substitute for MGRS coordinates referenced to WGS 84. Note that at mapping scales of 1:5000 and smaller, NAD83 and WGS 84 are considered equivalent."/>
-    <Amplifier ID="Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD 6040." Type="TEXT" Length="8"/>
+    <Amplifier ID="Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD 6040." Type="TEXT" Length="8">
+      <Values ID="SPEED_VALUES" Label="Units of Speed" LabelAlias="SpeedUnits">
+        <Value Name="KPH" Label="Kilometers Per Hour" LabelAlias="KPH"/>
+        <Value Name="MPS" Label="Meters Per Second" LabelAlias="MPS"/>
+        <Value Name="KTS" Label="Nautical Miles Per Hour (Knots)" LabelAlias="KTS"/>
+        <Value Name="MPH" Label="Statute Miles Per Hour" LabelAlias="MPH"/>
+      </Values>
+    </Amplifier>
   </Amplifiers>
   
   <Versions>
@@ -85,7 +412,7 @@
     <Context ID="SIMULATION" Label="Simulation">
       <ContextCode>2</ContextCode>
     </Context>
-    <Context ID="EXTENSION" Label="Extension" Description="Details specified by extension">
+    <Context ID="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
       <ContextCode>9</ContextCode>
     </Context>
   </Contexts>
@@ -119,7 +446,7 @@
       <StandardIdentityCode>6</StandardIdentityCode>
     </StandardIdentity>
 
-    <StandardIdentity ID="SI_EXTENSION" Label="Extension" Description="Details specified by extension">
+    <StandardIdentity ID="SI_EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
       <StandardIdentityCode>9</StandardIdentityCode>
     </StandardIdentity>
   </StandardIdentities>
@@ -176,16 +503,16 @@
       </DimensionCode>
       <LegacyDimensionCode Name="2525C">A</LegacyDimensionCode>
       <Fields>
-        <Field Name="AL" Label="Operational Condition" Description="Indicates operational condition." Remarks="Comprised of only one color. Ex. Aircraft: Red - damaged, Green - fully capable. Ex: Missile: Red - imminent threat, Green - no threat." AmplifierID="AL" X="0" Y="-1"/>
-        <Field Name="AO" Label="Engagement Bar" Description="May denote 1ocal/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
-        <Field Name="A" Label="Air Vehicle Icon" Description="Uses icon and sector modifiers" AmplifierID="A" X="0" Y="0"/>
-        <Field Name="G" Label="Staff Comments" AmplifierID="G" X="1" Y="-2"/>
-        <Field Name="H" Label="Additional Information" AmplifierID="H" X="1" Y="-2"/>
-        <Field Name="P" Label="IFF/SIF" Description="A text amplifier displaying IFF/SIF Identification modes and codes. Display priority: Mode 5, Mode S, Mode 4, Mode 2, Mode 3" Remarks="Mode 2 Prefix: 2:####  Example: 2:1234" AmplifierID="P" X="1" Y="1"/>
-        <Field Name="T" Label="Unique Designation (Track Number)" Description="A text amplifier for units, equipment, and installations that uniquely identifies a particular symbol or track number." Remarks="Prefix = TN:#####  Example: TN:13579" AmplifierID="T" X="1" Y="2"/>
-        <Field Name="V" Label="Type" Description="A text amplifier for equipment that indicates types of equipment." AmplifierID="V" X="1" Y="0"/>
-        <Field Name="X" Label="Altitude" Description="A text amplifier for units that displays altitude flight level." Remarks="Measurement units shall be displayed within the string. Examples: 1500MSL FL150" AmplifierID="X" X="1" Y="-1"/>
-        <Field Name="Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD-6040." AmplifierID="Z" X="1" Y="-1"/>
+        <Field ID="AIR_AL" Label="Operational Condition" Description="Indicates operational condition." Remarks="Comprised of only one color. Ex. Aircraft: Red - damaged, Green - fully capable. Ex: Missile: Red - imminent threat, Green - no threat." AmplifierID="AL" X="0" Y="-1"/>
+        <Field ID="AIR_AO" Label="Engagement Bar" Description="May denote 1ocal/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
+        <Field ID="AIR_A" Label="Air Vehicle Icon" Description="Uses icon and sector modifiers" AmplifierID="A" X="0" Y="0"/>
+        <Field ID="AIR_G" Label="Staff Comments" AmplifierID="G" X="1" Y="-2"/>
+        <Field ID="AIR_H" Label="Additional Information" AmplifierID="H" X="1" Y="-2"/>
+        <Field ID="AIR_P" Label="IFF/SIF" Description="A text amplifier displaying IFF/SIF Identification modes and codes. Display priority: Mode 5, Mode S, Mode 4, Mode 2, Mode 3" Remarks="Mode 2 Prefix: 2:####  Example: 2:1234" AmplifierID="P" X="1" Y="1"/>
+        <Field ID="AIR_T" Label="Unique Designation (Track Number)" Description="A text amplifier for units, equipment, and installations that uniquely identifies a particular symbol or track number." Remarks="Prefix = TN:#####  Example: TN:13579" AmplifierID="T" X="1" Y="2"/>
+        <Field ID="AIR_V" Label="Type" Description="A text amplifier for equipment that indicates types of equipment." AmplifierID="V" X="1" Y="0"/>
+        <Field ID="AIR_X" Label="Altitude" Description="A text amplifier for units that displays altitude flight level." Remarks="Measurement units shall be displayed within the string. Examples: 1500MSL FL150" AmplifierID="X" X="1" Y="-1"/>
+        <Field ID="AIR_Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD-6040." AmplifierID="Z" X="1" Y="-1"/>
       </Fields>
       <SymbolSets>
         <SymbolSetRef ID="SS_AIR" Label="Air" Instance="jmsml_D_Air.xml">
@@ -227,15 +554,15 @@
       <LegacyDimensionCode Name="2525C" CodingSchemeLetter="I">A</LegacyDimensionCode>
       <LegacyDimensionCode Name="2525C" CodingSchemeLetter="I">P</LegacyDimensionCode>
       <Fields>
-        <Field Name="AL" Label="Operational Condition" Description="Indicates operational condition." Remarks="Comprised of only one color. Ex. Satellite: Red - damaged, Green - fully capable. Ex: Missile: Red - imminent threat, Green - no threat." AmplifierID="AL" X="0" Y="-1"/>
-        <Field Name="AO" Label="Engagement Bar" Description="May denote 1ocal/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
-        <Field Name="A" Label="Space Vehicle Icon" Description="Uses icon and sector modifiers" AmplifierID="A" X="0" Y="0"/>
-        <Field Name="G" Label="Staff Comments" AmplifierID="G" X="1" Y="-2"/>
-        <Field Name="H" Label="Additional Information" AmplifierID="H" X="1" Y="-2"/>
-        <Field Name="T" Label="Unique Designation (Track Number)" Description="A text amplifier for units, equipment, and installations that uniquely identifies a particular symbol or track number." Remarks="Prefix = TN:#####  Example: TN:13579" AmplifierID="T" X="1" Y="2"/>
-        <Field Name="V" Label="Type" Description="A text amplifier for equipment that indicates types of equipment." AmplifierID="V" X="1" Y="1"/>
-        <Field Name="X" Label="Altitude" Description="A text amplifier for units that displays altitude flight level." Remarks="Measurement units shall be displayed within the string. Examples: 1500MSL FL150" AmplifierID="X" X="1" Y="-1"/>
-        <Field Name="Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD-6040." AmplifierID="Z" X="1" Y="-1"/>
+        <Field ID="SPACE_AL" Label="Operational Condition" Description="Indicates operational condition." Remarks="Comprised of only one color. Ex. Satellite: Red - damaged, Green - fully capable. Ex: Missile: Red - imminent threat, Green - no threat." AmplifierID="AL" X="0" Y="-1"/>
+        <Field ID="SPACE_AO" Label="Engagement Bar" Description="May denote 1ocal/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
+        <Field ID="SPACE_A" Label="Space Vehicle Icon" Description="Uses icon and sector modifiers" AmplifierID="A" X="0" Y="0"/>
+        <Field ID="SPACE_G" Label="Staff Comments" AmplifierID="G" X="1" Y="-2"/>
+        <Field ID="SPACE_H" Label="Additional Information" AmplifierID="H" X="1" Y="-2"/>
+        <Field ID="SPACE_T" Label="Unique Designation (Track Number)" Description="A text amplifier for units, equipment, and installations that uniquely identifies a particular symbol or track number." Remarks="Prefix = TN:#####  Example: TN:13579" AmplifierID="T" X="1" Y="2"/>
+        <Field ID="SPACE_V" Label="Type" Description="A text amplifier for equipment that indicates types of equipment." AmplifierID="V" X="1" Y="1"/>
+        <Field ID="SPACE_X" Label="Altitude" Description="A text amplifier for units that displays altitude flight level." Remarks="Measurement units shall be displayed within the string. Examples: 1500MSL FL150" AmplifierID="X" X="1" Y="-1"/>
+        <Field ID="SPACE_Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD-6040." AmplifierID="Z" X="1" Y="-1"/>
       </Fields>
       <SymbolSets>
         <SymbolSetRef ID="SS_SPACE" Label="Space" Instance="jmsml_D_Space.xml">
@@ -285,37 +612,37 @@
       <LegacyDimensionCode Name="2525C" CodingSchemeLetter="O">R</LegacyDimensionCode>
       <LegacyDimensionCode Name="2525C">F</LegacyDimensionCode>
       <Fields>
-        <Field Name="AA" Label="Special C2 Headquarters" Description="A text modifier for units; indicator is contained inside the frame; contains the name of the special C2 Headquarters." AmplifierID="AA" X="0" Y="0"/>
-        <Field Name="AB" Label="Feint/Dummy Indicator" Description="A graphic amplifier for units, equipment and installations that identifies an offensive or defensive unit intended to draw the enemy's attention away from the area of the main attack." AmplifierID="AB" X="0" Y="1"/>
-        <Field Name="AC" Label="Installation" Description="A graphic amplifier for units, equipment and installations used to show a particular symbol denotes an installation." AmplifierID="AC" X="0" Y="1"/>
-        <Field Name="AD" Label="Platform Type" Description="Electronic Intelligence Notation (ELNOT) or Communications Intelligence Notation (CENOT)" AmplifierID="AD" X="-1" Y="0"/>
-        <Field Name="AE" Label="Equipment Teardown Time" Description="Equipment teardown time in minutes" AmplifierID="AE" X="-1" Y="0"/>
-        <Field Name="AF" Label="Common Identifier" Description="Example: 'Hawk' for Hawk SAM system" AmplifierID="AF" X="1" Y="0"/>
-        <Field Name="AL" Label="Operational Condition" Description="Indicates operational condition." Remarks="Comprised of only one color. Ex. Satellite: Red - damaged, Green - fully capable. Ex: Missile: Red - imminent threat, Green - no threat." AmplifierID="AL" X="0" Y="-1"/>
-        <Field Name="AO" Label="Engagement Bar" Description="May denote 1ocal/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
-        <Field Name="AR" Label="Special Designator" Description="Special track designators such as Non-Real Time (NRT) and Tactically Significant (SIG) tracks are denoted here." Remarks="No Location designated in MIL-STD-2525D" AmplifierID="AR" X="0" Y="0"/>
-        <Field Name="A" Label="Basic Branch/Function Icon" Description="The innermost part of a symbol that represents a joint military object." AmplifierID="A" X="0" Y="0"/>
-        <Field Name="B" Label="Echelon" Description="A graphic amplifier in a unit symbol that identifies command level." AmplifierID="B" X="0" Y="1"/>
-        <Field Name="C" Label="Quantity" Description="A text amplifier in an equipment symbol that identifies the number of items present." AmplifierID="C" X="0" Y="1"/>
-        <Field Name="D" Label="Task Force Indicator" Description="A graphic amplifier that identifies a unit or stability operations symbol as a task force." AmplifierID="D" X="0" Y="1"/>
-        <Field Name="F" Label="Reinforced or Reduced" Description="A text amplifier in a unit symbol that dispays (+) for reinforced, (-) for reduced, (±) for reinforced and reduced." AmplifierID="F" X="1" Y="2"/>
-        <Field Name="G" Label="Staff Comments" Description="A text amplifier for units, equipment, and installations." AmplifierID="G" X="1" Y="1"/>        
-        <Field Name="H" Label="Additional Information" Description="A text amplifier for units, equipment, and installations." AmplifierID="H" X="1" Y="0"/>
-        <Field Name="J" Label="Evaluation Rating" Description="A text amplifier for units, equipment and installations that consists of a one-letter reliability rating and a one-number credibility rating." Remarks="Reliability: A-F and Credibility: 1-6" AmplifierID="J" X="1" Y="-2"/>
-        <Field Name="K" Label="Combat Effectiveness" Description="A text amplifier for units and installations that indicates unit effectiveness or installation capability." Remarks="Fully Operational = FO, Substantially Operational = SO, Marginally Operational = MO, Not Operational = NO, Unknown = UNK" AmplifierID="K" X="1" Y="-2"/>
-        <Field Name="L" Label="Signature Equipment" Description="A text amplifier for hostile equipment, '!' indicates detectable electronic signatures." AmplifierID="L" X="1" Y="-2"/>
-        <Field Name="M" Label="Higher Formation" Description="A text amplifier for units that indicates number or title of higher echelon command (corps are designated by Roman numerals)." AmplifierID="M" X="1" Y="-1"/>
-        <Field Name="N" Label="Hostile (Enemy)" Description="A text amplifier for equipment, letters 'ENY' denote hostile symbols." AmplifierID="N" X="1" Y="-2"/>
-        <Field Name="P" Label="IFF/SIF" Description="A text amplifier displaying IFF/SIF/AIS identification modes and codes. Display priority: Mode 5, Mode S, Mode 4, Mode 2, Mode 3" Remarks="M:CCCC, where M = Mode, CCCC = Code" AmplifierID="P" X="1" Y="-2"/>
-        <Field Name="Q" Label="Direction of Movement Indicator" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." AmplifierID="Q" X="0" Y="-2"/>
-        <Field Name="R" Label="Mobility Indicator" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." AmplifierID="R" X="0" Y="-1"/>
-        <Field Name="S" Label="Headquarters Staff Indicator/Offset Location Indicator" Description="Headquarters staff indicator: A graphic amplifier for units, equipment and installations that identifies a unit as a headquarters." Remarks="Offset location indicator: A graphic amplifier for units, equipment and installations used when placing an object away from its actual location." AmplifierID="S" X="0" Y="-2"/>        
-        <Field Name="T" Label="Unique Designation (Track Number)" Description="A text amplifier for units, equipment, and installations that uniquely identifies a particular symbol or track number." Remarks="Prefix = TN:#####  Example: TN:13579" AmplifierID="T" X="-1" Y="-1"/>
-        <Field Name="V" Label="Type" Description="A text amplifier for equipment that indicates types of equipment." AmplifierID="V" X="-1" Y="0"/>
-        <Field Name="W" Label="Date-Time Group (DTG)" Description="An alphanumeric designator for displaying a date-time group or on order." Remarks="DDHHMMSSZMONYYYY or O/O, where DD = Day, HH = Hour, MM = Minute, SS = Second, Z = Time Zone, MON = Month, YYYY = Year, O/O = On Order" AmplifierID="W" X="-1" Y="2"/>
-        <Field Name="X" Label="Altitude" Description="A text amplifier for units that displays altitude flight level." Remarks="Measurement units shall be displayed within the string. Examples: 1500MSL FL150" AmplifierID="X" X="-1" Y="1"/>
-        <Field Name="Y" Label="A text amplifier for units, equipment, and installations that displays a symbol's location in degrees, minutes, and decimal minutes." Remarks="Alternatively, in MGRS or other applicable display format." AmplifierID="Y" X="-1" Y="1"/>        
-        <Field Name="Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD-6040." AmplifierID="Z" X="-1" Y="-2"/>
+        <Field ID="LAND_UNIT_AA" Label="Special C2 Headquarters" Description="A text modifier for units; indicator is contained inside the frame; contains the ID of the special C2 Headquarters." AmplifierID="AA" X="0" Y="0"/>
+        <Field ID="LAND_UNIT_AB" Label="Feint/Dummy Indicator" Description="A graphic amplifier for units, equipment and installations that identifies an offensive or defensive unit intended to draw the enemy's attention away from the area of the main attack." AmplifierID="AB" X="0" Y="1"/>
+        <Field ID="LAND_UNIT_AC" Label="Installation" Description="A graphic amplifier for units, equipment and installations used to show a particular symbol denotes an installation." AmplifierID="AC" X="0" Y="1"/>
+        <Field ID="LAND_UNIT_AD" Label="Platform Type" Description="Electronic Intelligence Notation (ELNOT) or Communications Intelligence Notation (CENOT)" AmplifierID="AD" X="-1" Y="0"/>
+        <Field ID="LAND_UNIT_AE" Label="Equipment Teardown Time" Description="Equipment teardown time in minutes" AmplifierID="AE" X="-1" Y="0"/>
+        <Field ID="LAND_UNIT_AF" Label="Common Identifier" Description="Example: 'Hawk' for Hawk SAM system" AmplifierID="AF" X="1" Y="0"/>
+        <Field ID="LAND_UNIT_AL" Label="Operational Condition" Description="Indicates operational condition." Remarks="Comprised of only one color. Ex. Satellite: Red - damaged, Green - fully capable. Ex: Missile: Red - imminent threat, Green - no threat." AmplifierID="AL" X="0" Y="-1"/>
+        <Field ID="LAND_UNIT_AO" Label="Engagement Bar" Description="May denote 1ocal/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
+        <Field ID="LAND_UNIT_AR" Label="Special Designator" Description="Special track designators such as Non-Real Time (NRT) and Tactically Significant (SIG) tracks are denoted here." Remarks="No Location designated in MIL-STD-2525D" AmplifierID="AR" X="0" Y="0"/>
+        <Field ID="LAND_UNIT_A" Label="Basic Branch/Function Icon" Description="The innermost part of a symbol that represents a joint military object." AmplifierID="A" X="0" Y="0"/>
+        <Field ID="LAND_UNIT_B" Label="Echelon" Description="A graphic amplifier in a unit symbol that identifies command level." AmplifierID="B" X="0" Y="1"/>
+        <Field ID="LAND_UNIT_C" Label="Quantity" Description="A text amplifier in an equipment symbol that identifies the number of items present." AmplifierID="C" X="0" Y="1"/>
+        <Field ID="LAND_UNIT_D" Label="Task Force Indicator" Description="A graphic amplifier that identifies a unit or stability operations symbol as a task force." AmplifierID="D" X="0" Y="1"/>
+        <Field ID="LAND_UNIT_F" Label="Reinforced or Reduced" Description="A text amplifier in a unit symbol that dispays (+) for reinforced, (-) for reduced, (±) for reinforced and reduced." AmplifierID="F" X="1" Y="2"/>
+        <Field ID="LAND_UNIT_G" Label="Staff Comments" Description="A text amplifier for units, equipment, and installations." AmplifierID="G" X="1" Y="1"/>        
+        <Field ID="LAND_UNIT_H" Label="Additional Information" Description="A text amplifier for units, equipment, and installations." AmplifierID="H" X="1" Y="0"/>
+        <Field ID="LAND_UNIT_J" Label="Evaluation Rating" Description="A text amplifier for units, equipment and installations that consists of a one-letter reliability rating and a one-number credibility rating." Remarks="Reliability: A-F and Credibility: 1-6" AmplifierID="J" X="1" Y="-2"/>
+        <Field ID="LAND_UNIT_K" Label="Combat Effectiveness" Description="A text amplifier for units and installations that indicates unit effectiveness or installation capability." Remarks="Fully Operational = FO, Substantially Operational = SO, Marginally Operational = MO, Not Operational = NO, Unknown = UNK" AmplifierID="K" X="1" Y="-2"/>
+        <Field ID="LAND_UNIT_L" Label="Signature Equipment" Description="A text amplifier for hostile equipment, '!' indicates detectable electronic signatures." AmplifierID="L" X="1" Y="-2"/>
+        <Field ID="LAND_UNIT_M" Label="Higher Formation" Description="A text amplifier for units that indicates number or title of higher echelon command (corps are designated by Roman numerals)." AmplifierID="M" X="1" Y="-1"/>
+        <Field ID="LAND_UNIT_N" Label="Hostile (Enemy)" Description="A text amplifier for equipment, letters 'ENY' denote hostile symbols." AmplifierID="N" X="1" Y="-2"/>
+        <Field ID="LAND_UNIT_P" Label="IFF/SIF" Description="A text amplifier displaying IFF/SIF/AIS identification modes and codes. Display priority: Mode 5, Mode S, Mode 4, Mode 2, Mode 3" Remarks="M:CCCC, where M = Mode, CCCC = Code" AmplifierID="P" X="1" Y="-2"/>
+        <Field ID="LAND_UNIT_Q" Label="Direction of Movement Indicator" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." AmplifierID="Q" X="0" Y="-2"/>
+        <Field ID="LAND_UNIT_R" Label="Mobility Indicator" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." AmplifierID="R" X="0" Y="-1"/>
+        <Field ID="LAND_UNIT_S" Label="Headquarters Staff Indicator/Offset Location Indicator" Description="Headquarters staff indicator: A graphic amplifier for units, equipment and installations that identifies a unit as a headquarters." Remarks="Offset location indicator: A graphic amplifier for units, equipment and installations used when placing an object away from its actual location." AmplifierID="S" X="0" Y="-2"/>        
+        <Field ID="LAND_UNIT_T" Label="Unique Designation (Track Number)" Description="A text amplifier for units, equipment, and installations that uniquely identifies a particular symbol or track number." Remarks="Prefix = TN:#####  Example: TN:13579" AmplifierID="T" X="-1" Y="-1"/>
+        <Field ID="LAND_UNIT_V" Label="Type" Description="A text amplifier for equipment that indicates types of equipment." AmplifierID="V" X="-1" Y="0"/>
+        <Field ID="LAND_UNIT_W" Label="Date-Time Group (DTG)" Description="An alphanumeric designator for displaying a date-time group or on order." Remarks="DDHHMMSSZMONYYYY or O/O, where DD = Day, HH = Hour, MM = Minute, SS = Second, Z = Time Zone, MON = Month, YYYY = Year, O/O = On Order" AmplifierID="W" X="-1" Y="2"/>
+        <Field ID="LAND_UNIT_X" Label="Altitude" Description="A text amplifier for units that displays altitude flight level." Remarks="Measurement units shall be displayed within the string. Examples: 1500MSL FL150" AmplifierID="X" X="-1" Y="1"/>
+        <Field ID="LAND_UNIT_Y" Label="A text amplifier for units, equipment, and installations that displays a symbol's location in degrees, minutes, and decimal minutes." Remarks="Alternatively, in MGRS or other applicable display format." AmplifierID="Y" X="-1" Y="1"/>        
+        <Field ID="LAND_UNIT_Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD-6040." AmplifierID="Z" X="-1" Y="-2"/>
       </Fields>
       <SymbolSets>
         <SymbolSetRef ID="SS_LAND_UNIT" Label="Land Units" Instance="jmsml_D_Land_Unit.xml">
@@ -349,37 +676,37 @@
       <LegacyDimensionCode Name="2525C" CodingSchemeLetter="O" FirstFunctionLetter="I">I</LegacyDimensionCode>
       <LegacyDimensionCode Name="2525C" CodingSchemeLetter="O" FirstFunctionLetter="D">I</LegacyDimensionCode>
       <Fields>
-        <Field Name="AA" Label="Special C2 Headquarters" Description="A text modifier for units; indicator is contained inside the frame; contains the name of the special C2 Headquarters." AmplifierID="AA" X="0" Y="0"/>
-        <Field Name="AB" Label="Feint/Dummy Indicator" Description="A graphic amplifier for units, equipment and installations that identifies an offensive or defensive unit intended to draw the enemy's attention away from the area of the main attack." AmplifierID="AB" X="0" Y="1"/>
-        <Field Name="AC" Label="Installation" Description="A graphic amplifier for units, equipment and installations used to show a particular symbol denotes an installation." AmplifierID="AC" X="0" Y="1"/>
-        <Field Name="AD" Label="Platform Type" Description="Electronic Intelligence Notation (ELNOT) or Communications Intelligence Notation (CENOT)" AmplifierID="AD" X="-1" Y="0"/>
-        <Field Name="AE" Label="Equipment Teardown Time" Description="Equipment teardown time in minutes" AmplifierID="AE" X="-1" Y="0"/>
-        <Field Name="AF" Label="Common Identifier" Description="Example: 'Hawk' for Hawk SAM system" AmplifierID="AF" X="0" Y="-2"/>
-        <Field Name="AL" Label="Operational Condition" Description="Indicates operational condition." Remarks="Comprised of only one color. Ex. Satellite: Red - damaged, Green - fully capable. Ex: Missile: Red - imminent threat, Green - no threat." AmplifierID="AL" X="0" Y="-1"/>
-        <Field Name="AO" Label="Engagement Bar" Description="May denote 1ocal/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
-        <Field Name="AR" Label="Special Designator" Description="Special track designators such as Non-Real Time (NRT) and Tactically Significant (SIG) tracks are denoted here." Remarks="No Location designated in MIL-STD-2525D" AmplifierID="AR" X="0" Y="0"/>
-        <Field Name="A" Label="Basic Branch/Function Icon" Description="The innermost part of a symbol that represents a joint military object." AmplifierID="A" X="0" Y="0"/>
-        <Field Name="B" Label="Echelon" Description="A graphic amplifier in a unit symbol that identifies command level." AmplifierID="B" X="0" Y="1"/>
-        <Field Name="C" Label="Quantity" Description="A text amplifier in an equipment symbol that identifies the number of items present." AmplifierID="C" X="0" Y="1"/>
-        <Field Name="D" Label="Task Force Indicator" Description="A graphic amplifier that identifies a unit or stability operations symbol as a task force." AmplifierID="D" X="0" Y="1"/>
-        <Field Name="F" Label="Reinforced or Reduced" Description="A text amplifier in a unit symbol that dispays (+) for reinforced, (-) for reduced, (±) for reinforced and reduced." AmplifierID="F" X="1" Y="2"/>
-        <Field Name="G" Label="Staff Comments" Description="A text amplifier for units, equipment, and installations." AmplifierID="G" X="1" Y="1"/>        
-        <Field Name="H" Label="Additional Information" Description="A text amplifier for units, equipment, and installations." AmplifierID="H" X="1" Y="0"/>
-        <Field Name="J" Label="Evaluation Rating" Description="A text amplifier for units, equipment and installations that consists of a one-letter reliability rating and a one-number credibility rating." Remarks="Reliability: A-F and Credibility: 1-6" AmplifierID="J" X="1" Y="-2"/>
-        <Field Name="K" Label="Combat Effectiveness" Description="A text amplifier for units and installations that indicates unit effectiveness or installation capability." Remarks="Fully Operational = FO, Substantially Operational = SO, Marginally Operational = MO, Not Operational = NO, Unknown = UNK" AmplifierID="K" X="1" Y="-2"/>
-        <Field Name="L" Label="Signature Equipment" Description="A text amplifier for hostile equipment, '!' indicates detectable electronic signatures." AmplifierID="L" X="1" Y="-2"/>
-        <Field Name="M" Label="Higher Formation" Description="A text amplifier for units that indicates number or title of higher echelon command (corps are designated by Roman numerals)." AmplifierID="M" X="1" Y="-1"/>
-        <Field Name="N" Label="Hostile (Enemy)" Description="A text amplifier for equipment, letters 'ENY' denote hostile symbols." AmplifierID="N" X="1" Y="-2"/>
-        <Field Name="P" Label="IFF/SIF" Description="A text amplifier displaying IFF/SIF/AIS identification modes and codes. Display priority: Mode 5, Mode S, Mode 4, Mode 2, Mode 3" Remarks="M:CCCC, where M = Mode, CCCC = Code" AmplifierID="P" X="1" Y="-2"/>
-        <Field Name="Q" Label="Direction of Movement Indicator" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." AmplifierID="Q" X="0" Y="-2"/>
-        <Field Name="R" Label="Mobility Indicator" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." AmplifierID="R" X="0" Y="-1"/>
-        <Field Name="S" Label="Headquarters Staff Indicator/Offset Location Indicator" Description="Headquarters staff indicator: A graphic amplifier for units, equipment and installations that identifies a unit as a headquarters." Remarks="Offset location indicator: A graphic amplifier for units, equipment and installations used when placing an object away from its actual location." AmplifierID="S" X="0" Y="-2"/>        
-        <Field Name="T" Label="Unique Designation (Track Number)" Description="A text amplifier for units, equipment, and installations that uniquely identifies a particular symbol or track number." Remarks="Prefix = TN:#####  Example: TN:13579" AmplifierID="T" X="1" Y="2"/>
-        <Field Name="V" Label="Type" Description="A text amplifier for equipment that indicates types of equipment." AmplifierID="V" X="1" Y="1"/>
-        <Field Name="W" Label="Date-Time Group (DTG)" Description="An alphanumeric designator for displaying a date-time group or on order." Remarks="DDHHMMSSZMONYYYY or O/O, where DD = Day, HH = Hour, MM = Minute, SS = Second, Z = Time Zone, MON = Month, YYYY = Year, O/O = On Order" AmplifierID="W" X="-1" Y="2"/>
-        <Field Name="X" Label="Altitude" Description="A text amplifier for units that displays altitude flight level." Remarks="Measurement units shall be displayed within the string. Examples: 1500MSL FL150" AmplifierID="X" X="1" Y="-1"/>
-        <Field Name="Y" Label="A text amplifier for units, equipment, and installations that displays a symbol's location in degrees, minutes, and decimal minutes." Remarks="Alternatively, in MGRS or other applicable display format." AmplifierID="Y" X="-1" Y="1"/>        
-        <Field Name="Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD-6040." AmplifierID="Z" X="1" Y="-1"/>
+        <Field ID="LAND_EQUIP_AA" Label="Special C2 Headquarters" Description="A text modifier for units; indicator is contained inside the frame; contains the ID of the special C2 Headquarters." AmplifierID="AA" X="0" Y="0"/>
+        <Field ID="LAND_EQUIP_AB" Label="Feint/Dummy Indicator" Description="A graphic amplifier for units, equipment and installations that identifies an offensive or defensive unit intended to draw the enemy's attention away from the area of the main attack." AmplifierID="AB" X="0" Y="1"/>
+        <Field ID="LAND_EQUIP_AC" Label="Installation" Description="A graphic amplifier for units, equipment and installations used to show a particular symbol denotes an installation." AmplifierID="AC" X="0" Y="1"/>
+        <Field ID="LAND_EQUIP_AD" Label="Platform Type" Description="Electronic Intelligence Notation (ELNOT) or Communications Intelligence Notation (CENOT)" AmplifierID="AD" X="-1" Y="0"/>
+        <Field ID="LAND_EQUIP_AE" Label="Equipment Teardown Time" Description="Equipment teardown time in minutes" AmplifierID="AE" X="-1" Y="0"/>
+        <Field ID="LAND_EQUIP_AF" Label="Common Identifier" Description="Example: 'Hawk' for Hawk SAM system" AmplifierID="AF" X="0" Y="-2"/>
+        <Field ID="LAND_EQUIP_AL" Label="Operational Condition" Description="Indicates operational condition." Remarks="Comprised of only one color. Ex. Satellite: Red - damaged, Green - fully capable. Ex: Missile: Red - imminent threat, Green - no threat." AmplifierID="AL" X="0" Y="-1"/>
+        <Field ID="LAND_EQUIP_AO" Label="Engagement Bar" Description="May denote 1ocal/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
+        <Field ID="LAND_EQUIP_AR" Label="Special Designator" Description="Special track designators such as Non-Real Time (NRT) and Tactically Significant (SIG) tracks are denoted here." Remarks="No Location designated in MIL-STD-2525D" AmplifierID="AR" X="0" Y="0"/>
+        <Field ID="LAND_EQUIP_A" Label="Basic Branch/Function Icon" Description="The innermost part of a symbol that represents a joint military object." AmplifierID="A" X="0" Y="0"/>
+        <Field ID="LAND_EQUIP_B" Label="Echelon" Description="A graphic amplifier in a unit symbol that identifies command level." AmplifierID="B" X="0" Y="1"/>
+        <Field ID="LAND_EQUIP_C" Label="Quantity" Description="A text amplifier in an equipment symbol that identifies the number of items present." AmplifierID="C" X="0" Y="1"/>
+        <Field ID="LAND_EQUIP_D" Label="Task Force Indicator" Description="A graphic amplifier that identifies a unit or stability operations symbol as a task force." AmplifierID="D" X="0" Y="1"/>
+        <Field ID="LAND_EQUIP_F" Label="Reinforced or Reduced" Description="A text amplifier in a unit symbol that dispays (+) for reinforced, (-) for reduced, (±) for reinforced and reduced." AmplifierID="F" X="1" Y="2"/>
+        <Field ID="LAND_EQUIP_G" Label="Staff Comments" Description="A text amplifier for units, equipment, and installations." AmplifierID="G" X="1" Y="1"/>        
+        <Field ID="LAND_EQUIP_H" Label="Additional Information" Description="A text amplifier for units, equipment, and installations." AmplifierID="H" X="1" Y="0"/>
+        <Field ID="LAND_EQUIP_J" Label="Evaluation Rating" Description="A text amplifier for units, equipment and installations that consists of a one-letter reliability rating and a one-number credibility rating." Remarks="Reliability: A-F and Credibility: 1-6" AmplifierID="J" X="1" Y="-2"/>
+        <Field ID="LAND_EQUIP_K" Label="Combat Effectiveness" Description="A text amplifier for units and installations that indicates unit effectiveness or installation capability." Remarks="Fully Operational = FO, Substantially Operational = SO, Marginally Operational = MO, Not Operational = NO, Unknown = UNK" AmplifierID="K" X="1" Y="-2"/>
+        <Field ID="LAND_EQUIP_L" Label="Signature Equipment" Description="A text amplifier for hostile equipment, '!' indicates detectable electronic signatures." AmplifierID="L" X="1" Y="-2"/>
+        <Field ID="LAND_EQUIP_M" Label="Higher Formation" Description="A text amplifier for units that indicates number or title of higher echelon command (corps are designated by Roman numerals)." AmplifierID="M" X="1" Y="-1"/>
+        <Field ID="LAND_EQUIP_N" Label="Hostile (Enemy)" Description="A text amplifier for equipment, letters 'ENY' denote hostile symbols." AmplifierID="N" X="1" Y="-2"/>
+        <Field ID="LAND_EQUIP_P" Label="IFF/SIF" Description="A text amplifier displaying IFF/SIF/AIS identification modes and codes. Display priority: Mode 5, Mode S, Mode 4, Mode 2, Mode 3" Remarks="M:CCCC, where M = Mode, CCCC = Code" AmplifierID="P" X="1" Y="-2"/>
+        <Field ID="LAND_EQUIP_Q" Label="Direction of Movement Indicator" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." AmplifierID="Q" X="0" Y="-2"/>
+        <Field ID="LAND_EQUIP_R" Label="Mobility Indicator" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." AmplifierID="R" X="0" Y="-1"/>
+        <Field ID="LAND_EQUIP_S" Label="Headquarters Staff Indicator/Offset Location Indicator" Description="Headquarters staff indicator: A graphic amplifier for units, equipment and installations that identifies a unit as a headquarters." Remarks="Offset location indicator: A graphic amplifier for units, equipment and installations used when placing an object away from its actual location." AmplifierID="S" X="0" Y="-2"/>        
+        <Field ID="LAND_EQUIP_T" Label="Unique Designation (Track Number)" Description="A text amplifier for units, equipment, and installations that uniquely identifies a particular symbol or track number." Remarks="Prefix = TN:#####  Example: TN:13579" AmplifierID="T" X="1" Y="2"/>
+        <Field ID="LAND_EQUIP_V" Label="Type" Description="A text amplifier for equipment that indicates types of equipment." AmplifierID="V" X="1" Y="1"/>
+        <Field ID="LAND_EQUIP_W" Label="Date-Time Group (DTG)" Description="An alphanumeric designator for displaying a date-time group or on order." Remarks="DDHHMMSSZMONYYYY or O/O, where DD = Day, HH = Hour, MM = Minute, SS = Second, Z = Time Zone, MON = Month, YYYY = Year, O/O = On Order" AmplifierID="W" X="-1" Y="2"/>
+        <Field ID="LAND_EQUIP_X" Label="Altitude" Description="A text amplifier for units that displays altitude flight level." Remarks="Measurement units shall be displayed within the string. Examples: 1500MSL FL150" AmplifierID="X" X="1" Y="-1"/>
+        <Field ID="LAND_EQUIP_Y" Label="A text amplifier for units, equipment, and installations that displays a symbol's location in degrees, minutes, and decimal minutes." Remarks="Alternatively, in MGRS or other applicable display format." AmplifierID="Y" X="-1" Y="1"/>        
+        <Field ID="LAND_EQUIP_Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD-6040." AmplifierID="Z" X="1" Y="-1"/>
       </Fields>
       <SymbolSets>
         <SymbolSetRef ID="SS_LAND_EQUIPMENT" Label="Land Equipment" Instance="jmsml_D_Land_Equipment.xml">
@@ -416,37 +743,37 @@
       <LegacyDimensionCode Name="2525C" CodingSchemeLetter="O">I</LegacyDimensionCode>
       <LegacyDimensionCode Name="2525C" CodingSchemeLetter="O">L</LegacyDimensionCode>
       <Fields>
-        <Field Name="AA" Label="Special C2 Headquarters" Description="A text modifier for units; indicator is contained inside the frame; contains the name of the special C2 Headquarters." AmplifierID="AA" X="0" Y="0"/>
-        <Field Name="AB" Label="Feint/Dummy Indicator" Description="A graphic amplifier for units, equipment and installations that identifies an offensive or defensive unit intended to draw the enemy's attention away from the area of the main attack." AmplifierID="AB" X="0" Y="1"/>
-        <Field Name="AC" Label="Installation" Description="A graphic amplifier for units, equipment and installations used to show a particular symbol denotes an installation." AmplifierID="AC" X="0" Y="1"/>
-        <Field Name="AD" Label="Platform Type" Description="Electronic Intelligence Notation (ELNOT) or Communications Intelligence Notation (CENOT)" AmplifierID="AD" X="-1" Y="0"/>
-        <Field Name="AE" Label="Equipment Teardown Time" Description="Equipment teardown time in minutes" AmplifierID="AE" X="-1" Y="0"/>
-        <Field Name="AF" Label="Common Identifier" Description="Example: 'Hawk' for Hawk SAM system" AmplifierID="AF" X="0" Y="-2"/>
-        <Field Name="AL" Label="Operational Condition" Description="Indicates operational condition." Remarks="Comprised of only one color. Ex. Satellite: Red - damaged, Green - fully capable. Ex: Missile: Red - imminent threat, Green - no threat." AmplifierID="AL" X="0" Y="-1"/>
-        <Field Name="AO" Label="Engagement Bar" Description="May denote 1ocal/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
-        <Field Name="AR" Label="Special Designator" Description="Special track designators such as Non-Real Time (NRT) and Tactically Significant (SIG) tracks are denoted here."  Remarks="No Location designated in MIL-STD-2525D" AmplifierID="AR" X="0" Y="0"/>
-        <Field Name="A" Label="Basic Branch/Function Icon" Description="The innermost part of a symbol that represents a joint military object." AmplifierID="A" X="0" Y="0"/>
-        <Field Name="B" Label="Echelon" Description="A graphic amplifier in a unit symbol that identifies command level." AmplifierID="B" X="0" Y="1"/>
-        <Field Name="C" Label="Quantity" Description="A text amplifier in an equipment symbol that identifies the number of items present." AmplifierID="C" X="0" Y="1"/>
-        <Field Name="D" Label="Task Force Indicator" Description="A graphic amplifier that identifies a unit or stability operations symbol as a task force." AmplifierID="D" X="0" Y="1"/>
-        <Field Name="F" Label="Reinforced or Reduced" Description="A text amplifier in a unit symbol that dispays (+) for reinforced, (-) for reduced, (±) for reinforced and reduced." AmplifierID="F" X="1" Y="2"/>
-        <Field Name="G" Label="Staff Comments" Description="A text amplifier for units, equipment, and installations." AmplifierID="G" X="1" Y="1"/>        
-        <Field Name="H" Label="Additional Information" Description="A text amplifier for units, equipment, and installations." AmplifierID="H" X="1" Y="0"/>
-        <Field Name="J" Label="Evaluation Rating" Description="A text amplifier for units, equipment and installations that consists of a one-letter reliability rating and a one-number credibility rating." Remarks="Reliability: A-F and Credibility: 1-6" AmplifierID="J" X="1" Y="-2"/>
-        <Field Name="K" Label="Combat Effectiveness" Description="A text amplifier for units and installations that indicates unit effectiveness or installation capability." Remarks="Fully Operational = FO, Substantially Operational = SO, Marginally Operational = MO, Not Operational = NO, Unknown = UNK" AmplifierID="K" X="1" Y="-2"/>
-        <Field Name="L" Label="Signature Equipment" Description="A text amplifier for hostile equipment, '!' indicates detectable electronic signatures." AmplifierID="L" X="1" Y="-2"/>
-        <Field Name="M" Label="Higher Formation" Description="A text amplifier for units that indicates number or title of higher echelon command (corps are designated by Roman numerals)." AmplifierID="M" X="1" Y="-1"/>
-        <Field Name="N" Label="Hostile (Enemy)" Description="A text amplifier for equipment, letters 'ENY' denote hostile symbols." AmplifierID="N" X="1" Y="-2"/>
-        <Field Name="P" Label="IFF/SIF" Description="A text amplifier displaying IFF/SIF/AIS identification modes and codes. Display priority: Mode 5, Mode S, Mode 4, Mode 2, Mode 3" Remarks="M:CCCC, where M = Mode, CCCC = Code" AmplifierID="P" X="1" Y="-2"/>
-        <Field Name="Q" Label="Direction of Movement Indicator" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." AmplifierID="Q" X="0" Y="-2"/>
-        <Field Name="R" Label="Mobility Indicator" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." AmplifierID="R" X="0" Y="-1"/>
-        <Field Name="S" Label="Headquarters Staff Indicator/Offset Location Indicator" Description="Headquarters staff indicator: A graphic amplifier for units, equipment and installations that identifies a unit as a headquarters." Remarks="Offset location indicator: A graphic amplifier for units, equipment and installations used when placing an object away from its actual location." AmplifierID="S" X="0" Y="-2"/>        
-        <Field Name="T" Label="Unique Designation (Track Number)" Description="A text amplifier for units, equipment, and installations that uniquely identifies a particular symbol or track number." Remarks="Prefix = TN:#####  Example: TN:13579" AmplifierID="T" X="1" Y="2"/>
-        <Field Name="V" Label="Type" Description="A text amplifier for equipment that indicates types of equipment." AmplifierID="V" X="1" Y="1"/>
-        <Field Name="W" Label="Date-Time Group (DTG)" Description="An alphanumeric designator for displaying a date-time group or on order." Remarks="DDHHMMSSZMONYYYY or O/O, where DD = Day, HH = Hour, MM = Minute, SS = Second, Z = Time Zone, MON = Month, YYYY = Year, O/O = On Order" AmplifierID="W" X="-1" Y="2"/>
-        <Field Name="X" Label="Altitude" Description="A text amplifier for units that displays altitude flight level." Remarks="Measurement units shall be displayed within the string. Examples: 1500MSL FL150" AmplifierID="X" X="1" Y="-1"/>
-        <Field Name="Y" Description="Location" Label="A text amplifier for units, equipment, and installations that displays a symbol's location in degrees, minutes, and decimal minutes." Remarks="Alternatively, in MGRS or other applicable display format." AmplifierID="Y" X="-1" Y="1"/>        
-        <Field Name="Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD-6040." AmplifierID="Z" X="1" Y="-1"/>
+        <Field ID="LAND_INSTA_AA" Label="Special C2 Headquarters" Description="A text modifier for units; indicator is contained inside the frame; contains the ID of the special C2 Headquarters." AmplifierID="AA" X="0" Y="0"/>
+        <Field ID="LAND_INSTA_AB" Label="Feint/Dummy Indicator" Description="A graphic amplifier for units, equipment and installations that identifies an offensive or defensive unit intended to draw the enemy's attention away from the area of the main attack." AmplifierID="AB" X="0" Y="1"/>
+        <Field ID="LAND_INSTA_AC" Label="Installation" Description="A graphic amplifier for units, equipment and installations used to show a particular symbol denotes an installation." AmplifierID="AC" X="0" Y="1"/>
+        <Field ID="LAND_INSTA_AD" Label="Platform Type" Description="Electronic Intelligence Notation (ELNOT) or Communications Intelligence Notation (CENOT)" AmplifierID="AD" X="-1" Y="0"/>
+        <Field ID="LAND_INSTA_AE" Label="Equipment Teardown Time" Description="Equipment teardown time in minutes" AmplifierID="AE" X="-1" Y="0"/>
+        <Field ID="LAND_INSTA_AF" Label="Common Identifier" Description="Example: 'Hawk' for Hawk SAM system" AmplifierID="AF" X="0" Y="-2"/>
+        <Field ID="LAND_INSTA_AL" Label="Operational Condition" Description="Indicates operational condition." Remarks="Comprised of only one color. Ex. Satellite: Red - damaged, Green - fully capable. Ex: Missile: Red - imminent threat, Green - no threat." AmplifierID="AL" X="0" Y="-1"/>
+        <Field ID="LAND_INSTA_AO" Label="Engagement Bar" Description="May denote 1ocal/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
+        <Field ID="LAND_INSTA_AR" Label="Special Designator" Description="Special track designators such as Non-Real Time (NRT) and Tactically Significant (SIG) tracks are denoted here."  Remarks="No Location designated in MIL-STD-2525D" AmplifierID="AR" X="0" Y="0"/>
+        <Field ID="LAND_INSTA_A" Label="Basic Branch/Function Icon" Description="The innermost part of a symbol that represents a joint military object." AmplifierID="A" X="0" Y="0"/>
+        <Field ID="LAND_INSTA_B" Label="Echelon" Description="A graphic amplifier in a unit symbol that identifies command level." AmplifierID="B" X="0" Y="1"/>
+        <Field ID="LAND_INSTA_C" Label="Quantity" Description="A text amplifier in an equipment symbol that identifies the number of items present." AmplifierID="C" X="0" Y="1"/>
+        <Field ID="LAND_INSTA_D" Label="Task Force Indicator" Description="A graphic amplifier that identifies a unit or stability operations symbol as a task force." AmplifierID="D" X="0" Y="1"/>
+        <Field ID="LAND_INSTA_F" Label="Reinforced or Reduced" Description="A text amplifier in a unit symbol that dispays (+) for reinforced, (-) for reduced, (±) for reinforced and reduced." AmplifierID="F" X="1" Y="2"/>
+        <Field ID="LAND_INSTA_G" Label="Staff Comments" Description="A text amplifier for units, equipment, and installations." AmplifierID="G" X="1" Y="1"/>        
+        <Field ID="LAND_INSTA_H" Label="Additional Information" Description="A text amplifier for units, equipment, and installations." AmplifierID="H" X="1" Y="0"/>
+        <Field ID="LAND_INSTA_J" Label="Evaluation Rating" Description="A text amplifier for units, equipment and installations that consists of a one-letter reliability rating and a one-number credibility rating." Remarks="Reliability: A-F and Credibility: 1-6" AmplifierID="J" X="1" Y="-2"/>
+        <Field ID="LAND_INSTA_K" Label="Combat Effectiveness" Description="A text amplifier for units and installations that indicates unit effectiveness or installation capability." Remarks="Fully Operational = FO, Substantially Operational = SO, Marginally Operational = MO, Not Operational = NO, Unknown = UNK" AmplifierID="K" X="1" Y="-2"/>
+        <Field ID="LAND_INSTA_L" Label="Signature Equipment" Description="A text amplifier for hostile equipment, '!' indicates detectable electronic signatures." AmplifierID="L" X="1" Y="-2"/>
+        <Field ID="LAND_INSTA_M" Label="Higher Formation" Description="A text amplifier for units that indicates number or title of higher echelon command (corps are designated by Roman numerals)." AmplifierID="M" X="1" Y="-1"/>
+        <Field ID="LAND_INSTA_N" Label="Hostile (Enemy)" Description="A text amplifier for equipment, letters 'ENY' denote hostile symbols." AmplifierID="N" X="1" Y="-2"/>
+        <Field ID="LAND_INSTA_P" Label="IFF/SIF" Description="A text amplifier displaying IFF/SIF/AIS identification modes and codes. Display priority: Mode 5, Mode S, Mode 4, Mode 2, Mode 3" Remarks="M:CCCC, where M = Mode, CCCC = Code" AmplifierID="P" X="1" Y="-2"/>
+        <Field ID="LAND_INSTA_Q" Label="Direction of Movement Indicator" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." AmplifierID="Q" X="0" Y="-2"/>
+        <Field ID="LAND_INSTA_R" Label="Mobility Indicator" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." AmplifierID="R" X="0" Y="-1"/>
+        <Field ID="LAND_INSTA_S" Label="Headquarters Staff Indicator/Offset Location Indicator" Description="Headquarters staff indicator: A graphic amplifier for units, equipment and installations that identifies a unit as a headquarters." Remarks="Offset location indicator: A graphic amplifier for units, equipment and installations used when placing an object away from its actual location." AmplifierID="S" X="0" Y="-2"/>        
+        <Field ID="LAND_INSTA_T" Label="Unique Designation (Track Number)" Description="A text amplifier for units, equipment, and installations that uniquely identifies a particular symbol or track number." Remarks="Prefix = TN:#####  Example: TN:13579" AmplifierID="T" X="1" Y="2"/>
+        <Field ID="LAND_INSTA_V" Label="Type" Description="A text amplifier for equipment that indicates types of equipment." AmplifierID="V" X="1" Y="1"/>
+        <Field ID="LAND_INSTA_W" Label="Date-Time Group (DTG)" Description="An alphanumeric designator for displaying a date-time group or on order." Remarks="DDHHMMSSZMONYYYY or O/O, where DD = Day, HH = Hour, MM = Minute, SS = Second, Z = Time Zone, MON = Month, YYYY = Year, O/O = On Order" AmplifierID="W" X="-1" Y="2"/>
+        <Field ID="LAND_INSTA_X" Label="Altitude" Description="A text amplifier for units that displays altitude flight level." Remarks="Measurement units shall be displayed within the string. Examples: 1500MSL FL150" AmplifierID="X" X="1" Y="-1"/>
+        <Field ID="LAND_INSTA_Y" Description="Location" Label="A text amplifier for units, equipment, and installations that displays a symbol's location in degrees, minutes, and decimal minutes." Remarks="Alternatively, in MGRS or other applicable display format." AmplifierID="Y" X="-1" Y="1"/>        
+        <Field ID="LAND_INSTA_Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD-6040." AmplifierID="Z" X="1" Y="-1"/>
       </Fields>
       <SymbolSets>
         <SymbolSetRef ID="SS_LAND_INSTALLATION" Label="Land Installation" Instance="jmsml_D_Land_Installation.xml">
@@ -466,18 +793,18 @@
       <LegacyDimensionCode Name="2525C" CodingSchemeLetter="S">S</LegacyDimensionCode>
       <LegacyDimensionCode Name="2525C" CodingSchemeLetter="I" FirstFunctionLetter="S">S</LegacyDimensionCode>
       <Fields>
-        <Field Name="AL" Label="Operational Condition" Description="Indicates operational condition." Remarks="Comprised of only one color. Ex. Satellite: Red - damaged, Green - fully capable. Ex: Missile: Red - imminent threat, Green - no threat." AmplifierID="AL" X="0" Y="-1"/>
-        <Field Name="AO" Label="Engagement Bar" Description="May denote 1ocal/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
-        <Field Name="AQ" Label="Guarded Unit" Description="During ballistic missile defense, some tracks are designated as guarded by a particular unit." Remarks="The 2-character string, BG" AmplifierID="AQ" X="-1" Y="2"/>
-        <Field Name="AR" Label="Special Designator" Description="Special track designators, such as Non-Real Time (NRT) and Tactically Significant (SIG) tracks, are denoted here." Remarks="The 3-character strings, NRT or SIG" AmplifierID="AR" X="-1" Y="2"/>
-        <Field Name="A" Label="Ship Icon" Description="Uses icon and sector modifiers" AmplifierID="A" X="0" Y="0"/>
-        <Field Name="G" Label="Staff Comments" AmplifierID="G" X="1" Y="-1"/>
-        <Field Name="H" Label="Additional Information" AmplifierID="H" X="1" Y="-1"/>
-        <Field Name="P" Label="Automatic Identification System (AIS)" Description="A text amplifier displaying the maritime Automatic Identification System." AmplifierID="P" X="1" Y="0"/>
-        <Field Name="T" Label="Unique Designation (Track Number)" Description="A text amplifier for units, equipment, and installations that uniquely identifies a particular symbol or track number." Remarks="Prefix = TN:#####  Example: TN:13579" AmplifierID="T" X="1" Y="2"/>
-        <Field Name="V" Label="Type" Description="A text amplifier for equipment that indicates types of equipment." AmplifierID="V" X="1" Y="1"/>
-        <Field Name="Y" Label="Location" Description="A text amplifier for units, equipment and installations that displays a symbol’s location in degrees, minutes and seconds (or in UTM or other applicable display format)." AmplifierID="Y" X="1" Y="-2"/>
-        <Field Name="Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD-6040." AmplifierID="Z" X="1" Y="-2"/>
+        <Field ID="SEA_SUR_AL" Label="Operational Condition" Description="Indicates operational condition." Remarks="Comprised of only one color. Ex. Satellite: Red - damaged, Green - fully capable. Ex: Missile: Red - imminent threat, Green - no threat." AmplifierID="AL" X="0" Y="-1"/>
+        <Field ID="SEA_SUR_AO" Label="Engagement Bar" Description="May denote 1ocal/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
+        <Field ID="SEA_SUR_AQ" Label="Guarded Unit" Description="During ballistic missile defense, some tracks are designated as guarded by a particular unit." Remarks="The 2-character string, BG" AmplifierID="AQ" X="-1" Y="2"/>
+        <Field ID="SEA_SUR_AR" Label="Special Designator" Description="Special track designators, such as Non-Real Time (NRT) and Tactically Significant (SIG) tracks, are denoted here." Remarks="The 3-character strings, NRT or SIG" AmplifierID="AR" X="-1" Y="2"/>
+        <Field ID="SEA_SUR_A" Label="Ship Icon" Description="Uses icon and sector modifiers" AmplifierID="A" X="0" Y="0"/>
+        <Field ID="SEA_SUR_G" Label="Staff Comments" AmplifierID="G" X="1" Y="-1"/>
+        <Field ID="SEA_SUR_H" Label="Additional Information" AmplifierID="H" X="1" Y="-1"/>
+        <Field ID="SEA_SUR_P" Label="Automatic Identification System (AIS)" Description="A text amplifier displaying the maritime Automatic Identification System." AmplifierID="P" X="1" Y="0"/>
+        <Field ID="SEA_SUR_T" Label="Unique Designation (Track Number)" Description="A text amplifier for units, equipment, and installations that uniquely identifies a particular symbol or track number." Remarks="Prefix = TN:#####  Example: TN:13579" AmplifierID="T" X="1" Y="2"/>
+        <Field ID="SEA_SUR_V" Label="Type" Description="A text amplifier for equipment that indicates types of equipment." AmplifierID="V" X="1" Y="1"/>
+        <Field ID="SEA_SUR_Y" Label="Location" Description="A text amplifier for units, equipment and installations that displays a symbol’s location in degrees, minutes and seconds (or in UTM or other applicable display format)." AmplifierID="Y" X="1" Y="-2"/>
+        <Field ID="SEA_SUR_Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD-6040." AmplifierID="Z" X="1" Y="-2"/>
       </Fields>
       <SymbolSets>
         <SymbolSetRef ID="SS_SEA_SURFACE" Label="Sea Surface" Instance="jmsml_D_Sea_Surface.xml">
@@ -510,15 +837,15 @@
       </DimensionCode>
       <LegacyDimensionCode Name="2525C">U</LegacyDimensionCode>
       <Fields>
-        <Field Name="AL" Label="Operational Condition" Description="Indicates operational condition." Remarks="Comprised of only one color. Ex. Satellite: Red - damaged, Green - fully capable. Ex: Missile: Red - imminent threat, Green - no threat." AmplifierID="AL" X="0" Y="-1"/>
-        <Field Name="AO" Label="Engagement Bar" Description="May denote 1ocal/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
-        <Field Name="AQ" Label="Guarded Unit" Description="During ballistic missile defense, some tracks are designated as guarded by a particular unit." Remarks="The 2-character string, BG" AmplifierID="AQ" X="-1" Y="2"/>
-        <Field Name="AR" Label="Special Designator" Description="Special track designators, such as Non-Real Time (NRT) and Tactically Significant (SIG) tracks, are denoted here." Remarks="The 3-character strings, NRT or SIG" AmplifierID="AR" X="-1" Y="2"/>
-        <Field Name="G" Label="Staff Comments" AmplifierID="G" X="1" Y="-1"/>
-        <Field Name="H" Label="Additional Information" AmplifierID="H" X="1" Y="-2"/>
-        <Field Name="T" Label="Unique Designation (Track Number)" Description="A text amplifier for units, equipment, and installations that uniquely identifies a particular symbol or track number." Remarks="Prefix = TN:#####  Example: TN:13579" AmplifierID="T" X="1" Y="2"/>
-        <Field Name="V" Label="Type" Description="A text amplifier for equipment that indicates types of equipment." AmplifierID="V" X="1" Y="1"/>
-        <Field Name="X" Label="Depth" Description="A text amplifier for equipment that displays depth for submerged objects." AmplifierID="X" X="1" Y="0"/>
+        <Field ID="SEA_SUB_AL" Label="Operational Condition" Description="Indicates operational condition." Remarks="Comprised of only one color. Ex. Satellite: Red - damaged, Green - fully capable. Ex: Missile: Red - imminent threat, Green - no threat." AmplifierID="AL" X="0" Y="-1"/>
+        <Field ID="SEA_SUB_AO" Label="Engagement Bar" Description="May denote 1ocal/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
+        <Field ID="SEA_SUB_AQ" Label="Guarded Unit" Description="During ballistic missile defense, some tracks are designated as guarded by a particular unit." Remarks="The 2-character string, BG" AmplifierID="AQ" X="-1" Y="2"/>
+        <Field ID="SEA_SUB_AR" Label="Special Designator" Description="Special track designators, such as Non-Real Time (NRT) and Tactically Significant (SIG) tracks, are denoted here." Remarks="The 3-character strings, NRT or SIG" AmplifierID="AR" X="-1" Y="2"/>
+        <Field ID="SEA_SUB_G" Label="Staff Comments" AmplifierID="G" X="1" Y="-1"/>
+        <Field ID="SEA_SUB_H" Label="Additional Information" AmplifierID="H" X="1" Y="-2"/>
+        <Field ID="SEA_SUB_T" Label="Unique Designation (Track Number)" Description="A text amplifier for units, equipment, and installations that uniquely identifies a particular symbol or track number." Remarks="Prefix = TN:#####  Example: TN:13579" AmplifierID="T" X="1" Y="2"/>
+        <Field ID="SEA_SUB_V" Label="Type" Description="A text amplifier for equipment that indicates types of equipment." AmplifierID="V" X="1" Y="1"/>
+        <Field ID="SEA_SUB_X" Label="Depth" Description="A text amplifier for equipment that displays depth for submerged objects." AmplifierID="X" X="1" Y="0"/>
       </Fields>
       <SymbolSets>
         <SymbolSetRef ID="SS_SEA_SUBSURFACE" Label="Sea Subsurface" Instance="jmsml_D_Sea_Subsurface.xml">
@@ -563,13 +890,13 @@
       <LegacyDimensionCode Name="2525C" CodingSchemeLetter="O" FirstFunctionLetter="U">O</LegacyDimensionCode>
       <LegacyDimensionCode Name="2525C" CodingSchemeLetter="O">V</LegacyDimensionCode>
       <Fields>
-        <Field Name="AS" Label="Country Indicator" Description="A three-letter code that indicates the country of origin of the organization (STANAG 1059)." Remarks="In stability activities, this field can be used for factions or groups." AmplifierID="AS" X="1" Y="2"/>
-        <Field Name="G" Label="Staff Comments" Description="Free text." Remarks="Can be used by staff for information required by commander." AmplifierID="G" X="1" Y="1"/>
-        <Field Name="H" Label="Additional Informartion" Description="Free text." AmplifierID="H" X="1" Y="0"/>
-        <Field Name="J" Label="Evaluation Rating" Description="Degree of confidence that may be placed on the information represented by the symbol." Remarks="It is shown as one letter and one number made up of Reliability of Source and Credibility of Information." AmplifierID="J" X="1" Y="-2"/>
-        <Field Name="S" Label="Offset Location Indicator" Description="It is used to denote precise location." AmplifierID="S" X="0" Y="-1"/>
-        <Field Name="W" Label="Date-Time Group" Description="An alphanumeric designator for displaying a datetime group (DDHHMMSSZMONYY) or O/O for on order." Remarks="The date-time group is composed of a group of six numeric digits with a time zone suffix and the standardized three-letter abbreviation for the month followed by two digits." AmplifierID="W" X="-1" Y="2"/>
-        <Field Name="Y" Label="Location" Description="A text amplifier for units, equipment and installations that displays a symbol’s location in degrees, minutes and seconds (or in UTM or other applicable display format)." AmplifierID="Y" X="-1" Y="1"/>
+        <Field ID="ACT_AS" Label="Country Indicator" Description="A three-letter code that indicates the country of origin of the organization (STANAG 1059)." Remarks="In stability activities, this field can be used for factions or groups." AmplifierID="AS" X="1" Y="2"/>
+        <Field ID="ACT_G" Label="Staff Comments" Description="Free text." Remarks="Can be used by staff for information required by commander." AmplifierID="G" X="1" Y="1"/>
+        <Field ID="ACT_H" Label="Additional Informartion" Description="Free text." AmplifierID="H" X="1" Y="0"/>
+        <Field ID="ACT_J" Label="Evaluation Rating" Description="Degree of confidence that may be placed on the information represented by the symbol." Remarks="It is shown as one letter and one number made up of Reliability of Source and Credibility of Information." AmplifierID="J" X="1" Y="-2"/>
+        <Field ID="ACT_S" Label="Offset Location Indicator" Description="It is used to denote precise location." AmplifierID="S" X="0" Y="-1"/>
+        <Field ID="ACT_W" Label="Date-Time Group" Description="An alphanumeric designator for displaying a datetime group (DDHHMMSSZMONYY) or O/O for on order." Remarks="The date-time group is composed of a group of six numeric digits with a time zone suffix and the standardized three-letter abbreviation for the month followed by two digits." AmplifierID="W" X="-1" Y="2"/>
+        <Field ID="ACT_Y" Label="Location" Description="A text amplifier for units, equipment and installations that displays a symbol’s location in degrees, minutes and seconds (or in UTM or other applicable display format)." AmplifierID="Y" X="-1" Y="1"/>
       </Fields>
       <SymbolSets>
         <SymbolSetRef ID="SS_ACTIVITY" Label="Activity" Instance="jmsml_D_Activity.xml">
@@ -594,22 +921,22 @@
       <LegacyDimensionCode Name="2525C" CodingSchemeLetter="G">T</LegacyDimensionCode>
       <Fields>
 <!--Not sure what to do with amplifier coordinates, so zeroed out the values.-->
-        <Field Name="AM" Label="Distance" Description="A numeric amplifier that displays a minimum, maximum, or a specific distance (range, radius, width, length, etc.) in meters." AmplifierID="AM"/>
-        <Field Name="AN" Label="Azimuth" Description="A numeric amplifier that displays an angle measured from true north to any other line in degrees." AmplifierID="AN"/>
-        <Field Name="AP" Label="Target Designator" Description="A six character text modifier used in Fire Support operations to uniquely designate targets in accordance with STANAG 2147." Remarks="AANNNN where A = Alphabetic, N = Numeric" AmplifierID="AP"/>
-        <Field Name="AS" Label="Country Indicator" Description="A three-letter code that indicates the country of origin of the organization (STANAG 1059)." Remarks="In stability activities, this field can be used for factions or groups." AmplifierID="AS"/>
-        <Field Name="A" Label="Symbol Icon" Description="The innermost part of a symbol that represents a joint military object." AmplifierID="A"/>
-        <Field Name="B" Label="Echelon" Description="A graphic amplifier in a unit symbol that identifies command level." AmplifierID="B"/>
-        <Field Name="C" Label="Quantity" Description="A text amplifier in an equipment symbol that identifies the number of items present." AmplifierID="C"/>
-        <Field Name="H" Label="Additional Information" Description="A text amplifier for control measure symbols; content is implementation specific." AmplifierID="H"/>
-        <Field Name="N" Label="Hostile (Enemy)" Description="A text amplifier for control measure symbols; the letters 'ENY' denote hostile control measure symbols." AmplifierID="N"/>
-        <Field Name="Q" Label="Direction of Movement Indicator" Description="A graphic amplifier for events that identifies the direction of movement." AmplifierID="Q"/>
-        <Field Name="S" Label="Offset Location Indicator" Description="A graphic amplifier for points and CBRN events used when placing an object away from its actual location." AmplifierID="S"/>
-        <Field Name="T" Label="Unique Designation" Description="A text amplifier that uniquely identifies a particular control measure symbol or target number." Remarks="Prefix = TN:##### Example: TN:13579 Nuclear: delivery unit" AmplifierID="T"/>
-        <Field Name="V" Label="Type" Description="A text amplifier for equipment that indicates types of equipment." AmplifierID="V"/>
-        <Field Name="W" Label="Date-Time Group (DTG)" Description="An alphanumeric designator for displaying a date-time group or on order." Remarks="DDHHMMSSZMONYYYY or O/O, where DD = Day, HH = Hour, MM = Minute, SS = Second, Z = Time Zone, MON = Month, YYYY = Year, O/O = On Order" AmplifierID="W"/>
-        <Field Name="X" Label="Altitude/Depth" Description="A text amplifier that displays the minimum, maximum and/or specific altitude (in feet or meters), flight level, or depth." Remarks="Measurement units shall be displayed within the string. Examples: 1500MSL FL150" AmplifierID="X"/>
-        <Field Name="Y" Label="Location" Description="A text amplifier that displays a graphic's location in degrees, minutes, and decimal minutes." Remarks="Alternatively, in MGRS or other applicable display format." AmplifierID="Y"/>
+        <Field ID="CM_AM" Label="Distance" Description="A numeric amplifier that displays a minimum, maximum, or a specific distance (range, radius, width, length, etc.) in meters." AmplifierID="AM"/>
+        <Field ID="CM_AN" Label="Azimuth" Description="A numeric amplifier that displays an angle measured from true north to any other line in degrees." AmplifierID="AN"/>
+        <Field ID="CM_AP" Label="Target Designator" Description="A six character text modifier used in Fire Support operations to uniquely designate targets in accordance with STANAG 2147." Remarks="AANNNN where A = Alphabetic, N = Numeric" AmplifierID="AP"/>
+        <Field ID="CM_AS" Label="Country Indicator" Description="A three-letter code that indicates the country of origin of the organization (STANAG 1059)." Remarks="In stability activities, this field can be used for factions or groups." AmplifierID="AS"/>
+        <Field ID="CM_A" Label="Symbol Icon" Description="The innermost part of a symbol that represents a joint military object." AmplifierID="A"/>
+        <Field ID="CM_B" Label="Echelon" Description="A graphic amplifier in a unit symbol that identifies command level." AmplifierID="B"/>
+        <Field ID="CM_C" Label="Quantity" Description="A text amplifier in an equipment symbol that identifies the number of items present." AmplifierID="C"/>
+        <Field ID="CM_H" Label="Additional Information" Description="A text amplifier for control measure symbols; content is implementation specific." AmplifierID="H"/>
+        <Field ID="CM_N" Label="Hostile (Enemy)" Description="A text amplifier for control measure symbols; the letters 'ENY' denote hostile control measure symbols." AmplifierID="N"/>
+        <Field ID="CM_Q" Label="Direction of Movement Indicator" Description="A graphic amplifier for events that identifies the direction of movement." AmplifierID="Q"/>
+        <Field ID="CM_S" Label="Offset Location Indicator" Description="A graphic amplifier for points and CBRN events used when placing an object away from its actual location." AmplifierID="S"/>
+        <Field ID="CM_T" Label="Unique Designation" Description="A text amplifier that uniquely identifies a particular control measure symbol or target number." Remarks="Prefix = TN:##### Example: TN:13579 Nuclear: delivery unit" AmplifierID="T"/>
+        <Field ID="CM_V" Label="Type" Description="A text amplifier for equipment that indicates types of equipment." AmplifierID="V"/>
+        <Field ID="CM_W" Label="Date-Time Group (DTG)" Description="An alphanumeric designator for displaying a date-time group or on order." Remarks="DDHHMMSSZMONYYYY or O/O, where DD = Day, HH = Hour, MM = Minute, SS = Second, Z = Time Zone, MON = Month, YYYY = Year, O/O = On Order" AmplifierID="W"/>
+        <Field ID="CM_X" Label="Altitude/Depth" Description="A text amplifier that displays the minimum, maximum and/or specific altitude (in feet or meters), flight level, or depth." Remarks="Measurement units shall be displayed within the string. Examples: 1500MSL FL150" AmplifierID="X"/>
+        <Field ID="CM_Y" Label="Location" Description="A text amplifier that displays a graphic's location in degrees, minutes, and decimal minutes." Remarks="Alternatively, in MGRS or other applicable display format." AmplifierID="Y"/>
       </Fields>
       <SymbolSets>
         <SymbolSetRef ID="SS_CONTROL_MEASURE" Label="Control Measure" Instance="jmsml_D_Control_Measure.xml">
@@ -630,11 +957,11 @@
       <LegacyDimensionCode Name="2525C" CodingSchemeLetter="W">S</LegacyDimensionCode>
       <LegacyDimensionCode Name="2525C" CodingSchemeLetter="E">N</LegacyDimensionCode>
       <Fields>
-        <Field Name="G" Label="Staff Comments" Description="Free text." Remarks="Can be used by staff for information required by commander." AmplifierID="G" X="1" Y="1"/>
-        <Field Name="H" Label="Additional Informartion" Description="Free text." AmplifierID="H" X="1" Y="0"/>
-        <Field Name="S" Label="Offset Location Indicator" Description="It is used to denote precise location." AmplifierID="S" X="0" Y="-1"/>
-        <Field Name="W" Label="Date-Time Group" Description="An alphanumeric designator for displaying a datetime group (DDHHMMSSZMONYY) or O/O for on order." Remarks="The date-time group is composed of a group of six numeric digits with a time zone suffix and the standardized three-letter abbreviation for the month followed by two digits." AmplifierID="W" X="-1" Y="2"/>
-        <Field Name="Y" Label="Location" Description="A text amplifier for units, equipment and installations that displays a symbol’s location in degrees, minutes and seconds (or in UTM or other applicable display format)." AmplifierID="Y" X="-1" Y="1"/>
+        <Field ID="METOC_G" Label="Staff Comments" Description="Free text." Remarks="Can be used by staff for information required by commander." AmplifierID="G" X="1" Y="1"/>
+        <Field ID="METOC_H" Label="Additional Informartion" Description="Free text." AmplifierID="H" X="1" Y="0"/>
+        <Field ID="METOC_S" Label="Offset Location Indicator" Description="It is used to denote precise location." AmplifierID="S" X="0" Y="-1"/>
+        <Field ID="METOC_W" Label="Date-Time Group" Description="An alphanumeric designator for displaying a datetime group (DDHHMMSSZMONYY) or O/O for on order." Remarks="The date-time group is composed of a group of six numeric digits with a time zone suffix and the standardized three-letter abbreviation for the month followed by two digits." AmplifierID="W" X="-1" Y="2"/>
+        <Field ID="METOC_Y" Label="Location" Description="A text amplifier for units, equipment and installations that displays a symbol’s location in degrees, minutes and seconds (or in UTM or other applicable display format)." AmplifierID="Y" X="-1" Y="1"/>
       </Fields>
       <SymbolSets>
         <SymbolSetRef ID="SS_ATMOSPHERIC" Label="Atmospheric" Instance="jmsml_D_Atmospheric.xml">
@@ -1410,7 +1737,7 @@
       <LegacyStatusCode Name="2525C">P</LegacyStatusCode>
     </Status>
 
-    <Status Name="PLANNED" Label="Planned/Anticipated/Suspect" LabelAlias="Planned">
+    <Status Name="PLANNED" Label="Planned/Anticipated/Suspect">
       <StatusCode>1</StatusCode>
       <LegacyStatusCode Name="2525C">A</LegacyStatusCode>
     </Status>
@@ -1599,7 +1926,7 @@
       </Graphics>
     </Status>
 
-    <Status Name="EXTENSION" Label="Extension" Description="Details specified by extension">
+    <Status Name="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
       <StatusCode>9</StatusCode>
     </Status>
   </Statuses>
@@ -1856,7 +2183,7 @@
       </Graphics>
     </HQTFDummy>
 
-    <HQTFDummy Name="EXTENSION" Label="Extension" Description="Details specified by extension">
+    <HQTFDummy Name="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
       <HQTFDummyCode>9</HQTFDummyCode>
     </HQTFDummy>
   </HQTFDummies>
@@ -1967,7 +2294,7 @@
           </Graphics>
         </Amplifier>
 
-        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension">
+        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
           <AmplifierCode>9</AmplifierCode>
         </Amplifier>
       </Amplifiers>
@@ -2044,7 +2371,7 @@
           </Graphics>
         </Amplifier>
 
-        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension">
+        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
           <AmplifierCode>9</AmplifierCode>
         </Amplifier>
       </Amplifiers>
@@ -2132,7 +2459,7 @@
           </Graphics>
         </Amplifier>
 
-        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension">
+        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
           <AmplifierCode>9</AmplifierCode>
         </Amplifier>
       </Amplifiers>
@@ -2165,7 +2492,7 @@
           </Graphics>
         </Amplifier>
 
-        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension">
+        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
           <AmplifierCode>9</AmplifierCode>
         </Amplifier>
       </Amplifiers>
@@ -2198,7 +2525,7 @@
           </Graphics>
         </Amplifier>
 
-        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension">
+        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
           <AmplifierCode>9</AmplifierCode>
         </Amplifier>
       </Amplifiers>
@@ -2231,16 +2558,16 @@
           </Graphics>
         </Amplifier>
 
-        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension">
+        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
           <AmplifierCode>9</AmplifierCode>
         </Amplifier>
       </Amplifiers>
     </AmplifierGroup>
 
-    <AmplifierGroup Name="EXTENSION" Label="Extension" Description="Details specified by extension">
+    <AmplifierGroup Name="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
       <AmplifierGroupCode>9</AmplifierGroupCode>
       <Amplifiers>
-        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension">
+        <Amplifier Name="EXTENSION" Label="Extension" Description="Details specified by extension" IsExtension="true">
           <AmplifierCode>9</AmplifierCode>
         </Amplifier>
       </Amplifiers>

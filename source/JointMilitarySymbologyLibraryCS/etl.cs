@@ -1,4 +1,4 @@
-﻿/* Copyright 2014 Esri
+﻿/* Copyright 2014 - 2015 Esri
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -55,7 +55,161 @@ namespace JointMilitarySymbologyLibrary
             _configHelper = new ConfigHelper(_librarian);
         }
 
-        private void _exportEntities(ETLExportEnum exportType, IEntityExport exporter, string path, string symbolSetExpression = "", string expression = "", bool exportPoints = true, bool exportLines = true, bool exportAreas = true)
+        private void _exportAmplifierValues(string path, LibraryAmplifierValues values, bool append, bool isFirst)
+        {
+            // Exports a single list of amplifier values into a single CSV.  Appends those to one CSV
+            // if that option is selected.
+
+            string line;
+
+            if (append)
+            {
+                path = path + ".csv";
+                line = "Type,Name,Value";
+            }
+            else
+            {
+                path = path + "_" + values.LabelAlias + ".csv";
+                line = "Name,Value";
+            }
+
+            using (var w = new StreamWriter(path, append))
+            {
+                if (!append || isFirst)
+                {
+                    w.WriteLine(line);
+                    w.Flush();
+                }
+
+                foreach (LibraryAmplifierValuesValue value in values.Value)
+                {
+                    line = "";
+
+                    if (append)
+                        line = values.LabelAlias + ",";
+
+                    line = _configHelper.AmplifierLabelValue(value);
+
+                    w.WriteLine(line);
+                    w.Flush();
+                }
+            }
+
+        }
+
+        private void _exportSymbolSetCodes(string path)
+        {
+            // Exports a single list of symbol set code values used in a given schema, into a single domain range CSV file.
+
+            string line;
+            string outPath;
+
+            JMSMLConfigETLConfigSchemaContainer container = _configHelper.MakeSchemaETL().ETLConfig.SchemaContainer;
+            JMSMLConfigETLConfigSchemaContainerSchemas[] schemas = container.Schemas;
+
+            foreach (JMSMLConfigETLConfigSchemaContainerSchemas schemasInstance in schemas)
+            {
+                foreach (JMSMLConfigETLConfigSchemaContainerSchemasSchema schema in schemasInstance.Schema)
+                {
+                    outPath = path + "_" + schema.DomainName + ".csv";
+                    line = "Name,Value";
+
+                    bool deleteIt = false;
+
+                    using (var w = new StreamWriter(outPath))
+                    {
+                        w.WriteLine(line);
+                        w.Flush();
+
+                        string[] ss = schema.SymbolSetIDs.Split(' ');
+
+                        // NOTE: We decided to keep the domains with only one value.  Should that decision ever change then the
+                        // next line needs to be edited so that the 0 becomes a 1.
+
+                        if (ss.Length > 0)
+                        {
+                            foreach (string symSetID in ss)
+                            {
+                                line = "";
+
+                                SymbolSet symbolSet = _librarian.SymbolSet(symSetID);
+
+                                if (symbolSet != null)
+                                {
+                                    line = symbolSet.Label + "," + Convert.ToString(symbolSet.SymbolSetCode.DigitOne) + Convert.ToString(symbolSet.SymbolSetCode.DigitTwo);
+
+                                    w.WriteLine(line);
+                                    w.Flush();
+                                }
+                            }
+                        }
+                        else
+                            deleteIt = true;
+                    }
+
+                    if (deleteIt)
+                        File.Delete(outPath);
+                }
+            }
+        }
+
+        private void _exportAmplifierValueDomains(string path, bool append = false)
+        {
+            // Exports each of the lists of values associated with amplifiers in a library
+            // into its own CSV file, for use in establishing domain ranges in a system.
+           
+            bool isFirst = true;
+
+            foreach (LibraryAmplifier amplifier in _library.Amplifiers)
+            {
+                if (amplifier.Values != null)
+                {
+                    foreach (LibraryAmplifierValues values in amplifier.Values)
+                    {
+                        _exportAmplifierValues(path, values, append, isFirst);
+
+                        isFirst = false;
+                    }
+                }
+            }
+            
+        }
+
+        private void _exportSpecialEntities(ETLExportEnum exportType, IEntityExport exporter, SymbolSet s, StreamWriter w, EntitySubTypeType[] array)
+        {
+            // Exports special entities to a CSV file
+
+            string line = "";
+
+            if (array != null)
+            {
+                foreach (EntitySubTypeType eSubType in array)
+                {
+                    if (eSubType.Icon == IconType.SPECIAL && exportType == ETLExportEnum.ETLExportImage)
+                    {
+                        foreach (LibraryStandardIdentityGroup sig in _library.StandardIdentityGroups)
+                        {
+                            line = string.Format("{0}", exporter.Line(sig, s, eSubType));
+
+                            w.WriteLine(line);
+                            w.Flush();
+                        }
+                    }
+                    else
+                    {
+                        if(exportType == ETLExportEnum.ETLExportDomain)
+                            line = string.Format("{0}", exporter.Line(eSubType));
+                        else
+                            line = string.Format("{0}", exporter.Line(null, s, eSubType));
+
+                        w.WriteLine(line);
+                        w.Flush();
+                    }
+                }
+            }
+        }
+
+        private void _exportEntities(ETLExportEnum exportType, IEntityExport exporter, string path, string specialPath, string symbolSetExpression = "", string expression = "", bool exportPoints = true, bool exportLines = true, bool exportAreas = true, bool append = false)
         {
             // Exports entity, entity types, and entity sub types to CSV, by optionally testing a 
             // regular expression against the Label attributes of the containing symbol sets
@@ -73,6 +227,9 @@ namespace JointMilitarySymbologyLibrary
                 w.WriteLine(line);
                 w.Flush();
 
+                // Initialize a counter to track lines written out
+                int rowCount = 0;
+
                 foreach (SymbolSet s in _symbolSets)
                 {
                     if (symbolSetExpression != "" && !System.Text.RegularExpressions.Regex.IsMatch(s.Label, symbolSetExpression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
@@ -80,97 +237,113 @@ namespace JointMilitarySymbologyLibrary
 
                     foreach (SymbolSetEntity e in s.Entities)
                     {
-                        if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(e.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                        if (!(exporter is ImageEntityExport) || e.EntityCode.DigitOne != 0 || e.EntityCode.DigitTwo != 0)
                         {
-                            if (exportPoints && e.GeometryType == GeometryType.POINT ||
-                                exportLines && e.GeometryType == GeometryType.LINE ||
-                                exportAreas && e.GeometryType == GeometryType.AREA)
+                            if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(e.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
                             {
-                                // If the icon is Full Frame then four lines need to be exported, to reflect the four icon shapes.
-                                // Else just write out one line for non-Full-Frame.
-
-                                if (e.Icon == IconType.FULL_FRAME && exportType == ETLExportEnum.ETLExportImage)
+                                if (exportPoints && e.GeometryType == GeometryType.POINT ||
+                                    exportLines && e.GeometryType == GeometryType.LINE ||
+                                    exportAreas && e.GeometryType == GeometryType.AREA ||
+                                    (e.EntityCode.DigitOne == 0 && e.EntityCode.DigitTwo == 0))
                                 {
-                                    foreach (LibraryStandardIdentityGroup sig in _library.StandardIdentityGroups)
+                                    // If the icon is Full Frame then four lines need to be exported, to reflect the four icon shapes.
+                                    // Else just write out one line for non-Full-Frame.
+
+                                    if (e.Icon == IconType.FULL_FRAME && exportType == ETLExportEnum.ETLExportImage)
                                     {
-                                        line = string.Format("{0}", exporter.Line(sig, s, e, null, null));
-
-                                        w.WriteLine(line);
-                                        w.Flush();
-                                    }
-                                }
-                                else
-                                {
-                                    line = string.Format("{0}", exporter.Line(null, s, e, null, null));
-
-                                    w.WriteLine(line);
-                                    w.Flush();
-                                }
-                            }
-                        }
-
-                        if (e.EntityTypes != null)
-                        {
-                            foreach (SymbolSetEntityEntityType eType in e.EntityTypes)
-                            {
-                                if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(eType.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
-                                {
-                                    if (exportPoints && eType.GeometryType == GeometryType.POINT ||
-                                        exportLines && eType.GeometryType == GeometryType.LINE ||
-                                        exportAreas && eType.GeometryType == GeometryType.AREA)
-                                    {
-                                        // If the icon is Full Frame then four lines need to be exported, to reflect the four icon shapes.
-                                        // Else just write out one line for non-Full-Frame.
-
-                                        if (eType.Icon == IconType.FULL_FRAME && exportType == ETLExportEnum.ETLExportImage)
+                                        foreach (LibraryStandardIdentityGroup sig in _library.StandardIdentityGroups)
                                         {
-                                            foreach (LibraryStandardIdentityGroup sig in _library.StandardIdentityGroups)
-                                            {
-                                                line = string.Format("{0}", exporter.Line(sig, s, e, eType, null));
-
-                                                w.WriteLine(line);
-                                                w.Flush();
-                                            }
-                                        }
-                                        else
-                                        {
-                                            line = string.Format("{0}", exporter.Line(null, s, e, eType, null));
+                                            line = string.Format("{0}", exporter.Line(sig, s, e, null, null));
 
                                             w.WriteLine(line);
                                             w.Flush();
+
+                                            rowCount++;
                                         }
                                     }
-                                }
-
-                                if (eType.EntitySubTypes != null)
-                                {
-                                    foreach (EntitySubTypeType eSubType in eType.EntitySubTypes)
+                                    else
                                     {
-                                        if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(eSubType.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                                        line = string.Format("{0}", exporter.Line(null, s, e, null, null));
+
+                                        w.WriteLine(line);
+                                        w.Flush();
+
+                                        rowCount++;
+                                    }
+                                }
+                            }
+
+                            if (e.EntityTypes != null)
+                            {
+                                foreach (SymbolSetEntityEntityType eType in e.EntityTypes)
+                                {
+                                    if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(eType.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                                    {
+                                        if (exportPoints && eType.GeometryType == GeometryType.POINT ||
+                                            exportLines && eType.GeometryType == GeometryType.LINE ||
+                                            exportAreas && eType.GeometryType == GeometryType.AREA)
                                         {
-                                            if (exportPoints && eSubType.GeometryType == GeometryType.POINT ||
-                                                exportLines && eSubType.GeometryType == GeometryType.LINE ||
-                                                exportAreas && eSubType.GeometryType == GeometryType.AREA)
+                                            // If the icon is Full Frame then four lines need to be exported, to reflect the four icon shapes.
+                                            // Else just write out one line for non-Full-Frame.
+
+                                            if (eType.Icon == IconType.FULL_FRAME && exportType == ETLExportEnum.ETLExportImage)
                                             {
-                                                // If the icon is Full Frame then four lines need to be exported, to reflect the four icon shapes.
-                                                // Else just write out one line for non-Full-Frame.
-
-                                                if (eSubType.Icon == IconType.FULL_FRAME && exportType == ETLExportEnum.ETLExportImage)
+                                                foreach (LibraryStandardIdentityGroup sig in _library.StandardIdentityGroups)
                                                 {
-                                                    foreach (LibraryStandardIdentityGroup sig in _library.StandardIdentityGroups)
-                                                    {
-                                                        line = string.Format("{0}", exporter.Line(sig, s, e, eType, eSubType));
-
-                                                        w.WriteLine(line);
-                                                        w.Flush();
-                                                    }
-                                                }
-                                                else
-                                                {
-                                                    line = string.Format("{0}", exporter.Line(null, s, e, eType, eSubType));
+                                                    line = string.Format("{0}", exporter.Line(sig, s, e, eType, null));
 
                                                     w.WriteLine(line);
                                                     w.Flush();
+
+                                                    rowCount++;
+                                                }
+                                            }
+                                            else
+                                            {
+                                                line = string.Format("{0}", exporter.Line(null, s, e, eType, null));
+
+                                                w.WriteLine(line);
+                                                w.Flush();
+
+                                                rowCount++;
+                                            }
+                                        }
+                                    }
+
+                                    if (eType.EntitySubTypes != null)
+                                    {
+                                        foreach (EntitySubTypeType eSubType in eType.EntitySubTypes)
+                                        {
+                                            if (expression == "" || System.Text.RegularExpressions.Regex.IsMatch(eSubType.Label, expression, System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                                            {
+                                                if (exportPoints && eSubType.GeometryType == GeometryType.POINT ||
+                                                    exportLines && eSubType.GeometryType == GeometryType.LINE ||
+                                                    exportAreas && eSubType.GeometryType == GeometryType.AREA)
+                                                {
+                                                    // If the icon is Full Frame then four lines need to be exported, to reflect the four icon shapes.
+                                                    // Else just write out one line for non-Full-Frame.
+
+                                                    if (eSubType.Icon == IconType.FULL_FRAME && exportType == ETLExportEnum.ETLExportImage)
+                                                    {
+                                                        foreach (LibraryStandardIdentityGroup sig in _library.StandardIdentityGroups)
+                                                        {
+                                                            line = string.Format("{0}", exporter.Line(sig, s, e, eType, eSubType));
+
+                                                            w.WriteLine(line);
+                                                            w.Flush();
+
+                                                            rowCount++;
+                                                        }
+                                                    }
+                                                    else
+                                                    {
+                                                        line = string.Format("{0}", exporter.Line(null, s, e, eType, eSubType));
+
+                                                        w.WriteLine(line);
+                                                        w.Flush();
+
+                                                        rowCount++;
+                                                    }
                                                 }
                                             }
                                         }
@@ -182,32 +355,38 @@ namespace JointMilitarySymbologyLibrary
 
                     // Now process through any special entity sub types that might exist in a symbol set
 
-                    if (s.SpecialEntitySubTypes != null)
+                    if (s.SpecialEntitySubTypes != null && !(exporter is DomainEntityExport))
                     {
-                        foreach (EntitySubTypeType eSubType in s.SpecialEntitySubTypes)
+                        _exportSpecialEntities(exportType, exporter, s, w, s.SpecialEntitySubTypes);
+                    }
+                    else if (s.SpecialEntitySubTypes != null)
+                    {
+                        if (!append)
                         {
-                            if (eSubType.Icon == IconType.SPECIAL && exportType == ETLExportEnum.ETLExportImage)
-                            {
-                                foreach (LibraryStandardIdentityGroup sig in _library.StandardIdentityGroups)
-                                {
-                                    line = string.Format("{0}", exporter.Line(sig, s, eSubType));
+                            StreamWriter ws = new StreamWriter(specialPath);
 
-                                    w.WriteLine(line);
-                                    w.Flush();
-                                }
-                            }
-                            else
-                            {
-                                line = string.Format("{0}", exporter.Line(null, s, eSubType));
+                            line = string.Format("{0}", exporter.Headers);
 
-                                w.WriteLine(line);
-                                w.Flush();
-                            }
+                            ws.WriteLine(line);
+                            ws.Flush();
+
+                            _exportSpecialEntities(exportType, exporter, s, ws, s.SpecialEntitySubTypes);
+
+                            ws.Close();
                         }
+                        else
+                            _exportSpecialEntities(exportType, exporter, s, w, s.SpecialEntitySubTypes);
                     }
                 }
 
                 w.Close();
+
+                if (rowCount == 0)
+                {
+                    // Empty file so delete it
+                    logger.Warn("Empty " + path + ". Deleting file...");
+                    File.Delete(path);
+                }
             }
         }
 
@@ -335,7 +514,41 @@ namespace JointMilitarySymbologyLibrary
             _exportModifier2(exporter, path2, symbolSetExpression, expression, append);
         }
 
-        private void _exportContext(string path, bool dataValidation, bool append = false, bool isFirst = false)
+        private void _exportContextDetails(string headers, string path, bool dataValidation = false, bool append = false, bool isFirst = false)
+        {
+            using (var w = new StreamWriter(path + ".csv", (append && !isFirst)))
+            {
+                if (isFirst || !append)
+                    w.WriteLine(headers);
+
+                foreach (LibraryContext obj in _library.Contexts)
+                {
+                    if (!obj.IsExtension)
+                    {
+                        if (append)
+                            w.WriteLine("Context," + Convert.ToString(obj.ContextCode) + ',' + obj.Label.Replace(',', '-'));
+                        else
+                            w.WriteLine(Convert.ToString(obj.ContextCode) + ',' + obj.Label.Replace(',', '-'));
+
+                        w.Flush();
+                    }
+                }
+
+                if (dataValidation)
+                {
+                    if (append)
+                        w.WriteLine("Context,-1,NotSet");
+                    else
+                        w.WriteLine("-1,NotSet");
+
+                    w.Flush();
+                }
+
+                w.Close();
+            }
+        }
+
+        private void _exportContext(string path, bool dataValidation = false, bool append = false, bool isFirst = false, bool appendFileName = true)
         {
             // Export the Context elements in the library as a coded domain CSV.
 
@@ -349,37 +562,15 @@ namespace JointMilitarySymbologyLibrary
             }
             else
             {
-                filePath = path + "\\jmsml_Context.csv";
+                if (appendFileName)
+                    filePath = path + "\\jmsml_Context";
+                else
+                    filePath = path;
+
                 headers = "Code,Value";
             }
 
-            using (var w = new StreamWriter(filePath, (append && !isFirst)))
-            {
-                if (isFirst || !append)
-                    w.WriteLine(headers);
-
-                foreach (LibraryContext obj in _library.Contexts)
-                {
-                    if(append)
-                        w.WriteLine("Context," + Convert.ToString(obj.ContextCode) + ',' + obj.Label.Replace(',', '-'));
-                    else
-                        w.WriteLine(Convert.ToString(obj.ContextCode) + ',' + obj.Label.Replace(',', '-'));
-
-                    w.Flush();
-                }
-
-                if (dataValidation)
-                {
-                    if(append)
-                        w.WriteLine("Context,-1,NotSet");
-                    else
-                        w.WriteLine("-1,NotSet");
-
-                    w.Flush();
-                }
-
-                w.Close();
-            }
+            _exportContextDetails(headers, filePath, dataValidation, append, isFirst);
         }
 
         private void _exportStandardIdentity(string path, bool dataValidation, bool append = false, bool isFirst = false)
@@ -396,23 +587,26 @@ namespace JointMilitarySymbologyLibrary
             }
             else
             {
-                filePath = path + "\\jmsml_StandardIdentity.csv";
+                filePath = path + "\\jmsml_StandardIdentity";
                 headers = "Code,Value";
             }
 
-            using (var w = new StreamWriter(filePath, (append && !isFirst)))
+            using (var w = new StreamWriter(filePath + ".csv", (append && !isFirst)))
             {
                 if (isFirst || !append)
                     w.WriteLine(headers);
 
                 foreach (LibraryStandardIdentity obj in _library.StandardIdentities)
                 {
-                    if(append)
-                        w.WriteLine("Identity," + Convert.ToString(obj.StandardIdentityCode) + ',' + obj.Label.Replace(',', '-'));
-                    else
-                        w.WriteLine(Convert.ToString(obj.StandardIdentityCode) + ',' + obj.Label.Replace(',', '-'));
+                    if (!obj.IsExtension)
+                    {
+                        if (append)
+                            w.WriteLine("Identity," + Convert.ToString(obj.StandardIdentityCode) + ',' + obj.Label.Replace(',', '-'));
+                        else
+                            w.WriteLine(Convert.ToString(obj.StandardIdentityCode) + ',' + obj.Label.Replace(',', '-'));
 
-                    w.Flush();
+                        w.Flush();
+                    }
                 }
 
                 if (dataValidation)
@@ -443,11 +637,11 @@ namespace JointMilitarySymbologyLibrary
             }
             else
             {
-                filePath = path + "\\jmsml_SymbolSet.csv";
+                filePath = path + "\\jmsml_SymbolSet";
                 headers = "Code,Value";
             }
 
-            using (var w = new StreamWriter(filePath, (append && !isFirst)))
+            using (var w = new StreamWriter(filePath + ".csv", (append && !isFirst)))
             {
                 if (isFirst || !append)
                     w.WriteLine(headers);
@@ -490,23 +684,26 @@ namespace JointMilitarySymbologyLibrary
             }
             else
             {
-                filePath = path + "\\jmsml_Status.csv";
+                filePath = path + "\\jmsml_Status";
                 headers = "Code,Value";
             }
 
-            using (var w = new StreamWriter(filePath, (append && !isFirst)))
+            using (var w = new StreamWriter(filePath + ".csv", (append && !isFirst)))
             {
                 if (isFirst || !append)
                     w.WriteLine(headers);
 
                 foreach (LibraryStatus obj in _library.Statuses)
                 {
-                    if(append)
-                        w.WriteLine("Status," + Convert.ToString(obj.StatusCode) + ',' + obj.Label.Replace(',', '-'));
-                    else
-                        w.WriteLine(Convert.ToString(obj.StatusCode) + ',' + obj.Label.Replace(',', '-'));
+                    if (!obj.IsExtension)
+                    {
+                        if (append)
+                            w.WriteLine("Status," + Convert.ToString(obj.StatusCode) + ',' + obj.Label.Replace(',', '-'));
+                        else
+                            w.WriteLine(Convert.ToString(obj.StatusCode) + ',' + obj.Label.Replace(',', '-'));
 
-                    w.Flush();
+                        w.Flush();
+                    }
                 }
 
                 if (dataValidation)
@@ -537,23 +734,26 @@ namespace JointMilitarySymbologyLibrary
             }
             else
             {
-                filePath = path + "\\jmsml_HQTFDummy.csv";
+                filePath = path + "\\jmsml_HQTFDummy";
                 headers = "Code,Value";
             }
 
-            using (var w = new StreamWriter(filePath, (append && !isFirst)))
+            using (var w = new StreamWriter(filePath + ".csv", (append && !isFirst)))
             {
                 if (isFirst || !append)
                     w.WriteLine(headers);
 
                 foreach (LibraryHQTFDummy obj in _library.HQTFDummies)
                 {
-                    if(append)
-                        w.WriteLine("HQ_TF_FD," + Convert.ToString(obj.HQTFDummyCode) + ',' + obj.Label.Replace(',', '-'));
-                    else
-                        w.WriteLine(Convert.ToString(obj.HQTFDummyCode) + ',' + obj.Label.Replace(',', '-'));
+                    if (!obj.IsExtension)
+                    {
+                        if (append)
+                            w.WriteLine("HQ_TF_FD," + Convert.ToString(obj.HQTFDummyCode) + ',' + obj.Label.Replace(',', '-'));
+                        else
+                            w.WriteLine(Convert.ToString(obj.HQTFDummyCode) + ',' + obj.Label.Replace(',', '-'));
 
-                    w.Flush();
+                        w.Flush();
+                    }
                 }
 
                 if (dataValidation)
@@ -584,11 +784,11 @@ namespace JointMilitarySymbologyLibrary
             }
             else
             {
-                filePath = path + "\\jmsml_Amplifier.csv";
+                filePath = path + "\\jmsml_Amplifier";
                 headers = "Code,Value";
             }
 
-            using (var w = new StreamWriter(filePath, (append && !isFirst)))
+            using (var w = new StreamWriter(filePath + ".csv", (append && !isFirst)))
             {
                 if (isFirst || !append)
                     w.WriteLine(headers);
@@ -599,12 +799,15 @@ namespace JointMilitarySymbologyLibrary
                     {
                         foreach (LibraryAmplifierGroupAmplifier obj in descript.Amplifiers)
                         {
-                            if(append)
-                                w.WriteLine("Amplifier," + Convert.ToString(descript.AmplifierGroupCode) + Convert.ToString(obj.AmplifierCode) + ',' + obj.Label.Replace(',', '-'));
-                            else
-                                w.WriteLine(Convert.ToString(descript.AmplifierGroupCode) + Convert.ToString(obj.AmplifierCode) + ',' + obj.Label.Replace(',', '-'));
+                            if (!obj.IsExtension)
+                            {
+                                if (append)
+                                    w.WriteLine("Amplifier," + Convert.ToString(descript.AmplifierGroupCode) + Convert.ToString(obj.AmplifierCode) + ',' + obj.Label.Replace(',', '-'));
+                                else
+                                    w.WriteLine(Convert.ToString(descript.AmplifierGroupCode) + Convert.ToString(obj.AmplifierCode) + ',' + obj.Label.Replace(',', '-'));
 
-                            w.Flush();
+                                w.Flush();
+                            }
                         }
                     }
                 }
@@ -1332,6 +1535,7 @@ namespace JointMilitarySymbologyLibrary
             string entityPath = path;
             string modifier1Path = path;
             string modifier2Path = path;
+            string specialPath = path;
 
             _configHelper.PointSize = (int)size;
 
@@ -1363,16 +1567,18 @@ namespace JointMilitarySymbologyLibrary
                     // If we're not appending the modifiers to the entities
                     // then add a string to the file name to make them unique.
 
+                    specialPath = entityPath + "_Special_Entity_Subtype";
                     entityPath = entityPath + "_Entities";
                     modifier1Path = modifier1Path + "_Modifier_Ones";
                     modifier2Path = modifier2Path + "_Modifier_Twos";
                 }
 
                 entityPath = entityPath + ".csv";
+                specialPath = specialPath + ".csv";
                 modifier1Path = modifier1Path + ".csv";
                 modifier2Path = modifier2Path + ".csv";
 
-                _exportEntities(exportType, entityExporter, entityPath, symbolSetExpression, expression, exportPoints, exportLines, exportAreas);
+                _exportEntities(exportType, entityExporter, entityPath, specialPath, symbolSetExpression, expression, exportPoints, exportLines, exportAreas, append);
                 _exportModifiers(modifierExporter, modifier1Path, modifier2Path, symbolSetExpression, expression, append);
             }
         }
@@ -1451,12 +1657,15 @@ namespace JointMilitarySymbologyLibrary
                                 }
                                 else if(exportType == ETLExportEnum.ETLExportDomain)
                                 {
-                                    line = amplifierExporter.Line(lag, amp, null);
-
-                                    if (line != "")
+                                    if (!amp.IsExtension)
                                     {
-                                        w.WriteLine(line);
-                                        w.Flush();
+                                        line = amplifierExporter.Line(lag, amp, null);
+
+                                        if (line != "")
+                                        {
+                                            w.WriteLine(line);
+                                            w.Flush();
+                                        }
                                     }
                                 }
                             }
@@ -1574,10 +1783,13 @@ namespace JointMilitarySymbologyLibrary
 
                             line = frameExporter.Line(null, null, identity, null, null, false, false);
 
-                            if (line != "")
+                            if (!identity.IsExtension)
                             {
-                                w.WriteLine(line);
-                                w.Flush();
+                                if (line != "")
+                                {
+                                    w.WriteLine(line);
+                                    w.Flush();
+                                }
                             }
                         }
                     }
@@ -1640,12 +1852,15 @@ namespace JointMilitarySymbologyLibrary
                         }
                         else if(exportType == ETLExportEnum.ETLExportDomain)
                         {
-                            line = hqTFFDExporter.Line(hqTFFD, null);
-
-                            if (line != "")
+                            if (!hqTFFD.IsExtension)
                             {
-                                w.WriteLine(line);
-                                w.Flush();
+                                line = hqTFFDExporter.Line(hqTFFD, null);
+
+                                if (line != "")
+                                {
+                                    w.WriteLine(line);
+                                    w.Flush();
+                                }
                             }
                         }
                     }
@@ -1653,13 +1868,13 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        public void ExportOCA(string path, ETLExportEnum exportType = ETLExportEnum.ETLExportSimple, bool append = false, bool omitSource = false, bool omitLegacy = false, long size = 32)
+        public void ExportOCA(string path, string statusPath, ETLExportEnum exportType = ETLExportEnum.ETLExportSimple, bool append = false, bool omitSource = false, bool omitLegacy = false, long size = 32)
         {
             // The public entry point for exporting operational condition amplifiers from the JMSML library
             // into CSV format.
 
             // Accepts a path for the output (sans file name extension).  The output may also
-            // be appended to an existing file.
+            // be appended to an existing file.  Splits out the Status codes alone to a second file.
 
             IOCAExport ocaExporter = null;
             string line = "";
@@ -1681,12 +1896,22 @@ namespace JointMilitarySymbologyLibrary
             {
                 using (var w = new StreamWriter(path + ".csv", append))
                 {
+                    // Create a second stream writer for status alone
+
+                    StreamWriter ws = new StreamWriter(statusPath + ".csv");
+
                     if (!append)
                     {
                         line = string.Format("{0}", ocaExporter.Headers);
 
                         w.WriteLine(line);
                         w.Flush();
+
+                        if (exportType == ETLExportEnum.ETLExportDomain)
+                        {
+                            ws.WriteLine(line);
+                            ws.Flush();
+                        }
                     }
 
                     foreach (LibraryStatus status in _library.Statuses)
@@ -1719,17 +1944,82 @@ namespace JointMilitarySymbologyLibrary
                         }
                         else if(exportType == ETLExportEnum.ETLExportDomain)
                         {
-                            line = ocaExporter.Line(status);
-
-                            if (line != "")
+                            if (!status.IsExtension)
                             {
-                                w.WriteLine(line);
-                                w.Flush();
+                                line = ocaExporter.Line(status);
+
+                                if (line != "")
+                                {
+                                    w.WriteLine(line);
+                                    w.Flush();
+
+                                    if (status.StatusCode <= 1)
+                                    {
+                                        ws.WriteLine(line);
+                                        ws.Flush();
+                                    }
+                                }
                             }
                         }
                     }
+
+                    ws.Close();
                 }
             }
+        }
+
+        public void ExportContext(string path, bool dataValidation = false, bool append = false)
+        {
+            // The public entry for exporting context information as a domain range, in CSV format
+
+            // Accepts a path for the output (sans file name extension).  The output may also
+            // be appended to an existing file.
+
+            string line;
+
+            IContextExport iCE = new DomainContextExport();
+
+            using (var w = new StreamWriter(path + ".csv", append))
+            {
+                if (!append)
+                {
+                    line = string.Format("{0}", iCE.Headers);
+
+                    w.WriteLine(line);
+                    w.Flush();
+                }
+
+                foreach (LibraryContext context in _library.Contexts)
+                {
+                    if (!context.IsExtension)
+                    {
+                        line = string.Format("{0}", iCE.Line(context));
+
+                        w.WriteLine(line);
+                        w.Flush();
+                    }
+                }
+            } 
+        }
+
+        public void ExportAmplifierValueDomains(string path, bool append = false)
+        {
+            // The public entry for exporting the allowable values that are associated with
+            // some text amplifiers.  The export format is compatible with other domain export
+            // files created by this application.
+
+            // Accepts a path for the output folder or a file, appending to that file if required.
+
+            _exportAmplifierValueDomains(path, append);
+            _exportSymbolSetCodes(path);
+        }
+
+        public void ExportSchemas(string path)
+        {
+            // Public entry for exporting military feature class schemas from the contents
+            // of the JMSML config file and the JMSML XML data.
+
+            _configHelper.MakeSchemaETL().ExportSchemas(path);
         }
     }
 }

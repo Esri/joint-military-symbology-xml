@@ -39,6 +39,18 @@ Coded domain tables for entities and modifiers can be generated with or without 
 
 Coded domain tables for frames, amplifiers, and HQ/TF/FD can also be generated using /xas="DOMAIN" with the /xf, /xa, and /xh switches, respectively, which are further documented below.
 
+### Amplifier Value Domains ###
+Coded domain tables for miscellaneous text amplifiers can be exported from the data within JMSML.  These domains are defined where the military symbology standards call for a discrete list of allowed values for specific amplifiers.  These include, but are not limited to, the following amplifiers:
+
+- Reinforced or reduced
+- Evaluation rating (reliability and credibility)
+- Combat effectiveness
+- SIGINT mobilities
+- Speed units
+
+
+    jmsml.exe /xavd="Coded_Domain"
+
 ### Image File, Name, Category, Tags Tables ###
 The information exported in these files includes that which can be used to generate ArcGIS Style files.  The information includes the path and name of each graphic/image file for a symbol, its name, the category of icon it belongs to, and a semicolon delimited list of tag values that users can use to find a given symbol.  Use the /xas="IMAGE" switch to enable this type of output.
 
@@ -61,7 +73,7 @@ Amplifiers (Echelon, Mobility, and Auxiliary Equipment) can be exported with the
 
 HQTFFD (Headquarter, Task Force, and Feint/Dummy) amplifiers can be exported with the /xh switch.  The /-source switch can be used to disable the export of source file information and the /+ switch can be used to force output to be appended to an existing export file.
 
-	jmsml.exe /xh="Military-Frame-And-Amplifier-Icons" /+ /xas="IMAGE"
+	jmsml.exe /xh="Military-Frame-And-Amplifier-Icons" /+ /xas="IMAGE" 
 
 ### Legacy Support ###
 JMSML contains legacy data that can be used to map 2525C SIDCs to their equivalent 2525D SIDCs, and conversely, 2525D SIDCs to their equivalent 2525C SIDCs, where relevant.
@@ -77,3 +89,19 @@ A remark of pass(multiple) indicates the test was successful, but that in conver
 A remark of retired indicates the test resulted in finding that the specified 2525C SIDC has been formally retired by the SSMC, and therefore has no recommended 2525D equivalent.
 
 	jmsml.exe /xl="LegacyMappingTableCtoD"
+
+### Schemas ###
+
+Military feature attribute Schemas, which consist of Fields and Subtypes, can be exported from JMMSL data.  These export files are then used with tools in the military features data repository to automatically build a military feature template geodatabase.
+
+    jmsml.exe /xschemas="./military_feature_schemas/"
+
+The test folder [here](../source/JointMilitarySymbologyLibraryCS/jmsml/test) contains the current baseline for these tables.
+
+The Schemas.csv file that is also generated contains information, including metadata, about each supported Schema, and the containers holding those Schemas.  This file contains three types of rows.  The type for a given row is identified by the `schema_class` field value at the beginning of that row.   
+
+- The first row, the `SchemaContainer`, holds a `SchemaSet`.  The `SchemaContainer` is equivalent to an ArcGIS geodatabase.
+- The second row, the `SchemaSet`, holds a collection of `Schema` entries.  The `SchemaSet` is equivalent to an ArcGIS feature dataset.
+- Subsequent rows in the file each represent one `Schema` within the `SchemaSet`.  `Schemas` are equivalent to ArcGIS feature classes.
+
+Schema rows in this file can be reordered by hand, as desired, but the SchemaContainer should always be the first data row in the CSV file and the SchemaSet should always be the second data row in the CSV file.  This arrangement mirrors, in a flat CSV file, the hierarchical relationship between these objects, as they are currently represented within the JMSML XML.

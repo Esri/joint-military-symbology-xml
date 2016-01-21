@@ -1,4 +1,4 @@
-﻿/* Copyright 2014 Esri
+﻿/* Copyright 2014 - 2015 Esri
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -52,6 +52,13 @@ namespace JointMilitarySymbologyLibrary
             string code = BuildEntityCode(null, null, null, null, eSubType);
 
             return BuildEntityItemName(null, null, null, null, eSubType) + "," + code;
+        }
+
+        string IEntityExport.Line(EntitySubTypeType eSubType)
+        {
+            string code = Convert.ToString(eSubType.EntitySubTypeCode.DigitOne) + Convert.ToString(eSubType.EntitySubTypeCode.DigitTwo);
+            
+            return eSubType.Label.Replace(',', '-') + "," + code;
         }
     }
 }

@@ -15,3 +15,4 @@ Esri Reference 		| DISA Reference | Title|Status	|
 [111914-1](CP_141119-1.doc)|14-017-DS|Axis of Advance and Direction of Attack Redundancies|Withdrawn and replaced by 021115-1
 |[061314-2](CP_140613-2.doc)|14-007-DS|Sea Subsurface vs. Subsurface|Approved as Written
 |[061314-1](CP_Esri_140613-1.doc)|14-006-DS|Additional Information Columns in Appendix A Tables|Approved as Written
+|[150715-1](CP_Esri_150715-1.doc)|15-057-DS|Clarify Land Cyberspace and SIGINT and Add Cyberspace Symbol Set Codes|Approved as Written

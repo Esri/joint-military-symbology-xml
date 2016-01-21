@@ -5,10 +5,108 @@
     xmlns:mstns="http://esri.com/jmsmlConfig.xsd"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
 >
-  <xs:complexType name="GraphicFolderType">
+  <xs:simpleType name="GeometryTypeEnum">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="Point"/>
+      <xs:enumeration value="Line"/>
+      <xs:enumeration value="Area"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="FieldTypeEnum">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="Date"/>
+      <xs:enumeration value="Double"/>
+      <xs:enumeration value="Integer"/>
+      <xs:enumeration value="SmallInteger"/>
+      <xs:enumeration value="String"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="NameValueType">
+    <xs:attribute name="Name" type="xs:token" use="required"/>
+    <xs:attribute name="Value" type="xs:token" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="RangeDomainType">
+    <xs:attribute name="Label" type="xs:token" use="required"/>
+    <xs:attribute name="Type" type="FieldTypeEnum" use="required"/>
+    <xs:attribute name="MinValue" type="xs:int" use="required"/>
+    <xs:attribute name="MaxValue" type="xs:int" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="CodedDomainType">
     <xs:sequence>
-      <xs:element name="GraphicFolder" type="GraphicFolderType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="NameValue" type="NameValueType" minOccurs="1" maxOccurs="unbounded"/>
     </xs:sequence>
+    <xs:attribute name="Label" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="SubtypeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:token">
+        <xs:attribute name="ID" type="xs:ID" use="required"/>
+        <xs:attribute name="Code" type="xs:long" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:attributeGroup name="FieldAttributeGroup">
+    <xs:attribute name="ID" type="xs:ID" use="required"/>
+    <xs:attribute name="Name" type="xs:token" use="required"/>
+    <xs:attribute name="Alias" type="xs:token" use="required"/>
+    <xs:attribute name="Type" type="FieldTypeEnum" use="required"/>
+    <xs:attribute name="Length" type="xs:positiveInteger" use="required"/>
+    <xs:attribute name="SetsSubtype" type="xs:boolean" use="optional" default="false"/>
+    <xs:attribute name="Default" type="xs:token" use="optional"/>
+    <xs:attribute name="IsNullable" type="xs:boolean" use="required"/>
+    <xs:attribute name="Domain" type="xs:token" use="optional"/>
+    <xs:attribute name="Order" type="xs:integer" use="required"/>
+    <xs:attribute name="Notes" type="xs:string" use="optional"/>
+  </xs:attributeGroup>
+
+  <xs:complexType name="FieldType">
+    <xs:sequence>
+      <xs:element name="Subtypes" minOccurs="0" maxOccurs="1">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Subtype" minOccurs="1" maxOccurs="unbounded">
+              <xs:complexType>
+                <xs:attribute name="Code" type="xs:long" use="required"/>
+                <xs:attribute name="Domain" type="xs:token" use="optional"/>
+                <xs:attribute name="Default" type="xs:token" use="optional"/>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attributeGroup ref="FieldAttributeGroup"/>
+  </xs:complexType>
+
+  <xs:attributeGroup name="SchemaAttributeGroup">
+    <xs:attribute name="ID" type="xs:ID" use="required"/>
+    <xs:attribute name="SchemaTypeIDs" type="xs:IDREFS" use="required"/>
+    <xs:attribute name="SymbolSetIDs" type="xs:IDREFS" use="required"/>
+    <xs:attribute name="Label" type="xs:token" use="required"/>
+    <xs:attribute name="LabelAlias" type="xs:token" use="required"/>
+    <xs:attribute name="GeometryType" type="GeometryTypeEnum" use="required"/>
+    <xs:attribute name="DomainName" type="xs:token" use="required"/>
+  </xs:attributeGroup>
+
+  <xs:attributeGroup name="SchemaContainerAttributeGroup">
+    <xs:attribute name="ID" type="xs:ID" use="required"/>
+    <xs:attribute name="Label" type="xs:token" use="required"/>
+    <xs:attribute name="LabelAlias" type="xs:token" use="required"/>
+  </xs:attributeGroup>
+
+  <xs:attributeGroup name="AmplifierValueAttributeGroup">
+    <xs:attribute name="ID" type="xs:ID" use="required"/>
+    <xs:attribute name="Label" type="xs:token" use="required"/>
+    <xs:attribute name="Description" type="xs:token" use="optional" default=""/>
+  </xs:attributeGroup>
+
+  <xs:attributeGroup name="GraphicFolderAttributeGroup">
     <xs:attribute name="Name" type="xs:token" use="required"/>
     <xs:attribute name="Frames" type="xs:IDREFS" use="optional" default="false"/>
     <xs:attribute name="Echelons" type="xs:boolean" use="optional" default="false"/>
@@ -20,6 +118,56 @@
     <xs:attribute name="ModifierOnes" type="xs:IDREFS" use="optional"/>
     <xs:attribute name="ModifierTwos" type="xs:IDREFS" use="optional"/>
     <xs:attribute name="OCA" type="xs:boolean" use="optional" default="false"/>
+  </xs:attributeGroup>
+
+  <xs:attributeGroup name="ExportTagAttributeGroup">
+    <xs:attribute name="Name" type="xs:token" use="required"/>
+    <xs:attribute name="Description" type="xs:token" use="optional" default=""/>
+  </xs:attributeGroup>
+  
+  <xs:complexType name="GraphicFolderType">
+    <xs:sequence>
+      <xs:element name="GraphicFolder" type="GraphicFolderType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="GraphicFolderAttributeGroup"/>
+  </xs:complexType>
+
+  <xs:attributeGroup name="ETLConfigAttributeGroup">
+    <xs:attribute name="DomainSeparator" type="xs:string" use="required"/>
+    <xs:attribute name="PointSize" type="xs:int" use="required"/>
+    <xs:attribute name="SVGHome" type="xs:token" use="required"/>
+    <xs:attribute name="GraphicHome" type="xs:token" use="required"/>
+    <xs:attribute name="GraphicRoot" type="xs:token" use="required"/>
+    <xs:attribute name="GraphicExtension" type="xs:token" use="required"/>
+  </xs:attributeGroup>
+
+  <xs:attributeGroup name="JMSMLConfigAttributeGroup">
+    <xs:attribute name="LibraryPath" type="xs:anyURI" use="required"/>
+    <xs:attribute name="LibraryName" type="xs:token" use="required"/>
+  </xs:attributeGroup>
+
+  <xs:complexType name="MetadataType">
+    <xs:sequence>
+      <xs:element name="Label" type="xs:token" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Thumbnail" type="xs:token" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Tags" type="xs:token" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Summary" type="xs:token" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Description" type="xs:token" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Credits" type="xs:token" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Use" type="xs:token" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Extent" minOccurs="0" maxOccurs="1">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="East" type="xs:double" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="West" type="xs:double" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="North" type="xs:double" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="South" type="xs:double" minOccurs="1" maxOccurs="1"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="MaximumScale" type="xs:long" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="MinimumScale" type="xs:long" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
   </xs:complexType>
   
   <xs:element name="JMSMLConfig">
@@ -36,8 +184,7 @@
                       <xs:complexType>
                         <xs:simpleContent>
                           <xs:extension base="xs:token">
-                            <xs:attribute name="ID" type="xs:token" use="required"/>
-                            <xs:attribute name="Description" type="xs:token" use="optional" default=""/>
+                            <xs:attributeGroup ref="ExportTagAttributeGroup"/>
                           </xs:extension>
                         </xs:simpleContent>
                       </xs:complexType>
@@ -45,19 +192,95 @@
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
+              <xs:element name="AmplifierValues" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="AmplifierValue" minOccurs="1" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:token">
+                            <xs:attributeGroup ref="AmplifierValueAttributeGroup"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="SchemaTypes" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="SchemaType" minOccurs="1" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Fields" minOccurs="1" maxOccurs="1">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Field" type="FieldType" minOccurs="1" maxOccurs="unbounded"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="ID" type="xs:ID" use="required"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="SchemaContainer" minOccurs="1" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Metadata" type="MetadataType" minOccurs="1" maxOccurs="1"/>
+                    <xs:element name="Domains" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CodedDomain" type="CodedDomainType" minOccurs="0" maxOccurs="unbounded"/>
+                          <xs:element name="RangeDomain" type="RangeDomainType" minOccurs="1" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Schemas" minOccurs="1" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Metadata" type="MetadataType" minOccurs="1" maxOccurs="1"/>
+                          <xs:element name="Schema" minOccurs="1" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Metadata" type="MetadataType" minOccurs="1" maxOccurs="1"/>
+                                <xs:element name="Subtypes" minOccurs="0" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Subtype" type="SubtypeType" minOccurs="1" maxOccurs="unbounded"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Fields" minOccurs="1" maxOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Field" type="FieldType" minOccurs="1" maxOccurs="unbounded"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attributeGroup ref="SchemaAttributeGroup"/>
+                              <xs:attribute name="SpatialReference" type="xs:token" use="optional" default=""/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attributeGroup ref="SchemaContainerAttributeGroup"/>
+                        <xs:attribute name="SpatialReference" type="xs:token" use="required"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attributeGroup ref="SchemaContainerAttributeGroup"/>
+                </xs:complexType>
+              </xs:element>
             </xs:sequence>
-            <xs:attribute name="DomainSeparator" type="xs:string" use="required"/>
-            <xs:attribute name="PointSize" type="xs:int" use="required"/>
-            <xs:attribute name="SVGHome" type="xs:token" use="required"/>
-            <xs:attribute name="GraphicHome" type="xs:token" use="required"/>
-            <xs:attribute name="GraphicRoot" type="xs:token" use="required"/>
-            <xs:attribute name="GraphicExtension" type="xs:token" use="required"/>
+            <xs:attributeGroup ref="ETLConfigAttributeGroup"/>
           </xs:complexType>
         </xs:element>
       </xs:sequence>
-      
-      <xs:attribute name="LibraryPath" type="xs:anyURI" use="required"/>
-      <xs:attribute name="LibraryName" type="xs:token" use="required"/>
+      <xs:attributeGroup ref="JMSMLConfigAttributeGroup"/>
     </xs:complexType>
   </xs:element>
 </xs:schema>

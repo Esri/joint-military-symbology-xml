@@ -1,4 +1,4 @@
-﻿/* Copyright 2014 Esri
+﻿/* Copyright 2014 - 2015 Esri
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -27,7 +27,8 @@ namespace JointMilitarySymbologyLibrary
         private UInt32 _first10;
         private UInt32 _second10;
 
-        private static UInt32 _smallest = 1000000000;
+        private static UInt32 _smallestA = 1000000000;
+        private static UInt32 _smallestB = 0;
         private static UInt32 _specialPartA = 1001980000;
         private static UInt32 _invalidPartB = 1000000000;
         private static UInt32 _retiredPartB = 1100000000;
@@ -37,7 +38,7 @@ namespace JointMilitarySymbologyLibrary
 
         public SIDC(UInt32 partA = 1001980000, UInt32 partB = 1000000000)
         {
-            if (partA >= _smallest && partB >= _smallest)
+            if (partA >= _smallestA && partB >= _smallestB)
             {
                 this._first10 = partA;
                 this._second10 = partB;
@@ -71,7 +72,7 @@ namespace JointMilitarySymbologyLibrary
                 p2 = _invalidPartB;
             }
 
-            if (p1 >= _smallest && p2 >= _smallest)
+            if (p1 >= _smallestA && p2 >= _smallestB)
             {
                 this._first10 = p1;
                 this._second10 = p2;
@@ -92,7 +93,7 @@ namespace JointMilitarySymbologyLibrary
 
             set
             {
-                if (value >= _smallest)
+                if (value >= _smallestA)
                 {
                     this._first10 = value;
                 }
@@ -108,7 +109,7 @@ namespace JointMilitarySymbologyLibrary
 
             set
             {
-                if (value >= _smallest)
+                if (value >= _smallestB)
                 {
                     this._second10 = value;
                 }
@@ -142,7 +143,14 @@ namespace JointMilitarySymbologyLibrary
         {
             get
             {
-                return this._second10.ToString();
+                string result;
+
+                if (this._second10 == 0)
+                    result = "0000000000";
+                else
+                    result = this._second10.ToString();
+
+                return result;
             }
 
             set

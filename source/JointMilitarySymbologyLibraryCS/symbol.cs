@@ -1,4 +1,4 @@
-﻿/* Copyright 2014 Esri
+﻿/* Copyright 2014 - 2015 Esri
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -322,7 +322,7 @@ namespace JointMilitarySymbologyLibrary
         {
             Dictionary<string, string> label = new Dictionary<string, string>();
 
-            label.Add("Name", field.Name);
+            label.Add("Name", field.ID);
             label.Add("Label", field.Label);
             label.Add("Description", field.Description);
             label.Add("Remarks", field.Remarks);

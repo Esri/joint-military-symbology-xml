@@ -12,6 +12,8 @@ call exportAir.bat
 call exportLightAir.bat
 cd ../symbolcode_firstten_domains_values
 call exportAll.bat
+cd ../military_feature_schemas
+call export.bat
 cd ../../documentation/utilities
 call buildSchemaDoc.bat
 cd ../..

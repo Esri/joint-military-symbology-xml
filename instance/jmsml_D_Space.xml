@@ -6,6 +6,12 @@
   </SymbolSetCode>
   <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
   <Entities>
+    <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
+      <EntityCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </EntityCode>
+    </Entity>
     <Entity ID="MILITARY" Label="Military" LabelAlias="Military (Space)" Remarks="This symbol shall not be displayed on a C2 system but may be displayed for training or hierarchical explanation purposes." Graphic="05110000.svg">
       <EntityCode>
         <DigitOne>1</DigitOne>
@@ -292,7 +298,7 @@
     </Modifier>
   </SectorTwoModifiers>
   <LegacySymbols>
-    <LegacySymbol ID="MILITARY_SYM" Label="S*PP------*****" EntityID="MILITARY">
+    <LegacySymbol ID="SPACE_TRACK_SYM" Label="S*PP------*****" EntityID="UNSPECIFIED">
       <LegacyFunctionCode Name="2525C">------</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_SATELLITE_SYM" Label="S*PPS-----*****" EntityID="MILITARY" EntityTypeID="SATELLITE">

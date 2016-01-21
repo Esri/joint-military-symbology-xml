@@ -1,4 +1,4 @@
-﻿/* Copyright 2014 Esri
+﻿/* Copyright 2014 - 2015 Esri
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -354,7 +354,7 @@ namespace JointMilitarySymbologyLibrary
 
             foreach(JMSMLConfigETLConfigExportTag tag in _etlConfig.ExportTags)
             {
-                if (id == tag.ID)
+                if (id == tag.Name)
                     result = result + ";" + tag.Value;
             }
 
@@ -379,6 +379,38 @@ namespace JointMilitarySymbologyLibrary
                 result = result + exportTags;
 
             return result;
+        }
+
+        public string AmplifierLabelValue(LibraryAmplifierValuesValue value)
+        {
+            // Creates and returns a line of text to be exported for a given amplifier value.
+
+            // Uses overrides in the jmsml configuration file to deliver custom output.
+
+            string result;
+            
+            if(value.Label.Contains(','))
+                result = "\"" + value.Label + "\"" + "," + value.LabelAlias;
+            else
+                result = value.Label + "," + value.LabelAlias;
+
+            foreach (JMSMLConfigETLConfigAmplifierValue v in _etlConfig.AmplifierValues)
+            {
+                if (value.Name == v.ID)
+                {
+                    result = v.Label + "," + v.Value;
+                    break;
+                }
+            }
+
+            return result;
+        }
+
+        public SchemaETL MakeSchemaETL()
+        {
+            // Create an instance of a light weight SchemaETL object and return it, reusing the one ETLConfig object in memory.
+
+            return new SchemaETL(_etlConfig);
         }
     }
 }

@@ -1,4 +1,5 @@
 Name,Value
+Unspecified,000000
 Command and Control Points : Action Point (General),130100
 Command and Control Points : Amnesty Point,130200
 Command and Control Points : Checkpoint,130300
@@ -33,7 +34,7 @@ Maneuver Points : Point of Departure,160400
 Airspace Control Points,180000
 Airspace Control Points : Air Control Point,180100
 Airspace Control Points : Communications Checkpoint,180200
-Airspace Control Points : Downed Aircraft Pick-up Point,180300
+Airspace Control Points : Downed Aircrew Pick-Up Point,180300
 Airspace Control Points : Pop-up Point,180400
 Airspace Control Points : Air Control Rendezvous,180500
 Airspace Control Points : TACAN,180600
@@ -56,6 +57,10 @@ Airspace Control Points : Orbit,182200
 Airspace Control Points : Orbit - Figure Eight,182300
 Airspace Control Points : Orbit - Race Track,182400
 Airspace Control Points : Orbit - Random Closed,182500
+Maritime Areas : Ship Area of Interest,200400
+Maritime Areas : Active Maneuver Area,200500
+Maritime Areas : Cued Acquisition Doctrine,200600
+Maritime Areas : Radar Search Doctrine,200700
 Maritime Points : Plan Ship,210100
 Maritime Points : Aim Point,210200
 Maritime Points : Defended Asset,210300
@@ -174,6 +179,7 @@ Fires Points : Hide Point,250200
 Fires Points : Launch Point,250300
 Fires Points : Reload Point,250400
 Fires Points : Survey Control Point,250500
+Protection Areas : Minefield : Dummy,270705
 Protection Points : Antipersonnel Mine,280200
 Protection Points : Antipersonnel Mine : With Directional Effects,280201
 Protection Points : Antitank Mine,280300

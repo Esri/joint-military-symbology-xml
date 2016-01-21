@@ -1,0 +1,30 @@
+field_name,field_type,field_length,field_alias,nullability,field_domain
+identity,Integer,4,Standard Identity,NULLABLE,Identity
+context,SmallInteger,2,Context,NULLABLE,Context
+symbolset,SmallInteger,2,Symbol Set,NULLABLE,
+entity,Integer,4,Air Vehicle Type Icon,NULLABLE,Air_Entities
+modifier1,Integer,4,Modifier 1,NULLABLE,Air_Modifier_Ones
+modifier2,Integer,4,Modifier 2,NULLABLE,Air_Modifier_Twos
+indicator,Integer,4,"HQ, Task Force, Feint/Dummy",NULLABLE,HQTFFD
+operationalcondition,Integer,4,Operational Condition,NULLABLE,Operational_Condition_Amplifier
+uniquedesignation,String,30,Unique Designation or Track Number,NULLABLE,
+additionalinformation,String,200,AdditionaI Information,NULLABLE,
+staffcomment,String,200,Staff Comments,NULLABLE,
+credibility,SmallInteger,2,Credibility,NULLABLE,Credibility
+reliability,String,2,Reliability,NULLABLE,Reliability
+idmode,String,15,IFF/SIF,NULLABLE,
+type,String,255,Type of Equipment,NULLABLE,
+direction,SmallInteger,2,Direction,NULLABLE,Direction
+speed,SmallInteger,2,Speed,NULLABLE,
+x,Double,8,X Location,NULLABLE,
+y,Double,8,Y Location,NULLABLE,
+z,Double,8,Altitude or Flight Level,NULLABLE,
+size,SmallInteger,2,Symbol Size,NULLABLE,
+rotation,SmallInteger,2,Symbol Rotation,NULLABLE,
+countrycode,String,3,Country Code,NULLABLE,
+datetimevalid,Date,8,Date Time Valid,NULLABLE,
+datetimeexpired,Date,8,Date Time Expired,NULLABLE,
+createdby,String,50,Created By,NULLABLE,
+createdtime,Date,8,Created Time,NULLABLE,
+editedby,String,50,Edited By,NULLABLE,
+editedtime,Date,8,Edited Time,NULLABLE,
