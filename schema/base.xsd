@@ -150,6 +150,7 @@
               <xs:element name="StandardIdentityGroup" minOccurs="1" maxOccurs="4">
                 <xs:complexType>
                   <xs:sequence>
+                    <xs:element name="LegacyStandardIdentityCode" type="LegacyLetterCodeType" minOccurs="1" maxOccurs="unbounded"/>
                     <xs:element name="StandardIdentityGroupCode" type="SingleDigitType"/>
                   </xs:sequence>
                   <xs:attributeGroup ref="IdentifierAttributeGroup"/>
@@ -205,6 +206,13 @@
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="LegacyStandardIdentityCode" type="LegacyLetterCodeType" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element name="LegacyFrames" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="LegacyFrame" type="LegacyLetterCodeType" minOccurs="1" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
                   </xs:sequence>
                   <xs:attributeGroup ref="GraphicIdentifierAttributeGroup"/>
                   <xs:attribute name="ContextID" type="xs:IDREF" use="required"/>

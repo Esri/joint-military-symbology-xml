@@ -56,6 +56,7 @@ namespace jmsml
             string exportSchemas = CommandLineArgs.I.argAsString("/xschemas");
 
             string exportLegacy = CommandLineArgs.I.argAsString("/xl");
+            string exportLookupC = CommandLineArgs.I.argAsString("/xllC");
 
             string legacyDest = CommandLineArgs.I.argAsString("/ild");
             string legacySrc = CommandLineArgs.I.argAsString("/ils");
@@ -94,6 +95,7 @@ namespace jmsml
                 Console.WriteLine("/xf=\"<pathname>\"\t: Export frames.");
                 Console.WriteLine("/xh=\"<pathname>\"\t: Export HQ/TF/FD.");
                 Console.WriteLine("/xl=\"<pathname>\"\t: Export legacy data (for testing).");
+                Console.WriteLine("/xllC=\"<pathname>\"\t: Export legacy lookup table for 2525C.");
                 Console.WriteLine("/xo=\"<pathname>\"\t: Export operational condition amplifiers.*");
                 Console.WriteLine("/xas=\"<as_option>\"\t: Export as SIMPLE, DOMAIN, or IMAGE.");
                 Console.WriteLine("");
@@ -124,6 +126,11 @@ namespace jmsml
             if (exportLegacy != "")
             {
                 _etl.ExportLegacy(exportLegacy);
+            }
+
+            if (exportLookupC != "")
+            {
+                _etl.ExportLegacyLookup(exportLookupC, "2525C");
             }
 
             if (exportPath != "")

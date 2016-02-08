@@ -1742,8 +1742,12 @@ namespace JointMilitarySymbologyLibrary
                                     }
 
                                     // Export the frame for Status = Planned (not every frame will have a Planned version)
+                                    // Shortened the label for this export so the stylx file will use the shorter name.
 
-                                    line = frameExporter.Line(_librarian, context, identity, dimension, _library.Statuses[1], false, false);
+                                    LibraryStatus status = _library.Statuses[1];
+                                    status.LabelAlias = "Planned";
+                                    line = frameExporter.Line(_librarian, context, identity, dimension, status, false, false);
+                                    status.LabelAlias = "";
 
                                     if (line != "")
                                     {
@@ -2020,6 +2024,14 @@ namespace JointMilitarySymbologyLibrary
             // of the JMSML config file and the JMSML XML data.
 
             _configHelper.MakeSchemaETL().ExportSchemas(path);
+        }
+
+        public void ExportLegacyLookup(string path, string standard)
+        {
+            // Export legacy lookup information, taking all of the existing 2525X code information parts of symbols
+            // and converting them to their 2525D equivalent codes, then writing out the results to the specified path.
+
+            _configHelper.MakeLegacyETL().ExportLegacyLookup(path, standard);
         }
     }
 }

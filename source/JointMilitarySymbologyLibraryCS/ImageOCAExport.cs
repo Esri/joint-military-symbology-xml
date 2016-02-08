@@ -51,7 +51,7 @@ namespace JointMilitarySymbologyLibrary
             if (!File.Exists(itemOriginalPath))
                 _notes = _notes + "image file does not exist;";
 
-            LibraryDimension dimension = _configHelper.Librarian.Dimension(statusGraphic.Dimension);
+            LibraryDimension dimension = _configHelper.Librarian.Dimension(statusGraphic.DimensionID);
             LibraryStandardIdentityGroup identity = _configHelper.Librarian.StandardIdentityGroup(statusGraphic.StandardIdentityGroup);
 
             string itemName = BuildOCAItemName(identity, dimension, status);
