@@ -1,0 +1,11 @@
+field_name,field_type,field_length,field_alias,nullability,field_domain,field_default,field_setsubtypes, field_subtype, field_notes
+symbolset,SmallInteger,2,Symbol Set,NULLABLE,METOCLinesOceanographic,,FALSE,,
+symbolentity,Integer,4,METOC Line Entity,NULLABLE,METOC_Oceanographic_Line_Entities,,FALSE,,
+additionalinformation,String,20,Additional Information,NULLABLE,,,FALSE,,
+datetimevalid,Date,8,Date Time Valid,NULLABLE,,,FALSE,,
+datetimeexpired,Date,8,Date Time Expired,NULLABLE,,,FALSE,,
+createdby,String,50,Created By,NULLABLE,,,FALSE,,
+createdtime,Date,8,Created Time,NULLABLE,,,FALSE,,
+editedby,String,50,Edited By,NULLABLE,,,FALSE,,
+editedtime,Date,8,Edited Time,NULLABLE,,,FALSE,,
+optionallabel,String,30,Optional Label,NULLABLE,,,FALSE,,
