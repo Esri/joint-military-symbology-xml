@@ -852,55 +852,57 @@ namespace JointMilitarySymbologyLibrary
             return retObj;
         }
 
-        internal LibraryAffiliation AffiliationByLegacyCode(string legacyStandardIdentityCode, string legacyDimensionCode, string legacyFirstLetterInFunction, string legacyCodingSchemeLetter)
-        {
-            LibraryAffiliation retObj = null;
+        // The following has been commented out as being potentially superflous
 
-            // For each affiliation (combination of context, dimension, and standard identity)
+        //internal LibraryAffiliation AffiliationByLegacyCode(string legacyStandardIdentityCode, string legacyDimensionCode, string legacyFirstLetterInFunction, string legacyCodingSchemeLetter)
+        //{
+        //    LibraryAffiliation retObj = null;
 
-            foreach(LibraryAffiliation lObj in this._library.Affiliations)
-            {
-                if (lObj.LegacyStandardIdentityCode != null)
-                {
-                    // For each standard identity
+        //    // For each affiliation (combination of context, dimension, and standard identity)
 
-                    foreach (LegacyLetterCodeType lObj2 in lObj.LegacyStandardIdentityCode)
-                    {
-                        // If this is the standard identity we are looking for...
+        //    foreach(LibraryAffiliation lObj in this._library.Affiliations)
+        //    {
+        //        if (lObj.LegacyStandardIdentityCode != null)
+        //        {
+        //            // For each standard identity
 
-                        if (lObj2.Value == legacyStandardIdentityCode)
-                        {
-                            // Grab the dimension associated with the current affiliation
+        //            foreach (LegacyLetterCodeType lObj2 in lObj.LegacyStandardIdentityCode)
+        //            {
+        //                // If this is the standard identity we are looking for...
 
-                            LibraryDimension lDim = this.Dimension(lObj.DimensionID);
+        //                if (lObj2.Value == legacyStandardIdentityCode)
+        //                {
+        //                    // Grab the dimension associated with the current affiliation
+
+        //                    LibraryDimension lDim = this.Dimension(lObj.DimensionID);
                             
-                            // For each dimension code in that dimension...
+        //                    // For each dimension code in that dimension...
 
-                            foreach (LegacyLetterCodeType lObj3 in lDim.LegacyDimensionCode)
-                            {
-                                // Test to see if this is the dimension we are looking for by checking to see if the codes match and there is no
-                                // first function letter and coding schema letter override, or...
-                                // use the overriding first function letter to refine the test, or...
-                                // use the overriding coding scheme letter to refine the test.
+        //                    foreach (LegacyLetterCodeType lObj3 in lDim.LegacyDimensionCode)
+        //                    {
+        //                        // Test to see if this is the dimension we are looking for by checking to see if the codes match and there is no
+        //                        // first function letter and coding schema letter override, or...
+        //                        // use the overriding first function letter to refine the test, or...
+        //                        // use the overriding coding scheme letter to refine the test.
 
-                                if((lObj3.Value == legacyDimensionCode && lObj3.FirstFunctionLetter == "" && lObj3.CodingSchemeLetter == "") ||
-                                   (lObj3.Value == legacyDimensionCode && lObj3.FirstFunctionLetter == legacyFirstLetterInFunction && lObj3.CodingSchemeLetter == "") ||
-                                   (lObj3.Value == legacyDimensionCode && lObj3.FirstFunctionLetter == ""  && lObj3.CodingSchemeLetter == legacyCodingSchemeLetter) ||
-                                   (lObj3.Value == legacyDimensionCode && lObj3.FirstFunctionLetter == legacyFirstLetterInFunction && lObj3.CodingSchemeLetter == legacyCodingSchemeLetter))
+        //                        if((lObj3.Value == legacyDimensionCode && lObj3.FirstFunctionLetter == "" && lObj3.CodingSchemeLetter == "") ||
+        //                           (lObj3.Value == legacyDimensionCode && lObj3.FirstFunctionLetter == legacyFirstLetterInFunction && lObj3.CodingSchemeLetter == "") ||
+        //                           (lObj3.Value == legacyDimensionCode && lObj3.FirstFunctionLetter == ""  && lObj3.CodingSchemeLetter == legacyCodingSchemeLetter) ||
+        //                           (lObj3.Value == legacyDimensionCode && lObj3.FirstFunctionLetter == legacyFirstLetterInFunction && lObj3.CodingSchemeLetter == legacyCodingSchemeLetter))
 
-                                    // We have a match, so return the current affiliation
+        //                            // We have a match, so return the current affiliation
 
-                                    return lObj;
-                            }
-                        }
-                    }
-                }
-            }
+        //                            return lObj;
+        //                    }
+        //                }
+        //            }
+        //        }
+        //    }
 
-            _statusFlag -= 512;
+        //    _statusFlag -= 512;
 
-            return retObj;
-        }
+        //    return retObj;
+        //}
 
         internal SymbolSetEntity Entity(SymbolSet symbolSet, ushort entityCodeOne, ushort entityCodeTwo)
         {

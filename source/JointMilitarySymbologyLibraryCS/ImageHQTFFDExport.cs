@@ -55,7 +55,7 @@ namespace JointMilitarySymbologyLibrary
                 _notes = _notes + "image file does not exist;";
 
             LibraryStandardIdentityGroup identityGroup = _configHelper.Librarian.StandardIdentityGroup(graphic.StandardIdentityGroup);
-            LibraryDimension dimension = _configHelper.Librarian.Dimension(graphic.Dimension);
+            LibraryDimension dimension = _configHelper.Librarian.Dimension(graphic.DimensionID);
 
             string itemName = BuildHQTFFDItemName(identityGroup, dimension, hqTFFD);
             string itemCategory = "Amplifier" + _configHelper.DomainSeparator + "HQTFFD";

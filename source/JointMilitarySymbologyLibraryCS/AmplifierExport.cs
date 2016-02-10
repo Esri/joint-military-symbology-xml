@@ -164,6 +164,40 @@ namespace JointMilitarySymbologyLibrary
             return result;
         }
 
+        protected string BuildSIDCKey(LibraryAmplifierGroup amplifierGroup,
+                                      LibraryAmplifierGroupAmplifier amplifier,
+                                      LibraryStandardIdentityGroup identityGroup)
+        {
+            string key = "";
+
+            // TODO: WIll need to consider expanding this to support more than just
+            // the UEI symbols
+
+            key = "S";
+            key = key + identityGroup.LegacyStandardIdentityCode[0].Value;
+            key = key + "-";
+
+            switch(amplifierGroup.AmplifierGroupCode)
+            {
+                case 1:
+                case 2:
+                    key = key + amplifier.LegacyModifierCode[0].Value;
+                    break;
+
+                case 3:
+                case 4:
+                case 5:
+                    key = key + "M" + amplifier.LegacyModifierCode[0].Value;
+                    break;
+
+                case 6:
+                    key = key + "N" + amplifier.LegacyModifierCode[0].Value;
+                    break;
+            }
+
+            return key;
+        }
+
         public string NameIt(LibraryAmplifierGroup amplifierGroup,
                              LibraryAmplifierGroupAmplifier amplifier,
                              LibraryStandardIdentityGroup identityGroup)

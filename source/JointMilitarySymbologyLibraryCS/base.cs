@@ -720,19 +720,28 @@ namespace JointMilitarySymbologyLibrary {
         
         private string remarksField;
         
-        private string firstFunctionLetterField;
-        
         private string codingSchemeLetterField;
         
         private string standardIdentityOverrideField;
+        
+        private string battleDimensionLetterField;
+        
+        private string firstFunctionLetterField;
+        
+        private string functionField;
+        
+        private bool isPlannedField;
         
         private string valueField;
         
         public LegacyLetterCodeType() {
             this.labelAliasField = "";
-            this.firstFunctionLetterField = "";
             this.codingSchemeLetterField = "";
             this.standardIdentityOverrideField = "";
+            this.battleDimensionLetterField = "";
+            this.firstFunctionLetterField = "";
+            this.functionField = "";
+            this.isPlannedField = true;
         }
         
         /// <remarks/>
@@ -794,18 +803,6 @@ namespace JointMilitarySymbologyLibrary {
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
         [System.ComponentModel.DefaultValueAttribute("")]
-        public string FirstFunctionLetter {
-            get {
-                return this.firstFunctionLetterField;
-            }
-            set {
-                this.firstFunctionLetterField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        [System.ComponentModel.DefaultValueAttribute("")]
         public string CodingSchemeLetter {
             get {
                 return this.codingSchemeLetterField;
@@ -824,6 +821,54 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.standardIdentityOverrideField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string BattleDimensionLetter {
+            get {
+                return this.battleDimensionLetterField;
+            }
+            set {
+                this.battleDimensionLetterField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string FirstFunctionLetter {
+            get {
+                return this.firstFunctionLetterField;
+            }
+            set {
+                this.firstFunctionLetterField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string Function {
+            get {
+                return this.functionField;
+            }
+            set {
+                this.functionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute(true)]
+        public bool IsPlanned {
+            get {
+                return this.isPlannedField;
+            }
+            set {
+                this.isPlannedField = value;
             }
         }
         
@@ -3582,6 +3627,8 @@ namespace JointMilitarySymbologyLibrary {
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://disa.mil/JointMilSyML.xsd")]
     public partial class LibraryStandardIdentityGroup {
         
+        private LegacyLetterCodeType[] legacyStandardIdentityCodeField;
+        
         private ushort standardIdentityGroupCodeField;
         
         private string idField;
@@ -3600,6 +3647,17 @@ namespace JointMilitarySymbologyLibrary {
         
         public LibraryStandardIdentityGroup() {
             this.labelAliasField = "";
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("LegacyStandardIdentityCode")]
+        public LegacyLetterCodeType[] LegacyStandardIdentityCode {
+            get {
+                return this.legacyStandardIdentityCodeField;
+            }
+            set {
+                this.legacyStandardIdentityCodeField = value;
+            }
         }
         
         /// <remarks/>
@@ -4106,6 +4164,8 @@ namespace JointMilitarySymbologyLibrary {
         
         private LegacyLetterCodeType[] legacyStandardIdentityCodeField;
         
+        private LegacyLetterCodeType[] legacyFramesField;
+        
         private string idField;
         
         private string labelField;
@@ -4147,6 +4207,17 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.legacyStandardIdentityCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("LegacyFrame", IsNullable=false)]
+        public LegacyLetterCodeType[] LegacyFrames {
+            get {
+                return this.legacyFramesField;
+            }
+            set {
+                this.legacyFramesField = value;
             }
         }
         
@@ -4481,7 +4552,7 @@ namespace JointMilitarySymbologyLibrary {
         
         private string standardIdentityGroupField;
         
-        private string dimensionField;
+        private string dimensionIDField;
         
         private string graphicField;
         
@@ -4498,12 +4569,12 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="IDREF")]
-        public string Dimension {
+        public string DimensionID {
             get {
-                return this.dimensionField;
+                return this.dimensionIDField;
             }
             set {
-                this.dimensionField = value;
+                this.dimensionIDField = value;
             }
         }
         
@@ -4661,7 +4732,7 @@ namespace JointMilitarySymbologyLibrary {
         
         private string standardIdentityGroupField;
         
-        private string dimensionField;
+        private string dimensionIDField;
         
         private string graphicField;
         
@@ -4678,12 +4749,12 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="IDREF")]
-        public string Dimension {
+        public string DimensionID {
             get {
-                return this.dimensionField;
+                return this.dimensionIDField;
             }
             set {
-                this.dimensionField = value;
+                this.dimensionIDField = value;
             }
         }
         
