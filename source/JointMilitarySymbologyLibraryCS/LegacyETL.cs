@@ -152,18 +152,21 @@ namespace JointMilitarySymbologyLibrary
                 w.WriteLine(headers);
                 w.Flush();
             }
-
+             
             foreach (SymbolSet ss in _lib.SymbolSets)
             {
                 if (ss.LegacySymbols != null)
                 {
                     foreach (SymbolSetLegacySymbol legacySymbol in ss.LegacySymbols)
                     {
-                        string line = id.ToString() + "," + symbolExport.Line(ss, legacySymbol);
-                        id++;
+                        if (legacySymbol.EntityID != "NA" && legacySymbol.EntityID != "UNSPECIFIED")
+                        {
+                            string line = id.ToString() + "," + symbolExport.Line(ss, legacySymbol);
+                            id++;
 
-                        w.WriteLine(line);
-                        w.Flush();
+                            w.WriteLine(line);
+                            w.Flush();
+                        }
                     }
                 }
             }

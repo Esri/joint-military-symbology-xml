@@ -151,12 +151,15 @@ namespace JointMilitarySymbologyLibrary
 
             // Special care is needed with special entity subtypes
 
+            bool isEntitySubTypeSpecial = false;
+
             if (_entitySubType != null)
             {
                 if (_configHelper.IsSpecialEntitySubtype(ss, _entitySubType))
                 {
                     entityCode = _entityExport.CodeIt(null, ss, _entity, _entityType, null);
                     extraIcon = _entityExport.CodeIt(null, ss, null, null, _entitySubType);
+                    isEntitySubTypeSpecial = true;
                 }
                 else
                     entityCode = _entityExport.CodeIt(null, ss, _entity, _entityType, _entitySubType);
@@ -176,9 +179,9 @@ namespace JointMilitarySymbologyLibrary
             bool fullFrame = false;
             string geometry = _entityExport.GeometryIt(_entity, _entityType, _entitySubType);
 
-            if (_entitySubType != null)
+            if (_entitySubType != null && !isEntitySubTypeSpecial)
             {
-                fullFrame = _entitySubType.Icon == IconType.FULL_FRAME || _entitySubType.Icon == IconType.SPECIAL;
+                fullFrame = _entitySubType.Icon == IconType.FULL_FRAME;
             }
             else if (_entityType != null)
             {
