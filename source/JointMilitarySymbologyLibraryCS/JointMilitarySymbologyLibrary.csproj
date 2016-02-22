@@ -77,6 +77,12 @@
     <Compile Include="ImageOCAExport.cs" />
     <Compile Include="IModifierExport.cs" />
     <Compile Include="IOCAExport.cs" />
+    <Compile Include="LegacyAmplifierExport.cs" />
+    <Compile Include="LegacyHQTFFDExport.cs" />
+    <Compile Include="LegacyOCAExport.cs" />
+    <Compile Include="LegacySymbolExport.cs" />
+    <Compile Include="LegacyETL.cs" />
+    <Compile Include="LegacyFrameExport.cs" />
     <Compile Include="ModifierExport.cs" />
     <Compile Include="OCAExport.cs" />
     <Compile Include="SchemaETL.cs" />

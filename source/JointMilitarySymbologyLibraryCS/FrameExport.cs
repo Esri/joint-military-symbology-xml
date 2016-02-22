@@ -146,6 +146,29 @@ namespace JointMilitarySymbologyLibrary
             return result;
         }
 
+        protected string BuildSIDCKey(string status, LegacyLetterCodeType legacyFrame)
+        {
+            string key = "";
+
+            key = legacyFrame.CodingSchemeLetter;
+            key = key + legacyFrame.Value;
+            key = key + legacyFrame.BattleDimensionLetter;
+            key = key + status;
+
+            string firstFuncLetter = legacyFrame.FirstFunctionLetter == "" ? "-" : legacyFrame.FirstFunctionLetter;
+            key = key + firstFuncLetter;
+
+            // We will have to look at the second function character in the future if we want to handle
+            // the export of Emergency Management symbology correctly.  Since the EM appendix
+            // mixes the three UEI frame shapes.  For now we are treating all EM symbols as being
+            // in Ground Unit frames.
+
+            //string secondFuncLetter = legacyFrame.SecondFunctionLetter == "" ? "-" : legacyFrame.SecondFunctionLetter;
+            //key = key + secondFuncLetter;
+
+            return key;
+        }
+
         public string NameIt(LibraryContext context, LibraryDimension dimension, LibraryStandardIdentity identity, LibraryStatus status, bool asAnyCivilian)
         {
             string name = "";

@@ -90,6 +90,11 @@ A remark of retired indicates the test resulted in finding that the specified 25
 
 	jmsml.exe /xl="LegacyMappingTableCtoD"
 
+#### Legacy Lookup ####
+JMSML's legacy symbology support also includes an ability to export a look-up table that maps unique IDs for various parts of symbols in MIL-STD-2525B Change 2 and MIL-STD-2525C, to symbol parts in MIL-STD-2525D.  Implementers may use this output to create older symbology from various parts of the latest symbology.
+
+	jmsml.exe /xllC="All_ID_Mapping_C_to_D.csv"
+
 ### Schemas ###
 
 Military feature attribute Schemas, which consist of Fields and Subtypes, can be exported from JMMSL data.  These export files are then used with tools in the military features data repository to automatically build a military feature template geodatabase.

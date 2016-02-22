@@ -112,6 +112,30 @@ namespace JointMilitarySymbologyLibrary
             return result;
         }
 
+        protected string BuildSIDCKey(LibraryStandardIdentityGroup identity, LibraryDimension dimension, LibraryStatus status)
+        {
+            string key = "";
+
+            if (status.LegacyStatusCode != null)
+            {
+                if (identity != null && dimension != null)
+                {
+                    key = key + identity.LegacyStandardIdentityCode[0].Value;
+                    key = key + dimension.LegacyDimensionCode[0].Value;
+                }
+                
+                key = key + status.LegacyStatusCode[0].Value;
+
+                if (dimension != null)
+                {
+                    LegacyLetterCodeType code = dimension.LegacyDimensionCode[0];
+                    key = key + (code.FirstFunctionLetter == "" ? "-" : code.FirstFunctionLetter);
+                }
+            }
+
+            return key;
+        }
+
         public string NameIt(LibraryStandardIdentityGroup identity, LibraryDimension dimension, LibraryStatus status)
         {
             string name = "";

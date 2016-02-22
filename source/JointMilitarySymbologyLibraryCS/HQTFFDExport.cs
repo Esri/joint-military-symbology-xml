@@ -133,6 +133,20 @@ namespace JointMilitarySymbologyLibrary
             return result;
         }
 
+        protected string BuildSIDCKey(LibraryStandardIdentityGroup identityGroup, LibraryDimension dimension, LibraryHQTFDummy hqTFFD)
+        {
+            string key = "";
+
+            key = "S";
+            key = key + identityGroup.LegacyStandardIdentityCode[0].Value;
+            key = key + dimension.LegacyDimensionCode[0].Value;
+            key = key + "-";
+            key = key + (dimension.LegacyDimensionCode[0].FirstFunctionLetter == "" ? "-" : dimension.LegacyDimensionCode[0].FirstFunctionLetter);
+            key = key + hqTFFD.LegacyHQTFDummyCode[0].Value;
+
+            return key;
+        }
+
         public string NameIt(LibraryStandardIdentityGroup identityGroup, LibraryDimension dimension, LibraryHQTFDummy hqTFFD)
         {
             string name = "";

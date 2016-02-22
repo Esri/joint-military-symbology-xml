@@ -93,7 +93,10 @@ namespace JointMilitarySymbologyLibrary
             {
                 // Almost everything is dealt with below
 
-                code = code + Convert.ToString(e.EntityCode.DigitOne) + Convert.ToString(e.EntityCode.DigitTwo);
+                if (e != null)
+                    code = code + Convert.ToString(e.EntityCode.DigitOne) + Convert.ToString(e.EntityCode.DigitTwo);
+                else
+                    code = code + "00";
 
                 if (eType != null)
                     code = code + Convert.ToString(eType.EntityTypeCode.DigitOne) + Convert.ToString(eType.EntityTypeCode.DigitTwo);
@@ -451,6 +454,25 @@ namespace JointMilitarySymbologyLibrary
                 name = BuildEntityItemName(sig, ss, e, eType, eSubType);
 
             return name;
+        }
+
+        public string CodeIt(LibraryStandardIdentityGroup sig, SymbolSet ss, SymbolSetEntity e, SymbolSetEntityEntityType eType, EntitySubTypeType eSubType)
+        {
+            string code = "";
+
+            if (ss != null); // && (e != null || (e == null && eType == null)))
+                code = BuildEntityCode(sig, ss, e, eType, eSubType);
+
+            return code;
+        }
+
+        public string GeometryIt(SymbolSetEntity e, SymbolSetEntityEntityType eType, EntitySubTypeType eSubType)
+        {
+            string geo = "";
+
+            geo = GeometryIs(e, eType, eSubType);
+
+            return geo;
         }
     }
 }

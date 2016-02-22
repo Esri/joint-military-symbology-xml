@@ -594,7 +594,7 @@ namespace JointMilitarySymbologyLibrary
 
                     foreach (LibraryHQTFDummyGraphic hag in _hqTFDummy.Graphics)
                     {
-                        if (hag.StandardIdentityGroup == _sig.ID && hag.Dimension == _dimension.ID)
+                        if (hag.StandardIdentityGroup == _sig.ID && hag.DimensionID == _dimension.ID)
                         {
                             graphic = hag.Graphic;
                             break;
@@ -621,7 +621,7 @@ namespace JointMilitarySymbologyLibrary
                     {
                         foreach (LibraryStatusGraphic g in _status.Graphics)
                         {
-                            if (g.StandardIdentityGroup == _sig.ID && g.Dimension == _dimension.ID)
+                            if (g.StandardIdentityGroup == _sig.ID && g.DimensionID == _dimension.ID)
                             {
                                 graphic = g.Graphic;
                                 break;

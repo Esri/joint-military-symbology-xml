@@ -412,5 +412,106 @@ namespace JointMilitarySymbologyLibrary
 
             return new SchemaETL(_etlConfig);
         }
+
+        public LegacyETL MakeLegacyETL()
+        {
+            // Create an instance of a light weight LegacyETL object and return it, reusing the one ETLConfig object in memory.
+
+            return new LegacyETL(this, _etlConfig);
+        }
+
+        public LegacyLetterCodeType LegacyLetter(LegacyLetterCodeType[] letterArray, string standard)
+        {
+            // Retrieves and returns the first letter code in the given array matching the given standard
+
+            LegacyLetterCodeType letterCode = null;
+
+            foreach(LegacyLetterCodeType letterCodeInArray in letterArray)
+            {
+                if (letterCodeInArray.Name == standard)
+                {
+                    letterCode = letterCodeInArray;
+                    break;
+                }
+            }
+
+            return letterCode;
+        }
+
+        public LegacyLetterCodeType[] LegacyLetters(LegacyLetterCodeType[] letterArray, string standard)
+        {
+            // Retrieves and returns an array of all letter codes in the given array matching the given standard
+
+            List<LegacyLetterCodeType> letterCodes = new List<LegacyLetterCodeType>();
+
+            foreach (LegacyLetterCodeType letterCodeInArray in letterArray)
+            {
+                if (letterCodeInArray.Name == standard)
+                {
+                    letterCodes.Add(letterCodeInArray);
+                }
+            }
+
+            return letterCodes.ToArray<LegacyLetterCodeType>();
+        }
+
+        public LegacyFunctionCodeType LegacyFunction(LegacyFunctionCodeType[] functionArray, string standard)
+        {
+            // Retrieves and returns the first function code in the given array matching the given standard
+
+            LegacyFunctionCodeType functionCode = null;
+
+            foreach(LegacyFunctionCodeType functionCodeInArray in functionArray)
+            {
+                if (functionCodeInArray.Name == standard)
+                {
+                    functionCode = functionCodeInArray;
+                    break;
+                }
+            }
+
+            return functionCode;
+        }
+
+        public LegacyFunctionCodeType[] LegacyFunctions(LegacyFunctionCodeType[] functionArray, string standard)
+        {
+            // Retrieves and returns an array of all function codes in the given array matching the given standard
+
+            List<LegacyFunctionCodeType> functionCodes = new List<LegacyFunctionCodeType>();
+
+            foreach (LegacyFunctionCodeType functionCodeInArray in functionArray)
+            {
+                if (functionCodeInArray.Name == standard)
+                {
+                    functionCodes.Add(functionCodeInArray);
+                }
+            }
+
+            return functionCodes.ToArray<LegacyFunctionCodeType>();
+        }
+
+        public bool IsSpecialEntitySubtype(SymbolSet ss, EntitySubTypeType entitySubType)
+        {
+            // Determines if the supplied EntitySubType is in fact one of the special entity subtypes in the specified symbol set
+
+            bool isSpecial = false;
+
+            if (ss != null && entitySubType != null)
+            {
+                if (ss.SpecialEntitySubTypes != null)
+                {
+                    foreach (EntitySubTypeType subType in ss.SpecialEntitySubTypes)
+                    {
+                        if (subType.ID == entitySubType.ID)
+                        {
+                            isSpecial = true;
+                            break;
+                        }
+                    }
+                }
+            }
+
+            return isSpecial;
+        }
     }
 }
