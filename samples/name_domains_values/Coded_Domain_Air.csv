@@ -1,2 +1,101 @@
 Name,Value
-Air,1
+Civilian (Air),S-A-C-----
+Civilian (Air) : Fixed Wing,S-A-CF----
+Civilian (Air) : Rotary Wing,S-A-CH----
+Civilian (Air) : Lighter Than Air,S-A-CL----
+Military (Air),S-A-M-----
+Military (Air) : Fixed-Wing : Escort,S-A-ME----
+Military (Air) : Fixed-Wing,S-A-MF----
+Military (Air) : Fixed-Wing : Attack/Strike,S-A-MFA---
+Military (Air) : Fixed-Wing : Bomber,S-A-MFB---
+Military (Air) : Fixed-Wing : Cargo,S-A-MFC---
+Military (Air) : Fixed-Wing : Cargo : Cargo/Transport Capacity : Heavy,S-A-MFCH--
+Military (Air) : Fixed-Wing : Cargo : Cargo/Transport Capacity : Light,S-A-MFCL--
+Military (Air) : Fixed-Wing : Cargo : Cargo/Transport Capacity : Medium,S-A-MFCM--
+Military (Air) : Fixed-Wing : Airborne Command Post (ACP),S-A-MFD---
+Military (Air) : Fixed-Wing : Fighter,S-A-MFF---
+Military (Air) : Fixed-Wing : Attack/Strike : Military Aircraft Type : Interceptor,S-A-MFFI--
+Military (Air) : Fixed-Wing : Combat Search and Rescue (CSAR),S-A-MFH---
+Military (Air) : Fixed-Wing : Electronic Combat (EC)/Jammer,S-A-MFJ---
+Military (Air) : Fixed-Wing : Tanker,S-A-MFK---
+Military (Air) : Fixed-Wing : Tanker : Re-fueling Capability : Boom-Only,S-A-MFKB--
+Military (Air) : Fixed-Wing : Tanker : Re-fueling Capability : Drogue-Only,S-A-MFKD--
+Military (Air) : Fixed-Wing : VSTOL,S-A-MFL---
+Military (Air) : Fixed-Wing : Special Operations Forces,S-A-MFM---
+Military (Air) : Fixed-Wing : Medical Evacuation (MEDEVAC),S-A-MFO---
+Military (Air) : Fixed-Wing : Patrol,S-A-MFP---
+Military (Air) : Fixed-Wing : Mine Countermeasures (MCM),S-A-MFPM--
+Military (Air) : Fixed-Wing : Antisurface Warfare,S-A-MFPN--
+Military (Air) : Unmanned Aircraft (UA- UAV- UAS- RPV),S-A-MFQ---
+Military (Air) : Unmanned Aircraft (UA- UAV- UAS- RPV) : Military Aircraft Type : Attack/Strike,S-A-MFQA--
+Military (Air) : Unmanned Aircraft (UA- UAV- UAS- RPV) : Military Aircraft Type : Bomber,S-A-MFQB--
+Military (Air) : Unmanned Aircraft (UA- UAV- UAS- RPV) : Aircraft Type : Cargo,S-A-MFQC--
+Military (Air) : Unmanned Aircraft (UA- UAV- UAS- RPV) : Military Aircraft Type : Airborne Command Post (ACP),S-A-MFQD--
+Military (Air) : Unmanned Aircraft (UA- UAV- UAS- RPV) : Military Aircraft Type : Fighter,S-A-MFQF--
+Military (Air) : Unmanned Aircraft (UA- UAV- UAS- RPV) : Military Mission Area : Combat Search and Rescue (CSAR),S-A-MFQH--
+Military (Air) : Unmanned Aircraft (UA- UAV- UAS- RPV) : Military Mission Area : Mine Countermeasures (MCM),S-A-MFQI--
+Military (Air) : Unmanned Aircraft (UA- UAV- UAS- RPV) : Military Mission Area : Electronic Combat (EC)/Jammer,S-A-MFQJ--
+Military (Air) : Unmanned Aircraft (UA- UAV- UAS- RPV) : Aircraft Type : Tanker,S-A-MFQK--
+Military (Air) : Unmanned Aircraft (UA- UAV- UAS- RPV) : Aircraft Type : VSTOL/VTOL,S-A-MFQL--
+Military (Air) : Unmanned Aircraft (UA- UAV- UAS- RPV) : Military Mission Area : Special Operations Forces,S-A-MFQM--
+Military (Air) : Unmanned Aircraft (UA- UAV- UAS- RPV) : Military Mission Area : Antisurface Warfare,S-A-MFQN--
+Military (Air) : Unmanned Aircraft (UA- UAV- UAS- RPV) : Mission Area : Medical Evacuation (MEDEVAC),S-A-MFQO--
+Military (Air) : Unmanned Aircraft (UA- UAV- UAS- RPV) : Mission Area : Patrol,S-A-MFQP--
+Military (Air) : Unmanned Aircraft (UA- UAV- UAS- RPV) : Mission Area : Reconnaissance,S-A-MFQR--
+Military (Air) : Unmanned Aircraft (UA- UAV- UAS- RPV) : Military Aircraft Type : Airborne Early Warning (AEW),S-A-MFQRW-
+Military (Air) : Unmanned Aircraft (UA- UAV- UAS- RPV) : Mission Area : Photographic (Reconnaissance),S-A-MFQRX-
+Military (Air) : Unmanned Aircraft (UA- UAV- UAS- RPV) : Military Mission Area : Electronic Support (ES),S-A-MFQRZ-
+Military (Air) : Unmanned Aircraft (UA- UAV- UAS- RPV) : Military Mission Area : Antisubmarine Warfare,S-A-MFQS--
+Military (Air) : Unmanned Aircraft (UA- UAV- UAS- RPV) : Mission Area : Trainer,S-A-MFQT--
+Military (Air) : Unmanned Aircraft (UA- UAV- UAS- RPV) : Aircraft Type : Utility,S-A-MFQU--
+Military (Air) : Unmanned Aircraft (UA- UAV- UAS- RPV) : Mission Area : Communications,S-A-MFQY--
+Military (Air) : Fixed-Wing : Reconnaissance,S-A-MFR---
+Military (Air) : Fixed-Wing : Airborne Early Warning (AEW),S-A-MFRW--
+Military (Air) : Fixed-Wing : Photographic Reconnaissance,S-A-MFRX--
+Military (Air) : Fixed-Wing : Electronic Support (ES),S-A-MFRZ--
+Military (Air) : Fixed-Wing : Antisubmarine Warfare,S-A-MFS---
+Military (Air) : Fixed-Wing : Trainer,S-A-MFT---
+Military (Air) : Fixed-Wing : Utility,S-A-MFU---
+Military (Air) : Fixed-Wing : Utility : Cargo/Transport Capacity : Heavy,S-A-MFUH--
+Military (Air) : Fixed-Wing : Utility : Cargo/Transport Capacity : Light,S-A-MFUL--
+Military (Air) : Fixed-Wing : Utility : Cargo/Transport Capacity : Medium,S-A-MFUM--
+Military (Air) : Fixed-Wing : Communications,S-A-MFY---
+Military (Air) : Rotary-Wing,S-A-MH----
+Military (Air) : Rotary-Wing : Military Aircraft Type : Attack/Strike,S-A-MHA---
+Military (Air) : Rotary-Wing : Aircraft Type : Cargo,S-A-MHC---
+Military (Air) : Rotary-Wing : Aircraft Type : Cargo : Cargo/Transport Capacity : Heavy,S-A-MHCH--
+Military (Air) : Rotary-Wing : Aircraft Type : Cargo : Cargo/Transport Capacity : Light,S-A-MHCL--
+Military (Air) : Rotary-Wing : Aircraft Type : Cargo : Cargo/Transport Capacity : Medium,S-A-MHCM--
+Military (Air) : Rotary-Wing : Military Aircraft Type : Airborne Command Post (ACP),S-A-MHD---
+Military (Air) : Rotary-Wing : Military Mission Area : Combat Search and Rescue (CSAR),S-A-MHH---
+Military (Air) : Rotary-Wing : Military Mission Area : Mine Countermeasures (MCM),S-A-MHI---
+Military (Air) : Rotary-Wing : Military Mission Area : Electronic Combat (EC)/Jammer,S-A-MHJ---
+Military (Air) : Rotary-Wing : Aircraft Type : Tanker,S-A-MHK---
+Military (Air) : Rotary-Wing : Military Mission Area : Special Operations Forces,S-A-MHM---
+Military (Air) : Rotary-Wing : Mission Area : Medical Evacuation (MEDEVAC),S-A-MHO---
+Military (Air) : Vertical-Takeoff UAV (VT-UAV),S-A-MHQ---
+Military (Air) : Rotary-Wing : Mission Area : Reconnaissance,S-A-MHR---
+Military (Air) : Rotary-Wing : Military Mission Area : Antisurface Warfare,S-A-MHS---
+Military (Air) : Rotary-Wing : Mission Area : Trainer,S-A-MHT---
+Military (Air) : Rotary-Wing : Aircraft Type : Utility,S-A-MHU---
+Military (Air) : Rotary-Wing : Aircraft Type : Utility : Cargo/Transport Capacity : Heavy,S-A-MHUH--
+Military (Air) : Rotary-Wing : Aircraft Type : Utility : Cargo/Transport Capacity : Light,S-A-MHUL--
+Military (Air) : Rotary-Wing : Aircraft Type : Utility : Cargo/Transport Capacity : Medium,S-A-MHUM--
+Military (Air) : Lighter Than Air,S-A-ML----
+Military (Air) : Fixed-Wing : Very Important Person (VIP),S-A-MV----
+Weapon (Air),S-A-W-----
+Weapon (Air) : Bomb,S-A-WB----
+Weapon (Air) : Decoy,S-A-WD----
+Missile (Air Missile),S-A-WM----
+Missile (Air Missile) : Launch Origin : Air : Missile Status : Launched,S-A-WMA---
+Missile (Air Missile) : Launch Origin : Air : Missile Destination : Air,S-A-WMAA--
+Missile (Air Missile) : Launch Origin : Air : Missile Destination : Space,S-A-WMAP--
+Missile (Air Missile) : Launch Origin : Air : Missile Destination : Surface,S-A-WMAS--
+Missile (Air Missile) : Missile Class : Ballistic (Air Missile) : Missile Status : Missile,S-A-WMB---
+Missile (Air Missile) : Missile Class : Cruise : Missile Status : Missile,S-A-WMCM--
+Missile (Air Missile) : Launch Origin : Surface : Missile Status : Launched,S-A-WMS---
+Missile (Air Missile) : Launch Origin : Surface : Missile Destination : Air,S-A-WMSA--
+Missile (Air Missile) : Missile Class : Anti-Ballistic,S-A-WMSB--
+Missile (Air Missile) : Launch Origin : Surface : Missile Destination : Surface,S-A-WMSS--
+Missile (Air Missile) : Launch Origin : Surface : Missile Destination : Subsurface,S-A-WMSU--
+Missile (Air Missile) : Launch Origin : Subsurface : Missile Destination : Surface,S-A-WMU---

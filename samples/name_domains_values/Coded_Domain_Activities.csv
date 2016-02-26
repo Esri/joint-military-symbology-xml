@@ -1,2 +1,266 @@
 Name,Value
-Activities,40
+Civilian (Land Civilian) : Organization or Group,O-G-------
+Civilian (Land Civilian) : Organization or Group : Organization : Displaced Person(s)- Refugee(s) and Evacuee(s),O-G-A-----
+Civilian (Land Civilian) : Organization or Group : Organization : Nongovernmental Organization Member or Nongovernmental Organization,O-G-B-----
+Civilian (Land Civilian) : Organization or Group : Organization : Targeted Individual or Organization,O-G-C-----
+Civilian (Land Civilian) : Organization or Group : Organization : Religious or Religious Organization,O-G-D-----
+Civilian (Land Civilian) : Organization or Group : Organization : Foreign Fighter(s),O-G-E-----
+Civilian (Land Civilian) : Organization or Group : Organization : Gang Member or Gang,O-G-F-----
+Civilian Vehicle : Drug Vehicle,O-I-D-----
+Operation : Law Enforcement Operation : Internal Security Force,O-I-F-----
+Incident : Criminal Activity Incident : Graffiti,O-I-G-----
+Civilian Vehicle : Known Insurgent Vehicle,O-I-I-----
+Installation : Safe House,O-I-S-----
+Incident : Criminal Activity Incident : Vandalism / Loot / Ransack / Plunder,O-I-V-----
+Installation : Black List Location,O-L-B-----
+Installation : Gray List Location,O-L-G-----
+Installation : Mass Grave Site,O-L-M-----
+Installation : White List Location,O-L-W-----
+Incident : Criminal Activity Incident : Arrest,O-O-A-----
+Civilian (Land Civilian) : Composite Loss,O-O-C-----
+Civilian (Land Civilian) : Composite Loss : Composite Loss : Combat,O-O-CA----
+Civilian (Land Civilian) : Composite Loss : Composite Loss : Accident (Land Civilian),O-O-CB----
+Civilian (Land Civilian) : Composite Loss : Composite Loss : Other (Land Civilian),O-O-CC----
+Civil Disturbance : Demonstration,O-O-D-----
+Incident : Criminal Activity Incident : Extortion,O-O-E-----
+Operation : Foraging/Searching,O-O-F-----
+Transportation Incident : Air : Crime : Hijacking/Hijacked (Activities),O-O-HA----
+Transportation Incident : Vehicle : Crime : Hijacking/Hijacked (Activities),O-O-HT----
+Transportation Incident : Marine : Crime : Hijacking/Hijacked (Activities),O-O-HV----
+Civilian (Land Civilian) : Individual : Crime : Kidnapping (Land Civilian),O-O-K-----
+Incident : Criminal Activity Incident : Attempted Criminal Activity : Crime : Kidnapping (Activities),O-O-KA----
+Operation : Mine Laying,O-O-M-----
+Operation : Emergency Operation : Emergency Food Distribution,O-O-O-----
+Operation : Patrolling,O-O-P-----
+Operation : Recruitment : Coerced/Impressed,O-O-RC----
+Operation : Recruitment : Willing,O-O-RW----
+Operation : Spy,O-O-S-----
+Incident : Criminal Activity Incident : Drug Related,O-O-U-----
+Operation : Military Information Support Operation (MISO),O-O-Y-----
+Operation : Military Information Support Operation (MISO) : Psychological Operations : House-to-House,O-O-YH----
+Operation : Military Information Support Operation (MISO) : TV and Radio Propaganda,O-O-YT----
+Operation : Military Information Support Operation (MISO) : Psychological Operations : Written Psychological Operations,O-O-YW----
+Civilian (Land Civilian) : Individual,O-P-------
+Civilian (Land Civilian) : Individual : Organization : Leader or Leadership 1,O-P-A-----
+Civilian (Land Civilian) : Individual : Organization : Targeted Individual or Organization,O-P-B-----
+Civilian (Land Civilian) : Individual : Organization : Terrorist or Terrorist Organization,O-P-C-----
+Civilian (Land Civilian) : Individual : Crime : Rape (Land Civilian),O-R-------
+Incident : Criminal Activity Incident : Attempted Criminal Activity : Crime : Rape (Activities),O-R-A-----
+Incident : Criminal Activity Incident : Arson,O-V-A-----
+Incident : Bomb/Bombing,O-V-B-----
+Incident : Criminal Activity Incident : Drive-by Shooting,O-V-D-----
+Incident : Explosion,O-V-E-----
+Incident : IED Event : IED Explosion,O-V-EI----
+Incident : Criminal Activity Incident : Killing,O-V-M-----
+Incident : Criminal Activity Incident : Killing : Crime : Murder,O-V-MA----
+Incident : Criminal Activity Incident : Killing : Crime : Execution (Wrongful Killing) (Activities),O-V-MB----
+Incident : Criminal Activity Incident : Killing : Crime : Assassination (Activities),O-V-MC----
+Incident : Criminal Activity Incident : Poisoning,O-V-P-----
+Incident : Shooting : Sniping,O-V-S-----
+Incident : Criminal Activity Incident : Booby Trap,O-V-Y-----
+Infrastructure : Agriculture and Food,E-F-A-----
+Infrastructure : Agriculture and Food : Agriculture Laboratory,E-F-AA----
+Infrastructure : Agriculture and Food : Animal Feedlot,E-F-AB----
+Infrastructure : Agriculture and Food : Commercial Food Distribution Center,E-F-AC----
+Infrastructure : Agriculture and Food : Farm/Ranch,E-F-AD----
+Infrastructure : Agriculture and Food : Food Production Center,E-F-AE----
+Infrastructure : Agriculture and Food : Food Retail,E-F-AF----
+Infrastructure : Agriculture and Food : Grain Storage,E-F-AG----
+Infrastructure : Banking- Finance- and Insurance,E-F-B-----
+Infrastructure : Banking- Finance- and Insurance : ATM,E-F-BA----
+Infrastructure : Banking- Finance- and Insurance : Bank,E-F-BB----
+Infrastructure : Banking- Finance- and Insurance : Bullion Storage,E-F-BC----
+Infrastructure : Banking- Finance- and Insurance : Federal Reserve Bank,E-F-BD----
+Infrastructure : Banking- Finance- and Insurance : Financial Exchange,E-F-BE----
+Infrastructure : Banking- Finance- and Insurance : Financial Services-Other,E-F-BF----
+Infrastructure : Commercial,E-F-C-----
+Infrastructure : Commercial : Chemical Plant,E-F-CA----
+Infrastructure : Commercial : Firearms Manufacturer,E-F-CB----
+Infrastructure : Commercial : Firearms Retailer,E-F-CC----
+Infrastructure : Commercial : Hazardous Material Production,E-F-CD----
+Infrastructure : Commercial : Hazardous Material Storage,E-F-CE----
+Infrastructure : Commercial : Industrial Site,E-F-CF----
+Infrastructure : Commercial : Landfill,E-F-CG----
+Infrastructure : Commercial : Pharmaceutical Manufacturer,E-F-CH----
+Infrastructure : Commercial : Contaminated Hazardous Waste Site,E-F-CI----
+Infrastructure : Commercial : Toxic Release Inventory,E-F-CJ----
+Infrastructure : Educational Facilities,E-F-D-----
+Infrastructure : Educational Facilities : College/University,E-F-DA----
+Infrastructure : Educational Facilities : School,E-F-DB----
+Infrastructure : Energy Facility : Generation Station,E-F-EA----
+Infrastructure : Energy Facility : Natural Gas Facility,E-F-EB----
+Infrastructure : Energy Facility : Propane Facility,E-F-EE----
+Infrastructure : Government Site Infrastructure,E-F-F-----
+Infrastructure : Military,E-F-G-----
+Infrastructure : Military : Military Armory,E-F-GA----
+Infrastructure : Postal Services,E-F-H-----
+Infrastructure : Postal Services : Postal Distribution Center,E-F-HA----
+Infrastructure : Postal Services : Post Office,E-F-HB----
+Infrastructure : Public Venues,E-F-I-----
+Infrastructure : Public Venues : Enclosed Facility,E-F-IA----
+Infrastructure : Public Venues : Open Facility,E-F-IB----
+Infrastructure : Public Venues : Recreational Area,E-F-IC----
+Infrastructure : Public Venues : Religious Institution,E-F-ID----
+Infrastructure : Special Needs,E-F-J-----
+Infrastructure : Special Needs : Adult Day Care,E-F-JA----
+Infrastructure : Special Needs : Child Day Care,E-F-JB----
+Infrastructure : Special Needs : Elder Care,E-F-JC----
+Infrastructure : Telecommunications,E-F-K-----
+Infrastructure : Telecommunications : Telecommunications Tower,E-F-KB----
+Infrastructure : Transportation : Air Traffic Control Facility,E-F-LA----
+Infrastructure : Transportation : Bus Station,E-F-LD----
+Infrastructure : Transportation : Ferry Terminal,E-F-LE----
+Infrastructure : Transportation : Helicopter Landing Site,E-F-LF----
+Infrastructure : Transportation : Maintenance Facility,E-F-LH----
+Infrastructure : Transportation : Railhead/Railroad Station,E-F-LJ----
+Infrastructure : Transportation : Rest Stop,E-F-LK----
+Infrastructure : Transportation : Toll Facility,E-F-LM----
+Infrastructure : Transportation : Traffic Inspection Facility,E-F-LO----
+Infrastructure : Transportation : Tunnel,E-F-LP----
+Infrastructure : Water Supply : Control Valve,E-F-MA----
+Infrastructure : Water Supply : Dam,E-F-MB----
+Infrastructure : Water Supply : Discharge Outfall,E-F-MC----
+Infrastructure : Water Supply : Ground Water Well,E-F-MD----
+Infrastructure : Water Supply : Pumping Station,E-F-ME----
+Infrastructure : Water Supply : Reservoir,E-F-MF----
+Infrastructure : Water Supply : Storage Tower,E-F-MG----
+Infrastructure : Water Supply : Surface Water Intake,E-F-MH----
+Infrastructure : Water Supply : Wastewater Treatment Facility,E-F-MI----
+Civil Disturbance,E-I-A-----
+Incident : Criminal Activity Incident : Civil Rioting,E-I-AC----
+Incident : Criminal Activity Incident,E-I-B-----
+Incident : Bomb/Bombing : Bomb Threat,E-I-BA----
+Incident : Explosion : Bomb Explosion,E-I-BC----
+Civilian (Land Civilian) : Organization or Group : Crime : Loot,E-I-BD----
+Incident : Shooting,E-I-BF----
+Fire Event,E-I-C-----
+Fire Event : Hot Spot,E-I-CA----
+Fire Event : Non-Residential Fire,E-I-CB----
+Fire Event : Fire Origin,E-I-CC----
+Fire Event : Residential Fire,E-I-CD----
+Fire Event : School Fire,E-I-CE----
+Fire Event : Smoke,E-I-CF----
+Fire Event : Special Needs Fire,E-I-CG----
+Fire Event : Wild Fire,E-I-CH----
+Hazard Materials : Incident,E-I-D-----
+Hazard Materials : Incident : Chemical Agent,E-I-DA----
+Hazard Materials : Incident : Corrosive Material,E-I-DB----
+Hazard Materials : Incident : Hazardous when Wet,E-I-DC----
+Hazard Materials : Incident : Explosive Material,E-I-DD----
+Hazard Materials : Incident : Flammable Gas,E-I-DE----
+Hazard Materials : Incident : Flammable Liquid,E-I-DF----
+Hazard Materials : Incident : Flammable Solid,E-I-DG----
+Hazard Materials : Incident : Non-Flammable Gas,E-I-DH----
+Hazard Materials : Incident : Organic Peroxide,E-I-DI----
+Hazard Materials : Incident : Oxidizer,E-I-DJ----
+Hazard Materials : Incident : Radioactive Material,E-I-DK----
+Hazard Materials : Incident : Spontaneously Combustible Material,E-I-DL----
+Hazard Materials : Incident : Toxic Gas,E-I-DM----
+Hazard Materials : Incident : Toxic Infectious Material,E-I-DN----
+Hazard Materials : Incident : Unexploded Ordnance,E-I-DO----
+Transportation Incident : Air : Incident Qualifier : Incident,E-I-E-----
+Transportation Incident : Air : Incident Qualifier : Accident,E-I-EA----
+Transportation Incident : Marine : Incident Qualifier : Incident,E-I-F-----
+Transportation Incident : Marine : Incident Qualifier : Accident,E-I-FA----
+Transportation Incident : Rail : Incident Qualifier : Incident,E-I-G-----
+Transportation Incident : Rail : Incident Qualifier : Accident,E-I-GA----
+Transportation Incident : Rail : Crime : Hijacking/Hijacked (Activities),E-I-GB----
+Transportation Incident : Vehicle : Incident Qualifier : Incident,E-I-H-----
+Transportation Incident : Vehicle : Incident Qualifier : Accident,E-I-HA----
+Natural Event : Geologic : Aftershock,E-N-AA----
+Natural Event : Geologic : Avalanche,E-N-AB----
+Natural Event : Geologic : Earthquake Epicenter,E-N-AC----
+Natural Event : Geologic : Landslide,E-N-AD----
+Natural Event : Geologic : Subsidence,E-N-AE----
+Natural Event : Geologic : Volcanic Threat,E-N-AG----
+Natural Event : Hydro-Meteorological : Drought,E-N-BB----
+Natural Event : Hydro-Meteorological : Flood,E-N-BC----
+Weather Symbols : Inversion,E-N-BF----
+Natural Event : Hydro-Meteorological : Tsunami,E-N-BM----
+Natural Event : Infestation : Bird,E-N-CA----
+Natural Event : Infestation : Insect,E-N-CB----
+Natural Event : Infestation : Microbial,E-N-CC----
+Natural Event : Infestation : Reptile,E-N-CD----
+Natural Event : Infestation : Rodent,E-N-CE----
+Operation : Emergency Medical Operation,E-O-A-----
+Civilian (Land Civilian) : Emergency Medical Operation,E-O-AA----
+Other Equipment : Emergency Medical Operation,E-O-AB----
+Installation : Emergency Operation : Emergency Medical Operation,E-O-AC----
+Operation : Emergency Medical Operation : EMT Station Location,E-O-AD----
+Emergency Operation (Land Equipment) : Ambulance,E-O-AE----
+Other Equipment : Emergency Medical Operation : Medical Evacuation Helicopter,E-O-AF----
+Operation : Emergency Medical Operation : Health Department Facility,E-O-AG----
+Operation : Emergency Medical Operation : Medical Facilities Outpatient,E-O-AJ----
+Operation : Emergency Medical Operation : Morgue,E-O-AK----
+Operation : Emergency Medical Operation : Pharmacy,E-O-AL----
+Operation : Emergency Medical Operation : Triage,E-O-AM----
+Operation : Emergency Operation,E-O-B-----
+Emergency Operation (Land Units),E-O-BA----
+Emergency Operation (Land Equipment),E-O-BB----
+Installation : Emergency Operation,E-O-BC----
+Operation : Emergency Operation : Emergency Collection Evacuation Point,E-O-BD----
+Operation : Emergency Operation : Emergency Incident Command Center,E-O-BE----
+Operation : Emergency Operation : Emergency Operations Center,E-O-BF----
+Operation : Emergency Operation : Emergency Public Information Center,E-O-BG----
+Operation : Emergency Operation : Emergency Shelter,E-O-BH----
+Operation : Emergency Operation : Emergency Staging Area,E-O-BI----
+Operation : Emergency Operation,E-O-BJ----
+Operation : Emergency Operation : Emergency Water Distribution Center,E-O-BK----
+Infrastructure : Agriculture and Food : Food Distribution,E-O-BL----
+Operation : Fire Fighting Operation : Fire Station,E-O-C-----
+Protection : Fire Fighting/Fire Protection,E-O-CA----
+Emergency Operation (Land Equipment) : Fire Fighting/Fire Protection,E-O-CB----
+Operation : Fire Fighting Operation : Fire Hydrant,E-O-CC----
+Operation : Fire Fighting Operation : Other Water Supply Location,E-O-CD----
+Installation : Emergency Operation : Fire Station,E-O-CE----
+Operation : Law Enforcement Operation,E-O-D-----
+Law Enforcement (Land Units),E-O-DA----
+Law Enforcement (Land Equipment),E-O-DB----
+Installation : Law Enforcement,E-O-DC----
+Law Enforcement (Land Units) : ATF DOJ,E-O-DDA---
+Law Enforcement (Land Equipment) : ATF DOJ,E-O-DDB---
+Installation : Law Enforcement : Bureau of Alcohol-Tobacco-Firearms and Explosives (ATF) (Department of Justice),E-O-DDC---
+Operation : Law Enforcement Operation : Border Patrol,E-O-DE----
+Law Enforcement (Land Units) : Border Patrol,E-O-DEA---
+Law Enforcement (Land Equipment) : Border Patrol,E-O-DEB---
+Installation : Law Enforcement : Border Patrol,E-O-DEC---
+Operation : Law Enforcement Operation : Customs Service,E-O-DF----
+Law Enforcement (Land Units) : Customs Service,E-O-DFA---
+Law Enforcement (Land Equipment) : Customs Service,E-O-DFB---
+Installation : Law Enforcement : Customs Service,E-O-DFC---
+Operation : Law Enforcement Operation : DEA,E-O-DG----
+Law Enforcement (Land Units) : DEA,E-O-DGA---
+Law Enforcement (Land Equipment) : DEA,E-O-DGB---
+Installation : Law Enforcement : Drug Enforcement Administration (DEA),E-O-DGC---
+Operation : Law Enforcement Operation : DOJ,E-O-DH----
+Law Enforcement (Land Units) : DOJ,E-O-DHA---
+Law Enforcement (Land Equipment) : DOJ,E-O-DHB---
+Installation : Law Enforcement : Department of Justice (DOJ),E-O-DHC---
+Operation : Law Enforcement Operation : FBI,E-O-DI----
+Law Enforcement (Land Units) : FBI,E-O-DIA---
+Law Enforcement (Land Equipment) : FBI,E-O-DIB---
+Installation : Law Enforcement : Federal Bureau of Investigation (FBI),E-O-DIC---
+Operation : Law Enforcement Operation : Police,E-O-DJ----
+Law Enforcement (Land Equipment) : Police,E-O-DJB---
+Installation : Law Enforcement : Police,E-O-DJC---
+Operation : Law Enforcement Operation : Prison,E-O-DK----
+Operation : Law Enforcement Operation : USSS,E-O-DL----
+Law Enforcement (Land Units) : US Secret Service (USSS),E-O-DLA---
+Law Enforcement (Land Equipment) : US Secret Service (USSS),E-O-DLB---
+Installation : Law Enforcement : United States Secret Service (USSS),E-O-DLC---
+Operation : Law Enforcement Operation : TSA,E-O-DM----
+Law Enforcement (Land Units) : TSA,E-O-DMA---
+Law Enforcement (Land Equipment) : TSA,E-O-DMB---
+Installation : Law Enforcement : Transportation Security Administration (TSA),E-O-DMC---
+Operation : Law Enforcement Operation : Coast Guard,E-O-DN----
+Law Enforcement (Land Units) : Coast Guard,E-O-DNA---
+Installation : Law Enforcement : Coast Guard,E-O-DNC---
+Operation : Law Enforcement Operation : US Marshals Service,E-O-DO----
+Law Enforcement (Land Units) : US Marshals Service,E-O-DOA---
+Law Enforcement (Land Equipment) : US Marshals Service,E-O-DOB---
+Installation : Law Enforcement : US Marshals Service,E-O-DOC---
+Sensors : Sensor : Sensor Type : Biological,E-O-EA----
+Sensors : Sensor : Sensor Type : Chemical,E-O-EB----
+Sensors : Sensor : Sensor Type : Intrusion,E-O-EC----
+Sensors : Sensor : Sensor Type : Nuclear,E-O-ED----
+Sensors : Sensor : Sensor Type : Radiological,E-O-EE----

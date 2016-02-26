@@ -1,6 +1,86 @@
 Name,Value
-Signals Intelligence - Air,51
-Signals Intelligence - Space,50
-Signals Intelligence - Land,52
-Signals Intelligence - Surface,53
-Signals Intelligence - Subsurface,54
+Signal Intercept (Space) : Communications,I-A-SCC---
+Signal Intercept (Air) : Communications : Communications : Omni-Line of Sight (LOS) (Air),I-A-SCO---
+Signal Intercept (Space) : Communications : Communications : Point-to-Point Line of Sight (LOS) (Space),I-A-SCP---
+Signal Intercept (Air) : Communications : Radar : Satellite Uplink,I-A-SCS---
+Signal Intercept (Air) : Radar : Radar : Airborne Intercept,I-A-SRAI--
+Signal Intercept (Air) : Radar : Radar : Airborne Search and Bombing,I-A-SRAS--
+Signal Intercept (Air) : Radar : Radar : Controlled Intercept (Air),I-A-SRC---
+Signal Intercept (Air) : Radar : Radar : Data Transmission (Air),I-A-SRD---
+Signal Intercept (Air) : Radar : Radar : Early Warning (Air),I-A-SRE---
+Signal Intercept (Air) : Radar : Radar : Fire Control (Air),I-A-SRF---
+Signal Intercept (Air) : Radar : Radar : Identification Friend or Foe (Transponder) (Air),I-A-SRI---
+Signal Intercept (Air) : Radar : Radar : Missile Acquisition (Air),I-A-SRMA--
+Signal Intercept (Air) : Radar : Radar : Missile Downlink,I-A-SRMD--
+Signal Intercept (Air) : Radar : Jammer : Multi-Function (Air),I-A-SRMF--
+Signal Intercept (Air) : Radar : Radar : Missile Guidance (Air),I-A-SRMG--
+Signal Intercept (Air) : Radar : Jammer : Missile Tracking (Air),I-A-SRMT--
+Signal Intercept (Air) : Radar : Radar : Target Acquisition,I-A-SRTA--
+Signal Intercept (Air) : Radar : Radar : Target Illumination (Air),I-A-SRTI--
+Signal Intercept (Air) : Radar : Radar : Target Tracking (Air),I-A-SRTT--
+Signal Intercept (Air) : Radar : Radar : Unknown (Air),I-A-SRU---
+Signal Intercept (Land) : Communications : Communications : Cellular/Mobile (Land),I-G-SCC---
+Signal Intercept (Land) : Communications : Communications : Omni-Line of Sight (LOS) (Land),I-G-SCO---
+Signal Intercept (Land) : Communications : Communications : Point-to-Point Line of Sight (LOS) (Land),I-G-SCP---
+Signal Intercept (Land) : Communications : Communications : Satellite Uplink (Land),I-G-SCS---
+Signal Intercept (Land) : Communications : Communications : Tropospheric Scatter,I-G-SCT---
+Signal Intercept (Land) : Radar : Radar : Anti-Aircraft Fire Control (Land),I-G-SRAA--
+Signal Intercept (Land) : Radar : Radar : Air Traffic Control (Land),I-G-SRAT--
+Signal Intercept (Land) : Radar : Radar : Battlefield Surveillance (Land),I-G-SRB---
+Signal Intercept (Land) : Radar : Radar : Controlled Approach (Land),I-G-SRCA--
+Signal Intercept (Land) : Radar,I-G-SRCS--
+Signal Intercept (Land) : Radar : Radar : Data Transmission (Land),I-G-SRD---
+Signal Intercept (Land) : Radar : Radar : Early Warning (Land),I-G-SRE---
+Signal Intercept (Land) : Radar : Radar : Fire Control (Land),I-G-SRF---
+Signal Intercept (Land) : Radar : Radar : Height Finding (Land),I-G-SRH---
+Signal Intercept (Land) : Radar : Radar : Identification Friend or Foe (Interrogator) (Land),I-G-SRI---
+Signal Intercept (Land) : Radar : Radar : Missile Acquisition (Land),I-G-SRMA--
+Signal Intercept (Land) : Radar : Jammer : Multi-Function (Land),I-G-SRMF--
+Signal Intercept (Land) : Radar : Radar : Missile Guidance (Land),I-G-SRMG--
+Signal Intercept (Land) : Radar : Radar : Meteorological (Land),I-G-SRMM--
+Signal Intercept (Land) : Radar : Jammer : Missile Tracking (Land),I-G-SRMT--
+Signal Intercept (Land) : Radar : Radar : Shell Tracking,I-G-SRS---
+Signal Intercept (Land) : Radar : Jammer : Target Acquisition (Land),I-G-SRTA--
+Signal Intercept (Land) : Radar : Radar : Target Illumination (Land),I-G-SRTI--
+Signal Intercept (Land) : Radar : Radar : Target Tracking (Land),I-G-SRTT--
+Signal Intercept (Land) : Radar : Radar : Unknown (Land),I-G-SRU---
+Signal Intercept (Space) : Communications : Communications : Satellite Downlink (Space),I-P-SCD---
+Signal Intercept (Space) : Radar : Radar : Data Transmission (Space),I-P-SRD---
+Signal Intercept (Space) : Radar : Radar : Earth Surveillance,I-P-SRE---
+Signal Intercept (Space) : Radar : Radar : Identification Friend or Foe (Transponder) (Space),I-P-SRI---
+Signal Intercept (Space) : Radar : Jammer : Multi-Function (Space),I-P-SRM---
+Signal Intercept (Space) : Radar : Radar : Space (Space),I-P-SRS---
+Signal Intercept (Space) : Radar : Jammer : Target Acquisition (Space),I-P-SRT---
+Signal Intercept (Space) : Radar : Radar : Unknown (Space),I-P-SRU---
+Signal Intercept (Sea Surface) : Communications : Communications : Cellular/Mobile (Sea Surface),I-S-SCC---
+Signal Intercept (Sea Surface) : Communications : Air/Land/Sea Surface/Subsurface Communications : Omni-Line of Sight (LOS) (Sea Surface),I-S-SCO---
+Signal Intercept (Sea Surface) : Communications : Communications : Point-to-Point Line of Sight (LOS) (Sea Surface),I-S-SCP---
+Signal Intercept (Sea Surface) : Communications : Communications : Satellite Uplink (Sea Surface),I-S-SCS---
+Signal Intercept (Sea Surface) : Radar : Radar : Anti-Aircraft Fire Control (Sea Surface),I-S-SRAA--
+Signal Intercept (Sea Surface) : Radar : Radar : Air Traffic Control (Sea Surface),I-S-SRAT--
+Signal Intercept (Sea Surface) : Radar : Radar : Controlled Approach (Sea Surface),I-S-SRCA--
+Signal Intercept (Sea Surface) : Radar : Radar : Controlled Intercept (Sea Surface),I-S-SRCI--
+Signal Intercept (Sea Surface) : Radar : Radar : Data Transmission (Sea Surface),I-S-SRD---
+Signal Intercept (Sea Surface) : Radar : Radar : Early Warning (Sea Surface),I-S-SRE---
+Signal Intercept (Sea Surface) : Radar : Radar : Fire Control (Sea Surface),I-S-SRF---
+Signal Intercept (Sea Surface) : Radar : Radar : Height Finding (Sea Surface),I-S-SRH---
+Signal Intercept (Sea Surface) : Radar : Radar : Identification Friend or Foe (Interrogator) (Sea Surface),I-S-SRI---
+Signal Intercept (Sea Surface) : Radar : Radar : Missile Acquisition (Sea Surface),I-S-SRMA--
+Signal Intercept (Sea Surface) : Radar : Jammer : Multi-Function (Sea Surface),I-S-SRMF--
+Signal Intercept (Sea Surface) : Radar : Radar : Missile Guidance (Sea Surface),I-S-SRMG--
+Signal Intercept (Sea Surface) : Radar : Radar : Meteorological (Sea Surface),I-S-SRMM--
+Signal Intercept (Sea Surface) : Radar : Jammer : Missile Tracking (Sea Surface),I-S-SRMT--
+Signal Intercept (Sea Surface) : Radar : Radar : Surface Search (Sea Surface),I-S-SRS---
+Signal Intercept (Sea Surface) : Radar : Jammer : Target Acquisition (Sea Surface),I-S-SRTA--
+Signal Intercept (Sea Surface) : Radar : Radar : Target Illumination (Sea Surface),I-S-SRTI--
+Signal Intercept (Sea Surface) : Radar : Radar : Target Tracking (Sea Surface),I-S-SRTT--
+Signal Intercept (Sea Surface) : Radar : Radar : Unknown (Sea Surface),I-S-SRU---
+Signal Intercept (Sea Subsurface) : Communications : Communications : Omni-Line of Sight (LOS) (Sea Subsurface),I-U-SCO---
+Signal Intercept (Sea Subsurface) : Communications : Communications : Point-to-Point Line of Sight (LOS) (Sea Subsurface),I-U-SCP---
+Signal Intercept (Sea Subsurface) : Communications : Communications : Satellite Uplink (Sea Subsurface),I-U-SCS---
+Signal Intercept (Sea Subsurface) : Radar : Radar : Data Transmission (Sea Subsurface),I-U-SRD---
+Signal Intercept (Sea Subsurface) : Radar : Radar : Early Warning (Sea Subsurface),I-U-SRE---
+Signal Intercept (Sea Subsurface) : Radar : Jammer : Multi-Function (Sea Subsurface),I-U-SRM---
+Signal Intercept (Sea Subsurface) : Radar : Radar : Surface Search (Sea Subsurface),I-U-SRS---
+Signal Intercept (Sea Subsurface) : Radar : Jammer : Target Acquisition (Sea Subsurface),I-U-SRT---
+Signal Intercept (Sea Subsurface) : Radar : Radar : Unknown (Sea Subsurface),I-U-SRU---
