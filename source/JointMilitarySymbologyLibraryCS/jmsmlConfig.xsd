@@ -118,6 +118,7 @@
     <xs:attribute name="ModifierOnes" type="xs:IDREFS" use="optional"/>
     <xs:attribute name="ModifierTwos" type="xs:IDREFS" use="optional"/>
     <xs:attribute name="OCA" type="xs:boolean" use="optional" default="false"/>
+    <xs:attribute name="LegacyStandard" type="xs:token" use="optional" default=""/>
   </xs:attributeGroup>
 
   <xs:attributeGroup name="ExportTagAttributeGroup">

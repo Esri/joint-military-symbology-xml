@@ -67,6 +67,11 @@ namespace JointMilitarySymbologyLibrary
             return geometry;
         }
 
+        protected string GeometryIs(GeometryType geometry)
+        {
+            return _geometryList[(int)geometry];
+        }
+
         protected string BuildEntityCode(LibraryStandardIdentityGroup sig,
                                          SymbolSet ss,
                                          SymbolSetEntity e,
@@ -177,6 +182,7 @@ namespace JointMilitarySymbologyLibrary
             // Contructs the category information for a given SymbolSet and entity, including the Label 
             // attribute of the SymbolSet and the type of icon being categorized, deperated by the
             // domain separator (usually a colon).
+            
             string result = "";
 
             if(ss.Geometry == GeometryType.MIXED)
@@ -366,6 +372,81 @@ namespace JointMilitarySymbologyLibrary
             result = result + ";" + geometry;
             result = result + ";" + BuildEntityItemName(sig, ss, e, eType, eSubType);
             result = result + ";" + code;
+
+            if (result.Length > 255)
+            {
+                // Can't have a tag string greater than 255 in length.
+                // Human interaction will be required to resolve these on a case by case basis.
+
+                _notes = _notes + "styleItemTags > 255;";
+            }
+
+            return result;
+        }
+
+        protected string BuildEntityItemTags(LibraryStandardIdentityGroup sig, SymbolSet ss, SymbolSetLegacySymbol symbol, LegacyEntityType entity, LegacyFunctionCodeType code)
+        {
+            // Builds a list of seperated tag strings from information derived from the specified objects.
+            // TODO: Normalize with similar code found in the preceding function.
+
+            string result = "";
+            string graphic = "";
+
+            string name = entity.Label.Replace(',', '-');
+
+            // Add the type of geometry
+
+            string geometry = _geometryList[(int)entity.GeometryType];
+
+            if (entity.Icon == IconType.FULL_FRAME)
+            {
+                if (sig != null)
+                {
+                    graphic = GrabGraphic(entity.CloverGraphic, entity.RectangleGraphic, entity.SquareGraphic, entity.DiamondGraphic, sig.GraphicSuffix);
+                }
+
+                _notes = _notes + "icon touches frame;";
+            }
+            else
+                graphic = entity.Graphic;
+
+            // Create the unique ID
+
+            string id = graphic.Substring(0, graphic.Length - 4);
+
+            // Grab any custom XML tags that might exist
+
+            string[] xmlTags = entity.Tags;
+
+            // Now build the string
+
+            result = ss.Label.Replace(',', '-');
+            result = result + ";" + name;
+
+            // If there is a standard identity group, add it
+
+            if (sig != null)
+            {
+                result = result + ";" + sig.Label;
+            }
+
+            // Add any custom XML or export tags that might exist
+
+            result = _configHelper.AddCustomTags(result, id, xmlTags);
+
+            // Add the 15 character SIDC for the symbol
+
+            result = result + ";" + symbol.Label;
+
+            // Add the entity's type
+
+            result = result + ";" + Convert.ToString(entity.Icon);
+
+            // Add the three most important pieces of information
+
+            result = result + ";" + geometry;
+            result = result + ";" + name;
+            result = result + ";" + id;
 
             if (result.Length > 255)
             {

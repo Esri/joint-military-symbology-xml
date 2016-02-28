@@ -433,6 +433,12 @@
     <LegacySymbol ID="SEA_MINE_GENERAL_SYM" Label="S*UPWM----*****" EntityID="SEA_MINE_GENERAL">
       <LegacyFunctionCode Name="2525C">WM----</LegacyFunctionCode>
     </LegacySymbol>
+    <LegacySymbol ID="SEA_MINE_GENERAL_MILCO_SYM" Label="S*UPWMC---*****" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C">WMC---</LegacyFunctionCode>
+      <LegacyEntity ID="SEA_MINE_GENERAL_MILCO_LE" Label="WAR.SBSUF.UH2WPN.SMNE.MILCO" Graphic="S-U-WMC---.svg">
+        <LegacyFunctionCode Name="2525C">WMC---</LegacyFunctionCode>
+      </LegacyEntity>
+    </LegacySymbol>
     <LegacySymbol ID="SEA_MINE_GENERAL_SEA_MINE_BOTTOM_SYM" Label="S*UPWMG---*****" EntityID="SEA_MINE_GENERAL" EntityTypeID="SEA_MINE_BOTTOM">
       <LegacyFunctionCode Name="2525C">WMG---</LegacyFunctionCode>
     </LegacySymbol>
@@ -459,6 +465,12 @@
     </LegacySymbol>
     <LegacySymbol ID="SEA_MINE_GENERAL_EXERCISE_MINE_GENERAL_EXERCISE_MINE_FLOATING_SYM" Label="S*UPWMFX--*****" EntityID="SEA_MINE_GENERAL" EntityTypeID="EXERCISE_MINE_GENERAL" EntitySubTypeID="EXERCISE_MINE_FLOATING">
       <LegacyFunctionCode Name="2525C">WMFX--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SEA_MINE_GENERAL_FLOATING_MILCO_SYM" Label="S*UPWMFC--*****" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C">WMFC--</LegacyFunctionCode>
+      <LegacyEntity ID="SEA_MINE_GENERAL_FLOATING_MILCO_LE" Label="WAR.SBSUF.UH2WPN.SMNE.SMF.MILCO" Graphic="S-U-WMFC--.svg">
+        <LegacyFunctionCode Name="2525C">WMFC--</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SEA_MINE_GENERAL_EXERCISE_MINE_GENERAL_EXERCISE_MINE_RISING_SYM" Label="S*UPWMSX--*****" EntityID="SEA_MINE_GENERAL" EntityTypeID="EXERCISE_MINE_GENERAL" EntitySubTypeID="EXERCISE_MINE_RISING">
       <LegacyFunctionCode Name="2525C">WMSX--</LegacyFunctionCode>
@@ -499,8 +511,20 @@
     <LegacySymbol ID="MINE_LIKE_ECHO_MILEC_GENERAL_MINE_LIKE_ECHO_BOTTOM_SYM" Label="S*UPWMGE--*****" EntityID="MINE_LIKE_ECHO_MILEC_GENERAL" EntityTypeID="MINE_LIKE_ECHO_BOTTOM">
       <LegacyFunctionCode Name="2525C">WMGE--</LegacyFunctionCode>
     </LegacySymbol>
+    <LegacySymbol ID="SEA_MINE_GENERAL_GROUND_BOTTOM_MILCO_SYM" Label="S*UPWMGC--*****" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C">WMGC--</LegacyFunctionCode>
+      <LegacyEntity ID="SEA_MINE_GENERAL_GROUND_BOTTOM_MILCO_LE" Label="WAR.SBSUF.UH2WPN.SMNE.SMG.MILCO" Graphic="S-U-WMGC--.svg">
+        <LegacyFunctionCode Name="2525C">WMGC--</LegacyFunctionCode>
+      </LegacyEntity>
+    </LegacySymbol>
     <LegacySymbol ID="MINE_LIKE_ECHO_MILEC_GENERAL_MINE_LIKE_ECHO_MOORED_SYM" Label="S*UPWMME--*****" EntityID="MINE_LIKE_ECHO_MILEC_GENERAL" EntityTypeID="MINE_LIKE_ECHO_MOORED">
       <LegacyFunctionCode Name="2525C">WMME--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="SEA_MINE_GENERAL_MOORED_MILCO_SYM" Label="S*UPWMMC--*****" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C">WMMC--</LegacyFunctionCode>
+      <LegacyEntity ID="SEA_MINE_GENERAL_MOORED_MILCO_LE" Label="WAR.SBSUF.UH2WPN.SMNE.SMM.MILCO" Graphic="S-U-WMMC--.svg">
+        <LegacyFunctionCode Name="2525C">WMMC--</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MINE_LIKE_ECHO_MILEC_GENERAL_MINE_LIKE_ECHO_FLOATING_SYM" Label="S*UPWMFE--*****" EntityID="MINE_LIKE_ECHO_MILEC_GENERAL" EntityTypeID="MINE_LIKE_ECHO_FLOATING">
       <LegacyFunctionCode Name="2525C">WMFE--</LegacyFunctionCode>

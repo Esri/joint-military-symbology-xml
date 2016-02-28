@@ -847,6 +847,12 @@
     <LegacySymbol ID="MILITARY_COMBAT_SYM" Label="S*SPC-----*****" EntityID="MILITARY_COMBAT">
       <LegacyFunctionCode Name="2525C">C-----</LegacyFunctionCode>
     </LegacySymbol>
+    <LegacySymbol ID="MILITARY_COMBAT_HOVERCRAFT_SYM" Label="S*SPCH----*****" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C">CH----</LegacyFunctionCode>
+      <LegacyEntity ID="MILITARY_COMBAT_HOVERCRAFT_LE" Label="WAR.SSUF.CBTT.HOV" Graphic="S-S-CH----.svg">
+        <LegacyFunctionCode Name="2525C">CH----</LegacyFunctionCode>
+      </LegacyEntity>
+    </LegacySymbol>
     <LegacySymbol ID="MILITARY_COMBAT_CARRIER_SYM" Label="S*SPCLCV--*****" EntityID="MILITARY_COMBAT" EntityTypeID="CARRIER">
       <LegacyFunctionCode Name="2525C">CLCV--</LegacyFunctionCode>
     </LegacySymbol>
@@ -916,6 +922,12 @@
     <LegacySymbol ID="MILITARY_COMBAT_PATROL_BOAT_AUTONOMOUS_MOD_SYM" Label="S*SPCPSU--*****" EntityID="MILITARY_COMBAT" EntityTypeID="PATROL_BOAT" ModifierTwoID="AUTONOMOUS_MOD">
       <LegacyFunctionCode Name="2525C">CPSU--</LegacyFunctionCode>
     </LegacySymbol>
+    <LegacySymbol ID="MILITARY_COMBAT_PATROL_BOAT_ANTISHIP_MISSILE_SYM" Label="S*SPCPSUM-*****" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C">CPSUM-</LegacyFunctionCode>
+      <LegacyEntity ID="MILITARY_COMBAT_PATROL_BOAT_ANTISHIP_MISSILE_LE" Label="WAR.SSUF.CBTT.PAT.ASUW.ASMSL" Graphic="S-S-CPSUM-.svg">
+        <LegacyFunctionCode Name="2525C">CPSUM-</LegacyFunctionCode>
+      </LegacyEntity>
+    </LegacySymbol>
     <LegacySymbol ID="MILITARY_COMBAT_PATROL_BOAT_TORPEDO_SYM" Label="S*SPCPSUT-*****" EntityID="MILITARY_COMBAT" EntityTypeID="PATROL_BOAT" ModifierOneID="TORPEDO_MOD">
       <LegacyFunctionCode Name="2525C">CPSUT-</LegacyFunctionCode>
     </LegacySymbol>
@@ -975,6 +987,12 @@
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_NON_COMBAT_SERVICE_CRAFT_SYM" Label="S*SPNS----*****" EntityID="MILITARY_NON_COMBAT" EntityTypeID="SERVICE_CRAFT">
       <LegacyFunctionCode Name="2525C">NS----</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="MILITARY_NON_COMBAT_HOVERCRAFT_SYM" Label="S*SPNH----*****" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C">NH----</LegacyFunctionCode>
+      <LegacyEntity ID="MILITARY_NON_COMBAT_HOVERCRAFT_LE" Label="WAR.SSUF.NCBTT.HOV" Graphic="S-S-NH----.svg">
+        <LegacyFunctionCode Name="2525C">NH----</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="CIVILIAN_CIV_MERCHANT_SYM" Label="S*SPXM----*****" EntityID="CIVILIAN" EntityTypeID="CIV_MERCHANT">
       <LegacyFunctionCode Name="2525C">XM----</LegacyFunctionCode>

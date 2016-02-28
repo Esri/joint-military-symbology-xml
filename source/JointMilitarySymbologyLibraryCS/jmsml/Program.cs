@@ -33,6 +33,7 @@ namespace jmsml
             CommandLineArgs.I.parseArgs(args, "/e=false;/+=false;/-source=false;/-legacy=false;/xas=SIMPLE;/size=32");
 
             string exportPath = CommandLineArgs.I.argAsString("/xe");
+            string exportLegacyEntityCPath = CommandLineArgs.I.argAsString("/xleC");
             string exportDomainPath = CommandLineArgs.I.argAsString("/b");
             string symbolSet = CommandLineArgs.I.argAsString("/s");
             string query = CommandLineArgs.I.argAsString("/q");
@@ -95,6 +96,7 @@ namespace jmsml
                 Console.WriteLine("/xf=\"<pathname>\"\t: Export frames.");
                 Console.WriteLine("/xh=\"<pathname>\"\t: Export HQ/TF/FD.");
                 Console.WriteLine("/xl=\"<pathname>\"\t: Export legacy data (for testing).");
+                Console.WriteLine("/xleC=\"<pathname>\"\t: Export legacy entities for 2525C.");
                 Console.WriteLine("/xllC=\"<pathname>\"\t: Export legacy lookup table for 2525C.");
                 Console.WriteLine("/xo=\"<pathname>\"\t: Export operational condition amplifiers.*");
                 Console.WriteLine("/xas=\"<as_option>\"\t: Export as SIMPLE, DOMAIN, or IMAGE.");
@@ -143,6 +145,11 @@ namespace jmsml
                                                                 omitSource,
                                                                 omitLegacyTag,
                                                                 size);
+            }
+
+            if (exportLegacyEntityCPath != "")
+            {
+                _etl.ExportLegacyEntities(exportLegacyEntityCPath, "2525C", size);
             }
 
             if (exportDomainPath != "")
