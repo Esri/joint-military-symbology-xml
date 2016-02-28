@@ -44,203 +44,6 @@ namespace JointMilitarySymbologyLibrary {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://disa.mil/JointMilSyML.xsd")]
-    public partial class LegacyFunctionCodeType {
-        
-        private string nameField;
-        
-        private string labelField;
-        
-        private string labelAliasField;
-        
-        private string descriptionField;
-        
-        private string remarksField;
-        
-        private string schemaOverrideField;
-        
-        private string dimensionOverrideField;
-        
-        private string standardIdentityOverrideField;
-        
-        private string statusOverrideField;
-        
-        private string hQTFFDOverrideField;
-        
-        private string amplifierOverrideField;
-        
-        private string tailOverrideField;
-        
-        private string valueField;
-        
-        public LegacyFunctionCodeType() {
-            this.labelAliasField = "";
-            this.schemaOverrideField = "";
-            this.dimensionOverrideField = "";
-            this.standardIdentityOverrideField = "";
-            this.statusOverrideField = "";
-            this.hQTFFDOverrideField = "";
-            this.amplifierOverrideField = "";
-            this.tailOverrideField = "";
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string Name {
-            get {
-                return this.nameField;
-            }
-            set {
-                this.nameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        public string Label {
-            get {
-                return this.labelField;
-            }
-            set {
-                this.labelField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        [System.ComponentModel.DefaultValueAttribute("")]
-        public string LabelAlias {
-            get {
-                return this.labelAliasField;
-            }
-            set {
-                this.labelAliasField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string Description {
-            get {
-                return this.descriptionField;
-            }
-            set {
-                this.descriptionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string Remarks {
-            get {
-                return this.remarksField;
-            }
-            set {
-                this.remarksField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        [System.ComponentModel.DefaultValueAttribute("")]
-        public string SchemaOverride {
-            get {
-                return this.schemaOverrideField;
-            }
-            set {
-                this.schemaOverrideField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        [System.ComponentModel.DefaultValueAttribute("")]
-        public string DimensionOverride {
-            get {
-                return this.dimensionOverrideField;
-            }
-            set {
-                this.dimensionOverrideField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        [System.ComponentModel.DefaultValueAttribute("")]
-        public string StandardIdentityOverride {
-            get {
-                return this.standardIdentityOverrideField;
-            }
-            set {
-                this.standardIdentityOverrideField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        [System.ComponentModel.DefaultValueAttribute("")]
-        public string StatusOverride {
-            get {
-                return this.statusOverrideField;
-            }
-            set {
-                this.statusOverrideField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        [System.ComponentModel.DefaultValueAttribute("")]
-        public string HQTFFDOverride {
-            get {
-                return this.hQTFFDOverrideField;
-            }
-            set {
-                this.hQTFFDOverrideField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        [System.ComponentModel.DefaultValueAttribute("")]
-        public string AmplifierOverride {
-            get {
-                return this.amplifierOverrideField;
-            }
-            set {
-                this.amplifierOverrideField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
-        [System.ComponentModel.DefaultValueAttribute("")]
-        public string TailOverride {
-            get {
-                return this.tailOverrideField;
-            }
-            set {
-                this.tailOverrideField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlTextAttribute(DataType="token")]
-        public string Value {
-            get {
-                return this.valueField;
-            }
-            set {
-                this.valueField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://disa.mil/JointMilSyML.xsd")]
     public partial class EntitySubTypeType {
         
         private DoubleDigitType entitySubTypeCodeField;
@@ -880,6 +683,536 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.valueField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://disa.mil/JointMilSyML.xsd")]
+    public partial class LegacyFunctionCodeType {
+        
+        private string nameField;
+        
+        private string labelField;
+        
+        private string labelAliasField;
+        
+        private string descriptionField;
+        
+        private string remarksField;
+        
+        private string schemaOverrideField;
+        
+        private string dimensionOverrideField;
+        
+        private string standardIdentityOverrideField;
+        
+        private string statusOverrideField;
+        
+        private string hQTFFDOverrideField;
+        
+        private string amplifierOverrideField;
+        
+        private string tailOverrideField;
+        
+        private string valueField;
+        
+        public LegacyFunctionCodeType() {
+            this.labelAliasField = "";
+            this.schemaOverrideField = "";
+            this.dimensionOverrideField = "";
+            this.standardIdentityOverrideField = "";
+            this.statusOverrideField = "";
+            this.hQTFFDOverrideField = "";
+            this.amplifierOverrideField = "";
+            this.tailOverrideField = "";
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string Name {
+            get {
+                return this.nameField;
+            }
+            set {
+                this.nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string Label {
+            get {
+                return this.labelField;
+            }
+            set {
+                this.labelField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string LabelAlias {
+            get {
+                return this.labelAliasField;
+            }
+            set {
+                this.labelAliasField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Remarks {
+            get {
+                return this.remarksField;
+            }
+            set {
+                this.remarksField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string SchemaOverride {
+            get {
+                return this.schemaOverrideField;
+            }
+            set {
+                this.schemaOverrideField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string DimensionOverride {
+            get {
+                return this.dimensionOverrideField;
+            }
+            set {
+                this.dimensionOverrideField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string StandardIdentityOverride {
+            get {
+                return this.standardIdentityOverrideField;
+            }
+            set {
+                this.standardIdentityOverrideField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string StatusOverride {
+            get {
+                return this.statusOverrideField;
+            }
+            set {
+                this.statusOverrideField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string HQTFFDOverride {
+            get {
+                return this.hQTFFDOverrideField;
+            }
+            set {
+                this.hQTFFDOverrideField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string AmplifierOverride {
+            get {
+                return this.amplifierOverrideField;
+            }
+            set {
+                this.amplifierOverrideField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string TailOverride {
+            get {
+                return this.tailOverrideField;
+            }
+            set {
+                this.tailOverrideField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlTextAttribute(DataType="token")]
+        public string Value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(LegacyEntityType))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://disa.mil/JointMilSyML.xsd")]
+    [System.Xml.Serialization.XmlRootAttribute("Entity", Namespace="http://disa.mil/JointMilSyML.xsd", IsNullable=false)]
+    public partial class EntityType {
+        
+        private string[] tagsField;
+        
+        private string idField;
+        
+        private string labelField;
+        
+        private string labelAliasField;
+        
+        private string descriptionField;
+        
+        private string remarksField;
+        
+        private string graphicField;
+        
+        private string alternativeGraphicField;
+        
+        private string circleGraphicField;
+        
+        private string cloverGraphicField;
+        
+        private string curveGraphicField;
+        
+        private string diamondGraphicField;
+        
+        private string rectangleGraphicField;
+        
+        private string squareGraphicField;
+        
+        private string drawRuleIDField;
+        
+        private string drawNoteField;
+        
+        private StandardType standardField;
+        
+        private IconType iconField;
+        
+        private bool isCivilianField;
+        
+        private GeometryType geometryTypeField;
+        
+        public EntityType() {
+            this.labelField = "";
+            this.labelAliasField = "";
+            this.descriptionField = "";
+            this.remarksField = "";
+            this.graphicField = "";
+            this.alternativeGraphicField = "";
+            this.circleGraphicField = "";
+            this.cloverGraphicField = "";
+            this.curveGraphicField = "";
+            this.diamondGraphicField = "";
+            this.rectangleGraphicField = "";
+            this.squareGraphicField = "";
+            this.drawRuleIDField = "POINT_RULE";
+            this.drawNoteField = "Not Applicable";
+            this.standardField = StandardType.ALL;
+            this.iconField = IconType.MAIN;
+            this.isCivilianField = false;
+            this.geometryTypeField = GeometryType.POINT;
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("Tag", DataType="token", IsNullable=false)]
+        public string[] Tags {
+            get {
+                return this.tagsField;
+            }
+            set {
+                this.tagsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
+        public string ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string Label {
+            get {
+                return this.labelField;
+            }
+            set {
+                this.labelField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string LabelAlias {
+            get {
+                return this.labelAliasField;
+            }
+            set {
+                this.labelAliasField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string Remarks {
+            get {
+                return this.remarksField;
+            }
+            set {
+                this.remarksField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string Graphic {
+            get {
+                return this.graphicField;
+            }
+            set {
+                this.graphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string AlternativeGraphic {
+            get {
+                return this.alternativeGraphicField;
+            }
+            set {
+                this.alternativeGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string CircleGraphic {
+            get {
+                return this.circleGraphicField;
+            }
+            set {
+                this.circleGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string CloverGraphic {
+            get {
+                return this.cloverGraphicField;
+            }
+            set {
+                this.cloverGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string CurveGraphic {
+            get {
+                return this.curveGraphicField;
+            }
+            set {
+                this.curveGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string DiamondGraphic {
+            get {
+                return this.diamondGraphicField;
+            }
+            set {
+                this.diamondGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string RectangleGraphic {
+            get {
+                return this.rectangleGraphicField;
+            }
+            set {
+                this.rectangleGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string SquareGraphic {
+            get {
+                return this.squareGraphicField;
+            }
+            set {
+                this.squareGraphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="IDREF")]
+        [System.ComponentModel.DefaultValueAttribute("POINT_RULE")]
+        public string DrawRuleID {
+            get {
+                return this.drawRuleIDField;
+            }
+            set {
+                this.drawRuleIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute("Not Applicable")]
+        public string DrawNote {
+            get {
+                return this.drawNoteField;
+            }
+            set {
+                this.drawNoteField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute(StandardType.ALL)]
+        public StandardType Standard {
+            get {
+                return this.standardField;
+            }
+            set {
+                this.standardField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute(IconType.MAIN)]
+        public IconType Icon {
+            get {
+                return this.iconField;
+            }
+            set {
+                this.iconField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute(false)]
+        public bool IsCivilian {
+            get {
+                return this.isCivilianField;
+            }
+            set {
+                this.isCivilianField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute(GeometryType.POINT)]
+        public GeometryType GeometryType {
+            get {
+                return this.geometryTypeField;
+            }
+            set {
+                this.geometryTypeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://disa.mil/JointMilSyML.xsd")]
+    [System.Xml.Serialization.XmlRootAttribute("LegacyEntity", Namespace="http://disa.mil/JointMilSyML.xsd", IsNullable=false)]
+    public partial class LegacyEntityType : EntityType {
+        
+        private LegacyFunctionCodeType[] legacyFunctionCodeField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("LegacyFunctionCode")]
+        public LegacyFunctionCodeType[] LegacyFunctionCode {
+            get {
+                return this.legacyFunctionCodeField;
+            }
+            set {
+                this.legacyFunctionCodeField = value;
             }
         }
     }
@@ -1918,6 +2251,8 @@ namespace JointMilitarySymbologyLibrary {
         
         private LegacyFunctionCodeType[] legacyFunctionCodeField;
         
+        private LegacyEntityType[] legacyEntityField;
+        
         private string idField;
         
         private string labelField;
@@ -1958,6 +2293,17 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.legacyFunctionCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("LegacyEntity")]
+        public LegacyEntityType[] LegacyEntity {
+            get {
+                return this.legacyEntityField;
+            }
+            set {
+                this.legacyEntityField = value;
             }
         }
         

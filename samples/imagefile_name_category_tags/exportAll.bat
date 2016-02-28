@@ -29,4 +29,13 @@ jmsml.exe /xa="../../../../../samples/imagefile_name_category_tags/Military-All-
 jmsml.exe /xh="../../../../../samples/imagefile_name_category_tags/Military-All-Icons" /+ /xas="IMAGE" /size="64" /-source /-legacy
 jmsml.exe /xo="../../../../../samples/imagefile_name_category_tags/Military-All-Icons" /+ /xas="IMAGE" /size="64" /-source /-legacy
 
+REM *** Append all the image file information together in a single file, including 2525C-only legacy symbology
+
+jmsml.exe /xe="../../../../../samples/imagefile_name_category_tags/Military-All-2525C-Icons" /+ /xas="IMAGE" /size="64" /-source
+jmsml.exe /xf="../../../../../samples/imagefile_name_category_tags/Military-All-2525C-Icons" /+ /xas="IMAGE" /size="64" /-source /-legacy
+jmsml.exe /xa="../../../../../samples/imagefile_name_category_tags/Military-All-2525C-Icons" /+ /xas="IMAGE" /size="64" /-source /-legacy
+jmsml.exe /xh="../../../../../samples/imagefile_name_category_tags/Military-All-2525C-Icons" /+ /xas="IMAGE" /size="64" /-source /-legacy
+jmsml.exe /xo="../../../../../samples/imagefile_name_category_tags/Military-All-2525C-Icons" /+ /xas="IMAGE" /size="64" /-source /-legacy
+jmsml.exe /xleC="../../../../../samples/imagefile_name_category_tags/Military-All-2525C-Icons" /+ /size="64"
+
 endlocal

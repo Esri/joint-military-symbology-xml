@@ -246,6 +246,8 @@ namespace JointMilitarySymbologyLibrary {
         
         private bool oCAField;
         
+        private string legacyStandardField;
+        
         public GraphicFolderType() {
             this.framesField = "false";
             this.echelonsField = false;
@@ -254,6 +256,7 @@ namespace JointMilitarySymbologyLibrary {
             this.auxiliaryEquipmentField = false;
             this.specialsField = false;
             this.oCAField = false;
+            this.legacyStandardField = "";
         }
         
         /// <remarks/>
@@ -392,6 +395,18 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.oCAField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string LegacyStandard {
+            get {
+                return this.legacyStandardField;
+            }
+            set {
+                this.legacyStandardField = value;
             }
         }
     }

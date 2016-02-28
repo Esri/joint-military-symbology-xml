@@ -497,7 +497,14 @@
       </DimensionCode>
       <LegacyDimensionCode Name="2525C" CodingSchemeLetter="S">Z</LegacyDimensionCode>
       <Fields/>
-      <SymbolSets/>
+      <SymbolSets>
+        <SymbolSetRef ID="SS_UNKNOWN" Label="Unknown" Instance="jmsml_D_Unknown.xml">
+          <SymbolSetCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>0</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
+      </SymbolSets>
     </Dimension>
 
     <Dimension ID="AIR" Label="Air" Geometry="POINT">

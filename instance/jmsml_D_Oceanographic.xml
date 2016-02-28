@@ -1560,6 +1560,18 @@
     <LegacySymbol ID="HYDROGRAPHY_DANGERS_HAZARDS_KELP_SEAWEED_AREA_SYM" Label="WO-DHHDK----A--" EntityID="HYDROGRAPHY" EntityTypeID="DANGERS_HAZARDS" EntitySubTypeID="KELP_SEAWEED_AREA">
       <LegacyFunctionCode Name="2525C" StandardIdentityOverride="O" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="-" TailOverride="A--">HHDK--</LegacyFunctionCode>
     </LegacySymbol>
+    <LegacySymbol ID="HYDROGRAPHY_DANGERS_HAZARDS_MINE_NAVAL_DOUBTFUL_SYM" Label="WOS-HHDMDBP----" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="O" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">HHDMDB</LegacyFunctionCode>
+      <LegacyEntity ID="HYDROGRAPHY_DANGERS_HAZARDS_MINE_NAVAL_DOUBTFUL_LE" Label="METOC.OCA.HYDGRY.DANHAZ.MNENAV.DBT" Graphic="WOS-HHDMDBP.svg">
+        <LegacyFunctionCode Name="2525C" StandardIdentityOverride="O" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">HHDMDB</LegacyFunctionCode>
+      </LegacyEntity>
+    </LegacySymbol>
+    <LegacySymbol ID="HYDROGRAPHY_DANGERS_HAZARDS_MINE_NAVAL_DEFINITE_SYM" Label="WOS-HHDMDFP----" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C" StandardIdentityOverride="O" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">HHDMDF</LegacyFunctionCode>
+      <LegacyEntity ID="HYDROGRAPHY_DANGERS_HAZARDS_MINE_NAVAL_DEFINITE_LE" Label="METOC.OCA.HYDGRY.DANHAZ.MNENAV.DEFN" Graphic="WOS-HHDMDFP.svg">
+        <LegacyFunctionCode Name="2525C" StandardIdentityOverride="O" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">HHDMDF</LegacyFunctionCode>
+      </LegacyEntity>
+    </LegacySymbol>
     <LegacySymbol ID="HYDROGRAPHY_DANGERS_HAZARDS_SNAGS_STUMPS_SYM" Label="WOS-HHDS--P----" EntityID="HYDROGRAPHY" EntityTypeID="DANGERS_HAZARDS" EntitySubTypeID="SNAGS_STUMPS">
       <LegacyFunctionCode Name="2525C" StandardIdentityOverride="O" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">HHDS--</LegacyFunctionCode>
     </LegacySymbol>

@@ -1448,16 +1448,20 @@
     <LegacySymbol ID="NATURAL_EVENT_INFESTATION_RODENT_SYM" Label="E*NPCE----*****" EntityID="NATURAL_EVENT" EntityTypeID="INFESTATION" EntitySubTypeID="RODENT">
       <LegacyFunctionCode Name="2525C" DimensionOverride="N">CE----</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="ATF_SYM" Label="EFOPDD----*****" Remarks="Retired">
+    <LegacySymbol ID="ATF_SYM" Label="EFOPDD----*****" Remarks="Retired" EntityID="OPERATION" EntityTypeID="LAW_ENFORCEMENT_OPERATION" EntitySubTypeID="BUREAU_ATF">
       <LegacyFunctionCode Name="2525C" DimensionOverride="O" StandardIdentityOverride="F">DD----</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="OPERATION_EMERGENCY_MEDICAL_OP_SYM" Label="E*OPA-----*****" Remarks="Retired">
+    <LegacySymbol ID="OPERATION_EMERGENCY_MEDICAL_OP_SYM" Label="E*OPA-----*****" EntityID="OPERATION" EntityTypeID="EMERGENCY_MEDICAL_OPERATION">
       <LegacyFunctionCode Name="2525C" DimensionOverride="O">A-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="O">AA----</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="OPERATION_EMERGENCY_OPERATION_TEAM_SYM" Label="E*OPBJ----*****" EntityID="OPERATION" EntityTypeID="EMERGENCY_OPERATION">
-      <LegacyFunctionCode Name="2525C" Remarks="Needs Team echelon amplifier" DimensionOverride="O">BJ----</LegacyFunctionCode>
+    <LegacySymbol ID="OPERATION_EMERGENCY_OPERATION_TEAM_SYM" Label="E*OPBJ----*****" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C" DimensionOverride="O">BJ----</LegacyFunctionCode>
+      <LegacyEntity ID="OPERATION_EMERGENCY_OPERATION_TEAM_LE" Label="EMS.OPN.EMOPN.EMTM" CloverGraphic="E-O-BJ----_0.svg" RectangleGraphic="E-O-BJ----_1.svg" SquareGraphic="E-O-BJ----_2.svg" DiamondGraphic="E-O-BJ----_3.svg" Icon="FULL_FRAME">
+        <LegacyFunctionCode Name="2525C" DimensionOverride="O">BJ----</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
-    <LegacySymbol ID="FIRE_FIGHTING_OPERATION_SYM" Label="E*OPC-----*****" Remarks="Retired">
+    <LegacySymbol ID="FIRE_FIGHTING_OPERATION_SYM" Label="E*OPC-----*****" EntityID="OPERATION" EntityTypeID="FIRE_FIGHTING_OPERATION">
       <LegacyFunctionCode Name="2525C" DimensionOverride="O">C-----</LegacyFunctionCode>
     </LegacySymbol>
   </LegacySymbols>
