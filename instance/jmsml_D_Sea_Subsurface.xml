@@ -410,6 +410,12 @@
     <LegacySymbol ID="MILITARY_AUV_UUV_SYM" Label="S*UPSU----*****" EntityID="MILITARY" EntityTypeID="AUV_UUV">
       <LegacyFunctionCode Name="2525C">SU----</LegacyFunctionCode>
     </LegacySymbol>
+    <LegacySymbol ID="MILITARY_AUV_UUV_MINE_WARFARE_SYM" Label="S*UPSUM---*****" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C">SUM---</LegacyFunctionCode>
+      <LegacyEntity ID="MILITARY_AUV_UUV_MINE_WARFARE_LE" Label="WAR.SBSUF.SUB.UUV.MNEW" Graphic="S-U-SUM---.svg">
+        <LegacyFunctionCode Name="2525C">SUM---</LegacyFunctionCode>
+      </LegacyEntity>
+    </LegacySymbol>
     <LegacySymbol ID="MILITARY_AUV_UUV_ANTISUBMARINE_WARFARE_MOD_SYM" Label="S*UPSUS---*****" EntityID="MILITARY" EntityTypeID="AUV_UUV" ModifierOneID="ANTISUBMARINE_WARFARE_MOD">
       <LegacyFunctionCode Name="2525C">SUS---</LegacyFunctionCode>
     </LegacySymbol>
@@ -466,6 +472,9 @@
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_SUBMARINE_SURFACED_SUBMARINE_SURFACED_SYM" Label="S*UPSOF---*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C" Description="Substitute" Remarks="Deleted">SOF---</LegacyFunctionCode>
+      <LegacyEntity ID="MILITARY_SUBMARINE_SURFACED_SUBMARINE_SURFACED_LE" Label="WAR.SBSUF.SUB.OTH.SURF" Graphic="S-U-SOF---.svg">
+        <LegacyFunctionCode Name="2525C" Description="Substitute" Remarks="Deleted">SOF---</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_SUBMARINE_SUBMARINE_SNORKELING_SYM" Label="S*UPSK----*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" EntitySubTypeID="SUBMARINE_SNORKELING">
       <LegacyFunctionCode Name="2525C" Description="Substitute" Remarks="Deleted ">SK----</LegacyFunctionCode>

@@ -30,7 +30,9 @@ namespace JointMilitarySymbologyLibrary
         FindMobilities,
         FindAuxiliaryEquipment,
         FindHQTFFD,
-        FindOCA
+        FindOCA,
+        Find2525C,
+        Find2525BC2
     }
 
     public class ConfigHelper
@@ -156,6 +158,14 @@ namespace JointMilitarySymbologyLibrary
                     case FindEnum.FindOCA:
                         foundIt = inThis.OCA;
                         break;
+
+                    case FindEnum.Find2525C:
+                        foundIt = inThis.LegacyStandard == "2525C";
+                        break;
+
+                    case FindEnum.Find2525BC2:
+                        foundIt = inThis.LegacyStandard == "2525BC2";
+                        break;
                 }
 
                 if (foundIt)
@@ -234,6 +244,8 @@ namespace JointMilitarySymbologyLibrary
             _findPath(FindEnum.FindMobilities, "JMSML_MOBILITIES", _basePaths);
             _findPath(FindEnum.FindAuxiliaryEquipment, "JMSML_AUXILIARY", _basePaths);
             _findPath(FindEnum.FindOCA, "JMSML_OCA", _basePaths);
+            _findPath(FindEnum.Find2525C, "JMSML_2525C", _basePaths);
+            _findPath(FindEnum.Find2525BC2, "JMSML_2525BC2", _basePaths);
         }
 
         private string _getPath(string getWhat, Dictionary<string, string> inThis)
@@ -302,6 +314,14 @@ namespace JointMilitarySymbologyLibrary
 
                 case FindEnum.FindOCA:
                     result = _getPath("JMSML_OCA", _basePaths);
+                    break;
+
+                case FindEnum.Find2525C:
+                    result = _getPath("JMSML_2525C", _basePaths);
+                    break;
+
+                case FindEnum.Find2525BC2:
+                    result = _getPath("JMSML_2525BC2", _basePaths);
                     break;
             }
 

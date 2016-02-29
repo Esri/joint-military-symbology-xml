@@ -157,7 +157,7 @@ namespace JointMilitarySymbologyLibrary
         {
             // Exports each of the lists of values associated with amplifiers in a library
             // into its own CSV file, for use in establishing domain ranges in a system.
-           
+
             bool isFirst = true;
 
             foreach (LibraryAmplifier amplifier in _library.Amplifiers)
@@ -172,7 +172,7 @@ namespace JointMilitarySymbologyLibrary
                     }
                 }
             }
-            
+
         }
 
         private void _exportSpecialEntities(ETLExportEnum exportType, IEntityExport exporter, SymbolSet s, StreamWriter w, EntitySubTypeType[] array)
@@ -197,7 +197,7 @@ namespace JointMilitarySymbologyLibrary
                     }
                     else
                     {
-                        if(exportType == ETLExportEnum.ETLExportDomain)
+                        if (exportType == ETLExportEnum.ETLExportDomain)
                             line = string.Format("{0}", exporter.Line(eSubType));
                         else
                             line = string.Format("{0}", exporter.Line(null, s, eSubType));
@@ -611,7 +611,7 @@ namespace JointMilitarySymbologyLibrary
 
                 if (dataValidation)
                 {
-                    if(append)
+                    if (append)
                         w.WriteLine("Identity,-1,NotSet");
                     else
                         w.WriteLine("-1,NotSet");
@@ -646,19 +646,19 @@ namespace JointMilitarySymbologyLibrary
                 if (isFirst || !append)
                     w.WriteLine(headers);
 
-                foreach(SymbolSet obj in _symbolSets)
+                foreach (SymbolSet obj in _symbolSets)
                 {
-                    if(append)
+                    if (append)
                         w.WriteLine("SymbolSet," + Convert.ToString(obj.SymbolSetCode.DigitOne) + Convert.ToString(obj.SymbolSetCode.DigitTwo) + ',' + obj.Label.Replace(',', '-'));
                     else
                         w.WriteLine(Convert.ToString(obj.SymbolSetCode.DigitOne) + Convert.ToString(obj.SymbolSetCode.DigitTwo) + ',' + obj.Label.Replace(',', '-'));
-                    
+
                     w.Flush();
                 }
 
                 if (dataValidation)
                 {
-                    if(append)
+                    if (append)
                         w.WriteLine("SymbolSet,-1,NotSet");
                     else
                         w.WriteLine("-1,NotSet");
@@ -708,7 +708,7 @@ namespace JointMilitarySymbologyLibrary
 
                 if (dataValidation)
                 {
-                    if(append)
+                    if (append)
                         w.WriteLine("Status,-1,NotSet");
                     else
                         w.WriteLine("-1,NotSet");
@@ -758,7 +758,7 @@ namespace JointMilitarySymbologyLibrary
 
                 if (dataValidation)
                 {
-                    if(append)
+                    if (append)
                         w.WriteLine("HQ_TF_FD,-1,NotSet");
                     else
                         w.WriteLine("-1,NotSet");
@@ -814,7 +814,7 @@ namespace JointMilitarySymbologyLibrary
 
                 if (dataValidation)
                 {
-                    if(append)
+                    if (append)
                         w.WriteLine("Amplifier,-1,NotSet");
                     else
                         w.WriteLine("-1,NotSet");
@@ -994,7 +994,7 @@ namespace JointMilitarySymbologyLibrary
             // The source data comes from a manual dump of the tables
             // from Appendix A of 2525, modified in Excel to provide
             // further information to start fully populating JMSML XML.
-            
+
             string line, ss, id, entity, entityType, entitySubType, codeE, codeET, codeEST, graphic;
 
             StreamReader r = new StreamReader(path);
@@ -1096,13 +1096,13 @@ namespace JointMilitarySymbologyLibrary
             SymbolSet ss = null;
 
             var serializer = new XmlSerializer(typeof(SymbolSet));
-            using(FileStream reader = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+            using (FileStream reader = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
             {
                 try
                 {
                     ss = (SymbolSet)serializer.Deserialize(reader);
                 }
-                catch(IOException ex)
+                catch (IOException ex)
                 {
                     logger.Error(ex.Message);
                 }
@@ -1113,7 +1113,7 @@ namespace JointMilitarySymbologyLibrary
 
         private void _serializeSymbolSet(SymbolSet ss, string path)
         {
-            if(ss != null)
+            if (ss != null)
             {
                 var serializer = new XmlSerializer(typeof(SymbolSet));
                 using (FileStream writer = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.ReadWrite))
@@ -1140,7 +1140,7 @@ namespace JointMilitarySymbologyLibrary
                 if (ss != null)
                 {
                     string code = Convert.ToString(ss.SymbolSetCode.DigitOne) + Convert.ToString(ss.SymbolSetCode.DigitTwo);
-                
+
                     if (code != "")
                     {
                         // Open the source file for read.
@@ -1253,7 +1253,7 @@ namespace JointMilitarySymbologyLibrary
 
                                             if (mod2Code != "" && mod2Code != "00" && mod2Code != "0")
                                             {
-                                                if(mod2Code.Length == 2)
+                                                if (mod2Code.Length == 2)
                                                 {
                                                     ModifiersTypeModifier mod = _librarian.ModifierTwo(ss, Convert.ToUInt16(mod2Code.Substring(0, 1)), Convert.ToUInt16(mod2Code.Substring(1, 1)));
 
@@ -1345,7 +1345,7 @@ namespace JointMilitarySymbologyLibrary
                             if (cSIDCIn.Length == 15)
                             {
                                 if (cSIDCIn.Substring(1, 1) == "*")
-                                        cSIDCIn = cSIDCIn.Substring(0, 1) + "P" + cSIDCIn.Substring(2);
+                                    cSIDCIn = cSIDCIn.Substring(0, 1) + "P" + cSIDCIn.Substring(2);
 
                                 cSIDCIn = cSIDCIn.Replace('*', '-');
 
@@ -1456,12 +1456,12 @@ namespace JointMilitarySymbologyLibrary
                                         cerrorCount++;
                                     }
 
-                                    stream.WriteLine(cSIDC.Substring(0,10) + "," + 
+                                    stream.WriteLine(cSIDC.Substring(0, 10) + "," +
                                                      cSIDCIn + "," +
-                                                     dFirst10.Substring(4,2) + "," +
-                                                     dSecond10.Substring(0,6) + "," +
-                                                     dSecond10.Substring(6,2) + "," +
-                                                     dSecond10.Substring(8,2) + "," +
+                                                     dFirst10.Substring(4, 2) + "," +
+                                                     dSecond10.Substring(0, 6) + "," +
+                                                     dSecond10.Substring(6, 2) + "," +
+                                                     dSecond10.Substring(8, 2) + "," +
                                                      symbolName + "," +
                                                      modOneName + "," +
                                                      modTwoName + "," +
@@ -1471,7 +1471,7 @@ namespace JointMilitarySymbologyLibrary
                                 }
                             }
                             else
-                                    logger.Error("Bad SIDC : " + cSIDCIn);    
+                                logger.Error("Bad SIDC : " + cSIDCIn);
                         }
                     }
                 }
@@ -1522,7 +1522,7 @@ namespace JointMilitarySymbologyLibrary
         {
             // The public entry point for exporting selective contents of the JMSML library
             // into CSV format.
-            
+
             // Accepts a path for the output (sans file name extension).  The caller 
             // may also provide optional regular expressions to filter on the Label
             // attributes of SymbolSets in the library and a second optional regular
@@ -1655,7 +1655,7 @@ namespace JointMilitarySymbologyLibrary
                                         }
                                     }
                                 }
-                                else if(exportType == ETLExportEnum.ETLExportDomain)
+                                else if (exportType == ETLExportEnum.ETLExportDomain)
                                 {
                                     if (!amp.IsExtension)
                                     {
@@ -1839,7 +1839,7 @@ namespace JointMilitarySymbologyLibrary
                         w.Flush();
                     }
 
-                    foreach(LibraryHQTFDummy hqTFFD in _library.HQTFDummies)
+                    foreach (LibraryHQTFDummy hqTFFD in _library.HQTFDummies)
                     {
                         if (hqTFFD.Graphics != null && exportType == ETLExportEnum.ETLExportImage)
                         {
@@ -1854,7 +1854,7 @@ namespace JointMilitarySymbologyLibrary
                                 }
                             }
                         }
-                        else if(exportType == ETLExportEnum.ETLExportDomain)
+                        else if (exportType == ETLExportEnum.ETLExportDomain)
                         {
                             if (!hqTFFD.IsExtension)
                             {
@@ -1946,7 +1946,7 @@ namespace JointMilitarySymbologyLibrary
                                 }
                             }
                         }
-                        else if(exportType == ETLExportEnum.ETLExportDomain)
+                        else if (exportType == ETLExportEnum.ETLExportDomain)
                         {
                             if (!status.IsExtension)
                             {
@@ -2003,7 +2003,7 @@ namespace JointMilitarySymbologyLibrary
                         w.Flush();
                     }
                 }
-            } 
+            }
         }
 
         public void ExportAmplifierValueDomains(string path, bool append = false)
@@ -2032,6 +2032,14 @@ namespace JointMilitarySymbologyLibrary
             // and converting them to their 2525D equivalent codes, then writing out the results to the specified path.
 
             _configHelper.MakeLegacyETL().ExportLegacyLookup(path, standard);
+        }
+
+        public void ExportLegacyEntities(string path, string standard, long size = 32)
+        {
+            // Export entities from legacy versions of the standard that are no longer implemented or
+            // implemented differently then they used to be.
+
+            _configHelper.MakeLegacyETL().ExportLegacyEntities(path, standard, size);
         }
     }
 }

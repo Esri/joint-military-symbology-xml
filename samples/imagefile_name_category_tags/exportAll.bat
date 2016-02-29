@@ -21,12 +21,21 @@ jmsml.exe /xa="../../../../../samples/imagefile_name_category_tags/Military-Fram
 jmsml.exe /xh="../../../../../samples/imagefile_name_category_tags/Military-Frame-And-Amplifier-Source-Icons" /+ /xas="IMAGE" /size="64" /-source /-legacy
 jmsml.exe /xo="../../../../../samples/imagefile_name_category_tags/Military-Frame-And-Amplifier-Source-Icons" /+ /xas="IMAGE" /size="64" /-source /-legacy
 
-REM *** Append all the image file information together in a single file ***
+REM *** Append all the image file information together in a single file (2525C and 2525D) ***
 
 jmsml.exe /xe="../../../../../samples/imagefile_name_category_tags/Military-All-Icons" /+ /xas="IMAGE" /size="64" /-source
 jmsml.exe /xf="../../../../../samples/imagefile_name_category_tags/Military-All-Icons" /+ /xas="IMAGE" /size="64" /-source /-legacy
 jmsml.exe /xa="../../../../../samples/imagefile_name_category_tags/Military-All-Icons" /+ /xas="IMAGE" /size="64" /-source /-legacy
 jmsml.exe /xh="../../../../../samples/imagefile_name_category_tags/Military-All-Icons" /+ /xas="IMAGE" /size="64" /-source /-legacy
 jmsml.exe /xo="../../../../../samples/imagefile_name_category_tags/Military-All-Icons" /+ /xas="IMAGE" /size="64" /-source /-legacy
+jmsml.exe /xleC="../../../../../samples/imagefile_name_category_tags/Military-All-Icons" /+ /size="64"
+
+REM *** Append all the image file information together in a single file (2525D-only) ***
+
+jmsml.exe /xe="../../../../../samples/imagefile_name_category_tags/Military-All-2525D-Only-Icons" /+ /xas="IMAGE" /size="64" /-source
+jmsml.exe /xf="../../../../../samples/imagefile_name_category_tags/Military-All-2525D-Only-Icons" /+ /xas="IMAGE" /size="64" /-source /-legacy
+jmsml.exe /xa="../../../../../samples/imagefile_name_category_tags/Military-All-2525D-Only-Icons" /+ /xas="IMAGE" /size="64" /-source /-legacy
+jmsml.exe /xh="../../../../../samples/imagefile_name_category_tags/Military-All-2525D-Only-Icons" /+ /xas="IMAGE" /size="64" /-source /-legacy
+jmsml.exe /xo="../../../../../samples/imagefile_name_category_tags/Military-All-2525D-Only-Icons" /+ /xas="IMAGE" /size="64" /-source /-legacy
 
 endlocal

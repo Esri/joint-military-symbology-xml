@@ -87,7 +87,7 @@ namespace JointMilitarySymbologyLibrary
             return result;
         }
 
-        private string _buildSIDCKey(SymbolSet ss, SymbolSetLegacySymbol legacySymbol)
+        private string _buildSIDCKey(SymbolSet ss, SymbolSetLegacySymbol legacySymbol, LegacyFunctionCodeType functionCode)
         {
             // Builds a unique key from a select number of characters from an SIDC.
             // The pattern for this is:
@@ -101,8 +101,6 @@ namespace JointMilitarySymbologyLibrary
             // FFFFFF = Function code
 
             string result = "";
-
-            LegacyFunctionCodeType functionCode = _configHelper.LegacyFunction(legacySymbol.LegacyFunctionCode, _standard);
 
             if (functionCode != null)
             {
@@ -141,7 +139,7 @@ namespace JointMilitarySymbologyLibrary
             get { return "Name,Key" + _standard + ",MainIcon,Modifier1,Modifier2,ExtraIcon,FullFrame,GeometryType,Status,Notes"; }
         }
 
-        public string Line(SymbolSet ss, SymbolSetLegacySymbol legacySymbol)
+        public string Line(SymbolSet ss, SymbolSetLegacySymbol legacySymbol, LegacyFunctionCodeType functionCode)
         {
             string result = "";
             
@@ -195,7 +193,7 @@ namespace JointMilitarySymbologyLibrary
             string fullFrameOutput = fullFrame ? "TRUE" : "";
 
             result = name;
-            result = result + "," + _buildSIDCKey(ss, legacySymbol); // + "Key2525C";
+            result = result + "," + _buildSIDCKey(ss, legacySymbol, functionCode); // + "Key2525C";
             result = result + "," + entityCode; // + "MainIcon";
             result = result + "," + mod1Code;  // + "Modifier1";
             result = result + "," + mod2Code; // + "Modifier2";
@@ -204,6 +202,29 @@ namespace JointMilitarySymbologyLibrary
             result = result + "," + geometry; // + "GeometryType";
             result = result + ","; // + "Status";
             result = result + ","; // + "Notes";
+
+            return result;
+        }
+
+        public string Line(SymbolSet ss, SymbolSetLegacySymbol legacySymbol, LegacyEntityType legacyEntity, LegacyFunctionCodeType functionCode)
+        {
+            string result = "";
+
+            string sidcKey = _buildSIDCKey(ss, legacySymbol, functionCode);
+
+            bool fullFrame = (legacyEntity.Icon == IconType.FULL_FRAME);
+            string fullFrameOutput = fullFrame ? "TRUE" : "";
+
+            result = legacyEntity.Label;
+            result = result + "," + sidcKey;
+            result = result + "," + sidcKey;
+            result = result + ",";
+            result = result + ",";
+            result = result + ",";
+            result = result + "," + fullFrameOutput;
+            result = result + "," + "Point"; // TODO : Handle this through a modernized form of GeometryIt
+            result = result + ",";
+            result = result + ",";
 
             return result;
         }
