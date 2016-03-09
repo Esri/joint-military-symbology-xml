@@ -34,6 +34,7 @@
 9. Repeat steps 4-8 for the Friendly, Neutral, and Hostile template frame. Remember, when you are creating Full-Frame icons, the size of the icons will be different depending on the frame. 
   * By default, Adobe Illustrator will change the SVG XML to inserts style/css directives that may not be useable by other SVG viewers/converters (the original DISA SVGs did not have these css styles) – to disable this option, when you save the file, select “Save As” and change the CSS Properties to “Style Attributes." This is under advanced options when saving as an SVG.
   * You have to be very careful Illustrator doesn’t use unsupported fonts or you don’t inadvertently re-use such fonts from the retired SVGs. Also Illustrator substitutes different fonts from what is selected (example Illustrator substitutes ArialMT for Arial). 
+  * We need to figure out how DISA managed to change illustrator settings so that the fonts were restricted to Sans-Serif when dealing with these SVGs. 
 
 
 
