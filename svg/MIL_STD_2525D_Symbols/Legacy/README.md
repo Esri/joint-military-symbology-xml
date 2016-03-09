@@ -1,3 +1,14 @@
+### Creating Legacy Icons using 2525D format.
+1. Open these [template octagon SVG's](https://github.com/Esri/joint-military-symbology-xml/tree/master/svg/MIL_STD_2525D_Symbols) in separate views in illustrator. They are Bounding Octagon.svg, BoundingOctagon_H.svg, and BoundingOctagon_V svg.
+2. Obtain your desired SVG icon from one of the retired symbol sets.
+3. Open the retired SVG icon in illustrator. Explore the layers in the icon and remove any unnecessary elements of the icon (usually the frame).
+4. Navigate to one of the template octagon SVG's in illustrator. Select it, copy it, and paste it into the same view as your retired icon SVG. 
+5. Select the desired elements of your icon SVG (it may be easier to select from the layers panel instead of selecting directly in the view/artboard).
+6. Re-size the icon SVG so that the edges of the SVG are touching the appropriate parts of the template octagon. You can either re-size the elements directly in the artboard, or you may manipulate the W and H values that are docked above the artboard.
+7. When you are done re-sizing the icon SVG, navigate to the layers panel and make the template octagon invisible (click on the eye icon so that it goes away).
+8. Go to steps 8 and 9 of the full frame instructions to review saving your SVG. Ignore the section regarding Friendly, Neutral, and Hostile symbols. 
+
+
 ### Creating Full-Frame Legacy Icons using 2525D format.
 
 *This process was done using Adobe Illustrator CS6.*
