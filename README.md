@@ -79,6 +79,7 @@ In providing this schema, files of instance data, and sample C# code to navigate
 	* Note that not all possible 2525D codes will convert to 2525C codes, or vice versa.  
 		* Because of the component construction nature of 2525D, there are many more symbol ID combinations possible in 2525D, combinations that don't convert to 2525C.
 * DISA provides graphic files (svg) for the individual parts of MIL-STD 2525 (included herein).  The JMSML schema supports referencing those files and the included C# library contains functionality that can be used to combine those referenced files into a complete image.
+* If you wish to use the Joint Military Symbology XML Demo from the screenshot above, build and run the Test Folder located here (https://github.com/Esri/joint-military-symbology-xml/tree/master/source/JointMilitarySymbologyLibraryCS/Test).
 
 ## NLog
 
