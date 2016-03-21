@@ -161,11 +161,32 @@ namespace JointMilitarySymbologyLibrary
                     {
                         if (legacySymbol.EntityID != "NA" && legacySymbol.EntityID != "UNSPECIFIED")
                         {
-                            string line = id.ToString() + "," + symbolExport.Line(ss, legacySymbol);
-                            id++;
+                            LegacyFunctionCodeType[] functionCodes = _helper.LegacyFunctions(legacySymbol.LegacyFunctionCode, standard);
 
-                            w.WriteLine(line);
-                            w.Flush();
+                            foreach (LegacyFunctionCodeType functionCode in functionCodes)
+                            {
+                                string line = id.ToString() + "," + symbolExport.Line(ss, legacySymbol, functionCode);
+                                id++;
+
+                                w.WriteLine(line);
+                                w.Flush();
+                            }
+                        }
+                        else if (legacySymbol.Remarks == "Retired" && legacySymbol.LegacyEntity != null)
+                        {
+                            foreach (LegacyEntityType legacyEntity in legacySymbol.LegacyEntity)
+                            {
+                                LegacyFunctionCodeType[] functionCodes = _helper.LegacyFunctions(legacyEntity.LegacyFunctionCode, standard);
+
+                                foreach (LegacyFunctionCodeType functionCode in functionCodes)
+                                {
+                                    string line = id.ToString() + "," + symbolExport.Line(ss, legacySymbol, legacyEntity, functionCode);
+                                    id++;
+
+                                    w.WriteLine(line);
+                                    w.Flush();
+                                }
+                            }
                         }
                     }
                 }
@@ -229,6 +250,68 @@ namespace JointMilitarySymbologyLibrary
             return id;
         }
 
+        private void _exportLegacyEntities(StreamWriter w, bool isFirst, string standard, long size)
+        {
+            LegacyEntityExport entityExport = new LegacyEntityExport(_helper, standard, size);
+
+            if (isFirst)
+            {
+                string headers = entityExport.Headers;
+                
+                w.WriteLine(headers);
+                w.Flush();
+            }
+
+            foreach (SymbolSet ss in _lib.SymbolSets)
+            {
+                // For each symbol set in JMSML...
+
+                if (ss.LegacySymbols != null)
+                {
+                    foreach (SymbolSetLegacySymbol legacySymbol in ss.LegacySymbols)
+                    {
+                        // For each legacy symbol in that symbol set...
+
+                        if (legacySymbol.LegacyEntity != null)
+                        {
+                            foreach (LegacyEntityType legacyEntity in legacySymbol.LegacyEntity)
+                            {
+                                // Get the list of Legacy Function IDs for the specified legacy version of the standard
+
+                                if(legacyEntity.LegacyFunctionCode != null)
+                                {
+                                    LegacyFunctionCodeType functionCode = _helper.LegacyFunction(legacyEntity.LegacyFunctionCode, standard);
+
+                                    string line = "";
+
+                                    // If the icon is Full Frame then four lines need to be exported, to reflect the four icon shapes.
+                                    // Else just write out one line for non-Full-Frame.
+
+                                    if (legacyEntity.Icon == IconType.FULL_FRAME)
+                                    {
+                                        foreach (LibraryStandardIdentityGroup sig in _lib.Library.StandardIdentityGroups)
+                                        {
+                                            line = string.Format("{0}", entityExport.Line(sig, ss, legacySymbol, legacyEntity, functionCode));
+
+                                            w.WriteLine(line);
+                                            w.Flush();
+                                        }
+                                    }
+                                    else
+                                    {
+                                        line = string.Format("{0}", entityExport.Line(null, ss, legacySymbol, legacyEntity, functionCode));
+
+                                        w.WriteLine(line);
+                                        w.Flush();
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         public void ExportLegacyLookup(string path, string standard)
         {
             using (StreamWriter stream = new StreamWriter(path, false))
@@ -240,6 +323,18 @@ namespace JointMilitarySymbologyLibrary
                 id = _exportAmplifiers(stream, false, "2525C", id);
                 id = _exportHQTFFDs(stream, false, "2525C", id);
                 id = _exportOCAs(stream, false, "2525C", id);
+            }
+        }
+
+        public void ExportLegacyEntities(string path, string standard, long size)
+        {
+            path = path + ".csv";
+
+            bool didFileExist = File.Exists(path);
+
+            using (StreamWriter stream = new StreamWriter(path, didFileExist))
+            {
+                _exportLegacyEntities(stream, !didFileExist, standard, size);
             }
         }
     }

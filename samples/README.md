@@ -95,6 +95,11 @@ JMSML's legacy symbology support also includes an ability to export a look-up ta
 
 	jmsml.exe /xllC="All_ID_Mapping_C_to_D.csv"
 
+#### Legacy Entities ####
+While JMSML was designed to use XML to define the contents of the 2525D symbology standard, recognition of the need to support backwards compatibility with the older 2525B Change 2 and 2525C versions of the standard; including those symbols from the two older standards that are no longer supported in 2525D; has resulted in JMSML being enhanced with SVG files and metadata for those retired symbols.  The resulting legacy entities may be exported into a separate CSV file, whose structure mirrors the Image File Name, Category, Tags tables described above.  This exported data may be merged with the other Image File Name, Category, Tag exports to provide, together with the referenced image files, and Legacy Lookup information, a comprehensive collection of 2525D symbology, and 2525C/2525B Change 2 symbology built on top of that 2525D symbology.
+
+	jmsml.exe /xleC="Military-All-2525C-Icons" /+ /size="64"
+
 ### Schemas ###
 
 Military feature attribute Schemas, which consist of Fields and Subtypes, can be exported from JMMSL data.  These export files are then used with tools in the military features data repository to automatically build a military feature template geodatabase.
