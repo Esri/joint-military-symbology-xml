@@ -2275,6 +2275,8 @@ namespace JointMilitarySymbologyLibrary {
         
         private StandardType standardField;
         
+        private bool isDuplicateField;
+        
         public SymbolSetLegacySymbol() {
             this.labelAliasField = "";
             this.entityIDField = "NA";
@@ -2283,6 +2285,7 @@ namespace JointMilitarySymbologyLibrary {
             this.modifierOneIDField = "NA";
             this.modifierTwoIDField = "NA";
             this.standardField = StandardType.ALL;
+            this.isDuplicateField = false;
         }
         
         /// <remarks/>
@@ -2432,6 +2435,18 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.standardField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute(false)]
+        public bool IsDuplicate {
+            get {
+                return this.isDuplicateField;
+            }
+            set {
+                this.isDuplicateField = value;
             }
         }
     }

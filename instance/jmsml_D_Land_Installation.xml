@@ -999,7 +999,7 @@
     <LegacySymbol ID="INSTALLATION_CBRN_BIOLOGICAL_2_MOD_SYM" Label="S*GPIMC---H****" EntityID="INSTALLATION" EntityTypeID="CBRN" ModifierTwoID="BIOLOGICAL_2_MOD">
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMC---</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="INSTALLATION_CBRN_CHEMICAL_2_MOD_SYM" Label="S*GPIMC---H****" EntityID="INSTALLATION" EntityTypeID="CBRN" ModifierTwoID="CHEMICAL_2_MOD">
+    <LegacySymbol ID="INSTALLATION_CBRN_CHEMICAL_2_MOD_SYM" Label="S*GPIMC---H****" EntityID="INSTALLATION" EntityTypeID="CBRN" ModifierTwoID="CHEMICAL_2_MOD" IsDuplicate="true">
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMC---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_ENGINEERING_EQUIPMENT_PRODUCTION_SYM" Label="S*GPIMN---H****" EntityID="INSTALLATION" EntityTypeID="ENGINEERING_EQUIPMENT_PRODUCTION">

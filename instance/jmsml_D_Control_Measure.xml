@@ -3847,14 +3847,14 @@
     <LegacySymbol ID="MANEUVER_LINES_FORWARD_LINE_OF_TROOPS_FLOT_FRIENDLY_PRESENT_SYM" Label="G*GPGLF---****X" EntityID="MANEUVER_LINES" EntityTypeID="FORWARD_LINE_OF_TROOPS" EntitySubTypeID="FLOT_FRIENDLY_PRESENT">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">GLF---</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="MANEUVER_LINES_FORWARD_LINE_OF_TROOPS_FLOT_FRIENDLY_PLANNED_ON_ORDER_SYM" Label="GFGAGLF---****X" EntityID="MANEUVER_LINES" EntityTypeID="FORWARD_LINE_OF_TROOPS" EntitySubTypeID="FLOT_FRIENDLY_PLANNED_ON_ORDER">
+    <LegacySymbol ID="MANEUVER_LINES_FORWARD_LINE_OF_TROOPS_FLOT_FRIENDLY_PLANNED_ON_ORDER_SYM" Label="GFGAGLF---****X" EntityID="MANEUVER_LINES" EntityTypeID="FORWARD_LINE_OF_TROOPS" EntitySubTypeID="FLOT_FRIENDLY_PLANNED_ON_ORDER" IsDuplicate="true">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">GLF---</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="MANEUVER_LINES_FORWARD_LINE_OF_TROOPS_FLOT_ENEMY_KNOWN_SYM" Label="GHGPGLF---****X" EntityID="MANEUVER_LINES" EntityTypeID="FORWARD_LINE_OF_TROOPS" EntitySubTypeID="FLOT_ENEMY_KNOWN">
+    <LegacySymbol ID="MANEUVER_LINES_FORWARD_LINE_OF_TROOPS_FLOT_ENEMY_KNOWN_SYM" Label="GHGPGLF---****X" EntityID="MANEUVER_LINES" EntityTypeID="FORWARD_LINE_OF_TROOPS" EntitySubTypeID="FLOT_ENEMY_KNOWN" IsDuplicate="true">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">GLF---</LegacyFunctionCode>
       <LegacyFunctionCode Name="2525C" Description="Substitute" Remarks="Line of Contact not a displayable symbol=Friendly+Enemy FLOTs" DimensionOverride="G" TailOverride="--X">GLC---</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="MANEUVER_LINES_FORWARD_LINE_OF_TROOPS_FLOT_ENEMY_SUSPECTED_TEMPLATED_SYM" Label="GHGAGLF---****X" EntityID="MANEUVER_LINES" EntityTypeID="FORWARD_LINE_OF_TROOPS" EntitySubTypeID="FLOT_ENEMY_SUSPECTED_TEMPLATED">
+    <LegacySymbol ID="MANEUVER_LINES_FORWARD_LINE_OF_TROOPS_FLOT_ENEMY_SUSPECTED_TEMPLATED_SYM" Label="GHGAGLF---****X" EntityID="MANEUVER_LINES" EntityTypeID="FORWARD_LINE_OF_TROOPS" EntitySubTypeID="FLOT_ENEMY_SUSPECTED_TEMPLATED" IsDuplicate="true">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">GLF---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MANEUVER_LINES_PHASE_LINE_SYM" Label="G*GPGLP---****X" EntityID="MANEUVER_LINES" EntityTypeID="PHASE_LINE">
@@ -3935,7 +3935,7 @@
     <LegacySymbol ID="MANEUVER_AREAS_BATTLE_POSITION_SYM" Label="G*GPDAB---****X" EntityID="MANEUVER_AREAS" EntityTypeID="BATTLE_POSITION">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">DAB---</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="MANEUVER_AREAS_BATTLE_POSITION_BP_PLANNED_SYM" Label="G*GADAB---****X" EntityID="MANEUVER_AREAS" EntityTypeID="BATTLE_POSITION" EntitySubTypeID="BP_PLANNED">
+    <LegacySymbol ID="MANEUVER_AREAS_BATTLE_POSITION_BP_PLANNED_SYM" Label="G*GADAB---****X" EntityID="MANEUVER_AREAS" EntityTypeID="BATTLE_POSITION" EntitySubTypeID="BP_PLANNED" IsDuplicate="true">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">DAB---</LegacyFunctionCode>
       <LegacyFunctionCode Name="2525C" Description="Repeat" DimensionOverride="G" TailOverride="--X">DAB---</LegacyFunctionCode>
     </LegacySymbol>

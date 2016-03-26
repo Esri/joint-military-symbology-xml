@@ -305,7 +305,7 @@
     <LegacySymbol ID="CIVILIAN_COMPOSITE_LOSS_OTHER_MOD_SYM" Label="O*OPCC----*****" EntityID="CIVILIAN" EntityTypeID="COMPOSITE_LOSS" ModifierOneID="OTHER_MOD">
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="O">CC----</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="CIVILIAN_EMERGENCY_MEDICAL_OPERATION_SYM" Label="E*OPAA----*****" EntityID="CIVILIAN" EntityTypeID="EMERGENCY_MEDICAL_OPERATION">
+    <LegacySymbol ID="CIVILIAN_EMERGENCY_MEDICAL_OPERATION_SYM" Label="E*OPAA----*****" EntityID="CIVILIAN" EntityTypeID="EMERGENCY_MEDICAL_OPERATION" IsDuplicate="true">
       <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">AA----</LegacyFunctionCode>
     </LegacySymbol>
   </LegacySymbols>

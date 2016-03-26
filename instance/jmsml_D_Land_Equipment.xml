@@ -1744,6 +1744,9 @@
     </LegacySymbol>
     <LegacySymbol ID="VEHICLE_VEHICLE_ARMORED_ARMORED_FIGHTING_VEHICLE_C2_SYM" Label="S*GPEVAC--*****" EntityID="VEHICLE" EntityTypeID="VEHICLE_ARMORED" EntitySubTypeID="ARMORED_FIGHTING_VEHICLE_C2">
       <LegacyFunctionCode Name="2525C">EVAC--</LegacyFunctionCode>
+      <LegacyEntity ID="VEHICLE_VEHICLE_ARMORED_ARMORED_FIGHTING_VEHICLE_C2_LE" Label="WAR.GRDTRK.EQT.GRDVEH.ARMD.C2V" Graphic="S-G-EVAC--.svg">
+        <LegacyFunctionCode Name="2525C">EVAC--</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="VEHICLE_VEHICLE_ARMORED_ARMORED_PERSONNEL_CARRIER_SYM" Label="S*GPEVAA--*****" EntityID="VEHICLE" EntityTypeID="VEHICLE_ARMORED" EntitySubTypeID="ARMORED_PERSONNEL_CARRIER">
       <LegacyFunctionCode Name="2525C">EVAA--</LegacyFunctionCode>

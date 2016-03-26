@@ -2026,12 +2026,15 @@ namespace JointMilitarySymbologyLibrary
             _configHelper.MakeSchemaETL().ExportSchemas(path);
         }
 
-        public void ExportLegacyLookup(string path, string standard)
+        public void ExportLegacyLookup(string path, string standard, bool asOriginal)
         {
             // Export legacy lookup information, taking all of the existing 2525X code information parts of symbols
             // and converting them to their 2525D equivalent codes, then writing out the results to the specified path.
 
-            _configHelper.MakeLegacyETL().ExportLegacyLookup(path, standard);
+            // asOriginal = false if the legacy symbols should map to graphics that make them look as they did originally.
+            // asOriginal = true if the legacy symbols should map to graphics that are the latest in 2525D.
+
+            _configHelper.MakeLegacyETL().ExportLegacyLookup(path, standard, asOriginal);
         }
 
         public void ExportLegacyEntities(string path, string standard, long size = 32)
