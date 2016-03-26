@@ -2181,6 +2181,9 @@
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ANTITANK_ANTIARMOR_AIR_MOBILE_AIR_ASSAULT_MOD_SYM" Label="S*GPUCAAS-*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ANTITANK_ANTIARMOR" ModifierOneID="AIR_MOBILE_AIR_ASSAULT_MOD">
       <LegacyFunctionCode Name="2525C">UCAAS-</LegacyFunctionCode>
+      <LegacyEntity ID="MOVEMENT_AND_MANEUVER_ANTITANK_ANTIARMOR_AIR_MOBILE_AIR_ASSAULT_MOD_LE" Label="WAR.GRDTRK.UNT.CBT.AARM.AAST" Icon="FULL_FRAME" CloverGraphic="S-G-UCAAS-_0.svg" RectangleGraphic="S-G-UCAAS-_1.svg" SquareGraphic="S-G-UCAAS-_2.svg" DiamondGraphic="S-G-UCAAS-_3.svg">
+        <LegacyFunctionCode Name="2525C">UCAAS-</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ANTITANK_ANTIARMOR_MOUNTAIN_MOD_SYM" Label="S*GPUCAAU-*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ANTITANK_ANTIARMOR" ModifierTwoID="MOUNTAIN_MOD">
       <LegacyFunctionCode Name="2525C">UCAAU-</LegacyFunctionCode>
@@ -2883,10 +2886,10 @@
     <LegacySymbol ID="INTELLIGENCE_MILITARY_INTELLIGENCE_TACTICAL_EXPLOITATION_MOD_SYM" Label="S*GPUUMT--*****" EntityID="INTELLIGENCE" EntityTypeID="MILITARY_INTELLIGENCE" ModifierOneID="TACTICAL_EXPLOITATION_MOD">
       <LegacyFunctionCode Name="2525C">UUMT--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="INTELLIGENCE_MILITARY_INTELLIGENCE_THEATER_SYM" Label="S*GPUUMSET*****" EntityID="INTELLIGENCE" EntityTypeID="ELECTRONIC_WARFARE" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
+    <LegacySymbol ID="INTELLIGENCE_MILITARY_INTELLIGENCE_THEATER_SYM" Label="S*GPUUMSET*****" EntityID="INTELLIGENCE" EntityTypeID="MILITARY_INTELLIGENCE" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT" IsDuplicate="true">
       <LegacyFunctionCode Name="2525C">UUMSET</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="INTELLIGENCE_MILITARY_INTELLIGENCE_CORPS_SYM" Label="S*GPUUMSEC*****" EntityID="INTELLIGENCE" EntityTypeID="ELECTRONIC_WARFARE" EntitySubTypeID="CORPS_SUPPORT">
+    <LegacySymbol ID="INTELLIGENCE_MILITARY_INTELLIGENCE_CORPS_SYM" Label="S*GPUUMSEC*****" EntityID="INTELLIGENCE" EntityTypeID="MILITARY_INTELLIGENCE" EntitySubTypeID="CORPS_SUPPORT" IsDuplicate="true">
       <LegacyFunctionCode Name="2525C">UUMSEC</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_ADMINISTRATIVE_SYM" Label="S*GPUSA---*****" EntityID="SUSTAINMENT" EntityTypeID="ADMINISTRATIVE">

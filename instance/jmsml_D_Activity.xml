@@ -1223,9 +1223,6 @@
     <LegacySymbol ID="OPERATION_EMERGENCY_OPERATION_EMERGENCY_WATER_DISTRIBUTION_CENTER_SYM" Label="E*OPBK----H****" EntityID="OPERATION" EntityTypeID="EMERGENCY_OPERATION" EntitySubTypeID="EMERGENCY_WATER_DISTRIBUTION_CENTER">
       <LegacyFunctionCode Name="2525C" DimensionOverride="O" HQTFFDOverride="H">BK----</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="OPERATION_EMERGENCY_MEDICAL_OPERATION_SYM" Label="E*OPA-----*****" EntityID="OPERATION" EntityTypeID="EMERGENCY_MEDICAL_OPERATION">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="O">A-----</LegacyFunctionCode>
-    </LegacySymbol>
     <LegacySymbol ID="OPERATION_EMERGENCY_MEDICAL_OPERATION_EMT_STATION_LOCATION_SYM" Label="E*OPAD----H****" EntityID="OPERATION" EntityTypeID="EMERGENCY_MEDICAL_OPERATION" EntitySubTypeID="EMT_STATION_LOCATION">
       <LegacyFunctionCode Name="2525C" DimensionOverride="O" HQTFFDOverride="H">AD----</LegacyFunctionCode>
     </LegacySymbol>
@@ -1247,7 +1244,7 @@
     <LegacySymbol ID="OPERATION_FIRE_FIGHTING_OPERATION_FIRE_HYDRANT_SYM" Label="E*OPCC----*****" EntityID="OPERATION" EntityTypeID="FIRE_FIGHTING_OPERATION" EntitySubTypeID="FIRE_HYDRANT">
       <LegacyFunctionCode Name="2525C" DimensionOverride="O">CC----</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="OPERATION_FIRE_FIGHTING_OPERATION_FIRE_STATION_SYM" Label="E*OPC-----*****" EntityID="OPERATION" EntityTypeID="FIRE_FIGHTING_OPERATION" EntitySubTypeID="FIRE_STATION">
+    <LegacySymbol ID="OPERATION_FIRE_FIGHTING_OPERATION_FIRE_STATION_SYM" Label="E*OPC-----*****" EntityID="OPERATION" EntityTypeID="FIRE_FIGHTING_OPERATION" EntitySubTypeID="FIRE_STATION" IsDuplicate="true">
       <LegacyFunctionCode Name="2525C" DimensionOverride="O">C-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="OPERATION_FIRE_FIGHTING_OPERATION_OTHER_WATER_SUPPLY_LOCATION_SYM" Label="E*OPCD----H****" EntityID="OPERATION" EntityTypeID="FIRE_FIGHTING_OPERATION" EntitySubTypeID="OTHER_WATER_SUPPLY_LOCATION">

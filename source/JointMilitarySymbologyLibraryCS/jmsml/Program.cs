@@ -30,7 +30,7 @@ namespace jmsml
         {
             _librarian.IsLogging = true;
 
-            CommandLineArgs.I.parseArgs(args, "/e=false;/+=false;/-source=false;/-legacy=false;/xas=SIMPLE;/size=32");
+            CommandLineArgs.I.parseArgs(args, "/e=false;/+=false;/-source=false;/-legacy=false;/xas=SIMPLE;/size=32;/asOriginal=false");
 
             string exportPath = CommandLineArgs.I.argAsString("/xe");
             string exportLegacyEntityCPath = CommandLineArgs.I.argAsString("/xleC");
@@ -68,6 +68,7 @@ namespace jmsml
             bool appendFiles = (CommandLineArgs.I.argAsString("/+") != "false");
             bool omitSource = (CommandLineArgs.I.argAsString("/-source") != "false");
             bool omitLegacyTag = (CommandLineArgs.I.argAsString("/-legacy") != "false");
+            bool asOriginal = (CommandLineArgs.I.argAsString("/asOriginal") != "false");
 
             if (help == "/?")
             {
@@ -132,7 +133,7 @@ namespace jmsml
 
             if (exportLookupC != "")
             {
-                _etl.ExportLegacyLookup(exportLookupC, "2525C");
+                _etl.ExportLegacyLookup(exportLookupC, "2525C", asOriginal);
             }
 
             if (exportPath != "")

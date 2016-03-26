@@ -892,11 +892,14 @@
     </LegacySymbol>
     <LegacySymbol ID="CIVILIAN_CIV_ROTARY_WING_SYM" Label="S*APCH----*****" EntityID="CIVILIAN" EntityTypeID="CIV_ROTARY_WING">
       <LegacyFunctionCode Name="2525C">CH----</LegacyFunctionCode>
+      <LegacyEntity ID="CIVILIAN_CIV_ROTARY_WING_LE" Label="WAR.AIRTRK.CVL.ROT" Graphic="S-A-CH----.svg">
+        <LegacyFunctionCode Name="2525C">CH----</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="CIVILIAN_CIV_LTA_SYM" Label="S*APCL----*****" EntityID="CIVILIAN" EntityTypeID="CIV_LTA">
       <LegacyFunctionCode Name="2525C">CL----</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="WEAPON_SYM" Label="S*APW-----*****" EntityID="WEAPON">
+    <LegacySymbol ID="WEAPON_SYM" Label="S*APW-----*****" EntityID="WEAPON" IsDuplicate="true">
       <LegacyFunctionCode Name="2525C" Description="Substitute">W-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEAPON_BOMB_SYM" Label="S*APWB----*****" EntityID="WEAPON" EntityTypeID="BOMB">
@@ -904,6 +907,9 @@
     </LegacySymbol>
     <LegacySymbol ID="WEAPON_DECOY_SYM" Label="S*APWD----*****" EntityID="WEAPON" EntityTypeID="DECOY">
       <LegacyFunctionCode Name="2525C">WD----</LegacyFunctionCode>
+      <LegacyEntity ID="WEAPON_DECOY_LE" Label="WAR.AIRTRK.WPN.DCY" Graphic="S-A-WD----.svg">
+        <LegacyFunctionCode Name="2525C">WD----</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="AIR_TRACK_SYM" Label="S*AP------*****" EntityID="UNSPECIFIED">
       <LegacyFunctionCode Name="2525C">------</LegacyFunctionCode>

@@ -140,7 +140,7 @@ namespace JointMilitarySymbologyLibrary
             return id;
         }
 
-        private int _exportSymbols(StreamWriter w, bool isFirst, string standard, int id)
+        private int _exportSymbols(StreamWriter w, bool isFirst, string standard, int id, bool asOriginal)
         {
             LegacySymbolExport symbolExport = new LegacySymbolExport(_helper, standard);
 
@@ -159,32 +159,35 @@ namespace JointMilitarySymbologyLibrary
                 {
                     foreach (SymbolSetLegacySymbol legacySymbol in ss.LegacySymbols)
                     {
-                        if (legacySymbol.EntityID != "NA" && legacySymbol.EntityID != "UNSPECIFIED")
+                        if (!legacySymbol.IsDuplicate)
                         {
-                            LegacyFunctionCodeType[] functionCodes = _helper.LegacyFunctions(legacySymbol.LegacyFunctionCode, standard);
-
-                            foreach (LegacyFunctionCodeType functionCode in functionCodes)
+                            if (legacySymbol.EntityID != "NA" && legacySymbol.EntityID != "UNSPECIFIED" && (asOriginal == false || legacySymbol.LegacyEntity == null))
                             {
-                                string line = id.ToString() + "," + symbolExport.Line(ss, legacySymbol, functionCode);
-                                id++;
-
-                                w.WriteLine(line);
-                                w.Flush();
-                            }
-                        }
-                        else if (legacySymbol.Remarks == "Retired" && legacySymbol.LegacyEntity != null)
-                        {
-                            foreach (LegacyEntityType legacyEntity in legacySymbol.LegacyEntity)
-                            {
-                                LegacyFunctionCodeType[] functionCodes = _helper.LegacyFunctions(legacyEntity.LegacyFunctionCode, standard);
+                                LegacyFunctionCodeType[] functionCodes = _helper.LegacyFunctions(legacySymbol.LegacyFunctionCode, standard);
 
                                 foreach (LegacyFunctionCodeType functionCode in functionCodes)
                                 {
-                                    string line = id.ToString() + "," + symbolExport.Line(ss, legacySymbol, legacyEntity, functionCode);
+                                    string line = id.ToString() + "," + symbolExport.Line(ss, legacySymbol, functionCode);
                                     id++;
 
                                     w.WriteLine(line);
                                     w.Flush();
+                                }
+                            }
+                            else if ((legacySymbol.Remarks == "Retired" || asOriginal) && legacySymbol.LegacyEntity != null)
+                            {
+                                foreach (LegacyEntityType legacyEntity in legacySymbol.LegacyEntity)
+                                {
+                                    LegacyFunctionCodeType[] functionCodes = _helper.LegacyFunctions(legacyEntity.LegacyFunctionCode, standard);
+
+                                    foreach (LegacyFunctionCodeType functionCode in functionCodes)
+                                    {
+                                        string line = id.ToString() + "," + symbolExport.Line(ss, legacySymbol, legacyEntity, functionCode);
+                                        id++;
+
+                                        w.WriteLine(line);
+                                        w.Flush();
+                                    }
                                 }
                             }
                         }
@@ -312,14 +315,14 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        public void ExportLegacyLookup(string path, string standard)
+        public void ExportLegacyLookup(string path, string standard, bool asOriginal)
         {
             using (StreamWriter stream = new StreamWriter(path, false))
             {
                 int id = 0;
 
                 id = _exportFrames(stream, true, "2525C", id);
-                id = _exportSymbols(stream, false, "2525C", id);
+                id = _exportSymbols(stream, false, "2525C", id, asOriginal);
                 id = _exportAmplifiers(stream, false, "2525C", id);
                 id = _exportHQTFFDs(stream, false, "2525C", id);
                 id = _exportOCAs(stream, false, "2525C", id);
