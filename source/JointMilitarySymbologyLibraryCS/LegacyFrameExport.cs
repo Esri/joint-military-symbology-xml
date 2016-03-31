@@ -52,7 +52,7 @@ namespace JointMilitarySymbologyLibrary
 
         string IFrameExport.Headers
         {
-            get { return "Name,Key" + _standard + ",MainIcon,Modifier1,Modifier2,ExtraIcon,FullFrame,GeometryType,Status,Notes"; }
+            get { return "Name,LegacyKey,MainIcon,Modifier1,Modifier2,ExtraIcon,FullFrame,GeometryType,Standard,Status,Notes"; }
         }
 
         string IFrameExport.Line(Librarian librarian, LibraryContext context, LibraryStandardIdentity identity, LibraryDimension dimension, LibraryStatus status, bool asCivilian, bool asPlannedCivilian)
@@ -72,6 +72,7 @@ namespace JointMilitarySymbologyLibrary
                 result = result + ","; // + "ExtraIcon";
                 result = result + ","; // + "FullFrame";
                 result = result + "," + "Point"; // + "GeometryType";
+                result = result + ","; // + "Standard";
                 result = result + ","; // + "Status";
                 result = result + "," + _legacyFrame.Description; // + "Notes";
             }

@@ -20,7 +20,7 @@ namespace JointMilitarySymbologyLibrary
 
         string IHQTFFDExport.Headers
         {
-            get { return "Name,Key" + _standard + ",MainIcon,Modifier1,Modifier2,ExtraIcon,FullFrame,GeometryType,Status,Notes"; }
+            get { return "Name,LegacyKey,MainIcon,Modifier1,Modifier2,ExtraIcon,FullFrame,GeometryType,Standard,Status,Notes"; }
         }
 
         string IHQTFFDExport.Line(LibraryHQTFDummy hqTFFD, LibraryHQTFDummyGraphic graphic)
@@ -38,6 +38,7 @@ namespace JointMilitarySymbologyLibrary
             result = result + ",";
             result = result + ",";
             result = result + "," + "Point";
+            result = result + ",";
             result = result + ",";
             result = result + ",";
 
