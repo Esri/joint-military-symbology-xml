@@ -109,6 +109,7 @@ namespace jmsml
                 Console.WriteLine("/+\t\t\t: Append multiple e(x)port files together.");
                 Console.WriteLine("/-source\t\t: Leave source file out of exported tags.");
                 Console.WriteLine("/size=\"<pixels>\"\t: Specify the size for exported image information.");
+                Console.WriteLine("/asOriginal\t\t: Map legacy SIDCs to original symbol components.");
                 Console.WriteLine("");
                 Console.WriteLine("/a\t\t\t: Export symbols with AREA geometry.");
                 Console.WriteLine("/l\t\t\t: Export symbols with LINE geometry.");

@@ -93,7 +93,10 @@ A remark of retired indicates the test resulted in finding that the specified 25
 #### Legacy Lookup ####
 JMSML's legacy symbology support also includes an ability to export a look-up table that maps unique IDs for various parts of symbols in MIL-STD-2525B Change 2 and MIL-STD-2525C, to symbol parts in MIL-STD-2525D.  Implementers may use this output to create older symbology from various parts of the latest symbology.
 
-	jmsml.exe /xllC="All_ID_Mapping_C_to_D.csv"
+Use of the /asOriginal switch forces the legacy lookup export procedure to map legacy SIDCs to components that reflect their original 2525B Change 2 or 2525C appearance.  Running without this switch results in the legacy SIDCs being mapped to 2525D components, if available, original components otherwise.
+
+	jmsml.exe /xllC="All_ID_Mapping_Latest.csv"
+	jmsml.exe /xllC="All_ID_Mapping_Original.csv" /asOriginal
 
 #### Legacy Entities ####
 While JMSML was designed to use XML to define the contents of the 2525D symbology standard, recognition of the need to support backwards compatibility with the older 2525B Change 2 and 2525C versions of the standard; including those symbols from the two older standards that are no longer supported in 2525D; has resulted in JMSML being enhanced with SVG files and metadata for those retired symbols.  The resulting legacy entities may be exported into a separate CSV file, whose structure mirrors the Image File Name, Category, Tags tables described above.  This exported data may be merged with the other Image File Name, Category, Tag exports to provide, together with the referenced image files, and Legacy Lookup information, a comprehensive collection of 2525D symbology, and 2525C/2525B Change 2 symbology built on top of that 2525D symbology.
