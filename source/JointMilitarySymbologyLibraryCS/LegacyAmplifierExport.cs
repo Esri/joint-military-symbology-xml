@@ -33,7 +33,7 @@ namespace JointMilitarySymbologyLibrary
 
         string IAmplifierExport.Headers
         {
-            get { return "Name,Key" + _standard + ",MainIcon,Modifier1,Modifier2,ExtraIcon,FullFrame,GeometryType,Status,Notes"; }
+            get { return "Name,LegacyKey,MainIcon,Modifier1,Modifier2,ExtraIcon,FullFrame,GeometryType,Standard,Status,Notes"; }
         }
 
         string IAmplifierExport.Line(LibraryAmplifierGroup amplifierGroup, LibraryAmplifierGroupAmplifier amplifier, LibraryAmplifierGroupAmplifierGraphic graphic)
@@ -50,6 +50,7 @@ namespace JointMilitarySymbologyLibrary
             result = result + ","; // + "ExtraIcon";
             result = result + ","; // + "FullFrame";
             result = result + "," + "Point"; // + "GeometryType";
+            result = result + ","; // + "Standard";
             result = result + ","; // + "Status";
             result = result + ","; // + "Notes";
 
