@@ -309,6 +309,9 @@
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_SPACE_STATION_SYM" Label="S*PPT-----*****" EntityID="MILITARY" EntityTypeID="SPACE_STATION">
       <LegacyFunctionCode Name="2525C">T-----</LegacyFunctionCode>
+	  <LegacyEntity ID="MILITARY_SPACE_STATION_LE" Label="WWAR.SPC.SST" Graphic ="S-P-T-----.svg">
+		<LegacyFunctionCode Name="2525C">S-----</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_SPACE_LAUNCHED_VEHICLE_SYM" Label="S*PPL-----*****" EntityID="MILITARY" EntityTypeID="SPACE_LAUNCHED_VEHICLE">
       <LegacyFunctionCode Name="2525C">L-----</LegacyFunctionCode>
