@@ -454,6 +454,9 @@
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_SUBMARINE_DIESEL_ELECTRIC_GENERAL_MOD_SYM" Label="S*UPSC----*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierTwoID="DIESEL_ELECTRIC_GENERAL_MOD">
       <LegacyFunctionCode Name="2525C" Description="Substitute">SC----</LegacyFunctionCode>
+	  <LegacyEntity ID="MILITARY_SUBMARINE_DIESEL_ELECTRIC_GENERAL_MOD_LE" Label="WAR.SBSUF.SUB.CNVPRN" Graphic ="S-U-SC-----.svg">
+		<LegacyFunctionCode Name="2525C">SC----</LegacyFunctionCode>
+	  </LegacyEntity>	  
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_SUBMARINE_SURFACED_DIESEL_ELECTRIC_GENERAL_MOD_SYM" Label="S*UPSCF---*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" EntitySubTypeID="SUBMARINE_SURFACED" ModifierTwoID="DIESEL_ELECTRIC_GENERAL_MOD">
       <LegacyFunctionCode Name="2525C" Description="Substitute">SCF---</LegacyFunctionCode>
