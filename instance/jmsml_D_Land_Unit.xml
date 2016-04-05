@@ -2294,12 +2294,18 @@
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ARMY_AVIATION_AVIATION_ROTARY_WING_COMMAND_CONTROL_MOD_SYM" Label="S*GPUCVRUC*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ARMY_AVIATION_AVIATION_ROTARY_WING" ModifierOneID="COMMAND_CONTROL_MOD">
       <LegacyFunctionCode Name="2525C">UCVRUC</LegacyFunctionCode>
+	  <LegacyEntity ID="MOVEMENT_AND_MANEUVER_ARMY_AVIATION_AVIATION_ROTARY_WING_COMMAND_CONTROL_MOD_LE" Label="WAR.GRDTRK.UNT.CBT.AVN.ROT.C2" Graphic="S-G-UCVRUC.svg">
+		<LegacyFunctionCode Name="2525C">UCVRUC</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ARMY_AVIATION_AVIATION_ROTARY_WING_MINE_COUNTERMEASURE_MOD_SYM" Label="S*GPUCVRM-*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ARMY_AVIATION_AVIATION_ROTARY_WING" ModifierOneID="MINE_COUNTERMEASURE_MOD">
       <LegacyFunctionCode Name="2525C">UCVRM-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ARMY_AVIATION_AVIATION_ROTARY_WING_SEARCH_RESCUE_MOD_SYM" Label="S*GPUCVS--*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ARMY_AVIATION_AVIATION_ROTARY_WING" ModifierOneID="SEARCH_RESCUE_MOD">
       <LegacyFunctionCode Name="2525C">UCVS--</LegacyFunctionCode>
+	  <LegacyEntity ID="MOVEMENT_AND_MANEUVER_ARMY_AVIATION_AVIATION_ROTARY_WING_SEARCH_RESCUE_MOD_LE" Label="WAR.GRDTRK.UNT.CBT.AVN.SAR" Graphic="S-G-UCVS--.svg">
+		<LegacyFunctionCode Name="2525C">UCVS--</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ARMY_AVIATION_AVIATION_ROTARY_WING_SECURITY_MOD_SYM" Label="S*GPUCSA--*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ARMY_AVIATION_AVIATION_ROTARY_WING" ModifierOneID="SECURITY_MOD">
       <LegacyFunctionCode Name="2525C">UCSA--</LegacyFunctionCode>
@@ -2394,6 +2400,9 @@
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_AVIATION_FIXED_WING_VERTICAL_TAKE_OFF_LANDING_VTOL_MOD_SYM" Label="S*GPUCVV--*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="AVIATION_FIXED_WING" ModifierTwoID="VERTICAL_TAKE_OFF_LANDING_VTOL_MOD">
       <LegacyFunctionCode Name="2525C">UCVV--</LegacyFunctionCode>
+	  <LegacyEntity ID="MOVEMENT_AND_MANEUVER_AVIATION_FIXED_WING_VERTICAL_TAKE_OFF_LANDING_VTOL_MOD_LE" Label="WAR.GRDTRK.UNT.CBT.AVN.VSTOL" Graphic="S-G-UCVV--.svg">
+		<LegacyFunctionCode Name="2525C">UCVV--</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_AVIATION_FIXED_WING_AVIATION_FIXED_WING_RECONNAISSANCE_SYM" Label="S*GPUCVFR-*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="AVIATION_FIXED_WING" EntitySubTypeID="AVIATION_FIXED_WING_RECONNAISSANCE">
       <LegacyFunctionCode Name="2525C">UCVFR-</LegacyFunctionCode>
@@ -2573,6 +2582,9 @@
     </LegacySymbol>
     <LegacySymbol ID="FIRES_FIELD_ARTILLERY_RADAR_MOD_SYM" Label="S*GPUCFTR-*****" EntityID="FIRES" EntityTypeID="FIELD_ARTILLERY" ModifierOneID="RADAR_MOD">
       <LegacyFunctionCode Name="2525C">UCFTR-</LegacyFunctionCode>
+	  <LegacyEntity ID="FIRES_FIELD_ARTILLERY_RADAR_MOD_LE" Label="WAR.GRDTRK.UNT.CBT.FLDART.TGTAQ.RAD" Graphic="S-G-UCFTR-.svg">
+		<LegacyFunctionCode Name="2525C">UCFTR-</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_FIELD_ARTILLERY_SINGLE_ROCKET_LAUNCHER_MOD_SYM" Label="S*GPUCFRS-*****" EntityID="FIRES" EntityTypeID="FIELD_ARTILLERY" ModifierOneID="SINGLE_ROCKET_LAUNCHER_MOD">
       <LegacyFunctionCode Name="2525C">UCFRS-</LegacyFunctionCode>
@@ -2585,12 +2597,21 @@
     </LegacySymbol>
     <LegacySymbol ID="FIRES_FIELD_ARTILLERY_SOUND_RANGING_MOD_SYM" Label="S*GPUCFTS-*****" EntityID="FIRES" EntityTypeID="FIELD_ARTILLERY" ModifierOneID="SOUND_RANGING_MOD">
       <LegacyFunctionCode Name="2525C">UCFTS-</LegacyFunctionCode>
+	  <LegacyEntity ID="FIRES_FIELD_ARTILLERY_SOUND_RANGING_MOD_LE" Label="WAR.GRDTRK.UNT.CBT.FLDART.TGTAQ.SND" Graphic="S-G-UCFTS-.svg">
+		<LegacyFunctionCode Name="2525C">UCFTS-</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_FIELD_ARTILLERY_TARGET_ACQUISITION_MOD_SYM" Label="S*GPUCFT--*****" EntityID="FIRES" EntityTypeID="FIELD_ARTILLERY" ModifierOneID="TARGET_ACQUISITION_MOD">
       <LegacyFunctionCode Name="2525C">UCFT--</LegacyFunctionCode>
+	  <LegacyEntity ID="FIRES_FIELD_ARTILLERY_TARGET_ACQUISITION_MOD_LE" Label="WAR.GRDTRK.UNT.CBT.FLDART.TGTAQ" Graphic="S-G-UCFT--.svg">
+		<LegacyFunctionCode Name="2525C">UCFT--</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_FIELD_ARTILLERY_TARGET_ACQUISITION_MOD_OPTICAL_FLASH_MOD_SYM" Label="S*GPUCFTF-*****" EntityID="FIRES" EntityTypeID="FIELD_ARTILLERY" ModifierOneID="TARGET_ACQUISITION_MOD" ModifierTwoID="OPTICAL_FLASH_MOD">
       <LegacyFunctionCode Name="2525C">UCFTF-</LegacyFunctionCode>
+	  <LegacyEntity ID="FIRES_FIELD_ARTILLERY_TARGET_ACQUISITION_MOD_OPTICAL_FLASH_MOD_LE" Label="WAR.GRDTRK.UNT.CBT.FLDART.TGTAQ.FLH" Graphic="S-G-UCFTF-.svg">
+		<LegacyFunctionCode Name="2525C">UCFTF-</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_FIELD_ARTILLERY_FA_SELF_PROPELLED_SYM" Label="S*GPUCFHE-*****" EntityID="FIRES" EntityTypeID="FIELD_ARTILLERY" EntitySubTypeID="FA_SELF_PROPELLED">
       <LegacyFunctionCode Name="2525C">UCFHE-</LegacyFunctionCode>
@@ -2628,6 +2649,9 @@
     </LegacySymbol>
     <LegacySymbol ID="FIRES_MISSILE_STRATEGIC_MOD_SYM" Label="S*GPUCMS--*****" EntityID="FIRES" EntityTypeID="MISSILE" ModifierTwoID="STRATEGIC_MOD">
       <LegacyFunctionCode Name="2525C">UCMS--</LegacyFunctionCode>
+	  <LegacyEntity ID="FIRES_MISSILE_STRATEGIC_MOD_LE" Label="WAR.GRDTRK.UNT.CBT.MSL.STGC" Graphic="S-G-UCMS--.svg">
+		<LegacyFunctionCode Name="2525C">UCMS--</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_MISSILE_TACTICAL_MOD_SYM" Label="S*GPUCMT--*****" EntityID="FIRES" EntityTypeID="MISSILE" ModifierTwoID="TACTICAL_MOD">
       <LegacyFunctionCode Name="2525C">UCMT--</LegacyFunctionCode>
@@ -2658,18 +2682,33 @@
     </LegacySymbol>
     <LegacySymbol ID="FIRES_SURVEY_SYM" Label="S*GPUCFS--*****" EntityID="FIRES" EntityTypeID="SURVEY">
       <LegacyFunctionCode Name="2525C">UCFS--</LegacyFunctionCode>
+	  <LegacyEntity ID="FIRES_SURVEY_LE" Label="WAR.GRDTRK.UNT.CBT.FLDART.ARTSVY" Graphic="S-G-UCFS--.svg">
+		<LegacyFunctionCode Name="2525C">UCFS--</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_SURVEY_AIR_MOBILE_AIR_ASSAULT_MOD_SYM" Label="S*GPUCFSS-*****" EntityID="FIRES" EntityTypeID="SURVEY" ModifierOneID="AIR_MOBILE_AIR_ASSAULT_MOD">
       <LegacyFunctionCode Name="2525C">UCFSS-</LegacyFunctionCode>
+	  <LegacyEntity ID="FIRES_SURVEY_AIR_MOBILE_AIR_ASSAULT_MOD_LE" Label="WAR.GRDTRK.UNT.CBT.FLDART.ARTSVY.AAST" Graphic="S-G-UCFSS-.svg">
+		<LegacyFunctionCode Name="2525C">UCFSS-</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_SURVEY_AIRBORNE_MOD_SYM" Label="S*GPUCFSA-*****" EntityID="FIRES" EntityTypeID="SURVEY" ModifierTwoID="AIRBORNE_MOD">
       <LegacyFunctionCode Name="2525C">UCFSA-</LegacyFunctionCode>
+	  <LegacyEntity ID="FIRES_SURVEY_AIRBORNE_MOD_LE" Label="WAR.GRDTRK.UNT.CBT.FLDART.ARTSVY.ABN" Graphic="S-G-UCFSA-.svg">
+		<LegacyFunctionCode Name="2525C">UCFSA-</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_SURVEY_LIGHT_MOD_SYM" Label="S*GPUCFSL-*****" EntityID="FIRES" EntityTypeID="SURVEY" ModifierTwoID="LIGHT_MOD">
       <LegacyFunctionCode Name="2525C">UCFSL-</LegacyFunctionCode>
+	  <LegacyEntity ID="FIRES_SURVEY_LIGHT_MOD_LE" Label="WAR.GRDTRK.UNT.CBT.FLDART.ARTSVY.LIT" Graphic="S-G-UCFSL-.svg">
+		LegacyFunctionCode Name="2525C">UCFSL-</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_SURVEY_MOUNTAIN_MOD_SYM" Label="S*GPUCFSO-*****" EntityID="FIRES" EntityTypeID="SURVEY" ModifierTwoID="MOUNTAIN_MOD">
       <LegacyFunctionCode Name="2525C">UCFSO-</LegacyFunctionCode>
+	  <LegacyEntity ID="FIRES_SURVEY_MOUNTAIN_MOD_LE" Label="WAR.GRDTRK.UNT.CBT.FLDART.ARTSVY.MNT" Graphic="S-G-UCFSO-.svg">
+		<LegacyFunctionCode Name="2525C">UCFSO-</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="PROTECTION_CHEMICAL_BIOLOGICAL_RADIOLOGICAL_NUCLEAR_DEFENSE_SYM" Label="S*GPUUA---*****" EntityID="PROTECTION" EntityTypeID="CHEMICAL_BIOLOGICAL_RADIOLOGICAL_NUCLEAR_DEFENSE">
       <LegacyFunctionCode Name="2525C">UUA---</LegacyFunctionCode>
@@ -2691,12 +2730,18 @@
     </LegacySymbol>
     <LegacySymbol ID="PROTECTION_CHEMICAL_BIOLOGICAL_RADIOLOGICAL_NUCLEAR_DEFENSE_SMOKE_MOD_DECONTAMINATION_2_MOD_SYM" Label="S*GPUUACC-*****" EntityID="PROTECTION" EntityTypeID="CHEMICAL_BIOLOGICAL_RADIOLOGICAL_NUCLEAR_DEFENSE" ModifierOneID="SMOKE_MOD" ModifierTwoID="DECONTAMINATION_2_MOD">
       <LegacyFunctionCode Name="2525C">UUACC-</LegacyFunctionCode>
+	  <LegacyEntity ID="PROTECTION_CHEMICAL_BIOLOGICAL_RADIOLOGICAL_NUCLEAR_DEFENSE_SMOKE_MOD_DECONTAMINATION_2_MOD_LE" Label="WAR.GRDTRK.UNT.CS.CBRN.CML.SMKDEC" Graphic="S-G-UUACC-.svg"
+		<LegacyFunctionCode Name="2525C">UUACC-</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="PROTECTION_CHEMICAL_BIOLOGICAL_RADIOLOGICAL_NUCLEAR_DEFENSE_CBRN_MECHANIZED_SMOKE_MOD_SYM" Label="S*GPUUACSA*****" EntityID="PROTECTION" EntityTypeID="CHEMICAL_BIOLOGICAL_RADIOLOGICAL_NUCLEAR_DEFENSE" EntitySubTypeID="CBRN_MECHANIZED" ModifierOneID="SMOKE_MOD">
       <LegacyFunctionCode Name="2525C">UUACSA</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="PROTECTION_CHEMICAL_BIOLOGICAL_RADIOLOGICAL_NUCLEAR_DEFENSE_CBRN_MECHANIZED_SMOKE_MOD_DECONTAMINATION_2_MOD_SYM" Label="S*GPUUACCK*****" EntityID="PROTECTION" EntityTypeID="CHEMICAL_BIOLOGICAL_RADIOLOGICAL_NUCLEAR_DEFENSE" EntitySubTypeID="CBRN_MECHANIZED" ModifierOneID="SMOKE_MOD" ModifierTwoID="DECONTAMINATION_2_MOD">
       <LegacyFunctionCode Name="2525C">UUACCK</LegacyFunctionCode>
+	  <LegacyEntity ID="PROTECTION_CHEMICAL_BIOLOGICAL_RADIOLOGICAL_NUCLEAR_DEFENSE_CBRN_MECHANIZED_SMOKE_MOD_DECONTAMINATION_2_MOD_LE" Label="WAR.GRDTRK.UNT.CS.CBRN.CML.SMKDEC.MECH" Graphic="S-G-UUACCK.svg">
+		<LegacyFunctionCode Name="2525C">UUACCK</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="PROTECTION_CHEMICAL_BIOLOGICAL_RADIOLOGICAL_NUCLEAR_DEFENSE_CBRN_MOTORIZED_SMOKE_MOD_SYM" Label="S*GPUUACSM*****" EntityID="PROTECTION" EntityTypeID="CHEMICAL_BIOLOGICAL_RADIOLOGICAL_NUCLEAR_DEFENSE" EntitySubTypeID="CBRN_MOTORIZED" ModifierOneID="SMOKE_MOD">
       <LegacyFunctionCode Name="2525C">UUACSM</LegacyFunctionCode>
@@ -2721,6 +2766,9 @@
     </LegacySymbol>
     <LegacySymbol ID="PROTECTION_COMBAT_SUPPORT_MANEUVER_ENHANCEMENT_SYM" Label="S*GPUU----*****" EntityID="PROTECTION" EntityTypeID="COMBAT_SUPPORT_MANEUVER_ENHANCEMENT">
       <LegacyFunctionCode Name="2525C">UU----</LegacyFunctionCode>
+	  <LegacyEntity ID="PROTECTION_COMBAT_SUPPORT_MANEUVER_ENHANCEMENT_LE" Label="WAR.GRDTRK.UNT.CS" Graphic="S-G-UU----.svg">
+		<LegacyFunctionCode Name="2525C">UU----</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="PROTECTION_CRIMINAL_INVESTIGATION_DIVISION_SYM" Label="S*GPUULD--*****" EntityID="PROTECTION" EntityTypeID="CRIMINAL_INVESTIGATION_DIVISION">
       <LegacyFunctionCode Name="2525C">UULD--</LegacyFunctionCode>
@@ -3068,6 +3116,9 @@
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_ORDNANCE_SYM" Label="S*GPUSXO--*****" EntityID="SUSTAINMENT" EntityTypeID="ORDNANCE">
       <LegacyFunctionCode Name="2525C">USXO--</LegacyFunctionCode>
+	  <LegacyEntity ID="SUSTAINMENT_ORDNANCE_LE" Label="WAR.GRDTRK.UNT.CSS.MAINT.ORD" Graphic="S-G-USXO--.svg">
+		<LegacyFunctionCode Name="2525C">USXO--</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_ORDNANCE_CORPS_SYM" Label="S*GPUSXOC-*****" EntityID="SUSTAINMENT" EntityTypeID="ORDNANCE" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USXOC-</LegacyFunctionCode>
@@ -3104,6 +3155,9 @@
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_QUARTERMASTER_SYM" Label="S*GPUSAQ--*****" EntityID="SUSTAINMENT" EntityTypeID="QUARTERMASTER">
       <LegacyFunctionCode Name="2525C">USAQ--</LegacyFunctionCode>
+	  <LegacyEntity ID="SUSTAINMENT_QUARTERMASTER_LE" Label="WAR.GRDTRK.UNT.CSS.ADMIN.SUPPLY" Graphic="S-G-USAQ--.svg">
+		<LegacyFunctionCode Name="2525C">USAQ--</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_QUARTERMASTER_CORPS_SYM" Label="S*GPUSAQC-*****" EntityID="SUSTAINMENT" EntityTypeID="QUARTERMASTER" EntitySubTypeID="CORPS_SUPPORT">
       <LegacyFunctionCode Name="2525C">USAQC-</LegacyFunctionCode>
@@ -3170,6 +3224,9 @@
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_TRANSPORTATION_MISSILE_MOD_SYM" Label="S*GPUSTI--*****" EntityID="SUSTAINMENT" EntityTypeID="TRANSPORTATION" ModifierOneID="MISSILE_MOD">
       <LegacyFunctionCode Name="2525C">USTI--</LegacyFunctionCode>
+	  <LegacyEntity ID="SUSTAINMENT_TRANSPORTATION_MISSILE_MOD_LE" Label="WAR.GRDTRK.UNT.CSS.TPT.MSL" Graphic="S-G-USTI--.svg">
+		<LegacyFunctionCode Name="2525C">USTI--</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_TRANSPORTATION_MOVEMENT_CONTROL_CENTER_MOD_SYM" Label="S*GPUSTM--*****" EntityID="SUSTAINMENT" EntityTypeID="TRANSPORTATION" ModifierOneID="MOVEMENT_CONTROL_CENTER_MOD">
       <LegacyFunctionCode Name="2525C">USTM--</LegacyFunctionCode>
