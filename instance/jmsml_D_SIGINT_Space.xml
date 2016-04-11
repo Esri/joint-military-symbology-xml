@@ -236,6 +236,9 @@
   <LegacySymbols>
     <LegacySymbol ID="SIGNAL_INTERCEPT_COMMUNICATIONS_SATELLITE_DOWNLINK_MOD_SYM" Label="I*PPSCD-----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="COMMUNICATIONS" ModifierOneID="SATELLITE_DOWNLINK_MOD">
       <LegacyFunctionCode Name="2525C">SCD---</LegacyFunctionCode>
+	  <LeagcyEntity ID="SIGNAL_INTERCEPT_COMMUNICATIONS_SATELLITE_DOWNLINK_MOD_LE" Label="SIGINT.SPC.SIGINC.COMM.SATDL" Graphic="I-P-SCD---.svg">
+		<LegacyFunctionCode Name="2525C">SCD---</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_COMMUNICATIONS_SYM" Label="I*APSCC-----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="COMMUNICATIONS">
       <LegacyFunctionCode Name="2525C" DimensionOverride="A">SCC---</LegacyFunctionCode>
@@ -245,24 +248,45 @@
     </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_DATA_TRANSMISSION_MOD_SYM" Label="I*PPSRD-----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="DATA_TRANSMISSION_MOD">
       <LegacyFunctionCode Name="2525C">SRD---</LegacyFunctionCode>
+	  <LegacyEntity ID="SIGNAL_INTERCEPT_RADAR_DATA_TRANSMISSION_MOD_LE" Label="SIGINT.SPC.SIGINC.RAD.DATTMN" Graphic="I-P=SRD---.svg">
+		<LegacyFunctionCode Name="2525C">SRD---</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_EARTH_SURVEILLANCE_MOD_SYM" Label="I*PPSRE-----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="EARTH_SURVEILLANCE_MOD">
       <LegacyFunctionCode Name="2525C">SRE---</LegacyFunctionCode>
+	  <LeagcyEntity ID="SIGNAL_INTERCEPT_RADAR_EARTH_SURVEILLANCE_MOD_LE" Label="SIGINT.SPC.SIGINC.RAD.ERHSVL" Graphic="I-P-SRE---.svg">
+		<LegacyFunctionCode Name="2525C">SRE---</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_IFF_TRANSPONDER_MOD_SYM" Label="I*PPSRI-----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="IFF_TRANSPONDER_MOD">
       <LegacyFunctionCode Name="2525C">SRI---</LegacyFunctionCode>
+	  <LegacyEntity ID="SIGNAL_INTERCEPT_RADAR_IFF_TRANSPONDER_MOD_LE" Label="SIGINT.SPC.SIGINC.RAD.IFF" Graphic="I-P-SRI---.svg">
+		<LegacyFunctionCode Name="2525C">SRI---</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_MULTI_FUNCTION_MOD_SYM" Label="I*PPSRM-----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="MULTI_FUNCTION_MOD">
       <LegacyFunctionCode Name="2525C">SRM---</LegacyFunctionCode>
+	  <LegacyEntity ID="SIGNAL_INTERCEPT_RADAR_MULTI_FUNCTION_MOD_LE" Label="SIGINT.SPC.SIGINC.RAD.MFN" Graphic="I-P-SRM---.svg">
+		<LegacyFunctionCode Name="2525C">SRM---</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_TARGET_ACQUISITION_MOD_SYM" Label="I*PPSRT-----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="TARGET_ACQUISITION_MOD">
       <LegacyFunctionCode Name="2525C">SRT---</LegacyFunctionCode>
+	  <LegacyEntity ID="SIGNAL_INTERCEPT_RADAR_TARGET_ACQUISITION_MOD_LE" Label="SIGINT.SPC.SIGINC.RAD.TGTAQ" Graphic="I-P-SRT---.svg">
+		<LegacyFunctionCode Name="2525C">SRT---</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_SPACE_MOD_SYM" Label="I*PPSRS-----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="SPACE_MOD">
       <LegacyFunctionCode Name="2525C">SRS---</LegacyFunctionCode>
+	  <LegacyEntity ID="SIGNAL_INTERCEPT_RADAR_SPACE_MOD_LE" Label="SIGINT.SPC.SIGINC.RAD.SPC" Graphic="I-P-SRS---.svg">
+		<LegacyFunctionCode Name="2525C">SRS---</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_UNKNOWN_MOD_SYM" Label="I*PPSRU-----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="UNKNOWN_MOD">
       <LegacyFunctionCode Name="2525C">SRU---</LegacyFunctionCode>
+	  <LeagcyEntity ID="SIGNAL_INTERCEPT_RADAR_UNKNOWN_MOD_LE" Label="I-P-SRU---.svg">
+		<LegacyFunctionCode Name="2525C">SRU---</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
   </LegacySymbols>
 </SymbolSet>
