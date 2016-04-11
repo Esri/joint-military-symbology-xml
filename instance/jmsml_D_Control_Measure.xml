@@ -3843,6 +3843,9 @@
     </LegacySymbol>
     <LegacySymbol ID="COMMAND_CONTROL_POINTS_CC_WAYPOINT_SYM" Label="G*GPGPPW--****X" EntityID="COMMAND_CONTROL_POINTS" EntityTypeID="CC_WAYPOINT">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">GPPW--</LegacyFunctionCode>
+	  <LegacyEntity ID="COMMAND_CONTROL_POINTS_CC_WAYPOINT_LE" Label="TACGRP.C2GM.GNL.PNT.ACTPNT.WAP" Graphic="G-G-GPPW--.svg">
+		<LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">GPPW--</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MANEUVER_LINES_FORWARD_LINE_OF_TROOPS_FLOT_FRIENDLY_PRESENT_SYM" Label="G*GPGLF---****X" EntityID="MANEUVER_LINES" EntityTypeID="FORWARD_LINE_OF_TROOPS" EntitySubTypeID="FLOT_FRIENDLY_PRESENT">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">GLF---</LegacyFunctionCode>
@@ -4009,6 +4012,9 @@
     </LegacySymbol>
     <LegacySymbol ID="MANEUVER_POINTS_OBSERVATION_POST_OUTPOST_SPECIFIED_SENSOR_OUTPOST_LISTENING_POST_SYM" Label="G*GPDPOS--****X" EntityID="MANEUVER_POINTS" EntityTypeID="OBSERVATION_POST_OUTPOST_SPECIFIED" EntitySubTypeID="SENSOR_OUTPOST_LISTENING_POST">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">DPOS--</LegacyFunctionCode>
+	  <LegacyEntity ID="MANEUVER_POINTS_OBSERVATION_POST_OUTPOST_SPECIFIED_SENSOR_OUTPOST_LISTENING_POST_LE" Label="TACGRP.C2GM.DEF.PNT.OBSPST.SOP" Graphic="G-G-DPOS--.svg">
+		<LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">DPOS--</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MANEUVER_POINTS_OBSERVATION_POST_OUTPOST_SPECIFIED_COMBAT_OUTPOST_SYM" Label="G*GPDPOC--****X" EntityID="MANEUVER_POINTS" EntityTypeID="OBSERVATION_POST_OUTPOST_SPECIFIED" EntitySubTypeID="COMBAT_OUTPOST">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">DPOC--</LegacyFunctionCode>
@@ -4249,15 +4255,24 @@
     </LegacySymbol>
     <LegacySymbol ID="MARITIME_CONTROL_POINTS_NAVIGATIONAL_REFERENCE_POINT_SYM" Label="G*GPGPRN--****X" EntityID="MARITIME_CONTROL_POINTS" EntityTypeID="NAVIGATIONAL_REFERENCE_POINT">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">GPRN--</LegacyFunctionCode>
+	  <LegacyEntity ID="MARITIME_CONTROL_POINTS_NAVIGATIONAL_REFERENCE_POINT_LE" Label="TACGRP.C2GM.GNL.PNT.REFPNT.NAVREF" Graphic="G-G-GPRN--.svg">
+		<LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">GPRN--</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MARITIME_CONTROL_POINTS_DATA_LINK_REFERENCE_POINT_SYM" Label="G*GPGPRD--****X" EntityID="MARITIME_CONTROL_POINTS" EntityTypeID="DATA_LINK_REFERENCE_POINT">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">GPRD--</LegacyFunctionCode>
+	  <LegacyEntity ID="MARITIME_CONTROL_POINTS_DATA_LINK_REFERENCE_POINT_LE" Label="TACGRP.C2GM.GNL.PNT.REFPNT.DLRP" Graphic="G-G-GPRD--.svg">
+		<LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">GPRD--</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MARITIME_CONTROL_POINTS_CORRIDOR_TAB_POINT_SYM" Label="G*GPGPRC--****X" EntityID="MARITIME_CONTROL_POINTS" EntityTypeID="CORRIDOR_TAB_POINT">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">GPRC--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MARITIME_CONTROL_POINTS_MARSHALL_POINT_SYM" Label="G*GPGPRM--****X" EntityID="MARITIME_CONTROL_POINTS" EntityTypeID="MARSHALL_POINT">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">GPRM--</LegacyFunctionCode>
+	  <LegacyEntity ID="MARITIME_CONTROL_POINTS_MARSHALL_POINT_LE" Label="TACGRP.C2GM.GNL.PNT.REFPNT.MRSH" Graphic="G-G-GPRM--.svg">
+		<LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">GPRM--</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MARITIME_CONTROL_POINTS_POSITION_INTENDED_MOVEMENT_PIM_SYM" Label="G*GPGPRP--****X" EntityID="MARITIME_CONTROL_POINTS" EntityTypeID="POSITION_INTENDED_MOVEMENT_PIM">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">GPRP--</LegacyFunctionCode>
@@ -4655,6 +4670,9 @@
     </LegacySymbol>
     <LegacySymbol ID="PROTECTION_AREAS_MINEFIELD_MINEFIELD_DUMMY_SYM" Label="G*GPPN----****X" EntityID="PROTECTION_AREAS" EntityTypeID="MINEFIELD" EntitySubTypeID="MINEFIELD_DUMMY">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">PN----</LegacyFunctionCode>
+	  <LegacyEntity ID="PROTECTION_AREAS_MINEFIELD_MINEFIELD_DUMMY_LE" Label="TACGRP.C2GM.DCPN.DMYMS" Graphic="G-G-PN----.svg">
+		<LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">PN----</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="PROTECTION_AREAS_MINEFIELD_MINEFIELD_DUMMY_DYMANIC_SYM" Label="G*GPPC----****X" EntityID="PROTECTION_AREAS" EntityTypeID="MINEFIELD" EntitySubTypeID="MINEFIELD_DUMMY_DYMANIC">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">PC----</LegacyFunctionCode>
@@ -4757,15 +4775,27 @@
     </LegacySymbol>
     <LegacySymbol ID="PROTECTION_POINTS_CHEMICAL_EVENT_SYM" Label="G*MPNEC---****X" EntityID="PROTECTION_POINTS" EntityTypeID="CHEMICAL_EVENT">
       <LegacyFunctionCode Name="2525C" DimensionOverride="M" TailOverride="--X">NEC---</LegacyFunctionCode>
+	  <LegacyEntity ID="PROTECTION_POINTS_CHEMICAL_EVENT_LE" Label="TACGRP.MOBSU.CBRN.REEVNT.CML" Graphic="G-G-NEC---.svg">
+		<LegacyFunctionCode Name="2525C" DimensionOverride="M" TailOverride="--X">NEC---</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="PROTECTION_POINTS_BIOLOGICAL_EVENT_SYM" Label="G*MPNEB---****X" EntityID="PROTECTION_POINTS" EntityTypeID="BIOLOGICAL_EVENT">
       <LegacyFunctionCode Name="2525C" DimensionOverride="M" TailOverride="--X">NEB---</LegacyFunctionCode>
+	  <LegacyEntity ID="PROTECTION_POINTS_BIOLOGICAL_EVENT_LE" Label="TACGRP.MOBSU.CBRN.REEVNT.BIO" Graphic="G-G-NEB---.svg">
+		<LegacyFunctionCode Name="2525C" DimensionOverride="M" TailOverride="--X">NEB---</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="PROTECTION_POINTS_NUCLEAR_EVENT_SYM" Label="G*MPNZ----****X" EntityID="PROTECTION_POINTS" EntityTypeID="NUCLEAR_EVENT">
       <LegacyFunctionCode Name="2525C" DimensionOverride="M" TailOverride="--X">NZ----</LegacyFunctionCode>
+	  <LegacyEntity ID="PROTECTION_POINTS_NUCLEAR_EVENT_LE" Label="TACGRP.MOBSU.CBRN.NDGZ" Graphic="G-G-NZ----.svg">
+		<LegacyFunctionCode Name="2525C" DimensionOverride="M" TailOverride="--X">NZ----</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="PROTECTION_POINTS_NUCLEAR_FALLOUT_PRODUCING_EVENT_SYM" Label="G*MPNF----****X" EntityID="PROTECTION_POINTS" EntityTypeID="NUCLEAR_FALLOUT_PRODUCING_EVENT">
       <LegacyFunctionCode Name="2525C" DimensionOverride="M" TailOverride="--X">NF----</LegacyFunctionCode>
+	  <LegacyEntity ID="PROTECTION_POINTS_NUCLEAR_FALLOUT_PRODUCING_EVENT_LE" Label="TACGRP.MOBSU.CBRN.FAOTP" Graphic="G-G-NF----.svg">
+		<LegacyFunctionCode Name="2525C" DimensionOverride="M" TailOverride="--X">NF----</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="PROTECTION_POINTS_GENERAL_DECONTAMINATION_POINT_SITE_SYM" Label="G*MPNDP---****X" EntityID="PROTECTION_POINTS" EntityTypeID="GENERAL_DECONTAMINATION_POINT_SITE">
       <LegacyFunctionCode Name="2525C" DimensionOverride="M" TailOverride="--X">NDP---</LegacyFunctionCode>
