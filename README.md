@@ -28,7 +28,7 @@ In providing this schema, files of instance data, and sample C# code to navigate
   * Define all the classes needed to import the XML instance data.
   * Navigate the aforementioned classes to perform the following functions:
     * Convert from old style 15-character SIDC to new style 20-digit SIDC.
-    * Convert from new style 20-digit SIDC to new style 15-character SIDC.
+    * Convert from new style 20-digit SIDC to old style 15-character SIDC.
   * Test the above functions.
 
 ## Sections
