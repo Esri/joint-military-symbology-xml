@@ -21,7 +21,7 @@
 * Ensure that an appropriate SVG converter is installed
     * This utility has been tested with Inkscape, but several others are available
     * Inkscape is available at: http://www.inkscape.org/en/download/
-    * It is recommended that you use the [.7zip version](http://downloads.sourceforge.net/inkscape/inkscape-0.48.4-1-win32.7z) which allows you to extract anywhere (so you don't put a space in the path)
+    * It is recommended that you use the [7-zip version](https://inkscape.org/en/download/) of Inkscape which allows you to extract anywhere (so you don't put a space in the path)
 * Select the desired .bat that matches your desired conversion method
     * e.g. `ConvertTree-SVGtoEMF.bat` to convert an SVG tree to Enhanced Metafile Format (EMF) 
 * IMPORTANT: Modify the converter .bat command file to match your local paths
