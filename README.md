@@ -67,7 +67,7 @@ In providing this schema, files of instance data, and sample C# code to navigate
         * `cd joint-military-symbology-xml\source\JointMilitarySymbologyLibraryCS`
         * `msbuild JointMilitarySymbologyLibrary.sln /property:Configuration=Release`
             * NOTE: if you recieve an error message: `'msbuild' is not recognized` 
-            * You may need to add the path the .NET Framework SDK (if multiple SDKs are installed)
+            * You may need to add the path to the .NET Framework SDK (if multiple SDKs are installed)
             * E.g. `set path=%path%;C:\Windows\Microsoft.NET\Framework\v4.0.30319`
 * Use the UnitTests project and the Visual Studio Test tools to run the unit tests provided.  These will test various aspects of the source used to navigate the XML data and convert symbol ID codes (SIDC) from one military symbology standard to another.
 * To run the unit tests from a command line:
