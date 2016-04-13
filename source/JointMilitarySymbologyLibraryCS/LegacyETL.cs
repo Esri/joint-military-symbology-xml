@@ -26,6 +26,7 @@ namespace JointMilitarySymbologyLibrary
         private ConfigHelper _helper;
         private JMSMLConfigETLConfig _etlConfig;
         private Librarian _lib;
+        private List<string> _icons = new List<string>();
 
         public LegacyETL(ConfigHelper helper, JMSMLConfigETLConfig config)
         {
@@ -77,7 +78,8 @@ namespace JointMilitarySymbologyLibrary
 
         private int _exportHQTFFDs(StreamWriter w, bool isFirst, string standard, int id)
         {
-            IHQTFFDExport hqTFFDEx = new LegacyHQTFFDExport(_helper, standard);
+            LegacyHQTFFDExport legacyHQTFFD = new LegacyHQTFFDExport(_helper, standard);
+            IHQTFFDExport hqTFFDEx = (IHQTFFDExport)legacyHQTFFD;
 
             if (isFirst)
             {
@@ -92,13 +94,16 @@ namespace JointMilitarySymbologyLibrary
             {
                 if (hqtffd.Graphics != null)
                 {
-                    foreach (LibraryHQTFDummyGraphic graphic in hqtffd.Graphics)
+                    foreach (LegacyLetterCodeType legacyCode in hqtffd.LegacyHQTFDummyCode)
                     {
-                        string line = id.ToString() + "," + hqTFFDEx.Line(hqtffd, graphic);
-                        id++;
+                        foreach (LibraryHQTFDummyGraphic graphic in hqtffd.Graphics)
+                        {
+                            string line = id.ToString() + "," + legacyHQTFFD.Line(legacyCode.CodingSchemeLetter, hqtffd, graphic);
+                            id++;
 
-                        w.WriteLine(line);
-                        w.Flush();
+                            w.WriteLine(line);
+                            w.Flush();
+                        }
                     }
                 }
             }
@@ -108,7 +113,8 @@ namespace JointMilitarySymbologyLibrary
 
         private int _exportAmplifiers(StreamWriter w, bool isFirst, string standard, int id)
         {
-            IAmplifierExport amplifierEx = new LegacyAmplifierExport(_helper, standard);
+            LegacyAmplifierExport legacyAmplifierExport = new LegacyAmplifierExport(_helper, standard);
+            IAmplifierExport amplifierEx = (IAmplifierExport)legacyAmplifierExport;
 
             if (isFirst)
             {
@@ -125,13 +131,16 @@ namespace JointMilitarySymbologyLibrary
                 {
                     if (amplifier.Graphics != null)
                     {
-                        foreach (LibraryAmplifierGroupAmplifierGraphic graphic in amplifier.Graphics)
+                        foreach (LegacyLetterCodeType legacyModifier in group.LegacyModifierCode)
                         {
-                            string line = id.ToString() + "," + amplifierEx.Line(group, amplifier, graphic);
-                            id++;
+                            foreach (LibraryAmplifierGroupAmplifierGraphic graphic in amplifier.Graphics)
+                            {
+                                string line = id.ToString() + "," + legacyAmplifierExport.Line(legacyModifier.CodingSchemeLetter, group, amplifier, graphic);
+                                id++;
 
-                            w.WriteLine(line);
-                            w.Flush();
+                                w.WriteLine(line);
+                                w.Flush();
+                            }
                         }
                     }
                 }
@@ -220,7 +229,7 @@ namespace JointMilitarySymbologyLibrary
 
                     foreach (LegacyLetterCodeType legacyFrame in affiliation.LegacyFrames)
                     {
-                        if (legacyFrame.Name == standard && legacyFrame.Function == "")
+                        if (legacyFrame.Function == "")
                         {
                             fe.LegacyFrame = legacyFrame;
 
@@ -315,17 +324,86 @@ namespace JointMilitarySymbologyLibrary
             }
         }
 
-        public void ExportLegacyLookup(string path, string standard, bool asOriginal)
+        private void _exportLegacyFrames(StreamWriter w, bool isFirst, string standard, long size)
         {
-            using (StreamWriter stream = new StreamWriter(path, false))
+            IFrameExport frameEx = new LegacyFrameGraphicExport(_helper, standard);
+
+            _icons.Clear();
+
+            if (isFirst)
+            {
+                w.WriteLine(frameEx.Headers);
+                w.Flush();
+            }
+
+            foreach (LibraryAffiliation affiliation in _lib.Library.Affiliations)
+            {
+                if (affiliation.LegacyFrames != null)
+                {
+                    LegacyFrameGraphicExport fe = (LegacyFrameGraphicExport)frameEx;
+                    fe.Affiliation = affiliation;
+
+                    foreach (LegacyLetterCodeType legacyFrame in affiliation.LegacyFrames)
+                    {
+                        if (legacyFrame.LimitUseTo == standard && legacyFrame.Function == "")
+                        {
+                            fe.LegacyFrame = legacyFrame;
+
+                            string id = fe.IDIt(_lib.Status(0));
+
+                            if (! _icons.Contains(id))
+                            {
+                                _icons.Add(id);
+
+                                LibraryContext context = _lib.Context(affiliation.ContextID);
+                                LibraryStandardIdentity identity = _lib.StandardIdentity(affiliation.StandardIdentityID);
+                                LibraryDimension dimension = _lib.Dimension(affiliation.DimensionID);
+
+                                string line = frameEx.Line(_lib, context, identity, dimension, _lib.Status(0), false, false);
+
+                                w.WriteLine(line);
+                                w.Flush();
+
+                                //if (legacyFrame.IsPlanned)
+                                //{
+                                //    LibraryStatus status = _lib.Status(1);
+
+                                //    id = fe.IDIt(status);
+
+                                //    if (!_icons.Contains(id))
+                                //    {
+                                //        _icons.Add(id);
+
+                                //        status.LabelAlias = "Planned";
+                                //        line = frameEx.Line(_lib, context, identity, dimension, status, false, false);
+                                //        status.LabelAlias = "";
+
+                                //        w.WriteLine(line);
+                                //        w.Flush();
+                                //    }
+                                //}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        public void ExportLegacyLookup(string path, string standard, bool asOriginal, bool includeAmplifiers, bool append)
+        {
+            using (StreamWriter stream = new StreamWriter(path, append))
             {
                 int id = 0;
 
-                id = _exportFrames(stream, true, "2525C", id);
-                id = _exportSymbols(stream, false, "2525C", id, asOriginal);
-                id = _exportAmplifiers(stream, false, "2525C", id);
-                id = _exportHQTFFDs(stream, false, "2525C", id);
-                id = _exportOCAs(stream, false, "2525C", id);
+                id = _exportFrames(stream, true, standard, id);
+                id = _exportSymbols(stream, false, standard, id, asOriginal);
+
+                if (includeAmplifiers)
+                {
+                    id = _exportAmplifiers(stream, false, "2525C", id);
+                    id = _exportHQTFFDs(stream, false, "2525C", id);
+                    id = _exportOCAs(stream, false, "2525C", id);
+                }
             }
         }
 
@@ -338,6 +416,16 @@ namespace JointMilitarySymbologyLibrary
             using (StreamWriter stream = new StreamWriter(path, didFileExist))
             {
                 _exportLegacyEntities(stream, !didFileExist, standard, size);
+            }
+        }
+
+        public void ExportLegacyFrames(string path, string standard, long size, bool append = false)
+        {
+            path = path + ".csv";
+
+            using (StreamWriter stream = new StreamWriter(path, append))
+            {
+                _exportLegacyFrames(stream, !append, standard, size);
             }
         }
     }

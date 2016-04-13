@@ -164,16 +164,13 @@ namespace JointMilitarySymbologyLibrary
             return result;
         }
 
-        protected string BuildSIDCKey(LibraryAmplifierGroup amplifierGroup,
+        protected string BuildSIDCKey(string codingScheme,
+                                      LibraryAmplifierGroup amplifierGroup,
                                       LibraryAmplifierGroupAmplifier amplifier,
                                       LibraryStandardIdentityGroup identityGroup)
         {
-            string key = "";
+            string key = codingScheme;
 
-            // TODO: WIll need to consider expanding this to support more than just
-            // the UEI symbols
-
-            key = "S";
             key = key + identityGroup.LegacyStandardIdentityCode[0].Value;
             key = key + "-";
 
