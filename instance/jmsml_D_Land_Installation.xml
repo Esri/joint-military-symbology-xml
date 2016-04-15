@@ -1067,9 +1067,9 @@
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_NUCLEAR_DEFENSE_WEAPONS_GRADE_MOD_SYM" Label="S*GPIMFPW-H****" EntityID="INSTALLATION" EntityTypeID="NUCLEAR_DEFENSE" ModifierTwoID="WEAPONS_GRADE_MOD">
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMFPW-</LegacyFunctionCode>
-	  <LegacyEntity ID="INSTALLATION_NUCLEAR_DEFENSE_WEAPONS_GRADE_MOD_LE" Label="WAR.GRDTRK.INS.MMF.NENY.NMP.WPNGR" Graphic="S-G-IMFPW-.svg">
-		<LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMFPW-</LegacyFunctionCode>
-	  </LegacyEntity>
+	    <LegacyEntity ID="INSTALLATION_NUCLEAR_DEFENSE_WEAPONS_GRADE_MOD_LE" Label="WAR.GRDTRK.INS.MMF.NENY.NMP.WPNGR" Graphic="S-G-IMFPW-.svg">
+		    <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMFPW-</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_SAFE_HOUSE_SYM" Label="O*IPS-----*****" EntityID="INSTALLATION" EntityTypeID="SAFE_HOUSE">
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="I">S-----</LegacyFunctionCode>

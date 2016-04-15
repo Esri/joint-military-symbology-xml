@@ -1793,9 +1793,9 @@
     </LegacySymbol>
     <LegacySymbol ID="ENGINEER_VEHICLES_EQUIPMENT_BRIDGE_SYM" Label="S*GPEVEB--*****" EntityID="ENGINEER_VEHICLES_EQUIPMENT" EntityTypeID="BRIDGE">
       <LegacyFunctionCode Name="2525C">EVEB--</LegacyFunctionCode>
-	  <LegacyEntity ID="ENGINEER_VEHICLES_EQUIPMENT_BRIDGE_LE" Label="WAR.GRDTRK.EQT.GRDVEH.ENGVEH.BRG" Graphic="S-G-EVEB--.svg">
-		<LegacyFunctionCode Name="2525C">EVEB--</LegacyFunctionCode>
-	  </LegacyEntity>
+	    <LegacyEntity ID="ENGINEER_VEHICLES_EQUIPMENT_BRIDGE_LE" Label="WAR.GRDTRK.EQT.GRDVEH.ENGVEH.BRG" Graphic="S-G-EVEB--.svg">
+		    <LegacyFunctionCode Name="2525C">EVEB--</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="ENGINEER_VEHICLES_EQUIPMENT_EARTHMOVER_SYM" Label="S*GPEVEE--*****" EntityID="ENGINEER_VEHICLES_EQUIPMENT" EntityTypeID="EARTHMOVER">
       <LegacyFunctionCode Name="2525C">EVEE--</LegacyFunctionCode>
@@ -1961,9 +1961,9 @@
     </LegacySymbol>
     <LegacySymbol ID="CIVILIAN_VEHICLE_TRACTOR_TRAILER_FLATBED_TRACTOR_TRAILER_BED_LIGHT_SYM" Label="S*GPEVCFL-*****" EntityID="CIVILIAN_VEHICLE" EntityTypeID="TRACTOR_TRAILER_FLATBED" EntitySubTypeID="TRACTOR_TRAILER_BED_LIGHT">
       <LegacyFunctionCode Name="2525C">EVCFL-</LegacyFunctionCode>
-	  <LegacyEntity ID="CIVILIAN_VEHICLE_TRACTOR_TRAILER_FLATBED_TRACTOR_TRAILER_BED_LIGHT_LE" Label="WAR.GRDTRK.EQT.GRDVEH.CVLVEH.TRTRLF.SMAL" Graphic="S-G-EVCFL-.svg">
-		<LegacyFunctionCode Name="2525C">EVCFL-</LegacyFunctionCode>
-	  </LegacyEntity>
+	    <LegacyEntity ID="CIVILIAN_VEHICLE_TRACTOR_TRAILER_FLATBED_TRACTOR_TRAILER_BED_LIGHT_LE" Label="WAR.GRDTRK.EQT.GRDVEH.CVLVEH.TRTRLF.SMAL" Graphic="S-G-EVCFL-.svg">
+		    <LegacyFunctionCode Name="2525C">EVCFL-</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="CIVILIAN_VEHICLE_TRACTOR_TRAILER_FLATBED_TRACTOR_TRAILER_BED_MEDIUM_SYM" Label="S*GPEVCFM-*****" EntityID="CIVILIAN_VEHICLE" EntityTypeID="TRACTOR_TRAILER_FLATBED" EntitySubTypeID="TRACTOR_TRAILER_BED_MEDIUM">
       <LegacyFunctionCode Name="2525C">EVCFM-</LegacyFunctionCode>
@@ -2045,9 +2045,9 @@
     </LegacySymbol>
     <LegacySymbol ID="LAND_MINES_LAND_MINE_SYM" Label="S*GPEXM---*****" EntityID="LAND_MINES" EntityTypeID="LAND_MINE">
       <LegacyFunctionCode Name="2525C">EXM---</LegacyFunctionCode>
-	  <LegacyEntity ID="LAND_MINES_LAND_MINE_LE" Label="WAR.GRDTRK.EQT.SPL.LNDMNE" Graphic="S-G-EXM---.svg">
-	    <LegacyFunctionCode Name="2525C">EXM---</LegacyFunctionCode>
-	  </LegacyEntity>
+	    <LegacyEntity ID="LAND_MINES_LAND_MINE_LE" Label="WAR.GRDTRK.EQT.SPL.LNDMNE" Graphic="S-G-EXM---.svg">
+	      <LegacyFunctionCode Name="2525C">EXM---</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="LAND_MINES_ANTIPERSONNEL_LAND_MINE_APL_SYM" Label="S*GPEXMC--*****" EntityID="LAND_MINES" EntityTypeID="ANTIPERSONNEL_LAND_MINE_APL">
       <LegacyFunctionCode Name="2525C">EXMC--</LegacyFunctionCode>

@@ -1372,51 +1372,51 @@
     </LegacySymbol>
     <LegacySymbol ID="TRANSPORTATION_INCIDENT_AIR_ACCIDENT_MOD_SYM" Label="E*IPEA----*****" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="AIR" ModifierOneID="ACCIDENT_MOD">
       <LegacyFunctionCode Name="2525C" DimensionOverride="I">EA----</LegacyFunctionCode>
-	  <LegacyEntity ID="TRANSPORTATION_INCIDENT_AIR_ACCIDENT_MOD_LE" Label="EMS.INCDNT.AIR.ACDNT" Graphic="E-I-EA----.svg">
-		<LegacyFunctionCode Name="2525C" DimensionOverride="I">EA----</LegacyFunctionCode>
-	  </LegacyEntity>
+	    <LegacyEntity ID="TRANSPORTATION_INCIDENT_AIR_ACCIDENT_MOD_LE" Label="EMS.INCDNT.AIR.ACDNT" Graphic="E-I-EA----.svg">
+		    <LegacyFunctionCode Name="2525C" DimensionOverride="I">EA----</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="TRANSPORTATION_INCIDENT_AIR_HIJACKING_MOD_SYM" Label="O*OPHA----*****" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="AIR" ModifierOneID="HIJACKING_MOD">
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="O">HA----</LegacyFunctionCode>
-	  <LegacyEntity ID="TRANSPORTATION_INCIDENT_AIR_HIJACKING_MOD_LE" Label="EMS.INCDNT.VEH.ACDNT" Graphic="E-I-HA----.svg">
-		<LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="O">HA----</LegacyFunctionCode>
-	  </LegacyEntity>
+	    <LegacyEntity ID="TRANSPORTATION_INCIDENT_AIR_HIJACKING_MOD_LE" Label="EMS.INCDNT.VEH.ACDNT" Graphic="E-I-HA----.svg">
+		    <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="O">HA----</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="TRANSPORTATION_INCIDENT_AIR_INCIDENT_MOD_SYM" Label="E*IPE-----*****" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="AIR" ModifierOneID="INCIDENT_MOD">
       <LegacyFunctionCode Name="2525C" DimensionOverride="I">E-----</LegacyFunctionCode>
-	  <LegacyEntity ID="TRANSPORTATION_INCIDENT_AIR_INCIDENT_MOD_LE" Label="EMS.INCDNT.AIR" Graphic="E-I-E-----.svg">
-		<LegacyFunctionCode Name="2525C" DimensionOverride="I">E-----</LegacyFunctionCode>
-	  </LegacyEntity>
+	    <LegacyEntity ID="TRANSPORTATION_INCIDENT_AIR_INCIDENT_MOD_LE" Label="EMS.INCDNT.AIR" Graphic="E-I-E-----.svg">
+		    <LegacyFunctionCode Name="2525C" DimensionOverride="I">E-----</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="TRANSPORTATION_INCIDENT_MARINE_ACCIDENT_MOD_SYM" Label="E*IPFA----*****" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="MARINE" ModifierOneID="ACCIDENT_MOD">
       <LegacyFunctionCode Name="2525C" DimensionOverride="I">FA----</LegacyFunctionCode>
-	  <LegacyEntity ID="TRANSPORTATION_INCIDENT_MARINE_ACCIDENT_MOD_LE" Label="EMS.INCDNT.MRN.ACDNT" Graphic="E-I-FA----.svg">
-		<LegacyFunctionCode Name="2525C" DimensionOverride="I">FA----</LegacyFunctionCode>
-	  </LegacyEntity>
+	    <LegacyEntity ID="TRANSPORTATION_INCIDENT_MARINE_ACCIDENT_MOD_LE" Label="EMS.INCDNT.MRN.ACDNT" Graphic="E-I-FA----.svg">
+		    <LegacyFunctionCode Name="2525C" DimensionOverride="I">FA----</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="TRANSPORTATION_INCIDENT_MARINE_HIJACKING_MOD_SYM" Label="O*OPHV----*****" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="MARINE" ModifierOneID="HIJACKING_MOD">
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="O">HV----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="TRANSPORTATION_INCIDENT_MARINE_INCIDENT_MOD_SYM" Label="E*IPF-----*****" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="MARINE" ModifierOneID="INCIDENT_MOD">
       <LegacyFunctionCode Name="2525C" DimensionOverride="I">F-----</LegacyFunctionCode>
-	  <LegacyEntity ID="TRANSPORTATION_INCIDENT_MARINE_INCIDENT_MOD_LE" Label="EMS.INCDNT.MRN" Graphic="E-I-F-----.svg">
-		<LegacyFunctionCode Name="2525C" DimensionOverride="I">F-----</LegacyFunctionCode>
-	  </LegacyEntity>
+	    <LegacyEntity ID="TRANSPORTATION_INCIDENT_MARINE_INCIDENT_MOD_LE" Label="EMS.INCDNT.MRN" Graphic="E-I-F-----.svg">
+		    <LegacyFunctionCode Name="2525C" DimensionOverride="I">F-----</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="TRANSPORTATION_INCIDENT_RAIL_ACCIDENT_MOD_SYM" Label="E*IPGA----*****" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="RAIL" ModifierOneID="ACCIDENT_MOD">
       <LegacyFunctionCode Name="2525C" DimensionOverride="I">GA----</LegacyFunctionCode>
-	  <LegacyEntity ID="TRANSPORTATION_INCIDENT_RAIL_ACCIDENT_MOD_LE" Label="EMS.INCDNT.RAIL.ACDNT" Graphic="E-I-GA----.svg">
-		<LegacyFunctionCode Name="2525C" DimensionOverride="I">GA----</LegacyFunctionCode>
-	  </LegacyEntity> 
+	    <LegacyEntity ID="TRANSPORTATION_INCIDENT_RAIL_ACCIDENT_MOD_LE" Label="EMS.INCDNT.RAIL.ACDNT" Graphic="E-I-GA----.svg">
+		    <LegacyFunctionCode Name="2525C" DimensionOverride="I">GA----</LegacyFunctionCode>
+	    </LegacyEntity> 
     </LegacySymbol>
     <LegacySymbol ID="TRANSPORTATION_INCIDENT_RAIL_HIJACKING_MOD_SYM" Label="E*IPGB----*****" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="RAIL" ModifierOneID="HIJACKING_MOD">
       <LegacyFunctionCode Name="2525C" DimensionOverride="I">GB----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="TRANSPORTATION_INCIDENT_RAIL_INCIDENT_MOD_SYM" Label="E*IPG-----*****" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="RAIL" ModifierOneID="INCIDENT_MOD">
       <LegacyFunctionCode Name="2525C" DimensionOverride="I">G-----</LegacyFunctionCode>
-	  <LegacyEntity ID="TRANSPORTATION_INCIDENT_RAIL_INCIDENT_MOD_LE" Label="EMS.INCDNT.RAIL" Graphic="E-I-G-----.svg">
-		<LegacyFunctionCode Name="2525C" DimensionOverride="I">G-----</LegacyFunctionCode>
-	  </LegacyEntity>
+	    <LegacyEntity ID="TRANSPORTATION_INCIDENT_RAIL_INCIDENT_MOD_LE" Label="EMS.INCDNT.RAIL" Graphic="E-I-G-----.svg">
+		    <LegacyFunctionCode Name="2525C" DimensionOverride="I">G-----</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="TRANSPORTATION_INCIDENT_VEHICLE_ACCIDENT_MOD_SYM" Label="E*IPHA----*****" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="VEHICLE" ModifierOneID="ACCIDENT_MOD">
       <LegacyFunctionCode Name="2525C" DimensionOverride="I">HA----</LegacyFunctionCode>
@@ -1426,9 +1426,9 @@
     </LegacySymbol>
     <LegacySymbol ID="TRANSPORTATION_INCIDENT_VEHICLE_INCIDENT_MOD_SYM" Label="E*IPH-----*****" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="VEHICLE" ModifierOneID="INCIDENT_MOD">
       <LegacyFunctionCode Name="2525C" DimensionOverride="I">H-----</LegacyFunctionCode>
-	  <LegacyEntity ID="TRANSPORTATION_INCIDENT_VEHICLE_INCIDENT_MOD_LE" Label="EMS.INCDNT.VEH" Graphic="E-I-H-----.svg">
-		<LegacyFunctionCode Name="2525C" DimensionOverride="I">H-----</LegacyFunctionCode>
-	  </LegacyEntity>
+	    <LegacyEntity ID="TRANSPORTATION_INCIDENT_VEHICLE_INCIDENT_MOD_LE" Label="EMS.INCDNT.VEH" Graphic="E-I-H-----.svg">
+		    <LegacyFunctionCode Name="2525C" DimensionOverride="I">H-----</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="NATURAL_EVENT_GEOLOGIC_AFTERSHOCK_SYM" Label="E*NPAA----*****" EntityID="NATURAL_EVENT" EntityTypeID="GEOLOGIC" EntitySubTypeID="AFTERSHOCK">
       <LegacyFunctionCode Name="2525C" DimensionOverride="N">AA----</LegacyFunctionCode>
