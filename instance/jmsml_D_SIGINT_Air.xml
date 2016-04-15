@@ -392,7 +392,7 @@
     </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_CONTROLLED_INTERCEPT_MOD_SYM" Label="I*APSRC-----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="CONTROLLED_INTERCEPT_MOD">
       <LegacyFunctionCode Name="2525C">SRC---</LegacyFunctionCode>
-	  <LegacyEntity ID="SIGNAL_INTERCEPT_RADAR_CONTROLLED_INTERCEPT_MOD_SYM" Label="SIGINT.AIRTRK.SIGINC.RAD.CTDINC" Graphic="I-A-SRC---.svg">
+	  <LegacyEntity ID="SIGNAL_INTERCEPT_RADAR_CONTROLLED_INTERCEPT_MOD_LE" Label="SIGINT.AIRTRK.SIGINC.RAD.CTDINC" Graphic="I-A-SRC---.svg">
 		<LegacyFunctionCode Name="2525C">SRC---</LegacyFunctionCode>
 	  </LegacyEntity>
     </LegacySymbol>
@@ -464,7 +464,7 @@
     </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_TARGET_TRACKING_MOD_SYM" Label="I*APSRTT----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="TARGET_TRACKING_MOD">
       <LegacyFunctionCode Name="2525C">SRTT--</LegacyFunctionCode>
-	  <LegacyEntity ID="SIGNAL_INTERCEPT_RADAR_TARGET_TRACKING_MOD_SYM" Label="SIGINT.AIRTRK.SIGINC.RAD.TGTTRK" Graphic="I-A-SRTT--.svg">
+	  <LegacyEntity ID="SIGNAL_INTERCEPT_RADAR_TARGET_TRACKING_MOD_LE" Label="SIGINT.AIRTRK.SIGINC.RAD.TGTTRK" Graphic="I-A-SRTT--.svg">
 		<LegacyFunctionCode Name="2525C">SRTT--</LegacyFunctionCode>
 	  </LegacyEntity>
     </LegacySymbol>

@@ -1132,9 +1132,9 @@
     </LegacySymbol>
     <LegacySymbol ID="INCIDENT_CRIMINAL_ACTIVITY_INCIDENT_CIVIL_RIOTING_SYM" Label="E*IPAC----*****" EntityID="INCIDENT" EntityTypeID="CRIMINAL_ACTIVITY_INCIDENT" EntitySubTypeID="CIVIL_RIOTING">
       <LegacyFunctionCode Name="2525C" DimensionOverride="I">AC----</LegacyFunctionCode>
-	  <LegacyEntity ID="INCIDENT_CRIMINAL_ACTIVITY_INCIDENT_CIVIL_RIOTING_LE" Label="EMS.INCDNT.CVDIS.CVRIOT" Graphic="E-I-AC----.svg">
-		<LegacyFunctionCode Name="2525C" DimensionOverride="I">AC----</LegacyFunctionCode>
-	  </LegacyEntity>
+	    <LegacyEntity ID="INCIDENT_CRIMINAL_ACTIVITY_INCIDENT_CIVIL_RIOTING_LE" Label="EMS.INCDNT.CVDIS.CVRIOT" Graphic="E-I-AC----.svg">
+		    <LegacyFunctionCode Name="2525C" DimensionOverride="I">AC----</LegacyFunctionCode>
+	   </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="INCIDENT_CRIMINAL_ACTIVITY_INCIDENT_BOOBY_TRAP_SYM" Label="O*VPY-----*****" EntityID="INCIDENT" EntityTypeID="CRIMINAL_ACTIVITY_INCIDENT" EntitySubTypeID="BOOBY_TRAP">
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="V">Y-----</LegacyFunctionCode>
@@ -1228,9 +1228,9 @@
     </LegacySymbol>
     <LegacySymbol ID="OPERATION_EMERGENCY_MEDICAL_OPERATION_EMT_STATION_LOCATION_SYM" Label="E*OPAD----H****" EntityID="OPERATION" EntityTypeID="EMERGENCY_MEDICAL_OPERATION" EntitySubTypeID="EMT_STATION_LOCATION">
       <LegacyFunctionCode Name="2525C" DimensionOverride="O" HQTFFDOverride="H">AD----</LegacyFunctionCode>
-	  <LegacyEntity ID="OPERATION_EMERGENCY_MEDICAL_OPERATION_EMT_STATION_LOCATION_LE" Label="EMS.OPN.EMMED.EMTLOC" Graphic="E-O-AD---.svg">
-		<LegacyFunctionCode Name="2525C" DimensionOverride="O" HQTFFDOverride="H">AD----</LegacyFunctionCode>
-	  </LegacyEntity>
+	    <LegacyEntity ID="OPERATION_EMERGENCY_MEDICAL_OPERATION_EMT_STATION_LOCATION_LE" Label="EMS.OPN.EMMED.EMTLOC" Graphic="E-O-AD---.svg">
+		    <LegacyFunctionCode Name="2525C" DimensionOverride="O" HQTFFDOverride="H">AD----</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="OPERATION_EMERGENCY_MEDICAL_OPERATION_HEALTH_DEPARTMENT_FACILITY_SYM" Label="E*OPAG----H****" EntityID="OPERATION" EntityTypeID="EMERGENCY_MEDICAL_OPERATION" EntitySubTypeID="HEALTH_DEPARTMENT_FACILITY">
       <LegacyFunctionCode Name="2525C" DimensionOverride="O" HQTFFDOverride="H">AG----</LegacyFunctionCode>
