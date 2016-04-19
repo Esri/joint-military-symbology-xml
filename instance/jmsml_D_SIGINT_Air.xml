@@ -380,51 +380,99 @@
     </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_AIRBORNE_INTERCEPT_MOD_SYM" Label="I*APSRAI----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="AIRBORNE_INTERCEPT_MOD">
       <LegacyFunctionCode Name="2525C">SRAI--</LegacyFunctionCode>
+	    <LegacyEntity ID="SIGNAL_INTERCEPT_RADAR_AIRBORNE_INTERCEPT_MOD_LE" Label="SIGINT.AIRTRK.SIGINC.RAD.ABNINC" Graphic="I-A-SRAI--.svg">
+		    <LegacyFunctionCode Name="2525C">SRAI--</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_AIRBORNE_SEARCH_AND_BOMBING_MOD_SYM" Label="I*APSRAS----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="AIRBORNE_SEARCH_AND_BOMBING_MOD">
       <LegacyFunctionCode Name="2525C">SRAS--</LegacyFunctionCode>
+	    <LegacyEntity ID="SIGNAL_INTERCEPT_RADAR_AIRBORNE_SEARCH_AND_BOMBING_MOD_LE" Label="SIGINT.AIRTRK.SIGINC.RAD.ABNSB" Graphic="I-A-SRAS--.svg">
+		    <LegacyFunctionCode Name="2525C">SRAS--</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_CONTROLLED_INTERCEPT_MOD_SYM" Label="I*APSRC-----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="CONTROLLED_INTERCEPT_MOD">
       <LegacyFunctionCode Name="2525C">SRC---</LegacyFunctionCode>
+	    <LegacyEntity ID="SIGNAL_INTERCEPT_RADAR_CONTROLLED_INTERCEPT_MOD_LE" Label="SIGINT.AIRTRK.SIGINC.RAD.CTDINC" Graphic="I-A-SRC---.svg">
+		    <LegacyFunctionCode Name="2525C">SRC---</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_DATA_TRANSMISSION_MOD_SYM" Label="I*APSRD-----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="DATA_TRANSMISSION_MOD">
       <LegacyFunctionCode Name="2525C">SRD---</LegacyFunctionCode>
+	    <LegacyEntity ID="SIGNAL_INTERCEPT_RADAR_DATA_TRANSMISSION_MOD_LE" Label="SIGINT.AIRTRK.SIGINC.RAD.DATTMN" Graphic="I-A-SRD---.svg">
+		    <LegacyFunctionCode Name="2525C">SRD---</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_EARLY_WARNING_MOD_SYM" Label="I*APSRE-----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="EARLY_WARNING_MOD">
       <LegacyFunctionCode Name="2525C">SRE---</LegacyFunctionCode>
+	    <LegacyEntity ID="SIGNAL_INTERCEPT_RADAR_EARLY_WARNING_MOD_LE" Label="SIGINT.AIRTRK.SIGINC.RAD.EW" Graphic="I-A-SRE---.svg">
+		    <LegacyFunctionCode Name="2525C">SRE---</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_FIRE_CONTROL_MOD_SYM" Label="I*APSRF-----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="FIRE_CONTROL_MOD">
       <LegacyFunctionCode Name="2525C">SRF---</LegacyFunctionCode>
+	    <LegacyEntity ID="SIGNAL_INTERCEPT_RADAR_FIRE_CONTROL_MOD_LE" Label="SIGINT.AIRTRK.SIGINC.RAD.FIRCTL" Graphic="I-A-SRF---.svg">
+		    <LegacyFunctionCode Name="2525C">SRF---</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_IFF_TRANSPONDER_MOD_SYM" Label="I*APSRI-----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="IFF_TRANSPONDER_MOD">
       <LegacyFunctionCode Name="2525C">SRI---</LegacyFunctionCode>
+	    <LegacyEntity ID="SIGNAL_INTERCEPT_RADAR_IFF_TRANSPONDER_MOD_LE" Label="SIGINT.AIRTRK.SIGINC.RAD.IFF" Graphic="I-A-SRI---.svg">
+		    <LegacyFunctionCode Name="2525C">SRI---</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_MISSILE_ACQUISITION_MOD_SYM" Label="I*APSRMA----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="MISSILE_ACQUISITION_MOD">
       <LegacyFunctionCode Name="2525C">SRMA--</LegacyFunctionCode>
+	    <LegacyEntity ID="SIGNAL_INTERCEPT_RADAR_MISSILE_ACQUISITION_MOD_LE" Label="SIGINT.AIRTRK.SIGINC.RAD.MSLAQ" Graphic="I-A-SRMA--.svg">
+		    <LegacyFunctionCode Name="2525C">SRMA--</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_MISSILE_DOWNLINK_MOD_SYM" Label="I*APSRMD----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="MISSILE_DOWNLINK_MOD">
       <LegacyFunctionCode Name="2525C">SRMD--</LegacyFunctionCode>
+	    <LegacyEntity ID="SIGNAL_INTERCEPT_RADAR_MISSILE_DOWNLINK_MOD_LE" Label="SIGINT.AIRTRK.SIGINC.RAD.MSLDL" Graphic="I-A-SRMD--.svg">
+		    <LegacyFunctionCode Name="2525C">SRMD--</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_MISSILE_GUIDANCE_MOD_SYM" Label="I*APSRMG----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="MISSILE_GUIDANCE_MOD">
       <LegacyFunctionCode Name="2525C">SRMG--</LegacyFunctionCode>
+	    <LegacyEntity ID="SIGNAL_INTERCEPT_RADAR_MISSILE_GUIDANCE_MOD_LE" Label="SIGINT.AIRTRK.SIGINC.RAD.MSLGDN" Graphic="I-A-SRMG--.svg">
+		    <LegacyFunctionCode Name="2525C">SRMG--</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_MISSILE_TRACKING_MOD_SYM" Label="I*APSRMT----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="MISSILE_TRACKING_MOD">
       <LegacyFunctionCode Name="2525C">SRMT--</LegacyFunctionCode>
+	    <LegacyEntity ID="SIGNAL_INTERCEPT_RADAR_MISSILE_TRACKING_MOD_LE" Label="SIGINT.AIRTRK.SIGINC.RAD.MSLTRK" Graphic="I-A-SRMT--.svg">
+		    <LegacyFunctionCode Name="2525C">SRMT--</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_MULTI_FUNCTION_MOD_SYM" Label="I*APSRMF----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="MULTI_FUNCTION_MOD">
       <LegacyFunctionCode Name="2525C">SRMF--</LegacyFunctionCode>
+	    <LegacyEntity ID="SIGNAL_INTERCEPT_RADAR_MULTI_FUNCTION_MOD_LE" Label="SIGINT.AIRTRK.SIGINC.RAD.MFN" Graphic="I-A-SRMF--.svg">
+		    <LegacyFunctionCode Name="2525C">SRMF--</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_TARGET_ILLUMINATION_MOD_SYM" Label="I*APSRTI----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="TARGET_ILLUMINATION_MOD">
       <LegacyFunctionCode Name="2525C">SRTI--</LegacyFunctionCode>
+	    <LegacyEntity ID="SIGNAL_INTERCEPT_RADAR_TARGET_ILLUMINATION_MOD_LE" Label="SIGINT.AIRTRK.SIGINC.RAD.TGTILL" Graphic="I-A-SRTI--.svg">
+		    <LegacyFunctionCode Name="2525C">SRTI--</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_TARGET_ACQUISITION_MOD_SYM" Label="I*APSRTA----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="TARGET_ACQUISITION_MOD">
       <LegacyFunctionCode Name="2525C">SRTA--</LegacyFunctionCode>
+	    <LegacyEntity ID="SIGNAL_INTERCEPT_RADAR_TARGET_ACQUISITION_MOD_LE" Label="SIGINT.AIRTRK.SIGINC.RAD.TGTAQ" Graphic="I-A-SRTA--.svg">
+		    <LegacyFunctionCode Name="2525C">SRTA--</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_TARGET_TRACKING_MOD_SYM" Label="I*APSRTT----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="TARGET_TRACKING_MOD">
       <LegacyFunctionCode Name="2525C">SRTT--</LegacyFunctionCode>
+	    <LegacyEntity ID="SIGNAL_INTERCEPT_RADAR_TARGET_TRACKING_MOD_LE" Label="SIGINT.AIRTRK.SIGINC.RAD.TGTTRK" Graphic="I-A-SRTT--.svg">
+		    <LegacyFunctionCode Name="2525C">SRTT--</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_UNKNOWN_MOD_SYM" Label="I*APSRU-----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="UNKNOWN_MOD">
       <LegacyFunctionCode Name="2525C">SRU---</LegacyFunctionCode>
+	    <LegacyEntity ID="SIGNAL_INTERCEPT_RADAR_UNKNOWN_MOD_LE" Label="SIGINT.AIRTRK.SIGINC.RAD.UNK" Graphic="I-A-SRU---.svg">
+		    <LegacyFunctionCode Name="2525C">SRU---</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
   </LegacySymbols>
 </SymbolSet>

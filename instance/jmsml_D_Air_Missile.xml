@@ -180,8 +180,8 @@
     </Modifier>
   </SectorTwoModifiers>
   <LegacySymbols>
-    <LegacySymbol ID="MISSILE_SYM" Label="S*APW-----*****" EntityID="MISSILE">
-      <LegacyFunctionCode Name="2525C">W-----</LegacyFunctionCode>
+    <LegacySymbol ID="MISSILE_SYM" Label="S*APWM----*****" EntityID="MISSILE">
+      <LegacyFunctionCode Name="2525C">WM----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MISSILE_LAUNCHED_MOD_SYM" Label="S*APWM----*****" EntityID="MISSILE" ModifierTwoID="LAUNCHED_MOD">
       <LegacyFunctionCode Name="2525C">WM----</LegacyFunctionCode>
@@ -191,6 +191,9 @@
     </LegacySymbol>
     <LegacySymbol ID="MISSILE_AB_MOD_SYM" Label="S*APWMSB--*****" EntityID="MISSILE" ModifierOneID="AB_MOD">
       <LegacyFunctionCode Name="2525C">WMSB--</LegacyFunctionCode>
+	    <LegacyEntity ID="MISSILE_AB_MOD_LE" Label="WAR.AIRTRK.WPN.MSLIF.SLM.ABM" Graphic="S-A-WMSB">
+		    <LegacyFunctionCode Name="2525C">WMSB--</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MISSILE_SURFACE_MOD_SURFACE_DEST_MOD_SYM" Label="S*APWMSS--*****" EntityID="MISSILE" ModifierOneID="SURFACE_MOD" ModifierTwoID="SURFACE_DEST_MOD">
       <LegacyFunctionCode Name="2525C">WMSS--</LegacyFunctionCode>
@@ -200,6 +203,9 @@
     </LegacySymbol>
     <LegacySymbol ID="MISSILE_SURFACE_MOD_SUB_DEST_MOD_SYM" Label="S*APWMSU--*****" EntityID="MISSILE" ModifierOneID="SURFACE_MOD" ModifierTwoID="SUB_DEST_MOD">
       <LegacyFunctionCode Name="2525C">WMSU--</LegacyFunctionCode>
+	    <LegacyEntity ID="MISSILE_SURFACE_MOD_SUB_DEST_MOD_LE" Label="WAR.AIRTRK.WPN.MSLIF.SLM.SSUM" Graphic="S-A-WMSU--.svg">
+		    <LegacyFunctionCode Name="2525C">WMSU--</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MISSILE_AIR_MOD_LAUNCHED_MOD_SYM" Label="S*APWMA---*****" EntityID="MISSILE" ModifierOneID="AIR_MOD" ModifierTwoID="LAUNCHED_MOD">
       <LegacyFunctionCode Name="2525C">WMA---</LegacyFunctionCode>
@@ -212,9 +218,15 @@
     </LegacySymbol>
     <LegacySymbol ID="MISSILE_AIR_MOD_SPACE_DEST_MOD_SYM" Label="S*APWMAP--*****" EntityID="MISSILE" ModifierOneID="AIR_MOD" ModifierTwoID="SPACE_DEST_MOD">
       <LegacyFunctionCode Name="2525C">WMAP--</LegacyFunctionCode>
+	    <LegacyEntity ID="MISSILE_AIR_MOD_SPACE_DEST_MOD_LE" Label="WAR.AIRTRK.WPN.MSLIF.ALM.ASPC" Graphic="S-A-WMAP--.svg">
+		    <LegacyFunctionCode Name="2525C">WMAP--</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MISSILE_SUB_MOD_SURFACE_DEST_MOD_SYM" Label="S*APWMU---*****" EntityID="MISSILE" ModifierOneID="SUB_MOD" ModifierTwoID="SURFACE_DEST_MOD">
       <LegacyFunctionCode Name="2525C">WMU---</LegacyFunctionCode>
+	    <LegacyEntity ID="MISSILE_SUB_MOD_SURFACE_DEST_MOD_LE" Label="WAR.AIRTRK.WPN.MSLIF.SBSM" Graphic="S-A-WMU---.svg">
+		    <LegacyFunctionCode Name="2525C">WMU---</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MISSILE_CRUISE_MOD_MISSILE_MOD_SYM" Label="S*APWMCM--*****" EntityID="MISSILE" ModifierOneID="CRUISE_MOD" ModifierTwoID="MISSILE_MOD">
       <LegacyFunctionCode Name="2525C">WMCM--</LegacyFunctionCode>
