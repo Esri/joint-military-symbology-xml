@@ -535,6 +535,10 @@ namespace JointMilitarySymbologyLibrary {
         
         private bool isPlannedField;
         
+        private string graphicField;
+        
+        private string limitUseToField;
+        
         private string valueField;
         
         public LegacyLetterCodeType() {
@@ -545,6 +549,8 @@ namespace JointMilitarySymbologyLibrary {
             this.firstFunctionLetterField = "";
             this.functionField = "";
             this.isPlannedField = true;
+            this.graphicField = "";
+            this.limitUseToField = "";
         }
         
         /// <remarks/>
@@ -672,6 +678,30 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.isPlannedField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string Graphic {
+            get {
+                return this.graphicField;
+            }
+            set {
+                this.graphicField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string LimitUseTo {
+            get {
+                return this.limitUseToField;
+            }
+            set {
+                this.limitUseToField = value;
             }
         }
         

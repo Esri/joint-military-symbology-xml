@@ -30,10 +30,11 @@ namespace jmsml
         {
             _librarian.IsLogging = true;
 
-            CommandLineArgs.I.parseArgs(args, "/e=false;/+=false;/-source=false;/-legacy=false;/xas=SIMPLE;/size=32;/asOriginal=false");
+            CommandLineArgs.I.parseArgs(args, "/e=false;/+=false;/-source=false;/-legacy=false;/xas=SIMPLE;/size=32;/asOriginal=false;/+amplifiers=false");
 
             string exportPath = CommandLineArgs.I.argAsString("/xe");
             string exportLegacyEntityCPath = CommandLineArgs.I.argAsString("/xleC");
+            string exportLegacyFrameBc2Path = CommandLineArgs.I.argAsString("/xlfBc2");
             string exportDomainPath = CommandLineArgs.I.argAsString("/b");
             string symbolSet = CommandLineArgs.I.argAsString("/s");
             string query = CommandLineArgs.I.argAsString("/q");
@@ -57,7 +58,7 @@ namespace jmsml
             string exportSchemas = CommandLineArgs.I.argAsString("/xschemas");
 
             string exportLegacy = CommandLineArgs.I.argAsString("/xl");
-            string exportLookupC = CommandLineArgs.I.argAsString("/xllC");
+            string exportLookup = CommandLineArgs.I.argAsString("/xll");
 
             string legacyDest = CommandLineArgs.I.argAsString("/ild");
             string legacySrc = CommandLineArgs.I.argAsString("/ils");
@@ -69,6 +70,7 @@ namespace jmsml
             bool omitSource = (CommandLineArgs.I.argAsString("/-source") != "false");
             bool omitLegacyTag = (CommandLineArgs.I.argAsString("/-legacy") != "false");
             bool asOriginal = (CommandLineArgs.I.argAsString("/asOriginal") != "false");
+            bool includeAmplifiers = (CommandLineArgs.I.argAsString("/+amplifiers") != "false");
 
             if (help == "/?")
             {
@@ -98,7 +100,8 @@ namespace jmsml
                 Console.WriteLine("/xh=\"<pathname>\"\t: Export HQ/TF/FD.");
                 Console.WriteLine("/xl=\"<pathname>\"\t: Export legacy data (for testing).");
                 Console.WriteLine("/xleC=\"<pathname>\"\t: Export legacy entities for 2525C.");
-                Console.WriteLine("/xllC=\"<pathname>\"\t: Export legacy lookup table for 2525C.");
+                Console.WriteLine("/xlfBc2=\"<pathname>\"\t: Export legacy frames for 2525B Change 2.");
+                Console.WriteLine("/xll=\"<pathname>\"\t: Export legacy lookup table for 2525C.");
                 Console.WriteLine("/xo=\"<pathname>\"\t: Export operational condition amplifiers.*");
                 Console.WriteLine("/xas=\"<as_option>\"\t: Export as SIMPLE, DOMAIN, or IMAGE.");
                 Console.WriteLine("");
@@ -110,6 +113,7 @@ namespace jmsml
                 Console.WriteLine("/-source\t\t: Leave source file out of exported tags.");
                 Console.WriteLine("/size=\"<pixels>\"\t: Specify the size for exported image information.");
                 Console.WriteLine("/asOriginal\t\t: Map legacy SIDCs to original symbol components.");
+                Console.WriteLine("/+amplifiers");
                 Console.WriteLine("");
                 Console.WriteLine("/a\t\t\t: Export symbols with AREA geometry.");
                 Console.WriteLine("/l\t\t\t: Export symbols with LINE geometry.");
@@ -132,9 +136,9 @@ namespace jmsml
                 _etl.ExportLegacy(exportLegacy);
             }
 
-            if (exportLookupC != "")
+            if (exportLookup != "")
             {
-                _etl.ExportLegacyLookup(exportLookupC, "2525C", asOriginal);
+                _etl.ExportLegacyLookup(exportLookup, "2525C", asOriginal, includeAmplifiers, appendFiles);
             }
 
             if (exportPath != "")
@@ -152,6 +156,11 @@ namespace jmsml
             if (exportLegacyEntityCPath != "")
             {
                 _etl.ExportLegacyEntities(exportLegacyEntityCPath, "2525C", size);
+            }
+
+            if (exportLegacyFrameBc2Path != "")
+            {
+                _etl.ExportLegacyFrames(exportLegacyFrameBc2Path, "2525Bc2", size, appendFiles);
             }
 
             if (exportDomainPath != "")
