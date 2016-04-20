@@ -20,17 +20,20 @@ using System.Threading.Tasks;
 
 namespace JointMilitarySymbologyLibrary
 {
-    public class LegacyFrameExport : FrameExport, IFrameExport
+    public class LegacyFrameGraphicExport : FrameExport, IFrameExport
     {
-        // Class designed to export Frame elements as legacy to 2525D lookups
-
         private LibraryAffiliation _affiliation;
         private LegacyLetterCodeType _legacyFrame;
 
-        public LegacyFrameExport(ConfigHelper configHelper, string standard)
+        public LegacyFrameGraphicExport(ConfigHelper configHelper, string standard)
         {
             _configHelper = configHelper;
             _standard = standard;
+        }
+
+        string IFrameExport.Headers
+        {
+            get { return "filePath,pointSize,styleItemName,styleItemCategory,styleItemTags,styleItemUniqueId,styleItemGeometryType,notes"; }
         }
 
         private string _legacyStatusCode(string standard, LibraryStatus status)
@@ -49,38 +52,40 @@ namespace JointMilitarySymbologyLibrary
             return result;
         }
 
-        string IFrameExport.Headers
-        {
-            get { return "Name,LegacyKey,MainIcon,Modifier1,Modifier2,ExtraIcon,FullFrame,GeometryType,Standard,Status,Notes"; }
-        }
-
         string IFrameExport.Line(Librarian librarian, LibraryContext context, LibraryStandardIdentity identity, LibraryDimension dimension, LibraryStatus status, bool asCivilian, bool asPlannedCivilian)
         {
             string result = "";
+            string graphic = "";
 
-            if (_legacyFrame != null)
-            {
-                result = BuildFrameItemName(context, dimension, identity, status, false);
+            _notes = "";
 
-                result = result + "," + BuildSIDCKey(_legacyStatusCode(_standard, status), _legacyFrame);
+            string graphicPath = _configHelper.GetPath("JMSML_2525BC2", FindEnum.Find2525BC2);
 
-                if(_legacyFrame.LimitUseTo == "2525C" || _legacyFrame.LimitUseTo == "")
-                    // For 2525C frames or 2525Bc2 frames that are the same we 2525C we use the 2525D icons
-                    // (2525C and some 2525Bc2 frames are identical to 2525D)
-                    result = result + "," + BuildFrameCode(context, identity, dimension, status, false);
-                else
-                    // For 2525Bc2 unique frames we use the unique icons that are keyed accordingly.
-                    result = result + "," + BuildFrameCode(_legacyStatusCode(_standard, status), _legacyFrame);
+            graphic = _legacyFrame.Graphic;
 
-                result = result + ","; // + "Modifier1";
-                result = result + ","; // + "Modifier2";
-                result = result + ","; // + "ExtraIcon";
-                result = result + ","; // + "FullFrame";
-                result = result + "," + "Point"; // + "GeometryType";
-                result = result + "," + _legacyFrame.LimitUseTo; // + "Standard";
-                result = result + ","; // + "Status";
-                result = result + "," + _legacyFrame.Description; // + "Notes";
-            }
+            string id = BuildFrameCode(_legacyStatusCode(_standard, status), _legacyFrame);
+
+            string geometryType = "Point";
+
+            string itemRootedPath = _configHelper.BuildRootedPath(graphicPath, graphic);
+            string itemOriginalPath = _configHelper.BuildOriginalPath(graphicPath, graphic);
+            string tags = BuildFrameItemTags(context, identity, dimension, status, graphicPath, true, true, false);
+
+            // Replace the 2525D ID with the 2525B Change 2 ID
+            string dCode = BuildFrameCode(context, identity, dimension, status, false);
+            tags = tags.Replace(dCode, id); 
+
+            if (!File.Exists(itemOriginalPath))
+                _notes = _notes + "image file does not exist;";
+
+            result = result + itemRootedPath;
+            result = result + "," + Convert.ToString(_configHelper.PointSize);
+            result = result + "," + id;
+            result = result + "," + "Frame";
+            result = result + "," + tags;
+            result = result + "," + id;
+            result = result + "," + geometryType;
+            result = result + "," + _notes;
 
             return result;
         }
@@ -93,6 +98,11 @@ namespace JointMilitarySymbologyLibrary
         public LegacyLetterCodeType LegacyFrame
         {
             set { _legacyFrame = value; }
+        }
+
+        public string IDIt(LibraryStatus status)
+        {
+            return BuildFrameCode(_legacyStatusCode(_standard, status), _legacyFrame);
         }
     }
 }

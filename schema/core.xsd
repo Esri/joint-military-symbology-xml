@@ -103,6 +103,8 @@
         <xs:attribute name="FirstFunctionLetter" type="xs:token" use="optional" default=""/>
         <xs:attribute name="Function" type="xs:token" use="optional" default=""/>
         <xs:attribute name="IsPlanned" type="xs:boolean" use="optional" default="true"/>
+        <xs:attribute name="Graphic" type="xs:token" use="optional" default=""/>
+        <xs:attribute name="LimitUseTo" type="xs:token" use="optional" default=""/>
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>

@@ -1,6 +1,6 @@
 setlocal
 cd ..\..\source\JointMilitarySymbologyLibraryCS\jmsml\bin\Debug
 jmsml.exe /xl="../../../../../samples/legacy_support/LegacyMappingTableCtoD.csv"
-jmsml.exe /xllC="../../../../../samples/legacy_support/All_ID_Mapping_Latest.csv"
-jmsml.exe /xllC="../../../../../samples/legacy_support/All_ID_Mapping_Original.csv" /asOriginal
+jmsml.exe /xll="../../../../../samples/legacy_support/All_ID_Mapping_Latest.csv" /+amplifiers
+jmsml.exe /xll="../../../../../samples/legacy_support/All_ID_Mapping_Original.csv" /asOriginal /+amplifiers
 endlocal

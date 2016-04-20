@@ -25,13 +25,18 @@ namespace JointMilitarySymbologyLibrary
 
         string IHQTFFDExport.Line(LibraryHQTFDummy hqTFFD, LibraryHQTFDummyGraphic graphic)
         {
+            throw new NotImplementedException();
+        }
+
+        public string Line(string codingScheme, LibraryHQTFDummy hqTFFD, LibraryHQTFDummyGraphic graphic)
+        {
             string result = "";
 
             LibraryStandardIdentityGroup siGroup = _configHelper.Librarian.StandardIdentityGroup(graphic.StandardIdentityGroup);
             LibraryDimension dimension = _configHelper.Librarian.Dimension(graphic.DimensionID);
 
             result = BuildHQTFFDItemName(siGroup, dimension, hqTFFD);
-            result = result + "," + BuildSIDCKey(siGroup, dimension, hqTFFD);
+            result = result + "," + BuildSIDCKey(codingScheme, siGroup, dimension, hqTFFD);
             result = result + "," + BuildHQTFFDCode(siGroup, dimension, hqTFFD);
             result = result + ",";
             result = result + ",";

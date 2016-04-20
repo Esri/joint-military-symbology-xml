@@ -38,12 +38,17 @@ namespace JointMilitarySymbologyLibrary
 
         string IAmplifierExport.Line(LibraryAmplifierGroup amplifierGroup, LibraryAmplifierGroupAmplifier amplifier, LibraryAmplifierGroupAmplifierGraphic graphic)
         {
+            throw new NotImplementedException();
+        }
+
+        public string Line(string codingScheme, LibraryAmplifierGroup amplifierGroup, LibraryAmplifierGroupAmplifier amplifier, LibraryAmplifierGroupAmplifierGraphic graphic)
+        {
             string result = "";
 
             LibraryStandardIdentityGroup siGroup = _configHelper.Librarian.StandardIdentityGroup(graphic.StandardIdentityGroup);
 
             result = BuildAmplifierItemName(amplifierGroup, amplifier, siGroup);
-            result = result + "," + BuildSIDCKey(amplifierGroup, amplifier, siGroup);
+            result = result + "," + BuildSIDCKey(codingScheme, amplifierGroup, amplifier, siGroup);
             result = result + "," + BuildAmplifierCode(amplifierGroup, amplifier, siGroup);
             result = result + ","; // + "Modifier1";
             result = result + ","; // + "Modifier2";
