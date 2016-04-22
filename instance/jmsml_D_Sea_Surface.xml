@@ -873,27 +873,27 @@
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_COMBAT_SURF_COMBAT_LINE_LCS_SYM" Label="S*SPCLLL--*****" EntityID="MILITARY_COMBAT" EntityTypeID="SURF_COMBAT_LINE" EntitySubTypeID="LCS">
       <LegacyFunctionCode Name="2525C">CLLL--</LegacyFunctionCode>
-	  <LegacyEntity ID="MILITARY_COMBAT_SURF_COMBAT_LINE_LCS_LE" Label="WAR.SSUF.CBTT.LNE.LL" Graphic="S-S-CLLL---.svg">
-		<LegacyFunctionCode Name="2525C">CLLL--</LegacyFunctionCode>
-	  </LegacyEntity>	
+	    <LegacyEntity ID="MILITARY_COMBAT_SURF_COMBAT_LINE_LCS_LE" Label="WAR.SSUF.CBTT.LNE.LL" Graphic="S-S-CLLL---.svg">
+		    <LegacyFunctionCode Name="2525C">CLLL--</LegacyFunctionCode>
+	    </LegacyEntity>	
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_COMBAT_SURF_COMBAT_LINE_LCS_ASW_MOD_SYM" Label="S*SPCLLLAS*****" EntityID="MILITARY_COMBAT" EntityTypeID="SURF_COMBAT_LINE" EntitySubTypeID="LCS" ModifierOneID="ASW_MOD">
       <LegacyFunctionCode Name="2525C">CLLLAS</LegacyFunctionCode>
-	  <LegacyEntity ID="MILITARY_COMBAT_SURF_COMBAT_LINE_LCS_ASW_MOD_LE" Label="WAR.SSUF.CBTT.LNE.LL.ASBW" Graphic="S-S-CLLLAS.svg">
-		<LegacyFunctionCode Name="2525C">CLLLAS</LegacyFunctionCode>
-	  </LegacyEntity>	
+	    <LegacyEntity ID="MILITARY_COMBAT_SURF_COMBAT_LINE_LCS_ASW_MOD_LE" Label="WAR.SSUF.CBTT.LNE.LL.ASBW" Graphic="S-S-CLLLAS.svg">
+		    <LegacyFunctionCode Name="2525C">CLLLAS</LegacyFunctionCode>
+	    </LegacyEntity>	
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_COMBAT_SURF_COMBAT_LINE_LCS_MIW_MOD_SYM" Label="S*SPCLLLMI*****" EntityID="MILITARY_COMBAT" EntityTypeID="SURF_COMBAT_LINE" EntitySubTypeID="LCS" ModifierOneID="MIW_MOD">
       <LegacyFunctionCode Name="2525C">CLLLMI</LegacyFunctionCode>
-	  <LegacyEntity ID="MILITARY_COMBAT_SURF_COMBAT_LINE_LCS_MIW_MOD_LE" Label="WAR.SSUF.CBTT.LNE.LL.MNEW" Graphic="S-S-CLLLMI.svg">
-		<LegacyFunctionCode Name="2525C">CLLLMI</LegacyFunctionCode>
-	  </LegacyEntity>		  
+	    <LegacyEntity ID="MILITARY_COMBAT_SURF_COMBAT_LINE_LCS_MIW_MOD_LE" Label="WAR.SSUF.CBTT.LNE.LL.MNEW" Graphic="S-S-CLLLMI.svg">
+		    <LegacyFunctionCode Name="2525C">CLLLMI</LegacyFunctionCode>
+	    </LegacyEntity>		  
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_COMBAT_SURF_COMBAT_LINE_LCS_SUW_MOD_SYM" Label="S*SPCLLLSU*****" EntityID="MILITARY_COMBAT" EntityTypeID="SURF_COMBAT_LINE" EntitySubTypeID="LCS" ModifierOneID="SUW_MOD">
       <LegacyFunctionCode Name="2525C">CLLLSU</LegacyFunctionCode>
-	  <LegacyEntity ID="MILITARY_COMBAT_SURF_COMBAT_LINE_LCS_SUW_MOD_LE" Label="WAR.SSUF.CBTT.LNE.LL.SUW" Graphic="S-S-CLLLSU.svg">
-		<LegacyFunctionCode Name="2525C">CLLLSU</LegacyFunctionCode>
-	  </LegacyEntity>
+	    <LegacyEntity ID="MILITARY_COMBAT_SURF_COMBAT_LINE_LCS_SUW_MOD_LE" Label="WAR.SSUF.CBTT.LNE.LL.SUW" Graphic="S-S-CLLLSU.svg">
+		    <LegacyFunctionCode Name="2525C">CLLLSU</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_COMBAT_AMPHIB_WAR_SHIP_SYM" Label="S*SPCA----*****" EntityID="MILITARY_COMBAT" EntityTypeID="AMPHIB_WAR_SHIP">
       <LegacyFunctionCode Name="2525C">CA----</LegacyFunctionCode>
@@ -927,9 +927,9 @@
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_COMBAT_MINE_WARFARE_MINE_COUNTER_SUPPORT_SYM" Label="S*SPCMMA--*****" EntityID="MILITARY_COMBAT" EntityTypeID="MINE_WARFARE" EntitySubTypeID="MINE_COUNTER_SUPPORT">
       <LegacyFunctionCode Name="2525C">CMMA--</LegacyFunctionCode>
-	  <LegacyEntity ID="MILITARY_COMBAT_MINE_WARFARE_MINE_COUNTER_SUPPORT_LE" Label="WAR.SSUF.CBTT.MNEWV.MCMSUP" Graphic="S-S-CMMA--.svg">
-		<LegacyFunctionCode Name="2525C">CMMA--</LegacyFunctionCode>
-	  </LegacyEntity>
+	    <LegacyEntity ID="MILITARY_COMBAT_MINE_WARFARE_MINE_COUNTER_SUPPORT_LE" Label="WAR.SSUF.CBTT.MNEWV.MCMSUP" Graphic="S-S-CMMA--.svg">
+		    <LegacyFunctionCode Name="2525C">CMMA--</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_COMBAT_PATROL_BOAT_SYM" Label="S*SPCP----*****" EntityID="MILITARY_COMBAT" EntityTypeID="PATROL_BOAT">
       <LegacyFunctionCode Name="2525C">CP----</LegacyFunctionCode>
@@ -984,21 +984,21 @@
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_COMBAT_NAVY_TASK_NAVY_TASK_FORCE_SYM" Label="S*SPGT----*****" EntityID="MILITARY_COMBAT" EntityTypeID="NAVY_TASK" EntitySubTypeID="NAVY_TASK_FORCE">
       <LegacyFunctionCode Name="2525C">GT----</LegacyFunctionCode>
-	  <LegacyEntity ID="MILITARY_COMBAT_NAVY_TASK_NAVY_TASK_FORCE_LE" Label="WAR.SSUF.CBTT.NAVGRP.NAVTF" Graphic="S-S-GT----.svg">
-		<LegacyFunctionCode Name="2525C">GT----</LegacyFunctionCode>
-	  </LegacyEntity>
+	    <LegacyEntity ID="MILITARY_COMBAT_NAVY_TASK_NAVY_TASK_FORCE_LE" Label="WAR.SSUF.CBTT.NAVGRP.NAVTF" Graphic="S-S-GT----.svg">
+		    <LegacyFunctionCode Name="2525C">GT----</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_COMBAT_NAVY_TASK_NAVY_TASK_GROUP_SYM" Label="S*SPGG----*****" EntityID="MILITARY_COMBAT" EntityTypeID="NAVY_TASK" EntitySubTypeID="NAVY_TASK_GROUP">
       <LegacyFunctionCode Name="2525C">GG----</LegacyFunctionCode>
-	  <LegacyEntity ID="MILITARY_COMBAT_NAVY_TASK_NAVY_TASK_GROUP_LE" Label="WAR.SSUF.CBTT.NAVGRP.NAVTG" Graphic="S-S-GG----.svg">
-		<LegacyFunctionCode Name="2525C">GG----</LegacyFunctionCode>
-	  </LegacyEntity>
+	    <LegacyEntity ID="MILITARY_COMBAT_NAVY_TASK_NAVY_TASK_GROUP_LE" Label="WAR.SSUF.CBTT.NAVGRP.NAVTG" Graphic="S-S-GG----.svg">
+		    <LegacyFunctionCode Name="2525C">GG----</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_COMBAT_NAVY_TASK_NAVY_TASK_UNIT_SYM" Label="S*SPGU----*****" EntityID="MILITARY_COMBAT" EntityTypeID="NAVY_TASK" EntitySubTypeID="NAVY_TASK_UNIT">
       <LegacyFunctionCode Name="2525C">GU----</LegacyFunctionCode>
-	  <LegacyEntity ID="MILITARY_COMBAT_NAVY_TASK_NAVY_TASK_UNIT_LE" Label="WAR.SSUF.CBTT.NAVGRP.NAVTU" Graphic="S-S-GU----.svg">
-		<LegacyFunctionCode Name="2525C">GU----</LegacyFunctionCode>
-	  </LegacyEntity>
+	    <LegacyEntity ID="MILITARY_COMBAT_NAVY_TASK_NAVY_TASK_UNIT_LE" Label="WAR.SSUF.CBTT.NAVGRP.NAVTU" Graphic="S-S-GU----.svg">
+		    <LegacyFunctionCode Name="2525C">GU----</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_COMBAT_NAVY_TASK_CONVOY_SYM" Label="S*SPGC----*****" EntityID="MILITARY_COMBAT" EntityTypeID="NAVY_TASK" EntitySubTypeID="CONVOY">
       <LegacyFunctionCode Name="2525C">GC----</LegacyFunctionCode>
@@ -1008,9 +1008,9 @@
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_NON_COMBAT_AUX_INTEL_COLLECTOR_SYM" Label="S*SPNI----*****" EntityID="MILITARY_NON_COMBAT" EntityTypeID="AUX" EntitySubTypeID="INTEL_COLLECTOR">
       <LegacyFunctionCode Name="2525C">NI----</LegacyFunctionCode>
-	  <LegacyEntity ID="MILITARY_NON_COMBAT_AUX_INTEL_COLLECTOR_LE" Label="WAR.SSUF.NCBTT.INT" Graphic="S-S-NI----.svg">
-		<LegacyFunctionCode Name="2525C">NI----</LegacyFunctionCode>
-	  </LegacyEntity>	  
+	    <LegacyEntity ID="MILITARY_NON_COMBAT_AUX_INTEL_COLLECTOR_LE" Label="WAR.SSUF.NCBTT.INT" Graphic="S-S-NI----.svg">
+		    <LegacyFunctionCode Name="2525C">NI----</LegacyFunctionCode>
+	    </LegacyEntity>	  
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_NON_COMBAT_AUX_HOSPITAL_SYM" Label="S*SPNM----*****" EntityID="MILITARY_NON_COMBAT" EntityTypeID="AUX" EntitySubTypeID="HOSPITAL">
       <LegacyFunctionCode Name="2525C">NM----</LegacyFunctionCode>
@@ -1023,9 +1023,9 @@
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_NON_COMBAT_SERVICE_CRAFT_SYM" Label="S*SPNS----*****" EntityID="MILITARY_NON_COMBAT" EntityTypeID="SERVICE_CRAFT">
       <LegacyFunctionCode Name="2525C">NS----</LegacyFunctionCode>
-	  <LegacyEntity ID="MILITARY_NON_COMBAT_SERVICE_CRAFT_LE" Label="WAR.SSUF.NCBTT.SSH" Graphic="S-S-NS----.svg">
-		<LegacyFunctionCode Name="2525C">NS----</LegacyFunctionCode>
-	  </LegacyEntity>	  
+	    <LegacyEntity ID="MILITARY_NON_COMBAT_SERVICE_CRAFT_LE" Label="WAR.SSUF.NCBTT.SSH" Graphic="S-S-NS----.svg">
+		    <LegacyFunctionCode Name="2525C">NS----</LegacyFunctionCode>
+	    </LegacyEntity>	  
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_NON_COMBAT_HOVERCRAFT_SYM" Label="S*SPNH----*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">NH----</LegacyFunctionCode>
