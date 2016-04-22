@@ -207,7 +207,7 @@ namespace JointMilitarySymbologyLibrary
             return id;
         }
 
-        private int _exportFrames(StreamWriter w, bool isFirst, string standard, int id)
+        private int _exportFrames(StreamWriter w, bool isFirst, string standard, int id, bool asOriginal)
         {
             IFrameExport frameEx = new LegacyFrameExport(_helper, standard);
 
@@ -229,30 +229,33 @@ namespace JointMilitarySymbologyLibrary
 
                     foreach (LegacyLetterCodeType legacyFrame in affiliation.LegacyFrames)
                     {
-                        if (legacyFrame.Function == "")
+                        if (legacyFrame.LimitUseTo != "2525Bc2" || asOriginal)
                         {
-                            fe.LegacyFrame = legacyFrame;
-
-                            LibraryContext context = _lib.Context(affiliation.ContextID);
-                            LibraryStandardIdentity identity = _lib.StandardIdentity(affiliation.StandardIdentityID);
-                            LibraryDimension dimension = _lib.Dimension(affiliation.DimensionID);
-
-                            string line = id.ToString() + "," + frameEx.Line(_lib, context, identity, dimension, _lib.Status(0), false, false);
-                            id++;
-
-                            w.WriteLine(line);
-                            w.Flush();
-
-                            if (legacyFrame.IsPlanned)
+                            if (legacyFrame.Function == "")
                             {
-                                LibraryStatus status = _lib.Status(1);
-                                status.LabelAlias = "Planned";
-                                line = id.ToString() + "," + frameEx.Line(_lib, context, identity, dimension, status, false, false);
-                                status.LabelAlias = "";
+                                fe.LegacyFrame = legacyFrame;
+
+                                LibraryContext context = _lib.Context(affiliation.ContextID);
+                                LibraryStandardIdentity identity = _lib.StandardIdentity(affiliation.StandardIdentityID);
+                                LibraryDimension dimension = _lib.Dimension(affiliation.DimensionID);
+
+                                string line = id.ToString() + "," + frameEx.Line(_lib, context, identity, dimension, _lib.Status(0), false, false);
                                 id++;
 
                                 w.WriteLine(line);
                                 w.Flush();
+
+                                if (legacyFrame.IsPlanned)
+                                {
+                                    LibraryStatus status = _lib.Status(1);
+                                    status.LabelAlias = "Planned";
+                                    line = id.ToString() + "," + frameEx.Line(_lib, context, identity, dimension, status, false, false);
+                                    status.LabelAlias = "";
+                                    id++;
+
+                                    w.WriteLine(line);
+                                    w.Flush();
+                                }
                             }
                         }
                     }
@@ -395,7 +398,7 @@ namespace JointMilitarySymbologyLibrary
             {
                 int id = 0;
 
-                id = _exportFrames(stream, true, standard, id);
+                id = _exportFrames(stream, true, standard, id, asOriginal);
                 id = _exportSymbols(stream, false, standard, id, asOriginal);
 
                 if (includeAmplifiers)
