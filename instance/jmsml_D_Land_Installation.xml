@@ -995,11 +995,14 @@
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_CBRN_RADIOLOGICAL_1_MOD_SYM" Label="S*GPIPD---H****" EntityID="INSTALLATION" EntityTypeID="CBRN" ModifierOneID="RADIOLOGICAL_1_MOD">
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IPD---</LegacyFunctionCode>
+	    <LegacyEntity ID="INSTALLATION_CBRN_RADIOLOGICAL_1_MOD_LE" Label="WAR.GRDTRK.INS.PF.DECON" Graphic="S-G-IPD---.svg">
+		    <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IPD---</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_CBRN_BIOLOGICAL_2_MOD_SYM" Label="S*GPIMC---H****" EntityID="INSTALLATION" EntityTypeID="CBRN" ModifierTwoID="BIOLOGICAL_2_MOD">
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMC---</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="INSTALLATION_CBRN_CHEMICAL_2_MOD_SYM" Label="S*GPIMC---H****" EntityID="INSTALLATION" EntityTypeID="CBRN" ModifierTwoID="CHEMICAL_2_MOD">
+    <LegacySymbol ID="INSTALLATION_CBRN_CHEMICAL_2_MOD_SYM" Label="S*GPIMC---H****" EntityID="INSTALLATION" EntityTypeID="CBRN" ModifierTwoID="CHEMICAL_2_MOD" IsDuplicate="true">
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMC---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_ENGINEERING_EQUIPMENT_PRODUCTION_SYM" Label="S*GPIMN---H****" EntityID="INSTALLATION" EntityTypeID="ENGINEERING_EQUIPMENT_PRODUCTION">
@@ -1064,6 +1067,9 @@
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_NUCLEAR_DEFENSE_WEAPONS_GRADE_MOD_SYM" Label="S*GPIMFPW-H****" EntityID="INSTALLATION" EntityTypeID="NUCLEAR_DEFENSE" ModifierTwoID="WEAPONS_GRADE_MOD">
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMFPW-</LegacyFunctionCode>
+	    <LegacyEntity ID="INSTALLATION_NUCLEAR_DEFENSE_WEAPONS_GRADE_MOD_LE" Label="WAR.GRDTRK.INS.MMF.NENY.NMP.WPNGR" Graphic="S-G-IMFPW-.svg">
+		    <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMFPW-</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_SAFE_HOUSE_SYM" Label="O*IPS-----*****" EntityID="INSTALLATION" EntityTypeID="SAFE_HOUSE">
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="I">S-----</LegacyFunctionCode>
@@ -1211,6 +1217,9 @@
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_ENERGY_FACILITY_INFRASTRUCTURE_ELECTRIC_POWER_NUCLEAR_1_MOD_SYM" Label="S*GPIUEN--H****" EntityID="INFRASTRUCTURE" EntityTypeID="ENERGY_FACILITY_INFRASTRUCTURE" EntitySubTypeID="ELECTRIC_POWER" ModifierOneID="NUCLEAR_1_MOD">
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IUEN--</LegacyFunctionCode>
+	    <LegacyEntity ID="INFRASTRUCTURE_ENERGY_FACILITY_INFRASTRUCTURE_ELECTRIC_POWER_NUCLEAR_1_MOD_LE" Label="WAR.GRDTRK.INS.SRUF.EPF.NPT" Graphic="S-G-IUEN--.svg">
+		    <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IUEN--</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_ENERGY_FACILITY_INFRASTRUCTURE_ELECTRIC_POWER_DAM_SYM" Label="S*GPIUED--H****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IUED--</LegacyFunctionCode>
@@ -1326,9 +1335,15 @@
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_TRANSPORTATION_INFRASTRUCTURE_SEA_PORT_NAVAL_BASE_SYM" Label="S*GPIBN---H****" EntityID="INFRASTRUCTURE" EntityTypeID="TRANSPORTATION_INFRASTRUCTURE" EntitySubTypeID="SEA_PORT_NAVAL_BASE">
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IBN---</LegacyFunctionCode>
+	    <LegacyEntity ID="INFRASTRUCTURE_TRANSPORTATION_INFRASTRUCTURE_SEA_PORT_NAVAL_BASE_LE" Label="WAR.GRDTRK.INS.MILBF.SP" Graphic="S-G-IBN---.svg">
+		    <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IBN---</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_TRANSPORTATION_INFRASTRUCTURE_SHIP_YARD_SYM" Label="S*GPIMS---H****" EntityID="INFRASTRUCTURE" EntityTypeID="TRANSPORTATION_INFRASTRUCTURE" EntitySubTypeID="SHIP_YARD">
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMS---</LegacyFunctionCode>
+	    <LegacyEntity ID="INFRASTRUCTURE_TRANSPORTATION_INFRASTRUCTURE_SHIP_YARD_LE" Label="WAR.GRDTRK.INS.MMF.SHPCSN" Graphic="S-G-IMS---.svg">
+		    <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMS---</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_TRANSPORTATION_INFRASTRUCTURE_TOLL_FACILITY_SYM" Label="E*FPLM----H****" EntityID="INFRASTRUCTURE" EntityTypeID="TRANSPORTATION_INFRASTRUCTURE" EntitySubTypeID="TOLL_FACILITY">
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H" SchemaOverride="E" DimensionOverride="F">LM----</LegacyFunctionCode>

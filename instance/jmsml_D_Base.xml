@@ -905,7 +905,7 @@
       <LegacyDimensionCode Name="2525C" CodingSchemeLetter="O" FirstFunctionLetter="U">O</LegacyDimensionCode>
       <LegacyDimensionCode Name="2525C" CodingSchemeLetter="O">V</LegacyDimensionCode>
       <Fields>
-        <Field ID="ACT_AS" Label="Country Indicator" Description="A three-letter code that indicates the country of origin of the organization (STANAG 1059)." Remarks="In stability activities, this field can be used for factions or groups." AmplifierID="AS" X="1" Y="2"/>
+        <Field ID="ACT_AS" Label="Country Indicator" Description="Identifies the country of the organization being shown." Remarks="In stability activities, this field can be used for factions or groups." AmplifierID="AS" X="1" Y="2"/>
         <Field ID="ACT_G" Label="Staff Comments" Description="Free text." Remarks="Can be used by staff for information required by commander." AmplifierID="G" X="1" Y="1"/>
         <Field ID="ACT_H" Label="Additional Informartion" Description="Free text." AmplifierID="H" X="1" Y="0"/>
         <Field ID="ACT_J" Label="Evaluation Rating" Description="Degree of confidence that may be placed on the information represented by the symbol." Remarks="It is shown as one letter and one number made up of Reliability of Source and Credibility of Information." AmplifierID="J" X="1" Y="-2"/>
@@ -939,7 +939,7 @@
         <Field ID="CM_AM" Label="Distance" Description="A numeric amplifier that displays a minimum, maximum, or a specific distance (range, radius, width, length, etc.) in meters." AmplifierID="AM"/>
         <Field ID="CM_AN" Label="Azimuth" Description="A numeric amplifier that displays an angle measured from true north to any other line in degrees." AmplifierID="AN"/>
         <Field ID="CM_AP" Label="Target Designator" Description="A six character text modifier used in Fire Support operations to uniquely designate targets in accordance with STANAG 2147." Remarks="AANNNN where A = Alphabetic, N = Numeric" AmplifierID="AP"/>
-        <Field ID="CM_AS" Label="Country Indicator" Description="A three-letter code that indicates the country of origin of the organization (STANAG 1059)." Remarks="In stability activities, this field can be used for factions or groups." AmplifierID="AS"/>
+        <Field ID="CM_AS" Label="Country Indicator" Description="Identifies the country of the organization being shown." Remarks="In stability activities, this field can be used for factions or groups." AmplifierID="AS"/>
         <Field ID="CM_A" Label="Symbol Icon" Description="The innermost part of a symbol that represents a joint military object." AmplifierID="A"/>
         <Field ID="CM_B" Label="Echelon" Description="A graphic amplifier in a unit symbol that identifies command level." AmplifierID="B"/>
         <Field ID="CM_C" Label="Quantity" Description="A text amplifier in an equipment symbol that identifies the number of items present." AmplifierID="C"/>
@@ -1014,16 +1014,16 @@
     <Affiliation ID="REALITY_UNKNOWN_PENDING" ContextID="REALITY" DimensionID="UNKNOWN" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="0_000_0.svg" CivilianGraphic="0_000_0c.svg"> 
       <LegacyStandardIdentityCode Name="2525C">P</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="Z" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="Z" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="Z" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="Z" IsPlanned="false">P</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
     
     <Affiliation ID="EXERCISE_UNKNOWN_PENDING" ContextID="EXERCISE" DimensionID="UNKNOWN" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="1_000_0.svg" CivilianGraphic="1_000_0c.svg">
       <LegacyStandardIdentityCode Name="2525C">G</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="Z">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="Z">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="Z">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="Z">G</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
       
@@ -1032,16 +1032,16 @@
     <Affiliation ID="REALITY_UNKNOWN_UNKNOWN" ContextID="REALITY" DimensionID="UNKNOWN" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="0_100_0.svg" PlannedGraphic="0_100_1.svg" CivilianGraphic="0_100_0c.svg" PlannedCivilianGraphic="0_100_1c.svg">
       <LegacyStandardIdentityCode Name="2525C">U</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="Z">U</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="Z">U</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="Z">U</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="Z">U</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
     <Affiliation ID="EXERCISE_UNKNOWN_UNKNOWN" ContextID="EXERCISE" DimensionID="UNKNOWN" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="1_100_0.svg" PlannedGraphic="1_100_1.svg" CivilianGraphic="1_100_0c.svg" PlannedCivilianGraphic="1_100_1c.svg">
       <LegacyStandardIdentityCode Name="2525C">W</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="Z">W</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="Z">W</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="Z">W</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="Z">W</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
       
@@ -1050,8 +1050,8 @@
     <Affiliation ID="REALITY_UNKNOWN_FRIEND" ContextID="REALITY" DimensionID="UNKNOWN" StandardIdentityID="SI_FRIEND" Shape="CIRCLE" Graphic="0_300_0.svg" PlannedGraphic="0_300_1.svg" CivilianGraphic="0_300_0c.svg" PlannedCivilianGraphic="0_300_1c.svg">
       <LegacyStandardIdentityCode Name="2525C">F</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="Z">F</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="Z">F</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="Z">F</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="Z">F</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -1060,8 +1060,8 @@
     <Affiliation ID="REALITY_UNKNOWN_NEUTRAL" ContextID="REALITY" DimensionID="UNKNOWN" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="0_400_0.svg" PlannedGraphic="0_400_1.svg" CivilianGraphic="0_400_0c.svg" PlannedCivilianGraphic="0_400_1c.svg">
       <LegacyStandardIdentityCode Name="2525C">N</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="Z">N</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="Z">N</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="Z">N</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="Z">N</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -1070,8 +1070,8 @@
     <Affiliation ID="REALITY_UNKNOWN_HOSTILE" ContextID="REALITY" DimensionID="UNKNOWN" StandardIdentityID="SI_HOSTILE_FAKER" Shape="DIAMOND" Graphic="0_600_0.svg" PlannedGraphic="0_600_1.svg">
       <LegacyStandardIdentityCode Name="2525C">H</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="Z">H</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="Z">H</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="Z">H</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="Z">H</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -1080,8 +1080,8 @@
     <Affiliation ID="REALITY_UNKNOWN_ASSUMED" ContextID="REALITY" DimensionID="UNKNOWN" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="0_200_0.svg" CivilianGraphic="0_200_0c.svg">
       <LegacyStandardIdentityCode Name="2525C">A</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="Z" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="Z" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="Z" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="Z" IsPlanned="false">A</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -1090,8 +1090,8 @@
     <Affiliation ID="REALITY_UNKNOWN_SUSPECT" ContextID="REALITY" DimensionID="UNKNOWN" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="0_500_0.svg">
       <LegacyStandardIdentityCode Name="2525C">S</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="Z" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="Z" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="Z" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="Z" IsPlanned="false">S</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -1102,18 +1102,18 @@
     <Affiliation ID="REALITY_AIR_PENDING" ContextID="REALITY" DimensionID="AIR" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="0_001_0.svg" CivilianGraphic="0_001_0c.svg">
       <LegacyStandardIdentityCode Name="2525C">P</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="A" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="A" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="A" FirstFunctionLetter="S" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="A" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="A" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="A" FirstFunctionLetter="S" IsPlanned="false">P</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
     <Affiliation ID="EXERCISE_AIR_PENDING" ContextID="EXERCISE" DimensionID="AIR" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="1_001_0.svg" CivilianGraphic="1_001_0c.svg">
       <LegacyStandardIdentityCode Name="2525C">G</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="A" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="A" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="A" FirstFunctionLetter="S" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="A" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="A" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="A" FirstFunctionLetter="S" IsPlanned="false">G</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -1202,18 +1202,18 @@
     <Affiliation ID="REALITY_AIR_ASSUMED" ContextID="REALITY" DimensionID="AIR" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CURVE" Graphic="0_201_0.svg" CivilianGraphic="0_201_0c.svg">
       <LegacyStandardIdentityCode Name="2525C">A</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="A" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="A" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="A" FirstFunctionLetter="S" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="A" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="A" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="A" FirstFunctionLetter="S" IsPlanned="false">A</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
     <Affiliation ID="EXERCISE_AIR_ASSUMED" ContextID="EXERCISE" DimensionID="AIR" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CURVE" Graphic="1_201_0.svg" CivilianGraphic="1_201_0c.svg">
       <LegacyStandardIdentityCode Name="2525C">M</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="A" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="A" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="A" FirstFunctionLetter="S" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="A" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="A" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="A" FirstFunctionLetter="S" IsPlanned="false">M</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -1222,18 +1222,18 @@
     <Affiliation ID="REALITY_AIR_SUSPECT" ContextID="REALITY" DimensionID="AIR" StandardIdentityID="SI_SUSPECT_JOKER" Shape="CURVE" Graphic="0_501_0.svg">
       <LegacyStandardIdentityCode Name="2525C">S</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="A" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="A" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="A" FirstFunctionLetter="S" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="A" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="A" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="A" FirstFunctionLetter="S" IsPlanned="false">S</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
     <Affiliation ID="EXERCISE_AIR_SUSPECT" ContextID="EXERCISE" DimensionID="AIR" StandardIdentityID="SI_SUSPECT_JOKER" Shape="CURVE" Graphic="1_501_0.svg">
       <LegacyStandardIdentityCode Name="2525C">J</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="A" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="A" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="A" FirstFunctionLetter="S" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="A" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="A" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="A" FirstFunctionLetter="S" IsPlanned="false">J</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -1244,18 +1244,18 @@
     <Affiliation ID="REALITY_SPACE_PENDING" ContextID="REALITY" DimensionID="SPACE" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="0_005_0.svg" CivilianGraphic="0_005_0c.svg">
       <LegacyStandardIdentityCode Name="2525C">P</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="P" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" FirstFunctionLetter="S" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="P" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" FirstFunctionLetter="S" IsPlanned="false">P</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
     <Affiliation ID="EXERCISE_SPACE_PENDING" ContextID="EXERCISE" DimensionID="SPACE" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="1_005_0.svg" CivilianGraphic="1_005_0c.svg">
       <LegacyStandardIdentityCode Name="2525C">G</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="P" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" FirstFunctionLetter="S" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="P" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" FirstFunctionLetter="S" IsPlanned="false">G</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -1264,18 +1264,18 @@
     <Affiliation ID="REALITY_SPACE_UNKNOWN" ContextID="REALITY" DimensionID="SPACE" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="0_105_0.svg" PlannedGraphic="0_105_1.svg" CivilianGraphic="0_105_0c.svg" PlannedCivilianGraphic="0_105_1c.svg">
       <LegacyStandardIdentityCode Name="2525C">U</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="P">U</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P">U</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" FirstFunctionLetter="S">U</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="P">U</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P">U</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" FirstFunctionLetter="S">U</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
     <Affiliation ID="EXERCISE_SPACE_UNKNOWN" ContextID="EXERCISE" DimensionID="SPACE" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="1_105_0.svg" PlannedGraphic="1_105_1.svg" CivilianGraphic="1_105_0c.svg" PlannedCivilianGraphic="1_105_1c.svg">
       <LegacyStandardIdentityCode Name="2525C">W</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="P">W</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P">W</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" FirstFunctionLetter="S">W</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="P">W</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P">W</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" FirstFunctionLetter="S">W</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -1284,18 +1284,18 @@
     <Affiliation ID="REALITY_SPACE_FRIEND" ContextID="REALITY" DimensionID="SPACE" StandardIdentityID="SI_FRIEND" Shape="CURVE" Graphic="0_305_0.svg" PlannedGraphic="0_305_1.svg" CivilianGraphic="0_305_0c.svg" PlannedCivilianGraphic="0_305_1c.svg">
       <LegacyStandardIdentityCode Name="2525C">F</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="P">F</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P">F</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" FirstFunctionLetter="S">F</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="P">F</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P">F</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" FirstFunctionLetter="S">F</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
     <Affiliation ID="EXERCISE_SPACE_FRIEND" ContextID="EXERCISE" DimensionID="SPACE" StandardIdentityID="SI_FRIEND" Shape="CURVE" Graphic="1_305_0.svg" PlannedGraphic="1_305_1.svg" CivilianGraphic="1_305_0c.svg" PlannedCivilianGraphic="1_305_1c.svg">
       <LegacyStandardIdentityCode Name="2525C">D</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="P">D</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P">D</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" FirstFunctionLetter="S">D</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="P">D</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P">D</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" FirstFunctionLetter="S">D</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -1304,18 +1304,18 @@
     <Affiliation ID="REALITY_SPACE_NEUTRAL" ContextID="REALITY" DimensionID="SPACE" StandardIdentityID="SI_NEUTRAL" Shape="CURVE" Graphic="0_405_0.svg" PlannedGraphic="0_405_1.svg" CivilianGraphic="0_405_0c.svg" PlannedCivilianGraphic="0_405_1c.svg">
       <LegacyStandardIdentityCode Name="2525C">N</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="P">N</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P">N</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" FirstFunctionLetter="S">N</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="P">N</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P">N</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" FirstFunctionLetter="S">N</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
     <Affiliation ID="EXERCISE_SPACE_NEUTRAL" ContextID="EXERCISE" DimensionID="SPACE" StandardIdentityID="SI_NEUTRAL" Shape="CURVE" Graphic="1_405_0.svg" PlannedGraphic="1_405_1.svg" CivilianGraphic="1_405_0c.svg" PlannedCivilianGraphic="1_405_1c.svg">
       <LegacyStandardIdentityCode Name="2525C">L</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="P">L</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P">L</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" FirstFunctionLetter="S">L</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="P">L</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P">L</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" FirstFunctionLetter="S">L</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -1324,18 +1324,18 @@
     <Affiliation ID="REALITY_SPACE_HOSTILE" ContextID="REALITY" DimensionID="SPACE" StandardIdentityID="SI_HOSTILE_FAKER" Shape="CURVE" Graphic="0_605_0.svg" PlannedGraphic="0_605_1.svg">
       <LegacyStandardIdentityCode Name="2525C">H</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="P">H</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P">H</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" FirstFunctionLetter="S">H</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="P">H</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P">H</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" FirstFunctionLetter="S">H</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
     <Affiliation ID="EXERCISE_SPACE_HOSTILE" ContextID="EXERCISE" DimensionID="SPACE" StandardIdentityID="SI_HOSTILE_FAKER" Shape="CURVE" Graphic="1_605_0.svg" PlannedGraphic="1_605_1.svg">
       <LegacyStandardIdentityCode Name="2525C">K</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="P">K</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P">K</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" FirstFunctionLetter="S">K</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="P">K</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P">K</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" FirstFunctionLetter="S">K</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -1344,18 +1344,18 @@
     <Affiliation ID="REALITY_SPACE_ASSUMED" ContextID="REALITY" DimensionID="SPACE" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CURVE" Graphic="0_205_0.svg" CivilianGraphic="0_205_0c.svg">
       <LegacyStandardIdentityCode Name="2525C">A</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="P" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" FirstFunctionLetter="S" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="P" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" FirstFunctionLetter="S" IsPlanned="false">A</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
     <Affiliation ID="EXERCISE_SPACE_ASSUMED" ContextID="EXERCISE" DimensionID="SPACE" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CURVE" Graphic="1_205_0.svg" CivilianGraphic="1_205_0c.svg">
       <LegacyStandardIdentityCode Name="2525C">M</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="P" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" FirstFunctionLetter="S" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="P" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" FirstFunctionLetter="S" IsPlanned="false">M</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -1364,18 +1364,18 @@
     <Affiliation ID="REALITY_SPACE_SUSPECT" ContextID="REALITY" DimensionID="SPACE" StandardIdentityID="SI_SUSPECT_JOKER" Shape="CURVE" Graphic="0_505_0.svg">
       <LegacyStandardIdentityCode Name="2525C">S</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="P" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" FirstFunctionLetter="S" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="P" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" FirstFunctionLetter="S" IsPlanned="false">S</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
     <Affiliation ID="EXERCISE_SPACE_SUSPECT" ContextID="EXERCISE" DimensionID="SPACE" StandardIdentityID="SI_SUSPECT_JOKER" Shape="CURVE" Graphic="1_505_0.svg">
       <LegacyStandardIdentityCode Name="2525C">J</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="P" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" FirstFunctionLetter="S" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="P" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="P" FirstFunctionLetter="S" IsPlanned="false">J</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -1386,109 +1386,107 @@
     <Affiliation ID="REALITY_LU_PENDING" ContextID="REALITY" DimensionID="LAND_UNIT" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="0_010_0.svg" CivilianGraphic="0_010_0c.svg">
       <LegacyStandardIdentityCode Name="2525C" FirstFunctionLetter="U">P</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="U" IsPlanned="false">P</LegacyFrame>
-        <!-- Signals Intellegence -->
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" FirstFunctionLetter="S" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="U" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525Bc2" LimitUseTo="2525Bc2" CodingSchemeLetter="S" BattleDimensionLetter="G" IsPlanned="false" Graphic="SPGP.svg">P</LegacyFrame>
+        <LegacyFrame Name="2525Bc2" LimitUseTo="2525Bc2" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="U" IsPlanned="false" Graphic="SPGP.svg">P</LegacyFrame>
         <!-- Special Operations Forces -->
-        <LegacyFrame Name="2525C" Description="SOF" CodingSchemeLetter="S" BattleDimensionLetter="F" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SOF" CodingSchemeLetter="S" BattleDimensionLetter="F" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525Bc2" LimitUseTo="2525Bc2" Description="SOF" CodingSchemeLetter="S" BattleDimensionLetter="F" IsPlanned="false" Graphic="SPFP.svg">P</LegacyFrame>
         <!-- Stability Operations -->
-        <LegacyFrame Name="2525C" Description="SO - Violent Activity" CodingSchemeLetter="O" BattleDimensionLetter="V" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Locations" CodingSchemeLetter="O" BattleDimensionLetter="L" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Operations" CodingSchemeLetter="O" BattleDimensionLetter="O" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Items" CodingSchemeLetter="O" BattleDimensionLetter="I" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Individual" CodingSchemeLetter="O" BattleDimensionLetter="P" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Civilian Group" CodingSchemeLetter="O" BattleDimensionLetter="G" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Rape" CodingSchemeLetter="O" BattleDimensionLetter="R" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Violent Activity" CodingSchemeLetter="O" BattleDimensionLetter="V" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Locations" CodingSchemeLetter="O" BattleDimensionLetter="L" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Operations" CodingSchemeLetter="O" BattleDimensionLetter="O" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Items" CodingSchemeLetter="O" BattleDimensionLetter="I" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Individual" CodingSchemeLetter="O" BattleDimensionLetter="P" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Civilian Group" CodingSchemeLetter="O" BattleDimensionLetter="G" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Rape" CodingSchemeLetter="O" BattleDimensionLetter="R" IsPlanned="false">P</LegacyFrame>
         <!-- Emergency Management -->
-        <LegacyFrame Name="2525C" Description="EM - Incident" CodingSchemeLetter="E" BattleDimensionLetter="I" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="A-----" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="AA----" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="B-----" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BB----" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BD----" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BJ----" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="C-----" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="CA----" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="D-----" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DA----" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DD----" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DDA---" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DE----" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DEA---" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DF----" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DFA---" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DG----" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DGA---" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DH----" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DHA---" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DI----" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DIA---" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DJ----" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DL----" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DLA---" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DM----" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DMA---" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DN----" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DNA---" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DO----" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DOA---" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Infrastructure" CodingSchemeLetter="E" BattleDimensionLetter="F" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Incident" CodingSchemeLetter="E" BattleDimensionLetter="I" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="A-----" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="AA----" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="B-----" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BB----" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BD----" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BJ----" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="C-----" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="CA----" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="D-----" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DA----" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DD----" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DDA---" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DE----" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DEA---" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DF----" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DFA---" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DG----" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DGA---" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DH----" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DHA---" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DI----" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DIA---" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DJ----" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DL----" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DLA---" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DM----" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DMA---" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DN----" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DNA---" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DO----" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DOA---" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Infrastructure" CodingSchemeLetter="E" BattleDimensionLetter="F" IsPlanned="false">P</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
     <Affiliation ID="EXERCISE_LU_PENDING" ContextID="EXERCISE" DimensionID="LAND_UNIT" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="1_010_0.svg" CivilianGraphic="1_010_0c.svg">
       <LegacyStandardIdentityCode Name="2525C" FirstFunctionLetter="U">G</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="U" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" FirstFunctionLetter="S" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SOF" CodingSchemeLetter="S" BattleDimensionLetter="F" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Violent Activity" CodingSchemeLetter="O" BattleDimensionLetter="V" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Locations" CodingSchemeLetter="O" BattleDimensionLetter="L" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Operations" CodingSchemeLetter="O" BattleDimensionLetter="O" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Items" CodingSchemeLetter="O" BattleDimensionLetter="I" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Individual" CodingSchemeLetter="O" BattleDimensionLetter="P" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Civilian Group" CodingSchemeLetter="O" BattleDimensionLetter="G" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Rape" CodingSchemeLetter="O" BattleDimensionLetter="R" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="U" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SOF" CodingSchemeLetter="S" BattleDimensionLetter="F" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Violent Activity" CodingSchemeLetter="O" BattleDimensionLetter="V" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Locations" CodingSchemeLetter="O" BattleDimensionLetter="L" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Operations" CodingSchemeLetter="O" BattleDimensionLetter="O" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Items" CodingSchemeLetter="O" BattleDimensionLetter="I" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Individual" CodingSchemeLetter="O" BattleDimensionLetter="P" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Civilian Group" CodingSchemeLetter="O" BattleDimensionLetter="G" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Rape" CodingSchemeLetter="O" BattleDimensionLetter="R" IsPlanned="false">G</LegacyFrame>
         <!-- Emergency Management -->
-        <LegacyFrame Name="2525C" Description="EM - Incident" CodingSchemeLetter="E" BattleDimensionLetter="I" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="A-----" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="AA----" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="B-----" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BB----" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BD----" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BJ----" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="C-----" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="CA----" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="D-----" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DA----" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DD----" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DDA---" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DE----" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DEA---" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DF----" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DFA---" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DG----" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DGA---" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DH----" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DHA---" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DI----" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DIA---" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DJ----" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DL----" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DLA---" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DM----" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DMA---" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DN----" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DNA---" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DO----" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DOA---" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Infrastructure" CodingSchemeLetter="E" BattleDimensionLetter="F" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Incident" CodingSchemeLetter="E" BattleDimensionLetter="I" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="A-----" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="AA----" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="B-----" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BB----" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BD----" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BJ----" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="C-----" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="CA----" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="D-----" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DA----" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DD----" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DDA---" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DE----" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DEA---" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DF----" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DFA---" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DG----" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DGA---" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DH----" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DHA---" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DI----" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DIA---" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DJ----" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DL----" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DLA---" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DM----" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DMA---" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DN----" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DNA---" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DO----" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DOA---" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Infrastructure" CodingSchemeLetter="E" BattleDimensionLetter="F" IsPlanned="false">G</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -1499,8 +1497,6 @@
       <LegacyFrames>
         <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G">U</LegacyFrame>
         <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="U">U</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G">U</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" FirstFunctionLetter="S">U</LegacyFrame>
         <LegacyFrame Name="2525C" Description="SOF" CodingSchemeLetter="S" BattleDimensionLetter="F">U</LegacyFrame>
         <LegacyFrame Name="2525C" Description="SO - Violent Activity" CodingSchemeLetter="O" BattleDimensionLetter="V">U</LegacyFrame>
         <LegacyFrame Name="2525C" Description="SO - Locations" CodingSchemeLetter="O" BattleDimensionLetter="L">U</LegacyFrame>
@@ -1552,8 +1548,6 @@
       <LegacyFrames>
         <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G">W</LegacyFrame>
         <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="U">W</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G">W</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" FirstFunctionLetter="S">W</LegacyFrame>
         <LegacyFrame Name="2525C" Description="SOF" CodingSchemeLetter="S" BattleDimensionLetter="F">W</LegacyFrame>
         <LegacyFrame Name="2525C" Description="SO - Violent Activity" CodingSchemeLetter="O" BattleDimensionLetter="V">W</LegacyFrame>
         <LegacyFrame Name="2525C" Description="SO - Locations" CodingSchemeLetter="O" BattleDimensionLetter="L">W</LegacyFrame>
@@ -1607,8 +1601,6 @@
       <LegacyFrames>
         <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G">F</LegacyFrame>
         <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="U">F</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G">F</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" FirstFunctionLetter="S">F</LegacyFrame>
         <LegacyFrame Name="2525C" Description="SOF" CodingSchemeLetter="S" BattleDimensionLetter="F">F</LegacyFrame>
         <LegacyFrame Name="2525C" Description="SO - Violent Activity" CodingSchemeLetter="O" BattleDimensionLetter="V">F</LegacyFrame>
         <LegacyFrame Name="2525C" Description="SO - Locations" CodingSchemeLetter="O" BattleDimensionLetter="L">F</LegacyFrame>
@@ -1660,8 +1652,6 @@
       <LegacyFrames>
         <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G">D</LegacyFrame>
         <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="U">D</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G">D</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" FirstFunctionLetter="S">D</LegacyFrame>
         <LegacyFrame Name="2525C" Description="SOF" CodingSchemeLetter="S" BattleDimensionLetter="F">D</LegacyFrame>
         <LegacyFrame Name="2525C" Description="SO - Violent Activity" CodingSchemeLetter="O" BattleDimensionLetter="V">D</LegacyFrame>
         <LegacyFrame Name="2525C" Description="SO - Locations" CodingSchemeLetter="O" BattleDimensionLetter="L">D</LegacyFrame>
@@ -1715,8 +1705,6 @@
       <LegacyFrames>
         <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G">N</LegacyFrame>
         <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="U">N</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G">N</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" FirstFunctionLetter="S">N</LegacyFrame>
         <LegacyFrame Name="2525C" Description="SOF" CodingSchemeLetter="S" BattleDimensionLetter="F">N</LegacyFrame>
         <LegacyFrame Name="2525C" Description="SO - Violent Activity" CodingSchemeLetter="O" BattleDimensionLetter="V">N</LegacyFrame>
         <LegacyFrame Name="2525C" Description="SO - Locations" CodingSchemeLetter="O" BattleDimensionLetter="L">N</LegacyFrame>
@@ -1768,8 +1756,6 @@
       <LegacyFrames>
         <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G">L</LegacyFrame>
         <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="U">L</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G">L</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" FirstFunctionLetter="S">L</LegacyFrame>
         <LegacyFrame Name="2525C" Description="SOF" CodingSchemeLetter="S" BattleDimensionLetter="F">L</LegacyFrame>
         <LegacyFrame Name="2525C" Description="SO - Violent Activity" CodingSchemeLetter="O" BattleDimensionLetter="V">L</LegacyFrame>
         <LegacyFrame Name="2525C" Description="SO - Locations" CodingSchemeLetter="O" BattleDimensionLetter="L">L</LegacyFrame>
@@ -1823,8 +1809,6 @@
       <LegacyFrames>
         <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G">H</LegacyFrame>
         <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="U">H</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G">H</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" FirstFunctionLetter="S">H</LegacyFrame>
         <LegacyFrame Name="2525C" Description="SOF" CodingSchemeLetter="S" BattleDimensionLetter="F">H</LegacyFrame>
         <LegacyFrame Name="2525C" Description="SO - Violent Activity" CodingSchemeLetter="O" BattleDimensionLetter="V">H</LegacyFrame>
         <LegacyFrame Name="2525C" Description="SO - Locations" CodingSchemeLetter="O" BattleDimensionLetter="L">H</LegacyFrame>
@@ -1876,8 +1860,6 @@
       <LegacyFrames>
         <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G">K</LegacyFrame>
         <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="U">K</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G">K</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" FirstFunctionLetter="S">K</LegacyFrame>
         <LegacyFrame Name="2525C" Description="SOF" CodingSchemeLetter="S" BattleDimensionLetter="F">K</LegacyFrame>
         <LegacyFrame Name="2525C" Description="SO - Violent Activity" CodingSchemeLetter="O" BattleDimensionLetter="V">K</LegacyFrame>
         <LegacyFrame Name="2525C" Description="SO - Locations" CodingSchemeLetter="O" BattleDimensionLetter="L">K</LegacyFrame>
@@ -1929,106 +1911,106 @@
     <Affiliation ID="REALITY_LU_ASSUMED" ContextID="REALITY" DimensionID="LAND_UNIT" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="0_210_0.svg" CivilianGraphic="0_210_0c.svg">
       <LegacyStandardIdentityCode Name="2525C" FirstFunctionLetter="U">A</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="U" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" FirstFunctionLetter="S" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SOF" CodingSchemeLetter="S" BattleDimensionLetter="F" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Violent Activity" CodingSchemeLetter="O" BattleDimensionLetter="V" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Locations" CodingSchemeLetter="O" BattleDimensionLetter="L" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Operations" CodingSchemeLetter="O" BattleDimensionLetter="O" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Items" CodingSchemeLetter="O" BattleDimensionLetter="I" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Individual" CodingSchemeLetter="O" BattleDimensionLetter="P" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Civilian Group" CodingSchemeLetter="O" BattleDimensionLetter="G" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Rape" CodingSchemeLetter="O" BattleDimensionLetter="R" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="U" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525Bc2" CodingSchemeLetter="S" BattleDimensionLetter="G" IsPlanned="false" Graphic="SAGP.svg">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525Bc2" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="U" IsPlanned="false" Graphic="SAGP.svg">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SOF" CodingSchemeLetter="S" BattleDimensionLetter="F" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Violent Activity" CodingSchemeLetter="O" BattleDimensionLetter="V" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Locations" CodingSchemeLetter="O" BattleDimensionLetter="L" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Operations" CodingSchemeLetter="O" BattleDimensionLetter="O" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Items" CodingSchemeLetter="O" BattleDimensionLetter="I" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Individual" CodingSchemeLetter="O" BattleDimensionLetter="P" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Civilian Group" CodingSchemeLetter="O" BattleDimensionLetter="G" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Rape" CodingSchemeLetter="O" BattleDimensionLetter="R" IsPlanned="false">A</LegacyFrame>
         <!-- Emergency Management -->
-        <LegacyFrame Name="2525C" Description="EM - Incident" CodingSchemeLetter="E" BattleDimensionLetter="I" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="A-----" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="AA----" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="B-----" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BB----" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BD----" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BJ----" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="C-----" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="CA----" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="D-----" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DA----" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DD----" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DDA---" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DE----" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DEA---" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DF----" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DFA---" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DG----" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DGA---" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DH----" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DHA---" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DI----" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DIA---" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DJ----" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DL----" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DLA---" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DM----" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DMA---" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DN----" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DNA---" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DO----" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DOA---" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Infrastructure" CodingSchemeLetter="E" BattleDimensionLetter="F" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Incident" CodingSchemeLetter="E" BattleDimensionLetter="I" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="A-----" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="AA----" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="B-----" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BB----" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BD----" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BJ----" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="C-----" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="CA----" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="D-----" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DA----" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DD----" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DDA---" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DE----" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DEA---" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DF----" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DFA---" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DG----" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DGA---" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DH----" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DHA---" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DI----" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DIA---" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DJ----" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DL----" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DLA---" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DM----" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DMA---" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DN----" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DNA---" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DO----" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DOA---" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Infrastructure" CodingSchemeLetter="E" BattleDimensionLetter="F" IsPlanned="false">A</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
     <Affiliation ID="EXERCISE_LU_ASSUMED" ContextID="EXERCISE" DimensionID="LAND_UNIT" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="1_210_0.svg" CivilianGraphic="1_210_0c.svg">
       <LegacyStandardIdentityCode Name="2525C" FirstFunctionLetter="U">M</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="U" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" FirstFunctionLetter="S" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SOF" CodingSchemeLetter="S" BattleDimensionLetter="F" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Violent Activity" CodingSchemeLetter="O" BattleDimensionLetter="V" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Locations" CodingSchemeLetter="O" BattleDimensionLetter="L" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Operations" CodingSchemeLetter="O" BattleDimensionLetter="O" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Items" CodingSchemeLetter="O" BattleDimensionLetter="I" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Individual" CodingSchemeLetter="O" BattleDimensionLetter="P" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Civilian Group" CodingSchemeLetter="O" BattleDimensionLetter="G" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Rape" CodingSchemeLetter="O" BattleDimensionLetter="R" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="U" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525Bc2" CodingSchemeLetter="S" BattleDimensionLetter="G" IsPlanned="false" Graphic="SMGP.svg">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525Bc2" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="U" IsPlanned="false" Graphic="SMGP.svg">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SOF" CodingSchemeLetter="S" BattleDimensionLetter="F" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Violent Activity" CodingSchemeLetter="O" BattleDimensionLetter="V" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Locations" CodingSchemeLetter="O" BattleDimensionLetter="L" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Operations" CodingSchemeLetter="O" BattleDimensionLetter="O" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Items" CodingSchemeLetter="O" BattleDimensionLetter="I" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Individual" CodingSchemeLetter="O" BattleDimensionLetter="P" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Civilian Group" CodingSchemeLetter="O" BattleDimensionLetter="G" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Rape" CodingSchemeLetter="O" BattleDimensionLetter="R" IsPlanned="false">M</LegacyFrame>
         <!-- Emergency Management -->
-        <LegacyFrame Name="2525C" Description="EM - Incident" CodingSchemeLetter="E" BattleDimensionLetter="I" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="A-----" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="AA----" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="B-----" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BB----" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BD----" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BJ----" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="C-----" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="CA----" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="D-----" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DA----" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DD----" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DDA---" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DE----" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DEA---" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DF----" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DFA---" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DG----" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DGA---" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DH----" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DHA---" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DI----" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DIA---" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DJ----" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DL----" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DLA---" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DM----" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DMA---" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DN----" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DNA---" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DO----" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DOA---" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Infrastructure" CodingSchemeLetter="E" BattleDimensionLetter="F" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Incident" CodingSchemeLetter="E" BattleDimensionLetter="I" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="A-----" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="AA----" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="B-----" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BB----" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BD----" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BJ----" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="C-----" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="CA----" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="D-----" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DA----" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DD----" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DDA---" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DE----" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DEA---" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DF----" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DFA---" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DG----" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DGA---" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DH----" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DHA---" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DI----" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DIA---" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DJ----" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DL----" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DLA---" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DM----" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DMA---" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DN----" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DNA---" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DO----" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DOA---" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Infrastructure" CodingSchemeLetter="E" BattleDimensionLetter="F" IsPlanned="false">M</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -2037,106 +2019,104 @@
     <Affiliation ID="REALITY_LU_SUSPECT" ContextID="REALITY" DimensionID="LAND_UNIT" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="0_510_0.svg">
       <LegacyStandardIdentityCode Name="2525C" FirstFunctionLetter="U">S</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="U" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" FirstFunctionLetter="S" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SOF" CodingSchemeLetter="S" BattleDimensionLetter="F" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Violent Activity" CodingSchemeLetter="O" BattleDimensionLetter="V" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Locations" CodingSchemeLetter="O" BattleDimensionLetter="L" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Operations" CodingSchemeLetter="O" BattleDimensionLetter="O" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Items" CodingSchemeLetter="O" BattleDimensionLetter="I" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Individual" CodingSchemeLetter="O" BattleDimensionLetter="P" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Civilian Group" CodingSchemeLetter="O" BattleDimensionLetter="G" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Rape" CodingSchemeLetter="O" BattleDimensionLetter="R" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="U" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525Bc2" CodingSchemeLetter="S" BattleDimensionLetter="G" IsPlanned="false" Graphic="SSGP.svg">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525Bc2" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="U" IsPlanned="false" Graphic="SSGP.svg">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SOF" CodingSchemeLetter="S" BattleDimensionLetter="F" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Violent Activity" CodingSchemeLetter="O" BattleDimensionLetter="V" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Locations" CodingSchemeLetter="O" BattleDimensionLetter="L" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Operations" CodingSchemeLetter="O" BattleDimensionLetter="O" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Items" CodingSchemeLetter="O" BattleDimensionLetter="I" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Individual" CodingSchemeLetter="O" BattleDimensionLetter="P" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Civilian Group" CodingSchemeLetter="O" BattleDimensionLetter="G" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Rape" CodingSchemeLetter="O" BattleDimensionLetter="R" IsPlanned="false">S</LegacyFrame>
         <!-- Emergency Management -->
-        <LegacyFrame Name="2525C" Description="EM - Incident" CodingSchemeLetter="E" BattleDimensionLetter="I" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="A-----" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="AA----" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="B-----" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BB----" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BD----" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BJ----" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="C-----" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="CA----" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="D-----" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DA----" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DD----" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DDA---" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DE----" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DEA---" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DF----" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DFA---" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DG----" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DGA---" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DH----" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DHA---" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DI----" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DIA---" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DJ----" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DL----" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DLA---" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DM----" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DMA---" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DN----" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DNA---" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DO----" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DOA---" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Infrastructure" CodingSchemeLetter="E" BattleDimensionLetter="F" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Incident" CodingSchemeLetter="E" BattleDimensionLetter="I" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="A-----" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="AA----" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="B-----" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BB----" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BD----" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BJ----" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="C-----" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="CA----" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="D-----" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DA----" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DD----" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DDA---" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DE----" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DEA---" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DF----" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DFA---" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DG----" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DGA---" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DH----" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DHA---" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DI----" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DIA---" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DJ----" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DL----" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DLA---" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DM----" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DMA---" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DN----" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DNA---" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DO----" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DOA---" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Infrastructure" CodingSchemeLetter="E" BattleDimensionLetter="F" IsPlanned="false">S</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
     <Affiliation ID="EXERCISE_LU_SUSPECT" ContextID="EXERCISE" DimensionID="LAND_UNIT" StandardIdentityID="SI_SUSPECT_JOKER" Shape="CIRCLE" Graphic="1_510_0.svg">
       <LegacyStandardIdentityCode Name="2525C" FirstFunctionLetter="U">J</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="U" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" FirstFunctionLetter="S" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SOF" CodingSchemeLetter="S" BattleDimensionLetter="F" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Violent Activity" CodingSchemeLetter="O" BattleDimensionLetter="V" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Locations" CodingSchemeLetter="O" BattleDimensionLetter="L" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Operations" CodingSchemeLetter="O" BattleDimensionLetter="O" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Items" CodingSchemeLetter="O" BattleDimensionLetter="I" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Individual" CodingSchemeLetter="O" BattleDimensionLetter="P" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Civilian Group" CodingSchemeLetter="O" BattleDimensionLetter="G" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SO - Rape" CodingSchemeLetter="O" BattleDimensionLetter="R" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="U" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SOF" CodingSchemeLetter="S" BattleDimensionLetter="F" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Violent Activity" CodingSchemeLetter="O" BattleDimensionLetter="V" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Locations" CodingSchemeLetter="O" BattleDimensionLetter="L" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Operations" CodingSchemeLetter="O" BattleDimensionLetter="O" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Items" CodingSchemeLetter="O" BattleDimensionLetter="I" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Individual" CodingSchemeLetter="O" BattleDimensionLetter="P" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Civilian Group" CodingSchemeLetter="O" BattleDimensionLetter="G" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SO - Rape" CodingSchemeLetter="O" BattleDimensionLetter="R" IsPlanned="false">J</LegacyFrame>
         <!-- Emergency Management -->
-        <LegacyFrame Name="2525C" Description="EM - Incident" CodingSchemeLetter="E" BattleDimensionLetter="I" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="A-----" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="AA----" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="B-----" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BB----" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BD----" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BJ----" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="C-----" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="CA----" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="D-----" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DA----" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DD----" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DDA---" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DE----" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DEA---" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DF----" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DFA---" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DG----" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DGA---" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DH----" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DHA---" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DI----" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DIA---" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DJ----" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DL----" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DLA---" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DM----" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DMA---" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DN----" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DNA---" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DO----" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DOA---" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="EM - Infrastructure" CodingSchemeLetter="E" BattleDimensionLetter="F" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Incident" CodingSchemeLetter="E" BattleDimensionLetter="I" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="A-----" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="AA----" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="B-----" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BB----" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BD----" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="BJ----" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="C-----" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="CA----" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="D-----" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DA----" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DD----" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DDA---" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DE----" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DEA---" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DF----" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DFA---" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DG----" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DGA---" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DH----" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DHA---" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DI----" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DIA---" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DJ----" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DL----" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DLA---" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DM----" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DMA---" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DN----" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DNA---" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DO----" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Operations" CodingSchemeLetter="E" BattleDimensionLetter="O" Function="DOA---" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="EM - Infrastructure" CodingSchemeLetter="E" BattleDimensionLetter="F" IsPlanned="false">J</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -2148,7 +2128,10 @@
       <LegacyStandardIdentityCode Name="2525C" FirstFunctionLetter="E">P</LegacyStandardIdentityCode>
       <LegacyStandardIdentityCode Name="2525C" CodingSchemeLetter="O" FirstFunctionLetter="I">P</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="E" IsPlanned="false">P</LegacyFrame>        
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="E" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525Bc2" LimitUseTo="2525Bc2" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="E" IsPlanned="false" Graphic="SPGP.svg">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" FirstFunctionLetter="S" IsPlanned="false">P</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -2156,7 +2139,9 @@
       <LegacyStandardIdentityCode Name="2525C" FirstFunctionLetter="E">G</LegacyStandardIdentityCode>
       <LegacyStandardIdentityCode Name="2525C" CodingSchemeLetter="O" FirstFunctionLetter="I">G</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="E" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="E" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" FirstFunctionLetter="S" IsPlanned="false">G</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -2167,6 +2152,8 @@
       <LegacyStandardIdentityCode Name="2525C" CodingSchemeLetter="O" FirstFunctionLetter="I">U</LegacyStandardIdentityCode>
       <LegacyFrames>
         <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="E">U</LegacyFrame>
+        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G">U</LegacyFrame>
+        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" FirstFunctionLetter="S">U</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -2175,6 +2162,8 @@
       <LegacyStandardIdentityCode Name="2525C" CodingSchemeLetter="O" FirstFunctionLetter="I">W</LegacyStandardIdentityCode>
       <LegacyFrames>
         <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="E">W</LegacyFrame>
+        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G">W</LegacyFrame>
+        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" FirstFunctionLetter="S">W</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -2184,6 +2173,8 @@
       <LegacyStandardIdentityCode Name="2525C" FirstFunctionLetter="E">F</LegacyStandardIdentityCode>
       <LegacyFrames>
         <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="E">F</LegacyFrame>
+        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G">F</LegacyFrame>
+        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" FirstFunctionLetter="S">F</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -2191,6 +2182,8 @@
       <LegacyStandardIdentityCode Name="2525C" FirstFunctionLetter="E">D</LegacyStandardIdentityCode>
       <LegacyFrames>
         <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="E">D</LegacyFrame>
+        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G">D</LegacyFrame>
+        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" FirstFunctionLetter="S">D</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -2200,6 +2193,8 @@
       <LegacyStandardIdentityCode Name="2525C" FirstFunctionLetter="E">N</LegacyStandardIdentityCode>
       <LegacyFrames>
         <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="E">N</LegacyFrame>
+        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G">N</LegacyFrame>
+        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" FirstFunctionLetter="S">N</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -2207,6 +2202,8 @@
       <LegacyStandardIdentityCode Name="2525C" FirstFunctionLetter="E">L</LegacyStandardIdentityCode>
       <LegacyFrames>
         <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="E">L</LegacyFrame>
+        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G">L</LegacyFrame>
+        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" FirstFunctionLetter="S">L</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -2216,13 +2213,17 @@
       <LegacyStandardIdentityCode Name="2525C" FirstFunctionLetter="E">H</LegacyStandardIdentityCode>
       <LegacyFrames>
         <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="E">H</LegacyFrame>
+        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G">H</LegacyFrame>
+        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" FirstFunctionLetter="S">H</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
     <Affiliation ID="EXERCISE_LE_HOSTILE" ContextID="EXERCISE" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_HOSTILE_FAKER" Shape="CIRCLE" Graphic="1_615_0.svg" PlannedGraphic="1_615_1.svg">
       <LegacyStandardIdentityCode Name="2525C" FirstFunctionLetter="E">K</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="E">H</LegacyFrame>
+        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="E">K</LegacyFrame>
+        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G">K</LegacyFrame>
+        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" FirstFunctionLetter="S">K</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -2232,13 +2233,17 @@
       <LegacyStandardIdentityCode Name="2525C" FirstFunctionLetter="E">A</LegacyStandardIdentityCode>
       <LegacyFrames>
         <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="E" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" FirstFunctionLetter="S" IsPlanned="false">A</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
     <Affiliation ID="EXERCISE_LE_ASSUMED" ContextID="EXERCISE" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="1_215_0.svg" CivilianGraphic="1_215_0c.svg">
       <LegacyStandardIdentityCode Name="2525C" FirstFunctionLetter="E">M</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="E" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="E" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" FirstFunctionLetter="S" IsPlanned="false">M</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -2247,14 +2252,20 @@
     <Affiliation ID="REALITY_LE_SUSPECT" ContextID="REALITY" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="0_515_0.svg">
       <LegacyStandardIdentityCode Name="2525C" FirstFunctionLetter="E">S</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="E" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="E" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525Bc2" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="E" IsPlanned="false" Graphic="SSGP.svg">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" FirstFunctionLetter="S" IsPlanned="false">S</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
     <Affiliation ID="EXERCISE_LE_SUSPECT" ContextID="EXERCISE" DimensionID="LAND_EQUIPMENT" StandardIdentityID="SI_SUSPECT_JOKER" Shape="CIRCLE" Graphic="1_515_0.svg">
       <LegacyStandardIdentityCode Name="2525C" FirstFunctionLetter="E">J</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="E" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="E" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525Bc2" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="E" IsPlanned="false" Graphic="SJGPE.svg">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="G" FirstFunctionLetter="S" IsPlanned="false">J</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -2265,14 +2276,14 @@
     <Affiliation ID="REALITY_LI_PENDING" ContextID="REALITY" DimensionID="LAND_INSTALLATION" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="0_020_0.svg" CivilianGraphic="0_020_0c.svg">
       <LegacyStandardIdentityCode Name="2525C" FirstFunctionLetter="I">P</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="I" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="I" IsPlanned="false">P</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
     <Affiliation ID="EXERCISE_LI_PENDING" ContextID="EXERCISE" DimensionID="LAND_INSTALLATION" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="1_020_0.svg" CivilianGraphic="1_020_0c.svg">
       <LegacyStandardIdentityCode Name="2525C" FirstFunctionLetter="I">G</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="I" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="I" IsPlanned="false">G</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -2345,14 +2356,14 @@
     <Affiliation ID="REALITY_LI_ASSUMED" ContextID="REALITY" DimensionID="LAND_INSTALLATION" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="0_220_0.svg" CivilianGraphic="0_220_0c.svg">
       <LegacyStandardIdentityCode Name="2525C" FirstFunctionLetter="I">A</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="I" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="I" IsPlanned="false">A</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
     <Affiliation ID="EXERCISE_LI_ASSUMED" ContextID="EXERCISE" DimensionID="LAND_INSTALLATION" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="1_220_0.svg" CivilianGraphic="1_220_0c.svg">
       <LegacyStandardIdentityCode Name="2525C" FirstFunctionLetter="I">M</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="I" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="I" IsPlanned="false">M</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -2361,14 +2372,14 @@
     <Affiliation ID="REALITY_LI_SUSPECT" ContextID="REALITY" DimensionID="LAND_INSTALLATION" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="0_520_0.svg">
       <LegacyStandardIdentityCode Name="2525C" FirstFunctionLetter="I">S</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="I" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="I" IsPlanned="false">S</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
     <Affiliation ID="EXERCISE_LI_SUSPECT" ContextID="EXERCISE" DimensionID="LAND_INSTALLATION" StandardIdentityID="SI_SUSPECT_JOKER" Shape="CIRCLE" Graphic="1_520_0.svg">
       <LegacyStandardIdentityCode Name="2525C" FirstFunctionLetter="I">J</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="I" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="I" IsPlanned="false">J</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -2379,18 +2390,18 @@
     <Affiliation ID="REALITY_SEA_PENDING" ContextID="REALITY" DimensionID="SEA_SURFACE" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="0_030_0.svg" CivilianGraphic="0_030_0c.svg">
       <LegacyStandardIdentityCode Name="2525C">P</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="S" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="S" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="S" FirstFunctionLetter="S" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="S" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="S" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="S" FirstFunctionLetter="S" IsPlanned="false">P</LegacyFrame>
       </LegacyFrames>  
     </Affiliation>
 
     <Affiliation ID="EXERCISE_SEA_PENDING" ContextID="EXERCISE" DimensionID="SEA_SURFACE" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="1_030_0.svg" CivilianGraphic="1_030_0c.svg">
       <LegacyStandardIdentityCode Name="2525C">G</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="S" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="S" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="S" FirstFunctionLetter="S" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="S" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="S" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="S" FirstFunctionLetter="S" IsPlanned="false">G</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -2479,18 +2490,18 @@
     <Affiliation ID="REALITY_SEA_ASSUMED" ContextID="REALITY" DimensionID="SEA_SURFACE" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="0_230_0.svg" CivilianGraphic="0_230_0c.svg">
       <LegacyStandardIdentityCode Name="2525C">A</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="S" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="S" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="S" FirstFunctionLetter="S" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="S" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="S" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="S" FirstFunctionLetter="S" IsPlanned="false">A</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
     <Affiliation ID="EXERCISE_SEA_ASSUMED" ContextID="EXERCISE" DimensionID="SEA_SURFACE" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="1_230_0.svg" CivilianGraphic="1_230_0c.svg">
       <LegacyStandardIdentityCode Name="2525C">M</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="S" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="S" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="S" FirstFunctionLetter="S" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="S" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="S" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="S" FirstFunctionLetter="S" IsPlanned="false">M</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -2499,18 +2510,18 @@
     <Affiliation ID="REALITY_SEA_SUSPECT" ContextID="REALITY" DimensionID="SEA_SURFACE" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="0_530_0.svg">
       <LegacyStandardIdentityCode Name="2525C">S</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="S" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="S" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="S" FirstFunctionLetter="S" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="S" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="S" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="S" FirstFunctionLetter="S" IsPlanned="false">S</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
     <Affiliation ID="EXERCISE_SEA_SUSPECT" ContextID="EXERCISE" DimensionID="SEA_SURFACE" StandardIdentityID="SI_SUSPECT_JOKER" Shape="CIRCLE" Graphic="1_530_0.svg">
       <LegacyStandardIdentityCode Name="2525C">J</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="S" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="S" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="S" FirstFunctionLetter="S" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="S" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="S" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="S" FirstFunctionLetter="S" IsPlanned="false">J</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -2521,18 +2532,18 @@
     <Affiliation ID="REALITY_SUB_PENDING" ContextID="REALITY" DimensionID="SEA_SUBSURFACE" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="0_035_0.svg" CivilianGraphic="0_035_0c.svg">
       <LegacyStandardIdentityCode Name="2525C">P</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="U" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="U" IsPlanned="false">P</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="U" FirstFunctionLetter="S" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="U" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="U" IsPlanned="false">P</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="U" FirstFunctionLetter="S" IsPlanned="false">P</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
     <Affiliation ID="EXERCISE_SUB_PENDING" ContextID="EXERCISE" DimensionID="SEA_SUBSURFACE" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="1_035_0.svg" CivilianGraphic="1_035_0c.svg">
       <LegacyStandardIdentityCode Name="2525C">G</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="U" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="U" IsPlanned="false">G</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="U" FirstFunctionLetter="S" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="U" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="U" IsPlanned="false">G</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="U" FirstFunctionLetter="S" IsPlanned="false">G</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -2621,18 +2632,18 @@
     <Affiliation ID="REALITY_SUB_ASSUMED" ContextID="REALITY" DimensionID="SEA_SUBSURFACE" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="0_235_0.svg" CivilianGraphic="0_235_0c.svg">
       <LegacyStandardIdentityCode Name="2525C">A</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="U" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="U" IsPlanned="false">A</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="U" FirstFunctionLetter="S" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="U" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="U" IsPlanned="false">A</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="U" FirstFunctionLetter="S" IsPlanned="false">A</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
     <Affiliation ID="EXERCISE_SUB_ASSUMED" ContextID="EXERCISE" DimensionID="SEA_SUBSURFACE" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="CIRCLE" Graphic="1_235_0.svg" CivilianGraphic="1_235_0c.svg">
       <LegacyStandardIdentityCode Name="2525C">M</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="U" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="U" IsPlanned="false">M</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="U" FirstFunctionLetter="S" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="U" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="U" IsPlanned="false">M</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="U" FirstFunctionLetter="S" IsPlanned="false">M</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -2641,18 +2652,18 @@
     <Affiliation ID="REALITY_SUB_SUSPECT" ContextID="REALITY" DimensionID="SEA_SUBSURFACE" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="0_535_0.svg">
       <LegacyStandardIdentityCode Name="2525C">S</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="U" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="U" IsPlanned="false">S</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="U" FirstFunctionLetter="S" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="U" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="U" IsPlanned="false">S</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="U" FirstFunctionLetter="S" IsPlanned="false">S</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
     <Affiliation ID="EXERCISE_SUB_SUSPECT" ContextID="EXERCISE" DimensionID="SEA_SUBSURFACE" StandardIdentityID="SI_SUSPECT_JOKER" Shape="CIRCLE" Graphic="1_535_0.svg">
       <LegacyStandardIdentityCode Name="2525C">J</LegacyStandardIdentityCode>
       <LegacyFrames>
-        <LegacyFrame Name="2525C" CodingSchemeLetter="S" BattleDimensionLetter="U" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="U" IsPlanned="false">J</LegacyFrame>
-        <LegacyFrame Name="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="U" FirstFunctionLetter="S" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="U" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="U" IsPlanned="false">J</LegacyFrame>
+        <LegacyFrame Name="2525C" LimitUseTo="2525C" Description="SIGINT" CodingSchemeLetter="I" BattleDimensionLetter="U" FirstFunctionLetter="S" IsPlanned="false">J</LegacyFrame>
       </LegacyFrames>
     </Affiliation>
 
@@ -2838,12 +2849,12 @@
   <Statuses>
     <Status Name="PRESENT" Label="Present">
       <StatusCode>0</StatusCode>
-      <LegacyStatusCode Name="2525C">P</LegacyStatusCode>
+      <LegacyStatusCode Name="2525C 2525Bc2">P</LegacyStatusCode>
     </Status>
 
     <Status Name="PLANNED" Label="Planned/Anticipated/Suspect">
       <StatusCode>1</StatusCode>
-      <LegacyStatusCode Name="2525C">A</LegacyStatusCode>
+      <LegacyStatusCode Name="2525C 2525Bc2">A</LegacyStatusCode>
     </Status>
 
     <Status Name="FULLY_CAPABLE" Label="Present/Fully Capable" LabelAlias="Fully Capable">
@@ -2894,7 +2905,7 @@
 
     <Status Name="DAMAGED" Label="Present/Damaged" LabelAlias="Damaged" Graphic="3.svg">
       <StatusCode>3</StatusCode>
-      <LegacyStatusCode Name="2525C" CodingSchemeLetter="S">D</LegacyStatusCode>
+      <LegacyStatusCode Name="2525C">D</LegacyStatusCode>
       <Graphics>
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="UNKNOWN" Graphic="010032.svg"/>
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="AIR" Graphic="010132.svg"/>
@@ -3044,7 +3055,8 @@
     
     <HQTFDummy Name="FEINT_DUMMY" Label="Feint/Dummy">
       <HQTFDummyCode>1</HQTFDummyCode>
-      <LegacyHQTFDummyCode Name="2525C">F</LegacyHQTFDummyCode>
+      <LegacyHQTFDummyCode Name="2525C" CodingSchemeLetter="S">F</LegacyHQTFDummyCode>
+      <LegacyHQTFDummyCode Name="2525C" CodingSchemeLetter="O">F</LegacyHQTFDummyCode>
       <Graphics>
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="AIR" Graphic="1011.svg"/>
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="AIR" Graphic="3011.svg"/>
@@ -3079,7 +3091,8 @@
     
     <HQTFDummy Name="HQ" Label="Headquarters">
       <HQTFDummyCode>2</HQTFDummyCode>
-      <LegacyHQTFDummyCode Name="2525C">A</LegacyHQTFDummyCode>
+      <LegacyHQTFDummyCode Name="2525C" CodingSchemeLetter="S">A</LegacyHQTFDummyCode>
+      <LegacyHQTFDummyCode Name="2525C" CodingSchemeLetter="O">A</LegacyHQTFDummyCode>
       <Graphics>
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="AIR" Graphic="1012.svg"/>
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="AIR" Graphic="3012.svg"/>
@@ -3114,7 +3127,8 @@
     
     <HQTFDummy Name="FEINT_DUMMY_HQ" Label="Feint/Dummy Headquarters">
       <HQTFDummyCode>3</HQTFDummyCode>
-      <LegacyHQTFDummyCode Name="2525C">C</LegacyHQTFDummyCode>
+      <LegacyHQTFDummyCode Name="2525C" CodingSchemeLetter="S">C</LegacyHQTFDummyCode>
+      <LegacyHQTFDummyCode Name="2525C" CodingSchemeLetter="O">C</LegacyHQTFDummyCode>
       <Graphics>
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="AIR" Graphic="1013.svg"/>
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="AIR" Graphic="3013.svg"/>
@@ -3149,7 +3163,8 @@
     
     <HQTFDummy Name="TF" Label="Task Force">
       <HQTFDummyCode>4</HQTFDummyCode>
-      <LegacyHQTFDummyCode Name="2525C">E</LegacyHQTFDummyCode>
+      <LegacyHQTFDummyCode Name="2525C" CodingSchemeLetter="S">E</LegacyHQTFDummyCode>
+      <LegacyHQTFDummyCode Name="2525C" CodingSchemeLetter="O">E</LegacyHQTFDummyCode>
       <Graphics>
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="AIR" Graphic="1014.svg"/>
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="AIR" Graphic="3014.svg"/>
@@ -3184,7 +3199,8 @@
     
     <HQTFDummy Name="FEINT_DUMMY_TF" Label="Feint/Dummy Task Force">
       <HQTFDummyCode>5</HQTFDummyCode>
-      <LegacyHQTFDummyCode Name="2525C">G</LegacyHQTFDummyCode>
+      <LegacyHQTFDummyCode Name="2525C" CodingSchemeLetter="S">G</LegacyHQTFDummyCode>
+      <LegacyHQTFDummyCode Name="2525C" CodingSchemeLetter="O">G</LegacyHQTFDummyCode>
       <Graphics>
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="AIR" Graphic="1015.svg"/>
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="AIR" Graphic="3015.svg"/>
@@ -3219,7 +3235,8 @@
     
     <HQTFDummy Name="TF_HQ" Label="Task Force Headquarters">
       <HQTFDummyCode>6</HQTFDummyCode>
-      <LegacyHQTFDummyCode Name="2525C">B</LegacyHQTFDummyCode>
+      <LegacyHQTFDummyCode Name="2525C" CodingSchemeLetter="S">B</LegacyHQTFDummyCode>
+      <LegacyHQTFDummyCode Name="2525C" CodingSchemeLetter="O">B</LegacyHQTFDummyCode>
       <Graphics>
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="AIR" Graphic="1016.svg"/>
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="AIR" Graphic="3016.svg"/>
@@ -3254,7 +3271,8 @@
     
     <HQTFDummy Name="FEINT_DUMMY_TF_HQ" Label="Feint/Dummy Task Force Headquarters" LabelAlias="Feint/Dummy Task Force HQ">
       <HQTFDummyCode>7</HQTFDummyCode>
-      <LegacyHQTFDummyCode Name="2525C">D</LegacyHQTFDummyCode>
+      <LegacyHQTFDummyCode Name="2525C" CodingSchemeLetter="S">D</LegacyHQTFDummyCode>
+      <LegacyHQTFDummyCode Name="2525C" CodingSchemeLetter="O">D</LegacyHQTFDummyCode>
       <Graphics>
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="AIR" Graphic="1017.svg"/>
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="AIR" Graphic="3017.svg"/>
@@ -3307,8 +3325,8 @@
     
     <AmplifierGroup Name="ECHELON_BDE_BELOW" Label="Echelon at brigade and below" CompatibleSymbolSetIDs="SS_AIR">
       <AmplifierGroupCode>1</AmplifierGroupCode>
-      <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC">-</LegacyModifierCode>
-      
+      <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC" CodingSchemeLetter="S">-</LegacyModifierCode>
+      <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC" CodingSchemeLetter="O">-</LegacyModifierCode>
       <Amplifiers>
         <Amplifier Name="TEAM_CREW" Label="Team/Crew">
           <AmplifierCode>1</AmplifierCode>
@@ -3406,8 +3424,8 @@
 
     <AmplifierGroup Name="ECHELON_DIV_ABOVE" Label="Echelon at division and above" CompatibleSymbolSetIDs="SS_AIR">
       <AmplifierGroupCode>2</AmplifierGroupCode>
-      <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC">-</LegacyModifierCode>
-      
+      <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC" CodingSchemeLetter="S">-</LegacyModifierCode>
+      <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC" CodingSchemeLetter="O">-</LegacyModifierCode>
       <Amplifiers>
         <Amplifier Name="DIV" Label="Division">
           <AmplifierCode>1</AmplifierCode>
@@ -3444,7 +3462,7 @@
 
         <Amplifier Name="ARMY_GROUP_FRONT" Label="Army Group/Front">
           <AmplifierCode>4</AmplifierCode>
-          <LegacyModifierCode Name="2525C" CodingSchemeLetter="S">L</LegacyModifierCode>
+          <LegacyModifierCode Name="2525C">L</LegacyModifierCode>
           <Graphics>
             <Graphic StandardIdentityGroup="SIG_UNKNOWN" Graphic="124.svg"/>
             <Graphic StandardIdentityGroup="SIG_FRIEND" Graphic="324.svg"/>
@@ -3483,8 +3501,7 @@
 
     <AmplifierGroup Name="EQUIP_MOBILITY_LAND" Label="Equipment mobility on land">
       <AmplifierGroupCode>3</AmplifierGroupCode>
-      <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC">M</LegacyModifierCode>
-      
+      <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC" CodingSchemeLetter="S">M</LegacyModifierCode>
       <Amplifiers>
         <Amplifier Name="WHEEL_LIMIT_COUNTRY" Label="Wheeled limited cross country">
           <AmplifierCode>1</AmplifierCode>
@@ -3571,8 +3588,7 @@
 
     <AmplifierGroup Name="EQUIP_MOBILITY_SNOW" Label="Equipment mobility on snow">
       <AmplifierGroupCode>4</AmplifierGroupCode>
-      <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC">M</LegacyModifierCode>
-      
+      <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC" CodingSchemeLetter="S">M</LegacyModifierCode>
       <Amplifiers>
         <Amplifier Name="OVER_SNOW" Label="Over snow (prime mover)">
           <AmplifierCode>1</AmplifierCode>
@@ -3604,8 +3620,7 @@
 
     <AmplifierGroup Name="EQUIP_MOBILITY_WATER" Label="Equipment mobility on water">
       <AmplifierGroupCode>5</AmplifierGroupCode>
-      <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC">M</LegacyModifierCode>
-      
+      <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC" CodingSchemeLetter="S">M</LegacyModifierCode>
       <Amplifiers>
         <Amplifier Name="BARGE" Label="Barge">
           <AmplifierCode>1</AmplifierCode>
@@ -3637,8 +3652,7 @@
 
     <AmplifierGroup Name="TOWED_ARRAYS" Label="Naval towed array" CompatibleSymbolSetIDs="SS_SEA_SURFACE">
       <AmplifierGroupCode>6</AmplifierGroupCode>
-      <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC">N</LegacyModifierCode>
-      
+      <LegacyModifierCode Name="2525C" Description="Overrides character 11 in old SIDC" CodingSchemeLetter="S">N</LegacyModifierCode>
       <Amplifiers>
         <Amplifier Name="SHORT_TOWED_ARRAY" Label="Short towed array">
           <AmplifierCode>1</AmplifierCode>

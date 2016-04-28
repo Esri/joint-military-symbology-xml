@@ -33,23 +33,29 @@ namespace JointMilitarySymbologyLibrary
 
         string IAmplifierExport.Headers
         {
-            get { return "Name,Key" + _standard + ",MainIcon,Modifier1,Modifier2,ExtraIcon,FullFrame,GeometryType,Status,Notes"; }
+            get { return "Name,LegacyKey,MainIcon,Modifier1,Modifier2,ExtraIcon,FullFrame,GeometryType,Standard,Status,Notes"; }
         }
 
         string IAmplifierExport.Line(LibraryAmplifierGroup amplifierGroup, LibraryAmplifierGroupAmplifier amplifier, LibraryAmplifierGroupAmplifierGraphic graphic)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string Line(string codingScheme, LibraryAmplifierGroup amplifierGroup, LibraryAmplifierGroupAmplifier amplifier, LibraryAmplifierGroupAmplifierGraphic graphic)
         {
             string result = "";
 
             LibraryStandardIdentityGroup siGroup = _configHelper.Librarian.StandardIdentityGroup(graphic.StandardIdentityGroup);
 
             result = BuildAmplifierItemName(amplifierGroup, amplifier, siGroup);
-            result = result + "," + BuildSIDCKey(amplifierGroup, amplifier, siGroup);
+            result = result + "," + BuildSIDCKey(codingScheme, amplifierGroup, amplifier, siGroup);
             result = result + "," + BuildAmplifierCode(amplifierGroup, amplifier, siGroup);
             result = result + ","; // + "Modifier1";
             result = result + ","; // + "Modifier2";
             result = result + ","; // + "ExtraIcon";
             result = result + ","; // + "FullFrame";
             result = result + "," + "Point"; // + "GeometryType";
+            result = result + ","; // + "Standard";
             result = result + ","; // + "Status";
             result = result + ","; // + "Notes";
 

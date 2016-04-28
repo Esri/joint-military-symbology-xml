@@ -20,10 +20,15 @@ namespace JointMilitarySymbologyLibrary
 
         string IHQTFFDExport.Headers
         {
-            get { return "Name,Key" + _standard + ",MainIcon,Modifier1,Modifier2,ExtraIcon,FullFrame,GeometryType,Status,Notes"; }
+            get { return "Name,LegacyKey,MainIcon,Modifier1,Modifier2,ExtraIcon,FullFrame,GeometryType,Standard,Status,Notes"; }
         }
 
         string IHQTFFDExport.Line(LibraryHQTFDummy hqTFFD, LibraryHQTFDummyGraphic graphic)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string Line(string codingScheme, LibraryHQTFDummy hqTFFD, LibraryHQTFDummyGraphic graphic)
         {
             string result = "";
 
@@ -31,13 +36,14 @@ namespace JointMilitarySymbologyLibrary
             LibraryDimension dimension = _configHelper.Librarian.Dimension(graphic.DimensionID);
 
             result = BuildHQTFFDItemName(siGroup, dimension, hqTFFD);
-            result = result + "," + BuildSIDCKey(siGroup, dimension, hqTFFD);
+            result = result + "," + BuildSIDCKey(codingScheme, siGroup, dimension, hqTFFD);
             result = result + "," + BuildHQTFFDCode(siGroup, dimension, hqTFFD);
             result = result + ",";
             result = result + ",";
             result = result + ",";
             result = result + ",";
             result = result + "," + "Point";
+            result = result + ",";
             result = result + ",";
             result = result + ",";
 

@@ -664,6 +664,9 @@
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_FIXED_WING_ATTACK_STRIKE_INTERCEPTOR_MOD_SYM" Label="S*APMFFI--*****" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="ATTACK_STRIKE" ModifierOneID="INTERCEPTOR_MOD">
       <LegacyFunctionCode Name="2525C" Description="Substitute" Remarks="Retired - use Interceptor(05) in Mod1">MFFI--</LegacyFunctionCode>
+	    <LegacyEntity ID="MILITARY_FIXED_WING_ATTACK_STRIKE_INTERCEPTOR_MOD_LE" Label="WAR.AIRTRK.MIL.FIXD.FTR.INCR" Graphic="S-A-MFFI--.svg">
+		    <LegacyFunctionCode Name="2525C" Description="Substitute" Remarks="Retired - use Interceptor(05) in Mod1">MFFI--</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_FIXED_WING_CARGO_SYM" Label="S*APMFC---*****" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="CARGO">
       <LegacyFunctionCode Name="2525C">MFC---</LegacyFunctionCode>
@@ -685,9 +688,15 @@
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_FIXED_WING_TANKER_BOOM_MOD_SYM" Label="S*APMFKB--*****" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="TANKER" ModifierTwoID="BOOM_MOD">
       <LegacyFunctionCode Name="2525C">MFKB--</LegacyFunctionCode>
+	    <LegacyEntity ID="MILITARY_FIXED_WING_TANKER_BOOM_MOD_LE" Label="WAR.AIRTRK.MIL.FIXD.TNK.BOOM" Graphic="S-A-MFKB--.svg">
+		    <LegacyFunctionCode Name="2525C">MFKB--</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_FIXED_WING_TANKER_DROGUE_MOD_SYM" Label="S*APMFKD--*****" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="TANKER" ModifierTwoID="DROGUE_MOD">
       <LegacyFunctionCode Name="2525C">MFKD--</LegacyFunctionCode>
+	    <LegacyEntity ID="MILITARY_FIXED_WING_TANKER_DROGUE_MOD_LE" Label="WAR.AIRTRK.MIL.FIXD.TNK.DROG" Graphic="S-A-MFKD--.svg">
+		    <LegacyFunctionCode Name="2525C">MFKD--</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_FIXED_WING_PATROL_SYM" Label="S*APMFP---*****" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="PATROL">
       <LegacyFunctionCode Name="2525C">MFP---</LegacyFunctionCode>
@@ -712,27 +721,51 @@
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_FIXED_WING_VSTOL_SYM" Label="S*APMFL---*****" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="VSTOL">
       <LegacyFunctionCode Name="2525C">MFL---</LegacyFunctionCode>
+	    <LegacyEntity ID="MILITARY_FIXED_WING_VSTOL_LE" Label="WAR.AIRTRK.MIL.FIXD.VSTOL" Graphic="S-A-MFL---.svg">
+		    <LegacyFunctionCode Name="2525C">MFL---</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_FIXED_WING_ACP_SYM" Label="S*APMFD---*****" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="ACP">
       <LegacyFunctionCode Name="2525C">MFD---</LegacyFunctionCode>
+	    <LegacyEntity ID="MILITARY_FIXED_WING_ACP_LE" Label="WAR.AIRTRK.MIL.FIXD.ABNCP" Graphic="S-A-MFD---.svg">
+		    <LegacyFunctionCode Name="2525C">MFD---</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_FIXED_WING_AEW_SYM" Label="S*APMFRW--*****" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="AEW">
       <LegacyFunctionCode Name="2525C">MFRW--</LegacyFunctionCode>
+	    <LegacyEntity ID="MILITARY_FIXED_WING_AEW_LE" Label="WAR.AIRTRK.MIL.FIXD.RECON.ABNEW" Graphic="S-A-MFRW--.svg">
+		    <LegacyFunctionCode Name="2525C">MFRW--</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_FIXED_WING_ASUW_SYM" Label="S*APMFPN--*****" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="ASUW">
       <LegacyFunctionCode Name="2525C">MFPN--</LegacyFunctionCode>
+	    <LegacyEntity ID="MILITARY_FIXED_WING_ASUW_LE" Label="WAR.AIRTRK.MIL.FIXD.PAT.ASUW" Graphic="S-A-MFPN--.svg">
+		    <LegacyFunctionCode Name="2525C">MFPN--</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_FIXED_WING_ASW_SYM" Label="S*APMFS---*****" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="ASW">
       <LegacyFunctionCode Name="2525C">MFS---</LegacyFunctionCode>
+	    <LegacyEntity ID="MILITARY_FIXED_WING_ASW_LE" Label="WAR.AIRTRK.MIL.FIXD.ASBWCB" Graphic="S-A-MFS---.svg">
+		    <LegacyFunctionCode Name="2525C">MFS---</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_FIXED_WING_COM_SYM" Label="S*APMFY---*****" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="COM">
       <LegacyFunctionCode Name="2525C">MFY---</LegacyFunctionCode>
+	    <LegacyEntity ID="MILITARY_FIXED_WING_COM_LE" Label="WAR.AIRTRK.MIL.FIXD.COMM" Graphic="S-A-MFY---.svg">
+		    <LegacyFunctionCode Name="2525C">MFY---</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_FIXED_WING_CSAR_SYM" Label="S*APMFH---*****" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="CSAR">
       <LegacyFunctionCode Name="2525C">MFH---</LegacyFunctionCode>
+	    <LegacyEntity ID="MILITARY_FIXED_WING_CSAR_LE" Label="WAR.AIRTRK.MIL.FIXD.CSAR" Graphic="S-A-MFH---.svg">
+		    <LegacyFunctionCode Name="2525C">MFH---</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_FIXED_WING_ES_SYM" Label="S*APMFRZ--*****" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="ES">
       <LegacyFunctionCode Name="2525C">MFRZ--</LegacyFunctionCode>
+	    <LegacyEntity ID="MILITARY_FIXED_WING_ES_LE" Label="WAR.AIRTRK.MIL.FIXD.RECON.ESM" Graphic="S-A-MFRZ--.svg">
+		    <LegacyFunctionCode Name="2525C">MFRZ--</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_FIXED_WING_MCM_SYM" Label="S*APMFPM--*****" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="MCM">
       <LegacyFunctionCode Name="2525C">MFPM--</LegacyFunctionCode>
@@ -742,6 +775,9 @@
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_FIXED_WING_PH_SYM" Label="S*APMFRX--*****" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="PH">
       <LegacyFunctionCode Name="2525C">MFRX--</LegacyFunctionCode>
+	    <LegacyEntity ID="MILITARY_FIXED_WING_PH_LE" Label="WAR.AIRTRK.MIL.FIXD.RECON.PHG" Graphic="S-A-MFRX--.svg">
+		    <LegacyFunctionCode Name="2525C">MFRX--</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_FIXED_WING_VIP_SYM" Label="S*APMV----*****" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="VIP">
       <LegacyFunctionCode Name="2525C">MV----</LegacyFunctionCode>
@@ -757,6 +793,9 @@
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_ROTARY_WING_ASUW_MOD_SYM" Label="S*APMHS---*****" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="ASUW_MOD">
       <LegacyFunctionCode Name="2525C">MHS---</LegacyFunctionCode>
+	    <LegacyEntity ID="MILITARY_ROTARY_WING_ASUW_MOD_LE" Label="WAR.AIRTRK.MIL.ROT.ASBW" Graphic="S-A-MHS---.svg">
+	      <LegacyFunctionCode Name="2525C">MHS---</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_ROTARY_WING_UTILITY_MOD_SYM" Label="S*APMHU---*****" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="UTILITY_MOD">
       <LegacyFunctionCode Name="2525C">MHU---</LegacyFunctionCode>
@@ -775,6 +814,9 @@
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_ROTARY_WING_CSAR_MOD_SYM" Label="S*APMHH---*****" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="CSAR_MOD">
       <LegacyFunctionCode Name="2525C">MHH---</LegacyFunctionCode>
+	    <LegacyEntity ID="MILITARY_ROTARY_WING_CSAR_MOD_LE" Label="WAR.AIRTRK.MIL.ROT.CSAR" Graphic="S-A-MHH---.svg">
+		    <LegacyFunctionCode Name="2525C">MHH---</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_ROTARY_WING_RECON_MOD_SYM" Label="S*APMHR---*****" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="RECON_MOD">
       <LegacyFunctionCode Name="2525C">MHR---</LegacyFunctionCode>
@@ -802,6 +844,9 @@
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_ROTARY_WING_ACP_MOD_SYM" Label="S*APMHD---*****" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="ACP_MOD">
       <LegacyFunctionCode Name="2525C">MHD---</LegacyFunctionCode>
+	    <LegacyEntity ID="MILITARY_ROTARY_WING_ACP_MOD_LE" Label="WAR.AIRTRK.MIL.ROT.ABNCP" Graphic="S-A-MHD---.svg">
+		    <LegacyFunctionCode Name="2525C">MHD---</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_ROTARY_WING_TANKER_MOD_SYM" Label="S*APMHK---*****" EntityID="MILITARY" EntityTypeID="ROTARY_WING" ModifierOneID="TANKER_MOD">
       <LegacyFunctionCode Name="2525C">MHK---</LegacyFunctionCode>
@@ -823,27 +868,42 @@
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_UAV_ACP_MOD_SYM" Label="S*APMFQD--*****" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="ACP_MOD">
       <LegacyFunctionCode Name="2525C">MFQD--</LegacyFunctionCode>
+	    <LegacyEntity ID="MILITARY_UAV_ACP_MOD_LE" Label="WAR.AIRTRK.MIL.FIXD.DRN.ABNCP" Graphic="S-A-MFQD--.svg">
+		    <LegacyFunctionCode Name="2525C">MFQD--</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_UAV_AEW_MOD_SYM" Label="S*APMFQRW-*****" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="AEW_MOD">
       <LegacyFunctionCode Name="2525C">MFQRW-</LegacyFunctionCode>
+	    <LegacyEntity ID="MILITARY_UAV_AEW_MOD_LE" Label="WAR.AIRTRK.MIL.FIXD.DRN.RECON.ABNEW" Graphic="S-A-MFQRW-.svg">
+		    <LegacyFunctionCode Name="2525C">MFQRW-</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_UAV_FIGHTER_MOD_SYM" Label="S*APMFQF--*****" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="FIGHTER_MOD">
       <LegacyFunctionCode Name="2525C">MFQF--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_UAV_CSAR_MOD_SYM" Label="S*APMFQH--*****" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="CSAR_MOD">
       <LegacyFunctionCode Name="2525C">MFQH--</LegacyFunctionCode>
+	    <LegacyEntity ID="MILITARY_UAV_CSAR_MOD_LE" Label="WAR.AIRTRK.MIL.FIXD.DRN.CSAR" Graphic="S-A-MFQH--.svg">
+		    <LegacyFunctionCode Name="2525C">MFQH--</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_UAV_EC_MOD_SYM" Label="S*APMFQJ--*****" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="EC_MOD">
       <LegacyFunctionCode Name="2525C">MFQJ--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_UAV_ES_MOD_SYM" Label="S*APMFQRZ-*****" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="ES_MOD">
       <LegacyFunctionCode Name="2525C">MFQRZ-</LegacyFunctionCode>
+	    <LegacyEntity ID="MILITARY_UAV_ES_MOD_LE" Label="WAR.AIRTRK.MIL.FIXD.DRN.RECON.ESM" Graphic="S-A-MFQRZ-.svg">
+		    <LegacyFunctionCode Name="2525C">MFQRZ-</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_UAV_TANKER_MOD_SYM" Label="S*APMFQK--*****" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="TANKER_MOD">
       <LegacyFunctionCode Name="2525C">MFQK--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_UAV_VSTOL_MOD_SYM" Label="S*APMFQL--*****" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="VSTOL_MOD">
       <LegacyFunctionCode Name="2525C">MFQL--</LegacyFunctionCode>
+	    <LegacyEntity ID="MILITARY_UAV_VSTOL_MOD_LE" Label="WAR.AIRTRK.MIL.FIXD.DRN.VSTOL" Graphic="S-A-MFQL--.svg">
+		    <LegacyFunctionCode Name="2525C">MFQL--</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_UAV_SOF_MOD_SYM" Label="S*APMFQM--*****" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="SOF_MOD">
       <LegacyFunctionCode Name="2525C">MFQM--</LegacyFunctionCode>
@@ -853,6 +913,9 @@
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_UAV_ASUW_MOD_SYM" Label="S*APMFQN--*****" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="ASUW_MOD">
       <LegacyFunctionCode Name="2525C">MFQN--</LegacyFunctionCode>
+	    <LegacyEntity ID="MILITARY_UAV_ASUW_MOD_LE" Label="WAR.AIRTRK.MIL.FIXD.DRN.ASUW" Graphic="S-A-MFQN--.svg">
+		    <LegacyFunctionCode Name="2525C">MFQN--</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_UAV_PATROL_MOD_SYM" Label="S*APMFQP--*****" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="PATROL_MOD">
       <LegacyFunctionCode Name="2525C">MFQP--</LegacyFunctionCode>
@@ -862,9 +925,15 @@
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_UAV_PHOTO_MOD_SYM" Label="S*APMFQRX-*****" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="PHOTO_MOD">
       <LegacyFunctionCode Name="2525C">MFQRX-</LegacyFunctionCode>
+	    <LegacyEntity ID="MILITARY_UAV_PHOTO_MOD_LE" Label="WAR.AIRTRK.MIL.FIXD.DRN.RECON.PHG" Graphic="S-A-MFQRX-.svg">
+		    <LegacyFunctionCode Name="2525C">MFQRX-</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_UAV_ASW_MOD_SYM" Label="S*APMFQS--*****" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="ASW_MOD">
       <LegacyFunctionCode Name="2525C">MFQS--</LegacyFunctionCode>
+	    <LegacyEntity ID="MILITARY_UAV_ASW_MOD_LE" Label="WAR.AIRTRK.MIL.FIXD.DRN.ASBW" Graphic="S-A-MFQS--.svg">
+		    <LegacyFunctionCode Name="2525C">MFQS--</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_UAV_TRAINER_MOD_SYM" Label="S*APMFQT--*****" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="TRAINER_MOD">
       <LegacyFunctionCode Name="2525C">MFQT--</LegacyFunctionCode>
@@ -874,6 +943,9 @@
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_UAV_COMMS_MOD_SYM" Label="S*APMFQY--*****" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="COMMS_MOD">
       <LegacyFunctionCode Name="2525C">MFQY--</LegacyFunctionCode>
+	    <LegacyEntity ID="MILITARY_UAV_COMMS_MOD_LE" Label="WAR.AIRTRK.MIL.FIXD.DRN.COMM" Graphic="S-A-MFQY--.svg">
+		    <LegacyFunctionCode Name="2525C">MFQY--</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_UAV_MEDEVAC_MOD_SYM" Label="S*APMFQO--*****" EntityID="MILITARY" EntityTypeID="UAV" ModifierOneID="MEDEVAC_MOD">
       <LegacyFunctionCode Name="2525C">MFQO--</LegacyFunctionCode>
@@ -892,18 +964,27 @@
     </LegacySymbol>
     <LegacySymbol ID="CIVILIAN_CIV_ROTARY_WING_SYM" Label="S*APCH----*****" EntityID="CIVILIAN" EntityTypeID="CIV_ROTARY_WING">
       <LegacyFunctionCode Name="2525C">CH----</LegacyFunctionCode>
+	    <LegacyEntity ID="CIVILIAN_CIV_ROTARY_WING_LE" Label="WAR.AIRTRK.CVL.ROT" Graphic="S-A-CH----.svg">
+		    <LegacyFunctionCode Name="2525C">CH----</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="CIVILIAN_CIV_LTA_SYM" Label="S*APCL----*****" EntityID="CIVILIAN" EntityTypeID="CIV_LTA">
       <LegacyFunctionCode Name="2525C">CL----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEAPON_SYM" Label="S*APW-----*****" EntityID="WEAPON">
       <LegacyFunctionCode Name="2525C" Description="Substitute">W-----</LegacyFunctionCode>
+	    <LegacyEntity ID="WEAPON_LE" Label="WAR.AIRTRK.WPN" Graphic="S-A-W-----.svg">
+		    <LegacyFunctionCode Name="2525C" Description="Substitute">W-----</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="WEAPON_BOMB_SYM" Label="S*APWB----*****" EntityID="WEAPON" EntityTypeID="BOMB">
       <LegacyFunctionCode Name="2525C">WB----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEAPON_DECOY_SYM" Label="S*APWD----*****" EntityID="WEAPON" EntityTypeID="DECOY">
       <LegacyFunctionCode Name="2525C">WD----</LegacyFunctionCode>
+	    <LegacyEntity ID="WEAPON_DECOY_LE" Label="WAR.AIRTRK.WPN.DCY" Graphic="S-A-WD----.svg">
+		    <LegacyFunctionCode Name="2525C">WD----</LegacyFunctionCode>
+	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="AIR_TRACK_SYM" Label="S*AP------*****" EntityID="UNSPECIFIED">
       <LegacyFunctionCode Name="2525C">------</LegacyFunctionCode>

@@ -24,7 +24,6 @@ namespace JointMilitarySymbologyLibrary
     {
         // Class designed to export Frame elements as legacy to 2525D lookups
 
-        private string _standard = "2525C";
         private LibraryAffiliation _affiliation;
         private LegacyLetterCodeType _legacyFrame;
 
@@ -40,7 +39,7 @@ namespace JointMilitarySymbologyLibrary
 
             foreach (LegacyLetterCodeType lsc in status.LegacyStatusCode)
             {
-                if (lsc.Name == standard)
+                if (lsc.Name.Contains(standard))
                 {
                     result = lsc.Value;
                     break;
@@ -52,7 +51,7 @@ namespace JointMilitarySymbologyLibrary
 
         string IFrameExport.Headers
         {
-            get { return "Name,Key" + _standard + ",MainIcon,Modifier1,Modifier2,ExtraIcon,FullFrame,GeometryType,Status,Notes"; }
+            get { return "Name,LegacyKey,MainIcon,Modifier1,Modifier2,ExtraIcon,FullFrame,GeometryType,Standard,Status,Notes"; }
         }
 
         string IFrameExport.Line(Librarian librarian, LibraryContext context, LibraryStandardIdentity identity, LibraryDimension dimension, LibraryStatus status, bool asCivilian, bool asPlannedCivilian)
@@ -65,13 +64,20 @@ namespace JointMilitarySymbologyLibrary
 
                 result = result + "," + BuildSIDCKey(_legacyStatusCode(_standard, status), _legacyFrame);
 
-                result = result + "," + BuildFrameCode(context, identity, dimension, status, false);
+                if(_legacyFrame.LimitUseTo == "2525C" || _legacyFrame.LimitUseTo == "")
+                    // For 2525C frames or 2525Bc2 frames that are the same we 2525C we use the 2525D icons
+                    // (2525C and some 2525Bc2 frames are identical to 2525D)
+                    result = result + "," + BuildFrameCode(context, identity, dimension, status, false);
+                else
+                    // For 2525Bc2 unique frames we use the unique icons that are keyed accordingly.
+                    result = result + "," + BuildFrameCode(_legacyStatusCode(_standard, status), _legacyFrame);
 
                 result = result + ","; // + "Modifier1";
                 result = result + ","; // + "Modifier2";
                 result = result + ","; // + "ExtraIcon";
                 result = result + ","; // + "FullFrame";
                 result = result + "," + "Point"; // + "GeometryType";
+                result = result + "," + _legacyFrame.LimitUseTo; // + "Standard";
                 result = result + ","; // + "Status";
                 result = result + "," + _legacyFrame.Description; // + "Notes";
             }

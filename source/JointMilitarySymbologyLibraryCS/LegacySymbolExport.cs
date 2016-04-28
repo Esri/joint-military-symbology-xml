@@ -136,7 +136,7 @@ namespace JointMilitarySymbologyLibrary
 
         public string Headers
         {
-            get { return "Name,Key" + _standard + ",MainIcon,Modifier1,Modifier2,ExtraIcon,FullFrame,GeometryType,Status,Notes"; }
+            get { return "Name,LegacyKey,MainIcon,Modifier1,Modifier2,ExtraIcon,FullFrame,GeometryType,Standard,Status,Notes"; }
         }
 
         public string Line(SymbolSet ss, SymbolSetLegacySymbol legacySymbol, LegacyFunctionCodeType functionCode)
@@ -193,13 +193,14 @@ namespace JointMilitarySymbologyLibrary
             string fullFrameOutput = fullFrame ? "TRUE" : "";
 
             result = name;
-            result = result + "," + _buildSIDCKey(ss, legacySymbol, functionCode); // + "Key2525C";
+            result = result + "," + _buildSIDCKey(ss, legacySymbol, functionCode); // + "LegacyKey";
             result = result + "," + entityCode; // + "MainIcon";
             result = result + "," + mod1Code;  // + "Modifier1";
             result = result + "," + mod2Code; // + "Modifier2";
             result = result + "," + extraIcon; // + "ExtraIcon";
             result = result + "," + fullFrameOutput; // + "FullFrame";
             result = result + "," + geometry; // + "GeometryType";
+            result = result + ","; // + "Standard";
             result = result + ","; // + "Status";
             result = result + ","; // + "Notes";
 
@@ -223,6 +224,7 @@ namespace JointMilitarySymbologyLibrary
             result = result + ",";
             result = result + "," + fullFrameOutput;
             result = result + "," + "Point"; // TODO : Handle this through a modernized form of GeometryIt
+            result = result + ",";
             result = result + ",";
             result = result + ",";
 

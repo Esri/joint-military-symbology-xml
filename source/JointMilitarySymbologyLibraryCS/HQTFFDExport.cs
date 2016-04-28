@@ -133,11 +133,10 @@ namespace JointMilitarySymbologyLibrary
             return result;
         }
 
-        protected string BuildSIDCKey(LibraryStandardIdentityGroup identityGroup, LibraryDimension dimension, LibraryHQTFDummy hqTFFD)
+        protected string BuildSIDCKey(string codingScheme, LibraryStandardIdentityGroup identityGroup, LibraryDimension dimension, LibraryHQTFDummy hqTFFD)
         {
-            string key = "";
+            string key = codingScheme;
 
-            key = "S";
             key = key + identityGroup.LegacyStandardIdentityCode[0].Value;
             key = key + dimension.LegacyDimensionCode[0].Value;
             key = key + "-";

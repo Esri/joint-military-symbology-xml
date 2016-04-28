@@ -25,6 +25,7 @@ namespace JointMilitarySymbologyLibrary
 
         protected ConfigHelper _configHelper;
         protected string _notes = "";
+        protected string _standard = "2525C";
 
         protected string BuildFrameCode(LibraryContext context, LibraryStandardIdentity identity, LibraryDimension dimension, LibraryStatus status, bool asAnyCivilian)
         {
@@ -44,6 +45,21 @@ namespace JointMilitarySymbologyLibrary
             }
             else
                 code = Convert.ToString(identity.StandardIdentityCode);
+
+            return code;
+        }
+
+        protected string BuildFrameCode(string status, LegacyLetterCodeType legacyFrame)
+        {
+            string code = "";
+
+            code = legacyFrame.CodingSchemeLetter;
+            code = code + legacyFrame.Value;
+            code = code + legacyFrame.BattleDimensionLetter;
+            code = code + status;
+
+            if (legacyFrame.FirstFunctionLetter != "")
+                code = code + legacyFrame.FirstFunctionLetter;
 
             return code;
         }

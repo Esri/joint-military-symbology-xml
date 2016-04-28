@@ -1342,6 +1342,9 @@ namespace JointMilitarySymbologyLibrary
 
                             // Create a proper 2525C SIDC for testing
 
+                            if (cSIDCIn == null)
+                                break;
+
                             if (cSIDCIn.Length == 15)
                             {
                                 if (cSIDCIn.Substring(1, 1) == "*")
@@ -2026,12 +2029,15 @@ namespace JointMilitarySymbologyLibrary
             _configHelper.MakeSchemaETL().ExportSchemas(path);
         }
 
-        public void ExportLegacyLookup(string path, string standard)
+        public void ExportLegacyLookup(string path, string standard, bool asOriginal, bool includeAmplifiers, bool append)
         {
             // Export legacy lookup information, taking all of the existing 2525X code information parts of symbols
             // and converting them to their 2525D equivalent codes, then writing out the results to the specified path.
 
-            _configHelper.MakeLegacyETL().ExportLegacyLookup(path, standard);
+            // asOriginal = false if the legacy symbols should map to graphics that make them look as they did originally.
+            // asOriginal = true if the legacy symbols should map to graphics that are the latest in 2525D.
+
+            _configHelper.MakeLegacyETL().ExportLegacyLookup(path, standard, asOriginal, includeAmplifiers, append);
         }
 
         public void ExportLegacyEntities(string path, string standard, long size = 32)
@@ -2040,6 +2046,14 @@ namespace JointMilitarySymbologyLibrary
             // implemented differently then they used to be.
 
             _configHelper.MakeLegacyETL().ExportLegacyEntities(path, standard, size);
+        }
+
+        public void ExportLegacyFrames(string path, string standard, long size = 32, bool append = false)
+        {
+            // Export frames from legacy versions of the standard that are no longer implemented or
+            // implemented differently then they used to be.
+
+            _configHelper.MakeLegacyETL().ExportLegacyFrames(path, standard, size, append);
         }
     }
 }
