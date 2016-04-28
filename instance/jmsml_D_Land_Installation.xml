@@ -1040,6 +1040,9 @@
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_MASS_GRAVE_SITE_SYM" Label="O*LPM-----*****" EntityID="INSTALLATION" EntityTypeID="MASS_GRAVE_SITE">
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="L">M-----</LegacyFunctionCode>
+	  <LegacyEntity ID="INSTALLATION_MASS_GRAVE_SITE_LE" Label="STBOPS.LOCAT.MASS" Graphic="O-L-M-----.svg">
+		<LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="L">M-----</LegacyFunctionCode>
+	  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_RAW_MATERIAL_PROD_SYM" Label="S*GPIR----H****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IR----</LegacyFunctionCode>

@@ -289,7 +289,10 @@
     </LegacySymbol>
     <LegacySymbol ID="CIVILIAN_ORGANIZATION_TARGETED_MOD_SYM" Label="O*GPC-----*****" EntityID="CIVILIAN" EntityTypeID="ORGANIZATION" ModifierOneID="TARGETED_MOD">
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="G">C-----</LegacyFunctionCode>
-    </LegacySymbol>
+	    <LegacyEntity ID="CIVILIAN_ORGANIZATION_TARGETED_MOD_LE" Label="STBOPS.GRPORG.TERRST" Graphic="O-G-C-----.svg">
+		    <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="G">C-----</LegacyFunctionCode>
+	    </LegacyEntity>
+     </LegacySymbol>
     <LegacySymbol ID="CIVILIAN_ORGANIZATION_LOOT_MOD_SYM" Label="E*IPBD----*****" EntityID="CIVILIAN" EntityTypeID="ORGANIZATION" ModifierOneID="LOOT_MOD">
       <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="I">BD----</LegacyFunctionCode>
     </LegacySymbol>
