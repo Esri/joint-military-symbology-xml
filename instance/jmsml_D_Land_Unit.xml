@@ -2693,9 +2693,9 @@
 	    <LegacyEntity ID="FIRES_FIELD_ARTILLERY_OBSERVER_LE" Label="WAR.GRDTRK.UNT.CBT.FLDART.TGTAQ.CLT" Icon="FULL_FRAME" CloverGraphic="S-G-UCFTC-_0.svg" RectangleGraphic="S-G-UCFTC-_1.svg" SquareGraphic="S-G-UCFTC-_2.svg" DiamondGraphic="S-G-UCFTC-_3.svg">
 		    <LegacyFunctionCode Name="2525C">UCFTC-</LegacyFunctionCode>
 	    </LegacyEntity>
-		<LegacyEntity ID="FIRES_FIELD_ARTILLERY_OBSERVER_LE" Label="WAR.GRDTRK.UNT.CBT.FLDART.TGTAQ.CLT.DMD" Icon="FULL_FRAME" CloverGraphic="S-G-UCFTCD_0.svg" RectangleGraphic="S-G_UCFTCD_1.svg" SquareGraphic="S-G-UCFTCD_2.svg" DiamondGraphic="S-G-UCFTCD_3.svg">
-			<LegacyFunctionCode Name="2525C">UCFTCD</LegacyFunctionCode>
-		</LegacyEntity>
+		  <LegacyEntity ID="FIRES_FIELD_ARTILLERY_OBSERVER_DISMOUNTED_LE" Label="WAR.GRDTRK.UNT.CBT.FLDART.TGTAQ.CLT.DMD" Icon="FULL_FRAME" CloverGraphic="S-G-UCFTCD_0.svg" RectangleGraphic="S-G_UCFTCD_1.svg" SquareGraphic="S-G-UCFTCD_2.svg" DiamondGraphic="S-G-UCFTCD_3.svg">
+			  <LegacyFunctionCode Name="2525C">UCFTCD</LegacyFunctionCode>
+		  </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_METEOROLOGICAL_SYM" Label="S*GPUCFO--*****" EntityID="FIRES" EntityTypeID="METEOROLOGICAL">
       <LegacyFunctionCode Name="2525C">UCFO--</LegacyFunctionCode>
