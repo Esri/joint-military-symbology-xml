@@ -18,11 +18,14 @@ using System.Text;
 using System.IO;
 using System.Xml.Serialization;
 using System.Threading.Tasks;
+using NLog;
 
 namespace JointMilitarySymbologyLibrary
 {
     public class LegacyETL
     {
+        protected static Logger logger = LogManager.GetCurrentClassLogger();
+
         private ConfigHelper _helper;
         private JMSMLConfigETLConfig _etlConfig;
         private Librarian _lib;
@@ -51,25 +54,35 @@ namespace JointMilitarySymbologyLibrary
 
             foreach (LibraryStatus status in _lib.Library.Statuses)
             {
-                if (status.Graphic != null)
-                {
-                    string line = id.ToString() + "," + ocaExport.Line(status);
-                    id++;
+                logger.Info("Exporting status graphics for: " + status.Name);
 
-                    w.WriteLine(line);
-                    w.Flush();
-                }
-
-                if (status.Graphics != null)
+                try
                 {
-                    foreach (LibraryStatusGraphic graphic in status.Graphics)
+                    if (status.Graphic != null)
                     {
-                        string line = id.ToString() + "," + ocaExport.Line(status, graphic);
+                        string line = id.ToString() + "," + ocaExport.Line(status);
                         id++;
 
                         w.WriteLine(line);
                         w.Flush();
                     }
+
+                    if (status.Graphics != null)
+                    {
+                        foreach (LibraryStatusGraphic graphic in status.Graphics)
+                        {
+                            string line = id.ToString() + "," + ocaExport.Line(status, graphic);
+                            id++;
+
+                            w.WriteLine(line);
+                            w.Flush();
+                        }
+                    }
+                }
+
+                catch (Exception ex)
+                {
+                    logger.Error(ex.Message);
                 }
             }
 
@@ -92,19 +105,29 @@ namespace JointMilitarySymbologyLibrary
 
             foreach (LibraryHQTFDummy hqtffd in _lib.Library.HQTFDummies)
             {
-                if (hqtffd.Graphics != null)
-                {
-                    foreach (LegacyLetterCodeType legacyCode in hqtffd.LegacyHQTFDummyCode)
-                    {
-                        foreach (LibraryHQTFDummyGraphic graphic in hqtffd.Graphics)
-                        {
-                            string line = id.ToString() + "," + legacyHQTFFD.Line(legacyCode.CodingSchemeLetter, hqtffd, graphic);
-                            id++;
+                logger.Info("Exporting HQTFFD graphics for: " + hqtffd.Name);
 
-                            w.WriteLine(line);
-                            w.Flush();
+                try
+                {
+                    if (hqtffd.Graphics != null)
+                    {
+                        foreach (LegacyLetterCodeType legacyCode in hqtffd.LegacyHQTFDummyCode)
+                        {
+                            foreach (LibraryHQTFDummyGraphic graphic in hqtffd.Graphics)
+                            {
+                                string line = id.ToString() + "," + legacyHQTFFD.Line(legacyCode.CodingSchemeLetter, hqtffd, graphic);
+                                id++;
+
+                                w.WriteLine(line);
+                                w.Flush();
+                            }
                         }
                     }
+                }
+
+                catch (Exception ex)
+                {
+                    logger.Error(ex.Message);
                 }
             }
 
@@ -127,22 +150,32 @@ namespace JointMilitarySymbologyLibrary
 
             foreach (LibraryAmplifierGroup group in _lib.Library.AmplifierGroups)
             {
-                foreach (LibraryAmplifierGroupAmplifier amplifier in group.Amplifiers)
-                {
-                    if (amplifier.Graphics != null)
-                    {
-                        foreach (LegacyLetterCodeType legacyModifier in group.LegacyModifierCode)
-                        {
-                            foreach (LibraryAmplifierGroupAmplifierGraphic graphic in amplifier.Graphics)
-                            {
-                                string line = id.ToString() + "," + legacyAmplifierExport.Line(legacyModifier.CodingSchemeLetter, group, amplifier, graphic);
-                                id++;
+                logger.Info("Exporting amplifiers for: " + group.Name);
 
-                                w.WriteLine(line);
-                                w.Flush();
+                try
+                {
+                    foreach (LibraryAmplifierGroupAmplifier amplifier in group.Amplifiers)
+                    {
+                        if (amplifier.Graphics != null)
+                        {
+                            foreach (LegacyLetterCodeType legacyModifier in group.LegacyModifierCode)
+                            {
+                                foreach (LibraryAmplifierGroupAmplifierGraphic graphic in amplifier.Graphics)
+                                {
+                                    string line = id.ToString() + "," + legacyAmplifierExport.Line(legacyModifier.CodingSchemeLetter, group, amplifier, graphic);
+                                    id++;
+
+                                    w.WriteLine(line);
+                                    w.Flush();
+                                }
                             }
                         }
                     }
+                }
+
+                catch (Exception ex)
+                {
+                    logger.Error(ex.Message);
                 }
             }
 
@@ -164,43 +197,53 @@ namespace JointMilitarySymbologyLibrary
              
             foreach (SymbolSet ss in _lib.SymbolSets)
             {
-                if (ss.LegacySymbols != null)
+                logger.Info("Exporting symbols for: " + ss.ID);
+
+                try
                 {
-                    foreach (SymbolSetLegacySymbol legacySymbol in ss.LegacySymbols)
+                    if (ss.LegacySymbols != null)
                     {
-                        if (!legacySymbol.IsDuplicate)
+                        foreach (SymbolSetLegacySymbol legacySymbol in ss.LegacySymbols)
                         {
-                            if (legacySymbol.EntityID != "NA" && legacySymbol.EntityID != "UNSPECIFIED" && (asOriginal == false || legacySymbol.LegacyEntity == null))
+                            if (!legacySymbol.IsDuplicate)
                             {
-                                LegacyFunctionCodeType[] functionCodes = _helper.LegacyFunctions(legacySymbol.LegacyFunctionCode, standard);
-
-                                foreach (LegacyFunctionCodeType functionCode in functionCodes)
+                                if (legacySymbol.EntityID != "NA" && legacySymbol.EntityID != "UNSPECIFIED" && (asOriginal == false || legacySymbol.LegacyEntity == null))
                                 {
-                                    string line = id.ToString() + "," + symbolExport.Line(ss, legacySymbol, functionCode);
-                                    id++;
-
-                                    w.WriteLine(line);
-                                    w.Flush();
-                                }
-                            }
-                            else if ((legacySymbol.Remarks == "Retired" || asOriginal) && legacySymbol.LegacyEntity != null)
-                            {
-                                foreach (LegacyEntityType legacyEntity in legacySymbol.LegacyEntity)
-                                {
-                                    LegacyFunctionCodeType[] functionCodes = _helper.LegacyFunctions(legacyEntity.LegacyFunctionCode, standard);
+                                    LegacyFunctionCodeType[] functionCodes = _helper.LegacyFunctions(legacySymbol.LegacyFunctionCode, standard);
 
                                     foreach (LegacyFunctionCodeType functionCode in functionCodes)
                                     {
-                                        string line = id.ToString() + "," + symbolExport.Line(ss, legacySymbol, legacyEntity, functionCode);
+                                        string line = id.ToString() + "," + symbolExport.Line(ss, legacySymbol, functionCode);
                                         id++;
 
                                         w.WriteLine(line);
                                         w.Flush();
                                     }
                                 }
+                                else if ((legacySymbol.Remarks == "Retired" || asOriginal) && legacySymbol.LegacyEntity != null)
+                                {
+                                    foreach (LegacyEntityType legacyEntity in legacySymbol.LegacyEntity)
+                                    {
+                                        LegacyFunctionCodeType[] functionCodes = _helper.LegacyFunctions(legacyEntity.LegacyFunctionCode, standard);
+
+                                        foreach (LegacyFunctionCodeType functionCode in functionCodes)
+                                        {
+                                            string line = id.ToString() + "," + symbolExport.Line(ss, legacySymbol, legacyEntity, functionCode);
+                                            id++;
+
+                                            w.WriteLine(line);
+                                            w.Flush();
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
+                }
+
+                catch (Exception ex)
+                {
+                    logger.Error(ex.Message);
                 }
             }
 
@@ -222,43 +265,53 @@ namespace JointMilitarySymbologyLibrary
 
             foreach (LibraryAffiliation affiliation in _lib.Library.Affiliations)
             {
-                if (affiliation.LegacyFrames != null)
+                logger.Info("Exporting frames for: " + affiliation.ID);
+
+                try
                 {
-                    LegacyFrameExport fe = (LegacyFrameExport)frameEx;
-                    fe.Affiliation = affiliation;
-
-                    foreach (LegacyLetterCodeType legacyFrame in affiliation.LegacyFrames)
+                    if (affiliation.LegacyFrames != null)
                     {
-                        if (legacyFrame.LimitUseTo != "2525Bc2" || asOriginal)
+                        LegacyFrameExport fe = (LegacyFrameExport)frameEx;
+                        fe.Affiliation = affiliation;
+
+                        foreach (LegacyLetterCodeType legacyFrame in affiliation.LegacyFrames)
                         {
-                            if (legacyFrame.Function == "")
+                            if (legacyFrame.LimitUseTo != "2525Bc2" || asOriginal)
                             {
-                                fe.LegacyFrame = legacyFrame;
-
-                                LibraryContext context = _lib.Context(affiliation.ContextID);
-                                LibraryStandardIdentity identity = _lib.StandardIdentity(affiliation.StandardIdentityID);
-                                LibraryDimension dimension = _lib.Dimension(affiliation.DimensionID);
-
-                                string line = id.ToString() + "," + frameEx.Line(_lib, context, identity, dimension, _lib.Status(0), false, false);
-                                id++;
-
-                                w.WriteLine(line);
-                                w.Flush();
-
-                                if (legacyFrame.IsPlanned)
+                                if (legacyFrame.Function == "")
                                 {
-                                    LibraryStatus status = _lib.Status(1);
-                                    status.LabelAlias = "Planned";
-                                    line = id.ToString() + "," + frameEx.Line(_lib, context, identity, dimension, status, false, false);
-                                    status.LabelAlias = "";
+                                    fe.LegacyFrame = legacyFrame;
+
+                                    LibraryContext context = _lib.Context(affiliation.ContextID);
+                                    LibraryStandardIdentity identity = _lib.StandardIdentity(affiliation.StandardIdentityID);
+                                    LibraryDimension dimension = _lib.Dimension(affiliation.DimensionID);
+
+                                    string line = id.ToString() + "," + frameEx.Line(_lib, context, identity, dimension, _lib.Status(0), false, false);
                                     id++;
 
                                     w.WriteLine(line);
                                     w.Flush();
+
+                                    if (legacyFrame.IsPlanned)
+                                    {
+                                        LibraryStatus status = _lib.Status(1);
+                                        status.LabelAlias = "Planned";
+                                        line = id.ToString() + "," + frameEx.Line(_lib, context, identity, dimension, status, false, false);
+                                        status.LabelAlias = "";
+                                        id++;
+
+                                        w.WriteLine(line);
+                                        w.Flush();
+                                    }
                                 }
                             }
                         }
                     }
+                }
+
+                catch (Exception ex)
+                {
+                    logger.Error(ex.Message);
                 }
             }
 
@@ -281,48 +334,58 @@ namespace JointMilitarySymbologyLibrary
             {
                 // For each symbol set in JMSML...
 
-                if (ss.LegacySymbols != null)
+                logger.Info("Exporting legacy entities for: " + ss.ID);
+
+                try
                 {
-                    foreach (SymbolSetLegacySymbol legacySymbol in ss.LegacySymbols)
+                    if (ss.LegacySymbols != null)
                     {
-                        // For each legacy symbol in that symbol set...
-
-                        if (legacySymbol.LegacyEntity != null)
+                        foreach (SymbolSetLegacySymbol legacySymbol in ss.LegacySymbols)
                         {
-                            foreach (LegacyEntityType legacyEntity in legacySymbol.LegacyEntity)
+                            // For each legacy symbol in that symbol set...
+
+                            if (legacySymbol.LegacyEntity != null)
                             {
-                                // Get the list of Legacy Function IDs for the specified legacy version of the standard
-
-                                if(legacyEntity.LegacyFunctionCode != null)
+                                foreach (LegacyEntityType legacyEntity in legacySymbol.LegacyEntity)
                                 {
-                                    LegacyFunctionCodeType functionCode = _helper.LegacyFunction(legacyEntity.LegacyFunctionCode, standard);
+                                    // Get the list of Legacy Function IDs for the specified legacy version of the standard
 
-                                    string line = "";
-
-                                    // If the icon is Full Frame then four lines need to be exported, to reflect the four icon shapes.
-                                    // Else just write out one line for non-Full-Frame.
-
-                                    if (legacyEntity.Icon == IconType.FULL_FRAME)
+                                    if (legacyEntity.LegacyFunctionCode != null)
                                     {
-                                        foreach (LibraryStandardIdentityGroup sig in _lib.Library.StandardIdentityGroups)
+                                        LegacyFunctionCodeType functionCode = _helper.LegacyFunction(legacyEntity.LegacyFunctionCode, standard);
+
+                                        string line = "";
+
+                                        // If the icon is Full Frame then four lines need to be exported, to reflect the four icon shapes.
+                                        // Else just write out one line for non-Full-Frame.
+
+                                        if (legacyEntity.Icon == IconType.FULL_FRAME)
                                         {
-                                            line = string.Format("{0}", entityExport.Line(sig, ss, legacySymbol, legacyEntity, functionCode));
+                                            foreach (LibraryStandardIdentityGroup sig in _lib.Library.StandardIdentityGroups)
+                                            {
+                                                line = string.Format("{0}", entityExport.Line(sig, ss, legacySymbol, legacyEntity, functionCode));
+
+                                                w.WriteLine(line);
+                                                w.Flush();
+                                            }
+                                        }
+                                        else
+                                        {
+                                            line = string.Format("{0}", entityExport.Line(null, ss, legacySymbol, legacyEntity, functionCode));
 
                                             w.WriteLine(line);
                                             w.Flush();
                                         }
                                     }
-                                    else
-                                    {
-                                        line = string.Format("{0}", entityExport.Line(null, ss, legacySymbol, legacyEntity, functionCode));
-
-                                        w.WriteLine(line);
-                                        w.Flush();
-                                    }
                                 }
                             }
                         }
                     }
+                }
+
+                catch (Exception ex)
+                {
+                    logger.Error(ex.Message);
                 }
             }
         }
@@ -341,53 +404,63 @@ namespace JointMilitarySymbologyLibrary
 
             foreach (LibraryAffiliation affiliation in _lib.Library.Affiliations)
             {
-                if (affiliation.LegacyFrames != null)
+                logger.Info("Exporting legacy frames for: " + affiliation.ID);
+
+                try
                 {
-                    LegacyFrameGraphicExport fe = (LegacyFrameGraphicExport)frameEx;
-                    fe.Affiliation = affiliation;
-
-                    foreach (LegacyLetterCodeType legacyFrame in affiliation.LegacyFrames)
+                    if (affiliation.LegacyFrames != null)
                     {
-                        if (legacyFrame.LimitUseTo == standard && legacyFrame.Function == "")
+                        LegacyFrameGraphicExport fe = (LegacyFrameGraphicExport)frameEx;
+                        fe.Affiliation = affiliation;
+
+                        foreach (LegacyLetterCodeType legacyFrame in affiliation.LegacyFrames)
                         {
-                            fe.LegacyFrame = legacyFrame;
-
-                            string id = fe.IDIt(_lib.Status(0));
-
-                            if (! _icons.Contains(id))
+                            if (legacyFrame.LimitUseTo == standard && legacyFrame.Function == "")
                             {
-                                _icons.Add(id);
+                                fe.LegacyFrame = legacyFrame;
 
-                                LibraryContext context = _lib.Context(affiliation.ContextID);
-                                LibraryStandardIdentity identity = _lib.StandardIdentity(affiliation.StandardIdentityID);
-                                LibraryDimension dimension = _lib.Dimension(affiliation.DimensionID);
+                                string id = fe.IDIt(_lib.Status(0));
 
-                                string line = frameEx.Line(_lib, context, identity, dimension, _lib.Status(0), false, false);
+                                if (!_icons.Contains(id))
+                                {
+                                    _icons.Add(id);
 
-                                w.WriteLine(line);
-                                w.Flush();
+                                    LibraryContext context = _lib.Context(affiliation.ContextID);
+                                    LibraryStandardIdentity identity = _lib.StandardIdentity(affiliation.StandardIdentityID);
+                                    LibraryDimension dimension = _lib.Dimension(affiliation.DimensionID);
 
-                                //if (legacyFrame.IsPlanned)
-                                //{
-                                //    LibraryStatus status = _lib.Status(1);
+                                    string line = frameEx.Line(_lib, context, identity, dimension, _lib.Status(0), false, false);
 
-                                //    id = fe.IDIt(status);
+                                    w.WriteLine(line);
+                                    w.Flush();
 
-                                //    if (!_icons.Contains(id))
-                                //    {
-                                //        _icons.Add(id);
+                                    //if (legacyFrame.IsPlanned)
+                                    //{
+                                    //    LibraryStatus status = _lib.Status(1);
 
-                                //        status.LabelAlias = "Planned";
-                                //        line = frameEx.Line(_lib, context, identity, dimension, status, false, false);
-                                //        status.LabelAlias = "";
+                                    //    id = fe.IDIt(status);
 
-                                //        w.WriteLine(line);
-                                //        w.Flush();
-                                //    }
-                                //}
+                                    //    if (!_icons.Contains(id))
+                                    //    {
+                                    //        _icons.Add(id);
+
+                                    //        status.LabelAlias = "Planned";
+                                    //        line = frameEx.Line(_lib, context, identity, dimension, status, false, false);
+                                    //        status.LabelAlias = "";
+
+                                    //        w.WriteLine(line);
+                                    //        w.Flush();
+                                    //    }
+                                    //}
+                                }
                             }
                         }
                     }
+                }
+
+                catch (Exception ex)
+                {
+                    logger.Error(ex.Message);
                 }
             }
         }
