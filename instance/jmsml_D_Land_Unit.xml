@@ -2366,11 +2366,12 @@
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ARMY_AVIATION_AVIATION_ROTARY_WING_AVIATION_RECONNAISSANCE_SYM" Label="S*GPUCRVO-*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ARMY_AVIATION_AVIATION_ROTARY_WING" EntitySubTypeID="AVIATION_RECONNAISSANCE">
       <LegacyFunctionCode Name="2525C">UCRVO-</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525C" Description="Repeat">UCVRS-</LegacyFunctionCode>
-	    <LegacyEntity ID="MOVEMENT_AND_MANEUVER_ARMY_AVIATION_AVIATION_ROTARY_WING_AVIATION_RECONNAISSANCE_LE" Label="WAR.GRDTRK.UNT.CBT.AVN.ROT.SCUT" Graphic="S-G-UCVRS-.svg">
-		    <LegacyFunctionCode Name="2525C">UCRVO-</LegacyFunctionCode>
-        <LegacyFunctionCode Name="2525C" Description="Repeat">UCRVS-</LegacyFunctionCode>
-	    </LegacyEntity>
+    </LegacySymbol>
+    <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ARMY_AVIATION_AVIATION_ROTARY_WING_SCOUT_SYM" Label="S*GPUCVRS-*****" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C">UCVRS-</LegacyFunctionCode>
+      <LegacyEntity ID="MOVEMENT_AND_MANEUVER_ARMY_AVIATION_AVIATION_ROTARY_WING_SCOUT_LE" Label="WAR.GRDTRK.UNT.CBT.AVN.ROT.SCUT" Graphic="S-G-UCVRS-.svg">
+        <LegacyFunctionCode Name="2525C">UCVRS-</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_AVIATION_COMPOSITE_SYM" Label="S*GPUCVC--*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="AVIATION_COMPOSITE">
       <LegacyFunctionCode Name="2525C">UCVC--</LegacyFunctionCode>
@@ -2507,12 +2508,11 @@
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_RECON_CAVALRY_SCOUT_RECON_MOTORIZED_SYM" Label="S*GPUCRVM-*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="RECON_CAVALRY_SCOUT" EntitySubTypeID="RECON_MOTORIZED">
       <LegacyFunctionCode Name="2525C">UCRVM-</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="MOVEMENT_AND_MANEUVER_RECON_CAVALRY_SYM" Label="S*GPUCRV--*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">UCRV--</LegacyFunctionCode>
-	    <LegacyEntity ID="MOVEMENT_AND_MANEUVER_RECON_CAVALRY_SCOUT_RECON_LE" Label="WAR.GRDTRK.UNT.CBT.RECON.CVY" Icon="FULL_FRAME" CloverGraphic="S-G-UCRV--_0.svg" RectangleGraphic="S-G-UCRV--_1.svg" SquareGraphic="S-G-UCRV--_2.svg" DiamondGraphic="S-G-UCRV--_3.svg">
+      <LegacyEntity ID="MOVEMENT_AND_MANEUVER_RECON_CAVALRY_LE" Label="WAR.GRDTRK.UNT.CBT.RECON.CVY" Icon="FULL_FRAME" CloverGraphic="S-G-UCRV--_0.svg" RectangleGraphic="S-G-UCRV--_1.svg" SquareGraphic="S-G-UCRV--_2.svg" DiamondGraphic="S-G-UCRV--_3.svg">
         <LegacyFunctionCode Name="2525C">UCRV--</LegacyFunctionCode>
-	    </LegacyEntity>
-      <LegacyEntity ID="MOVEMENT_AND_MANEUVER_RECON_CAVALRY_SCOUT_RECON_MOTORIZED_LE" Label="WAR.GRDTRK.UNT.CBT.RECON.CVY" Icon="FULL_FRAME" CloverGraphic="S-G-UCRVM-_0.svg" RectangleGraphic="S-G-UCRVM-_1.svg" SquareGraphic="S-G-UCRVM-_2.svg" DiamondGraphic="S-G-UCRVM-_3.svg">
-        <LegacyFunctionCode Name="2525C">UCRVM-</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_SEA_AIR_LAND_SEAL_SYM" Label="S*FPNS----*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="SEA_AIR_LAND_SEAL">
