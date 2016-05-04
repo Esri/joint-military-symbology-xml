@@ -67,7 +67,8 @@ namespace JointMilitarySymbologyLibrary
 
             result = result + itemRootedPath;
             result = result + "," + Convert.ToString(_configHelper.PointSize);
-            result = result + "," + id;
+            //result = result + "," + id;
+            result = result + "," + BuildEntityItemName(sig, ss, symbol, entity, code); 
             result = result + "," + BuildEntityItemCategory(ss, iType, geometryType);
             result = result + "," + BuildEntityItemTags(sig, ss, symbol, entity, code);
             result = result + "," + id;
