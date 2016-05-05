@@ -2655,6 +2655,9 @@
     </LegacySymbol>
     <LegacySymbol ID="FIRES_FIELD_ARTILLERY_SINGLE_ROCKET_LAUNCHER_MOD_WHEELED_MOD_SYM" Label="S*GPUCFRSR*****" EntityID="FIRES" EntityTypeID="FIELD_ARTILLERY" ModifierOneID="SINGLE_ROCKET_LAUNCHER_MOD" ModifierTwoID="WHEELED_MOD">
       <LegacyFunctionCode Name="2525C">UCFRSR</LegacyFunctionCode>
+      <LegacyEntity ID="FIRES_FIELD_ARTILLERY_SINGLE_ROCKET_LAUNCHER_MOD_WHEELED_MOD_LE" Label="WAR.GRDTRK.UNT.CBT.FLDART.ROC.SRL.SRTRK" Graphic="S-G-UCFRSR.svg">
+        <LegacyFunctionCode Name="2525C">UCFRSR</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_FIELD_ARTILLERY_SINGLE_ROCKET_LAUNCHER_MOD_TOWED_MOD_SYM" Label="S*GPUCFRST*****" EntityID="FIRES" EntityTypeID="FIELD_ARTILLERY" ModifierOneID="SINGLE_ROCKET_LAUNCHER_MOD" ModifierTwoID="TOWED_MOD">
       <LegacyFunctionCode Name="2525C">UCFRST</LegacyFunctionCode>

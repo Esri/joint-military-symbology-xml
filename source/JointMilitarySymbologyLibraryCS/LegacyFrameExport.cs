@@ -77,7 +77,23 @@ namespace JointMilitarySymbologyLibrary
                 result = result + ","; // + "ExtraIcon";
                 result = result + ","; // + "FullFrame";
                 result = result + "," + "Point"; // + "GeometryType";
-                result = result + "," + _legacyFrame.LimitUseTo; // + "Standard";
+
+                switch (_legacyFrame.LimitUseTo)
+                {
+                    case "2525C":
+                        result = result + ",C";
+                        break;
+
+                    case "2525Bc2":
+                        result = result + ",B2";
+                        break;
+
+                    default:
+                        result = result + ",";
+                        break;
+                }
+
+                //result = result + "," + _legacyFrame.LimitUseTo; // + "Standard";
                 result = result + ","; // + "Status";
                 result = result + "," + _legacyFrame.Description; // + "Notes";
             }
