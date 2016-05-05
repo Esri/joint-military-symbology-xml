@@ -182,7 +182,7 @@ S*GPUCVRUH,SPGPUCVRUH-----,10,120600,69,15,Movement and Maneuver : Army Aviation
 S*GPUCVRW-,SPGPUCVRW------,10,120600,74,00,Movement and Maneuver : Army Aviation/Aviation Rotary Wing,Capability : Antisubmarine Warfare,Unspecified,SPGPUCVRW------,pass
 S*GPUCVRUE,SPGPUCVRUE-----,10,120600,75,00,Movement and Maneuver : Army Aviation/Aviation Rotary Wing,Capability : Medevac,Unspecified,SPGPUCVRUE-----,pass
 S*GPUCRVO-,SPGPUCRVO------,10,120601,00,00,Movement and Maneuver : Army Aviation/Aviation Rotary Wing : Reconnaissance : Unknown,Unspecified,Unspecified,SPGPUCRVO------,pass
-S*GPUCVRS-,SPGPUCVRS------,10,120601,00,00,Movement and Maneuver : Army Aviation/Aviation Rotary Wing : Reconnaissance : Unknown,Unspecified,Unspecified,SPGPUCRVO------,pass (multiple)
+S*GPUCVRS-,SPGPUCVRS------,98,100000,00,00,,,,,Retired
 S*GPUCVC--,SPGPUCVC-------,10,120700,00,00,Movement and Maneuver : Aviation Composite,Unspecified,Unspecified,SPGPUCVC-------,pass
 S*GPUCVF--,SPGPUCVF-------,10,120800,00,00,Movement and Maneuver : Aviation Fixed Wing,Unspecified,Unspecified,SPGPUCVF-------,pass
 S*GPUCVFA-,SPGPUCVFA------,10,120800,03,00,Movement and Maneuver : Aviation Fixed Wing,Capability : Attack 1,Unspecified,SPGPUCVFA------,pass
@@ -222,7 +222,7 @@ S*GPUCRR--,SPGPUCRR-------,10,121302,00,00,Movement and Maneuver : Reconnaissanc
 S*GPUCRRD-,SPGPUCRRD------,10,121302,19,00,Movement and Maneuver : Reconnaissance/Cavalry/Scout : Marine : Unknown,Capability : Division,Unspecified,SPGPUCRRD------,pass
 S*GPUCRRF-,SPGPUCRRF------,10,121302,26,00,Movement and Maneuver : Reconnaissance/Cavalry/Scout : Marine : Unknown,Capability : Force,Unspecified,SPGPUCRRF------,pass
 S*GPUCRVM-,SPGPUCRVM------,10,121303,00,00,Movement and Maneuver : Reconnaissance/Cavalry/Scout : Motorized : Unknown,Unspecified,Unspecified,SPGPUCRVM------,pass
-S*GPUCRV--,SPGPUCRV-------,10,121303,00,00,Movement and Maneuver : Reconnaissance/Cavalry/Scout : Motorized : Unknown,Unspecified,Unspecified,SPGPUCRVM------,pass (multiple)
+S*GPUCRV--,SPGPUCRV-------,98,100000,00,00,,,,,Retired
 S*FPNS----,SPFPNS---------,10,121400,00,00,Movement and Maneuver : Sea Air Land (SEAL),Unspecified,Unspecified,SPFPNS---------,pass
 S*FPGS----,SPFPGS---------,10,121700,00,00,Movement and Maneuver : Special Forces,Unspecified,Unspecified,SPFPGS---------,pass
 S*FP------,SPFP-----------,10,121800,00,00,Movement and Maneuver : SOF,Unspecified,Unspecified,SPFP-----------,pass
@@ -575,22 +575,25 @@ S*GPEWDHS-,SPGPEWDHS------,98,100000,00,00,,,,,Retired
 S*GPEWGR--,SPGPEWGR-------,15,110800,00,00,Weapon/Weapon System : Recoilless Gun,Unspecified,,SPGPEWGR-------,pass
 S*GPEWH---,SPGPEWH--------,15,110900,00,00,Weapon/Weapon System : Howitzer,Unspecified,,SPGPEWH--------,pass
 S*GPEWHL--,SPGPEWHL-------,15,110901,00,00,Weapon/Weapon System : Howitzer : Light,Unspecified,,SPGPEWHL-------,pass
+S*GPEWHLS-,SPGPEWHLS------,98,100000,00,00,,,,,Retired
 S*GPEWHM--,SPGPEWHM-------,15,110902,00,00,Weapon/Weapon System : Howitzer : Medium,Unspecified,,SPGPEWHM-------,pass
+S*GPEWHMS-,SPGPEWHMS------,98,100000,00,00,,,,,Retired
 S*GPEWHH--,SPGPEWHH-------,15,110903,00,00,Weapon/Weapon System : Howitzer : Heavy,Unspecified,,SPGPEWHH-------,pass
+S*GPEWHHS-,SPGPEWHHS------,98,100000,00,00,,,,,Retired
 S*GPEWM---,SPGPEWM--------,15,111000,00,00,Weapon/Weapon System : Missile Launcher,Unspecified,,SPGPEWM--------,pass
-S*GPEWMA--,SPGPEWMA-------,15,111100,00,00,Weapon/Weapon System : ADML,Unspecified,,SPGPEWMA-------,pass
-S*GPEWMAT-,SPGPEWMAT------,15,111100,00,00,Weapon/Weapon System : ADML,Unspecified,,SPGPEWMA-------,pass (multiple)
+S*GPEWMA--,SPGPEWMA-------,15,111100,00,00,Weapon/Weapon System : Air Defense Missile Launcher,Unspecified,,SPGPEWMA-------,pass
+S*GPEWMAT-,SPGPEWMAT------,15,111100,00,00,Weapon/Weapon System : Air Defense Missile Launcher,Unspecified,,SPGPEWMA-------,pass (multiple)
 S*GPEWMATR,SPGPEWMATR-----,98,100000,00,00,,,,,Retired
 S*GPEWMATE,SPGPEWMATE-----,98,100000,00,00,,,,,Retired
-S*GPEWMAS-,SPGPEWMAS------,15,111101,00,00,Weapon/Weapon System : ADML : Light,Unspecified,,SPGPEWMAS------,pass
-S*GPEWMASR,SPGPEWMASR-----,15,111102,00,00,Weapon/Weapon System : ADML : Light- Light Transporter-Launcher and Radar (TLAR),Unspecified,,SPGPEWMASR-----,pass
-S*GPEWMASE,SPGPEWMASE-----,15,111103,00,00,Weapon/Weapon System : ADML : Light- Light Tactical Landing Approach Radar (TELAR),Unspecified,,SPGPEWMASE-----,pass
-S*GPEWMAI-,SPGPEWMAI------,15,111104,00,00,Weapon/Weapon System : ADML : Medium,Unspecified,,SPGPEWMAI------,pass
-S*GPEWMAIR,SPGPEWMAIR-----,15,111105,00,00,Weapon/Weapon System : ADML : Medium- TLAR,Unspecified,,SPGPEWMAIR-----,pass
-S*GPEWMAIE,SPGPEWMAIE-----,15,111106,00,00,Weapon/Weapon System : ADML : Medium- TELAR Air Defense Missile Launcher,Unspecified,,SPGPEWMAIE-----,pass
-S*GPEWMAL-,SPGPEWMAL------,15,111107,00,00,Weapon/Weapon System : ADML : Heavy,Unspecified,,SPGPEWMAL------,pass
-S*GPEWMALR,SPGPEWMALR-----,15,111108,00,00,Weapon/Weapon System : ADML : Heavy- TLAR,Unspecified,,SPGPEWMALR-----,pass
-S*GPEWMALE,SPGPEWMALE-----,15,111109,00,00,Weapon/Weapon System : ADML : Heavy- TELAR,Unspecified,,SPGPEWMALE-----,pass
+S*GPEWMAS-,SPGPEWMAS------,15,111101,00,00,Weapon/Weapon System : Air Defense Missile Launcher : Light,Unspecified,,SPGPEWMAS------,pass
+S*GPEWMASR,SPGPEWMASR-----,15,111102,00,00,Weapon/Weapon System : Air Defense Missile Launcher : Light- Light Transporter-Launcher and Radar (TLAR),Unspecified,,SPGPEWMASR-----,pass
+S*GPEWMASE,SPGPEWMASE-----,15,111103,00,00,Weapon/Weapon System : Air Defense Missile Launcher : Light- Light Tactical Landing Approach Radar (TELAR),Unspecified,,SPGPEWMASE-----,pass
+S*GPEWMAI-,SPGPEWMAI------,15,111104,00,00,Weapon/Weapon System : Air Defense Missile Launcher : Medium,Unspecified,,SPGPEWMAI------,pass
+S*GPEWMAIR,SPGPEWMAIR-----,15,111105,00,00,Weapon/Weapon System : Air Defense Missile Launcher : Medium- TLAR,Unspecified,,SPGPEWMAIR-----,pass
+S*GPEWMAIE,SPGPEWMAIE-----,15,111106,00,00,Weapon/Weapon System : Air Defense Missile Launcher : Medium- TELAR Air Defense Missile Launcher,Unspecified,,SPGPEWMAIE-----,pass
+S*GPEWMAL-,SPGPEWMAL------,15,111107,00,00,Weapon/Weapon System : Air Defense Missile Launcher : Heavy,Unspecified,,SPGPEWMAL------,pass
+S*GPEWMALR,SPGPEWMALR-----,15,111108,00,00,Weapon/Weapon System : Air Defense Missile Launcher : Heavy- TLAR,Unspecified,,SPGPEWMALR-----,pass
+S*GPEWMALE,SPGPEWMALE-----,15,111109,00,00,Weapon/Weapon System : Air Defense Missile Launcher : Heavy- TELAR,Unspecified,,SPGPEWMALE-----,pass
 S*GPEWMT--,SPGPEWMT-------,15,111200,00,00,Weapon/Weapon System : Antitank Missile Launcher,Unspecified,,SPGPEWMT-------,pass
 S*GPEWMTL-,SPGPEWMTL------,15,111201,00,00,Weapon/Weapon System : Antitank Missile Launcher : Light,Unspecified,,SPGPEWMTL------,pass
 S*GPEWMTM-,SPGPEWMTM------,15,111202,00,00,Weapon/Weapon System : Antitank Missile Launcher : Medium,Unspecified,,SPGPEWMTM------,pass
@@ -1439,6 +1442,8 @@ S*UPWMMO--,SPUPWMMO-------,36,190200,00,00,NMLO-General : Non-Mine Mine-Like Obj
 S*UPWMFO--,SPUPWMFO-------,36,190300,00,00,NMLO-General : Non-Mine Mine-Like Object-Floating,,,SPUPWMFO-------,pass
 S*UPE-----,SPUPE----------,36,200000,00,00,Environmental Report Location,,,SPUPE----------,pass
 S*UPV-----,SPUPV----------,36,210000,00,00,Dive Report Location,,,SPUPV----------,pass
+WOS-HHDMDF,WOS-HHDMDFP----,98,100000,00,00,,,,,Retired
+WOS-HHDMDB,WOS-HHDMDBP----,98,100000,00,00,,,,,Retired
 E*IPB-----,EPIPB----------,40,110100,00,00,Incident : Criminal Activity Incident,Unspecified,,EPIPB----------,pass
 O*OPA-----,OPOPA----------,40,110101,00,00,Incident : Criminal Activity Incident : Arrest,Unspecified,,OPOPA----------,pass
 O*VPA-----,OPVPA----------,40,110102,00,00,Incident : Criminal Activity Incident : Arson,Unspecified,,OPVPA----------,pass

@@ -568,10 +568,10 @@
     <LegacySymbol ID="DIVE_REPORT_LOCATION_SYM" Label="S*UPV-----*****" EntityID="DIVE_REPORT_LOCATION">
       <LegacyFunctionCode Name="2525C">V-----</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SEA_MINE_GENERAL_SYM" Label="WOS-HHDMDF" EntityID="SEA_MINE_GENERAL">
+    <LegacySymbol ID="SEA_MINE_GENERAL_DEFINITE_SYM" Label="WOS-HHDMDFP----" EntityID="SEA_MINE_GENERAL">
       <LegacyFunctionCode Name="2525C" Description="Substitute" Remarks="Substituted Sea Mine General (2525D) for Mine Naval (Definite) (2525C)" SchemaOverride="W" DimensionOverride="S">HHDMDF</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="SEA_MINE_GENERAL_SYM" Label="WOS-HHDMDB" EntityID="SEA_MINE_GENERAL">
+    <LegacySymbol ID="SEA_MINE_GENERAL_DOUBTFUL_SYM" Label="WOS-HHDMDBP----" EntityID="SEA_MINE_GENERAL">
       <LegacyFunctionCode Name="2525C" Description="Substitute" Remarks="Substituted Sea Mine General (2525D) for Mine Naval (Doubtful) (2525C)" SchemaOverride="W" DimensionOverride="S">HHDMDB</LegacyFunctionCode>
     </LegacySymbol>
   </LegacySymbols>

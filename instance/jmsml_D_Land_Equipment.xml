@@ -259,7 +259,7 @@
             </EntitySubType>
           </EntitySubTypes>
         </EntityType>
-        <EntityType ID="AIR_DEFENSE_MISSILE_LAUNCHER" Label="Air Defense Missile Launcher" LabelAlias="ADML" Graphic="15111100.svg" Icon="FULL_OCTAGON">
+        <EntityType ID="AIR_DEFENSE_MISSILE_LAUNCHER" Label="Air Defense Missile Launcher" Graphic="15111100.svg" Icon="FULL_OCTAGON">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>1</DigitTwo>
@@ -1560,7 +1560,7 @@
     </LegacySymbol>
     <LegacySymbol ID="WEAPON_SYSTEM_DIRECT_FIRE_GUN_DIRECT_FIRE_GUN_LIGHT_SELF_SYM" Label="S*GPEWDLS-*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">EWDLS-</LegacyFunctionCode>
-      <LegacyEntity ID="WEAPON_SYSTEM_DIRECT_FIRE_GUN_DIRECT_FIRE_GUN_LIGHT_SELF_LE" Label="WAR.GRDTRK.EQT.WPN.DFG.LIT.SPD" Graphic="S-G-EWDLS-.svg">
+      <LegacyEntity ID="WEAPON_SYSTEM_DIRECT_FIRE_GUN_DIRECT_FIRE_GUN_LIGHT_SELF_LE" Label="WAR.GRDTRK.EQT.WPN.DFG.LIT.SPD" LabelAlias="Weapon/Weapon System : Direct Fire Gun : Self Propelled : Light" Graphic="S-G-EWDLS-.svg">
         <LegacyFunctionCode Name="2525C">EWDLS-</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
@@ -1569,7 +1569,7 @@
     </LegacySymbol>
     <LegacySymbol ID="WEAPON_SYSTEM_DIRECT_FIRE_GUN_DIRECT_FIRE_GUN_MEDIUM_SELF_SYM" Label="S*GPEWDMS-*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">EWDMS-</LegacyFunctionCode>
-      <LegacyEntity ID="WEAPON_SYSTEM_DIRECT_FIRE_GUN_DIRECT_FIRE_GUN_MEDIUM_SELF_LE" Label="WAR.GRDTRK.EQT.WPN.DFG.MDM.SPD" Graphic="S-G-EWDMS-.svg">
+      <LegacyEntity ID="WEAPON_SYSTEM_DIRECT_FIRE_GUN_DIRECT_FIRE_GUN_MEDIUM_SELF_LE" Label="WAR.GRDTRK.EQT.WPN.DFG.MDM.SPD" LabelAlias="Weapon/Weapon System : Direct Fire Gun : Self Propelled : Medium" Graphic="S-G-EWDMS-.svg">
         <LegacyFunctionCode Name="2525C">EWDMS-</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
@@ -1578,7 +1578,7 @@
     </LegacySymbol>
     <LegacySymbol ID="WEAPON_SYSTEM_DIRECT_FIRE_GUN_HEAVY_SELF_SYM" Label="S*GPEWDHS-*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">EWDHS-</LegacyFunctionCode>
-      <LegacyEntity ID="WEAPON_SYSTEM_DIRECT_FIRE_GUN_HEAVY_SELF_LE" Label="WAR.GRDTRK.EQT.WPN.DFG.HVY.SPD" Graphic="S-G-EWDHS-.svg">
+      <LegacyEntity ID="WEAPON_SYSTEM_DIRECT_FIRE_GUN_HEAVY_SELF_LE" Label="WAR.GRDTRK.EQT.WPN.DFG.HVY.SPD" LabelAlias="Weapon/Weapon System : Direct Fire Gun : Self Propelled : Heavy" Graphic="S-G-EWDHS-.svg">
         <LegacyFunctionCode Name="2525C">EWDHS-</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
@@ -1591,27 +1591,27 @@
     <LegacySymbol ID="WEAPON_SYSTEM_HOWITZER_HOWITZER_LIGHT_SYM" Label="S*GPEWHL--*****" EntityID="WEAPON_SYSTEM" EntityTypeID="HOWITZER" EntitySubTypeID="HOWITZER_LIGHT">
       <LegacyFunctionCode Name="2525C">EWHL--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="WEAPON_SYSTEM_HOWITZER_HOWITZER_LIGHT_SELF_SYM" Label="S*GPEWHLS" Remarks="Retired">
+    <LegacySymbol ID="WEAPON_SYSTEM_HOWITZER_HOWITZER_LIGHT_SELF_SYM" Label="S*GPEWHLS-*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">EWHLS-</LegacyFunctionCode>
-      <LegacyEntity ID="WEAPON_SYSTEM_HOWITZER_HOWITZER_LIGHT_SELF_LE" Label="WAR.GRDTRK.EQT.WPN.HOW.LIT.SPD" Graphic="S-G-EWHLS-.svg">
+      <LegacyEntity ID="WEAPON_SYSTEM_HOWITZER_HOWITZER_LIGHT_SELF_LE" Label="WAR.GRDTRK.EQT.WPN.HOW.LIT.SPD" LabelAlias="Weapon/Weapon System : Howitzer : Self Propelled : Light" Graphic="S-G-EWHLS-.svg">
         <LegacyFunctionCode Name="2525C">EWHLS-</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="WEAPON_SYSTEM_HOWITZER_HOWITZER_MEDIUM_SYM" Label="S*GPEWHM--*****" EntityID="WEAPON_SYSTEM" EntityTypeID="HOWITZER" EntitySubTypeID="HOWITZER_MEDIUM">
       <LegacyFunctionCode Name="2525C">EWHM--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="WEAPON_SYSTEM_HOWITZER_HOWITZER_MEDIUM_SELF_SYM" Label="S*GPEWHMS" Remarks="Retired">
+    <LegacySymbol ID="WEAPON_SYSTEM_HOWITZER_HOWITZER_MEDIUM_SELF_SYM" Label="S*GPEWHMS-*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">EWHMS-</LegacyFunctionCode>
-      <LegacyEntity ID="WEAPON_SYSTEM_HOWITZER_HOWITZER_MEDIUM_SELF_LE" Label="WAR.GRDTRK.EQT.WPN.HOW.MDM.SPD" Graphic="S-G-EWHMS-.svg">
+      <LegacyEntity ID="WEAPON_SYSTEM_HOWITZER_HOWITZER_MEDIUM_SELF_LE" Label="WAR.GRDTRK.EQT.WPN.HOW.MDM.SPD" LabelAlias="Weapon/Weapon System : Howitzer : Self Propelled : Medium" Graphic="S-G-EWHMS-.svg">
         <LegacyFunctionCode Name="2525C">EWHMS-</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="WEAPON_SYSTEM_HOWITZER_HOWITZER_HEAVY_SYM" Label="S*GPEWHH--*****" EntityID="WEAPON_SYSTEM" EntityTypeID="HOWITZER" EntitySubTypeID="HOWITZER_HEAVY">
       <LegacyFunctionCode Name="2525C">EWHH--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="WEAPON_SYSTEM_HOWITZER_HOWITZER_HEAVY_SELF_SYM" Label="S*GPEWHHS" Remarks="Retired">
+    <LegacySymbol ID="WEAPON_SYSTEM_HOWITZER_HOWITZER_HEAVY_SELF_SYM" Label="S*GPEWHHS-*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">EWHHS-</LegacyFunctionCode>
-      <LegacyEntity ID="WEAPON_SYSTEM_HOWITZER_HOWITZER_HEAVY_SELF_LE" Label="WAR.GRDTRK.EQT.WPN.HOW.HVY.SPD" Graphic="S-G-EWHHS-.svg">
+      <LegacyEntity ID="WEAPON_SYSTEM_HOWITZER_HOWITZER_HEAVY_SELF_LE" Label="WAR.GRDTRK.EQT.WPN.HOW.HVY.SPD" LabelAlias="Weapon/Weapon System : Howitzer : Self Propelled : Heavy" Graphic="S-G-EWHHS-.svg">
         <LegacyFunctionCode Name="2525C">EWHHS-</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
@@ -1632,13 +1632,13 @@
     </LegacySymbol>
     <LegacySymbol ID="WEAPON_SYSTEM_AIR_DEFENSE_MISSILE_LAUNCHER_TLAR_SYM" Label="S*GPEWMATR*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">EWMATR</LegacyFunctionCode>
-      <LegacyEntity ID="WEAPON_SYSTEM_AIR_DEFENSE_MISSILE_LAUNCHER_TLAR_LE" Label="WAR.GRDTRK.EQT.WPN.MSLL.ADFAD.THT.TLAR" Graphic="S-G-EWMATR.svg">
+      <LegacyEntity ID="WEAPON_SYSTEM_AIR_DEFENSE_MISSILE_LAUNCHER_TLAR_LE" Label="WAR.GRDTRK.EQT.WPN.MSLL.ADFAD.THT.TLAR" LabelAlias="Weapon/Weapon System : Air Defense Missile Launcher : Theater : TLAR" Graphic="S-G-EWMATR.svg">
         <LegacyFunctionCode Name="2525C">EWMATR</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="WEAPON_SYSTEM_AIR_DEFENSE_MISSILE_LAUNCHER_TELAR_SYM" Label="S*GPEWMATE*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">EWMATE</LegacyFunctionCode>
-      <LegacyEntity ID="WEAPON_SYSTEM_AIR_DEFENSE_MISSILE_LAUNCHER_TELAR_LE" Label="WAR.GRDTRK.EQT.WPN.MSLL.ADFAD.THT.TELAR" Graphic="S-G-EWMATE.svg">
+      <LegacyEntity ID="WEAPON_SYSTEM_AIR_DEFENSE_MISSILE_LAUNCHER_TELAR_LE" Label="WAR.GRDTRK.EQT.WPN.MSLL.ADFAD.THT.TELAR" LabelAlias="Weapon/Weapon System : Air Defense Missile Launcher : Theater : TELAR" Graphic="S-G-EWMATE.svg">
         <LegacyFunctionCode Name="2525C">EWMATE</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
@@ -1884,7 +1884,7 @@
     </LegacySymbol>
     <LegacySymbol ID="CIVILIAN_VEHICLE_GROUND_SYM" Label="S*GPEVC---*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">EVC---</LegacyFunctionCode>
-      <LegacyEntity ID="CIVILIAN_VEHICLE_GROUND_LE" Label="WAR.GRDTRK.EQT.GRDVEH.CVLVEH" Graphic="S-G-EVC---.svg">
+      <LegacyEntity ID="CIVILIAN_VEHICLE_GROUND_LE" Label="WAR.GRDTRK.EQT.GRDVEH.CVLVEH" LabelAlias="Civilian Vehicle" Graphic="S-G-EVC---.svg">
         <LegacyFunctionCode Name="2525C">EVC---</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
