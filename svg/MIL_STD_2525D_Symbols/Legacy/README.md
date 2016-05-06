@@ -1,5 +1,6 @@
 ### Creating Legacy Icons using 2525D format.
 *This process was done using Adobe Illustrator CS6.*
+
 1. Open these [template octagon SVG files](https://github.com/Esri/joint-military-symbology-xml/tree/master/svg/MIL_STD_2525D_Symbols) in separate views in Illustrator. They are Bounding Octagon.svg, BoundingOctagon_H.svg, and BoundingOctagon_V svg.
 2. Obtain your desired SVG icon from one of the retired symbol sets.
 3. Determine whether the symbol has modifiers aligned above/below it or right/left of it. Choose BoundingOctagon_H svg to align the icon with modifiers above or below. Choose  BoundingOctagon_V.svg to align the icon with modifiers to the right/left.
