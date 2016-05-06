@@ -37,7 +37,8 @@
 6. Select the desired elements of your retired icon SVG, copy them, and paste them into the new layer in your drawing. 
 7. Re-size the icon so that the edges of the symbol are touching the template frame. You can either re-size the elements directly in the view/artboard, or you may manipulate the W and H values that are docked above the artboard. 
 8. When you are done re-sizing the symbol, navigate to the layers panel and make the template frame invisible (click on the eye icon so that it goes away). 
-9. Repeat steps 4-8 for the Friendly, Neutral, and Hostile template frame. Remember, when you are creating Full-Frame icons, the size of the icons will be different depending on the frame.
+9. Save the changes. 
+10. Repeat steps 4-9 for the Friendly, Neutral, and Hostile template frame. Remember, when you are creating Full-Frame icons, the size of the icons will be different depending on the frame.
  
 
 
