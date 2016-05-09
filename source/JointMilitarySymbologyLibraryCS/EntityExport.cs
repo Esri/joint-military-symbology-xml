@@ -177,6 +177,94 @@ namespace JointMilitarySymbologyLibrary
             return result;
         }
 
+        protected string BuildEntityItemName(LibraryStandardIdentityGroup sig, SymbolSet ss, SymbolSetLegacySymbol symbol, LegacyEntityType entity, LegacyFunctionCodeType code)
+        {
+            // Constructs a string containing the name of an entity, where each label value
+            // is seperated by a DomainSeparator (usually a colon).  Builds this for each group
+            // of related SymbolSet and entity.
+
+            SymbolSetEntity e = null;
+            SymbolSetEntityEntityType eType = null;
+            EntitySubTypeType eSubType = null;
+
+            string result = "BAD_NAME";
+
+            // Start with the 2525D elements, if they exist, used to create the symbol, to build the core name
+
+            if (symbol.EntityID != "" && symbol.EntityID != "NA")
+            {
+                e = _configHelper.Librarian.Entity(ss, symbol.EntityID);
+
+                if (e != null)
+                {
+                    if (symbol.EntityTypeID != "" && symbol.EntityTypeID != "NA")
+                    {
+                        eType = _configHelper.Librarian.EntityType(e, symbol.EntityTypeID);
+
+                        if (eType != null)
+                        {
+                            if (symbol.EntitySubTypeID != "" && symbol.EntitySubTypeID != "NA")
+                            {
+                                eSubType = _configHelper.Librarian.EntitySubType(ss, eType, symbol.EntitySubTypeID);
+                            }
+                            else
+                                logger.Error("Cannot find the specified EntitySubType ID: " + symbol.EntitySubTypeID);
+                        }
+                        else
+                            logger.Error("Cannot find the specified EntityType ID: " + symbol.EntityTypeID);
+                    }
+                    else
+                        logger.Error("Cannot find the specified Entity ID: " + symbol.EntityID);
+
+                    result = BuildEntityItemName(sig, ss, e, eType, eSubType);
+
+                    // Add any modifiers that might exist
+
+                    if (symbol.ModifierOneID != "" && symbol.ModifierOneID != "NA")
+                    {
+                        ModifiersTypeModifier mod1 = _configHelper.Librarian.ModifierOne(ss, symbol.ModifierOneID);
+
+                        if (mod1 != null)
+                        {
+                            string modLabel = (mod1.LabelAlias == "") ? mod1.Label : mod1.LabelAlias;
+                            result = result + _configHelper.DomainSeparator + modLabel.Replace(',', '-');
+                        }
+                        else
+                            logger.Error("Cannot find the specified ModifierOne ID: " + symbol.ModifierOneID);
+                    }
+
+                    if (symbol.ModifierTwoID != "" && symbol.ModifierTwoID != "NA")
+                    {
+                        ModifiersTypeModifier mod2 = _configHelper.Librarian.ModifierTwo(ss, symbol.ModifierTwoID);
+
+                        if (mod2 != null)
+                        {
+                            string modLabel = (mod2.LabelAlias == "") ? mod2.Label : mod2.LabelAlias;
+                            result = result + _configHelper.DomainSeparator + modLabel.Replace(',', '-');
+                        }
+                        else
+                            logger.Error("Cannot find the specified ModifierTwo ID: " + symbol.ModifierTwoID);
+                    }
+                }
+            }
+            else
+            {
+                // Add the LegacyEntity label or label alias, if one exists.
+
+                string legEntLabel = (entity.LabelAlias == "") ? entity.Label : entity.LabelAlias;
+                result = result + _configHelper.DomainSeparator + legEntLabel.Replace(',', '-');
+            }
+
+            // Add the standard identity group name, if one is provided.
+
+            if (sig != null)
+            {
+                result = result + _configHelper.DomainSeparator + sig.Label;
+            }
+
+            return result;
+        }
+
         protected string BuildEntityItemCategory(SymbolSet ss, IconType iconType, string geometry)
         {
             // Contructs the category information for a given SymbolSet and entity, including the Label 
@@ -387,6 +475,7 @@ namespace JointMilitarySymbologyLibrary
         protected string BuildEntityItemTags(LibraryStandardIdentityGroup sig, SymbolSet ss, SymbolSetLegacySymbol symbol, LegacyEntityType entity, LegacyFunctionCodeType code)
         {
             // Builds a list of seperated tag strings from information derived from the specified objects.
+            
             // TODO: Normalize with similar code found in the preceding function.
 
             string result = "";
