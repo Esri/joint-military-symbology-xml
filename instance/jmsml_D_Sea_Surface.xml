@@ -849,7 +849,7 @@
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_COMBAT_HOVERCRAFT_SYM" Label="S*SPCH----*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">CH----</LegacyFunctionCode>
-      <LegacyEntity ID="MILITARY_COMBAT_HOVERCRAFT_LE" Label="WAR.SSUF.CBTT.HOV" Graphic="S-S-CH----.svg">
+      <LegacyEntity ID="MILITARY_COMBAT_HOVERCRAFT_LE" Label="WAR.SSUF.CBTT.HOV" LabelAlias="Military Combatant : Hovercraft" Graphic="S-S-CH----.svg">
         <LegacyFunctionCode Name="2525C">CH----</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
@@ -942,7 +942,7 @@
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_COMBAT_PATROL_BOAT_ANTISHIP_MISSILE_SYM" Label="S*SPCPSUM-*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">CPSUM-</LegacyFunctionCode>
-      <LegacyEntity ID="MILITARY_COMBAT_PATROL_BOAT_ANTISHIP_MISSILE_LE" Label="WAR.SSUF.CBTT.PAT.ASUW.ASMSL" Graphic="S-S-CPSUM-.svg">
+      <LegacyEntity ID="MILITARY_COMBAT_PATROL_BOAT_ANTISHIP_MISSILE_LE" Label="WAR.SSUF.CBTT.PAT.ASUW.ASMSL" LabelAlias="Military Combatant : Patrol Boat : Antiship Missile" Graphic="S-S-CPSUM-.svg">
         <LegacyFunctionCode Name="2525C">CPSUM-</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
@@ -1029,7 +1029,7 @@
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_NON_COMBAT_HOVERCRAFT_SYM" Label="S*SPNH----*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">NH----</LegacyFunctionCode>
-      <LegacyEntity ID="MILITARY_NON_COMBAT_HOVERCRAFT_LE" Label="WAR.SSUF.NCBTT.HOV" Graphic="S-S-NH----.svg">
+      <LegacyEntity ID="MILITARY_NON_COMBAT_HOVERCRAFT_LE" Label="WAR.SSUF.NCBTT.HOV" LabelAlias="Military Noncombatant : Hovercraft" Graphic="S-S-NH----.svg">
         <LegacyFunctionCode Name="2525C">NH----</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>

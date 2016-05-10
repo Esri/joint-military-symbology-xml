@@ -142,8 +142,10 @@ namespace JointMilitarySymbologyLibrary
         public string Line(SymbolSet ss, SymbolSetLegacySymbol legacySymbol, LegacyFunctionCodeType functionCode)
         {
             string result = "";
-            
-            string name = _buildName(ss, legacySymbol);
+
+            _buildName(ss, legacySymbol);
+
+            string name = _entityExport.NameIt(null, ss, legacySymbol, null, functionCode);
             string entityCode = "";
             string extraIcon = "";
 
@@ -216,7 +218,7 @@ namespace JointMilitarySymbologyLibrary
             bool fullFrame = (legacyEntity.Icon == IconType.FULL_FRAME);
             string fullFrameOutput = fullFrame ? "TRUE" : "";
 
-            result = legacyEntity.Label;
+            result = _entityExport.NameIt(null, ss, legacySymbol, legacyEntity, functionCode); //legacyEntity.Label;
             result = result + "," + sidcKey;
             result = result + "," + sidcKey;
             result = result + ",";
