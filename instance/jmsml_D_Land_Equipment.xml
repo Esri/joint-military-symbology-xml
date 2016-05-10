@@ -271,13 +271,13 @@
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="AIR_DEFENSE_MISSILE_LIGHT_TLAR" Label="Light, Light Transporter-Launcher and Radar (TLAR)" Graphic="15111102.svg" Icon="FULL_OCTAGON">
+            <EntitySubType ID="AIR_DEFENSE_MISSILE_LIGHT_TLAR" Label="Light Transporter-Launcher and Radar (TLAR)" Graphic="15111102.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>2</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="AIR_DEFENSE_MISSILE_LIGHT_TELAR" Label="Light, Light Tactical Landing Approach Radar (TELAR)" Graphic="15111103.svg" Icon="FULL_OCTAGON">
+            <EntitySubType ID="AIR_DEFENSE_MISSILE_LIGHT_TELAR" Label="Light Tactical Landing Approach Radar (TELAR)" Graphic="15111103.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>3</DigitTwo>
@@ -289,13 +289,13 @@
                 <DigitTwo>4</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="AIR_DEFENSE_MISSILE_MEDIUM_TLAR" Label="Medium, TLAR" Graphic="15111105.svg" Icon="FULL_OCTAGON">
+            <EntitySubType ID="AIR_DEFENSE_MISSILE_MEDIUM_TLAR" Label="Medium TLAR" Graphic="15111105.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>5</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="AIR_DEFENSE_MISSILE_MEDIUM_TELAR" Label="Medium, TELAR Air Defense Missile Launcher" Graphic="15111106.svg" Icon="FULL_OCTAGON">
+            <EntitySubType ID="AIR_DEFENSE_MISSILE_MEDIUM_TELAR" Label="Medium TELAR Air Defense Missile Launcher" Graphic="15111106.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>6</DigitTwo>
@@ -307,13 +307,13 @@
                 <DigitTwo>7</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="AIR_DEFENSE_MISSILE_HEAVY_TLAR" Label="Heavy, TLAR" Graphic="15111108.svg" Icon="FULL_OCTAGON">
+            <EntitySubType ID="AIR_DEFENSE_MISSILE_HEAVY_TLAR" Label="Heavy TLAR" Graphic="15111108.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>8</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="AIR_DEFENSE_MISSILE_HEAVY_TELAR" Label="Heavy, TELAR" Graphic="15111109.svg" Icon="FULL_OCTAGON">
+            <EntitySubType ID="AIR_DEFENSE_MISSILE_HEAVY_TELAR" Label="Heavy TELAR" Graphic="15111109.svg" Icon="FULL_OCTAGON">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>9</DigitTwo>
@@ -1621,12 +1621,10 @@
     <LegacySymbol ID="WEAPON_SYSTEM_AIR_DEFENSE_MISSILE_LAUNCHER_SYM" Label="S*GPEWMA--*****" EntityID="WEAPON_SYSTEM" EntityTypeID="AIR_DEFENSE_MISSILE_LAUNCHER">
       <LegacyFunctionCode Name="2525C">EWMA--</LegacyFunctionCode>
       <LegacyFunctionCode Name="2525C">EWMAT-</LegacyFunctionCode>
-	    <LegacyEntity ID="WEAPON_SYSTEM_AIR_DEFENSE_MISSILE_LAUNCHER_THEATER_LE" Label="WAR.GRDTRK.EQT.WPN.MSLL.ADFAD.THT" Graphic="S-G-EWMA--.svg">
+	    <LegacyEntity ID="WEAPON_SYSTEM_AIR_DEFENSE_MISSILE_LAUNCHER_LE" Label="WAR.GRDTRK.EQT.WPN.MSLL.ADFAD" Graphic="S-G-EWMA--.svg">
 		    <LegacyFunctionCode Name="2525C">EWMA--</LegacyFunctionCode>
-        <LegacyFunctionCode Name="2525C">EWMAT-</LegacyFunctionCode>
 	    </LegacyEntity>
-	    <LegacyEntity ID="WEAPON_SYSTEM_AIR_DEFENSE_MISSILE_LAUNCHER_LE" Label="WAR.GRDTRK.EQT.WPN.MSLL.ADFAD.THT" Graphic="S-G-EWMAT-.svg">
-		    <LegacyFunctionCode Name="2525C">EWMA--</LegacyFunctionCode>
+	    <LegacyEntity ID="WEAPON_SYSTEM_AIR_DEFENSE_MISSILE_LAUNCHER_THEATER_LE" Label="WAR.GRDTRK.EQT.WPN.MSLL.ADFAD.THT" LabelAlias="Weapon/Weapon System : Air Defense Missile Launcher : Theater" Graphic="S-G-EWMAT-.svg">
         <LegacyFunctionCode Name="2525C">EWMAT-</LegacyFunctionCode>
 	    </LegacyEntity>
     </LegacySymbol>
