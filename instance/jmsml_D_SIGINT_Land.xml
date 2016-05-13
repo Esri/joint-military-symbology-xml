@@ -413,7 +413,7 @@
     </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_CONTROLLED_APPROACH_MOD_SYM" Label="I*GPSRCA----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="CONTROLLED_APPROACH_MOD">
       <LegacyFunctionCode Name="2525C">SRCA--</LegacyFunctionCode>
-	    <LegacyEntity ID="SIGNAL_INTERCEPT_RADAR_CONTROLLED_APPROACH_MOD_LE" Label="SIGINT.GRDTRK.SIGINC.RAD.CTDAPP" Graphic="I-G-SRCA--.SVG">
+	    <LegacyEntity ID="SIGNAL_INTERCEPT_RADAR_CONTROLLED_APPROACH_MOD_LE" Label="SIGINT.GRDTRK.SIGINC.RAD.CTDAPP" Graphic="I-G-SRCA--.svg">
 		    <LegacyFunctionCode Name="2525C">SRCA--</LegacyFunctionCode>
 	    </LegacyEntity>
     </LegacySymbol>
@@ -467,7 +467,7 @@
     </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_MISSILE_TRACKING_MOD_SYM" Label="I*GPSRMT----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="MISSILE_TRACKING_MOD">
       <LegacyFunctionCode Name="2525C">SRMT--</LegacyFunctionCode>
-	    <LegacyEntity ID="SIGNAL_INTERCEPT_RADAR_MISSILE_TRACKING_MOD_LE" Label="SIGINT.GRDTRK.SIGINC.RAD.MSLTRK" Graphic="I-G-SRMG--.svg">
+	    <LegacyEntity ID="SIGNAL_INTERCEPT_RADAR_MISSILE_TRACKING_MOD_LE" Label="SIGINT.GRDTRK.SIGINC.RAD.MSLTRK" Graphic="I-G-SRMT--.svg">
 		    <LegacyFunctionCode Name="2525C">SRMT--</LegacyFunctionCode>
 	    </LegacyEntity>
     </LegacySymbol>

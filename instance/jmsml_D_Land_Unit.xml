@@ -2120,7 +2120,7 @@
     </LegacySymbol>
     <LegacySymbol ID="COMMAND_AND_CONTROL_SIGNAL_COMMUNICATIONS_CONTINGENCY_PACKAGE_LARGE_SYM" Label="S*GPUUSCL-*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">UUSCL-</LegacyFunctionCode>
-      <LegacyEntity ID="COMMAND_AND_CONTROL_SIGNAL_COMMUNICATIONS_CONTINGENCY_PACKAGE_LARGE_LE" Label="WAR.GRDTRK.UNT.CS.SIGUNT.COMCP.LCCP" Icon="FULL_FRAME" CloverGraphic="S-G-UUSCL-_0.svg" RectangleGraphic="S-G-UUSCL-_1.svg" SquareGraphic="S-G-UUSCL-_2.svg" DiamondGraphic="S-G-UUSCL-_3.svg">
+      <LegacyEntity ID="COMMAND_AND_CONTROL_SIGNAL_COMMUNICATIONS_CONTINGENCY_PACKAGE_LARGE_LE" Label="WAR.GRDTRK.UNT.CS.SIGUNT.COMCP.LCCP" LabelAlias="Command and Control : Signal : LCCP" Icon="FULL_FRAME" CloverGraphic="S-G-UUSCL-_0.svg" RectangleGraphic="S-G-UUSCL-_1.svg" SquareGraphic="S-G-UUSCL-_2.svg" DiamondGraphic="S-G-UUSCL-_3.svg">
         <LegacyFunctionCode Name="2525C">UUSCL-</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
@@ -2141,7 +2141,7 @@
     </LegacySymbol>
     <LegacySymbol ID="COMMAND_AND_CONTROL_SIGNAL_SMALL_EXTENSION_NODE_SYM" Label="S*GPUUSMS-*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">UUSMS-</LegacyFunctionCode>
-      <LegacyEntity ID="COMMAND_AND_CONTROL_SIGNAL_SMALL_EXTENSION_NODE_LE" Label="WAR.GRDTRK.UNT.CS.SIGUNT.MSE.SEN" Icon="FULL_FRAME" CloverGraphic="S-G-UUSMS-_0.svg" RectangleGraphic="S-G-UUSMS-_1.svg" SquareGraphic="S-G-UUSMS-_2.svg" DiamondGraphic="S-G-UUSMS-_3.svg">
+      <LegacyEntity ID="COMMAND_AND_CONTROL_SIGNAL_SMALL_EXTENSION_NODE_LE" Label="WAR.GRDTRK.UNT.CS.SIGUNT.MSE.SEN" LabelAlias="Command and Control : Signal : Small Extension Node" Icon="FULL_FRAME" CloverGraphic="S-G-UUSMS-_0.svg" RectangleGraphic="S-G-UUSMS-_1.svg" SquareGraphic="S-G-UUSMS-_2.svg" DiamondGraphic="S-G-UUSMS-_3.svg">
         <LegacyFunctionCode Name="2525C">UUSMS-</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
@@ -2150,7 +2150,7 @@
     </LegacySymbol>
     <LegacySymbol ID="COMMAND_AND_CONTROL_TELEPHONE_SWITCH_SYM" Label="S*GPUUSW--*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">UUSW--</LegacyFunctionCode>
-      <LegacyEntity ID="COMMAND_AND_CONTROL_TELEPHONE_SWITCH_LE" Label="WAR.GRDTRK.UNT.CS.SIGUNT.PHOSWT" Icon="FULL_FRAME" CloverGraphic="S-G-UUSW--_0.svg" RectangleGraphic="S-G-UUSW--_1.svg" SquareGraphic="S-G-UUSW--_2.svg" DiamondGraphic="S-G-UUSW--_3.svg">
+      <LegacyEntity ID="COMMAND_AND_CONTROL_TELEPHONE_SWITCH_LE" Label="WAR.GRDTRK.UNT.CS.SIGUNT.PHOSWT" LabelAlias="Command and Control : Signal : Telephone Switch" Icon="FULL_FRAME" CloverGraphic="S-G-UUSW--_0.svg" RectangleGraphic="S-G-UUSW--_1.svg" SquareGraphic="S-G-UUSW--_2.svg" DiamondGraphic="S-G-UUSW--_3.svg">
         <LegacyFunctionCode Name="2525C">UUSW--</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
@@ -2249,37 +2249,37 @@
     </LegacySymbol>
     <LegacySymbol ID="ARMORED_WHEELED_AIRBORNE" Label="S*GPUCAWA-*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">UCAWA-</LegacyFunctionCode>
-      <LegacyEntity ID="ARMORED_WHEELED_AIRBORNE_LE" Label="WAR.GRDTRK.UNT.CBT.ARM.WHD.ABN" Graphic="S-G-UCAWA-.svg">
+      <LegacyEntity ID="ARMORED_WHEELED_AIRBORNE_LE" Label="WAR.GRDTRK.UNT.CBT.ARM.WHD.ABN" LabelAlias="Movement and Maneuver : Combat : Armor : Wheeled : Airborne" Graphic="S-G-UCAWA-.svg">
         <LegacyFunctionCode Name="2525C">UCAWA-</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="ARMORED_WHEELED_LIGHT" Label="S*GPUCAWL-*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">UCAWL-</LegacyFunctionCode>
-      <LegacyEntity ID="ARMORED_WHEELED_LIGHT_LE" Label="WAR.GRDTRK.UNT.CBT.ARM.WHD.LIT" Graphic="S-G-UCAWL-.svg">
+      <LegacyEntity ID="ARMORED_WHEELED_LIGHT_LE" Label="WAR.GRDTRK.UNT.CBT.ARM.WHD.LIT" LabelAlias="Movement and Maneuver : Combat : Armor : Wheeled : Light" Graphic="S-G-UCAWL-.svg">
         <LegacyFunctionCode Name="2525C">UCAWL-</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="ARMORED_WHEELED_MEDIUM" Label="S*GPUCAWM-*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">UCAWM-</LegacyFunctionCode>
-      <LegacyEntity ID="ARMORED_WHEELED_MEDIUM_LE" Label="WAR.GRDTRK.UNT.CBT.ARM.WHD.MDM" Graphic="S-G-UCAWM-.svg">
+      <LegacyEntity ID="ARMORED_WHEELED_MEDIUM_LE" Label="WAR.GRDTRK.UNT.CBT.ARM.WHD.MDM" LabelAlias="Movement and Maneuver : Combat : Armor : Wheeled : Medium" Graphic="S-G-UCAWM-.svg">
         <LegacyFunctionCode Name="2525C">UCAWM-</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="ARMORED_WHEELED_HEAVY" Label="S*GPUCAWH-*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">UCAWH-</LegacyFunctionCode>
-      <LegacyEntity ID="ARMORED_WHEELED_HEAVY_LE" Label="WAR.GRDTRK.UNT.CBT.ARM.WHD.HVY" Graphic="S-G-UCAWH-.svg">
+      <LegacyEntity ID="ARMORED_WHEELED_HEAVY_LE" Label="WAR.GRDTRK.UNT.CBT.ARM.WHD.HVY" LabelAlias="Movement and Maneuver : Combat : Armor : Wheeled : Heavy" Graphic="S-G-UCAWH-.svg">
         <LegacyFunctionCode Name="2525C">UCAWH-</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="ARMORED_WHEELED_RECOVERY" Label="S*GPUCAWR-*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">UCAWR-</LegacyFunctionCode>
-      <LegacyEntity ID="ARMORED_WHEELED_RECOVERY_LE" Label="WAR.GRDTRK.UNT.CBT.ARM.WHD.RCY" Graphic="S-G-UCAWR-.svg">
+      <LegacyEntity ID="ARMORED_WHEELED_RECOVERY_LE" Label="WAR.GRDTRK.UNT.CBT.ARM.WHD.RCY" LabelAlias="Movement and Maneuver : Combat : Armor : Wheeled : Recovery " Graphic="S-G-UCAWR-.svg">
         <LegacyFunctionCode Name="2525C">UCAWR-</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="ARMORED_WHEELED_AMPHIB_RECOVERY" Label="S*GPUCAWWR*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">UCAWWR</LegacyFunctionCode>
-      <LegacyEntity ID="ARMORED_WHEELED_AMPHIB_RECOVERY_LE" Label="WAR.GRDTRK.UNT.CBT.ARM.WHD.AMP.RCY" CloverGraphic="S-G-UCAWWR_0.svg" RectangleGraphic="S-G-UCAWWR_1.svg" SquareGraphic="S-G-UCAWWR_2.svg" DiamondGraphic="S-G-UCAWWR_3.svg" Icon="FULL_FRAME">
+      <LegacyEntity ID="ARMORED_WHEELED_AMPHIB_RECOVERY_LE" Label="WAR.GRDTRK.UNT.CBT.ARM.WHD.AMP.RCY" LabelAlias="Movement and Maneuver : Combat : Armor : Wheeled : Amphibious Recovery " CloverGraphic="S-G-UCAWWR_0.svg" RectangleGraphic="S-G-UCAWWR_1.svg" SquareGraphic="S-G-UCAWWR_2.svg" DiamondGraphic="S-G-UCAWWR_3.svg" Icon="FULL_FRAME">
         <LegacyFunctionCode Name="2525C">UCAWWR</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
@@ -2324,7 +2324,7 @@
     </LegacySymbol>
     <LegacySymbol ID="SOF_AVIATION_ROTARY_WING" Label="S*FPAH----*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C" DimensionOverride="F">AH----</LegacyFunctionCode>
-      <LegacyEntity ID="SOF_AVIATION_ROTARY_WING_LE" Label="WAR.SOFUNT.AVN.ROT" Graphic="S-F-AH----.svg">
+      <LegacyEntity ID="SOF_AVIATION_ROTARY_WING_LE" Label="WAR.SOFUNT.AVN.ROT" LabelAlias="Movement and Maneuver : Army Aviation/Aviation Rotary Wing : SOF" Graphic="S-F-AH----.svg">
         <LegacyFunctionCode Name="2525C" DimensionOverride="F">AH----</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
@@ -2366,11 +2366,12 @@
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ARMY_AVIATION_AVIATION_ROTARY_WING_AVIATION_RECONNAISSANCE_SYM" Label="S*GPUCRVO-*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ARMY_AVIATION_AVIATION_ROTARY_WING" EntitySubTypeID="AVIATION_RECONNAISSANCE">
       <LegacyFunctionCode Name="2525C">UCRVO-</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525C" Description="Repeat">UCVRS-</LegacyFunctionCode>
-	    <LegacyEntity ID="MOVEMENT_AND_MANEUVER_ARMY_AVIATION_AVIATION_ROTARY_WING_AVIATION_RECONNAISSANCE_LE" Label="WAR.GRDTRK.UNT.CBT.AVN.ROT.SCUT" Graphic="S-G-UCVRS-.svg">
-		    <LegacyFunctionCode Name="2525C">UCRVO-</LegacyFunctionCode>
-        <LegacyFunctionCode Name="2525C" Description="Repeat">UCRVO-</LegacyFunctionCode>
-	    </LegacyEntity>
+    </LegacySymbol>
+    <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ARMY_AVIATION_AVIATION_ROTARY_WING_SCOUT_SYM" Label="S*GPUCVRS-*****" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C">UCVRS-</LegacyFunctionCode>
+      <LegacyEntity ID="MOVEMENT_AND_MANEUVER_ARMY_AVIATION_AVIATION_ROTARY_WING_SCOUT_LE" Label="WAR.GRDTRK.UNT.CBT.AVN.ROT.SCUT" LabelAlias="Movement and Maneuver : Army Aviation/Aviation Rotary Wing : Scout" Graphic="S-G-UCVRS-.svg">
+        <LegacyFunctionCode Name="2525C">UCVRS-</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_AVIATION_COMPOSITE_SYM" Label="S*GPUCVC--*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="AVIATION_COMPOSITE">
       <LegacyFunctionCode Name="2525C">UCVC--</LegacyFunctionCode>
@@ -2507,11 +2508,12 @@
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_RECON_CAVALRY_SCOUT_RECON_MOTORIZED_SYM" Label="S*GPUCRVM-*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="RECON_CAVALRY_SCOUT" EntitySubTypeID="RECON_MOTORIZED">
       <LegacyFunctionCode Name="2525C">UCRVM-</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="MOVEMENT_AND_MANEUVER_RECON_CAVALRY_SYM" Label="S*GPUCRV--*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">UCRV--</LegacyFunctionCode>
-	    <LegacyEntity ID="MOVEMENT_AND_MANEUVER_RECON_CAVALRY_SCOUT_RECON_MOTORIZED_LE" Label="WAR.GRDTRK.UNT.CBT.RECON.CVY" Icon="FULL_FRAME" CloverGraphic="S-G-UCRV--_0.svg" RectangleGraphic="S-G-UCRV--_1.svg" SquareGraphic="S-G-UCRV--_2.svg" DiamondGraphic="S-G-UCRV--_3.svg">
-		    <LegacyFunctionCode Name="2525C">UCRVM-</LegacyFunctionCode>
+      <LegacyEntity ID="MOVEMENT_AND_MANEUVER_RECON_CAVALRY_LE" Label="WAR.GRDTRK.UNT.CBT.RECON.CVY" LabelAlias="Movement and Maneuver : Reconnaissance/Cavalry/Scout : Cavalry" Icon="FULL_FRAME" CloverGraphic="S-G-UCRV--_0.svg" RectangleGraphic="S-G-UCRV--_1.svg" SquareGraphic="S-G-UCRV--_2.svg" DiamondGraphic="S-G-UCRV--_3.svg">
         <LegacyFunctionCode Name="2525C">UCRV--</LegacyFunctionCode>
-	    </LegacyEntity>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_SEA_AIR_LAND_SEAL_SYM" Label="S*FPNS----*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="SEA_AIR_LAND_SEAL">
       <LegacyFunctionCode Name="2525C" DimensionOverride="F">NS----</LegacyFunctionCode>
@@ -2551,7 +2553,7 @@
     </LegacySymbol>
     <LegacySymbol ID="FIRES_AIR_DEFENSE_COMPOSITE_SYM" Label="S*GPUCDC--*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">UCDC--</LegacyFunctionCode>
-      <LegacyEntity ID="FIRES_AIR_DEFENSE_COMPOSITE_LE" Label="WAR.GRDTRK.UNT.CBT.ADF.CMPS" Icon="FULL_FRAME" CloverGraphic="S-G-UCDC--_0.svg" RectangleGraphic="S-G-UCDC--_1.svg" SquareGraphic="S-G-UCDC--_2.svg" DiamondGraphic="S-G-UCDC--_3.svg">
+      <LegacyEntity ID="FIRES_AIR_DEFENSE_COMPOSITE_LE" Label="WAR.GRDTRK.UNT.CBT.ADF.CMPS" LabelAlias="Fires : Air Defense : Composite" Icon="FULL_FRAME" CloverGraphic="S-G-UCDC--_0.svg" RectangleGraphic="S-G-UCDC--_1.svg" SquareGraphic="S-G-UCDC--_2.svg" DiamondGraphic="S-G-UCDC--_3.svg">
         <LegacyFunctionCode Name="2525C">UCDC--</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
@@ -2614,7 +2616,7 @@
     </LegacySymbol>
     <LegacySymbol ID="FIRES_FIELD_ARTILLERY_HOWITZER_SYM" Label="S*GPUCFH--*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">UCFH--</LegacyFunctionCode>
-      <LegacyEntity ID="FIRES_FIELD_ARTILLERY_HOWITZER_LE" Label="WAR.GRDTRK.UNT.CBT.FLDART.HOW" Graphic="S-G-UCFH--.svg">
+      <LegacyEntity ID="FIRES_FIELD_ARTILLERY_HOWITZER_LE" Label="WAR.GRDTRK.UNT.CBT.FLDART.HOW" LabelAlias="Fires : Field Artillery : Howitzer/Gun" Graphic="S-G-UCFH--.svg">
         <LegacyFunctionCode Name="2525C">UCFH--</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
@@ -2653,6 +2655,9 @@
     </LegacySymbol>
     <LegacySymbol ID="FIRES_FIELD_ARTILLERY_SINGLE_ROCKET_LAUNCHER_MOD_WHEELED_MOD_SYM" Label="S*GPUCFRSR*****" EntityID="FIRES" EntityTypeID="FIELD_ARTILLERY" ModifierOneID="SINGLE_ROCKET_LAUNCHER_MOD" ModifierTwoID="WHEELED_MOD">
       <LegacyFunctionCode Name="2525C">UCFRSR</LegacyFunctionCode>
+      <LegacyEntity ID="FIRES_FIELD_ARTILLERY_SINGLE_ROCKET_LAUNCHER_MOD_WHEELED_MOD_LE" Label="WAR.GRDTRK.UNT.CBT.FLDART.ROC.SRL.SRTRK" Graphic="S-G-UCFRSR.svg">
+        <LegacyFunctionCode Name="2525C">UCFRSR</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_FIELD_ARTILLERY_SINGLE_ROCKET_LAUNCHER_MOD_TOWED_MOD_SYM" Label="S*GPUCFRST*****" EntityID="FIRES" EntityTypeID="FIELD_ARTILLERY" ModifierOneID="SINGLE_ROCKET_LAUNCHER_MOD" ModifierTwoID="TOWED_MOD">
       <LegacyFunctionCode Name="2525C">UCFRST</LegacyFunctionCode>
@@ -2693,7 +2698,7 @@
 	    <LegacyEntity ID="FIRES_FIELD_ARTILLERY_OBSERVER_LE" Label="WAR.GRDTRK.UNT.CBT.FLDART.TGTAQ.CLT" Icon="FULL_FRAME" CloverGraphic="S-G-UCFTC-_0.svg" RectangleGraphic="S-G-UCFTC-_1.svg" SquareGraphic="S-G-UCFTC-_2.svg" DiamondGraphic="S-G-UCFTC-_3.svg">
 		    <LegacyFunctionCode Name="2525C">UCFTC-</LegacyFunctionCode>
 	    </LegacyEntity>
-		  <LegacyEntity ID="FIRES_FIELD_ARTILLERY_OBSERVER_DISMOUNTED_LE" Label="WAR.GRDTRK.UNT.CBT.FLDART.TGTAQ.CLT.DMD" Icon="FULL_FRAME" CloverGraphic="S-G-UCFTCD_0.svg" RectangleGraphic="S-G-UCFTCD_1.svg" SquareGraphic="S-G-UCFTCD_2.svg" DiamondGraphic="S-G-UCFTCD_3.svg">
+		  <LegacyEntity ID="FIRES_FIELD_ARTILLERY_OBSERVER_DISMOUNTED_LE" Label="WAR.GRDTRK.UNT.CBT.FLDART.TGTAQ.CLT.DMD" LabelAlias="Fires : Field Artillery : Observer : Dismounted" Icon="FULL_FRAME" CloverGraphic="S-G-UCFTCD_0.svg" RectangleGraphic="S-G-UCFTCD_1.svg" SquareGraphic="S-G-UCFTCD_2.svg" DiamondGraphic="S-G-UCFTCD_3.svg">
 			  <LegacyFunctionCode Name="2525C">UCFTCD</LegacyFunctionCode>
 		  </LegacyEntity>
     </LegacySymbol>
@@ -2723,7 +2728,7 @@
     </LegacySymbol>
     <LegacySymbol ID="FIRES_MISSILE_TACTICAL_MOD_SYM" Label="S*GPUCMT--*****" EntityID="FIRES" EntityTypeID="MISSILE" ModifierTwoID="TACTICAL_MOD">
       <LegacyFunctionCode Name="2525C">UCMT--</LegacyFunctionCode>
-	    <LegacyEntity ID="FIRES_MISSILE_TACTICAL_MOD_LE" Label="WAR.GRDTRK.UNT.CBT.MSL.TAC" Graphic="S-G-UCMS--.svg">
+	    <LegacyEntity ID="FIRES_MISSILE_TACTICAL_MOD_LE" Label="WAR.GRDTRK.UNT.CBT.MSL.TAC" Graphic="S-G-UCMT--.svg">
 		    <LegacyFunctionCode Name="2525C">UCMT--</LegacyFunctionCode>
 	    </LegacyEntity>
     </LegacySymbol>
@@ -2825,7 +2830,7 @@
     </LegacySymbol>
     <LegacySymbol ID="PROTECTION_CHEMICAL_BIOLOGICAL_RADIOLOGICAL_NUCLEAR_DEFENSE_CBRN_RECONNAISSANCE_CHEMICAL_WHEELED_SURV_SYM" Label="S*GPUUACRS*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">UUACRS</LegacyFunctionCode>
-      <LegacyEntity ID="PROTECTION_CHEMICAL_BIOLOGICAL_RADIOLOGICAL_NUCLEAR_DEFENSE_CBRN_RECONNAISSANCE_CHEMICAL_WHEELED_SURV_LE" Label="WAR.GRDTRK.UNT.CS.CBRN.CML.RECON.WAVS" Icon="FULL_FRAME" CloverGraphic="S-G-UUACRS_0.svg" RectangleGraphic="S-G-UUACRS_1.svg" SquareGraphic="S-G-UUACRS_2.svg" DiamondGraphic="S-G-UUACRS_3.svg">
+      <LegacyEntity ID="PROTECTION_CHEMICAL_BIOLOGICAL_RADIOLOGICAL_NUCLEAR_DEFENSE_CBRN_RECONNAISSANCE_CHEMICAL_WHEELED_SURV_LE" Label="WAR.GRDTRK.UNT.CS.CBRN.CML.RECON.WAVS" LabelAlias="Protection : CBRN Defense : Surveillance Armored : Wheeled" Icon="FULL_FRAME" CloverGraphic="S-G-UUACRS_0.svg" RectangleGraphic="S-G-UUACRS_1.svg" SquareGraphic="S-G-UUACRS_2.svg" DiamondGraphic="S-G-UUACRS_3.svg">
         <LegacyFunctionCode Name="2525C">UUACRS</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
@@ -2907,7 +2912,7 @@
     </LegacySymbol>
     <LegacySymbol ID="PROTECTION_SECURITY_GROUND_DISMOUNTED_SYM" Label="S*GPUCSGD-*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">UCSGD-</LegacyFunctionCode>
-      <LegacyEntity ID="SECURITY_GROUND_DISMOUNTED_LE" Label="WAR.GRDTRK.UNT.CBT.ISF.GRD.DMD" Icon="FULL_FRAME" CloverGraphic="S-G-UCSGD-_0.svg" RectangleGraphic="S-G-UCSGD-_1.svg" SquareGraphic="S-G-UCSGD-_2.svg" DiamondGraphic="S-G-UCSGD-_3.svg">
+      <LegacyEntity ID="SECURITY_GROUND_DISMOUNTED_LE" Label="WAR.GRDTRK.UNT.CBT.ISF.GRD.DMD" LabelAlias="Protection : Security : Dismounted" Icon="FULL_FRAME" CloverGraphic="S-G-UCSGD-_0.svg" RectangleGraphic="S-G-UCSGD-_1.svg" SquareGraphic="S-G-UCSGD-_2.svg" DiamondGraphic="S-G-UCSGD-_3.svg">
         <LegacyFunctionCode Name="2525C">UCSGD-</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
@@ -2925,7 +2930,7 @@
     </LegacySymbol>
     <LegacySymbol ID="PROTECTION_SECURITY_LAW_ENFORCEMENT_SYM" Label="S*GPUUL---*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">UUL---</LegacyFunctionCode>
-      <LegacyEntity ID="PROTECTION_SECURITY_LAW_ENFORCEMENT_LE" Label="WAR.GRDTRK.UNT.CS.LAWENU" Graphic="S-G-UUL---.svg">
+      <LegacyEntity ID="PROTECTION_SECURITY_LAW_ENFORCEMENT_LE" Label="WAR.GRDTRK.UNT.CS.LAWENU" LabelAlias="Protection : Law Enforcement" Graphic="S-G-UUL---.svg">
         <LegacyFunctionCode Name="2525C">UUL---</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
@@ -2946,7 +2951,7 @@
     </LegacySymbol>
     <LegacySymbol ID="INTELLIGENCE_INFORMATION_WARFARE_SYM" Label="S*GPUUI---*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">UUI---</LegacyFunctionCode>
-      <LegacyEntity ID="INTELLIGENCE_INFORMATION_WARFARE_LE" Label="WAR.GRDTRK.UNT.CS.IWU" Graphic="S-G-UUI---.svg">
+      <LegacyEntity ID="INTELLIGENCE_INFORMATION_WARFARE_LE" Label="WAR.GRDTRK.UNT.CS.IWU" LabelAlias="Protection : Information Warfare" Graphic="S-G-UUI---.svg">
         <LegacyFunctionCode Name="2525C">UUI---</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
@@ -2955,7 +2960,7 @@
     </LegacySymbol>
     <LegacySymbol ID="INTELLIGENCE_ELECTRONIC_WARFARE_WHEELED_SYM" Label="S*GPUUMSEA*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">UUMSEA</LegacyFunctionCode>
-      <LegacyEntity ID="INTELLIGENCE_ELECTRONIC_WARFARE_WHEELED_LE" Label="WAR.GRDTRK.UNT.CS.MILINT.SIGINT.ECW.ARMWVH" CloverGraphic="S-G-UUMSEA_0.svg" RectangleGraphic="S-G-UUMSEA_1.svg" SquareGraphic="S-G-UUMSEA_2.svg" DiamondGraphic="S-G-UUMSEA_3.svg" Icon="FULL_FRAME">
+      <LegacyEntity ID="INTELLIGENCE_ELECTRONIC_WARFARE_WHEELED_LE" Label="WAR.GRDTRK.UNT.CS.MILINT.SIGINT.ECW.ARMWVH" LabelAlias="Intelligence : Electronic Warfare : Armored : Wheeled" CloverGraphic="S-G-UUMSEA_0.svg" RectangleGraphic="S-G-UUMSEA_1.svg" SquareGraphic="S-G-UUMSEA_2.svg" DiamondGraphic="S-G-UUMSEA_3.svg" Icon="FULL_FRAME">
         <LegacyFunctionCode Name="2525C">UUMSEA</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
@@ -3115,19 +3120,19 @@
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_MAINTENANCE_RECOVERY_SYM" Label="S*GPUSXR--*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">USXR--</LegacyFunctionCode>
-      <LegacyEntity ID="SUSTAINMENT_MAINTENANCE_RECOVERY_LEN" Label="WAR.GRDTRK.UNT.CSS.MAINT.RCY" Graphic="S-G-USXR--.svg">
+      <LegacyEntity ID="SUSTAINMENT_MAINTENANCE_RECOVERY_LEN" Label="WAR.GRDTRK.UNT.CSS.MAINT.RCY" LabelAlias="Sustainment : Maintenance : Recovery" Graphic="S-G-USXR--.svg">
         <LegacyFunctionCode Name="2525C">USXR--</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_MAINTENANCE_RECOVERY_CORPS_SYM" Label="S*GPUSXRC-*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">USXRC-</LegacyFunctionCode>
-      <LegacyEntity ID="SUSTAINMENT_MAINTENANCE_RECOVERY_CORPS_LEN" Label="WAR.GRDTRK.UNT.CSS.MAINT.RCY.CRP" CloverGraphic="S-G-USXRC-_0.svg" RectangleGraphic="S-G-USXRC-_1.svg" SquareGraphic="S-G-USXRC-_2.svg" DiamondGraphic="S-G-USXRC-_3.svg" Icon="FULL_FRAME">
+      <LegacyEntity ID="SUSTAINMENT_MAINTENANCE_RECOVERY_CORPS_LEN" Label="WAR.GRDTRK.UNT.CSS.MAINT.RCY.CRP" LabelAlias="Sustainment : Maintenance : Recovery : Corps" CloverGraphic="S-G-USXRC-_0.svg" RectangleGraphic="S-G-USXRC-_1.svg" SquareGraphic="S-G-USXRC-_2.svg" DiamondGraphic="S-G-USXRC-_3.svg" Icon="FULL_FRAME">
         <LegacyFunctionCode Name="2525C">USXRC-</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_MAINTENANCE_RECOVERY_THEATER_SYM" Label="S*GPUSXRT-*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">USXRT-</LegacyFunctionCode>
-      <LegacyEntity ID="SUSTAINMENT_MAINTENANCE_RECOVERY_THEATER_LEN" Label="WAR.GRDTRK.UNT.CSS.MAINT.RCY.THT" CloverGraphic="S-G-USXRT-_0.svg" RectangleGraphic="S-G-USXRT-_1.svg" SquareGraphic="S-G-USXRT-_2.svg" DiamondGraphic="S-G-USXRT-_3.svg" Icon="FULL_FRAME">
+      <LegacyEntity ID="SUSTAINMENT_MAINTENANCE_RECOVERY_THEATER_LEN" Label="WAR.GRDTRK.UNT.CSS.MAINT.RCY.THT" LabelAlias="Sustainment : Maintenance : Recovery : Theater" CloverGraphic="S-G-USXRT-_0.svg" RectangleGraphic="S-G-USXRT-_1.svg" SquareGraphic="S-G-USXRT-_2.svg" DiamondGraphic="S-G-USXRT-_3.svg" Icon="FULL_FRAME">
         <LegacyFunctionCode Name="2525C">USXRT-</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
@@ -3412,13 +3417,13 @@
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_III_AVIATION_CORPS_SYM" Label="S*GPUSS3AC*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">USS3AC</LegacyFunctionCode>
-      <LegacyEntity ID="SUSTAINMENT_US_SUPPLY_CLASS_III_AVIATION_CORPS_LE" Label="WAR.GRDTRK.UNT.CSS.SLP.CLS3.AVN.CRP" Icon="FULL_FRAME" CloverGraphic="S-G-USS3AC_0.svg" RectangleGraphic="S-G-USS3AC_1.svg" SquareGraphic="S-G-USS3AC_2.svg" DiamondGraphic="S-G-USS3AC_3.svg">
+      <LegacyEntity ID="SUSTAINMENT_US_SUPPLY_CLASS_III_AVIATION_CORPS_LE" Label="WAR.GRDTRK.UNT.CSS.SLP.CLS3.AVN.CRP" LabelAlias="Sustainment : US Supply Class III : Aviation : Corps" Icon="FULL_FRAME" CloverGraphic="S-G-USS3AC_0.svg" RectangleGraphic="S-G-USS3AC_1.svg" SquareGraphic="S-G-USS3AC_2.svg" DiamondGraphic="S-G-USS3AC_3.svg">
         <LegacyFunctionCode Name="2525C">USS3AC</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_US_SUPPLY_CLASS_III_AVIATION_THEATER_SYM" Label="S*GPUSS3AT*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">USS3AT</LegacyFunctionCode>
-      <LegacyEntity ID="SUSTAINMENT_US_SUPPLY_CLASS_III_AVIATION_THEATER_LE" Label="WAR.GRDTRK.UNT.CSS.SLP.CLS3.AVN.THT" Icon="FULL_FRAME" CloverGraphic="S-G-USS3AT_0.svg" RectangleGraphic="S-G-USS3AT_1.svg" SquareGraphic="S-G-USS3AT_2.svg" DiamondGraphic="S-G-USS3AT_3.svg">
+      <LegacyEntity ID="SUSTAINMENT_US_SUPPLY_CLASS_III_AVIATION_THEATER_LE" Label="WAR.GRDTRK.UNT.CSS.SLP.CLS3.AVN.THT" LabelAlias="Sustainment : US Supply Class III : Aviation : Theater" Icon="FULL_FRAME" CloverGraphic="S-G-USS3AT_0.svg" RectangleGraphic="S-G-USS3AT_1.svg" SquareGraphic="S-G-USS3AT_2.svg" DiamondGraphic="S-G-USS3AT_3.svg">
         <LegacyFunctionCode Name="2525C">USS3AT</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
@@ -3613,55 +3618,55 @@
     </LegacySymbol>
     <LegacySymbol ID="COMMAND_AND_CONTROL_STINGER_SYM" Label="S*GPUCDSS-*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C" Description="Substitute">UCDSS-</LegacyFunctionCode>
-      <LegacyEntity ID="COMMAND_AND_CONTROL_STINGER_LE" Label="WAR.GRDTRK.UNT.CBT.ADF.SHTR.STG" CloverGraphic="S-G-UCDSS-_0.svg" RectangleGraphic="S-G-UCDSS-_1.svg" SquareGraphic="S-G-UCDSS-_2.svg" DiamondGraphic="S-G-UCDSS-_3.svg" Icon="FULL_FRAME">
+      <LegacyEntity ID="COMMAND_AND_CONTROL_STINGER_LE" Label="WAR.GRDTRK.UNT.CBT.ADF.SHTR.STG" LabelAlias="Fires : Air Defense : Short Range : Stinger" CloverGraphic="S-G-UCDSS-_0.svg" RectangleGraphic="S-G-UCDSS-_1.svg" SquareGraphic="S-G-UCDSS-_2.svg" DiamondGraphic="S-G-UCDSS-_3.svg" Icon="FULL_FRAME">
         <LegacyFunctionCode Name="2525C" Description="Substitute">UCDSS-</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="COMMAND_AND_CONTROL_VULCAN_SYM" Label="S*GPUCDSV-*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C" Description="Substitute">UCDSV-</LegacyFunctionCode>
-      <LegacyEntity ID="COMMAND_AND_CONTROL_VULCAN_LE" Label="WAR.GRDTRK.UNT.CBT.ADF.SHTR.VUL" CloverGraphic="S-G-UCDSV-_0.svg" RectangleGraphic="S-G-UCDSV-_1.svg" SquareGraphic="S-G-UCDSV-_2.svg" DiamondGraphic="S-G-UCDSV-_3.svg" Icon="FULL_FRAME">
+      <LegacyEntity ID="COMMAND_AND_CONTROL_VULCAN_LE" Label="WAR.GRDTRK.UNT.CBT.ADF.SHTR.VUL" LabelAlias="Fires : Air Defense : Short Range : Vulcan" CloverGraphic="S-G-UCDSV-_0.svg" RectangleGraphic="S-G-UCDSV-_1.svg" SquareGraphic="S-G-UCDSV-_2.svg" DiamondGraphic="S-G-UCDSV-_3.svg" Icon="FULL_FRAME">
         <LegacyFunctionCode Name="2525C" Description="Substitute">UCDSV-</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="COMMAND_AND_CONTROL_AVENGER_SYM" Label="S*GPUCDMLA*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C" Description="Substitute">UCDMLA</LegacyFunctionCode>
-      <LegacyEntity ID="COMMAND_AND_CONTROL_AVENGER_LE" Label="WAR.GRDTRK.UNT.CBT.ADF.MSL.LIT.MOT" CloverGraphic="S-G-UCDMLA_0.svg" RectangleGraphic="S-G-UCDMLA_1.svg" SquareGraphic="S-G-UCDMLA_2.svg" DiamondGraphic="S-G-UCDMLA_3.svg" Icon="FULL_FRAME">
+      <LegacyEntity ID="COMMAND_AND_CONTROL_AVENGER_LE" Label="WAR.GRDTRK.UNT.CBT.ADF.MSL.LIT.MOT" LabelAlias="Fires : Air Defense : Missile : Avenger" CloverGraphic="S-G-UCDMLA_0.svg" RectangleGraphic="S-G-UCDMLA_1.svg" SquareGraphic="S-G-UCDMLA_2.svg" DiamondGraphic="S-G-UCDMLA_3.svg" Icon="FULL_FRAME">
         <LegacyFunctionCode Name="2525C" Description="Substitute">UCDMLA</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="COMMAND_AND_CONTROL_HAWK_SYM" Label="S*GPUCDHH-*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C" Description="Substitute">UCDHH-</LegacyFunctionCode>
-      <LegacyEntity ID="COMMAND_AND_CONTROL_HAWK_LE" Label="WAR.GRDTRK.UNT.CBT.ADF.MSL.HMAD.HWK" CloverGraphic="S-G-UCDHH-_0.svg" RectangleGraphic="S-G-UCDHH-_1.svg" SquareGraphic="S-G-UCDHH-_2.svg" DiamondGraphic="S-G-UCDHH-_3.svg" Icon="FULL_FRAME">
+      <LegacyEntity ID="COMMAND_AND_CONTROL_HAWK_LE" Label="WAR.GRDTRK.UNT.CBT.ADF.MSL.HMAD.HWK" LabelAlias="Fires : Air Defense : Missile : Hawk" CloverGraphic="S-G-UCDHH-_0.svg" RectangleGraphic="S-G-UCDHH-_1.svg" SquareGraphic="S-G-UCDHH-_2.svg" DiamondGraphic="S-G-UCDHH-_3.svg" Icon="FULL_FRAME">
         <LegacyFunctionCode Name="2525C" Description="Substitute">UCDHH-</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="COMMAND_AND_CONTROL_PATRIOT_SYM" Label="S*GPUCDHP-*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C" Description="Substitute">UCDHP-</LegacyFunctionCode>
-      <LegacyEntity ID="COMMAND_AND_CONTROL_PATRIOT_LE" Label="WAR.GRDTRK.UNT.CBT.ADF.MSL.HMAD.PATT" CloverGraphic="S-G-UCDHP-_0.svg" RectangleGraphic="S-G-UCDHP-_1.svg" SquareGraphic="S-G-UCDHP-_2.svg" DiamondGraphic="S-G-UCDHP-_3.svg" Icon="FULL_FRAME">
+      <LegacyEntity ID="COMMAND_AND_CONTROL_PATRIOT_LE" Label="WAR.GRDTRK.UNT.CBT.ADF.MSL.HMAD.PATT" LabelAlias="Fires : Air Defense : Missile : Patriot" CloverGraphic="S-G-UCDHP-_0.svg" RectangleGraphic="S-G-UCDHP-_1.svg" SquareGraphic="S-G-UCDHP-_2.svg" DiamondGraphic="S-G-UCDHP-_3.svg" Icon="FULL_FRAME">
         <LegacyFunctionCode Name="2525C" Description="Substitute">UCDHP-</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ARMY_AVIATION_AVIATION_COMBAT_ROTARY_WING_SYM" Label="S*GPUCVR--*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C" Description="Repeat">UCVR--</LegacyFunctionCode>
-      <LegacyEntity ID="MOVEMENT_AND_MANEUVER_ARMY_AVIATION_AVIATION_COMBAT_ROTARY_WING_LE" Label="WAR.GRDTRK.UNT.CBT.AVN.ROT" Graphic="S-G-UCVR--.svg">
+      <LegacyEntity ID="MOVEMENT_AND_MANEUVER_ARMY_AVIATION_AVIATION_COMBAT_ROTARY_WING_LE" Label="WAR.GRDTRK.UNT.CBT.AVN.ROT" LabelAlias="Movement and Maneuver : Aviation Rotary Wing" Graphic="S-G-UCVR--.svg">
         <LegacyFunctionCode Name="2525C" Description="Repeat">UCVR--</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_FIELD_ARTILLERY_AMPHIB_HOWITZER_SYM" Label="S*GPUCFHX-*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">UCFHX-</LegacyFunctionCode>
-      <LegacyEntity ID="FIRES_FIELD_ARTILLERY_AMPHIB_HOWITZER_LE" Label="WAR.GRDTRK.UNT.CBT.FLDART.HOW.AMP" CloverGraphic="S-G-UCFHX-_0.svg" RectangleGraphic="S-G-UCFHX-_1.svg" SquareGraphic="S-G-UCFHX-_2.svg" DiamondGraphic="S-G-UCFHX-_3.svg" Icon="FULL_FRAME">
+      <LegacyEntity ID="FIRES_FIELD_ARTILLERY_AMPHIB_HOWITZER_LE" Label="WAR.GRDTRK.UNT.CBT.FLDART.HOW.AMP" LabelAlias="Fires : Field Artillery : Howitzer/Gun : Amphibious" CloverGraphic="S-G-UCFHX-_0.svg" RectangleGraphic="S-G-UCFHX-_1.svg" SquareGraphic="S-G-UCFHX-_2.svg" DiamondGraphic="S-G-UCFHX-_3.svg" Icon="FULL_FRAME">
         <LegacyFunctionCode Name="2525C">UCFHX-</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_FIELD_ARTILLERY_ROCKET_SYM" Label="S*GPUCFR--*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">UCFR--</LegacyFunctionCode>
-      <LegacyEntity ID="FIRES_FIELD_ARTILLERY_ROCKET_LE" Label="WAR.GRDTRK.UNT.CBT.FLDART.ROC" Graphic="S-G-UCFR--.svg">
+      <LegacyEntity ID="FIRES_FIELD_ARTILLERY_ROCKET_LE" Label="WAR.GRDTRK.UNT.CBT.FLDART.ROC" LabelAlias="Fires : Field Artillery : Rocket" Graphic="S-G-UCFR--.svg">
         <LegacyFunctionCode Name="2525C">UCFR--</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_FIELD_ARTILLERY_AMPHIB_MORTAR_SYM" Label="S*GPUCFML-*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">UCFML-</LegacyFunctionCode>
-      <LegacyEntity ID="FIRES_FIELD_ARTILLERY_AMPHIB_MORTAR_LE" Label="WAR.GRDTRK.UNT.CBT.FLDART.MORT.AMP" CloverGraphic="S-G-UCFML-_0.svg" RectangleGraphic="S-G-UCFML-_1.svg" SquareGraphic="S-G-UCFML-_2.svg" DiamondGraphic="S-G-UCFML-_3.svg" Icon="FULL_FRAME">
+      <LegacyEntity ID="FIRES_FIELD_ARTILLERY_AMPHIB_MORTAR_LE" Label="WAR.GRDTRK.UNT.CBT.FLDART.MORT.AMP" LabelAlias="Fires : Field Artillery : Mortar : Amphibious" CloverGraphic="S-G-UCFML-_0.svg" RectangleGraphic="S-G-UCFML-_1.svg" SquareGraphic="S-G-UCFML-_2.svg" DiamondGraphic="S-G-UCFML-_3.svg" Icon="FULL_FRAME">
         <LegacyFunctionCode Name="2525C">UCFML-</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>

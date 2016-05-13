@@ -1562,13 +1562,13 @@
     </LegacySymbol>
     <LegacySymbol ID="HYDROGRAPHY_DANGERS_HAZARDS_MINE_NAVAL_DOUBTFUL_SYM" Label="WOS-HHDMDBP----" Remarks="Retired">
       <LegacyFunctionCode Name="2525C" StandardIdentityOverride="O" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">HHDMDB</LegacyFunctionCode>
-      <LegacyEntity ID="HYDROGRAPHY_DANGERS_HAZARDS_MINE_NAVAL_DOUBTFUL_LE" Label="METOC.OCA.HYDGRY.DANHAZ.MNENAV.DBT" Graphic="WOS-HHDMDBP.svg">
+      <LegacyEntity ID="HYDROGRAPHY_DANGERS_HAZARDS_MINE_NAVAL_DOUBTFUL_LE" Label="METOC.OCA.HYDGRY.DANHAZ.MNENAV.DBT" LabelAlias="Hydrography : Dangers/Hazards : Mine (Doubtful)" Graphic="WOS-HHDMDB.svg">
         <LegacyFunctionCode Name="2525C" StandardIdentityOverride="O" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">HHDMDB</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="HYDROGRAPHY_DANGERS_HAZARDS_MINE_NAVAL_DEFINITE_SYM" Label="WOS-HHDMDFP----" Remarks="Retired">
       <LegacyFunctionCode Name="2525C" StandardIdentityOverride="O" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">HHDMDF</LegacyFunctionCode>
-      <LegacyEntity ID="HYDROGRAPHY_DANGERS_HAZARDS_MINE_NAVAL_DEFINITE_LE" Label="METOC.OCA.HYDGRY.DANHAZ.MNENAV.DEFN" Graphic="WOS-HHDMDFP.svg">
+      <LegacyEntity ID="HYDROGRAPHY_DANGERS_HAZARDS_MINE_NAVAL_DEFINITE_LE" Label="METOC.OCA.HYDGRY.DANHAZ.MNENAV.DEFN" LabelAlias="Hydrography : Dangers/Hazards : Mine (Definite)" Graphic="WOS-HHDMDF.svg">
         <LegacyFunctionCode Name="2525C" StandardIdentityOverride="O" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">HHDMDF</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
