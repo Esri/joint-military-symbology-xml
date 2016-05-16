@@ -989,13 +989,13 @@
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_PROCESSING_FACILITY_SYM" Label="S*GPIP----H****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IP----</LegacyFunctionCode>
-      <LegacyEntity ID="INSTALLATION_PROCESSING_FACILITY_LE" Label="WAR.GRDTRK.INS.PF" Graphic="S-G-IP----.svg">
+      <LegacyEntity ID="INSTALLATION_PROCESSING_FACILITY_LE" Label="WAR.GRDTRK.INS.PF" LabelAlias="Installation : Processing Facility" Graphic="S-G-IP----.svg">
         <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IP----</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_CBRN_RADIOLOGICAL_1_MOD_SYM" Label="S*GPIPD---H****" EntityID="INSTALLATION" EntityTypeID="CBRN" ModifierOneID="RADIOLOGICAL_1_MOD">
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IPD---</LegacyFunctionCode>
-	    <LegacyEntity ID="INSTALLATION_CBRN_RADIOLOGICAL_1_MOD_LE" Label="WAR.GRDTRK.INS.PF.DECON" Graphic="S-G-IPD---.svg">
+	    <LegacyEntity ID="INSTALLATION_CBRN_RADIOLOGICAL_1_MOD_LE" Label="WAR.GRDTRK.INS.PF.DECON" LabelAlias="Installation : Processing Facility : Decontamination" Graphic="S-G-IPD---.svg">
 		    <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IPD---</LegacyFunctionCode>
 	    </LegacyEntity>
     </LegacySymbol>
@@ -1016,19 +1016,19 @@
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_SERVICE_RESEARCH_UTIL_FAC_SYM" Label="S*GPIU----H****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IU----</LegacyFunctionCode>
-      <LegacyEntity ID="INSTALLATION_SERVICE_RESEARCH_UTIL_FAC_LE" Label="WAR.GRDTRK.INS.SRUF" Graphic="S-G-IU----.svg">
+      <LegacyEntity ID="INSTALLATION_SERVICE_RESEARCH_UTIL_FAC_LE" Label="WAR.GRDTRK.INS.SRUF" LabelAlias="Installation : Utility" Graphic="S-G-IU----.svg">
         <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IU----</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_SERVICE_RESEARCH_UTIL_FAC_RAD_SYM" Label="S*GPIUR---H****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IUR---</LegacyFunctionCode>
-      <LegacyEntity ID="INSTALLATION_SERVICE_RESEARCH_UTIL_FAC_RAD_LE" Label="WAR.GRDTRK.INS.SRUF.TRF" Graphic="S-G-IUR---.svg">
+      <LegacyEntity ID="INSTALLATION_SERVICE_RESEARCH_UTIL_FAC_RAD_LE" Label="WAR.GRDTRK.INS.SRUF.TRF" LabelAlias="Installation : Utility : Research" Graphic="S-G-IUR---.svg">
         <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IUR---</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_SERVICE_RESEARCH_UTIL_FAC_TELE_SYM" Label="S*GPIUT---H****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IUT---</LegacyFunctionCode>
-      <LegacyEntity ID="INSTALLATION_SERVICE_RESEARCH_UTIL_FAC_TELE_LE" Label="WAR.GRDTRK.INS.SRUF.TCF" Graphic="S-G-IUT---.svg">
+      <LegacyEntity ID="INSTALLATION_SERVICE_RESEARCH_UTIL_FAC_TELE_LE" Label="WAR.GRDTRK.INS.SRUF.TCF" LabelAlias="Installation : Utility : TELECOM" Graphic="S-G-IUT---.svg">
         <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IUT---</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
@@ -1046,7 +1046,7 @@
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_RAW_MATERIAL_PROD_SYM" Label="S*GPIR----H****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IR----</LegacyFunctionCode>
-      <LegacyEntity ID="INSTALLATION_RAW_MATERIAL_PROD_LE" Label="WAR.GRDTRK.INS.RMP" Graphic="S-G-IR----.svg">
+      <LegacyEntity ID="INSTALLATION_RAW_MATERIAL_PROD_LE" Label="WAR.GRDTRK.INS.RMP" LabelAlias="Installation : Raw Material" Graphic="S-G-IR----.svg">
         <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IR----</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
@@ -1226,13 +1226,13 @@
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_ENERGY_FACILITY_INFRASTRUCTURE_ELECTRIC_POWER_DAM_SYM" Label="S*GPIUED--H****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IUED--</LegacyFunctionCode>
-      <LegacyEntity ID="INFRASTRUCTURE_ENERGY_FACILITY_INFRASTRUCTURE_ELECTRIC_POWER_DAM_LE" Label="WAR.GRDTRK.INS.SRUF.EPF.DAM" Graphic="S-G-IUED--.svg">
+      <LegacyEntity ID="INFRASTRUCTURE_ENERGY_FACILITY_INFRASTRUCTURE_ELECTRIC_POWER_DAM_LE" Label="WAR.GRDTRK.INS.SRUF.EPF.DAM" LabelAlias="Infrastructure : Energy Facility : Electric Power : Dam" Graphic="S-G-IUED--.svg">
         <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IUED--</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="INFRASTRUCTURE_ENERGY_FACILITY_INFRASTRUCTURE_ELECTRIC_POWER_FOSSIL_SYM" Label="S*GPIUEF--H****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IUEF--</LegacyFunctionCode>
-      <LegacyEntity ID="INFRASTRUCTURE_ENERGY_FACILITY_INFRASTRUCTURE_ELECTRIC_POWER_FOSSIL_LE" Label="WAR.GRDTRK.INS.SRUF.EPF.FOSF" Graphic="S-G-IUEF--.svg">
+      <LegacyEntity ID="INFRASTRUCTURE_ENERGY_FACILITY_INFRASTRUCTURE_ELECTRIC_POWER_FOSSIL_LE" Label="WAR.GRDTRK.INS.SRUF.EPF.FOSF" LabelAlias="Infrastructure : Energy Facility : Electric Power : Fossil Fuel" Graphic="S-G-IUEF--.svg">
         <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IUEF--</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
