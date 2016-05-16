@@ -2719,6 +2719,9 @@
     </LegacySymbol>
     <LegacySymbol ID="FIRES_MISSILE_SYM" Label="S*GPUCM---*****" EntityID="FIRES" EntityTypeID="MISSILE">
       <LegacyFunctionCode Name="2525C">UCM---</LegacyFunctionCode>
+		<LegacyEntity ID="FIRES_MISSILE_LE" Label="WAR.GRDTRK.UNT.CBT.MSL" Graphic="S-G-UCM---.svg">
+			<LegacyFunctionCode Name="2525C">UCM---</LegacyFunctionCode>
+		</LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_MISSILE_STRATEGIC_MOD_SYM" Label="S*GPUCMS--*****" EntityID="FIRES" EntityTypeID="MISSILE" ModifierTwoID="STRATEGIC_MOD">
       <LegacyFunctionCode Name="2525C">UCMS--</LegacyFunctionCode>
@@ -2824,6 +2827,9 @@
     </LegacySymbol>
     <LegacySymbol ID="PROTECTION_CHEMICAL_BIOLOGICAL_RADIOLOGICAL_NUCLEAR_DEFENSE_CBRN_MOTORIZED_SMOKE_MOD_DECONTAMINATION_2_MOD_SYM" Label="S*GPUUACCM*****" EntityID="PROTECTION" EntityTypeID="CHEMICAL_BIOLOGICAL_RADIOLOGICAL_NUCLEAR_DEFENSE" EntitySubTypeID="CBRN_MOTORIZED" ModifierOneID="SMOKE_MOD" ModifierTwoID="DECONTAMINATION_2_MOD">
       <LegacyFunctionCode Name="2525C">UUACCM</LegacyFunctionCode>
+		<LegacyEntity ID="PROTECTION_CHEMICAL_BIOLOGICAL_RADIOLOGICAL_NUCLEAR_DEFENSE_CBRN_MOTORIZED_SMOKE_MOD_DECONTAMINATION_2_MOD_LE" Label="WAR.GRDTRK.UNT.CS.CBRN.CML.SMKDEC.MOT" Icon="FULL_FRAME" CloverGraphic="S-G-UUACCM_0.svg" RectangleGraphic="S-G-UUACCM_1.svg" SquareGraphic="S-G-UUACCM_2.svg" DiamondGraphic="S-G-UUACCM_3.svg">
+			<LegacyFunctionCode Name="2525C">UUACCM</LegacyFunctionCode>
+		</LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="PROTECTION_CHEMICAL_BIOLOGICAL_RADIOLOGICAL_NUCLEAR_DEFENSE_CBRN_RECONNAISSANCE_CHEMICAL_MOD_SYM" Label="S*GPUUACR-*****" EntityID="PROTECTION" EntityTypeID="CHEMICAL_BIOLOGICAL_RADIOLOGICAL_NUCLEAR_DEFENSE" EntitySubTypeID="CBRN_RECONNAISSANCE" ModifierOneID="CHEMICAL_MOD">
       <LegacyFunctionCode Name="2525C">UUACR-</LegacyFunctionCode>
@@ -3302,10 +3308,10 @@
       <LegacyFunctionCode Name="2525C">USAR--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_RELIGIOUS_SUPPORT_CORPS_SYM" Label="S*GPUSART-*****" EntityID="SUSTAINMENT" EntityTypeID="RELIGIOUS_SUPPORT" EntitySubTypeID="CORPS_SUPPORT">
-      <LegacyFunctionCode Name="2525C">USART-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">USARC-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_RELIGIOUS_SUPPORT_THEATER_SYM" Label="S*GPUSARC-*****" EntityID="SUSTAINMENT" EntityTypeID="RELIGIOUS_SUPPORT" EntitySubTypeID="ECHELONS_ABOVE_CORPS_SUPPORT">
-      <LegacyFunctionCode Name="2525C">USARC-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">USART-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SUSTAINMENT_REPLACEMENT_HOLDING_UNIT_SYM" Label="S*GPUSAX--*****" EntityID="SUSTAINMENT" EntityTypeID="REPLACEMENT_HOLDING_UNIT">
       <LegacyFunctionCode Name="2525C">USAX--</LegacyFunctionCode>
