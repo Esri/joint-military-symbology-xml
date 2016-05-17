@@ -181,15 +181,15 @@ namespace JointMilitarySymbologyLibrary
 
             if (_entitySubType != null && !isEntitySubTypeSpecial)
             {
-                fullFrame = _entitySubType.Icon == IconType.FULL_FRAME;
+                fullFrame = _entitySubType.Icon == IconType.FULL_FRAME || _entitySubType.IsAlignable;
             }
             else if (_entityType != null)
             {
-                fullFrame = _entityType.Icon == IconType.FULL_FRAME;
+                fullFrame = _entityType.Icon == IconType.FULL_FRAME || _entityType.IsAlignable;
             }
             else if (_entity != null)
             {
-                fullFrame = _entity.Icon == IconType.FULL_FRAME;
+                fullFrame = _entity.Icon == IconType.FULL_FRAME || _entity.IsAlignable;
             }
 
             string fullFrameOutput = fullFrame ? "TRUE" : "";
