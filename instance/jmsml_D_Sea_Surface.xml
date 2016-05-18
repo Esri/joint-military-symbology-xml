@@ -853,6 +853,24 @@
         <LegacyFunctionCode Name="2525C">CH----</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
+    <LegacySymbol ID="MILITARY_COMBAT_STATION_SYM" Label="S*SPS-----*****" Remarks="Retired">
+      <LegacyFunctionCode Name="2525BC2">S-----</LegacyFunctionCode>
+      <LegacyEntity ID="MILITARY_COMBAT_STATION_LE" Label="WAR.SSUF.CBTT.STN" LabelAlias="Military Combatant : Station" Graphic="S-S-S-----.svg">
+        <LegacyFunctionCode Name="2525BC2">S-----</LegacyFunctionCode>
+      </LegacyEntity>
+    </LegacySymbol>
+    <LegacySymbol ID="MILITARY_COMBAT_STATION_PICKET_SYM" Label="S*SPSP----*****" Remarks="Retired">
+      <LegacyFunctionCode Name="2525BC2">SP----</LegacyFunctionCode>
+      <LegacyEntity ID="MILITARY_COMBAT_STATION_LE" Label="WAR.SSUF.CBTT.STN.PKT" LabelAlias="Military Combatant : Station : Picket" Graphic="S-S-SP----.svg">
+        <LegacyFunctionCode Name="2525BC2">SP----</LegacyFunctionCode>
+      </LegacyEntity>
+    </LegacySymbol>	
+    <LegacySymbol ID="MILITARY_COMBAT_STATION_ASW_SHIP_SYM" Label="S*SPSA----*****" Remarks="Retired">
+      <LegacyFunctionCode Name="2525BC2">SA----</LegacyFunctionCode>
+      <LegacyEntity ID="MILITARY_COMBAT_STATION_LE" Label="WAR.SSUF.CBTT.STN.ASWSHP" LabelAlias="Military Combatant : Station : ASW : Ship" Graphic="S-S-SA----.svg">
+        <LegacyFunctionCode Name="2525BC2">SA----</LegacyFunctionCode>
+      </LegacyEntity>
+    </LegacySymbol>	
     <LegacySymbol ID="MILITARY_COMBAT_CARRIER_SYM" Label="S*SPCLCV--*****" EntityID="MILITARY_COMBAT" EntityTypeID="CARRIER">
       <LegacyFunctionCode Name="2525C">CLCV--</LegacyFunctionCode>
     </LegacySymbol>
@@ -1033,6 +1051,18 @@
         <LegacyFunctionCode Name="2525C">NH----</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
+    <LegacySymbol ID="MILITARY_NON_COMBAT_STATION_SYM" Label="S*SPNN---*****" Remarks="Retired">
+      <LegacyFunctionCode Name="2525BC2">NN----</LegacyFunctionCode>
+      <LegacyEntity ID="MILITARY_COMBAT_STATION_LE" Label="WAR.SSUF.NCBTT.STN" LabelAlias="Military NonCombatant : Station" Graphic="S-S-NN----.svg">
+        <LegacyFunctionCode Name="2525BC2">NN----</LegacyFunctionCode>
+      </LegacyEntity>
+    </LegacySymbol>
+    <LegacySymbol ID="MILITARY_NON_COMBAT_STATION_RESCUE_SYM" Label="S*SPNR-----*****" Remarks="Retired">
+      <LegacyFunctionCode Name="2525BC2">NR----</LegacyFunctionCode>
+      <LegacyEntity ID="MILITARY_COMBAT_STATION_RESCUE_LE" Label="WAR.SSUF.NCBTT.STN.RSC" LabelAlias="Military NonCombatant : Station" Graphic="S-S-NR----.svg">
+        <LegacyFunctionCode Name="2525BC2">NR----</LegacyFunctionCode>
+      </LegacyEntity>
+    </LegacySymbol>	
     <LegacySymbol ID="CIVILIAN_CIV_MERCHANT_SYM" Label="S*SPXM----*****" EntityID="CIVILIAN" EntityTypeID="CIV_MERCHANT">
       <LegacyFunctionCode Name="2525C">XM----</LegacyFunctionCode>
     </LegacySymbol>
