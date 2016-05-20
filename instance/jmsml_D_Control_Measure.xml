@@ -200,7 +200,7 @@
             <DigitTwo>7</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="CC_WAYPOINT" Label="Waypoint" Graphic="25131800.svg">
+        <EntityType ID="CC_WAYPOINT" Label="Waypoint" IsAlignable="true" Graphic="25131800.svg">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>8</DigitTwo>
@@ -734,7 +734,7 @@
                 <DigitTwo>3</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="SENSOR_OUTPOST_LISTENING_POST" Label="Sensor Outpost/Listening Post" Graphic="25160204.svg">
+            <EntitySubType ID="SENSOR_OUTPOST_LISTENING_POST" Label="Sensor Outpost/Listening Post" IsAlignable="true" Graphic="25160204.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>4</DigitTwo>
@@ -1196,7 +1196,7 @@
             <DigitTwo>6</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="GROUND_ZERO" Label="Ground Zero" Graphic="25210700.svg">
+        <EntityType ID="GROUND_ZERO" Label="Ground Zero" IsAlignable="true" Graphic="25210700.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>7</DigitTwo>
@@ -1500,13 +1500,13 @@
             <DigitTwo>7</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="NAVIGATIONAL_REFERENCE_POINT" Label="Navigational Reference Point" Graphic="25213800.svg">
+        <EntityType ID="NAVIGATIONAL_REFERENCE_POINT" Label="Navigational Reference Point" IsAlignable="true" Graphic="25213800.svg">
           <EntityTypeCode>
             <DigitOne>3</DigitOne>
             <DigitTwo>8</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="DATA_LINK_REFERENCE_POINT" Label="Data Link Reference Point" Graphic="25213900.svg">
+        <EntityType ID="DATA_LINK_REFERENCE_POINT" Label="Data Link Reference Point" IsAlignable="true" Graphic="25213900.svg">
           <EntityTypeCode>
             <DigitOne>3</DigitOne>
             <DigitTwo>9</DigitTwo>
@@ -1536,7 +1536,7 @@
             <DigitTwo>3</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="MARSHALL_POINT" Label="Marshall Point" Graphic="25214400.svg">
+        <EntityType ID="MARSHALL_POINT" Label="Marshall Point" IsAlignable="true" Graphic="25214400.svg">
           <EntityTypeCode>
             <DigitOne>4</DigitOne>
             <DigitTwo>4</DigitTwo>
@@ -2684,7 +2684,7 @@
                 <DigitTwo>4</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="MINEFIELD_DUMMY" Label="Dummy" Graphic="25270705.svg">
+            <EntitySubType ID="MINEFIELD_DUMMY" Label="Dummy" IsAlignable="true" Graphic="25270705.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>5</DigitTwo>
@@ -2940,7 +2940,7 @@
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="CHEMICAL_EVENT" Label="Chemical Event" Graphic="25281300.svg">
+        <EntityType ID="CHEMICAL_EVENT" Label="Chemical Event" IsAlignable="true" Graphic="25281300.svg">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>3</DigitTwo>
@@ -2954,7 +2954,7 @@
             </EntitySubType>
           </EntitySubTypes>
         </EntityType>
-        <EntityType ID="BIOLOGICAL_EVENT" Label="Biological Event" Graphic="25281400.svg">
+        <EntityType ID="BIOLOGICAL_EVENT" Label="Biological Event" IsAlignable="true" Graphic="25281400.svg">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>4</DigitTwo>
@@ -3056,7 +3056,7 @@
             </EntitySubType>
           </EntitySubTypes>
         </EntityType>
-        <EntityType ID="OTHER_SIMILAR_OBSTACLES" Label="Tetrahedrons, Dragons Teeth, and Other Similar Obstacles" Icon="NA" GeometryType="NA">
+        <EntityType ID="OTHER_SIMILAR_OBSTACLES" Label="Tetrahedrons, Dragons Teeth, and Other Similar Obstacles" IsAlignable="true" Icon="NA" GeometryType="NA">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>9</DigitTwo>
@@ -3088,13 +3088,13 @@
             <DigitTwo>0</DigitTwo>
           </EntityTypeCode>
           <EntitySubTypes>
-            <EntitySubType ID="TOWER_LOW" Label="Tower-Low" Graphic="25282001.svg">
+            <EntitySubType ID="TOWER_LOW" Label="Tower-Low" IsAlignable="true" Graphic="25282001.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="TOWER_HIGH" Label="Tower-High" Graphic="25282002.svg">
+            <EntitySubType ID="TOWER_HIGH" Label="Tower-High" IsAlignable="true" Graphic="25282002.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>2</DigitTwo>
@@ -3122,7 +3122,7 @@
             <DigitTwo>1</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="ANTITANK_OBSTACLES" Label="Antitank Obstacles" Icon="NA" GeometryType="NA">
+        <EntityType ID="ANTITANK_OBSTACLES" Label="Antitank Obstacles" IsAlignable="true" Icon="NA" GeometryType="NA">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>2</DigitTwo>
@@ -3664,7 +3664,6 @@
             <DigitTwo>8</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="TMT_DESTROY" Label="Destroy" Graphic="25340900.svg">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>9</DigitTwo>
@@ -3706,7 +3705,7 @@
             <DigitTwo>5</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="TMT_NEUTRALIZE" Label="Neutralize" Graphic="25341600.svg">
+        <EntityType ID="TMT_NEUTRALIZE" Label="Neutralize" IsAlignable="true" Graphic="25341600.svg">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>6</DigitTwo>
