@@ -764,6 +764,8 @@ namespace JointMilitarySymbologyLibrary {
         
         private string tailOverrideField;
         
+        private string limitUseToField;
+        
         private string valueField;
         
         public LegacyFunctionCodeType() {
@@ -775,6 +777,7 @@ namespace JointMilitarySymbologyLibrary {
             this.hQTFFDOverrideField = "";
             this.amplifierOverrideField = "";
             this.tailOverrideField = "";
+            this.limitUseToField = "";
         }
         
         /// <remarks/>
@@ -914,6 +917,18 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.tailOverrideField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string LimitUseTo {
+            get {
+                return this.limitUseToField;
+            }
+            set {
+                this.limitUseToField = value;
             }
         }
         

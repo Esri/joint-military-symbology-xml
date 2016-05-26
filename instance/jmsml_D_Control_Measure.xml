@@ -5,6 +5,7 @@
     <DigitTwo>5</DigitTwo>
   </SymbolSetCode>
   <LegacyCodingSchemeCode Name="2525C">G</LegacyCodingSchemeCode>
+  <LegacyCodingSchemeCode Name="2525BC2">G</LegacyCodingSchemeCode>
   <Entities>
     <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
       <EntityCode>
@@ -2968,7 +2969,7 @@
             </EntitySubType>
           </EntitySubTypes>
         </EntityType>
-        <EntityType ID="NUCLEAR_EVENT" Label="Nuclear Event" Graphic="25281500.svg">
+        <EntityType ID="NUCLEAR_EVENT" Label="Nuclear Event" IsAlignable="true" Graphic="25281500.svg">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>5</DigitTwo>
@@ -3847,17 +3848,17 @@
 		    <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">GPPW--</LegacyFunctionCode>
 	    </LegacyEntity>
     </LegacySymbol>
-    <LegacySymbol ID="COMMAND_CONTROL_POINTS_CC_AIR_CONTROL_MARSHALL_SYM" Label="G*GPGPAM--****X" EntityID="COMMAND_CONTROL_POINTS" EntityTypeID="CC_AIR_CONTROL_MARSHALL">
-      <LegacyFunctionCode Name="2525BC2" DimensionOverride="G" TailOverride="--X">GPAM--</LegacyFunctionCode>
-	    <LegacyEntity ID="COMMAND_CONTROL_POINTS_CC_AIR_CONTROL_MARSHALL_LE" Label="TACGRP.C2GM.GNL.PNT.ACTL.MRSH" Graphic="G-G-GPAM--.svg">
-		    <LegacyFunctionCode Name="2525BC2" DimensionOverride="G" TailOverride="--X">GPAM--</LegacyFunctionCode>
-	    </LegacyEntity>
-    </LegacySymbol>	
-    <LegacySymbol ID="COMMAND_CONTROL_POINTS_CC_AIR_CONTROL_CORRIDOR TAB_SYM" Label="G*GPGPAC--****X" EntityID="COMMAND_CONTROL_POINTS" EntityTypeID="CC_AIR_CONTROL_CORRIDOR TAB">
-      <LegacyFunctionCode Name="2525BC2" DimensionOverride="G" TailOverride="--X">GPAC--</LegacyFunctionCode>
-	    <LegacyEntity ID="COMMAND_CONTROL_POINTS_CC_AIR_CONTROL_CORRIDOR TAB_LE" Label="TACGRP.C2GM.GNL.PNT.ACTL.CRDRTB" Graphic="G-G-GPAC--.svg">
-		    <LegacyFunctionCode Name="2525BC2" DimensionOverride="G" TailOverride="--X">GPAC--</LegacyFunctionCode>
-	    </LegacyEntity>
+    <LegacySymbol ID="COMMAND_CONTROL_POINTS_CC_AIR_CONTROL_MARSHALL_SYM" Label="G*GPGPAM--****X" Remarks="Retired"><!--EntityID="COMMAND_CONTROL_POINTS" EntityTypeID="CC_AIR_CONTROL_MARSHALL"-->
+      <LegacyFunctionCode Name="2525BC2" LimitUseTo="2525Bc2" DimensionOverride="G" TailOverride="--X">GPAM--</LegacyFunctionCode>
+      <LegacyEntity ID="COMMAND_CONTROL_POINTS_CC_AIR_CONTROL_MARSHALL_LE" Label="TACGRP.C2GM.GNL.PNT.ACTL.MRSH" LabelAlias="Airspace Control Points : Marshall Point" Graphic="G-G-GPAM--.svg">
+        <LegacyFunctionCode Name="2525BC2" LimitUseTo="2525Bc2" DimensionOverride="G" TailOverride="--X">GPAM--</LegacyFunctionCode>
+      </LegacyEntity>
+    </LegacySymbol>
+    <LegacySymbol ID="COMMAND_CONTROL_POINTS_CC_AIR_CONTROL_CORRIDOR_TAB_SYM" Label="G*GPGPAC--****X" Remarks="Retired"><!--EntityID="COMMAND_CONTROL_POINTS" EntityTypeID="CC_AIR_CONTROL_CORRIDOR TAB"-->
+      <LegacyFunctionCode Name="2525BC2" LimitUseTo="2525Bc2" DimensionOverride="G" TailOverride="--X">GPAC--</LegacyFunctionCode>
+      <LegacyEntity ID="COMMAND_CONTROL_POINTS_CC_AIR_CONTROL_CORRIDOR_TAB_LE" Label="TACGRP.C2GM.GNL.PNT.ACTL.CRDRTB" LabelAlias="Airspace Control Points : Corridor Tab" Graphic="G-G-GPAC--.svg">
+        <LegacyFunctionCode Name="2525BC2" LimitUseTo="2525Bc2" DimensionOverride="G" TailOverride="--X">GPAC--</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>		
     <LegacySymbol ID="MANEUVER_LINES_FORWARD_LINE_OF_TROOPS_FLOT_FRIENDLY_PRESENT_SYM" Label="G*GPGLF---****X" EntityID="MANEUVER_LINES" EntityTypeID="FORWARD_LINE_OF_TROOPS" EntitySubTypeID="FLOT_FRIENDLY_PRESENT">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">GLF---</LegacyFunctionCode>

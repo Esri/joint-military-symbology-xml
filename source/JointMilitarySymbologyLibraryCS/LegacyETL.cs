@@ -207,6 +207,8 @@ namespace JointMilitarySymbologyLibrary
                         {
                             if (!legacySymbol.IsDuplicate)
                             {
+                                // This first part handles those legacy symbols being mapped to Current/Latest (2525D) symbols.
+
                                 if (legacySymbol.EntityID != "NA" && legacySymbol.EntityID != "UNSPECIFIED" && (asOriginal == false || legacySymbol.LegacyEntity == null))
                                 {
                                     LegacyFunctionCodeType[] functionCodes = _helper.LegacyFunctions(legacySymbol.LegacyFunctionCode, standard);
@@ -220,6 +222,10 @@ namespace JointMilitarySymbologyLibrary
                                         w.Flush();
                                     }
                                 }
+
+                                // This second part handles those legacy symbols being mapped to Original symbols or that are Retired and no longer have a
+                                // 2525D equivalent.
+
                                 else if ((legacySymbol.Remarks == "Retired" || asOriginal) && legacySymbol.LegacyEntity != null)
                                 {
                                     foreach (LegacyEntityType legacyEntity in legacySymbol.LegacyEntity)
@@ -228,11 +234,14 @@ namespace JointMilitarySymbologyLibrary
 
                                         foreach (LegacyFunctionCodeType functionCode in functionCodes)
                                         {
-                                            string line = id.ToString() + "," + symbolExport.Line(ss, legacySymbol, legacyEntity, functionCode);
-                                            id++;
+                                            if (functionCode.LimitUseTo != "2525Bc2" || asOriginal)
+                                            {
+                                                string line = id.ToString() + "," + symbolExport.Line(ss, legacySymbol, legacyEntity, functionCode);
+                                                id++;
 
-                                            w.WriteLine(line);
-                                            w.Flush();
+                                                w.WriteLine(line);
+                                                w.Flush();
+                                            }
                                         }
                                     }
                                 }
@@ -354,27 +363,31 @@ namespace JointMilitarySymbologyLibrary
                                     {
                                         LegacyFunctionCodeType functionCode = _helper.LegacyFunction(legacyEntity.LegacyFunctionCode, standard);
 
-                                        string line = "";
-
-                                        // If the icon is Full Frame then four lines need to be exported, to reflect the four icon shapes.
-                                        // Else just write out one line for non-Full-Frame.
-
-                                        if (legacyEntity.Icon == IconType.FULL_FRAME)
+                                        if (functionCode != null)
                                         {
-                                            foreach (LibraryStandardIdentityGroup sig in _lib.Library.StandardIdentityGroups)
+
+                                            string line = "";
+
+                                            // If the icon is Full Frame then four lines need to be exported, to reflect the four icon shapes.
+                                            // Else just write out one line for non-Full-Frame.
+
+                                            if (legacyEntity.Icon == IconType.FULL_FRAME)
                                             {
-                                                line = string.Format("{0}", entityExport.Line(sig, ss, legacySymbol, legacyEntity, functionCode));
+                                                foreach (LibraryStandardIdentityGroup sig in _lib.Library.StandardIdentityGroups)
+                                                {
+                                                    line = string.Format("{0}", entityExport.Line(sig, ss, legacySymbol, legacyEntity, functionCode));
+
+                                                    w.WriteLine(line);
+                                                    w.Flush();
+                                                }
+                                            }
+                                            else
+                                            {
+                                                line = string.Format("{0}", entityExport.Line(null, ss, legacySymbol, legacyEntity, functionCode));
 
                                                 w.WriteLine(line);
                                                 w.Flush();
                                             }
-                                        }
-                                        else
-                                        {
-                                            line = string.Format("{0}", entityExport.Line(null, ss, legacySymbol, legacyEntity, functionCode));
-
-                                            w.WriteLine(line);
-                                            w.Flush();
                                         }
                                     }
                                 }
@@ -434,24 +447,24 @@ namespace JointMilitarySymbologyLibrary
                                     w.WriteLine(line);
                                     w.Flush();
 
-                                    //if (legacyFrame.IsPlanned)
-                                    //{
-                                    //    LibraryStatus status = _lib.Status(1);
+                                    if (legacyFrame.IsPlanned)
+                                    {
+                                        LibraryStatus status = _lib.Status(1);
 
-                                    //    id = fe.IDIt(status);
+                                        id = fe.IDIt(status);
 
-                                    //    if (!_icons.Contains(id))
-                                    //    {
-                                    //        _icons.Add(id);
+                                        if (!_icons.Contains(id))
+                                        {
+                                            _icons.Add(id);
 
-                                    //        status.LabelAlias = "Planned";
-                                    //        line = frameEx.Line(_lib, context, identity, dimension, status, false, false);
-                                    //        status.LabelAlias = "";
+                                            status.LabelAlias = "Planned";
+                                            line = frameEx.Line(_lib, context, identity, dimension, status, false, false);
+                                            status.LabelAlias = "";
 
-                                    //        w.WriteLine(line);
-                                    //        w.Flush();
-                                    //    }
-                                    //}
+                                            w.WriteLine(line);
+                                            w.Flush();
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -473,6 +486,7 @@ namespace JointMilitarySymbologyLibrary
 
                 id = _exportFrames(stream, true, standard, id, asOriginal);
                 id = _exportSymbols(stream, false, standard, id, asOriginal);
+                id = _exportSymbols(stream, false, "2525BC2", id, asOriginal);
 
                 if (includeAmplifiers)
                 {
