@@ -47,7 +47,16 @@ namespace JointMilitarySymbologyLibrary
 
             _notes = "";
 
-            string graphicPath = _configHelper.GetPath("JMSML_2525C", FindEnum.Find2525C);
+            string graphicPath = "";
+            switch (code.LimitUseTo)
+            {
+                case "2525Bc2":
+                    graphicPath = _configHelper.GetPath("JMSML_2525BC2", FindEnum.Find2525BC2);
+                    break;
+                default:
+                    graphicPath = _configHelper.GetPath("JMSML_2525C", FindEnum.Find2525C);
+                    break;
+            }
 
             if (entity.Graphic != "" && entity.Icon != IconType.FULL_FRAME)
                 graphic = entity.Graphic;

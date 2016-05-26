@@ -62,6 +62,8 @@ namespace JointMilitarySymbologyLibrary
             string graphicPath = _configHelper.GetPath("JMSML_2525BC2", FindEnum.Find2525BC2);
 
             graphic = _legacyFrame.Graphic;
+            if (status.LabelAlias == "Planned")
+                graphic = graphic.Substring(0, 3) + "A" + graphic.Substring(4);
 
             string id = BuildFrameCode(_legacyStatusCode(_standard, status), _legacyFrame);
 

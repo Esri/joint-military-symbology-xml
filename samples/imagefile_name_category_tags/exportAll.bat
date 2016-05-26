@@ -29,6 +29,7 @@ jmsml.exe /xa="../../../../../samples/imagefile_name_category_tags/Military-All-
 jmsml.exe /xh="../../../../../samples/imagefile_name_category_tags/Military-All-Icons" /+ /xas="IMAGE" /size="64" /-source /-legacy
 jmsml.exe /xo="../../../../../samples/imagefile_name_category_tags/Military-All-Icons" /+ /xas="IMAGE" /size="64" /-source /-legacy
 jmsml.exe /xleC="../../../../../samples/imagefile_name_category_tags/Military-All-Icons" /+ /size="64"
+jmsml.exe /xleBc2="../../../../../samples/imagefile_name_category_tags/Military-All-Icons" /+ /size="64"
 jmsml.exe /xlfBc2="../../../../../samples/imagefile_name_category_tags/Military-All-Icons" /+ /size="64"
 
 REM *** Append all the image file information together in a single file (2525D-only) ***

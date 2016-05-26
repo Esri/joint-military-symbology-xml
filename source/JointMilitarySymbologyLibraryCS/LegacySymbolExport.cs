@@ -134,6 +134,26 @@ namespace JointMilitarySymbologyLibrary
             return result;
         }
 
+        private bool _isFullFrame(bool isEntitySubTypeSpecial)
+        {
+            bool result = false;
+
+            if (_entitySubType != null && !isEntitySubTypeSpecial)
+            {
+                result = _entitySubType.Icon == IconType.FULL_FRAME || _entitySubType.IsAlignable;
+            }
+            else if (_entityType != null)
+            {
+                result = _entityType.Icon == IconType.FULL_FRAME || _entityType.IsAlignable;
+            }
+            else if (_entity != null)
+            {
+                result = _entity.Icon == IconType.FULL_FRAME || _entity.IsAlignable;
+            }
+
+            return result;
+        }
+
         public string Headers
         {
             get { return "Name,LegacyKey,MainIcon,Modifier1,Modifier2,ExtraIcon,FullFrame,GeometryType,Standard,Status,Notes"; }
@@ -176,23 +196,9 @@ namespace JointMilitarySymbologyLibrary
             if (_modifier2 != null && _modifier2.Label != "Unspecified" && _modifier2.Label != "Not Applicable")
                 mod2Code = _modifierExport.CodeIt(ss, "2", _modifier2);
 
-            bool fullFrame = false;
             string geometry = _entityExport.GeometryIt(_entity, _entityType, _entitySubType);
 
-            if (_entitySubType != null && !isEntitySubTypeSpecial)
-            {
-                fullFrame = _entitySubType.Icon == IconType.FULL_FRAME || _entitySubType.IsAlignable;
-            }
-            else if (_entityType != null)
-            {
-                fullFrame = _entityType.Icon == IconType.FULL_FRAME || _entityType.IsAlignable;
-            }
-            else if (_entity != null)
-            {
-                fullFrame = _entity.Icon == IconType.FULL_FRAME || _entity.IsAlignable;
-            }
-
-            string fullFrameOutput = fullFrame ? "TRUE" : "";
+            string fullFrameOutput = _isFullFrame(isEntitySubTypeSpecial) ? "TRUE" : "";
 
             result = name;
             result = result + "," + _buildSIDCKey(ss, legacySymbol, functionCode); // + "LegacyKey";
@@ -213,9 +219,11 @@ namespace JointMilitarySymbologyLibrary
         {
             string result = "";
 
+            _buildName(ss, legacySymbol);
+
             string sidcKey = _buildSIDCKey(ss, legacySymbol, functionCode);
 
-            bool fullFrame = (legacyEntity.Icon == IconType.FULL_FRAME);
+            bool fullFrame = (legacyEntity.Icon == IconType.FULL_FRAME || _isFullFrame(false));
             string fullFrameOutput = fullFrame ? "TRUE" : "";
 
             result = _entityExport.NameIt(null, ss, legacySymbol, legacyEntity, functionCode); //legacyEntity.Label;
@@ -226,7 +234,22 @@ namespace JointMilitarySymbologyLibrary
             result = result + ",";
             result = result + "," + fullFrameOutput;
             result = result + "," + "Point"; // TODO : Handle this through a modernized form of GeometryIt
-            result = result + ",";
+
+            switch (functionCode.LimitUseTo)
+            {
+                case "2525C":
+                    result = result + ",C";
+                    break;
+
+                case "2525Bc2":
+                    result = result + ",B2";
+                    break;
+
+                default:
+                    result = result + ",";
+                    break;
+            }
+
             result = result + ",";
             result = result + ",";
 

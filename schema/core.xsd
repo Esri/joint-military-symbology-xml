@@ -89,6 +89,7 @@
         <xs:attribute name="HQTFFDOverride" type="xs:token" use="optional" default=""/>
         <xs:attribute name="AmplifierOverride" type="xs:token" use="optional" default=""/>
         <xs:attribute name="TailOverride" type="xs:token" use="optional" default=""/>
+        <xs:attribute name="LimitUseTo" type="xs:token" use="optional" default=""/>
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
