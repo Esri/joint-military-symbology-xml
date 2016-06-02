@@ -435,7 +435,7 @@
     </LegacySymbol>
     <LegacySymbol ID="SEA_MINE_GENERAL_MILCO_SYM" Label="S*UPWMC---*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">WMC---</LegacyFunctionCode>
-      <LegacyEntity ID="SEA_MINE_GENERAL_MILCO_LE" Label="WAR.SBSUF.UH2WPN.SMNE.MILCO" Graphic="S-U-WMC---.svg">
+      <LegacyEntity ID="SEA_MINE_GENERAL_MILCO_LE" Label="WAR.SBSUF.UH2WPN.SMNE.MILCO" LabelAlias="Sea Mine-General : MILCO" Graphic="S-U-WMC---.svg">
         <LegacyFunctionCode Name="2525C">WMC---</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
@@ -468,7 +468,7 @@
     </LegacySymbol>
     <LegacySymbol ID="SEA_MINE_GENERAL_FLOATING_MILCO_SYM" Label="S*UPWMFC--*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">WMFC--</LegacyFunctionCode>
-      <LegacyEntity ID="SEA_MINE_GENERAL_FLOATING_MILCO_LE" Label="WAR.SBSUF.UH2WPN.SMNE.SMF.MILCO" Graphic="S-U-WMFC--.svg">
+      <LegacyEntity ID="SEA_MINE_GENERAL_FLOATING_MILCO_LE" Label="WAR.SBSUF.UH2WPN.SMNE.SMF.MILCO" LabelAlias="Sea Mine-General : MILCO : Floating" Graphic="S-U-WMFC--.svg">
         <LegacyFunctionCode Name="2525C">WMFC--</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
@@ -513,7 +513,7 @@
     </LegacySymbol>
     <LegacySymbol ID="SEA_MINE_GENERAL_GROUND_BOTTOM_MILCO_SYM" Label="S*UPWMGC--*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">WMGC--</LegacyFunctionCode>
-      <LegacyEntity ID="SEA_MINE_GENERAL_GROUND_BOTTOM_MILCO_LE" Label="WAR.SBSUF.UH2WPN.SMNE.SMG.MILCO" Graphic="S-U-WMGC--.svg">
+      <LegacyEntity ID="SEA_MINE_GENERAL_GROUND_BOTTOM_MILCO_LE" Label="WAR.SBSUF.UH2WPN.SMNE.SMG.MILCO" LabelAlias="Sea Mine-General : MILCO : Ground (Bottom)" Graphic="S-U-WMGC--.svg">
         <LegacyFunctionCode Name="2525C">WMGC--</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
@@ -522,7 +522,7 @@
     </LegacySymbol>
     <LegacySymbol ID="SEA_MINE_GENERAL_MOORED_MILCO_SYM" Label="S*UPWMMC--*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">WMMC--</LegacyFunctionCode>
-      <LegacyEntity ID="SEA_MINE_GENERAL_MOORED_MILCO_LE" Label="WAR.SBSUF.UH2WPN.SMNE.SMM.MILCO" Graphic="S-U-WMMC--.svg">
+      <LegacyEntity ID="SEA_MINE_GENERAL_MOORED_MILCO_LE" Label="WAR.SBSUF.UH2WPN.SMNE.SMM.MILCO" LabelAlias="Sea Mine-General : MILCO : Moored" Graphic="S-U-WMMC--.svg">
         <LegacyFunctionCode Name="2525C">WMMC--</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>

@@ -86,6 +86,8 @@ namespace JointMilitarySymbologyLibrary {
         
         private bool isCivilianField;
         
+        private bool isAlignableField;
+        
         private GeometryType geometryTypeField;
         
         private string entityCodeField;
@@ -110,6 +112,7 @@ namespace JointMilitarySymbologyLibrary {
             this.standardField = StandardType.ALL;
             this.iconField = IconType.MAIN;
             this.isCivilianField = false;
+            this.isAlignableField = false;
             this.geometryTypeField = GeometryType.POINT;
             this.entityCodeField = "00";
             this.entityTypeCodeField = "00";
@@ -348,6 +351,18 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.isCivilianField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute(false)]
+        public bool IsAlignable {
+            get {
+                return this.isAlignableField;
+            }
+            set {
+                this.isAlignableField = value;
             }
         }
         
@@ -749,6 +764,8 @@ namespace JointMilitarySymbologyLibrary {
         
         private string tailOverrideField;
         
+        private string limitUseToField;
+        
         private string valueField;
         
         public LegacyFunctionCodeType() {
@@ -760,6 +777,7 @@ namespace JointMilitarySymbologyLibrary {
             this.hQTFFDOverrideField = "";
             this.amplifierOverrideField = "";
             this.tailOverrideField = "";
+            this.limitUseToField = "";
         }
         
         /// <remarks/>
@@ -903,6 +921,18 @@ namespace JointMilitarySymbologyLibrary {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string LimitUseTo {
+            get {
+                return this.limitUseToField;
+            }
+            set {
+                this.limitUseToField = value;
+            }
+        }
+        
+        /// <remarks/>
         [System.Xml.Serialization.XmlTextAttribute(DataType="token")]
         public string Value {
             get {
@@ -962,6 +992,8 @@ namespace JointMilitarySymbologyLibrary {
         
         private bool isCivilianField;
         
+        private bool isAlignableField;
+        
         private GeometryType geometryTypeField;
         
         public EntityType() {
@@ -982,6 +1014,7 @@ namespace JointMilitarySymbologyLibrary {
             this.standardField = StandardType.ALL;
             this.iconField = IconType.MAIN;
             this.isCivilianField = false;
+            this.isAlignableField = false;
             this.geometryTypeField = GeometryType.POINT;
         }
         
@@ -1208,6 +1241,18 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.isCivilianField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute(false)]
+        public bool IsAlignable {
+            get {
+                return this.isAlignableField;
+            }
+            set {
+                this.isAlignableField = value;
             }
         }
         
@@ -1493,6 +1538,8 @@ namespace JointMilitarySymbologyLibrary {
         
         private bool isCivilianField;
         
+        private bool isAlignableField;
+        
         private GeometryType geometryTypeField;
         
         public SymbolSetEntity() {
@@ -1513,6 +1560,7 @@ namespace JointMilitarySymbologyLibrary {
             this.standardField = StandardType.ALL;
             this.iconField = IconType.MAIN;
             this.isCivilianField = false;
+            this.isAlignableField = false;
             this.geometryTypeField = GeometryType.POINT;
         }
         
@@ -1765,6 +1813,18 @@ namespace JointMilitarySymbologyLibrary {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute(false)]
+        public bool IsAlignable {
+            get {
+                return this.isAlignableField;
+            }
+            set {
+                this.isAlignableField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
         [System.ComponentModel.DefaultValueAttribute(GeometryType.POINT)]
         public GeometryType GeometryType {
             get {
@@ -1826,6 +1886,8 @@ namespace JointMilitarySymbologyLibrary {
         
         private bool isCivilianField;
         
+        private bool isAlignableField;
+        
         private GeometryType geometryTypeField;
         
         public SymbolSetEntityEntityType() {
@@ -1846,6 +1908,7 @@ namespace JointMilitarySymbologyLibrary {
             this.standardField = StandardType.ALL;
             this.iconField = IconType.MAIN;
             this.isCivilianField = false;
+            this.isAlignableField = false;
             this.geometryTypeField = GeometryType.POINT;
         }
         
@@ -2093,6 +2156,18 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.isCivilianField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute(false)]
+        public bool IsAlignable {
+            get {
+                return this.isAlignableField;
+            }
+            set {
+                this.isAlignableField = value;
             }
         }
         

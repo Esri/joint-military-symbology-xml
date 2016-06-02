@@ -33,6 +33,7 @@ namespace jmsml
             CommandLineArgs.I.parseArgs(args, "/e=false;/+=false;/-source=false;/-legacy=false;/xas=SIMPLE;/size=32;/asOriginal=false;/+amplifiers=false");
 
             string exportPath = CommandLineArgs.I.argAsString("/xe");
+            string exportLegacyEntityBc2Path = CommandLineArgs.I.argAsString("/xleBc2");
             string exportLegacyEntityCPath = CommandLineArgs.I.argAsString("/xleC");
             string exportLegacyFrameBc2Path = CommandLineArgs.I.argAsString("/xlfBc2");
             string exportDomainPath = CommandLineArgs.I.argAsString("/b");
@@ -99,6 +100,7 @@ namespace jmsml
                 Console.WriteLine("/xf=\"<pathname>\"\t: Export frames.");
                 Console.WriteLine("/xh=\"<pathname>\"\t: Export HQ/TF/FD.");
                 Console.WriteLine("/xl=\"<pathname>\"\t: Export legacy data (for testing).");
+                Console.WriteLine("/xleBc2=\"<pathname>\"\t: Export legacy entities for 2525B Change 2.");
                 Console.WriteLine("/xleC=\"<pathname>\"\t: Export legacy entities for 2525C.");
                 Console.WriteLine("/xlfBc2=\"<pathname>\"\t: Export legacy frames for 2525B Change 2.");
                 Console.WriteLine("/xll=\"<pathname>\"\t: Export legacy lookup table for 2525C.");
@@ -151,6 +153,11 @@ namespace jmsml
                                                                 omitSource,
                                                                 omitLegacyTag,
                                                                 size);
+            }
+
+            if (exportLegacyEntityBc2Path != "")
+            {
+                _etl.ExportLegacyEntities(exportLegacyEntityBc2Path, "2525BC2", size);
             }
 
             if (exportLegacyEntityCPath != "")

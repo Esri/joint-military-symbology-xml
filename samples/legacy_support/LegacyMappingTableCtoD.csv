@@ -433,8 +433,8 @@ S*GPUSTR--,SPGPUSTR-------,10,163000,00,00,Sustainment : Railhead,Unspecified,Un
 S*GPUSTRC-,SPGPUSTRC------,10,163097,00,00,Sustainment : Railhead : Corps Support,Unspecified,Unspecified,SPGPUSTRC------,pass
 S*GPUSTRT-,SPGPUSTRT------,10,163098,00,00,Sustainment : Railhead : Theater/Echelons Above Corps Support,Unspecified,Unspecified,SPGPUSTRT------,pass
 S*GPUSAR--,SPGPUSAR-------,10,163100,00,00,Sustainment : Religious Support,Unspecified,Unspecified,SPGPUSAR-------,pass
-S*GPUSART-,SPGPUSART------,10,163197,00,00,Sustainment : Religious Support : Corps Support,Unspecified,Unspecified,SPGPUSART------,pass
-S*GPUSARC-,SPGPUSARC------,10,163198,00,00,Sustainment : Religious Support : Theater/Echelons Above Corps Support,Unspecified,Unspecified,SPGPUSARC------,pass
+S*GPUSARC-,SPGPUSARC------,10,163197,00,00,Sustainment : Religious Support : Corps Support,Unspecified,Unspecified,SPGPUSARC------,pass
+S*GPUSART-,SPGPUSART------,10,163198,00,00,Sustainment : Religious Support : Theater/Echelons Above Corps Support,Unspecified,Unspecified,SPGPUSART------,pass
 S*GPUSAX--,SPGPUSAX-------,10,163200,00,00,Sustainment : Replacement Holding Unit,Unspecified,Unspecified,SPGPUSAX-------,pass
 S*GPUSAXC-,SPGPUSAXC------,10,163297,00,00,Sustainment : Replacement Holding Unit : Corps Support,Unspecified,Unspecified,SPGPUSAXC------,pass
 S*GPUSAXT-,SPGPUSAXT------,10,163298,00,00,Sustainment : Replacement Holding Unit : Theater/Echelons Above Corps Support,Unspecified,Unspecified,SPGPUSAXT------,pass
@@ -586,14 +586,14 @@ S*GPEWMAT-,SPGPEWMAT------,15,111100,00,00,Weapon/Weapon System : Air Defense Mi
 S*GPEWMATR,SPGPEWMATR-----,98,100000,00,00,,,,,Retired
 S*GPEWMATE,SPGPEWMATE-----,98,100000,00,00,,,,,Retired
 S*GPEWMAS-,SPGPEWMAS------,15,111101,00,00,Weapon/Weapon System : Air Defense Missile Launcher : Light,Unspecified,,SPGPEWMAS------,pass
-S*GPEWMASR,SPGPEWMASR-----,15,111102,00,00,Weapon/Weapon System : Air Defense Missile Launcher : Light- Light Transporter-Launcher and Radar (TLAR),Unspecified,,SPGPEWMASR-----,pass
-S*GPEWMASE,SPGPEWMASE-----,15,111103,00,00,Weapon/Weapon System : Air Defense Missile Launcher : Light- Light Tactical Landing Approach Radar (TELAR),Unspecified,,SPGPEWMASE-----,pass
+S*GPEWMASR,SPGPEWMASR-----,15,111102,00,00,Weapon/Weapon System : Air Defense Missile Launcher : Light Transporter-Launcher and Radar (TLAR),Unspecified,,SPGPEWMASR-----,pass
+S*GPEWMASE,SPGPEWMASE-----,15,111103,00,00,Weapon/Weapon System : Air Defense Missile Launcher : Light Tactical Landing Approach Radar (TELAR),Unspecified,,SPGPEWMASE-----,pass
 S*GPEWMAI-,SPGPEWMAI------,15,111104,00,00,Weapon/Weapon System : Air Defense Missile Launcher : Medium,Unspecified,,SPGPEWMAI------,pass
-S*GPEWMAIR,SPGPEWMAIR-----,15,111105,00,00,Weapon/Weapon System : Air Defense Missile Launcher : Medium- TLAR,Unspecified,,SPGPEWMAIR-----,pass
-S*GPEWMAIE,SPGPEWMAIE-----,15,111106,00,00,Weapon/Weapon System : Air Defense Missile Launcher : Medium- TELAR Air Defense Missile Launcher,Unspecified,,SPGPEWMAIE-----,pass
+S*GPEWMAIR,SPGPEWMAIR-----,15,111105,00,00,Weapon/Weapon System : Air Defense Missile Launcher : Medium TLAR,Unspecified,,SPGPEWMAIR-----,pass
+S*GPEWMAIE,SPGPEWMAIE-----,15,111106,00,00,Weapon/Weapon System : Air Defense Missile Launcher : Medium TELAR Air Defense Missile Launcher,Unspecified,,SPGPEWMAIE-----,pass
 S*GPEWMAL-,SPGPEWMAL------,15,111107,00,00,Weapon/Weapon System : Air Defense Missile Launcher : Heavy,Unspecified,,SPGPEWMAL------,pass
-S*GPEWMALR,SPGPEWMALR-----,15,111108,00,00,Weapon/Weapon System : Air Defense Missile Launcher : Heavy- TLAR,Unspecified,,SPGPEWMALR-----,pass
-S*GPEWMALE,SPGPEWMALE-----,15,111109,00,00,Weapon/Weapon System : Air Defense Missile Launcher : Heavy- TELAR,Unspecified,,SPGPEWMALE-----,pass
+S*GPEWMALR,SPGPEWMALR-----,15,111108,00,00,Weapon/Weapon System : Air Defense Missile Launcher : Heavy TLAR,Unspecified,,SPGPEWMALR-----,pass
+S*GPEWMALE,SPGPEWMALE-----,15,111109,00,00,Weapon/Weapon System : Air Defense Missile Launcher : Heavy TELAR,Unspecified,,SPGPEWMALE-----,pass
 S*GPEWMT--,SPGPEWMT-------,15,111200,00,00,Weapon/Weapon System : Antitank Missile Launcher,Unspecified,,SPGPEWMT-------,pass
 S*GPEWMTL-,SPGPEWMTL------,15,111201,00,00,Weapon/Weapon System : Antitank Missile Launcher : Light,Unspecified,,SPGPEWMTL------,pass
 S*GPEWMTM-,SPGPEWMTM------,15,111202,00,00,Weapon/Weapon System : Antitank Missile Launcher : Medium,Unspecified,,SPGPEWMTM------,pass
@@ -882,6 +882,8 @@ G*GPGPPR--,GPGPGPPR------X,25,131400,00,00,Command and Control Points : Rally Po
 G*GPGPPE--,GPGPGPPE------X,25,131500,00,00,Command and Control Points : Release Point,,,GPGPGPPE------X,pass
 G*GPGPPS--,GPGPGPPS------X,25,131600,00,00,Command and Control Points : Start Point,,,GPGPGPPS------X,pass
 G*GPGPPW--,GPGPGPPW------X,25,131800,00,00,Command and Control Points : Waypoint,,,GPGPGPPW------X,pass
+G*GPGPAM--,GPGPGPAM------X,98,100000,00,00,,,,,Retired
+G*GPGPAC--,GPGPGPAC------X,98,100000,00,00,,,,,Retired
 G*GPGLF---,GPGPGLF-------X,25,140101,00,00,Maneuver Lines : Forward Line of Troops : Friendly Present,,,GPGPGLF-------X,pass
 GFGAGLF---,GFGAGLF-------X,25,140101,00,00,Maneuver Lines : Forward Line of Troops : Friendly Present,,,GFGAGLF-------X,pass
 GHGPGLF---,GHGPGLF-------X,25,140101,00,00,Maneuver Lines : Forward Line of Troops : Friendly Present,,,GHGPGLF-------X,pass
@@ -969,7 +971,7 @@ G*GPGPAL--,GPGPGPAL------X,25,181100,00,00,Airspace Control Points : Replemenshm
 G*GPGPAK--,GPGPGPAK------X,25,181200,00,00,Airspace Control Points : Tanking,,,GPGPGPAK------X,pass
 G*GPGPAH--,GPGPGPAH------X,25,181300,00,00,Airspace Control Points : Antisubmarine Warfare- Rotary Wing,,,GPGPGPAH------X,pass
 G*GPGPAB--,GPGPGPAB------X,25,181400,00,00,Airspace Control Points : SUCAP - Fixed Wing,,,GPGPGPAB------X,pass
-G*GPGPAC--,GPGPGPAC------X,25,181500,00,00,Airspace Control Points : SUCAP - Rotary Wing,,,GPGPGPAC------X,pass
+G*GPGPAC--,GPGPGPAC------X,98,100000,00,00,,,,,Retired
 G*GPGPAD--,GPGPGPAD------X,25,181600,00,00,Airspace Control Points : MIW - Fixed Wing,,,GPGPGPAD------X,pass
 G*GPGPAE--,GPGPGPAE------X,25,181700,00,00,Airspace Control Points : MIW - Rotary Wing,,,GPGPGPAE------X,pass
 G*GPGPAO--,GPGPGPAO------X,25,181800,00,00,Airspace Control Points : Tomcat,,,GPGPGPAO------X,pass
@@ -978,7 +980,7 @@ G*GPGPAF--,GPGPGPAF------X,25,182000,00,00,Airspace Control Points : Unmanned Ae
 G*GPGPAG--,GPGPGPAG------X,25,182100,00,00,Airspace Control Points : VTUA,,,GPGPGPAG------X,pass
 G*GPGPAI--,GPGPGPAI------X,25,182200,00,00,Airspace Control Points : Orbit,,,GPGPGPAI------X,pass
 G*GPGPAJ--,GPGPGPAJ------X,25,182300,00,00,Airspace Control Points : Orbit - Figure Eight,,,GPGPGPAJ------X,pass
-G*GPGPAM--,GPGPGPAM------X,25,182400,00,00,Airspace Control Points : Orbit - Race Track,,,GPGPGPAM------X,pass
+G*GPGPAM--,GPGPGPAM------X,98,100000,00,00,,,,,Retired
 G*GPGPAN--,GPGPGPAN------X,25,182500,00,00,Airspace Control Points : Orbit - Random Closed,,,GPGPGPAN------X,pass
 G*GPGPWA--,GPGPGPWA------X,25,210200,00,00,Maritime Points : Aim Point,,,GPGPGPWA------X,pass
 G*GPGPWD--,GPGPGPWD------X,25,210400,00,00,Maritime Points : Drop Point,,,GPGPGPWD------X,pass
@@ -1298,6 +1300,9 @@ G*GPGLB---,GPGPGLB-------X,25,110100,00,00,Command and Control Lines : Boundary,
 G*GPGAG---,GPGPGAG-------X,98,100000,00,00,,,,,Retired
 S*SPC-----,SPSPC----------,30,120000,00,00,Military Combatant,Unspecified,Unspecified,SPSPC----------,pass
 S*SPCH----,SPSPCH---------,98,100000,00,00,,,,,Retired
+S*SPS-----,SPSPS----------,98,100000,00,00,,,,,Retired
+S*SPSP----,SPSPSP---------,98,100000,00,00,,,,,Retired
+S*SPSA----,SPSPSA---------,98,100000,00,00,,,,,Retired
 S*SPCLCV--,SPSPCLCV-------,30,120100,00,00,Military Combatant : Carrier,Unspecified,Unspecified,SPSPCLCV-------,pass
 S*SPCL----,SPSPCL---------,30,120200,00,00,Military Combatant : Surface Combatant- Line,Unspecified,Unspecified,SPSPCL---------,pass
 S*SPCLBB--,SPSPCLBB-------,30,120201,00,00,Military Combatant : Surface Combatant- Line : Battleship,Unspecified,Unspecified,SPSPCLBB-------,pass
@@ -1343,6 +1348,8 @@ S*SPNR----,SPSPNR---------,30,130111,00,00,Military Noncombatant : Auxiliary Shi
 S*SPNF----,SPSPNF---------,30,130112,00,00,Military Noncombatant : Auxiliary Ship : Submarine Tender,Unspecified,Unspecified,SPSPNF---------,pass
 S*SPNS----,SPSPNS---------,30,130200,00,00,Military Noncombatant : Service Craft/Yard,Unspecified,Unspecified,SPSPNS---------,pass
 S*SPNH----,SPSPNH---------,98,100000,00,00,,,,,Retired
+S*SPNN----,SPSPNN---------,98,100000,00,00,,,,,Retired
+S*SPNNR---,SPSPNNR--------,98,100000,00,00,,,,,Retired
 S*SPXM----,SPSPXM---------,30,140100,00,00,Civilian (Sea Surface) : Merchant Ship,Unspecified,Unspecified,SPSPXM---------,pass
 S*SPXMC---,SPSPXMC--------,30,140101,00,00,Civilian (Sea Surface) : Merchant Ship : Cargo- General,Unspecified,Unspecified,SPSPXMC--------,pass
 S*SPXMR---,SPSPXMR--------,30,140104,00,00,Civilian (Sea Surface) : Merchant Ship : Roll On/Roll Off,Unspecified,Unspecified,SPSPXMR--------,pass
@@ -1376,6 +1383,8 @@ S*UPSF----,SPUPSF---------,35,110101,00,00,Military (Sea Subsurface) : Submarine
 S*UPSR----,SPUPSR---------,35,110101,18,00,Military (Sea Subsurface) : Submarine : Submarine-Surfaced,Submarine Confidence : Certain Submarine,Unspecified,SPUPSR---------,pass
 S*UPSB----,SPUPSB---------,35,110103,00,00,Military (Sea Subsurface) : Submarine : Submarine-Bottomed,Unspecified,Unspecified,SPUPSB---------,pass
 S*UPSO----,SPUPSO---------,35,110200,00,00,Military (Sea Subsurface) : Other Submersible,Unspecified,Unspecified,SPUPSO---------,pass
+S*UPSS----,SPUPSS---------,98,100000,00,00,,,,,Retired
+S*UPSSA---,SPUPSSA--------,98,100000,00,00,,,,,Retired
 S*UPSX----,SPUPSX---------,35,110300,00,00,Military (Sea Subsurface) : Nonsubmarine,Unspecified,Unspecified,SPUPSX---------,pass
 S*UPSU----,SPUPSU---------,35,110400,00,00,Military (Sea Subsurface) : Autonomous Underwater Vehicle (AUV),Unspecified,Unspecified,SPUPSU---------,pass
 S*UPSUM---,SPUPSUM--------,98,100000,00,00,,,,,Retired

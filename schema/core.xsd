@@ -89,6 +89,7 @@
         <xs:attribute name="HQTFFDOverride" type="xs:token" use="optional" default=""/>
         <xs:attribute name="AmplifierOverride" type="xs:token" use="optional" default=""/>
         <xs:attribute name="TailOverride" type="xs:token" use="optional" default=""/>
+        <xs:attribute name="LimitUseTo" type="xs:token" use="optional" default=""/>
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
@@ -209,6 +210,7 @@
     <xs:attribute name="Standard" type="StandardType" use="optional" default="ALL"/>
     <xs:attribute name="Icon" type="IconType" use="optional" default="MAIN"/>
     <xs:attribute name="IsCivilian" type="xs:boolean" use="optional" default="false"/>
+    <xs:attribute name="IsAlignable" type="xs:boolean" use="optional" default="false"/>
   </xs:attributeGroup>
 
   <xs:attributeGroup name="FramedGraphicNameAttributeGroup">

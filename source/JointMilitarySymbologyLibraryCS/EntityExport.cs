@@ -187,11 +187,17 @@ namespace JointMilitarySymbologyLibrary
             SymbolSetEntityEntityType eType = null;
             EntitySubTypeType eSubType = null;
 
-            string result = "BAD_NAME";
+            ModifierExport modExport = new ImageModifierExport(_configHelper, true, true);
+
+            string result = "";
+            string entityLabelAlias = "";
+
+            if(entity != null)
+                entityLabelAlias = entity.LabelAlias;
 
             // Start with the 2525D elements, if they exist, used to create the symbol, to build the core name
 
-            if (symbol.EntityID != "" && symbol.EntityID != "NA")
+            if (symbol.EntityID != "" && symbol.EntityID != "NA" && entityLabelAlias == "")
             {
                 e = _configHelper.Librarian.Entity(ss, symbol.EntityID);
 
@@ -206,17 +212,16 @@ namespace JointMilitarySymbologyLibrary
                             if (symbol.EntitySubTypeID != "" && symbol.EntitySubTypeID != "NA")
                             {
                                 eSubType = _configHelper.Librarian.EntitySubType(ss, eType, symbol.EntitySubTypeID);
-                            }
-                            else
-                                logger.Error("Cannot find the specified EntitySubType ID: " + symbol.EntitySubTypeID);
+
+                                if (eSubType == null)
+                                    logger.Error("Cannot find the specified EntitySubType ID: " + symbol.EntitySubTypeID);
+                            }   
                         }
                         else
                             logger.Error("Cannot find the specified EntityType ID: " + symbol.EntityTypeID);
                     }
-                    else
-                        logger.Error("Cannot find the specified Entity ID: " + symbol.EntityID);
 
-                    result = BuildEntityItemName(sig, ss, e, eType, eSubType);
+                    result = BuildEntityItemName(null, ss, e, eType, eSubType);
 
                     // Add any modifiers that might exist
 
@@ -226,8 +231,10 @@ namespace JointMilitarySymbologyLibrary
 
                         if (mod1 != null)
                         {
-                            string modLabel = (mod1.LabelAlias == "") ? mod1.Label : mod1.LabelAlias;
-                            result = result + _configHelper.DomainSeparator + modLabel.Replace(',', '-');
+                            result = result + _configHelper.DomainSeparator + modExport.NameIt(ss, "1", mod1);
+
+                            //string modLabel = (mod1.LabelAlias == "") ? mod1.Label : mod1.LabelAlias;
+                            //result = result + _configHelper.DomainSeparator + modLabel.Replace(',', '-');
                         }
                         else
                             logger.Error("Cannot find the specified ModifierOne ID: " + symbol.ModifierOneID);
@@ -239,28 +246,43 @@ namespace JointMilitarySymbologyLibrary
 
                         if (mod2 != null)
                         {
-                            string modLabel = (mod2.LabelAlias == "") ? mod2.Label : mod2.LabelAlias;
-                            result = result + _configHelper.DomainSeparator + modLabel.Replace(',', '-');
+                            result = result + _configHelper.DomainSeparator + modExport.NameIt(ss, "2", mod2);
+
+                            //string modLabel = (mod2.LabelAlias == "") ? mod2.Label : mod2.LabelAlias;
+                            //result = result + _configHelper.DomainSeparator + modLabel.Replace(',', '-');
                         }
                         else
                             logger.Error("Cannot find the specified ModifierTwo ID: " + symbol.ModifierTwoID);
                     }
                 }
+                else
+                    logger.Error("Cannot find the specified Entity ID: " + symbol.EntityID);
             }
             else
             {
-                // Add the LegacyEntity label or label alias, if one exists.
+                // Add the LegacyEntity label alias, if one exists.
 
-                string legEntLabel = (entity.LabelAlias == "") ? entity.Label : entity.LabelAlias;
-                result = result + _configHelper.DomainSeparator + legEntLabel.Replace(',', '-');
+                result = entityLabelAlias;
             }
 
             // Add the standard identity group name, if one is provided.
 
+            string sigPart = "";
+
             if (sig != null)
+                sigPart = _configHelper.DomainSeparator + sig.Label;
+
+            // Add the "Original" suffix only if the legacy symbol name is identical to a 2525D name and there is a legacy entity
+
+            if (symbol.EntityID != "" && symbol.EntityID != "NA" && entity != null)
             {
-                result = result + _configHelper.DomainSeparator + sig.Label;
+                if (NameIt(sig, ss, e, eType, eSubType) == (result + sigPart))
+                    result = result + _configHelper.DomainSeparator + "Original" + sigPart;
+                else
+                    result = result + sigPart;
             }
+            else
+                result = result + sigPart;
 
             return result;
         }
@@ -481,7 +503,7 @@ namespace JointMilitarySymbologyLibrary
             string result = "";
             string graphic = "";
 
-            string name = entity.Label.Replace(',', '-');
+            string name = BuildEntityItemName(null, ss, symbol, entity, code); //entity.Label.Replace(',', '-');
 
             // Add the type of geometry
 
@@ -622,6 +644,16 @@ namespace JointMilitarySymbologyLibrary
 
             if(ss != null && e != null)
                 name = BuildEntityItemName(sig, ss, e, eType, eSubType);
+
+            return name;
+        }
+
+        public string NameIt(LibraryStandardIdentityGroup sig, SymbolSet ss, SymbolSetLegacySymbol symbol, LegacyEntityType entity, LegacyFunctionCodeType code)
+        {
+            string name = "";
+
+            if (ss != null && symbol != null && code != null)
+                name = BuildEntityItemName(sig, ss, symbol, entity, code);
 
             return name;
         }

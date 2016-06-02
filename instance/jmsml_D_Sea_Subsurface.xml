@@ -5,6 +5,7 @@
     <DigitTwo>5</DigitTwo>
   </SymbolSetCode>
   <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
+  <LegacyCodingSchemeCode Name="2525BC2">S</LegacyCodingSchemeCode>
   <Entities>
     <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA">
       <EntityCode>
@@ -425,6 +426,18 @@
 		    <LegacyFunctionCode Name="2525C">SO----</LegacyFunctionCode>
 	    </LegacyEntity>
     </LegacySymbol>
+    <LegacySymbol ID="MILITARY_SUBMARINE_STATION_SYM" Label="S*UPSS----*****" Remarks="Retired">
+      <LegacyFunctionCode Name="2525BC2" LimitUseTo="2525Bc2">SS----</LegacyFunctionCode>
+      <LegacyEntity ID="MILITARY_SUBMARINE_STATION_LE" Label="WAR.SBSUF.SUB.STN" LabelAlias="Military : Submarine : Station" Graphic="S-U-SS----.svg">
+        <LegacyFunctionCode Name="2525BC2" LimitUseTo="2525Bc2">SS----</LegacyFunctionCode>
+      </LegacyEntity>
+    </LegacySymbol>
+    <LegacySymbol ID="MILITARY_SUBMARINE_STATION_ASW_SUBMARINE_SYM" Label="S*UPSSA---*****" Remarks="Retired">
+      <LegacyFunctionCode Name="2525BC2" LimitUseTo="2525Bc2">SSA---</LegacyFunctionCode>
+      <LegacyEntity ID="MILITARY_SUBMARINE_STATION_ASW_SUBMARINE_LE" Label="WAR.SBSUF.SUB.STN.ASWSUB" LabelAlias="Military : Submarine : Station : ASW : Submarine" Graphic="S-U-SSA---.svg">
+        <LegacyFunctionCode Name="2525BC2" LimitUseTo="2525Bc2">SSA---</LegacyFunctionCode>
+      </LegacyEntity>
+    </LegacySymbol>	
     <LegacySymbol ID="MILITARY_NONSUBMARINE_SYM" Label="S*UPSX----*****" EntityID="MILITARY" EntityTypeID="NONSUBMARINE">
       <LegacyFunctionCode Name="2525C">SX----</LegacyFunctionCode>
 	    <LegacyEntity ID="MILITARY_NONSUBMARINE_LE" Label="WAR.SBSUF.SUB.NONSUB" Graphic="S-U-SX----.svg">
@@ -436,7 +449,7 @@
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_AUV_UUV_MINE_WARFARE_SYM" Label="S*UPSUM---*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C">SUM---</LegacyFunctionCode>
-      <LegacyEntity ID="MILITARY_AUV_UUV_MINE_WARFARE_LE" Label="WAR.SBSUF.SUB.UUV.MNEW" Graphic="S-U-SUM---.svg">
+      <LegacyEntity ID="MILITARY_AUV_UUV_MINE_WARFARE_LE" Label="WAR.SBSUF.SUB.UUV.MNEW" LabelAlias="Military (Sea Subsurface) : Autonomous Underwater Vehicle (AUV) : Mine Warfare" Graphic="S-U-SUM---.svg">
         <LegacyFunctionCode Name="2525C">SUM---</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
@@ -526,7 +539,7 @@
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_SUBMARINE_SURFACED_SUBMARINE_SURFACED_SYM" Label="S*UPSOF---*****" Remarks="Retired">
       <LegacyFunctionCode Name="2525C" Description="Substitute" Remarks="Deleted">SOF---</LegacyFunctionCode>
-      <LegacyEntity ID="MILITARY_SUBMARINE_SURFACED_SUBMARINE_SURFACED_LE" Label="WAR.SBSUF.SUB.OTH.SURF" Graphic="S-U-SOF---.svg">
+      <LegacyEntity ID="MILITARY_SUBMARINE_SURFACED_SUBMARINE_SURFACED_LE" Label="WAR.SBSUF.SUB.OTH.SURF" LabelAlias="Military (Sea Subsurface) : Submarine : Other : Surfaced" Graphic="S-U-SOF---.svg">
         <LegacyFunctionCode Name="2525C" Description="Substitute" Remarks="Deleted">SOF---</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
