@@ -1,6 +1,16 @@
 
 # Defense Template specific ignores
 # svg/MIL_STD_2525D_Symbols
+source/JointMilitarySymbologyLibraryCS/bin
+source/JointMilitarySymbologyLibraryCS/Test/bin
+source/JointMilitarySymbologyLibraryCS/TestLegacyCodesCsv/bin
+source/JointMilitarySymbologyLibraryCS/UnitTests/bin
+source/JointMilitarySymbologyLibraryCS/jmsml/bin/Debug/*.*
+!source/JointMilitarySymbologyLibraryCS/jmsml/bin/Debug/*.dll
+!source/JointMilitarySymbologyLibraryCS/jmsml/bin/Debug/jmsml.exe
+!source/JointMilitarySymbologyLibraryCS/jmsml/bin/Debug/jmsml.exe.config
+!source/JointMilitarySymbologyLibraryCS/jmsml/bin/Debug/jmsml.config
+source/JointMilitarySymbologyLibraryCS/jmsml/bin/Debug/comparison_test_results
 instance/graphics
 application/
 data/app6b
@@ -33,7 +43,7 @@ dist
 build
 eggs
 parts
-bin
+#bin
 var
 sdist
 develop-eggs
@@ -44,7 +54,7 @@ develop-eggs
 #################
 
 # Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
-[Bb]in/
+#[Bb]in/
 [Oo]bj/
 
 #################
@@ -53,7 +63,7 @@ develop-eggs
 
 # General
 .metadata
-bin/
+#bin/
 tmp/
 dist/
 *.tmp
@@ -90,7 +100,7 @@ TestResults
 *.sln.docstates
 
 # Build results
-[Dd]ebug/
+#[Dd]ebug/
 [Rr]elease/
 x64/
 *_i.c
@@ -165,7 +175,7 @@ csx
 AppPackages/
 
 # Others
-[Bb]in
+#[Bb]in
 [Oo]bj
 sql
 TestResults
