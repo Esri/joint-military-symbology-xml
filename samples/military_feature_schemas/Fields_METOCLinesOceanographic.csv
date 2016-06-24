@@ -1,7 +1,6 @@
 field_name,field_type,field_length,field_alias,nullability,field_domain,field_default,field_setsubtypes, field_subtype, field_notes
-symbolset,SmallInteger,2,Symbol Set,NULLABLE,METOCAreas,,True,,
-symbolentity,Integer,4,METOC Area Entity,NULLABLE,METOC_Atmospheric_Area_Entities,,False,45,
-symbolentity,Integer,4,METOC Area Entity,NULLABLE,METOC_Oceanographic_Area_Entities,,False,46,
+symbolset,SmallInteger,2,Symbol Set,NULLABLE,METOCLinesOceanographic,,False,,
+symbolentity,Integer,4,METOC Line Entity,NULLABLE,METOC_Oceanographic_Line_Entities,,False,,
 additionalinformation,String,20,Additional Information,NULLABLE,,,False,,
 datetimevalid,Date,8,Date Time Valid,NULLABLE,,,False,,
 datetimeexpired,Date,8,Date Time Expired,NULLABLE,,,False,,
