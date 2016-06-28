@@ -1980,37 +1980,37 @@
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="I">D-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="LAW_ENFORCEMENT_SYM" Label="E*OPDB----*****" EntityID="LAW_ENFORCEMENT">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DB----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" SchemaOverride="E" DimensionOverride="O">DB----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="LAW_ENFORCEMENT_BUREAU_ALCOHOL_TOBACCO_FIREARMS_EXPLOSIVES_ATF_SYM" Label="E*OPDDB---*****" EntityID="LAW_ENFORCEMENT" EntityTypeID="BUREAU_ALCOHOL_TOBACCO_FIREARMS_EXPLOSIVES_ATF">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DDB---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" SchemaOverride="E" DimensionOverride="O">DDB---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="LAW_ENFORCEMENT_BORDER_PATROL_SYM" Label="E*OPDEB---*****" EntityID="LAW_ENFORCEMENT" EntityTypeID="BORDER_PATROL">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DEB---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" SchemaOverride="E" DimensionOverride="O">DEB---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="LAW_ENFORCEMENT_CUSTOMS_SERVICE_SYM" Label="E*OPDFB---*****" EntityID="LAW_ENFORCEMENT" EntityTypeID="CUSTOMS_SERVICE">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DFB---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" SchemaOverride="E" DimensionOverride="O">DFB---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="LAW_ENFORCEMENT_DRUG_ENFORCEMENT_ADMINISTRATION_DEA_SYM" Label="E*OPDGB---*****" EntityID="LAW_ENFORCEMENT" EntityTypeID="DRUG_ENFORCEMENT_ADMINISTRATION_DEA">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DGB---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" SchemaOverride="E" DimensionOverride="O">DGB---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="LAW_ENFORCEMENT_DEPARTMENT_OF_JUSTICE_DOJ_SYM" Label="EFOPDHB---*****" EntityID="LAW_ENFORCEMENT" EntityTypeID="DEPARTMENT_OF_JUSTICE_DOJ">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DHB---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" SchemaOverride="E" DimensionOverride="O">DHB---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="LAW_ENFORCEMENT_FEDERAL_BUREAU_INVESTIGATION_FBI_SYM" Label="EFOPDIB---*****" EntityID="LAW_ENFORCEMENT" EntityTypeID="FEDERAL_BUREAU_INVESTIGATION_FBI">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DIB---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" SchemaOverride="E" DimensionOverride="O">DIB---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="LAW_ENFORCEMENT_POLICE_SYM" Label="EFOPDJB---*****" EntityID="LAW_ENFORCEMENT" EntityTypeID="POLICE">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DJB---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" SchemaOverride="E" DimensionOverride="O">DJB---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="LAW_ENFORCEMENT_UNITED_STATES_SECRET_SERVICE_USSS_SYM" Label="EFOPDLB---*****" EntityID="LAW_ENFORCEMENT" EntityTypeID="UNITED_STATES_SECRET_SERVICE_USSS">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DLB---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" SchemaOverride="E" DimensionOverride="O">DLB---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="LAW_ENFORCEMENT_TRANSPORTATION_SECURITY_ADMINISTRATION_TSA_SYM" Label="EFOPDMB---*****" EntityID="LAW_ENFORCEMENT" EntityTypeID="TRANSPORTATION_SECURITY_ADMINISTRATION_TSA">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DMB---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" SchemaOverride="E" DimensionOverride="O">DMB---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="LAW_ENFORCEMENT_US_MARSHALS_SERVICE_SYM" Label="EFOPDOB---*****" EntityID="LAW_ENFORCEMENT" EntityTypeID="US_MARSHALS_SERVICE">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">DOB---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" SchemaOverride="E" DimensionOverride="O">DOB---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="PACK_ANIMALS_SYM" Label="S*GPEVM---*****" EntityID="PACK_ANIMALS">
       <LegacyFunctionCode Name="2525C">EVM---</LegacyFunctionCode>
@@ -2040,10 +2040,10 @@
       <LegacyFunctionCode Name="2525C">EXL---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="OTHER_EQUIPMENT_EMERGENCY_MEDICAL_OPERATION_SYM" Label="E*OPAB----*****" EntityID="OTHER_EQUIPMENT" EntityTypeID="EMERGENCY_MEDICAL_OPERATION">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">AB----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" SchemaOverride="E" DimensionOverride="O">AB----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="OTHER_EQUIPMENT_EMERGENCY_MEDICAL_OPERATION_MEDICAL_EVACUATION_HELICOPTER_SYM" Label="E*OPAF----*****" EntityID="OTHER_EQUIPMENT" EntityTypeID="EMERGENCY_MEDICAL_OPERATION" EntitySubTypeID="MEDICAL_EVACUATION_HELICOPTER">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">AF----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" SchemaOverride="E" DimensionOverride="O">AF----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="LAND_MINES_LAND_MINE_SYM" Label="S*GPEXM---*****" EntityID="LAND_MINES" EntityTypeID="LAND_MINE">
       <LegacyFunctionCode Name="2525C">EXM---</LegacyFunctionCode>
@@ -2064,19 +2064,19 @@
       <LegacyFunctionCode Name="2525C">ES----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SENSORS_SENSOR_BIOLOGICAL_MOD_SYM" Label="E*OPEA----*****" EntityID="SENSORS" EntityTypeID="SENSOR" ModifierOneID="BIOLOGICAL_MOD">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">EA----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" SchemaOverride="E" DimensionOverride="O">EA----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SENSORS_SENSOR_CHEMICAL_MOD_SYM" Label="E*OPEB----*****" EntityID="SENSORS" EntityTypeID="SENSOR" ModifierOneID="CHEMICAL_MOD">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">EB----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" SchemaOverride="E" DimensionOverride="O">EB----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SENSORS_SENSOR_INTRUSION_MOD_SYM" Label="E*OPEC----*****" EntityID="SENSORS" EntityTypeID="SENSOR" ModifierOneID="INTRUSION_MOD">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">EC----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" SchemaOverride="E" DimensionOverride="O">EC----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SENSORS_SENSOR_NUCLEAR_MOD_SYM" Label="E*OPED----*****" EntityID="SENSORS" EntityTypeID="SENSOR" ModifierOneID="NUCLEAR_MOD">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">ED----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" SchemaOverride="E" DimensionOverride="O">ED----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SENSORS_SENSOR_RADIOLOGICAL_MOD_SYM" Label="E*OPEE----*****" EntityID="SENSORS" EntityTypeID="SENSOR" ModifierOneID="RADIOLOGICAL_MOD">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">EE----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" SchemaOverride="E" DimensionOverride="O">EE----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="SENSORS_SENSOR_EMPLACED_SYM" Label="S*GPESE---*****" EntityID="SENSORS" EntityTypeID="SENSOR_EMPLACED">
       <LegacyFunctionCode Name="2525C">ESE---</LegacyFunctionCode>
@@ -2085,13 +2085,13 @@
       <LegacyFunctionCode Name="2525C">ESR---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="EMERGENCY_OPERATION_SYM" Label="E*OPBB----*****" EntityID="EMERGENCY_OPERATION">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">BB----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" SchemaOverride="E" DimensionOverride="O">BB----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="EMERGENCY_OPERATION_AMBULANCE_SYM" Label="E*OPAE----*****" EntityID="EMERGENCY_OPERATION" EntityTypeID="AMBULANCE">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">AE----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" SchemaOverride="E" DimensionOverride="O">AE----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="EMERGENCY_OPERATION_FIRE_FIGHTING_FIRE_PROTECTION_SYM" Label="E*OPCB----*****" EntityID="EMERGENCY_OPERATION" EntityTypeID="FIRE_FIGHTING_FIRE_PROTECTION">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="O">CB----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" SchemaOverride="E" DimensionOverride="O">CB----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="EQUIPMENT_SYM" Label="S*GPE-----*****" EntityID="UNSPECIFIED">
       <LegacyFunctionCode Name="2525C">E-----</LegacyFunctionCode>

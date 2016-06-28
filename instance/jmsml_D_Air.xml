@@ -780,10 +780,10 @@
 	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_FIXED_WING_VIP_SYM" Label="S*APMV----*****" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="VIP">
-      <LegacyFunctionCode Name="2525C">MV----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C">MV----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_FIXED_WING_E_SYM" Label="S*APME----*****" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="E">
-      <LegacyFunctionCode Name="2525C">ME----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C">ME----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_ROTARY_WING_SYM" Label="S*APMH----*****" EntityID="MILITARY" EntityTypeID="ROTARY_WING">
       <LegacyFunctionCode Name="2525C">MH----</LegacyFunctionCode>

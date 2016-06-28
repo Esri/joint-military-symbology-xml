@@ -208,7 +208,22 @@ namespace JointMilitarySymbologyLibrary
             result = result + "," + extraIcon; // + "ExtraIcon";
             result = result + "," + fullFrameOutput; // + "FullFrame";
             result = result + "," + geometry; // + "GeometryType";
-            result = result + ","; // + "Standard";
+
+            switch (functionCode.LimitUseTo)
+            {
+                case "2525C":
+                    result = result + ",C";
+                    break;
+
+                case "2525Bc2":
+                    result = result + ",B2";
+                    break;
+
+                default:
+                    result = result + ",";
+                    break;
+            }
+
             result = result + ","; // + "Status";
             result = result + ","; // + "Notes";
 

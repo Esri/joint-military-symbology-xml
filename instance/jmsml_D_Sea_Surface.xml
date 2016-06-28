@@ -993,7 +993,7 @@
       <LegacyFunctionCode Name="2525C">CUM---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_COMBAT_USV_RMV_MOD_SYM" Label="S*SPCUR---*****" EntityID="MILITARY_COMBAT" EntityTypeID="USV" ModifierOneID="RMV_MOD">
-      <LegacyFunctionCode Name="2525C">CUR---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C">CUR---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_COMBAT_USV_SUW_MOD_SYM" Label="S*SPCUN---*****" EntityID="MILITARY_COMBAT" EntityTypeID="USV" ModifierOneID="SUW_MOD">
       <LegacyFunctionCode Name="2525C">CUN---</LegacyFunctionCode>
@@ -1134,16 +1134,16 @@
       <LegacyFunctionCode Name="2525C">XR----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="CIVILIAN_CIV_LEISURE_MOTOR_SYM" Label="S*SPXA----*****" EntityID="CIVILIAN" EntityTypeID="CIV_LEISURE_MOTOR">
-      <LegacyFunctionCode Name="2525C">XA----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C">XA----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="CIVILIAN_CIV_LEISURE_MOTOR_CIV_RHIB_SYM" Label="S*SPXAR---*****" EntityID="CIVILIAN" EntityTypeID="CIV_LEISURE_MOTOR" EntitySubTypeID="CIV_RHIB">
-      <LegacyFunctionCode Name="2525C">XAR---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C">XAR---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="CIVILIAN_CIV_LEISURE_MOTOR_CIV_SPEED_SYM" Label="S*SPXAS---*****" EntityID="CIVILIAN" EntityTypeID="CIV_LEISURE_MOTOR" EntitySubTypeID="CIV_SPEED">
-      <LegacyFunctionCode Name="2525C">XAS---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C">XAS---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="CIVILIAN_CIV_JET_SKI_SYM" Label="S*SPXP----*****" EntityID="CIVILIAN" EntityTypeID="CIV_JET_SKI">
-      <LegacyFunctionCode Name="2525C">XP----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C">XP----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="OWN_SHIP_SYM" Label="S*SPO-----*****" EntityID="OWN_SHIP">
       <LegacyFunctionCode Name="2525C">O-----</LegacyFunctionCode>

@@ -1588,7 +1588,7 @@
       <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WSPLH-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_INVERSION_SYM" Label="E*NPBF----*****" EntityID="WEATHER_SYMBOLS" EntityTypeID="INVERSION">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" StandardIdentityOverride="P" DimensionOverride="N">BF----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" SchemaOverride="E" StandardIdentityOverride="P" DimensionOverride="N">BF----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEATHER_SYMBOLS_STORMS_THUNDERSTORM_NO_PRECIPITATION_SYM" Label="WAS-WST-NPP----" EntityID="WEATHER_SYMBOLS" EntityTypeID="STORMS" EntitySubTypeID="THUNDERSTORM_NO_PRECIPITATION">
       <LegacyFunctionCode Name="2525C" StandardIdentityOverride="A" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">WST-NP</LegacyFunctionCode>
