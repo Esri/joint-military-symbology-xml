@@ -294,7 +294,7 @@
 	    </LegacyEntity>
      </LegacySymbol>
     <LegacySymbol ID="CIVILIAN_ORGANIZATION_LOOT_MOD_SYM" Label="E*IPBD----*****" EntityID="CIVILIAN" EntityTypeID="ORGANIZATION" ModifierOneID="LOOT_MOD">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="E" DimensionOverride="I">BD----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" SchemaOverride="E" DimensionOverride="I">BD----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="CIVILIAN_COMPOSITE_LOSS_SYM" Label="O*OPC-----*****" EntityID="CIVILIAN" EntityTypeID="COMPOSITE_LOSS">
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="O">C-----</LegacyFunctionCode>

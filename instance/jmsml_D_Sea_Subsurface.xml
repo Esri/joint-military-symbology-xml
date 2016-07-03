@@ -379,46 +379,46 @@
       <LegacyFunctionCode Name="2525C">S-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_SUBMARINE_POSSIBLE_SUBMARINE_LOW_1_MOD_SYM" Label="S*UPS1----*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="POSSIBLE_SUBMARINE_LOW_1_MOD">
-      <LegacyFunctionCode Name="2525C">S1----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C">S1----</LegacyFunctionCode>
 	    <LegacyEntity ID="MILITARY_SUBMARINE_POSSIBLE_SUBMARINE_LOW_1_MOD_LE" Label="WAR.SBSUF.SUB.POSS1" Graphic="S-U-S1----.svg">
-		    <LegacyFunctionCode Name="2525C">S1----</LegacyFunctionCode>
+		    <LegacyFunctionCode Name="2525C" LimitUseTo="2525C">S1----</LegacyFunctionCode>
 	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_SUBMARINE_POSSIBLE_SUBMARINE_LOW_2_MOD_SYM" Label="S*UPS2----*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="POSSIBLE_SUBMARINE_LOW_2_MOD">
-      <LegacyFunctionCode Name="2525C">S2----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C">S2----</LegacyFunctionCode>
 	    <LegacyEntity ID="MILITARY_SUBMARINE_POSSIBLE_SUBMARINE_LOW_2_MOD_LE" Label="WAR.SBSUF.SUB.POSS2" Graphic="S-U-S2----.svg">
-		    <LegacyFunctionCode Name="2525C">S2----</LegacyFunctionCode>
+		    <LegacyFunctionCode Name="2525C" LimitUseTo="2525C">S2----</LegacyFunctionCode>
 	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_SUBMARINE_POSSIBLE_SUBMARINE_HIGH_3_MOD_SYM" Label="S*UPS3----*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="POSSIBLE_SUBMARINE_HIGH_3_MOD">
-      <LegacyFunctionCode Name="2525C">S3----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C">S3----</LegacyFunctionCode>
 	    <LegacyEntity ID="MILITARY_SUBMARINE_POSSIBLE_SUBMARINE_HIGH_3_MOD_LE" Label="WAR.SBSUF.SUB.POSS3" Graphic="S-U-S3----.svg">
-		    <LegacyFunctionCode Name="2525C">S3----</LegacyFunctionCode>
+		    <LegacyFunctionCode Name="2525C" LimitUseTo="2525C">S3----</LegacyFunctionCode>
 	    </LegacyEntity>	  
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_SUBMARINE_POSSIBLE_SUBMARINE_HIGH_4_MOD_SYM" Label="S*UPS4----*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="POSSIBLE_SUBMARINE_HIGH_4_MOD">
-      <LegacyFunctionCode Name="2525C">S4----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C">S4----</LegacyFunctionCode>
 	    <LegacyEntity ID="MILITARY_SUBMARINE_POSSIBLE_SUBMARINE_HIGH_4_MOD_LE" Label="WAR.SBSUF.SUB.POSS4" Graphic="S-U-S4----.svg">
-		    <LegacyFunctionCode Name="2525C">S4----</LegacyFunctionCode>
+		    <LegacyFunctionCode Name="2525C" LimitUseTo="2525C">S4----</LegacyFunctionCode>
 	    </LegacyEntity>	  
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_SUBMARINE_PROBABLE_SUBMARINE_MOD_SYM" Label="S*UPSL----*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="PROBABLE_SUBMARINE_MOD">
-      <LegacyFunctionCode Name="2525C">SL----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C">SL----</LegacyFunctionCode>
 	    <LegacyEntity ID="MILITARY_SUBMARINE_PROBABLE_SUBMARINE_MOD_LE" Label="WAR.SBSUF.SUB.PRBSUB" Graphic="S-U-SL----.svg">
-		    <LegacyFunctionCode Name="2525C">SL----</LegacyFunctionCode>
+		    <LegacyFunctionCode Name="2525C" LimitUseTo="2525C">SL----</LegacyFunctionCode>
 	    </LegacyEntity>	
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_SUBMARINE_SUBMARINE_SURFACED_SYM" Label="S*UPSF----*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" EntitySubTypeID="SUBMARINE_SURFACED">
       <LegacyFunctionCode Name="2525C">SF----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_SUBMARINE_SUBMARINE_SURFACED_CERTAIN_SUBMARINE_MOD_SYM" Label="S*UPSR----*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" EntitySubTypeID="SUBMARINE_SURFACED" ModifierOneID="CERTAIN_SUBMARINE_MOD">
-      <LegacyFunctionCode Name="2525C">SR----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C">SR----</LegacyFunctionCode>
 	    <LegacyEntity ID="MILITARY_SUBMARINE_SUBMARINE_SURFACED_CERTAIN_SUBMARINE_MOD_LE" Label="WAR.SBSUF.SUB.CRT" Graphic="S-U-SR----.svg">
-		    <LegacyFunctionCode Name="2525C">SR----</LegacyFunctionCode>
+		    <LegacyFunctionCode Name="2525C" LimitUseTo="2525C">SR----</LegacyFunctionCode>
 	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_SUBMARINE_SUBMARINE_BOTTOMED_SYM" Label="S*UPSB----*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" EntitySubTypeID="SUBMARINE_BOTTOMED">
-      <LegacyFunctionCode Name="2525C">SB----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C">SB----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_OTHER_SUBMERSIBLE_SYM" Label="S*UPSO----*****" EntityID="MILITARY" EntityTypeID="OTHER_SUBMERSIBLE">
       <LegacyFunctionCode Name="2525C">SO----</LegacyFunctionCode>
@@ -439,9 +439,9 @@
       </LegacyEntity>
     </LegacySymbol>	
     <LegacySymbol ID="MILITARY_NONSUBMARINE_SYM" Label="S*UPSX----*****" EntityID="MILITARY" EntityTypeID="NONSUBMARINE">
-      <LegacyFunctionCode Name="2525C">SX----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C">SX----</LegacyFunctionCode>
 	    <LegacyEntity ID="MILITARY_NONSUBMARINE_LE" Label="WAR.SBSUF.SUB.NONSUB" Graphic="S-U-SX----.svg">
-		    <LegacyFunctionCode Name="2525C">SX----</LegacyFunctionCode>
+		    <LegacyFunctionCode Name="2525C" LimitUseTo="2525C">SX----</LegacyFunctionCode>
 	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_AUV_UUV_SYM" Label="S*UPSU----*****" EntityID="MILITARY" EntityTypeID="AUV_UUV">
@@ -544,7 +544,7 @@
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_SUBMARINE_SUBMARINE_SNORKELING_SYM" Label="S*UPSK----*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" EntitySubTypeID="SUBMARINE_SNORKELING">
-      <LegacyFunctionCode Name="2525C" Description="Substitute" Remarks="Deleted ">SK----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" Description="Substitute" Remarks="Deleted ">SK----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_AUV_UUV_SURFACE_WARFARE_MOD_SYM" Label="S*UPSUN--------" EntityID="MILITARY" EntityTypeID="AUV_UUV" ModifierOneID="SURFACE_WARFARE_MOD">
       <LegacyFunctionCode Name="2525C" Description="Substitute" Remarks="Mod1-Surface Warfare(07)">SUN---</LegacyFunctionCode>

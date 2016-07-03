@@ -252,14 +252,14 @@ namespace JointMilitarySymbologyLibrary
                 string line = string.Format("{0}", "SchemaContainer," +
                                                     container.Label + "," +
                                                     "Mixed" + "," +
-                                                    '"' + container.LabelAlias + '"' + "," +
-                                                    '"' + container.Metadata.Label + '"' + "," +
+                                                    container.LabelAlias + "," +
+                                                    container.Metadata.Label + "," +
                                                     container.Metadata.Thumbnail + "," +
                                                     container.Metadata.Tags + "," +
-                                                    '"' + container.Metadata.Summary + '"' + "," +
-                                                    '"' + container.Metadata.Description + '"' + "," +
-                                                    (container.Metadata.Credits != null ? '"' + container.Metadata.Credits + '"' : "") + "," +
-                                                    '"' + container.Metadata.Use + '"' + "," +
+                                                    container.Metadata.Summary + "," +
+                                                    container.Metadata.Description + "," +
+                                                    (container.Metadata.Credits != null ? container.Metadata.Credits : "") + "," +
+                                                    container.Metadata.Use + "," +
                                                     (container.Metadata.Extent != null ? Convert.ToString(container.Metadata.Extent.East) : "") + "," +
                                                     (container.Metadata.Extent != null ? Convert.ToString(container.Metadata.Extent.West) : "") + "," +
                                                     (container.Metadata.Extent != null ? Convert.ToString(container.Metadata.Extent.North) : "") + "," +
@@ -312,14 +312,14 @@ namespace JointMilitarySymbologyLibrary
                 string line = string.Format("{0}", "SchemaSet," +
                                                     schemas.Label + "," +
                                                     "Mixed" + "," +
-                                                    '"' + schemas.LabelAlias + '"' + "," +
-                                                    '"' + schemas.Metadata.Label + '"' + "," +
+                                                    schemas.LabelAlias + "," +
+                                                    schemas.Metadata.Label + "," +
                                                     schemas.Metadata.Thumbnail + "," +
                                                     schemas.Metadata.Tags + "," +
-                                                    '"' + schemas.Metadata.Summary + '"' + "," +
-                                                    '"' + schemas.Metadata.Description + '"' + "," +
-                                                    (schemas.Metadata.Credits != null ? '"' + schemas.Metadata.Credits + '"' : "") + "," +
-                                                    '"' + schemas.Metadata.Use + '"' + "," +
+                                                    schemas.Metadata.Summary + "," +
+                                                    schemas.Metadata.Description + "," +
+                                                    (schemas.Metadata.Credits != null ? schemas.Metadata.Credits : "") + "," +
+                                                    schemas.Metadata.Use + "," +
                                                     (schemas.Metadata.Extent != null ? Convert.ToString(schemas.Metadata.Extent.East) : "") + "," +
                                                     (schemas.Metadata.Extent != null ? Convert.ToString(schemas.Metadata.Extent.West) : "") + "," +
                                                     (schemas.Metadata.Extent != null ? Convert.ToString(schemas.Metadata.Extent.North) : "") + "," +
@@ -352,14 +352,14 @@ namespace JointMilitarySymbologyLibrary
                 string line = string.Format("{0}",  "Schema," + 
                                                     schema.Label + "," +
                                                     schema.GeometryType + "," +
-                                                    '"' + schema.LabelAlias + '"' + "," +
-                                                    '"' + schema.Metadata.Label + '"' + "," +
+                                                    schema.LabelAlias + "," +
+                                                    schema.Metadata.Label + "," +
                                                     schema.Metadata.Thumbnail + "," +
                                                     schema.Metadata.Tags + "," +
-                                                    '"' + schema.Metadata.Summary + '"' + "," +
-                                                    '"' + schema.Metadata.Description + '"' + "," +
-                                                    (schema.Metadata.Credits != null ? '"' + schema.Metadata.Credits + '"' : "") + "," +
-                                                    '"' + schema.Metadata.Use + '"' + "," +
+                                                    schema.Metadata.Summary + "," +
+                                                    schema.Metadata.Description + "," +
+                                                    (schema.Metadata.Credits != null ? schema.Metadata.Credits : "") + "," +
+                                                    schema.Metadata.Use + "," +
                                                     (schema.Metadata.Extent != null ? Convert.ToString(schema.Metadata.Extent.East) : "") + "," +
                                                     (schema.Metadata.Extent != null ? Convert.ToString(schema.Metadata.Extent.West) : "") + "," +
                                                     (schema.Metadata.Extent != null ? Convert.ToString(schema.Metadata.Extent.North) : "") + "," +

@@ -136,7 +136,10 @@ namespace JointMilitarySymbologyLibrary
 
                                 if (symbolSet != null)
                                 {
-                                    line = symbolSet.Label + "," + Convert.ToString(symbolSet.SymbolSetCode.DigitOne) + Convert.ToString(symbolSet.SymbolSetCode.DigitTwo);
+                                    if(symbolSet.SymbolSetCode.DigitOne == 0)
+                                        line = symbolSet.Label + "," + Convert.ToString(symbolSet.SymbolSetCode.DigitTwo);
+                                    else
+                                        line = symbolSet.Label + "," + Convert.ToString(symbolSet.SymbolSetCode.DigitOne) + Convert.ToString(symbolSet.SymbolSetCode.DigitTwo);
 
                                     w.WriteLine(line);
                                     w.Flush();
