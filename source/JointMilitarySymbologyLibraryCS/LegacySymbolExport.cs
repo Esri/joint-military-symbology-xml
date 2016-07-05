@@ -227,6 +227,9 @@ namespace JointMilitarySymbologyLibrary
             result = result + ","; // + "Status";
             result = result + ","; // + "Notes";
 
+            if (functionCode.Description != "")
+                result = result + functionCode.Description;
+
             return result;
         }
 
@@ -238,7 +241,9 @@ namespace JointMilitarySymbologyLibrary
 
             string sidcKey = _buildSIDCKey(ss, legacySymbol, functionCode);
 
-            bool fullFrame = (legacyEntity.Icon == IconType.FULL_FRAME || _isFullFrame(false));
+            string geometry = _entityExport.GeometryIt(legacyEntity);
+
+            bool fullFrame = (legacyEntity.Icon == IconType.FULL_FRAME || legacyEntity.IsAlignable || _isFullFrame(false));
             string fullFrameOutput = fullFrame ? "TRUE" : "";
 
             result = _entityExport.NameIt(null, ss, legacySymbol, legacyEntity, functionCode); //legacyEntity.Label;
@@ -248,7 +253,7 @@ namespace JointMilitarySymbologyLibrary
             result = result + ",";
             result = result + ",";
             result = result + "," + fullFrameOutput;
-            result = result + "," + "Point"; // TODO : Handle this through a modernized form of GeometryIt
+            result = result + "," + geometry;
 
             switch (functionCode.LimitUseTo)
             {
@@ -267,6 +272,9 @@ namespace JointMilitarySymbologyLibrary
 
             result = result + ",";
             result = result + ",";
+
+            if (functionCode.Description != "")
+                result = result + functionCode.Description;
 
             return result;
         }

@@ -1096,6 +1096,9 @@
     </LegacySymbol>
     <LegacySymbol ID="INCIDENT_CRIMINAL_ACTIVITY_INCIDENT_ARSON_SYM" Label="O*VPA-----*****" EntityID="INCIDENT" EntityTypeID="CRIMINAL_ACTIVITY_INCIDENT" EntitySubTypeID="ARSON">
       <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" SchemaOverride="O" DimensionOverride="V">A-----</LegacyFunctionCode>
+      <LegacyEntity ID="INCIDENT_CRIMINAL_ACTIVITY_INCIDENT_ARSON_LE" Label="MOOTW.VIOATY.ASN" Graphic="O-V-A-----.svg">
+        <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" SchemaOverride="O" DimensionOverride="V">A-----</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="INCIDENT_CRIMINAL_ACTIVITY_INCIDENT_ATTEMPTED_CRIMINAL_ACTIVITY_KIDNAPPING_MOD_SYM" Label="O*OPKA----*****" EntityID="INCIDENT" EntityTypeID="CRIMINAL_ACTIVITY_INCIDENT" EntitySubTypeID="ATTEMPTED_CRIMINAL_ACTIVITY" ModifierOneID="KIDNAPPING_MOD">
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="O">KA----</LegacyFunctionCode>
@@ -1149,7 +1152,7 @@
       <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" DimensionOverride="I">BA----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INCIDENT_IED_EVENT_IED_EXPLOSION_SYM" Label="O*VPEI----*****" EntityID="INCIDENT" EntityTypeID="IED_EVENT" EntitySubTypeID="IED_EXPLOSION">
-      <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="V">EI----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" Description="USAS CS 11-12" SchemaOverride="O" DimensionOverride="V">EI----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="INCIDENT_SHOOTING_SYM" Label="E*IPBF----*****" EntityID="INCIDENT" EntityTypeID="SHOOTING">
       <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" DimensionOverride="I">BF----</LegacyFunctionCode>
@@ -1378,9 +1381,9 @@
     </LegacySymbol>
     <LegacySymbol ID="TRANSPORTATION_INCIDENT_AIR_HIJACKING_MOD_SYM" Label="O*OPHA----*****" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="AIR" ModifierOneID="HIJACKING_MOD">
       <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="O">HA----</LegacyFunctionCode>
-	    <LegacyEntity ID="TRANSPORTATION_INCIDENT_AIR_HIJACKING_MOD_LE" Label="EMS.INCDNT.VEH.ACDNT" Graphic="E-I-HA----.svg">
-		    <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="O">HA----</LegacyFunctionCode>
-	    </LegacyEntity>
+	    <!--<LegacyEntity ID="TRANSPORTATION_INCIDENT_AIR_HIJACKING_MOD_LE" Label="EMS.INCDNT.VEH.ACDNT" Graphic="O-O-HA    .svg">
+		    <LegacyFunctionCode Name="2525C" SchemaOverride="O" DimensionOverride="O">HA    </LegacyFunctionCode>
+	    </LegacyEntity>-->
     </LegacySymbol>
     <LegacySymbol ID="TRANSPORTATION_INCIDENT_AIR_INCIDENT_MOD_SYM" Label="E*IPE-----*****" EntityID="TRANSPORTATION_INCIDENT" EntityTypeID="AIR" ModifierOneID="INCIDENT_MOD">
       <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" DimensionOverride="I">E-----</LegacyFunctionCode>
@@ -1490,6 +1493,9 @@
     </LegacySymbol>
     <LegacySymbol ID="FIRE_FIGHTING_OPERATION_SYM" Label="E*OPC-----*****" EntityID="OPERATION" EntityTypeID="FIRE_FIGHTING_OPERATION">
       <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" DimensionOverride="O">C-----</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="INCIDENT_IED_EVENT_SUICIDE_BOMBER_SYM" Label="O*PPF-----*****" LabelAlias="Civilian (Land Civilian) : Individual : IED Suicide Bomber" EntityID="INCIDENT" EntityTypeID="IED_EVENT" EntitySubTypeID="IED_SUICIDE_BOMBER">
+      <LegacyFunctionCode Name="2525C" Description="USAS CS 11-12" SchemaOverride="O" DimensionOverride="P">F-----</LegacyFunctionCode>
     </LegacySymbol>
   </LegacySymbols>
 </SymbolSet>

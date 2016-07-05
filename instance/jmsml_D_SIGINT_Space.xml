@@ -240,12 +240,6 @@
 		    <LegacyFunctionCode Name="2525C">SCD---</LegacyFunctionCode>
 	    </LegacyEntity>
     </LegacySymbol>
-    <LegacySymbol ID="SIGNAL_INTERCEPT_COMMUNICATIONS_SYM" Label="I*APSCC-----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="COMMUNICATIONS">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="A">SCC---</LegacyFunctionCode>
-    </LegacySymbol>
-    <LegacySymbol ID="SIGNAL_INTERCEPT_COMMUNICATIONS_POINT_POINT_LOS_MOD_SYM" Label="I*APSCP-----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="COMMUNICATIONS" ModifierOneID="POINT_POINT_LOS_MOD">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="A">SCP---</LegacyFunctionCode>
-    </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_DATA_TRANSMISSION_MOD_SYM" Label="I*PPSRD-----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="DATA_TRANSMISSION_MOD">
       <LegacyFunctionCode Name="2525C">SRD---</LegacyFunctionCode>
 	    <LegacyEntity ID="SIGNAL_INTERCEPT_RADAR_DATA_TRANSMISSION_MOD_LE" Label="SIGINT.SPC.SIGINC.RAD.DATTMN" Graphic="I-P-SRD---.svg">

@@ -653,7 +653,12 @@ namespace JointMilitarySymbologyLibrary
             string name = "";
 
             if (ss != null && symbol != null && code != null)
-                name = BuildEntityItemName(sig, ss, symbol, entity, code);
+            {
+                if (code.LabelAlias != "")
+                    name = code.LabelAlias;
+                else
+                    name = BuildEntityItemName(sig, ss, symbol, entity, code);
+            }
 
             return name;
         }
@@ -673,6 +678,15 @@ namespace JointMilitarySymbologyLibrary
             string geo = "";
 
             geo = GeometryIs(e, eType, eSubType);
+
+            return geo;
+        }
+
+        public string GeometryIt(LegacyEntityType legacyEntity)
+        {
+            string geo = "";
+
+            geo = GeometryIs(legacyEntity.GeometryType);
 
             return geo;
         }

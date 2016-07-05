@@ -44,6 +44,7 @@ namespace JointMilitarySymbologyLibrary
         {
             string result = "";
             string graphic = "";
+            string suffix = "";
 
             _notes = "";
 
@@ -52,6 +53,11 @@ namespace JointMilitarySymbologyLibrary
             {
                 case "2525Bc2":
                     graphicPath = _configHelper.GetPath("JMSML_2525BC2", FindEnum.Find2525BC2);
+                    suffix = "(2525B)";
+                    break;
+                case "2525C":
+                    graphicPath = _configHelper.GetPath("JMSML_2525C", FindEnum.Find2525C);
+                    suffix = "(2525C)";
                     break;
                 default:
                     graphicPath = _configHelper.GetPath("JMSML_2525C", FindEnum.Find2525C);

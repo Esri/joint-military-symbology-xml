@@ -663,9 +663,9 @@
       <LegacyFunctionCode Name="2525C">MFF---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_FIXED_WING_ATTACK_STRIKE_INTERCEPTOR_MOD_SYM" Label="S*APMFFI--*****" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="ATTACK_STRIKE" ModifierOneID="INTERCEPTOR_MOD">
-      <LegacyFunctionCode Name="2525C" Description="Substitute" Remarks="Retired - use Interceptor(05) in Mod1">MFFI--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" Remarks="Retired - use Interceptor(05) in Mod1">MFFI--</LegacyFunctionCode>
 	    <LegacyEntity ID="MILITARY_FIXED_WING_ATTACK_STRIKE_INTERCEPTOR_MOD_LE" Label="WAR.AIRTRK.MIL.FIXD.FTR.INCR" Graphic="S-A-MFFI--.svg">
-		    <LegacyFunctionCode Name="2525C" Description="Substitute" Remarks="Retired - use Interceptor(05) in Mod1">MFFI--</LegacyFunctionCode>
+		    <LegacyFunctionCode Name="2525C" Remarks="Retired - use Interceptor(05) in Mod1">MFFI--</LegacyFunctionCode>
 	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_FIXED_WING_CARGO_SYM" Label="S*APMFC---*****" EntityID="MILITARY" EntityTypeID="FIXED_WING" EntitySubTypeID="CARGO">
@@ -972,9 +972,9 @@
       <LegacyFunctionCode Name="2525C">CL----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="WEAPON_SYM" Label="S*APW-----*****" EntityID="WEAPON">
-      <LegacyFunctionCode Name="2525C" Description="Substitute">W-----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">W-----</LegacyFunctionCode>
 	    <LegacyEntity ID="WEAPON_LE" Label="WAR.AIRTRK.WPN" Graphic="S-A-W-----.svg">
-		    <LegacyFunctionCode Name="2525C" Description="Substitute">W-----</LegacyFunctionCode>
+		    <LegacyFunctionCode Name="2525C">W-----</LegacyFunctionCode>
 	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="WEAPON_BOMB_SYM" Label="S*APWB----*****" EntityID="WEAPON" EntityTypeID="BOMB">

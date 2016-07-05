@@ -1058,15 +1058,27 @@
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_NUCLEAR_DEFENSE_SYM" Label="S*GPIMF---H****" EntityID="INSTALLATION" EntityTypeID="NUCLEAR_DEFENSE">
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMF---</LegacyFunctionCode>
+      <LegacyEntity ID="INSTALLATION_NUCLEAR_DEFENSE_LE" Label="WAR.GRDTRK.INS.MMF.NENY" Graphic="S-G-IMF---.svg">
+        <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMF---</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_NUCLEAR_DEFENSE_ATOMIC_ENERGY_REACTOR_MOD_SYM" Label="S*GPIMFA--H****" EntityID="INSTALLATION" EntityTypeID="NUCLEAR_DEFENSE" ModifierTwoID="ATOMIC_ENERGY_REACTOR_MOD">
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMFA--</LegacyFunctionCode>
+      <LegacyEntity ID="INSTALLATION_NUCLEAR_DEFENSE_ATOMIC_ENERGY_REACTOR_MOD_LE" Label="WAR.GRDTRK.INS.MMF.NENY.ATMER" Graphic="S-G-IMFA--.svg">
+        <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMFA--</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_NUCLEAR_DEFENSE_NUCLEAR_MATERIAL_PRODUCTION_MOD_SYM" Label="S*GPIMFP--H****" EntityID="INSTALLATION" EntityTypeID="NUCLEAR_DEFENSE" ModifierTwoID="NUCLEAR_MATERIAL_PRODUCTION_MOD">
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMFP--</LegacyFunctionCode>
+      <LegacyEntity ID="INSTALLATION_NUCLEAR_DEFENSE_NUCLEAR_MATERIAL_PRODUCTION_MOD_LE" Label="WAR.GRDTRK.INS.MMF.NENY.NMP" Graphic="S-G-IMFP--.svg">
+        <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMFP--</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_NUCLEAR_DEFENSE_NUCLEAR_MATERIAL_STORAGE_MOD_SYM" Label="S*GPIMFS--H****" EntityID="INSTALLATION" EntityTypeID="NUCLEAR_DEFENSE" ModifierTwoID="NUCLEAR_MATERIAL_STORAGE_MOD">
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMFS--</LegacyFunctionCode>
+      <LegacyEntity ID="INSTALLATION_NUCLEAR_DEFENSE_NUCLEAR_MATERIAL_STORAGE_MOD_LE" Label="WAR.GRDTRK.INS.MMF.NENY.NMS" Graphic="S-G-IMFS--.svg">
+        <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMFS--</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="INSTALLATION_NUCLEAR_DEFENSE_WEAPONS_GRADE_MOD_SYM" Label="S*GPIMFPW-H****" EntityID="INSTALLATION" EntityTypeID="NUCLEAR_DEFENSE" ModifierTwoID="WEAPONS_GRADE_MOD">
       <LegacyFunctionCode Name="2525C" HQTFFDOverride="H">IMFPW-</LegacyFunctionCode>

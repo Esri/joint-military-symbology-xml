@@ -467,87 +467,96 @@
     </LegacySymbol>
     <LegacySymbol ID="WEAPON_DECOY_SYM" Label="S*UPWD----*****" EntityID="WEAPON" EntityTypeID="DECOY">
       <LegacyFunctionCode Name="2525C">WD----</LegacyFunctionCode>
+      <LegacyEntity ID="WEAPON_DECOY_LE" Label="WAR.SBSUF.UH2DCY" Graphic="S-U-WD----.svg">
+        <LegacyFunctionCode Name="2525C">WD----</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SEA_SUBSURFACE_SYM" Label="S*UP------*****" EntityID="UNSPECIFIED">
       <LegacyFunctionCode Name="2525C">------</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_SUBMARINE_NUCLEAR_POWERED_GENERAL_MOD_SYM" Label="S*UPSN----*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierTwoID="NUCLEAR_POWERED_GENERAL_MOD">
-      <LegacyFunctionCode Name="2525C" Description="Substitute">SN----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">SN----</LegacyFunctionCode>
 	    <LegacyEntity ID="MILITARY_SUBMARINE_NUCLEAR_POWERED_GENERAL_MOD_LE" Label="WAR.SBSUF.SUB.NPRN" Graphic="S-U-SN----.svg">
 		    <LegacyFunctionCode Name="2525C">SN----</LegacyFunctionCode>
 	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_SUBMARINE_SURFACED_NUCLEAR_POWERED_GENERAL_MOD_SYM" Label="S*UPSNF---*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" EntitySubTypeID="SUBMARINE_SURFACED" ModifierTwoID="NUCLEAR_POWERED_GENERAL_MOD">
-      <LegacyFunctionCode Name="2525C" Description="Substitute">SNF---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">SNF---</LegacyFunctionCode>
 	  	<LegacyEntity ID="MILITARY_SUBMARINE_SURFACED_NUCLEAR_POWERED_GENERAL_MOD_LE" Label="WAR.SBSUF.SUB.NPRN.SURF" Graphic="S-U-SNF---.svg">
 		    <LegacyFunctionCode Name="2525C">SNF---</LegacyFunctionCode>
 	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_SUBMARINE_ATTACK_NUCLEAR_POWERED_GENERAL_MOD_SYM" Label="S*UPSNA---*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="ATTACK_MOD" ModifierTwoID="NUCLEAR_POWERED_GENERAL_MOD">
-      <LegacyFunctionCode Name="2525C" Description="Substitute">SNA---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">SNA---</LegacyFunctionCode>
+      <LegacyEntity ID="MILITARY_SUBMARINE_ATTACK_NUCLEAR_POWERED_GENERAL_MOD_LE" Label="WAR.SBSUF.SUB.NPRN.ATK" Graphic="S-U-SNA---.svg">
+        <LegacyFunctionCode Name="2525C">SNA---</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_SUBMARINE_MISSILE_NUCLEAR_POWERED_GENERAL_MOD_SYM" Label="S*UPSNM---*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="OTHER_GUIDED_MISSILE_MOD" ModifierTwoID="NUCLEAR_POWERED_GENERAL_MOD">
-      <LegacyFunctionCode Name="2525C" Description="Substitute">SNM---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">SNM---</LegacyFunctionCode>
 	    <LegacyEntity ID="MILITARY_SUBMARINE_MISSILE_NUCLEAR_POWERED_GENERAL_MOD_LE" Label="WAR.SBSUF.SUB.NPRN.MSL" Graphic="S-U-SNM---.svg">
 		    <LegacyFunctionCode Name="2525C">SNM---</LegacyFunctionCode>
 	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_SUBMARINE_GUIDED_NUCLEAR_POWERED_GENERAL_MOD_SYM" Label="S*UPSNG---*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="GUIDED_MISSILE_MOD" ModifierTwoID="NUCLEAR_POWERED_GENERAL_MOD">
-      <LegacyFunctionCode Name="2525C" Description="Substitute">SNG---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">SNG---</LegacyFunctionCode>
 	    <LegacyEntity ID="MILITARY_SUBMARINE_GUIDED_NUCLEAR_POWERED_GENERAL_MOD_LE" Label="WAR.SBSUF.SUB.NPRN.GDD" Graphic="S-U-SNG---.svg">
 		    <LegacyFunctionCode Name="2525C">SNG---</LegacyFunctionCode>
 	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_SUBMARINE_BALLISTIC_NUCLEAR_POWERED_GENERAL_MOD_SYM" Label="S*UPSNB---*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="BALLISTIC_MISSILE_MOD" ModifierTwoID="NUCLEAR_POWERED_GENERAL_MOD">
-      <LegacyFunctionCode Name="2525C" Description="Substitute">SNB---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">SNB---</LegacyFunctionCode>
+      <LegacyEntity ID="MILITARY_SUBMARINE_BALLISTIC_NUCLEAR_POWERED_GENERAL_MOD_LE" Label="WAR.SBSUF.SUB.NPRN.BLST" Graphic="S-U-SNB---.svg">
+        <LegacyFunctionCode Name="2525C">SNB---</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_SUBMARINE_DIESEL_ELECTRIC_GENERAL_MOD_SYM" Label="S*UPSC----*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierTwoID="DIESEL_ELECTRIC_GENERAL_MOD">
-      <LegacyFunctionCode Name="2525C" Description="Substitute">SC----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">SC----</LegacyFunctionCode>
 	    <LegacyEntity ID="MILITARY_SUBMARINE_DIESEL_ELECTRIC_GENERAL_MOD_LE" Label="WAR.SBSUF.SUB.CNVPRN" Graphic="S-U-SC----.svg">
 		    <LegacyFunctionCode Name="2525C">SC----</LegacyFunctionCode>
 	    </LegacyEntity>	  
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_SUBMARINE_SURFACED_DIESEL_ELECTRIC_GENERAL_MOD_SYM" Label="S*UPSCF---*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" EntitySubTypeID="SUBMARINE_SURFACED" ModifierTwoID="DIESEL_ELECTRIC_GENERAL_MOD">
-      <LegacyFunctionCode Name="2525C" Description="Substitute">SCF---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">SCF---</LegacyFunctionCode>
 	    <LegacyEntity ID="MILITARY_SUBMARINE_SURFACED_DIESEL_ELECTRIC_GENERAL_MOD_LE" Label="WAR.SBSUF.SUB.CNVPRN.SURF" Graphic="S-U-SCF---.svg">
 		    <LegacyFunctionCode Name="2525C">SCF---</LegacyFunctionCode>
 	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_SUBMARINE_ATTACK_DIESEL_ELECTRIC_GENERAL_MOD_SYM" Label="S*UPSCA---*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="ATTACK_MOD" ModifierTwoID="DIESEL_ELECTRIC_GENERAL_MOD">
-      <LegacyFunctionCode Name="2525C" Description="Substitute">SCA---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">SCA---</LegacyFunctionCode>
 	    <LegacyEntity ID="MILITARY_SUBMARINE_ATTACK_DIESEL_ELECTRIC_GENERAL_MOD_LE" Label="WAR.SBSUF.SUB.CNVPRN.ATK" Graphic="S-U-SCA---.svg">
 		    <LegacyFunctionCode Name="2525C">SCA---</LegacyFunctionCode>
 	    </LegacyEntity>	
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_SUBMARINE_MISSILE_DIESEL_ELECTRIC_GENERAL_MOD_SYM" Label="S*UPSCM---*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="OTHER_GUIDED_MISSILE_MOD" ModifierTwoID="DIESEL_ELECTRIC_GENERAL_MOD">
-      <LegacyFunctionCode Name="2525C" Description="Substitute">SCM---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">SCM---</LegacyFunctionCode>
 	    <LegacyEntity ID="MILITARY_SUBMARINE_MISSILE_DIESEL_ELECTRIC_GENERAL_MOD_LE" Label="WAR.SBSUF.SUB.CNVPRN.MSL" Graphic="S-U-SCM---.svg">
 		    <LegacyFunctionCode Name="2525C">SCM---</LegacyFunctionCode>
 	    </LegacyEntity>	
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_SUBMARINE_GUIDED_DIESEL_ELECTRIC_GENERAL_MOD_SYM" Label="S*UPSCG---*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="GUIDED_MISSILE_MOD" ModifierTwoID="DIESEL_ELECTRIC_GENERAL_MOD">
-      <LegacyFunctionCode Name="2525C" Description="Substitute">SCG---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">SCG---</LegacyFunctionCode>
 	    <LegacyEntity ID="MILITARY_SUBMARINE_GUIDED_DIESEL_ELECTRIC_GENERAL_MOD_LE" Label="WAR.SBSUF.SUB.CNVPRN.GDD" Graphic="S-U-SCG---.svg">
 		    <LegacyFunctionCode Name="2525C">SCG---</LegacyFunctionCode>
 	    </LegacyEntity>
 	  </LegacySymbol>
     <LegacySymbol ID="MILITARY_SUBMARINE_BALLISTIC_DIESEL_ELECTRIC_GENERAL_MOD_SYM" Label="S*UPSCB---*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" ModifierOneID="BALLISTIC_MISSILE_MOD" ModifierTwoID="DIESEL_ELECTRIC_GENERAL_MOD">
-      <LegacyFunctionCode Name="2525C" Description="Substitute">SCB---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">SCB---</LegacyFunctionCode>
 	    <LegacyEntity ID="MILITARY_SUBMARINE_BALLISTIC_DIESEL_ELECTRIC_GENERAL_MOD_LE" Label="WAR.SBSUF.SUB.CNVPRN.BLST" Graphic="S-U-SCB---.svg">
 		    <LegacyFunctionCode Name="2525C">SCB---</LegacyFunctionCode>
 	    </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_SUBMARINE_SURFACED_SUBMARINE_SURFACED_SYM" Label="S*UPSOF---*****" Remarks="Retired">
-      <LegacyFunctionCode Name="2525C" Description="Substitute" Remarks="Deleted">SOF---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" Remarks="Deleted">SOF---</LegacyFunctionCode>
       <LegacyEntity ID="MILITARY_SUBMARINE_SURFACED_SUBMARINE_SURFACED_LE" Label="WAR.SBSUF.SUB.OTH.SURF" LabelAlias="Military (Sea Subsurface) : Submarine : Other : Surfaced" Graphic="S-U-SOF---.svg">
-        <LegacyFunctionCode Name="2525C" Description="Substitute" Remarks="Deleted">SOF---</LegacyFunctionCode>
+        <LegacyFunctionCode Name="2525C" Remarks="Deleted">SOF---</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_SUBMARINE_SUBMARINE_SNORKELING_SYM" Label="S*UPSK----*****" EntityID="MILITARY" EntityTypeID="SUBMARINE" EntitySubTypeID="SUBMARINE_SNORKELING">
-      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" Description="Substitute" Remarks="Deleted ">SK----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" Remarks="Deleted ">SK----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MILITARY_AUV_UUV_SURFACE_WARFARE_MOD_SYM" Label="S*UPSUN--------" EntityID="MILITARY" EntityTypeID="AUV_UUV" ModifierOneID="SURFACE_WARFARE_MOD">
-      <LegacyFunctionCode Name="2525C" Description="Substitute" Remarks="Mod1-Surface Warfare(07)">SUN---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" Remarks="Mod1-Surface Warfare(07)">SUN---</LegacyFunctionCode>
     </LegacySymbol>
   </LegacySymbols>
 </SymbolSet>

@@ -2108,6 +2108,9 @@
     </LegacySymbol>
     <LegacySymbol ID="COMMAND_AND_CONTROL_MILITARY_INFORMATION_SUPPORT_OPERATIONS_MISO_SYM" Label="S*FPGP----*****" EntityID="COMMAND_AND_CONTROL" EntityTypeID="MILITARY_INFORMATION_SUPPORT_OPERATIONS_MISO">
       <LegacyFunctionCode Name="2525C" DimensionOverride="F">GP----</LegacyFunctionCode>
+      <LegacyEntity ID="COMMAND_AND_CONTROL_MILITARY_INFORMATION_SUPPORT_OPERATIONS_MISO_LE" Label="WAR.SOFUNT.GRD.PSYOP" Graphic="S-F-GP----.svg">
+        <LegacyFunctionCode Name="2525C" DimensionOverride="F">GP----</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="COMMAND_AND_CONTROL_SIGNAL_SYM" Label="S*GPUUS---*****" EntityID="COMMAND_AND_CONTROL" EntityTypeID="SIGNAL">
       <LegacyFunctionCode Name="2525C">UUS---</LegacyFunctionCode>
@@ -2174,7 +2177,7 @@
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ANTITANK_ANTIARMOR_SYM" Label="S*GPUCAA--*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ANTITANK_ANTIARMOR">
       <LegacyFunctionCode Name="2525C">UCAA--</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525C" Description="Repeat">UCAAD-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">UCAAD-</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ANTITANK_ANTIARMOR_LIGHT_MOD_SYM" Label="S*GPUCAAL-*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="ANTITANK_ANTIARMOR" ModifierTwoID="LIGHT_MOD">
       <LegacyFunctionCode Name="2525C">UCAAL-</LegacyFunctionCode>
@@ -2435,6 +2438,9 @@
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_INFANTRY_SIGNALS_INTELLIGENCE_MOD_AIRBORNE_MOD_SYM" Label="S*FPGR----*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="INFANTRY" ModifierOneID="SIGNALS_INTELLIGENCE_MOD" ModifierTwoID="AIRBORNE_MOD">
       <LegacyFunctionCode Name="2525C" DimensionOverride="F">GR----</LegacyFunctionCode>
+      <LegacyEntity ID="MOVEMENT_AND_MANEUVER_INFANTRY_SIGNALS_INTELLIGENCE_MOD_AIRBORNE_MOD_LE" Label="WAR.SOFUNT.GRD.RGR" Icon="FULL_FRAME" CloverGraphic="S-F-GR----_0.svg" RectangleGraphic="S-F-GR----_1.svg" SquareGraphic="S-F-GR----_2.svg" DiamondGraphic="S-F-GR----_3.svg">
+        <LegacyFunctionCode Name="2525C" DimensionOverride="F">GR----</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_INFANTRY_LIGHT_MOD_SYM" Label="S*GPUCIL--*****" EntityID="MOVEMENT_AND_MANEUVER" EntityTypeID="INFANTRY" ModifierTwoID="LIGHT_MOD">
       <LegacyFunctionCode Name="2525C">UCIL--</LegacyFunctionCode>
@@ -3615,47 +3621,50 @@
     </LegacySymbol>
     <LegacySymbol ID="C2_HQ_SYM" Label="S*GPUH----*****" Description="Use HQ staff amplifier to represent." Remarks="Retired">
       <LegacyFunctionCode Name="2525C">UH----</LegacyFunctionCode>
+      <LegacyEntity ID="C2_HQ_LE" Label="WAR.GRDTRK.UNT.C2HQ" LabelAlias="Command and Control : Special C2 Headquarters Component" CloverGraphic="S-G-UH----_0.svg" RectangleGraphic="S-G-UH----_1.svg" SquareGraphic="S-G-UH----_2.svg" DiamondGraphic="S-G-UH----_3.svg" Icon="FULL_FRAME">
+        <LegacyFunctionCode Name="2525C">UH----</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="COMMAND_AND_CONTROL_TACTICAL_SATELLITE_SYM" Label="S*GPUCDSC-*****" EntityID="COMMAND_AND_CONTROL" EntityTypeID="TACTICAL_SATELLITE">
-      <LegacyFunctionCode Name="2525C" Description="Substitute">UCDSC-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">UCDSC-</LegacyFunctionCode>
       <LegacyEntity ID="COMMAND_AND_CONTROL_TACTICAL_SATELLITE_LE" Label="WAR.GRDTRK.UNT.CBT.ADF.SHTR.CPL" CloverGraphic="S-G-UCDSC-_0.svg" RectangleGraphic="S-G-UCDSC-_1.svg" SquareGraphic="S-G-UCDSC-_2.svg" DiamondGraphic="S-G-UCDSC-_3.svg" Icon="FULL_FRAME">
-        <LegacyFunctionCode Name="2525C" Description="Substitute">UCDSC-</LegacyFunctionCode>
+        <LegacyFunctionCode Name="2525C">UCDSC-</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="COMMAND_AND_CONTROL_STINGER_SYM" Label="S*GPUCDSS-*****" Remarks="Retired">
-      <LegacyFunctionCode Name="2525C" Description="Substitute">UCDSS-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">UCDSS-</LegacyFunctionCode>
       <LegacyEntity ID="COMMAND_AND_CONTROL_STINGER_LE" Label="WAR.GRDTRK.UNT.CBT.ADF.SHTR.STG" LabelAlias="Fires : Air Defense : Short Range : Stinger" CloverGraphic="S-G-UCDSS-_0.svg" RectangleGraphic="S-G-UCDSS-_1.svg" SquareGraphic="S-G-UCDSS-_2.svg" DiamondGraphic="S-G-UCDSS-_3.svg" Icon="FULL_FRAME">
-        <LegacyFunctionCode Name="2525C" Description="Substitute">UCDSS-</LegacyFunctionCode>
+        <LegacyFunctionCode Name="2525C">UCDSS-</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="COMMAND_AND_CONTROL_VULCAN_SYM" Label="S*GPUCDSV-*****" Remarks="Retired">
-      <LegacyFunctionCode Name="2525C" Description="Substitute">UCDSV-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">UCDSV-</LegacyFunctionCode>
       <LegacyEntity ID="COMMAND_AND_CONTROL_VULCAN_LE" Label="WAR.GRDTRK.UNT.CBT.ADF.SHTR.VUL" LabelAlias="Fires : Air Defense : Short Range : Vulcan" CloverGraphic="S-G-UCDSV-_0.svg" RectangleGraphic="S-G-UCDSV-_1.svg" SquareGraphic="S-G-UCDSV-_2.svg" DiamondGraphic="S-G-UCDSV-_3.svg" Icon="FULL_FRAME">
-        <LegacyFunctionCode Name="2525C" Description="Substitute">UCDSV-</LegacyFunctionCode>
+        <LegacyFunctionCode Name="2525C">UCDSV-</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="COMMAND_AND_CONTROL_AVENGER_SYM" Label="S*GPUCDMLA*****" Remarks="Retired">
-      <LegacyFunctionCode Name="2525C" Description="Substitute">UCDMLA</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">UCDMLA</LegacyFunctionCode>
       <LegacyEntity ID="COMMAND_AND_CONTROL_AVENGER_LE" Label="WAR.GRDTRK.UNT.CBT.ADF.MSL.LIT.MOT" LabelAlias="Fires : Air Defense : Missile : Avenger" CloverGraphic="S-G-UCDMLA_0.svg" RectangleGraphic="S-G-UCDMLA_1.svg" SquareGraphic="S-G-UCDMLA_2.svg" DiamondGraphic="S-G-UCDMLA_3.svg" Icon="FULL_FRAME">
-        <LegacyFunctionCode Name="2525C" Description="Substitute">UCDMLA</LegacyFunctionCode>
+        <LegacyFunctionCode Name="2525C">UCDMLA</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="COMMAND_AND_CONTROL_HAWK_SYM" Label="S*GPUCDHH-*****" Remarks="Retired">
-      <LegacyFunctionCode Name="2525C" Description="Substitute">UCDHH-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">UCDHH-</LegacyFunctionCode>
       <LegacyEntity ID="COMMAND_AND_CONTROL_HAWK_LE" Label="WAR.GRDTRK.UNT.CBT.ADF.MSL.HMAD.HWK" LabelAlias="Fires : Air Defense : Missile : Hawk" CloverGraphic="S-G-UCDHH-_0.svg" RectangleGraphic="S-G-UCDHH-_1.svg" SquareGraphic="S-G-UCDHH-_2.svg" DiamondGraphic="S-G-UCDHH-_3.svg" Icon="FULL_FRAME">
-        <LegacyFunctionCode Name="2525C" Description="Substitute">UCDHH-</LegacyFunctionCode>
+        <LegacyFunctionCode Name="2525C">UCDHH-</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="COMMAND_AND_CONTROL_PATRIOT_SYM" Label="S*GPUCDHP-*****" Remarks="Retired">
-      <LegacyFunctionCode Name="2525C" Description="Substitute">UCDHP-</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">UCDHP-</LegacyFunctionCode>
       <LegacyEntity ID="COMMAND_AND_CONTROL_PATRIOT_LE" Label="WAR.GRDTRK.UNT.CBT.ADF.MSL.HMAD.PATT" LabelAlias="Fires : Air Defense : Missile : Patriot" CloverGraphic="S-G-UCDHP-_0.svg" RectangleGraphic="S-G-UCDHP-_1.svg" SquareGraphic="S-G-UCDHP-_2.svg" DiamondGraphic="S-G-UCDHP-_3.svg" Icon="FULL_FRAME">
-        <LegacyFunctionCode Name="2525C" Description="Substitute">UCDHP-</LegacyFunctionCode>
+        <LegacyFunctionCode Name="2525C">UCDHP-</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MOVEMENT_AND_MANEUVER_ARMY_AVIATION_AVIATION_COMBAT_ROTARY_WING_SYM" Label="S*GPUCVR--*****" Remarks="Retired">
-      <LegacyFunctionCode Name="2525C" Description="Repeat">UCVR--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C">UCVR--</LegacyFunctionCode>
       <LegacyEntity ID="MOVEMENT_AND_MANEUVER_ARMY_AVIATION_AVIATION_COMBAT_ROTARY_WING_LE" Label="WAR.GRDTRK.UNT.CBT.AVN.ROT" LabelAlias="Movement and Maneuver : Aviation Rotary Wing" Graphic="S-G-UCVR--.svg">
-        <LegacyFunctionCode Name="2525C" Description="Repeat">UCVR--</LegacyFunctionCode>
+        <LegacyFunctionCode Name="2525C">UCVR--</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_FIELD_ARTILLERY_AMPHIB_HOWITZER_SYM" Label="S*GPUCFHX-*****" Remarks="Retired">

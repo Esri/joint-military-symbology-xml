@@ -927,7 +927,7 @@
             <DigitTwo>5</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="TACAN" Label="TACAN" Graphic="25180600.svg">
+        <EntityType ID="TACAN" Label="TACAN" Graphic="25180600.svg" IsAlignable="true">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>6</DigitTwo>
@@ -945,31 +945,31 @@
             <DigitTwo>8</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="ASW_HELO_FW_STATION" Label="ASW (Helo and F/W) Station" Graphic="25180900.svg">
+        <EntityType ID="ASW_HELO_FW_STATION" Label="ASW (Helo and F/W) Station" Graphic="25180900.svg" IsAlignable="true">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>9</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="STRIKE_INITIAL_POINT" Label="Strike Initial Point" Graphic="25181000.svg">
+        <EntityType ID="STRIKE_INITIAL_POINT" Label="Strike Initial Point" Graphic="25181000.svg" IsAlignable="true">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>0</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="REPLEMENSHMENT_STATION" Label="Replemenshment Station" Graphic="25181100.svg">
+        <EntityType ID="REPLENISHMENT_STATION" Label="Replenishment Station" Graphic="25181100.svg" IsAlignable="true">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>1</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="TANKING" Label="Tanking" Graphic="25181200.svg">
+        <EntityType ID="TANKING" Label="Tanking" Graphic="25181200.svg" IsAlignable="true">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="ANTISUBMARINE_WARFARE_ROTARY_WING" Label="Antisubmarine Warfare, Rotary Wing" Graphic="25181300.svg">
+        <EntityType ID="ANTISUBMARINE_WARFARE_ROTARY_WING" Label="Antisubmarine Warfare, Rotary Wing" Graphic="25181300.svg" IsAlignable="true">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>3</DigitTwo>
@@ -999,13 +999,13 @@
             <DigitTwo>7</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="TOMCAT" Label="Tomcat" Graphic="25181800.svg">
+        <EntityType ID="TOMCAT" Label="Tomcat" Graphic="25181800.svg" IsAlignable="true">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>8</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="RESCUE" Label="Rescue" Graphic="25181900.svg">
+        <EntityType ID="RESCUE" Label="Rescue" Graphic="25181900.svg" IsAlignable="true">
           <EntityTypeCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>9</DigitTwo>
@@ -2841,7 +2841,7 @@
             </EntitySubType>
           </EntitySubTypes>
         </EntityType>
-        <EntityType ID="MINIMUM_SAFE_DISTANCE_ZONE" Label="Minimum Safe Distance Zone" Graphic="25272100.svg" GeometryType="AREA">
+        <EntityType ID="MINIMUM_SAFE_DISTANCE_ZONE" Label="Minimum Safe Distance Zone" Graphic="25272100.svg" GeometryType="AREA" IsAlignable="true">
           <EntityTypeCode>
             <DigitOne>2</DigitOne>
             <DigitTwo>1</DigitTwo>
@@ -3850,13 +3850,13 @@
     </LegacySymbol>
     <LegacySymbol ID="COMMAND_CONTROL_POINTS_CC_AIR_CONTROL_MARSHALL_SYM" Label="G*GPGPAM--****X" Remarks="Retired"><!--EntityID="COMMAND_CONTROL_POINTS" EntityTypeID="CC_AIR_CONTROL_MARSHALL"-->
       <LegacyFunctionCode Name="2525BC2" LimitUseTo="2525Bc2" DimensionOverride="G" TailOverride="--X">GPAM--</LegacyFunctionCode>
-      <LegacyEntity ID="COMMAND_CONTROL_POINTS_CC_AIR_CONTROL_MARSHALL_LE" Label="TACGRP.C2GM.GNL.PNT.ACTL.MRSH" LabelAlias="Airspace Control Points : Marshall Point" Graphic="G-G-GPAM--.svg">
+      <LegacyEntity ID="COMMAND_CONTROL_POINTS_CC_AIR_CONTROL_MARSHALL_LE" Label="TACGRP.C2GM.GNL.PNT.ACTL.MRSH" LabelAlias="Airspace Control Points : Marshall Point" Graphic="G-G-GPAM--.svg" IsAlignable="true">
         <LegacyFunctionCode Name="2525BC2" LimitUseTo="2525Bc2" DimensionOverride="G" TailOverride="--X">GPAM--</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="COMMAND_CONTROL_POINTS_CC_AIR_CONTROL_CORRIDOR_TAB_SYM" Label="G*GPGPAC--****X" Remarks="Retired"><!--EntityID="COMMAND_CONTROL_POINTS" EntityTypeID="CC_AIR_CONTROL_CORRIDOR TAB"-->
       <LegacyFunctionCode Name="2525BC2" LimitUseTo="2525Bc2" DimensionOverride="G" TailOverride="--X">GPAC--</LegacyFunctionCode>
-      <LegacyEntity ID="COMMAND_CONTROL_POINTS_CC_AIR_CONTROL_CORRIDOR_TAB_LE" Label="TACGRP.C2GM.GNL.PNT.ACTL.CRDRTB" LabelAlias="Airspace Control Points : Corridor Tab" Graphic="G-G-GPAC--.svg">
+      <LegacyEntity ID="COMMAND_CONTROL_POINTS_CC_AIR_CONTROL_CORRIDOR_TAB_LE" Label="TACGRP.C2GM.GNL.PNT.ACTL.CRDRTB" LabelAlias="Airspace Control Points : Corridor Tab" Graphic="G-G-GPAC--.svg" IsAlignable="true">
         <LegacyFunctionCode Name="2525BC2" LimitUseTo="2525Bc2" DimensionOverride="G" TailOverride="--X">GPAC--</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>		
@@ -3868,7 +3868,12 @@
     </LegacySymbol>
     <LegacySymbol ID="MANEUVER_LINES_FORWARD_LINE_OF_TROOPS_FLOT_ENEMY_KNOWN_SYM" Label="GHGPGLF---****X" EntityID="MANEUVER_LINES" EntityTypeID="FORWARD_LINE_OF_TROOPS" EntitySubTypeID="FLOT_ENEMY_KNOWN" IsDuplicate="true">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">GLF---</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525C" Description="Substitute" Remarks="Line of Contact not a displayable symbol=Friendly+Enemy FLOTs" DimensionOverride="G" TailOverride="--X">GLC---</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="MANEUVER_LINES_LINE_OF_CONTACT_SYM" Label="G*GPGLC---****X" Remarks="Retired">
+      <LegacyFunctionCode Name="2525C" Remarks="Line of Contact not a displayable symbol=Friendly+Enemy FLOTs" DimensionOverride="G" TailOverride="--X">GLC---</LegacyFunctionCode>
+      <LegacyEntity ID="MANEUVER_LINES_LINE_OF_CONTACT_LE" Label="TACGRP.C2GM.GNL.LNE.LOC" LabelAlias="Maneuver Lines : Line of Contact" GeometryType="LINE" Graphic="G-G-GLC---.svg">
+        <LegacyFunctionCode Name="2525C" Remarks="Line of Contact not a displayable symbol=Friendly+Enemy FLOTs" DimensionOverride="G" TailOverride="--X">GLC---</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MANEUVER_LINES_FORWARD_LINE_OF_TROOPS_FLOT_ENEMY_SUSPECTED_TEMPLATED_SYM" Label="GHGAGLF---****X" EntityID="MANEUVER_LINES" EntityTypeID="FORWARD_LINE_OF_TROOPS" EntitySubTypeID="FLOT_ENEMY_SUSPECTED_TEMPLATED" IsDuplicate="true">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">GLF---</LegacyFunctionCode>
@@ -3953,7 +3958,6 @@
     </LegacySymbol>
     <LegacySymbol ID="MANEUVER_AREAS_BATTLE_POSITION_BP_PLANNED_SYM" Label="G*GADAB---****X" EntityID="MANEUVER_AREAS" EntityTypeID="BATTLE_POSITION" EntitySubTypeID="BP_PLANNED" IsDuplicate="true">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">DAB---</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525C" Description="Repeat" DimensionOverride="G" TailOverride="--X">DAB---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MANEUVER_AREAS_BATTLE_POSITION_PREPARED_BUT_NOT_OCCUPIED_SYM" Label="G*GPDABP--****X" EntityID="MANEUVER_AREAS" EntityTypeID="BATTLE_POSITION" EntitySubTypeID="PREPARED_BUT_NOT_OCCUPIED">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">DABP--</LegacyFunctionCode>
@@ -3969,10 +3973,10 @@
     </LegacySymbol>
     <LegacySymbol ID="MANEUVER_AREAS_ENGAGEMENT_AREA_EA_SYM" Label="G*GPGAE---****X" EntityID="MANEUVER_AREAS" EntityTypeID="ENGAGEMENT_AREA_EA">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">GAE---</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525C" Description="Repeat" Remarks="Repeat of G*GPGAE---****X/Engangment Area" DimensionOverride="G" TailOverride="--X">DAE---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" Remarks="Repeat of G*GPGAE---****X/Engangment Area" DimensionOverride="G" TailOverride="--X">DAE---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MANEUVER_AREAS_AXIS_ADVANCE_AXIS_ADVANCE_FRIENDLY_AIRBORNE_AVIATION_SYM" Label="G*GPOLAV--****X" EntityID="MANEUVER_AREAS" EntityTypeID="AXIS_ADVANCE" EntitySubTypeID="AXIS_ADVANCE_FRIENDLY_AIRBORNE_AVIATION">
-      <LegacyFunctionCode Name="2525C" Description="Substitute" Remarks="Maps to only friendly version of 2525D" DimensionOverride="G" TailOverride="--X">OLAV--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" Remarks="Maps to only friendly version of 2525D" DimensionOverride="G" TailOverride="--X">OLAV--</LegacyFunctionCode>
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">OLAA--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MANEUVER_AREAS_AXIS_ADVANCE_AXIS_ADVANCE_ATTACK_HELICOPTER_SYM" Label="G*GPOLAR--****X" EntityID="MANEUVER_AREAS" EntityTypeID="AXIS_ADVANCE" EntitySubTypeID="AXIS_ADVANCE_ATTACK_HELICOPTER">
@@ -4092,6 +4096,12 @@
     <LegacySymbol ID="AIRSPACE_CONTROL_POINTS_TACAN_SYM" Label="G*GPGPAT--****X" EntityID="AIRSPACE_CONTROL_POINTS" EntityTypeID="TACAN">
       <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" DimensionOverride="G" TailOverride="--X">GPAT--</LegacyFunctionCode>
     </LegacySymbol>
+    <LegacySymbol ID="AIRSPACE_CONTROL_POINTS_TACAN_2525B_SYM" Label="G*GPGPAT--****X" EntityID="AIRSPACE_CONTROL_POINTS" EntityTypeID="TACAN">
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="G" TailOverride="--X">GPAT--</LegacyFunctionCode>
+      <LegacyEntity ID="AIRSPACE_CONTROL_POINTS_TACAN_2525B_LE" Label="TACGRP.C2GM.GNL.PNT.ACTL.TCN" LabelAlias="Airspace Control Points : TACAN (2525B)" Graphic="G-G-GPAT--.svg">
+        <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="G" TailOverride="--X">GPAT--</LegacyFunctionCode>
+      </LegacyEntity>
+    </LegacySymbol>
     <LegacySymbol ID="AIRSPACE_CONTROL_POINTS_CAP_STATION_SYM" Label="G*GPGPAP--****X" EntityID="AIRSPACE_CONTROL_POINTS" EntityTypeID="CAP_STATION">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">GPAP--</LegacyFunctionCode>
     </LegacySymbol>
@@ -4101,17 +4111,47 @@
     <LegacySymbol ID="AIRSPACE_CONTROL_POINTS_ASW_HELO_FW_STATION_SYM" Label="G*GPGPAA--****X" EntityID="AIRSPACE_CONTROL_POINTS" EntityTypeID="ASW_HELO_FW_STATION">
       <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" DimensionOverride="G" TailOverride="--X">GPAA--</LegacyFunctionCode>
     </LegacySymbol>
+    <LegacySymbol ID="AIRSPACE_CONTROL_POINTS_ASW_HELO_FW_STATION_2525B_SYM" Label="G*GPGPAA--****X" EntityID="AIRSPACE_CONTROL_POINTS" EntityTypeID="ASW_HELO_FW_STATION">
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="G" TailOverride="--X">GPAA--</LegacyFunctionCode>
+      <LegacyEntity ID="AIRSPACE_CONTROL_POINTS_ASW_HELO_FW_STATION_2525B_LE" Label="TACGRP.C2GM.GNL.PNT.ACTL.ASBWF" LabelAlias="Airspace Control Points : ASW (Helo and F/W) Station (2525B)" Graphic="G-G-GPAA--.svg">
+        <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="G" TailOverride="--X">GPAA--</LegacyFunctionCode>
+      </LegacyEntity>
+    </LegacySymbol>
     <LegacySymbol ID="AIRSPACE_CONTROL_POINTS_STRIKE_INITIAL_POINT_SYM" Label="G*GPGPAS--****X" EntityID="AIRSPACE_CONTROL_POINTS" EntityTypeID="STRIKE_INITIAL_POINT">
       <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" DimensionOverride="G" TailOverride="--X">GPAS--</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="AIRSPACE_CONTROL_POINTS_REPLEMENSHMENT_STATION_SYM" Label="G*GPGPAL--****X" EntityID="AIRSPACE_CONTROL_POINTS" EntityTypeID="REPLEMENSHMENT_STATION">
+    <LegacySymbol ID="AIRSPACE_CONTROL_POINTS_STRIKE_INITIAL_POINT_2525B_SYM" Label="G*GPGPAS--****X" EntityID="AIRSPACE_CONTROL_POINTS" EntityTypeID="STRIKE_INITIAL_POINT">
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="G" TailOverride="--X">GPAS--</LegacyFunctionCode>
+      <LegacyEntity ID="AIRSPACE_CONTROL_POINTS_STRIKE_INITIAL_POINT_2525B_LE" Label="TACGRP.C2GM.GNL.PNT.ACTL.SKEIP" LabelAlias="Airspace Control Points : Strike Initial Point (2525B)" Graphic="G-G-GPAS--.svg">
+        <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="G" TailOverride="--X">GPAS--</LegacyFunctionCode>
+      </LegacyEntity>
+    </LegacySymbol>
+    <LegacySymbol ID="AIRSPACE_CONTROL_POINTS_REPLENISHMENT_STATION_SYM" Label="G*GPGPAL--****X" EntityID="AIRSPACE_CONTROL_POINTS" EntityTypeID="REPLENISHMENT_STATION">
       <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" DimensionOverride="G" TailOverride="--X">GPAL--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="AIRSPACE_CONTROL_POINTS_REPLENISHMENT_STATION_2525B_SYM" Label="G*GPGPAL--****X" EntityID="AIRSPACE_CONTROL_POINTS" EntityTypeID="REPLENISHMENT_STATION">
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="G" TailOverride="--X">GPAL--</LegacyFunctionCode>
+      <LegacyEntity ID="AIRSPACE_CONTROL_POINTS_REPLENISHMENT_STATION_2525B_LE" Label="TACGRP.C2GM.GNL.PNT.ACTL.RPH" LabelAlias="Airspace Control Points : Replenishment Station (2525B)" Graphic="G-G-GPAL--.svg">
+        <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="G" TailOverride="--X">GPAL--</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="AIRSPACE_CONTROL_POINTS_TANKING_SYM" Label="G*GPGPAK--****X" EntityID="AIRSPACE_CONTROL_POINTS" EntityTypeID="TANKING">
       <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" DimensionOverride="G" TailOverride="--X">GPAK--</LegacyFunctionCode>
     </LegacySymbol>
+    <LegacySymbol ID="AIRSPACE_CONTROL_POINTS_TANKING_2525B_SYM" Label="G*GPGPAK--****X" EntityID="AIRSPACE_CONTROL_POINTS" EntityTypeID="TANKING">
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="G" TailOverride="--X">GPAK--</LegacyFunctionCode>
+      <LegacyEntity ID="AIRSPACE_CONTROL_POINTS_TANKING_2525B_LE" Label="TACGRP.C2GM.GNL.PNT.ACTL.TAK" LabelAlias="Airspace Control Points : Tanking (2525B)" Graphic="G-G-GPAK--.svg">
+        <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="G" TailOverride="--X">GPAK--</LegacyFunctionCode>
+      </LegacyEntity>
+    </LegacySymbol>
     <LegacySymbol ID="AIRSPACE_CONTROL_POINTS_ANTISUBMARINE_WARFARE_ROTARY_WING_SYM" Label="G*GPGPAH--****X" EntityID="AIRSPACE_CONTROL_POINTS" EntityTypeID="ANTISUBMARINE_WARFARE_ROTARY_WING">
       <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" DimensionOverride="G" TailOverride="--X">GPAH--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="AIRSPACE_CONTROL_POINTS_ANTISUBMARINE_WARFARE_ROTARY_WING_2525B_SYM" Label="G*GPGPAH--****X" EntityID="AIRSPACE_CONTROL_POINTS" EntityTypeID="ANTISUBMARINE_WARFARE_ROTARY_WING">
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="G" TailOverride="--X">GPAH--</LegacyFunctionCode>
+      <LegacyEntity ID="AIRSPACE_CONTROL_POINTS_ANTISUBMARINE_WARFARE_ROTARY_WING_2525B_LE" Label="TACGRP.C2GM.GNL.PNT.ACTL.ASBWR" LabelAlias="Airspace Control Points : Antisubmarine Warfare- Rotary Wing (2525B)" Graphic="G-G-GPAH--.svg">
+        <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="G" TailOverride="--X">GPAH--</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="AIRSPACE_CONTROL_POINTS_SUCAP_FIXED_WING_SYM" Label="G*GPGPAB--****X" EntityID="AIRSPACE_CONTROL_POINTS" EntityTypeID="SUCAP_FIXED_WING">
       <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" DimensionOverride="G" TailOverride="--X">GPAB--</LegacyFunctionCode>
@@ -4128,8 +4168,20 @@
     <LegacySymbol ID="AIRSPACE_CONTROL_POINTS_TOMCAT_SYM" Label="G*GPGPAO--****X" EntityID="AIRSPACE_CONTROL_POINTS" EntityTypeID="TOMCAT">
       <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" DimensionOverride="G" TailOverride="--X">GPAO--</LegacyFunctionCode>
     </LegacySymbol>
+    <LegacySymbol ID="AIRSPACE_CONTROL_POINTS_TOMCAT_2525B_SYM" Label="G*GPGPAO--****X" EntityID="AIRSPACE_CONTROL_POINTS" EntityTypeID="TOMCAT">
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="G" TailOverride="--X">GPAO--</LegacyFunctionCode>
+      <LegacyEntity ID="AIRSPACE_CONTROL_POINTS_TOMCAT_2525B_LE" Label="TACGRP.C2GM.GNL.PNT.ACTL.TMC" LabelAlias="Airspace Control Points : Tomcat (2525B)" Graphic="G-G-GPAO--.svg">
+        <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="G" TailOverride="--X">GPAO--</LegacyFunctionCode>
+      </LegacyEntity>
+    </LegacySymbol>
     <LegacySymbol ID="AIRSPACE_CONTROL_POINTS_RESCUE_SYM" Label="G*GPGPAR--****X" EntityID="AIRSPACE_CONTROL_POINTS" EntityTypeID="RESCUE">
       <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" DimensionOverride="G" TailOverride="--X">GPAR--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="AIRSPACE_CONTROL_POINTS_RESCUE_2525B_SYM" Label="G*GPGPAR--****X" EntityID="AIRSPACE_CONTROL_POINTS" EntityTypeID="RESCUE">
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="G" TailOverride="--X">GPAR--</LegacyFunctionCode>
+      <LegacyEntity ID="AIRSPACE_CONTROL_POINTS_RESCUE_2525B_LE" Label="TACGRP.C2GM.GNL.PNT.ACTL.RSC" LabelAlias="Airspace Control Points : Rescue (2525B)" Graphic="G-G-GPAR--.svg">
+        <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="G" TailOverride="--X">GPAR--</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="AIRSPACE_CONTROL_POINTS_UAS_UA_SYM" Label="G*GPGPAF--****X" EntityID="AIRSPACE_CONTROL_POINTS" EntityTypeID="UAS_UA">
       <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" DimensionOverride="G" TailOverride="--X">GPAF--</LegacyFunctionCode>
@@ -4277,6 +4329,9 @@
 	    <LegacyEntity ID="MARITIME_CONTROL_POINTS_DATA_LINK_REFERENCE_POINT_LE" Label="TACGRP.C2GM.GNL.PNT.REFPNT.DLRP" Graphic="G-G-GPRD--.svg">
 		    <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" DimensionOverride="G" TailOverride="--X">GPRD--</LegacyFunctionCode>
 	    </LegacyEntity>
+      <LegacyEntity ID="MARITIME_CONTROL_POINTS_DATA_LINK_REFERENCE_POINT_BC2_LE" Label="TACGRP.C2GM.GNL.PNT.REFPNT.DLRP" LabelAlias="Maritime Points : Data Link Reference Point (2525B)" Graphic="G-G-GPRD--_B.svg">
+        <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="G" TailOverride="--X">GPRD--</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MARITIME_CONTROL_POINTS_CORRIDOR_TAB_POINT_SYM" Label="G*GPGPRC--****X" EntityID="MARITIME_CONTROL_POINTS" EntityTypeID="CORRIDOR_TAB_POINT">
       <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" DimensionOverride="G" TailOverride="--X">GPRC--</LegacyFunctionCode>
@@ -4364,9 +4419,12 @@
     </LegacySymbol>
     <LegacySymbol ID="MARITIME_CONTROL_POINTS_PIM_ROUTE_SYM" Label="G*GPGPOP--****X" EntityID="MARITIME_CONTROL_POINTS" EntityTypeID="PIM_ROUTE">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">GPOP--</LegacyFunctionCode>
+      <LegacyEntity ID="MARITIME_CONTROL_POINTS_PIM_ROUTE_LE" Label="TACGRP.C2GM.GNL.PNT.RTE.PIM" IsAlignable="true" Graphic="G-G-GPOP--.svg">
+        <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">GPOP--</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
-    <LegacySymbol ID="MARITIME_CONTROL_POINTS_POINT_R_ROUTE_SYM" Label="G*GPGPOR--****X" EntityID="MARITIME_CONTROL_POINTS" EntityTypeID="POINT_R_ROUTE">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">GPOR--</LegacyFunctionCode>
+    <LegacySymbol ID="MARITIME_CONTROL_POINTS_POINT_R_ROUTE_SYM" Label="G*GPGPOR--****X" EntityID="MARITIME_CONTROL_POINTS" EntityTypeID="PIM_ROUTE">
+      <LegacyFunctionCode Name="2525C" LabelAlias="Maritime Points : Point R Route" DimensionOverride="G" TailOverride="--X">GPOR--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MARITIME_CONTROL_POINTS_RENDEZVOUS_ROUTE_SYM" Label="G*GPGPOZ--****X" EntityID="MARITIME_CONTROL_POINTS" EntityTypeID="RENDEZVOUS_ROUTE">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">GPOZ--</LegacyFunctionCode>
@@ -4397,7 +4455,7 @@
     </LegacySymbol>
     <LegacySymbol ID="MARITIME_CONTROL_POINTS_BOTTOM_RETURN_NOMBO_SYM" Label="G*OPSBN---****X" EntityID="MARITIME_CONTROL_POINTS" EntityTypeID="BOTTOM_RETURN_NOMBO">
       <LegacyFunctionCode Name="2525C" DimensionOverride="O" TailOverride="--X">SBN---</LegacyFunctionCode>
-      <LegacyFunctionCode Name="2525C" Description="Repeat" Remarks="Repeat of G*OPSBN---****X" DimensionOverride="O" TailOverride="--X">SB----</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" Remarks="Repeat of G*OPSBN---****X" DimensionOverride="O" TailOverride="--X">SB----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MARITIME_CONTROL_POINTS_BOTTOM_RETURN_NOMBO_INSTALLATION_MANMADE_SYM" Label="G*OPSBM---****X" EntityID="MARITIME_CONTROL_POINTS" EntityTypeID="BOTTOM_RETURN_NOMBO_INSTALLATION_MANMADE">
       <LegacyFunctionCode Name="2525C" DimensionOverride="O" TailOverride="--X">SBM---</LegacyFunctionCode>
@@ -4409,7 +4467,8 @@
       <LegacyFunctionCode Name="2525C" DimensionOverride="O" TailOverride="--X">SS----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MARITIME_CONTROL_POINTS_BOTTOM_RETURN_NON_MILCO_WRECK_DANGEROUS_SYM" Label="G*OPSBX---****X" EntityID="MARITIME_CONTROL_POINTS" EntityTypeID="BOTTOM_RETURN_NON_MILCO_WRECK_DANGEROUS">
-      <LegacyFunctionCode Name="2525C" DimensionOverride="O" TailOverride="--X">SBX---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" DimensionOverride="O" TailOverride="--X">SBX---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" LabelAlias="Maritime Points : Bottom Return/Non-MILCO-Wreck-Dangerous" DimensionOverride="O" TailOverride="--X">SBWD--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MARITIME_CONTROL_POINTS_BOTTOM_RETURN_NON_MILCO_WRECK_NON_DANGEROUS_SYM" Label="G*OPSBW---****X" EntityID="MARITIME_CONTROL_POINTS" EntityTypeID="BOTTOM_RETURN_NON_MILCO_WRECK_NON_DANGEROUS">
       <LegacyFunctionCode Name="2525C" DimensionOverride="O" TailOverride="--X">SBW---</LegacyFunctionCode>
@@ -4525,11 +4584,26 @@
     <LegacySymbol ID="FIRES_AREAS_ARTILLERY_TARGET_INTELLIGENCE_ZONE_ATI_RECTANGULAR_SYM" Label="G*FPAZIR--****X" EntityID="FIRES_AREAS" EntityTypeID="ARTILLERY_TARGET_INTELLIGENCE_ZONE" EntitySubTypeID="ATI_RECTANGULAR">
       <LegacyFunctionCode Name="2525C" DimensionOverride="F" TailOverride="--X">AZIR--</LegacyFunctionCode>
     </LegacySymbol>
+    <LegacySymbol ID="FIRES_AREAS_ARTILLERY_TARGET_INTELLIGENCE_ZONE_ATI_CIRCULAR_SYM" Label="G*FPAZIC--****X" EntityID="FIRES_AREAS" EntityTypeID="ARTILLERY_TARGET_INTELLIGENCE_ZONE" EntitySubTypeID="ATI_CIRCULAR">
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="F" TailOverride="--X">AZIC--</LegacyFunctionCode>
+    </LegacySymbol>
     <LegacySymbol ID="FIRES_AREAS_CALL_FOR_FIRE_AREA_CFFZ_IRREGULAR_SYM" Label="G*FPAZXI--****X" EntityID="FIRES_AREAS" EntityTypeID="CALL_FOR_FIRE_AREA" EntitySubTypeID="CFFZ_IRREGULAR">
       <LegacyFunctionCode Name="2525C" DimensionOverride="F" TailOverride="--X">AZXI--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_AREAS_CALL_FOR_FIRE_AREA_CFFZ_RECTANGULAR_SYM" Label="G*FPAZXR--****X" EntityID="FIRES_AREAS" EntityTypeID="CALL_FOR_FIRE_AREA" EntitySubTypeID="CFFZ_RECTANGULAR">
       <LegacyFunctionCode Name="2525C" DimensionOverride="F" TailOverride="--X">AZXR--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="FIRES_AREAS_CALL_FOR_FIRE_AREA_CFFZ_CIRCULAR_SYM" Label="G*FPAZXC--****X" EntityID="FIRES_AREAS" EntityTypeID="CALL_FOR_FIRE_AREA" EntitySubTypeID="CFFZ_CIRCULAR">
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="F" TailOverride="--X">AZXC--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="FIRES_AREAS_SENSOR_ZONE_IRREGULAR_SYM" Label="G*FPAZSI--****X" EntityID="FIRES_AREAS" EntityTypeID="SENSOR_ZONE" EntitySubTypeID="SENSOR_ZONE_IRREGULAR">
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="F" TailOverride="--X">AZSI--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="FIRES_AREAS_SENSOR_ZONE_RECTANGULAR_SYM" Label="G*FPAZSR--****X" EntityID="FIRES_AREAS" EntityTypeID="SENSOR_ZONE" EntitySubTypeID="SENSOR_ZONE_RECTANGULAR">
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="F" TailOverride="--X">AZSR--</LegacyFunctionCode>
+    </LegacySymbol>
+    <LegacySymbol ID="FIRES_AREAS_SENSOR_ZONE_CIRCULAR_SYM" Label="G*FPAZSC--****X" EntityID="FIRES_AREAS" EntityTypeID="SENSOR_ZONE" EntitySubTypeID="SENSOR_ZONE_CIRCULAR">
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="F" TailOverride="--X">AZSC--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_AREAS_CENSOR_ZONE_CENSOR_IRREGULAR_SYM" Label="G*FPAZCI--****X" EntityID="FIRES_AREAS" EntityTypeID="CENSOR_ZONE" EntitySubTypeID="CENSOR_IRREGULAR">
       <LegacyFunctionCode Name="2525C" DimensionOverride="F" TailOverride="--X">AZCI--</LegacyFunctionCode>
@@ -4537,20 +4611,29 @@
     <LegacySymbol ID="FIRES_AREAS_CENSOR_ZONE_CENSOR_RECTANGULAR_SYM" Label="G*FPAZCR--****X" EntityID="FIRES_AREAS" EntityTypeID="CENSOR_ZONE" EntitySubTypeID="CENSOR_RECTANGULAR">
       <LegacyFunctionCode Name="2525C" DimensionOverride="F" TailOverride="--X">AZCR--</LegacyFunctionCode>
     </LegacySymbol>
+    <LegacySymbol ID="FIRES_AREAS_CENSOR_ZONE_CENSOR_CIRCULAR_SYM" Label="G*FPAZCC--****X" EntityID="FIRES_AREAS" EntityTypeID="CENSOR_ZONE" EntitySubTypeID="CENSOR_CIRCULAR">
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="F" TailOverride="--X">AZCC--</LegacyFunctionCode>
+    </LegacySymbol>
     <LegacySymbol ID="FIRES_AREAS_CRITICAL_FRIENDLY_ZONE_CFZ_IRREGULAR_SYM" Label="G*FPAZFI--****X" EntityID="FIRES_AREAS" EntityTypeID="CRITICAL_FRIENDLY_ZONE" EntitySubTypeID="CFZ_IRREGULAR">
       <LegacyFunctionCode Name="2525C" DimensionOverride="F" TailOverride="--X">AZFI--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_AREAS_CRITICAL_FRIENDLY_ZONE_CFZ_RECTANGULAR_SYM" Label="G*FPAZFR--****X" EntityID="FIRES_AREAS" EntityTypeID="CRITICAL_FRIENDLY_ZONE" EntitySubTypeID="CFZ_RECTANGULAR">
       <LegacyFunctionCode Name="2525C" DimensionOverride="F" TailOverride="--X">AZFR--</LegacyFunctionCode>
     </LegacySymbol>
+    <LegacySymbol ID="FIRES_AREAS_CRITICAL_FRIENDLY_ZONE_CFZ_CIRCULAR_SYM" Label="G*FPAZFC--****X" EntityID="FIRES_AREAS" EntityTypeID="CRITICAL_FRIENDLY_ZONE" EntitySubTypeID="CFZ_CIRCULAR">
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="F" TailOverride="--X">AZFC--</LegacyFunctionCode>
+    </LegacySymbol>
     <LegacySymbol ID="FIRES_AREAS_DEAD_SPACE_AREA_DA_IRREGULAR_SYM" Label="G*FPACDI--****X" EntityID="FIRES_AREAS" EntityTypeID="DEAD_SPACE_AREA" EntitySubTypeID="DA_IRREGULAR">
       <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" DimensionOverride="F" TailOverride="--X">ACDI--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" AmplifierOverride="F" TailOverride="--X">AZDI--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_AREAS_DEAD_SPACE_AREA_DA_RECTANGULAR_SYM" Label="G*FPACDR--****X" EntityID="FIRES_AREAS" EntityTypeID="DEAD_SPACE_AREA" EntitySubTypeID="DA_RECTANGULAR">
       <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" DimensionOverride="F" TailOverride="--X">ACDR--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" AmplifierOverride="F" TailOverride="--X">AZDR--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_AREAS_DEAD_SPACE_AREA_DA_CIRCULAR_SYM" Label="G*FPACDC--****X" EntityID="FIRES_AREAS" EntityTypeID="DEAD_SPACE_AREA" EntitySubTypeID="DA_CIRCULAR">
       <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" DimensionOverride="F" TailOverride="--X">ACDC--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" AmplifierOverride="F" TailOverride="--X">AZDC--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_AREAS_SENSOR_ZONE_SENSOR_ZONE_IRREGULAR_SYM" Label="G*FPACEI--****X" EntityID="FIRES_AREAS" EntityTypeID="SENSOR_ZONE" EntitySubTypeID="SENSOR_ZONE_IRREGULAR">
       <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" DimensionOverride="F" TailOverride="--X">ACEI--</LegacyFunctionCode>
@@ -4563,30 +4646,39 @@
     </LegacySymbol>
     <LegacySymbol ID="FIRES_AREAS_TARGET_BUILD_UP_AREA_TBA_IRREGULAR_SYM" Label="G*FPACBI--****X" EntityID="FIRES_AREAS" EntityTypeID="TARGET_BUILD_UP_AREA" EntitySubTypeID="TBA_IRREGULAR">
       <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" DimensionOverride="F" TailOverride="--X">ACBI--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="F" TailOverride="--X">AZBI--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_AREAS_TARGET_BUILD_UP_AREA_TBA_RECTANGULAR_SYM" Label="G*FPACBR--****X" EntityID="FIRES_AREAS" EntityTypeID="TARGET_BUILD_UP_AREA" EntitySubTypeID="TBA_RECTANGULAR">
       <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" DimensionOverride="F" TailOverride="--X">ACBR--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="F" TailOverride="--X">AZBR--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_AREAS_TARGET_BUILD_UP_AREA_TBA_CIRCULAR_SYM" Label="G*FPACBC--****X" EntityID="FIRES_AREAS" EntityTypeID="TARGET_BUILD_UP_AREA" EntitySubTypeID="TBA_CIRCULAR">
       <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" DimensionOverride="F" TailOverride="--X">ACBC--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="F" TailOverride="--X">AZBC--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_AREAS_TARGET_VALUE_AREA_TVAR_IRREGULAR_SYM" Label="G*FPACVI--****X" EntityID="FIRES_AREAS" EntityTypeID="TARGET_VALUE_AREA" EntitySubTypeID="TVAR_IRREGULAR">
       <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" DimensionOverride="F" TailOverride="--X">ACVI--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="F" TailOverride="--X">AZVI--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_AREAS_TARGET_VALUE_AREA_TVAR_RECTANGULAR_SYM" Label="G*FPACVR--****X" EntityID="FIRES_AREAS" EntityTypeID="TARGET_VALUE_AREA" EntitySubTypeID="TVAR_RECTANGULAR">
       <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" DimensionOverride="F" TailOverride="--X">ACVR--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="F" TailOverride="--X">AZVR--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_AREAS_TARGET_VALUE_AREA_TVAR_CIRCULAR_SYM" Label="G*FPACVC--****X" EntityID="FIRES_AREAS" EntityTypeID="TARGET_VALUE_AREA" EntitySubTypeID="TVAR_CIRCULAR">
       <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" DimensionOverride="F" TailOverride="--X">ACVC--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="F" TailOverride="--X">AZVC--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_AREAS_ZONE_OF_RESPONSIBILITY_ZOR_IRREGULAR_SYM" Label="G*FPACZI--****X" EntityID="FIRES_AREAS" EntityTypeID="ZONE_OF_RESPONSIBILITY" EntitySubTypeID="ZOR_IRREGULAR">
       <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" DimensionOverride="F" TailOverride="--X">ACZI--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="F" TailOverride="--X">AZZI--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_AREAS_ZONE_OF_RESPONSIBILITY_ZOR_RECTANGULAR_SYM" Label="G*FPACZR--****X" EntityID="FIRES_AREAS" EntityTypeID="ZONE_OF_RESPONSIBILITY" EntitySubTypeID="ZOR_RECTANGULAR">
       <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" DimensionOverride="F" TailOverride="--X">ACZR--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="F" TailOverride="--X">AZZR--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_AREAS_ZONE_OF_RESPONSIBILITY_ZOR_CIRCULAR_SYM" Label="G*FPACZC--****X" EntityID="FIRES_AREAS" EntityTypeID="ZONE_OF_RESPONSIBILITY" EntitySubTypeID="ZOR_CIRCULAR">
       <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" DimensionOverride="F" TailOverride="--X">ACZC--</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="F" TailOverride="--X">AZZC--</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="FIRES_AREAS_TERMINALLY_GUIDED_MUNITION_FOOTPRINT_TGMF_SYM" Label="G*FPACT---****X" EntityID="FIRES_AREAS" EntityTypeID="TERMINALLY_GUIDED_MUNITION_FOOTPRINT_TGMF">
       <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" DimensionOverride="F" TailOverride="--X">ACT---</LegacyFunctionCode>
@@ -4639,7 +4731,7 @@
     <LegacySymbol ID="FIRE_LINES_NO_FIRE_LINE_SYM" Label="G*FPLCN---****X" EntityID="FIRE_LINES" EntityTypeID="NO_FIRE_LINE">
       <LegacyFunctionCode Name="2525C" DimensionOverride="F" TailOverride="--X">LCN---</LegacyFunctionCode>
     </LegacySymbol>
-    <LegacySymbol ID="FIRE_LINES_BATTLEFIELD_COORDINATION_LINE_SYM" Label="G*FPLCR---****X" EntityID="FIRE_LINES" EntityTypeID="BATTLEFIELD_COORDINATION_LINE">
+    <LegacySymbol ID="FIRE_LINES_BATTLEFIELD_COORDINATION_LINE_SYM" Label="G*FPLCR---****X" EntityID="FIRE_LINES" EntityTypeID="RESTRICTIVE_FIRE_LINE">
       <LegacyFunctionCode Name="2525C" DimensionOverride="F" TailOverride="--X">LCR---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="FIRE_LINES_MUNITION_FLIGHT_PATH_SYM" Label="G*FPLCM---****X" EntityID="FIRE_LINES" EntityTypeID="MUNITION_FLIGHT_PATH">
@@ -4679,7 +4771,7 @@
       <LegacyFunctionCode Name="2525C" DimensionOverride="M" TailOverride="--X">BDI---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="PROTECTION_AREAS_MINEFIELD_MINEFIELD_COMPLETED_SYM" Label="G*MPOFS---****X" EntityID="PROTECTION_AREAS" EntityTypeID="MINEFIELD" EntitySubTypeID="MINEFIELD_COMPLETED">
-      <LegacyFunctionCode Name="2525C" Description="Substitute" DimensionOverride="M" TailOverride="--X">OFS---</LegacyFunctionCode>
+      <LegacyFunctionCode Name="2525C" DimensionOverride="M" TailOverride="--X">OFS---</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="PROTECTION_AREAS_MINEFIELD_MINEFIELD_DUMMY_SYM" Label="G*GPPN----****X" EntityID="PROTECTION_AREAS" EntityTypeID="MINEFIELD" EntitySubTypeID="MINEFIELD_DUMMY">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">PN----</LegacyFunctionCode>
@@ -4734,12 +4826,21 @@
     </LegacySymbol>
     <LegacySymbol ID="PROTECTION_AREAS_BIOLOGICAL_CONTAMINATED_AREA_SYM" Label="G*MPNB----****X" EntityID="PROTECTION_AREAS" EntityTypeID="BIOLOGICAL_CONTAMINATED_AREA">
       <LegacyFunctionCode Name="2525C"  DimensionOverride="M" TailOverride="--X">NB----</LegacyFunctionCode>
+      <LegacyEntity ID="PROTECTION_AREAS_BIOLOGICAL_CONTAMINATED_AREA_LE" Label="TACGRP.MOBSU.CBRN.BIOCA" GeometryType="AREA" IsAlignable="true" Graphic="G-M-NB----.svg">
+        <LegacyFunctionCode Name="2525C"  DimensionOverride="M" TailOverride="--X">NB----</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="PROTECTION_AREAS_CHEMICAL_CONTAMINATED_AREA_SYM" Label="G*MPNC----****X" EntityID="PROTECTION_AREAS" EntityTypeID="CHEMICAL_CONTAMINATED_AREA">
       <LegacyFunctionCode Name="2525C" DimensionOverride="M" TailOverride="--X">NC----</LegacyFunctionCode>
+      <LegacyEntity ID="PROTECTION_AREAS_CHEMICAL_CONTAMINATED_AREA_LE" Label="TACGRP.MOBSU.CBRN.CMLCA" GeometryType="AREA" IsAlignable="true" Graphic="G-M-NC----.svg">
+        <LegacyFunctionCode Name="2525C"  DimensionOverride="M" TailOverride="--X">NC----</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="PROTECTION_AREAS_NUCLEAR_CONTAMINATED_AREA_SYM" Label="G*MPNR----****X" EntityID="PROTECTION_AREAS" EntityTypeID="NUCLEAR_CONTAMINATED_AREA">
       <LegacyFunctionCode Name="2525C" DimensionOverride="M" TailOverride="--X">NR----</LegacyFunctionCode>
+      <LegacyEntity ID="PROTECTION_AREAS_NUCLEAR_CONTAMINATED_AREA_LE" Label="TACGRP.MOBSU.CBRN.RADA" GeometryType="AREA" IsAlignable="true" Graphic="G-M-NR----.svg">
+        <LegacyFunctionCode Name="2525C" DimensionOverride="M" TailOverride="--X">NR----</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="PROTECTION_AREAS_MINIMUM_SAFE_DISTANCE_ZONE_SYM" Label="G*MPNM----****X" EntityID="PROTECTION_AREAS" EntityTypeID="MINIMUM_SAFE_DISTANCE_ZONE">
       <LegacyFunctionCode Name="2525C" DimensionOverride="M" TailOverride="--X">NM----</LegacyFunctionCode>
@@ -5118,6 +5219,9 @@
     </LegacySymbol>
     <LegacySymbol ID="MANEUVER_AREAS_AREA_AREA_FRIENDLY_SYM" Label="G*GPGAG---****X" Remarks="Retired">
       <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">GAG---</LegacyFunctionCode>
+      <LegacyEntity ID="MANEUVER_AREAS_AREA_AREA_FRIENDLY_SYM_LE" Label="TACGRP.C2GM.GNL.ARS.GENARA" LabelAlias="Maneuver Areas : General Area" GeometryType="AREA" Graphic="G-G-GAG---.svg">
+        <LegacyFunctionCode Name="2525C" DimensionOverride="G" TailOverride="--X">GAG---</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
   </LegacySymbols>
 </SymbolSet>
