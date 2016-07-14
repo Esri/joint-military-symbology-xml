@@ -2283,7 +2283,7 @@
                 <DigitTwo>2</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="CFZ_CIRCULAR" Label="Circular" Graphic="25241403.svg" GeometryType="AREA">
+            <EntitySubType ID="CFZ_CIRCULAR" Label="Circular" Graphic="25241403.svg" GeometryType="AREA" IsAlignable="true">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>3</DigitTwo>
@@ -4329,7 +4329,7 @@
 	    <LegacyEntity ID="MARITIME_CONTROL_POINTS_DATA_LINK_REFERENCE_POINT_LE" Label="TACGRP.C2GM.GNL.PNT.REFPNT.DLRP" Graphic="G-G-GPRD--.svg">
 		    <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" DimensionOverride="G" TailOverride="--X">GPRD--</LegacyFunctionCode>
 	    </LegacyEntity>
-      <LegacyEntity ID="MARITIME_CONTROL_POINTS_DATA_LINK_REFERENCE_POINT_BC2_LE" Label="TACGRP.C2GM.GNL.PNT.REFPNT.DLRP" LabelAlias="Maritime Points : Data Link Reference Point (2525B)" Graphic="G-G-GPRD--_B.svg">
+      <LegacyEntity ID="MARITIME_CONTROL_POINTS_DATA_LINK_REFERENCE_POINT_BC2_LE" Label="TACGRP.C2GM.GNL.PNT.REFPNT.DLRP" LabelAlias="Maritime Points : Data Link Reference Point (2525B)"  Graphic="G-G-GPRD--_B.svg">
         <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" DimensionOverride="G" TailOverride="--X">GPRD--</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>

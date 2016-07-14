@@ -1096,7 +1096,10 @@
     </LegacySymbol>
     <LegacySymbol ID="INCIDENT_CRIMINAL_ACTIVITY_INCIDENT_ARSON_SYM" Label="O*VPA-----*****" EntityID="INCIDENT" EntityTypeID="CRIMINAL_ACTIVITY_INCIDENT" EntitySubTypeID="ARSON">
       <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" SchemaOverride="O" DimensionOverride="V">A-----</LegacyFunctionCode>
-      <LegacyEntity ID="INCIDENT_CRIMINAL_ACTIVITY_INCIDENT_ARSON_LE" Label="MOOTW.VIOATY.ASN" Graphic="O-V-A-----.svg">
+    </LegacySymbol>
+    <LegacySymbol ID="INCIDENT_CRIMINAL_ACTIVITY_INCIDENT_ARSON_B2_SYM" Label="O*VPA-----*****">
+      <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" SchemaOverride="O" DimensionOverride="V">A-----</LegacyFunctionCode>
+      <LegacyEntity ID="INCIDENT_CRIMINAL_ACTIVITY_INCIDENT_ARSON_B2_LE" Label="MOOTW.VIOATY.ASN" LabelAlias="Incident : Criminal Activity Incident : Arson (2525B)" Graphic="O-V-A-----.svg">
         <LegacyFunctionCode Name="2525C" LimitUseTo="2525Bc2" SchemaOverride="O" DimensionOverride="V">A-----</LegacyFunctionCode>
       </LegacyEntity>
     </LegacySymbol>

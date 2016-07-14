@@ -180,11 +180,14 @@
     </Modifier>
   </SectorTwoModifiers>
   <LegacySymbols>
-    <LegacySymbol ID="MISSILE_SYM" Label="S*APWM----*****" EntityID="MISSILE">
-      <LegacyFunctionCode Name="2525C">WM----</LegacyFunctionCode>
+    <LegacySymbol ID="MISSILE_SYM" Label="S*APW-----*****" EntityID="MISSILE">
+      <LegacyFunctionCode Name="2525C">W-----</LegacyFunctionCode>
     </LegacySymbol>
     <LegacySymbol ID="MISSILE_LAUNCHED_MOD_SYM" Label="S*APWM----*****" EntityID="MISSILE" ModifierTwoID="LAUNCHED_MOD">
       <LegacyFunctionCode Name="2525C">WM----</LegacyFunctionCode>
+      <LegacyEntity ID="MISSILE_LAUNCHED_MOD_LE" Label="WAR.AIRTRK.WPN.MSLIF" Graphic="S-A-WM----.svg">
+        <LegacyFunctionCode Name="2525C">WM----</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="MISSILE_SURFACE_MOD_LAUNCHED_MOD_SYM" Label="S*APWMS---*****" EntityID="MISSILE" ModifierOneID="SURFACE_MOD" ModifierTwoID="LAUNCHED_MOD">
       <LegacyFunctionCode Name="2525C">WMS---</LegacyFunctionCode>

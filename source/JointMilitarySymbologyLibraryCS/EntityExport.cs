@@ -532,7 +532,7 @@ namespace JointMilitarySymbologyLibrary
             // Now build the string
 
             result = ss.Label.Replace(',', '-');
-            result = result + ";" + name;
+            result = result + ";" + name.Replace(" : ", ";");
 
             // If there is a standard identity group, add it
 

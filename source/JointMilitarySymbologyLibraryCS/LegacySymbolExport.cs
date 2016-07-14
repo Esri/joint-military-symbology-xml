@@ -248,7 +248,7 @@ namespace JointMilitarySymbologyLibrary
 
             result = _entityExport.NameIt(null, ss, legacySymbol, legacyEntity, functionCode); //legacyEntity.Label;
             result = result + "," + sidcKey;
-            result = result + "," + sidcKey;
+            result = result + "," + _configHelper.MapKey(functionCode.LimitUseTo, sidcKey);
             result = result + ",";
             result = result + ",";
             result = result + ",";

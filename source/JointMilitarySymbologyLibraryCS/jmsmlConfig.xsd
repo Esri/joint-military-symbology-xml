@@ -106,6 +106,13 @@
     <xs:attribute name="Description" type="xs:token" use="optional" default=""/>
   </xs:attributeGroup>
 
+  <xs:attributeGroup name="KeyMapAttributeGroup">
+    <xs:attribute name="ID" type="xs:ID" use="required"/>
+    <xs:attribute name="Standard" type="xs:token" use="optional" default=""/>
+    <xs:attribute name="Key" type="xs:token" use="required"/>
+    <xs:attribute name="Description" type="xs:token" use="optional" default=""/>
+  </xs:attributeGroup>
+
   <xs:attributeGroup name="GraphicFolderAttributeGroup">
     <xs:attribute name="Name" type="xs:token" use="required"/>
     <xs:attribute name="Frames" type="xs:IDREFS" use="optional" default="false"/>
@@ -201,6 +208,21 @@
                         <xs:simpleContent>
                           <xs:extension base="xs:token">
                             <xs:attributeGroup ref="AmplifierValueAttributeGroup"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="KeyMaps" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="KeyMap" minOccurs="1" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:token">
+                            <xs:attributeGroup ref="KeyMapAttributeGroup"/>
                           </xs:extension>
                         </xs:simpleContent>
                       </xs:complexType>
