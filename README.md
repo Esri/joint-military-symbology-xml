@@ -11,7 +11,7 @@ In providing this schema, files of instance data, and sample C# code to navigate
 
 **Repo Owner: Andy "Dr. MOLE" Bouffard ([abouffard](https://github.com/abouffard))**
 
-**Co-Repo Owners: "Master Symbologists" Joe Bayles ([joebayles](https://github.com/joebayles)) and Daniel Barnes ([Dbarnes1](https://github.com/Dbarnes1))**
+**Co-Secondary Repo Owners: "Master Symbologists" Joe Bayles ([joebayles](https://github.com/joebayles)) and Daniel Barnes ([Dbarnes1](https://github.com/Dbarnes1))**
 
 ![Image of Joint Military Symbology XML]( ScreenShot.JPG )
 
