@@ -533,5 +533,26 @@ namespace JointMilitarySymbologyLibrary
 
             return isSpecial;
         }
+
+        public string MapKey(string standard, string key)
+        {
+            string result = key;
+            //if (key == "G-G-GLC---")
+            //    logger.Info("Here");
+
+            if (_etlConfig.KeyMaps != null)
+            {
+                foreach (JMSMLConfigETLConfigKeyMap keyMap in _etlConfig.KeyMaps)
+                {
+                    if (standard == keyMap.Standard && key == keyMap.Key)
+                    {
+                        result = keyMap.Value;
+                        break;
+                    }
+                }
+            }
+
+            return result;
+        }
     }
 }

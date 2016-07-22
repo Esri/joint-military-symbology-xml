@@ -9,6 +9,10 @@ The purpose of defining this schema and populating its associated instance data 
 
 In providing this schema, files of instance data, and sample C# code to navigate same, it is hoped that future defense and intelligence systems will be engineered to take advantage of this technology and, in so doing, accelerate the delivery of new military symbology, reflected in updates to these standards, to warfighters.
 
+**Repo Owner: Andy "Dr. MOLE" Bouffard ([abouffard](https://github.com/abouffard))**
+
+**Co-Secondary Repo Owners: "Master Symbologists" Joe Bayles ([joebayles](https://github.com/joebayles)) and Daniel Barnes ([Dbarnes1](https://github.com/Dbarnes1))**
+
 ![Image of Joint Military Symbology XML]( ScreenShot.JPG )
 
 ## Features

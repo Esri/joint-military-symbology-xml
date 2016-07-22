@@ -398,6 +398,9 @@
     </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_ANTI_AIRCRAFT_FIRE_CONTROL_MOD_SYM" Label="I*GPSRAA----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="ANTI_AIRCRAFT_FIRE_CONTROL_MOD">
       <LegacyFunctionCode Name="2525C">SRAA--</LegacyFunctionCode>
+      <LegacyEntity ID="SIGNAL_INTERCEPT_RADAR_ANTI_AIRCRAFT_FIRE_CONTROL_MOD_LE" Label="SIGINT.GRDTRK.SIGINC.RAD.AA/C" Graphic="I-G-SRAA--.svg">
+        <LegacyFunctionCode Name="2525C">SRAA--</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_BATTLEFIELD_SURVEILLANCE_MOD_SYM" Label="I*GPSRB-----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="BATTLEFIELD_SURVEILLANCE_MOD">
       <LegacyFunctionCode Name="2525C">SRB---</LegacyFunctionCode>

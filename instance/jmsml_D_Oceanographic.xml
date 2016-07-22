@@ -300,7 +300,7 @@
             <DigitTwo>1</DigitTwo>
           </EntityTypeCode>
           <EntitySubTypes>
-            <EntitySubType ID="SOUNDINGS" Label="Soundings" Graphic="46120101.svg">
+            <EntitySubType ID="SOUNDINGS" Label="Soundings" Graphic="46120101.svg" IsAlignable="true">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>1</DigitTwo>
@@ -1349,6 +1349,9 @@
     </LegacySymbol>
     <LegacySymbol ID="ICE_SYSTEMS_DYNAMIC_PROCESSES_ICE_DRIFT_DIRECTION_SYM" Label="WO-DIDID---L---" EntityID="ICE_SYSTEMS" EntityTypeID="DYNAMIC_PROCESSES" EntitySubTypeID="ICE_DRIFT_DIRECTION">
       <LegacyFunctionCode Name="2525C" StandardIdentityOverride="O" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">IDID--</LegacyFunctionCode>
+      <LegacyEntity ID="ICE_SYSTEMS_DYNAMIC_PROCESSES_ICE_DRIFT_DIRECTION_LE" Label="METOC.OCA.ISYS.DYNPRO.ID" GeometryType="LINE" Graphic="WO-DIDID--.svg">
+        <LegacyFunctionCode Name="2525C" StandardIdentityOverride="O" DimensionOverride="-" StatusOverride="D" HQTFFDOverride="-" AmplifierOverride="L">IDID--</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="ICE_SYSTEMS_SEA_ICE_SYM" Label="WOS-II----P----" EntityID="ICE_SYSTEMS" EntityTypeID="SEA_ICE">
       <LegacyFunctionCode Name="2525C" StandardIdentityOverride="O" DimensionOverride="S" StatusOverride="-" HQTFFDOverride="P" AmplifierOverride="-">II----</LegacyFunctionCode>

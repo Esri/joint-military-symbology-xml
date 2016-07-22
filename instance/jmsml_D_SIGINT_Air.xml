@@ -372,11 +372,29 @@
     </Modifier>
   </SectorOneModifiers>
   <LegacySymbols>
+    <LegacySymbol ID="SIGNAL_INTERCEPT_COMMUNICATIONS_SYM" Label="I*APSCC-----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="COMMUNICATIONS">
+      <LegacyFunctionCode Name="2525C" DimensionOverride="A">SCC---</LegacyFunctionCode>
+      <LegacyEntity ID="SIGNAL_INTERCEPT_COMMUNICATIONS_LE" Label="SIGINT.AIRTRK.SIGINC.COMM.CELL" Graphic="I-A-SCC---.svg">
+        <LegacyFunctionCode Name="2525C" DimensionOverride="A">SCC---</LegacyFunctionCode>
+      </LegacyEntity>
+    </LegacySymbol>
+    <LegacySymbol ID="SIGNAL_INTERCEPT_COMMUNICATIONS_POINT_POINT_LOS_MOD_SYM" Label="I*APSCP-----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="COMMUNICATIONS" ModifierOneID="POINT_POINT_LOS_MOD">
+      <LegacyFunctionCode Name="2525C" DimensionOverride="A">SCP---</LegacyFunctionCode>
+      <LegacyEntity ID="SIGNAL_INTERCEPT_COMMUNICATIONS_POINT_POINT_LOS_MOD_LE" Label="SIGINT.AIRTRK.SIGINC.COMM.PTPLOS" Graphic="I-A-SCP---.svg">
+        <LegacyFunctionCode Name="2525C" DimensionOverride="A">SCP---</LegacyFunctionCode>
+      </LegacyEntity>
+    </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_COMMUNICATIONS_OMNI_LOS_SYM" Label="I*APSCO-----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="COMMUNICATIONS" ModifierOneID="OMNI_LOS_MOD">
       <LegacyFunctionCode Name="2525C" DimensionOverride="A">SCO---</LegacyFunctionCode>
+      <LegacyEntity ID="SIGNAL_INTERCEPT_COMMUNICATIONS_OMNI_LOS_LE" Label="SIGINT.AIRTRK.SIGINC.COMM.OLOS" Graphic="I-A-SCO---.svg">
+        <LegacyFunctionCode Name="2525C" DimensionOverride="A">SCO---</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_COMMUNICATIONS_SATELLITE_UPLINK_SYM" Label="I*APSCS-----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="COMMUNICATIONS" ModifierOneID="SATELLITE_UPLINK_MOD">
       <LegacyFunctionCode Name="2525C" DimensionOverride="A">SCS---</LegacyFunctionCode>
+      <LegacyEntity ID="SIGNAL_INTERCEPT_COMMUNICATIONS_SATELLITE_UPLINK_LE" Label="SIGINT.AIRTRK.SIGINC.COMM.SATUL" Graphic="I-A-SCS---.svg">
+        <LegacyFunctionCode Name="2525C" DimensionOverride="A">SCS---</LegacyFunctionCode>
+      </LegacyEntity>
     </LegacySymbol>
     <LegacySymbol ID="SIGNAL_INTERCEPT_RADAR_AIRBORNE_INTERCEPT_MOD_SYM" Label="I*APSRAI----***" EntityID="SIGNAL_INTERCEPT" EntityTypeID="RADAR" ModifierOneID="AIRBORNE_INTERCEPT_MOD">
       <LegacyFunctionCode Name="2525C">SRAI--</LegacyFunctionCode>

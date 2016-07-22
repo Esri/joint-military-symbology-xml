@@ -419,7 +419,7 @@
             <DigitTwo>1</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="WIND_PLOT" Label="Wind Plot" Graphic="45140200.3.svg">
+        <EntityType ID="WIND_PLOT" Label="Wind Plot" Graphic="45140200.3.svg" IsAlignable="true">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>2</DigitTwo>
@@ -663,7 +663,7 @@
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="RAIN_DRIZZLE_SNOW_MODERATE_HEAVY" Label="Rain or Drizzle and Snow - Moderate/Heavy" Graphic="45160602.svg">
+            <EntitySubType ID="RAIN_DRIZZLE_SNOW_MODERATE_HEAVY" Label="Rain or Drizzle and Snow - Moderate/Heavy" Graphic="45160602.svg" IsAlignable="true">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>2</DigitTwo>

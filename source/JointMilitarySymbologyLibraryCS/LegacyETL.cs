@@ -213,6 +213,9 @@ namespace JointMilitarySymbologyLibrary
                                 {
                                     LegacyFunctionCodeType[] functionCodes = _helper.LegacyFunctions(legacySymbol.LegacyFunctionCode, standard);
 
+                                    //if (functionCodes.Count() > 1)
+                                    //    logger.Info("LegacyFunctionCode count : " + legacySymbol.ID + " = " + functionCodes.Count());
+
                                     foreach (LegacyFunctionCodeType functionCode in functionCodes)
                                     {
                                         string line = id.ToString() + "," + symbolExport.Line(ss, legacySymbol, functionCode);

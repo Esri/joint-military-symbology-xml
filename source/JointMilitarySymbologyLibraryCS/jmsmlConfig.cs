@@ -77,6 +77,8 @@ namespace JointMilitarySymbologyLibrary {
         
         private JMSMLConfigETLConfigAmplifierValue[] amplifierValuesField;
         
+        private JMSMLConfigETLConfigKeyMap[] keyMapsField;
+        
         private JMSMLConfigETLConfigSchemaType[] schemaTypesField;
         
         private JMSMLConfigETLConfigSchemaContainer schemaContainerField;
@@ -123,6 +125,17 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.amplifierValuesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("KeyMap", IsNullable=false)]
+        public JMSMLConfigETLConfigKeyMap[] KeyMaps {
+            get {
+                return this.keyMapsField;
+            }
+            set {
+                this.keyMapsField = value;
             }
         }
         
@@ -1115,6 +1128,87 @@ namespace JointMilitarySymbologyLibrary {
             }
             set {
                 this.labelField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlTextAttribute(DataType="token")]
+        public string Value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://esri.com/jmsmlConfig.xsd")]
+    public partial class JMSMLConfigETLConfigKeyMap {
+        
+        private string idField;
+        
+        private string standardField;
+        
+        private string keyField;
+        
+        private string descriptionField;
+        
+        private string valueField;
+        
+        public JMSMLConfigETLConfigKeyMap() {
+            this.standardField = "";
+            this.descriptionField = "";
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
+        public string ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        [System.ComponentModel.DefaultValueAttribute("")]
+        public string Standard {
+            get {
+                return this.standardField;
+            }
+            set {
+                this.standardField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+        public string Key {
+            get {
+                return this.keyField;
+            }
+            set {
+                this.keyField = value;
             }
         }
         
