@@ -19,7 +19,7 @@ We give the design some initial thought and have a big picture in mind, and then
 For this project, in the following ten frequently asked design questions, we consider and answer the what, how, and why of JMSML.
 
 #### What problem are we solving?
-DISA's Symbology Standards Management Committee (SSMC) and NATO's Joint Symbology Panel (JSP), have both specified a need for an XML representation of the contents of MIL-STD 2525 and NATO APP-6, for the express purposes of:
+DISA's Symbology Standards Management Committee (SSMC) and NATO's Joint Symbology Panel (JSP), have both specified a need for an XML representation of the contents of MIL-STD 2525, for the express purposes of:
 	
 - Aiding in the configuration management (CM) of these standards, by automating/simplifying the production of the documentation for these standards and provide a means to track and version control the evolution of these standards.
 - Providing implementors with a machine-readable form of the contents of these standards, so they can extract the information they need to implement military symbology in their own systems.
@@ -33,8 +33,8 @@ Therefore, this project is intended to be a collaborative community effort to pr
 #### What is our high-level plan for solving the problem?
 Our high level plan for solving this problem can be broken down into four key steps:
 	
-- Develop an XML schema (XSD) for the fundamental contents of MIL-STD 2525D (and by extension, NATO APP-6(C)).
-- Populate, using said schema,  XML instance data to include all the valid components of a military symbol, that is compatible with the tenets set forth in MIL-STD 2525D (and by extension, NATO APP-6(C)), including all of the symbol sets set forth in those standards.
+- Develop an XML schema (XSD) for the fundamental contents of MIL-STD 2525D.
+- Populate, using said schema,  XML instance data to include all the valid components of a military symbol, that is compatible with the tenets set forth in MIL-STD 2525D, including all of the symbol sets set forth in those standards.
 - Develop a C# .Net API that demonstrates one means of extracting information from that XML instance data, including unit tests to validate proper operation of that information extraction, and tools and sample applications that facilitate an implementor extracting what he/she needs from the XML data.
 - Develop, in time, a set of stylesheets (XSLT) files that will support the formatting of the contents of the XML data into human readable pages.  XSLT (Extensible Stylesheet Language Transformations) is a language for transforming XML documents into other XML documents, or other objects such as HTML for web pages, plain text or into XSL Formatting Objects which can then be converted to PDF, PostScript, and PNG.
 
