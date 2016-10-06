@@ -54,7 +54,7 @@ Cargo			|01			|1				|Aircraft Type			|03
 Fighter			|01			|1				|Military Aircraft Type	|04
 
 
-The following import procedure should deal with replacing characters that XML doesn't like, but if they MUST be there, surround those characters/phrases with ![CDATA[XXXXX]]. Characters to avoid inside 2525 and APP-6 text data are:  ' (apostrophe or single quote), & (ampersand), < (less than), > (greater than), and " (double quote).
+The following import procedure should deal with replacing characters that XML doesn't like, but if they MUST be there, surround those characters/phrases with ![CDATA[XXXXX]]. Characters to avoid inside 2525 text data are:  ' (apostrophe or single quote), & (ampersand), < (less than), > (greater than), and " (double quote).
 
 The following references may be of use: [http://en.wikipedia.org/wiki/List\_of\_XML\_and\_HTML\_character\_entity\_references](http://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references)
 
