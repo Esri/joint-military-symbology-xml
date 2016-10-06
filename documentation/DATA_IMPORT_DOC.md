@@ -121,7 +121,7 @@ Each XML has seven separate portions: XML data, SymbolSetCode, LegacyCodingSchem
       - [ ] 3. SquareGraphic: XXXXXXXX_2.svg
       - [ ] 4. DiamondGraphic: XXXXXXXX_3.svg
   - [ ] 6. GeometryType: POINT, LINE, or AREA.  Taken from the standard, defaults to POINT.
-  - [ ] 7. Standard: STANDARD_TYPE (MILSTD_2525, NATO_APP6, ALL (default))
+  - [ ] 7. Standard: STANDARD_TYPE (MILSTD_2525, ALL (default))
 - [ ] 5. Sector Modifiers: Broken down into two categories, Sectors One and Two (Top and Bottom, or Left and Right). Each one has a corresponding two digit code which are the two identifying numbers from the SIDC (##XX#). The first two numbers (XX###) signifies the Symbol Set, and the last number (####X) signifies the sector (1 or 2). For any entry, there should be:
   - [ ] 1. ID: UNIQUE_ID.  This needs to be unique within this symbol set.
   - [ ] 2. Label: Description. Taken from the standard. Title case.
@@ -129,7 +129,7 @@ Each XML has seven separate portions: XML data, SymbolSetCode, LegacyCodingSchem
   - [ ] 4. Category: Category.  Taken from the standard – found in the entries in the various appendices – not in the tables in Appendix A.
   - [ ] 5. Graphic: XXXXX.svg.  The appropriate svg file.
   - [ ] 6. LimitUseTo: UNIQUE_ID.  For some modifiers, use is limited to a specific set of entities. This comes from the standard. These are a string containing a space delimited list of unique IDs, referencing entities, entity types, and entity subtypes elsewhere in the same XML file.
-  - [ ] 7. Standard: STANDARD_TYPE (MILSTD_2525, NATO_APP6, ALL (default))
+  - [ ] 7. Standard: STANDARD_TYPE (MILSTD_2525, ALL (default))
 - [ ] 6. LegacySymbols:    This uses the Unique IDs from Entities and Modifiers above to build the proper symbol using old 2525 rules.
   - [ ] 1. ID: UNIQUE_ID.  This needs to be unique within this symbol set.
   - [ ] 2. EntityID: UNIQUE_ENTITY_ID (If necessary, omit otherwise)
@@ -138,7 +138,7 @@ Each XML has seven separate portions: XML data, SymbolSetCode, LegacyCodingSchem
   - [ ] 5. ModifierOneID: UNIQUE_MOD1_ID (If necessary, omit otherwise)
   - [ ] 6. ModifierTwoID: UNIQUE_MOD2_ID (If necessary, omit otherwise)
   - [ ] 7. Remarks: Remarks. Sentence case.
-  - [ ] 8. Standard: STANDARD_TYPE (MILSTD_2525, NATO_APP6, ALL (default))
+  - [ ] 8. Standard: STANDARD_TYPE (MILSTD_2525, ALL (default))
 - [ ] 7. LegacyFunctionCode: This uses the six digit Function ID from the version of MIL-STD-2525 you are referencing (2525C for now).
   - [ ] 1. Name: 2525C.  2525C is the only one currently supported.
 
