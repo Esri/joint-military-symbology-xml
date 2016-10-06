@@ -80,7 +80,7 @@ What we propose here is the best way to deliver a solution that:
 #### How useful is this solution? 
 Any assessment of usefulness is extremely subjective.  There are necessarily two considerations that need to be made when asking this question.  Useful to who and useful in what time frame?
 
-Clearly, usefulness will increase as the above goals are fully achieved.  The goals stated earlier are goals because no current system in the hands of the SSMC or JSP can currently meet them.  There are thousands of symbol components defined in 2525 and APP-6.  Instantiating that data in XML will take some time.  This library of military symbology information will therefore become more useful as that data is added to the system, and the project nears its intended completion.
+Clearly, usefulness will increase as the above goals are fully achieved.  The goals stated earlier are goals because no current system in the hands of the SSMC or JSP can currently meet them.  There are thousands of symbol components defined in 2525.  Instantiating that data in XML will take some time.  This library of military symbology information will therefore become more useful as that data is added to the system, and the project nears its intended completion.
 
 Once in place the SSMC and JSP will share a common library of symbology information, that in turn can be used to generate large portions of a printed document.  The manual creation/editing of that document today costs the US taxpayers a lot of money as it is very time consuming.  While military symbol implementors wait for each iteration of these standards to be completed, warfighters in need of the symbols in the newest versions of these standards must wait for those implementors to finish their jobs.  Any process that speeds all or part of that military symbology development and delivery cycle up, and reduces the chance that any two systems will implement the same standards differently, is useful and valuable.
 
@@ -95,7 +95,7 @@ Making the standard and data products the SSMC and JSP produce more relevant, mo
 
 This helps justify and validate the existence of these two committees, in the face of serious opposition from some government quarters.
 
-Which in turn insures the continued viability and longevity of MIL-STD 2525 and NATO APP-6.  Without which there would be no agreed joint military symbology standards, which would in turn lead to issues with C2 system interoperability and the accurate and consistent communication and depiction of tomorrow's tactical pictures.
+Which in turn insures the continued viability and longevity of MIL-STD 2525.  Without which there would be no agreed joint military symbology standards, which would in turn lead to issues with C2 system interoperability and the accurate and consistent communication and depiction of tomorrow's tactical pictures.
  
 #### Are there any other dependencies or risks to consider?
 There are no technical dependencies or risks involved in completing this project, as envisioned.  XML is a stable and dependable data format and the tools to parse it are legion.  
