@@ -1,8 +1,8 @@
 # JMSML Schema Overview #
 
-The JMSML (XML) schema has been defined to represent the contents of MIL-STD 2525D and NATO APP-6(C/D) in digital (machine readable) form.  Throughout this document, any reference to "the standards" should be construed as meaning both of these two standards.  Only when one standard needs to be singled out will it be mentioned by name.
+The JMSML (XML) schema has been defined to represent the contents of MIL-STD 2525D in digital (machine readable) form.  Throughout this document, any reference to "the standards" should be construed as meaning both of these two standards.  Only when one standard needs to be singled out will it be mentioned by name.
 
-MIL-STD 2525C and NATO APP-6(B) were standards that set forth, and illustrated, a set of military symbols and some rules for applying amplification to those symbols.  2525D and APP-6(C/D) are different in that they set forth and illustrate sets of symbol pieces/parts that can be combined using various well laid out rules, and amplified with additional objects.  This makes the number of possible symbols enormous, and dramatically changes the way one should look at and implement these newer standards.
+MIL-STD 2525C is a standard that set forth, and illustrated, a set of military symbols and some rules for applying amplification to those symbols.  2525D is different in that it set forth and illustrated sets of symbol pieces/parts that can be combined using various well laid out rules, and amplified with additional objects.  This makes the number of possible symbols enormous, and dramatically changes the way one should look at and implement newer standards.
 
 <img src="../svg/sidc.png">
 
@@ -106,13 +106,13 @@ LimitUseTo is a special attribute on Modifier elements that can hold a space sep
 
 ## Legacy Support ##
 
-Backward compatibility with MIL-STD 2525C and NATO APP-6(B), and the means to convert SIDCs back and forth between old and new standards, is an important goal for creating this schema and XML database in the first place.
+Backward compatibility with MIL-STD 2525C, and the means to convert SIDCs back and forth between old and new standards, is an important goal for creating this schema and XML database in the first place.
 
 Sprinkled throughout this set of schema files are definitions for "legacy" codes.  The JMSML C# API uses this "legacy" information to parse and then convert SIDCs built for the older standards into SIDCs built for the newer standards, and back again (where two-way conversion is feasible).
 
 Given the open-ended nature of the latest standards, in terms of adding sector one and two modifiers to create innumerable possible symbols, the task of converting between 20 digit SIDC and 15 character SIDC is non-trivial.  The LegacySymbols collection in a given symbol set defines the list of LegacySymbol elements for older standard support.
 
-A given LegacySymbol element consists of references to the unique IDs of Entity, EntityType, EntitySubType, and Modifier elements defined elsewhere in the same symbol set.  Those various elements are the ones that would be needed to build, in 2525D and APP-6(C), the older version of these symbols.  Each LegacySymbol element also contains a LegacyFunctionCode, which is the six-character function ID code from the older 15-character SIDC.  This function code, when composed together with the legacy codes found elsewhere in the defined XML hierarchy, is used by the JMSML C# API to convert back and forth between old and new standards.
+A given LegacySymbol element consists of references to the unique IDs of Entity, EntityType, EntitySubType, and Modifier elements defined elsewhere in the same symbol set.  Those various elements are the ones that would be needed to build, in 2525D, the older version of these symbols.  Each LegacySymbol element also contains a LegacyFunctionCode, which is the six-character function ID code from the older 15-character SIDC.  This function code, when composed together with the legacy codes found elsewhere in the defined XML hierarchy, is used by the JMSML C# API to convert back and forth between old and new standards.
 
 <img src="images/legacysymbol.jpg">
 
