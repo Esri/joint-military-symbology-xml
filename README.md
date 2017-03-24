@@ -165,9 +165,9 @@ __Projects using this Repo__
 
 |Project|Repository|
 |---|---|
-|ArcGIS Pro/Runtime/Server|https://github.com/Esri/military-features-data|
-|Joint military symbology explorer|https://github.com/kjellmf/military-symbology-explorer|
-|milsymbol 2525D Implementation|https://github.com/spatialillusions/milsymbol|
+|ArcGIS Pro/Runtime/Server|https://github.com/Esri/military-features-data |
+|Joint military symbology explorer|https://github.com/kjellmf/military-symbology-explorer |
+|milsymbol 2525D Implementation|https://github.com/spatialillusions/milsymbol |
 
 __Other Standards Referenced by this Repo__
 
