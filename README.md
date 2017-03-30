@@ -163,11 +163,11 @@ Implemented change proposals (CPs) and other major enhancements will be identifi
 
 __Projects using this Repo__
 
-|Project|Repository|Website|
-|---|---|---|
-|ArcGIS Pro/Runtime/Server|https://github.com/Esri/military-features-data||
-|Joint military symbology explorer|https://github.com/kjellmf/military-symbology-explorer|http://kjellmf.github.io/military-symbology-explorer|
-|milsymbol 2525D Implementation|https://github.com/spatialillusions/milsymbol|http://spatialillusions.com/milsymbol/docs/milsymbol-2525d.html|
+|Project|Repository|
+|---|---|
+|ArcGIS Pro/Runtime/Server|https://github.com/Esri/military-features-data |
+|Joint military symbology explorer|https://github.com/kjellmf/military-symbology-explorer |
+|milsymbol 2525D Implementation|https://github.com/spatialillusions/milsymbol |
 
 __Other Standards Referenced by this Repo__
 
