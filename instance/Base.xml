@@ -796,7 +796,42 @@
         </SymbolSetRef>
       </SymbolSets>
     </Dimension>
-    
+
+    <Dimension ID="DISMOUNTED" Label="Dismounted Individual" Geometry="POINT">
+      <DimensionCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </DimensionCode>
+      <Fields>
+        <Field ID="DISMOUNTED_AB" Label="Feint/Dummy Indicator" Description="A graphic amplifier for units, equipment and installations that identifies an offensive or defensive unit intended to draw the enemy's attention away from the area of the main attack." AmplifierID="AB" X="0" Y="1"/>
+        <Field ID="DISMOUNTED_AC" Label="Installation" Description="A graphic amplifier for units, equipment and installations used to show a particular symbol denotes an installation." AmplifierID="AC" X="0" Y="1"/>
+        <Field ID="DISMOUNTED_AF" Label="Common Identifier" Description="Example: 'Hawk' for Hawk SAM system" AmplifierID="AF" X="0" Y="-2"/>
+        <Field ID="DISMOUNTED_A" Label="Basic Branch/Function Icon" Description="The innermost part of a symbol that represents a joint military object." AmplifierID="A" X="0" Y="0"/>
+        <Field ID="DISMOUNTED_D" Label="Task Force Indicator" Description="A graphic amplifier that identifies a unit or stability operations symbol as a task force." AmplifierID="D" X="0" Y="1"/>
+        <Field ID="DISMOUNTED_G" Label="Staff Comments" Description="A text amplifier for units, equipment, and installations." AmplifierID="G" X="1" Y="1"/>
+        <Field ID="DISMOUNTED_H" Label="Additional Information" Description="A text amplifier for units, equipment, and installations." AmplifierID="H" X="1" Y="0"/>
+        <Field ID="DISMOUNTED_J" Label="Evaluation Rating" Description="A text amplifier for units, equipment and installations that consists of a one-letter reliability rating and a one-number credibility rating." Remarks="Reliability: A-F and Credibility: 1-6" AmplifierID="J" X="1" Y="-2"/>
+        <Field ID="DISMOUNTED_K" Label="Combat Effectiveness" Description="A text amplifier for units and installations that indicates unit effectiveness or installation capability." Remarks="Fully Operational = FO, Substantially Operational = SO, Marginally Operational = MO, Not Operational = NO, Unknown = UNK" AmplifierID="K" X="1" Y="-2"/>
+        <Field ID="DISMOUNTED_M" Label="Higher Formation" Description="A text amplifier for units that indicates number or title of higher echelon command (corps are designated by Roman numerals)." AmplifierID="M" X="1" Y="-1"/>
+        <Field ID="DISMOUNTED_P" Label="IFF/SIF" Description="A text amplifier displaying IFF/SIF/AIS identification modes and codes. Display priority: Mode 5, Mode S, Mode 4, Mode 2, Mode 3" Remarks="M:CCCC, where M = Mode, CCCC = Code" AmplifierID="P" X="1" Y="-2"/>
+        <Field ID="DISMOUNTED_Q" Label="Direction of Movement Indicator" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." AmplifierID="Q" X="0" Y="-2"/>
+        <Field ID="DISMOUNTED_R" Label="Mobility Indicator" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." AmplifierID="R" X="0" Y="-1"/>
+        <Field ID="DISMOUNTED_T" Label="Unique Designation (Track Number)" Description="A text amplifier for units, equipment, and installations that uniquely identifies a particular symbol or track number." Remarks="Prefix = TN:#####  Example: TN:13579" AmplifierID="T" X="1" Y="2"/>
+        <Field ID="DISMOUNTED_V" Label="Type" Description="A text amplifier for equipment that indicates types of equipment." AmplifierID="V" X="1" Y="1"/>
+        <Field ID="DISMOUNTED_W" Label="Date-Time Group (DTG)" Description="An alphanumeric designator for displaying a date-time group or on order." Remarks="DDHHMMSSZMONYYYY or O/O, where DD = Day, HH = Hour, MM = Minute, SS = Second, Z = Time Zone, MON = Month, YYYY = Year, O/O = On Order" AmplifierID="W" X="-1" Y="2"/>
+        <Field ID="DISMOUNTED_X" Label="Altitude" Description="A text amplifier for units that displays altitude flight level." Remarks="Measurement units shall be displayed within the string. Examples: 1500MSL FL150" AmplifierID="X" X="1" Y="-1"/>
+        <Field ID="DISMOUNTED_Y" Label="A text amplifier for units, equipment, and installations that displays a symbol's location in degrees, minutes, and decimal minutes." Remarks="Alternatively, in MGRS or other applicable display format." AmplifierID="Y" X="-1" Y="1"/>
+        <Field ID="DISMOUNTED_Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD-6040." AmplifierID="Z" X="1" Y="-1"/>
+      </Fields>
+      <SymbolSets>
+        <SymbolSetRef ID="SS_DISMOUNTED" Label="Dismounted Individual" Instance="Dismounted.xml">
+          <SymbolSetCode>
+            <DigitOne>2</DigitOne>
+            <DigitTwo>7</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
+    </Dimension>
+
     <Dimension ID="SEA_SURFACE" Label="Sea Surface" Geometry="POINT">
       <DimensionCode>
         <DigitOne>3</DigitOne>
