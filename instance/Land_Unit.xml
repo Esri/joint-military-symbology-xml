@@ -1166,7 +1166,7 @@
         <DigitTwo>0</DigitTwo>
       </EntityCode>
       <EntityTypes>
-        <EntityType ID="BUREAU_ATF" Label="Bureau of Alcohol Tobacco Firearms and Explosives (ATF) (Department of Justice)" LabelAlias="ATF DOJ" Graphic="10200100.svg">
+        <EntityType ID="BUREAU_ATF" Label="Bureau of Alcohol Tobacco Firearms and Explosives (ATF) (Department of Justice)" LabelAlias="ATF DOJ" Graphic="10200100.svg" Standard="MILSTD_2525">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>1</DigitTwo>
@@ -1214,7 +1214,7 @@
             <DigitTwo>8</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="UNITED_STATES_SECRET_SERVICE_USSS" Label="United States Secret Service (USSS)" LabelAlias="US Secret Service (USSS)" Graphic="10200900.svg">
+        <EntityType ID="UNITED_STATES_SECRET_SERVICE_USSS" Label="United States Secret Service (USSS)" LabelAlias="US Secret Service (USSS)" Graphic="10200900.svg" Standard="MILSTD_2525">
           <EntityTypeCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>9</DigitTwo>

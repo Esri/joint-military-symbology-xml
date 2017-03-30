@@ -481,7 +481,7 @@
       </DimensionCode>
       <Fields/>
       <SymbolSets>
-        <SymbolSetRef ID="SS_INTERNAL" Label="Internal" Instance="jmsml_D_Internal.xml">
+        <SymbolSetRef ID="SS_INTERNAL" Label="Internal" Instance="Internal.xml">
           <SymbolSetCode>
             <DigitOne>9</DigitOne>
             <DigitTwo>8</DigitTwo>
@@ -498,7 +498,7 @@
       <LegacyDimensionCode Name="2525C" CodingSchemeLetter="S">Z</LegacyDimensionCode>
       <Fields/>
       <SymbolSets>
-        <SymbolSetRef ID="SS_UNKNOWN" Label="Unknown" Instance="jmsml_D_Unknown.xml">
+        <SymbolSetRef ID="SS_UNKNOWN" Label="Unknown" Instance="Unknown.xml">
           <SymbolSetCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>0</DigitTwo>
@@ -527,28 +527,28 @@
         <Field ID="AIR_Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD-6040." AmplifierID="Z" X="1" Y="-1"/>
       </Fields>
       <SymbolSets>
-        <SymbolSetRef ID="SS_AIR" Label="Air" Instance="jmsml_D_Air.xml">
+        <SymbolSetRef ID="SS_AIR" Label="Air" Instance="Air.xml">
           <SymbolSetCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>1</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
 
-        <SymbolSetRef ID="SS_AIR_MISSILE" Label="Air Missile" Instance="jmsml_D_Air_Missile.xml">
+        <SymbolSetRef ID="SS_AIR_MISSILE" Label="Air Missile" Instance="Air_Missile.xml">
           <SymbolSetCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>2</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
         
-        <SymbolSetRef ID="SS_SIGINT_AIR" Label="Signals Intelligence - Air" Instance="jmsml_D_SIGINT_Air.xml">
+        <SymbolSetRef ID="SS_SIGINT_AIR" Label="Signals Intelligence - Air" Instance="SIGINT_Air.xml">
           <SymbolSetCode>
             <DigitOne>5</DigitOne>
             <DigitTwo>1</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
 
-        <SymbolSetRef ID="SS_CYBERSPACE" Label="Cyberspace" Instance="jmsml_D_Cyberspace.xml">
+        <SymbolSetRef ID="SS_CYBERSPACE" Label="Cyberspace" Instance="Cyberspace.xml">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>0</DigitTwo>
@@ -577,28 +577,28 @@
         <Field ID="SPACE_Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD-6040." AmplifierID="Z" X="1" Y="-1"/>
       </Fields>
       <SymbolSets>
-        <SymbolSetRef ID="SS_SPACE" Label="Space" Instance="jmsml_D_Space.xml">
+        <SymbolSetRef ID="SS_SPACE" Label="Space" Instance="Space.xml">
           <SymbolSetCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>5</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
 
-        <SymbolSetRef ID="SS_SPACE_MISSILE" Label="Space Missile" Instance="jmsml_D_Space_Missile.xml">
+        <SymbolSetRef ID="SS_SPACE_MISSILE" Label="Space Missile" Instance="Space_Missile.xml">
           <SymbolSetCode>
             <DigitOne>0</DigitOne>
             <DigitTwo>6</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
         
-        <SymbolSetRef ID="SS_SIGINT_SPACE" Label="Signals Intelligence - Space" Instance="jmsml_D_SIGINT_Space.xml">
+        <SymbolSetRef ID="SS_SIGINT_SPACE" Label="Signals Intelligence - Space" Instance="SIGINT_Space.xml">
           <SymbolSetCode>
             <DigitOne>5</DigitOne>
             <DigitTwo>0</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
 
-        <SymbolSetRef ID="SS_CYBERSPACE" Label="Cyberspace" Instance="jmsml_D_Cyberspace.xml">
+        <SymbolSetRef ID="SS_CYBERSPACE" Label="Cyberspace" Instance="Cyberspace.xml">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>0</DigitTwo>
@@ -657,14 +657,14 @@
         <Field ID="LAND_UNIT_Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD-6040." AmplifierID="Z" X="-1" Y="-2"/>
       </Fields>
       <SymbolSets>
-        <SymbolSetRef ID="SS_LAND_UNIT" Label="Land Units" Instance="jmsml_D_Land_Unit.xml">
+        <SymbolSetRef ID="SS_LAND_UNIT" Label="Land Units" Instance="Land_Unit.xml">
           <SymbolSetCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>0</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
         
-        <SymbolSetRef ID="SS_LAND_CIVILIAN" Label="Land Civilian" Instance="jmsml_D_Land_Civilian.xml">
+        <SymbolSetRef ID="SS_LAND_CIVILIAN" Label="Land Civilian" Instance="Land_Civilian.xml">
           <SymbolSetCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>1</DigitTwo>
@@ -721,21 +721,21 @@
         <Field ID="LAND_EQUIP_Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD-6040." AmplifierID="Z" X="1" Y="-1"/>
       </Fields>
       <SymbolSets>
-        <SymbolSetRef ID="SS_LAND_EQUIPMENT" Label="Land Equipment" Instance="jmsml_D_Land_Equipment.xml">
+        <SymbolSetRef ID="SS_LAND_EQUIPMENT" Label="Land Equipment" Instance="Land_Equipment.xml">
           <SymbolSetCode>
             <DigitOne>1</DigitOne>
             <DigitTwo>5</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
         
-        <SymbolSetRef ID="SS_SIGINT_LAND" Label="Signals Intelligence - Land" Instance="jmsml_D_SIGINT_Land.xml">
+        <SymbolSetRef ID="SS_SIGINT_LAND" Label="Signals Intelligence - Land" Instance="SIGINT_Land.xml">
           <SymbolSetCode>
             <DigitOne>5</DigitOne>
             <DigitTwo>2</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
 
-        <SymbolSetRef ID="SS_CYBERSPACE" Label="Cyberspace" Instance="jmsml_D_Cyberspace.xml">
+        <SymbolSetRef ID="SS_CYBERSPACE" Label="Cyberspace" Instance="Cyberspace.xml">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>0</DigitTwo>
@@ -788,7 +788,7 @@
         <Field ID="LAND_INSTA_Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD-6040." AmplifierID="Z" X="1" Y="-1"/>
       </Fields>
       <SymbolSets>
-        <SymbolSetRef ID="SS_LAND_INSTALLATION" Label="Land Installation" Instance="jmsml_D_Land_Installation.xml">
+        <SymbolSetRef ID="SS_LAND_INSTALLATION" Label="Land Installation" Instance="Land_Installation.xml">
           <SymbolSetCode>
             <DigitOne>2</DigitOne>
             <DigitTwo>0</DigitTwo>
@@ -820,21 +820,21 @@
         <Field ID="SEA_SUR_Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD-6040." AmplifierID="Z" X="1" Y="-2"/>
       </Fields>
       <SymbolSets>
-        <SymbolSetRef ID="SS_SEA_SURFACE" Label="Sea Surface" Instance="jmsml_D_Sea_Surface.xml">
+        <SymbolSetRef ID="SS_SEA_SURFACE" Label="Sea Surface" Instance="Sea_Surface.xml">
           <SymbolSetCode>
             <DigitOne>3</DigitOne>
             <DigitTwo>0</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
         
-        <SymbolSetRef ID="SS_SIGINT_SURFACE" Label="Signals Intelligence - Surface" Instance="jmsml_D_SIGINT_Surface.xml">
+        <SymbolSetRef ID="SS_SIGINT_SURFACE" Label="Signals Intelligence - Surface" Instance="SIGINT_Surface.xml">
           <SymbolSetCode>
             <DigitOne>5</DigitOne>
             <DigitTwo>3</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
 
-        <SymbolSetRef ID="SS_CYBERSPACE" Label="Cyberspace" Instance="jmsml_D_Cyberspace.xml">
+        <SymbolSetRef ID="SS_CYBERSPACE" Label="Cyberspace" Instance="Cyberspace.xml">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>0</DigitTwo>
@@ -863,28 +863,28 @@
         <Field ID="SEA_SUB_X" Label="Depth" Description="A text amplifier for equipment that displays depth for submerged objects." AmplifierID="X" X="1" Y="0"/>
       </Fields>
       <SymbolSets>
-        <SymbolSetRef ID="SS_SEA_SUBSURFACE" Label="Sea Subsurface" Instance="jmsml_D_Sea_Subsurface.xml">
+        <SymbolSetRef ID="SS_SEA_SUBSURFACE" Label="Sea Subsurface" Instance="Sea_Subsurface.xml">
           <SymbolSetCode>
             <DigitOne>3</DigitOne>
             <DigitTwo>5</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
 
-        <SymbolSetRef ID="SS_MINE_WARFARE" Label="Mine Warfare" Instance="jmsml_D_Mine_Warfare.xml">
+        <SymbolSetRef ID="SS_MINE_WARFARE" Label="Mine Warfare" Instance="Mine_Warfare.xml">
           <SymbolSetCode>
             <DigitOne>3</DigitOne>
             <DigitTwo>6</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
         
-        <SymbolSetRef ID="SS_SIGINT_SUBSURFACE" Label="Signals Intelligence - Subsurface" Instance="jmsml_D_SIGINT_Subsurface.xml">
+        <SymbolSetRef ID="SS_SIGINT_SUBSURFACE" Label="Signals Intelligence - Subsurface" Instance="SIGINT_Subsurface.xml">
           <SymbolSetCode>
             <DigitOne>5</DigitOne>
             <DigitTwo>4</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
 
-        <SymbolSetRef ID="SS_CYBERSPACE" Label="Cyberspace" Instance="jmsml_D_Cyberspace.xml">
+        <SymbolSetRef ID="SS_CYBERSPACE" Label="Cyberspace" Instance="Cyberspace.xml">
           <SymbolSetCode>
             <DigitOne>6</DigitOne>
             <DigitTwo>0</DigitTwo>
@@ -916,7 +916,7 @@
         <Field ID="ACT_Y" Label="Location" Description="A text amplifier for units, equipment and installations that displays a symbol’s location in degrees, minutes and seconds (or in UTM or other applicable display format)." AmplifierID="Y" X="-1" Y="1"/>
       </Fields>
       <SymbolSets>
-        <SymbolSetRef ID="SS_ACTIVITY" Label="Activity" Instance="jmsml_D_Activity.xml">
+        <SymbolSetRef ID="SS_ACTIVITY" Label="Activity" Instance="Activity.xml">
           <SymbolSetCode>
             <DigitOne>4</DigitOne>
             <DigitTwo>0</DigitTwo>
@@ -957,7 +957,7 @@
         <Field ID="CM_Y" Label="Location" Description="A text amplifier that displays a graphic's location in degrees, minutes, and decimal minutes." Remarks="Alternatively, in MGRS or other applicable display format." AmplifierID="Y"/>
       </Fields>
       <SymbolSets>
-        <SymbolSetRef ID="SS_CONTROL_MEASURE" Label="Control Measure" Instance="jmsml_D_Control_Measure.xml">
+        <SymbolSetRef ID="SS_CONTROL_MEASURE" Label="Control Measure" Instance="Control_Measure.xml">
           <SymbolSetCode>
             <DigitOne>2</DigitOne>
             <DigitTwo>5</DigitTwo>
@@ -982,19 +982,19 @@
         <Field ID="METOC_Y" Label="Location" Description="A text amplifier for units, equipment and installations that displays a symbol’s location in degrees, minutes and seconds (or in UTM or other applicable display format)." AmplifierID="Y" X="-1" Y="1"/>
       </Fields>
       <SymbolSets>
-        <SymbolSetRef ID="SS_ATMOSPHERIC" Label="Atmospheric" Instance="jmsml_D_Atmospheric.xml">
+        <SymbolSetRef ID="SS_ATMOSPHERIC" Label="Atmospheric" Instance="Atmospheric.xml">
           <SymbolSetCode>
             <DigitOne>4</DigitOne>
             <DigitTwo>5</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
-        <SymbolSetRef ID="SS_OCEANIC" Label="Oceanographic" Instance="jmsml_D_Oceanographic.xml">
+        <SymbolSetRef ID="SS_OCEANIC" Label="Oceanographic" Instance="Oceanographic.xml">
           <SymbolSetCode>
             <DigitOne>4</DigitOne>
             <DigitTwo>6</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
-        <SymbolSetRef ID="SS_MET_SPACE" Label="Meteorological Space" Instance="jmsml_D_Meteorological_Space.xml">
+        <SymbolSetRef ID="SS_MET_SPACE" Label="Meteorological Space" Instance="Meteorological_Space.xml">
           <SymbolSetCode>
             <DigitOne>4</DigitOne>
             <DigitTwo>7</DigitTwo>
