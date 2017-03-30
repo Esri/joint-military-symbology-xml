@@ -1,43 +1,45 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JointMilitarySymbologyLibrary", "JointMilitarySymbologyLibrary.csproj", "{59DCDEC3-469F-44CB-B42C-80DB1F9E1992}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JMSML_Demo", "Test\JMSML_Demo.csproj", "{10B67C10-72E6-4C4B-8C28-D3439CC01B68}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{05AB64C4-07E2-4544-A4C8-FDA98CCA5D76}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\instance\Activity.xml = ..\..\instance\Activity.xml
+		..\..\instance\Air.xml = ..\..\instance\Air.xml
+		..\..\instance\Air_Missile.xml = ..\..\instance\Air_Missile.xml
+		..\..\instance\Atmospheric.xml = ..\..\instance\Atmospheric.xml
+		..\..\instance\Base.xml = ..\..\instance\Base.xml
 		..\..\schema\base.xsd = ..\..\schema\base.xsd
+		..\..\instance\Control_Measure.xml = ..\..\instance\Control_Measure.xml
 		..\..\schema\core.xsd = ..\..\schema\core.xsd
-		..\..\instance\jmsml_D_Activity.xml = ..\..\instance\jmsml_D_Activity.xml
-		..\..\instance\jmsml_D_Air.xml = ..\..\instance\jmsml_D_Air.xml
-		..\..\instance\jmsml_D_Air_Missile.xml = ..\..\instance\jmsml_D_Air_Missile.xml
-		..\..\instance\jmsml_D_Atmospheric.xml = ..\..\instance\jmsml_D_Atmospheric.xml
-		..\..\instance\jmsml_D_Base.xml = ..\..\instance\jmsml_D_Base.xml
-		..\..\instance\jmsml_D_Control_Measure.xml = ..\..\instance\jmsml_D_Control_Measure.xml
-		..\..\instance\jmsml_D_Cyberspace.xml = ..\..\instance\jmsml_D_Cyberspace.xml
-		..\..\instance\jmsml_D_Internal.xml = ..\..\instance\jmsml_D_Internal.xml
-		..\..\instance\jmsml_D_Land_Civilian.xml = ..\..\instance\jmsml_D_Land_Civilian.xml
-		..\..\instance\jmsml_D_Land_Equipment.xml = ..\..\instance\jmsml_D_Land_Equipment.xml
-		..\..\instance\jmsml_D_Land_Installation.xml = ..\..\instance\jmsml_D_Land_Installation.xml
-		..\..\instance\jmsml_D_Land_Unit.xml = ..\..\instance\jmsml_D_Land_Unit.xml
-		..\..\instance\jmsml_D_Meteorological_Space.xml = ..\..\instance\jmsml_D_Meteorological_Space.xml
-		..\..\instance\jmsml_D_Mine_Warfare.xml = ..\..\instance\jmsml_D_Mine_Warfare.xml
-		..\..\instance\jmsml_D_Oceanographic.xml = ..\..\instance\jmsml_D_Oceanographic.xml
-		..\..\instance\jmsml_D_Sea_Subsurface.xml = ..\..\instance\jmsml_D_Sea_Subsurface.xml
-		..\..\instance\jmsml_D_Sea_Surface.xml = ..\..\instance\jmsml_D_Sea_Surface.xml
-		..\..\instance\jmsml_D_SIGINT_Air.xml = ..\..\instance\jmsml_D_SIGINT_Air.xml
-		..\..\instance\jmsml_D_SIGINT_Land.xml = ..\..\instance\jmsml_D_SIGINT_Land.xml
-		..\..\instance\jmsml_D_SIGINT_Space.xml = ..\..\instance\jmsml_D_SIGINT_Space.xml
-		..\..\instance\jmsml_D_SIGINT_Subsurface.xml = ..\..\instance\jmsml_D_SIGINT_Subsurface.xml
-		..\..\instance\jmsml_D_SIGINT_Surface.xml = ..\..\instance\jmsml_D_SIGINT_Surface.xml
-		..\..\instance\jmsml_D_Space.xml = ..\..\instance\jmsml_D_Space.xml
-		..\..\instance\jmsml_D_Space_Missile.xml = ..\..\instance\jmsml_D_Space_Missile.xml
-		..\..\instance\jmsml_D_Unknown.xml = ..\..\instance\jmsml_D_Unknown.xml
+		..\..\instance\Cyberspace.xml = ..\..\instance\Cyberspace.xml
+		..\..\instance\Internal.xml = ..\..\instance\Internal.xml
 		JointMilitarySymbologyLibrary.vsmdi = JointMilitarySymbologyLibrary.vsmdi
+		..\..\instance\Land_Civilian.xml = ..\..\instance\Land_Civilian.xml
+		..\..\instance\Land_Equipment.xml = ..\..\instance\Land_Equipment.xml
+		..\..\instance\Land_Installation.xml = ..\..\instance\Land_Installation.xml
+		..\..\instance\Land_Unit.xml = ..\..\instance\Land_Unit.xml
 		Local.testsettings = Local.testsettings
+		..\..\instance\Meteorological_Space.xml = ..\..\instance\Meteorological_Space.xml
+		..\..\instance\Mine_Warfare.xml = ..\..\instance\Mine_Warfare.xml
+		..\..\instance\Oceanographic.xml = ..\..\instance\Oceanographic.xml
+		..\..\instance\Sea_Subsurface.xml = ..\..\instance\Sea_Subsurface.xml
+		..\..\instance\Sea_Surface.xml = ..\..\instance\Sea_Surface.xml
+		..\..\instance\SIGINT_Air.xml = ..\..\instance\SIGINT_Air.xml
+		..\..\instance\SIGINT_Land.xml = ..\..\instance\SIGINT_Land.xml
+		..\..\instance\SIGINT_Space.xml = ..\..\instance\SIGINT_Space.xml
+		..\..\instance\SIGINT_Subsurface.xml = ..\..\instance\SIGINT_Subsurface.xml
+		..\..\instance\SIGINT_Surface.xml = ..\..\instance\SIGINT_Surface.xml
+		..\..\instance\Space.xml = ..\..\instance\Space.xml
+		..\..\instance\Space_Missile.xml = ..\..\instance\Space_Missile.xml
 		..\..\schema\symbolSet.xsd = ..\..\schema\symbolSet.xsd
 		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+		..\..\instance\Unknown.xml = ..\..\instance\Unknown.xml
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{40E2519E-72D2-4DCE-A158-D7BAF1295116}"
@@ -47,9 +49,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jmsml", "jmsml\jmsml.csproj", "{92B69001-B422-40E8-91F5-6066BA465F96}"
 EndProject
 Global
-	GlobalSection(TestCaseManagementSettings) = postSolution
-		CategoryFile = JointMilitarySymbologyLibrary.vsmdi
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -112,5 +111,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = JointMilitarySymbologyLibrary.vsmdi
 	EndGlobalSection
 EndGlobal
