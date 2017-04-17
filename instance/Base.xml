@@ -909,7 +909,7 @@
       <Fields>
         <Field ID="ACT_AS" Label="Country Indicator" Description="Identifies the country of the organization being shown." Remarks="In stability activities, this field can be used for factions or groups." AmplifierID="AS" X="1" Y="2"/>
         <Field ID="ACT_G" Label="Staff Comments" Description="Free text." Remarks="Can be used by staff for information required by commander." AmplifierID="G" X="1" Y="1"/>
-        <Field ID="ACT_H" Label="Additional Informartion" Description="Free text." AmplifierID="H" X="1" Y="0"/>
+        <Field ID="ACT_H" Label="Additional Information" Description="Free text." AmplifierID="H" X="1" Y="0"/>
         <Field ID="ACT_J" Label="Evaluation Rating" Description="Degree of confidence that may be placed on the information represented by the symbol." Remarks="It is shown as one letter and one number made up of Reliability of Source and Credibility of Information." AmplifierID="J" X="1" Y="-2"/>
         <Field ID="ACT_S" Label="Offset Location Indicator" Description="It is used to denote precise location." AmplifierID="S" X="0" Y="-1"/>
         <Field ID="ACT_W" Label="Date-Time Group" Description="An alphanumeric designator for displaying a datetime group (DDHHMMSSZMONYY) or O/O for on order." Remarks="The date-time group is composed of a group of six numeric digits with a time zone suffix and the standardized three-letter abbreviation for the month followed by two digits." AmplifierID="W" X="-1" Y="2"/>
@@ -976,7 +976,7 @@
       <LegacyDimensionCode Name="2525C" CodingSchemeLetter="E">N</LegacyDimensionCode>
       <Fields>
         <Field ID="METOC_G" Label="Staff Comments" Description="Free text." Remarks="Can be used by staff for information required by commander." AmplifierID="G" X="1" Y="1"/>
-        <Field ID="METOC_H" Label="Additional Informartion" Description="Free text." AmplifierID="H" X="1" Y="0"/>
+        <Field ID="METOC_H" Label="Additional Information" Description="Free text." AmplifierID="H" X="1" Y="0"/>
         <Field ID="METOC_S" Label="Offset Location Indicator" Description="It is used to denote precise location." AmplifierID="S" X="0" Y="-1"/>
         <Field ID="METOC_W" Label="Date-Time Group" Description="An alphanumeric designator for displaying a datetime group (DDHHMMSSZMONYY) or O/O for on order." Remarks="The date-time group is composed of a group of six numeric digits with a time zone suffix and the standardized three-letter abbreviation for the month followed by two digits." AmplifierID="W" X="-1" Y="2"/>
         <Field ID="METOC_Y" Label="Location" Description="A text amplifier for units, equipment and installations that displays a symbol’s location in degrees, minutes and seconds (or in UTM or other applicable display format)." AmplifierID="Y" X="-1" Y="1"/>
