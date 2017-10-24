@@ -12,41 +12,52 @@
 	</g>
 	<g transform="translate(62 -28) translate(-4 -4)">
 		<rect x="188" y="170" fill="#FFFFFF" stroke="#FFFFFF" width="35" height="35"/>
-		<text transform="matrix(1 0 0 1 194.3281 200)" font-family="sans-serif" font-size="35">S</text>
+		<text transform="matrix(1 0 0 1 194.3281 200)" font-family="'ArialMT'" font-size="35">S</text>
 	</g>
 </g>
 <g id="template" display="none">
-	<g id="varA" transform="translate(92 -35) translate(2 2)" display="inline">
-		<rect x="-28.749" y="138.5" fill="#FFFFFF" stroke="#000000" stroke-width="2" width="28" height="28"/>
-		<text transform="matrix(1 0 0 1 -23.5005 161.25)" font-family="sans-serif" font-size="26.2487">A</text>
+	<g id="varA" transform="translate(92 -35) translate(2 2)">
+		<rect x="-28.749" y="138.5" display="inline" fill="#FFFFFF" stroke="#000000" stroke-width="2" width="28" height="28"/>
+		<text transform="matrix(1 0 0 1 -23.5005 161.25)" display="inline" font-family="'ArialMT'" font-size="26.2487">A</text>
 	</g>
 	<g id="points" transform="translate(-240 -220) scale(1.75 1.75)" display="inline">
 		<g id="_x3C_group_x3E_" transform="translate(63 6)">
-			<text transform="matrix(0.5714 0 0 0.5714 113.428 273)" font-family="sans-serif" font-size="26.2474">PT. 1</text>
-			<text transform="matrix(0.5714 0 0 0.5714 82.8566 287.8571)" font-family="sans-serif" font-size="26.2474">(CENTER PT.)</text>
+			<text transform="matrix(0.5714 0 0 0.5714 111.1417 250.7143)" font-family="'ArialMT'" font-size="26.2448">PT. 1</text>
+			<text transform="matrix(0.5714 0 0 0.5714 80.5703 265.5714)" font-family="'ArialMT'" font-size="26.2448">(CENTER PT.)</text>
 		</g>
-		<text transform="matrix(0.5714 0 0 0.5714 267.428 278)" font-family="sans-serif" font-size="26.2474">PT. 2</text>
-		<line fill="none" stroke="#000000" stroke-width="2" x1="179.429" y1="223" x2="179.429" y2="251"/>
-		<line fill="none" stroke="#000000" stroke-width="2" x1="179.331" y1="250.289" x2="189.429" y2="265"/>
-		<line fill="none" stroke="#000000" stroke-width="2" x1="331.429" y1="301" x2="313.429" y2="301"/>
-		<line fill="none" stroke="#000000" stroke-width="2" x1="314.21" y1="301.133" x2="293.429" y2="281"/>
-		<polygon stroke="#000000" stroke-width="2" points="179.429,219 184.429,230 174.429,230 		"/>
-		<polygon stroke="#000000" stroke-width="2" points="338.294,299.865 327.294,304.865 327.294,294.865 		"/>
-		<text transform="matrix(0.5714 0 0 0.5714 265.7143 195.4286)" font-family="sans-serif" font-size="24.9988">PT. 3</text>
+		<text transform="matrix(0.5714 0 0 0.5714 271.9984 274)" font-family="'ArialMT'" font-size="26.2448">PT. 2</text>
+		<g>
+			<g>
+				<line fill="none" stroke="#000000" stroke-width="2" x1="183.198" y1="199.413" x2="191.087" y2="244.092"/>
+				<g>
+					<polygon points="177.876,202.046 181.771,191.337 189.099,200.064 					"/>
+				</g>
+			</g>
+		</g>
+		<g>
+			<g>
+				<polyline fill="none" stroke="#000000" stroke-width="2" points="332.359,297.571 316.423,297.571 292.286,277.571 				"/>
+				<g>
+					<polygon points="330.691,291.873 340.56,297.571 330.691,303.27 					"/>
+				</g>
+			</g>
+		</g>
+		<text transform="matrix(0.5714 0 0 0.5714 265.7132 195.4286)" font-family="'ArialMT'" font-size="24.9964">PT. 3</text>
 	</g>
 </g>
 <g id="example" display="none">
 	<g id="varAe_1_" display="inline">
 		<g id="frame_2_">
 			
-				<rect id="_x3C_path_x3E__2_" x="58.199" y="107.96" fill="#80E0FF" stroke="#000000" stroke-width="2" width="41.261" height="27.507"/>
+				<rect id="_x3C_path_x3E__2_" x="58.199" y="107.96" fill="#C7C8CA" stroke="#939598" stroke-width="2" width="41.261" height="27.507"/>
 		</g>
 		<g id="main_1_">
-			<line fill="none" stroke="#000000" stroke-width="2" x1="58.247" y1="135.467" x2="99.394" y2="107.96"/>
-			<path fill="none" stroke="#000000" stroke-width="2" d="M71.943,116.413c-6.876,0-6.876,10.604,0,10.604h13.753
-				c6.877,0,6.877-10.604,0-10.604H71.943z"/>
+			<line fill="none" stroke="#939598" stroke-width="2" x1="58.247" y1="135.467" x2="99.394" y2="107.96"/>
+			<path fill="none" stroke="#939598" stroke-width="2" d="M71.943,116.413c-6.876,0-6.876,10.604,0,10.604h13.753
+				c6.877,0,6.877-10.604,0-10.604H71.943L71.943,116.413z"/>
 		</g>
-		<text transform="matrix(1 0 0 1 75.7598 103.5327)" font-family="sans-serif" font-size="12">X</text>
+		
+			<text transform="matrix(1 0 0 1 75.7598 103.5332)" stroke="#939598" stroke-miterlimit="10" font-family="'ArialMT'" font-size="12">X</text>
 	</g>
 </g>
 </svg>
