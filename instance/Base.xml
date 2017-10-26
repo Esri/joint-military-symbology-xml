@@ -830,6 +830,7 @@
             <DigitTwo>7</DigitTwo>
           </SymbolSetCode>
         </SymbolSetRef>
+      </SymbolSets>
     </Dimension>
 
     <Dimension ID="SEA_SURFACE" Label="Sea Surface" Geometry="POINT">
@@ -2509,7 +2510,65 @@
     </Affiliation>
 
     <Affiliation ID="SIMULATED_LI_SUSPECT" ContextID="SIMULATION" DimensionID="LAND_INSTALLATION" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="2_520_0.svg"/>
-    
+
+    <!-- Dismounted Individual Affiliations-->
+
+    <Affiliation ID="REALITY_DI_PENDING" ContextID="REALITY" DimensionID="DISMOUNTED" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="0_015_0.svg" CivilianGraphic="0_015_0c.svg">
+    </Affiliation>
+
+    <Affiliation ID="EXERCISE_DI_PENDING" ContextID="EXERCISE" DimensionID="DISMOUNTED" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="1_015_0.svg" CivilianGraphic="1_015_0c.svg">
+    </Affiliation>
+
+    <Affiliation ID="SIMULATED_DI_PENDING" ContextID="SIMULATION" DimensionID="DISMOUNTED" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="2_015_0.svg" CivilianGraphic="2_015_0c.svg"/>
+
+    <Affiliation ID="REALITY_DI_UNKNOWN" ContextID="REALITY" DimensionID="DISMOUNTED" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="0_115_0.svg" PlannedGraphic="0_115_1.svg" CivilianGraphic="0_115_0c.svg" PlannedCivilianGraphic="0_115_1c.svg">
+    </Affiliation>
+
+    <Affiliation ID="EXERCISE_DI_UNKNOWN" ContextID="EXERCISE" DimensionID="DISMOUNTED" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="1_115_0.svg" PlannedGraphic="1_115_1.svg" CivilianGraphic="1_115_0c.svg" PlannedCivilianGraphic="1_115_1c.svg">
+    </Affiliation>
+
+    <Affiliation ID="SIMULATED_DI_UNKNOWN" ContextID="SIMULATION" DimensionID="DISMOUNTED" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="2_115_0.svg" PlannedGraphic="2_115_1.svg" CivilianGraphic="2_115_0c.svg" PlannedCivilianGraphic="2_115_1c.svg"/>
+
+    <Affiliation ID="REALITY_DI_FRIEND" ContextID="REALITY" DimensionID="DISMOUNTED" StandardIdentityID="SI_FRIEND" Shape="HEXAGON" Graphic="0_315_0.svg" PlannedGraphic="0_315_1.svg" CivilianGraphic="0_315_0c.svg" PlannedCivilianGraphic="0_315_1c.svg">
+    </Affiliation>
+
+    <Affiliation ID="EXERCISE_DI_FRIEND" ContextID="EXERCISE" DimensionID="DISMOUNTED" StandardIdentityID="SI_FRIEND" Shape="HEXAGON" Graphic="1_315_0.svg" PlannedGraphic="1_315_1.svg" CivilianGraphic="1_315_0c.svg" PlannedCivilianGraphic="1_315_1c.svg">
+    </Affiliation>
+
+    <Affiliation ID="SIMULATED_DI_FRIEND" ContextID="SIMULATION" DimensionID="DISMOUNTED" StandardIdentityID="SI_FRIEND" Shape="HEXAGON" Graphic="2_315_0.svg" PlannedGraphic="2_315_1.svg" CivilianGraphic="2_315_0c.svg" PlannedCivilianGraphic="2_315_1c.svg"/>
+
+    <Affiliation ID="REALITY_DI_NEUTRAL" ContextID="REALITY" DimensionID="DISMOUNTED" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="0_415_0.svg" PlannedGraphic="0_415_1.svg" CivilianGraphic="0_415_0c.svg" PlannedCivilianGraphic="0_415_1c.svg">
+    </Affiliation>
+
+    <Affiliation ID="EXERCISE_DI_NEUTRAL" ContextID="EXERCISE" DimensionID="DISMOUNTED" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="1_415_0.svg" PlannedGraphic="1_415_1.svg" CivilianGraphic="1_415_0c.svg" PlannedCivilianGraphic="1_415_1c.svg">
+    </Affiliation>
+
+    <Affiliation ID="SIMULATED_DI_NEUTRAL" ContextID="SIMULATION" DimensionID="DISMOUNTED" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="2_415_0.svg" PlannedGraphic="2_415_1.svg" CivilianGraphic="2_415_0c.svg" PlannedCivilianGraphic="2_415_1c.svg"/>
+
+    <Affiliation ID="REALITY_DI_HOSTILE" ContextID="REALITY" DimensionID="DISMOUNTED" StandardIdentityID="SI_HOSTILE_FAKER" Shape="DIAMOND" Graphic="0_615_0.svg" PlannedGraphic="0_615_1.svg">
+    </Affiliation>
+
+    <Affiliation ID="EXERCISE_DI_HOSTILE" ContextID="EXERCISE" DimensionID="DISMOUNTED" StandardIdentityID="SI_HOSTILE_FAKER" Shape="HEXAGON" Graphic="1_615_0.svg" PlannedGraphic="1_615_1.svg">
+    </Affiliation>
+
+    <Affiliation ID="SIMULATED_DI_HOSTILE" ContextID="SIMULATION" DimensionID="DISMOUNTED" StandardIdentityID="SI_HOSTILE_FAKER" Shape="DIAMOND" Graphic="2_615_0.svg" PlannedGraphic="2_615_1.svg"/>
+
+    <Affiliation ID="REALITY_DI_ASSUMED" ContextID="REALITY" DimensionID="DISMOUNTED" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="HEXAGON" Graphic="0_215_0.svg" CivilianGraphic="0_215_0c.svg">
+    </Affiliation>
+
+    <Affiliation ID="EXERCISE_DI_ASSUMED" ContextID="EXERCISE" DimensionID="DISMOUNTED" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="HEXAGON" Graphic="1_215_0.svg" CivilianGraphic="1_215_0c.svg">
+    </Affiliation>
+
+    <Affiliation ID="SIMULATED_DI_ASSUMED" ContextID="SIMULATION" DimensionID="DISMOUNTED" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="HEXAGON" Graphic="2_215_0.svg" CivilianGraphic="2_215_0c.svg"/>
+
+    <Affiliation ID="REALITY_DI_SUSPECT" ContextID="REALITY" DimensionID="DISMOUNTED" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="0_515_0.svg">
+    </Affiliation>
+
+    <Affiliation ID="EXERCISE_DI_SUSPECT" ContextID="EXERCISE" DimensionID="DISMOUNTED" StandardIdentityID="SI_SUSPECT_JOKER" Shape="HEXAGON" Graphic="1_515_0.svg">
+    </Affiliation>
+
+    <Affiliation ID="SIMULATED_DI_SUSPECT" ContextID="SIMULATION" DimensionID="DISMOUNTED" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="2_515_0.svg"/>
+
     <!-- Sea Surface Affiliations-->
 
     <Affiliation ID="REALITY_SEA_PENDING" ContextID="REALITY" DimensionID="SEA_SURFACE" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="0_030_0.svg" CivilianGraphic="0_030_0c.svg">
