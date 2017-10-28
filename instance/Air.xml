@@ -568,6 +568,18 @@
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
+    <Modifier ID="HIJACKER_MOD" Label="Hijacker" Graphic="01401.svg" Category="Crime">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="CYBERSPACE_1_MOD" Label="Cyberspace" Graphic="01411.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
   </SectorOneModifiers>
   <SectorTwoModifiers>
     <Modifier ID="NOT_APPLICABLE_2_MOD" Label="Not Applicable">
@@ -637,6 +649,12 @@
       </ModifierCode>
     </Modifier>
     <Modifier ID="DOWNLINK_MOD" Label="Downlinked" Graphic="01112.svg" Category="Track Link Availability">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="CYBERSPACE_2_MOD" Label="Cyberspace" Graphic="01122.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>1</DigitTwo>
