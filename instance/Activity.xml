@@ -972,7 +972,7 @@
     </Entity>
   </Entities>
   <SectorOneModifiers>
-    <Modifier ID="UNSPECIFIED_MOD" Label="Unspecified">
+    <Modifier ID="UNSPECIFIED_1_MOD" Label="Unspecified">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>0</DigitTwo>
@@ -1086,7 +1086,33 @@
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
+    <Modifier ID="HIJACKER_MOD" Label="Hijacker" Graphic="40191.svg" Category="Crime">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="CYBERSPACE_1_MOD" Label="Cyberspace" Graphic="40201.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
   </SectorOneModifiers>
+  <SectorTwoModifiers>
+    <Modifier ID="UNSPECIFIED_2_MOD" Label="Unspecified">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="CYBERSPACE_2_MOD" Label="Cyberspace" Graphic="40012.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+  </SectorTwoModifiers>
   <LegacySymbols>
     <LegacySymbol ID="INCIDENT_CRIMINAL_ACTIVITY_INCIDENT_SYM" Label="E*IPB-----*****" EntityID="INCIDENT" EntityTypeID="CRIMINAL_ACTIVITY_INCIDENT">
       <LegacyFunctionCode Name="2525C" LimitUseTo="2525C" SchemaOverride="E" DimensionOverride="I">B-----</LegacyFunctionCode>
