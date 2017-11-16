@@ -247,6 +247,7 @@
             </EntitySubType>
           </EntitySubTypes>
         </EntityType>
+      </EntityTypes>
     </Entity>
     <Entity ID="CIVILIAN" Label="Civilian" Graphic="27120000.svg" Icon="NA" Standard="NATO_APP6">
       <EntityCode>
@@ -268,7 +269,8 @@
             </EntitySubType>
           </EntitySubTypes>
         </EntityType>
-      </Entity>
+      </EntityTypes>
+    </Entity>
   </Entities>
   <SectorOneModifiers>
     <Modifier ID="UNSPECIFIED_ONE_MOD" Label="Unspecified">
