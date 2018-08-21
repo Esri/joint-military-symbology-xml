@@ -41,43 +41,43 @@
     <Amplifier ID="AR" Label="Special Designator" Description="Special track designators such as Non-Real Time (NRT) and Tactically Significant (SIG) tracks are denoted here." Type="TEXT" Length="3"/>
     <Amplifier ID="AS" Label="Country" Description="Identifies the country of the organization being shown." Remarks="Uses the GENC Standard." Type="TEXT" Length="3">
       <Values ID="AS_VALUES" Label="Country Codes" LabelAlias="CountryCodes">
-        <Value Name='4' Label='AFGHANISTAN' LabelAlias='AF/AFG'/>
+        <Value Name='004' Label='AFGHANISTAN' LabelAlias='AF/AFG'/>
         <Value Name='900' Label='AKROTIRI' LabelAlias='QZ/XQZ'/>
-        <Value Name='8' Label='ALBANIA' LabelAlias='AL/ALB'/>
-        <Value Name='12' Label='ALGERIA' LabelAlias='DZ/DZA'/>
-        <Value Name='16' Label='AMERICAN SAMOA' LabelAlias='AS/ASM'/>
-        <Value Name='20' Label='ANDORRA' LabelAlias='AD/AND'/>
-        <Value Name='24' Label='ANGOLA' LabelAlias='AO/AGO'/>
+        <Value Name='008' Label='ALBANIA' LabelAlias='AL/ALB'/>
+        <Value Name='012' Label='ALGERIA' LabelAlias='DZ/DZA'/>
+        <Value Name='016' Label='AMERICAN SAMOA' LabelAlias='AS/ASM'/>
+        <Value Name='020' Label='ANDORRA' LabelAlias='AD/AND'/>
+        <Value Name='024' Label='ANGOLA' LabelAlias='AO/AGO'/>
         <Value Name='660' Label='ANGUILLA' LabelAlias='AI/AIA'/>
-        <Value Name='10' Label='ANTARCTICA' LabelAlias='AQ/ATA'/>
-        <Value Name='28' Label='ANTIGUA AND BARBUDA' LabelAlias='AG/ATG'/>
-        <Value Name='32' Label='ARGENTINA' LabelAlias='AR/ARG'/>
-        <Value Name='51' Label='ARMENIA' LabelAlias='AM/ARM'/>
+        <Value Name='010' Label='ANTARCTICA' LabelAlias='AQ/ATA'/>
+        <Value Name='028' Label='ANTIGUA AND BARBUDA' LabelAlias='AG/ATG'/>
+        <Value Name='032' Label='ARGENTINA' LabelAlias='AR/ARG'/>
+        <Value Name='051' Label='ARMENIA' LabelAlias='AM/ARM'/>
         <Value Name='533' Label='ARUBA' LabelAlias='AW/ABW'/>
         <Value Name='902' Label='ASHMORE AND CARTIER ISLANDS' LabelAlias='XA/XAC'/>
-        <Value Name='36' Label='AUSTRALIA' LabelAlias='AU/AUS'/>
-        <Value Name='40' Label='AUSTRIA' LabelAlias='AT/AUT'/>
-        <Value Name='31' Label='AZERBAIJAN' LabelAlias='AZ/AZE'/>
-        <Value Name='44' Label='BAHAMAS, THE' LabelAlias='BS/BHS'/>
-        <Value Name='48' Label='BAHRAIN' LabelAlias='BH/BHR'/>
+        <Value Name='036' Label='AUSTRALIA' LabelAlias='AU/AUS'/>
+        <Value Name='040' Label='AUSTRIA' LabelAlias='AT/AUT'/>
+        <Value Name='031' Label='AZERBAIJAN' LabelAlias='AZ/AZE'/>
+        <Value Name='044' Label='BAHAMAS, THE' LabelAlias='BS/BHS'/>
+        <Value Name='048' Label='BAHRAIN' LabelAlias='BH/BHR'/>
         <Value Name='903' Label='BAKER ISLAND' LabelAlias='XB/XBK'/>
-        <Value Name='50' Label='BANGLADESH' LabelAlias='BD/BGD'/>
-        <Value Name='52' Label='BARBADOS' LabelAlias='BB/BRB'/>
+        <Value Name='050' Label='BANGLADESH' LabelAlias='BD/BGD'/>
+        <Value Name='052' Label='BARBADOS' LabelAlias='BB/BRB'/>
         <Value Name='904' Label='BASSAS DA INDIA' LabelAlias='QS/XBI'/>
         <Value Name='112' Label='BELARUS' LabelAlias='BY/BLR'/>
-        <Value Name='56' Label='BELGIUM' LabelAlias='BE/BEL'/>
-        <Value Name='84' Label='BELIZE' LabelAlias='BZ/BLZ'/>
+        <Value Name='056' Label='BELGIUM' LabelAlias='BE/BEL'/>
+        <Value Name='084' Label='BELIZE' LabelAlias='BZ/BLZ'/>
         <Value Name='204' Label='BENIN' LabelAlias='BJ/BEN'/>
-        <Value Name='60' Label='BERMUDA' LabelAlias='BM/BMU'/>
-        <Value Name='64' Label='BHUTAN' LabelAlias='BT/BTN'/>
-        <Value Name='68' Label='BOLIVIA' LabelAlias='BO/BOL'/>
+        <Value Name='060' Label='BERMUDA' LabelAlias='BM/BMU'/>
+        <Value Name='064' Label='BHUTAN' LabelAlias='BT/BTN'/>
+        <Value Name='068' Label='BOLIVIA' LabelAlias='BO/BOL'/>
         <Value Name='535' Label='BONAIRE, SINT EUSTATIUS, AND SABA' LabelAlias='BQ/BES'/>
-        <Value Name='70' Label='BOSNIA AND HERZEGOVINA' LabelAlias='BA/BIH'/>
-        <Value Name='72' Label='BOTSWANA' LabelAlias='BW/BWA'/>
-        <Value Name='74' Label='BOUVET ISLAND' LabelAlias='BV/BVT'/>
-        <Value Name='76' Label='BRAZIL' LabelAlias='BR/BRA'/>
-        <Value Name='86' Label='BRITISH INDIAN OCEAN TERRITORY' LabelAlias='IO/IOT'/>
-        <Value Name='96' Label='BRUNEI' LabelAlias='BN/BRN'/>
+        <Value Name='070' Label='BOSNIA AND HERZEGOVINA' LabelAlias='BA/BIH'/>
+        <Value Name='072' Label='BOTSWANA' LabelAlias='BW/BWA'/>
+        <Value Name='074' Label='BOUVET ISLAND' LabelAlias='BV/BVT'/>
+        <Value Name='076' Label='BRAZIL' LabelAlias='BR/BRA'/>
+        <Value Name='086' Label='BRITISH INDIAN OCEAN TERRITORY' LabelAlias='IO/IOT'/>
+        <Value Name='096' Label='BRUNEI' LabelAlias='BN/BRN'/>
         <Value Name='100' Label='BULGARIA' LabelAlias='BG/BGR'/>
         <Value Name='854' Label='BURKINA FASO' LabelAlias='BF/BFA'/>
         <Value Name='104' Label='BURMA' LabelAlias='MM/MMR'/>
@@ -270,7 +270,7 @@
         <Value Name='534' Label='SINT MAARTEN' LabelAlias='SX/SXM'/>
         <Value Name='703' Label='SLOVAKIA' LabelAlias='SK/SVK'/>
         <Value Name='705' Label='SLOVENIA' LabelAlias='SI/SVN'/>
-        <Value Name='90' Label='SOLOMON ISLANDS' LabelAlias='SB/SLB'/>
+        <Value Name='090' Label='SOLOMON ISLANDS' LabelAlias='SB/SLB'/>
         <Value Name='706' Label='SOMALIA' LabelAlias='SO/SOM'/>
         <Value Name='710' Label='SOUTH AFRICA' LabelAlias='ZA/ZAF'/>
         <Value Name='239' Label='SOUTH GEORGIA AND SOUTH SANDWICH ISLANDS' LabelAlias='GS/SGS'/>
@@ -312,7 +312,7 @@
         <Value Name='336' Label='VATICAN CITY' LabelAlias='VA/VAT'/>
         <Value Name='862' Label='VENEZUELA' LabelAlias='VE/VEN'/>
         <Value Name='704' Label='VIETNAM' LabelAlias='VN/VNM'/>
-        <Value Name='92' Label='VIRGIN ISLANDS, BRITISH' LabelAlias='VG/VGB'/>
+        <Value Name='092' Label='VIRGIN ISLANDS, BRITISH' LabelAlias='VG/VGB'/>
         <Value Name='850' Label='VIRGIN ISLANDS, U.S.' LabelAlias='VI/VIR'/>
         <Value Name='933' Label='WAKE ISLAND' LabelAlias='QW/XWK'/>
         <Value Name='876' Label='WALLIS AND FUTUNA' LabelAlias='WF/WLF'/>
