@@ -1,3 +1,5 @@
+_**To follow the development of Esri supported military symbology solutions, please go to [Esri/military-symology](https://github.com/Esri/military-symbology)**_
+
 # joint-military-symbology-xml
 Joint Military Symbology XML (JointMilSyML or JMSML) is an XML schema, and associated instance data, designed to definitively document the contents of US DOD MIL-STD-2525D and NATO APP-6(D).
 
@@ -9,7 +11,7 @@ The purpose of defining this schema and populating its associated instance data 
 
 In providing this schema, files of instance data, and sample C# code to navigate same, it is hoped that future defense and intelligence systems will be engineered to take advantage of this technology and, in so doing, accelerate the delivery of new military symbology, reflected in updates to these standards, to warfighters.
 
-**Repo Owners: Joe Bayles ([joebayles](https://github.com/joebayles)) and Daniel Barnes ([Dbarnes1](https://github.com/Dbarnes1))**
+**Repo Owners: Joe Bayles ([joebayles](https://github.com/joebayles)) **
 
 ![Image of Joint Military Symbology XML]( ScreenShot.JPG )
 
@@ -169,7 +171,6 @@ __Projects using this Repo__
 
 |Project|Repository|
 |---|---|
-|ArcGIS Pro/Runtime/Server|https://github.com/Esri/military-features-data |
 |Joint military symbology explorer|https://github.com/kjellmf/military-symbology-explorer |
 |milsymbol 2525D Implementation|https://github.com/spatialillusions/milsymbol |
 
@@ -182,6 +183,8 @@ JMSML utilizes NGA's Geopolitical Entities, Names, and Codes ([GENC](https://nsg
 Several parts of the provided schema have been defined (DrawingRules, LabelRules, Geometries, etc.) but are otherwise empty of full instance data.  Work continues on this project, as it evolves to provide more content for use by implementers, and some of that work will fill in the aforementioned missing data.
 
 Find a bug or want to request a new feature?  Please let us know by submitting an issue.
+
+Issues with the Esri-supported stylx files are not managed in this repository. Please contact [Esri Support Services](https://support.esri.com/en/contact-tech-support) or log them in [Esri/military-symology](https://github.com/Esri/military-symbology).
 
 ## Contributing
 
