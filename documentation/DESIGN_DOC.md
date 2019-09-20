@@ -59,7 +59,7 @@ We hope that the SSMC and JSP will adopt this repository and the work it contain
 
 We hope both organizations are inspired by what we do here, and that this drives them to move their standards documentation and its associated SVG files to GitHub as well, so the commercial military symbology implementation community has a single non-government place to go to find definitive information and can help contribute to the standards and make them better.
 
-We hope these self-same commercial military symbology implementation users will modify their existing and future software engineering workflows to injest the XML data in this repository and use it to create whatever they need in their own software architectures, to ensure their end-user software solutions are properly implementing these military symbology standards.
+We hope these self-same commercial military symbology implementation users will modify their existing and future software engineering workflows to ingest the XML data in this repository and use it to create whatever they need in their own software architectures, to ensure their end-user software solutions are properly implementing these military symbology standards.
 
 We hope the aforementioned changes in behavior occur so that the warfighter, using these end-user software solutions, are able to use the latest standardized military symbologies, and that their coalition partners and peers in the field with them, soldiers they must collaborate with, are also using the same standardized military symbologies. 
 
