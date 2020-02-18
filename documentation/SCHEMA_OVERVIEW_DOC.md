@@ -100,7 +100,7 @@ Within the SymbolSet schema, there are two collections of Modifier elements.  Th
 
 Modifier elements are defined to point at specific svg files, so implementers can build the appropriate compound, multi-layered, symbol from relevant components.
 
-LimitUseTo is a special attribute on Modifier elements that can hold a space separated list of "entity" IDs, indicating which "entitites" may be permissibly used with that particular modifier.
+LimitUseTo is a special attribute on Modifier elements that can hold a space separated list of "entity" IDs, indicating which "entities" may be permissibly used with that particular modifier.
 
 <img src="images/modifier.jpg">
 

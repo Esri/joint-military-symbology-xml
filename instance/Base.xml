@@ -28,7 +28,7 @@
     <Amplifier ID="AE" Label="Equipment Teardown Time" Description="Equipment teardown time in minutes" Type="TEXT" Length="3"/>
     <Amplifier ID="AF" Label="Common Identifier" Description="Example: 'Hawk' for Hawk SAM system" Type="TEXT" Length="12"/>
     <Amplifier ID="AG" Label="Auxiliary Equipment Indicator" Description="A graphic modifier for equipment that indicates the presence of a towed sonar array." Type="GRAPHIC"/>
-    <Amplifier ID="AH" Label="Area of Uncertainty" Description="A graphic modifier for units, equipment and installations that indicates the area where an object is most likely to be, based on the object's last report and the reporting accuracty of the sensor that detected the object." Type="GRAPHIC"/>
+    <Amplifier ID="AH" Label="Area of Uncertainty" Description="A graphic modifier for units, equipment and installations that indicates the area where an object is most likely to be, based on the object's last report and the reporting accuracy of the sensor that detected the object." Type="GRAPHIC"/>
     <Amplifier ID="AI" Label="Dead Reckoning Trailer" Description="A graphic amplifier for units and equipment that identifies where an object should be located at present, given its last reported course and speed." Type="GRAPHIC"/>
     <Amplifier ID="AJ" Label="Speed Leader" Description="A graphic amplifier for units, equipment and installations that depicts the speed and direction of movement of an object." Type="GRAPHIC"/>
     <Amplifier ID="AK" Label="Pairing Line" Description="A graphic amplifier for units, equipment and installations that connects two objects and is updated dynamically as the positions of the objects change." Type="GRAPHIC"/>
@@ -328,7 +328,7 @@
     <Amplifier ID="C" Label="Quantity" Description="A text amplifier in an equipment symbol that identifies the number of items present." Type="TEXT" Length="9"/>
     <Amplifier ID="D" Label="Task Force Indicator" Description="A graphic amplifier that identifies a unit or stability operations symbol as a task force." Type="GRAPHIC"/>
     <Amplifier ID="E" Label="Frame Shape Modifier" Description="A graphic modifier that displays affiliation, battle dimension, or exercise amplifying descriptors of an object." Type="GRAPHIC"/>
-    <Amplifier ID="F" Label="Reinforced or Reduced" Description="A text amplifier in a unit symbol that dispays (+) for reinforced, (-) for reduced, (±) for reinforced and reduced." Type="TEXT" Length="3">
+    <Amplifier ID="F" Label="Reinforced or Reduced" Description="A text amplifier in a unit symbol that displays (+) for reinforced, (-) for reduced, (±) for reinforced and reduced." Type="TEXT" Length="3">
       <Values ID="F_VALUES" Label="Reinforced or Reduced Values" LabelAlias="Reinforced">
         <Value Name="REINFORCED" Label="Reinforced" LabelAlias="+"/>
         <Value Name="REDUCED" Label="Reduced" LabelAlias="-"/>
@@ -516,7 +516,7 @@
       <LegacyDimensionCode Name="2525C" CodingSchemeLetter="I">A</LegacyDimensionCode>
       <Fields>
         <Field ID="AIR_AL" Label="Operational Condition" Description="Indicates operational condition." Remarks="Comprised of only one color. Ex. Aircraft: Red - damaged, Green - fully capable. Ex: Missile: Red - imminent threat, Green - no threat." AmplifierID="AL" X="0" Y="-1"/>
-        <Field ID="AIR_AO" Label="Engagement Bar" Description="May denote 1ocal/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
+        <Field ID="AIR_AO" Label="Engagement Bar" Description="May denote local/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
         <Field ID="AIR_A" Label="Air Vehicle Icon" Description="Uses icon and sector modifiers" AmplifierID="A" X="0" Y="0"/>
         <Field ID="AIR_G" Label="Staff Comments" AmplifierID="G" X="1" Y="-2"/>
         <Field ID="AIR_H" Label="Additional Information" AmplifierID="H" X="1" Y="-2"/>
@@ -567,7 +567,7 @@
       <LegacyDimensionCode Name="2525C" CodingSchemeLetter="I">P</LegacyDimensionCode>
       <Fields>
         <Field ID="SPACE_AL" Label="Operational Condition" Description="Indicates operational condition." Remarks="Comprised of only one color. Ex. Satellite: Red - damaged, Green - fully capable. Ex: Missile: Red - imminent threat, Green - no threat." AmplifierID="AL" X="0" Y="-1"/>
-        <Field ID="SPACE_AO" Label="Engagement Bar" Description="May denote 1ocal/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
+        <Field ID="SPACE_AO" Label="Engagement Bar" Description="May denote local/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
         <Field ID="SPACE_A" Label="Space Vehicle Icon" Description="Uses icon and sector modifiers" AmplifierID="A" X="0" Y="0"/>
         <Field ID="SPACE_G" Label="Staff Comments" AmplifierID="G" X="1" Y="-2"/>
         <Field ID="SPACE_H" Label="Additional Information" AmplifierID="H" X="1" Y="-2"/>
@@ -631,13 +631,13 @@
         <Field ID="LAND_UNIT_AE" Label="Equipment Teardown Time" Description="Equipment teardown time in minutes" AmplifierID="AE" X="-1" Y="0"/>
         <Field ID="LAND_UNIT_AF" Label="Common Identifier" Description="Example: 'Hawk' for Hawk SAM system" AmplifierID="AF" X="1" Y="0"/>
         <Field ID="LAND_UNIT_AL" Label="Operational Condition" Description="Indicates operational condition." Remarks="Comprised of only one color. Ex. Satellite: Red - damaged, Green - fully capable. Ex: Missile: Red - imminent threat, Green - no threat." AmplifierID="AL" X="0" Y="-1"/>
-        <Field ID="LAND_UNIT_AO" Label="Engagement Bar" Description="May denote 1ocal/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
+        <Field ID="LAND_UNIT_AO" Label="Engagement Bar" Description="May denote local/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
         <Field ID="LAND_UNIT_AR" Label="Special Designator" Description="Special track designators such as Non-Real Time (NRT) and Tactically Significant (SIG) tracks are denoted here." Remarks="No Location designated in MIL-STD-2525D" AmplifierID="AR" X="0" Y="0"/>
         <Field ID="LAND_UNIT_A" Label="Basic Branch/Function Icon" Description="The innermost part of a symbol that represents a joint military object." AmplifierID="A" X="0" Y="0"/>
         <Field ID="LAND_UNIT_B" Label="Echelon" Description="A graphic amplifier in a unit symbol that identifies command level." AmplifierID="B" X="0" Y="1"/>
         <Field ID="LAND_UNIT_C" Label="Quantity" Description="A text amplifier in an equipment symbol that identifies the number of items present." AmplifierID="C" X="0" Y="1"/>
         <Field ID="LAND_UNIT_D" Label="Task Force Indicator" Description="A graphic amplifier that identifies a unit or stability operations symbol as a task force." AmplifierID="D" X="0" Y="1"/>
-        <Field ID="LAND_UNIT_F" Label="Reinforced or Reduced" Description="A text amplifier in a unit symbol that dispays (+) for reinforced, (-) for reduced, (±) for reinforced and reduced." AmplifierID="F" X="1" Y="2"/>
+        <Field ID="LAND_UNIT_F" Label="Reinforced or Reduced" Description="A text amplifier in a unit symbol that displays (+) for reinforced, (-) for reduced, (±) for reinforced and reduced." AmplifierID="F" X="1" Y="2"/>
         <Field ID="LAND_UNIT_G" Label="Staff Comments" Description="A text amplifier for units, equipment, and installations." AmplifierID="G" X="1" Y="1"/>        
         <Field ID="LAND_UNIT_H" Label="Additional Information" Description="A text amplifier for units, equipment, and installations." AmplifierID="H" X="1" Y="0"/>
         <Field ID="LAND_UNIT_J" Label="Evaluation Rating" Description="A text amplifier for units, equipment and installations that consists of a one-letter reliability rating and a one-number credibility rating." Remarks="Reliability: A-F and Credibility: 1-6" AmplifierID="J" X="1" Y="-2"/>
@@ -695,13 +695,13 @@
         <Field ID="LAND_EQUIP_AE" Label="Equipment Teardown Time" Description="Equipment teardown time in minutes" AmplifierID="AE" X="-1" Y="0"/>
         <Field ID="LAND_EQUIP_AF" Label="Common Identifier" Description="Example: 'Hawk' for Hawk SAM system" AmplifierID="AF" X="0" Y="-2"/>
         <Field ID="LAND_EQUIP_AL" Label="Operational Condition" Description="Indicates operational condition." Remarks="Comprised of only one color. Ex. Satellite: Red - damaged, Green - fully capable. Ex: Missile: Red - imminent threat, Green - no threat." AmplifierID="AL" X="0" Y="-1"/>
-        <Field ID="LAND_EQUIP_AO" Label="Engagement Bar" Description="May denote 1ocal/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
+        <Field ID="LAND_EQUIP_AO" Label="Engagement Bar" Description="May denote local/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
         <Field ID="LAND_EQUIP_AR" Label="Special Designator" Description="Special track designators such as Non-Real Time (NRT) and Tactically Significant (SIG) tracks are denoted here." Remarks="No Location designated in MIL-STD-2525D" AmplifierID="AR" X="0" Y="0"/>
         <Field ID="LAND_EQUIP_A" Label="Basic Branch/Function Icon" Description="The innermost part of a symbol that represents a joint military object." AmplifierID="A" X="0" Y="0"/>
         <Field ID="LAND_EQUIP_B" Label="Echelon" Description="A graphic amplifier in a unit symbol that identifies command level." AmplifierID="B" X="0" Y="1"/>
         <Field ID="LAND_EQUIP_C" Label="Quantity" Description="A text amplifier in an equipment symbol that identifies the number of items present." AmplifierID="C" X="0" Y="1"/>
         <Field ID="LAND_EQUIP_D" Label="Task Force Indicator" Description="A graphic amplifier that identifies a unit or stability operations symbol as a task force." AmplifierID="D" X="0" Y="1"/>
-        <Field ID="LAND_EQUIP_F" Label="Reinforced or Reduced" Description="A text amplifier in a unit symbol that dispays (+) for reinforced, (-) for reduced, (±) for reinforced and reduced." AmplifierID="F" X="1" Y="2"/>
+        <Field ID="LAND_EQUIP_F" Label="Reinforced or Reduced" Description="A text amplifier in a unit symbol that displays (+) for reinforced, (-) for reduced, (±) for reinforced and reduced." AmplifierID="F" X="1" Y="2"/>
         <Field ID="LAND_EQUIP_G" Label="Staff Comments" Description="A text amplifier for units, equipment, and installations." AmplifierID="G" X="1" Y="1"/>        
         <Field ID="LAND_EQUIP_H" Label="Additional Information" Description="A text amplifier for units, equipment, and installations." AmplifierID="H" X="1" Y="0"/>
         <Field ID="LAND_EQUIP_J" Label="Evaluation Rating" Description="A text amplifier for units, equipment and installations that consists of a one-letter reliability rating and a one-number credibility rating." Remarks="Reliability: A-F and Credibility: 1-6" AmplifierID="J" X="1" Y="-2"/>
@@ -762,13 +762,13 @@
         <Field ID="LAND_INSTA_AE" Label="Equipment Teardown Time" Description="Equipment teardown time in minutes" AmplifierID="AE" X="-1" Y="0"/>
         <Field ID="LAND_INSTA_AF" Label="Common Identifier" Description="Example: 'Hawk' for Hawk SAM system" AmplifierID="AF" X="0" Y="-2"/>
         <Field ID="LAND_INSTA_AL" Label="Operational Condition" Description="Indicates operational condition." Remarks="Comprised of only one color. Ex. Satellite: Red - damaged, Green - fully capable. Ex: Missile: Red - imminent threat, Green - no threat." AmplifierID="AL" X="0" Y="-1"/>
-        <Field ID="LAND_INSTA_AO" Label="Engagement Bar" Description="May denote 1ocal/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
+        <Field ID="LAND_INSTA_AO" Label="Engagement Bar" Description="May denote local/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
         <Field ID="LAND_INSTA_AR" Label="Special Designator" Description="Special track designators such as Non-Real Time (NRT) and Tactically Significant (SIG) tracks are denoted here."  Remarks="No Location designated in MIL-STD-2525D" AmplifierID="AR" X="0" Y="0"/>
         <Field ID="LAND_INSTA_A" Label="Basic Branch/Function Icon" Description="The innermost part of a symbol that represents a joint military object." AmplifierID="A" X="0" Y="0"/>
         <Field ID="LAND_INSTA_B" Label="Echelon" Description="A graphic amplifier in a unit symbol that identifies command level." AmplifierID="B" X="0" Y="1"/>
         <Field ID="LAND_INSTA_C" Label="Quantity" Description="A text amplifier in an equipment symbol that identifies the number of items present." AmplifierID="C" X="0" Y="1"/>
         <Field ID="LAND_INSTA_D" Label="Task Force Indicator" Description="A graphic amplifier that identifies a unit or stability operations symbol as a task force." AmplifierID="D" X="0" Y="1"/>
-        <Field ID="LAND_INSTA_F" Label="Reinforced or Reduced" Description="A text amplifier in a unit symbol that dispays (+) for reinforced, (-) for reduced, (±) for reinforced and reduced." AmplifierID="F" X="1" Y="2"/>
+        <Field ID="LAND_INSTA_F" Label="Reinforced or Reduced" Description="A text amplifier in a unit symbol that displays (+) for reinforced, (-) for reduced, (±) for reinforced and reduced." AmplifierID="F" X="1" Y="2"/>
         <Field ID="LAND_INSTA_G" Label="Staff Comments" Description="A text amplifier for units, equipment, and installations." AmplifierID="G" X="1" Y="1"/>        
         <Field ID="LAND_INSTA_H" Label="Additional Information" Description="A text amplifier for units, equipment, and installations." AmplifierID="H" X="1" Y="0"/>
         <Field ID="LAND_INSTA_J" Label="Evaluation Rating" Description="A text amplifier for units, equipment and installations that consists of a one-letter reliability rating and a one-number credibility rating." Remarks="Reliability: A-F and Credibility: 1-6" AmplifierID="J" X="1" Y="-2"/>
@@ -807,7 +807,7 @@
       <LegacyDimensionCode Name="2525BC2" CodingSchemeLetter="S">S</LegacyDimensionCode>
       <Fields>
         <Field ID="SEA_SUR_AL" Label="Operational Condition" Description="Indicates operational condition." Remarks="Comprised of only one color. Ex. Satellite: Red - damaged, Green - fully capable. Ex: Missile: Red - imminent threat, Green - no threat." AmplifierID="AL" X="0" Y="-1"/>
-        <Field ID="SEA_SUR_AO" Label="Engagement Bar" Description="May denote 1ocal/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
+        <Field ID="SEA_SUR_AO" Label="Engagement Bar" Description="May denote local/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
         <Field ID="SEA_SUR_AQ" Label="Guarded Unit" Description="During ballistic missile defense, some tracks are designated as guarded by a particular unit." Remarks="The 2-character string, BG" AmplifierID="AQ" X="-1" Y="2"/>
         <Field ID="SEA_SUR_AR" Label="Special Designator" Description="Special track designators, such as Non-Real Time (NRT) and Tactically Significant (SIG) tracks, are denoted here." Remarks="The 3-character strings, NRT or SIG" AmplifierID="AR" X="-1" Y="2"/>
         <Field ID="SEA_SUR_A" Label="Ship Icon" Description="Uses icon and sector modifiers" AmplifierID="A" X="0" Y="0"/>
@@ -853,7 +853,7 @@
       <LegacyDimensionCode Name="2525BC2" CodingSchemeLetter="S">U</LegacyDimensionCode>
       <Fields>
         <Field ID="SEA_SUB_AL" Label="Operational Condition" Description="Indicates operational condition." Remarks="Comprised of only one color. Ex. Satellite: Red - damaged, Green - fully capable. Ex: Missile: Red - imminent threat, Green - no threat." AmplifierID="AL" X="0" Y="-1"/>
-        <Field ID="SEA_SUB_AO" Label="Engagement Bar" Description="May denote 1ocal/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
+        <Field ID="SEA_SUB_AO" Label="Engagement Bar" Description="May denote local/remote status, engagement status, and weapon type." Remarks="A:BBB-CC, where A = remote/local, BBB = engagement status, CC = weapon asset." AmplifierID="AO" X="0" Y="1"/>
         <Field ID="SEA_SUB_AQ" Label="Guarded Unit" Description="During ballistic missile defense, some tracks are designated as guarded by a particular unit." Remarks="The 2-character string, BG" AmplifierID="AQ" X="-1" Y="2"/>
         <Field ID="SEA_SUB_AR" Label="Special Designator" Description="Special track designators, such as Non-Real Time (NRT) and Tactically Significant (SIG) tracks, are denoted here." Remarks="The 3-character strings, NRT or SIG" AmplifierID="AR" X="-1" Y="2"/>
         <Field ID="SEA_SUB_G" Label="Staff Comments" AmplifierID="G" X="1" Y="-1"/>
