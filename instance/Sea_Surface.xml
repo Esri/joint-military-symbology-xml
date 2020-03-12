@@ -739,10 +739,22 @@
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="HIJACK_MOD" Label="Hijacking/Hijacked" LabelAlias="Hijacking/Hijacked (Sea Surface)" Graphic="30231.svg" Category="Crime">
+    <Modifier ID="HIJACKED_MOD" Label="Hijacking/Hijacked" LabelAlias="Hijacking/Hijacked (Sea Surface)" Graphic="30231.svg" Category="Crime">
       <ModifierCode>
         <DigitOne>2</DigitOne>
         <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="HIJACKER_MOD" Label="Hijacker" Graphic="30241.svg" Category="Crime">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="CYBERSPACE_1_MOD" Label="Cyberspace" Graphic="30251.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
   </SectorOneModifiers>
@@ -840,6 +852,12 @@
     <Modifier ID="EXPENDABLE_MOD" Label="Expendable" Graphic="30152.svg" Category="USV Control" LimitUseTo="CIV_USV">
       <ModifierCode>
         <DigitOne>1</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="CYBERSPACE_2_MOD" Label="Cyberspace" Graphic="30162.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>

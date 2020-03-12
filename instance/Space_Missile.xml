@@ -141,5 +141,26 @@
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
+    
+    <Modifier ID="CRBM_MOD" Label="Close Range (CRBM)" Category="Missile Range" Graphic="06132.svg">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="DEBRIS_MOD" Label="Debris" Category="Missile Type - BMD" Graphic="06142.svg">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+
+    <Modifier ID="UNK_MOD" Label="Unknown" Category="Missile Type - BMD" Graphic="06152.svg">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
   </SectorTwoModifiers>
 </SymbolSet>

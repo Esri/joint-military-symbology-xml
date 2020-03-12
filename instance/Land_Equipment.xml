@@ -569,6 +569,12 @@
                 <DigitTwo>0</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
+            <EntitySubType ID="LIGHT_ARMORED_RECON_VEHICLE" Label="Light Armored Reconnaissance Vehicle" Graphic="15120111.svg" Icon="FULL_FRAME">
+              <EntitySubTypeCode>
+                <DigitOne>1</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
           </EntitySubTypes>
         </EntityType>
         <EntityType ID="TANK" Label="Tank" Graphic="15120200.svg" Icon="FULL_OCTAGON">
@@ -711,6 +717,24 @@
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="MINE_CLEARING_EQUIPMENT_ABV" Label="Assault Breacher Vehicle (ABV) w/ Combat Dozer Blade" Graphic="15130903.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="MINE_CLEARING_EQUIPMENT_MEDIUM" Label="Medium" Graphic="15130904.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>4</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="MINE_CLEARING_EQUIPMENT_HEAVY" Label="Heavy" Graphic="15130905.svg" Icon="FULL_OCTAGON">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>5</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
           </EntitySubTypes>
@@ -1324,6 +1348,20 @@
             <DigitOne>1</DigitOne>
             <DigitTwo>3</DigitTwo>
           </EntityTypeCode>
+          <EntitySubTypes>
+            <EntitySubType ID="TENT_CIVILIAN" Label="Civilian" Graphic="15201301.svg">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="TENT_MILITARY" Label="Military" Graphic="15201302.svg">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
         </EntityType>
         <EntityType ID="UNIT_DEPLOYMENT_SHIPMENTS" Label="Unit Deployment Shipments" Graphic="15201400.svg">
           <EntityTypeCode>
@@ -1439,7 +1477,7 @@
     </Entity>
   </Entities>
   <SectorOneModifiers>
-    <Modifier ID="UNSPECIFIED_MOD" Label="Unspecified">
+    <Modifier ID="UNSPECIFIED_1_MOD" Label="Unspecified">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>0</DigitTwo>
@@ -1499,8 +1537,64 @@
         <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
+    <Modifier ID="TILT_ROTOR_MOD" Label="Tilt-Rotor" Graphic="15101.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="HIJACKER_MOD" Label="Hijacker" Graphic="15111.svg" Category="Crime">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="MULTI_PURPOSE_BLADE_MOD" Label="Multi-Purpose Blade" Graphic="15121.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="TANK_WIDTH_PLOW_MOD" Label="Tank-Width Mine Plow" Graphic="15131.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="BRIDGE_MOD" Label="Bridge" Graphic="15141.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="CYBERSPACE_1_MOD" Label="Cyberspace" Graphic="15151.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ARMORED_MOD" Label="Armored" Graphic="15161.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
   </SectorOneModifiers>
-  <LegacySymbols>
+  <SectorTwoModifiers>
+    <Modifier ID="UNSPECIFIED_2_MOD" Label="Unspecified">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="CYBERSPACE_2_MOD" Label="Cyberspace" Graphic="15012.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+  </SectorTwoModifiers>
+    <LegacySymbols>
     <LegacySymbol ID="WEAPON_SYSTEM_RIFLE_SYM" Label="S*GPEWR---*****" EntityID="WEAPON_SYSTEM" EntityTypeID="RIFLE">
       <LegacyFunctionCode Name="2525C">EWR---</LegacyFunctionCode>
     </LegacySymbol>

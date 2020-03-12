@@ -269,6 +269,18 @@
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
+    <Modifier ID="HIJACKER_MOD" Label="Hijacker" Graphic="35211.svg" Category="Crime">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="CYBERSPACE_1_MOD" Label="Cyberspace" Graphic="35221.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
   </SectorOneModifiers>
   <SectorTwoModifiers>
     <Modifier ID="UNSPECIFIED_2_MOD" Label="Unspecified">
@@ -371,6 +383,12 @@
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="CYBERSPACE_2_MOD" Label="Cyberspace" Graphic="35172.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
   </SectorTwoModifiers>
