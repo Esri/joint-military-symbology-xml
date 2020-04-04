@@ -13,6 +13,10 @@ jmsml.exe /xe="../../../../../samples/name_domains_values/Coded_Domain_Sea_Subsu
 jmsml.exe /xe="../../../../../samples/name_domains_values/Coded_Domain_Sea_Subsurface_Mine_Warfare" /s="^Mine Warfare$" /xas="DOMAIN"
 jmsml.exe /xe="../../../../../samples/name_domains_values/Coded_Domain_Activities" /s="^Activities$" /xas="DOMAIN"
 jmsml.exe /xe="../../../../../samples/name_domains_values/Coded_Domain_Cyberspace" /s="^Cyberspace$" /xas="DOMAIN"
+
+REM Added Dismounted for App6
+jmsml.exe /xe="../../../../../samples/name_domains_values/Coded_Domain_Dismounted" /s="^Dismounted" /xas="DOMAIN"
+
 jmsml.exe /xe="../../../../../samples/name_domains_values/Coded_Domain_Control_Measure_Point" /p /s="^Control Measure$" /xas="DOMAIN"
 jmsml.exe /xe="../../../../../samples/name_domains_values/Coded_Domain_Control_Measure_Line" /l /s="^Control Measure$" /xas="DOMAIN"
 jmsml.exe /xe="../../../../../samples/name_domains_values/Coded_Domain_Control_Measure_Area" /a /s="^Control Measure$" /xas="DOMAIN"

@@ -41,6 +41,7 @@
     <xs:restriction base="xs:token">
       <xs:enumeration value="NA"/>
       <xs:enumeration value="CIRCLE"/>
+      <xs:enumeration value="HEXAGON"/>
       <xs:enumeration value="CLOVER"/>
       <xs:enumeration value="CURVE"/>
       <xs:enumeration value="DIAMOND"/>
