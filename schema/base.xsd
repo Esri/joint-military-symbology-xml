@@ -150,7 +150,7 @@
               <xs:element name="StandardIdentityGroup" minOccurs="1" maxOccurs="4">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="LegacyStandardIdentityCode" type="LegacyLetterCodeType" minOccurs="1" maxOccurs="unbounded"/>
+                    <xs:element name="LegacyStandardIdentityCode" type="LegacyLetterCodeType" minOccurs="0" maxOccurs="unbounded"/>
                     <xs:element name="StandardIdentityGroupCode" type="SingleDigitType"/>
                   </xs:sequence>
                   <xs:attributeGroup ref="IdentifierAttributeGroup"/>
