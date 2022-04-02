@@ -7,20 +7,20 @@
 	
 		<rect x="40.519" y="92.818" fill="none" stroke="#000000" stroke-width="3.6048" stroke-linecap="round" stroke-miterlimit="8" width="300.254" height="224.75"/>
 	<g>
-		<rect x="309.051" y="150.974" fill="#FFFFFF" width="49.31" height="29.188"/>
-		<text transform="matrix(1 0 0 1 313.0605 172.4521)" font-family="sans-serif" font-size="20.8061">PAA</text>
-	</g>
-	<g>
 		<rect x="165.992" y="302.975" fill="#FFFFFF" width="49.307" height="29.188"/>
 		<text transform="matrix(1 0 0 1 170.001 324.4531)" font-family="sans-serif" font-size="20.8061">PAA</text>
 	</g>
 	<g>
-		<rect x="15.865" y="150.974" fill="#FFFFFF" width="49.307" height="29.188"/>
-		<text transform="matrix(1 0 0 1 19.874 172.4521)" font-family="sans-serif" font-size="20.8061">PAA</text>
+		<rect x="309.051" y="186.974" fill="#FFFFFF" width="49.312" height="29.188"/>
+		<text transform="matrix(1 0 0 1 313.0605 208.4521)" font-family="sans-serif" font-size="20.8061">PAA</text>
 	</g>
 	<g>
 		<rect x="165.992" y="78.224" fill="#FFFFFF" width="49.307" height="29.188"/>
 		<text transform="matrix(1 0 0 1 170.001 99.7021)" font-family="sans-serif" font-size="20.8061">PAA</text>
+	</g>
+	<g>
+		<rect x="15.865" y="186.974" fill="#FFFFFF" width="49.307" height="29.188"/>
+		<text transform="matrix(1 0 0 1 19.874 208.4521)" font-family="sans-serif" font-size="20.8061">PAA</text>
 	</g>
 </g>
 <g id="template" display="none">
@@ -29,6 +29,24 @@
 		
 			<rect x="154.805" y="174.691" transform="matrix(2.578893e-006 1 -1 2.578893e-006 389.4955 29.8863)" fill="#FFFFFF" stroke="#000000" stroke-width="3" width="50" height="70"/>
 		<text transform="matrix(2 0 0 2 152.8104 222.6914)" font-family="sans-serif" font-size="18">AM</text>
+	</g>
+	<g id="varW1" display="inline">
+		
+			<rect x="198.498" y="205.553" fill="none" stroke="#000000" stroke-width="2.5418" stroke-linecap="round" stroke-miterlimit="8" width="44.205" height="34.516"/>
+		<text transform="matrix(1 0 0 1 205.5527 230.6543)" font-family="sans-serif" font-size="18">W</text>
+		<text transform="matrix(1 0 0 1 222.7402 230.6543)" font-family="sans-serif" font-size="18">1</text>
+		<text transform="matrix(1 0 0 1 232.4277 230.6543)" font-family="sans-serif" font-size="18"> </text>
+	</g>
+	<g id="varW" display="inline">
+		<text transform="matrix(1 0 0 1 185.25 229.5029)" font-family="sans-serif" font-size="21.7108">-</text>
+		
+			<rect x="148.313" y="204.609" fill="none" stroke="#000000" stroke-width="2.5418" stroke-linecap="round" stroke-miterlimit="8" width="34.152" height="34.535"/>
+		<text transform="matrix(1 0 0 1 155.2885 229.8418)" font-family="sans-serif" font-size="18">W</text>
+	</g>
+	<g id="varT" display="inline">
+		
+			<rect x="174.238" y="159.225" fill="none" stroke="#000000" stroke-width="2.5418" stroke-linecap="round" stroke-miterlimit="8" width="33.254" height="35.682"/>
+		<text transform="matrix(1 0 0 1 185.3374 183.6943)" font-family="sans-serif" font-size="18">T</text>
 	</g>
 	<g id="points" display="inline">
 		<g>
@@ -42,7 +60,7 @@
 		</g>
 		<g>
 			<path stroke="#000000" stroke-width="0.3105" stroke-linejoin="bevel" stroke-miterlimit="10" d="M313.059,210.9l13.121-4.483
-				c0.679-0.231,1.414,0.116,1.646,0.796c0.233,0.682-0.134,1.418-0.813,1.65l-13.12,4.48c-0.657,0.232-1.396-0.137-1.63-0.814
+				c0.681-0.231,1.414,0.116,1.646,0.796c0.231,0.682-0.134,1.418-0.813,1.65l-13.12,4.479c-0.655,0.232-1.396-0.137-1.63-0.813
 				C312.029,211.87,312.378,211.133,313.059,210.9L313.059,210.9z M321.638,201.119l17.194,2.328l-12.168,12.363L321.638,201.119z"
 				/>
 			<text transform="matrix(1 0 0 1 286.4326 224.3936)" font-family="sans-serif" font-size="13.0426">P</text>
@@ -51,11 +69,16 @@
 		</g>
 		<g>
 			<path stroke="#000000" stroke-width="0.3105" stroke-linejoin="bevel" stroke-miterlimit="10" d="M365.691,102.135v202.491
-				c0,0.718-0.584,1.299-1.304,1.299c-0.719,0-1.302-0.581-1.302-1.299V102.135c0-0.719,0.583-1.301,1.302-1.301
-				C365.107,100.834,365.691,101.416,365.691,102.135L365.691,102.135z M356.627,104.716l7.764-15.527l7.767,15.527H356.627z
-				 M372.154,302.042l-7.767,15.526l-7.764-15.526H372.154z"/>
-			<text transform="matrix(6.123234e-017 1 -1 6.123234e-017 374.8379 180.1611)" font-family="sans-serif" font-size="18">WIDTH (m)</text>
+				c0,0.718-0.584,1.299-1.306,1.299c-0.719,0-1.302-0.581-1.302-1.299V102.135c0-0.719,0.583-1.301,1.302-1.301
+				C365.107,100.834,365.691,101.416,365.691,102.135L365.691,102.135z M356.627,104.716l7.764-15.527l7.769,15.527H356.627z
+				 M372.154,302.042l-7.769,15.526l-7.764-15.526H372.154z"/>
+			<text transform="matrix(6.123234e-017 1 -1 6.123234e-017 374.8398 180.1611)" font-family="sans-serif" font-size="18">WIDTH (m)</text>
 		</g>
 	</g>
+</g>
+<g id="example" display="none">
+	<text transform="matrix(1 0 0 1 102.8349 214.1064)" display="inline" font-family="sans-serif" font-size="24">051030ZAPR08 -</text>
+	<text transform="matrix(1 0 0 1 102.8349 244.293)" display="inline" font-family="sans-serif" font-size="24">051600ZAPR08</text>
+	<text id="varTe" transform="matrix(1 0 0 1 149.1767 168.5762)" display="inline" font-family="sans-serif" font-size="36">3BCT</text>
 </g>
 </svg>

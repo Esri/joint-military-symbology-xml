@@ -41,286 +41,286 @@
     <Amplifier ID="AR" Label="Special Designator" Description="Special track designators such as Non-Real Time (NRT) and Tactically Significant (SIG) tracks are denoted here." Type="TEXT" Length="3"/>
     <Amplifier ID="AS" Label="Country" Description="Identifies the country of the organization being shown." Remarks="Uses the GENC Standard." Type="TEXT" Length="3">
       <Values ID="AS_VALUES" Label="Country Codes" LabelAlias="CountryCodes">
-        <Value Name="AF" Label="Afghanistan" LabelAlias="AFG"/>
-        <Value Name="QZ" Label="Akrotiri" LabelAlias="XQZ"/>
-        <Value Name="AL" Label="Albania" LabelAlias="ALB"/>
-        <Value Name="DZ" Label="Algeria" LabelAlias="DZA"/>
-        <Value Name="AS" Label="American Samoa" LabelAlias="ASM"/>
-        <Value Name="AD" Label="Andorra" LabelAlias="AND"/>
-        <Value Name="AO" Label="Angola" LabelAlias="AGO"/>
-        <Value Name="AI" Label="Anguilla" LabelAlias="AIA"/>
-        <Value Name="AQ" Label="Antarctica" LabelAlias="ATA"/>
-        <Value Name="AG" Label="Antigua and Barbuda" LabelAlias="ATG"/>
-        <Value Name="AR" Label="Argentina" LabelAlias="ARG"/>
-        <Value Name="AM" Label="Armenia" LabelAlias="ARM"/>
-        <Value Name="AW" Label="Aruba" LabelAlias="ABW"/>
-        <Value Name="XA" Label="Ashmore and Cartier Islands" LabelAlias="XAC"/>
-        <Value Name="AU" Label="Australia" LabelAlias="AUS"/>
-        <Value Name="AT" Label="Austria" LabelAlias="AUT"/>
-        <Value Name="AZ" Label="Azerbaijan" LabelAlias="AZE"/>
-        <Value Name="BS" Label="Bahamas, The" LabelAlias="BHS"/>
-        <Value Name="BH" Label="Bahrain" LabelAlias="BHR"/>
-        <Value Name="XB" Label="Baker Island" LabelAlias="XBK"/>
-        <Value Name="BD" Label="Bangladesh" LabelAlias="BGD"/>
-        <Value Name="BB" Label="Barbados" LabelAlias="BRB"/>
-        <Value Name="QS" Label="Bassas Da India" LabelAlias="XBI"/>
-        <Value Name="BY" Label="Belarus" LabelAlias="BLR"/>
-        <Value Name="BE" Label="Belgium" LabelAlias="BEL"/>
-        <Value Name="BZ" Label="Belize" LabelAlias="BLZ"/>
-        <Value Name="BJ" Label="Benin" LabelAlias="BEN"/>
-        <Value Name="BM" Label="Bermuda" LabelAlias="BMU"/>
-        <Value Name="BT" Label="Bhutan" LabelAlias="BTN"/>
-        <Value Name="BO" Label="Bolivia" LabelAlias="BOL"/>
-        <Value Name="BQ" Label="Bonaire, Sint Eustatius, and Saba" LabelAlias="BES"/>
-        <Value Name="BA" Label="Bosnia and Herzegovina" LabelAlias="BIH"/>
-        <Value Name="BW" Label="Botswana" LabelAlias="BWA"/>
-        <Value Name="BV" Label="Bouvet Island" LabelAlias="BVT"/>
-        <Value Name="BR" Label="Brazil" LabelAlias="BRA"/>
-        <Value Name="IO" Label="British Indian Ocean Territory" LabelAlias="IOT"/>
-        <Value Name="BN" Label="Brunei" LabelAlias="BRN"/>
-        <Value Name="BG" Label="Bulgaria" LabelAlias="BGR"/>
-        <Value Name="BF" Label="Burkina Faso" LabelAlias="BFA"/>
-        <Value Name="MM" Label="Burma" LabelAlias="MMR"/>
-        <Value Name="BI" Label="Burundi" LabelAlias="BDI"/>
-        <Value Name="CV" Label="Cabo Verde" LabelAlias="CPV"/>
-        <Value Name="KH" Label="Cambodia" LabelAlias="KHM"/>
-        <Value Name="CM" Label="Cameroon" LabelAlias="CMR"/>
-        <Value Name="CA" Label="Canada" LabelAlias="CAN"/>
-        <Value Name="KY" Label="Cayman Islands" LabelAlias="CYM"/>
-        <Value Name="CF" Label="Central African Republic" LabelAlias="CAF"/>
-        <Value Name="TD" Label="Chad" LabelAlias="TCD"/>
-        <Value Name="CL" Label="Chile" LabelAlias="CHL"/>
-        <Value Name="CN" Label="China" LabelAlias="CHN"/>
-        <Value Name="CX" Label="Christmas Island" LabelAlias="CXR"/>
-        <Value Name="CP" Label="Clipperton Island" LabelAlias="CPT"/>
-        <Value Name="CC" Label="Cocos (Keeling) Islands" LabelAlias="CCK"/>
-        <Value Name="CO" Label="Colombia" LabelAlias="COL"/>
-        <Value Name="KM" Label="Comoros" LabelAlias="COM"/>
-        <Value Name="CG" Label="Congo (Brazzaville)" LabelAlias="COG"/>
-        <Value Name="CD" Label="Congo (Kinshasa)" LabelAlias="COD"/>
-        <Value Name="CK" Label="Cook Islands" LabelAlias="COK"/>
-        <Value Name="XC" Label="Coral Sea Islands" LabelAlias="XCS"/>
-        <Value Name="CR" Label="Costa Rica" LabelAlias="CRI"/>
-        <Value Name="CI" Label="Côte d’Ivoire" LabelAlias="CIV"/>
-        <Value Name="HR" Label="Croatia" LabelAlias="HRV"/>
-        <Value Name="CU" Label="Cuba" LabelAlias="CUB"/>
-        <Value Name="CW" Label="Curaçao" LabelAlias="CUW"/>
-        <Value Name="CY" Label="Cyprus" LabelAlias="CYP"/>
-        <Value Name="CZ" Label="Czech Republic" LabelAlias="CZE"/>
-        <Value Name="DK" Label="Denmark" LabelAlias="DNK"/>
-        <Value Name="XD" Label="Dhekelia" LabelAlias="XXD"/>
-        <Value Name="DG" Label="Diego Garcia" LabelAlias="DGA"/>
-        <Value Name="DJ" Label="Djibouti" LabelAlias="DJI"/>
-        <Value Name="DM" Label="Dominica" LabelAlias="DMA"/>
-        <Value Name="DO" Label="Dominican Republic" LabelAlias="DOM"/>
-        <Value Name="EC" Label="Ecuador" LabelAlias="ECU"/>
-        <Value Name="EG" Label="Egypt" LabelAlias="EGY"/>
-        <Value Name="SV" Label="El Salvador" LabelAlias="SLV"/>
-        <Value Name="X1" Label="Entity 1" LabelAlias="XAZ"/>
-        <Value Name="X2" Label="Entity 2" LabelAlias="XCR"/>
-        <Value Name="X3" Label="Entity 3" LabelAlias="XCY"/>
-        <Value Name="X4" Label="Entity 4" LabelAlias="XKM"/>
-        <Value Name="X5" Label="Entity 5" LabelAlias="XKN"/>
-        <Value Name="A3" Label="Entity 6" LabelAlias="AX3"/>
-        <Value Name="GQ" Label="Equatorial Guinea" LabelAlias="GNQ"/>
-        <Value Name="ER" Label="Eritrea" LabelAlias="ERI"/>
-        <Value Name="EE" Label="Estonia" LabelAlias="EST"/>
-        <Value Name="ET" Label="Ethiopia" LabelAlias="ETH"/>
-        <Value Name="XE" Label="Europa Island" LabelAlias="XEU"/>
-        <Value Name="FK" Label="Falkland Islands (Islas Malvinas)" LabelAlias="FLK"/>
-        <Value Name="FO" Label="Faroe Islands" LabelAlias="FRO"/>
-        <Value Name="FJ" Label="Fiji" LabelAlias="FJI"/>
-        <Value Name="FI" Label="Finland" LabelAlias="FIN"/>
-        <Value Name="FR" Label="France" LabelAlias="FRA"/>
-        <Value Name="GF" Label="French Guiana" LabelAlias="GUF"/>
-        <Value Name="PF" Label="French Polynesia" LabelAlias="PYF"/>
-        <Value Name="TF" Label="French Southern and Antarctic Lands" LabelAlias="ATF"/>
-        <Value Name="GA" Label="Gabon" LabelAlias="GAB"/>
-        <Value Name="GM" Label="Gambia, The" LabelAlias="GMB"/>
-        <Value Name="XG" Label="Gaza Strip" LabelAlias="XGZ"/>
-        <Value Name="GE" Label="Georgia" LabelAlias="GEO"/>
-        <Value Name="DE" Label="Germany" LabelAlias="DEU"/>
-        <Value Name="GH" Label="Ghana" LabelAlias="GHA"/>
-        <Value Name="GI" Label="Gibraltar" LabelAlias="GIB"/>
-        <Value Name="QX" Label="Glorioso Islands" LabelAlias="XGL"/>
-        <Value Name="GR" Label="Greece" LabelAlias="GRC"/>
-        <Value Name="GL" Label="Greenland" LabelAlias="GRL"/>
-        <Value Name="GD" Label="Grenada" LabelAlias="GRD"/>
-        <Value Name="GP" Label="Guadeloupe" LabelAlias="GLP"/>
-        <Value Name="GU" Label="Guam" LabelAlias="GUM"/>
-        <Value Name="A2" Label="Guantanamo Bay Naval Base" LabelAlias="AX2"/>
-        <Value Name="GT" Label="Guatemala" LabelAlias="GTM"/>
-        <Value Name="GG" Label="Guernsey" LabelAlias="GGY"/>
-        <Value Name="GN" Label="Guinea" LabelAlias="GIN"/>
-        <Value Name="GW" Label="Guinea-Bissau" LabelAlias="GNB"/>
-        <Value Name="GY" Label="Guyana" LabelAlias="GUY"/>
-        <Value Name="HT" Label="Haiti" LabelAlias="HTI"/>
-        <Value Name="HM" Label="Heard Island and Mcdonald Islands" LabelAlias="HMD"/>
-        <Value Name="HN" Label="Honduras" LabelAlias="HND"/>
-        <Value Name="HK" Label="Hong Kong" LabelAlias="HKG"/>
-        <Value Name="XH" Label="Howland Island" LabelAlias="XHO"/>
-        <Value Name="HU" Label="Hungary" LabelAlias="HUN"/>
-        <Value Name="IS" Label="Iceland" LabelAlias="ISL"/>
-        <Value Name="IN" Label="India" LabelAlias="IND"/>
-        <Value Name="ID" Label="Indonesia" LabelAlias="IDN"/>
-        <Value Name="IR" Label="Iran" LabelAlias="IRN"/>
-        <Value Name="IQ" Label="Iraq" LabelAlias="IRQ"/>
-        <Value Name="IE" Label="Ireland" LabelAlias="IRL"/>
-        <Value Name="IM" Label="Isle Of Man" LabelAlias="IMN"/>
-        <Value Name="IL" Label="Israel" LabelAlias="ISR"/>
-        <Value Name="IT" Label="Italy" LabelAlias="ITA"/>
-        <Value Name="JM" Label="Jamaica" LabelAlias="JAM"/>
-        <Value Name="XJ" Label="Jan Mayen" LabelAlias="XJM"/>
-        <Value Name="JP" Label="Japan" LabelAlias="JPN"/>
-        <Value Name="XQ" Label="Jarvis Island" LabelAlias="XJV"/>
-        <Value Name="JE" Label="Jersey" LabelAlias="JEY"/>
-        <Value Name="XU" Label="Johnston Atoll" LabelAlias="XJA"/>
-        <Value Name="JO" Label="Jordan" LabelAlias="JOR"/>
-        <Value Name="QU" Label="Juan De Nova Island" LabelAlias="XJN"/>
-        <Value Name="KZ" Label="Kazakhstan" LabelAlias="KAZ"/>
-        <Value Name="KE" Label="Kenya" LabelAlias="KEN"/>
-        <Value Name="XM" Label="Kingman Reef" LabelAlias="XKR"/>
-        <Value Name="KI" Label="Kiribati" LabelAlias="KIR"/>
-        <Value Name="KP" Label="Korea, North" LabelAlias="PRK"/>
-        <Value Name="KR" Label="Korea, South" LabelAlias="KOR"/>
-        <Value Name="XK" Label="Kosovo" LabelAlias="XKS"/>
-        <Value Name="KW" Label="Kuwait" LabelAlias="KWT"/>
-        <Value Name="KG" Label="Kyrgyzstan" LabelAlias="KGZ"/>
-        <Value Name="LA" Label="Laos" LabelAlias="LAO"/>
-        <Value Name="LV" Label="Latvia" LabelAlias="LVA"/>
-        <Value Name="LB" Label="Lebanon" LabelAlias="LBN"/>
-        <Value Name="LS" Label="Lesotho" LabelAlias="LSO"/>
-        <Value Name="LR" Label="Liberia" LabelAlias="LBR"/>
-        <Value Name="LY" Label="Libya" LabelAlias="LBY"/>
-        <Value Name="LI" Label="Liechtenstein" LabelAlias="LIE"/>
-        <Value Name="LT" Label="Lithuania" LabelAlias="LTU"/>
-        <Value Name="LU" Label="Luxembourg" LabelAlias="LUX"/>
-        <Value Name="MO" Label="Macau" LabelAlias="MAC"/>
-        <Value Name="MK" Label="Macedonia" LabelAlias="MKD"/>
-        <Value Name="MG" Label="Madagascar" LabelAlias="MDG"/>
-        <Value Name="MW" Label="Malawi" LabelAlias="MWI"/>
-        <Value Name="MY" Label="Malaysia" LabelAlias="MYS"/>
-        <Value Name="MV" Label="Maldives" LabelAlias="MDV"/>
-        <Value Name="ML" Label="Mali" LabelAlias="MLI"/>
-        <Value Name="MT" Label="Malta" LabelAlias="MLT"/>
-        <Value Name="MH" Label="Marshall Islands" LabelAlias="MHL"/>
-        <Value Name="MQ" Label="Martinique" LabelAlias="MTQ"/>
-        <Value Name="MR" Label="Mauritania" LabelAlias="MRT"/>
-        <Value Name="MU" Label="Mauritius" LabelAlias="MUS"/>
-        <Value Name="YT" Label="Mayotte" LabelAlias="MYT"/>
-        <Value Name="MX" Label="Mexico" LabelAlias="MEX"/>
-        <Value Name="FM" Label="Micronesia, Federated States Of" LabelAlias="FSM"/>
-        <Value Name="QM" Label="Midway Islands" LabelAlias="XMW"/>
-        <Value Name="MD" Label="Moldova" LabelAlias="MDA"/>
-        <Value Name="MC" Label="Monaco" LabelAlias="MCO"/>
-        <Value Name="MN" Label="Mongolia" LabelAlias="MNG"/>
-        <Value Name="ME" Label="Montenegro" LabelAlias="MNE"/>
-        <Value Name="MS" Label="Montserrat" LabelAlias="MSR"/>
-        <Value Name="MA" Label="Morocco" LabelAlias="MAR"/>
-        <Value Name="MZ" Label="Mozambique" LabelAlias="MOZ"/>
-        <Value Name="NA" Label="Namibia" LabelAlias="NAM"/>
-        <Value Name="NR" Label="Nauru" LabelAlias="NRU"/>
-        <Value Name="XV" Label="Navassa Island" LabelAlias="XNV"/>
-        <Value Name="NP" Label="Nepal" LabelAlias="NPL"/>
-        <Value Name="NL" Label="Netherlands" LabelAlias="NLD"/>
-        <Value Name="NC" Label="New Caledonia" LabelAlias="NCL"/>
-        <Value Name="NZ" Label="New Zealand" LabelAlias="NZL"/>
-        <Value Name="NI" Label="Nicaragua" LabelAlias="NIC"/>
-        <Value Name="NE" Label="Niger" LabelAlias="NER"/>
-        <Value Name="NG" Label="Nigeria" LabelAlias="NGA"/>
-        <Value Name="NU" Label="Niue" LabelAlias="NIU"/>
-        <Value Name="NF" Label="Norfolk Island" LabelAlias="NFK"/>
-        <Value Name="MP" Label="Northern Mariana Islands" LabelAlias="MNP"/>
-        <Value Name="NO" Label="Norway" LabelAlias="NOR"/>
-        <Value Name="OM" Label="Oman" LabelAlias="OMN"/>
-        <Value Name="PK" Label="Pakistan" LabelAlias="PAK"/>
-        <Value Name="PW" Label="Palau" LabelAlias="PLW"/>
-        <Value Name="XL" Label="Palmyra Atoll" LabelAlias="XPL"/>
-        <Value Name="PA" Label="Panama" LabelAlias="PAN"/>
-        <Value Name="PG" Label="Papua New Guinea" LabelAlias="PNG"/>
-        <Value Name="XP" Label="Paracel Islands" LabelAlias="XPR"/>
-        <Value Name="PY" Label="Paraguay" LabelAlias="PRY"/>
-        <Value Name="PE" Label="Peru" LabelAlias="PER"/>
-        <Value Name="PH" Label="Philippines" LabelAlias="PHL"/>
-        <Value Name="PN" Label="Pitcairn Islands" LabelAlias="PCN"/>
-        <Value Name="PL" Label="Poland" LabelAlias="POL"/>
-        <Value Name="PT" Label="Portugal" LabelAlias="PRT"/>
-        <Value Name="PR" Label="Puerto Rico" LabelAlias="PRI"/>
-        <Value Name="QA" Label="Qatar" LabelAlias="QAT"/>
-        <Value Name="RE" Label="Reunion" LabelAlias="REU"/>
-        <Value Name="RO" Label="Romania" LabelAlias="ROU"/>
-        <Value Name="RU" Label="Russia" LabelAlias="RUS"/>
-        <Value Name="RW" Label="Rwanda" LabelAlias="RWA"/>
-        <Value Name="BL" Label="Saint Barthelemy" LabelAlias="BLM"/>
-        <Value Name="SH" Label="Saint Helena, Ascension, and Tristan Da Cunha" LabelAlias="SHN"/>
-        <Value Name="KN" Label="Saint Kitts and Nevis" LabelAlias="KNA"/>
-        <Value Name="LC" Label="Saint Lucia" LabelAlias="LCA"/>
-        <Value Name="MF" Label="Saint Martin" LabelAlias="MAF"/>
-        <Value Name="PM" Label="Saint Pierre and Miquelon" LabelAlias="SPM"/>
-        <Value Name="VC" Label="Saint Vincent and The Grenadines" LabelAlias="VCT"/>
-        <Value Name="WS" Label="Samoa" LabelAlias="WSM"/>
-        <Value Name="SM" Label="San Marino" LabelAlias="SMR"/>
-        <Value Name="ST" Label="Sao Tome and Principe" LabelAlias="STP"/>
-        <Value Name="SA" Label="Saudi Arabia" LabelAlias="SAU"/>
-        <Value Name="SN" Label="Senegal" LabelAlias="SEN"/>
-        <Value Name="RS" Label="Serbia" LabelAlias="SRB"/>
-        <Value Name="SC" Label="Seychelles" LabelAlias="SYC"/>
-        <Value Name="SL" Label="Sierra Leone" LabelAlias="SLE"/>
-        <Value Name="SG" Label="Singapore" LabelAlias="SGP"/>
-        <Value Name="SX" Label="Sint Maarten" LabelAlias="SXM"/>
-        <Value Name="SK" Label="Slovakia" LabelAlias="SVK"/>
-        <Value Name="SI" Label="Slovenia" LabelAlias="SVN"/>
-        <Value Name="SB" Label="Solomon Islands" LabelAlias="SLB"/>
-        <Value Name="SO" Label="Somalia" LabelAlias="SOM"/>
-        <Value Name="ZA" Label="South Africa" LabelAlias="ZAF"/>
-        <Value Name="GS" Label="South Georgia and South Sandwich Islands" LabelAlias="SGS"/>
-        <Value Name="SS" Label="South Sudan" LabelAlias="SSD"/>
-        <Value Name="ES" Label="Spain" LabelAlias="ESP"/>
-        <Value Name="XS" Label="Spratly Islands" LabelAlias="XSP"/>
-        <Value Name="LK" Label="Sri Lanka" LabelAlias="LKA"/>
-        <Value Name="SD" Label="Sudan" LabelAlias="SDN"/>
-        <Value Name="SR" Label="Suriname" LabelAlias="SUR"/>
-        <Value Name="XR" Label="Svalbard" LabelAlias="XSV"/>
-        <Value Name="SZ" Label="Swaziland" LabelAlias="SWZ"/>
-        <Value Name="SE" Label="Sweden" LabelAlias="SWE"/>
-        <Value Name="CH" Label="Switzerland" LabelAlias="CHE"/>
-        <Value Name="SY" Label="Syria" LabelAlias="SYR"/>
-        <Value Name="TW" Label="Taiwan" LabelAlias="TWN"/>
-        <Value Name="TJ" Label="Tajikistan" LabelAlias="TJK"/>
-        <Value Name="TZ" Label="Tanzania" LabelAlias="TZA"/>
-        <Value Name="TH" Label="Thailand" LabelAlias="THA"/>
-        <Value Name="TL" Label="Timor-Leste" LabelAlias="TLS"/>
-        <Value Name="TG" Label="Togo" LabelAlias="TGO"/>
-        <Value Name="TK" Label="Tokelau" LabelAlias="TKL"/>
-        <Value Name="TO" Label="Tonga" LabelAlias="TON"/>
-        <Value Name="TT" Label="Trinidad and Tobago" LabelAlias="TTO"/>
-        <Value Name="XT" Label="Tromelin Island" LabelAlias="XTR"/>
-        <Value Name="TN" Label="Tunisia" LabelAlias="TUN"/>
-        <Value Name="TR" Label="Turkey" LabelAlias="TUR"/>
-        <Value Name="TM" Label="Turkmenistan" LabelAlias="TKM"/>
-        <Value Name="TC" Label="Turks and Caicos Islands" LabelAlias="TCA"/>
-        <Value Name="TV" Label="Tuvalu" LabelAlias="TUV"/>
-        <Value Name="UG" Label="Uganda" LabelAlias="UGA"/>
-        <Value Name="UA" Label="Ukraine" LabelAlias="UKR"/>
-        <Value Name="AE" Label="United Arab Emirates" LabelAlias="ARE"/>
-        <Value Name="GB" Label="United Kingdom" LabelAlias="GBR"/>
-        <Value Name="US" Label="United States" LabelAlias="USA"/>
-        <Value Name="A1" Label="Unknown" LabelAlias="AX1"/>
-        <Value Name="UY" Label="Uruguay" LabelAlias="URY"/>
-        <Value Name="UZ" Label="Uzbekistan" LabelAlias="UZB"/>
-        <Value Name="VU" Label="Vanuatu" LabelAlias="VUT"/>
-        <Value Name="VA" Label="Vatican City" LabelAlias="VAT"/>
-        <Value Name="VE" Label="Venezuela" LabelAlias="VEN"/>
-        <Value Name="VN" Label="Vietnam" LabelAlias="VNM"/>
-        <Value Name="VG" Label="Virgin Islands, British" LabelAlias="VGB"/>
-        <Value Name="VI" Label="Virgin Islands, U.S." LabelAlias="VIR"/>
-        <Value Name="QW" Label="Wake Island" LabelAlias="XWK"/>
-        <Value Name="WF" Label="Wallis and Futuna" LabelAlias="WLF"/>
-        <Value Name="XW" Label="West Bank" LabelAlias="XWB"/>
-        <Value Name="EH" Label="Western Sahara" LabelAlias="ESH"/>
-        <Value Name="YE" Label="Yemen" LabelAlias="YEM"/>
-        <Value Name="ZM" Label="Zambia" LabelAlias="ZMB"/>
-        <Value Name="ZW" Label="Zimbabwe" LabelAlias="ZWE"/>
+        <Value Name='004' Label='AFGHANISTAN' LabelAlias='AF/AFG'/>
+        <Value Name='900' Label='AKROTIRI' LabelAlias='QZ/XQZ'/>
+        <Value Name='008' Label='ALBANIA' LabelAlias='AL/ALB'/>
+        <Value Name='012' Label='ALGERIA' LabelAlias='DZ/DZA'/>
+        <Value Name='016' Label='AMERICAN SAMOA' LabelAlias='AS/ASM'/>
+        <Value Name='020' Label='ANDORRA' LabelAlias='AD/AND'/>
+        <Value Name='024' Label='ANGOLA' LabelAlias='AO/AGO'/>
+        <Value Name='660' Label='ANGUILLA' LabelAlias='AI/AIA'/>
+        <Value Name='010' Label='ANTARCTICA' LabelAlias='AQ/ATA'/>
+        <Value Name='028' Label='ANTIGUA AND BARBUDA' LabelAlias='AG/ATG'/>
+        <Value Name='032' Label='ARGENTINA' LabelAlias='AR/ARG'/>
+        <Value Name='051' Label='ARMENIA' LabelAlias='AM/ARM'/>
+        <Value Name='533' Label='ARUBA' LabelAlias='AW/ABW'/>
+        <Value Name='902' Label='ASHMORE AND CARTIER ISLANDS' LabelAlias='XA/XAC'/>
+        <Value Name='036' Label='AUSTRALIA' LabelAlias='AU/AUS'/>
+        <Value Name='040' Label='AUSTRIA' LabelAlias='AT/AUT'/>
+        <Value Name='031' Label='AZERBAIJAN' LabelAlias='AZ/AZE'/>
+        <Value Name='044' Label='BAHAMAS, THE' LabelAlias='BS/BHS'/>
+        <Value Name='048' Label='BAHRAIN' LabelAlias='BH/BHR'/>
+        <Value Name='903' Label='BAKER ISLAND' LabelAlias='XB/XBK'/>
+        <Value Name='050' Label='BANGLADESH' LabelAlias='BD/BGD'/>
+        <Value Name='052' Label='BARBADOS' LabelAlias='BB/BRB'/>
+        <Value Name='904' Label='BASSAS DA INDIA' LabelAlias='QS/XBI'/>
+        <Value Name='112' Label='BELARUS' LabelAlias='BY/BLR'/>
+        <Value Name='056' Label='BELGIUM' LabelAlias='BE/BEL'/>
+        <Value Name='084' Label='BELIZE' LabelAlias='BZ/BLZ'/>
+        <Value Name='204' Label='BENIN' LabelAlias='BJ/BEN'/>
+        <Value Name='060' Label='BERMUDA' LabelAlias='BM/BMU'/>
+        <Value Name='064' Label='BHUTAN' LabelAlias='BT/BTN'/>
+        <Value Name='068' Label='BOLIVIA' LabelAlias='BO/BOL'/>
+        <Value Name='535' Label='BONAIRE, SINT EUSTATIUS, AND SABA' LabelAlias='BQ/BES'/>
+        <Value Name='070' Label='BOSNIA AND HERZEGOVINA' LabelAlias='BA/BIH'/>
+        <Value Name='072' Label='BOTSWANA' LabelAlias='BW/BWA'/>
+        <Value Name='074' Label='BOUVET ISLAND' LabelAlias='BV/BVT'/>
+        <Value Name='076' Label='BRAZIL' LabelAlias='BR/BRA'/>
+        <Value Name='086' Label='BRITISH INDIAN OCEAN TERRITORY' LabelAlias='IO/IOT'/>
+        <Value Name='096' Label='BRUNEI' LabelAlias='BN/BRN'/>
+        <Value Name='100' Label='BULGARIA' LabelAlias='BG/BGR'/>
+        <Value Name='854' Label='BURKINA FASO' LabelAlias='BF/BFA'/>
+        <Value Name='104' Label='BURMA' LabelAlias='MM/MMR'/>
+        <Value Name='108' Label='BURUNDI' LabelAlias='BI/BDI'/>
+        <Value Name='132' Label='CABO VERDE' LabelAlias='CV/CPV'/>
+        <Value Name='116' Label='CAMBODIA' LabelAlias='KH/KHM'/>
+        <Value Name='120' Label='CAMEROON' LabelAlias='CM/CMR'/>
+        <Value Name='124' Label='CANADA' LabelAlias='CA/CAN'/>
+        <Value Name='136' Label='CAYMAN ISLANDS' LabelAlias='KY/CYM'/>
+        <Value Name='140' Label='CENTRAL AFRICAN REPUBLIC' LabelAlias='CF/CAF'/>
+        <Value Name='148' Label='CHAD' LabelAlias='TD/TCD'/>
+        <Value Name='152' Label='CHILE' LabelAlias='CL/CHL'/>
+        <Value Name='156' Label='CHINA' LabelAlias='CN/CHN'/>
+        <Value Name='162' Label='CHRISTMAS ISLAND' LabelAlias='CX/CXR'/>
+        <Value Name='905' Label='CLIPPERTON ISLAND' LabelAlias='CP/CPT'/>
+        <Value Name='166' Label='COCOS (KEELING) ISLANDS' LabelAlias='CC/CCK'/>
+        <Value Name='170' Label='COLOMBIA' LabelAlias='CO/COL'/>
+        <Value Name='174' Label='COMOROS' LabelAlias='KM/COM'/>
+        <Value Name='178' Label='CONGO (BRAZZAVILLE)' LabelAlias='CG/COG'/>
+        <Value Name='180' Label='CONGO (KINSHASA)' LabelAlias='CD/COD'/>
+        <Value Name='184' Label='COOK ISLANDS' LabelAlias='CK/COK'/>
+        <Value Name='906' Label='CORAL SEA ISLANDS' LabelAlias='XC/XCS'/>
+        <Value Name='188' Label='COSTA RICA' LabelAlias='CR/CRI'/>
+        <Value Name='384' Label='CÔTE D’IVOIRE' LabelAlias='CI/CIV'/>
+        <Value Name='191' Label='CROATIA' LabelAlias='HR/HRV'/>
+        <Value Name='192' Label='CUBA' LabelAlias='CU/CUB'/>
+        <Value Name='531' Label='CURAÇAO' LabelAlias='CW/CUW'/>
+        <Value Name='196' Label='CYPRUS' LabelAlias='CY/CYP'/>
+        <Value Name='203' Label='CZECHIA' LabelAlias='CZ/CZE'/>
+        <Value Name='208' Label='DENMARK' LabelAlias='DK/DNK'/>
+        <Value Name='907' Label='DHEKELIA' LabelAlias='XD/XXD'/>
+        <Value Name='908' Label='DIEGO GARCIA' LabelAlias='DG/DGA'/>
+        <Value Name='262' Label='DJIBOUTI' LabelAlias='DJ/DJI'/>
+        <Value Name='212' Label='DOMINICA' LabelAlias='DM/DMA'/>
+        <Value Name='214' Label='DOMINICAN REPUBLIC' LabelAlias='DO/DOM'/>
+        <Value Name='218' Label='ECUADOR' LabelAlias='EC/ECU'/>
+        <Value Name='818' Label='EGYPT' LabelAlias='EG/EGY'/>
+        <Value Name='222' Label='EL SALVADOR' LabelAlias='SV/SLV'/>
+        <Value Name='909' Label='ENTITY 1' LabelAlias='[None Assigned]/XAZ'/>
+        <Value Name='910' Label='ENTITY 2' LabelAlias='[None Assigned]/XCR'/>
+        <Value Name='911' Label='ENTITY 3' LabelAlias='[None Assigned]/XCY'/>
+        <Value Name='912' Label='ENTITY 4' LabelAlias='[None Assigned]/XKM'/>
+        <Value Name='913' Label='ENTITY 5' LabelAlias='[None Assigned]/XKN'/>
+        <Value Name='914' Label='ENTITY 6' LabelAlias='A3/AX3'/>
+        <Value Name='226' Label='EQUATORIAL GUINEA' LabelAlias='GQ/GNQ'/>
+        <Value Name='232' Label='ERITREA' LabelAlias='ER/ERI'/>
+        <Value Name='233' Label='ESTONIA' LabelAlias='EE/EST'/>
+        <Value Name='231' Label='ETHIOPIA' LabelAlias='ET/ETH'/>
+        <Value Name='915' Label='EUROPA ISLAND' LabelAlias='XE/XEU'/>
+        <Value Name='238' Label='FALKLAND ISLANDS (ISLAS MALVINAS)' LabelAlias='FK/FLK'/>
+        <Value Name='234' Label='FAROE ISLANDS' LabelAlias='FO/FRO'/>
+        <Value Name='242' Label='FIJI' LabelAlias='FJ/FJI'/>
+        <Value Name='246' Label='FINLAND' LabelAlias='FI/FIN'/>
+        <Value Name='250' Label='FRANCE' LabelAlias='FR/FRA'/>
+        <Value Name='254' Label='FRENCH GUIANA' LabelAlias='GF/GUF'/>
+        <Value Name='258' Label='FRENCH POLYNESIA' LabelAlias='PF/PYF'/>
+        <Value Name='260' Label='FRENCH SOUTHERN AND ANTARCTIC LANDS' LabelAlias='TF/ATF'/>
+        <Value Name='266' Label='GABON' LabelAlias='GA/GAB'/>
+        <Value Name='270' Label='GAMBIA, THE' LabelAlias='GM/GMB'/>
+        <Value Name='916' Label='GAZA STRIP' LabelAlias='XG/XGZ'/>
+        <Value Name='268' Label='GEORGIA' LabelAlias='GE/GEO'/>
+        <Value Name='276' Label='GERMANY' LabelAlias='DE/DEU'/>
+        <Value Name='288' Label='GHANA' LabelAlias='GH/GHA'/>
+        <Value Name='292' Label='GIBRALTAR' LabelAlias='GI/GIB'/>
+        <Value Name='917' Label='GLORIOSO ISLANDS' LabelAlias='QX/XGL'/>
+        <Value Name='300' Label='GREECE' LabelAlias='GR/GRC'/>
+        <Value Name='304' Label='GREENLAND' LabelAlias='GL/GRL'/>
+        <Value Name='308' Label='GRENADA' LabelAlias='GD/GRD'/>
+        <Value Name='312' Label='GUADELOUPE' LabelAlias='GP/GLP'/>
+        <Value Name='316' Label='GUAM' LabelAlias='GU/GUM'/>
+        <Value Name='918' Label='GUANTANAMO BAY NAVAL BASE' LabelAlias='A2/AX2'/>
+        <Value Name='320' Label='GUATEMALA' LabelAlias='GT/GTM'/>
+        <Value Name='831' Label='GUERNSEY' LabelAlias='GG/GGY'/>
+        <Value Name='324' Label='GUINEA' LabelAlias='GN/GIN'/>
+        <Value Name='624' Label='GUINEA-BISSAU' LabelAlias='GW/GNB'/>
+        <Value Name='328' Label='GUYANA' LabelAlias='GY/GUY'/>
+        <Value Name='332' Label='HAITI' LabelAlias='HT/HTI'/>
+        <Value Name='334' Label='HEARD ISLAND AND MCDONALD ISLANDS' LabelAlias='HM/HMD'/>
+        <Value Name='340' Label='HONDURAS' LabelAlias='HN/HND'/>
+        <Value Name='344' Label='HONG KONG' LabelAlias='HK/HKG'/>
+        <Value Name='919' Label='HOWLAND ISLAND' LabelAlias='XH/XHO'/>
+        <Value Name='348' Label='HUNGARY' LabelAlias='HU/HUN'/>
+        <Value Name='352' Label='ICELAND' LabelAlias='IS/ISL'/>
+        <Value Name='356' Label='INDIA' LabelAlias='IN/IND'/>
+        <Value Name='360' Label='INDONESIA' LabelAlias='ID/IDN'/>
+        <Value Name='364' Label='IRAN' LabelAlias='IR/IRN'/>
+        <Value Name='368' Label='IRAQ' LabelAlias='IQ/IRQ'/>
+        <Value Name='372' Label='IRELAND' LabelAlias='IE/IRL'/>
+        <Value Name='833' Label='ISLE OF MAN' LabelAlias='IM/IMN'/>
+        <Value Name='376' Label='ISRAEL' LabelAlias='IL/ISR'/>
+        <Value Name='380' Label='ITALY' LabelAlias='IT/ITA'/>
+        <Value Name='388' Label='JAMAICA' LabelAlias='JM/JAM'/>
+        <Value Name='920' Label='JAN MAYEN' LabelAlias='XJ/XJM'/>
+        <Value Name='392' Label='JAPAN' LabelAlias='JP/JPN'/>
+        <Value Name='921' Label='JARVIS ISLAND' LabelAlias='XQ/XJV'/>
+        <Value Name='832' Label='JERSEY' LabelAlias='JE/JEY'/>
+        <Value Name='922' Label='JOHNSTON ATOLL' LabelAlias='XU/XJA'/>
+        <Value Name='400' Label='JORDAN' LabelAlias='JO/JOR'/>
+        <Value Name='923' Label='JUAN DE NOVA ISLAND' LabelAlias='QU/XJN'/>
+        <Value Name='398' Label='KAZAKHSTAN' LabelAlias='KZ/KAZ'/>
+        <Value Name='404' Label='KENYA' LabelAlias='KE/KEN'/>
+        <Value Name='924' Label='KINGMAN REEF' LabelAlias='XM/XKR'/>
+        <Value Name='296' Label='KIRIBATI' LabelAlias='KI/KIR'/>
+        <Value Name='408' Label='KOREA, NORTH' LabelAlias='KP/PRK'/>
+        <Value Name='410' Label='KOREA, SOUTH' LabelAlias='KR/KOR'/>
+        <Value Name='901' Label='KOSOVO' LabelAlias='XK/XKS'/>
+        <Value Name='414' Label='KUWAIT' LabelAlias='KW/KWT'/>
+        <Value Name='417' Label='KYRGYZSTAN' LabelAlias='KG/KGZ'/>
+        <Value Name='418' Label='LAOS' LabelAlias='LA/LAO'/>
+        <Value Name='428' Label='LATVIA' LabelAlias='LV/LVA'/>
+        <Value Name='422' Label='LEBANON' LabelAlias='LB/LBN'/>
+        <Value Name='426' Label='LESOTHO' LabelAlias='LS/LSO'/>
+        <Value Name='430' Label='LIBERIA' LabelAlias='LR/LBR'/>
+        <Value Name='434' Label='LIBYA' LabelAlias='LY/LBY'/>
+        <Value Name='438' Label='LIECHTENSTEIN' LabelAlias='LI/LIE'/>
+        <Value Name='440' Label='LITHUANIA' LabelAlias='LT/LTU'/>
+        <Value Name='442' Label='LUXEMBOURG' LabelAlias='LU/LUX'/>
+        <Value Name='446' Label='MACAU' LabelAlias='MO/MAC'/>
+        <Value Name='807' Label='MACEDONIA' LabelAlias='MK/MKD'/>
+        <Value Name='450' Label='MADAGASCAR' LabelAlias='MG/MDG'/>
+        <Value Name='454' Label='MALAWI' LabelAlias='MW/MWI'/>
+        <Value Name='458' Label='MALAYSIA' LabelAlias='MY/MYS'/>
+        <Value Name='462' Label='MALDIVES' LabelAlias='MV/MDV'/>
+        <Value Name='466' Label='MALI' LabelAlias='ML/MLI'/>
+        <Value Name='470' Label='MALTA' LabelAlias='MT/MLT'/>
+        <Value Name='584' Label='MARSHALL ISLANDS' LabelAlias='MH/MHL'/>
+        <Value Name='474' Label='MARTINIQUE' LabelAlias='MQ/MTQ'/>
+        <Value Name='478' Label='MAURITANIA' LabelAlias='MR/MRT'/>
+        <Value Name='480' Label='MAURITIUS' LabelAlias='MU/MUS'/>
+        <Value Name='175' Label='MAYOTTE' LabelAlias='YT/MYT'/>
+        <Value Name='484' Label='MEXICO' LabelAlias='MX/MEX'/>
+        <Value Name='583' Label='MICRONESIA, FEDERATED STATES OF' LabelAlias='FM/FSM'/>
+        <Value Name='925' Label='MIDWAY ISLANDS' LabelAlias='QM/XMW'/>
+        <Value Name='498' Label='MOLDOVA' LabelAlias='MD/MDA'/>
+        <Value Name='492' Label='MONACO' LabelAlias='MC/MCO'/>
+        <Value Name='496' Label='MONGOLIA' LabelAlias='MN/MNG'/>
+        <Value Name='499' Label='MONTENEGRO' LabelAlias='ME/MNE'/>
+        <Value Name='500' Label='MONTSERRAT' LabelAlias='MS/MSR'/>
+        <Value Name='504' Label='MOROCCO' LabelAlias='MA/MAR'/>
+        <Value Name='508' Label='MOZAMBIQUE' LabelAlias='MZ/MOZ'/>
+        <Value Name='516' Label='NAMIBIA' LabelAlias='NA/NAM'/>
+        <Value Name='520' Label='NAURU' LabelAlias='NR/NRU'/>
+        <Value Name='926' Label='NAVASSA ISLAND' LabelAlias='XV/XNV'/>
+        <Value Name='524' Label='NEPAL' LabelAlias='NP/NPL'/>
+        <Value Name='528' Label='NETHERLANDS' LabelAlias='NL/NLD'/>
+        <Value Name='540' Label='NEW CALEDONIA' LabelAlias='NC/NCL'/>
+        <Value Name='554' Label='NEW ZEALAND' LabelAlias='NZ/NZL'/>
+        <Value Name='558' Label='NICARAGUA' LabelAlias='NI/NIC'/>
+        <Value Name='562' Label='NIGER' LabelAlias='NE/NER'/>
+        <Value Name='566' Label='NIGERIA' LabelAlias='NG/NGA'/>
+        <Value Name='570' Label='NIUE' LabelAlias='NU/NIU'/>
+        <Value Name='574' Label='NORFOLK ISLAND' LabelAlias='NF/NFK'/>
+        <Value Name='580' Label='NORTHERN MARIANA ISLANDS' LabelAlias='MP/MNP'/>
+        <Value Name='578' Label='NORWAY' LabelAlias='NO/NOR'/>
+        <Value Name='512' Label='OMAN' LabelAlias='OM/OMN'/>
+        <Value Name='586' Label='PAKISTAN' LabelAlias='PK/PAK'/>
+        <Value Name='585' Label='PALAU' LabelAlias='PW/PLW'/>
+        <Value Name='927' Label='PALMYRA ATOLL' LabelAlias='XL/XPL'/>
+        <Value Name='591' Label='PANAMA' LabelAlias='PA/PAN'/>
+        <Value Name='598' Label='PAPUA NEW GUINEA' LabelAlias='PG/PNG'/>
+        <Value Name='928' Label='PARACEL ISLANDS' LabelAlias='XP/XPR'/>
+        <Value Name='600' Label='PARAGUAY' LabelAlias='PY/PRY'/>
+        <Value Name='604' Label='PERU' LabelAlias='PE/PER'/>
+        <Value Name='608' Label='PHILIPPINES' LabelAlias='PH/PHL'/>
+        <Value Name='612' Label='PITCAIRN ISLANDS' LabelAlias='PN/PCN'/>
+        <Value Name='616' Label='POLAND' LabelAlias='PL/POL'/>
+        <Value Name='620' Label='PORTUGAL' LabelAlias='PT/PRT'/>
+        <Value Name='630' Label='PUERTO RICO' LabelAlias='PR/PRI'/>
+        <Value Name='634' Label='QATAR' LabelAlias='QA/QAT'/>
+        <Value Name='638' Label='REUNION' LabelAlias='RE/REU'/>
+        <Value Name='642' Label='ROMANIA' LabelAlias='RO/ROU'/>
+        <Value Name='643' Label='RUSSIA' LabelAlias='RU/RUS'/>
+        <Value Name='646' Label='RWANDA' LabelAlias='RW/RWA'/>
+        <Value Name='652' Label='SAINT BARTHELEMY' LabelAlias='BL/BLM'/>
+        <Value Name='654' Label='SAINT HELENA, ASCENSION, AND TRISTAN DA CUNHA' LabelAlias='SH/SHN'/>
+        <Value Name='659' Label='SAINT KITTS AND NEVIS' LabelAlias='KN/KNA'/>
+        <Value Name='662' Label='SAINT LUCIA' LabelAlias='LC/LCA'/>
+        <Value Name='663' Label='SAINT MARTIN' LabelAlias='MF/MAF'/>
+        <Value Name='666' Label='SAINT PIERRE AND MIQUELON' LabelAlias='PM/SPM'/>
+        <Value Name='670' Label='SAINT VINCENT AND THE GRENADINES' LabelAlias='VC/VCT'/>
+        <Value Name='882' Label='SAMOA' LabelAlias='WS/WSM'/>
+        <Value Name='674' Label='SAN MARINO' LabelAlias='SM/SMR'/>
+        <Value Name='678' Label='SAO TOME AND PRINCIPE' LabelAlias='ST/STP'/>
+        <Value Name='682' Label='SAUDI ARABIA' LabelAlias='SA/SAU'/>
+        <Value Name='686' Label='SENEGAL' LabelAlias='SN/SEN'/>
+        <Value Name='688' Label='SERBIA' LabelAlias='RS/SRB'/>
+        <Value Name='690' Label='SEYCHELLES' LabelAlias='SC/SYC'/>
+        <Value Name='694' Label='SIERRA LEONE' LabelAlias='SL/SLE'/>
+        <Value Name='702' Label='SINGAPORE' LabelAlias='SG/SGP'/>
+        <Value Name='534' Label='SINT MAARTEN' LabelAlias='SX/SXM'/>
+        <Value Name='703' Label='SLOVAKIA' LabelAlias='SK/SVK'/>
+        <Value Name='705' Label='SLOVENIA' LabelAlias='SI/SVN'/>
+        <Value Name='090' Label='SOLOMON ISLANDS' LabelAlias='SB/SLB'/>
+        <Value Name='706' Label='SOMALIA' LabelAlias='SO/SOM'/>
+        <Value Name='710' Label='SOUTH AFRICA' LabelAlias='ZA/ZAF'/>
+        <Value Name='239' Label='SOUTH GEORGIA AND SOUTH SANDWICH ISLANDS' LabelAlias='GS/SGS'/>
+        <Value Name='728' Label='SOUTH SUDAN' LabelAlias='SS/SSD'/>
+        <Value Name='724' Label='SPAIN' LabelAlias='ES/ESP'/>
+        <Value Name='929' Label='SPRATLY ISLANDS' LabelAlias='XS/XSP'/>
+        <Value Name='144' Label='SRI LANKA' LabelAlias='LK/LKA'/>
+        <Value Name='729' Label='SUDAN' LabelAlias='SD/SDN'/>
+        <Value Name='740' Label='SURINAME' LabelAlias='SR/SUR'/>
+        <Value Name='930' Label='SVALBARD' LabelAlias='XR/XSV'/>
+        <Value Name='748' Label='SWAZILAND' LabelAlias='SZ/SWZ'/>
+        <Value Name='752' Label='SWEDEN' LabelAlias='SE/SWE'/>
+        <Value Name='756' Label='SWITZERLAND' LabelAlias='CH/CHE'/>
+        <Value Name='760' Label='SYRIA' LabelAlias='SY/SYR'/>
+        <Value Name='158' Label='TAIWAN' LabelAlias='TW/TWN'/>
+        <Value Name='762' Label='TAJIKISTAN' LabelAlias='TJ/TJK'/>
+        <Value Name='834' Label='TANZANIA' LabelAlias='TZ/TZA'/>
+        <Value Name='764' Label='THAILAND' LabelAlias='TH/THA'/>
+        <Value Name='626' Label='TIMOR-LESTE' LabelAlias='TL/TLS'/>
+        <Value Name='768' Label='TOGO' LabelAlias='TG/TGO'/>
+        <Value Name='772' Label='TOKELAU' LabelAlias='TK/TKL'/>
+        <Value Name='776' Label='TONGA' LabelAlias='TO/TON'/>
+        <Value Name='780' Label='TRINIDAD AND TOBAGO' LabelAlias='TT/TTO'/>
+        <Value Name='931' Label='TROMELIN ISLAND' LabelAlias='XT/XTR'/>
+        <Value Name='788' Label='TUNISIA' LabelAlias='TN/TUN'/>
+        <Value Name='792' Label='TURKEY' LabelAlias='TR/TUR'/>
+        <Value Name='795' Label='TURKMENISTAN' LabelAlias='TM/TKM'/>
+        <Value Name='796' Label='TURKS AND CAICOS ISLANDS' LabelAlias='TC/TCA'/>
+        <Value Name='798' Label='TUVALU' LabelAlias='TV/TUV'/>
+        <Value Name='800' Label='UGANDA' LabelAlias='UG/UGA'/>
+        <Value Name='804' Label='UKRAINE' LabelAlias='UA/UKR'/>
+        <Value Name='784' Label='UNITED ARAB EMIRATES' LabelAlias='AE/ARE'/>
+        <Value Name='826' Label='UNITED KINGDOM' LabelAlias='GB/GBR'/>
+        <Value Name='840' Label='UNITED STATES' LabelAlias='US/USA'/>
+        <Value Name='932' Label='UNKNOWN' LabelAlias='A1/AX1'/>
+        <Value Name='858' Label='URUGUAY' LabelAlias='UY/URY'/>
+        <Value Name='860' Label='UZBEKISTAN' LabelAlias='UZ/UZB'/>
+        <Value Name='548' Label='VANUATU' LabelAlias='VU/VUT'/>
+        <Value Name='336' Label='VATICAN CITY' LabelAlias='VA/VAT'/>
+        <Value Name='862' Label='VENEZUELA' LabelAlias='VE/VEN'/>
+        <Value Name='704' Label='VIETNAM' LabelAlias='VN/VNM'/>
+        <Value Name='092' Label='VIRGIN ISLANDS, BRITISH' LabelAlias='VG/VGB'/>
+        <Value Name='850' Label='VIRGIN ISLANDS, U.S.' LabelAlias='VI/VIR'/>
+        <Value Name='933' Label='WAKE ISLAND' LabelAlias='QW/XWK'/>
+        <Value Name='876' Label='WALLIS AND FUTUNA' LabelAlias='WF/WLF'/>
+        <Value Name='934' Label='WEST BANK' LabelAlias='XW/XWB'/>
+        <Value Name='732' Label='WESTERN SAHARA' LabelAlias='EH/ESH'/>
+        <Value Name='887' Label='YEMEN' LabelAlias='YE/YEM'/>
+        <Value Name='894' Label='ZAMBIA' LabelAlias='ZM/ZMB'/>
+        <Value Name='716' Label='ZIMBABWE' LabelAlias='ZW/ZWE'/>
       </Values>
     </Amplifier>
     <Amplifier ID="A" Label="Symbol Icon" Description="The innermost part of a symbol that represents a joint military object." Type="GRAPHIC"/>
