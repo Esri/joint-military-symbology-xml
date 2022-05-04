@@ -1,0 +1,859 @@
+<?xml version="1.0"?>
+<SymbolSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="SS_DISMOUNTED" 
+           Label="Dismounted Individual" DimensionID="DISMOUNTED" 
+           xmlns="http://disa.mil/JointMilSyML.xsd" Geometry="POINT">
+  <SymbolSetCode>
+    <DigitOne>2</DigitOne>
+    <DigitTwo>7</DigitTwo>
+  </SymbolSetCode>
+  <LegacyCodingSchemeCode Name="2525C">S</LegacyCodingSchemeCode>
+  <Entities>
+    <Entity ID="UNSPECIFIED" Label="Unspecified" GeometryType="NA" Icon="NA" Standard="NATO_APP6">
+      <EntityCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </EntityCode>
+    </Entity>
+    <Entity ID="MILITARY" Label="Military" GeometryType="NA" Icon="NA" Standard="NATO_APP6">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </EntityCode>
+      <EntityTypes>
+        <EntityType ID="SERVICE" Label="Service Branch" GeometryType="NA" Icon="NA" Standard="NATO_APP6">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+          <EntitySubTypes>
+            <EntitySubType ID="INFANTRY" Label="Infantry" Graphic="27110101.svg" Icon="FULL_OCTAGON" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="MEDICAL" Label="Medical" Graphic="27110102.svg" Icon="FULL_OCTAGON" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="RECONNAISSANCE" Label="Reconnaissance" Graphic="27110103.svg" Icon="FULL_OCTAGON" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="SIGNAL" Label="Signal" Graphic="27110104.svg" Icon="FULL_OCTAGON" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>4</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+        <EntityType ID="TASK" Label="Activity/Task" GeometryType="NA" Icon="NA" Standard="NATO_APP6">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+          <EntitySubTypes>
+            <EntitySubType ID="EOD" Label="Explosive Ordnance Disposal" Graphic="27110201.svg" Icon="MAIN" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="FO" Label="Field Artillery Observer" Graphic="27110202.svg" Icon="MAIN" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="JFS" Label="Joint Fire Support" Graphic="27110203.svg" Icon="MAIN" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="LNO" Label="Liaison" Graphic="27110204.svg" Icon="MAIN" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>4</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="MESSENGER" Label="Messenger" Graphic="27110205.svg" Icon="MAIN" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>5</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="MP" Label="Military Police" Graphic="27110206.svg" Icon="MAIN" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>6</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="OBSERVER" Label="Observer" Graphic="27110207.svg" Icon="MAIN" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>7</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="SECURITY" Label="Security" Graphic="27110208.svg" Icon="MAIN" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>8</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="SNIPER" Label="Sniper" Graphic="27110209.svg" Icon="MAIN" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>9</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="SOF" Label="Special Operations Forces (SOF)" Graphic="27110210.svg" Icon="MAIN" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>1</DigitOne>
+                <DigitTwo>0</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+        <EntityType ID="LETHAL_WEAPONS" Label="Lethal Weapons" GeometryType="NA" Icon="NA" Standard="NATO_APP6">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </EntityTypeCode>
+          <EntitySubTypes>
+            <EntitySubType ID="RIFLE" Label="Rifle" Graphic="27110301.svg" Icon="MAIN" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="SINGLE_SHOT_RIFLE" Label="Single-Shot Rifle" Graphic="27110302.svg" Icon="MAIN" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="SEMIAUTOMATIC_RIFLE" Label="Semiautomatic Rifle" Graphic="27110303.svg" Icon="MAIN" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="AUTOMATIC_RIFLE" Label="Automatic Rifle" Graphic="27110304.svg" Icon="MAIN" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>4</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="MACHINE_GUN" Label="Machine Gun" Graphic="27110305.svg" Icon="MAIN" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>5</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="MACHINE_GUN_LIGHT" Label="Machine Gun-Light" Graphic="27110306.svg" Icon="MAIN" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>6</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="MACHINE_GUN_MEDIUM" Label="Machine Gun-Medium" Graphic="27110307.svg" Icon="MAIN" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>7</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="MACHINE_GUN_HEAVY" Label="Machine Gun-Heavy" Graphic="27110308.svg" Icon="MAIN" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>8</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="GRENADE_LAUNCHER" Label="Grenade Launcher" Graphic="27110309.svg" Icon="MAIN" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>9</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="GRENADE_LAUNCHER_LIGHT" Label="Grenade Launcher-Light" Graphic="27110310.svg" Icon="MAIN" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>1</DigitOne>
+                <DigitTwo>0</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="GRENADE_LAUNCHER_MEDIUM" Label="Grenade Launcher-Medium" Graphic="27110311.svg" Icon="MAIN" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>1</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="GRENADE_LAUNCHER_HEAVY" Label="Grenade Launcher-Heavy" Graphic="27110312.svg" Icon="MAIN" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>1</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="FLAMETHROWER" Label="Flamethrower" Graphic="27110313.svg" Icon="MAIN" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>1</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="MORTAR" Label="Mortar" Graphic="27110314.svg" Icon="MAIN" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>1</DigitOne>
+                <DigitTwo>4</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="ROCKET_LAUCHER_SINGLE" Label="Rocket Launcher-Single" Graphic="27110315.svg" Icon="MAIN" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>1</DigitOne>
+                <DigitTwo>5</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="ROCKET_LAUCHER_ANTITANK" Label="Rocket Launcher-Antitank" Graphic="27110316.svg" Icon="MAIN" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>1</DigitOne>
+                <DigitTwo>6</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+        <EntityType ID="NON_LETHAL_WEAPONS" Label="Non-Lethal Weapons" GeometryType="NA" Icon="NA" Standard="NATO_APP6">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>4</DigitTwo>
+          </EntityTypeCode>
+          <EntitySubTypes>
+            <EntitySubType ID="NON_LETHAL_WEAPON" Label="Non-Lethal Weapon" Graphic="27110401.svg" Icon="MAIN" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="NON_LETHAL_GRENADE_LAUNCHER" Label="Non-Lethal Grenade Launcher" Graphic="27110402.svg" Icon="MAIN" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="TASER" Label="Taser" Graphic="27110402.svg" Icon="MAIN" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>3</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+      </EntityTypes>
+    </Entity>
+    <Entity ID="CIVILIAN2" Label="Civilian" Graphic="27120000.svg" Icon="NA" Standard="NATO_APP6">
+      <EntityCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </EntityCode>
+      <EntityTypes>
+        <EntityType ID="TASK2" Label="Activity" Graphic="27120100.svg" Icon="NA" Standard="NATO_APP6">
+          <EntityTypeCode>
+            <DigitOne>0</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+          <EntitySubTypes>
+            <EntitySubType ID="POLICE" Label="Police" Graphic="27120101.svg" Icon="MAIN" Standard="NATO_APP6">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+        </EntityType>
+      </EntityTypes>
+    </Entity>
+  </Entities>
+  <SectorOneModifiers>
+    <Modifier ID="UNSPECIFIED_ONE_MOD" Label="Unspecified">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="CLOSE_PROTECTION_MOD" Label="Close Protection" Graphic="27011.svg" Category="Task">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="CROWD_RIOT_CONTROL_MOD" Label="Crowd and Riot Control" Graphic="27021.svg" Category="Task">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="EOD_MOD" Label="Explosive Ordnance Disposal (EOD)" Graphic="27031.svg" Category="Task">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="SECURITY_MOD" Label="Security" Graphic="27041.svg" Category="Task">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="SNIPER_MOD" Label="Sniper" Graphic="27051.svg" Category="Task">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="SWAT_MOD" Label="Special Weapons and Tactics" Graphic="27061.svg" Category="Task">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="NGO_MOD" Label="Non-Governmental Organization Member" Graphic="27071.svg" Category="Organization">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="MULTINATIONAL_MOD" Label="Multinational" Graphic="27081.svg" Category="Organization">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="MSU_MOD" Label="Multinational Specialized Unit" Graphic="27091.svg" Category="Organization">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="GOVERNMENTAL" Label="Governmental Organization Member" Graphic="27101.svg" Category="Organization">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="COMBAT_CAMERA" Label="Video Imagery (Combat Camera)" Graphic="27111.svg" Category="Task">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="J1_MOD" Label="J1" Graphic="27121.svg" Category="Functional Staff Area">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="J2_MOD" Label="J2" Graphic="27131.svg" Category="Functional Staff Area">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="J3_MOD" Label="J3" Graphic="27141.svg" Category="Functional Staff Area">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="J4_MOD" Label="J4" Graphic="27151.svg" Category="Functional Staff Area">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="J5_MOD" Label="J5" Graphic="27161.svg" Category="Functional Staff Area">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="J6_MOD" Label="J6" Graphic="27171.svg" Category="Functional Staff Area">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="J7_MOD" Label="J7" Graphic="27181.svg" Category="Functional Staff Area">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="J8_MOD" Label="J8" Graphic="27191.svg" Category="Functional Staff Area">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="J9_MOD" Label="J9" Graphic="27201.svg" Category="Functional Staff Area">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OF01_MOD" Label="OF-1" Graphic="27211.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OF02_MOD" Label="OF-2" Graphic="27221.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OF03_MOD" Label="OF-3" Graphic="27231.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OF04_MOD" Label="OF-4" Graphic="27241.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OF05_MOD" Label="OF-5" Graphic="27251.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OF06_MOD" Label="OF-6" Graphic="27261.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OF07_MOD" Label="OF-7" Graphic="27271.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OF08_MOD" Label="OF-8" Graphic="27281.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OF09_MOD" Label="OF-9" Graphic="27291.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OF10_MOD" Label="OF-10" Graphic="27301.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OFD_MOD" Label="OF-D" Graphic="27311.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OR1_MOD" Label="OR-1" Graphic="27321.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OR2_MOD" Label="OR-2" Graphic="27331.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OR3_MOD" Label="OR-3" Graphic="27341.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OR4_MOD" Label="OR-4" Graphic="27351.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OR5_MOD" Label="OR-5" Graphic="27361.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OR6_MOD" Label="OR-6" Graphic="27371.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OR7_MOD" Label="OR-7" Graphic="27381.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OR8_MOD" Label="OR-8" Graphic="27391.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OR9_MOD" Label="OR-9" Graphic="27401.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="WO1_MOD" Label="WO-1" Graphic="27411.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="WO2_MOD" Label="WO-2" Graphic="27421.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="WO3_MOD" Label="WO-3" Graphic="27431.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="WO4_MOD" Label="WO-4" Graphic="27441.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="WO5_MOD" Label="WO-5" Graphic="27451.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="INDIVIDUAL_MOD" Label="Individual" Graphic="27461.svg" Category="Echelon">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="TEAM_MOD" Label="Team/Crew" Graphic="27471.svg" Category="Echelon">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="SQUAD_MOD" Label="Squad" Graphic="27481.svg" Category="Echelon">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="SECTION_MOD" Label="Section" Graphic="27491.svg" Category="Echelon">
+      <ModifierCode>
+        <DigitOne>4</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="PLATOON_MOD" Label="Platoon/Detachment" Graphic="27501.svg" Category="Echelon">
+      <ModifierCode>
+        <DigitOne>5</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="COMPANY_MOD" Label="Company" Graphic="27511.svg" Category="Echelon">
+      <ModifierCode>
+        <DigitOne>5</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="BATTALION_MOD" Label="Battalion" Graphic="27521.svg" Category="Echelon">
+      <ModifierCode>
+        <DigitOne>5</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="REGIMENT_MOD" Label="Regiment/Group" Graphic="27531.svg" Category="Echelon">
+      <ModifierCode>
+        <DigitOne>5</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="BRIGADE_MOD" Label="Brigade" Graphic="27541.svg" Category="Echelon">
+      <ModifierCode>
+        <DigitOne>5</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="DIVISION_MOD" Label="Division" Graphic="27551.svg" Category="Echelon">
+      <ModifierCode>
+        <DigitOne>5</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+  </SectorOneModifiers>
+  <SectorTwoModifiers>
+    <Modifier ID="UNSPECIFIED_TWO_MOD" Label="Unspecified">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="AIRBORNE_MOD" Label="Airborne" Graphic="27012.svg" Category="Task">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="BICYCLE_MOD" Label="Bicycle Equipped" Graphic="27022.svg" Category="Task">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="DEMOLITION_MOD" Label="Demolition" Graphic="27032.svg" Category="Task">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="J1_MOD2" Label="J1" Graphic="27042.svg" Category="Functional Staff Area">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="J2_MOD2" Label="J2" Graphic="27052.svg" Category="Functional Staff Area">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="J3_MOD2" Label="J3" Graphic="27062.svg" Category="Functional Staff Area">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="J4_MOD2" Label="J4" Graphic="27072.svg" Category="Functional Staff Area">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="J5_MOD2" Label="J5" Graphic="27082.svg" Category="Functional Staff Area">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="J6_MOD2" Label="J6" Graphic="27092.svg" Category="Functional Staff Area">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="J7_MOD2" Label="J7" Graphic="27102.svg" Category="Functional Staff Area">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="J8_MOD2" Label="J8" Graphic="27112.svg" Category="Functional Staff Area">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="J9_MOD2" Label="J9" Graphic="27122.svg" Category="Functional Staff Area">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="MOUNTAIN_MOD2" Label="Mountain" Graphic="27132.svg" Category="Other">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>    
+    <Modifier ID="OF01_MOD2" Label="OF-1" Graphic="27142.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OF02_MOD2" Label="OF-2" Graphic="27152.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OF03_MOD2" Label="OF-3" Graphic="27162.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OF04_MOD2" Label="OF-4" Graphic="27172.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OF05_MOD2" Label="OF-5" Graphic="27182.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OF06_MOD2" Label="OF-6" Graphic="27192.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OF07_MOD2" Label="OF-7" Graphic="27202.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OF08_MOD2" Label="OF-8" Graphic="27212.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OF09_MOD2" Label="OF-9" Graphic="27222.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OF10_MOD2" Label="OF-10" Graphic="27232.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OFD_MOD2" Label="OF-D" Graphic="27242.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OR1_MOD2" Label="OR-1" Graphic="27252.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OR2_MOD2" Label="OR-2" Graphic="27262.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OR3_MOD2" Label="OR-3" Graphic="27272.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OR4_MOD2" Label="OR-4" Graphic="27282.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OR5_MOD2" Label="OR-5" Graphic="27292.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OR6_MOD2" Label="OR-6" Graphic="27302.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OR7_MOD2" Label="OR-7" Graphic="27312.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OR8_MOD2" Label="OR-8" Graphic="27322.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="OR9_MOD2" Label="OR-9" Graphic="27332.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="WO1_MOD2" Label="WO-1" Graphic="27342.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="WO2_MOD2" Label="WO-2" Graphic="27352.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="WO3_MOD2" Label="WO-3" Graphic="27362.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="WO4_MOD2" Label="WO-4" Graphic="27372.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="WO5_MOD2" Label="WO-5" Graphic="27382.svg" Category="Rank">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="SKI_MOD2" Label="Ski" Graphic="27392.svg" Category="Other">
+      <ModifierCode>
+        <DigitOne>3</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+  </SectorTwoModifiers>
+</SymbolSet>
