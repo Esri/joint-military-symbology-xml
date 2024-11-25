@@ -643,7 +643,7 @@
                 <DigitTwo>1</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
-            <EntitySubType ID="TELECOMMUNICATIONS" Label="Telecommunications" Graphic="20121202.svg">
+            <EntitySubType ID="TELECOMMUNICATIONS" Label="Telecommunications (Civilian)" Graphic="20121202.svg">
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>2</DigitTwo>
@@ -905,6 +905,12 @@
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
+    <Modifier ID="CYBERSPACE_1_MOD" Label="Cyberspace" Graphic="20141.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>1</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
   </SectorOneModifiers>
   <SectorTwoModifiers>
     <Modifier ID="UNSPECIFIED_2_MOD" Label="Unspecified">
@@ -913,52 +919,58 @@
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="BIOLOGICAL_2_MOD" Label="Biological" Graphic="20012.svg" Category="No Category Listed">
+    <Modifier ID="BIOLOGICAL_2_MOD" Label="Biological Warfare Production" Graphic="20012.svg" Category="Warfare Capability">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="CHEMICAL_2_MOD" Label="Chemical" Graphic="20022.svg" Category="No Category Listed">
+    <Modifier ID="CHEMICAL_2_MOD" Label="Chemical Warfare Production" Graphic="20022.svg" Category="Warfare Capability">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="NUCLEAR_2_MOD" Label="Nuclear" Graphic="20032.svg" Category="No Category Listed">
+    <Modifier ID="NUCLEAR_2_MOD" Label="Nuclear Warfare Production" Graphic="20032.svg" Category="Warfare Capability">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="RADIOLOGICAL_2_MOD" Label="Radiological" Graphic="20042.svg" Category="No Category Listed">
+    <Modifier ID="RADIOLOGICAL_2_MOD" Label="Radiological Warfare Production" Graphic="20042.svg" Category="Warfare Capability">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>4</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="ATOMIC_ENERGY_REACTOR_MOD" Label="Atomic Energy Reactor" Graphic="20052.svg" Category="No Category Listed">
+    <Modifier ID="ATOMIC_ENERGY_REACTOR_MOD" Label="Atomic Energy Reactor" Graphic="20052.svg" Category="Warfare Capability">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="NUCLEAR_MATERIAL_PRODUCTION_MOD" Label="Nuclear Material Production" Graphic="20062.svg" Category="No Category Listed">
+    <Modifier ID="NUCLEAR_MATERIAL_PRODUCTION_MOD" Label="Nuclear Material Production" Graphic="20062.svg" Category="Warfare Capability">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>6</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="NUCLEAR_MATERIAL_STORAGE_MOD" Label="Nuclear Material Storage" Graphic="20072.svg" Category="No Category Listed">
+    <Modifier ID="NUCLEAR_MATERIAL_STORAGE_MOD" Label="Nuclear Material Storage" Graphic="20072.svg" Category="Warfare Capability">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="WEAPONS_GRADE_MOD" Label="Weapons Grade" Graphic="20082.svg" Category="No Category Listed">
+    <Modifier ID="WEAPONS_GRADE_MOD" Label="Weapons Grade" Graphic="20082.svg" Category="Warfare Capability">
       <ModifierCode>
         <DigitOne>0</DigitOne>
         <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="CYBERSPACE_2_MOD" Label="Cyberspace" Graphic="20142.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>0</DigitOne>
+        <DigitTwo>9</DigitTwo>
       </ModifierCode>
     </Modifier>
   </SectorTwoModifiers>

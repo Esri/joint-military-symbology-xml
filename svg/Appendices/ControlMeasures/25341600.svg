@@ -4,27 +4,33 @@
 <svg version="1.1" id="Version_1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
 	 y="0px" width="400px" height="400px" viewBox="0 0 400 400" enable-background="new 0 0 400 400" xml:space="preserve">
 <g id="main" transform="translate(-230 -210) scale(1.75 1.75)">
-	<line fill="none" stroke="#000000" stroke-width="2" x1="144.465" y1="282.81" x2="165.799" y2="269.31"/>
-	<line fill="none" stroke="#000000" stroke-width="2" x1="173.081" y1="264.787" x2="191.799" y2="253.143"/>
-	<line fill="none" stroke="#000000" stroke-width="2" x1="197.899" y1="249.377" x2="221.565" y2="234.543"/>
-	<line fill="none" stroke="#000000" stroke-width="2" x1="228.882" y1="230.044" x2="252.215" y2="215.377"/>
-	<line fill="none" stroke="#000000" stroke-width="2" x1="261.032" y1="210.01" x2="278.532" y2="198.843"/>
-	<line fill="none" stroke="#000000" stroke-width="2" x1="285.865" y1="194.343" x2="299.799" y2="185.543"/>
-	<line fill="none" stroke="#000000" stroke-width="2" x1="306.465" y1="181.543" x2="324.465" y2="170.377"/>
-	<line fill="none" stroke="#000000" stroke-width="2" x1="331.832" y1="165.91" x2="343.999" y2="158.077"/>
 	<line fill="none" stroke="#000000" stroke-width="2" x1="140.143" y1="155" x2="350.143" y2="287"/>
+	<g>
+		<g>
+			<line fill="none" stroke="#000000" stroke-width="2" x1="140.143" y1="287" x2="145.949" y2="283.351"/>
+			
+				<line fill="none" stroke="#000000" stroke-width="2" stroke-dasharray="24.1218,24.1218" x1="157.619" y1="276.016" x2="338.502" y2="162.317"/>
+			<line fill="none" stroke="#000000" stroke-width="2" x1="344.338" y1="158.649" x2="350.143" y2="155"/>
+		</g>
+	</g>
 	<g transform="translate(0 -1) translate(0 -1) translate(-1 0) translate(-1 0)">
 		<rect x="237.429" y="214" fill="#FFFFFF" stroke="#FFFFFF" width="20" height="20"/>
-		<text transform="matrix(0.5714 0 0 0.5714 240.4925 231.1429)" font-family="sans-serif" font-size="34.9982">N</text>
+		<text transform="matrix(0.5714 0 0 0.5714 240.4922 231.1429)" font-family="sans-serif" font-size="34.9964">N</text>
 	</g>
 </g>
 <g id="template" display="none">
-	<line display="inline" fill="none" stroke="#000000" stroke-width="2" x1="155.758" y1="285.867" x2="192.742" y2="204.133"/>
-	<polygon display="inline" stroke="#000000" stroke-width="2" points="194.835,199.797 194.38,220.938 178.607,213.355 	"/>
+	<g display="inline">
+		<g>
+			<line fill="none" stroke="#000000" stroke-width="2" x1="198.75" y1="292" x2="198.75" y2="199.968"/>
+			<g>
+				<polygon points="208.723,202.886 198.75,185.615 188.777,202.886 				"/>
+			</g>
+		</g>
+	</g>
 	
 		<g id="CENTER_x25_20POINT" transform="translate(63 -94) translate(0 0.571429) translate(0 0.571429) translate(-0.571429 0)" display="inline">
-		<text transform="matrix(1 0 0 1 39.3209 399.3572)" font-family="sans-serif" font-size="20.9989">CENTER</text>
-		<text transform="matrix(1 0 0 1 51.5709 422.1072)" font-family="sans-serif" font-size="20.9989">POINT</text>
+		<text transform="matrix(1 0 0 1 90.0709 404.3572)" font-family="sans-serif" font-size="20.9989">CENTER</text>
+		<text transform="matrix(1 0 0 1 102.3209 427.1072)" font-family="sans-serif" font-size="20.9989">POINT</text>
 	</g>
 </g>
 </svg>

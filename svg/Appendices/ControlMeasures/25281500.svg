@@ -13,8 +13,8 @@
 			c16.783,0,30.381,17.71,30.381,39.537"/>
 		<path fill="none" stroke="#000000" stroke-width="5.1568" stroke-linejoin="round" stroke-miterlimit="10" d="M327.741,309.351
 			c-16.784,0-30.38,17.71-30.38,39.537"/>
-		<path stroke="#000000" stroke-width="1.135" d="M328.516,307.103c-3.77,0-6.819,4.059-6.819,9.043
-			c0,5.007,3.052,9.043,6.819,9.043c3.771,0,6.82-4.037,6.82-9.043C335.336,311.162,332.286,307.103,328.516,307.103"/>
+		<path stroke="#000000" stroke-width="1.135" d="M328.516,307.103c-3.77,0-6.818,4.059-6.818,9.043
+			c0,5.007,3.052,9.043,6.818,9.043c3.771,0,6.82-4.037,6.82-9.043C335.336,311.162,332.286,307.103,328.516,307.103"/>
 	</g>
 	<text transform="matrix(1 0 0 1 298.1074 305.5615)" font-family="sans-serif" font-size="28">N</text>
 </g>
@@ -39,9 +39,14 @@
 			<rect x="384.91" y="376.947" fill="none" stroke="#000000" stroke-width="1.9314" stroke-linecap="round" stroke-miterlimit="8" width="49.195" height="46.105"/>
 		<text transform="matrix(1 0 0 1 401.0146 409.1133)" font-family="sans-serif" font-size="28">N</text>
 	</g>
+	<g id="varQ_2_" display="inline">
+		
+			<rect x="281.899" y="492.947" fill="none" stroke="#000000" stroke-width="1.9314" stroke-linecap="round" stroke-miterlimit="8" width="46.605" height="46.104"/>
+		<text id="Q_1_" transform="matrix(1 0 0 1 293.5352 525.9814)" font-family="sans-serif" font-size="28">Q</text>
+	</g>
 	<g id="varY" display="inline">
 		
-			<rect x="280.367" y="438.755" fill="none" stroke="#000000" stroke-width="1.9314" stroke-linecap="round" stroke-miterlimit="8" width="48.014" height="46.103"/>
+			<rect x="280.367" y="438.755" fill="none" stroke="#000000" stroke-width="1.9314" stroke-linecap="round" stroke-miterlimit="8" width="48.014" height="46.104"/>
 		<text transform="matrix(1 0 0 1 294.9189 470.8994)" font-family="sans-serif" font-size="28">Y</text>
 	</g>
 	<g id="varC" display="inline">
@@ -49,41 +54,27 @@
 			<rect x="279.844" y="219.619" fill="none" stroke="#000000" stroke-width="1.9314" stroke-linecap="round" stroke-miterlimit="8" width="49.193" height="46.083"/>
 		<text transform="matrix(1 0 0 1 292.8438 251.5039)" font-family="sans-serif" font-size="28">C</text>
 	</g>
-	<g display="inline">
-		<g id="varQ">
-			
-				<line fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="301.997" y1="488.196" x2="302.113" y2="537.642"/>
-			<path stroke="#000000" stroke-width="0.309" stroke-linejoin="bevel" stroke-miterlimit="10" d="M301.997,536.366l63.351,0.098
-				c0.719,0,1.297,0.578,1.273,1.275c0,0.715-0.559,1.293-1.273,1.293l-63.351-0.095c-0.715,0-1.295-0.582-1.295-1.296
-				C300.702,536.946,301.282,536.366,301.997,536.366L301.997,536.366z M362.778,530.014l25.745,7.764l-25.766,7.688
-				L362.778,530.014z"/>
-			<text id="Q" transform="matrix(1 0 0 1 393.6094 545.9814)" font-family="sans-serif" font-size="28">Q</text>
-		</g>
-		<text transform="matrix(1 0 0 1 127.0742 491.833)" font-family="sans-serif" font-size="23.1768">POINT</text>
-		<text transform="matrix(1 0 0 1 127.0742 464.0205)" font-family="sans-serif" font-size="23.1768">ANCHOR</text>
-		<g>
-			<g>
-				
-					<line fill="none" stroke="#000000" stroke-width="4" stroke-linejoin="bevel" x1="222.925" y1="472.899" x2="289.855" y2="414.778"/>
-				<g>
-					<polygon points="290.777,428.691 287.057,417.208 276.209,411.915 303.379,403.036 					"/>
-				</g>
-			</g>
-		</g>
-	</g>
 	<g id="varV" display="inline">
 		
 			<rect x="172.208" y="327.947" fill="none" stroke="#000000" stroke-width="1.9314" stroke-linecap="round" stroke-miterlimit="8" width="46.605" height="46.105"/>
 		<text id="V" transform="matrix(1 0 0 1 183.9951 360.1133)" font-family="sans-serif" font-size="28">V</text>
 	</g>
+	<g display="inline">
+		<g>
+			
+				<line fill="none" stroke="#000000" stroke-width="4" stroke-linejoin="bevel" x1="223.617" y1="472.899" x2="290.547" y2="414.778"/>
+			<polygon points="291.469,428.691 287.748,417.208 276.9,411.915 304.07,403.036 			"/>
+		</g>
+		<text transform="matrix(1 0 0 1 126.5474 464.0205)" enable-background="new    "><tspan x="0" y="0" font-family="sans-serif" font-size="23.1768">ANCHOR </tspan><tspan x="14.808" y="27.813" font-family="sans-serif" font-size="23.1768">POINT</tspan></text>
+	</g>
 </g>
 <g id="example" display="none">
-	<g id="varQ_1_" display="inline">
+	<g id="varQe" display="inline">
 		
 			<line fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="304.997" y1="441.196" x2="305.113" y2="490.642"/>
 		<path stroke="#000000" stroke-width="0.309" stroke-linejoin="bevel" stroke-miterlimit="10" d="M304.997,489.366l63.351,0.098
-			c0.719,0,1.297,0.578,1.273,1.275c0,0.715-0.559,1.293-1.273,1.293l-63.351-0.095c-0.715,0-1.295-0.582-1.295-1.296
-			C303.702,489.946,304.282,489.366,304.997,489.366L304.997,489.366z M365.778,483.014l25.745,7.764l-25.766,7.688L365.778,483.014
+			c0.72,0,1.298,0.578,1.273,1.275c0,0.715-0.559,1.293-1.273,1.293l-63.351-0.096c-0.715,0-1.295-0.581-1.295-1.296
+			C303.702,489.946,304.282,489.366,304.997,489.366L304.997,489.366z M365.778,483.014l25.745,7.765l-25.767,7.688L365.778,483.014
 			z"/>
 	</g>
 	<text id="varYe" transform="matrix(1 0 0 1 221.5195 438.8994)" display="inline" font-family="sans-serif" font-size="28">SL12071962</text>

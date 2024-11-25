@@ -30,36 +30,54 @@
 		</g>
 	</g>
 </g>
-<g id="points_1_" display="none">
-	<g id="varA" transform="translate(135 114)" display="inline">
-		<rect x="53.25" y="118" fill="#FFFFFF" stroke="#000000" stroke-width="2" width="25" height="25"/>
-		<text transform="matrix(1 0 0 1 57.1348 139.1133)" font-family="sans-serif" font-size="25">A</text>
+<g id="template" display="none">
+	<g id="varA" transform="translate(135 114)">
+		<rect x="53.25" y="118" display="inline" fill="#FFFFFF" stroke="#000000" stroke-width="2" width="25" height="25"/>
+		<text transform="matrix(1 0 0 1 57.1348 139.1133)" display="inline" font-family="sans-serif" font-size="25">A</text>
 	</g>
 	<g display="inline">
 		<text transform="matrix(1 0 0 1 123.4717 195.7764)" font-family="sans-serif" font-size="18.75">PT. 2</text>
-		<g transform="translate(-44.4444 9.6) translate(0 4.8)">
-			<line fill="none" stroke="#000000" stroke-width="2" x1="189.889" y1="216.35" x2="189.889" y2="190.1"/>
-			<polygon stroke="#000000" stroke-width="2" points="189.889,224.328 196.139,206.83 183.639,206.83 			"/>
+		<g>
+			<g>
+				<line fill="none" stroke="#000000" stroke-width="2" x1="145.445" y1="228.063" x2="145.445" y2="202.5"/>
+				<g>
+					<polygon points="155.417,225.146 145.445,242.416 135.472,225.146 					"/>
+				</g>
+			</g>
 		</g>
 	</g>
 	<g display="inline">
-		<text transform="matrix(1 0 0 1 236.499 194.5)" font-family="sans-serif" font-size="18.75">PT. 3</text>
-		<g transform="translate(39.2 12) translate(-1.6 7.2) translate(0.8 -2.4)">
-			<line fill="none" stroke="#000000" stroke-width="2" x1="218.6" y1="213.95" x2="218.6" y2="187.7"/>
-			<polygon stroke="#000000" stroke-width="2" points="218.6,221.929 224.85,204.43 212.35,204.43 			"/>
+		<text transform="matrix(1 0 0 1 236.499 196.5)" font-family="sans-serif" font-size="18.75">PT. 3</text>
+		<g>
+			<g>
+				<line fill="none" stroke="#000000" stroke-width="2" x1="257.445" y1="227.836" x2="257.445" y2="202.272"/>
+				<g>
+					<polygon points="267.418,224.918 257.445,242.188 247.473,224.918 					"/>
+				</g>
+			</g>
 		</g>
 	</g>
 	<g display="inline">
 		<text transform="matrix(1 0 0 1 329.999 196.749)" font-family="sans-serif" font-size="18.75">PT. 4</text>
-		<line fill="none" stroke="#000000" stroke-width="2" x1="386" y1="246.5" x2="386" y2="221.5"/>
-		<line fill="none" stroke="#000000" stroke-width="2" x1="386.331" y1="222.482" x2="356" y2="202.75"/>
-		<polygon stroke="#000000" stroke-width="2" points="386,251.979 392.25,234.48 379.75,234.48 		"/>
+		<g>
+			<g>
+				<polyline fill="none" stroke="#000000" stroke-width="2" points="386.331,237.605 386.331,227.041 356,202.75 				"/>
+				<g>
+					<polygon points="396.304,234.688 386.331,251.958 376.358,234.688 					"/>
+				</g>
+			</g>
+		</g>
 	</g>
 	<g display="inline">
 		<text transform="matrix(1 0 0 1 27.4443 206.4717)" font-family="sans-serif" font-size="18.75">PT. 1</text>
-		<line fill="none" stroke="#000000" stroke-width="2" x1="17" y1="247.25" x2="17" y2="224.75"/>
-		<line fill="none" stroke="#000000" stroke-width="2" x1="16.635" y1="225.732" x2="39.5" y2="212.25"/>
-		<polygon stroke="#000000" stroke-width="2" points="17,251.479 23.25,233.98 10.75,233.98 		"/>
+		<g>
+			<g>
+				<polyline fill="none" stroke="#000000" stroke-width="2" points="16.635,240.605 16.635,230.041 43.5,212.25 				"/>
+				<g>
+					<polygon points="26.607,237.688 16.635,254.958 6.662,237.688 					"/>
+				</g>
+			</g>
+		</g>
 	</g>
 </g>
 <g id="example" display="none">

@@ -132,6 +132,18 @@
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
         </EntityType>
+        <EntityType ID="SPACE" Label="Space" Graphic="10111300.svg">
+          <EntityTypeCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="SPECIAL_TROOPS" Label="Special Troops" Graphic="10111400.svg">
+          <EntityTypeCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>4</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
       </EntityTypes>
     </Entity>
     <Entity ID="MOVEMENT_AND_MANEUVER" Label="Movement and Maneuver" Remarks="Reserved for hierarchical purposes." Icon="NA" GeometryType="NA">
@@ -382,6 +394,12 @@
             <DigitTwo>9</DigitTwo>
           </EntityTypeCode>
         </EntityType>
+        <EntityType ID="RANGER" Label="Ranger" Graphic="10122000.svg">
+          <EntityTypeCode>
+            <DigitOne>2</DigitOne>
+            <DigitTwo>0</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
       </EntityTypes>
     </Entity>
     <Entity ID="FIRES" Label="Fires" Remarks="Reserved for hierarchical purposes." Icon="NA" GeometryType="NA">
@@ -406,6 +424,12 @@
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>2</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="AD_AMD" Label="Air and Missile Defense" CloverGraphic="10130103_0.svg" DiamondGraphic="10130103_3.svg" RectangleGraphic="10130103_1.svg" SquareGraphic="10130103_2.svg" Icon="FULL_FRAME">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>3</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
           </EntitySubTypes>
@@ -534,6 +558,12 @@
               <EntitySubTypeCode>
                 <DigitOne>0</DigitOne>
                 <DigitTwo>5</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+            <EntitySubType ID="CBRN_CBRNE" Label="Chemical, Biological, Radiological, Nuclear, and High-Yield Explosive">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>6</DigitTwo>
               </EntitySubTypeCode>
             </EntitySubType>
           </EntitySubTypes>
@@ -686,10 +716,16 @@
             <DigitTwo>0</DigitTwo>
           </EntityTypeCode>
         </EntityType>
-        <EntityType ID="TOPOGRAPHIC" Label="Topographic" Graphic="10142100.svg">
+        <EntityType ID="TOPOGRAPHIC" Label="Topographic/Geospatial" Graphic="10142100.svg">
           <EntityTypeCode>
             <DigitOne>2</DigitOne>
             <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="MISSILE_DEFENSE" Label="Missile Defense" Graphic="10142200.svg">
+          <EntityTypeCode>
+            <DigitOne>2</DigitOne>
+            <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
         </EntityType>
       </EntityTypes>
@@ -804,6 +840,12 @@
             <DigitTwo>2</DigitTwo>
           </EntityTypeCode>
         </EntityType>
+        <EntityType ID="MILITARY_HISTORY" Label="Military History" Graphic="10151300.svg">
+          <EntityTypeCode>
+            <DigitOne>1</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
       </EntityTypes>
     </Entity>
     <Entity ID="SUSTAINMENT" Label="Sustainment" Graphic="10160000.svg">
@@ -841,6 +883,14 @@
             <DigitOne>0</DigitOne>
             <DigitTwo>5</DigitTwo>
           </EntityTypeCode>
+          <EntitySubTypes>
+            <EntitySubType ID="ARMY_MUSIC" Label="Army Music" Graphic="10160501.svg">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
         </EntityType>
         <EntityType ID="COMBAT_SERVICE_SUPPORT" Label="Combat Service Support" Graphic="10160600.svg">
           <EntityTypeCode>
@@ -1027,7 +1077,15 @@
             <DigitOne>3</DigitOne>
             <DigitTwo>6</DigitTwo>
           </EntityTypeCode>
-        </EntityType>
+          <EntitySubTypes>
+            <EntitySubType ID="FLOATING_CRAFT" Label="Floating Craft" Graphic="10163601.svg" Icon="MAIN_1">
+              <EntitySubTypeCode>
+                <DigitOne>0</DigitOne>
+                <DigitTwo>1</DigitTwo>
+              </EntitySubTypeCode>
+            </EntitySubType>
+          </EntitySubTypes>
+          </EntityType>
         <EntityType ID="US_SUPPLY_CLASS_I" Label="US Supply Class I" CloverGraphic="10163700_0.svg" DiamondGraphic="10163700_3.svg" RectangleGraphic="10163700_1.svg" SquareGraphic="10163700_2.svg" Icon="FULL_FRAME">
           <EntityTypeCode>
             <DigitOne>3</DigitOne>
@@ -1104,6 +1162,42 @@
           <EntityTypeCode>
             <DigitOne>4</DigitOne>
             <DigitTwo>9</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="NATO_SUPPLY" Label="NATO Supply Class - ALL" CloverGraphic="10165000_0.svg" DiamondGraphic="10165000_3.svg" RectangleGraphic="10165000_1.svg" SquareGraphic="10165000_2.svg" Icon="FULL_FRAME">
+          <EntityTypeCode>
+            <DigitOne>5</DigitOne>
+            <DigitTwo>0</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="INTERPRETER" Label="Intepreter/Translator" Graphic="10165100.svg">
+          <EntityTypeCode>
+            <DigitOne>5</DigitOne>
+            <DigitTwo>1</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="SUPPORT" Label="Support" Graphic="10165200.svg">
+          <EntityTypeCode>
+            <DigitOne>5</DigitOne>
+            <DigitTwo>2</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="ARMY_FIELD_SUPPORT" Label="Army Field Support" Graphic="10165300.svg">
+          <EntityTypeCode>
+            <DigitOne>5</DigitOne>
+            <DigitTwo>3</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="CONTRACTING_SERVICE" Label="Contracting Service" Graphic="10165400.svg">
+          <EntityTypeCode>
+            <DigitOne>5</DigitOne>
+            <DigitTwo>4</DigitTwo>
+          </EntityTypeCode>
+        </EntityType>
+        <EntityType ID="RIGGER" Label="Parachute Rigger" Graphic="10165500.svg">
+          <EntityTypeCode>
+            <DigitOne>5</DigitOne>
+            <DigitTwo>5</DigitTwo>
           </EntityTypeCode>
         </EntityType>
       </EntityTypes>
@@ -1622,7 +1716,7 @@
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="SINGLE_SHELTER_SWITCH_MOD" Label="Single Shelter Switch" Graphic="10581.svg" Category="Capability">
+    <Modifier ID="ARMORED_MOD" Label="Armored" Graphic="10581.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>5</DigitOne>
         <DigitTwo>8</DigitTwo>
@@ -1700,25 +1794,25 @@
         <DigitTwo>0</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="ACCIDENT_MOD" Label="Accident" LabelAlias="Accident (Land Units)" Graphic="10711.svg" Category="Composite Loss">
+    <Modifier ID="MOBILITY_ASSAULT_MOD" Label="Mobility Assault" Graphic="10711.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>7</DigitOne>
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="OTHER_MOD" Label="Other" LabelAlias="Other (Land Units)" Graphic="10721.svg" Category="Composite Loss">
+    <Modifier ID="AMPHIB_WARSHIP_MOD" Label="Amphibious Warfare Ship" Graphic="10721.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>7</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="CIVILIAN_MOD" Label="Civilian" LabelAlias="Civilian (Land Units)" Graphic="10731.svg" Category="Operation">
+    <Modifier ID="LHS_MOD" Label="Load Handling System (LHS)" Graphic="10731.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>7</DigitOne>
         <DigitTwo>3</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="ANTISUBMARINE_WARFARE_MOD" Label="Antisubmarine Warfare" Graphic="10741.svg" Category="Capability">
+    <Modifier ID="PLS_MOD" Label="Palletized Load System (PLS)" Graphic="10741.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>7</DigitOne>
         <DigitTwo>4</DigitTwo>
@@ -1730,7 +1824,7 @@
         <DigitTwo>5</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="RANGER_MOD" Label="Ranger" Graphic="10761.svg" Category="Capability">
+    <Modifier ID="CYBERSPACE_1_MOD" Label="Cyberspace" Graphic="10761.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>7</DigitOne>
         <DigitTwo>6</DigitTwo>
@@ -1745,6 +1839,126 @@
     <Modifier ID="AVIATION_MOD" Label="Aviation" Graphic="10781.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>7</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ROUTE_RECON_CLEAR_MOD" Label="Route Reconnaissance and Clearance" Graphic="10791.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>7</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="TILT_ROTOR_MOD" Label="Tilt-Rotor" Graphic="10801.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>8</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="CPN_MOD" Label="Command Post Node" Graphic="10811.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>8</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="JNN_MOD" Label="Joint Network Node" Graphic="10821.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>8</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="RETRANS_MOD" Label="Retransmission Site" Graphic="10831.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>8</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ASSAULT_MOD" Label="Assault" Graphic="10841.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>8</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="WEAPONS_MOD" Label="Weapons" Graphic="10851.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>8</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="CID_MOD" Label="Criminal Investigative Division" Graphic="10861.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>8</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="DIGITAL_MOD" Label="Digital" Graphic="10871.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>8</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="NETWORK_MOD" Label="Network (Operations)" Graphic="10881.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>8</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="AIRFIELD_MOD" Label="Airfield, APOD, or APOE" Graphic="10891.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>8</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="PIPELINE_MOD" Label="Pipeline" Graphic="10901.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>9</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="POSTAL_MOD" Label="Pipeline" Graphic="10911.svg" Category="Operation">
+      <ModifierCode>
+        <DigitOne>9</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="WATER_MOD" Label="Water" Graphic="10921.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>9</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="INDEPENDENT_COMMAND_MOD" Label="Independent Command" Graphic="10931.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>9</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="THEATER_MOD" Label="Theater" Graphic="10941.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>9</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="ARMY_MOD" Label="Army" Graphic="10951.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>9</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="CORPS_MOD" Label="Corps" Graphic="10961.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>9</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="BRIGADE_MOD" Label="Brigade" Graphic="10971.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>9</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="HEADQUARTERS_MOD" Label="Headquarters/Staff Element" Graphic="10981.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>9</DigitOne>
         <DigitTwo>8</DigitTwo>
       </ModifierCode>
     </Modifier>
@@ -1822,13 +2036,13 @@
         <DigitTwo>1</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="DIGITAL_MOD" Label="Digital" Graphic="10122.svg" Category="Capability">
+    <Modifier ID="DIGITAL_2_MOD" Label="Digital" Graphic="10122.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>2</DigitTwo>
       </ModifierCode>
     </Modifier>
-    <Modifier ID="ENHANCED_POSITION_LOCATION_REPORTING_SYSTEM_EPLRS_MOD" Label="Enhanced Position Location Reporting System (EPLRS)" Graphic="10132.svg" Category="Capability">
+    <Modifier ID="EPLRS_MOD" Label="Enhanced Position Location Reporting System (EPLRS)" Graphic="10132.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>1</DigitOne>
         <DigitTwo>3</DigitTwo>
@@ -2095,6 +2309,126 @@
     <Modifier ID="COMBAT_SEARCH_RESCUE_MOD" Label="Combat Search and Rescue" Graphic="10572.svg" Category="Capability">
       <ModifierCode>
         <DigitOne>5</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="GUERILLA_MOD" Label="Guerilla" Graphic="10582.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>5</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="AIR_ASSAULT_MOD" Label="Air Assault" Graphic="10592.svg" Category="Mobility">
+      <ModifierCode>
+        <DigitOne>5</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="AMPHIBIOUS_MOD" Label="Amphibious" Graphic="10602.svg" Category="Mobility">
+      <ModifierCode>
+        <DigitOne>6</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="VERY_HEAVY_MOD" Label="Very Heavy" Graphic="10612.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>6</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="SUPPLY_MOD" Label="Supply" Graphic="10622.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>6</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="CYBERSPACE_2_MOD" Label="Cyberspace" Graphic="10632.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>6</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="BARGE_SP_MOD" Label="Barge (self-propelled)" Graphic="10642.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>6</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="BARGE_MOD" Label="Barge (Non-self-propelled)" Graphic="10652.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>6</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="LAUNCH_MOD" Label="Launch" Graphic="10662.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>6</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="LANDING_CRAFT_MOD" Label="Landing Craft" Graphic="10672.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>6</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="LANDING_SHIP_MOD" Label="Landing Ship" Graphic="10682.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>6</DigitOne>
+        <DigitTwo>8</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="SERVICE_CRAFT_MOD" Label="Service Craft/Yard" Graphic="10692.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>6</DigitOne>
+        <DigitTwo>9</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="TUG_H_MOD" Label="Harbor Tugboat" Graphic="10702.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>7</DigitOne>
+        <DigitTwo>0</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="TUG_O_MOD" Label="Ocean-Going Tugboat" Graphic="10712.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>7</DigitOne>
+        <DigitTwo>1</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="SDDC_MOD" Label="Surface Deployment and Distribution Command" Graphic="10722.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>7</DigitOne>
+        <DigitTwo>2</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="NONCBT_GENERIC_VESSEL_MOD" Label="Noncombatant Generic Vessel" Graphic="10732.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>7</DigitOne>
+        <DigitTwo>3</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="COMPOSITE_MOD" Label="Composite" Graphic="10742.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>7</DigitOne>
+        <DigitTwo>4</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="SHELTER_MOD" Label="Shelter" Graphic="10752.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>7</DigitOne>
+        <DigitTwo>5</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="L_M_MOD" Label="Light and Medium" Graphic="10762.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>7</DigitOne>
+        <DigitTwo>6</DigitTwo>
+      </ModifierCode>
+    </Modifier>
+    <Modifier ID="SP_MOD" Label="Self-Propelled" Graphic="10772.svg" Category="Capability">
+      <ModifierCode>
+        <DigitOne>7</DigitOne>
         <DigitTwo>7</DigitTwo>
       </ModifierCode>
     </Modifier>
