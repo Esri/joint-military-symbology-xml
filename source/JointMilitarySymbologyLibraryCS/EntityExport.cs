@@ -667,7 +667,7 @@ namespace JointMilitarySymbologyLibrary
         {
             string code = "";
 
-            if (ss != null); // && (e != null || (e == null && eType == null)))
+            if (ss != null) // && (e != null || (e == null && eType == null)))
                 code = BuildEntityCode(sig, ss, e, eType, eSubType);
 
             return code;

@@ -796,7 +796,43 @@
         </SymbolSetRef>
       </SymbolSets>
     </Dimension>
-    
+
+    <Dimension ID="DISMOUNTED" Label="Dismounted Individual" Geometry="POINT">
+      <DimensionCode>
+        <DigitOne>2</DigitOne>
+        <DigitTwo>7</DigitTwo>
+      </DimensionCode>
+      <Fields>
+        <Field ID="DISMOUNTED_AB" Label="Feint/Dummy Indicator" Description="A graphic amplifier for units, equipment and installations that identifies an offensive or defensive unit intended to draw the enemy's attention away from the area of the main attack." AmplifierID="AB" X="0" Y="1"/>
+        <Field ID="DISMOUNTED_AC" Label="Installation" Description="A graphic amplifier for units, equipment and installations used to show a particular symbol denotes an installation." AmplifierID="AC" X="0" Y="1"/>
+        <Field ID="DISMOUNTED_AF" Label="Common Identifier" Description="Example: 'Hawk' for Hawk SAM system" AmplifierID="AF" X="0" Y="-2"/>
+        <Field ID="DISMOUNTED_A" Label="Basic Branch/Function Icon" Description="The innermost part of a symbol that represents a joint military object." AmplifierID="A" X="0" Y="0"/>
+        <Field ID="DISMOUNTED_D" Label="Task Force Indicator" Description="A graphic amplifier that identifies a unit or stability operations symbol as a task force." AmplifierID="D" X="0" Y="1"/>
+        <Field ID="DISMOUNTED_G" Label="Staff Comments" Description="A text amplifier for units, equipment, and installations." AmplifierID="G" X="1" Y="1"/>
+        <Field ID="DISMOUNTED_H" Label="Additional Information" Description="A text amplifier for units, equipment, and installations." AmplifierID="H" X="1" Y="0"/>
+        <Field ID="DISMOUNTED_J" Label="Evaluation Rating" Description="A text amplifier for units, equipment and installations that consists of a one-letter reliability rating and a one-number credibility rating." Remarks="Reliability: A-F and Credibility: 1-6" AmplifierID="J" X="1" Y="-2"/>
+        <Field ID="DISMOUNTED_K" Label="Combat Effectiveness" Description="A text amplifier for units and installations that indicates unit effectiveness or installation capability." Remarks="Fully Operational = FO, Substantially Operational = SO, Marginally Operational = MO, Not Operational = NO, Unknown = UNK" AmplifierID="K" X="1" Y="-2"/>
+        <Field ID="DISMOUNTED_M" Label="Higher Formation" Description="A text amplifier for units that indicates number or title of higher echelon command (corps are designated by Roman numerals)." AmplifierID="M" X="1" Y="-1"/>
+        <Field ID="DISMOUNTED_P" Label="IFF/SIF" Description="A text amplifier displaying IFF/SIF/AIS identification modes and codes. Display priority: Mode 5, Mode S, Mode 4, Mode 2, Mode 3" Remarks="M:CCCC, where M = Mode, CCCC = Code" AmplifierID="P" X="1" Y="-2"/>
+        <Field ID="DISMOUNTED_Q" Label="Direction of Movement Indicator" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." AmplifierID="Q" X="0" Y="-2"/>
+        <Field ID="DISMOUNTED_R" Label="Mobility Indicator" Description="A graphic amplifier for units and equipment that identifies the direction of movement or intended movement of an object." AmplifierID="R" X="0" Y="-1"/>
+        <Field ID="DISMOUNTED_T" Label="Unique Designation (Track Number)" Description="A text amplifier for units, equipment, and installations that uniquely identifies a particular symbol or track number." Remarks="Prefix = TN:#####  Example: TN:13579" AmplifierID="T" X="1" Y="2"/>
+        <Field ID="DISMOUNTED_V" Label="Type" Description="A text amplifier for equipment that indicates types of equipment." AmplifierID="V" X="1" Y="1"/>
+        <Field ID="DISMOUNTED_W" Label="Date-Time Group (DTG)" Description="An alphanumeric designator for displaying a date-time group or on order." Remarks="DDHHMMSSZMONYYYY or O/O, where DD = Day, HH = Hour, MM = Minute, SS = Second, Z = Time Zone, MON = Month, YYYY = Year, O/O = On Order" AmplifierID="W" X="-1" Y="2"/>
+        <Field ID="DISMOUNTED_X" Label="Altitude" Description="A text amplifier for units that displays altitude flight level." Remarks="Measurement units shall be displayed within the string. Examples: 1500MSL FL150" AmplifierID="X" X="1" Y="-1"/>
+        <Field ID="DISMOUNTED_Y" Label="A text amplifier for units, equipment, and installations that displays a symbol's location in degrees, minutes, and decimal minutes." Remarks="Alternatively, in MGRS or other applicable display format." AmplifierID="Y" X="-1" Y="1"/>
+        <Field ID="DISMOUNTED_Z" Label="Speed" Description="A text amplifier for units and equipment that displays velocity as set forth in MIL-STD-6040." AmplifierID="Z" X="1" Y="-1"/>
+      </Fields>
+      <SymbolSets>
+        <SymbolSetRef ID="SS_DISMOUNTED" Label="Dismounted Individual" Instance="Dismounted.xml">
+          <SymbolSetCode>
+            <DigitOne>2</DigitOne>
+            <DigitTwo>7</DigitTwo>
+          </SymbolSetCode>
+        </SymbolSetRef>
+      </SymbolSets>
+    </Dimension>
+
     <Dimension ID="SEA_SURFACE" Label="Sea Surface" Geometry="POINT">
       <DimensionCode>
         <DigitOne>3</DigitOne>
@@ -2465,7 +2501,7 @@
       </LegacyFrames>
     </Affiliation>
 
-    <Affiliation ID="EXERCISE_LI_SUSPECT" ContextID="EXERCISE" DimensionID="LAND_INSTALLATION" StandardIdentityID="SI_SUSPECT_JOKER" Shape="CIRCLE" Graphic="1_520_0.svg">
+    <Affiliation ID="EXERCISE_LI_SUSPECT" ContextID="EXERCISE" DimensionID="LAND_INSTALLATION" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="1_520_0.svg">
       <LegacyStandardIdentityCode Name="2525C" FirstFunctionLetter="I">J</LegacyStandardIdentityCode>
       <LegacyFrames>
         <LegacyFrame Name="2525C" LimitUseTo="2525C" CodingSchemeLetter="S" BattleDimensionLetter="G" FirstFunctionLetter="I" IsPlanned="false">J</LegacyFrame>
@@ -2474,7 +2510,30 @@
     </Affiliation>
 
     <Affiliation ID="SIMULATED_LI_SUSPECT" ContextID="SIMULATION" DimensionID="LAND_INSTALLATION" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="2_520_0.svg"/>
-    
+
+    <!-- Dismounted Individual Affiliations-->
+
+    <Affiliation ID="REALITY_DI_PENDING" ContextID="REALITY" DimensionID="DISMOUNTED" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="0_015_0.svg" CivilianGraphic="0_015_0c.svg">
+    </Affiliation>
+
+    <Affiliation ID="REALITY_DI_UNKNOWN" ContextID="REALITY" DimensionID="DISMOUNTED" StandardIdentityID="SI_UNKNOWN" Shape="CLOVER" Graphic="0_115_0.svg" PlannedGraphic="0_115_1.svg" CivilianGraphic="0_115_0c.svg" PlannedCivilianGraphic="0_115_1c.svg">
+    </Affiliation>
+
+    <Affiliation ID="REALITY_DI_FRIEND" ContextID="REALITY" DimensionID="DISMOUNTED" StandardIdentityID="SI_FRIEND" Shape="HEXAGON" Graphic="0_327_0.svg" PlannedGraphic="0_327_1.svg" CivilianGraphic="0_327_0c.svg" PlannedCivilianGraphic="0_327_1c.svg">
+    </Affiliation>
+
+    <Affiliation ID="REALITY_DI_NEUTRAL" ContextID="REALITY" DimensionID="DISMOUNTED" StandardIdentityID="SI_NEUTRAL" Shape="SQUARE" Graphic="0_415_0.svg" PlannedGraphic="0_415_1.svg" CivilianGraphic="0_415_0c.svg" PlannedCivilianGraphic="0_415_1c.svg">
+    </Affiliation>
+
+    <Affiliation ID="REALITY_DI_HOSTILE" ContextID="REALITY" DimensionID="DISMOUNTED" StandardIdentityID="SI_HOSTILE_FAKER" Shape="DIAMOND" Graphic="0_615_0.svg" PlannedGraphic="0_615_1.svg">
+    </Affiliation>
+
+    <Affiliation ID="REALITY_DI_ASSUMED" ContextID="REALITY" DimensionID="DISMOUNTED" StandardIdentityID="SI_ASSUMED_FRIEND" Shape="HEXAGON" Graphic="0_227_0.svg" CivilianGraphic="0_227_0c.svg">
+    </Affiliation>
+
+    <Affiliation ID="REALITY_DI_SUSPECT" ContextID="REALITY" DimensionID="DISMOUNTED" StandardIdentityID="SI_SUSPECT_JOKER" Shape="DIAMOND" Graphic="0_515_0.svg">
+    </Affiliation>
+
     <!-- Sea Surface Affiliations-->
 
     <Affiliation ID="REALITY_SEA_PENDING" ContextID="REALITY" DimensionID="SEA_SURFACE" StandardIdentityID="SI_PENDING" Shape="CLOVER" Graphic="0_030_0.svg" CivilianGraphic="0_030_0c.svg">
@@ -2969,6 +3028,7 @@
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="LAND_UNIT" Graphic="011022.svg"/>
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="LAND_EQUIPMENT" Graphic="011522.svg"/>
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="LAND_INSTALLATION" Graphic="012022.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="DISMOUNTED" Graphic="011522.svg"/>
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SEA_SURFACE" Graphic="013022.svg"/>
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SEA_SUBSURFACE" Graphic="013522.svg"/>
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="ACTIVITY" Graphic="014022.svg"/>
@@ -2979,6 +3039,7 @@
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="LAND_UNIT" Graphic="031022.svg"/>
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="LAND_EQUIPMENT" Graphic="031522.svg"/>
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="LAND_INSTALLATION" Graphic="032022.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="DISMOUNTED" Graphic="031522.svg"/>
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SURFACE" Graphic="033022.svg"/>
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SUBSURFACE" Graphic="033522.svg"/>
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="ACTIVITY" Graphic="034022.svg"/>
@@ -2989,6 +3050,7 @@
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="LAND_UNIT" Graphic="041022.svg"/>
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="LAND_EQUIPMENT" Graphic="041522.svg"/>
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="LAND_INSTALLATION" Graphic="042022.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="DISMOUNTED" Graphic="041522.svg"/>
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SURFACE" Graphic="043022.svg"/>
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SUBSURFACE" Graphic="043522.svg"/>
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="ACTIVITY" Graphic="044022.svg"/>
@@ -2999,6 +3061,7 @@
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="LAND_UNIT" Graphic="061022.svg"/>
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="LAND_EQUIPMENT" Graphic="061522.svg"/>
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="LAND_INSTALLATION" Graphic="062022.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="DISMOUNTED" Graphic="061522.svg"/>
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SEA_SURFACE" Graphic="063022.svg"/>
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SEA_SUBSURFACE" Graphic="063522.svg"/>
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="ACTIVITY" Graphic="064022.svg"/>
@@ -3015,6 +3078,7 @@
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="LAND_UNIT" Graphic="011032.svg"/>
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="LAND_EQUIPMENT" Graphic="011532.svg"/>
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="LAND_INSTALLATION" Graphic="012032.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="DISMOUNTED" Graphic="011532.svg"/>
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SEA_SURFACE" Graphic="013032.svg"/>
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SEA_SUBSURFACE" Graphic="013532.svg"/>
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="ACTIVITY" Graphic="014032.svg"/>
@@ -3025,6 +3089,7 @@
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="LAND_UNIT" Graphic="031032.svg"/>
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="LAND_EQUIPMENT" Graphic="031532.svg"/>
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="LAND_INSTALLATION" Graphic="032032.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="DISMOUNTED" Graphic="031532.svg"/>
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SURFACE" Graphic="033032.svg"/>
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SUBSURFACE" Graphic="033532.svg"/>
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="ACTIVITY" Graphic="034032.svg"/>
@@ -3035,6 +3100,7 @@
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="LAND_UNIT" Graphic="041032.svg"/>
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="LAND_EQUIPMENT" Graphic="041532.svg"/>
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="LAND_INSTALLATION" Graphic="042032.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="DISMOUNTED" Graphic="041532.svg"/>
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SURFACE" Graphic="043032.svg"/>
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SUBSURFACE" Graphic="043532.svg"/>
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="ACTIVITY" Graphic="044032.svg"/>
@@ -3045,6 +3111,7 @@
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="LAND_UNIT" Graphic="061032.svg"/>
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="LAND_EQUIPMENT" Graphic="061532.svg"/>
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="LAND_INSTALLATION" Graphic="062032.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="DISMOUNTED" Graphic="061532.svg"/>
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SEA_SURFACE" Graphic="063032.svg"/>
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SEA_SUBSURFACE" Graphic="063532.svg"/>
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="ACTIVITY" Graphic="064032.svg"/>
@@ -3061,6 +3128,7 @@
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="LAND_UNIT" Graphic="011042.svg"/>
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="LAND_EQUIPMENT" Graphic="011542.svg"/>
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="LAND_INSTALLATION" Graphic="012042.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="DISMOUNTED" Graphic="011542.svg"/>
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SEA_SURFACE" Graphic="013042.svg"/>
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SEA_SUBSURFACE" Graphic="013542.svg"/>
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="ACTIVITY" Graphic="014042.svg"/>
@@ -3071,6 +3139,7 @@
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="LAND_UNIT" Graphic="031042.svg"/>
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="LAND_EQUIPMENT" Graphic="031542.svg"/>
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="LAND_INSTALLATION" Graphic="032042.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="DISMOUNTED" Graphic="031542.svg"/>
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SURFACE" Graphic="033042.svg"/>
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SUBSURFACE" Graphic="033542.svg"/>
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="ACTIVITY" Graphic="034042.svg"/>
@@ -3081,6 +3150,7 @@
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="LAND_UNIT" Graphic="041042.svg"/>
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="LAND_EQUIPMENT" Graphic="041542.svg"/>
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="LAND_INSTALLATION" Graphic="042042.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="DISMOUNTED" Graphic="041542.svg"/>
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SURFACE" Graphic="043042.svg"/>
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SUBSURFACE" Graphic="043542.svg"/>
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="ACTIVITY" Graphic="044042.svg"/>
@@ -3091,6 +3161,7 @@
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="LAND_UNIT" Graphic="061042.svg"/>
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="LAND_EQUIPMENT" Graphic="061542.svg"/>
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="LAND_INSTALLATION" Graphic="062042.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="DISMOUNTED" Graphic="061542.svg"/>
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SEA_SURFACE" Graphic="063042.svg"/>
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SEA_SUBSURFACE" Graphic="063542.svg"/>
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="ACTIVITY" Graphic="064042.svg"/>
@@ -3107,6 +3178,7 @@
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="LAND_UNIT" Graphic="011052.svg"/>
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="LAND_EQUIPMENT" Graphic="011552.svg"/>
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="LAND_INSTALLATION" Graphic="012052.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="DISMOUNTED" Graphic="011552.svg"/>
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SEA_SURFACE" Graphic="013052.svg"/>
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SEA_SUBSURFACE" Graphic="013552.svg"/>
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="ACTIVITY" Graphic="014052.svg"/>
@@ -3117,6 +3189,7 @@
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="LAND_UNIT" Graphic="031052.svg"/>
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="LAND_EQUIPMENT" Graphic="031552.svg"/>
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="LAND_INSTALLATION" Graphic="032052.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="DISMOUNTED" Graphic="031552.svg"/>
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SURFACE" Graphic="033052.svg"/>
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SUBSURFACE" Graphic="033552.svg"/>
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="ACTIVITY" Graphic="034052.svg"/>
@@ -3127,6 +3200,7 @@
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="LAND_UNIT" Graphic="041052.svg"/>
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="LAND_EQUIPMENT" Graphic="041552.svg"/>
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="LAND_INSTALLATION" Graphic="042052.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="DISMOUNTED" Graphic="041552.svg"/>
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SURFACE" Graphic="043052.svg"/>
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SUBSURFACE" Graphic="043552.svg"/>
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="ACTIVITY" Graphic="044052.svg"/>
@@ -3137,6 +3211,7 @@
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="LAND_UNIT" Graphic="061052.svg"/>
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="LAND_EQUIPMENT" Graphic="061552.svg"/>
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="LAND_INSTALLATION" Graphic="062052.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="DISMOUNTED" Graphic="061552.svg"/>
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SEA_SURFACE" Graphic="063052.svg"/>
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="SEA_SUBSURFACE" Graphic="063552.svg"/>
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="ACTIVITY" Graphic="064052.svg"/>
@@ -3180,6 +3255,10 @@
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="LAND_INSTALLATION" Graphic="3201.svg"/>
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="LAND_INSTALLATION" Graphic="4201.svg"/>
         <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="LAND_INSTALLATION" Graphic="6201.svg"/>
+        <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="DISMOUNTED" Graphic="1151.svg"/>
+        <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="DISMOUNTED" Graphic="3151.svg"/>
+        <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="DISMOUNTED" Graphic="4151.svg"/>
+        <Graphic StandardIdentityGroup="SIG_HOSTILE" DimensionID="DISMOUNTED" Graphic="6151.svg"/>
         <Graphic StandardIdentityGroup="SIG_UNKNOWN" DimensionID="SEA_SURFACE" Graphic="1301.svg"/>
         <Graphic StandardIdentityGroup="SIG_FRIEND" DimensionID="SEA_SURFACE" Graphic="3301.svg"/>
         <Graphic StandardIdentityGroup="SIG_NEUTRAL" DimensionID="SEA_SURFACE" Graphic="4301.svg"/>
