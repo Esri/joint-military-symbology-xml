@@ -102,7 +102,7 @@ echo "Exporting %source_file% ==> %new_file_png%"
 
 :: IMPORTANT: Now actually call the exporter/converter here:
 :: TODO: SET THE DESIRED HEIGHT/WIDTH HERE (currently 64 pixels):
-"%1" "%2" --export-width=128 --export-height=128 --export-png="%new_file_png%" 
+"%1" "%2" --export-width=128 --export-height=128 --export-type=PNG --export-filename="%new_file_png%"
 
 endlocal & goto :EOF
 
